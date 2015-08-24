@@ -126,6 +126,7 @@ Premium VHDL coding rules
 -   NEVER\_WRITTEN / NEVER\_READs
 -   NAMING\_CONVENTIONS
 -   INCOMPLETE\_ASSOCIATIVE\_OPTIONAL [link](#incomplete-port-maps-and-generic-maps)
+-   POSITIONAL_ASSOCIATION_IN_INSTANTIATIONS [link](#posititional-association-in-instantiations)
 
 Custom VHDL coding rules
 ------------------------
@@ -201,6 +202,17 @@ do not need to be assigned explicitly. However, this is often not
 intended. For that reason, Sigasi can warn you about this.
 
 ![](/images/screenshots/warn-incomplete-map.png)
+
+
+
+Posititional association in Instantiations
+==========================================
+
+Available since Sigasi 2.30
+
+Most VHDL designers prefer named associations in port and generic maps in instantiations. This makes it a lot easier to spot wrong connections.
+By default Sigasi warns when position associations are use. You can change the severity of this check via **Preferences > Sigasi > VHDL > Errors/Warnings** in the **Instantiation statement valiadation* section.
+
 
 Quickfix for third party libraries
 ==================================
