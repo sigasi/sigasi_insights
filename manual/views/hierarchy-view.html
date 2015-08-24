@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hierearchy View</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <!-- Bootstrap -->
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/css/site.css" rel="stylesheet" media="screen">
+    <link href="/css/syntax.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Sigasi Documentation</a>
+        </div>
+        <div class="navbar-collapse collapse">
+
+          <ul class="nav navbar-nav navbar-left">
+            <li class="active"><a href="/manual/">Manual</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/faq/">Manual</a></li>
+          </ul>
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+<div class="container">
+
+  <ol class="breadcrumb">
+    <li><a href="/">Home</a></li>
+      <li><a href="/manual/">Manual</a></li>
+      <li><a href="/manual/views/">Views</a></li>
+      <li class="active">Hierearchy View</li>
+  </ol>
+
+  <div class="page-header">
+    <h1>Hierearchy View</h1>
+  </div>
+
+  <div class="row">
+
+    <div class="content">
+      <div class="col-md-7" role="main">
+        <h2 id="descrtiption">Descrtiption</h2>
+<p>The Hierarchy view shows the VHDL design hierarchy starting at a selected top level object. To choose a top level, open a file and right-click on an architecture (or entity or configuration). Then click <strong>Set as Top Level</strong>. Alternatively you can click the <strong>Set Top</strong> button in the hierarchy view to open a hierarchy top level selection dialog. You can use the filter field to quickly search for a certain top level. </p>
+<h2 id="navigate">Navigate</h2>
+<p>When you double-click an object in the hierarchy, the Editor view is updated accordingly, possibly by displaying the contents of a different file.</p>
+<h2 id="configure">Configure</h2>
+<p>The hierarchy view automatically refreshes itself when you save your design files. If you have a really large design this could slow you down. You can turn the automatic refresh on and off by toggling the <strong>refresh</strong> button <img alt="Refresh" src="/images/icons/refresh.gif" /> .</p>
+<p>Use the <em>instantiations</em> filter <img alt="Instantiation" src="/images/icons/Instantiation.png" /> , to hide everything except instantiations and structural statements are shown.</p>
+<p>You can launch a simulation with the <img alt="Run" src="/images/icons/run_exc.gif" /> button, if you first set up an <a href="/manual/integration.html" title="External Simulator">External Simulator</a>.</p>
+      </div>
+    </div>
+
+    <div class="col-md-3" role="complementary">
+      <nav class="hidden-print hidden-xs hidden-sm">
+        <div class="sidebar" data-spy="affix" data-offset-top="80" data-offset-bottom="60">
+          <div class="well">
+            <a href="#"><strong>Hierearchy View</strong></a>
+            <div class="toc">
+<ul>
+<li><a href="#descrtiption">Descrtiption</a></li>
+<li><a href="#navigate">Navigate</a></li>
+<li><a href="#configure">Configure</a></li>
+</ul>
+</div>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  </div>
+
+
+    <div class="footer">
+        <p>Website powered by <a href="http://urubu.jandecaluwe.com">Urubu</a></p>
+        <p>Brought to you by <a href="http://www.sigasi.com">Sigasi</a></p>
+    </div>
+
+
+</div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
