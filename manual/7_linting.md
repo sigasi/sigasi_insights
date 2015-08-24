@@ -23,7 +23,7 @@ Linting {#linting-linting}
 -------
 
 VHDL code **Lint** is defined as code that is strictly correct according
-to the language definition, but still suspicious or problematic.\
+to the language definition, but still suspicious or problematic.
 Sigasi has a built-in VHDL linter, which provides info about code lint
 in the design. Sigasi’s VHDL linter checks for the following problems:
 
@@ -54,7 +54,7 @@ Creating Custom VHDL Linter Rules {#linting-custom-rules}
 
 At this time, linting rules are not user-configurable. We will be happy
 to work with you on implementing your own custom linting rules and
-coding style rules. \
+coding style rules. 
 Discover more about [customer linting rules](http://www.sigasi.com/custom-linting).
 
 Quickfixes {#linting-quickfix}
@@ -227,7 +227,7 @@ The `library` statement that tries to import a missing library (like
 marker and select **Configure library altera**. If the path tho your
 Altera Quartus (or Xilinx ISE) installation is not yet set, Sigasi will
 ask to set the path now. You can always change these paths in **Window
-\> Preferences \> Sigasi \> Toolchains**.\
+\> Preferences \> Sigasi \> Toolchains**.
 Note that for the Xilinx libraries we only map the packages with the
 component declarations. By default all entity and architecture
 declarations are not mapped (excluded). This significantly reduces the
@@ -249,7 +249,7 @@ synthesis tools do not take the “others” into account if all choices are
 enumerated. If the synthesis tool is set up to generate fault-tolerant
 hardware, the fallback state is the same as the reset state (for most
 synthesis tools). Check the manual of your synthesis tools and run some
-experiments. \
+experiments. 
 For more information, see [this blog
 post](http://www.sigasi.com/content/can-you-do-without-others).
 
@@ -309,7 +309,7 @@ Null range (empty range) (#nullRange)
 
 In VHDL, you can use ranges with `to` and `downto`. But, if you use the
 wrong direction, you get an empty range, which is usually not what you
-want: `7 downto 0` is a range of eight. `7 to 0` is an null range.\
+want: `7 downto 0` is a range of eight. `7 to 0` is an null range.
 We have a lint check that warns about this, even if you use constants
 (or some simple arithmetic).
 

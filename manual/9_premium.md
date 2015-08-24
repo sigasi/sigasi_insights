@@ -75,9 +75,9 @@ generics/parameters in mixed instantiations.
 
 Other supported features:
 
-* **Find references** for entity names, modules, ports, generics and parameters.\
-* **Autocomplete** Verilog module instantiations in VHDL code.\
-* **Error reporting** of incorrect entity names, modules, ports, generics and parameters in instantiations in VHDL code.\
+* **Find references** for entity names, modules, ports, generics and parameters.
+* **Autocomplete** Verilog module instantiations in VHDL code.
+* **Error reporting** of incorrect entity names, modules, ports, generics and parameters in instantiations in VHDL code.
 * VHDL **renames** are refused if they need changes in Verilog code.
 
 <!--
@@ -122,12 +122,35 @@ while before the results appear.
 From the **Net Search** view, you can navigate to the VHDL code by
 double-clicking the search results.
 
+The State Machine Viewer
+========================
+
+The **State Machine Viewer** displays a graphical (bubble diagram) view of all state machines in your current VHDL editor. This viewer automatically updates while you are editing your code and gives a convenient way to visually inspect and navigate your code, even when your code is still unfinished or broken.
+
+![](/images/screenshots/stateMachineViewer.png)
+
+You can open the state machine view by right clicking in the editor and selecting **Show In > State Machines**. Alternatively you can open the view via **Window > View > Other... > VHDL > State Machines**.
+
+If you have more that one state machine in your file, you switch between machines by clicking the tabs. Each tab is named after the signal/variable that represents the state machine's state.
+
+If you have documented your state transitions (i.e. the assignments), the comments will be added as text to the transitions in the view. 
+
+You can also **double-click nodes** or **transitions** to navigate to the corresponding VHDL code.
+
+With the ![](/images/icons/font.png) button, you can toggle the display of edge labels. These labels show the code comments of the transition statements.
+You also have to option to **Zoom In**, **Zoom Out** or **Zoom to Fit**.
+
+You can export the state machine view to an image with the save ![](/images/icons/save.gif) button. Both **SVG** and **PNG** are supported. Choose a the \*.svg filename for SVG export or a \*.png filename for PNG export.
+
+You can watch a screencast at [http://www.sigasi.com/screencast/vhdl-state-machine-diagram](http://www.sigasi.com/screencast/vhdl-state-machine-diagram)
+
 The Block Diagram Viewer
 ========================
 
 The **Block Diagram Viewer** displays a graphical (block diagram) view
 of all architectures and its instantiations in your current VHDL editor.
-This viewer automatically updates while you are editing your code and
+
+This viewer **automatically updates** when you **save** your code and
 gives a convenient way to visually inspect and navigate your code, even
 when your code is still unfinished or broken.
 
@@ -143,7 +166,7 @@ have to **select** it, right click and click **open entity
 declaration**.
 
 You can export the block diagram view to an image with the save
-![](/images/icons/save.gif) button.
+![](/images/icons/save.gif) button. Both **SVG** and **PNG** are supported. Choose a the \*.svg filename for SVG export or a \*.png filename for PNG export.
 
 <div class="messages status">
 <b>Note:</b> If you are using the Sigasi Eclipse plugin, you need to

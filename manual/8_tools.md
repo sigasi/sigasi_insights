@@ -214,13 +214,13 @@ Click **New…** and the builder configuration window will pop up:
 
 ![](/images/screenshots/Makefiles_buildersOverview.png)
 
-You will be asked to select a configuration type:\
+You will be asked to select a configuration type:
 select ![](/images/icons/externalTool.png) **Program**.
 
 Next, configure the builder in a configuration window pop up window:
 
-* **Name**: The name of your builder, e.g. `ModelSim`.\
-* **Location**: The location of the program, e.g. `/usr/bin/make`.\
+* **Name**: The name of your builder, e.g. `ModelSim`.
+* **Location**: The location of the program, e.g. `/usr/bin/make`.
 * **Working Directory**: The working directory for your program. For example, click **Browse Workspace…** and select the root folder of your project.
 * **Arguments**: The arguments to your program, e.g.  `--makefile=Makefile.vsim all`.
 

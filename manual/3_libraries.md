@@ -111,7 +111,7 @@ different library mapping. In most cases, however, the default
 configuration is just what you need.
 
 If you have modified the `Common Libraries` folder, you can always
-revert it back to the original state.\
+revert it back to the original state.
 Right-click on your project in the explorer view and apply menu-entry
 **Reset Library Mapping**.
 

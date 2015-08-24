@@ -1,5 +1,5 @@
 ---
-title: Frequentyl Asked Questions
+title: Sigasi Documentation
 layout: index
 content:
     - manual 

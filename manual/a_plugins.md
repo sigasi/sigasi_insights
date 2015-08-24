@@ -24,7 +24,7 @@ of the most popular revision control systems.
 GIT {#revision-git}
 ---
 
-Recommended plugin: [EGit](http://www.eclipse.org/egit/)\
+Recommended plugin: [EGit](http://www.eclipse.org/egit/)
 This plugin is shipped with the standalone version of Sigasi.
 
 Subversion (SVN) {#revision-svn}
@@ -51,7 +51,7 @@ Local history {#revision-local}
 -------------
 
 While this is not strictly speaking a version control system, Sigasi has
-a built-in feature that keeps a local history of your files. \
+a built-in feature that keeps a local history of your files. 
 [Learn
 more.](http://help.eclipse.org/helios/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2FgettingStarted%2Fqs-55.htm)
 
