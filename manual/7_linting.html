@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Linting and Quickfixes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <!-- Bootstrap -->
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/css/site.css" rel="stylesheet" media="screen">
+    <link href="/css/syntax.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Sigasi Documentation</a>
+        </div>
+        <div class="navbar-collapse collapse">
+
+          <ul class="nav navbar-nav navbar-left">
+            <li class="active"><a href="/manual/">Manual</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/faq/">FAQ</a></li>
+          </ul>
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+<div class="container">
+
+  <ol class="breadcrumb">
+    <li><a href="/">Home</a></li>
+      <li><a href="/manual/">Manual</a></li>
+      <li class="active">Linting and Quickfixes</li>
+  </ol>
+
+  <div class="page-header">
+    <h1>Linting and Quickfixes</h1>
+  </div>
+
+  <div class="row">
+
+    <div class="content">
+      <div class="col-md-7" role="main">
+        <p>In addition to syntax validation, Sigasi also checks your code for
+semantic problems (<strong>Linting</strong>, or <strong>Linter checks</strong>). Some of these
+problems can be automatically resolved with <strong>Quickfixes</strong>. Both syntax
+checking and linting happen at type-time: new markers appear <em>as you are
+typing</em> your code.</p>
+<h3 id="linting-icons">Marker Icons</h3>
+<ul>
+<li><img alt="" src="/images/icons/info.png" /> marks an info message.</li>
+<li><img alt="" src="/images/icons/warning_lightbulb.png" /> marks a warning that can be resolved automatically with a quickfix.</li>
+<li><img alt="" src="/images/icons/warning.png" /> marks a warning that cannot be resolved automatically.</li>
+<li><img alt="" src="/images/icons/error_lightbulb.png" /> marks an error that can be resolved automatically with a quick fix.</li>
+<li><img alt="" src="/images/icons/error.png" /> marks an error that cannot be resolved automatically.</li>
+</ul>
+<h3 id="linting-linting">Linting</h3>
+<p>VHDL code <strong>Lint</strong> is defined as code that is strictly correct according
+to the language definition, but still suspicious or problematic.
+Sigasi has a built-in VHDL linter, which provides info about code lint
+in the design. Sigasi’s VHDL linter checks for the following problems:</p>
+<ul>
+<li>Unused declarations</li>
+<li>Duplicate declarations</li>
+<li>Declaration could not be found</li>
+<li>VHDL 2008 features in VHDL 93 mode (learn about <a href="/manual/configuring#configure-vhdl-version">selecting the VHDL
+    version</a> )</li>
+<li>Assignment validation</li>
+<li>Case statement validation</li>
+<li>Instantiation statement validation</li>
+<li>Library validation</li>
+<li>Range validation</li>
+<li>Deprecated and non-standard packages</li>
+<li>Duplicate, conflicting design unit names</li>
+<li>Missing return statement in function bodies</li>
+<li>Missing, unnecessary and duplicate signals in the sensitivity list</li>
+<li>Port, signal, variable, constant or generic declarations that are
+    never read or written</li>
+</ul>
+<h3 id="linting-common-libraries">No Linting for Common Libraries</h3>
+<p>Common Libraries are considered to be production ready libraries.
+Linting is skipped for all files in the Common Libraries folder.</p>
+<h3 id="linting-custom-rules">Creating Custom VHDL Linter Rules</h3>
+<p>At this time, linting rules are not user-configurable. We will be happy
+to work with you on implementing your own custom linting rules and
+coding style rules. 
+Discover more about <a href="http://www.sigasi.com/custom-linting">customer linting rules</a>.</p>
+<h3 id="linting-quickfix">Quickfixes</h3>
+<p>Some of the VHDL lint problems can be automatically resolved with
+<em>quickfixes</em>. These problems have <em>markers</em> annotated with a lightbulb
+icon (like <img alt="" src="/images/icons/warning_lightbulb.png" />). To trigger
+a quickfix, click the problem marker or press <strong>Ctrl-1</strong> and select the
+quickfix.</p>
+<ul>
+<li>Remove unused declaration</li>
+<li>Declare signals</li>
+<li>Switch to VHDL 2008 mode</li>
+<li>Correct signal/variable assignment operator</li>
+<li>Ignore deprecated libraries</li>
+<li>Configure Altera, Xilinx and ModelSim libraries</li>
+<li>Declare missing enumeration literal in case statements</li>
+<li>Add missing when clause in case statements</li>
+<li>Correct attribute entity class in attribute specifications</li>
+<li>Add missing signals to sensitivity list</li>
+</ul>
+<h3 id="linting-severity-level">Configuring the Severity Level</h3>
+<p>The Sigasi VHDL linter has reasonable defaults for the severity level of
+reported lint problems. However, the severity level of certain classes
+of lint is configurable for additional flexibility. The configuration
+interface is available in <strong>Window > Preferences > VHDL >
+Errors/Warnings</strong>.</p>
+<p><img alt="Configuring the severity of Sigasi linting checks" src="/images/screenshots/ProblemSeverityPreferencePage.png" title="Configuring the severity of Sigasi linting checks" /></p>
+<h2 id="list-of-vhdl-code-rules">List of VHDL code rules</h2>
+<p>This is the list of VHDL coding rules that can be checked automatically
+by Sigasi.</p>
+<h3 id="basic-vhdl-coding-rules">Basic VHDL coding rules</h3>
+<p>(available for Sigasi Pro, Sigasi Premium Desktop, Sigasi Premium Doc)</p>
+<ul>
+<li>NULL_RANGE_ERROR <a href="#null-range">link</a></li>
+<li>DEPRECATED_PACKAGE <a href="#deprecated-ieee-packages-non-standard-packages">link</a>
+    <!--* REDUNDANT_CHOICES --></li>
+<li>
+<p>REDUNDANT_OTHERS <a href="#redundant-others">link</a></p>
+</li>
+<li>
+<p>Subprograms in packages (e.g. function body in a package, rather than in the package body)</p>
+</li>
+<li>Infinite loops in simulations:<ul>
+<li>INFINTE_LOOP_STATEMENT</li>
+<li>PROCESS_WITHOUT_SENSITIVITY_AND_WAIT</li>
+</ul>
+</li>
+<li>NUMERIC_LITERAL_WHITESPACE_BEFORE_UNIT <a href="#space-physical-unit">link</a></li>
+<li>SUPERFLUOUS_LIBRARY <a href="#/manual/superfluous-library-clause">link</a>
+    <!-- * MISSING_LIBRARY --></li>
+<li>UNUSED_DECLARATION: PORT, GENERIC, SIGNAL, ...  <a href="#dead-code-lint">link</a>
+    <!--* BITSTRING_STD_LOGIC: invalid characters in bit string--></li>
+<li>SENSITIVITY_LIST <a href="#sensitivity-list">link</a></li>
+</ul>
+<h3 id="premium-vhdl-coding-rules">Premium VHDL coding rules</h3>
+<p>(available for Sigasi Premium Desktop, Sigasi Premium Doc)</p>
+<ul>
+<li>FSM_DEAD_STATE</li>
+<li>DEAD_CODE (unreachable statements) <a href="#dead-code">link</a></li>
+<li>NEVER_WRITTEN / NEVER_READs</li>
+<li>NAMING_CONVENTIONS</li>
+<li>INCOMPLETE_ASSOCIATIVE_OPTIONAL <a href="#incomplete-port-maps-and-generic-maps">link</a></li>
+<li>POSITIONAL_ASSOCIATION_IN_INSTANTIATIONS <a href="#posititional-association-in-instantiations">link</a></li>
+</ul>
+<h3 id="custom-vhdl-coding-rules">Custom VHDL coding rules</h3>
+<p>If your company has a set of coding rule and you need tool support, we
+can implement your coding rules at minimal cost. <a href="/vhdl-lint">Read more</a>
+and contact us to discuss your requirements.</p>
+<h2 id="dead-code-lint">Dead Code lint</h2>
+<p>Dead code is code that is does have any effect in your simulation or
+synthesis. Examples of dead code are signals that are never used, or
+conditions that are never triggered.</p>
+<p>Dead code does not bother the simulator nor the synthesis tool. However,
+it consumes mental energy of anybody reading the code. People will try
+to figure the puropose of a given statement and it may take a while
+before they realize that they are dealing with dead code. This makes it
+more expensive to review code and to reuse code. In general, dead code
+is a form of technological debt that should be avoided.</p>
+<p>Sigasi Pro flags some kinds of dead code:</p>
+<ul>
+<li>unused or unnecessary library and use clauses,</li>
+<li>unused declarations (signals, constants, …)</li>
+<li>unused ports</li>
+<li>unreachable statements</li>
+</ul>
+<p>For unused declarations, there is also a quickfix to help you remove
+unused declarations fast.</p>
+<h2 id="deprecated-ieee-packages-non-standard-packages">Deprecated IEEE packages, non-standard packages</h2>
+<p>Some packages are widely spread, but were never standardized by IEEE.
+Different vendors have shipped different versions, with incompatible
+implementation. These packages should not be used and are flagged as
+<strong>Deprecated IEEE packages</strong>.</p>
+<ul>
+<li><code>ieee.std_logic_arith</code></li>
+<li><code>ieee.std_logic_signed</code></li>
+<li><code>ieee.std_logic_unsigned</code></li>
+</ul>
+<p>Instead, use the standard <code>ieee.numeric_std</code> package.</p>
+<p>The package:</p>
+<ul>
+<li><code>ieee.std_logic_misc</code></li>
+</ul>
+<p>has the same problem of not being standardized by IEEE. Contrary to the
+packages above, there is no consensus on how to replace this package.
+Sigasi flags this package as <strong>Non-standard package</strong>.</p>
+<p>Read more in <a href="/content/deprecated-ieee-libraries">this blog post</a>.</p>
+<h2 id="incomplete-port-maps-and-generic-maps">Incomplete port maps and generic maps</h2>
+<p>Available since Sigasi 2.25</p>
+<p>Sigasi warns about port maps and generic maps that are not complete:</p>
+<p><strong>Port map is using default values. Missing optional actuals: yourport</strong></p>
+<p>Input ports and generics need to be be assigned in your instantiation
+statement, if they don’t already have a default value. If you don’t do
+this, you are writing illegal VHDL. Sigasi will mark an error, and so
+will all other tools.</p>
+<p>Input ports and generics with a default value, as well as output ports
+do not need to be assigned explicitly. However, this is often not
+intended. For that reason, Sigasi can warn you about this.</p>
+<p><img alt="" src="/images/screenshots/warn-incomplete-map.png" /></p>
+<h2 id="posititional-association-in-instantiations">Posititional association in Instantiations</h2>
+<p>Available since Sigasi 2.30</p>
+<p>Most VHDL designers prefer named associations in port and generic maps in instantiations. This makes it a lot easier to spot wrong connections.
+By default Sigasi warns when position associations are use. You can change the severity of this check via <strong>Preferences &gt; Sigasi &gt; VHDL &gt; Errors/Warnings</strong> in the *<em>Instantiation statement valiadation</em> section.</p>
+<h2 id="quickfix-for-third-party-libraries">Quickfix for third party libraries</h2>
+<p>If you are using vendor libraries from Altera or Xilinx (ISE or Vivado),
+you do not need to set up these libraries by hand. Sigasi has a QuickFix
+to do this for you.</p>
+<p><img alt="" src="/images/screenshots/alteraQuickFix.png" /></p>
+<p>The <code>library</code> statement that tries to import a missing library (like
+<code>altera</code>) will be have a yellow warning marker next to it. Click this
+marker and select <strong>Configure library altera</strong>. If the path tho your
+Altera Quartus (or Xilinx ISE) installation is not yet set, Sigasi will
+ask to set the path now. You can always change these paths in <strong>Window
+> Preferences > Sigasi > Toolchains</strong>.
+Note that for the Xilinx libraries we only map the packages with the
+component declarations. By default all entity and architecture
+declarations are not mapped (excluded). This significantly reduces the
+time for a clean build. If you use direct entity instantiations, you can
+easily map the entities you need.</p>
+<h2 id="redundant-others">Redundant “others”</h2>
+<p>If a case statement contains all the possible choices (usually in an
+enumerated datatype), you can safely remove the “when others” clause.
+Sigasi warns about this:</p>
+<p><strong>Case statement contains all choices explicitly. You can safely remove
+the redundant “others”.</strong></p>
+<p>There is some debate on this coding rule. However, the vast majority of
+synthesis tools do not take the “others” into account if all choices are
+enumerated. If the synthesis tool is set up to generate fault-tolerant
+hardware, the fallback state is the same as the reset state (for most
+synthesis tools). Check the manual of your synthesis tools and run some
+experiments. 
+For more information, see <a href="http://www.sigasi.com/content/can-you-do-without-others">this blog
+post</a>.</p>
+<h2 id="sensitivity-list">Sensitivity list</h2>
+<p>VHDL requires a sensitivity list for each process (or wait statements in
+the project).</p>
+<p>Since VHDL-2008, you can write <code>process (all)</code> to make sure you have all
+signals in the sensitivity list. In all earlier versions, incomplete
+sensitivity lists can cause unexpected behavior. That is: your
+simulation results may be different from your synthesis results. Most
+synthesis tools ignore your sensitivity list. In traditional workflows,
+only the synthesis warnings will give you a hint that your sensitivity
+list is incomplete. This report will be available only hours or even
+days after you have finished typing your code. Flagging this problem
+earlier saves time and lets you catch the problem early.</p>
+<p>Sigasi can warn about problems with your sensitivity list:</p>
+<ul>
+<li><strong>Incomplete sensitivity list</strong> (there is quickfix for this)</li>
+<li><strong>Superfluous signals in sensitivity list</strong></li>
+<li><strong>Duplicate signals in sensitivity list</strong></li>
+</ul>
+<h2 id="superfluous-library-clause">Superfluous library clause</h2>
+<p>The VHDL language reference manual states that:</p>
+<p><em>
+Every design unit except package STANDARD is assumed to contain the
+following implicit context items as part of its context clause:
+<code>
+library STD, WORK ; use STD.STANDARD.all ;
+</code>
+</em></p>
+<p>Hence, any extra library statement that includes <code>STD</code> or <code>WORK</code> is
+pointless, as is any use clause that includes <code>std.standard.all</code>. Hardly
+anybody would type the use clause, but quite some people start all of
+their files with two extra library clauses. Sigasi flags this as
+warning.</p>
+<p><img alt="" src="/images/screenshots/warn-superfluous-library.png" /></p>
+<h2 id="dead-code-unreachable-code">Dead code (unreachable code)</h2>
+<p>If the Sigasi analyser can determine that a condition is always false,
+it will mark the if-statement because it contains dead code.</p>
+<p><img alt="" src="/images/screenshots/unreachable_code.png" /></p>
+<h2 id="null-range-empty-range-nullrange">Null range (empty range) (#nullRange)</h2>
+<p>In VHDL, you can use ranges with <code>to</code> and <code>downto</code>. But, if you use the
+wrong direction, you get an empty range, which is usually not what you
+want: <code>7 downto 0</code> is a range of eight. <code>7 to 0</code> is an null range.
+We have a lint check that warns about this, even if you use constants
+(or some simple arithmetic).</p>
+<p><img alt="" src="/images/screenshots/NullRange.png" /></p>
+<h2 id="space-before-the-physical-unit">Space before the physical unit</h2>
+<p>If you type a numeric literal with a physical unit, there should be a
+space between the number and the unit.</p>
+<p><code>
+T := 25ns; — ILLEGAL, but accepted by ModelSim
+T := 25 ns; — OK; according to VHDL language standard
+</code></p>
+<p>Mentor Graphics’ ModelSim and QuestaSim accept the former (illegal)
+version. As a result, some VHDL designers got used to writing the
+incorrect version, producing code that is not portable to other
+simulators. Sigasi accepts the ModelSim-style physical literals, but
+warns about this.</p>
+      </div>
+    </div>
+
+    <div class="col-md-3" role="complementary">
+      <nav class="hidden-print hidden-xs hidden-sm">
+        <div class="sidebar" data-spy="affix" data-offset-top="80" data-offset-bottom="60">
+          <div class="well">
+            <a href="#"><strong>Linting and Quickfixes</strong></a>
+            <div class="toc">
+<ul>
+<li><a href="#linting-icons">Marker Icons</a></li>
+<li><a href="#linting-linting">Linting</a></li>
+<li><a href="#linting-common-libraries">No Linting for Common Libraries</a></li>
+<li><a href="#linting-custom-rules">Creating Custom VHDL Linter Rules</a></li>
+<li><a href="#linting-quickfix">Quickfixes</a></li>
+<li><a href="#linting-severity-level">Configuring the Severity Level</a></li>
+<li><a href="#list-of-vhdl-code-rules">List of VHDL code rules</a><ul>
+<li><a href="#basic-vhdl-coding-rules">Basic VHDL coding rules</a></li>
+<li><a href="#premium-vhdl-coding-rules">Premium VHDL coding rules</a></li>
+<li><a href="#custom-vhdl-coding-rules">Custom VHDL coding rules</a></li>
+</ul>
+</li>
+<li><a href="#dead-code-lint">Dead Code lint</a></li>
+<li><a href="#deprecated-ieee-packages-non-standard-packages">Deprecated IEEE packages, non-standard packages</a></li>
+<li><a href="#incomplete-port-maps-and-generic-maps">Incomplete port maps and generic maps</a></li>
+<li><a href="#posititional-association-in-instantiations">Posititional association in Instantiations</a></li>
+<li><a href="#quickfix-for-third-party-libraries">Quickfix for third party libraries</a></li>
+<li><a href="#redundant-others">Redundant “others”</a></li>
+<li><a href="#sensitivity-list">Sensitivity list</a></li>
+<li><a href="#superfluous-library-clause">Superfluous library clause</a></li>
+<li><a href="#dead-code-unreachable-code">Dead code (unreachable code)</a></li>
+<li><a href="#null-range-empty-range-nullrange">Null range (empty range) (#nullRange)</a></li>
+<li><a href="#space-before-the-physical-unit">Space before the physical unit</a></li>
+</ul>
+</div>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  </div>
+
+  <ul class="pager">
+  </ul>
+
+    <div class="footer">
+        <p>Website powered by <a href="http://urubu.jandecaluwe.com">Urubu</a></p>
+        <p>Brought to you by <a href="http://www.sigasi.com">Sigasi</a></p>
+    </div>
+
+
+</div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

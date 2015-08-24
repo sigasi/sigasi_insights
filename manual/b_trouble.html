@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Troubleshooting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <!-- Bootstrap -->
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/css/site.css" rel="stylesheet" media="screen">
+    <link href="/css/syntax.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Sigasi Documentation</a>
+        </div>
+        <div class="navbar-collapse collapse">
+
+          <ul class="nav navbar-nav navbar-left">
+            <li class="active"><a href="/manual/">Manual</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/faq/">FAQ</a></li>
+          </ul>
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+<div class="container">
+
+  <ol class="breadcrumb">
+    <li><a href="/">Home</a></li>
+      <li><a href="/manual/">Manual</a></li>
+      <li class="active">Troubleshooting</li>
+  </ol>
+
+  <div class="page-header">
+    <h1>Troubleshooting</h1>
+  </div>
+
+  <div class="row">
+
+    <div class="content">
+      <div class="col-md-7" role="main">
+        <h3 id="ts-unresponsive">The user interface is unresponsive</h3>
+<p>If the user interface of Sigasi HDT is unresponsive, you can interrupt
+the internal compilation process by pressing the <strong>stop</strong> button in the
+progress view. To activate the progress view, select <strong>Window > Show
+View > Other... > General > Progress</strong>, or click the tiny conveyor belt
+icon ![]/images/icons/progressIcon.png), on the right side of the
+status bar.</p>
+<h3 id="ts-refresh-editor">The editor displays old contents of a file</h3>
+<p>If you edit a file outside of HDT with an external editor, Sigasi will
+normally notice the changes and ask if you want to load the changes. If
+it doesn’t, you can refresh the editor’s content by pressing <strong>F5</strong> or
+by right-clicking a file or a project in the project explorer and
+selecting <strong>Refresh</strong>.</p>
+<h3 id="how-much-local-history-will-be-stored">How much local history will be stored?</h3>
+<p>Sigasi HDT stores the history of your file so that you can compare your
+current version with the version you saved an hour ago.</p>
+<p>You can define how much disk space is used for storing local history in
+<strong>Windows > Preferences</strong>, select <strong>General > Workspace > Local
+History</strong>.</p>
+<p>For more information on local history, check out <a href="http://help.eclipse.org/help32/index.jsp?topic=/org.eclipse.platform.doc.user/gettingStarted/qs-55.htm">this
+page</a>.</p>
+<h3 id="i-see-hundreds-or-thousands-of-errors">I see hundreds or thousands of errors</h3>
+<p>If you see a large number of errors, you either have very, very buggy
+code (not so likely) or your project is not configured correctly.</p>
+<ol>
+<li>Check that all files are mapped to the correct library.</li>
+<li>Check that all <em>stale</em> files are ignored. (<a href="#ts-stale-files">see the section on stale
+    files</a> )</li>
+<li>Check that all third party libraries are included.</li>
+<li>Make sure that automatic build is enabled.</li>
+</ol>
+<h3 id="ts-autobuild">Auto Build is not Enabled</h3>
+<p>Symptoms:</p>
+<ul>
+<li>When you introduce an error in a VHDL or Verilog file and save the
+    file, an error marker shows up in the file, but not in the problems
+    view.</li>
+<li>Navigation (Find References, Open Declaration) behaves strange when
+    it involves more than one file.</li>
+<li>Other features that involve multiple files behave incorrectly:
+    autcomplete, refactoring, ...</li>
+</ul>
+<p>Cause: Project is not built automatically</p>
+<p>Resolution: Enable automatic project builds: <strong>Project > Build
+Automatically</strong></p>
+<h3 id="ts-vhdl-support">Project does not have VHDL support</h3>
+<p>Symptoms:</p>
+<ul>
+<li>VHDL files contain errors, but these errors do not show up in the
+    Problems View.</li>
+<li>Cannot select a top level in the Hierarchy View</li>
+<li>Cannot navigate from a name in one file to its declaration in
+    another file.</li>
+<li>In the Project Explorer, the name of the library (for example:
+    <code>[work]</code>) is not shown next to the filename.</li>
+</ul>
+<p>Cause: The project does not have VHDL support enabled</p>
+<p>Resolution: Enable VHDL support: <strong>right-click the project > Configure
+> Add VHDL support</strong></p>
+<h3 id="ts-missing-library-mapping-informatino">Project does not have a Library Mapping Information</h3>
+<p>Symptoms:</p>
+<ul>
+<li>All VHDL-files in the project are <strong>not mapped</strong></li>
+<li>The Project contains only one error: “This VHDL project can not be
+    built since the library mapping information is missing”</li>
+<li>VHDL files contain errors, but these errors do not show up in the
+    Problems View.</li>
+<li>In the Project Explorer, the name of the library (for example:
+    <code>[work]</code>) is not shown next to the filename.</li>
+</ul>
+<p>Cause: The project does not have a (valid) VHDL library mapping
+information file</p>
+<p>Resolution: Reset the library mapping: <strong>right-click the project >
+Library Mapping > Reset Library Mapping</strong></p>
+<h3 id="ts-commonlib">Project does not have Common Libraries</h3>
+<p>Symptoms:</p>
+<ul>
+<li>Project has many errors, in practically all files. Project build may
+    be slow.</li>
+<li>The standard data types (like <code>integer</code> and <code>std_logic</code>) are not
+    recognized.</li>
+<li>The IEEE and STD libraries are not recognized.</li>
+<li>The IEEE and STD files are either missing or are mapped to the wrong
+    library (for example: <code>[work]</code>).</li>
+</ul>
+<p>Cause: Common libraries are not configured correctly.</p>
+<p>Resolution: Reset the common libraries: <strong>right-click the project >
+Library Mapping > Reset Library Mapping</strong></p>
+<h3 id="ts-stale-files">HDT analyzes HDL files that I do not need</h3>
+<p>By default, Sigasi assumes that all VHDL or Verilog files are part of
+the project. However, some projects may contain multiple files with
+older or alternative definitions of a VHDL object. We call these <em>stale</em>
+files, because they are no longer used. In such a case you will want HDT
+to ignore certain files.</p>
+<p>To exclude files (or directories) from analysis, consult the <a href="/manual/libraries#libraries">Libraries
+section</a>.</p>
+<p>Ignored resources are decorated with a
+![]/images/icons/ignoreIcon.png) icon in the project explorer
+view.</p>
+<h3 id="ts-updates">I do not get automatic updates</h3>
+<p>If the updates are not automatically fetched from the Sigasi update
+server you are probably behind a firewall or proxy server. You can
+configure HDT’s proxy settings in <strong>Window > Preferences > General >
+Network connections</strong>. If you can not add a firewall exception for our
+update site, the fall back solution is to download the complete
+application from our website. You can completely replace your old
+installation; all settings are stored in your workspace (the default is
+<code>workspaceSigasi</code> in your home directory).</p>
+<h3 id="ts-clean">I want a clean restart</h3>
+<p>If you ever suspect that the state of your project is inconsistent in
+Sigasi, you can do one or all of the following things. Consider these
+steps to be advanced usage; you should not need them during normal
+operation.</p>
+<h4 id="force-a-clean-compilation">Force a clean compilation</h4>
+<p>You can force a completely clean compilation by selecting: <strong>Project >
+Clean … > Clean All Projects > OK</strong>.</p>
+<h4 id="remove-stale-markers">Remove stale markers</h4>
+<p>Sometimes markers remain visible, even after the problem is fixed or
+when a file is excluded from compilation. We call these <em>stale markers</em>
+and they are can be caused by a crash during compilation.</p>
+<p>You can delete these stale markers from the Problems View: In the
+Problems View, select the markers and press <strong>DEL</strong> (or right-click and
+select <strong>Delete</strong>).</p>
+<p>Note that during the next build, the tool may generate new markers. If
+you want to suppress certain warnings, you can <a href="/manual/configuring#configure-linting">configure the linting
+rules</a>.</p>
+<h4 id="remove-the-workspace-state">Remove the workspace state</h4>
+<p>Much of your configuration and cached data is stored in your workspace.
+By default, Sigasi’s workspace is located in <code>${HOME}/workspaceSigasi</code>.
+A lot of this data is stored in the hidden <code>.metadata</code> directory.
+Sometimes, a part of your metadata can become corrupt. It can help to
+remove the <code>.metadata</code> directory (take a backup first!). This clears all
+of your workspace state.</p>
+<ul>
+<li>You will need to enter your license code again.</li>
+<li>You will need to import your projects again. <strong>Import > General >
+    Existing Projects into Workspace</strong></li>
+</ul>
+<h3 id="contact-support">Contact support</h3>
+<p>If this troubleshooting guide did not solve your problem, please contact
+support.</p>
+<ul>
+<li>Ask a question on the <a href="/contact-support">web support forum</a>.</li>
+<li>For customers with premium support: <a href="mailto:support@sigasi.com">send us an
+    email</a>.</li>
+</ul>
+<p>Any of the following information will help us help you:</p>
+<ul>
+<li>Steps to reproduce your problem</li>
+<li>Description of the expected behavior and the actual behavior.</li>
+<li>A <a href="http://www.sigasi.com/vetsmod">VETSMOD</a> code snippet.</li>
+<li>A screenshot</li>
+<li>The version number of your Sigasi tool: <strong>Help > About Sigasi >
+    Installation details</strong> Note that the version number contains the
+    date of the release. (For example, version 2.0.1.20110809… was
+    released on August 9, 2011.)</li>
+<li>The log file: <strong>Help > Open Log</strong></li>
+</ul>
+      </div>
+    </div>
+
+    <div class="col-md-3" role="complementary">
+      <nav class="hidden-print hidden-xs hidden-sm">
+        <div class="sidebar" data-spy="affix" data-offset-top="80" data-offset-bottom="60">
+          <div class="well">
+            <a href="#"><strong>Troubleshooting</strong></a>
+            <div class="toc">
+<ul>
+<li><a href="#ts-unresponsive">The user interface is unresponsive</a></li>
+<li><a href="#ts-refresh-editor">The editor displays old contents of a file</a></li>
+<li><a href="#how-much-local-history-will-be-stored">How much local history will be stored?</a></li>
+<li><a href="#i-see-hundreds-or-thousands-of-errors">I see hundreds or thousands of errors</a></li>
+<li><a href="#ts-autobuild">Auto Build is not Enabled</a></li>
+<li><a href="#ts-vhdl-support">Project does not have VHDL support</a></li>
+<li><a href="#ts-missing-library-mapping-informatino">Project does not have a Library Mapping Information</a></li>
+<li><a href="#ts-commonlib">Project does not have Common Libraries</a></li>
+<li><a href="#ts-stale-files">HDT analyzes HDL files that I do not need</a></li>
+<li><a href="#ts-updates">I do not get automatic updates</a></li>
+<li><a href="#ts-clean">I want a clean restart</a><ul>
+<li><a href="#force-a-clean-compilation">Force a clean compilation</a></li>
+<li><a href="#remove-stale-markers">Remove stale markers</a></li>
+<li><a href="#remove-the-workspace-state">Remove the workspace state</a></li>
+</ul>
+</li>
+<li><a href="#contact-support">Contact support</a></li>
+</ul>
+</div>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  </div>
+
+  <ul class="pager">
+  </ul>
+
+    <div class="footer">
+        <p>Website powered by <a href="http://urubu.jandecaluwe.com">Urubu</a></p>
+        <p>Brought to you by <a href="http://www.sigasi.com">Sigasi</a></p>
+    </div>
+
+
+</div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
