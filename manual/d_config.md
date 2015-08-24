@@ -8,8 +8,7 @@ Choosing your VHDL version {#configure-vhdl-version}
 --------------------------
 
 Sigasi supports VHDL 1993, 2002 and 2008. You can select which VHDL
-version to use in:\
-**Window \> Preferences \> Sigasi \> VHDL \> VHDL version**.
+version to use in: **Window \> Preferences \> Sigasi \> VHDL \> VHDL version**.
 
 If you want to write VHDL 87 code, you should select the “1993” option.
 However, the tool will not warn about constructs that were not supported
@@ -33,12 +32,12 @@ How can I change the font size?
 -------------------------------
 
 Sometimes you want extra small fonts, so that you can fit more content
-on your screen. Another time you\
+on your screen. Another time you
 may want extra large fonts, so that you can use a beamer and your
 audience can see what you are doing.
 
 Most fonts, including the font that is used by the editors, can be
-controlled in the preferences:\
+controlled in the preferences:
 **Window \> Preferences**. Fonts are controlled in **General \>
 Appearance \>Colors and Fonts**. The font of the editors are in **Basic
 \> Text font**.
@@ -63,13 +62,13 @@ right of your text editor, in the scroll bar. The image below shows
 annotations for each occurrence of a certain data type. The color has
 been changed to bright green.
 
-> ![Annotations in Bright Green](/images/screenshots/annotations-in-green.png "Annotations in Bright Green")\
+> ![Annotations in Bright Green](/images/screenshots/annotations-in-green.png "Annotations in Bright Green")
 > Annotations, Displayed in Bright Green
 
 You can change the color of annotations in **Window \> Preferences \>
 General \> Editors \> Text Editors \> Annotations**. For the particular
 case of *occurrence* annotations, you want to modify the color for
-annotation type **Occurrences**. \
+annotation type **Occurrences**. 
 If more than one **Occurrences** type is displayed, you need the
 `org.eclipse.xtext.ui.editor.defaultOccurrenceAnnotation`. The others
 may refer to occurrences for Java or other plug-ins.
@@ -106,7 +105,7 @@ Linting rules {#configure-linting}
 -------------
 
 You can choose the severity of linting rules in: **Window \> Preferences
-\> Sigasi \> VHDL \> Errors/Warnings**.\
+\> Sigasi \> VHDL \> Errors/Warnings**.
 Read more information about [linting](linting#linting).
 
 \<!--h3. Quick Diff --\>
@@ -127,12 +126,12 @@ Keyboard shortcuts
 
 You can configure keyboard shortcuts (key bindings) in **Window \>
 Preferences \> General \> Keys**. You can modify individual keyboard
-shortcuts or add new key bindings.\
+shortcuts or add new key bindings.
 There is also a preconfigured scheme for Emacs-like keyboard shortcuts.
 
 After you have configured your keyboard shortcuts, you can export your
 settings and share them with your colleagues (or re-import them on
-another computer):\
+another computer):
 To export, go to **File \> Export… \> General \> Preferences**, and
 select **Key Preferences**. To import that file: **File \> Import… \>
 General \> Preferences**.

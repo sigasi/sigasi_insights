@@ -75,9 +75,9 @@ generics/parameters in mixed instantiations.
 
 Other supported features:
 
-* **Find references** for entity names, modules, ports, generics and parameters.\
-* **Autocomplete** Verilog module instantiations in VHDL code.\
-* **Error reporting** of incorrect entity names, modules, ports, generics and parameters in instantiations in VHDL code.\
+* **Find references** for entity names, modules, ports, generics and parameters.
+* **Autocomplete** Verilog module instantiations in VHDL code.
+* **Error reporting** of incorrect entity names, modules, ports, generics and parameters in instantiations in VHDL code.
 * VHDL **renames** are refused if they need changes in Verilog code.
 
 <!--

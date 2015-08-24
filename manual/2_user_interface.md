@@ -132,7 +132,7 @@ declarations and statements, including:
 -   package/package body pair
 -   and much more
 
-After the autcompletion, the editor will be into templating editing
+After the autocompletion, the editor will be into templating editing
 mode. You can also configure your own templates.
 
 ### Based on the design context
@@ -146,9 +146,10 @@ an autocompletion, it will suggest the appropriate identifiers as
 autocompletion candidates.
 
 The tool provides help to autocomplete:
--  component declarations\
--  component instantiations\
--  entity instantiations\
+
+-  component declarations
+-  component instantiations
+-  entity instantiations
 -  case statements (based on variables/signals with an enumeration type)
 
 ### Instantiating an entity
@@ -398,7 +399,7 @@ Problems view
 
 The Problems view shows problems (errors and warnings) related to your
 code. These problems were reported either by the internal compiler or by
-an external compiler tool. \
+an external compiler tool. 
 You can navigate to the source of the problem by double clicking on a
 given problem. Problems can be sorted by clicking the column headers.
 The content of this view can be customized via the **View Menu**
