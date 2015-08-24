@@ -65,26 +65,23 @@
         <p>Sigasi supports a number of ways to work with external tools such as
 simulators. Different techniques offer varying degrees of flexibility
 and automation.</p>
-<p>Most people will want to <a href="/manual/external-compiler-integration">set up their
-simulator</a> so that Sigasi can use
-it to compile and start simulations. This is currently supported only
+<p>Most people will want to set up their <a href="/manual/8_tools.html#external-compilers" title="Tool Integration">External Compilers</a> 
+so that Sigasi can use
+them to compile and start simulations. This is currently supported only
 for <code>vcom</code>-style simulators, Aldec Riviera-PRO and Mentor Graphics
-ModelSim and QuestaSim; and <code>isim</code> from Xilinx. <a href="/manual/external-compiler-integration">Learn
-more</a></p>
+ModelSim and QuestaSim; and <code>isim</code> from Xilinx. Learn about <a href="/manual/8_tools.html#external-compilers" title="Tool Integration">External Compilers</a>.</p>
 <p>Another way to compile your project is to export your project in one of
 two formats. The first format is a Makefile for compiling your project
 with ModelSim. The second format is a CSV (comma separated values) list
 of all the files in your project, in the correct compilation order.
-<a href="/manual/export-makefile">Learn more</a></p>
+Learn more about how to <a href="/manual/8_tools.html#export" title="Tool Integration">Export</a> your project's file list.</p>
 <p>The third, and more advanced way of working with compilers or simulators
 is to use the standard Eclipse mechanisms of <em>builders</em> and <em>external
 tools</em>. </p>
-<p>With
-<a href="/manual/external-tools-configuration#integration-builder">builders</a>,
+<p>By <a href="/manual/8_tools.html#creating-a-builder" title="Tool Integration">Creating a builder</a>,
 you can arrange for an external tool to be run automatically when a
 Sigasi project is rebuilt. By default, this happens each time you save a
-file. <a href="/manual/external-compiler-integration#integration-external">External tool
-configurations</a>
+file. <a href="/manual/8_tools.html#external-tools-configuration" title="Tool Integration">External Tools Configuration</a>
 allow you to call any program or script from within the Sigasi GUI. You
 have to write and maintain the scripts yourself, but you have complete
 flexibility as to what is in the scripts.</p>
@@ -92,18 +89,18 @@ flexibility as to what is in the scripts.</p>
 <p>If you have a simulator or lint tool installed, you can use this for two
 purposes:</p>
 <ol>
-<li><a href="/manual/save-time-compilation">Save-time compilation</a>: Compile and
+<li><a href="/manual/8_tools.html#save-time-compilation" title="Tool Integration">Save Time Compilation</a>: Compile and
     check your files each time you save. Any errors or warnings will
     show up in the file, on the line number of the problrem</li>
-<li><a href="/manual/launch-simulator">Launching the simulator</a>: Start the
+<li><a href="/manual/8_tools.html#launch-simulator" title="Tool Integration">Launch Simulator</a>: Start the
     simulator in its own window, ready to run a simulation.</li>
 </ol>
-<p>Learn <a href="/manual/list-toolchains">which externals compilers are supported</a>
-and how to <a href="/manual/configure-external-compiler">set up your simulator</a>.</p>
+<p>Learn about <a href="#list-of-toolchains">which external compilers are supported</a>
+and how to <a href="/manual/8_tools.html#configure-external-compiler" title="Tool Integration">Configure external compiler</a>.</p>
 <h2 id="launch-simulator">Launch simulator</h2>
 <p>If an external compiler is enabled, you can also start a simulation from
 Sigasi. You can start a simulation by first selecting your <em>top level</em>
-in the <a href="/manual/hierarchy-view">hierarchy view</a> . Next click the
+in the <a href="/manual/2_user_interface.html#hierarchy-view" title="User Interface">Hierarchy View</a> . Next click the
 <strong>Simulate</strong> button <img alt="" src="/images/icons/run_exc.gif" /> in the hierarchy
 view to launch the simulator gui with an elaborated design ready for
 simulation. Sigasi opens a new console for each simulation launch. You
@@ -131,10 +128,10 @@ compiler include simulators and lint tools, but in the future it could
 also include synthesis tools.</p>
 <p>For each toolchain Sigasi can support any combination of the following:</p>
 <ul>
-<li><a href="/manual/save-time-compilation">Save-time compilation</a></li>
-<li><a href="/manual/launch-simulator">Launching a simulator</a></li>
-<li><a href="/manual/quickfix-third-party-libraries">Importing third-party libraries</a></li>
-<li><a href="/manual/altera-quartus-ii-integration">Importing a project</a></li>
+<li><a href="/manual/8_tools.html#save-time-compilation" title="Tool Integration">Save-time compilation</a></li>
+<li><a href="/manual/8_tools.html#launch-simulator" title="Tool Integration">Launch Simulator</a></li>
+<li><a href="/manual/7_linting.html#quickfix-for-third-party-libraries" title="Linting and Quickfixes">Quickfix for third party libraries</a></li>
+<li><a href="/manual/8_tools.html#open-a-quartus-ii-project-in-sigasi" title="Tool Integration">Open a Quartus II Project in Sigasi</a></li>
 </ul>
 <p>Currently the following external compilers are supported:</p>
 <table class="table">
@@ -301,7 +298,7 @@ run <code>make clean</code> on a Linux machine.</p>
 menu on the <img alt="" src="/images/icons/externalTool.png" />-icon. You can rerun the
 last configuration by simply clicking
 <img alt="" src="/images/icons/externalTool.png" />.</p>
-<h3 id="creating-a-builder">Creating a builder</h3>
+<h3 id="creating-a-builder">Creating a Builder</h3>
 <p>An external tool configuration as described in the previous section
 makes it easy to run an external tool, but you still have to do so
 explicitly. For some programs, such as the <code>make</code> utility, it makes
@@ -348,13 +345,11 @@ perform project-wide searches and navigation actions in Sigasi.
 Furthermore, if you add or remove files in the Quartus II project, these
 changes are automatically applied in Sigasi Pro.</p>
 <p>*Note:_ If you want to set up a project independent of Altera Quartus
-II, please read the documentation on <a href="/manual/project-setup">how to set up a project in
-Sigasi</a>.</p>
-<h3 id="quartus-setting-editor">Setting the preferred editor</h3>
-<p>To open a Quartus Project in Sigasi, you first have to <a href="/manual/opening-files#files-quartus">configure Sigasi
-Pro as preferred editor in Quartus
-II</a>.</p>
-<h3 id="quartus-import">Open a Quartus II Project in Sigasi</h3>
+II, please read the documentation on <a href="/manual/1_projectsetup.html" title="Setting Up a Project">Setting Up a Project</a>.</p>
+<h3 id="setting-the-preferred-editor">Setting the preferred editor</h3>
+<p>To open a Quartus Project in Sigasi, you first have to configure Sigasi
+Pro as preferred editor in <a href="/manual/6_opening.html#altera-quartus-ii" title="Opening Files">Altera Quartus II</a>.</p>
+<h3 id="open-a-quartus-ii-project-in-sigasi">Open a Quartus II Project in Sigasi</h3>
 <p>After you have configured Sigasi Pro to be the preferred editor in
 Quartus II, you can open files by double clicking on them in Quartus II.</p>
 <p>Sigasi Pro will import entire Quartus II project and your file will open
@@ -380,8 +375,8 @@ VHDL file* wizard of Sigasi (</strong>File > New > VHDL File**).</p>
 files to your project. In order to update the files list, you should run
 a workflow action in Quartus II, like starting a compilation.</p>
 <h2 id="export">Export</h2>
-<p>You can export a list of all VhDL files in your project, sorted in the
-correct compilation order/
+<p>You can export a list of all VHDL files in your project, sorted in the
+correct compilation order.
 You can use your own simple scripts to manipulate such list and run any
 EDA tool, including simulators, synthesis and linter tools.</p>
 <p>To export a comma separated value (CSV) list of files in your project,
@@ -413,12 +408,12 @@ work, testbench.vhd
 </ul>
 </li>
 <li><a href="#external-tools-configuration">External Tools Configuration</a><ul>
-<li><a href="#creating-a-builder">Creating a builder</a></li>
+<li><a href="#creating-a-builder">Creating a Builder</a></li>
 </ul>
 </li>
 <li><a href="#altera-quartus-ii-integration">Altera Quartus II integration</a><ul>
-<li><a href="#quartus-setting-editor">Setting the preferred editor</a></li>
-<li><a href="#quartus-import">Open a Quartus II Project in Sigasi</a></li>
+<li><a href="#setting-the-preferred-editor">Setting the preferred editor</a></li>
+<li><a href="#open-a-quartus-ii-project-in-sigasi">Open a Quartus II Project in Sigasi</a></li>
 <li><a href="#quartus-ii-preferences">Quartus II Preferences</a></li>
 <li><a href="#add-files-to-your-quartus-ii-project-in-sigasi">Add files to your Quartus II project in Sigasi</a></li>
 </ul>
