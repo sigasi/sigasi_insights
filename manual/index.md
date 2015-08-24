@@ -2,19 +2,19 @@
 title: Manual
 layout: index
 content:
-   - 0_Setup
-   - 1_Projectsetup
-   - 2_User_interface
-   - 3_Libraries
-   - 4_Editor
-   - 5_Verilog
-   - 6_Opening
-   - 7_Linting
-   - 8_Tools
-   - 9_Premium
-   - A_Plugins
-   - B_Trouble
-   - C_Key
-   - D_Config
+   - 0_setup
+   - 1_projectsetup
+   - 2_user_interface
+   - 3_libraries
+   - 4_editor
+   - 5_verilog
+   - 6_opening
+   - 7_linting
+   - 8_tools
+   - 9_premium
+   - a_plugins
+   - b_trouble
+   - c_key
+   - d_config
 ---
 

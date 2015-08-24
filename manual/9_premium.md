@@ -14,8 +14,8 @@ Aldec ALINT integration
 =======================
 
 If you have a Sigasi Premium license you can configure Sigasi to use
-Aldec ALINT as [external
-compiler](/manual/external-compiler-integration#integration-vcom-setup).
+Aldec ALINT as [external compiler](/manual/8_tools#external-tools-configuration)
+.
 Each time you save a VHDL file, ALINT will perform the compile-time lint
 checks.
 

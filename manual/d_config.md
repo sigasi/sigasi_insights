@@ -29,8 +29,8 @@ You can configure the code coloring by selecting **Window \> Preferences
 syntactic elements, you can select the font, letter color, background
 color, style (bold, italic, underline, strike through).
 
-How can I change the font size?
--------------------------------
+Font size
+---------
 
 Sometimes you want extra small fonts, so that you can fit more content
 on your screen. Another time you\
@@ -63,7 +63,8 @@ right of your text editor, in the scroll bar. The image below shows
 annotations for each occurrence of a certain data type. The color has
 been changed to bright green.
 
-> ![Annotations in Bright Green](/images/screenshots/annotations-in-green.png "Annotations in Bright Green")\
+> ![Annotations in Bright Green](/images/screenshots/annotations-in-green.png "Annotations in Bright Green")
+>
 > Annotations, Displayed in Bright Green
 
 You can change the color of annotations in **Window \> Preferences \>
@@ -109,12 +110,6 @@ You can choose the severity of linting rules in: **Window \> Preferences
 \> Sigasi \> VHDL \> Errors/Warnings**.\
 Read more information about [linting](linting#linting).
 
-\<!--h3. Quick Diff --\>
-
-\<!--h3. Folding--\>
-
-\<!--h2. Finding more options--\>
-
 Language
 --------
 
@@ -136,3 +131,15 @@ another computer):\
 To export, go to **File \> Export… \> General \> Preferences**, and
 select **Key Preferences**. To import that file: **File \> Import… \>
 General \> Preferences**.
+
+Quick Diff
+-----------
+[/todo]
+
+Folding
+-------
+[/todo]
+
+Finding more options
+--------------------
+[/todo]

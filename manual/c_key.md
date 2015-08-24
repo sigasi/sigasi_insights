@@ -1,5 +1,5 @@
 ---
-title: Keyboard shortcuts
+title: Keyboard Shortcuts
 layout: page 
 pager: true
 ---

@@ -209,8 +209,7 @@ Semantic highlighting means that code gets colored according to their
 *signal*.
 
 Code highlighting is fully configurable. **Color**, **background**,
-**style** and **font** can be customized. Learn more about how to
-[configure code highlighting](/manual/configuring#configure-colors)
+**style** and **font** can be customized. Learn more about configuring [/manual/d_config#Colors and Fonts]
 
 Highlighting Classes (VHDL only):
 
@@ -251,8 +250,7 @@ Remove Trailing Whitespace {#trailing-whitespace}
 
 The action to remove trailing whitespace is hidden by default. You can
 access it by pressing **Ctrl+3**, type **RTW** and then select the
-correct action. Alternatively, you can [bind this action to a keyboard
-shortcut](/manual/keyboard-shortcuts) of your preference.
+correct action. Alternatively, you can bind this action to [/manual/c_key] of your preference.
 
 Hover
 =====

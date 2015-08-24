@@ -53,7 +53,7 @@ You can add some extra parameters to Sigasi to modify the behavior.
 -   `-refresh` : force refresh of workspace
 -   `-showLocation` : show workspace location in title bar
 
-External files {#files-external}
+External Files
 --------------
 
 You can edit VHDL files without setting up a project. This feature is
@@ -75,7 +75,7 @@ Sigasi features, you should set up a proper project.
 Setting up Sigasi as Default Editor
 -----------------------------------
 
-### Altera Quartus {#files-quartus}
+### Altera Quartus II
 
 In Altera Quartus II, open the preferences page in **Tools \> Options \>
 General \> Preferred Text Editor**.

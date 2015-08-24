@@ -23,3 +23,7 @@ reflinks:
     install_sigasi_plugin:
         url: http://www.sigasi.com/install-eclipse-vhdl-plugin
         title: Install Sigasi as Eclipse Plugin
+    faq-tabs:
+        url: http://support.sigasi.com/Knowledgebase/Article/View/45
+        title: How can I make Sigasi generate spaces instead of TAB's
+
