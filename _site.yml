@@ -1,0 +1,25 @@
+brand: Sigasi Documentation
+
+bootswatch: null 
+navbar_inverse: false 
+bootstrap: 3.3.4
+
+footer: tatta
+# baseurl: /testdoc
+
+reflinks:
+    content_license:
+        url: http://creativecommons.org/licenses/by-sa/3.0/
+        title: CC-BY-SA License
+    github_sigasi_doc:
+        url: http://github.com/sigasi/sigasi_doc
+        title: Sigasi Documentation on GitHub
+    send_email:
+        url: mailto:support@sigasi.com
+        title: send us an email
+    download_sigasi:
+        url: http://www.sigasi.com/download
+        title: Download Sigasi
+    install_sigasi_plugin:
+        url: http://www.sigasi.com/install-eclipse-vhdl-plugin
+        title: Install Sigasi as Eclipse Plugin
