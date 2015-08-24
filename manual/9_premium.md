@@ -149,7 +149,8 @@ The Block Diagram Viewer
 
 The **Block Diagram Viewer** displays a graphical (block diagram) view
 of all architectures and its instantiations in your current VHDL editor.
-This viewer automatically updates while you are editing your code and
+
+This viewer **automatically updates** when you **save** your code and
 gives a convenient way to visually inspect and navigate your code, even
 when your code is still unfinished or broken.
 
