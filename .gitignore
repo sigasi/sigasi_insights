@@ -1,2 +1,4 @@
 *.pyc
 .DS_Store
+_gh-pages
+_build
