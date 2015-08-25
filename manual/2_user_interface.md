@@ -373,6 +373,10 @@ instantiations and structural statements are shown.
 You can launch a simulation with the ![](/images/icons/run_exc.gif)
 button, if you first set up an [external simulator](/integration).
 
+The Hierarchy View also offers an action **Select required files**, which selects all design files that are part of the current hierarchy, in the project explorer. This allows you to easily perform the same action on all files in the hierarchy. E.g. team commands, ... This action is only available with a Premium Desktop license.
+
+![](/images/screenshots/select_required_files_in_hierarchy.png)
+
 Generics view
 =============
 
