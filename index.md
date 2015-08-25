@@ -4,6 +4,7 @@ layout: index
 content:
     - manual 
     - faq
+    - sigasi_com
 ---
 
 
