@@ -1,6 +1,7 @@
 ---
 title: Manual
 layout: index
+dropdown: true
 content:
    - 0_setup
    - 1_projectsetup
