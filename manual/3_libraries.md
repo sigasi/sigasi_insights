@@ -66,11 +66,11 @@ Select a file or a folder in the Project Explorer and right-click.
 
 ![](/images/screenshots/LibraryMappingContextMenu.png)
 
-You get a `Library Mapping` context menu, with a a number of options:
+You get a `Set Library` context menu, with a a number of options:
 
 -   Select the name of an existing library to map the file or folder to
     that library
--   Select **Unmap** to exclude the file or folder from any library
+-   Select **Exclude from build** to exclude the file or folder from any library
 -   Select **New Library** to define a new library and map the file or
     folder to it
 
@@ -92,7 +92,7 @@ mappings. You can do this by disabling the **Project \> Build
 Automatically** option.
 
 To exclude a file from all libraries, the library mapping context menu
-provides an `Unmap` option. You can apply that to any file or folder in
+provides an `Exclude from build` option. You can apply that to any file or folder in
 the project. Sigasi will then assume that the corresponding resource is
 not a part of the project and will not include that resource in a
 project build. This is typically useful when you have stale copies of
