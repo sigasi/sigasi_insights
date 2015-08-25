@@ -20,6 +20,6 @@ serve:
 
 publish: build
 	# git subtree push --prefix _build origin gh-pages    
-	cd _gh-pages && git push
+	cd _gh-pages && git add -A && git commit -m "Update documentation" && git push
 
 .PHONY: help all build serve publish
