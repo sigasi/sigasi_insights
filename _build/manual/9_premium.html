@@ -16,7 +16,16 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-  </head>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-2852630-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>  </head>
 
   <body>
 
@@ -29,16 +38,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">Sigasi Documentation</a>
+          <a class="navbar-brand" href="/">Sigasi Documentation release 2.30.0</a>
         </div>
         <div class="navbar-collapse collapse">
 
           <ul class="nav navbar-nav navbar-left">
             <li class="active"><a href="/manual/">Manual</a></li>
+            <li><a href="/faq.html">FAQ</a></li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/faq/">FAQ</a></li>
+            <li><a href="http://www.sigasi.com/">Sigasi Main Site</a></li>
           </ul>
 
         </div><!--/.nav-collapse -->
@@ -143,8 +153,8 @@ while before the results appear.</p>
 <p><img alt="" src="/images/screenshots/netSearch.png" /></p>
 <p>From the <strong>Net Search</strong> view, you can navigate to the VHDL code by
 double-clicking the search results.</p>
-<h2 id="the-state-machine-viewer">The State Machine Viewer</h2>
-<p>The <strong>State Machine Viewer</strong> displays a graphical (bubble diagram) view of all state machines in your current VHDL editor. This viewer automatically updates while you are editing your code and gives a convenient way to visually inspect and navigate your code, even when your code is still unfinished or broken.</p>
+<h2 id="state-machine-view">State Machine View</h2>
+<p>The <strong>State Machine View</strong> displays a graphical (bubble diagram) view of all state machines in your current VHDL editor. This viewer automatically updates while you are editing your code and gives a convenient way to visually inspect and navigate your code, even when your code is still unfinished or broken.</p>
 <p><img alt="" src="/images/screenshots/stateMachineViewer.png" /></p>
 <p>You can open the state machine view by right clicking in the editor and selecting <strong>Show In &gt; State Machines</strong>. Alternatively you can open the view via <strong>Window &gt; View &gt; Other... &gt; VHDL &gt; State Machines</strong>.</p>
 <p>If you have more that one state machine in your file, you switch between machines by clicking the tabs. Each tab is named after the signal/variable that represents the state machine's state.</p>
@@ -154,8 +164,8 @@ double-clicking the search results.</p>
 You also have to option to <strong>Zoom In</strong>, <strong>Zoom Out</strong> or <strong>Zoom to Fit</strong>.</p>
 <p>You can export the state machine view to an image with the save <img alt="" src="/images/icons/save.gif" /> button. Both <strong>SVG</strong> and <strong>PNG</strong> are supported. Choose a the *.svg filename for SVG export or a *.png filename for PNG export.</p>
 <p>You can watch a screencast at <a href="http://www.sigasi.com/screencast/vhdl-state-machine-diagram">http://www.sigasi.com/screencast/vhdl-state-machine-diagram</a></p>
-<h2 id="the-block-diagram-viewer">The Block Diagram Viewer</h2>
-<p>The <strong>Block Diagram Viewer</strong> displays a graphical (block diagram) view
+<h2 id="block-diagram-view">Block Diagram View</h2>
+<p>The <strong>Block Diagram View</strong> displays a graphical (block diagram) view
 of all architectures and its instantiations in your current VHDL editor.</p>
 <p>This viewer <strong>automatically updates</strong> when you <strong>save</strong> your code and
 gives a convenient way to visually inspect and navigate your code, even
@@ -198,8 +208,8 @@ select the Block Diagram View during installation</a>.
 </li>
 <li><a href="#naming-conventions-validation">Naming conventions Validation</a></li>
 <li><a href="#net-search">Net Search</a></li>
-<li><a href="#the-state-machine-viewer">The State Machine Viewer</a></li>
-<li><a href="#the-block-diagram-viewer">The Block Diagram Viewer</a></li>
+<li><a href="#state-machine-view">State Machine View</a></li>
+<li><a href="#block-diagram-view">Block Diagram View</a></li>
 </ul>
 </div>
 
@@ -211,21 +221,22 @@ select the Block Diagram View during installation</a>.
   </div>
 
   <ul class="pager">
+    <li class="previous"><a href="/manual/8_tools.html">&larr; Tool Integration</a></li>
+    <li class="next"><a href="/manual/a_plugins.html">Third party plugins &rarr;</a></li>
   </ul>
 
-    <div class="footer">
-        <p>Website powered by <a href="http://urubu.jandecaluwe.com">Urubu</a></p>
-        <p>Brought to you by <a href="http://www.sigasi.com">Sigasi</a></p>
-    </div>
-
+  
 
 </div>
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <div class="footer">
+        <p>Copyright © 2008-2015 <a href="http://www.sigasi.com">Sigasi</a> nv - "Sigasi" is a registered trademark of Sigasi nv</p>
+        <p>Website powered by <a href="http://urubu.jandecaluwe.com">Urubu</a></p>
+    </div>    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
   </body>
 </html>

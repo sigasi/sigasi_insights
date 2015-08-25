@@ -16,7 +16,16 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-  </head>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-2852630-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>  </head>
 
   <body>
 
@@ -29,16 +38,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">Sigasi Documentation</a>
+          <a class="navbar-brand" href="/">Sigasi Documentation release 2.30.0</a>
         </div>
         <div class="navbar-collapse collapse">
 
           <ul class="nav navbar-nav navbar-left">
             <li><a href="/manual/">Manual</a></li>
+            <li class="active"><a href="/faq.html">FAQ</a></li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="/faq/">FAQ</a></li>
+            <li><a href="http://www.sigasi.com/">Sigasi Main Site</a></li>
           </ul>
 
         </div><!--/.nav-collapse -->
@@ -46,30 +56,45 @@
     </div>
 
 
-<div class="jumbotron">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2 text-center">
-        <h1>FAQ</h1>
-          <p></p>
-       </div>
-    </div>
-  </div>
-</div>
-
 <div class="container">
-  <div class="row">
-    <div class="col-md-7 col-md-offset-2" role="main">
-    </div>
+
+  <ol class="breadcrumb">
+    <li><a href="/">Home</a></li>
+      <li class="active">FAQ</li>
+  </ol>
+
+  <div class="page-header">
+    <h1>FAQ</h1>
   </div>
+
+  <div class="row">
+
+    <div class="content">
+      <div class="col-md-7" role="main">
+        <p><a href="/todo.html" title="Not Documented Yet">Not Documented Yet</a></p>
+      </div>
+    </div>
+
+
+  </div>
+
+  <ul class="pager">
+    <li class="previous"><a href="/manual/">&larr; Manual</a></li>
+    <li class="next"><a href="http://www.sigasi.com/">Sigasi Main Site &rarr;</a></li>
+  </ul>
+
+  
+
 </div>
 
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <div class="footer">
+        <p>Copyright © 2008-2015 <a href="http://www.sigasi.com">Sigasi</a> nv - "Sigasi" is a registered trademark of Sigasi nv</p>
+        <p>Website powered by <a href="http://urubu.jandecaluwe.com">Urubu</a></p>
+    </div>    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
   </body>
 </html>
