@@ -120,10 +120,10 @@ while before the results appear.
 From the **Net Search** view, you can navigate to the VHDL code by
 double-clicking the search results.
 
-The State Machine Viewer
-========================
+State Machine View
+==================
 
-The **State Machine Viewer** displays a graphical (bubble diagram) view of all state machines in your current VHDL editor. This viewer automatically updates while you are editing your code and gives a convenient way to visually inspect and navigate your code, even when your code is still unfinished or broken.
+The **State Machine View** displays a graphical (bubble diagram) view of all state machines in your current VHDL editor. This viewer automatically updates while you are editing your code and gives a convenient way to visually inspect and navigate your code, even when your code is still unfinished or broken.
 
 ![](/images/screenshots/stateMachineViewer.png)
 
@@ -142,10 +142,10 @@ You can export the state machine view to an image with the save ![](/images/icon
 
 You can watch a screencast at [http://www.sigasi.com/screencast/vhdl-state-machine-diagram](http://www.sigasi.com/screencast/vhdl-state-machine-diagram)
 
-The Block Diagram Viewer
-========================
+Block Diagram View
+==================
 
-The **Block Diagram Viewer** displays a graphical (block diagram) view
+The **Block Diagram View** displays a graphical (block diagram) view
 of all architectures and its instantiations in your current VHDL editor.
 
 This viewer **automatically updates** when you **save** your code and
@@ -172,4 +172,3 @@ You can export the block diagram view to an image with the save
 select the Block Diagram View during installation</a>.
 
 </div>
-
