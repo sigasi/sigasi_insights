@@ -126,6 +126,8 @@ Premium VHDL coding rules
 -   NAMING\_CONVENTIONS
 -   INCOMPLETE\_ASSOCIATIVE\_OPTIONAL [link](#incomplete-port-maps-and-generic-maps)
 -   POSITIONAL_ASSOCIATION_IN_INSTANTIATIONS [link](#posititional-association-in-instantiations)
+-   CASE_REFERENCES [link](#capitalization-of-identifiers)
+
 
 Custom VHDL coding rules
 ------------------------
@@ -202,15 +204,13 @@ intended. For that reason, Sigasi can warn you about this.
 
 ![](/images/screenshots/warn-incomplete-map.png)
 
-
-
 Posititional association in Instantiations
 ==========================================
 
 Available since Sigasi 2.30
 
 Most VHDL designers prefer named associations in port and generic maps in instantiations. This makes it a lot easier to spot wrong connections.
-By default Sigasi warns when position associations are use. You can change the severity of this check via **Preferences > Sigasi > VHDL > Errors/Warnings** in the **Instantiation statement valiadation* section.
+By default Sigasi warns when position associations are use. You can change the severity of this check via **Preferences > Sigasi > VHDL > Errors/Warnings** in the **Instantiation statement valiadation** section.
 
 
 Quickfix for third party libraries
@@ -331,3 +331,11 @@ version. As a result, some VHDL designers got used to writing the
 incorrect version, producing code that is not portable to other
 simulators. Sigasi accepts the ModelSim-style physical literals, but
 warns about this.
+
+Capitalization of identifiers
+=============================
+
+Although VHDL is not case sensistive, it is recommend to always use the same capitalization when refering to the same declaration. Since version 2.30, Sigasi warns when the capitalization of a reference differs from the capitalization of the declaration. Because external libraries can have different code styles, this linting only checks references in the same library as its declaration.
+
+
+![](/images/screenshots/captalization_references.png)
