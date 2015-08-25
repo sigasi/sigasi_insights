@@ -1,11 +1,10 @@
 brand: Sigasi Documentation
+sigasi_version: 2.30.0
+copyright_years: 2008-2015
 
 bootswatch: null 
 navbar_inverse: false 
 bootstrap: 3.3.4
-
-footer: tatta
-# baseurl: /testdoc
 
 reflinks:
     content_license:
@@ -20,6 +19,9 @@ reflinks:
     download_sigasi:
         url: http://www.sigasi.com/download
         title: Download Sigasi
+    sigasi_com:
+        url: http://www.sigasi.com/
+        title: Sigasi Main Site
     install_sigasi_plugin:
         url: http://www.sigasi.com/install-eclipse-vhdl-plugin
         title: Install Sigasi as Eclipse Plugin
