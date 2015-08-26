@@ -25,7 +25,7 @@ Documentation view
 The **Documentation view** gives you a live preview of the automatic
 documentation Sigasi can generate for your project.
 
-![](/images/screenshots/documentationView.png)
+![](/images/screenshots/documentationview.png)
 
 Export
 ------
@@ -115,7 +115,7 @@ can press **CTRL+SHIFT+H**.
 The **Net Search** view will appear. For big designs, it might take a
 while before the results appear.
 
-![](/images/screenshots/netSearch.png)
+![](/images/screenshots/netsearch.png)
 
 From the **Net Search** view, you can navigate to the VHDL code by
 double-clicking the search results.
@@ -125,7 +125,7 @@ State Machine View
 
 The **State Machine View** displays a graphical (bubble diagram) view of all state machines in your current VHDL editor. This viewer automatically updates while you are editing your code and gives a convenient way to visually inspect and navigate your code, even when your code is still unfinished or broken.
 
-![](/images/screenshots/stateMachineViewer.png)
+![](/images/screenshots/statemachineviewer.png)
 
 You can open the state machine view by right clicking in the editor and selecting **Show In > State Machines**. Alternatively you can open the view via **Window > View > Other... > VHDL > State Machines**.
 

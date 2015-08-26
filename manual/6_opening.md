@@ -80,7 +80,7 @@ Setting up Sigasi as Default Editor
 In Altera Quartus II, open the preferences page in **Tools \> Options \>
 General \> Preferred Text Editor**.
 
-![Configuring Sigasi as default VHDL editor in Altera Quartus](/images/screenshots/SigasiEditorQuartus.png "Configuring Sigasi as default VHDL editor in Altera Quartus")
+![Configuring Sigasi as default VHDL editor in Altera Quartus](/images/screenshots/sigasieditorquartus.png "Configuring Sigasi as default VHDL editor in Altera Quartus")
 
 As command-line options, you should have `%f +%l -p %p`. Optionally you
 could add `-noSplash` to skip the splash dialog.
@@ -95,7 +95,7 @@ To configure Sigasi as default VHDL editor in Xilinx ISE:
 on your path, use the absolute path instead. If there are spaces in this
 path, you need to enclose the path in curly braces . For example:** \$1 \$2**.
 
-![Configuring Sigasi as default VHDL editor in Xilinx ISE](/images/screenshots/XilinxEditor.png "Configuring Sigasi as default VHDL editor in Xilinx ISE")
+![Configuring Sigasi as default VHDL editor in Xilinx ISE](/images/screenshots/xilinxeditor.png "Configuring Sigasi as default VHDL editor in Xilinx ISE")
 
 If you now open any VHDL file in Xilinx ISE, Sigasi will automatically
 open the selected file.

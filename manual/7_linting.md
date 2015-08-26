@@ -86,7 +86,7 @@ of lint is configurable for additional flexibility. The configuration
 interface is available in **Window \> Preferences \> VHDL \>
 Errors/Warnings**.
 
-![Configuring the severity of Sigasi linting checks](/images/screenshots/ProblemSeverityPreferencePage.png "Configuring the severity of Sigasi linting checks")
+![Configuring the severity of Sigasi linting checks](/images/screenshots/problemseveritypreferencepage.png "Configuring the severity of Sigasi linting checks")
 
 List of VHDL code rules
 =======================
@@ -220,7 +220,7 @@ If you are using vendor libraries from Altera or Xilinx (ISE or Vivado),
 you do not need to set up these libraries by hand. Sigasi has a QuickFix
 to do this for you.
 
-![](/images/screenshots/alteraQuickFix.png)
+![](/images/screenshots/alteraquickfix.png)
 
 The `library` statement that tries to import a missing library (like
 `altera`) will be have a yellow warning marker next to it. Click this
@@ -313,7 +313,7 @@ want: `7 downto 0` is a range of eight. `7 to 0` is an null range.
 We have a lint check that warns about this, even if you use constants
 (or some simple arithmetic).
 
-![](/images/screenshots/NullRange.png)
+![](/images/screenshots/nullrange.png)
 
 Space before the physical unit
 ==============================

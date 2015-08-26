@@ -31,12 +31,12 @@ Verilog *files* are mapped.
 In the Libraries view you can see a tree of all libraries in your
 projects. You can open each library to see all contained design units.
 
-![](/images/screenshots/LibrariesView.png)
+![](/images/screenshots/librariesview.png)
 
 In the Project Explorer view each physical file or folder is annotated
 with the library it belongs to, between square brackets:
 
-![](/images/screenshots/LibraryMappingInitialView.png)
+![](/images/screenshots/librarymappinginitialview.png)
 
 What you see here is the initial library mapping of a demo project (you
 can create such a project by selecting **File \> New \> Other \> Demo
@@ -64,7 +64,7 @@ and Project Explorer view.
 
 Select a file or a folder in the Project Explorer and right-click.
 
-![](/images/screenshots/LibraryMappingContextMenu.png)
+![](/images/screenshots/librarymappingcontextmenu.png)
 
 You get a `Set Library` context menu, with a a number of options:
 
@@ -115,7 +115,7 @@ revert it back to the original state.
 Right-click on your project in the explorer view and apply menu-entry
 **Reset Library Mapping**.
 
-![](/images/screenshots/LibraryMappingRestoreCommonLibraries.png)
+![](/images/screenshots/librarymappingrestorecommonlibraries.png)
 
 Shared libraries
 ----------------

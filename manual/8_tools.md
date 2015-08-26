@@ -166,11 +166,11 @@ External Tools Configuration
 ============================
 
 Select **Run \> External tools \> External Tools Configurations** to get
-started, or use the ![](/images/icons/externalTool.png) icon.
+started, or use the ![](/images/icons/externaltool.png) icon.
 
 To create a new configuration, first select
-![](/images/icons/externalTool.png) **Program**, then click
-![](/images/icons/newConfiguration.png) .
+![](/images/icons/externaltool.png) **Program**, then click
+![](/images/icons/newconfiguration.png) .
 
 Enter all necessary information to start your external tool:
 
@@ -184,17 +184,17 @@ You can test your tool configuration with the **Run** button.
 The following example screenshot shows how to set up configuration to
 run a `simulate.sh` script from within Sigasi Pro.
 
-![](/images/screenshots/tutorialConfiguration.png)
+![](/images/screenshots/tutorialconfiguration.png)
 
 The following example screenshot shows how to set up a configuration to
 run `make clean` on a Linux machine.
 
-![](/images/screenshots/makeConfiguration.png)
+![](/images/screenshots/makeconfiguration.png)
 
 To run the external tool just select the configuration from the dropdown
-menu on the ![](/images/icons/externalTool.png)-icon. You can rerun the
+menu on the ![](/images/icons/externaltool.png)-icon. You can rerun the
 last configuration by simply clicking
-![](/images/icons/externalTool.png).
+![](/images/icons/externaltool.png).
 
 
 Creating a Builder
@@ -212,10 +212,10 @@ Builders**.
 
 Click **New…** and the builder configuration window will pop up:
 
-![](/images/screenshots/Makefiles_buildersOverview.png)
+![](/images/screenshots/makefiles_buildersoverview.png)
 
 You will be asked to select a configuration type:
-select ![](/images/icons/externalTool.png) **Program**.
+select ![](/images/icons/externaltool.png) **Program**.
 
 Next, configure the builder in a configuration window pop up window:
 
@@ -224,7 +224,7 @@ Next, configure the builder in a configuration window pop up window:
 * **Working Directory**: The working directory for your program. For example, click **Browse Workspace…** and select the root folder of your project.
 * **Arguments**: The arguments to your program, e.g.  `--makefile=Makefile.vsim all`.
 
-![](/images/screenshots/Makefiles_builderConfigurationMain.png)
+![](/images/screenshots/makefiles_builderconfigurationmain.png)
 
 
 With the default settings the ModelSim Makefile will only be run during
@@ -232,19 +232,19 @@ a manual build or after a “Clean”. To make sure Sigasi HDT runs `make`
 every time you save a change to a file, click the **Build Options** tab
 and check the **During auto builds** checkbox.
 
-![](/images/screenshots/Makefiles_builderConfigurationOptions.png)
+![](/images/screenshots/makefiles_builderconfigurationoptions.png)
 
 
 After configuration, the new builder will appear in the builder list.
 
-![](/images/screenshots/Makefiles_buildersOverview.png)
+![](/images/screenshots/makefiles_buildersoverview.png)
 
 
 When you close the builder configuration dialog windows, the new builder
 will automatically be run. In our example of a Modelsim Makefile,
 Modelsim’s messages will appear in the console view.
 
-![](/images/screenshots/Makefiles_consoleOutput.png)
+![](/images/screenshots/makefiles_consoleoutput.png)
 
 For the specific case of Modelsim, warnings and error messages in the
 console are made clickable. When you click a message, the corresponding
@@ -292,7 +292,7 @@ Quartus II to open them in the Sigasi Pro editor view.
 
 If your Quartus II Project File (**.QPF file**) contains a reference to a
 file that does not exist, Sigasi will show an icon for that file with
-the *broken link* icon ![](/images/icons/BrokenLink.png) .
+the *broken link* icon ![](/images/icons/brokenlink.png) .
 
 Quartus II Preferences
 ----------------------
@@ -308,7 +308,7 @@ Add files to your Quartus II project in Sigasi
 To add a file to your Quartus II project, you can use the default**New
 VHDL file\* wizard of Sigasi (**File \> New \> VHDL File**).
 
-![Add a new VHDL file to a Altera Quartus II project in Sigasi](/images/screenshots/QuartusNewFile.png "Add a new VHDL file to a Altera Quartus II project in Sigasi")
+![Add a new VHDL file to a Altera Quartus II project in Sigasi](/images/screenshots/quartusnewfile.png "Add a new VHDL file to a Altera Quartus II project in Sigasi")
 
 Note that Quartus II does not automatically update its UI after you add
 files to your project. In order to update the files list, you should run

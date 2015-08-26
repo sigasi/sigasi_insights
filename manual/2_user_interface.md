@@ -15,15 +15,15 @@ current perspective is higlighted in the upper right corner. The
 recommended perspective to use with Sigasi (for both VHDL and Verilog)
 is the *VHDL perspective*, with the following logo:
 
-![](/images/screenshots/VhdlPerspective.png)
+![](/images/screenshots/vhdlperspective.png)
 
 If you use the standalone version, this is the default perspective. If
 you use the Eclipse plugin, another perspective may be open instead. You
 can select the VHDL perspective by clicking the button
-![](/images/icons/perspectiveButton.png) next the perspective
+![](/images/icons/perspectivebutton.png) next the perspective
 logo. A window pops up in which you can select the perspective:
 
-![](/images/screenshots/OpenPerspectiveDialog.png)
+![](/images/screenshots/openperspectivedialog.png)
 
 Project Views {#gui-views}
 -------------
@@ -32,7 +32,7 @@ When you open a project in Sigasi HDT, a number of views are presented
 in the user interface. Here is a typical screenshot, with the views
 highlighted.
 
-![](/images/screenshots/SigasiViewsAnnotated.png)
+![](/images/screenshots/sigasiviewsannotated.png)
 
 The views provide alternative ways to access the information in a
 project. They permit efficient navigation, inspection and editing.
@@ -49,12 +49,12 @@ extra commands.
 You can customize the behavior of the **Project Explorer** view in ways
 that can be particularly handy for large projects. For example, if you
 click the **Link with Editor** icon
-![](/images/icons/linkProjectExplorer.png) , the Project Explorer
+![](/images/icons/linkprojectexplorer.png) , the Project Explorer
 will be linked to the Editor view. Now, the active file in the editor
 view will always be selected in the Project Explorer.
 
 You can apply filters to choose which files are shown. Select the icon
-**View Menu** ![](/images/icons/viewMenuIcon.png) and then
+**View Menu** ![](/images/icons/viewmenuicon.png) and then
 **Customize view**. You can then select a filter whose matching files
 will be hidden in the view. For example, you can filter out all non-VHDL
 or non-Verilog files.
@@ -84,9 +84,9 @@ different files, place your cursor on the identifier and right-click.
 Now select **Search References**. A search window will appear on the
 bottom of your workbench, displaying all occurrences of the selected
 identifier. You can easily navigate through all occurrences by clicking
-the **Show Next Match** arrow ![](/images/icons/showNextMatch.png)
+the **Show Next Match** arrow ![](/images/icons/shownextmatch.png)
 and the **Show Previous Match** arrow
-![](/images/icons/showPreviousMatch.png) in the search result
+![](/images/icons/showpreviousmatch.png) in the search result
 view. Note that all occurrences are highlighted and marked with a small
 arrow at the left border of the editor for easy recognition.
 
@@ -338,12 +338,12 @@ You can sort the elements in the outline alphabetically, by enabling the
 
 You can also filter all concurrent signal assignments from the outline
 by enabling the **Hide Signal Assignments** button
-![](/images/icons/SignalAssignmentsFilter.png).
+![](/images/icons/signalassignmentsfilter.png).
 Double-click in the Outline view to navigate to the corresponding
 location in the editor.
 
 If you enable the **Link with Editor** icon
-![](/images/icons/linkProjectExplorer.png) and you click an
+![](/images/icons/linkprojectexplorer.png) and you click an
 element in the outline view, the corresponding code will be selected in
 the editor.
 
@@ -367,7 +367,7 @@ updated accordingly, possibly by displaying the contents of a different
 file.
 
 Use the *instantiations* filter
-![](/images/icons/Instantiation.png), to hide everything except
+![](/images/icons/instantiation.png), to hide everything except
 instantiations and structural statements are shown.
 
 You can launch a simulation with the ![](/images/icons/run_exc.gif)
@@ -405,7 +405,7 @@ an external compiler tool.
 You can navigate to the source of the problem by double clicking on a
 given problem. Problems can be sorted by clicking the column headers.
 The content of this view can be customized via the **View Menu**
-![](/images/icons/viewMenuIcon.png) . Possible customizations are
+![](/images/icons/viewmenuicon.png) . Possible customizations are
 *scope* (workspace, project, selection), *type*, maximum number of
 problems, …
 
@@ -421,7 +421,7 @@ view. If you right-click a file, you see the *context menu* which offers
 extra commands for [library mapping](libraries#libraries-mapping) .
 
 If you enable the **Link with Editor** button
-![](/images/icons/linkProjectExplorer.png), the Library view will
+![](/images/icons/linkprojectexplorer.png), the Library view will
 be linked to the Editor view. Now, active file in the editor view will
 always be selected in the Library view.
 
