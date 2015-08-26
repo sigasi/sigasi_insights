@@ -110,4 +110,7 @@ h3[id]:before{
   }
 }
 
-
+img {
+  max-height: 630px;
+  max-width: 630px;
+}
