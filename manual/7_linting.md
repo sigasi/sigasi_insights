@@ -280,13 +280,12 @@ Superfluous library clause
 
 The VHDL language reference manual states that:
 
-<em>
-Every design unit except package STANDARD is assumed to contain the
-following implicit context items as part of its context clause:
-<code>
-library STD, WORK ; use STD.STANDARD.all ;
-</code>
-</em>
+<em>Every design unit except package STANDARD is assumed to contain the
+following implicit context items as part of its context clause:</em>
+
+	:::VHDL
+	library STD, WORK;
+	use STD.STANDARD.all;
 
 Hence, any extra library statement that includes `STD` or `WORK` is
 pointless, as is any use clause that includes `std.standard.all`. Hardly
@@ -321,10 +320,9 @@ Space before the physical unit
 If you type a numeric literal with a physical unit, there should be a
 space between the number and the unit.
 
-<code>
-T := 25ns; — ILLEGAL, but accepted by ModelSim
-T := 25 ns; — OK; according to VHDL language standard
-</code>
+	:::VHDL
+	T := 25ns; — ILLEGAL, but accepted by ModelSim
+	T := 25 ns; — OK; according to VHDL language standard
 
 Mentor Graphics’ ModelSim and QuestaSim accept the former (illegal)
 version. As a result, some VHDL designers got used to writing the
