@@ -97,6 +97,9 @@
             <li{{context}}><a href="{{item.url}}">{{item.title}}</a></li>
             {%   endif %}
             {% endfor %}
+            <li>
+              {% include 'search.html' %}
+            </li>
           </ul>
 
         </div><!--/.nav-collapse -->
