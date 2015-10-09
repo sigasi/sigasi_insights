@@ -6,6 +6,7 @@ content:
     - faq
     - blog
     - tech
+    - releasenotes
     - sigasi_com
 ---
 
