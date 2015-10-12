@@ -4,6 +4,7 @@ help:
 	@echo make build
 	@echo make serve
 	@echo make publish
+	@echo make urubu
 
 all: build
 
@@ -18,8 +19,11 @@ serve:
 	@echo 'http://localhost:8000'
 	python -m urubu serve
 
+urubu:
+	pip install --upgrade urubu
+
 publish: build
 	# git subtree push --prefix _build origin gh-pages    
 	cd _gh-pages && git add -A && git commit -m "Update documentation" && git push
 
-.PHONY: help all build serve publish
+.PHONY: help all build serve publish urubu
