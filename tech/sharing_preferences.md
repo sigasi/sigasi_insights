@@ -20,14 +20,14 @@ If you distribute a customized version of Sigasi internally, you can also set de
 
 1. Create a `plugin_customization.ini` file with the customized settings. E.g. following lines will hide linenumbers, use spaces for tabs and use uppercase VHDL keywords:
 
-	com.sigasi.hdt.vhdl.Vhdl/formatting.upperCaseKeywords=true
-	org.eclipse.ui.editors/lineNumberRuler=false
-	org.eclipse.ui.editors/spacesForTabs=true
+        com.sigasi.hdt.vhdl.Vhdl/formatting.upperCaseKeywords=true
+        org.eclipse.ui.editors/lineNumberRuler=false
+        org.eclipse.ui.editors/spacesForTabs=true
 
 2. Add these two lines to the `sigasi.ini` file (before the `-vmargs`):
 
-	-pluginCustomization
-	plugin_customization.ini
+            -pluginCustomization
+            plugin_customization.ini
 
 Option 2: Fully automated with Workspace Mechanic
 -------------------------------------------------
