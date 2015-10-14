@@ -2,6 +2,7 @@
 title: Sigasi 2.31
 layout: page
 pager: true
+date: 2015-10-13
 ---
 
 Sigasi 2.31 brings 3 **new Quickfixes**, improved **export for graphics**, and more.

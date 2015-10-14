@@ -2,6 +2,7 @@
 title: Sigasi 2.30
 layout: page
 pager: true
+date: 2015-08-25
 ---
 
 Sigasi 2.30 brings **improved graphics** with **SVG export**, new **rule

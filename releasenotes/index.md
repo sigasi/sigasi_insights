@@ -1,9 +1,8 @@
 ---
 title: Release Notes
 layout: index
+order: date
+reverse: true
 dropdown: true
-content:
-   - sigasi-2.30
-   - sigasi-2.31
 ---
 
