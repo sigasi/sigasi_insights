@@ -3,8 +3,8 @@ title: Sigasi Insights
 layout: index
 content:
     - manual 
-    - faq
     - releasenotes
+    - faq_old
     - sigasi_com
 ---
 
