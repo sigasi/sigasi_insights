@@ -8,8 +8,7 @@ date: 2015-08-25
 Sigasi 2.30 brings **improved graphics** with **SVG export**, new **rule
 checks** and more.
 
-Improved graphics and SVG export \[VHDL, Premium Doc\]
-----------------------------------------------------
+## Improved graphics and SVG export \[VHDL, Premium Doc\]
 
 In Sigasi 2.30 we improved the automatic layout of state machines,
 changed the colors of the block diagrams and added support for SVG
@@ -42,8 +41,7 @@ It also allows you to do some post-processing of the graphical properties.
 [Example file](/sites/www.sigasi.com/files/example.svg)
 
 
-New Rule checks \[VHDL, Premium Desktop\]
----------------------------------------
+## New Rule checks \[VHDL, Premium Desktop\]
 
 ### Check capitalization
 
@@ -59,8 +57,7 @@ Most VHDL designers prefer named associations in port and generic maps in instan
 
 You can change the severity of this check via **Preferences \> Sigasi \> VHDL \> Errors/Warnings**.
 
-Other new and noteworthy improvements
--------------------------------------
+## Other new and noteworthy improvements
 
 -   Sigasi now highlights all **SystemVerilog keywords** as keywords
 -   The **Help \> Sigasi** menu now has an option to release/checkout a Sigasi floating license
@@ -77,8 +74,7 @@ Other new and noteworthy improvements
     2.8.4](https://projects.eclipse.org/projects/modeling.tmf.xtext/releases/2.8.4)
 -   Updated [Marker Manager](http://www.markermanager.com)
 
-Bugfixes
---------
+## Bugfixes
 
 -   ticket 3264 : Data type analysis: multiply integer and real is valid
 -   ticket 3327 : Unexpected type error in mixed instantiation
@@ -87,9 +83,6 @@ Bugfixes
 -   ticket 3349 : Dependencies not correct when (VHDL 2008) context are used
 -   And fixed multiple corner cases in the Verilog parser
 
-Download/Update
----------------
+## Download/Update
 
-If you have Sigasi 2 installed, you can [perform an update](http://www.sigasi.com/update_howto). You can also [download a fresh copy](http://www.sigasi.com/download-sigasi-20).
-
-Enjoy and please come [talk to us on the forum](/forums/support-forum) !
+If you have Sigasi 2 installed, you can [update_sigasi]. You can also [download_latest].
