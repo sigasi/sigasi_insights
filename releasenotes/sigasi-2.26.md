@@ -8,14 +8,14 @@ date: 2014-12-10
 The Sigasi 2.26 release brings better *Verilog* and *Mixed language* support, an extra *linting* and bug fixes.
 
 ## Improved Verilog and Mixed language support 
-[Sigasi Premium Desktop and Sigasi Premium Doc]
+\[Sigasi Premium Desktop and Sigasi Premium Doc\]
 
 We significantly improved the Verilog and Mixed language support in Sigasi 2.26. 
 
 * All ports and generics/parameters in module instantiations are now linked. This enables _hovers_, _'open declaration'_ and _search_.
-[img_assist|nid=2574|title=Mixed language instantiations|desc=|link=popup|align=center|width=640|height=163]
+![Mixed language instantiations](2.26/mixed-language.png "Mixed language instantiations")
 * Better hovers in Verilog
-[img_assist|nid=2575|title=Verilog hover|desc=|link=none|align=center|width=438|height=132]
+![Verilog hover](2.26/hover-verilog.png "Verilog hover")
 * Autoindent for Verilog
 
 <p align="center">
@@ -23,21 +23,20 @@ We significantly improved the Verilog and Mixed language support in Sigasi 2.26.
 </p>
 
 * VHDL Autocomplete now offers entity instantiation templates for Verilog modules too
-[img_assist|nid=2576|title=Autocomplete Verilog modules in VHDL instantiations|desc=|link=none|align=center|width=640|height=133]
-
+![Autocomplete Verilog modules in VHDL instantiations](2.26/autocomplete.png "Autocomplete Verilog modules in VHDL instantiations")
 
 ## Check for missing optional port and generic association in instantiations 
-[VHDL; Sigasi Premium Desktop and Premium Doc]
+\[VHDL; Sigasi Premium Desktop and Premium Doc\]
 
 In instantiations you only have to specify input *ports* without a default value; output ports and input ports with a default value are *optional*. The same is true for *generics* with a default value. This is a common source of design errors and this type of bug is often tricky to spot. Therefore we implemented a new type-time design check to warn about missing optional associations in instantiations.
 
-[img_assist|nid=2577|title=Warn about missing optional associations|desc=|link=none|align=center|width=501|height=214]
+![Warn about missing optional associations](2.26/missing-optional-actuals.png "Warn about missing optional associations")
 
 ## Other new and noteworthy improvements
 
 * We extended our import scripts to import *Xilinx ISE* and *Mentor Graphics HDL Designer* projects: "More info":/content/importing-xilinx-ise-project-sigasi
-* Automatically try to check out a _Premium Doc_ license when a _Premium Doc_ feature is activated [Premium]
-* The offline update site now also contains the Premium features [Premium]
+* Automatically try to check out a _Premium Doc_ license when a _Premium Doc_ feature is activated \[Premium\]
+* The offline update site now also contains the Premium features \[Premium\]
 
 ## Bugfixes
 

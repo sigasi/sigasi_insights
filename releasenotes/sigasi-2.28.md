@@ -8,7 +8,7 @@ date: 2015-04-21
 The Sigasi 2.28 release brings *external compiler* support for *mixed language* projects, a new linting *check* for *array sizes*, multiple *Verilog* improvements, and more.
 
 ## External compiler support for mixed language projects 
-[Sigasi Premium Desktop and Sigasi Premium Doc]
+\[Sigasi Premium Desktop and Sigasi Premium Doc\]
 
 The "external compiler integration":http://www.sigasi.com/manual/external-compiler-integration now supports "mixed language projects":http://www.sigasi.com/manual/mixed-language-projects. Sigasi automatically computes the cross language dependencies and sends your design files incrementally, in the correct order, to your external compiler. 
 
@@ -17,7 +17,7 @@ The *dependencies view*: and the CSV [/manual/8_tools#export] feature now also t
 ![Dependencies View](2.28/dependencies.png "Dependencies View")
 
 ## Check size in array assignments 
-[VHDL; Sigasi Premium Desktop and Premium Doc]
+\[VHDL; Sigasi Premium Desktop and Premium Doc\]
 
 _There are *2* hard problems in computer science: *caching*, *naming*, and *off-by-1 errors*_ — [Twitter wisdom](https://twitter.com/codinghorror/status/506010907021828096)
 

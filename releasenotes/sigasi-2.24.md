@@ -68,7 +68,4 @@ All users can open the documentation view, but only Premium users can export to 
 
 ## Download/Update
 
-If you have Sigasi 2 installed, you can "perform an update":http://www.sigasi.com/update_howto.
-You can also "download a fresh copy":http://www.sigasi.com/download-sigasi-20.
-
-Enjoy and please come "talk to us on the forum":/forums/support-forum !
+If you have Sigasi 2 installed, you can [update_sigasi]. You can also [download_latest].

@@ -31,7 +31,7 @@ We added support for the synthesisable subset of SystemVerilog. This means that 
 The *New Verilog file* wizard now allows you to create SystemVerilog files too (.sv, .svh).
 
 ## Cadence Incisive (NCSim) 
-[Sigasi Premium Desktop and Sigasi Premium Doc]
+\[Sigasi Premium Desktop and Sigasi Premium Doc\]
 
 You can now configure Cadence Incisive (NCSim) as [/manual/8_tools#save-time-compilation] for your HDL code. Once configured, Sigasi will automatically run `ncvhdl` and `ncvlog` to compile your code. All issues will get a problem marker in the editor and will appear in the problems view. 
 

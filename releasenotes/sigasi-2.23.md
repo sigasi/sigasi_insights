@@ -11,7 +11,6 @@ _The Sigasi 2.23 release introduces basic *datatype checking* at type-time for V
 
 Sigasi now reports datatype violations while you type (at type-time). You don't have to wait for your simulator to report datatype errors. Whenever you write a wrong datatype, you see an error message within less than a second! ("Screencast":http://www.sigasi.com/content/datatype-checks-while-you-type)
 
-[img_assist|nid=2377|title=Type time type validation|desc=|link=none|align=center|width=598|height=107]
 ![Type time type validation](2.23/better-scoping.png "Type time type validation")
 
 ## Improved Verilog support
@@ -25,7 +24,7 @@ We are accelerating our development of the Verilog version:
 ## Other new and noteworthy improvements
 
 * Improved support for *external VHDL files* (i.e. non Sigasi Project VHDL files). We now report all syntax errors.
-* Linting *check for read/write access* of port, signal, generic and constant declarations [Premium]
+* Linting *check for read/write access* of port, signal, generic and constant declarations \[Premium\]
 ![heck read/write access for Signals/Ports/Generics/Constants](2.23/signal-never-read.png "heck read/write access for Signals/Ports/Generics/Constants")
 * Updated the JAVA Virtual Machine in the stand-alone to version 8. Note that this is not updated with the Sigasi update mechanism; you need a fresh download if you want this improvement.
 * Support for <a href="https://projects.eclipse.org/releases/luna">Eclipe Luna</a>
@@ -37,9 +36,9 @@ We are accelerating our development of the Verilog version:
 * Added preference page to *configure Task Tags* in comments (TODO, FIXME)
 ![Configurable Task Tags in comments](2.23/task-tags-preferences.png "Configurable Task Tags in comments")
 * Added Quickfix for XilinxProcessorIP Libraries in xilinx ISE
-* *Export* Block Diagram and State Machine graphics to PNG images [Premium]
+* *Export* Block Diagram and State Machine graphics to PNG images \[Premium\]
 ![Export State Machine View to image file](2.23/save-button-state-machine.png "Export State Machine View to image file")
-* *Dead-code linting* in if statements [Premium]
+* *Dead-code linting* in if statements \[Premium\]
 ![Detect dead code blocks in if statements](2.23/dead-code.png "Detect dead code blocks in if statements")
 * Update Xtext dependency to 2.6.1
 
@@ -53,7 +52,4 @@ We are accelerating our development of the Verilog version:
 
 ## Download/Update
 
-If you have Sigasi 2 installed, you can "perform an update":http://www.sigasi.com/update_howto.
-You can also "download a fresh copy":http://www.sigasi.com/download-sigasi-20.
-
-Enjoy and please come "talk to us on the forum":/forums/support-forum !
+If you have Sigasi 2 installed, you can [update_sigasi]. You can also [download_latest].
