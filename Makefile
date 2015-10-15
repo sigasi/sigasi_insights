@@ -27,9 +27,9 @@ publish: build
 	cd _gh-pages && git add -A && git commit -m "Update documentation" && git push
 
 NOCAPS:
-	! find . -name *.png|grep -v _build/ |grep -v _gh-pages | grep "[A-Z]"
-	! find . -name *.jpg|grep -v _build/ |grep -v _gh-pages | grep "[A-Z]"
-	! find . -name *.gif|grep -v _build/ |grep -v _gh-pages | grep "[A-Z]"
-	! find . -name *.md |grep -v _build/ |grep -v _gh-pages | grep "[A-Z]"
+	@ ! find . -name '*.png'|grep -v _build/ |grep -v _gh-pages | grep "[A-Z]"
+	@ ! find . -name '*.jpg'|grep -v _build/ |grep -v _gh-pages | grep "[A-Z]"
+	@ ! find . -name '*.gif'|grep -v _build/ |grep -v _gh-pages | grep "[A-Z]"
+	@ ! find . -name '*.md' |grep -v README.md| grep -v _build/ |grep -v _gh-pages | grep "[A-Z]"
 
 .PHONY: help all build serve publish urubu
