@@ -36,7 +36,7 @@ Google also ran into this problem and solved it by developing the Workspace Mech
 
 The mechanic plugin will compare your workspace configuration with the team configuration at regular intervals. If the team configuration has changed, the Workspace Mechanic plugin offers to update the local settings. The developer can choose which updates to apply, or skip, or entirely ignore.
 
-![Workspace Mechanic popup](./images/popupWorkspaceMechanic.jpg)
+![Workspace Mechanic popup](./images/popup-workspace-mechanic.jpg)
 
 As a small example following mechanic task will configure Sigasi to use VHDL 2008: 
 

@@ -31,7 +31,7 @@ We are accelerating our development of the Verilog version:
 * Added *VHDL Project Import Wizard*
 ![VHDL project Import Wizard](2.23/import-project.png "VHDL project Import Wizard")
 * Better *error reporting in unknown instantiations*: only mark the unknown component name as a *single error*
-![Only one error marker in unknown component instantiations](2.23/unknownInstantiation-only-one-error.png "Only one error marker in unknown component instantiations")
+![Only one error marker in unknown component instantiations](2.23/unknown-instantiation-only-one-error.png "Only one error marker in unknown component instantiations")
 * Added *tutorial* project for *Sigasi Premium*
 * Added preference page to *configure Task Tags* in comments (TODO, FIXME)
 ![Configurable Task Tags in comments](2.23/task-tags-preferences.png "Configurable Task Tags in comments")

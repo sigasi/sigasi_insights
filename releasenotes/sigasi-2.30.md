@@ -66,10 +66,10 @@ You can change the severity of this check via **Preferences \> Sigasi \> VHDL \>
     ![Autocomplete templates with upper case keywords](2.30/autocomplete_template.png "Autocomplete templates with upper case keywords")
 -   Extra command line parameters for Linux RCP to avoid crash during hovers on Red Hat Linux
 -   Improved library mapping menu:
-    ![New Library Mapping menu](2.30/LibraryMappingRestoreCommonLibraries.png "New Library Mapping menu")
+    ![New Library Mapping menu](2.30/librarymapping-restore-common-libraries.png "New Library Mapping menu")
 -   Ask to add Verilog Support when a Verilog file is opened in a VHDL project (and vice versa)
 -   Added action to the hierarchy view to select all files in the selected hierarchy subtree, in the project explorer \[Premium Desktop\]
-    ![Select all files in selected hierarchy in the Project Explorer](2.30/SelectRequiredFilesInHierarchy.png "Select all files in selected hierarchy in the Project Explorer")
+    ![Select all files in selected hierarchy in the Project Explorer](2.30/select-required-files-in-hierarchy.png "Select all files in selected hierarchy in the Project Explorer")
 -   Updated Xtext dependency to [Xtext
     2.8.4](https://projects.eclipse.org/projects/modeling.tmf.xtext/releases/2.8.4)
 -   Updated [Marker Manager](http://www.markermanager.com)
