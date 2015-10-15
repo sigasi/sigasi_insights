@@ -338,7 +338,7 @@ You can sort the elements in the outline alphabetically, by enabling the
 
 You can also filter all concurrent signal assignments from the outline
 by enabling the **Hide Signal Assignments** button
-![](/images/icons/signalassignmentsfilter.png).
+![](/images/icons/signal_assignments_filter.png).
 Double-click in the Outline view to navigate to the corresponding
 location in the editor.
 
