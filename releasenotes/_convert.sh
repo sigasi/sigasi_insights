@@ -15,6 +15,6 @@ echo "---" >>  $TARGET
 echo "" >> $TARGET
 echo "If you have Sigasi 2 installed, you can [update_sigasi]. You can also [download_latest]." >> $TARGET
 
-sed -i -e 's$\\\[img$![xxx](2.xx/xxxxx.png "xxx")    $' $TARGET
+sed -i -e 's$\[img$![xxx](2.xx/xxxxx.png "xxx")    $' $TARGET
 
 #for f in *; do mv "$f" "`echo $f | tr "[:upper:]" "[:lower:]"`"; done
