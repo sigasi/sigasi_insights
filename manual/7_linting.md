@@ -76,6 +76,7 @@ quickfix.
 -   Add missing when clause in case statements
 -   Correct attribute entity class in attribute specifications
 -   Add missing signals to sensitivity list
+-   Fix capitalization of identifier to correspond to its declaration
 
 Configuring the Severity Level {#linting-severity-level}
 ------------------------------
@@ -335,5 +336,6 @@ Capitalization of identifiers
 
 Although VHDL is not case sensistive, it is recommend to always use the same capitalization when refering to the same declaration. Since version 2.30, Sigasi warns when the capitalization of a reference differs from the capitalization of the declaration. Because external libraries can have different code styles, this linting only checks references in the same library as its declaration.
 
+Since Sigasi 2.31 this can easily be fixed with a quickfix.
 
 ![](/images/screenshots/captalization_references.png)

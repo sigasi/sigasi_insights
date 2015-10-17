@@ -19,7 +19,11 @@
     <h1>{{this.title}}</h1>
     <div>
     {% if this.date %}
-        posted on {{this.date|dateformat}}
+        {% if "/releasenotes/" in this.url %}
+            released on {{this.date|dateformat}}
+        {% else %}
+            posted on {{this.date|dateformat}}
+        {% endif %}
     {% endif %}
     {% if this.author %}
         by {{this.author}}

@@ -140,6 +140,8 @@ You also have to option to **Zoom In**, **Zoom Out** or **Zoom to Fit**.
 
 You can export the state machine view to an image with the save ![](/images/icons/save.gif) button. Both **SVG** and **PNG** are supported. Choose a the \*.svg filename for SVG export or a \*.png filename for PNG export.
 
+You can also export **all** *state machines of an entire project* at once: Click **Project > Export... > Sigasi > State Machine Diagrams export** and select your project. All SVGs will be created in **diagrams/statemachines/** in your project. 
+
 You can watch a screencast at [http://www.sigasi.com/screencast/vhdl-state-machine-diagram](http://www.sigasi.com/screencast/vhdl-state-machine-diagram)
 
 Block Diagram View
@@ -166,9 +168,10 @@ declaration**.
 You can export the block diagram view to an image with the save
 ![](/images/icons/save.gif) button. Both **SVG** and **PNG** are supported. Choose a the \*.svg filename for SVG export or a \*.png filename for PNG export.
 
+You can also export **all** *block diagrams of an entire project* at once: Click **Project > Export... > Sigasi > Block Diagrams export** and select your project. All SVGs will be created in **diagrams/blockdiagrams/** in your project. 
+
 <div class="messages status">
 <b>Note:</b> If you are using the Sigasi Eclipse plugin, you need to
 <a href="http://www.sigasi.com/install-eclipse-vhdl-plugin">explicitly
 select the Block Diagram View during installation</a>.
-
 </div>

@@ -1,0 +1,55 @@
+---
+title: Sigasi 2.13
+layout: page
+pager: true
+date: 2013-04-22
+---
+
+Sigasi 2.13 brings official **Quartus integration** to Sigasi plus
+numerous improvements and bugfixes.
+
+Sigasi as HDL editor for Quartus
+--------------------------------
+
+Today, Sigasi’s integration with Altera Quartus II graduates from its beta period. We made the Quartus II integration as simple and transparent as possible. Configure Sigasi as default editor in Quartus II and from there, everything is automatic.
+
+Your Sigasi project will automatically listen to changes of the Quartus II project and if you add files in Sigasi, they will be added to your Quartus II project too.
+
+[See it in action](http://www.sigasi.com/screencast/sigasi-pro-integration-quartus-ii)
+
+Other new and noteworthy improvements
+-------------------------------------
+
+-   The [Eclipse git plugin **EGit**](http://www.eclipse.org/egit) is now pre-installed in the standalone version of Sigasi
+-   Autocomplete **templates for Verilog**
+    ![templates for Verilog](2.13/verilogtemplatespreferencepage.png "templates for Verilog")
+-   Replaced the memory warning and vsim detection dialogs with *non blocking* pop-ups
+    ![memory warning](2.13/memorywarningpopup.png "memory warning")
+-   Improved autocomplete for case statements: also offer template when
+    typing case expression
+-   Standalone version: use `<HOME>/workspaceSigasi` by default
+-   Show name of instantiated item in outline and hierarchy view (in
+    addition to label)
+-   Support [multi-line assert statements in the
+    formatter](http://www.sigasi.com/forum/formatting-assert-statement)
+-   [Better hover for aliases](http://www.sigasi.com/forum/feature-request-display-alias-information-hover)
+    ![Alias Hover](2.13/hoverofalias.png "Alias Hover")
+-   Updated Java Runtime Environment in stand-alone version to Java 7 update 17
+-   Added a [dynamic variable to run configuration to query the toplevel name](http://www.sigasi.com/forum/hierarchy-view-0) :
+    ${vhdl\_toplevel}
+
+Bugfixes
+--------
+
+-   ticket 1554 : Hover does not work in template mode
+-   ticket 2377 : Performance bug in hierarchy view
+-   ticket 2421 : Problem with modelsim.ini path on Windows
+-   ticket 2451 : Exception in the CSV exporter
+-   ticket 2452 : Uppercase/lowercase issues in Turkisch locale
+-   ticket 2463 : Notify version control system (ClearCase) when library
+    mapping file is modified
+
+Download/Update
+---------------
+
+If you have Sigasi 2 installed, you can [update_sigasi]. You can also [download_latest].

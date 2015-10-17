@@ -1,4 +1,4 @@
-def dateformat(value, format="%d-%b-%Y"):
+def dateformat(value, format="%Y-%m-%d"):
     return value.strftime(format)
 
 filters = {}
