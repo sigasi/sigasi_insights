@@ -85,20 +85,32 @@ General \> Preferred Text Editor**.
 As command-line options, you should have `%f +%l -p %p`. Optionally you
 could add `-noSplash` to skip the splash dialog.
 
+### Xilinx Vivado
+
+You can configure Sigasi to be the preferred editor for Xilinx Vivado.
+
+1. In Xilinx Vivado, Click **Tools > Options...** 
+2. Open the **General** tab (selected by default)
+3. Look for the **Text Editor** section and replace the '**Vivado Text Editor** (default)' with '**Custom Editor...**'
+4. Next click the **...** (Custom editor)  button and enter:
+    `<path to Sigasi>/sigasi.exe [file name] +[line number]`
+5. Click **OK** to close the dialog
+
+![Configuring Sigasi as default editor in Xilinx Vivado menu](/images/screenshots/vivado_a1.png "Configuring Sigasi as default editor in Xilinx Vivado menu")
+![Configuring Sigasi as default editor in Xilinx Vivado](/images/screenshots/vivado_a2.png "Configuring Sigasi as default editor in Xilinx Vivado")
+
 ### Xilinx ISE
 
 To configure Sigasi as default VHDL editor in Xilinx ISE:
 
-1. Click **Edit \> Preferences** and **ISE General \> Editors**
+1. In Xilinx ISE, Click **Edit \> Preferences** and **ISE General \> Editors**
 2. Select **Custom** instead of **ISE Text Editor**
-3. If Sigasi is on your path enter **sigasi \$1 \$2**. If Sigasi is not
-on your path, use the absolute path instead. If there are spaces in this
-path, you need to enclose the path in curly braces . For example:** \$1 \$2**.
+3. If Sigasi is on your path enter `sigasi.exe $1 +$2` (Windows) or `sigasi $1 +$2` (Linux).
+   If Sigasi is not on your path, use the absolute path instead. If there are spaces in this
+path, you need to enclose the path in curly braces . For example:`c:\\My\ Applications\sigasi\sigasi.exe $1 +$2`.
 
 ![Configuring Sigasi as default VHDL editor in Xilinx ISE](/images/screenshots/xilinxeditor.png "Configuring Sigasi as default VHDL editor in Xilinx ISE")
 
-If you now open any VHDL file in Xilinx ISE, Sigasi will automatically
-open the selected file.
+If you now open any VHDL file in Xilinx ISE, Sigasi will automatically open the selected file.
 
-You can find more info on configuring Xilinx ISE to work with external editors in the [Xilinx
-documentation](http://www.xilinx.com/support/documentation/sw_manuals/xilinx12_2/pn_db_editor_options.htm).
+You can find more info on configuring Xilinx ISE to work with external editors in the [Xilinx documentation](http://www.xilinx.com/support/documentation/sw_manuals/xilinx12_2/pn_db_editor_options.htm).

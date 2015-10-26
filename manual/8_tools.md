@@ -314,6 +314,38 @@ Note that Quartus II does not automatically update its UI after you add
 files to your project. In order to update the files list, you should run
 a workflow action in Quartus II, like starting a compilation.
 
+Xilinx integration
+==================
+
+Setting the preferred editor
+----------------------------
+
+To open the Sigasi editor from Xilinx, you first have to configure Sigasi as preferred editor in [/manual/6_opening#Xilinx Vivado] or [/manual/6_opening#Xilinx ISE].
+
+Importing Xilinx Projects in Sigasi
+-----------------------------------
+
+### Vivado
+
+The process of importing a Xilinx Vivado project is explained on [Generating a Sigasi project from a Vivado project](http://www.sigasi.com/content/generating-sigasi-project-vivado-project)
+
+### ISE
+
+The process of importing a Xilinx ISE project is explained on [Importing a Xilinx ISE project in Sigasi](http://www.sigasi.com/content/importing-xilinx-ise-project-sigasi)
+
+Xininx Preferences
+------------------
+
+### Vivado
+
+You can change the Xilinx Vivado installation location by selecting **Window > Preferences > Sigasi > Toolchains > Xilinx Vivado**.
+Sigasi needs this path to find the Xilinx Vivado libraries. 
+
+### ISE
+
+You can change the Xilinx ISE installation location by selecting **Window > Preferences > Sigasi > Toolchains > Xilinx ISE**.
+Sigasi needs this path to find the Xilinx Vivado libraries and to run the ISim compiler and simulator.
+
 Export
 ======
 
