@@ -10,7 +10,7 @@ The Sigasi 2.27 release brings a better documentation generator, other improveme
 
 ## Documentation improvements
 
-Improvements on the [/manual/9_premium#documentation-view]:
+Improvements on the [views/documentation]:
 
 * Use tables
 * Log (DocBook / PDF) documentation errors in the error console

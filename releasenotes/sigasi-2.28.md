@@ -12,7 +12,7 @@ The Sigasi 2.28 release brings *external compiler* support for *mixed language* 
 
 The "external compiler integration":http://www.sigasi.com/manual/external-compiler-integration now supports "mixed language projects":http://www.sigasi.com/manual/mixed-language-projects. Sigasi automatically computes the cross language dependencies and sends your design files incrementally, in the correct order, to your external compiler. 
 
-The *dependencies view*: and the CSV [/manual/8_tools#export] feature now also take cross language dependencies into account. 
+The *dependencies view*: and the CSV [/manual/tools#export] feature now also take cross language dependencies into account. 
 
 ![Dependencies View](2.28/dependencies.png "Dependencies View")
 

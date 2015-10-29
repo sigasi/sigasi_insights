@@ -4,7 +4,7 @@ layout: page
 pager: true
 ---
 
-- See also: [/manual/2_user_interface#Editor View]
+- See also: [views/editor]
 
 In addition to the powerful features of an Eclipse editor, the VHDL
 editor that comes with Sigasi supports a number of advanced editing
@@ -47,7 +47,7 @@ and next line”** setting.
 **Tabs vs. spaces:** This features inserts tabs characters or spaces,
 according to your preferences. 
 
-- See also: [faq-tabs]
+- See also: [tabs-and-spaces]
 
 <a href="//fast.wistia.net/embed/iframe/asr4pf7p8e?popover=true" class="wistia-popover\[height=533,playerColor=7b796a,width=800\]"><img src="https://embed-ssl.wistia.com/deliveries/85b4fd88af9a4430f70df330bb8409bc8557da2f.jpg?image_play_button=true&image_play_button_color=7b796ae0&image_crop_resized=200x133" alt="" /></a>
 

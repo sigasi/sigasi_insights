@@ -4,14 +4,15 @@ layout: page
 pager: true
 ---
 
+[vhdl]
+
 In addition to syntax validation, Sigasi also checks your code for
 semantic problems (**Linting**, or **Linter checks**). Some of these
 problems can be automatically resolved with **Quickfixes**. Both syntax
 checking and linting happen at type-time: new markers appear *as you are
 typing* your code.
 
-Marker Icons {#linting-icons}
-------------
+# Marker Icons {#linting-icons}
 
 -   ![](/images/icons/info.png) marks an info message.
 -   ![](/images/icons/warning_lightbulb.png) marks a warning that can be resolved automatically with a quickfix.
@@ -19,8 +20,7 @@ Marker Icons {#linting-icons}
 -   ![](/images/icons/error_lightbulb.png) marks an error that can be resolved automatically with a quick fix.
 -   ![](/images/icons/error.png) marks an error that cannot be resolved automatically.
 
-Linting {#linting-linting}
--------
+# Linting {#linting-linting}
 
 VHDL code **Lint** is defined as code that is strictly correct according
 to the language definition, but still suspicious or problematic.
@@ -30,7 +30,7 @@ in the design. Sigasi’s VHDL linter checks for the following problems:
 -   Unused declarations
 -   Duplicate declarations
 -   Declaration could not be found
--   VHDL 2008 features in VHDL 93 mode (Learn about [/manual/d_config#Choosing your VHDL version])
+-   VHDL 2008 features in VHDL 93 mode (Learn about [/manual/config#Choosing your VHDL version])
 -   Assignment validation
 -   Case statement validation
 -   Instantiation statement validation
@@ -43,22 +43,12 @@ in the design. Sigasi’s VHDL linter checks for the following problems:
 -   Port, signal, variable, constant or generic declarations that are
     never read or written
 
-No Linting for Common Libraries {#linting-common-libraries}
--------------------------------
+## No Linting for Common Libraries {#linting-common-libraries}
 
 Common Libraries are considered to be production ready libraries.
 Linting is skipped for all files in the Common Libraries folder.
 
-Creating Custom VHDL Linter Rules {#linting-custom-rules}
----------------------------------
-
-At this time, linting rules are not user-configurable. We will be happy
-to work with you on implementing your own custom linting rules and
-coding style rules. 
-Discover more about [customer linting rules](http://www.sigasi.com/custom-linting).
-
-Quickfixes {#linting-quickfix}
-----------
+## Quickfixes {#linting-quickfix}
 
 Some of the VHDL lint problems can be automatically resolved with
 *quickfixes*. These problems have *markers* annotated with a lightbulb
@@ -78,8 +68,7 @@ quickfix.
 -   Add missing signals to sensitivity list
 -   Fix capitalization of identifier to correspond to its declaration
 
-Configuring the Severity Level {#linting-severity-level}
-------------------------------
+## Configuring the Severity Level {#linting-severity-level}
 
 The Sigasi VHDL linter has reasonable defaults for the severity level of
 reported lint problems. However, the severity level of certain classes
@@ -89,14 +78,19 @@ Errors/Warnings**.
 
 ![Configuring the severity of Sigasi linting checks](/images/screenshots/problemseveritypreferencepage.png "Configuring the severity of Sigasi linting checks")
 
-List of VHDL code rules
-=======================
+## Creating Custom VHDL Linter Rules {#linting-custom-rules}
 
-This is the list of VHDL coding rules that can be checked automatically
-by Sigasi.
+At this time, most linting rules are not user-configurable. We will be happy
+to work with you on implementing your own custom linting rules and
+coding style rules. 
+Discover more about [customer linting rules](http://www.sigasi.com/custom-linting).
 
-Basic VHDL coding rules
------------------------
+If your company has a set of coding rule and you need tool support, we
+can implement your coding rules at minimal cost. [Read more](/vhdl-lint)
+and contact us to discuss your requirements.
+
+
+### Basic VHDL coding rules
 
 (available for Sigasi Pro, Sigasi Premium Desktop, Sigasi Premium Doc)
 
@@ -116,8 +110,7 @@ Basic VHDL coding rules
     <!--* BITSTRING_STD_LOGIC: invalid characters in bit string-->
 -   SENSITIVITY\_LIST [link](#sensitivity-list)
 
-Premium VHDL coding rules
--------------------------
+### Premium VHDL coding rules
 
 (available for Sigasi Premium Desktop, Sigasi Premium Doc)
 
@@ -129,16 +122,12 @@ Premium VHDL coding rules
 -   POSITIONAL_ASSOCIATION_IN_INSTANTIATIONS [link](#posititional-association-in-instantiations)
 -   CASE_REFERENCES [link](#capitalization-of-identifiers)
 
+# List of VHDL code rules
 
-Custom VHDL coding rules
-------------------------
+This is the list of VHDL coding rules that can be checked automatically
+by Sigasi.
 
-If your company has a set of coding rule and you need tool support, we
-can implement your coding rules at minimal cost. [Read more](/vhdl-lint)
-and contact us to discuss your requirements.
-
-Dead Code lint
-==============
+### Dead Code lint {#dead-code}
 
 Dead code is code that is does have any effect in your simulation or
 synthesis. Examples of dead code are signals that are never used, or
@@ -161,8 +150,7 @@ Sigasi Pro flags some kinds of dead code:
 For unused declarations, there is also a quickfix to help you remove
 unused declarations fast.
 
-Deprecated IEEE packages, non-standard packages
-===============================================
+### Deprecated IEEE Packages, Non-Standard Packages
 
 Some packages are widely spread, but were never standardized by IEEE.
 Different vendors have shipped different versions, with incompatible
@@ -185,8 +173,7 @@ Sigasi flags this package as **Non-standard package**.
 
 Read more in [this blog post](/content/deprecated-ieee-libraries).
 
-Incomplete port maps and generic maps
-=====================================
+### Incomplete Port Maps and Generic Maps
 
 Available since Sigasi 2.25
 
@@ -205,8 +192,7 @@ intended. For that reason, Sigasi can warn you about this.
 
 ![](/images/screenshots/warn-incomplete-map.png)
 
-Posititional association in Instantiations
-==========================================
+### Posititional Association in Instantiations
 
 Available since Sigasi 2.30
 
@@ -214,8 +200,7 @@ Most VHDL designers prefer named associations in port and generic maps in instan
 By default Sigasi warns when position associations are use. You can change the severity of this check via **Preferences > Sigasi > VHDL > Errors/Warnings** in the **Instantiation statement valiadation** section.
 
 
-Quickfix for third party libraries
-==================================
+### Quickfix for Third Party Libraries
 
 If you are using vendor libraries from Altera or Xilinx (ISE or Vivado),
 you do not need to set up these libraries by hand. Sigasi has a QuickFix
@@ -235,8 +220,7 @@ declarations are not mapped (excluded). This significantly reduces the
 time for a clean build. If you use direct entity instantiations, you can
 easily map the entities you need.
 
-Redundant “others”
-==================
+### Redundant "others"
 
 If a case statement contains all the possible choices (usually in an
 enumerated datatype), you can safely remove the “when others” clause.
@@ -254,8 +238,7 @@ experiments.
 For more information, see [this blog
 post](http://www.sigasi.com/content/can-you-do-without-others).
 
-Sensitivity list
-================
+### Sensitivity List
 
 VHDL requires a sensitivity list for each process (or wait statements in
 the project).
@@ -276,8 +259,7 @@ Sigasi can warn about problems with your sensitivity list:
 -   **Superfluous signals in sensitivity list**
 -   **Duplicate signals in sensitivity list**
 
-Superfluous library clause
-==========================
+### Superfluous Library Clause
 
 The VHDL language reference manual states that:
 
@@ -296,16 +278,14 @@ warning.
 
 ![](/images/screenshots/warn-superfluous-library.png)
 
-Dead code (unreachable code)
-============================
+### Dead Code (unreachable code)
 
 If the Sigasi analyser can determine that a condition is always false,
 it will mark the if-statement because it contains dead code.
 
 ![](/images/screenshots/unreachable_code.png)
 
-Null range (empty range) (#nullRange)
-========================
+### Null Range (empty range) (#nullRange)
 
 In VHDL, you can use ranges with `to` and `downto`. But, if you use the
 wrong direction, you get an empty range, which is usually not what you
@@ -315,8 +295,7 @@ We have a lint check that warns about this, even if you use constants
 
 ![](/images/screenshots/nullrange.png)
 
-Space before the physical unit
-==============================
+### Space Before the Physical Unit
 
 If you type a numeric literal with a physical unit, there should be a
 space between the number and the unit.
@@ -331,11 +310,25 @@ incorrect version, producing code that is not portable to other
 simulators. Sigasi accepts the ModelSim-style physical literals, but
 warns about this.
 
-Capitalization of identifiers
-=============================
+### Capitalization of Identifiers
 
 Although VHDL is not case sensistive, it is recommend to always use the same capitalization when refering to the same declaration. Since version 2.30, Sigasi warns when the capitalization of a reference differs from the capitalization of the declaration. Because external libraries can have different code styles, this linting only checks references in the same library as its declaration.
 
 Since Sigasi 2.31 this can easily be fixed with a quickfix.
 
 ![](/images/screenshots/captalization_references.png)
+
+### Naming Conventions
+
+On the **Navigation conventions** preference page (**Window \>
+Preferences \> Sigasi \> VHDL \> Naming conventions**) you can configure
+patterns to check correct naming of your VHDL identifiers. Patterns are
+configured with [Java regex
+syntax](http://www.vogella.com/tutorials/JavaRegularExpressions/article.html)
+
+Only name with a specified pattern are checked. Empty patterns are
+omitted.
+
+**Example:** to enforce a style where all variables have a `_v` suffix,
+you whould specify `.*_v` pattern in the **Variable name** field.
+

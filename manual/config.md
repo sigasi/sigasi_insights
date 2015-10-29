@@ -4,8 +4,7 @@ layout: page
 pager: true
 ---
 
-Choosing your VHDL version {#configure-vhdl-version}
---------------------------
+# Choosing your VHDL version {#configure-vhdl-version}
 
 Sigasi supports VHDL 1993, 2002 and 2008. You can select which VHDL
 version to use in: **Window \> Preferences \> Sigasi \> VHDL \> VHDL version**.
@@ -20,16 +19,14 @@ project will not be modified. If you want to update the common libraries
 for an existing project, right-click the project and select **Library
 Mapping \> Reset Common Libraries**.
 
-Colors and Fonts {#configure-colors}
-----------------
+# Colors and Fonts {#configure-colors}
 
 You can configure the code coloring by selecting **Window \> Preferences
 \> Sigasi \> VHDL \> Syntax Coloring**. For each class of semantic and
 syntactic elements, you can select the font, letter color, background
 color, style (bold, italic, underline, strike through).
 
-Font size
----------
+## Font size
 
 Sometimes you want extra small fonts, so that you can fit more content
 on your screen. Another time you
@@ -54,8 +51,7 @@ a line like:
 
 You have to restart Sigasi HDT before these changes take effect.
 
-Annotations Colors
-------------------
+## Annotations Colors
 
 *Annotations* are colors added on top of your text editor, and to the
 right of your text editor, in the scroll bar. The image below shows
@@ -74,16 +70,14 @@ If more than one **Occurrences** type is displayed, you need the
 `org.eclipse.xtext.ui.editor.defaultOccurrenceAnnotation`. The others
 may refer to occurrences for Java or other plug-ins.
 
-Tabs and Spaces
----------------
+# Tabs and Spaces
 
 If you want to use spaces instead of tabs, you can set your indentation
 preferences in: **Window \> Preferences \> General \> Editors \> Text
 Editors**. Here you can select choose to **Insert Spaces for Tabs** and
 choose your preferred **Displayed Tab Width**.
 
-The “Gutter”
-------------
+# The “Gutter”
 
 The *Gutter* is the small area to the left of the editor view. It is
 used for displaying extra information about your code.
@@ -96,29 +90,32 @@ used for displaying extra information about your code.
 There is not much to configure about markers, but the other categories
 can be turned on or off.
 
-Line numbers
-------------
+## Line numbers
 
 To enable line numbers, right-click in the gutter and select **Show Line
 Numbers**.
 
-Linting rules {#configure-linting}
--------------
+## Quick Diff
+[todo]
+
+## Folding
+[todo]
+
+# Linting rules {#configure-linting}
 
 You can choose the severity of linting rules in: **Window \> Preferences
 \> Sigasi \> VHDL \> Errors/Warnings**.
-Read more information about [linting](linting#linting).
+Read more information about [linting].
 
-Language
---------
+# Language
 
 Eclipse is available in several languages, and you can install the
 language pack of your choice. Read more in this [support
 article](http://www.sigasi.com/content/installing-translations-eclipse)
 
-Keyboard shortcuts
-------------------
+# Keyboard shortcuts
 
+Sigasi comes with a large number of [Keyboard Shortcuts](key) preconfigured 
 You can configure keyboard shortcuts (key bindings) in **Window \>
 Preferences \> General \> Keys**. You can modify individual keyboard
 shortcuts or add new key bindings.
@@ -131,14 +128,21 @@ To export, go to **File \> Export… \> General \> Preferences**, and
 select **Key Preferences**. To import that file: **File \> Import… \>
 General \> Preferences**.
 
-Quick Diff
------------
-[/todo]
+# Formatting
 
-Folding
--------
-[/todo]
+You can set formatting options in the Formatter preference page:
+**Window \> Preferences \> Sigasi \> VHDL \> Formatting**
 
-Finding more options
---------------------
-[/todo]
+-   **Preserve newlines**: this option configures the formatter to not
+    add or remove newlines in your code
+-   **Upper case keywords**: when this option is enabled the formatter
+    will convert all keywords to uppercase. When this option is **not**
+    enabled, uppercase keywords will be converted to lowercase. (Without
+    a premium license, keywords are not changed by the formatter).
+-   **Alignment column for trailing comments**: this setting configures
+    the column Sigasi uses to align trailing comments (default is column
+    40)
+
+
+# Finding more options
+[todo]

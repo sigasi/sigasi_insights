@@ -7,8 +7,7 @@ pager: true
 Since Sigasi is built on Eclipse, you can install third party Eclipse
 plugins.
 
-The best place to start looking for a plugin is the [Eclipse
-Marketplace](http://marketplace.eclipse.org). We list some interesting
+The best place to start looking for a plugin is the [eclipse-marketplace]. We list some interesting
 plugins here. Since these are third party plugins, there is no official
 support from Sigasi.
 

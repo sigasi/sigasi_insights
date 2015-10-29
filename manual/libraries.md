@@ -22,8 +22,8 @@ Sigasi HDT to organize your projects.
 Examining the library configuration {#libraries-examine}
 -----------------------------------
 
-You can examine the library configuration in the [/manual/2_user_interface#Libraries View] 
-and in the [/manual/2_user_interface#Project Explorer] 
+You can examine the library configuration in the [/manual/user_interface#Libraries View] 
+and in the [/manual/user_interface#Project Explorer] 
 view. The Libraries view shows how
 *design units* are mapped. The Project Explorer view show how VHDL or
 Verilog *files* are mapped.
@@ -150,12 +150,12 @@ On Linux the default installation location for Xilinx is `/opt/Xilinx`
 and `/opt/altera` for Altera.
 
 For many common third party libraries, you can set up the library using
-a [/manual/7_linting#Quickfix for third party libraries].
+a [/manual/linting#Quickfix for third party libraries].
 
 Library errors from external compilers
 --------------------------------------
 
-If you are using the [/manual/8_tools#External Compilers], the external
+If you are using the [/manual/tools#External Compilers], the external
 compiler can also put error markers on library clauses. You can easily
 verify this by checking the prefix of the error message (e.g. `vcom:`
 for vcom errors). Consult the [libraries section of the external

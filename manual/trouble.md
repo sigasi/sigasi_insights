@@ -130,7 +130,7 @@ older or alternative definitions of a VHDL object. We call these *stale*
 files, because they are no longer used. In such a case you will want HDT
 to ignore certain files.
 
-To exclude files (or directories) from analysis, consult the [/manual/3_libraries].
+To exclude files (or directories) from analysis, consult the [/manual/libraries].
 
 Ignored resources are decorated with a
 ![]/images/icons/ignoreicon.png) icon in the project explorer
@@ -172,7 +172,7 @@ Problems View, select the markers and press **DEL** (or right-click and
 select **Delete**).
 
 Note that during the next build, the tool may generate new markers. If
-you want to suppress certain warnings, you can configure the [/manual/d_config#configure-linting]
+you want to suppress certain warnings, you can configure the [/manual/config#configure-linting]
 
 ### Remove the workspace state
 

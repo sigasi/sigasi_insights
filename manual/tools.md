@@ -8,26 +8,26 @@ Sigasi supports a number of ways to work with external tools such as
 simulators. Different techniques offer varying degrees of flexibility
 and automation.
 
-Most people will want to set up their [/manual/8_tools#External Compilers] 
+Most people will want to set up their [/manual/tools#External Compilers] 
 so that Sigasi can use
 them to compile and start simulations. This is currently supported only
 for `vcom`-style simulators, Aldec Riviera-PRO and Mentor Graphics
-ModelSim and QuestaSim; and `isim` from Xilinx. Learn about [/manual/8_tools#External Compilers].
+ModelSim and QuestaSim; and `isim` from Xilinx. Learn about [/manual/tools#External Compilers].
 
 Another way to compile your project is to export your project in one of
 two formats. The first format is a Makefile for compiling your project
 with ModelSim. The second format is a CSV (comma separated values) list
 of all the files in your project, in the correct compilation order.
-Learn more about how to [/manual/8_tools#Export] your project's file list.
+Learn more about how to [/manual/tools#Export] your project's file list.
 
 The third, and more advanced way of working with compilers or simulators
 is to use the standard Eclipse mechanisms of *builders* and *external
 tools*. 
 
-By [/manual/8_tools#Creating a builder],
+By [/manual/tools#Creating a builder],
 you can arrange for an external tool to be run automatically when a
 Sigasi project is rebuilt. By default, this happens each time you save a
-file. [/manual/8_tools#External Tools Configuration]
+file. [/manual/tools#External Tools Configuration]
 allow you to call any program or script from within the Sigasi GUI. You
 have to write and maintain the scripts yourself, but you have complete
 flexibility as to what is in the scripts.
@@ -38,21 +38,22 @@ External Compilers
 If you have a simulator or lint tool installed, you can use this for two
 purposes:
 
-1.  [/manual/8_tools#Save Time Compilation]: Compile and
+1.  [/manual/tools#Save Time Compilation]: Compile and
     check your files each time you save. Any errors or warnings will
     show up in the file, on the line number of the problrem
-2.  [/manual/8_tools#Launch Simulator]: Start the
+2.  [/manual/tools#Launch Simulator]: Start the
     simulator in its own window, ready to run a simulation.
 
 Learn about [which external compilers are supported](#list-of-toolchains)
-and how to [/manual/8_tools#Configure external compiler].
+and how to [/manual/tools#Configure external compiler].
 
 Launch simulator
 ================
+[vhdl]
 
 If an external compiler is enabled, you can also start a simulation from
 Sigasi. You can start a simulation by first selecting your *top level*
-in the [/manual/2_user_interface#Hierarchy View] . Next click the
+in the [/manual/user_interface#Hierarchy View] . Next click the
 **Simulate** button ![](/images/icons/run_exc.gif) in the hierarchy
 view to launch the simulator gui with an elaborated design ready for
 simulation. Sigasi opens a new console for each simulation launch. You
@@ -90,10 +91,10 @@ also include synthesis tools.
 
 For each toolchain Sigasi can support any combination of the following:
 
-* [/manual/8_tools#Save-time compilation]
-* [/manual/8_tools#Launch Simulator]
-* [/manual/7_linting#Quickfix for third party libraries]
-* [/manual/8_tools#Open a Quartus II Project in Sigasi]
+* [/manual/tools#Save-time compilation]
+* [/manual/tools#Launch Simulator]
+* [/manual/linting#Quickfix for third party libraries]
+* [/manual/tools#Open a Quartus II Project in Sigasi]
 
 Currently the following external compilers are supported:
 
@@ -268,13 +269,13 @@ Furthermore, if you add or remove files in the Quartus II project, these
 changes are automatically applied in Sigasi Pro.
 
 *Note:\_ If you want to set up a project independent of Altera Quartus
-II, please read the documentation on [/manual/1_projectsetup].
+II, please read the documentation on [/manual/projectsetup].
 
 Setting the preferred editor
 ----------------------------
 
 To open a Quartus Project in Sigasi, you first have to configure Sigasi
-Pro as preferred editor in [/manual/6_opening#Altera Quartus II].
+Pro as preferred editor in [/manual/opening#Altera Quartus II].
 
 Open a Quartus II Project in Sigasi
 -----------------------------------
@@ -321,7 +322,7 @@ Xilinx integration
 Setting the preferred editor
 ----------------------------
 
-To open the Sigasi editor from Xilinx, you first have to configure Sigasi as preferred editor in [/manual/6_opening#Xilinx Vivado] or [/manual/6_opening#Xilinx ISE].
+To open the Sigasi editor from Xilinx, you first have to configure Sigasi as preferred editor in [/manual/opening#Xilinx Vivado] or [/manual/opening#Xilinx ISE].
 
 Importing Xilinx Projects in Sigasi
 -----------------------------------

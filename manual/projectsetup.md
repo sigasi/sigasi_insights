@@ -15,8 +15,8 @@ between them.
 Your first step is to set up a project. There are a number of ways to do
 this. The most common ways are:
 
--   [/manual/1_projectsetup#Importing a project from the file system]
--   [/manual/1_projectsetup#Creating a new, empty project]
+-   [/manual/projectsetup#Importing a project from the file system]
+-   [/manual/projectsetup#Creating a new, empty project]
 
 These two methods and other methods are discussed in detail in the
 following sections.
@@ -98,4 +98,4 @@ Verilog support at the same time.
 
 With other licenses (Sigasi Pro), a project can contain both VHDL and
 Verilog files, but only one of the languages will have full support.
-Files in the other language will be treated as [/manual/6_opening#External Files].
+Files in the other language will be treated as [/manual/opening#External Files].

@@ -13,6 +13,9 @@ reflinks:
     github_sigasi_doc:
         url: http://github.com/sigasi/sigasi_doc
         title: Sigasi Documentation on GitHub
+    eclipse-marketplace:
+        title: Eclipse Marketplace
+        url: http://marketplace.eclipse.org
     send_email:
         url: mailto:support@sigasi.com
         title: send us an email
@@ -28,9 +31,6 @@ reflinks:
     install_sigasi_plugin:
         url: http://www.sigasi.com/install-eclipse-vhdl-plugin
         title: Install Sigasi as Eclipse Plugin
-    faq-tabs:
-        url: http://support.sigasi.com/Knowledgebase/Article/View/45
-        title: How can I make Sigasi generate spaces instead of TAB's
     jan_decaluwe:
         url: http://www.jandecaluwe.com
         title: Jan Decaluwe
@@ -43,3 +43,35 @@ reflinks:
     download_latest:
         title: Download the Latest Version of Sigasi
         url: http://www.sigasi.com/download-sigasi-20
+    tabs-and-spaces:
+        title: Tabs and Spaces
+        url: "/manual/config.html#tabs-and-spaces"
+# views
+    views/fsm:
+        title: State Machine View
+        url: "/manual/views.html#fsm"
+    views/block:
+        title: Block Diagram View
+        url: "/manual/views.html#block"
+    views/documentation:
+        title: Documentation View
+        url: "/manual/views.html#documentation"
+    views/editor:
+        title: Editor View
+        url: "/manual/views.html#editor"
+# editions and languages
+    todo:
+        title: "[Not Documented Yet]"
+        url: "todo_.html"
+    doc:
+        title: "[Only in Sigasi Doc]"
+        url: "editions.html#doc"
+    premium:
+        title: "[Only in Sigasi Premium or Premium Doc]"
+        url: "editions.html#premium"
+    vhdl:
+        title: "[Only for VHDL]"
+        url: "editions.html#vhdl"
+    verilog:
+        title: "[Only for Verilog]"
+        url: "editions.html#vhdl"

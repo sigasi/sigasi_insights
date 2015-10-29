@@ -4,8 +4,7 @@ layout: page
 pager: true
 ---
 
-The VHDL perspective {#gui-perspective}
---------------------
+# The VHDL perspective {#gui-perspective}
 
 Sigasi is built upon the Eclipse platform, which permits to use multiple
 languages within a single environment. The user interface can be
@@ -25,49 +24,7 @@ logo. A window pops up in which you can select the perspective:
 
 ![](/images/screenshots/openperspectivedialog.png)
 
-Project Views {#gui-views}
--------------
-
-When you open a project in Sigasi HDT, a number of views are presented
-in the user interface. Here is a typical screenshot, with the views
-highlighted.
-
-![](/images/screenshots/sigasiviewsannotated.png)
-
-The views provide alternative ways to access the information in a
-project. They permit efficient navigation, inspection and editing.
-
-Project Explorer
-================
-
-This view shows the directory structure of all files in all projects.
-You can use it to navigate to a particular file in your project and
-select it. When you double click on a file, the file opens in the Editor
-view. If you right-click a file, you see the *context menu* which offers
-extra commands.
-
-You can customize the behavior of the **Project Explorer** view in ways
-that can be particularly handy for large projects. For example, if you
-click the **Link with Editor** icon
-![](/images/icons/linkprojectexplorer.png) , the Project Explorer
-will be linked to the Editor view. Now, the active file in the editor
-view will always be selected in the Project Explorer.
-
-You can apply filters to choose which files are shown. Select the icon
-**View Menu** ![](/images/icons/viewmenuicon.png) and then
-**Customize view**. You can then select a filter whose matching files
-will be hidden in the view. For example, you can filter out all non-VHDL
-or non-Verilog files.
-
-Editor View
-===========
-
-The Editor view shows the content of files, and allows you to edit
-files. It is a tabbed view so that multiple files can be open for
-editing simultaneously. The currently selected file is the active file.
-
-Project exploration and navigation {#gui-navigate}
-----------------------------------
+# Project exploration and navigation {#gui-navigate}
 
 Sigasi offers powerful techniques to explore a project and navigate
 through it. This section covers: hovering, Occurrence Highlighting, Open
@@ -90,8 +47,7 @@ and the **Show Previous Match** arrow
 view. Note that all occurrences are highlighted and marked with a small
 arrow at the left border of the editor for easy recognition.
 
-Auto-complete and Content Assist
-================================
+## Auto-complete and Content Assist
 
 Sigasi HDT provides powerful autocompletion capabilities. This means
 that the tool can help you to complete identifiers and constructs as you
@@ -153,6 +109,7 @@ The tool provides help to autocomplete:
 -  case statements (based on variables/signals with an enumeration type)
 
 ### Instantiating an entity
+[vhdl]
 
 **Note:** In other tools this feature may be know as *paste as
 instantiation* or *port translation*.
@@ -175,6 +132,7 @@ that components will only be shown if they are visible in the current
 scope.
 
 ### Declaring a component
+[vhdl]
 
 **Note:** In other tools this feature may be know as *paste as
 component* or *port translation*.
@@ -188,6 +146,7 @@ selection, the tool will automatically complete the component
 declaration.
 
 ### Type Conversion
+[vhdl]
 
 In VHDL design you need to do a lot of type conversions. Sigasi’s
 autocomplete functionality can help you with those. Put a dot (`.`)
@@ -195,8 +154,7 @@ after the element you want to convert, and the autocomplete suggestions
 will appear. The conversion functions have descriptions like “convert
 type” and “convert to …”.
 
-Code highlighting (syntax coloring)
-===================================
+## Code highlighting (syntax coloring)
 
 As all editors, Sigasi colors your code to make the structure more
 clear. Unlike other tools, Sigasi offers coloring based on the
@@ -210,18 +168,16 @@ Semantic highlighting means that code gets colored according to their
 *signal*.
 
 Code highlighting is fully configurable. **Color**, **background**,
-**style** and **font** can be customized. Learn more about configuring [/manual/d_config#Colors and Fonts]
+**style** and **font** can be customized. Learn more about configuring [/manual/config#Colors and Fonts]
 
 Highlighting Classes (VHDL only):
 
 - *Syntax*  :  Comment, Keyword, Number, String, Task tag 
 - *Semantic* :  Constant, Port, Signal, Type, Variable, Attribute, Function/Procedure 
 
-Editor features
-===============
+# Editor features
 
-Block selection {#block-select}
----------------
+## Block selection {#block-select}
 
 **Note:** In other tools, this feature may be known as *column editing*
 or *column select*.
@@ -237,8 +193,7 @@ example a column of a table or all port names in a port map.
 To toggle between normal and block selection modes use **Alt+Shift+A**
 or press the **Toggle Block Selection** icon in the tool bar.
 
-Move and Duplicate lines {#move-lines}
-------------------------
+## Move and Duplicate lines {#move-lines}
 
 You can easily *move* lines up and down by pressing: **Alt+Up** and
 **Alt+Down**.
@@ -246,15 +201,13 @@ You can easily *move* lines up and down by pressing: **Alt+Up** and
 You can *duplicate* your current line, or the lines of the current
 selection by pressing: **Ctrl+Alt+Down**.
 
-Remove Trailing Whitespace {#trailing-whitespace}
---------------------------
+## Remove Trailing Whitespace {#trailing-whitespace}
 
 The action to remove trailing whitespace is hidden by default. You can
 access it by pressing **Ctrl+3**, type **RTW** and then select the
-correct action. Alternatively, you can bind this action to [/manual/c_key] of your preference.
+correct action. Alternatively, you can bind this action to [/manual/keyshortcuts] of your preference.
 
-Hover
-=====
+## Hover
 
 To learn more about the declaration of a given identifier, hold your
 mouse pointer over it. After about a second, a popup shows you the name
@@ -270,8 +223,7 @@ In the hover pop-up, can show different kinds of information:
 -   binary / decimal conversion: for hexadecimal, octal or binary
     values, the decimal equivalent
 
-Comment Association
--------------------
+### Comment Association
 
 Comments in HDL code are used to add extra information or documentation
 to that code. Sigasi uses certain rules to determine which comment
@@ -285,8 +237,7 @@ comment is associated with this declaration.
 - In all other cases, the comment is associated with the next following
 declaration.
 
-Lightweight editor for large files
-==================================
+## Lightweight editor for large files
 
 Sometimes you have to deal with very large VHDL files such as large
 concatenated library files and generated files. Unfortunately the Sigasi
@@ -302,8 +253,7 @@ VHDL editor will check for errors when you save your file.
 The current threshold VHDL file size that is used to switch to the
 lightweight editor is 1 MB.
 
-Open Declaration and Hyperlinks
-===============================
+## Open Declaration and Hyperlinks
 
 **Open Declaration** You can easily navigate to the declaration of any
 port, signal, entity, etc. Place the cursor on the identifier,
@@ -326,115 +276,3 @@ component **generics** and **ports**.
 can jump directly to the matching *when* part of your case statement
 from state transitions.
 - URLs in **comments**
-
-Outline view
-============
-
-The Outline view displays the contents of the active file, in terms of
-the HDL objects that it contains.
-
-You can sort the elements in the outline alphabetically, by enabling the
-**sort** button ![](/images/icons/alphab\_sort\_co.gif).
-
-You can also filter all concurrent signal assignments from the outline
-by enabling the **Hide Signal Assignments** button
-![](/images/icons/signal_assignments_filter.png).
-Double-click in the Outline view to navigate to the corresponding
-location in the editor.
-
-If you enable the **Link with Editor** icon
-![](/images/icons/linkprojectexplorer.png) and you click an
-element in the outline view, the corresponding code will be selected in
-the editor.
-
-Hierarchy view
-==============
-
-The Hierarchy view shows the VHDL design hierarchy starting at a
-selected top level object. To choose a top level, open a file and
-right-click on an architecture (or entity or configuration). Then click
-**Set as Top Level**. Alternatively you can click the **Set Top** button
-in the hierarchy view to open a hierarchy top level selection dialog.
-You can use the filter field to quickly search for a certain top level.
-
-The hierarchy view automatically refreshes itself when you save your
-design files. If you have a really large design this could slow you
-down. You can turn the automatic refresh on and off by toggling the
-**refresh** button ![](/images/icons/refresh.gif).
-
-When you double-click an object in the hierarchy, the Editor view is
-updated accordingly, possibly by displaying the contents of a different
-file.
-
-Use the *instantiations* filter
-![](/images/icons/instantiation.png), to hide everything except
-instantiations and structural statements are shown.
-
-You can launch a simulation with the ![](/images/icons/run_exc.gif)
-button, if you first set up an [external simulator](/integration).
-
-The Hierarchy View also offers an action **Select required files**, which selects all design files that are part of the current hierarchy, in the project explorer. This allows you to easily perform the same action on all files in the hierarchy. E.g. team commands, ... This action is only available with a Premium Desktop license.
-
-![](/images/screenshots/select_required_files_in_hierarchy.png)
-
-Generics view
-=============
-
-The Generics view shows the generic and constants values of components
-in the hierarchy. To activate the Generics view: go to the hierarchy
-view, right-click an instantiation (or the top level) and select **Show
-in Generics View**. By default, the Generics view will be positioned
-over the outline view. Use the tabs to select which view you want to
-see.
-
-The Generics view shows the generics and constants values of the
-component that is active in the Hierarchy view. The internal compiler
-computes the generics and constants, even if they are passed down
-through the hierarchy, and even if arithmetic operations are used to
-define new values. If the value cannot be computed for some reason, the
-Generics view will report the value to be *unknown*. Double-clicking a
-generic or constant will open the corresponding declaration in a VHDL
-editor.
-
-Problems view
-=============
-
-The Problems view shows problems (errors and warnings) related to your
-code. These problems were reported either by the internal compiler or by
-an external compiler tool. 
-You can navigate to the source of the problem by double clicking on a
-given problem. Problems can be sorted by clicking the column headers.
-The content of this view can be customized via the **View Menu**
-![](/images/icons/viewmenuicon.png) . Possible customizations are
-*scope* (workspace, project, selection), *type*, maximum number of
-problems, …
-
-Libraries view
-==============
-
-![](/images/screenshots/libraries-view.png)
-
-The libraries view shows the library mapping of the design units in all
-projects. You can use it to navigate to a particular design unit in your
-project. When you double click on a file, the file opens in the Editor
-view. If you right-click a file, you see the *context menu* which offers
-extra commands for [library mapping](libraries#libraries-mapping) .
-
-If you enable the **Link with Editor** button
-![](/images/icons/linkprojectexplorer.png), the Library view will
-be linked to the Editor view. Now, active file in the editor view will
-always be selected in the Library view.
-
-Tasks View
-==========
-
-![](/images/screenshots/tasks-view.png)
-
-It is common practice to add **TODO** and **FIXME** comments in your
-code. Sigasi automatically scans your comments for TODO and FIXME tags
-and clearly highlights these comments with **Task Tags**. You can get a
-nice overview of all task markers in your workspace in the **Task View**
-(**Windows \> Show View \> Tasks**).
-
-You can configure extra tags in the Task Tag preference page:
-**Preferences \> Sigasi \> VHDL \> Task Tags**
