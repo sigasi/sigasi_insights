@@ -15,6 +15,10 @@ You can specify a linenumber by appending `+yourLineNumber` to the
 command line. For example: `sigasi test.vhd +10` will open `test.vhd` at
 line 10.
 
+You can also specify the project location with the `-p <project path>` parameter.
+If the specified project was not open in the workspace yet, this will import
+and open the project in the workspace. 
+
 Note that the VHDL file you specify on the command line has to be in an
 *open Sigasi project* to enjoy all of Sigasi’s powerful editing and
 navigation features. If the file you open from the command line is not
