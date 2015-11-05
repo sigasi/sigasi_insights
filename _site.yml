@@ -19,6 +19,9 @@ reflinks:
     send_email:
         url: mailto:support@sigasi.com
         title: send us an email
+    contact-us:
+        title: contact us
+        url: mailto:sales@sigasi.com
     download_sigasi:
         url: http://www.sigasi.com/download
         title: Download Sigasi
@@ -75,3 +78,19 @@ reflinks:
     verilog:
         title: "[Only for Verilog]"
         url: "editions.html#vhdl"
+# faq
+    vrapper:
+        title: vrapper
+        url: http://vrapper.sourceforge.net/home/
+    emacs-keybindings:
+        title: Emacs key bindings
+        url: http://help.eclipse.org/helios/index.jsp?topic=/org.eclipse.platform.doc.user/concepts/accessibility/keyboardshortcuts.htm
+    ultra-edit-keybindings-plugin:
+        title: UltraEdit Key Bindings Plugin
+        url: https://marketplace.eclipse.org/content/ultraedit-key-bindings
+    sha-util:
+      title: "MD5 & SHA Checksum Utility"
+      url: http://download.cnet.com/MD5-SHA-Checksum-Utility/3000-2092_4-10911445.html
+    language-bar:
+      title: Language bar keyboard shortcuts
+      url: http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/langbar_keystroke_shortcuts.mspx?mfr=true
