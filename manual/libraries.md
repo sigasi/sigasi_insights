@@ -4,8 +4,7 @@ layout: page
 pager: true
 ---
 
-Introduction
-------------
+# Introduction
 
 HDL libraries are a very powerful feature of the HDL languages. Sigasi
 makes it easy to configure and use them. In this chapter, we assume that
@@ -19,8 +18,7 @@ configuration can be examined and modified using the GUI.
 We will also present some use case about how to set up libraries with
 Sigasi HDT to organize your projects.
 
-Examining the library configuration {#libraries-examine}
------------------------------------
+# Examining the library configuration {#libraries-examine}
 
 You can examine the library configuration in the [/manual/user_interface#Libraries View] 
 and in the [/manual/user_interface#Project Explorer] 
@@ -56,8 +54,7 @@ the entire contents of the `STD` folder will be mapped into the library
 performed. If this needed, any individual file can be mapped to a
 separate library.
 
-Modifying the library configuration {#libraries-mapping}
------------------------------------
+# Modifying the library configuration {#libraries-mapping}
 
 The library mapping for project files can be modified in the Libraries
 and Project Explorer view.
@@ -98,8 +95,7 @@ not a part of the project and will not include that resource in a
 project build. This is typically useful when you have stale copies of
 HDL files or folders lying around that you want simply to be ignored.
 
-Common libraries {#libraries-common}
-----------------
+# Common libraries {#libraries-common}
 
 In any newly created VHDL project, the `Common Libraries` folder
 contains the VHDL files of the `IEEE` and `STD` libraries. This folder
@@ -117,8 +113,11 @@ Right-click on your project in the explorer view and apply menu-entry
 
 ![](/images/screenshots/librarymappingrestorecommonlibraries.png)
 
-Shared libraries
-----------------
+# IEEE Vital 
+[todo]
+[See this article](http://support.sigasi.com/Knowledgebase/Article/View/39/2/how-can-i-use-the-ieee-vital-libraries-with-sigasi-pro).
+
+# Shared libraries
 
 Sigasi allows you to share libraries between multiple projects. The
 easiest way to do this, is to develop each library in a separate project
@@ -130,8 +129,7 @@ References** and mark the library project as referenced project.
 [Video
 demonstration](http://www.sigasi.com/screencast/project-dependencies-sigasi-hdt-20)
 
-Using third party libraries {#libraries-third-party}
----------------------------
+# Using third party libraries {#libraries-third-party}
 
 Many projects use third party libraries. These can be added to the
 project as any other set of VHDL files.
@@ -152,8 +150,7 @@ and `/opt/altera` for Altera.
 For many common third party libraries, you can set up the library using
 a [/manual/linting#Quickfix for third party libraries].
 
-Library errors from external compilers
---------------------------------------
+# Library errors from external compilers
 
 If you are using the [/manual/tools#External Compilers], the external
 compiler can also put error markers on library clauses. You can easily
