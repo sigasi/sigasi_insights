@@ -42,6 +42,16 @@ If your feature brings a lot of value to you and to other users. For example, a 
 If other users comment on your feature request on the forum, to tell us that they want your feature.
 Obviously, we can also build custom features or add-ons on a project basis. Projects can several man-months or years, but also a feature in just a one or two days of engineering to. So feel free to talk to us about any feature, big or small.
 
+## The internal web browser does not work on Linux
+
+Sigasi uses your system's native browser to display html content.
+When Sigasi's default settings do not work on your Linux system, try the following:
+1. Make sure the `webkitgtk` package is installed (`dnf install webkitgtk`)
+2. Replace `-Dorg.eclipse.swt.browser.DefaultType=mozilla` with `-Dorg.eclipse.swt.browser.UseWebKitGTK=true` in your sigasi.ini
+3. On preference page `General > Web Browser`, select **Use internal web browser**
+
+[Complete info on Eclipse website](https://www.eclipse.org/swt/faq.php#browserplatforms)
+
 ## What kind of linting rules are possible?
 The answer to this question is not straightforward. However, some examples may help. We can implement (but are in not limited to) the following types of custom linting rules:
 
