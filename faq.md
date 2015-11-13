@@ -147,11 +147,6 @@ Select the View Menu (small triangle pointing down) > Customize View > Filters.
 
 Now you can filter out hidden files (`.* resources`) or `All non VHDL Files`.
 
-
-
-## Occurrence highlighting does not work. Can I turn it back on?
-You can turn occurrence highlighting on or off. Click the "Toggle Mark Occurences" icon ![Mark Occurences](/images/icons/mark_occurences_icon.png "Mark Occurences") in the toolbar.
-
 ## Do you sell floating licenses?
 We offer floating licenses, based on the well know FlexNet (a.k.a. FlexLM) license manager.
 Floating licenses are available at a minimum volume of five licenses. The price is the same as for node-locked licenses.

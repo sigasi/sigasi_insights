@@ -36,6 +36,10 @@ refer to the same object are highlighted. Note that this occurrence
 highlighting is intelligent: it is not based on the identifier’s string
 value, but on the object that the identifier refers to.
 
+You can turn occurrence highlighting on or off. Click 
+the "Toggle Mark Occurences" icon ![Mark Occurences](/images/icons/mark_occurences_icon.png "Mark Occurences") in the toolbar.
+
+
 **Finding References** To look for occurrences of a given identifier in
 different files, place your cursor on the identifier and right-click.
 Now select **Search References**. A search window will appear on the

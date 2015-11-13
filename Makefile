@@ -19,6 +19,9 @@ serve:
 	@echo 'http://localhost:8000'
 	python -m urubu serve
 
+clean:
+	rm -Rf _build
+	rm -Rf _gh-pages
 urubu:
 	pip install --upgrade urubu
 
