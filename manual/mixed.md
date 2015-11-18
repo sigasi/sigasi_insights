@@ -35,6 +35,4 @@ Other supported features:
 
 If you don't have the correct license for mixed language projects, you can still create your designs using two separate languages. In this case, choose your main language and enable support for this language (in this example: VHDL). Now, the files in the other language (in this example: Verilog) can still be in your project. You can still edit them and you even get Sigasi support inside any one Verilog file. What is disabled now are the references from and to any Verilog files, but they work within a single Verilog file.
 
-The [tools] won't take Verilog files into account.
-
 If you want to instantiate a Verilog module in VHDL you need to work with a component declaration so that the VHDL part know the interface of you Verilog module.
