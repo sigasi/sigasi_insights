@@ -101,7 +101,7 @@ After a few seconds, a new window will appear with further instructions.
 
 The updates can be postponed by closing the pop-up. You can perform the
 updates at any time by clicking the
-!(inline)./images/icons/updatesavailableicon.png!-icon in the status bar
+![Update icon](/images/icons/updatesavailableicon.png)-icon in the status bar
 at the bottom of the screen.
 
 Consult the [troubleshooting chapter](troubleshooting#ts) if the update

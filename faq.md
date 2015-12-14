@@ -127,15 +127,28 @@ You can revert to older revisions of these files while Sigasi is running. Sigasi
 See [tabs-and-spaces].
 
 ## I don't see error icons in the Project Explorer, or I don't see the library names in the Project Explorer!
-[todo]
 
-[See here](http://support.sigasi.com/Knowledgebase/Article/View/46/2/i-dont-see-error-icons-in-the-project-explorer-or-i-dont-see-the-library-names-in-the-project-explorer)
+Normally, if your file contains an error, you will see error markers in several places, including in the Project Explorer. Those so-called **label decorators** can be either a red square with a white cross for errors, or a yellow triangle with an exclamation mark for warnings. Sigasi puts the decorators on the file that contains an error and all of its ancestors (the folder that contains the file, and the folder that contains that folder, all the way up to the project.
 
-<!--
-## "Remove" files form project, without deleting
-Q: I get lots of errors in files that are not even really a part of my project. Can I hide them? 
-A: Legacy projects tend to accumulate files that are no longer needed in the projects. These files are still on your disk, or even in yourrevision control...
--->
+Sigasi also puts the name of the library next to each HDL file and folder that is mapped to that library. In order to map files to a library, right-click on a HDL or Verilog file, or folder and select **Set Library**.
+
+
+If you cannot see the problem decorators or library decorators in the Project Explorer, there are two possible reasons:
+
+* The file was not compiled as VHDL/Verilog file. To fix this try:
+	* Check that your file is saved
+	* Check that the project has VHDL or Verilog support: Right-click on the project **Configure > Add VHDL Support**
+	* Make sure your project is being built: Project > Build Automatically
+
+* The decorators are disabled. To fix this, enable:
+	* **Window > Preferences > General > Appearance > Label Decorations > Sigasi Problem Decorator**
+	* **Window > Preferences > General > Appearance > Label Decorations > Library Decorator**
+
+##  I get lots of errors in files that are not even really a part of my project. Can I hide them?
+
+Legacy projects tend to accumulate files that are no longer needed in the projects. These files are still on your disk, or even in your revision control system, but the scripts don't feed them to the simulator or to the synthesis tools any more. These junk files can accumulate over time.
+
+The recommended approach is to remove these junk files. If you are using a revision control system, you can always go back, so there is no risk to removing stale files. However, if there is a good reason to keep junk files in the project folder, you can excluded them from all libraries: Right-click the files and select **Set Library > Exclude from build**.
 
 
 ## Does Sigasi support multi-byte characters?
@@ -151,9 +164,9 @@ While you are configuring your libraries (mapping and unmapping files), the buil
 ## How can I hide files from the Project Explorer?
 If the project explorer shows the hidden files in from your revision control system (.hg or .svn directory), or there are too many files from Altera Quatrus or Xilinx ISE that clutter the project explorer, you can hide those files from view:
 
-Select the View Menu (small triangle pointing down) > Customize View > Filters. 
+Select the View Menu (small triangle pointing down) **Customize View > Filters**. 
 
-<!--Customize View screenshot-->
+![](images/screenshots/customize-view.png)
 
 Now you can filter out hidden files (`.* resources`) or `All non VHDL Files`.
 
@@ -191,28 +204,65 @@ To change the key binding (keyboard shortcuts) within Eclipse: **Window > Prefer
 	* Windows 7 (32 bit and 64 bit) or newer
 	* Solaris on SPARC (64 bit)
 
-<!-- 
 ## What is a Workspace?
-When you first run Sigasi, it asks for a _workspace location_. This workspace will hold meta-information (preferences, project information,...) and serves as the default location for your projects.
+A workspace holds all Sigasi Studio's meta-information (preferences, project information,...) and serves as the default location for your projects.
 
 ## I typed an error in my VHDL code. Why doesn't Sigasi catch this?
-Sigasi HDT does not attempt to check full correctness of your VHDL code. We just run a set of syntax checks and general "sanity checks". This way, 90% of the common errors are caught before you even start your simulator. As you design, you put your ...
+Sigasi Studio does not attempt to check full correctness of your VHDL and Verilog code. We just run a set of syntax checks and general "sanity checks". This way, 90% of the common errors are caught before you even start your simulator.
 
-## How do I increase the heap size for Eclipse/Sigasi?
-We recommend to increase the default heap size settings of Eclipse [1]. You can do this by adding following lines to eclipse.ini [2] in your Eclipse installation folder (In the standalone Sigasi version, this is the sigasi.ini file): -VMARGS -XMX14...
+As you design, you put your code through a funnel: first Sigasi finds the first 90% of errors in your code, without ever running a simulation. Next you compile with the simulator and you find another bunch of problems. In each successive step of your design flow, you find harder to track errors in your design. Sigasi just helps you get a big number of issues out of the way early on, so that you can concentrate on finding the hard problems down the road.
+
+![](images/screenshots/funnel_small.png)
+
+If you want to check more errors, enable the [integration with external compilers](/manual/tools#Save Time Compilation)
+
+## How do I increase the heap size for Eclipse?
+
+We recommend to increase the default heap size settings of Eclipse. You can do this by adding following lines to eclipse.ini in your Eclipse installation folder:
+```
+-vmargs
+-Xmx1400m
+```
+This sets the maximum heap size to 1400 MB. If you system has plenty of memory, you can even choose higher numbers.
+
+**Note**: If your `eclipse.ini` already contains these arguments, you should not append these parameters again, but instead modify the existing values. If `-vmargs` is there already, but `-Xmx1400m` is not; you should add `-Xmx1400m` after the existing `-vmargs`.
+**Note**: If you run the stand alone version of Sigasi Studio, this settings file is called `sigasi.ini` instead of `eclipse.ini`
 
 ## How can I update Sigasi?
-If you run Sigasi as a standalone application, the automated update system will periodically check for updates. When updates are available, you are notified by a pop-up window called UPDATES AVAILABLE in the bottom right corner: If you want to insta...
+
+If you run Sigasi as a **standalone application**, the automated update system will [periodically check for updates](setup#Software updates).
+
+If the updates are not automatically fetched from our update server you are probably behind a **firewall** or **proxy server**. You can configure Sigasi's proxy settings in **Window > Preferences > General > Network connections**. If you can not add a firewall exception for our update site, the fallback solution is to [download](http://www.sigasi.com/download) the complete application from our website. You can completely replace your old installation; all settings are stored in your workspace (the default is `workspaceSigasi` in your home directory).
+
+If you run Sigasi as an **Eclipse plugin**, you may need to check for updates manually, by clicking **Help > Check for Updates**.
+
+You can enable automatic updates by opening this preference page : **Install/Update > Automatic Updates**. Next enable **Automatically find new updates and notify me**. Feel free to modify any of the available options.
+
+It is good practice to first create a backup of your installation folder before running an update. This can be done by simply compressing the `eclipse` or the `sigasi` folder in an archive (zip file)
+
+After you update, all Sigasi caches will be cleared. Your initial build will take a bit longer than usual.
 
 ## Where can I find the log file?
-Sigasi logs all internal errors to a log file. You can find this file in: workspace-sigasi/.metadata/.log This file is also reachable in Sigasi HDT itself via: HELP > SIGASI > OPEN LOG. The log file contains no sensitive information about your o...
+Sigasi logs all internal errors to a log file. You can find this file in: `workspaceSigasi/.metadata/.log` This file is also reachable in Sigasi Studio itself via **Help > Sigasi > Open log**
+
+The log file contains no sensitive information about your organization. On some occasions, the Sigasi Team may suggest to send them the log file to debug or improve the product. However, the option to do so or not remains yours.
 
 ## Why is Sigasi trying to get through my firewall?
-There can be a number of reasons why Sigasi connects to the internet. UPDATES Each time you start Sigasi, the program checks to see if there are new updates from our update website (currently located at IP 195.144.71.15). Sigasi downloads the upda...
+There can be a number of reasons why Sigasi connects to the internet. 
+
+* Updates: Each time you start Sigasi, the program checks to see if there are new [updates](setup#Software updates) from our update website (currently located at http://download.sigasi.com). Sigasi downloads the updates in the background and, when done, it asks you if it can install them.
+* [Talkback](http://www.sigasi.com/sigasi-talkback) 
+* Other Plugins: Obviously, other plugins can also connect to the internet. Some examples are plugins for revision control or issue tracking, or the built-in Eclipse web browser.
+
+**Enhanced security**: Customers with strict security policies can contact us to discuss compliance with their policies.
 
 ## Do you support block select (a.k.a. column editing mode)?
-We have released support for block editing in Update 2009-07-17 [1]. Note that in many cases where you are used to using block editing (e.g. instantiating an entity [2]), you may not need it any more, thanks to intelligent code completion (see this ...
+You can enable and disable block editing with **Ctrl+Alt+A** or **Edit > Toggle Block Selection**
 
+Note that in many cases where you are used to using block editing (e.g. [instantiating an entity](http://www.sigasi.com/node/30)), you may not need it any more, thanks to intelligent code completion (see this [blog post](http://www.sigasi.com/node/91)).
+
+
+<!-- 
 ## What is this MouseFeed pop-up?
 Many actions can be accessed using your mouse and using a keyboard shortcut, e.g. copying text can be done either by clickingEDIT > COPY or by pressing CTRL-C. Of course, pressing a key combination is a lot faster than clicking in a menu. [1] [...
 
