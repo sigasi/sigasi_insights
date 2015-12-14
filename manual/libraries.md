@@ -115,6 +115,7 @@ Right-click on your project in the explorer view and apply menu-entry
 
 # IEEE Vital 
 [todo]
+
 [See this article](http://support.sigasi.com/Knowledgebase/Article/View/39/2/how-can-i-use-the-ieee-vital-libraries-with-sigasi-pro).
 
 # Shared libraries
@@ -126,8 +127,7 @@ project dependencies, right click the project (the one that uses the
 shared library) and select **Properties**. Next click **Project
 References** and mark the library project as referenced project.
 
-[Video
-demonstration](http://www.sigasi.com/screencast/project-dependencies-sigasi-hdt-20)
+[Video demonstration](http://www.sigasi.com/screencast/project-dependencies-sigasi-hdt-20)
 
 # Using third party libraries {#libraries-third-party}
 
@@ -152,11 +152,5 @@ a [/manual/linting#Quickfix for third party libraries].
 
 # Library errors from external compilers
 
-If you are using the [/manual/tools#External Compilers], the external
-compiler can also put error markers on library clauses. You can easily
-verify this by checking the prefix of the error message (e.g. `vcom:`
-for vcom errors). Consult the [libraries section of the external
-compiler
-integration](/manual/external-compiler-integration#integration-external-compiler-libraries)
-for more information on configuring libraries for your external
-compiler.
+If you are using the [/manual/tools#External Compilers], the external compiler can also put error markers on library clauses. You can easily
+verify this by checking the prefix of the error message (e.g. `vcom:` for vcom errors). Consult the [libraries section of the external compiler integration](/manual/external-compiler-integration#integration-external-compiler-libraries) for more information on configuring libraries for your external compiler.
