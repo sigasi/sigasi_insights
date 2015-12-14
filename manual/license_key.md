@@ -1,0 +1,191 @@
+---
+title: License Key Management
+layout: page 
+pager: true
+---
+
+# Introduction
+
+Sigasi's license key management system is based on the well known FlexNet (a.k.a. FlexLM) license manager.
+Sigasi supports both *node-locked* and *floating* license keys.
+
+
+# Node locked licenses
+
+If you have a node-locked license, you can enter your license key directly in Sigasi Studio.
+
+1. Open the Sigasi License Key preference page: **Window > Preferences > Sigasi > License Key**
+2. Click **Edit License File**
+3. paste your key in the dialog
+
+An example node-locked license looks like this. Note that the first line starts with `INCREMENT`
+
+```
+INCREMENT com.sigasi.hdt sigasi 2.0 18-nov-2012 uncounted \
+        VENDOR_STRING="company:www.example.com;mac:10f2dd92c5ac;name:John \
+        Doe;type:trial" HOSTID=ANY ISSUER=Sigasi ISSUED=21-Oct-2012 \
+        START=21-Oct-2012 SIGN="0CCC 87EA 9BB6 256E 7D81 E49D B2A6 \
+        E53D 1CA5 41D4 63DF 8671 5695 EF82 0E30 1028 732D DED3 0999 \
+        FD11 8B97 42B0 7CF2 F51F 20A0 DA6E 7F54 9D64 FF29 49AB"
+```
+
+# Floating licenses
+
+If you have a floating license key, you need to configure both a license server and Sigasi Studio. 
+
+An example floating license looks like this. Note that the first line starts with `DAEMON`:
+
+```
+DAEMON sigasi port=27001
+SERVER your_server_name1 BD41FCF5DE27 27000
+INCREMENT com.sigasi.hdt sigasi 2.0 18-nov-2012 4 \
+        VENDOR_STRING="company:www.example.com;mac:10f2dd92c5ac;name:John \
+        Doe;type:trial" HOSTID=ANY ISSUER=Sigasi ISSUED=21-Oct-2012 \
+        START=21-Oct-2012 SIGN="0960 9728 7193 4DA5 15C2 3652 21E1 \
+        EF82 1060 8FC1 9EA6 0C43 4842 C50B 684F E4DA 8EEF 37E9 5384 \
+        8DF4 106C 52B4 EECE 0A69 CBAC 0CF2 47E2 00F2 A244 E22F"
+```
+
+## Configuring Floating license in Sigasi Studio (Flexnet Client)
+
+In order to use a floating license, Sigasi Studio needs to know how to contact the server.
+
+In the Sigasi Studio, navigate to the **License Key** preference page via:
+**Window > Preferences > Sigasi > License Key** 
+
+Next enter "<port number>@<servername>" (for example: 5050@myserver.example.com) as license key in:  
+
+You can also set your license via an environment variable. Both `SIGASI_LM_LICENSE_FILE` and `LM_LICENSE_FILE` are supported.
+Note that if you want to the environment variable, you can not enter a path in the License Key preference page. The value on this page has priority over environment variables. 
+
+Linux Example:
+```
+export SIGASI_LM_LICENSE_FILE=27000@flexnet.sigasi.com
+```
+
+## License server setup
+
+### Download the FlexNet daemons
+
+* Linux:
+	* [Linux 64 bit](http://www.sigasi.com/sites/www.sigasi.com/files/flexnet/sigasi-flexnet-linux64.zip)
+	* [Linux 32 bit](http://www.sigasi.com/sites/www.sigasi.com/files/flexnet/sigasi-flexnet-linux32.zip)
+* Windows (Windows 7 or newer):
+	* [Windows 64 bit](http://www.sigasi.com/sites/www.sigasi.com/files/flexnet/sigasi-flexnet-win64.zip)
+	* [Windows 32 bit](http://www.sigasi.com/sites/www.sigasi.com/files/flexnet/sigasi-flexnet-win32.zip) (works on Windows Server 2003 too)
+* Solaris (on SPARC):
+	* [Solaris 64 bit](http://www.sigasi.com/sites/www.sigasi.com/files/flexnet/sigasi-flexnet-solaris64.zip)
+
+### Customize License Server settings
+
+You can change the port of the FlexNet and Sigasi daemon by changing the port numbers in the license key. By default ports `27000` and `27001` are used.
+
+The port of the Sigasi daemon is set on the `DAEMON` line. For example: `DAEMON sigasi port=27001`, forces the Sigasi to use port 27001. 
+
+The port of the FlexNet daemon is set on the `SERVER` line For example: `SERVER your_server_name1 BD41FCF5DE27 27000`, forces FlexNet to use port 27000.
+
+You can change the ports and servername without breaking the signature.
+	
+
+### Starting the Flexnet and Sigasi Daemon on Linux
+
+the easiest way to start the Sigasi Flexnet Daemon is like this (on Linux)
+
+```
+#!/bin/sh
+echo "Starting the Sigasi floating license server"
+LOCATION=/home/flex/flexnet-sigasi
+$LOCATION/lmgrd -c $LOCATION/sigasi.lic -l $LOCATION/debug.log
+```
+
+### Starting the Flexnet and Sigasi Daemon on Windows
+
+1. Download the Sigasi daemon (see above)
+2. Create a folder in your Sigasi installation to hold the license manager software, in this example we will use license.
+3. Unpack the zip file into the license folder  (`D:\Sigasi\license`)
+4. Run the license configuration tool `lmtools.exe` as administrator.
+5. Save the license file supplied for Sigasi to the license folder
+6. Using a text editor edit the license file and replace your_server_name1 with the name of the machine you are using, for example:
+	From: `SERVER your_server_name1 74e50bb0911e`
+	To: `SERVER Maple 74e50bb0911e`
+	
+	**Note**: If you are not sure of the name of the machine you are using click on the **System Settings** tab of lmtools, where it is shown, see below: ![](/images/screenshots/flexnet_windows_1.png)
+
+7. Click on the **Config Services** tab and fill in the following, use the browse button when available:
+	* **Service Name**: Sigasi License Manager
+	* **Path to lmgrd.exe**: `D:\sigasi\license\lmgrd.exe`
+	* **Path to license file**: `D:\sigasi\license\sigasi.lic`
+	* **Path to the debug log file**: `D:\sigasi\license\debug.log`
+	**Note**: You will probably need to type the "Path to the debug log file", in full as the file will not exist so you cannot browse to it.
+8. Ensure both the following check boxes are checked:
+	* **Use Services**
+	* **Start Server at Power Up**
+9. Now click the **Save Service** button, and click **yes** on the confirmation dialog.
+
+The license server should now be configured correctly, and looks a bit like this one
+
+![](/images/screenshots/flexnet_windows_2.png)
+
+
+## Floating License options
+
+### Release a floating license
+
+You can release a floating license (_check a license in_) without closing your Sigasi application or Eclipse application. This is useful if you use Eclipse to edit other files than VHDL files, like C or Tcl.
+
+First, make sure that all VHDL and Verilog files are closed and all VHDL and Verilog projects are closed. Next select  **Help > Sigasi > Floating license > Release Sigasi Floating Licenses**
+
+To get the license back (to check the licnese out), open the license dialog **Help > Sigasi > Configure License...** and press **Apply**.
+
+Similarly a floating Sigasi XL Doc addon license can be released via: **Help > Sigasi > Floating license > Release Sigasi Studio XL Doc Floating Licenses**.
+
+### How to avoid that Sigasi tries to check out a license?
+
+If you have configured an environment variable with the location of a Flexnet license server, you can instruct Sigasi **not** to check out a license by setting the Sigasi Studio License key to `none`.
+
+### Extra floating license options in Sigasi Studio
+
+If your license server serves both Sigasi Studio **Creator** and **XL** licenses, you can configure Sigasi studio to only checkout Sigasi **Creator** licenses (and **not** XL licenses) by enabling the "**Do not try to checkout floating Sigasi Studio XL licenses**" option on **Window > Preferences > Sigasi > License Key > Floating Options**
+
+
+# Troubleshooting
+
+If your license key does not work, the first things to check are:
+
+* Is the MAC address correct?
+* Has the license expired?
+* Did you copy the license string exactly as it was sent to you?
+* Did you accidently try to use a License Token as a license key?
+	A *License Token* is a 24 character string. License tokens must be converted to license keys before they can be used in Sigasi. You can convert your tokens at http://www.sigasi.com/activate-your-license-key.
+	A _License Key*  (or license file) looks like this:
+```
+INCREMENT com.sigasi.hdt sigasi 2.0 18-nov-2012 uncounted \
+        VENDOR_STRING="company:www.example.com;mac:10f2dd92c5ac;name:John \
+        Doe;type:trial" HOSTID=ANY ISSUER=Sigasi ISSUED=21-Oct-2012 \
+        START=21-Oct-2012 SIGN="0CCC 87EA 9BB6 256E 7D81 E49D B2A6 \
+        E53D 1CA5 41D4 63DF 8671 5695 EF82 0E30 1028 732D DED3 0999 \
+        FD11 8B97 42B0 7CF2 F51F 20A0 DA6E 7F54 9D64 FF29 49AB"
+``` 
+
+## Floating licenses
+
+If your floating license server does not function properly, try the following steps:
+
+* Start the FlexLM daemon with the `-z` option to see what is going wrong
+* Make sure the server name in the license key file is correct
+* **Firewall** problems:
+	* make sure that the port for the Sigasi FlexLM license daemon is open
+	* you can force the port for the Sigasi license daemon by adding USE_SERVER and DAEMON sigasi port=<port number>to your license key
+* On Linux you might have to install lsb:
+	* `sudo apt-get install lsb-core`
+	* `zypper in lsb`
+	* `yum install lsb`
+	* `yum install redhat-lsb.i686`
+* You can not have spaces in the daemon path.
+* Some users reported that specifying an arbitrary absolute path for the Sigasi daemon on Windows (e.g. `DAEMON sigasi C:\\sigasi.exe port=27021`) does not work. It only works if the sigasi daemon is in the `C:\Sigasi` folder.
+  Other users have reported that you are *not* allowed to have the directory name being the same as the daemon name. For example: `c:\flexlm\sigasi\sigasi.exe` is invalid, but `c:\flexlm\vhdl_editor\sigasi.exe` works fine.
+* Make sure the environment variable is correct: SIGASI_LM_LICENSE_FILE=<port number>@<servername>
+* Verify that your server meets the [minimal system requirements](faq#what-are-the-system-requirements). Contact us for options if it does not.
+* You can easily check the status of your license via the License Key preference page : **Preferences > VHDL > License Key**. At the bottom of this preference page you can see the type and expiration date of your license.
+
+If the steps above do not help, feel free to [contact us](mailto:support@sigasi.com) and send us a **screenshot of the license dialog** with the error message.

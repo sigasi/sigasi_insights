@@ -158,7 +158,7 @@ Select the View Menu (small triangle pointing down) > Customize View > Filters.
 Now you can filter out hidden files (`.* resources`) or `All non VHDL Files`.
 
 ## Do you sell floating licenses?
-We offer floating licenses, based on the well know FlexNet (a.k.a. FlexLM) license manager.
+We offer floating licenses, based on the well known FlexNet (a.k.a. FlexLM) license manager.
 Floating licenses are available at a minimum volume of five licenses. The price is the same as for node-locked licenses.
 
 If your team is purchasing at least five licenses, you will have the choice between node-locked and floating licenses.
@@ -167,7 +167,29 @@ If you currently have five node-locked licenses and you want to upgrade to float
 
 
 ## How can I change the default key bindings?
-To change the key binding (keyboard shortcuts) within Eclipse: WINDOW > PREFERENCES and then GENERAL > KEYS.
+To change the key binding (keyboard shortcuts) within Eclipse: **Window > Preferences** and next **General > Keys**.
+
+
+## What are the system requirements?
+
+* Sigasi Studio Standalone is supported on:
+	* Windows: Windows 7 and Windows 8 (32 bit and 64 bit) or newer
+	* Mac OS: X Yosemite or newer
+	* Linux: RedHat Enterprise Linux RHEL 6 (64 bit) or newer.
+	
+	However, it should work on most of the recent Linux distributions, on Windows XP and up, and on Mac OS X.
+	We recommend at least **2GB of memory**, and you need **about 200MB** of free disk space. 
+
+* Sigasi Studio as Plugin in your own Eclipse installation:
+	* Eclipse 4.2 or higher
+	* Java JRE 7 or higher
+	
+	And all requirements from the standalone version:
+
+* License servers (FlexNet):
+	* RedHat Enterprise Linux 5.2 (32 bit and 64 bit) or newer
+	* Windows 7 (32 bit and 64 bit) or newer
+	* Solaris on SPARC (64 bit)
 
 <!-- 
 ## What is a Workspace?
@@ -181,9 +203,6 @@ We recommend to increase the default heap size settings of Eclipse [1]. You can 
 
 ## How can I update Sigasi?
 If you run Sigasi as a standalone application, the automated update system will periodically check for updates. When updates are available, you are notified by a pop-up window called UPDATES AVAILABLE in the bottom right corner: If you want to insta...
-
-## What are the system requirements?
-STANDALONE Sigasi is supported on: * Windows 7 and Windows 8 (32 bit and 64 bit) or newer * Linux: * RedHat Enterprise Linux RHEL 6 (64 bit) or newer * Mac OS X Yosemite or newer However, it should work on most of the recent Linux distribut...
 
 ## Where can I find the log file?
 Sigasi logs all internal errors to a log file. You can find this file in: workspace-sigasi/.metadata/.log This file is also reachable in Sigasi HDT itself via: HELP > SIGASI > OPEN LOG. The log file contains no sensitive information about your o...

@@ -18,5 +18,6 @@ content:
    - trouble
    - keyshortcuts
    - config
+   - license_key
 ---
 
