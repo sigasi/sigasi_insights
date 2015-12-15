@@ -28,9 +28,6 @@ reflinks:
     sigasi_com:
         url: http://www.sigasi.com/
         title: Sigasi Main Site
-    faq_old:
-        url: http://support.sigasi.com/Knowledgebase/List/Index/2/faq
-        title: FAQ
     install_sigasi_plugin:
         url: http://www.sigasi.com/install-eclipse-vhdl-plugin
         title: Install Sigasi as Eclipse Plugin

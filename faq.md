@@ -6,7 +6,7 @@ pager: true
 
 ## I really like VI / VIM / gVIM. Do you have a VI emulation mode?
 
-If you use Sigasi HDT as a plugin (meaning: not the standalone version), you can add a VI emulator plugin, called [vrapper]. Surely not the same as a genuine VI clone, but it will give you a warm and familiar feeling when you type *:q!*.
+If you use Sigasi HDT as a plugin (meaning: not the standalone version), you can add a VI emulator plugin, called [vrapper]. Surely not the same as a genuine VI clone, but it will give you a warm and familiar feeling when you type `:q!`.
 
 ## Do you have an Emacs emulation mode so that I can use the Emacs k...
 All Eclipse products, including Sigasi HDT, can be configured to support [emacs-keybindings]. While it is not the same as Emacs, you can keep your habit of pressing *CTRL-C* and *CTRL-X* all the time.
@@ -29,7 +29,7 @@ Related terms include:
 You can add a plugin with the UltraEdit key bindings.
 
 1. Install the [ultra-edit-keybindings-plugin]
-2. After installing, you should activate the UltraEdtit keybindings in *Window > Preferences > General > Keys*. 
+2. After installing, you should activate the UltraEdtit keybindings in **Window > Preferences > General > Keys**. 
 Then as Scheme, select "UltraEdit".
 
 ## Why don't you have feature XYZ? How can I put in on your roadmap?
@@ -55,20 +55,21 @@ When Sigasi's default settings do not work on your Linux system, try the followi
 ## What kind of linting rules are possible?
 The answer to this question is not straightforward. However, some examples may help. We can implement (but are in not limited to) the following types of custom linting rules:
 
-* Naming conventions (e.g. constants should be in capitals, signals should start with “s”,…)
-* Deprecated libraries, data types, constructs (e.g. don’t use block statements; don’t use std_logic_unsigned, …)
+* Naming conventions (e.g. constants should be in capitals, signals should start with "s",...)
+* Deprecated libraries, data types, constructs (e.g. don’t use block statements; don’t use std_logic_unsigned,...)
 * Project structure, file names (e.g. an entity should be in a file named “_e.vhd”)
 * Required file headers
-* Maximum sizes of files, processes, …
-* How to instantiate components / entities
-* Unused signals, constants, …, dead code
-* … and much more
+* Maximum sizes of files, processes,...
+* How to instantiate components/entities
+* Unused signals, constants,... 
+* Dead code
+* ... and much more
 
 We cannot implement overly complex or fuzzy requirements, like:
 
 * Post-synthesis checks
 * CDC checks
-* Fuzzy requirements, like: “Entities should be sufficiently commented.” (How can an algorthm decide what is sufficient?)
+* Fuzzy requirements, like: _"Entities should be sufficiently commented."_ (How can an algorithm decide what is sufficient?)
  
 If you get in touch with us, we will evaluate your coding rules to determine which rules we can implement.
 
@@ -77,7 +78,7 @@ Depending on which features you use, it might.
 
 But Sigasi Lint does not aim to replace your $ 100.000 power lint checker with CDC (clock domain crossing) checks. Instead, Sigasi Lint helps you get the coding conventions right first time around. In addition to style linting, Sigasi Lint can interface with your third party power linter tool (like Aldec ALINT), giving you feedback faster. Contact us to discuss your requirements.
 
-## Does the Sigasi Pro built-in Linter replace my code reviews?
+## Does the Sigasi Studio's built-in Linter replace my code reviews?
 No.
 
 The Sigasi Pro linting functionality is aimed to free up time wasted in code review meetings; time wasted on trivial things like naming conventions and deprecated data types. We hope you can use this time to discuss complex design decisions and computation algorithms which have an impact on the product you are design.
@@ -262,37 +263,110 @@ You can enable and disable block editing with **Ctrl+Alt+A** or **Edit > Toggle 
 Note that in many cases where you are used to using block editing (e.g. [instantiating an entity](http://www.sigasi.com/node/30)), you may not need it any more, thanks to intelligent code completion (see this [blog post](http://www.sigasi.com/node/91)).
 
 
-<!-- 
 ## What is this MouseFeed pop-up?
-Many actions can be accessed using your mouse and using a keyboard shortcut, e.g. copying text can be done either by clickingEDIT > COPY or by pressing CTRL-C. Of course, pressing a key combination is a lot faster than clicking in a menu. [1] [...
+Many actions can be accessed using your mouse and using a keyboard shortcut, e.g. copying text can be done either by clicking **Edit > Copy** or by pressing **Ctrl-C**. Of course, pressing a key combination is a lot faster than clicking in a menu.
 
-## What if I ever want to get back to my old toolflow? Am I locked i...
-If you ever want to get back to your old tools (but we hope you won't), you'll have absolutely no trouble doing so. All your files are just the way you left them, except that we created two hidden files in your project folder (.project and .libraries.x...
+![](/images/screenshots/mousefeed.png)
+
+Whenever you use your mouse for something that also has a key binding, the MouseFeed function tells you what this keyboard shortcuts is. This will help you remember keyboard shortcuts for the actions you use most often.
+
+The easiest way to avoid getting these pop ups --and gain a good deal of development speed-- is by using keyboard shortcuts when possible. If you still want to disable MouseFeed, you can go to **Window > Preferences > MouseFeed > Action Invocation** and uncheck the box for **Enable action invocation control**.
+
+## What if I ever want to get back to my old toolflow? Am I locked in?
+
+If you ever want to get back to your old tools (but we hope you won't), you'll have absolutely no trouble doing so. All your files are just the way you left them, except that we created two hidden files in your project folder (.project and .library_mapping.xml). You can just leave them sitting there or you can delete them after you stop using our tool.
+
+In short: you are **not** locked in at all!
 
 ## How does Sigasi change my existing project?
 You do not have to change your directory structure, the names of your VHDL files or anything in your project folder. The only thing Sigasi HDT does, is add a few hidden files with project information.
 
-## Is the functionality in the Trial version reduced?
-No, you get the "full monty." All features are available when you request an evaluation license [1]. Links: ------ [1] http://www.sigasi.com/request-evaluation-license
-
 ## How can I change settings?
-Most settings can be changed in WINDOW > PREFERENCES. In this dialog, you can either browse the menus to the left, or search for an item in the search field in the top left. SETTINGS DIALOG
+Most settings can be changed in **Window > Preferences**. In this dialog, you can either browse the menus to the left, or search for an item in the search field in the top left.
+
+![](images/screenshots/settings1.png)
+
 
 ## How can I insert tabs in Block Selection Mode
-With BLOCK SELECTION MODE, you can easily insert the same text on multiple lines. This works great for regular text and spaces, but not for TABS. When you press TAB the entire line will indent an extra level to the right (instead of inserting a tab charac...
 
-## How to use Sigasi efficiently on multiple monitors/screens/deskto...
-Sigasi/Eclipse supports full multiscreen support. The easiest method to organize Sigasi over multiple screens is to use one _window_ on each screen. You can open a new Window via WINDOW > NEW WINDOW Once have configured the windows and the views insid...
+With **Block Selection Mode**, you can easily insert the same text on multiple lines. This works great for regular text and spaces, but not for **tabs**. When you press **Tab** the entire line will indent an extra level to the right (instead of inserting a tab character).
+
+This was a design decision because in _most cases you do not want tabs inside your code_ (except for indentation) because different tab width settings break your vertical alignment. We recommend to stick to Sigasi's default formatting rules and use the **Format action** instead.
+
+If you still need to insert tabs in Block Selection Mode, you should **copy** a tab character first and subsequently **paste** it into the Block Selection.
+
+
+## How to use Sigasi efficiently on multiple monitors/screens/desktops?
+
+Sigasi/Eclipse supports full multiscreen support.
+
+The easiest method to organize Sigasi over multiple screens is to use one window on each screen.
+You can open a new Window via **Window > New window**
+
+Once have configured the windows and the views inside the windows, you can save this as a custom perspective (**Window > Save Perspective As...**).
 
 ## Whole word textual search
-In some situations you may not want Sigasi's VHDL aware search (FIND REFERENCES), but you want an old-fashioned TEXTUAL SEARCH instead. If you want textual search inside one file, you can use FIND (Ctrl-F). This dialog has an easy "Whole word" option. ...
+In some situations you may not want Sigasi's VHDL aware search (**Find References**), but you want an old-fashioned textual search instead.
+
+If you want textual search inside one file, you can use **Find** (Ctrl-F). This dialog has an easy "**Whole word**" option.
+
+![](images/screenshots/find.png)
+
+I you want to search for textual matches in the **entire workspace** with the **Search** dialog. This method does not have a 'Whole word' option.
+
+You can achieve the same effect by toggling the '**Regular Expression**' option and by adding a `\b` before and after the text you search. The `\b` stands for "word boundary" in regular expressions.
+
+![](images/screenshots/search.png)
+
 
 ## How to 'Quick Fix' multiple problems at the same time?
-Quick Fixes are a realy useful Sigasi feature to resolve common problems. By default you apply a quickfix to one problem at a time. Although the procedure is not very elegant, there is a way to apply multiple Quick Fixes at the same time. Conditions: ...
+
+Quick Fixes are a really useful Sigasi Studio feature to resolve common problems. By default you apply a Quick Fix to one problem at a time.
+
+Although the procedure is not very elegant, there is a way to apply multiple Quick Fixes at the same time.
+
+Conditions:
+
+1. Make sure you are dealing with identical solutions to the same problem. 
+	For example: five "declare signal" Quick Fixes
+2. All problems have to be in the same file
+
+Procedure:
+
+1. Select all problems you want to fix in the problems view
+2. In the context menu, select **Quick Fix**
+3. Click **Finish** in the Dialog
+
+![](images/screenshots/quick_fix_all_code_menu.png)
+![](images/screenshots/quick_fix_all_dialog.png)
+
 
 ## Can I use the features of the upcoming release?
-For those users who want to get early access to the features and bugfixes of upcomming Sigasi releases, we have setup an extra release channel, called "SIGASI PREVIEW". The SIGASI PREVIEW release channel offers more frequent releases than the official re...
+
+For those users who want to get early access to the features and bugfixes of upcomming Sigasi releases, we have setup an extra release channel, called "_Sigasi Preview_".
+
+The Sigasi Preview release channel offers more frequent releases than the official releases. Although these preview release are less rigorously tested than than the official releases, they are stable enough for daily use. 
+ 
+_If you run into any problems, please let us know_.
+ 
+ 
+You can download the Stand-alone version of the latest preview version from:
+
+* <http://download.sigasi.com/preview/hdt2/com.sigasi.hdt.product-linux.gtk.x86_64.zip>
+* <http://download.sigasi.com/preview/hdt2/com.sigasi.hdt.product-linux.gtk.x86.zip>
+* <http://download.sigasi.com/preview/hdt2/com.sigasi.hdt.product-macosx.cocoa.x86_64.zip>
+* <http://download.sigasi.com/preview/hdt2/com.sigasi.hdt.product-win32.win32.x86_64.zip>
+* <http://download.sigasi.com/preview/hdt2/com.sigasi.hdt.product-win32.win32.x86.zip>
+
+You can also update from (configure via Preferences > Install/Update > Available Software Sites > Add...) :
+
+* http://download.sigasi.com/preview/composite-rcp/ (Preview update site for stand alone version)
+* http://download.sigasi.com/preview/composite-eclipse/ (Preview update site for installing in Eclipse)
+
+SHA Sums (more info):
+
+* <http://download.sigasi.com/preview/hdt2/sha1.txt>
 
 ## Can I control the timing of the hovers/popups in Sigasi?
 
--->
+See <http://stackoverflow.com/questions/5778452/is-there-a-way-to-add-a-delay-to-eclipse-tooltips>

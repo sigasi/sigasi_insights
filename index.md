@@ -4,7 +4,7 @@ layout: index
 content:
     - manual 
     - releasenotes
-    - faq_old
+    - faq
     - sigasi_com
 ---
 
