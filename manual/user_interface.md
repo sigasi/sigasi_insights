@@ -272,3 +272,7 @@ component **generics** and **ports**.
 can jump directly to the matching *when* part of your case statement
 from state transitions.
 - URLs in **comments**
+
+# Quick Access
+
+The Sigasi toolbar contains a widget called **Quick Access**. This widget allows you to quickly find open editors, available perspectives, views, preferences, wizards, commands, etc. Simply start typing the name of the item you wish to invoke.
