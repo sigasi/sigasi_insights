@@ -76,39 +76,19 @@ design files. If you have a really large design this could slow you
 down. You can turn the automatic refresh on and off by toggling the
 **refresh** button ![](/images/icons/refresh.gif).
 
-When you double-click an object in the hierarchy, the Editor view is
-updated accordingly, possibly by displaying the contents of a different
-file.
+The hierarchy view also shows the **generic and constants values** of components in the hierarchy.
+The internal compiler computes the generics and constants, even if they are passed down through the hierarchy, and even if arithmetic operations are used to define new values. If the value cannot be computed for some reason, the
+Hierarchy View will report the value to be _unknown_.
 
-Use the *instantiations* filter
-![](/images/icons/instantiation.png), to hide everything except
-instantiations and structural statements are shown.
+When you **double-click** an object in the hierarchy, the Editor view is updated accordingly, possibly by displaying the contents of a different file.
 
-You can launch a simulation with the ![](/images/icons/run_exc.gif)
-button, if you first set up an [external simulator](/integration).
+Use the **instantiations** filter ![](/images/icons/instantiation.png), to hide everything except instantiations and structural statements are shown.
 
-The Hierarchy View also offers an action **Select required files**, which selects all design files that are part of the current hierarchy, in the project explorer. This allows you to easily perform the same action on all files in the hierarchy. E.g. team commands, ... This action is only available with a Premium Desktop license.
+You can **launch a simulation** with the ![](/images/icons/run_exc.gif) button, if you first set up an [external simulator](/integration).
+
+The Hierarchy View also offers an action **Select required files**, which selects all design files that are part of the current hierarchy, in the project explorer. This allows you to easily perform the same action on all files in the hierarchy. E.g. team commands, ... [premium]
 
 ![](/images/screenshots/select_required_files_in_hierarchy.png)
-
-# Generics view {#generics}
-[vhdl]
-
-The Generics view shows the generic and constants values of components
-in the hierarchy. To activate the Generics view: go to the hierarchy
-view, right-click an instantiation (or the top level) and select **Show
-in Generics View**. By default, the Generics view will be positioned
-over the outline view. Use the tabs to select which view you want to
-see.
-
-The Generics view shows the generics and constants values of the
-component that is active in the Hierarchy view. The internal compiler
-computes the generics and constants, even if they are passed down
-through the hierarchy, and even if arithmetic operations are used to
-define new values. If the value cannot be computed for some reason, the
-Generics view will report the value to be *unknown*. Double-clicking a
-generic or constant will open the corresponding declaration in a VHDL
-editor.
 
 # Problems view {#problems}
 
