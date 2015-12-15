@@ -6,6 +6,12 @@ pager: true
 
 # Editions
 
+## Sigasi Studio Creator
+
+[todo]
+
+# Legacy Editions
+
 ## Sigasi Pro {#pro}
 
 ## Sigasi Premium {#premium}

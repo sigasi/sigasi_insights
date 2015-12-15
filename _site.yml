@@ -66,6 +66,9 @@ reflinks:
     doc:
         title: "[Only in Sigasi Doc]"
         url: "editions.html#doc"
+    creator:
+        title: "[Needs Sigasi Studio Creator license]"
+        url: "editions.html#creator"
     premium:
         title: "[Only in Sigasi Premium or Premium Doc]"
         url: "editions.html#premium"

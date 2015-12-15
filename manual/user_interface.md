@@ -4,25 +4,17 @@ layout: page
 pager: true
 ---
 
-# The VHDL perspective {#gui-perspective}
+# The Sigasi perspectives
 
-Sigasi is built upon the Eclipse platform, which permits to use multiple
-languages within a single environment. The user interface can be
-customized for a particular language. In Eclipse terminology, this
-customized user interface is called a *perspective*. The logo of the
-current perspective is higlighted in the upper right corner. The
-recommended perspective to use with Sigasi (for both VHDL and Verilog)
-is the *VHDL perspective*, with the following logo:
+Sigasi is built upon the Eclipse platform, which permits to use multiple languages within a single environment. The user interface can be customized for a particular language. In Eclipse terminology, this customized user interface is called a **perspective**. The _icon_ and _name_ of the current perspective is highlighted in the upper right corner.
 
-![](/images/screenshots/vhdlperspective.png)
+Sigasi Studio provides two perspectives to work with both **VHDL** and **Verilog** files: **Sigasi** and **Sigasi Starter**.
 
-If you use the standalone version, this is the default perspective. If
-you use the Eclipse plugin, another perspective may be open instead. You
-can select the VHDL perspective by clicking the button
-![](/images/icons/perspectivebutton.png) next the perspective
-logo. A window pops up in which you can select the perspective:
+![](/images/screenshots/sigasi_perspectives.png)
 
-![](/images/screenshots/openperspectivedialog.png)
+**Sigasi** is the recommended perspective to work with **projects** [creator]. **Sigasi Starter** is the recommended perspective to work with VHDL and Verilog files in _single file mode_.
+
+If you use the standalone version of Sigasi, these perspective are the default. If you use the Eclipse plugin, another perspective may be open instead. You can select the Sigasi perspectives by clicking the button ![](/images/icons/perspectivebutton.png) next the perspective icon. A window pops up in which you can select the perspective.
 
 # Project exploration and navigation {#gui-navigate}
 
