@@ -351,20 +351,33 @@ Sigasi needs this path to find the Xilinx Vivado libraries and to run the ISim c
 Export
 ======
 
-You can export a list of all VHDL files in your project, sorted in the
-correct compilation order.
-You can use your own simple scripts to manipulate such list and run any
-EDA tool, including simulators, synthesis and linter tools.
+You can export a list of all VHDL files in your project, sorted in the correct compilation order.
+You can use your own simple scripts to manipulate such list and run any EDA tool, including simulators, synthesis and linter tools.
 
-To export a comma separated value (CSV) list of files in your project,
-right-click your project and select Export. In the Sigasi category,
-select CSV File. As a result, you get a file named
-compilation\_order.csv, which lists the VHDL files in your project in a
-valid compile order.
+To export a comma separated value (CSV) list of files in your project, right-click your project and select **Export**. In the **Sigasi** category, select **CSV File**. As a result, you get a file named `compilation_order.csv`, which lists the VHDL files in your project in a valid compile order.
 
 Example (for the tutorial project):
+```
+work, dut.vhd
+work, clock_generator.vhd
+work, testbench.vhd
+```
 
-    work, dut.vhd
-    work, clock_generator.vhd
-    work, testbench.vhd
+You can also configure Sigasi Studio to **auto-export** this CSV file, every time the dependencies change.
+
+In the project you want to auto-export, create a file `.settings/com.sigasi.hdt.vhdl.ui.prefs` with following content: 
+```
+eclipse.preferences.version=1
+autoexport=csv
+```
+
+If you only want to export the dependencies of the top level, set the content of `.settings/com.sigasi.hdt.vhdl.ui.prefs` to:
+```
+eclipse.preferences.version=1
+autoexport=csv_top_level
+autoexport.top_level=work.testbench(STR)
+```
+Where `work.testbench(STR)` is the name of your top level.
+
+If you omit the `autoexport.top_level`, Sigasi will try to use the current toplevel in the [views#hierarchy] as input (if it belongs to this project).
 

@@ -61,7 +61,7 @@ If you enable the **Link with Editor** icon
 element in the outline view, the corresponding code will be selected in
 the editor.
 
-# Hierarchy view {#hiearchy}
+# Hierarchy view {#hierarchy}
 [vhdl]
 
 The Hierarchy view shows the VHDL design hierarchy starting at a
