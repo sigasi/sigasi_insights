@@ -197,7 +197,7 @@ intended. For that reason, Sigasi can warn you about this.
 Available since Sigasi 2.30
 
 Most VHDL designers prefer named associations in port and generic maps in instantiations. This makes it a lot easier to spot wrong connections.
-By default Sigasi warns when position associations are use. You can change the severity of this check via **Preferences > Sigasi > VHDL > Errors/Warnings** in the **Instantiation statement valiadation** section.
+By default Sigasi warns when positional associations are used. You can change the severity of this check via **Preferences > Sigasi > VHDL > Errors/Warnings** in the **Instantiation statement valiadation** section.
 
 
 ### Quickfix for Third Party Libraries
@@ -312,7 +312,7 @@ warns about this.
 
 ### Capitalization of Identifiers
 
-Although VHDL is not case sensistive, it is recommend to always use the same capitalization when refering to the same declaration. Since version 2.30, Sigasi warns when the capitalization of a reference differs from the capitalization of the declaration. Because external libraries can have different code styles, this linting only checks references in the same library as its declaration.
+Although VHDL is not case sensitive, it is recommend to always use the same capitalization when referring to the same declaration. Since version 2.30, Sigasi warns when the capitalization of a reference differs from the capitalization of the declaration. Because external libraries can have different code styles, this linting only checks references in the same library as its declaration.
 
 Since Sigasi 2.31 this can easily be fixed with a quickfix.
 
@@ -331,4 +331,46 @@ omitted.
 
 **Example:** to enforce a style where all variables have a `_v` suffix,
 you whould specify `.*_v` pattern in the **Variable name** field.
+
+Project specific Linting settings
+=============================
+The default way to configure the severity of the Sigasi linting checks is to set their severity in the **Errors/Warnings** preference page.
+You can override these setting by creating a settings file for your projects. 
+
+In each project, you can override the coding rules settings. You can override rules for the **entire project**, for **folders** in the project, or for individual **files**.
+
+Project settings are stored in this settings file:
+
+	${project location}/.settings/com.sigasi.hdt.vhdl.linting.prefs
+
+To configure the severity of validations, add a line for each validation:
+
+	${validation id}/severity/${path}=${severity}
+
+Where `${validation id}` can be
+
+* the number of the validation ID (e.g. 140)
+* `all` to specify all validation ids in one rule
+
+Where `${path}` can be:
+
+* `<project>` (literally, with brackets!)  to set the severity of the entire project
+* `/path/to/folder` to set the severity of an entire folder
+* `/path/to/file.vhd` to set the severity of a specific file
+
+Where `${severity}` can be:
+
+* ERROR
+* WARNING 
+* INFO 
+* IGNORE 
+
+Whitespace must be escaped with a back slash (`\`)
+
+Examples:
+
+	72/severity/<project>=IGNORE
+	72/severity//Folder\ name/Extra\ folder=INFO
+	72/severity//test/top.vhd=WARNING
+	all/severity/<project>=IGNORE
 
