@@ -164,7 +164,7 @@ Semantic highlighting means that code gets colored according to their
 *signal*.
 
 Code highlighting is fully configurable. **Color**, **background**,
-**style** and **font** can be customized. Learn more about configuring [/manual/config#Colors and Fonts]
+**style** and **font** can be customized. Learn more about configuring [/manual/config#configure-colors]
 
 Highlighting Classes (VHDL only):
 

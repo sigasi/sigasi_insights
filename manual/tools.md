@@ -53,7 +53,7 @@ Launch simulator
 
 If an external compiler is enabled, you can also start a simulation from
 Sigasi. You can start a simulation by first selecting your *top level*
-in the [/manual/user_interface#Hierarchy View] . Next click the
+in the [/manual/views#hierarchy] view. Next click the
 **Simulate** button ![](/images/icons/run_exc.gif) in the hierarchy
 view to launch the simulator gui with an elaborated design ready for
 simulation. Sigasi opens a new console for each simulation launch. You

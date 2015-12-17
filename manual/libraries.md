@@ -20,8 +20,8 @@ Sigasi HDT to organize your projects.
 
 # Examining the library configuration {#libraries-examine}
 
-You can examine the library configuration in the [/manual/user_interface#Libraries View] 
-and in the [/manual/user_interface#Project Explorer] 
+You can examine the library configuration in the [/manual/views#libraries] 
+and in the [/manual/views#explorer] 
 view. The Libraries view shows how
 *design units* are mapped. The Project Explorer view show how VHDL or
 Verilog *files* are mapped.
