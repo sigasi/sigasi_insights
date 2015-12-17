@@ -10,6 +10,27 @@ tags:
   - VHDL compiler
   - VHDL Parser
 ---
-<div class="content">
-<p>Ideally, if you make one mistake in <span class="caps">VHDL</span>, you want your compiler to show one error marker. Here is a small example.</p>	<p><span class="inline inline-center"><img src="http://www.sigasi.com/sites/www.sigasi.com/files/images/recovering-vhdl-parser.png" alt="For this single mistake, Sigasi flags one error marker" title="For this single mistake, Sigasi flags one error marker" class="image image-_original " width="423" height="440"/><span class="caption"><strong>For this single mistake, Sigasi flags one error marker</strong></span></span></p>	<p>A traditional <span class="caps">VHDL</span> compiler gives eight (!) errors. You have to read through 14 lines of compiler output and put up with seven irrelevant error messages. This consumes mental energy, and you need all of you mental energy to tackle the complex design problems that you are dealing with.<br/></p><pre>$ vcom -work work -93 /media/psf/Home/workspaceSigasi/recovering_parser_demo/dut.vhdModel Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011-- Loading package STANDARD-- Loading package TEXTIO-- Loading package std_logic_1164-- Compiling entity dut-- Compiling architecture RTL of dut** Error: /media/psf/Home/workspaceSigasi/recovering_parser_demo/dut.vhd(16): (vcom-1136) Unknown identifier "intiger".** Error: /media/psf/Home/workspaceSigasi/recovering_parser_demo/dut.vhd(16): Integer literal 5 is not of type (error).** Error: /media/psf/Home/workspaceSigasi/recovering_parser_demo/dut.vhd(17): (vcom-1079) Range left bound type Integer is not the same as right bound type (error).** Error: /media/psf/Home/workspaceSigasi/recovering_parser_demo/dut.vhd(22): No feasible entries for infix operator "=".** Error: /media/psf/Home/workspaceSigasi/recovering_parser_demo/dut.vhd(22): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.** Error: /media/psf/Home/workspaceSigasi/recovering_parser_demo/dut.vhd(38): No feasible entries for infix operator "&lt;".** Error: /media/psf/Home/workspaceSigasi/recovering_parser_demo/dut.vhd(38): Type error resolving infix expression "&lt;" as type std.STANDARD.BOOLEAN.** Error: /media/psf/Home/workspaceSigasi/recovering_parser_demo/dut.vhd(43): VHDL Compiler exiting</pre>  <div id="book-navigation-1518" class="book-navigation">            <div class="page-links clear-block">              <a href="/content/recovering-vhdl-parser-0" class="page-previous" title="Go to previous page">&#8249; Recovering VHDL Parser</a>                    <a href="/content/recovering-vhdl-parser-0" class="page-up" title="Go to parent page">up</a>                    <a href="/content/three-mistakes-three-error-markers" class="page-next" title="Go to next page">Three mistakes, three error markers &#8250;</a>          </div>      </div>  </div>
+Ideally, if you make one mistake in VHDL, you want your compiler to show one error marker. Here is a small example.
 
+For this single mistake, Sigasi flags one error marker:
+![For this single mistake, Sigasi flags one error marker](images/recovering-vhdl-parser.png)
+
+
+A traditional VHDL compiler gives eight (!) errors. You have to read through 14 lines of compiler output and put up with seven irrelevant error messages. This consumes mental energy, and you need all of you mental energy to tackle the complex design problems that you are dealing with.
+```
+$ vcom -work work -93 /media/psf/Home/workspaceSigasi/recovering_parser_demo/dut.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity dut
+-- Compiling architecture RTL of dut
+** Error: /media/psf/Home/workspaceSigasi/recovering_parser_demo/dut.vhd(16): (vcom-1136) Unknown identifier "intiger".
+** Error: /media/psf/Home/workspaceSigasi/recovering_parser_demo/dut.vhd(16): Integer literal 5 is not of type (error).
+** Error: /media/psf/Home/workspaceSigasi/recovering_parser_demo/dut.vhd(17): (vcom-1079) Range left bound type Integer is not the same as right bound type (error).
+** Error: /media/psf/Home/workspaceSigasi/recovering_parser_demo/dut.vhd(22): No feasible entries for infix operator "=".
+** Error: /media/psf/Home/workspaceSigasi/recovering_parser_demo/dut.vhd(22): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+** Error: /media/psf/Home/workspaceSigasi/recovering_parser_demo/dut.vhd(38): No feasible entries for infix operator "<".
+** Error: /media/psf/Home/workspaceSigasi/recovering_parser_demo/dut.vhd(38): Type error resolving infix expression "<" as type std.STANDARD.BOOLEAN.
+** Error: /media/psf/Home/workspaceSigasi/recovering_parser_demo/dut.vhd(43): VHDL Compiler exiting
+```
