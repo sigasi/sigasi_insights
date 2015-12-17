@@ -1,0 +1,11 @@
+---
+title: "Eclipse VHDL plugin vs Sigasi Application"
+layout: page 
+pager: true
+author: philippe.faes (Sigasi)
+date: 2012-04-17
+---
+<div class="content">
+<p>Here is a comparison matrix to see which is best suited for you: using Sigasi as an <em>Eclipse <span class="caps">VHDL</span> plugin</em> or downloading it as a standalone <em><span class="caps">VHDL</span> editor</em>.</p>	<table><tr><th>		</th>			<th>	Standalone Sigasi Pro	</th>			<th>	Eclipse	</th>		</tr><tr style="background:#ccc;"><td>	Separate Eclipse download	</td>			<td>		</td>			<td>	<span style="color:green;"><strong>&#10003;</strong></span>	</td>		</tr><tr><td>	Eclipse versions	</td>			<td>	Bundled with Eclipse 3.7	</td>			<td>	Eclipse 3.6 or higher	</td>		</tr><tr style="background:#ccc;"><td>	Compatible with Eclipse plugin mechanism	</td>			<td>	<span style="color:green;"><strong>&#10003;</strong></span>	</td>			<td>	<span style="color:green;"><strong>&#10003;</strong></span>	</td>		</tr><tr><td>	Recommended without prior knowledge of Eclipse	</td>			<td>	<span style="color:green;"><strong>&#10003;</strong></span>	</td>			<td>		</td>		</tr><tr style="background:#ccc;"><td>	Recommended if you also work with C, C++, Java, &#8230;	</td>			<td>		</td>			<td>	<span style="color:green;"><strong>&#10003;</strong></span>	</td>		</tr><tr><td>	 <span style="color:white;">.</span>	</td>			<td>		</td>			<td>		</td>		</tr><tr style="background:#ccc;"><td>	Installation instructions	</td>			<td>	<a href="http://www.sigasi.com/download-sigasi-2">Download it</a>	</td>			<td>	<a href="http://www.sigasi.com/install-eclipse-vhdl-plugin">Plug it in</a>	</td>		</tr></table>  <div id="book-navigation-1518" class="book-navigation">            <div class="page-links clear-block">              <a href="/sigasi-hdt-10-feature-missing-sigasi-2x" class="page-previous" title="Go to previous page">&#8249; Sigasi HDT 1.0 feature missing in Sigasi Pro 2.x</a>                    <a href="/content/comparisons" class="page-up" title="Go to parent page">up</a>                    <a href="/feature-matrix-pro-premium" class="page-next" title="Go to next page">Feature Matrix: Pro, Premium Desktop, Premium Doc &#8250;</a>          </div>      </div>  </div>
+
+
