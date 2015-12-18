@@ -5,7 +5,7 @@ copyright_years: 2008-2015
 bootswatch: null 
 navbar_inverse: false 
 bootstrap: 3.3.4
-
+cname: doc.sigasi.com
 reflinks:
     content_license:
         url: http://creativecommons.org/licenses/by-sa/3.0/
