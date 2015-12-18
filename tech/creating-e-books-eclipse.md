@@ -24,4 +24,4 @@ The e-book plugin is a new extension to the wikitext component of the [Mylyn Doc
 7. Enter all extra metadata and optionally choose a stylesheet and cover image.
 8. Open the epub file in an e-book reader and inspect the result. I used the open source tool [Calibre](https://launchpad.net/calibre) for this.
 
-As an experiment I created an [e-book of the Sigasi 2.1.1 documentation](http://www.sigasi.com/sites/www.sigasi.com/files/Sigasi-2.1.1.epub). I am really pleased by the result. It is great to read documents on a tablet and I hope this can be a good motivator to write some extra documentation.
+As an experiment I created an [e-book of the Sigasi 2.1.1 documentation](resources/Sigasi-2.1.1.epub). I am really pleased by the result. It is great to read documents on a tablet and I hope this can be a good motivator to write some extra documentation.
