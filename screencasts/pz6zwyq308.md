@@ -1,0 +1,7 @@
+---
+title: "Block Diagram view"
+layout: screencast 
+pager: false
+comments: false
+videoid: pz6zwyq308
+---
