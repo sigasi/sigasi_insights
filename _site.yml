@@ -94,3 +94,7 @@ reflinks:
     language-bar:
       title: Language bar keyboard shortcuts
       url: http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/langbar_keystroke_shortcuts.mspx?mfr=true
+    VETSMOD:
+      title: VETSMOD
+      url: /blog/vetsmod-get-better-feedback-your-vhdl-code-snippets.html
+

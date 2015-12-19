@@ -10,6 +10,43 @@ tags:
   - others
   - VHDL
 ---
-<div class="content">
-<p>I was talking to some engineering students the other day, as they were doing a <span class="caps">VHDL</span> lab. I noticed a <span class="caps">VHDL</span> case statement for state machine with named states (enumerated data type). All states were handled in their <span class="caps">VHDL</span> case statement, and still they put an <code>others</code> section in their code. I had a hard time explaining that this clause was useless. The students mumbled something about their professor eating them alive if they'd forget the <code>others</code> and problems with uninitialized stated and high-impedance state. As you might know, these concepts are related to the <code>std_ulogic</code> and <code>std_logic</code> type, but not to enumerated types. </p>	<p>The <span class="caps">VHDL</span> language will force you to cover all cases. If you do not account for all cases, you are required to write a fallback case (<code>when others</code>), and that is what usually happens if you use <code>std_logic</code> types, because you don't want to enumerate all the meta-values. You <em>need</em> <code>others</code>, or your compiler will mark an error. In the case of enumerated data types, however, you can leave the <code>others</code> out.<br/></p><div class="geshifilter"><pre class="vhdl geshifilter-vhdl" style="font-family:monospace;"><span style="color: #7f0055; font-weight: bold;">type</span> state_t <span style="color: #7f0055; font-weight: bold;">is</span> <span style="color: #000000;">(</span>s1, s2, s3<span style="color: #000000;">)</span><span style="color: #000066;">;</span></pre></div><div class="geshifilter"><pre class="vhdl geshifilter-vhdl" style="font-family:monospace;"><span style="color: #7f0055; font-weight: bold;">case</span> state <span style="color: #7f0055; font-weight: bold;">is</span>	<span style="color: #7f0055; font-weight: bold;">when</span> s1 <span style="color: #000066;">=&gt;</span>		isState3 <span style="color: #000066;">&lt;=</span> '<span style="color: #7d7d7d;">0</span>'<span style="color: #000066;">;</span>		isOthers <span style="color: #000066;">&lt;=</span> '<span style="color: #7d7d7d;">0</span>'<span style="color: #000066;">;</span>	<span style="color: #7f0055; font-weight: bold;">when</span> s2 <span style="color: #000066;">=&gt;</span>		isState3 <span style="color: #000066;">&lt;=</span> '<span style="color: #7d7d7d;">0</span>'<span style="color: #000066;">;</span>		isOthers <span style="color: #000066;">&lt;=</span> '<span style="color: #7d7d7d;">0</span>'<span style="color: #000066;">;</span>	<span style="color: #7f0055; font-weight: bold;">when</span> s3 <span style="color: #000066;">=&gt;</span>		isState3 <span style="color: #000066;">&lt;=</span> '<span style="color: #7d7d7d;">1</span>'<span style="color: #000066;">;</span>		isOthers <span style="color: #000066;">&lt;=</span> '<span style="color: #7d7d7d;">0</span>'<span style="color: #000066;">;</span>	<span style="color: #7f0055; font-weight: bold;">when</span> <span style="color: #7f0055; font-weight: bold;">others</span> <span style="color: #000066;">=&gt;</span> <span style="color: #3f7f5f;">-- There are no other states.</span>		isState3 <span style="color: #000066;">&lt;=</span> '<span style="color: #7d7d7d;">0</span>'<span style="color: #000066;">;</span>		isOthers <span style="color: #000066;">&lt;=</span> '<span style="color: #7d7d7d;">1</span>'<span style="color: #000066;">;</span> <span style="color: #3f7f5f;">-- This <span class="caps">NEVER</span> happens!</span><span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">case</span><span style="color: #000066;">;</span></pre></div>	<p>In my mission to bust <span class="caps">VHDL</span> myths, I set up an experiment to demonstrate my case. I typed a <a href="/sites/www.sigasi.com/files/fsm2.vhd">piece of code with</a> and <a href="/sites/www.sigasi.com/files/fsm1.vhd">without</a> an <code>others</code> part in the <span class="caps">VHDL</span> case statement. The synthesis results are identical (as expected). To demonstrate even more clearly, I have created an output pin that would become <code>'1'</code> in the case of <code>others</code>. After synthesis, this output pin is clearly always <code>'0'</code>.</p>	<p><span class="inline inline-center"><img src="http://www.sigasi.com/sites/www.sigasi.com/files/images/fsm2.preview.png" alt="Netlist demonstrates that Others has no effect" title="Netlist demonstrates that Others has no effect" class="image image-preview " width="640" height="345"/><span class="caption"><strong>Netlist demonstrates that Others has no effect</strong></span></span></p>	<p><strong>Conclusion:</strong> if you have <em>not</em> covered all possible cases you need <code>others</code>. If you <em>have</em> covered all cases, leaving out <code>others</code> has no effect on the synthesis (or simulation) results. </p>	<p>I did not try <em>all possible settings</em> on <em>all possible synthesis tools</em>. If you have found a case that proves me wrong, please let us know.</p>  <div id="book-navigation-1518" class="book-navigation">            <div class="page-links clear-block">              <a href="/content/vhdl-pragmas" class="page-previous" title="Go to previous page">&#8249; VHDL Pragmas</a>                    <a href="/content/vhdl-tips-tricks" class="page-up" title="Go to parent page">up</a>                    <a href="/content/work-not-vhdl-library" class="page-next" title="Go to next page">WORK is not a VHDL Library &#8250;</a>          </div>      </div>  </div>
+I was talking to some engineering students the other day, as they were doing a VHDL lab. I noticed a VHDL case statement for state machine with named states (enumerated data type). All states were handled in their VHDL case statement, and still they put an `others` section in their code. I had a hard time explaining that this clause was useless. The students mumbled something about their professor eating them alive if they'd forget the `others` and problems with uninitialized stated and high-impedance state. As you might know, these concepts are related to the `std_ulogic` and `std_logic` type, but not to enumerated types. 
 
+The VHDL language will force you to cover all cases. If you do not account for all cases, you are required to write a fallback case (`when others`), and that is what usually happens if you use `std_logic` types, because you don't want to enumerate all the meta-values. You _need_ `others`, or your compiler will mark an error. In the case of enumerated data types, however, you can leave the `others` out.
+```vhdl
+type state_t is (s1, s2, s3);
+```
+
+```vhdl
+case state is
+	when s1 =>
+		isState3 <= '0';
+		isOthers <= '0';
+	when s2 =>
+		isState3 <= '0';
+		isOthers <= '0';
+	when s3 =>
+		isState3 <= '1';
+		isOthers <= '0';
+	when others => -- There are no other states.
+		isState3 <= '0';
+		isOthers <= '1'; -- This NEVER happens!
+end case;
+```
+
+In my mission to bust VHDL myths, I set up an experiment to demonstrate my case. I typed a [piece of code with](resources/fsm2.vhd) and [without](resources/fsm1.vhd) an `others` part in the VHDL case statement. The synthesis results are identical (as expected). To demonstrate even more clearly, I have created an output pin that would become `'1'` in the case of `others`. After synthesis, this output pin is clearly always `'0'`.
+
+![Netlist demonstrates that Others has no effect](images/fsm2.png)
+
+*Conclusion:* if you have _not_ covered all possible cases you need `others`. If you _have_ covered all cases, leaving out `others` has no effect on the synthesis (or simulation) results. 
+
+I did not try _all possible settings_ on _all possible synthesis tools_. If you have found a case that proves me wrong, please let us know.
+
+## Update: Precision Synthesis uses "others"
+
+On [StackExchange](http://electronics.stackexchange.com/questions/21317/vhdl-synthesis-optimization-counters-in-statemachines/21318#21318), David Kessner explains that the Precision Synthesis (Mentor Graphics) does in fact use the `others` part to recover from illegal states. 
+Check out [the manual](http://courses.engr.illinois.edu/ece412/references/precision/precisionRTL_style.pdf) on page 210.
+
+One could argue about the desired behavior for synthesis tools: jump to the reset state, or jump to a separately declared `others` state. In any case, this is only useful for very specific designs, like safety critical radiation hardened systems.
+
+Thanks David, for pointing this out!
