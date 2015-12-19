@@ -9,6 +9,96 @@ tags:
   - hdt-2.0
   - templates
 ---
-<div class="content">
-<p>In a previous blog post, <a href="/node/1739">Using Autocomplete Templates in Sigasi <span class="caps">HDT</span></a>, I introduced <strong>autocomplete templates</strong> in Sigasi 2 and demonstrated how to use the pre-defined templates. In this post I'll explain how to customize these templates and how to create your own. Chances are high that the pre-defined templates slightly differ from your preferred style or that you have your own standard pieces of code that you use on a regular basis.</p>	<h2>Edit existing templates</h2>	<p>To demonstrate the power of custom templates I will tailor the <code>process</code>-template of the example in <a href="/node/1739">my previous post</a> to a different style. In <a href="/node/1739">my previous post</a> I demonstrated how to replace "rst" by "reset" and "clk" by "clock" in the template editing session. If all reset signals in my design are called "reset" instead of "rst" (and "clock" instead of "clk"), it would be better to modify the template, so that the names are correct by default.</p>	<p>The first step is to open the Templates Preference page: <strong>Window &gt; Preferences &gt; <span class="caps">VHDL</span> &gt; Templates</strong> and select the <code>process</code> template.</p>	<p><span class="inline inline-center"><a href="http://www.sigasi.com/sites/www.sigasi.com/files/images/templatesPreferencesProcess.png" onclick="launch_popup(1748, 929, 659); return false;" target="_blank"><img src="http://www.sigasi.com/sites/www.sigasi.com/files/images/templatesPreferencesProcess.preview.png" alt="" title="" class="image image-preview " width="640" height="454"/></a></span></p>	<p>Click <strong>Edit&#8230;</strong> and you will see the template's code.</p>	<p><span class="inline inline-center"><a href="http://www.sigasi.com/sites/www.sigasi.com/files/images/customtemplate_1.png" onclick="launch_popup(1750, 704, 455); return false;" target="_blank"><img src="http://www.sigasi.com/sites/www.sigasi.com/files/images/customtemplate_1.preview.png" alt="" title="" class="image image-preview " width="640" height="414"/></a></span></p>	<p>The syntax is really simple. The template contains <em>text</em> and <em>variables</em>. The <em>text</em> is inserted <em>as is</em> when the template is expanded. <em>Variables</em>, enclosed in curly braces <span class="geshifilter"><code class="vhdl geshifilter-vhdl">$<span style="color: #000000;">{</span> <span style="color: #000000;">}</span></code></span>, become <em>fields</em> that can still be modified by the user once the template is expanded. The name of the variable will be used as the default value. </p>	<p>In this example we want to replace the default of <code>rst</code> with <code>reset</code> and <code>clk</code> with <code>clock</code>. You can achieve this by changing the variable names in the template. Notice that you have to replace all occurrences, otherwise Sigasi will regard them as different variables.</p>	<p><span class="inline inline-center"><a href="http://www.sigasi.com/sites/www.sigasi.com/files/images/customtemplate_2.png" onclick="launch_popup(1751, 704, 455); return false;" target="_blank"><img src="http://www.sigasi.com/sites/www.sigasi.com/files/images/customtemplate_2.preview.png" alt="" title="" class="image image-preview " width="640" height="414"/></a></span></p>	<p>Press <strong>OK</strong> (twice) to confirm the changes. </p>	<p>If you now autocomplete the <code>process</code> template, you will see that the default names for the clock and reset signals have changed.</p>	<p><span class="inline inline-center"><img src="http://www.sigasi.com/sites/www.sigasi.com/files/images/customtemplate_3.png" alt="" title="" class="image image-_original " width="398" height="225"/></span></p>	<p>Feel free to experiment with more customizations to the templates like adding default comments or changing white space and indentation.</p>	<h2>Create new templates</h2>	<p>Creating new templates is the evident next step. In the Templates Preference Page (<strong>Window &gt; Preferences &gt; <span class="caps">VHDL</span> &gt; Templates</strong>), simply press <strong>New&#8230;</strong>.</p>	<p>First you have to specify a <strong>Name</strong> for your new template. Choose it carefully because this name will be what you have to start typing when you want to expand the template.</p>	<p>Next you have to specify the <strong>Context</strong> where this template can be expanded. For example the <code>process</code> statement can only occur at places where <code>concurrent statements</code> are allowed. Other options are <code>Anywhere</code> (Sometimes you want your template to appear anywhere, e.g. for comment), <code>expressions</code>, <code>declative item</code>, etc.</p>	<p><em>Tip: If you select <code>DesignFile</code> as context, your template will also appear as template option in the <strong>New <span class="caps">VHDL</span> File</strong> Wizard.</em></p>	<p>The <strong>Description</strong> is what you will see next to the template name if there are multiple possible templates that can be expanded. </p>	<p>Next you can insert the actual template. Note that apart from <em>user-defined</em> variables (like <span class="geshifilter"><code class="vhdl geshifilter-vhdl">$<span style="color: #000000;">{</span>name<span style="color: #000000;">}</span></code></span>, <span class="geshifilter"><code class="vhdl geshifilter-vhdl">$<span style="color: #000000;">{</span>clk<span style="color: #000000;">}</span></code></span> and <span class="geshifilter"><code class="vhdl geshifilter-vhdl">$<span style="color: #000000;">{</span>rst<span style="color: #000000;">}</span></code></span> in the above example), you can also use <strong>pre-defined template variables</strong>. Pre-defined template variables are variables that are filled in by Sigasi itself when the template is expanded. Examples are <span class="geshifilter"><code class="vhdl geshifilter-vhdl">$<span style="color: #000000;">{</span>user<span style="color: #000000;">}</span></code></span> and <span class="geshifilter"><code class="vhdl geshifilter-vhdl">$<span style="color: #000000;">{</span>date<span style="color: #000000;">}</span></code></span>. If I would autocomplete a template that contains the ${user} variable it would become "heeckhau" in the expanded template. Note that you can use <strong>Ctrl+Space</strong> to auto-complete these pre-defined variables when you are editing the template.</p>	<p>Useful examples of custom templates are file headers, default library and use clauses, <span class="geshifilter"><code class="vhdl geshifilter-vhdl"><span style="color: #000000;">(</span><span style="color: #7f0055; font-weight: bold;">others</span><span style="color: #000066;">=&gt;</span>'<span style="color: #7d7d7d;">0</span>'<span style="color: #000000;">)</span></code></span>, &#8230;</p>	<h2>Conclusion</h2>	<p>Custom templates can really help you improve you coding speed by assisting you in typing faster, especially for verbose <span class="caps">VHDL</span> constructs. Templates are really flexible and can be customized to really suit your needs.</p>	<p>If you create new templates that you think might be useful for other <span class="caps">VHDL</span> designers; feel free to share them on our <a href="/userforum">forum</a> or in the <a href="#comment-form">comments</a>. I am also very curious to hear which templates you think are still missing as defaults in Sigasi 2. </p>  </div>
+In a previous blog post, [Using Autocomplete Templates in Sigasi HDT](using-autocomplete-templates-sigasi-2), I introduced **autocomplete templates** in Sigasi 2
+and demonstrated how to use the pre-defined templates. In this post I'll
+explain how to customize these templates and how to create your own.
+Chances are high that the pre-defined templates slightly differ from
+your preferred style or that you have your own standard pieces of code
+that you use on a regular basis.
 
+Edit existing templates
+-----------------------
+
+To demonstrate the power of custom templates I will tailor the
+`process`-template of the example in [my previous post](using-autocomplete-templates-sigasi-2) to a
+different style. In [my previous post](using-autocomplete-templates-sigasi-2) I demonstrated how to
+replace "rst" by "reset" and "clk" by "clock" in the template editing
+session. If all reset signals in my design are called "reset" instead of
+"rst" (and "clock" instead of "clk"), it would be better to modify the
+template, so that the names are correct by default.
+
+The first step is to open the Templates Preference page: **Window &gt; Preferences &gt; VHDL &gt; Templates** and select the `process` template.
+
+![](images/customtemplate_0.png)
+
+Click **Edit...** and you will see the template's code.
+
+![](images/customtemplate_1.png)
+
+The syntax is really simple. The template contains *text* and
+*variables*. The *text* is inserted *as is* when the template is
+expanded. *Variables*, enclosed in curly braces `${ }`,
+become *fields* that can still be modified by the user once the template
+is expanded. The name of the variable will be used as the default value.
+
+In this example we want to replace the default of `rst` with `reset` and
+`clk` with `clock`. You can achieve this by changing the variable names
+in the template. Notice that you have to replace all occurrences,
+otherwise Sigasi will regard them as different variables.
+
+
+![](images/customtemplate_2.png)
+
+Press **OK** (twice) to confirm the changes.
+
+If you now autocomplete the `process` template, you will see that the
+default names for the clock and reset signals have changed.
+
+![](images/customtemplate_3.png)
+
+Feel free to experiment with more customizations to the templates like
+adding default comments or changing white space and indentation.
+
+Create new templates
+--------------------
+
+Creating new templates is the evident next step. In the Templates
+Preference Page (**Window &gt; Preferences &gt; VHDL &gt; Templates**), simply press **New...**.
+
+First you have to specify a **Name** for your new template. Choose it
+carefully because this name will be what you have to start typing when
+you want to expand the template.
+
+Next you have to specify the **Context** where this template can be
+expanded. For example the `process` statement can only occur at places
+where `concurrent statements` are allowed. Other options are `Anywhere`
+(Sometimes you want your template to appear anywhere, e.g. for comment),
+`expressions`, `declative item`, etc.
+
+*Tip: If you select `DesignFile` as context, your template will also
+appear as template option in the **New VHDL File** Wizard.*
+
+The **Description** is what you will see next to the template name if
+there are multiple possible templates that can be expanded.
+
+Next you can insert the actual template. Note that apart from
+<em>user-defined</em> variables (like `${name}`,
+`${clk}` and `${rst}` in the above example), you
+can also use **pre-defined template variables**. Pre-defined template
+variables are variables that are filled in by Sigasi itself when the
+template is expanded. Examples are `${user}` and
+`${date}`. If I would autocomplete a template that contains
+the ${user} variable it would become "heeckhau" in the expanded
+template. Note that you can use **Ctrl+Space** to auto-complete these
+pre-defined variables when you are editing the template.
+
+Useful examples of custom templates are file headers, default library
+and use clauses, `(others=>'0')`, ...
+
+Conclusion
+----------
+
+Custom templates can really help you improve you coding speed by
+assisting you in typing faster, especially for verbose VHDL constructs.
+Templates are really flexible and can be customized to really suit your
+needs.
