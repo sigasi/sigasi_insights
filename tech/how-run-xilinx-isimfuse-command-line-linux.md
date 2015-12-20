@@ -8,6 +8,158 @@ tags:
   - Xilinx
   - VHDL
 ---
-<div class="content">
-<p>Xilinx no longer ships <a href="http://www.xilinx.com/products/ipcenter/ModelSim.htm" class="elf-external elf-icon">ModelSim</a> with ISE but now ships its own HDL simulator that enables functional and timing simulations for VHDL, Verilog and mixed VHDL/Verilog designs: <a href="http://www.xilinx.com/products/design_tools/logic_design/verification/ise_simulator_faq.htm" class="elf-external elf-icon">ISim</a>.</p><p>I had some trouble setting up ISim from the command line on my Linux machine, so I documented how to use ISim here for future reference.</p><h2>Install Xilinx ISE</h2><p>First <a href="http://www.xilinx.com/support/download/index.htm" class="elf-external elf-icon">download</a> and install the ISE software from the Xilinx Website. I installed Xilinx in <span class="geshifilter"><code class="bash geshifilter-bash"><span style="color: #000000; font-weight: bold;">/</span>opt<span style="color: #000000; font-weight: bold;">/</span>Xilinx<span style="color: #000000; font-weight: bold;">/</span><span style="color: #000000;">11.1</span><span style="color: #000000; font-weight: bold;">/</span></code></span>.</p><h2>Run Fuse to compile, elaborate and link your project</h2><p>The command line tool that accompanies ISim is called <a href="http://www.xilinx.com/itp/xilinx10/isehelp/ism_cl_fuse.htm" class="elf-external elf-icon">Fuse</a>. Fuse is the HDL compiler, elaborator and linker used by ISim. You can find this executable in your Xilinx installation folder in the binaries dir (<span class="geshifilter"><code class="bash geshifilter-bash"><span style="color: #000000; font-weight: bold;">/</span>opt<span style="color: #000000; font-weight: bold;">/</span>Xilinx<span style="color: #000000; font-weight: bold;">/</span><span style="color: #000000;">11.1</span><span style="color: #000000; font-weight: bold;">/</span>ISE<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span>lin</code></span> in my case).</p><p>This tool needs a few parameters:</p><ul><li>A (.prj) project file with all source files (-prj)</li><li>Top level</li><li>Executable name (-o)</li><li>Optional parameters</li></ul><p>The <strong>project file</strong> is a file (ending with .prj) with an entry for each file, plus its library.<br/>For the <a href="http://www.opencores.org" class="elf-external elf-icon">Dirac OpenCores project</a> that ships with Sigasi HDT, this is (Dirac.prj):<br/><div class="geshifilter"><pre class="bash geshifilter-bash" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vhdl work src<span style="color: #000000; font-weight: bold;">/</span>testbench<span style="color: #000000; font-weight: bold;">/</span>DECODERTESTBENCH.VHD</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vhdl work src<span style="color: #000000; font-weight: bold;">/</span>testbench<span style="color: #000000; font-weight: bold;">/</span>ArithmeticCoderTestbench.vhd</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vhdl work src<span style="color: #000000; font-weight: bold;">/</span>encoder<span style="color: #000000; font-weight: bold;">/</span>FOLLOW_COUNTER.vhd</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vhdl work src<span style="color: #000000; font-weight: bold;">/</span>encoder<span style="color: #000000; font-weight: bold;">/</span>OUTPUT_UNIT.vhd</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vhdl work src<span style="color: #000000; font-weight: bold;">/</span>encoder<span style="color: #000000; font-weight: bold;">/</span>ARITHMETICCODER.vhd</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vhdl work src<span style="color: #000000; font-weight: bold;">/</span>encoder<span style="color: #000000; font-weight: bold;">/</span>LIMIT_REGISTER.vhd</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vhdl work src<span style="color: #000000; font-weight: bold;">/</span>decoder<span style="color: #000000; font-weight: bold;">/</span>ARITHMETICDECODER.vhd</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vhdl work src<span style="color: #000000; font-weight: bold;">/</span>decoder<span style="color: #000000; font-weight: bold;">/</span>STORAGE_REGISTER.vhd</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vhdl work src<span style="color: #000000; font-weight: bold;">/</span>decoder<span style="color: #000000; font-weight: bold;">/</span>SYMBOL_DETECTOR.vhd</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vhdl work src<span style="color: #000000; font-weight: bold;">/</span>expgolomb<span style="color: #000000; font-weight: bold;">/</span>EXP_GOLOMB_DECODER.vhd</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vhdl work src<span style="color: #000000; font-weight: bold;">/</span>expgolomb<span style="color: #000000; font-weight: bold;">/</span>EXP_GOLOMB_COUNTER.vhd</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vhdl work src<span style="color: #000000; font-weight: bold;">/</span>common<span style="color: #000000; font-weight: bold;">/</span>FIFO.vhd</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vhdl work src<span style="color: #000000; font-weight: bold;">/</span>common<span style="color: #000000; font-weight: bold;">/</span>UPDATER.vhd</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vhdl work src<span style="color: #000000; font-weight: bold;">/</span>common<span style="color: #000000; font-weight: bold;">/</span>D_TYPE.vhd</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vhdl work src<span style="color: #000000; font-weight: bold;">/</span>common<span style="color: #000000; font-weight: bold;">/</span>COUNT_UNIT.vhd</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vhdl work src<span style="color: #000000; font-weight: bold;">/</span>common<span style="color: #000000; font-weight: bold;">/</span>STORE_BLOCK.vhd</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vhdl work src<span style="color: #000000; font-weight: bold;">/</span>common<span style="color: #000000; font-weight: bold;">/</span>INPUT_CONTROL.vhd</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vhdl work src<span style="color: #000000; font-weight: bold;">/</span>common<span style="color: #000000; font-weight: bold;">/</span>CONVERGENCE_CHECK.vhd</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vhdl work src<span style="color: #000000; font-weight: bold;">/</span>common<span style="color: #000000; font-weight: bold;">/</span>ARITHMETIC_UNIT.vhd</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vhdl work src<span style="color: #000000; font-weight: bold;">/</span>common<span style="color: #000000; font-weight: bold;">/</span>ENABLEABLE_D_TYPE.vhd</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vhdl work src<span style="color: #000000; font-weight: bold;">/</span>common<span style="color: #000000; font-weight: bold;">/</span>CONTEXT_MANAGER.vhd</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vhdl work src<span style="color: #000000; font-weight: bold;">/</span>common<span style="color: #000000; font-weight: bold;">/</span>Divider.vhd</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vhdl work src<span style="color: #000000; font-weight: bold;">/</span>common<span style="color: #000000; font-weight: bold;">/</span>HALVING_MANAGER.vhd</div></li></ol></pre></div></p><p>I choose <span class="geshifilter"><code class="bash geshifilter-bash">Dirac</code></span> as <strong>executable</strong> and the <strong>toplevel</strong> is <span class="geshifilter"><code class="bash geshifilter-bash">DECODERTESTBENCH</code></span>. I always add <span class="geshifilter"><code class="bash geshifilter-bash"><span style="color: #660033;">-intstyle</span> ise <span style="color: #660033;">-incremental</span></code></span> as <strong>optional parameters</strong>. <span class="geshifilter"><code class="bash geshifilter-bash"><span style="color: #660033;">-intstyle</span> ise</code></span> makes sure Sigasi HDT can link error messages in the console view with the editor view. <span class="geshifilter"><code class="bash geshifilter-bash"><span style="color: #660033;">-incremental</span></code></span> tells Fuse to only compile those files that have changed since the last compile; but I do not have the impression this really works.</p><p>My complete command is:<br/><div class="geshifilter"><pre class="bash geshifilter-bash" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">/</span>opt<span style="color: #000000; font-weight: bold;">/</span>Xilinx<span style="color: #000000; font-weight: bold;">/</span><span style="color: #000000;">11.1</span><span style="color: #000000; font-weight: bold;">/</span>ISE<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span>lin<span style="color: #000000; font-weight: bold;">/</span>fuse <span style="color: #660033;">-intstyle</span> ise <span style="color: #660033;">-incremental</span> <span style="color: #660033;">-o</span> Dirac <span style="color: #660033;">-prj</span> Dirac.prj DECODERTESTBENCH</pre></div></p><h2>Run the simulation</h2><p>Initially when I tried to run the generated executable (<span class="geshifilter"><code class="bash geshifilter-bash">Dirac</code></span>), I always got:<br/><div class="geshifilter"><pre class="bash geshifilter-bash" style="font-family:monospace;">Segmentation fault</pre></div></p><p>The solution was to set some environment variables:<br/><div class="geshifilter"><pre class="bash geshifilter-bash" style="font-family:monospace;"><span style="color: #7a0874; font-weight: bold;">export</span> <span style="color: #007800;">XILINX</span>=<span style="color: #000000; font-weight: bold;">/</span>opt<span style="color: #000000; font-weight: bold;">/</span>Xilinx<span style="color: #000000; font-weight: bold;">/</span><span style="color: #000000;">11.1</span><span style="color: #000000; font-weight: bold;">/</span>ISE<span style="color: #7a0874; font-weight: bold;">export</span> <span style="color: #007800;">PLATFORM</span>=lin<span style="color: #7a0874; font-weight: bold;">export</span> <span style="color: #007800;">PATH</span>=<span style="color: #007800;">$PATH</span>:<span style="color: #800000;">${XILINX}</span><span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span><span style="color: #800000;">${PLATFORM}</span><span style="color: #7a0874; font-weight: bold;">export</span> <span style="color: #007800;">LD_LIBRARY_PATH</span>=<span style="color: #800000;">${XILINX}</span><span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span><span style="color: #800000;">${PLATFORM}</span></pre></div></p><p>Now you can run Dirac:<br/><div class="geshifilter"><pre class="bash geshifilter-bash" style="font-family:monospace;"><span style="color: #7a0874; font-weight: bold;">[</span>heeckhau<span style="color: #000000; font-weight: bold;">@</span>elvis Dirac<span style="color: #7a0874; font-weight: bold;">]</span>$ .<span style="color: #000000; font-weight: bold;">/</span>DiracWARNING: A WEBPACK license was found.WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.WARNING: ISim will run <span style="color: #000000; font-weight: bold;">in</span> Lite mode. Please refer to the ISim documentation <span style="color: #000000; font-weight: bold;">for</span> <span style="color: #c20cb9; font-weight: bold;">more</span> information on the differences between the Lite and the Full version.This is a Lite version of ISim.Time resolution is <span style="color: #000000;">1</span> <span style="color: #c20cb9; font-weight: bold;">ps</span>ISim<span style="color: #000000; font-weight: bold;">&gt;</span> run <span style="color: #000000;">10</span> nsSimulator is doing circuit initialization process.at <span style="color: #000000;">0</span> <span style="color: #c20cb9; font-weight: bold;">ps</span>, Instance <span style="color: #000000; font-weight: bold;">/</span>decodertestbench<span style="color: #000000; font-weight: bold;">/</span>UUT<span style="color: #000000; font-weight: bold;">/</span>INBUFFER<span style="color: #000000; font-weight: bold;">/</span>STORAGE<span style="color: #000000; font-weight: bold;">/</span> : Warning: There is an <span style="color: #ff0000;">'U'</span><span style="color: #000000; font-weight: bold;">|</span><span style="color: #ff0000;">'X'</span><span style="color: #000000; font-weight: bold;">|</span><span style="color: #ff0000;">'W'</span><span style="color: #000000; font-weight: bold;">|</span><span style="color: #ff0000;">'Z'</span><span style="color: #000000; font-weight: bold;">|</span><span style="color: #ff0000;">'-'</span> <span style="color: #000000; font-weight: bold;">in</span> an arithmetic operand, the result will be <span style="color: #ff0000;">'X'</span><span style="color: #7a0874; font-weight: bold;">(</span>es<span style="color: #7a0874; font-weight: bold;">)</span>.at <span style="color: #000000;">0</span> <span style="color: #c20cb9; font-weight: bold;">ps</span>, Instance <span style="color: #000000; font-weight: bold;">/</span>decodertestbench<span style="color: #000000; font-weight: bold;">/</span>UUT<span style="color: #000000; font-weight: bold;">/</span>INBUFFER<span style="color: #000000; font-weight: bold;">/</span>STORAGE<span style="color: #000000; font-weight: bold;">/</span> : Warning: CONV_INTEGER: There is an <span style="color: #ff0000;">'U'</span><span style="color: #000000; font-weight: bold;">|</span><span style="color: #ff0000;">'X'</span><span style="color: #000000; font-weight: bold;">|</span><span style="color: #ff0000;">'W'</span><span style="color: #000000; font-weight: bold;">|</span><span style="color: #ff0000;">'Z'</span><span style="color: #000000; font-weight: bold;">|</span><span style="color: #ff0000;">'-'</span> <span style="color: #000000; font-weight: bold;">in</span> an arithmetic operand, and it has been converted to <span style="color: #000000;">0</span>.at <span style="color: #000000;">0</span> <span style="color: #c20cb9; font-weight: bold;">ps</span>, Instance <span style="color: #000000; font-weight: bold;">/</span>decodertestbench<span style="color: #000000; font-weight: bold;">/</span>UUT<span style="color: #000000; font-weight: bold;">/</span>PROBABILITY<span style="color: #000000; font-weight: bold;">/</span> : Warning: CONV_INTEGER: There is an <span style="color: #ff0000;">'U'</span><span style="color: #000000; font-weight: bold;">|</span><span style="color: #ff0000;">'X'</span><span style="color: #000000; font-weight: bold;">|</span><span style="color: #ff0000;">'W'</span><span style="color: #000000; font-weight: bold;">|</span><span style="color: #ff0000;">'Z'</span><span style="color: #000000; font-weight: bold;">|</span><span style="color: #ff0000;">'-'</span> <span style="color: #000000; font-weight: bold;">in</span> an arithmetic operand, and it has been converted to <span style="color: #000000;">0</span>.at <span style="color: #000000;">0</span> <span style="color: #c20cb9; font-weight: bold;">ps</span>, Instance <span style="color: #000000; font-weight: bold;">/</span>decodertestbench<span style="color: #000000; font-weight: bold;">/</span>UUT<span style="color: #000000; font-weight: bold;">/</span>PROBABILITY<span style="color: #000000; font-weight: bold;">/</span> : Warning: CONV_INTEGER: There is an <span style="color: #ff0000;">'U'</span><span style="color: #000000; font-weight: bold;">|</span><span style="color: #ff0000;">'X'</span><span style="color: #000000; font-weight: bold;">|</span><span style="color: #ff0000;">'W'</span><span style="color: #000000; font-weight: bold;">|</span><span style="color: #ff0000;">'Z'</span><span style="color: #000000; font-weight: bold;">|</span><span style="color: #ff0000;">'-'</span> <span style="color: #000000; font-weight: bold;">in</span> an arithmetic operand, and it has been converted to <span style="color: #000000;">0</span>.Finished circuit initialization process.at <span style="color: #000000;">5</span> ns<span style="color: #7a0874; font-weight: bold;">(</span><span style="color: #000000;">1</span><span style="color: #7a0874; font-weight: bold;">)</span>, Instance <span style="color: #000000; font-weight: bold;">/</span>decodertestbench<span style="color: #000000; font-weight: bold;">/</span>UUT<span style="color: #000000; font-weight: bold;">/</span>PROBABILITY<span style="color: #000000; font-weight: bold;">/</span> : Warning: CONV_INTEGER: There is an <span style="color: #ff0000;">'U'</span><span style="color: #000000; font-weight: bold;">|</span><span style="color: #ff0000;">'X'</span><span style="color: #000000; font-weight: bold;">|</span><span style="color: #ff0000;">'W'</span><span style="color: #000000; font-weight: bold;">|</span><span style="color: #ff0000;">'Z'</span><span style="color: #000000; font-weight: bold;">|</span><span style="color: #ff0000;">'-'</span> <span style="color: #000000; font-weight: bold;">in</span> an arithmetic operand, and it has been converted to <span style="color: #000000;">0</span>.</pre></div></p><p>You can also start the gui from the command line:<br/><div class="geshifilter"><pre class="bash geshifilter-bash" style="font-family:monospace;">.<span style="color: #000000; font-weight: bold;">/</span>Dirac <span style="color: #660033;">-gui</span></pre></div><br/>This works on our Centos machines, but not on my Fedora release 10 work station. I did not find out why yet, but it is probably due to Xilinx using an older version of GLIBC.</p><p>You can also start ISim with a tcl-script, such as:<br/><div class="geshifilter"><pre class="bash geshifilter-bash" style="font-family:monospace;">.<span style="color: #000000; font-weight: bold;">/</span>Dirac <span style="color: #660033;">-tclbatch</span> isim.cmd</pre></div><br/>where <span class="geshifilter"><code class="vhdl geshifilter-vhdl">iscim.cmd</code></span> is for example:<br/><div class="geshifilter"><pre class="bash geshifilter-bash" style="font-family:monospace;">wave add DECODERTESTBENCHrun <span style="color: #000000;">10</span> ns</pre></div></p><p>This should save you some time.</p><h2>Coming soon</h2><p>In the upcoming version of Sigasi HDT, we will generate all these scripts for you. That way you can focus on the design, and let the tools take care of the dirty work.</p><h3>Some useful links</h3><p><a href="http://www.xilinx.com/support/documentation/sw_manuals/xilinx11/plugin_ism.pdf" class="elf-external elf-icon">ISim Manual</a><br/><a href="http://www.xilinx.com/support/documentation/sw_manuals/xilinx11/ug682.pdf" class="elf-external elf-icon">In Depth tutorial</a><br/><a>ISim FAQ</a></p>  </div>
 
+Xilinx no longer ships
+<a href="http://www.xilinx.com/products/ipcenter/ModelSim.htm">ModelSim</a>
+with ISE but now ships its own HDL simulator that enables functional and
+timing simulations for VHDL, Verilog and mixed VHDL/Verilog designs:
+<a href="http://www.xilinx.com/products/design_tools/logic_design/verification/ise_simulator_faq.htm">ISim</a>.
+
+I had some trouble setting up ISim from the command line on my Linux
+machine, so I documented how to use ISim here for future reference.
+
+## Install Xilinx ISE
+
+First
+<a href="http://www.xilinx.com/support/download/index.htm">download</a>
+and install the ISE software from the Xilinx Website. I installed Xilinx
+in <code lang="bash">/opt/Xilinx/11.1/</code>.
+
+## Run Fuse to compile, elaborate and link your project
+
+The command line tool that accompanies ISim is called
+<a href="http://www.xilinx.com/itp/xilinx10/isehelp/ism_cl_fuse.htm">Fuse</a>.
+Fuse is the HDL compiler, elaborator and linker used by ISim. You can
+find this executable in your Xilinx installation folder in the binaries
+dir (<code lang="bash">/opt/Xilinx/11.1/ISE/bin/lin</code> in my case).
+
+This tool needs a few parameters:
+
+* A (.prj) project file with all source files (-prj)
+* Top level
+* Executable name (-o)
+* Optional parameters
+
+The <strong>project file</strong> is a file (ending with `.prj`) with an
+entry for each file, plus its library.
+For the <a href="http://www.opencores.org">Dirac OpenCores project</a>
+that ships with Sigasi HDT, this is (`Dirac.prj`):
+
+```bash
+vhdl work src/testbench/DECODERTESTBENCH.VHD
+vhdl work src/testbench/ArithmeticCoderTestbench.vhd
+vhdl work src/encoder/FOLLOW_COUNTER.vhd
+vhdl work src/encoder/OUTPUT_UNIT.vhd
+vhdl work src/encoder/ARITHMETICCODER.vhd
+vhdl work src/encoder/LIMIT_REGISTER.vhd
+vhdl work src/decoder/ARITHMETICDECODER.vhd
+vhdl work src/decoder/STORAGE_REGISTER.vhd
+vhdl work src/decoder/SYMBOL_DETECTOR.vhd
+vhdl work src/expgolomb/EXP_GOLOMB_DECODER.vhd
+vhdl work src/expgolomb/EXP_GOLOMB_COUNTER.vhd
+vhdl work src/common/FIFO.vhd
+vhdl work src/common/UPDATER.vhd
+vhdl work src/common/D_TYPE.vhd
+vhdl work src/common/COUNT_UNIT.vhd
+vhdl work src/common/STORE_BLOCK.vhd
+vhdl work src/common/INPUT_CONTROL.vhd
+vhdl work src/common/CONVERGENCE_CHECK.vhd
+vhdl work src/common/ARITHMETIC_UNIT.vhd
+vhdl work src/common/ENABLEABLE_D_TYPE.vhd
+vhdl work src/common/CONTEXT_MANAGER.vhd
+vhdl work src/common/Divider.vhd
+vhdl work src/common/HALVING_MANAGER.vhd
+```
+
+I choose <code lang="bash">Dirac</code> as <strong>executable</strong>
+and the <strong>toplevel</strong> is
+<code lang="bash">DECODERTESTBENCH</code>. I always add
+<code lang="bash">-intstyle ise -incremental</code> as <strong>optional
+parameters</strong>. <code lang="bash">-intstyle ise</code> makes sure
+Sigasi HDT can link error messages in the console view with the editor
+view. <code lang="bash">-incremental</code> tells Fuse to only compile
+those files that have changed since the last compile; but I do not have
+the impression this really works.
+
+My complete command is:
+```bash
+/opt/Xilinx/11.1/ISE/bin/lin/fuse -intstyle ise -incremental -o Dirac -prj Dirac.prj DECODERTESTBENCH
+```
+
+## Run the simulation
+Initially when I tried to run the generated executable
+(<code lang="bash">Dirac</code>), I always got:
+```bash
+Segmentation fault
+```
+
+The solution was to set some environment variables:
+```bash
+export XILINX=/opt/Xilinx/11.1/ISE
+export PLATFORM=lin
+export PATH=$PATH:${XILINX}/bin/${PLATFORM}
+export LD_LIBRARY_PATH=${XILINX}/lib/${PLATFORM}
+```
+
+Now you can run Dirac:
+```
+[heeckhau@elvis Dirac]$ ./Dirac
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a
+full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim
+documentation for more information on the differences between the Lite
+and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+ISim&gt; run 10 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /decodertestbench/UUT/INBUFFER/STORAGE/ : Warning:
+There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result
+will be 'X'(es).
+at 0 ps, Instance /decodertestbench/UUT/INBUFFER/STORAGE/ : Warning:
+CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand,
+and it has been converted to 0.
+at 0 ps, Instance /decodertestbench/UUT/PROBABILITY/ : Warning:
+CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand,
+and it has been converted to 0.
+at 0 ps, Instance /decodertestbench/UUT/PROBABILITY/ : Warning:
+CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand,
+and it has been converted to 0.
+Finished circuit initialization process.
+at 5 ns(1), Instance /decodertestbench/UUT/PROBABILITY/ : Warning:
+CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand,
+and it has been converted to 0.
+```
+
+You can also start the gui from the command line:
+```bash
+./Dirac -gui
+```
+This works on our Centos machines, but not on my Fedora release 10 work
+station. I did not find out why yet, but it is probably due to Xilinx
+using an older version of GLIBC.
+
+You can also start ISim with a tcl-script, such as:
+```bash
+./Dirac -tclbatch isim.cmd
+```
+where `iscim.cmd` is for example:
+```bash
+wave add DECODERTESTBENCH
+run 10 ns
+```
+
+This should save you some time.
+
+## Coming soon
+In the upcoming version of Sigasi HDT, we will generate all these
+scripts for you. That way you can focus on the design, and let the tools
+take care of the dirty work.
+
+## Some useful links
+* <a href="http://www.xilinx.com/support/documentation/sw_manuals/xilinx11/plugin_ism.pdf">ISim
+Manual</a>
+* <a href="http://www.xilinx.com/support/documentation/sw_manuals/xilinx11/ug682.pdf">In
+Depth tutorial</a>
+* <a href="http://www.xilinx.com/products/design_tools/logic_design/verification/ise_simulator_faq.htm">ISim FAQ</a>

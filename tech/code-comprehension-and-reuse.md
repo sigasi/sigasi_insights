@@ -8,6 +8,31 @@ tags:
   - code comprehension
   - code reuse
 ---
-<div class="content">
-<p>Understanding a big body of code is always a difficult task. But the correct tools will help you speed up and do in hours what would otherwise take a week.</p>	<h2>Key Features:</h2>	<ul><li>Power navigation / <span class="caps">VHDL</span> code browsing	<ul><li>Jump to any declaration in one click</li>		<li>Jump to case statements in state machines</li>		<li>Jump between instantiation, component and entity / architecture</li>	</ul></li>		<li>Mouse-over to show extra information [<a href="/screencast/hover-comments">movie</a>] [<a href="/content/code-comprehension-without-using-your-mouse-hovering">read more</a>]</li>		<li>Show design hierarchy, even if the code is broken [<a href="/screencast/hierarchy-view">movie</a>]</li>		<li>Find where signals are used</li>		<li>Semantic highlighting: use different colors for signals, variables, constants, &#8230; [<a href="/content/emacs-code-coloring-outdated">learn more</a>]</li>		<li>See the values of generics [<a href="/screencast/generic">movie</a>]</li>	</ul><p>All of these inspection features work even <a href="/content/recovering-vhdl-parser-0">if the design is incomplete or broken</a>!</p>	<p>Because Sigasi's built-in <span class="caps">VHDL</span> compiler analyses your entire project. Even if there are errors, the parser recovers and works its way through the rest of your code. Sigasi Pro uses the resulting information to answer your questions, like:	</p><ul><li>Where did I use this signal?</li>		<li>How many bits are in this port?</li>		<li>What is the value of this constant?</li>		<li>Which package contains the declaration for that data type?</li>	</ul><p>Without Sigasi, all of these questions would take a lot of mental energy, scrolling, opening files and writing down notes on paper. </p>	<h2>Nice, but not-so-unique features:</h2>	<ul><li>Place bookmarks in your code [<a href="/screencast/bookmarks">movie</a>] or [<a href="http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2FgettingStarted%2Fqs-37-3e.htm" class="elf-external elf-icon">documentation</a>]</li>		<li>Open multiple editors side by side</li>	</ul>  <div id="book-navigation-1518" class="book-navigation">    <ul class="menu"><li class="leaf first last"><a href="/content/code-comprehension-without-clicking-your-mouse-hovering">Code comprehension without clicking your mouse: Hovering</a></li></ul>        <div class="page-links clear-block">              <a href="/content/eclipse-keyboard-tricks-editing-code" class="page-previous" title="Go to previous page">&#8249; Eclipse keyboard tricks: Editing code</a>                    <a href="/knowledge-base" class="page-up" title="Go to parent page">up</a>                    <a href="/content/code-comprehension-without-clicking-your-mouse-hovering" class="page-next" title="Go to next page">Code comprehension without clicking your mouse: Hovering &#8250;</a>          </div>      </div>  </div>
+Understanding a big body of code is always a difficult task. But the correct tools will help you speed up and do in hours what would otherwise take a week.
 
+## Key Features:
+
+* Power navigation / VHDL code browsing
+	* Jump to any declaration in one click
+	* Jump to case statements in state machines
+	* Jump between instantiation, component and entity / architecture
+* [code-comprehension-without-clicking-your-mouse-hovering]
+* Show design hierarchy, even if the code is broken \[[movie](http://www.sigasi.com/screencast/hierarchy-view)\]
+* Find where signals are used
+* Semantic highlighting: use different colors for signals, variables, constants, ... \[[learn more](http://www.sigasi.com/content/emacs-code-coloring-outdated)\]
+* See the values of generics \[[movie](http://www.sigasi.com/screencast/generic)\]
+
+All of these inspection features work even if the design is incomplete or broken with our [recovering-vhdl-parser-0]
+
+Because Sigasi's built-in VHDL compiler analyses your entire project. Even if there are errors, the parser recovers and works its way through the rest of your code. Sigasi Pro uses the resulting information to answer your questions, like:
+* Where did I use this signal?
+* How many bits are in this port?
+* What is the value of this constant? 
+* Which package contains the declaration for that data type?
+
+Without Sigasi, all of these questions would take a lot of mental energy, scrolling, opening files and writing down notes on paper. 
+
+## Nice, but not-so-unique features
+
+* Place bookmarks in your code \[[movie](http://www.sigasi.com/screencast/bookmarks)\] or \[[documentation](http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2FgettingStarted%2Fqs-37-3e.htm)\]
+* Open multiple editors side by side

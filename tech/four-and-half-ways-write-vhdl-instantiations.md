@@ -7,6 +7,45 @@ date: 2009-01-18
 tags: 
   - VHDL
 ---
-<div class="content">
-<p>Most hardware designers stick to their own way of typing VHDL instantiations. In this post, I list four styles that I've come across.</p><p>The most common way of writing an instantiation, is by declaring a component for the entity you want to instantiate. There are a few different places where you can write your component declaration.</p><h3>One: VHDL Component in the VHDL Architecture</h3><p>You can write the VHDL component declaration in the declarative part of the architecture. The advantage of this style, is that you can see the generic list and port list of your component in the same file you are typing your instantiation. On the downside, if you want to instantiate that entity many times, you will have many copies of the component in many different places.</p><h3>Two: VHDL Component in a VHDL Package</h3><p>To avoid having to copy your component in a dozen different files, you can create a small package that contains just that one component, say package <span class="geshifilter"><code class="vhdl geshifilter-vhdl">foobar_pkg</code></span> which contains component <span class="geshifilter"><code class="vhdl geshifilter-vhdl">foobar</code></span>. It is possible to put this package in its own file, but I've seen it placed in the same file as its corresponding entity and an architecture.</p><h3>Three: VHDL Component is a project-global package</h3><p>If you don't want a new package for every single entity, you can also lump together all components in one VHDL package.  I would not recommend it, because this package may grow to be huge, and you will need to cut it up later when you want to reuse a few of your entities in a new project.</p><p>Another common approach is to use this style in combination with the first or the second style: put most of the component declarations in a component package (or in the architecture) and a few in a global package.</p><h3>Four: VHDL Entity Instantiations</h3><p>Since VHDL'93, you really don't need VHDL components any more. You can instantiate the entity directly:</p><p><span class="geshifilter"><code class="vhdl geshifilter-vhdl">labelname<span style="color: #000066;">:</span> <span style="color: #7f0055; font-weight: bold;">entity</span> work.entityName<span style="color: #000000;">(</span>architectureName<span style="color: #000000;">)</span></code></span></p><p>instead of the old</p><p><span class="geshifilter"><code class="vhdl geshifilter-vhdl">labelname<span style="color: #000066;">:</span> componentName</code></span></p><p>This saves you a lot of typing. One downside: entity instantiations will not let you work with VHDL configurations. You either specify the architecture explicitly, or if you don't the compile order determines which architecture is selected.</p><h3>Four-and-a-half</h3><p>To distinguish between component instantiations and entity instantiations, you can also use the word "component" explicitly in options 1 through 3, like this:</p><p><span class="geshifilter"><code class="vhdl geshifilter-vhdl">labelname<span style="color: #000066;">:</span> <span style="color: #7f0055; font-weight: bold;">component</span> componentName</code></span></p><p>I've never seen this in an actual VHDL project, but let me know if you have!</p><h3>Roundup</h3><p>To summarize, I suggest you use entity instantiation if you do not need VHDL configurations. If you <em>do</em> need them, I personally prefer to put each component in its own component-package, but different styles are possible.</p>  <div id="book-navigation-1518" class="book-navigation">            <div class="page-links clear-block">              <a href="/content/vhdl-tips-tricks" class="page-previous" title="Go to previous page">&#8249; VHDL Tips &amp; Tricks</a>                    <a href="/content/vhdl-tips-tricks" class="page-up" title="Go to parent page">up</a>                    <a href="/content/advanced-vhdl-configurations-tying-component-unrelated-entity" class="page-next" title="Go to next page">Advanced VHDL Configurations: Tying a component to an unrelated entity &#8250;</a>          </div>      </div>  </div>
 
+Most hardware designers stick to their own way of typing VHDL instantiations. In this post, I list four styles that I've come across.
+
+The most common way of writing an instantiation, is by declaring a component for the entity you want to instantiate. There are a few different places where you can write your component declaration.
+
+## One: VHDL Component in the VHDL Architecture
+
+You can write the VHDL component declaration in the declarative part of the architecture. The advantage of this style, is that you can see the generic list and port list of your component in the same file you are typing your instantiation. On the downside, if you want to instantiate that entity many times, you will have many copies of the component in many different places.
+
+## Two: VHDL Component in a VHDL Package
+To avoid having to copy your component in a dozen different files, you can create a small package that contains just that one component, say package `foobar_pkg` which contains component `foobar`. It is possible to put this package in its own file, but I've seen it placed in the same file as its corresponding entity and an architecture.
+
+## Three: VHDL Component is a project-global package
+
+If you don't want a new package for every single entity, you can also lump together all components in one VHDL package. I would not recommend it, because this package may grow to be huge, and you will need to cut it up later when you want to reuse a few of your entities in a new project.
+
+Another common approach is to use this style in combination with the first or the second style: put most of the component declarations in a component package (or in the architecture) and a few in a global package.
+
+## Four: VHDL Entity Instantiations
+
+Since VHDL'93, you really don't need VHDL components any more. You can instantiate the entity directly:
+```vhdl
+labelname: entity work.entityName(architectureName)
+```
+instead of the old
+```vhdl
+labelname: componentName
+```
+
+This saves you a lot of typing. One downside: entity instantiations will not let you work with VHDL configurations. You either specify the architecture explicitly, or if you don't the compile order determines which architecture is selected.
+
+## Four-and-a-half
+
+To distinguish between component instantiations and entity instantiations, you can also use the word `component` explicitly in options 1 through 3, like this:
+```vhdl
+labelname: component componentName
+```
+I've never seen this in an actual VHDL project, but let me know if you have!
+
+## Roundup
+
+To summarize, I suggest you use entity instantiation if you do not need VHDL configurations. If you do need them, I personally prefer to put each component in its own component-package, but different styles are possible.

@@ -8,6 +8,50 @@ tags:
   - coding guidelines
   - VHDL
 ---
-<div class="content">
-<p>A hardware design project will often contain code that does nothing. Still, there might be a good reason to have this code. Here are some guidelines to determine if this dead code is useful or not:</p>	<ul><li>Dead code is <strong>good</strong> if it helps the reader understand the code.</li>		<li>Dead code is <strong>bad</strong> if it confuses the reader. If it does not confuse nor help, it is just sitting there using screen real estate and so it should be removed.</li>	</ul><p>Here are some examples.</p>	<h3>Library <span class="caps">STD</span></h3>	<p><span class="geshifilter"><code class="vhdl geshifilter-vhdl"><span style="color: #7f0055; font-weight: bold;">library</span> std<span style="color: #000066;">;</span></code></span><br/>This library clause is already implicit in every <span class="caps">VHDL</span> file. It won't confuse the reader, but it has no added value. This library clause should not be in your code.</p>	<h3>Comments</h3>	<p>Comments are meant to clarify things. If they are written well, they have their value. Keep useful comments.</p>	<h3>Unused declarations</h3>	<p>Declarations of signals, data types, constants or other things that are never used later on have no value. They are confusing to the reader (<em>Why is this here?</em>) and should be avoided or removed from your code.</p>	<h3>Superfluous "others" in case statements</h3>	<p>In a state machine with enumerated states you usually cover all states explicitly in a <em>case</em> statement. If you do this, there is "very little reason to add a "when others" clause":/content/can-you-do-without-others. <br/>The only reason for writing "when others" is your synthesis tool uses this information for recovering from an illegal state <em>and</em> you need this recovery for some reason. Ask yourself these questions: Does my design need to recover from an illegal state (usually military, safety-critical or radiation sensitive application)? Does my synthesis tool use the "others" clause for recovering? (Some do, some don't &#8211; read the documentation and/or inspect the synthesis results!). If you find yourself in a situation where you want to use a "when others" clause, make sure that there is recovery code there.</p>	<h3>Assertions</h3>	<p>Assertions are dead code if they are placed in unreachable places. This is actually a good thing. You are telling the reader that you expect that a certain condition will never occur. Even if the simulator or the synthesis tool never do anything with this code, it can be a good thing to have it there. In the following example, let's say there are six possible colors, but you expect the color of the pedestrian traffic light to be only red or green.<br/></p><div class="geshifilter"><pre class="vhdl geshifilter-vhdl" style="font-family:monospace;"><span style="color: #7f0055; font-weight: bold;">case</span> color <span style="color: #7f0055; font-weight: bold;">is</span>	<span style="color: #7f0055; font-weight: bold;">when</span> <span class="caps">GREEN</span> <span style="color: #000066;">=&gt;</span> 		<span style="color: #3f7f5f;">-- do stuff</span>	<span style="color: #7f0055; font-weight: bold;">when</span> <span class="caps">RED</span> <span style="color: #000066;">=&gt;</span> 		<span style="color: #3f7f5f;">-- do other stuff</span>	<span style="color: #7f0055; font-weight: bold;">when</span> <span style="color: #7f0055; font-weight: bold;">others</span> <span style="color: #000066;">=&gt;</span> 		<span style="color: #7f0055; font-weight: bold;">report</span> <span style="color: #2a00ff;">"unreachable; color should always be <span class="caps">GREEN</span> or <span class="caps">RED</span>"</span> <span style="color: #7f0055; font-weight: bold;">severity</span> <span style="color: #7f0055; font-weight: bold;">failure</span><span style="color: #000066;">;</span><br/><span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">case</span><span style="color: #000066;">;</span></pre></div>	<h2>Conclusion</h2>	<p>Dead code is not always bad. If it helps the human reader in understanding the code, it has its value. If not, it distracts at best or confuses and misleads at worst. If you find a piece of dead code, try and assess if it useful or harmful. In the latter case, do yourself and your team a favor: remove or file a change request. </p>  <div id="book-navigation-1518" class="book-navigation">            <div class="page-links clear-block">              <a href="/content/static-checks-vhdl-code" class="page-previous" title="Go to previous page">&#8249; Static Checks for VHDL Code</a>                    <a href="/content/coding-conventions" class="page-up" title="Go to parent page">up</a>                    <a href="/content/sigasi-how" class="page-next" title="Go to next page">Sigasi How To &#8250;</a>          </div>      </div>  </div>
 
+A hardware design project will often contain code that does nothing. Still, there might be a good reason to have this code. Here are some guidelines to determine if this dead code is useful or not:
+
+* Dead code is **good** if it helps the reader understand the code.
+* Dead code is **bad** if it confuses the reader. If it does not confuse nor help, it is just sitting there using screen real estate and so it should be removed. 
+
+Here are some examples.
+
+### Library STD
+
+```vhdl
+library std;
+```
+
+This library clause is already implicit in every VHDL file. It won't confuse the reader, but it has no added value. This library clause should not be in your code.
+
+### Comments
+
+Comments are meant to clarify things. If they are written well, they have their value. Keep useful comments.
+
+### Unused declarations
+
+Declarations of signals, data types, constants or other things that are never used later on have no value. They are confusing to the reader (_Why is this here?_) and should be avoided or removed from your code.
+
+### Superfluous "others" in case statements
+
+In a state machine with enumerated states you usually cover all states explicitly in a _case_ statement. If you do this, there is [very little reason to add a `when others` clause](/tech/vhdl-case-statements-can-do-without-others.html).
+The only reason for writing `when others` is your synthesis tool uses this information for recovering from an illegal state _and_ you need this recovery for some reason. Ask yourself these questions: Does my design need to recover from an illegal state (usually military, safety-critical or radiation sensitive application)? Does my synthesis tool use the "others" clause for recovering? (Some do, some don't – read the documentation and/or inspect the synthesis results!). If you find yourself in a situation where you want to use a `when others` clause, make sure that there is recovery code there.
+
+### Assertions
+
+Assertions are dead code if they are placed in unreachable places. This is actually a good thing. You are telling the reader that you expect that a certain condition will never occur. Even if the simulator or the synthesis tool never do anything with this code, it can be a good thing to have it there. In the following example, let's say there are six possible colors, but you expect the color of the pedestrian traffic light to be only red or green.
+
+```vhdl
+case color is
+	when GREEN => 
+		-- do stuff
+	when RED => 
+		-- do other stuff
+	when others => 
+		report "unreachable; color should always be GREEN or RED" severity failure;
+end case;
+```
+
+## Conclusion
+
+Dead code is not always bad. If it helps the human reader in understanding the code, it has its value. If not, it distracts at best or confuses and misleads at worst. If you find a piece of dead code, try and assess if it useful or harmful. In the latter case, do yourself and your team a favor: remove or file a change request.
