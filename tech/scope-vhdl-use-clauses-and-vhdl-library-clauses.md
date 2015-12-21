@@ -7,6 +7,66 @@ date: 2011-12-14
 tags: 
   - VHDL
 ---
-<div class="content">
-<p>When I first learned <span class="caps">VHDL</span>, I bumped in to quite a few language quirks. Here is one thing that I learned the hard way: the scope of <span class="caps">VHDL</span> use clauses.</p>	<p>I figured out that you can put several entities or packagas in the same file. Now, usually people only put design units in the same file in pairs, like entity + architecture or package + package body.:<br/></p><div class="geshifilter"><pre class="vhdl geshifilter-vhdl" style="font-family:monospace;"><span style="color: #7f0055; font-weight: bold;">library</span><br/><span style="color: #7f0055; font-weight: bold;">use</span><br/><span style="color: #7f0055; font-weight: bold;">entity</span><br/><span style="color: #7f0055; font-weight: bold;">architecture</span></pre></div><br/>or<br/><div class="geshifilter"><pre class="vhdl geshifilter-vhdl" style="font-family:monospace;"><span style="color: #7f0055; font-weight: bold;">library</span><br/><span style="color: #7f0055; font-weight: bold;">use</span><br/><span style="color: #7f0055; font-weight: bold;">package</span><br/><span style="color: #7f0055; font-weight: bold;">package</span> <span style="color: #7f0055; font-weight: bold;">body</span></pre></div>	<p>Note that the use clauses and library clauses are only written once at the top of the <span class="caps">VHDL</span> file. A na&#239;ve passer-by would assume that these clauses are valid throughout the entire file. Wrong!</p>	<p>If you try to write a <span class="caps">VHDL</span> file with this structure, things will go wrong:<br/></p><div class="geshifilter"><pre class="vhdl geshifilter-vhdl" style="font-family:monospace;"><span style="color: #7f0055; font-weight: bold;">library</span><br/><span style="color: #7f0055; font-weight: bold;">use</span><br/><span style="color: #7f0055; font-weight: bold;">package</span> one<br/><span style="color: #7f0055; font-weight: bold;">package</span> two</pre></div>	<p>Package two will not be able to see the thing declared in the use case. Isn't that funny? </p>	<p>The reason is that the library and use clauses are only visible to the <em>first</em> design unit (entity, architecture, package,&#8230;). In case you write an entity and its corresponding architecture (or a package and its corresponding package body) the so-called <em>secondary design unit</em> (the architecture or package body) <strong>inherits</strong> whatever is used in the <em>primary design unit</em> (entity or package). Aha!<br/>Even if the architecture is in a different file, you don't have to repeat the use clauses.</p>	<p>So finally, here is some <a href="/content/get-better-feedback-your-vhdl-code-snippets"><span class="caps">VETSMOD</span></a> <span class="caps">VHDL</span> code to play with:<br/></p><div class="geshifilter"><pre class="vhdl geshifilter-vhdl" style="font-family:monospace;"><span style="color: #3f7f5f;">---- New "Design Unit" starts here ----</span><br/><span style="color: #7f0055; font-weight: bold;">library</span> ieee<span style="color: #000066;">;</span><br/><span style="color: #7f0055; font-weight: bold;">use</span> ieee.std_logic_1164.<span style="color: #7f0055; font-weight: bold;">all</span><span style="color: #000066;">;</span><br/>&#160;<br/><span style="color: #3f7f5f;">-- the library and use clauses apply to the entity below</span><br/><span style="color: #7f0055; font-weight: bold;">entity</span> e1 <span style="color: #7f0055; font-weight: bold;">is</span>	<span style="color: #7f0055; font-weight: bold;">port</span><span style="color: #000000;">(</span>		p <span style="color: #000066;">:</span> <span style="color: #7f0055; font-weight: bold;">in</span> <span style="color: #808000;">std_logic</span> <span style="color: #3f7f5f;">-- OK</span>	<span style="color: #000000;">)</span><span style="color: #000066;">;</span><br/><span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">entity</span> e1<span style="color: #000066;">;</span><br/>&#160;<br/><span style="color: #3f7f5f;">---- New "Design Unit" starts here ----</span><br/>&#160;<br/><span style="color: #3f7f5f;">-- architecture inherits use clause from its entity </span><br/><span style="color: #7f0055; font-weight: bold;">architecture</span> <span class="caps">RTL</span> <span style="color: #7f0055; font-weight: bold;">of</span> e1 <span style="color: #7f0055; font-weight: bold;">is</span>	<span style="color: #7f0055; font-weight: bold;">signal</span> s <span style="color: #000066;">:</span> <span style="color: #808000;">std_logic</span><span style="color: #000066;">;</span> <span style="color: #3f7f5f;">-- OK</span><br/><span style="color: #7f0055; font-weight: bold;">begin</span><br/><span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">architecture</span> <span class="caps">RTL</span><span style="color: #000066;">;</span><br/>&#160;<br/><span style="color: #3f7f5f;">---- New "Design Unit" starts here ----</span><br/>&#160;<br/><span style="color: #3f7f5f;">-- No library or use clauses inherited!</span><br/><span style="color: #7f0055; font-weight: bold;">entity</span> e2 <span style="color: #7f0055; font-weight: bold;">is</span>	<span style="color: #7f0055; font-weight: bold;">port</span><span style="color: #000000;">(</span>		p <span style="color: #000066;">:</span> <span style="color: #7f0055; font-weight: bold;">in</span> <span style="color: #808000;">std_logic</span> <span style="color: #3f7f5f;">-- <span class="caps">ERROR</span>! std_logic is not visible here</span>	<span style="color: #000000;">)</span><span style="color: #000066;">;</span><br/><span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">entity</span> e2<span style="color: #000066;">;</span></pre></div>  <div id="book-navigation-1518" class="book-navigation">            <div class="page-links clear-block">              <a href="/content/vhdl-physical-type-not-synthesizable-or-it" class="page-previous" title="Go to previous page">&#8249; VHDL Physical Type is not Synthesizable, or is it?</a>                    <a href="/content/vhdl-tips-tricks" class="page-up" title="Go to parent page">up</a>                    <a href="/content/be-careful-vhdl-operator-precedence" class="page-next" title="Go to next page">Be careful with VHDL operator precedence &#8250;</a>          </div>      </div>  </div>
 
+When I first learned VHDL, I bumped in to quite a few language quirks. Here is one thing that I learned the hard way: the scope of VHDL use clauses.
+
+I figured out that you can put several entities or packages in the same file. Now, usually people only put design units in the same file in pairs, like entity + architecture or package + package body:
+```vhdl
+library
+use
+entity
+architecture
+```
+or
+```vhdl
+library
+use
+package
+package body
+```
+
+Note that the use clauses and library clauses are only written once at the top of the VHDL file. A naïve passer-by would assume that these clauses are valid throughout the entire file. Wrong!
+
+If you try to write a VHDL file with this structure, things will go wrong:
+```vhdl
+library
+use
+package one
+package two
+```
+
+Package two will not be able to see the thing declared in the use case. Isn't that funny? 
+
+The reason is that the library and use clauses are only visible to the _first_ design unit (entity, architecture, package,...). In case you write an entity and its corresponding architecture (or a package and its corresponding package body) the so-called _secondary design unit_ (the architecture or package body) **inherits** whatever is used in the _primary design unit_ (entity or package). Aha!
+Even if the architecture is in a different file, you don't have to repeat the use clauses.
+
+So finally, here is some [VETSMOD] VHDL code to play with:
+```vhdl
+---- New "Design Unit" starts here ----
+library ieee;
+use ieee.std_logic_1164.all;
+
+-- the library and use clauses apply to the entity below
+entity e1 is
+	port(
+		p : in std_logic -- OK
+	);
+end entity e1;
+
+---- New "Design Unit" starts here ----
+
+-- architecture inherits use clause from its entity 
+architecture RTL of e1 is
+	signal s : std_logic; -- OK
+begin
+end architecture RTL;
+
+---- New "Design Unit" starts here ----
+
+-- No library or use clauses inherited!
+entity e2 is
+	port(
+		p : in std_logic -- ERROR! std_logic is not visible here
+	);
+end entity e2;
+```

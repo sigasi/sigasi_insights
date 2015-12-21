@@ -19,12 +19,18 @@ There are three kinds of coding rules:
 2. arbitrary
 3. adverse
 
-p(#useful). *Useful* coding rules have an important practical implication. Following these rules reduces some risk or adds some value. For example, adding two registers when crossing clock domains reduces the risk of meta-stability. Sometimes two coding rules contradict each other, even though they are both _useful_. If you encounter a coding rule that violates a useful coding rule, you need to weigh the benefits and risks.
+## Useful
+
+*Useful* coding rules have an important practical implication. Following these rules reduces some risk or adds some value. For example, adding two registers when crossing clock domains reduces the risk of meta-stability. Sometimes two coding rules contradict each other, even though they are both _useful_. If you encounter a coding rule that violates a useful coding rule, you need to weigh the benefits and risks.
 Rules that are required by the IEEE VHDL standards would obviously be _useful_, but are more accurately described as _imperative_. Even if your current tool set is more lenient than the standards, your code may one day encounter tools that adhere more strictly to the standards.
 
-p(#arbitrary). *Arbitrary* rules do not have important practical implications. There might be minor implications and subjective implications like aesthetics or readability. Important examples are indentation rules and the choice between CamelCase and underscore_separated.  Many of the most visually obvious coding rules are arbitrary in nature. It does not matter so much which convention you choose. It's just important that you stick to your conventions. There is no use in wasting energy debating arbitrary coding rules. Just stick with the conventions of your project, your team or your client.
+## Arbitrary
 
-p(#adverse). *Adverse* rules are rules that do not have a benefit at all. The claimed benefit may be based on a lack of insight in the VHDL standard, or (more likely) by an outdated insight in the capabilities of EDA tools. Adverse rules often propagate by oral tradition. Much like folk tales, they have not been sufficiently checked against facts. The original tale may have been absolutely correct in its day. But the world has changed and the take got distorted after being told and retold so many times. 
+*Arbitrary* rules do not have important practical implications. There might be minor implications and subjective implications like aesthetics or readability. Important examples are indentation rules and the choice between CamelCase and underscore_separated.  Many of the most visually obvious coding rules are arbitrary in nature. It does not matter so much which convention you choose. It's just important that you stick to your conventions. There is no use in wasting energy debating arbitrary coding rules. Just stick with the conventions of your project, your team or your client.
+
+## Adverse
+
+*Adverse* rules are rules that do not have a benefit at all. The claimed benefit may be based on a lack of insight in the VHDL standard, or (more likely) by an outdated insight in the capabilities of EDA tools. Adverse rules often propagate by oral tradition. Much like folk tales, they have not been sufficiently checked against facts. The original tale may have been absolutely correct in its day. But the world has changed and the take got distorted after being told and retold so many times. 
 I'm sure you don't have any adverse rules in *your* organization, but it is useful to be able to spot them. The template for an adverse rule is: 
 
 > Always \[do this and that\] because **some synthesis tools might sometimes use slightly more resources** \[or have slightly worse timing\].
