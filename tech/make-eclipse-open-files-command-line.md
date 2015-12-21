@@ -10,6 +10,30 @@ tags:
   - howto
   - planeteclipse
 ---
-<div class="content">
-<p>Since the release of Eclipse 3.6 it&#8217;s been possible <a href="http://download.eclipse.org/eclipse/downloads/drops/R-3.6-201006080911/eclipse-news-part1.html#Platform " class="elf-external elf-icon">to open files in Eclipse from the command line</a>. There are <a href="http://aniefer.blogspot.com/2010/05/opening-files-in-eclipse-from-command.html" class="elf-external elf-icon">a</a> <a href="http://dsdp.eclipse.org/help/latest/index.jsp?topic=/org.eclipse.platform.doc.isv/guide/product_open_file.htm" class="elf-external elf-icon">few</a> <a href="http://wiki.eclipse.org/Eclipse/OpenFileFeature" class="elf-external elf-icon">blogs</a> that explain in great detail how this feature can be implemented.  I however would like to show you the simplest way to make use of this feature in your RCP application.</p><p>My goal is to be able to write "<span class="geshifilter"><code class="vhdl geshifilter-vhdl">./myapplication the_path_to/afile.txt</code></span>" on the command line to open a file in my Eclipse application. We can achieve this quickly if the entrypoint of your application extends the <span class="geshifilter"><code class="vhdl geshifilter-vhdl">IDEApplication</code></span> class. Unfortunately <span class="geshifilter"><code class="vhdl geshifilter-vhdl">IDEApplication</code></span> is not a part of the public Eclipse API, it&#8217;s a class in an internal package. I use it to get things working without having to write pages of code, you can replace it later with your own implementation.</p><p>There are two things left to configure.</p><p>First you need to be careful with the name of your application and it's executable. The <span class="geshifilter"><code class="vhdl geshifilter-vhdl">appName</code></span> property in your <span class="geshifilter"><code class="vhdl geshifilter-vhdl">plugin.xml</code></span> file and the filename of your executable have to match. If the name of your executable is <span class="geshifilter"><code class="vhdl geshifilter-vhdl">myapplication</code></span> (or <span class="geshifilter"><code class="vhdl geshifilter-vhdl">myapplication.exe</code></span> on windows) then the <span class="geshifilter"><code class="vhdl geshifilter-vhdl">appName</code></span> property should be capitalized, so it becomes <span class="geshifilter"><code class="vhdl geshifilter-vhdl">Myapplication</code></span>.<br/><div class="geshifilter"><pre class="vhdl geshifilter-vhdl" style="font-family:monospace;"><span style="color: #000066;">&lt;</span>extension id<span style="color: #000066;">=</span><span style="color: #2a00ff;">"product"</span> point<span style="color: #000066;">=</span><span style="color: #2a00ff;">"org.eclipse.core.runtime.products"</span><span style="color: #000066;">&gt;</span>  <span style="color: #000066;">&lt;</span>product application<span style="color: #000066;">=</span><span style="color: #2a00ff;">"com.sigasi.myapplication.rcp.application"</span> name<span style="color: #000066;">=</span><span style="color: #2a00ff;">"Sigasi"</span><span style="color: #000066;">&gt;</span>    <span style="color: #000066;">&lt;</span>property name<span style="color: #000066;">=</span><span style="color: #2a00ff;">"appName"</span> value<span style="color: #000066;">=</span><span style="color: #2a00ff;">"Myapplication"</span> /<span style="color: #000066;">&gt;</span>  <span style="color: #000066;">&lt;</span>/product<span style="color: #000066;">&gt;</span><span style="color: #000066;">&lt;</span>/extension<span style="color: #000066;">&gt;</span></pre></div><br/>Now you should be able to open files in your Eclipse application using "<span class="geshifilter"><code class="bash geshifilter-bash">.<span style="color: #000000; font-weight: bold;">/</span>myapplication --launcher.openFile the_path_to<span style="color: #000000; font-weight: bold;">/</span>afile.txt</code></span>"</p><p>The last step is to eliminate the commandline option <span class="geshifilter"><code class="bash geshifilter-bash">--launcher.openFile</code></span>. You can do this by adding the following snippet to the ini-file of your Eclipse application.<br/><div class="geshifilter"><pre class="bash geshifilter-bash" style="font-family:monospace;">--launcher.defaultActionopenFile</pre></div></p><p>Lieven.</p>  </div>
+Since the release of Eclipse 3.6 it’s been possible [to open files in Eclipse from the command line](http://download.eclipse.org/eclipse/downloads/drops/R-3.6-201006080911/eclipse-news-part1.html#Platform). There are [a](http://aniefer.blogspot.com/2010/05/opening-files-in-eclipse-from-command.html) [few](http://dsdp.eclipse.org/help/latest/index.jsp?topic=/org.eclipse.platform.doc.isv/guide/product_open_file.htm) [blogs}(http://wiki.eclipse.org/Eclipse/OpenFileFeature) that explain in great detail how this feature can be implemented.  I however would like to show you the simplest way to make use of this feature in your RCP application.
 
+My goal is to be able to write `./myapplication the_path_to/afile.txt` on the command line to open a file in my Eclipse application. We can achieve this quickly if the entrypoint of your application extends the `IDEApplication` class. Unfortunately `IDEApplication` is not a part of the public Eclipse API, it’s a class in an internal package. I use it to get things working without having to write pages of code, you can replace it later with your own implementation.
+
+There are two things left to configure.
+
+First you need to be careful with the name of your application and it's executable. The `appName` property in your `plugin.xml` file and the filename of your executable have to match. If the name of your executable is `myapplication` (or `myapplication.exe` on windows) then the `appName` property should be capitalized, so it becomes `Myapplication`.
+
+```xml
+<extension id="product" point="org.eclipse.core.runtime.products">
+  <product application="com.sigasi.myapplication.rcp.application" name="Sigasi">
+    <property name="appName" value="Myapplication" />
+  </product>
+</extension>
+```
+
+Now you should be able to open files in your Eclipse application using
+```
+./myapplication --launcher.openFile the_path_to/afile.txt
+```
+
+The last step is to eliminate the commandline option `--launcher.openFile`. You can do this by adding the following snippet to the ini-file of your Eclipse application.
+
+```bash
+--launcher.defaultAction
+openFile
+```

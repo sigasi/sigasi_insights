@@ -9,6 +9,34 @@ tags:
   - hdt-2.0
   - howto
 ---
-<div class="content">
-<p>The Sigasi development environment allows a very large flexibility on how to organize <span class="caps">VHDL</span> projects. So much in fact, that it can become confusing. Let me outline three <em>recommended ways</em> of organizing your <span class="caps">VHDL</span> project. </p>	<ol><li>No organization (described in this article)</li>		<li><a href="/content/organizing-vhdl-project-one-design-one-folder">One design in one folder</a></li>		<li><a href="/content/organizing-vhdl-project-one-ip-block-project">Aggregation of reusable projects</a></li>	</ol><p>(One <a href="http://www.sigasi.com/content/organizing-legacy-projects">not-so-recommended way described here</a> is useful if you are working with legacy projects whose files are scattered over many folders).</p>	<p>In this post, I'll start with the simplest way of organizing: not organizing at all. In technical terms, we call this <em>editing external <span class="caps">VHDL</span> files</em>, because the files are outside of any projects.</p>	<h2>Setting it up</h2>	<p>There is no set up required. You just open the <span class="caps">VHDL</span> file you want to edit. Either click <strong>File &gt; Open File&#8230;</strong> or drag a <span class="caps">VHDL</span> file from your file browser to the edit area. Here is a short <a href="/screencast/edit-vhdl-without-project">screencast on how to work with external <span class="caps">VHDL</span> files</a>.</p>	<h2>Pros and Cons</h2>	<p>The good part of "no organization" is that you don't have to organize. There is no set up time and you can get started viewing and editing a <span class="caps">VHDL</span> file in a matter of seconds. On the down side, several interesting features won't work:</p>	<ul><li>No errors when you use an undeclared name.</li>		<li>Any name you use that is declared in another <span class="caps">VHDL</span> file will be treated as just that: a name. This means the following features cannot work for these names:	<ul><li>rename refactoring</li>		<li>semantic coloring</li>		<li>jump to declaration</li>		<li>hover</li>	</ul></li>	</ul><h2>When to use</h2>	<p>If you open several <span class="caps">VHDL</span> files using this external files method, Sigasi will try to link them together. So some features might work, depending on how which <span class="caps">VHDL</span> files you have opened.</p>	<p>We suggest you use the single <span class="caps">VHDL</span> file mode for quickly looking at a file and for making small changes. If you are going to work seriously on your project, we suggest you use one of the two other methods.</p>  <div id="book-navigation-1518" class="book-navigation">            <div class="page-links clear-block">              <a href="/content/setting-project" class="page-previous" title="Go to previous page">&#8249; Setting up a Project</a>                    <a href="/content/setting-project" class="page-up" title="Go to parent page">up</a>                    <a href="/content/one-design-one-folder" class="page-next" title="Go to next page">One design in one folder &#8250;</a>          </div>      </div>  </div>
 
+The Sigasi development environment allows a very large flexibility on how to organize VHDL projects. So much in fact, that it can become confusing. Let me outline three _recommended ways_ of organizing your VHDL project. 
+
+1. No organization (described in this article)
+2. [one-design-one-folder]
+3. [one-ip-block-project]
+
+(One not-so-recommended way, "[organizing-legacy-projects]", is useful if you are working with legacy projects whose files are scattered over many folders).
+
+In this post, I'll start with the simplest way of organizing: not organizing at all. In technical terms, we call this _editing external VHDL files_, because the files are outside of any projects.
+
+## Setting it up
+
+There is no set up required. You just open the VHDL file you want to edit. Either click **File > Open File...** or drag a VHDL file from your file browser to the edit area. Here is a short [screencast on how to work with external VHDL files](http://www.sigasi.com/screencast/edit-vhdl-without-project).
+
+## Pros and Cons
+
+The good part of "no organization" is that you don't have to organize. There is no set up time and you can get started viewing and editing a VHDL file in a matter of seconds. On the down side, several interesting features won't work:
+
+* No errors when you use an undeclared name.
+* Any name you use that is declared in another VHDL file will be treated as just that: a name. This means the following features cannot work for these names:
+	* rename refactoring
+	* semantic coloring
+	* jump to declaration
+	* hover
+
+## When to use
+
+If you open several VHDL files using this external files method, Sigasi will try to link them together. So some features might work, depending on how which VHDL files you have opened.
+
+We suggest you use the single VHDL file mode for quickly looking at a file and for making small changes. If you are going to work seriously on your project, we suggest you use one of the two other methods.

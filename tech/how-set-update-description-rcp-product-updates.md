@@ -9,6 +9,20 @@ tags:
   - open source
   - planeteclipse
 ---
-<div class="content">
-<p>Thanks to Ian Bull on <a href="http://www.eclipsecon.org/" class="elf-external elf-icon">Eclipse Con Europe</a> last week, I finally found out how to set the update description for an <span class="caps">RCP</span> product update. This was a tiny annoyance that has been itching since the first release of Sigasi. For the Eclipse plugin version of Sigasi, this never was a problem. The feature description is shown in the update dialog. But for the standalone version (<span class="caps">RCP</span>), there was always an empty description&#8230;</p>	<p>So on my way home, I delved into it again and finally solved this issue.</p>	<p><span class="inline inline-center"><a href="images/update_dialog.png" onclick="launch_popup(1311, 626, 668); return false;" target="_blank"><img src="images/update_dialog.png" alt="Product description in update dialog" title="Product description in update dialog" class="image image-preview " width="600" height="640"/></a><span class="caption"><strong>Product description in update dialog</strong></span></span></p>	<p>Ian told the original plan was to add a field to the Product Configuration Editor, but nobody ever came around to implement it. But the good news is that you can easily set the description via a  <a href="http://wiki.eclipse.org/Equinox/p2/Customizing_Metadata" class="elf-external elf-icon">p2 advice file</a>. This file (<code>p2.inf</code>) can be added next to the product definition and is used to tweak p2 operations. Note that if you build with <a href="http://www.eclipse.org/tycho/" class="elf-external elf-icon">Maven Tycho</a>, this p2.inf needs to be prefixed with the product configuration file name. In our case the product configuration file is <code>sigasi.product</code>, so the p2 advice file must be named <code>sigasi.p2.inf</code> (<a href="http://wiki.eclipse.org/Tycho/Packaging_Types#eclipse-repository" class="elf-external elf-icon">more details</a>).</p>	<p>To set the product update description add following lines to your p2 advise file:<br/></p><div class="geshifilter"><pre class="java geshifilter-java" style="font-family:monospace;">properties.0.<span style="color: #006633;">name</span> <span style="color: #339933;">=</span> org.<span style="color: #006633;">eclipse</span>.<span style="color: #006633;">equinox</span>.<span style="color: #006633;">p2</span>.<span style="color: #006633;">description</span><br/>properties.0.<span style="color: #006633;">value</span> <span style="color: #339933;">=</span> Sigasi Standalone version update\nVisit http<span style="color: #339933;">:</span><span style="color: #666666; font-style: italic;">//www.sigasi.com/sigasi-updates for more information.</span></pre></div>	<p>That looks a lot better.<br/>Hendrik. </p>  </div>
 
+Thanks to Ian Bull on [Eclipse Con Europe](http://www.eclipsecon.org) last week, I finally found out how to set the update description for an RCP product update. This was a tiny annoyance that has been itching since the first release of Sigasi. For the Eclipse plugin version of Sigasi, this never was a problem. The feature description is shown in the update dialog. But for the standalone version (RCP), there was always an empty description...
+
+So on my way home, I delved into it again and finally solved this issue.
+
+![Product description in update dialog](images/update_dialog.png)
+
+Ian told the original plan was to add a field to the Product Configuration Editor, but nobody ever came around to implement it. But the good news is that you can easily set the description via a  [p2 advice file](http://wiki.eclipse.org/Equinox/p2/Customizing_Metadata). This file (`p2.inf`) can be added next to the product definition and is used to tweak p2 operations. Note that if you build with [Maven Tycho](http://www.eclipse.org/tycho), this `p2.inf` needs to be prefixed with the product configuration file name. In our case the product configuration file is `sigasi.product`, so the p2 advice file must be named `sigasi.p2.inf` ([more details](http://wiki.eclipse.org/Tycho/Packaging_Types#eclipse-repository)).
+
+To set the product update description add following lines to your p2 advise file:
+
+```properties
+properties.0.name = org.eclipse.equinox.p2.description
+properties.0.value = Sigasi Standalone version update\nVisit http://www.sigasi.com/sigasi-updates for more information.
+```
+
+That looks a lot better.
