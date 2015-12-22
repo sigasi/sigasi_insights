@@ -240,3 +240,12 @@ while before the results appear.
 
 From the **Net Search** view, you can navigate to the VHDL code by
 double-clicking the search results.
+
+
+# Preprocessor view
+
+[verilog]
+
+![](images/preprocessor-view.png)
+
+In the preprocessor view you can preview the expanded text of Verilog macros. This view automatically synchronizes with the active editor.

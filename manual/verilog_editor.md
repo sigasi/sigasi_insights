@@ -24,8 +24,17 @@ current and next line”** setting.
 **Tabs vs. spaces:** This features inserts tabs characters or spaces,
 according to your preferences. 
 
-See also: [tabs-and-spaces].
+See also:
 
-<a href="http://fast.wistia.net/embed/iframe/3y3d6y8r3l?popover=true" class="wistia-popover\[height=500,playerColor=7b796a,width=800\]"><img src="https://embed-ssl.wistia.com/deliveries/2e2ec957d72b7b44134b58c792216cea7ff16cce.jpg?image_play_button=true&image_play_button_color=7b796ae0&image_crop_resized=200x125" alt="" /></a>
+* [tabs-and-spaces].
+* Screencast : [/screencasts/verilog-smart-indent]
 
-<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js" />
+# Verilog Preprocessing/Macros
+
+In the [views#Preprocessor View], you can preview the expanded version of your preprocessed Verilog source files.
+
+You can configure the include paths of your Verilog projects in the Verilog Preprocessor Property page. You can open this page by right clicking your Verilog project and selecting **Properties > Verilog Preprocessor**.
+
+![](images/preprocessor-property-page.png)
+
+You can specify multiple include paths by separating them with a `;`. All paths are relative to the project folder.
