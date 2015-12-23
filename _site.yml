@@ -6,6 +6,8 @@ bootswatch: null
 navbar_inverse: false 
 bootstrap: 3.3.4
 cname: doc.sigasi.com
+# mainsite: www.sigasi.com
+mainsite: sigasi.wpengine.com
 reflinks:
     content_license:
         url: http://creativecommons.org/licenses/by-sa/3.0/

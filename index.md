@@ -5,7 +5,10 @@ content:
     - manual 
     - releasenotes
     - faq
-    - sigasi_com
+    - news
+    - tech
+    - screencasts
+    - content
 ---
 
 
