@@ -6,11 +6,11 @@ content:
    - setup
    - projectsetup
    - libraries
-   - mixed
    - user_interface
    - views
    - editor
-   - verilog_
+   - verilog_editor
+   - mixed
    - opening
    - linting
    - tools
