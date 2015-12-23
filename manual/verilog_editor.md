@@ -31,6 +31,10 @@ See also:
 
 # Verilog Preprocessing/Macros
 
+When you hover over a Verilog preprocessor directive (e.g. `include ...`), Sigasi presents you the preprocessed text. This hover also shows you, at the bottom, a convenient link to open the [views#Preprocessor View].
+
+![](images/preprocessor-hover.png)
+
 In the [views#Preprocessor View], you can preview the expanded version of your preprocessed Verilog source files.
 
 You can configure the include paths of your Verilog projects in the Verilog Preprocessor Property page. You can open this page by right clicking your Verilog project and selecting **Properties > Verilog Preprocessor**.
