@@ -9,6 +9,114 @@ tags:
   - hdt-2.0
   - howto
 ---
-<div class="content">
-<p>As discussed in a <a href="/content/how-organize-your-vhdl-hardware-projects-sigasi">previous article</a>, you can organize your <span class="caps">VHDL</span> files in many ways in Sigasi. The three <em>recommended ways</em> are:</p>	<ol><li><a href="/content/how-organize-your-vhdl-hardware-projects-sigasi">No organization</a></li>		<li>One design in one folder (described in this article)</li>		<li><a href="/content/organizing-vhdl-project-one-ip-block-project">Aggregation of reusable projects</a></li>	</ol><p>This article deals with the "one design &#8211; one folder" way of organizing a project. The basic idea is that all of the files for your new hardware design are in one folder on your hard drive. In addition to your own files, there might be some third party libraries that you need for your project, like the <code>XilinxCoreLib</code> or <code>Altera_MF</code> files.</p>	<p>Let's assume your file list looks something like this. You have a bunch of files in <code>c:\my_home\project_dir</code> and you are using the <code>altera_mf</code> library files that come with Altera Quartus.<br/></p><pre>+C:  + my_home    + project_dir      + file1.vhd      + file2.vhd      + more_files_here.vhd      + subfolder        + more_files_here.vhd  + altera    + 11.0sp1      + quartus        + libraries          + vhdl            + altera_mf              + altera_mf_components.vhd              + stratixgx_mf_components.vhd</pre>	<h2>Setting it up</h2>	<p>First, we will <strong>create a Sigasi project</strong> that lives in the directory where you have your files.	</p><ol><li><strong>File &gt; Empty <span class="caps">VHDL</span> Project</strong></li>		<li><strong>Un</strong>-tick <strong>Use default location</strong></li>		<li>Browse to your folder: <code>c:\my_home\project_dir</code>.</li>		<li>Fill in a name for your project</li>		<li>Click <strong>Finish</strong>.</li>	</ol><p>You now have a project with your own <span class="caps">VHDL</span> files, and the a folder with Common Libraries. This folder contains the <span class="caps">IEEE</span> and <span class="caps">STD</span> libraries needed to compile your project. </p>	<p>Next, we will <strong>add the directory</strong> with vendor <span class="caps">VHDL</span> code. 	</p><ol><li>Open your windows explorer (or another file browser) and find the <code>altera_mf</code> folder.</li>		<li>Drag this folder to your Sigasi project explorer, into your project folder.</li>		<li>In the pop up dialog, select <strong>Link to files and folders</strong> and uncheck <strong>Create link locations relative to:</strong>.</li>		<li>confirm with <strong>OK</strong>.</li>	</ol><p><span class="inline inline-center"><img src="http://www.sigasi.com/sites/www.sigasi.com/files/images/Parallels DesktopScreenSnapz008.png" alt="Drag and drop library folder" title="Drag and drop library folder" class="image image-preview " width="412" height="255"/><span class="caption"><strong>Drag and drop library folder</strong></span></span></p>	<p>Finally, we have to <strong>map</strong> the vendor directory <strong>to the correct library name</strong>. Right-click the altera_mf directory in your Sigasi project explorer and select <strong>Library Mapping &gt; New Library &#8230;</strong>. Now give the correct library name, in this case: <code>altera_mf</code>.</p>	<h2>Building your project</h2>	<p>Make sure your project is set to build automatically: <strong>Project &gt; Build Automatically</strong>.<br/>If you have <span class="caps">VHDL</span> files in the project folder that are not really a part of the folder, you should unmap them from your <span class="caps">VHDL</span> libraries. Read more about <a href="/faq/junk-files">junk files</a>. Your project should not have any errors (red markers). If it does, try to figure out what went wrong: Is it a legacy junk file? Is there a bug in your <span class="caps">VHDL</span> code? Did you forget to add a library?</p>	<h2>Extra tips</h2>	<p>Sigasi creates a few hidden files in your project directory. If you use a revision control system, we recommend you check in these files:</p>	<ul><li><code>.project</code></li>		<li><code>.library_mapping.xml</code></li>		<li><code>.settings</code> (This directory is only created when you have configured extra options.)</li>	</ul><h2>Pros and Cons</h2>	<p>This is a relatively easy way of organizing your project. There is some extra effort in setting up a project, but that should only take a few minutes. If your files are not neatly organized in a single folder, or if you have a bunch of junk files in your folder, </p>	<h2>When to use</h2>	<p>If you are just learning to use Sigasi, or if you are studying <span class="caps">VHDL</span>, we strongly recommend the <strong>one design &#8211; one folder</strong> approach.<br/>We also recommended it for small and moderate sized projects:	</p><ul><li>If you have up to 100 files</li>		<li>You are using a smal number of vendor libraries (up to 5 libraries), such as the <span class="caps">FPGA</span> vendor libraries.</li>	</ul><p>If you have a six or more separate libraries and IP cores, or if your files are stored in locations across your hard drives or network drives, we recommend you use <a href="/content/organizing-vhdl-project-one-ip-block-project">an aggregation of reusable projects</a>. </p>  <div id="book-navigation-1518" class="book-navigation">            <div class="page-links clear-block">              <a href="/content/no-organization" class="page-previous" title="Go to previous page">&#8249; No organization</a>                    <a href="/content/setting-project" class="page-up" title="Go to parent page">up</a>                    <a href="/content/one-ip-block-project" class="page-next" title="Go to next page">One IP block per project &#8250;</a>          </div>      </div>  </div>
 
+As discussed in a [previous article](how-organize-your-vhdl-hardware-projects-sigasi), you
+can organize your VHDL files in many ways in Sigasi. The three *recommended ways* are:
+
+1. [No organization](/content/how-organize-your-vhdl-hardware-projects-sigasi)
+2. One design in one folder (described in this article)
+3. [Aggregation of reusable projects](/content/organizing-vhdl-project-one-ip-block-project)
+
+This article deals with the "one design – one folder" way of organizing
+a project. The basic idea is that all of the files for your new hardware
+design are in one folder on your hard drive. In addition to your own
+files, there might be some third party libraries that you need for your
+project, like the `XilinxCoreLib` or `Altera_MF` files.
+
+Let's assume your file list looks something like this. You have a bunch of files in `c:\my_home\project_dir` and you are using the `altera_mf` library files that come with Altera Quartus.
+
+```
++C:
+  + my_home
+    + project_dir
+      + file1.vhd
+      + file2.vhd
+      + more_files_here.vhd
+      + subfolder
+        + more_files_here.vhd
+  + altera
+    + 11.0sp1
+      + quartus
+        + libraries
+          + vhdl
+            + altera_mf
+              + altera_mf_components.vhd
+              + stratixgx_mf_components.vhd
+```
+
+Setting it up
+-------------
+
+First, we will **create a Sigasi project** that lives in the directory
+where you have your files.
+
+1.  **File &gt; Empty VHDL Project**
+2.  **Un**-tick **Use default location**
+3.  Browse to your folder: `c:\my_home\project_dir`.
+4.  Fill in a name for your project
+5.  Click **Finish**.
+
+You now have a project with your own VHDL files, and the a folder with
+Common Libraries. This folder contains the IEEE and STD libraries needed
+to compile your project.
+
+Next, we will **add the directory** with vendor VHDL code.
+
+1.  Open your windows explorer (or another file browser) and find the
+    `altera_mf` folder.
+2.  Drag this folder to your Sigasi project explorer, into your
+    project folder.
+3.  In the pop up dialog, select **Link to files and folders** and
+    uncheck **Create link locations relative to:**.
+4.  confirm with **OK**.
+
+![Drag and drop library folder](images/drag_and_drop.png)
+
+Finally, we have to **map** the vendor directory **to the correct
+library name**. Right-click the altera\_mf directory in your Sigasi
+project explorer and select **Library Mapping &gt; New Library ...**.
+Now give the correct library name, in this case: `altera_mf`.
+
+Building your project
+---------------------
+
+Make sure your project is set to build automatically: **Project &gt; Build Automatically**.
+If you have VHDL files in the project folder that are not really a part
+of the folder, you should unmap them from your VHDL libraries. Read more
+about [junk files](/faq/junk-files). Your project should not have any
+errors (red markers). If it does, try to figure out what went wrong: Is
+it a legacy junk file? Is there a bug in your VHDL code? Did you forget
+to add a library?
+
+Extra tips
+----------
+
+Sigasi creates a few hidden files in your project directory. If you use
+a revision control system, we recommend you check in these files:
+
+-   `.project`
+-   `.library_mapping.xml`
+-   `.settings` (This directory is only created when you have configured extra options.)
+
+Pros and Cons
+-------------
+
+This is a relatively easy way of organizing your project. There is some
+extra effort in setting up a project, but that should only take a few
+minutes. If your files are not neatly organized in a single folder, or
+if you have a bunch of junk files in your folder,
+
+When to use
+-----------
+
+If you are just learning to use Sigasi, or if you are studying VHDL, we
+strongly recommend the **one design – one folder** approach.
+We also recommended it for small and moderate sized projects:
+
+-   If you have up to 100 files
+-   You are using a small number of vendor libraries (up to 5 libraries),
+    such as the FPGA vendor libraries.
+
+If you have a six or more separate libraries and IP cores, or if your
+files are stored in locations across your hard drives or network drives,
+we recommend you use [an aggregation of reusable projects](/content/organizing-vhdl-project-one-ip-block-project).

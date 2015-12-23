@@ -5,7 +5,87 @@ pager: true
 author: philippe.faes (Sigasi)
 date: 2015-01-26
 ---
-<div class="content">
-<p>Like many other languages, it is possible in <span class="caps">VHDL</span> to perform <em>name scoping</em>. This happens if you declare a new object in a nested scope that reuses the name of an object that was already declared. This is not an error in <span class="caps">VHDL</span>, but it can be confusing and it can cause errors. In general, I would advice against name scoping unless you have a very good reason. Even then, it would be best if you document (comment) your code so that everybody understands what is going on.</p>	<p>This is a straightforward example of name shadowing:<br/></p><div class="geshifilter"><pre class="vhdl geshifilter-vhdl" style="font-family:monospace;"><span style="color: #7f0055; font-weight: bold;">entity</span> e0 <span style="color: #7f0055; font-weight: bold;">is</span><br/><span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">entity</span> e0<span style="color: #000066;">;</span><br/><span style="color: #7f0055; font-weight: bold;">architecture</span> demo <span style="color: #7f0055; font-weight: bold;">of</span> e0 <span style="color: #7f0055; font-weight: bold;">is</span>    <span style="color: #7f0055; font-weight: bold;">constant</span> c <span style="color: #000066;">:</span> <span style="color: #808000;">integer</span> <span style="color: #000066;">:=</span> <span style="color: #7d7d7d;">1</span><span style="color: #000066;">;</span><br/><span style="color: #7f0055; font-weight: bold;">begin</span>    <span style="color: #7f0055; font-weight: bold;">assert</span> c <span style="color: #000066;">=</span> <span style="color: #7d7d7d;">1</span><span style="color: #000066;">;</span><br/>&#160;    myblock <span style="color: #000066;">:</span> <span style="color: #7f0055; font-weight: bold;">block</span>        <span style="color: #7f0055; font-weight: bold;">constant</span> c <span style="color: #000066;">:</span> <span style="color: #808000;">integer</span> <span style="color: #000066;">:=</span> <span style="color: #7d7d7d;">2</span><span style="color: #000066;">;</span>    <span style="color: #7f0055; font-weight: bold;">begin</span>        <span style="color: #7f0055; font-weight: bold;">assert</span> c <span style="color: #000066;">=</span> <span style="color: #7d7d7d;">2</span> <span style="color: #7f0055; font-weight: bold;">report</span> <span style="color: #2a00ff;">"the second declaration of constant c shadows the first"</span><span style="color: #000066;">;</span>    <span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">block</span> myblock<span style="color: #000066;">;</span><br/>&#160;    <span style="color: #7f0055; font-weight: bold;">assert</span> c <span style="color: #000066;">=</span> <span style="color: #7d7d7d;">1</span> <span style="color: #7f0055; font-weight: bold;">report</span> <span style="color: #2a00ff;">"this is the scope of the first declaration again"</span><span style="color: #000066;">;</span><br/><span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">architecture</span> demo<span style="color: #000066;">;</span></pre></div>	<p>It gets more confusing if you shadow names from the a standardized package:</p><div class="geshifilter"><pre class="vhdl geshifilter-vhdl" style="font-family:monospace;"><span style="color: #7f0055; font-weight: bold;">architecture</span> demo2 <span style="color: #7f0055; font-weight: bold;">of</span> e0 <span style="color: #7f0055; font-weight: bold;">is</span>    <span style="color: #7f0055; font-weight: bold;">constant</span> true <span style="color: #000066;">:</span> <span style="color: #808000;">boolean</span> <span style="color: #000066;">:=</span> false<span style="color: #000066;">;</span> <span style="color: #3f7f5f;">-- shadowing the name "true". Bad idea!</span><span style="color: #7f0055; font-weight: bold;">begin</span>    <span style="color: #7f0055; font-weight: bold;">assert</span> false <span style="color: #000066;">=</span> true<span style="color: #000066;">;</span><span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">architecture</span> demo<span style="color: #000066;">;</span></pre></div>	<p>A common misconception is that loop iterators need to be decalared beforehand. They don't, because they are declared implicitly in the loop statement.</p><div class="geshifilter"><pre class="vhdl geshifilter-vhdl" style="font-family:monospace;"><span style="color: #7f0055; font-weight: bold;">architecture</span> demo4 <span style="color: #7f0055; font-weight: bold;">of</span> e0 <span style="color: #7f0055; font-weight: bold;">is</span><span style="color: #7f0055; font-weight: bold;">begin</span>    <span style="color: #7f0055; font-weight: bold;">process</span> <span style="color: #7f0055; font-weight: bold;">is</span>        <span style="color: #7f0055; font-weight: bold;">variable</span> i<span style="color: #000066;">:</span> <span style="color: #808000;">integer</span> <span style="color: #000066;">:=</span> <span style="color: #7d7d7d;">1</span><span style="color: #000066;">;</span>    <span style="color: #7f0055; font-weight: bold;">begin</span>        <span style="color: #7f0055; font-weight: bold;">assert</span> i <span style="color: #000066;">=</span> <span style="color: #7d7d7d;">1</span><span style="color: #000066;">;</span>        i <span style="color: #000066;">:=</span> <span style="color: #7d7d7d;">5</span><span style="color: #000066;">;</span>        <span style="color: #7f0055; font-weight: bold;">assert</span> i <span style="color: #000066;">=</span> <span style="color: #7d7d7d;">5</span><span style="color: #000066;">;</span>        <span style="color: #7f0055; font-weight: bold;">for</span> i <span style="color: #7f0055; font-weight: bold;">in</span> <span style="color: #7d7d7d;">0</span> <span style="color: #7f0055; font-weight: bold;">to</span> <span style="color: #7d7d7d;">10</span> <span style="color: #7f0055; font-weight: bold;">loop</span> <span style="color: #3f7f5f;">-- this is a different object, shadowing the variable i</span>            <span style="color: #7f0055; font-weight: bold;">report</span> <span style="color: #808000;">integer</span><span style="color: #ff0000;">'image</span><span style="color: #000000;">(</span>i<span style="color: #000000;">)</span><span style="color: #000066;">;</span>&#160;            <span style="color: #3f7f5f;">-- i behaves like a constant here</span>            i <span style="color: #000066;">:=</span> i+<span style="color: #7d7d7d;">1</span><span style="color: #000066;">;</span> <span style="color: #3f7f5f;">-- error! cannot assign to constants!</span>        <span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">loop</span><span style="color: #000066;">;</span>&#160;        <span style="color: #7f0055; font-weight: bold;">assert</span> i <span style="color: #000066;">=</span> <span style="color: #7d7d7d;">5</span><span style="color: #000066;">;</span> <span style="color: #3f7f5f;">-- this is still the variable, declared in the process</span>        i <span style="color: #000066;">:=</span> i+<span style="color: #7d7d7d;">1</span><span style="color: #000066;">;</span>         <span style="color: #7f0055; font-weight: bold;">assert</span> i <span style="color: #000066;">=</span> <span style="color: #7d7d7d;">6</span><span style="color: #000066;">;</span>        <span style="color: #7f0055; font-weight: bold;">wait</span><span style="color: #000066;">;</span>    <span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">process</span> <span style="color: #000066;">;</span><span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">architecture</span><span style="color: #000066;">;</span></pre></div>  <div id="book-navigation-1518" class="book-navigation">            <div class="page-links clear-block">              <a href="/content/list-known-vhdl-metacomment-pragmas" class="page-previous" title="Go to previous page">&#8249; List of known VHDL metacomment pragma's</a>                    <a href="/content/vhdl-tips-tricks" class="page-up" title="Go to parent page">up</a>                    <a href="/content/signal-assignments-vhdl-withselect-whenelse-and-case" class="page-next" title="Go to next page">Signal Assignments in VHDL: with/select, when/else and case &#8250;</a>          </div>      </div>  </div>
+Like many other languages, it is possible in VHDL to perform _name scoping_. This happens if you declare a new object in a nested scope that reuses the name of an object that was already declared. This is not an error in VHDL, but it can be confusing and it can cause errors. In general, I would advice against name scoping unless you have a very good reason. Even then, it would be best if you document (comment) your code so that everybody understands what is going on.
 
+This is a straightforward example of name shadowing:
+```vhdl
+entity e0 is
+end entity e0;
+architecture demo of e0 is
+    constant c : integer := 1;
+begin
+    assert c = 1;
 
+    myblock : block
+        constant c : integer := 2;
+    begin
+        assert c = 2 report "the second declaration of constant c shadows the first";
+    end block myblock;
+    
+    assert c = 1 report "this is the scope of the first declaration again";
+end architecture demo;
+```
+
+It gets more confusing if you shadow names from the a standardized package:
+
+```vhdl
+architecture demo2 of e0 is
+    constant true : boolean := false; -- shadowing the name "true". Bad idea!
+begin
+    assert false = true;
+end architecture demo;
+```
+
+A common misconception is that loop iterators need to be declared beforehand. They don't, because they are declared implicitly in the loop statement.
+
+```vhdl
+architecture demo4 of e0 is
+begin
+    process is
+        variable i: integer := 1;
+    begin
+        assert i = 1;
+        i := 5;
+        assert i = 5;
+        for i in 0 to 10 loop -- this is a different object, shadowing the variable i
+            report integer'image(i);
+            
+            -- i behaves like a constant here
+            i := i+1; -- error! cannot assign to constants!
+        end loop;
+        
+        assert i = 5; -- this is still the variable, declared in the process
+        i := i+1; 
+        assert i = 6;
+        wait;
+    end process ;
+end architecture;
+```
+
+*Note*: you can reach these shadowed names by using their expanded names:
+
+```vhdl
+entity fun is
+end entity;
+
+architecture hide of fun is
+        begin
+        example : process is
+                variable x : integer := 0;
+                procedure changevar (x : integer) is
+                begin
+                        hide.example.x := x; -- or example.x
+                end procedure;
+        begin
+                changevar(5);
+                report "x=" & integer'image(x);
+                wait;
+        end process;
+end architecture;
+```
+
+```
+VSIM 1> run -all
+# ** Note: x=5
+#    Time: 0 ns  Iteration: 0  Instance: /fun
+```

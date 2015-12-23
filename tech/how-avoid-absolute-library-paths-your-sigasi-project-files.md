@@ -8,6 +8,98 @@ tags:
   - hdt-2.0
   - eclipse
 ---
-<div class="content">
-<div class="messages status">Sigasi 2.21 introduced more default path variables. Read <a href="#comment-2554">the first comment for more details</a>.</div>	<p>In this blog post, I will describe how you can use <em>path variables</em> to avoid system dependent, absolute paths in your project files.</p>	<p>The default way to add a third party library (e.g. <code>modelsim_lib</code>) to your project is as follows:</p>	<ol><li>Add files to project	<ul><li><strong>File &gt; New &gt; Folder</strong></li>		<li><strong>Advanced</strong></li>		<li><strong>Link to alternate location (Linked Folder)</strong></li>		<li>Enter location. In my case this is <code>/home/heeckhau/altera/12.1/modelsim_ase/vhdl_src/modelsim_lib</code></li>	</ul></li>		<li>Map library	<ul><li><strong>right-click</strong></li>		<li><strong>Library Mapping &gt; Library modelsim_lib</strong></li>	</ul></li>	</ol><p><span class="inline inline-center"><img src="http://www.sigasi.com/sites/www.sigasi.com/files/images/modelsimlib.png" alt="" title="" class="image image-_original " width="267" height="65"/></span></p>	<p>The disadvantage of this procedure is that this leads to an absolute path in the project file (<code>/home/heeckhau/altera/12.1/modelsim_ase/vhdl_src/modelsim_lib</code>). This is particularly annoying if you collaborate with a team on the same project. If the library has a different install location on different computers, everybody will have to change this path. This again, will lead to conflicts when you commit your changes to the shared code repository.</p>	<p>To deal with this situation elegantly, Sigasi/Eclipse offers the concept of <a href="http://help.eclipse.org/indigo/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Fconcepts%2Fcpathvars.htm" class="elf-external elf-icon"><strong>Path Variables</strong></a>. Path Variables allow you to specify a location of your file system, as a variable. And such a variable can be used to <em>specify the location of <strong>linked resources</strong> relative to these paths</em>.</p>	<p>Defining a path variable is straightforward:</p>	<ul><li><strong>Preferences &gt; General &gt; Workspace &gt; Linked Resources</strong>.</li>		<li>At the bottom of this page you can add a new Path Variable with the <strong>New&#8230;</strong> button.	<ul><li>Enter a name: <code>modelsim_ase</code></li>		<li>Define the location: <code>/home/heeckhau/altera/12.1/modelsim_ase/</code></li>		<li>Confirm with <strong>OK</strong></li>	</ul></li>	</ul><p><span class="inline inline-center"><a href="/image/add-path-variable-your-workspace-settings"><img src="http://www.sigasi.com/sites/www.sigasi.com/files/images/linkedResourcesPreferences-2.preview.png" alt="Add Path Variable to your Workspace settings" title="Add Path Variable to your Workspace settings" class="image image-preview " width="640" height="387"/></a><span class="caption"><strong>Add Path Variable to your Workspace settings</strong></span></span></p>	<p>Once you have defined the path variable, you can use it to specify the location of the linked library folder:	</p><ul><li><strong>File &gt; New &gt; Folder</strong></li>		<li><strong>Advanced</strong></li>		<li><strong>Link to alternate location (Linked Folder)</strong></li>		<li>Instead of entering the absolute path, do the following:	<ul><li>click the <strong>Variables&#8230;</strong> button.</li>		<li>select our variable <code>modelsim_ase</code></li>		<li>press <strong>Extend&#8230;</strong> and select <code>vhdl_src/modelsim_lib</code></li>	</ul></li>	</ul><p><span class="inline inline-center"><a href="/image/use-path-variable-specify-location-linked-folder"><img src="http://www.sigasi.com/sites/www.sigasi.com/files/images/newFolder1-2.preview.png" alt="Use a path variable to specify the location of a linked folder" title="Use a path variable to specify the location of a linked folder" class="image image-preview " width="559" height="640"/></a><span class="caption"><strong>Use a path variable to specify the location of a linked folder</strong></span></span><br/><span class="inline inline-center"><a href="/image/extend-path-variable"><img src="http://www.sigasi.com/sites/www.sigasi.com/files/images/newVariable2-2.preview.png" alt="Extend a path variable" title="Extend a path variable" class="image image-preview " width="640" height="345"/></a><span class="caption"><strong>Extend a path variable</strong></span></span></p>	<p>This way the project no longer contains an absolute path to the modelsim library, but instead a path relative to the Path Variable. </p>	<p>When you now share this design with a colleague. Your colleague will see an unresolved annotation on the modelsim_lib folder.<br/><span class="inline inline-center"><img src="http://www.sigasi.com/sites/www.sigasi.com/files/images/unavailableLinkedResource.png" alt="Unavailable Linked Resource" title="Unavailable Linked Resource" class="image image-_original " width="241" height="66"/><span class="caption"><strong>Unavailable Linked Resource</strong></span></span><br/>They can configure the <code>modelsim_ase</code> variable via <strong>Preferences &gt; General &gt; Workspace &gt; Linked Resources</strong>. Alternatively, you can use <a href="http://www.sigasi.com/content/managing-sigasi-preferences-teams">Workspace Mechanic</a> to automate this task and share Sigasi/Eclise settings across your entire team.</p>  </div>
 
+In this blog post, I will describe how you can use *path variables* to
+avoid system dependent, absolute paths in your project files.
+
+The default way to add a third party library (e.g. `modelsim_lib`) to
+your project is as follows:
+
+1.  Add files to project
+    -   **File &gt; New &gt; Folder**
+    -   **Advanced**
+    -   **Link to alternate location (Linked Folder)**
+    -   Enter location. In my case this is
+        `/home/heeckhau/altera/12.1/modelsim_ase/vhdl_src/modelsim_lib`
+
+2.  Map library
+    -   **right-click**
+    -   **Library Mapping &gt; Library modelsim\_lib**
+
+![](images/modelsimlib.png)
+
+The disadvantage of this procedure is that this leads to an absolute
+path in the project file
+(`/home/heeckhau/altera/12.1/modelsim_ase/vhdl_src/modelsim_lib`). This
+is particularly annoying if you collaborate with a team on the same
+project. If the library has a different install location on different
+computers, everybody will have to change this path. This again, will
+lead to conflicts when you commit your changes to the shared code
+repository.
+
+To deal with this situation elegantly, Sigasi/Eclipse offers the concept
+of [**Path Variables**](http://help.eclipse.org/indigo/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Fconcepts%2Fcpathvars.htm).
+Path Variables allow you to specify a location of your file system, as a
+variable. And such a variable can be used to *specify the location of
+**linked resources** relative to these paths*.
+
+Defining a path variable is straightforward:
+
+-   **Preferences &gt; General &gt; Workspace &gt; Linked Resources**.
+-   At the bottom of this page you can add a new Path Variable with the
+    **New...** button.
+    -   Enter a name: `modelsim_ase`
+    -   Define the location: `/home/heeckhau/altera/12.1/modelsim_ase/`
+    -   Confirm with **OK**
+
+![Add Path Variable to your Workspace settings](images/linked_resources_preferences-2.png)
+
+Once you have defined the path variable, you can use it to specify the
+location of the linked library folder:
+
+-   **File &gt; New &gt; Folder**
+-   **Advanced**
+-   **Link to alternate location (Linked Folder)**
+-   Instead of entering the absolute path, do the following:
+    -   click the **Variables...** button.
+    -   select our variable `modelsim_ase`
+    -   press **Extend...** and select `vhdl_src/modelsim_lib`
+
+![Use a path variable to specify the location of a linked folder](images/new_folder1-2.png)
+![Extend a path variable](images/new_variable2-2.png)
+
+This way the project no longer contains an absolute path to the modelsim
+library, but instead a path relative to the Path Variable.
+
+When you now share this design with a colleague. Your colleague will see
+an unresolved annotation on the modelsim_lib folder.
+
+![Unavailable Linked Resource](images/unavailable_linked_resource.png)
+
+They can configure the `modelsim_ase` variable via **Preferences &gt; General &gt; Workspace &gt; Linked Resources**. Alternatively, you can use [Workspace Mechanic](http://www.sigasi.com/content/managing-sigasi-preferences-teams) to automate this task and share Sigasi/Eclipse settings across your entire team.
+
+# Sigasi 2.21
+
+In Sigasi 2.21 we added *path variables* for accessing *toolchain paths*  and *environment variables*.
+
+## Toolchains
+
+Following path variables are available for **toolchain paths**:
+
+* `SIGASI_TOOLCHAIN_QUARTUS`
+* `SIGASI_TOOLCHAIN_XILINX`
+* `SIGASI_TOOLCHAIN_ALINT`
+* `SIGASI_TOOLCHAIN_RIVIERA_PRO`
+* `SIGASI_TOOLCHAIN_MODELSIM`
+* `SIGASI_TOOLCHAIN_ACTIVE_HDL`
+
+![](images/path_variables_toolchain.png)
+
+Note that the variables are only available when a valid path is configured in the corresponding toolchain preference page: **Window > Preferences > Sigasi > Toolchains > Toolchain Name**
+
+## Environment variables
+
+To access *environment variables*, you have to prefix the environment variable with `ENV-`.
+For example: to refer to the home directory you can use `ENV-HOME`
+
+Since Sigasi 2.21, the [quickfixes for Altera, Xilinx and Modelsim libraries](http://www.sigasi.com/doc/2.21.0/libraries#libraries-quickfix), automatically use these path variables.

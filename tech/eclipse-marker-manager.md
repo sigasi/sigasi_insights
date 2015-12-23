@@ -9,6 +9,22 @@ tags:
   - planeteclipse
   - public beta
 ---
-<div class="content">
-<p>Did you ever want to suppress warnings in Eclipse? For Java, there is the <span class="geshifilter"><code class="vhdl geshifilter-vhdl">@SuppressWarnings</code></span> directive, but what to do for other programming languages?</p>	<p><a href="http://www.sigasi.com">Sigasi</a> is planning a new Eclipse plugin, called the <a href="http://www.markermanager.com" class="elf-external elf-icon">Eclipse Marker Manager</a>, that helps you deal with Problem Markers (warnings and errors). </p>	<p>You can <strong>export your warnings to <span class="caps">HTML</span></strong> and you will be able to suppress warnings in <em>any</em> programming language, using directives in comments:</p><div class="geshifilter"><pre class="vhdl geshifilter-vhdl" style="font-family:monospace;"><span style="color: #7f0055; font-weight: bold;">architecture</span> <span class="caps">STR</span> <span style="color: #7f0055; font-weight: bold;">of</span> testbench <span style="color: #7f0055; font-weight: bold;">is</span>	<span style="color: #7f0055; font-weight: bold;">signal</span> data_out <span style="color: #000066;">:</span> <span style="color: #808000;">unsigned</span><span style="color: #000000;">(</span><span style="color: #7d7d7d;">7</span> <span style="color: #7f0055; font-weight: bold;">downto</span> <span style="color: #7d7d7d;">0</span><span style="color: #000000;">)</span><span style="color: #000066;">;</span>	<span style="color: #7f0055; font-weight: bold;">signal</span> data_in  <span style="color: #000066;">:</span> <span style="color: #808000;">unsigned</span><span style="color: #000000;">(</span><span style="color: #7d7d7d;">7</span> <span style="color: #7f0055; font-weight: bold;">downto</span> <span style="color: #7d7d7d;">0</span><span style="color: #000000;">)</span><span style="color: #000066;">;</span>	<span style="color: #7f0055; font-weight: bold;">signal</span> valid    <span style="color: #000066;">:</span> <span style="color: #808000;">std_logic</span><span style="color: #000066;">;</span> <span style="color: #3f7f5f;">-- @suppress "Unused"</span>	<span style="color: #7f0055; font-weight: bold;">signal</span> start    <span style="color: #000066;">:</span> <span style="color: #808000;">std_logic</span><span style="color: #000066;">;</span>	<span style="color: #7f0055; font-weight: bold;">signal</span> clk      <span style="color: #000066;">:</span> <span style="color: #808000;">std_logic</span><span style="color: #000066;">;</span></pre></div>	<p>We're still in development for this, and that means your input can help shape the feature set of this product. Visit <a href="http://www.markermanager.com" class="elf-external elf-icon">http://www.markermanager.com</a> to discover more and get access to the development releases.</p>	<p><strong>Update:</strong> Anyone can now install the Marker Manager plugin from the Eclipse Marketplace. </p>  </div>
+Did you ever want to suppress warnings in Eclipse? For Java, there is the `@SuppressWarnings` directive, but what to do for other programming languages?
 
+[Sigasi](http://www.sigasi.com) is planning a new Eclipse plugin, called the [Eclipse Marker Manager](http://www.markermanager.com), that helps you deal with Problem Markers (warnings and errors). 
+
+You can **export your warnings to HTML** and you will be able to suppress warnings in _any_ programming language, using directives in comments:
+
+```vhdl
+architecture STR of testbench is
+	signal data_out : unsigned(7 downto 0);
+	signal data_in  : unsigned(7 downto 0);
+	signal valid    : std_logic; -- @suppress "Unused"
+	signal start    : std_logic;
+	signal clk      : std_logic;
+```
+
+We're still in development for this, and that means your input can help shape the feature set of this product. Visit <http://www.markermanager.com> to discover more and get access to the development releases.
+
+
+**Update:** Anyone can now install the Marker Manager plugin from the Eclipse Marketplace.

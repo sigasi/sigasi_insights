@@ -11,6 +11,74 @@ tags:
   - VHDL
   - VHDL synthesis
 ---
-<div class="content">
-<p>In a previous post I pointed out that <a href="/content/vhdl-physical-type-not-synthesizable-or-it"><span class="caps">VHDL</span> synthesis tools can indeed synthesize <span class="caps">VHDL</span> physical types</a>. In the example I gave, all computations with physical types were done at elaboration time, so that the synthesis tool does not really have to deal with physical types at all.</p>	<p>I choose a example that was too weak and I want to make that right. So here is my new claim:</p>	<blockquote>		<p><span class="caps">VHDL</span> synthesis of physical types works perfectly well.</p>	</blockquote>	<p>Short and powerful: no "but", no "caveat". Synthesis works fine if, even signals have a physical type or if  there are computations on physical types. If you have access to a (modern) <span class="caps">VHDL</span> synthesis tool and you can try this out for yourself. If not, nobody will be interested in your uninformed opinion. </p>	<h2>Side note: about <span class="caps">VHDL</span> synthesis </h2>	<p>There are dozens of constructs that are marked as <em>not for synthesis</em> in traditional courseware, including:</p>	<ul><li>bits, booleans and integers</li>		<li>configurations</li>		<li>generics (other than integer)</li>		<li>ports of record types or multi-dimensional records</li>		<li>attributes</li>		<li>blocks</li>		<li>initial values of signals</li>		<li>and much more&#8230;</li>	</ul><p>My first step will be to demonstrate which (none, some or all?) of them them are wrong. When I do that, a lot of traditionalists will argue that: "OK, it might work for you, but it's still bad practice because <em>blah blah blah</em>." When that happens, the discussion has shifted from "the tools can't handle it" to "the humans don't want to handle it." We can then get to the <em>reasons why</em> humans don't want to handle those particular constructs. We can have an informed discussion on a case by case basis to see if there is a valid argument to be made. </p>	<p>I don't want to force anybody in to using any of these constructs. I'm just worried that <span class="caps">VHDL</span> educators are scaring people away from useful and powerful <span class="caps">VHDL</span> language features that could save engineers a lot of work.</p>	<h2>Back to physical types</h2>	<p>But for now, let's focus on physical types. To pin everybody to the <em>facts</em>, here is a <a href="/vetsmod">vetsmod</a> example of physical types in action:</p><div class="geshifilter"><pre class="vhdl geshifilter-vhdl" style="font-family:monospace;"><span style="color: #7f0055; font-weight: bold;">library</span> ieee<span style="color: #000066;">;</span>&#160;<span style="color: #7f0055; font-weight: bold;">use</span> ieee.std_logic_1164.<span style="color: #7f0055; font-weight: bold;">all</span><span style="color: #000066;">;</span>&#160;<span style="color: #7f0055; font-weight: bold;">entity</span> testPhysical <span style="color: #7f0055; font-weight: bold;">is</span>	<span style="color: #7f0055; font-weight: bold;">port</span><span style="color: #000000;">(</span>clk    <span style="color: #000066;">:</span> <span style="color: #7f0055; font-weight: bold;">in</span>  <span style="color: #808000;">std_logic</span><span style="color: #000066;">;</span>		 rst    <span style="color: #000066;">:</span> <span style="color: #7f0055; font-weight: bold;">in</span>  <span style="color: #808000;">std_logic</span><span style="color: #000066;">;</span>		 strobe <span style="color: #000066;">:</span> <span style="color: #7f0055; font-weight: bold;">out</span> <span style="color: #808000;">std_logic</span>	<span style="color: #000000;">)</span><span style="color: #000066;">;</span><span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">entity</span> testPhysical<span style="color: #000066;">;</span>&#160;<span style="color: #7f0055; font-weight: bold;">architecture</span> <span class="caps">RTL</span> <span style="color: #7f0055; font-weight: bold;">of</span> testPhysical <span style="color: #7f0055; font-weight: bold;">is</span>	<span style="color: #7f0055; font-weight: bold;">type</span> number_of_eggs <span style="color: #7f0055; font-weight: bold;">is</span> <span style="color: #7f0055; font-weight: bold;">range</span> <span style="color: #7d7d7d;">0</span> <span style="color: #7f0055; font-weight: bold;">to</span> <span style="color: #7d7d7d;">255</span>	<span style="color: #7f0055; font-weight: bold;">units</span> 		eggs<span style="color: #000066;">;</span>		dozen <span style="color: #000066;">=</span> <span style="color: #7d7d7d;">12</span> eggs<span style="color: #000066;">;</span>		gross <span style="color: #000066;">=</span> <span style="color: #7d7d7d;">12</span> dozen<span style="color: #000066;">;</span>	<span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">units</span><span style="color: #000066;">;</span>&#160;	<span style="color: #7f0055; font-weight: bold;">signal</span> egg_basket <span style="color: #000066;">:</span> number_of_eggs<span style="color: #000066;">;</span><span style="color: #7f0055; font-weight: bold;">begin</span>	name <span style="color: #000066;">:</span> <span style="color: #7f0055; font-weight: bold;">process</span><span style="color: #000000;">(</span>clk<span style="color: #000000;">)</span> <span style="color: #7f0055; font-weight: bold;">is</span>	<span style="color: #7f0055; font-weight: bold;">begin</span>		<span style="color: #7f0055; font-weight: bold;">if</span> rising_edge<span style="color: #000000;">(</span>clk<span style="color: #000000;">)</span> <span style="color: #7f0055; font-weight: bold;">then</span>			<span style="color: #7f0055; font-weight: bold;">if</span> egg_basket <span style="color: #000066;">=</span> <span style="color: #7d7d7d;">1</span> gross <span style="color: #7f0055; font-weight: bold;">then</span>				egg_basket <span style="color: #000066;">&lt;=</span> <span style="color: #7d7d7d;">0</span> eggs<span style="color: #000066;">;</span>				strobe <span style="color: #000066;">&lt;=</span> '<span style="color: #7d7d7d;">1</span>'<span style="color: #000066;">;</span>			<span style="color: #7f0055; font-weight: bold;">else</span>				egg_basket <span style="color: #000066;">&lt;=</span> egg_basket + <span style="color: #7d7d7d;">1</span> eggs<span style="color: #000066;">;</span>				strobe <span style="color: #000066;">&lt;=</span> '<span style="color: #7d7d7d;">0</span>'<span style="color: #000066;">;</span>			<span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">if</span><span style="color: #000066;">;</span>		<span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">if</span><span style="color: #000066;">;</span>	<span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">process</span> name<span style="color: #000066;">;</span><span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">architecture</span> <span class="caps">RTL</span><span style="color: #000066;">;</span></pre></div>	<p>This (contrived) example synthesizes perfectly and efficiently (Altera Quartus 11.1) to the following <span class="caps">RTL</span>:</p>	<p><span class="inline inline-center"><img src="http://www.sigasi.com/sites/www.sigasi.com/files/images/RTL_physical_type.preview.png" alt="RTL generated when using physical types" title="RTL generated when using physical types" class="image image-preview " width="640" height="188"/><span class="caption"><strong><span class="caps">RTL</span> generated when using physical types</strong></span></span></p>	<p>I'm pretty sure that this synthesized <span class="caps">RTL</span> view would be identical if you use integers or std_logic_vector types. I didn't try that, so feel free to prove me wrong.<br/></p>  </div>
+In a previous post, [vhdl-physical-type-not-synthesizable-or-it], I pointed out that VHDL synthesis tools can indeed synthesize VHDL physical types. In the example I gave, all computations with physical types were done at elaboration time, so that the synthesis tool does not really have to deal with physical types at all.
 
+I choose a example that was too weak and I want to make that right. So here is my new claim:
+
+> VHDL synthesis of physical types works perfectly well.
+
+Short and powerful: no "but", no "caveat". Synthesis works fine if, even signals have a physical type or if  there are computations on physical types. If you have access to a (modern) VHDL synthesis tool and you can try this out for yourself. If not, nobody will be interested in your uninformed opinion. 
+
+## Side note: about VHDL synthesis 
+
+There are dozens of constructs that are marked as _not for synthesis_ in traditional courseware, including:
+
+* bits, booleans and integers 
+* configurations
+* generics (other than integer)
+* ports of record types or multi-dimensional records
+* attributes
+* blocks
+* initial values of signals
+* and much more...
+
+My first step will be to demonstrate which (none, some or all?) of them them are wrong. When I do that, a lot of traditionalists will argue that: "OK, it might work for you, but it's still bad practice because _blah blah blah_." When that happens, the discussion has shifted from "the tools can't handle it" to "the humans don't want to handle it." We can then get to the _reasons why_ humans don't want to handle those particular constructs. We can have an informed discussion on a case by case basis to see if there is a valid argument to be made. 
+
+I don't want to force anybody in to using any of these constructs. I'm just worried that VHDL educators are scaring people away from useful and powerful VHDL language features that could save engineers a lot of work.
+
+## Back to physical types
+
+But for now, let's focus on physical types. To pin everybody to the _facts_, here is a [/blog/vetsmod-get-better-feedback-your-vhdl-code-snippets] example of physical types in action:
+
+```vhdl
+library ieee;
+
+use ieee.std_logic_1164.all;
+
+entity testPhysical is
+	port(clk    : in  std_logic;
+		 rst    : in  std_logic;
+		 strobe : out std_logic
+	);
+end entity testPhysical;
+
+architecture RTL of testPhysical is
+	type number_of_eggs is range 0 to 255
+	units 
+		eggs;
+		dozen = 12 eggs;
+		gross = 12 dozen;
+	end units;
+	
+	signal egg_basket : number_of_eggs;
+begin
+	name : process(clk) is
+	begin
+		if rising_edge(clk) then
+			if egg_basket = 1 gross then
+				egg_basket <= 0 eggs;
+				strobe <= '1';
+			else
+				egg_basket <= egg_basket + 1 eggs;
+				strobe <= '0';
+			end if;
+		end if;
+	end process name;
+end architecture RTL;
+```
+
+This (contrived) example synthesizes perfectly and efficiently (Altera Quartus 11.1) to the following RTL:
+
+![RTL generated when using physical types](images/rtl_physical_type.png)
+
+I'm pretty sure that this synthesized RTL view would be identical if you use `integers` or `std_logic_vector` types. I didn't try that, so feel free to prove me wrong.

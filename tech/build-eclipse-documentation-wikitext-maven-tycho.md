@@ -10,6 +10,63 @@ tags:
   - planeteclipse
   - tycho
 ---
-<div class="content">
-<p>For <a href="http://www.sigasi.com/sigasi-20">Sigasi 2.0</a> we decided to write all documentation in the <a href="http://en.wikipedia.org/wiki/Textile_(markup_language)" class="elf-external elf-icon">textile</a> wiki markup language. With the <a href="http://wiki.eclipse.org/Mylyn/FAQ#WikiText" class="elf-external elf-icon">Mylyn Wikitext</a> plugin, textile files can be converted in lots of different output formats such as Eclipse help, html, pdf,&#8230;</p>	<p>Based on the <a href="http://www.peterfriese.de/advanced-wikitext/" class="elf-external elf-icon">blog posts of Peter Friese</a> I could easily automate the documentation build with Ant. But when I tried to run the documentation build ant task from our Maven Tycho build, the necessary <span class="caps">XSLT</span> transforms refused to run. <a href="http://xml.apache.org/xalan-j" class="elf-external elf-icon">Xalan</a> could not be loaded&#8230;</p>	<p>After a lot of googling, moaning and trying I finally found out that the trick is to add Xalan as a dependency to the antrun plugin.</p>	<p>This is the Maven configuration I ended up with that works for me: </p><pre><code>  &lt;build&gt;    &lt;plugins&gt;      &lt;plugin&gt;        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;        &lt;artifactId&gt;maven-antrun-plugin&lt;/artifactId&gt;        &lt;version&gt;1.6&lt;/version&gt;        &lt;executions&gt;          &lt;execution&gt;            &lt;id&gt;generate-documentation&lt;/id&gt;            &lt;phase&gt;generate-sources&lt;/phase&gt;            &lt;configuration&gt;              &lt;echo&gt;Generating documentation&lt;/echo&gt;              &lt;tasks&gt;                &lt;property name="compile_classpath" refid="maven.compile.classpath" /&gt;                &lt;ant inheritRefs="true" antfile="build-doc.xml"&gt;                  &lt;target name="build-doc" /&gt;                &lt;/ant&gt;              &lt;/tasks&gt;            &lt;/configuration&gt;            &lt;goals&gt;              &lt;goal&gt;run&lt;/goal&gt;            &lt;/goals&gt;          &lt;/execution&gt;        &lt;/executions&gt;        &lt;dependencies&gt;          &lt;dependency&gt;            &lt;groupId&gt;org.apache.ant&lt;/groupId&gt;            &lt;artifactId&gt;ant&lt;/artifactId&gt;            &lt;version&gt;1.8.1&lt;/version&gt;          &lt;/dependency&gt;          &lt;dependency&gt;            &lt;groupId&gt;org.apache.ant&lt;/groupId&gt;            &lt;artifactId&gt;ant-launcher&lt;/artifactId&gt;            &lt;version&gt;1.8.1&lt;/version&gt;          &lt;/dependency&gt;          &lt;dependency&gt;            &lt;groupId&gt;org.apache.ant&lt;/groupId&gt;            &lt;artifactId&gt;ant-nodeps&lt;/artifactId&gt;            &lt;version&gt;1.8.1&lt;/version&gt;          &lt;/dependency&gt;          &lt;dependency&gt;            &lt;groupId&gt;xalan&lt;/groupId&gt;            &lt;artifactId&gt;xalan&lt;/artifactId&gt;            &lt;version&gt;2.7.1&lt;/version&gt;          &lt;/dependency&gt;        &lt;/dependencies&gt;      &lt;/plugin&gt;    &lt;/plugins&gt;  &lt;/build&gt;</code></pre>  </div>
 
+For [Sigasi 2.0](/releasenotes/sigasi-2.0.html) we decided to write all documentation in the <a href="http://en.wikipedia.org/wiki/Textile_(markup_language)">textile</a> wiki markup language. With the [Mylyn Wikitext](http://wiki.eclipse.org/Mylyn/FAQ#WikiText) plugin, textile files can be converted in lots of different output formats such as Eclipse help, html, pdf,...
+
+Based on the [blog posts of Peter Friese](http://www.peterfriese.de/advanced-wikitext) I could easily automate the documentation build with Ant. But when I tried to run the documentation build ant task from our Maven Tycho build, the necessary XSLT transforms refused to run. [Xalan](http://xml.apache.org/xalan-j) could not be loaded...
+
+After a lot of googling, moaning and trying I finally found out that the trick is to add Xalan as a dependency to the antrun plugin.
+
+This is the Maven configuration I ended up with that works for me: 
+
+```xml
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-antrun-plugin</artifactId>
+      <version>1.6</version>
+      <executions>
+        <execution>
+          <id>generate-documentation</id>
+          <phase>generate-sources</phase>
+          <configuration>
+            <echo>Generating documentation</echo>
+            <tasks>
+              <property name="compile_classpath" refid="maven.compile.classpath" />
+              <ant inheritRefs="true" antfile="build-doc.xml">
+                <target name="build-doc" />
+              </ant>
+            </tasks>
+          </configuration>
+          <goals>
+            <goal>run</goal>
+          </goals>
+        </execution>
+      </executions>
+      <dependencies>
+        <dependency>
+          <groupId>org.apache.ant</groupId>
+          <artifactId>ant</artifactId>
+          <version>1.8.1</version>
+        </dependency>
+        <dependency>
+          <groupId>org.apache.ant</groupId>
+          <artifactId>ant-launcher</artifactId>
+          <version>1.8.1</version>
+        </dependency>
+        <dependency>
+          <groupId>org.apache.ant</groupId>
+          <artifactId>ant-nodeps</artifactId>
+          <version>1.8.1</version>
+        </dependency>
+        <dependency>
+          <groupId>xalan</groupId>
+          <artifactId>xalan</artifactId>
+          <version>2.7.1</version>
+        </dependency>
+      </dependencies>
+    </plugin>
+  </plugins>
+</build>
+```

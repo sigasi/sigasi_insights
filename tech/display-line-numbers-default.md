@@ -8,6 +8,11 @@ tags:
   - planeteclipse
   - eclipse
 ---
-<div class="content">
-<p>I wanted to display line numbers by default in our <a href="/product">Eclipse RCP application</a>. I knew this had to be trivial but I couldn't find how to do this anywhere on the web. </p><p>Here is the solution:<br/>Add following line to your <span class="geshifilter"><code class="vhdl geshifilter-vhdl">plugin_customization.ini</code></span> file:<br/><span class="geshifilter"><code class="vhdl geshifilter-vhdl">org.eclipse.ui.editors/lineNumberRuler<span style="color: #000066;">=</span>true</code></span></p>  </div>
 
+I wanted to display line numbers by default in our <a href="/product">Eclipse RCP application</a>. I knew this had to be trivial but I couldn't find how to do this anywhere on the web. 
+
+Here is the solution:
+Add following line to your `plugin_customization.ini` file:
+```
+org.eclipse.ui.editors/lineNumberRuler=true
+```

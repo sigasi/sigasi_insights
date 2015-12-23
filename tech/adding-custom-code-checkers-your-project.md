@@ -7,6 +7,41 @@ date: 2015-05-08
 tags: 
   - howto
 ---
-<div class="content">
-<p>Sometimes, you want to check some simple properties in your projects. For example, you might want to check for a standard company copyright header, or you might check for the use of lower-case keywords in your files. While Sigasi offers a lot or <span class="caps">VHDL</span> code rule checks out of the box, there is a way to implement your own rules very easily.</p>	<p>In this article, I will explain how to create your own custom code checker in Sigasi. As an example, we will build a code checker that matches the braces in <span class="caps">VHDL</span> comments. In other words, you will get a warning if you have unbalanced parentheses in your comment lines.</p>	<p>In this example, all comments in <span class="caps">VHDL</span> (*.vhd) files in the project are scanned for matching brackets. <br/>The script takes into account parentheses, curly brackets and square brackets: () {} []<br/>If brackets are not matched correctly, the checker will raise a warning at the correct location so <br/>that the user can fix the brackets.</p>	<p><span class="inline inline-center"><img src="http://www.sigasi.com/sites/www.sigasi.com/files/images/custom_code_checking.png" alt="Custom Code Checking" title="Custom Code Checking" class="image image-_original " width="607" height="193"/><span class="caption"><strong>Custom Code Checking</strong></span></span></p>	<h2>How to use:</h2>	<p>Make sure you have the current version of the Marker Manager (we are using the version 20150430). <br/>Download and installation instructions are at: <a href="http://www.markermanager.com" class="elf-external elf-icon">http://www.markermanager.com</a>.</p>	<p>Download the example project from GitHub: <a href="https://github.com/sigasi/eclipse_custom_code_checker" class="elf-external elf-icon">https://github.com/sigasi/eclipse_custom_code_checker</a></p>	<p>If you want to apply a custom code checker to your own project:</p>	<ol><li>Create a new builder that generates the "markers.rpt" file:	<ul><li><strong>Project &gt; Properties &gt; Builders &gt; New &gt; Program</strong></li>		<li>Set the options of this new builder like I have configured "Check brackets in VHDL comments" in this example project</li>	</ul></li>		<li>Activate the Marker builder to your project: Right-click on the project, <strong>Configure &gt; Add Marker Builder</strong></li>		<li>Make sure that your custom builder is listed <strong>before</strong> the "Marker Project Builder". Check this in <strong>Project &gt; Properties &gt; Builders</strong></li>	</ol><h2>Suggestions for improvement and customisation:</h2>	<p>You can extend the checker.py script to check for matching <span class="caps">HTML</span> tags or matching LaTeX tags in comments.</p>	<p>You can modify the comment symbol in the script so that only comments that start with "--!' are considered.</p>	<h2>Contribute</h2>	<p>If you have improvements for the checker script or for the documentation, feel free to send a pull request through GitHub.<br/></p>  <div id="book-navigation-1518" class="book-navigation">            <div class="page-links clear-block">              <a href="/content/export-vhdl-project-archive-file" class="page-previous" title="Go to previous page">&#8249; Export a VHDL project to an archive file</a>                    <a href="/content/sigasi-how" class="page-up" title="Go to parent page">up</a>                    <a href="/content/generating-sigasi-project-vivado-project" class="page-next" title="Go to next page">Generating a Sigasi project from a Vivado project &#8250;</a>          </div>      </div>  </div>
 
+Sometimes, you want to check some simple properties in your projects. For example, you might want to check for a standard company copyright header, or you might check for the use of lower-case keywords in your files. While Sigasi offers a lot or VHDL code rule checks out of the box, there is a way to implement your own rules very easily.
+
+In this article, I will explain how to create your own custom code checker in Sigasi. As an example, we will build a code checker that matches the braces in VHDL comments. In other words, you will get a warning if you have unbalanced parentheses in your comment lines.
+
+
+In this example, all comments in VHDL (`*.vhd`) files in the project are scanned for matching brackets. 
+The script takes into account parentheses, curly brackets and square brackets: `() {} []`
+If brackets are not matched correctly, the checker will raise a warning at the correct location so 
+that the user can fix the brackets.
+
+![Custom Code Checking](images/custom_code_checking.png)
+
+## How to use:
+
+Make sure you have the current version of the Marker Manager (we are using the version 20150430). 
+Download and installation instructions are at: "http://www.markermanager.com":http://www.markermanager.com.
+
+Download the example project from GitHub: "https://github.com/sigasi/eclipse_custom_code_checker":https://github.com/sigasi/eclipse_custom_code_checker
+
+If you want to apply a custom code checker to your own project:
+
+1. Create a new builder that generates the `markers.rpt` file:
+	* **Project > Properties > Builders > New > Program**
+	* Set the options of this new builder like I have configured "Check brackets in VHDL comments" in this example project
+2. Activate the Marker builder to your project: Right-click on the project, *Configure > Add Marker Builder*
+3. Make sure that your custom builder is listed **before** the "Marker Project Builder". Check this in **Project > Properties > Builders**
+
+## Suggestions for improvement and customisation
+
+You can extend the checker.py script to check for matching HTML tags or matching LaTeX tags in comments.
+
+You can modify the comment symbol in the script so that only comments that start with `--!` are considered.
+
+
+## Contribute
+
+If you have improvements for the checker script or for the documentation, feel free to send a pull request through GitHub.

@@ -10,6 +10,94 @@ tags:
   - howto
   - VHDL
 ---
-<div class="content">
-<p>Usually, people use <span class="caps">VHDL</span> configurations to select a given architecture for their component, or even to set generics that were not set in the instantiation. But you can also do more advanced stuff with configurations: you can tie a component to a completely unrelated entity. You can even re-wire the signals!</p>	<p>For a short recap. Normally, you'd see a component that looks exactly like an entity:<br/></p><table><tr><td><div class="geshifilter"><pre class="vhdl geshifilter-vhdl" style="font-family:monospace;">  <span style="color: #7f0055; font-weight: bold;">entity</span> dut <span style="color: #7f0055; font-weight: bold;">is</span>	<span style="color: #7f0055; font-weight: bold;">port</span><span style="color: #000000;">(</span>		a <span style="color: #000066;">:</span> <span style="color: #7f0055; font-weight: bold;">in</span> <span style="color: #808000;">string</span><span style="color: #000066;">;</span>		b <span style="color: #000066;">:</span> <span style="color: #7f0055; font-weight: bold;">in</span> <span style="color: #808000;">string</span><span style="color: #000066;">;</span>		c <span style="color: #000066;">:</span> <span style="color: #7f0055; font-weight: bold;">in</span> <span style="color: #808000;">string</span>	<span style="color: #000000;">)</span><span style="color: #000066;">;</span>  <span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">entity</span> dut<span style="color: #000066;">;</span></pre></div></td><br/><td><div class="geshifilter"><pre class="vhdl geshifilter-vhdl" style="font-family:monospace;">  <span style="color: #7f0055; font-weight: bold;">component</span> dut	<span style="color: #7f0055; font-weight: bold;">port</span><span style="color: #000000;">(</span>		a <span style="color: #000066;">:</span> <span style="color: #7f0055; font-weight: bold;">in</span> <span style="color: #808000;">string</span><span style="color: #000066;">;</span>		b <span style="color: #000066;">:</span> <span style="color: #7f0055; font-weight: bold;">in</span> <span style="color: #808000;">string</span><span style="color: #000066;">;</span>		c <span style="color: #000066;">:</span> <span style="color: #7f0055; font-weight: bold;">in</span> <span style="color: #808000;">string</span>	<span style="color: #000000;">)</span><span style="color: #000066;">;</span>  <span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">component</span> dut<span style="color: #000066;">;</span></pre></div></td></tr></table><p>As I will explain in another blog post, these objects have no relation whatsoever, except that the <em>default binding</em> for <code>component dut</code> is the <code>entity dut</code>.<br/>So if you type an instantiation:<br/></p><div class="geshifilter"><pre class="vhdl geshifilter-vhdl" style="font-family:monospace;">	dut_inst <span style="color: #000066;">:</span> <span style="color: #7f0055; font-weight: bold;">component</span> dut		<span style="color: #7f0055; font-weight: bold;">port</span> <span style="color: #7f0055; font-weight: bold;">map</span><span style="color: #000000;">(</span>a <span style="color: #000066;">=&gt;</span> a,			     b <span style="color: #000066;">=&gt;</span> b,			     c <span style="color: #000066;">=&gt;</span> c<span style="color: #000000;">)</span><span style="color: #000066;">;</span></pre></div>	<p>The <span class="caps">VHDL</span> elaborator will instantiate <code>entity dut</code> by default, unless it is told otherwise. Here is where <em><span class="caps">VHDL</span> configurations</em> come in.</p>	<p>You can configure this to instantiate a completely <code>unrelated</code> entity, with an unrelated entity name, and unrelated port names. Even a different number of ports:</p><div class="geshifilter"><pre class="vhdl geshifilter-vhdl" style="font-family:monospace;">  <span style="color: #7f0055; font-weight: bold;">configuration</span> c2 <span style="color: #7f0055; font-weight: bold;">of</span> testbench <span style="color: #7f0055; font-weight: bold;">is</span>	<span style="color: #7f0055; font-weight: bold;">for</span> str		<span style="color: #7f0055; font-weight: bold;">for</span> dut_inst <span style="color: #000066;">:</span> dut			<span style="color: #7f0055; font-weight: bold;">use</span> <span style="color: #7f0055; font-weight: bold;">entity</span> work.unrelated<span style="color: #000000;">(</span>rtl<span style="color: #000000;">)</span>				<span style="color: #7f0055; font-weight: bold;">port</span> <span style="color: #7f0055; font-weight: bold;">map</span><span style="color: #000000;">(</span>					port1 <span style="color: #000066;">=&gt;</span> a,					port2 <span style="color: #000066;">=&gt;</span> b,					port3 <span style="color: #000066;">=&gt;</span> c,					port4 <span style="color: #000066;">=&gt;</span> <span style="color: #2a00ff;">"unused"</span>				<span style="color: #000000;">)</span><span style="color: #000066;">;</span>		<span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">for</span><span style="color: #000066;">;</span>	<span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">for</span><span style="color: #000066;">;</span>  <span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">configuration</span> c2<span style="color: #000066;">;</span></pre></div> 	<p>Or you can instantiate the entity with the same name, but rewire the port names completely:</p><div class="geshifilter"><pre class="vhdl geshifilter-vhdl" style="font-family:monospace;"> <span style="color: #7f0055; font-weight: bold;">configuration</span> c3 <span style="color: #7f0055; font-weight: bold;">of</span> testbench <span style="color: #7f0055; font-weight: bold;">is</span>	<span style="color: #7f0055; font-weight: bold;">for</span> str		<span style="color: #7f0055; font-weight: bold;">for</span> dut_inst <span style="color: #000066;">:</span> dut			<span style="color: #7f0055; font-weight: bold;">use</span> <span style="color: #7f0055; font-weight: bold;">entity</span> work.dut<span style="color: #000000;">(</span>rtl<span style="color: #000000;">)</span>				<span style="color: #7f0055; font-weight: bold;">port</span> <span style="color: #7f0055; font-weight: bold;">map</span><span style="color: #000000;">(</span>					a <span style="color: #000066;">=&gt;</span> b, <span style="color: #3f7f5f;">-- Note we are binding to other ports here!</span>					b <span style="color: #000066;">=&gt;</span> c,					c <span style="color: #000066;">=&gt;</span> a				<span style="color: #000000;">)</span><span style="color: #000066;">;</span>		<span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">for</span><span style="color: #000066;">;</span>	<span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">for</span><span style="color: #000066;">;</span> <span style="color: #7f0055; font-weight: bold;">end</span> <span style="color: #7f0055; font-weight: bold;">configuration</span> c3<span style="color: #000066;">;</span></pre></div>	<p>So why is this useful? Well, that's a good question. I haven't seen configurations being used like this in "real life" code. But knowing this will help you realize that components and entities are really completely different things. They are only connected during elaboration (that's when you give the <code>vsim</code> command). And they can be connect in very flexible ways. </p>	<p>I've put the code fragments in a <a href="/vetsmod"><span class="caps">VETSMOD</span></a> project that you can <a href="/sites/www.sigasi.com/files/configurations.tgz">download here</a>. You can play around with it and run it on your favorite simulator. The code reports which architecture you use and which ports are actually connected to what:</p><pre># Loading std.standard# Loading std.textio(body)# Loading ieee.std_logic_1164(body)# Loading work.c3# Loading work.testbench(str)# Loading work.dut(rtl)# run 1 us  # ** Note: this is dut(RTL)#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_inst# ** Note: port a:B#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_inst# ** Note: port b:C#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_inst# ** Note: port c:A#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_inst#  exit </pre><table id="attachments" class="sticky-enabled"> <thead><tr><th>Attachment</th><th>Size</th> </tr></thead><tbody> <tr class="odd"><td><a href="http://www.sigasi.com/sites/www.sigasi.com/files/configurations.tgz">configurations.tgz</a></td><td>1.32 KB</td> </tr></tbody></table>  <div id="book-navigation-1518" class="book-navigation">            <div class="page-links clear-block">              <a href="/content/four-and-half-ways-write-vhdl-instantiations" class="page-previous" title="Go to previous page">&#8249; Four (and a half) ways to write VHDL instantiations</a>                    <a href="/content/vhdl-tips-tricks" class="page-up" title="Go to parent page">up</a>                    <a href="/content/headers-and-templates" class="page-next" title="Go to next page">Headers and templates &#8250;</a>          </div>      </div>  </div>
+Usually, people use VHDL configurations to select a given architecture for their component, or even to set generics that were not set in the instantiation. But you can also do more advanced stuff with configurations: you can tie a component to a completely unrelated entity. You can even re-wire the signals!
 
+For a short recap. Normally, you'd see a component that looks exactly like an entity:
+```vhdl
+-- entity
+entity dut is
+port(
+	a : in string;
+	b : in string;
+	c : in string
+);
+end entity dut;
+
+--component
+component dut
+port(
+	a : in string;
+	b : in string;
+	c : in string
+);
+end component dut;
+```
+
+As I will explain in another blog post, these objects have no relation whatsoever, except that the _default binding_ for `component dut` is the `entity dut`.
+So if you type an instantiation:
+```vhdl
+	dut_inst : component dut
+		port map(a => a,
+			     b => b,
+			     c => c);
+```
+
+The VHDL elaborator will instantiate `entity dut` by default, unless it is told otherwise. Here is where _VHDL configurations_ come in.
+
+You can configure this to instantiate a completely `unrelated` entity, with an unrelated entity name, and unrelated port names. Even a different number of ports:
+
+```vhdl
+  configuration c2 of testbench is
+	for str
+		for dut_inst : dut
+			use entity work.unrelated(rtl)
+				port map(
+					port1 => a,
+					port2 => b,
+					port3 => c,
+					port4 => "unused"
+				);
+		end for;
+	end for;
+  end configuration c2;
+```
+
+Or you can instantiate the entity with the same name, but rewire the port names completely:
+
+```vhdl
+ configuration c3 of testbench is
+	for str
+		for dut_inst : dut
+			use entity work.dut(rtl)
+				port map(
+					a => b, -- Note we are binding to other ports here!
+					b => c,
+					c => a
+				);
+		end for;
+	end for;
+ end configuration c3;
+```
+
+So why is this useful? Well, that's a good question. I haven't seen configurations being used like this in "real life" code. But knowing this will help you realize that components and entities are really completely different things. They are only connected during elaboration (that's when you give the `vsim` command). And they can be connect in very flexible ways. 
+
+I've put the code fragments in a [VETSMOD] project that you can [download here](resources/configurations.tgz). You can play around with it and run it on your favorite simulator. The code reports which architecture you use and which ports are actually connected to what:
+
+```
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.c3
+# Loading work.testbench(str)
+# Loading work.dut(rtl)
+# run 1 us  
+# ** Note: this is dut(RTL)
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_inst
+# ** Note: port a:B
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_inst
+# ** Note: port b:C
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_inst
+# ** Note: port c:A
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_inst
+#  exit 
+```
