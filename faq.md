@@ -8,7 +8,7 @@ pager: true
 
 If you use Sigasi HDT as a plugin (meaning: not the standalone version), you can add a VI emulator plugin, called [vrapper]. Surely not the same as a genuine VI clone, but it will give you a warm and familiar feeling when you type `:q!`.
 
-## Do you have an Emacs emulation mode so that I can use the Emacs k...
+## Do you have an Emacs emulation mode so that I can use the Emacs key bindings? {: #Emacs}
 All Eclipse products, including Sigasi HDT, can be configured to support [emacs-keybindings]. While it is not the same as Emacs, you can keep your habit of pressing *CTRL-C* and *CTRL-X* all the time.
 
 ## I have error markers in files that are not even mapped to a library

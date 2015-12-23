@@ -1,0 +1,49 @@
+{% extends "_base.html" %}
+
+{% block body %}
+
+{% block title %}
+    <section class="container">
+      <div class="row">
+      	
+        <div class="spb_content_element col-sm-12 spb_text_column">
+          <div class="spb-asset-content" style="padding-top:0%;padding-bottom:0%;padding-left:0%;padding-right:0%;">
+            <h1 style="text-align: center;">{{this.title}}</h1>
+          </div>
+        </div>
+        
+        {% if this.date %}
+        {% if "/releasenotes/" in this.url %}
+          released on {{this.date|dateformat}}
+        {% else %}
+          posted on {{this.date|dateformat}}
+        {% endif %}
+        {% endif %}
+        {% if this.author %}
+            by {{this.author}}
+        {% endif %} 
+      </div>
+    </section>
+    <div style="margin: 10px 0 10px">
+      {% for tag in this.tags %}
+          <a href="/tag/{{tag}}/" class="btn btn-default btn-xs">{{tag}}</a>
+      {% endfor %}
+    </div>
+    {% endblock %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-2" role="main">
+      {% for item in this.content %}
+      <h4><a href="{{item.url}}">{{item.title}}</a>
+        {% if item.date|d %}
+        <small>{{item.date|dateformat}}</small></h4>
+        {% endif %}
+      </h4>
+      <p>{{item.teaser}}</p>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
