@@ -8,7 +8,7 @@ tags:
   - Emacs
   - VHDL
 ---
-It is no secret that Sigasi wants to "take on Emacs":http://www.sigasi.com/content/why-emacs-so-great-and-why-we-want-beat-it and the Emacs VHDL mode. I have posted "several articles":/emacs about the fundamental differences between Emacs and Sigasi. It usually boils down to the limitations of regular expressions and pattern matching. There are just certain things that require a parser rather than a simple pattern matcher.
+It is no secret that Sigasi wants to be [index]. I have posted [several articles](.) about the fundamental differences between Emacs and Sigasi. It usually boils down to the limitations of regular expressions and pattern matching. There are just certain things that require a parser rather than a simple pattern matcher.
 
 ## Code Formatter
 
@@ -16,4 +16,4 @@ But we have to say that the VHDL Emacs mode has given us quite a bad time when i
 
 ## What is still missing?
 
-There is an [Emacs emulator available](/faq.html#emacs) for Sigasi (and for Eclipse), so you can keep using your old key bindings. But there must be other things that you miss when switching from Emacs to Sigasi. Let's build a list of (relevant and technical) things that are missing from Sigasi HDT. Please [send_email] for the Emacs features you still miss.
+There is an [Emacs emulator available](/faq.html#Emacs) for Sigasi (and for Eclipse), so you can keep using your old key bindings. But there must be other things that you miss when switching from Emacs to Sigasi. Let's build a list of (relevant and technical) things that are missing from Sigasi HDT. Please [send_email] for the Emacs features you still miss.

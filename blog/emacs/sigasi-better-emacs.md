@@ -12,12 +12,12 @@ Over the past few weeks, I have made an effort to demonstrate that Sigasi 2.0 is
 
 * [why-emacs-vhdl-mode-so-great-and-why-we-want-beat-it],
 * [engineers-are-smart-enough-change-editors],
-* [emacs-syntax-errors.md],
-* [no-vhdl-rename-emacs-vhdl-mode.md],
-* [no-vhdl-libraries-emacs-vhdl-mode.md],
-* [emacs-code-coloring-outdated.md],
-* [vhdl-emacs-mode-navigation-using-ctags-are-broken.md],
-* [room-improvement.md],
+* [emacs-syntax-errors],
+* [no-vhdl-rename-emacs-vhdl-mode],
+* [no-vhdl-libraries-emacs-vhdl-mode],
+* [emacs-code-coloring-outdated],
+* [vhdl-emacs-mode-navigation-using-ctags-are-broken],
+* [room-improvement],
 
 One of the most common comments I got was that Emacs is free. I know there is a bit of ambiguity in the word [free](http://en.wikipedia.org/wiki/Gratis_versus_libre), but I get the feeling that most people are worried about their money. They don't want to pay for an _editor_. It seems hard for people to compare a $840 tool, with [one](http://www.iis.ee.ethz.ch/~zimmi/emacs/vhdl-mode.html) that comes at a flat $0.00. 
 

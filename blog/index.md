@@ -8,5 +8,5 @@ reverse: true
 Opinion pieces from Sigasi team and guest bloggers.
 
 * [/blog/jan]
-* index
+* [/blog/emacs]
 * subjects

@@ -13,9 +13,9 @@ In the past months, we have made large efforts to [make Emacs obsolete](.). Afte
 
 Of course, you can't win every battle and you probably shouldn't even try. Here are some things at which Emacs will always be better. We're not even going to try.
 
-## 1. Speed and Memory footprint
+![Caged Gnu](images/caged_gnu.jpg)
 
-![Caged Gnu](images/caged_gnu.jpg){: align="right"}
+## 1. Speed and Memory footprint
 
 Twenty years ago, Emacs was one of the largest and slowest editors around. But for the power editing features that Emacs enabled, the users accepted the somewhat slower response time and larger memory requirements.
 

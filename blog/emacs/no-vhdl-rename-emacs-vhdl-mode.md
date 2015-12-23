@@ -9,9 +9,8 @@ tags:
   - Emacs
   - VHDL
 ---
-In my series of [how Sigasi is better than the Emacs VHDL
-mode](/content/why-emacs-so-great-and-why-we-want-beat-it), this entry
-deals with code reuse, more specifically with *renaming*.
+In my series of how Sigasi is [index], this entry
+deals with code reuse, more specifically with **renaming**.
 
 Code Reuse
 ----------
@@ -33,8 +32,7 @@ This kind of *white box reuse*, involves a lot of code inspection and a
 lot of small modifications to the code. It is a tiresome and error prone
 process. You are going to need all the help you can get.
 
-There are some important features for code comprehension and [code
-navigation](/content/navigating-through-vhdl-project-emacs-vs-sigasi)
+There are some important features for code comprehension and [code navigation](vhdl-emacs-mode-navigation-using-ctags-are-broken.html)
 that you will need in order to be efficient at reusing your legacy code.
 Then there is the act of modifying the code. There are three things I
 want to talk about: naming conventions, cleaning up code layout and code
@@ -87,7 +85,7 @@ even on the same line in a single file. If your script doesn’t have all
 VHDL scoping rules figured out, it won’t work.
 
 You’ve guessed what I’m about to say next: Sigasi HDT *solves* this
-problem. There’s a [two minute screencast](http://www.sigasi.com/screencast/rename) that
+problem. There’s a **two minute screencast**, [/screencasts/rename_refactoring], that
 demonstrates our rename refactoring. We can do this because Sigasi HDT
 analyzes the entire VHDL project and tries to find the declaration for
 every name it encounters.

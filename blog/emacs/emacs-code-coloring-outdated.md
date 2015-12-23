@@ -8,7 +8,7 @@ tags:
   - Emacs
   - VHDL
 ---
-In my series of how Sigasi is [better-emacs-vhdl-mode], I want to talk about code coloring.
+In my series of how Sigasi is [index], I want to talk about code coloring.
 
 ## Syntax Highlighting
 
@@ -29,7 +29,7 @@ to work, you need to parse and analyse the file. Short configuration
 files and regular expressions work great for syntax highlighting, but
 they fail for semantic highlighting.
 
-![Sigasi’s Semantic Highlighting](semantic_highlight.png)
+![Sigasi’s Semantic Highlighting](images/semantic_highlight.png)
 
 ## Fakin’ It
 
@@ -48,7 +48,7 @@ code coloring right. Signals end in `_s`, datatypes end in
 environment of your own code. But it fails miserably when you have to
 inspect or reuse somebody else’s code.
 
-![Emacs VHDL mode Mimics Semantic Highliging](emacs_highlight.png)
+![Emacs VHDL mode Mimics Semantic Highliging](images/emacs_highlight.png)
 
 ## Regex
 

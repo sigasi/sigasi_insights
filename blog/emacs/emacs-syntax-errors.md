@@ -8,7 +8,7 @@ tags:
   - Emacs
   - VHDL
 ---
-Here is a new example of why Sigasi is [better-emacs-vhdl-mode]: syntax checking.
+Here is a new example of why Sigasi is [index]: syntax checking.
 
 In Emacs VHDL mode, there is no built-in syntax checker. This design
 decision was perfectly reasonable in the early 1990’s, when the Emacs

@@ -9,7 +9,7 @@ tags:
   - VHDL
   - Screencast
 ---
-In my series of how Sigasi is [better-emacs-vhdl-mode], we want to demonstrate that *Emacs VHDL mode* is becoming
+In my series of how Sigasi is [index], we want to demonstrate that *Emacs VHDL mode* is becoming
 outdated. I do this by comparing relevant and technical features of the
 Emacs VHDL mode and Sigasi.
 

@@ -37,9 +37,9 @@ of this article.
 
 ## Emacs
 The use of libraries is not supported in Emacs. From the
-<a href="/content/vhdles-mode-major-mode-editing-vhdl-code#makefile">documentation</a>:
+<a href="http://www.sigasi.com/content/vhdles-mode-major-mode-editing-vhdl-code#makefile">documentation</a>:
 
-> Limitations: Only library units and dependencies within the <a href="/content/work-not-vhdl-library">current library</a> are considered. Makefiles for designs that span multiple libraries are not (yet) supported.
+> Limitations: Only library units and dependencies within the [current library](/tech/work-not-vhdl-library.html) are considered. Makefiles for designs that span multiple libraries are not (yet) supported.
 
 ## Sigasi
 Sigasi HDT has supported libraries since the beginning. Since november
@@ -48,6 +48,7 @@ file in your project:
 To encourage the use of VHDL libraries to organize your projects. We now
 clearly mark each VHDL file and folder with the name of the library they
 belong to.
+
 ![](images/project_explorer_library_decorator.png)
 
 It is unlikely that Emacs users will use VHDL libraries. They are
