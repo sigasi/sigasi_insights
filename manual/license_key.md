@@ -185,7 +185,7 @@ If your floating license server does not function properly, try the following st
 * Some users reported that specifying an arbitrary absolute path for the Sigasi daemon on Windows (e.g. `DAEMON sigasi C:\\sigasi.exe port=27021`) does not work. It only works if the sigasi daemon is in the `C:\Sigasi` folder.
   Other users have reported that you are *not* allowed to have the directory name being the same as the daemon name. For example: `c:\flexlm\sigasi\sigasi.exe` is invalid, but `c:\flexlm\vhdl_editor\sigasi.exe` works fine.
 * Make sure the environment variable is correct: SIGASI_LM_LICENSE_FILE=<port number>@<servername>
-* Verify that your server meets the [minimal system requirements](faq#what-are-the-system-requirements). Contact us for options if it does not.
+* Verify that your server meets the [/faq#what-are-the-system-requirements]. Contact us for options if it does not.
 * You can easily check the status of your license via the License Key preference page : **Preferences > VHDL > License Key**. At the bottom of this preference page you can see the type and expiration date of your license.
 
 If the steps above do not help, feel free to [contact us](mailto:support@sigasi.com) and send us a **screenshot of the license dialog** with the error message.

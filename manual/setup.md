@@ -104,5 +104,5 @@ updates at any time by clicking the
 ![Update icon](/images/icons/updatesavailableicon.png)-icon in the status bar
 at the bottom of the screen.
 
-Consult the [troubleshooting chapter](troubleshooting#ts) if the update
+Consult the [trouble#ts-updates] if the update
 does not start automatically.

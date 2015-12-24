@@ -64,7 +64,7 @@ reflinks:
 # editions and languages
     todo:
         title: "[Not Documented Yet]"
-        url: "todo_.html"
+        url: "/todo_.html"
     doc:
         title: "[Only in Sigasi Doc]"
         url: "editions.html#doc"

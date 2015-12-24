@@ -15,9 +15,21 @@ build: NOCAPS
 	rm -Rf _gh-pages/*
 	cp -R _build/* _gh-pages
 
-serve:
+server.PID:
+	{ python -m urubu serve & echo $$! > $@; } 
+
+serve: server.PID
 	@echo 'http://localhost:8000'
-	python -m urubu serve
+
+stop: server.PID
+	kill `cat $<` && rm $<
+
+# linkchecker can be installed from http://wummel.github.io/linkchecker/ (or sudo dnf install linkchecker)
+dolinkchecker:
+	@echo Checking links at 'http://localhost:8000'
+	linkchecker -Fhtml/utf-8/linkchecker_result.html  "http://localhost:8000/" && "All links OK" || echo "Broken links found"
+
+linkchecker: serve dolinkchecker stop
 
 clean:
 	rm -Rf _build

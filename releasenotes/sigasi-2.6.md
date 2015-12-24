@@ -9,7 +9,7 @@ We are happy to present you Sigasi 2.6. This release brings tighter
 integration between components and entities. Two important features,
 **Search** and **Rename**, now take the component/entity-relationship
 into account. Another highlight is that Sigasi 2.6 is now fully
-compatible with the newly released [**Eclipse Juno** (4.2)](www.eclipse.org/juno)
+compatible with the newly released [**Eclipse Juno** (4.2)](http://www.eclipse.org/juno)
 As usual we also worked on several other improvements and bugfixes.
 
 Components and their matching enties

@@ -112,7 +112,7 @@ The libraries view shows the library mapping of the design units in all
 projects. You can use it to navigate to a particular design unit in your
 project. When you double click on a file, the file opens in the Editor
 view. If you right-click a file, you see the *context menu* which offers
-extra commands for [library mapping](libraries#libraries-mapping) .
+extra commands for [libraries#libraries-mapping].
 
 If you enable the **Link with Editor** button
 ![](/images/icons/linkprojectexplorer.png), the Library view will
