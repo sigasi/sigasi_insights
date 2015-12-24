@@ -33,7 +33,7 @@ As some of you know, I love to complain, but I also try to be helpful. So I'm di
 
 ## IEEE
 
-When I said that metacomments are not standardized, I lied. The <a href="<a href="http://ieeexplore.ieee.org/servlet/opac?punumber=9308 ">VHDL RTL standard</a> defines two (and only two) metacomments:
+When I said that metacomments are not standardized, I lied. The [VHDL RTL standard](http://ieeexplore.ieee.org/servlet/opac?punumber=9308) defines two (and only two) metacomments:
 
 ```vhdl
 -- RTL_SYNTHESIS OFF

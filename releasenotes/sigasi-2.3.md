@@ -59,7 +59,7 @@ when you open files on the command line. If you specify a new file on
 the command line, Sigasi will now create it for you.
 
 This feature makes enables you to configure Sigasi as default editor for
-other EDA tools ([documentation](/doc/2.3.0/command_line)).
+other EDA tools ([/manual/opening]).
 
 ![You can now configure the line number in other tools (e.g. Quartus)](2.3/quartuscommandlineannotated.png "You can now configure the line number in other tools (e.g. Quartus)")
 
@@ -88,7 +88,7 @@ projects will be cleaned automatically after this update.*
 
 ### Bugfixes
 
--   ticket 1931 : [Mark error for signal declaration in process](/forum/feature-request-signal-declarations-not-allowed-processdeclarativepart)
+-   ticket 1931 : Mark error for signal declaration in process
 -   ticket 1716 : Exception when deleting projects
 -   ticket 1887 : Support implicitly declared IO and string functions
 -   ticket 1966 : Cannot open some files in project anymore

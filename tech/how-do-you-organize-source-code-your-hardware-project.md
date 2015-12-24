@@ -16,9 +16,9 @@ In upcoming blog posts, I will give examples of some existing conventions on how
 
 Read the follow-up posts:
 
-* How to organize source code? <a href="/node/237">Learn from Java.</a>
+* How to organize source code? [how-organize-source-code-learn-java]
 
 Coming up:
 
 * How to organize source code? Learn from OpenCores.
-* How to organize source code? Learn from Gaisler Research and LEON SPARC.
+* How to organize source code? [/blog/learning-leon3grlib].

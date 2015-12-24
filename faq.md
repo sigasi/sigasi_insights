@@ -146,7 +146,7 @@ If you cannot see the problem decorators or library decorators in the Project Ex
 	* **Window > Preferences > General > Appearance > Label Decorations > Sigasi Problem Decorator**
 	* **Window > Preferences > General > Appearance > Label Decorations > Library Decorator**
 
-##  I get lots of errors in files that are not even really a part of my project. Can I hide them?
+##  I get lots of errors in files that are not even really a part of my project. Can I hide them? {: #junk-files}
 
 Legacy projects tend to accumulate files that are no longer needed in the projects. These files are still on your disk, or even in your revision control system, but the scripts don't feed them to the simulator or to the synthesis tools any more. These junk files can accumulate over time.
 
@@ -216,7 +216,7 @@ As you design, you put your code through a funnel: first Sigasi finds the first 
 
 ![](images/screenshots/funnel_small.png)
 
-If you want to check more errors, enable the [integration with external compilers](/manual/tools#Save Time Compilation)
+If you want to check more errors, enable the [/manual/tools#Save-time Compilation]
 
 ## How do I increase the heap size for Eclipse?
 
@@ -232,7 +232,7 @@ This sets the maximum heap size to 1400 MB. If you system has plenty of memory, 
 
 ## How can I update Sigasi?
 
-If you run Sigasi as a **standalone application**, the automated update system will [periodically check for updates](setup#Software updates).
+If you run Sigasi as a **standalone application**, the automated update system will periodically check for [/manual/setup#Software updates].
 
 If the updates are not automatically fetched from our update server you are probably behind a **firewall** or **proxy server**. You can configure Sigasi's proxy settings in **Window > Preferences > General > Network connections**. If you can not add a firewall exception for our update site, the fallback solution is to [download](http://www.sigasi.com/download) the complete application from our website. You can completely replace your old installation; all settings are stored in your workspace (the default is `workspaceSigasi` in your home directory).
 

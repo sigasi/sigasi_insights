@@ -8,7 +8,6 @@ content:
     - news
     - tech
     - screencasts
-    - content
 ---
 
 

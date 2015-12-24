@@ -86,7 +86,7 @@ coding style rules.
 Discover more about [customer linting rules](http://www.sigasi.com/custom-linting).
 
 If your company has a set of coding rule and you need tool support, we
-can implement your coding rules at minimal cost. [Read more](/vhdl-lint)
+can implement your coding rules at minimal cost. [Read more](http://www.sigasi.com/vhdl-lint)
 and contact us to discuss your requirements.
 
 
@@ -171,7 +171,7 @@ has the same problem of not being standardized by IEEE. Contrary to the
 packages above, there is no consensus on how to replace this package.
 Sigasi flags this package as **Non-standard package**.
 
-Read more in [this blog post](/content/deprecated-ieee-libraries).
+Read more in [/tech/deprecated-ieee-libraries].
 
 ### Incomplete Port Maps and Generic Maps
 

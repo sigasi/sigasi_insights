@@ -10,7 +10,7 @@ tags:
   - linting
   - VHDL
 ---
-[Sigasi Lint](/vhdl-lint) performs static analysis for VHDL code in order to find VHDL code <a href="http://en.wikipedia.org/wiki/Lint_(software)">lint</a>. The built in VHDL linter will issue warning when you use certain suspicious VHDL constructions. While your code does not violate the VHDL syntax, there might be a problem with your code.
+[Sigasi Lint](http://www.sigasi.com/vhdl-lint) performs static analysis for VHDL code in order to find VHDL code <a href="http://en.wikipedia.org/wiki/Lint_(software)">lint</a>. The built in VHDL linter will issue warning when you use certain suspicious VHDL constructions. While your code does not violate the VHDL syntax, there might be a problem with your code.
 
 ## "Others"
 
@@ -32,4 +32,4 @@ We have a lint check that warns about this, even if you use constants (or some s
 
 There are more lint rules available, and we can implement your coding rules in Sigasi Lint for you. 
 
-[Learn more about Sigasi Lint](/vhdl-lint)
+[Learn more about Sigasi Lint](http://www.sigasi.com/vhdl-lint)

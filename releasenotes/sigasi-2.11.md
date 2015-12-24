@@ -56,7 +56,7 @@ Bugfixes
 --------
 
 -   ticket 2287 : `vlib` executable in exported Makefile is now configurable
--   [ticket 2361](/node/1928) : autocomplete for entity instantiations from another library
+-   ticket 2361 : autocomplete for entity instantiations from another library
 
 Download/Update
 ---------------

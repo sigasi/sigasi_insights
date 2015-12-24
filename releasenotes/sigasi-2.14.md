@@ -26,13 +26,7 @@ types*, …
 External files
 --------------
 
-We simplified the way we deal with
-[*external*](/doc/2.14.0/opening_files#files-external) VHDL files. These
-are individual files that are not part of a Sigasi project. Before
-Sigasi 2.14 we openend external files in a special *“External
-Files”-project*, which was a bit of an awkward workaround. In Sigasi
-2.14 we now simply open external files without a project, just like you
-would expect from a “simple” editor (like Emacs, Vi, Notepad++, Ultraedit,…).
+We simplified the way we deal with [/manual/opening#files-command-line] VHDL files. These are individual files that are not part of a Sigasi project. Before Sigasi 2.14 we openend external files in a special *“External Files”-project*, which was a bit of an awkward workaround. In Sigasi 2.14 we now simply open external files without a project, just like you would expect from a “simple” editor (like Emacs, Vi, Notepad++, Ultraedit,…).
 
 ![External file](2.14/external_file.png "External file")
 

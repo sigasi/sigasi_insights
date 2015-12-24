@@ -38,7 +38,7 @@ you save a your file.
 Both state machines and block diagrams can now be exported to [scalable vector graphics (SVG)](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) This enables you to use high quality images to your (printed) documentation.
 It also allows you to do some post-processing of the graphical properties.
 
-[Example file](/sites/www.sigasi.com/files/example.svg)
+[Example file](/releasenotes/2.30/example.svg)
 
 
 ## New Rule checks \[VHDL, Premium Desktop\]

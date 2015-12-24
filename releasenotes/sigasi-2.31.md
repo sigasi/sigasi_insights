@@ -20,7 +20,7 @@ When you add new generics or ports to an entity declaration, you can now use the
 
 ### Quickfix capitalization of identifiers \[Premium Desktop\]
 
-In [Sigasi 2.30](/updates/sigasi-2.30) we introduced a new style check to verify a consistent use of uppercase and lowercase letters in VHDL identifiers. This release brings a quickfix to automatically change the capitalization of an identifier to match its declaration. 
+In [sigasi-2.30] we introduced a new style check to verify a consistent use of uppercase and lowercase letters in VHDL identifiers. This release brings a quickfix to automatically change the capitalization of an identifier to match its declaration. 
 
 ![Quickfix capitalization of identifiers](2.31/quick-fix-capitalization.png "Quickfix capitalization of identifiers")
 

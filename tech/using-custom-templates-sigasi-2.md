@@ -9,7 +9,7 @@ tags:
   - hdt-2.0
   - templates
 ---
-In a previous blog post, [Using Autocomplete Templates in Sigasi HDT](using-autocomplete-templates-sigasi-2), I introduced **autocomplete templates** in Sigasi 2
+In a previous blog post, [using-autocomplete-templates-sigasi-2], I introduced **autocomplete templates** in Sigasi 2
 and demonstrated how to use the pre-defined templates. In this post I'll
 explain how to customize these templates and how to create your own.
 Chances are high that the pre-defined templates slightly differ from
@@ -20,8 +20,8 @@ Edit existing templates
 -----------------------
 
 To demonstrate the power of custom templates I will tailor the
-`process`-template of the example in [my previous post](using-autocomplete-templates-sigasi-2) to a
-different style. In [my previous post](using-autocomplete-templates-sigasi-2) I demonstrated how to
+`process`-template of the example in my previous post to a
+different style. In my previous post, I demonstrated how to
 replace "rst" by "reset" and "clk" by "clock" in the template editing
 session. If all reset signals in my design are called "reset" instead of
 "rst" (and "clock" instead of "clk"), it would be better to modify the

@@ -5,7 +5,7 @@ pager: true
 date: 2014-02-25
 ---
 
-The Sigasi 2.20 release brings the first official [**Sigasi Premium**](/sigasi-premium) release and numerous improvements to **Sigasi Pro**.
+The Sigasi 2.20 release brings the first official **Sigasi Premium** release and numerous improvements to **Sigasi Pro**.
 
 Sigasi Pro
 ----------

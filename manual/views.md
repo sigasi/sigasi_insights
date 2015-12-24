@@ -84,7 +84,7 @@ When you **double-click** an object in the hierarchy, the Editor view is updated
 
 Use the **instantiations** filter ![](/images/icons/instantiation.png), to hide everything except instantiations and structural statements are shown.
 
-You can **launch a simulation** with the ![](/images/icons/run_exc.gif) button, if you first set up an [external simulator](/integration).
+You can **launch a simulation** with the ![](/images/icons/run_exc.gif) button, if you first set up an [tools#Launch simulator].
 
 The Hierarchy View also offers an action **Select required files**, which selects all design files that are part of the current hierarchy, in the project explorer. This allows you to easily perform the same action on all files in the hierarchy. E.g. team commands, ... [premium]
 

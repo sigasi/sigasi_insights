@@ -17,4 +17,4 @@ Of course, he wanted his students to simulate before they synthesize. I thought 
 
 I created this module in about an hour and after some more minor modifications, I decided to publish it for everybody to use.
 
-You can <a href="resources/display_sigasi.tgz">download the VHDL source code</a> for this project and use it under the conditions of the <a href="http://www.opensource.org/licenses/bsd-license.php">BSD License</a>. (<a href="/contact">Contact us</a> if you need a different license.)
+You can <a href="resources/display_sigasi.tgz">download the VHDL source code</a> for this project and use it under the conditions of the <a href="http://www.opensource.org/licenses/bsd-license.php">BSD License</a>. ([contact-us] if you need a different license.)

@@ -12,7 +12,7 @@ State Machine Navigation
 
 We introduce a new, power navigation feature for **finite state machines** (FSMs) in VHDL.
 If you press **Ctrl** and **click** on the **name of a state**. You jump directly to the relevant *when* part of your *case statement*. There is
-a [short screencast](/screencast/power-navigation-vhdl-state-machines) to show how it works.
+a screencast, [/screencasts/navigation], to show how it works.
 
 ![Open Matching When Clause (Ctrl-click)](2.10/open_matching_when.png "Open Matching When Clause (Ctrl-click)")
 
@@ -31,8 +31,7 @@ Avoiding full rebuilds
 
 We have added extra intelligence to avoid full rebuilds. In two
 important cases, the older versions of Sigasi triggered unnecessary full
-rebuilds: (1) while the user is [mapping VHDL
-libraries](/doc/2.9.0/libraries) or (2) if other EDA tools write and
+rebuilds: (1) while the user is mapping VHDL [/manual/libraries] or (2) if other EDA tools write and
 delete binary files in the project directory. The new version makes an
 extra effort to avoid full rebuilds, saving you time.
 
@@ -43,23 +42,20 @@ Other New and Noteworthy Improvements
 
 -   Start `vsim` with `modelsim.ini` as parameter when it exits in the
     root folder of the project.
--   Code folding for blocks ([ticket
-    2332](http://www.sigasi.com/content/code-folding#comment-1879)).
--   Avoid unnecessary *clean builds* when closing [external
-    files](http://www.sigasi.com/doc/latest/opening_files#files-external) .
+-   Code folding for blocks (ticket 2332)).
+-   Avoid unnecessary *clean builds* when closing external files.
 -   If the `vcom` compiler takes too long, you can terminate the `vcom`
     process by pressing the stop icon in the progress view.
--   Better CSV export when a project depends on other projects ([ticket
-    2284](/forum/csv-file-export-referenced-projects)).
+-   Better CSV export when a project depends on other projects (ticket 2284)).
 
 Bugfixes
 --------
 
 -   ticket 2323 : Fully qualified names in component instantiations
 -   ticket 2342 : Corrected scoping of end labels
--   [ticket 2321](/node/1866) : Errors in Custom VHDL Templates User
+-   ticket 2321 : Errors in Custom VHDL Templates User
     Interface when using the **Anywhere** context.
--   [ticket 2326](/forum/project-names-spaces-useful-know) : Display
+-   ticket 2326 : Display
     spaces instead of `%20` in the search view
 -   ticket 2335 : Error when triggering quick-fix if certain uses
     clauses are used.

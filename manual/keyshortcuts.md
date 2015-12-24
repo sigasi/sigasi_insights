@@ -9,8 +9,7 @@ a number of actions that you perform quite often. At some point, you may
 feel that the GUI-based approach becomes too slow for these actions. For
 that reason, Sigasi provides a number of keyboard shortcuts. They are a
 great way to boost your productivity. A printable cheat sheet with [all
-shortcuts on one page is available on for
-download](/sites/www.sigasi.com/files/KeyboardShortcuts_0.pdf).
+shortcuts on one page is available on for download](/tech/resources/keyboard_shortcuts.pdf).
 
 In this chapter, we describe the available keyboard shortcuts.
 

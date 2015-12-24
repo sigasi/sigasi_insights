@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="508.0" height="239.57906">
+<!-- generated with Sigasi www.sigasi.com -->
+	<defs>
+		<g id="port">
+			<polygon points="0,0 0,5 5,2.5" style="stroke:none;stroke-width:0;fill:black;" />
+		</g>
+	</defs>
+	<!-- edges -->
+		<polyline points="213.0,146.07906,239.5,146.07906,239.5,140.67487,266.0,140.67487" style="fill:none;stroke:gray;stroke-width:1;stroke-linejoin:round" />
+		<polyline points="418.0,101.74154,492.5,101.74154" style="fill:none;stroke:gray;stroke-width:1;stroke-linejoin:round" />
+		<polyline points="15.5,146.07906,104.5,146.07906,104.5,94.579056,239.5,94.579056,239.5,111.47487,266.0,111.47487" style="fill:none;stroke:gray;stroke-width:1;stroke-linejoin:round" />
+		<circle cx="104.5" cy="146.07905242789565" r="2" style="stroke:black; stroke-width:0; fill:gray;"/>
+		<polyline points="15.5,146.07906,131.0,146.07906" style="fill:none;stroke:gray;stroke-width:1;stroke-linejoin:round" />
+		<polyline points="15.5,68.579056,239.5,68.579056,239.5,82.27487,266.0,82.27487" style="fill:none;stroke:gray;stroke-width:1;stroke-linejoin:round" />
+		<polyline points="15.5,196.57906,239.5,196.57906,239.5,169.87488,266.0,169.87488" style="fill:none;stroke:gray;stroke-width:1;stroke-linejoin:round" />
+		
+	<!-- Block work.testbench(STR) -->
+	<rect x="14.5" y="12.0" height="215.57906" width="479.0" rx="1.0" ry="1.0" style="stroke:black; stroke-width:1; fill:none;"/>
+	<text x="254.0" y="24.0" text-anchor="middle" style="font-size:9; font-family:sans-serif;">
+		<tspan font-weight="bold">work.testbench(STR)</tspan>
+	</text>
+	<line x1="14.5" y1="30.0" x2="493.5" y2="30.0" style="stroke:black;" />
+	<use xlink:href="#port" x="12.0" y="143.57906" />
+	<text x="20.0" y="143.57906" alignment-baseline="middle" text-anchor="start" style="font-size:8; font-family:sans-serif;">
+		<tspan>start</tspan>
+	</text>
+	<use xlink:href="#port" x="12.0" y="66.079056" />
+	<text x="20.0" y="66.079056" alignment-baseline="middle" text-anchor="start" style="font-size:8; font-family:sans-serif;">
+		<tspan>data_in</tspan>
+	</text>
+	<use xlink:href="#port" x="12.0" y="194.07906" />
+	<text x="20.0" y="194.07906" alignment-baseline="middle" text-anchor="start" style="font-size:8; font-family:sans-serif;">
+		<tspan>rst</tspan>
+	</text>
+	<use xlink:href="#port" x="491.0" y="99.24154" />
+	<text x="488.0" y="99.24154" alignment-baseline="middle" text-anchor="end" style="font-size:8; font-family:sans-serif;">
+		<tspan>data_out</tspan>
+	</text>
+	<!-- Block clock_inst -->
+	<rect x="132.0" y="120.579056" height="51.0" width="80.0" rx="1.0" ry="1.0" style="stroke:black; stroke-width:1; fill:none;"/>
+	<text x="172.0" y="132.57906" text-anchor="middle" style="font-size:9; font-family:sans-serif;">
+		<tspan font-weight="bold">clock_inst</tspan>
+	</text>
+	<line x1="132.0" y1="138.57906" x2="212.0" y2="138.57906" style="stroke:black;" />
+	<use xlink:href="#port" x="129.5" y="143.57906" />
+	<text x="137.5" y="146.07906" alignment-baseline="middle" text-anchor="start" style="font-size:8; font-family:sans-serif;">
+		<tspan>start</tspan>
+	</text>
+	<use xlink:href="#port" x="209.5" y="143.57906" />
+	<text x="206.5" y="146.07906" alignment-baseline="middle" text-anchor="end" style="font-size:8; font-family:sans-serif;">
+		<tspan>clk</tspan>
+	</text>
+	<!-- Block dut_instance -->
+	<rect x="267.0" y="55.57487" height="141.0" width="150.0" rx="1.0" ry="1.0" style="stroke:black; stroke-width:1; fill:none;"/>
+	<text x="342.0" y="67.574875" text-anchor="middle" style="font-size:9; font-family:sans-serif;">
+		<tspan font-weight="bold">dut_instance</tspan>
+	</text>
+	<line x1="267.0" y1="73.574875" x2="417.0" y2="73.574875" style="stroke:black;" />
+	<use xlink:href="#port" x="264.5" y="167.37488" />
+	<text x="272.5" y="169.87488" alignment-baseline="middle" text-anchor="start" style="font-size:8; font-family:sans-serif;">
+		<tspan>rst</tspan>
+	</text>
+	<use xlink:href="#port" x="264.5" y="138.17487" />
+	<text x="272.5" y="140.67487" alignment-baseline="middle" text-anchor="start" style="font-size:8; font-family:sans-serif;">
+		<tspan>clk</tspan>
+	</text>
+	<use xlink:href="#port" x="264.5" y="108.97487" />
+	<text x="272.5" y="111.47487" alignment-baseline="middle" text-anchor="start" style="font-size:8; font-family:sans-serif;">
+		<tspan>start</tspan>
+	</text>
+	<use xlink:href="#port" x="264.5" y="79.77487" />
+	<text x="272.5" y="82.27487" alignment-baseline="middle" text-anchor="start" style="font-size:8; font-family:sans-serif;">
+		<tspan>data_in</tspan>
+	</text>
+	<use xlink:href="#port" x="414.5" y="99.24154" />
+	<text x="411.5" y="101.74154" alignment-baseline="middle" text-anchor="end" style="font-size:8; font-family:sans-serif;">
+		<tspan>data_out</tspan>
+	</text>
+	<use xlink:href="#port" x="414.5" y="147.9082" />
+	<text x="411.5" y="150.4082" alignment-baseline="middle" text-anchor="end" style="font-size:8; font-family:sans-serif;">
+		<tspan>valid</tspan>
+	</text>
+</svg>

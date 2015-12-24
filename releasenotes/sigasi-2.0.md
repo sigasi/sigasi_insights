@@ -5,7 +5,7 @@ pager: true
 date: 2011-10-03
 ---
 
-This release marks the the start of Sigasi 2.0 Pro. You will be able to purchase licenses so that you can use all the features of Sigasi 2.0 for large projects too. The license mechanism is based on the well known FlexLM mechanism. Existing customers can [upgrade their current license free of charge](/faq/free-20-upgrade).
+This release marks the the start of Sigasi 2.0 Pro. You will be able to purchase licenses so that you can use all the features of Sigasi 2.0 for large projects too. The license mechanism is based on the well known FlexLM mechanism. Existing customers can upgrade their current license free of charge.
 
 For the Sigasi Pro release we worked hard on handling **large VHDL projects**. We optimized both memory use and speed through better algorithms, better caching and parallelized processing of VHDL files. Sigasi now delivers enhanced interactive navigation and editing for all projects.
 
@@ -19,8 +19,8 @@ Other improvements
 -   Code folding for packages
 -   Improved feedback when Sigasi Starter edition falls back to Baseline Mode
 -   Avoid clean build after library remapping
--   Show more info when the user double clicks on the [codometer](http://www.sigasi.com/faq/what-small-project)
--   Start RCP with 1.4 gigabyte [heap size](/faq/how-do-i-increase-heap-size-eclipse) by default
+-   Show more info when the user double clicks on the codometer
+-   Start RCP with 1.4 gigabyte heap size by default
 
 Bug fixes
 ---------

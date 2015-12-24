@@ -38,7 +38,7 @@ External Compilers
 If you have a simulator or lint tool installed, you can use this for two
 purposes:
 
-1.  [/manual/tools#Save Time Compilation]: Compile and
+1.  [/manual/tools#Save-time Compilation]: Compile and
     check your files each time you save. Any errors or warnings will
     show up in the file, on the line number of the problrem
 2.  [/manual/tools#Launch Simulator]: Start the

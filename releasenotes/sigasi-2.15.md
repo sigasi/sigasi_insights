@@ -31,8 +31,7 @@ Verilog: Save-time compilation
 In Sigasi 2.15, you can now add **Verilog support** to a project. This
 enables save-time compilation of your Verilog files with *Riviera Pro,
 ModelSim, QuestaSim and Isim*. Just like Sigasi Pro for VHDL, the
-Verilog support is [freely available for small
-projects](http://www.sigasi.com/faq/what-small-project).
+Verilog support is freely available for small projects.
 
 ![Verilog save-time compilation](2.15/vlog.png "Verilog save-time compilation")
 
@@ -55,11 +54,10 @@ markers.
 Starter edition: simpler rules
 ------------------------------
 
-We simplified the way we decide if your project is
-[small](/faq/what-small-project). Instead of counting the number of
+We simplified the way we decide if your project is small. Instead of counting the number of
 statements, we just measure the file size of HDL (VHDL and Verilog)
 files in your projects. If the total size is less than 32 kB, the
-[Starter Edition](/sigasi-starter-edition) will have all features of
+Starter Edition will have all features of
 Sigasi Pro enabled. This is usually slightly more than the old criterium
 of 200 statements.
 

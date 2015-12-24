@@ -10,12 +10,12 @@ tags:
   - howto
 ---
 
-As discussed in a [previous article](how-organize-your-vhdl-hardware-projects-sigasi), you
+As discussed in [how-do-you-organize-source-code-your-hardware-project], you
 can organize your VHDL files in many ways in Sigasi. The three *recommended ways* are:
 
-1. [No organization](/content/how-organize-your-vhdl-hardware-projects-sigasi)
+1. [no-organization]
 2. One design in one folder (described in this article)
-3. [Aggregation of reusable projects](/content/organizing-vhdl-project-one-ip-block-project)
+3. [one-ip-block-project]
 
 This article deals with the "one design – one folder" way of organizing
 a project. The basic idea is that all of the files for your new hardware
@@ -83,7 +83,7 @@ Building your project
 Make sure your project is set to build automatically: **Project &gt; Build Automatically**.
 If you have VHDL files in the project folder that are not really a part
 of the folder, you should unmap them from your VHDL libraries. Read more
-about [junk files](/faq/junk-files). Your project should not have any
+about [/faq#junk-files]. Your project should not have any
 errors (red markers). If it does, try to figure out what went wrong: Is
 it a legacy junk file? Is there a bug in your VHDL code? Did you forget
 to add a library?
@@ -119,4 +119,4 @@ We also recommended it for small and moderate sized projects:
 
 If you have a six or more separate libraries and IP cores, or if your
 files are stored in locations across your hard drives or network drives,
-we recommend you use [an aggregation of reusable projects](/content/organizing-vhdl-project-one-ip-block-project).
+we recommend you use [one-ip-block-project].
