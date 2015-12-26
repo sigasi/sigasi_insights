@@ -79,6 +79,58 @@ Sigasi features, you should set up a proper project.
 Setting up Sigasi as Default Editor
 -----------------------------------
 
+### Windows
+
+To configure Sigasi as default VHDL editor in Windows:
+
+* Find a VHDL file in the File Explorer
+* Right-click and select **Open with > Choose default program…**
+  ![](images/windows_1.png)
+* Next click the **Browse** button and select the Sigasi executable (`<path to Sigasi>/sigasi.exe`)
+  ![](images/windows_2.png)
+* Next Sigasi will appear in the list of programs
+* Verify that **"Always use the selected program to open this kind of file"** is enabled
+* Confirm with **OK**
+
+Repeat this procedure for `*.vhd` files and for `*.vhdl` files.
+
+### Linux
+
+#### KDE
+
+* Find a VHDL file in Dolpin or Konqueror
+* Right-click and select **Open with > Other…**
+* Enter the path of the Sigasi executable (or use the browse button)
+* Click the **Remember application association for this type of file** so that all other VHDL files will also get opened with Sigasi.
+* Click **OK**
+
+![Sigasi as default editor in KDE](images/kde.png)
+
+#### Gnome
+
+* Find a VHDL file in Nautilus
+* Right-click and select **Open with > Other Application…**
+*  In Use a custom command: Enter the path of the Sigasi executable (or use the **browse** button)
+* Click the **Remember this appliation for "VHDL document" files** so that all other VHDL files will also get opened with Sigasi.
+* **Click Open**
+
+![Sigasi as default editor in Gnome](images/gnome.png)
+
+### Mac OS X
+
+When I double-click a VHDL file, I want it to open with my favorite VHDL editor. Sigasi Pro, obviously.
+
+Here is how to set this up in Mac OS X:
+
+* Find a VHDL file in the Finder
+* Right-click and select **Get Info**
+* Select **Open with > Other…** and find your Sigasi Pro application
+* Click **Change All…** so that all other VHDL files will also get opened with Sigasi.
+
+Repeat this procedure for `*.vhd` files and for `*.vhdl` files.
+
+![Setting the default application for VHDL files](images/default_application_for_mac.png)
+
 ### Altera Quartus II
 
 In Altera Quartus II, open the preferences page in **Tools \> Options \>
