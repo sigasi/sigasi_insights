@@ -230,7 +230,7 @@ This sets the maximum heap size to 1400 MB. If you system has plenty of memory, 
 **Note**: If your `eclipse.ini` already contains these arguments, you should not append these parameters again, but instead modify the existing values. If `-vmargs` is there already, but `-Xmx1400m` is not; you should add `-Xmx1400m` after the existing `-vmargs`.
 **Note**: If you run the stand alone version of Sigasi Studio, this settings file is called `sigasi.ini` instead of `eclipse.ini`
 
-## How can I update Sigasi?
+## How can I update Sigasi? {#update}
 
 If you run Sigasi as a **standalone application**, the automated update system will periodically check for [/manual/setup#Software updates].
 

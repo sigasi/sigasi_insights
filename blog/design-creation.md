@@ -8,6 +8,54 @@ tags:
   - Design creation
   - VHDL
 ---
-<div class="content">
-<p>Sigasi Pro helps electronics engineers to create their hardware designs faster and with less errors. </p>	<p>Writing <span class="caps">VHDL</span> is cumbersome and error prone. <span class="caps">VHDL</span> is extremely <strong>verbose</strong> (you need a lot of text to express even simple things) and <strong>pedantic</strong> (even small errors will cause compiler or run-time errors). These two characteristics unnecessarily add complexity to digital design. They raise the bar for junior engineers learning <span class="caps">VHDL</span> and they lock up mental energy of senior engineers working on large digital circuits.</p>	<p>Sigasi Pro takes the weight off your shoulders on those two fronts. Its differentiating features are:	</p><ul><li>type-time error checking,</li>		<li>tool-assisted quick-fixes,</li>		<li>code snippet generation, based on the context.</li>	</ul><h2>Dealing with <span class="caps">VHDL</span>'s pedantry</h2>	<p><span class="caps">VHDL</span>'s pedantic syntax checking and data type system were a design decision. The idea was that complaining early would reduce the risk of missiles going bananas in mid air. Remember that <span class="caps">VHDL</span> started as project of the US Department of Defense! Junior designers take many write / compile / fix iterations to get to code and senior designers lose precious time proofreading their code before hitting the compile button.</p>	<p><span class="inline inline-left"><img src="http://www.sigasi.com/sites/www.sigasi.com/files/images/write-inspect-fix.img_assist_custom-350x244.png" alt="Write-Inspect-Fix cycle" title="Write-Inspect-Fix cycle" class="image image-img_assist_custom-350x244 " width="350" height="244"/><span class="caption" style="width: 348px;"><strong>Write-Inspect-Fix cycle</strong></span></span> <span class="inline inline-right"><img src="http://www.sigasi.com/sites/www.sigasi.com/files/images/write-compile-fix.img_assist_custom-350x262.png" alt="Write-Compile-Fix cycle" title="Write-Compile-Fix cycle" class="image image-img_assist_custom-350x262 " width="350" height="244"/><span class="caption" style="width: 348px;"><strong>Write-Compile-Fix cycle</strong></span></span> <br/><br/><br/></p>	<p>Sigasi's solution to writing correct data is to shorten the feedback loop. As soon as an engineer types a few characters, the ultra-fast built-in <span class="caps">VHDL</span> parser kicks in. Much like a spell checker in word processos, Sigasi marks errors in the code only seconds after they arise. We call this <em>type-time</em> error checking.</p>	<p><span class="inline inline-center"><img src="http://www.sigasi.com/sites/www.sigasi.com/files/images/undeclared_signal_0.png" alt="Undeclared signal: error is marked as soon as the assignment is written" title="Undeclared signal: error is marked as soon as the assignment is written" class="image image-_original " width="254" height="34"/><span class="caption"><strong>Undeclared signal: error is marked as soon as the assignment is written</strong></span></span></p>	<p>The type-time compiler has to be very fast, so it does not perform a full analysis. In order to provide even more feedback about your code, Sigasi uses an external compiler for a full analysis. The external compiler is called as soon as you <em>save</em> the file, which is still a lot sooner than with a traditional flow.</p>	<p>Watch this <a href="/screencast/save-time-compilation-vhdl-code">video about catching errors</a> at type-time and save-time.</p>	<h2>Dealing with <span class="caps">VHDL</span>'s verbosity</h2>	<p><span class="caps">VHDL</span> needs a lot of words to express something. That doesn't mean that you have to type all of those words. As any decent editor, Sigasi comes with lots of templates for often-used constructs. Unlike other tools, Sigasi also generates code dynamically, based on the design context. With a few keystrokes, you can instantiate a component.</p>	<ul><li><strong>easily accessible templates</strong>: just a few key strokes</li>		<li><strong>dynamic templates</strong> use your design to generate code snippets</li>		<li><strong>quick-fixes</strong>: fix common errors in two clicks</li>	</ul><p>Watch <a href="/screencast/create-testbench-sigasis-autocomplete-feature">this short video about how to write a <span class="caps">VHDL</span> testbench</a> using static templates, dynamic templates for instantiations, and quick-fixes.</p>	<h2>Simply a great editor</h2>	<p>In addition to these super advanced features, Sigasi's editor is simply great. Based on the industry standard Eclipse platform, Sigasi's editor includes all standard features:</p>	<ul><li>block select a.k.a. column mode editing [<a href="/screencast/block-select">video</a>] [<a href="/doc/latest/editing#block-select">read more</a>]</li>		<li>code folding [<a href="/content/code-folding">read more</a>]</li>		<li>multi-screen support</li>		<li>configurable key bindings</li>		<li>and much more&#8230;</li>	</ul><p>And some not-so-standard features:</p>	<ul><li>Quick diff shows differences between the text on screen and the file on disk</li>		<li>Built-in local history to compare the file to the version of yesterday, 10:30.</li>		<li>Integration with all major version control systems</li>		<li>Bookmarks to keep track of line numbers in your files</li>		<li>and more&#8230;</li>	</ul>  <div id="book-navigation-1518" class="book-navigation">    <ul class="menu"><li class="leaf first last"><a href="/content/eclipse-keyboard-tricks-editing-code">Eclipse keyboard tricks: Editing code</a></li></ul>        <div class="page-links clear-block">              <a href="/content/work-not-vhdl-library" class="page-previous" title="Go to previous page">&#8249; WORK is not a VHDL Library</a>                    <a href="/knowledge-base" class="page-up" title="Go to parent page">up</a>                    <a href="/content/eclipse-keyboard-tricks-editing-code" class="page-next" title="Go to next page">Eclipse keyboard tricks: Editing code &#8250;</a>          </div>      </div>  </div>
+Sigasi Pro helps electronics engineers to create their hardware designs faster and with less errors. 
 
+Writing VHDL is cumbersome and error prone. VHDL is extremely **verbose** (you need a lot of text to express even simple things) and **pedantic** (even small errors will cause compiler or run-time errors). These two characteristics unnecessarily add complexity to digital design. They raise the bar for junior engineers learning VHDL and they lock up mental energy of senior engineers working on large digital circuits.
+
+Sigasi Pro takes the weight off your shoulders on those two fronts. Its differentiating features are:
+* type-time error checking,
+* tool-assisted quick-fixes,
+* code snippet generation, based on the context.
+
+## Dealing with VHDL's pedantry
+
+VHDL's pedantic syntax checking and data type system were a design decision. The idea was that complaining early would reduce the risk of missiles going bananas in mid air. Remember that VHDL started as project of the US Department of Defense! Junior designers take many write / compile / fix iterations to get to code and senior designers lose precious time proofreading their code before hitting the compile button.
+
+![Write-Inspect-Fix cycle](images/write-inspect-fix.png)
+![Write-Compile-Fix cycle](images/write-compile-fix.png) 
+
+Sigasi's solution to writing correct data is to shorten the feedback loop. As soon as an engineer types a few characters, the ultra-fast built-in VHDL parser kicks in. Much like a spell checker in word processos, Sigasi marks errors in the code only seconds after they arise. We call this _type-time_ error checking.
+
+![Undeclared signal: error is marked as soon as the assignment is written](images/undeclared_signal_0.png)
+
+The type-time compiler has to be very fast, so it does not perform a full analysis. In order to provide even more feedback about your code, Sigasi uses an external compiler for a full analysis. The external compiler is called as soon as you _save_ the file, which is still a lot sooner than with a traditional flow.
+
+Watch this video about catching errors at type-time and save-time: [/screencasts/save_time_compilation]
+
+## Dealing with VHDL's verbosity
+
+VHDL needs a lot of words to express something. That doesn't mean that you have to type all of those words. As any decent editor, Sigasi comes with lots of templates for often-used constructs. Unlike other tools, Sigasi also generates code dynamically, based on the design context. With a few keystrokes, you can instantiate a component.
+
+* *easily accessible templates*: just a few key strokes
+* *dynamic templates* use your design to generate code snippets
+* *quick-fixes*: fix common errors in two clicks
+
+Watch "this short video about how to write a VHDL testbench":/screencast/create-testbench-sigasis-autocomplete-feature using static templates, dynamic templates for instantiations, and quick-fixes.
+
+## Simply a great editor
+
+In addition to these super advanced features, Sigasi's editor is simply great. Based on the industry standard Eclipse platform, Sigasi's editor includes all standard features:
+
+* block select a.k.a. column mode editing \[[/screencasts/block_selection_mode]\], \[[/manual/user_interface#block-select]\]
+* code folding \[[/manual/config#Folding]\]
+* multi-screen support
+* configurable key bindings
+* and much more...
+
+And some not-so-standard features:
+
+* Quick diff shows differences between the text on screen and the file on disk
+* Built-in local history to compare the file to the version of yesterday, 10:30.
+* Integration with all major version control systems
+* Bookmarks to keep track of line numbers in your files
+* and more...
