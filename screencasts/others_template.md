@@ -1,5 +1,5 @@
 ---
-title: "Create template for (others =&gt; 'X') "
+title: "Create template for (others => 'X')"
 layout: screencast 
 pager: false
 comments: false

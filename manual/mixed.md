@@ -26,10 +26,7 @@ Other supported features:
 * **Error reporting** of incorrect entity names, modules, ports, generics and parameters in instantiations in VHDL code.
 * VHDL **renames** are refused if they need changes in Verilog code.
 
-<a href="//fast.wistia.net/embed/iframe/526cjmykbv?popover=true" class="wistia-popover\[height=500,playerColor=7b796a,width=800\]"><img src="https://embed-ssl.wistia.com/deliveries/ebc10b260cf82fd861c64f335773a79c2a018d95.jpg?image_play_button=true&image_play_button_color=7b796ae0&image_crop_resized=200x125" alt="" /></a>
-
-<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js">
-</script>
+Screencast : [/screencasts/mixed_language_instantiation]
 
 ## Using two languages in Sigasi Pro
 
