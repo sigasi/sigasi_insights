@@ -53,10 +53,10 @@ In order to use a floating license, Sigasi Studio needs to know how to contact t
 In the Sigasi Studio, navigate to the **License Key** preference page via:
 **Window > Preferences > Sigasi > License Key** 
 
-Next enter "<port number>@<servername>" (for example: 5050@myserver.example.com) as license key in:  
+Next enter `<port number>@<servername>` (for example: `5050@myserver.example.com`) as license key in:  
 
 You can also set your license via an environment variable. Both `SIGASI_LM_LICENSE_FILE` and `LM_LICENSE_FILE` are supported.
-Note that if you want to the environment variable, you can not enter a path in the License Key preference page. The value on this page has priority over environment variables. 
+Note that if you want to use the environment variable, you can not enter a path in the License Key preference page. The value on this page has priority over environment variables. 
 
 Linux Example:
 ```
@@ -139,7 +139,7 @@ To get the license back (to check the licnese out), open the license dialog **He
 
 Similarly a floating Sigasi XL Doc addon license can be released via: **Help > Sigasi > Floating license > Release Sigasi Studio XL Doc Floating Licenses**.
 
-### How to avoid that Sigasi tries to check out a license?
+### How to block Sigasi Studio from checking out a license?
 
 If you have configured an environment variable with the location of a Flexnet license server, you can instruct Sigasi **not** to check out a license by setting the Sigasi Studio License key to `none`.
 
@@ -156,8 +156,8 @@ If your license key does not work, the first things to check are:
 * Has the license expired?
 * Did you copy the license string exactly as it was sent to you?
 * Did you accidently try to use a License Token as a license key?
-	A *License Token* is a 24 character string. License tokens must be converted to license keys before they can be used in Sigasi. You can convert your tokens at http://www.sigasi.com/activate-your-license-key.
-	A _License Key*  (or license file) looks like this:
+    * A *License Token* is a 24 character string. You can use your license token to [activate_key].
+    * A *License Key*  (or license file) looks like this:
 ```
 INCREMENT com.sigasi.hdt sigasi 2.0 18-nov-2012 uncounted \
         VENDOR_STRING="company:www.example.com;mac:10f2dd92c5ac;name:John \
@@ -188,4 +188,4 @@ If your floating license server does not function properly, try the following st
 * Verify that your server meets the [/faq#what-are-the-system-requirements]. Contact us for options if it does not.
 * You can easily check the status of your license via the License Key preference page : **Preferences > VHDL > License Key**. At the bottom of this preference page you can see the type and expiration date of your license.
 
-If the steps above do not help, feel free to [contact us](mailto:support@sigasi.com) and send us a **screenshot of the license dialog** with the error message.
+If the steps above do not help, feel free to [contact-us] and send us a **screenshot of the license dialog** with the error message.

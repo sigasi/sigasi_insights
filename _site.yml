@@ -30,6 +30,9 @@ reflinks:
     sigasi_com:
         url: http://www.sigasi.com/
         title: Sigasi Main Site
+    activate_key:
+        title: Activate Your License Key
+        url: http://www.sigasi.com/activate-your-license-key
     install_sigasi_plugin:
         url: http://www.sigasi.com/install-eclipse-vhdl-plugin
         title: Install Sigasi as Eclipse Plugin
