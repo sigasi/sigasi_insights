@@ -14,7 +14,7 @@ Most teams consist of more than one design engineer. The Sigasi Pro platform doe
 Features
 
 * [/tech/coding-styles]
-* [/screencasts/custom-lint]
+* [/screencasts/custom_linting]
 * [/tech/generate-vhdl-doxygen-documentation-sigasi]
 * [/manual/plugins#Revision Control Systems]
 * Code reviews
