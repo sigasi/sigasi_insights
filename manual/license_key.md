@@ -68,13 +68,13 @@ export SIGASI_LM_LICENSE_FILE=27000@flexnet.sigasi.com
 ### Download the FlexNet daemons
 
 * Linux:
-	* [Linux 64 bit](http://www.sigasi.com/sites/www.sigasi.com/files/flexnet/sigasi-flexnet-linux64.zip)
-	* [Linux 32 bit](http://www.sigasi.com/sites/www.sigasi.com/files/flexnet/sigasi-flexnet-linux32.zip)
+	* [Linux 64 bit](http://download.sigasi.com/flexnet/sigasi-flexnet-linux64.zip)
+	* [Linux 32 bit](http://download.sigasi.com/flexnet/sigasi-flexnet-linux32.zip)
 * Windows (Windows 7 or newer):
-	* [Windows 64 bit](http://www.sigasi.com/sites/www.sigasi.com/files/flexnet/sigasi-flexnet-win64.zip)
-	* [Windows 32 bit](http://www.sigasi.com/sites/www.sigasi.com/files/flexnet/sigasi-flexnet-win32.zip) (works on Windows Server 2003 too)
+	* [Windows 64 bit](http://download.sigasi.com/flexnet/sigasi-flexnet-win64.zip)
+	* [Windows 32 bit](http://download.sigasi.com/flexnet/sigasi-flexnet-win32.zip) (works on Windows Server 2003 too)
 * Solaris (on SPARC):
-	* [Solaris 64 bit](http://www.sigasi.com/sites/www.sigasi.com/files/flexnet/sigasi-flexnet-solaris64.zip)
+	* [Solaris 64 bit](http://download.sigasi.com/flexnet/sigasi-flexnet-solaris64.zip)
 
 ### Customize License Server settings
 
