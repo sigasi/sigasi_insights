@@ -12,4 +12,4 @@ There are powerful autocomplete templates for:
 * VHDL component declaration
 * VHDL instantiations of component or entity
 * signal declarations
-* [and much more](/manual/user_interface#Auto-complete and Content Assist)
+* [and much more](/manual/user_interface.html#auto-complete-and-content-assist)

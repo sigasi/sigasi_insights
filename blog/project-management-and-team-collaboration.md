@@ -23,4 +23,4 @@ Features
 	* Java
 	* C/C++
 	* Python
-	* [Tcl/Tk](/content/eclipse-tcl-support-sigasi)
+	* [Tcl/Tk](/tech/eclipse_tcl_support_in_sigasi.html)

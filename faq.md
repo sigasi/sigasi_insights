@@ -232,7 +232,7 @@ This sets the maximum heap size to 1400 MB. If you system has plenty of memory, 
 
 ## How can I update Sigasi? {#update}
 
-If you run Sigasi as a **standalone application**, the automated update system will periodically check for [/manual/setup#Software updates].
+If you run Sigasi as a **standalone application**, the automated update system will periodically check for [/manual/setup#software-updates].
 
 If the updates are not automatically fetched from our update server you are probably behind a **firewall** or **proxy server**. You can configure Sigasi's proxy settings in **Window > Preferences > General > Network connections**. If you can not add a firewall exception for our update site, the fallback solution is to [download](http://www.sigasi.com/download) the complete application from our website. You can completely replace your old installation; all settings are stored in your workspace (the default is `workspaceSigasi` in your home directory).
 
@@ -252,7 +252,7 @@ The log file contains no sensitive information about your organization. On some 
 ## Why is Sigasi trying to get through my firewall?
 There can be a number of reasons why Sigasi connects to the internet. 
 
-* Updates: Each time you start Sigasi, the program checks to see if there are new [updates](setup#Software updates) from our update website (currently located at http://download.sigasi.com). Sigasi downloads the updates in the background and, when done, it asks you if it can install them.
+* Updates: Each time you start Sigasi, the program checks to see if there are new [/manual/setup#software-updates] from our update website (currently located at http://download.sigasi.com). Sigasi downloads the updates in the background and, when done, it asks you if it can install them.
 * [Talkback](http://www.sigasi.com/sigasi-talkback) 
 * Other Plugins: Obviously, other plugins can also connect to the internet. Some examples are plugins for revision control or issue tracking, or the built-in Eclipse web browser.
 

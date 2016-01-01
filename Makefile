@@ -27,7 +27,7 @@ stop: server.PID
 # linkchecker can be installed from http://wummel.github.io/linkchecker/ (or sudo dnf install linkchecker)
 dolinkchecker:
 	@echo Checking links at 'http://localhost:8000'
-	linkchecker -Fhtml/utf-8/linkchecker_result.html --anchors --ignore-url="http://localhost:8000/tag/.*" --ignore-url="http://localhost:8000/tech/resources/doxygen-example/.*" "http://localhost:8000/" && "All links OK" || echo "Broken links found"
+	linkchecker -Fhtml/utf-8/linkchecker_result.html --anchors --ignore-url="http://localhost:8000/tag/.*" --ignore-url="http://localhost:8000/tech/resources/doxygen-example/.*" "http://localhost:8000/" && echo "All links OK" || echo "Broken links found"
 
 linkchecker: serve dolinkchecker stop
 

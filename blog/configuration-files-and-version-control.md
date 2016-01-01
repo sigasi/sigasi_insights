@@ -24,7 +24,7 @@ Sadly, in the EDA world this is usually not the case. This makes people hate eit
 
 Many EDA tools store project settings in either a Tcl or an XML based file format. In these file formats, the order of entries is usually not relevant. The way these files works is like this. When you start your EDA tool, the settings file is loaded. All settings are now stored in a data structure in memory. When you change settings, these changes are stored in that data structure. When a certain trigger occurs (you start synthesis, you exit the tool, ...) the settings file is generated from the data structure in memory. These generators know that the order of their output is not relevant for the tool's function, so they use data structures like unsorted "sets":http://en.wikipedia.org/wiki/Set_(computer_science) instead of sorted "lists":http://en.wikipedia.org/wiki/List_(computer_science). The result is that each time the data structure is saved (and thus generated from scratch), the output may be completely mangled. While it is still valid, and perhaps even identical to the original file, it is now a lot harder to detect if two files are equivalent. And if they are not equivalent, it is harder to find out what exactly has changed.
 
-![Two equivalent setting files might look different](unexpected_differences.png)
+![Two equivalent setting files might look different](images/unexpected_differences.png)
 
 Of course different tools use different mechanisms to write their setting files. Some tools only re-order settings if you have changed them. But, if you change a setting and then change it back to its original value, the resulting file will be changed. So you will have to look twice to check for equivalence. 
 

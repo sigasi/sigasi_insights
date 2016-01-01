@@ -102,4 +102,6 @@ reflinks:
     VETSMOD:
       title: VETSMOD
       url: /blog/vetsmod-get-better-feedback-your-vhdl-code-snippets.html
-
+    logfile:
+      title: "log file"
+      url: /faq.html#where-can-i-find-the-log-file
