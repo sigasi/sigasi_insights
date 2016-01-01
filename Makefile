@@ -34,8 +34,10 @@ linkchecker: serve dolinkchecker stop
 clean:
 	rm -Rf _build
 	rm -Rf _gh-pages
-urubu:
-	pip install --upgrade urubu
+
+dependencies:
+	pip install --upgrade urubu 
+	pip install linkchecker
 
 publish: build
 	# git subtree push --prefix _build origin gh-pages    
