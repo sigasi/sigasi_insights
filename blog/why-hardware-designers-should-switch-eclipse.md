@@ -11,7 +11,7 @@ tags:
   - VHDL IDE
   - whitepaper
 ---
-\[[pdf](whitepaper-Eclipse-2010-03-17.pdf)\]
+\[[pdf](resources/whitepaper-Eclipse-2010-03-17.pdf)\]
 
 ## Introduction {: id="introduction" name="introduction" }
 

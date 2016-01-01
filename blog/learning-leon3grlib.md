@@ -20,6 +20,6 @@ Some interesting questions are:
 <li>Which naming conventions could I use?
 </ul>
 
-In this webinar, Sigasi's founder and CEO, <em>Philippe Faes</em> will teach you how to navigate and understand complex hardware designs using <a href="/product">Sigasi HDT</a>. He will explain the basic structure of LEON3/GRLIB and point out the naming conventions used. 
+In this webinar, Sigasi's founder and CEO, <em>Philippe Faes</em> will teach you how to navigate and understand complex hardware designs using Sigasi HDT. He will explain the basic structure of LEON3/GRLIB and point out the naming conventions used. 
 
 This webinar is recommended for hardware designers and project managers working on SoCs or large digital designs. It starts on Wednesday, <a href="http://www.wolframalpha.com/input/?i=2010-02-17+15%3A00+Brussels">2010-02-17 at 15:00 CET</a> and it will take about 45 minutes.
