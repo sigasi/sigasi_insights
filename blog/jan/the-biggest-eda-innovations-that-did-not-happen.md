@@ -7,7 +7,7 @@ date: 2010-02-12
 tags: 
   - JanHDL
 ---
-In my <a href="http://www.sigasi.com/content/latest-eda-innovation-logic-synthesis">previous blog post</a>, I concluded that RTL synthesis was the latest of the all-time most important EDA innovations. Although it is more than 20 years old, nothing with a similar impact has happened since.
+In my previous blog post, [latest-eda-innovation-logic-synthesis], I concluded that RTL synthesis was the latest of the all-time most important EDA innovations. Although it is more than 20 years old, nothing with a similar impact has happened since.
 
 It's not that there was a lack of candidates. In the early nineties, several ideas and technologies seemed to have great potential. Personally, I was eager to repeat my great experience with RTL synthesis. Moreover, my company was basically selling design methodology, so we had a vested interest to stay at the forefront of innovation. Consequently, we were continuously watching out for the next big thing. But it didn't come. So here is my personal anti-list: the biggest EDA innovations that did not happen.
 

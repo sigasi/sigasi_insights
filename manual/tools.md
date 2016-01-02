@@ -329,11 +329,11 @@ Importing Xilinx Projects in Sigasi
 
 ### Vivado
 
-The process of importing a Xilinx Vivado project is explained on [Generating a Sigasi project from a Vivado project](http://www.sigasi.com/content/generating-sigasi-project-vivado-project)
+The process of importing a Xilinx Vivado project is explained in [/tech/generating-sigasi-project-vivado-project]
 
 ### ISE
 
-The process of importing a Xilinx ISE project is explained on [Importing a Xilinx ISE project in Sigasi](http://www.sigasi.com/content/importing-xilinx-ise-project-sigasi)
+The process of importing a Xilinx ISE project is explained in [/tech/importing-xilinx-ise-project-sigasi]
 
 Xininx Preferences
 ------------------

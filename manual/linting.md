@@ -235,8 +235,7 @@ enumerated. If the synthesis tool is set up to generate fault-tolerant
 hardware, the fallback state is the same as the reset state (for most
 synthesis tools). Check the manual of your synthesis tools and run some
 experiments. 
-For more information, see [this blog
-post](http://www.sigasi.com/content/can-you-do-without-others).
+For more information, see [/tech/vhdl-case-statements-can-do-without-others]
 
 ### Sensitivity List
 

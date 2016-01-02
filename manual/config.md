@@ -75,7 +75,7 @@ Read more information about [linting].
 
 # Language
 
-Eclipse is available in several languages, and you can install the language pack of your choice. Read more in this [support article](http://www.sigasi.com/content/installing-translations-eclipse)
+Eclipse is available in several languages, and you can install the language pack of your choice. Read more in this support article : [/tech/installing-translations-eclipse]
 
 # Keyboard shortcuts
 

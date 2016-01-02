@@ -127,8 +127,6 @@ project dependencies, right click the project (the one that uses the
 shared library) and select **Properties**. Next click **Project
 References** and mark the library project as referenced project.
 
-[Video demonstration](http://www.sigasi.com/screencast/project-dependencies-sigasi-hdt-20)
-
 # Using third party libraries {#libraries-third-party}
 
 Many projects use third party libraries. These can be added to the

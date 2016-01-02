@@ -261,7 +261,7 @@ There can be a number of reasons why Sigasi connects to the internet.
 ## Do you support block select (a.k.a. column editing mode)?
 You can enable and disable block editing with **Ctrl+Alt+A** or **Edit > Toggle Block Selection**
 
-Note that in many cases where you are used to using block editing (e.g. [instantiating an entity](http://www.sigasi.com/node/30)), you may not need it any more, thanks to intelligent code completion (see this [blog post](http://www.sigasi.com/node/91)).
+Note that in many cases where you are used to using block editing (e.g. [/screencasts/short_entity_component_instantiation]), you may not need it any more, thanks to intelligent code completion (see this blog post: [/blog/why-cant-hdl-designers-live-without-block-selection-mode]).
 
 
 ## What is this MouseFeed pop-up?

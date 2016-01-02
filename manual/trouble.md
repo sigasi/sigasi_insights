@@ -142,7 +142,7 @@ Any of the following information will help us help you:
 
 -   Steps to reproduce your problem
 -   Description of the expected behavior and the actual behavior.
--   A [VETSMOD](http://www.sigasi.com/vetsmod) code snippet.
+-   A [VETSMOD] code snippet.
 -   A screenshot
 -   The version number of your Sigasi tool: **Help > About Sigasi > Installation details** Note that the version number contains the date of the release. (For example, version `2.0.1.20110809…` was released on August 9, 2011.)
 -   The log file: **Help > Open Log**
