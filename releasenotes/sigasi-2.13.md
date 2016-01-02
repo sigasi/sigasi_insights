@@ -15,7 +15,7 @@ Today, Sigasi’s integration with Altera Quartus II graduates from its beta per
 
 Your Sigasi project will automatically listen to changes of the Quartus II project and if you add files in Sigasi, they will be added to your Quartus II project too.
 
-[See it in action](http://www.sigasi.com/screencast/sigasi-pro-integration-quartus-ii)
+See it in action : [/screencasts/sigasi_pro_integration_with_altera_quartus_ii]
 
 Other new and noteworthy improvements
 -------------------------------------
@@ -30,13 +30,12 @@ Other new and noteworthy improvements
 -   Standalone version: use `<HOME>/workspaceSigasi` by default
 -   Show name of instantiated item in outline and hierarchy view (in
     addition to label)
--   Support [multi-line assert statements in the
-    formatter](http://www.sigasi.com/forum/formatting-assert-statement)
--   [Better hover for aliases](http://www.sigasi.com/forum/feature-request-display-alias-information-hover)
+-   Support multi-line assert statements in the formatter
+-   Better hover for aliases
     ![Alias Hover](2.13/hoverofalias.png "Alias Hover")
 -   Updated Java Runtime Environment in stand-alone version to Java 7 update 17
--   Added a [dynamic variable to run configuration to query the toplevel name](http://www.sigasi.com/forum/hierarchy-view-0) :
-    ${vhdl\_toplevel}
+-   Added a dynamic variable to run configuration to query the toplevel name :
+    `${vhdl_toplevel}`
 
 Bugfixes
 --------

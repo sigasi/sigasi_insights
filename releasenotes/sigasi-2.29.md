@@ -49,7 +49,7 @@ You can now configure Cadence Incisive (NCSim) as [/manual/tools#save-time-compi
 
 ## Bugfixes
 
-* ticket 2840 : [Autocomplete for entity instantiations does not work well with upper case setting](http://www.sigasi.com/forum/bug-entity-instantiation-auto-complete)
+* ticket 2840 : Autocomplete for entity instantiations does not work well with upper case setting
 * ticket 3305 : Too much whitespace in entity instantiation autocomplete
 * ticket 3296 : Avoid empty lists errors when exporting PDF documentation
 * ticket 3304 : Incorrect array size warning for vectors in generics

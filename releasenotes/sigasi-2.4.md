@@ -64,7 +64,7 @@ Other new and noteworthy improvements
 
 ### Bugfixes
 
--   ticket 1967 : **Build problems** when file is changed outside of Sigasi (*ParallelResourceLoader: Resource load job didn’t return a result*) which resulted in all kinds of [strange errors](http://www.sigasi.com/forum/not-parsing-whole-project)
+-   ticket 1967 : **Build problems** when file is changed outside of Sigasi (*ParallelResourceLoader: Resource load job didn’t return a result*) which resulted in all kinds of strange errors
 -   ticket 1984 : Sigasi command line does not handle **relative paths** correctly
 -   ticket 1983 : **QuickFix for unused signals** does not remove associated comments and remove empty line
 

@@ -10,8 +10,7 @@ The Sigasi 2.16 release brings several enhancements and bug fixes.
 Constants in the Generics view
 ------------------------------
 
-The [Generics View](http://www.sigasi.com/doc/latest/gui#gui-generics-view) now also
-shows the actual values of constants in the selected hierarchy node.
+The [/manual/views#hierarchy] now also shows the actual values of constants in the selected hierarchy node.
 
 ![Constants in the Generics View](2.16/constantsingenericsview.png "Constants in the Generics View")
 

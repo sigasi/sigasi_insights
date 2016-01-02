@@ -16,7 +16,7 @@ Sigasi 2.9 contains a brand **new scoping framework**. This scoping
 framework is **core functionality** of Sigasi that links identifiers
 with the correct declaration. In the older versions, we had some
 problems with *“overloadable” names* and *record element names*. This
-made it very hard to fix certain bugs (such as [ticket 1196](http://www.sigasi.com/forum/generic-mapping-included-port-map-does-not-flag-error) and [ticket 1650](http://www.sigasi.com/forum/false-error-report-vhdl-code-each-choice-can-be-specified-only-once)).
+made it very hard to fix certain bugs.
 
 As you know, any given declaration has a certain *scope*; it is visible
 in certain places of your code and not visible in other places. The
@@ -77,15 +77,15 @@ Other new and noteworthy improvements
 
 ### Bugfixes
 
--   [ticket 2239](http://www.sigasi.com/forum/vhdl-packages-not-found-library-after-last-update) : Error markers not correctly updated after changes in other files
+-   ticket 2239 : Error markers not correctly updated after changes in other files
 -   ticket 2279 : Errors in VHDL files after non-VHDL files are touched in project
--   [ticket 1650](http://www.sigasi.com/forum/false-error-report-vhdl-code-each-choice-can-be-specified-only-once) : Character literals as enum literals are case sensitive
+-   ticket 1650 : Character literals as enum literals are case sensitive
 -   ticket 2255 : Formatting problem with concurrent statements
--   [ticket 2267](http://www.sigasi.com/forum/declaration-not-found-error-when-using-attributes-labels) : Unexpected error message on forward reference to label
--   [ticket 2272](http://www.sigasi.com/forum/bug-find-references-referenced-line-number-not-correct) : Line number of search references is one off
+-   ticket 2267 : Unexpected error message on forward reference to label
+-   ticket 2272 : Line number of search references is one off
 -   ticket 2280 : *Set as top level* action should only be shown for valid selections
--   ticket 2305 : Release floating license when Sigasi is restarted with **File &gt; Restart**
--   [ticket 1196](http://www.sigasi.com/forum/generic-mapping-included-port-map-does-not-flag-error) : Missing error marker when generic names are used in port list.
+-   ticket 2305 : Release floating license when Sigasi is restarted with **File > Restart**
+-   ticket 1196 : Missing error marker when generic names are used in port list.
 -   ticket 2186: Support incomplete type declaration
 
 Download/Update

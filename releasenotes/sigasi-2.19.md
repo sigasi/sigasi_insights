@@ -16,7 +16,9 @@ in Sigasi 2.19 you can now use a quickfix to automatically add the
 missing **library** and **use clause** for IEEE packages to your VHDL
 design unit.
 
-[![Quickfix to add missing use clause for IEEE packages](2.19/ieeelibraryquickfix.png "Quickfix to add missing use clause for IEEE packages")](http://www.sigasi.com/content/quickfix-add-use-clause-and-library-clause-ieee-packages)
+![Quickfix to add missing use clause for IEEE packages](2.19/ieeelibraryquickfix.png "Quickfix to add missing use clause for IEEE packages")
+
+See it in action: [/screencasts/add_ieee_quickfix]
 
 Configure external compiler/simulator settings in the Sigasi preference pages
 -----------------------------------------------------------------------------
@@ -47,25 +49,21 @@ Other new and noteworthy improvements
 Bugfixes
 --------
 
--   ticket 2577 : Report which file is currently being compiled in the
-    progress view
+-   ticket 2577 : Report which file is currently being compiled in the progress view
 -   ticket 2639 : Disabled rename refactoring in unmapped files
 -   ticket 2651 : Scoping problem in generics map
 -   ticket 2661 : Scoping bug when enum type is imported from package
--   [ticket
-    2678](http://www.sigasi.com/forum/formatting-array-vector-initialisers)
-    : Formatting array-of-vectors with initialisers
+-   ticket 2678 : Formatting array-of-vectors with initialisers
 -   ticket 2680 : Formatting should respect multi-line comments
 -   ticket 2681 : Scoping problem with length attribute
 -   ticket 2683 : Formatting of aggregates
 -   ticket 2689 : StackOverFlow error in scoper
 -   ticket 2701 : Scoping bug for aggregate assignments of records
--   ticket 2722 : Set top level handler does not work for architecture
-    text selection
--   [ticket 2724](http://www.sigasi.com/forum/incorrect-error-use-clause-overloaded-operator) : NPE when scoping use clause with “=” operator
+-   ticket 2722 : Set top level handler does not work for architecture text selection
+-   ticket 2724 : NPE when scoping use clause with `=` operator
 -   ticket 2730 : \[External compiler\] Deal with circular project dependencies
 -   ticket 2739 : Missing vmap commands in incremental compile
--   [ticket 2740](https://www.google.com/url?q=http://www.sigasi.com/forum/various-quartus-or-even-isevivado-improvements) : Quartus build fails if user does not want to update Quartus DB.
+-   ticket 2740 : Quartus build fails if user does not want to update Quartus DB.
 
 Download/Update
 ---------------

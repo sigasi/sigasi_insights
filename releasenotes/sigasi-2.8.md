@@ -38,7 +38,7 @@ Other new and noteworthy improvements
 -   The `modelsim.ini` configuration file is now taken into account when
     running vcom: [See the documentation](http://www.sigasi.com/doc/2.8.0/integration_vcom#integration-vcom-libraries)
 -   Better autocompletes:
-    -   We have cleaned up [the VHDL templates](http://www.sigasi.com/forum/process-template-suggestion)
+    -   We have cleaned up the VHDL templates
     -   The use of UPPERCASE/lowercase in the STD and IEEE libraries (93
         and 2008) is now more consistent. This results in consistent
         casing of autocompletes from these libraries.

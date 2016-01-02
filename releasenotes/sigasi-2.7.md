@@ -22,8 +22,8 @@ You can open the generics view in the context menu of the hierarchy:
 right click any instantiation and select **Show in Generics View**.
 
 Note that our interpreter to calculate expressions in generic maps and
-generate conditions [does not handle *all expressions* at this
-time](http://www.sigasi.com/update_20120316). If the interpreter could
+generate conditions does not handle *all expressions* at this
+time). If the interpreter could
 not calculate the value, you will see **unknown**.
 
 ### Bugfixes

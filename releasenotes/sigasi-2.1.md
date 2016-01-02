@@ -18,15 +18,14 @@ Verilog and AHDL features:
 
 ![Basic Verilog and Ahdl support](2.1/verilogahdl-syntaxhighlighting.png "Basic Verilog and Ahdl support")
 
-**Note** that Verilog and Ahdl come as separate plugins. So if you are using the Sigasi Plugin in Eclipse, you have to [manually install these new plugins](http://www.sigasi.com/how-install-ahdl-and-verilog-eclipse-plugin).
+**Note** that Verilog and Ahdl come as separate plugins. So if you are using the Sigasi Plugin in Eclipse, you have to manually install these new plugins.
 
-We also ported the two most wanted ( [still missing](http://www.sigasi.com/sigasi-hdt-10-feature-missing-sigasi-20)
-) features from Sigasi 1.0: Autocomplete for records and TODO/FIXME tags:
+We also ported the two most wanted features from Sigasi 1.0: Autocomplete for records and TODO/FIXME tags:
 
 ### Autocomplete for records
 
-If you use records, the tool shows you which fields a record has. Just press **CTRL+SPACE** to see the valid record fields.\
-Check out this [one-minute screencast](http://www.sigasi.com/screencast/record-autocomplete-2).
+If you use records, the tool shows you which fields a record has. Just press **CTRL+SPACE** to see the valid record fields.
+Check out this one-minute screencast: [/screencasts/record_autocomplete].
 
 ![Autocomplete for records](2.1/record-autocomplete.png "Autocomplete for records")
 

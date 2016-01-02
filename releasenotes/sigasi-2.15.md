@@ -95,7 +95,7 @@ Other new and noteworthy improvements
 -   Show protected types in outline view
 -   Files in exported CSV are now sorted by library if possible
 -   Show *anywhere context* template autocomplete suggestions last
--   Added support for [context clauses](http://www.sigasi.com/forum/bug-sigasi-does-not-understand-context-keyword) (VHDL 2008)
+-   Added support for context clauses (VHDL 2008)
 -   Updated to Xtext 2.4.2
 
 Bugfixes
