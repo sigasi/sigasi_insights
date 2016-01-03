@@ -33,9 +33,7 @@ they fail for semantic highlighting.
 
 ## Fakin’ It
 
-The Emacs VHDL mode tries to
-<a href="http://www.sigasi.com/content/vhdles-mode-major-mode-editing-vhdl-code#highlight">mimic
-semantic highlighting</a>, as do many general purpose editors. Datatypes
+The Emacs VHDL mode tries to mimic semantic highlighting, as do many general purpose editors. Datatypes
 are given colored green, but only the <em>standard</em> datatypes. Any
 datatype that you define yourself is treated as just another “name”.
 Conversely, if you use the name of a standard datatype and you give a

@@ -69,8 +69,7 @@ Bugfixes
 -   ticket 2695 : We improved the robustness of the **formatter** when
     dealing with **incorrect/incomplete VHDL code**. As a consequence,
     autoformat will not break character literals anymore.
--   [ticket
-    2837](http://www.sigasi.com/forum/library-not-compiled-modelsim) :
+-   ticket 2837 :
     External compiler fails when there are too many files in the same
     library.
 -   ticket 2849 : Always use the **Sigasi search page** for VHDL

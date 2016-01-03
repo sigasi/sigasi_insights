@@ -143,6 +143,4 @@ business processes more reliable.
 Coming up
 ---------
 
-Next week we'll discuss: [How much time is spent on writing
-documentation versus developing
-code?](http://www.sigasi.com/content/how-much-time-spent-writing-documentation-versus-developing-rtl-code)
+Next week we'll discuss: [/tech/how-much-time-spent-writing-documentation-versus-developing-rtl-code]

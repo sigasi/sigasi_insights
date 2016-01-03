@@ -82,4 +82,4 @@ an array type, start typing `type`, and not `arra`.
 
 ![](images/templates_preferences_process.png)
 
-In a [next post](http://www.sigasi.com/node/1753), I explain [how to modify these templates to your custom needs](http://www.sigasi.com/node/1753).
+In a next post, [/tech/using-custom-templates-sigasi-2], I explain how to modify these templates to your custom needs.

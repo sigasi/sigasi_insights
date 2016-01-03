@@ -10,11 +10,11 @@ It’s been over two months since our last release, but we think this new releas
 VHDL-2002 and VHDL-2008 support
 -------------------------------
 
-This release brings support for VHDL **2002** and **2008** to Sigasi 2: protected types, simplified sensitivity list, condition operators, external names block comments, … ([Complete list](http://www.sigasi.com/vhdl2008))
+This release brings support for VHDL **2002** and **2008** to Sigasi 2: protected types, simplified sensitivity list, condition operators, external names block comments, …
 
 ![VHDL 2008](2.2/vhdl2008.png "VHDL 2008")
 
-The new VHDL 2008 STD and IEEE libraries are not included yet. [Click here](http://www.sigasi.com/content/how-use-new-vhdl-2008-libraries-sigasi) for more info on how to add them.
+Note that the new VHDL 2008 STD and IEEE libraries are not included yet.
 
 Configurable severity for lintings
 ----------------------------------

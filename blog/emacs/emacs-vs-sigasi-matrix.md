@@ -29,7 +29,7 @@ tags:
 <tr><td>	Hover to see declaration	</td>			<td>	<span style="color:red;"><strong>&#10008;</strong></span>	</td>			<td>	<span style="color:red;"><strong>&#10008;</strong></span>	</td>			<td>	<span style="color:green;"><strong>&#10003;</strong></span>	</td>		</tr>
 <tr><td>	Chip hierarchy	</td>			<td>	<span style="color:red;"><strong>&#10008;</strong></span>	</td>			<td>	limited; no configurations	</td>			<td>	<span style="color:green;"><strong>&#10003;</strong></span>	</td>		</tr>
 <tr><td>	Generate Makefile	</td>			<td>	<span style="color:red;"><strong>&#10008;</strong></span>	</td>			<td>	limited; only one library	</td>			<td>	<span style="color:green;"><strong>&#10003;</strong> multiple libraries</span>	</td>		</tr>
-<tr><td>	Component instantiation	</td>			<td>	<span style="color:red;"><strong>&#10008;</strong></span>	</td>			<td>	<span style="color:green;"><strong>&#10003;</strong> based on <a href="http://www.sigasi.com/doc/emacs/009port_translation">port translation</a></span>	</td>			<td>	<span style="color:green;"><strong>&#10003;</strong> based on autocomplete</span>	</td>		</tr>
+<tr><td>	Component instantiation	</td>			<td>	<span style="color:red;"><strong>&#10008;</strong></span>	</td>			<td>	<span style="color:green;"><strong>&#10003;</strong> based on port translation</span>	</td>			<td>	<span style="color:green;"><strong>&#10003;</strong> based on autocomplete</span>	</td>		</tr>
 <tr><td>	Inspect values of constants and Generics	</td>			<td>	<span style="color:red;"><strong>&#10008;</strong></span>	</td>			<td>	<span style="color:red;"><strong>&#10008;</strong></span>	</td>			<td>	<span style="color:green;"><strong>&#10003;</strong></span>	</td>		</tr>
 </table>
 

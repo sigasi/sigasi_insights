@@ -9,9 +9,7 @@ Sigasi 2.4 brings you a very easy way to check you code with an external
 compiler. We added a option to automatically compile your code with an
 external compiler as soon as you save your file. If there are any
 errors, they will show up as red error markers inside your code, just
-like the type-time error markers. Check out this short (2:40)
-<a href="http://www.sigasi.com/screencast/introducing-vcom-integration-sigasi">demonstation
-video</a> to get a feel of how it all works.
+like the type-time error markers.
 
 We also implemented usability and other improvements, and fixed reported
 bugs.
@@ -20,14 +18,14 @@ Aldec VCOM integration
 ----------------------
 
 Catching bugs early is cheaper than catching them late. Earlier versions
-of Sigasi detect [**most errors** at **type time**](http://www.sigasi.com/faq#t133n861) but relied on a manual compile step with an external compiler to catch all errors. Sigasi 2.4 can now automate this step and intelligently call an external compiler
+of Sigasi detect **most errors** at **type time** but relied on a manual compile step with an external compiler to catch all errors. Sigasi 2.4 can now automate this step and intelligently call an external compiler
 to find **all analysis errors** in your VHDL files as soon as you **save**.
 
 ![External compiler](2.4/vcomdemo1.png "External compiler")
 
 At this time, Sigasi supports the vcom/vsim style compilers. These
 compilers are available from [Aldec](http://www.aldec.com) (Active HDL
-and Riviera Pro) or from other vendors. [documentation](http://www.sigasi.com/doc/2.4.0/integration_vcom)
+and Riviera Pro) or from other vendors.
 
 ![External compiler](2.4/vcomdemo3.png "External compiler")
 

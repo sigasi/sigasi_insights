@@ -76,7 +76,7 @@ an unresolved annotation on the modelsim_lib folder.
 
 ![Unavailable Linked Resource](images/unavailable_linked_resource.png)
 
-They can configure the `modelsim_ase` variable via **Preferences &gt; General &gt; Workspace &gt; Linked Resources**. Alternatively, you can use [Workspace Mechanic](http://www.sigasi.com/content/managing-sigasi-preferences-teams) to automate this task and share Sigasi/Eclipse settings across your entire team.
+They can configure the `modelsim_ase` variable via **Preferences &gt; General &gt; Workspace &gt; Linked Resources**. Alternatively, you can use Workspace Mechanic ([/tech/sharing_preferences]) to automate this task and share Sigasi/Eclipse settings across your entire team.
 
 # Sigasi 2.21
 
@@ -102,4 +102,4 @@ Note that the variables are only available when a valid path is configured in th
 To access *environment variables*, you have to prefix the environment variable with `ENV-`.
 For example: to refer to the home directory you can use `ENV-HOME`
 
-Since Sigasi 2.21, the [quickfixes for Altera, Xilinx and Modelsim libraries](http://www.sigasi.com/doc/2.21.0/libraries#libraries-quickfix), automatically use these path variables.
+Since Sigasi 2.21, the quickfixes for Altera, Xilinx and Modelsim libraries, automatically use these path variables.

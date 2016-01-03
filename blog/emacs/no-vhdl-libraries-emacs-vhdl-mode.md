@@ -36,8 +36,7 @@ acquire, <em>ever</em> use libraries at all, feel free to skip the rest
 of this article.
 
 ## Emacs
-The use of libraries is not supported in Emacs. From the
-<a href="http://www.sigasi.com/content/vhdles-mode-major-mode-editing-vhdl-code#makefile">documentation</a>:
+The use of libraries is not supported in Emacs. From the documentation:
 
 > Limitations: Only library units and dependencies within the [current library](/tech/work-not-vhdl-library.html) are considered. Makefiles for designs that span multiple libraries are not (yet) supported.
 

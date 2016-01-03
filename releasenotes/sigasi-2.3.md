@@ -31,8 +31,7 @@ interpreter can not handle all expressions yet. Today, it covers basic
 arithmetic and string operations. This is enough to deal with most,
 common use cases.
 
-[Here is a short screencast video](http://www.sigasi.com/screencast/hierarchy-view) that gives a
-three minute overview of the **Hierarchy view** in action.
+"[/screencasts/hierarchy_view]" is a short screencast video that shows the **Hierarchy view** in action.
 
 **Note** that if you perform an update, the **hierarchy view** will not open by default. The easiest way to enable it is to click **Window \> Reset Perspective…**.
 
@@ -70,7 +69,7 @@ Other new and noteworthy improvements
 -   We have updated the minimum requirements for the **Sigasi Eclipse Plugin**: you now need at least **Eclipse 3.6** (Helios) and **Java 1.6**.
 -   **Mousefeed**, the keyboard shortcut popups that help you remember
     keyboard shortcuts for the actions you use most often, is enabled
-    again. [More info](http://www.sigasi.com/content/key-shortcut-reminder-popups-eclipse).
+    again. [/tech/mousefeed]
     (Eclipse plugin users must [install Mousefeed](http://marketplace.eclipse.org/content/mousefeed) themselves.)
     ![MouseFeed popup](2.3/mousefeed.png "MouseFeed popup")
 -   You can now revert your Sigasi installation to earlier versions: In
@@ -155,17 +154,16 @@ Other new and noteworthy improvements
     inside the common libraries if you want to use your own version.
 -   We added the **Find references** action to the **Search** menu for
     your convenience.
--   We [check the correctness of **end clauses**](http://www.sigasi.com/forum/bug-report-process-statement-needs-end-end-process)
-    more strictly
+-   We check the correctness of **end clauses**  more strictly
     ![End clause](2.3/endclause.png "End clause")
 
 *After you update, all caches will be cleared. Your initial build will take a longer than usual.*
 
 ### Bugfixes
 
--   ticket 1959 : [Sort instantiation autocomplete alphabeticaly](http://www.sigasi.com/forum/feature-request-sort-component-declaration-and-instations-autosuggestions-alphabetically)
+-   ticket 1959 : Sort instantiation autocomplete alphabeticaly
 -   ticket 1987 : Formating issue in aggregates
--   ticket 2002 : \[Linux] Save button disabled if new VHDL file wizard is used with a template
+-   ticket 2002 : \[Linux\] Save button disabled if new VHDL file wizard is used with a template
 -   ticket 2006 : Formating issue in vector assignments
 -   ticket 1993 : Fixed error when starting Sigasi in Eclipse 3.6
 

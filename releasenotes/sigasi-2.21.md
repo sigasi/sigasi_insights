@@ -24,9 +24,7 @@ code, even when your code is still unfinished or broken.
 </iframe>
 </span>
 
-The Block Diagram viewer is automatically installed in the Sigasi
-standalone version. If you use the Sigasi plugin, please follow these
-[installation instructions](http://www.sigasi.com/install-block-diagram-view-plugin-eclipse).
+The Block Diagram viewer is automatically installed in the Sigasi standalone version.
 
 Smart Indent
 ------------
@@ -49,8 +47,7 @@ Path variables for toolchains and environment variables
 Sigasi 2.21 introduces **Path Variables** for **toolchain installation
 paths** and **Environment variables**. This is a convenient way to avoid
 absolute paths in your project files. The library quick fixes have been
-updated to use these variables. ([More
-info](http://www.sigasi.com/content/how-avoid-absolute-library-paths-your-sigasi-project-files#comment-2554))
+updated to use these variables. (More info: [/tech/how-avoid-absolute-library-paths-your-sigasi-project-files])
 
 ![Path variables for toolchains and environment variables](2.21/pathvariablestoolchain.png "Path variables for toolchains and environment variables")
 
@@ -72,7 +69,7 @@ Other new and noteworthy improvements
 -   Check that the port and generic maps of instantiations are formally correct
 -   Check that the parameter lists of subprogram invocations is formally correct
 -   Better hover for for loop iterator
--   [Formatter should respect newlines in enum declarations](http://www.sigasi.com/forum/auto-formatter-respect-lines-type-declarations)
+-   Formatter should respect newlines in enum declarations
     ![Formatter should respect newlines](2.21/formatenums.png "Formatter should respect newlines")
 
 

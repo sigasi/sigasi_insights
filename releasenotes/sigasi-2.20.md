@@ -35,7 +35,7 @@ brings:
 -   State Machine viewers (updates while you type) \[Update: This release
     now supports multiple FSM in one design file\]
 
-[![FSM View: multiple fsms in one file](2.20/fsmmultiplefsms.png "FSM View: multiple fsms in one file")](http://www.sigasi.com/screencast/vhdl-state-machine-diagram)
+![FSM View: multiple fsms in one file](2.20/fsmmultiplefsms.png "FSM View: multiple fsms in one file")
 
 -   Integration with Aldec ALINT linter tool
 
@@ -48,11 +48,9 @@ Other new and noteworthy improvements
 Bugfixes
 --------
 
--   ticket 2754 : [scoping problem with generic packages & record
-    types](http://www.sigasi.com/node/2209)
+-   ticket 2754 : scoping problem with generic packages & record types
 -   ticket 2757 : Scoping problem with record in range of aggregate
--   ticket 2761 : [Scoping problem with record constants as function
-    parameters](http://www.sigasi.com/forum/bug-multiple-records-function)
+-   ticket 2761 : Scoping problem with record constants as function parameters
 
 Download/Update
 ---------------

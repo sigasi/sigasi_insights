@@ -10,7 +10,7 @@ The Sigasi 2.28 release brings *external compiler* support for *mixed language* 
 ## External compiler support for mixed language projects 
 \[Sigasi Premium Desktop and Sigasi Premium Doc\]
 
-The "external compiler integration":http://www.sigasi.com/manual/external-compiler-integration now supports "mixed language projects":http://www.sigasi.com/manual/mixed-language-projects. Sigasi automatically computes the cross language dependencies and sends your design files incrementally, in the correct order, to your external compiler. 
+The [/manual/tools#external-compilers] integration now supports [/manual/mixed]. Sigasi automatically computes the cross language dependencies and sends your design files incrementally, in the correct order, to your external compiler. 
 
 The *dependencies view*: and the CSV [/manual/tools#export] feature now also take cross language dependencies into account. 
 
@@ -48,7 +48,7 @@ Sigasi will only complain when it is sure the assignment is wrong. When the expr
 * ticket 3043 : *Autocomplete* template get confused by *uppercase keywords*
 * ticket 3190 : Highlighting of *operators* (and, or, ...): highlight as *keyword*, not as function
 * ticket 3269 : *Quick fix all* does not work if the project has external compiler problem markers
-* [ticket 3287](http://www.sigasi.com/forum/question-about-type-declaration) : better labels for physical and numeric types
+* ticket 3287 : better labels for physical and numeric types
 
 ## Download/Update
 

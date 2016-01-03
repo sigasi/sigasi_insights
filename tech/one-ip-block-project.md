@@ -109,7 +109,7 @@ Real life: GRLIB
 
 To show you an example of how to get started, I have created [a video
 where I set up the first few
-libraries](http://www.sigasi.com/screencast/organizing-grlib-one-project-library) in the open
+libraries](/screencasts/organizing-grlib-one-project-library.html) in the open
 source [GRLIB](http://www.gaisler.com/) collection.
 You can also download [a zip file with the all the GRLIB libraries (and
 a few of its example designs)](resources/grlib-gpl-1.0.20-b3403-b.tgz).

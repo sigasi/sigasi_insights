@@ -17,10 +17,10 @@ Understanding a big body of code is always a difficult task. But the correct too
 	* Jump to case statements in state machines
 	* Jump between instantiation, component and entity / architecture
 * [code-comprehension-without-clicking-your-mouse-hovering]
-* Show design hierarchy, even if the code is broken \[[movie](http://www.sigasi.com/screencast/hierarchy-view)\]
+* Show design hierarchy, even if the code is broken \[[/screencasts/hierarchy_view]\]
 * Find where signals are used
-* Semantic highlighting: use different colors for signals, variables, constants, ... \[[learn more](http://www.sigasi.com/content/emacs-code-coloring-outdated)\]
-* See the values of generics \[[movie](http://www.sigasi.com/screencast/generic)\]
+* Semantic highlighting: use different colors for signals, variables, constants, ...
+* See the values of generics \[[/screencasts/hierarchy_view]\]
 
 All of these inspection features work even if the design is incomplete or broken with our [recovering-vhdl-parser-0]
 
@@ -34,5 +34,5 @@ Without Sigasi, all of these questions would take a lot of mental energy, scroll
 
 ## Nice, but not-so-unique features
 
-* Place bookmarks in your code \[[movie](http://www.sigasi.com/screencast/bookmarks)\] or \[[documentation](http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2FgettingStarted%2Fqs-37-3e.htm)\]
+* Place bookmarks in your code \[[/screencasts/bookmarks]\] or \[[documentation](http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2FgettingStarted%2Fqs-37-3e.htm)\]
 * Open multiple editors side by side

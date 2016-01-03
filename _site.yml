@@ -83,6 +83,9 @@ reflinks:
     verilog:
         title: "[Only for Verilog]"
         url: "editions.html#vhdl"
+    eula:
+        title: Sigasi Software Agreement
+        url: "/eula.html"
 # faq
     vrapper:
         title: vrapper

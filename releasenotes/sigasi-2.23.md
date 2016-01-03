@@ -9,7 +9,7 @@ _The Sigasi 2.23 release introduces basic *datatype checking* at type-time for V
 
 ## Basic datatype checking at type-time for VHDL
 
-Sigasi now reports datatype violations while you type (at type-time). You don't have to wait for your simulator to report datatype errors. Whenever you write a wrong datatype, you see an error message within less than a second! ("Screencast":http://www.sigasi.com/content/datatype-checks-while-you-type)
+Sigasi now reports datatype violations while you type (at type-time). You don't have to wait for your simulator to report datatype errors. Whenever you write a wrong datatype, you see an error message within less than a second! Screencast : [/screencasts/datatype-checks-while-you-type]
 
 ![Type time type validation](2.23/better-scoping.png "Type time type validation")
 
@@ -25,7 +25,7 @@ We are accelerating our development of the Verilog version:
 
 * Improved support for *external VHDL files* (i.e. non Sigasi Project VHDL files). We now report all syntax errors.
 * Linting *check for read/write access* of port, signal, generic and constant declarations \[Premium\]
-![heck read/write access for Signals/Ports/Generics/Constants](2.23/signal-never-read.png "heck read/write access for Signals/Ports/Generics/Constants")
+![Check read/write access for Signals/Ports/Generics/Constants](2.23/signal-never-read.png "Check read/write access for Signals/Ports/Generics/Constants")
 * Updated the JAVA Virtual Machine in the stand-alone to version 8. Note that this is not updated with the Sigasi update mechanism; you need a fresh download if you want this improvement.
 * Support for <a href="https://projects.eclipse.org/releases/luna">Eclipe Luna</a>
 * Added *VHDL Project Import Wizard*
@@ -46,7 +46,7 @@ We are accelerating our development of the Verilog version:
 
 * ticket 2883 : Vmap should never make changes in wrong modelsim.ini file
 * ticket 2893 : Case statement analysis should not fail on if expression inside parenthesis
-* <a href="http://www.sigasi.com/forum/bug-resolving-overloaded-functions">ticket 2798</a> : Scoping bug in record field in result of overloaded function call
+* ticket 2798 : Scoping bug in record field in result of overloaded function call
 * ticket 2848 : scoping problem in when/else assignment
 * ticket 2921 : Loading a FlexNet license should never block the UI
 

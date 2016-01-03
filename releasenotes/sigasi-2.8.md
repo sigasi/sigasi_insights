@@ -10,7 +10,7 @@ Sigasi 2.8 brings Makefile and CSV-file generation plus multiple other improveme
 Export Project Makefile
 -----------------------
 
-Sigasi’s [vcom integration](http://www.sigasi.com/doc/latest/integration_vcom) is a
+Sigasi’s vcom integration is a
 real time-saver for VHDL-design. But you may also want to build your
 project in batch mode. A typical approach is to use
 [Makefiles](http://en.wikipedia.org/wiki/Make_(software)) for command
@@ -36,7 +36,7 @@ Other new and noteworthy improvements
 -------------------------------------
 
 -   The `modelsim.ini` configuration file is now taken into account when
-    running vcom: [See the documentation](http://www.sigasi.com/doc/2.8.0/integration_vcom#integration-vcom-libraries)
+    running vcom.
 -   Better autocompletes:
     -   We have cleaned up the VHDL templates
     -   The use of UPPERCASE/lowercase in the STD and IEEE libraries (93
@@ -55,7 +55,7 @@ Other new and noteworthy improvements
 -   Sigasi’s VHDL builder now detects ands skips encrypted VHDL files
     (instead of trying to compile and then throwing errors)
 -   Removed Xilinx and Altera Cheat Sheets. Their content has been
-    obsoleted by the [Library Quickfix](http://www.sigasi.com/doc/2.8.0/libraries#libraries-quickfix).
+    obsoleted by the Library Quickfix.
 
 ### Bugfixes
 
@@ -76,7 +76,7 @@ Other new and noteworthy improvements
 End User License Agreement
 --------------------------
 
-We have updated the [Sigasi Software Agreement](http://www.sigasi.com/hdt-license-20) to clarify a few
+We have updated the [eula] to clarify a few
 points, to make it more clear how the licensing (node-locked and floating licenses) works, and to update the third party open source licenses.
 If you update your Sigasi installation, you will be required to read an accept the new terms. Should you have any questions about the new license agreement, please contact us at <legal@sigasi.com>.
 
