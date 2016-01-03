@@ -47,7 +47,7 @@ reflinks:
         title: Update Sigasi
     download_latest:
         title: Download the Latest Version of Sigasi
-        url: http://www.sigasi.com/download-sigasi-20
+        url: http://www.sigasi.com/download
     tabs-and-spaces:
         title: Tabs and Spaces
         url: "/manual/config.html#tabs-and-spaces"

@@ -15,9 +15,9 @@ If you [downloaded](http://www.sigasi.com/download) after 2010-10-20, you alread
 
 ## How to update the JRE
 
-If you are running the <strong>stand-alone</strong> version, you need to <a href="http://www.sigasi.com/download-sigasi-hdt">download the latest version</a> and completely replace your existing installation. You will not loose any settings because all your settings are stored in your workspace (`workspace-sigasi`). The best approach is to:
+If you are running the <strong>stand-alone</strong> version, you need to <a href="http://www.sigasi.com/download">download the latest version</a> and completely replace your existing installation. You will not loose any settings because all your settings are stored in your workspace (`workspace-sigasi`). The best approach is to:
 
-* <a href="http://www.sigasi.com/download-sigasi-hdt">Download the latest version</a>
+* <a href="http://www.sigasi.com/download">Download the latest version</a>
 * Move your existing installation to your trash bin
 * Unzip the Sigasi HDT zip file
 

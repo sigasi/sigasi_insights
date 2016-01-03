@@ -15,7 +15,7 @@ Here is a comparison matrix to see which is best suited for you: using Sigasi as
 <tr style="background:#ccc;"><td>	Compatible with Eclipse plugin mechanism	</td>			<td>	<span style="color:green;"><strong>&#10003;</strong></span>	</td>			<td>	<span style="color:green;"><strong>&#10003;</strong></span>	</td>		</tr>
 <tr><td>	Recommended without prior knowledge of Eclipse	</td>			<td>	<span style="color:green;"><strong>&#10003;</strong></span>	</td>			<td>		</td>		</tr>
 <tr style="background:#ccc;"><td>	Recommended if you also work with C, C++, Java, &#8230;	</td>			<td>		</td>			<td>	<span style="color:green;"><strong>&#10003;</strong></span>	</td>		</tr>
-<tr><td>	 <span style="color:white;">.</span>	</td>			<td>		</td>			<td>		</td>		</tr><tr style="background:#ccc;"><td>	Installation instructions	</td>			<td>	<a href="http://www.sigasi.com/download-sigasi-2">Download it</a>	</td>			<td>	<a href="http://www.sigasi.com/install-eclipse-vhdl-plugin">Plug it in</a>	</td>		</tr>
+<tr><td>	 <span style="color:white;">.</span>	</td>			<td>		</td>			<td>		</td>		</tr><tr style="background:#ccc;"><td>	Installation instructions	</td>			<td>	<a href="http://www.sigasi.com/download">Download it</a>	</td>			<td>	<a href="http://www.sigasi.com/install-eclipse-vhdl-plugin">Plug it in</a>	</td>		</tr>
 </table>
 
 

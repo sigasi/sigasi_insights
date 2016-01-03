@@ -42,7 +42,7 @@ Installation of Sigasi App
 
 To download and install Sigasi as a stand-alone application, follow the
 online [Installation
-Instructions](http://www.sigasi.com/download-sigasi-20).
+Instructions](http://www.sigasi.com/download).
 
 After downloading, choose or create a folder where you want to install
 the software, and unpack the archive there. The archive contains a
