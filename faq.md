@@ -32,6 +32,12 @@ You can add a plugin with the UltraEdit key bindings.
 2. After installing, you should activate the UltraEdtit keybindings in **Window > Preferences > General > Keys**. 
 Then as Scheme, select "UltraEdit".
 
+## Same license for Plugin and Standalone
+
+If you purchase a Sigasi Studio license, you can use this for either the _Plugin version_, or the _Standalone version_, or _both_.
+If you have floating licenses, each running instance of the Sigasi application or the Sigasi plugin will check out one floating license.
+
+
 ## Why don't you have feature XYZ? How can I put in on your roadmap?
 As any tech company, our stack of good ideas is far larger than the amount of time we have to work on them. We're grateful for any suggestions that users send us on the user forum and we often build new features based on your suggestions. However, we have to prioritize and maybe your favorite feature is not on our short-term roadmap.
 

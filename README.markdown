@@ -6,6 +6,10 @@ You can find the rendered version at <http://doc.sigasi.com>
 
 ## Authoring guide
 
+### Filenames
+
+* Use dashes as separator. E.g.: **`test-me.md`** and **not** ~~`test_me.md`~~
+
 ### Images
 
 * Images are stored in an `images` folder (e.g. `/blog/images`, `/tech/images/`, ...)
