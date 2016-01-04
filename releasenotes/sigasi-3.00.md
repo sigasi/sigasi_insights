@@ -19,10 +19,30 @@ date: 2016-01-20
 
 ### What about my current license?
 
-Old license still valid for Sigasi 3? yes
-Features shuffled? Hierarchy, ... but -> Pro license, all OK.
+The feature set of of Sigasi Studio Creator  is nearly the same as the feature set of Sigasi Pro (2.x) and the feature set of Sigasi Studio XL is nearly the same as the feature set of Sigasi Premium Desktop.
 
-floating? See link
+A valid Sigasi 2 license is also valid for Sigasi Studio 3.x. If you have a valid Sigasi Pro license, all Sigasi Pro features continue to work in Sigasi 3.
+  
+What changed?
+
+* Sigasi Studio Starter now only works with **single files**, and not with **projects**. So all features in Sigasi Studio Starter, only take information of the current file into account. So there is no longer a Project size threshold, which tweaked some features as in Sigasi 2.x. 
+* A few Sigasi Pro features now require a Sigasi Studio XL license instead of a Sigasi Creator license:
+    * **Hierarchy elaboration**: With a Sigasi Studio Creator license, you can still set (and start a simulation of) a toplevel. But you can no longer explore the elaborated hierarchy in the hierarchy view.
+    * **Linting**: Following lintings now need a Sigasi Studio XL license:
+       - Check for null ranges
+       - Check for redundant choices in case statements
+       - Check for redundant `others` choice in case statements
+       - Check for infinite loops
+       - Check for unbound component instantiations
+       - Check for dead states in state machines
+* A few Sigasi Premium features now require only a Creator license instead of a Sigasi XL license:
+    * Check for duplicate signals in the sensitivity list
+* A few Sigasi Pro features no longer require a license in Sigasi Studio:
+    * More (VHDL) syntax checks
+    * Open declaration
+    * Hover
+
+Note that if you are using a floating license, you need to update your [Flexnet daemon](#floating-license-updates).
 
 
 ## Sigasi Studio improvements
