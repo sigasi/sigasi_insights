@@ -10,7 +10,8 @@ Sigasi supports VHDL 1993, 2002 and 2008. You can select which VHDL version to u
 
 If you want to write VHDL 87 code, you should select the “1993” option. However, the tool will not warn about constructs that were not supported in 1987, but that were introduced in 1993.
 
-Any new project that you create will have the common libraries (`STD` and `IEEE`) that correspond to your selected VHDL version. Your existing project will not be modified. If you want to update the common libraries for an existing project, right-click the project and select **Library Mapping > Reset Common Libraries**.
+Any new project that you create will have the common libraries (`STD` and `IEEE`) that correspond to your selected VHDL version. Your _existing project will **not** be modified_. If you want to update the common libraries for an existing project, right-click the project and select **Library Mapping > Reset Common Libraries**.
+
 
 # Colors and Fonts {#configure-colors}
 

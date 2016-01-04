@@ -19,5 +19,6 @@ content:
    - keyshortcuts
    - config
    - license_key
+   - talkback
 ---
 

@@ -233,6 +233,17 @@ comment is associated with this declaration.
 - In all other cases, the comment is associated with the next following
 declaration.
 
+## Code folding
+
+If you work with large files, you might want to hide certain pieces of your code. This can be done with code folding. Certain constructs, such as if-statements or process-statements can be folded so that they use a single line in the editor view. You can do this by clicking the little **"+"** symbol next to the statement.
+
+![Code Folding](images/code_folding.png)
+
+You can also enable/disable code folding and perform other actions by right-clicking in the gutter (the small column to the left of your code) and selecting **Folding**.
+
+![Configure Code Folding](images/configure_folding.png)
+
+
 ## Lightweight editor for large files
 
 Sometimes you have to deal with very large VHDL files such as large

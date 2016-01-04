@@ -106,6 +106,23 @@ I do not get automatic updates {#ts-updates}
 If the updates are not automatically fetched from the Sigasi update server you are probably behind a firewall or proxy server. You can configure HDT’s proxy settings in **Window > Preferences > General > Network connections**. If you can not add a firewall exception for our update site, the fall back solution is to download the complete application from our website. You can completely replace your old installation; all settings are stored in your workspace (the default is
 `workspaceSigasi` in your home directory).
 
+Sigasi startup fails: "Could not create the Java virtual machine"
+-----------------------------------------------------------------
+
+On some computers, the standalone version of Sigasi will fail to start with an error message similar to: "Could not create the Java virtual machine." This happens especially on 32-bit Windows machines with less than 2GB of physical memory. The reason is that the Java virtual machine tries to allocate more much memory than what is available.
+
+In order to solve this, you can decrease the default heap size settings. You can do this by adding following lines to `sigasi.ini` or `eclipse.ini` in your Sigasi installation folder:
+
+```
+-vmargs
+-Xmx1000m
+```
+
+This sets the maximum heap size to 1000 MB (instead of the standard 1400MB). 
+
+**Note:** Do not use `eclipsec.exe`, as this will ignore all of the settings configured in the eclipse.ini file.
+
+
 I want a clean restart {#ts-clean}
 ----------------------
 
@@ -132,6 +149,20 @@ remove the `.metadata` directory (take a backup first!). This clears all of your
 
 -   You will need to enter your license code again.
 -   You will need to import your projects again. **Import > General > Existing Projects into Workspace**
+
+## Keep getting reports about an "Incompatible version of Quartus II"
+
+If you are using the integration with Altera Quartus II. Some people keep getting a dialog box that says:
+
+> Incompatible version of Quartus II
+> 
+> Project interface was created with an older, incompatible version of Quartus II.
+> Is it OK to upgrade the project to match the installed version of Quartus II? 
+
+Obviously, you should upgrade the project. If this message keeps popping up, you may want to check that Sigasi is using the correct version of Quartus II, in the Sigasi application: **Window > Preferences > Sigasi > Toolchains > Altera Quartus II**.
+
+
+
 
 Contact support
 ---------------

@@ -63,7 +63,7 @@ To download and install Sigasi as an Eclipse Plugin, follow the [Sigasi as Eclip
 * If you don't have Eclipse installed yet, the C/C++ flavor would be good place to start. Just** download** ([Windows 64 bit](http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/1/eclipse-cpp-mars-1-win32-x86_64.zip)/[Linux 64 bit](http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/1/eclipse-cpp-mars-1-linux-gtk-x86_64.tar.gz)/[Other versions](http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/mars1)), **unzip** and **start**.
 * We recommend you also increase the heap size for Eclipse ([/faq#how-do-i-increase-the-heap-size-for-eclipse]).
 
-Note that we do not support Eclipse 3 any more. ([/faq#what-are-system-requirements])
+Note that we do not support Eclipse 3 any more. ([System Requirements](/faq.html#what-are-the-system-requirements))
 
 ### Install the VHDL Eclipse Plugin
 
@@ -93,8 +93,7 @@ The relative size is shown as a percentage. For projects larger than
 100%, the size indication area turns red and Sigasi 2.0 falls back to a
 base-line modus (which is still more powerful than any other editor). To
 enable full Sigasi support for such projects, you need a valid license.
-The license key can be filled in under **Window \> Preferences \> Sigasi
-\> License Key**.
+The license key can be filled in under **Window > Preferences > Sigasi > License Key**.
 
 Configuration
 -------------

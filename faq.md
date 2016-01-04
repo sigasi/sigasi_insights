@@ -11,10 +11,6 @@ If you use Sigasi HDT as a plugin (meaning: not the standalone version), you can
 ## Do you have an Emacs emulation mode so that I can use the Emacs key bindings? {: #Emacs}
 All Eclipse products, including Sigasi HDT, can be configured to support [emacs-keybindings]. While it is not the same as Emacs, you can keep your habit of pressing *CTRL-C* and *CTRL-X* all the time.
 
-## I have error markers in files that are not even mapped to a library
-Sometimes, unmapped files have error markers. This can happen if a compilation did not complete normally.
-You can select these errors from the problems view and remove them by pressing delete. If you rebuild the project, no new error markers will be generated for the VHDL files that are not mapped to a library.
-
 ## What do you mean by "Type-Time"?
 "At type-time" means "while you type". 
 The Sigasi development environment checks your code at type-time. In other tools, your code gets checked only after you save all files and explicitly start a compiler, Sigasi has a type-time compiler. While you are typing, the Sigasi compiler checks your code and marks your errors.
@@ -167,6 +163,7 @@ If you are using Eclipse for both VHDL and C development, you probably don't wan
 In order to use Eclipse without locking up a Sigasi license, you should close the VHDL perspective, close all VHDL projects and restart Eclipse.
 
 ## Sigasi keeps compiling everything while I am trying to configure ...
+
 While you are configuring your libraries (mapping and unmapping files), the built-in compiler may trigger a full rebuild several times. In order to avoid this, and make Sigasi more responsive while you configure your libraries, you can _turn of auto...
 
 ## How can I hide files from the Project Explorer?
@@ -303,6 +300,15 @@ This was a design decision because in _most cases you do not want tabs inside yo
 If you still need to insert tabs in Block Selection Mode, you should **copy** a tab character first and subsequently **paste** it into the Block Selection.
 
 
+## How to create a component declaration ("Paste As" Emacs)
+
+Some other editors (most notably [Reto Zimmermann's Emacs VHDL Mode](/blog/emacs)) have the concept of **"port translation"**. You first copy the source code of an entity declaration, and then you can paste it as an instantiation or as a component declaration.
+
+Sigasi supports the same, but in a different way: using **Autocomplete**. You don't need to go find the original entity declaration, since Sigasi knows where to find it in your project. For example for instantiation: just start typing the **label name**, `:` and the word `entity` and press **Ctrl-Space** to trigger the autocomplete feature.
+
+Check out this screencast: [/screencasts/testbench].
+
+
 ## How to use Sigasi efficiently on multiple monitors/screens/desktops?
 
 Sigasi/Eclipse supports full multiscreen support.
@@ -325,6 +331,10 @@ You can achieve the same effect by toggling the '**Regular Expression**' option 
 
 ![](images/screenshots/search.png)
 
+## I have error markers in files that are not even mapped to a library?
+
+Sometimes, unmapped files have error markers. This can happen if a compilation did not complete normally.
+You can select these errors from the [/manual/views#problems] View and remove them by pressing **delete**. If you rebuild the project, no new error markers will be generated for the VHDL files that are not mapped to a library.
 
 ## How to 'Quick Fix' multiple problems at the same time?
 
@@ -377,3 +387,62 @@ SHA Sums (more info):
 ## Can I control the timing of the hovers/popups in Sigasi?
 
 See <http://stackoverflow.com/questions/5778452/is-there-a-way-to-add-a-delay-to-eclipse-tooltips>
+
+## Can I run several copies of Sigasi on my machine
+
+The normal behavior when you start Sigasi is that the tools searches for another running copy and to re-use that copy. Sometimes you may want to run two or more copies of Sigasi at the same time on one computer. In order to do this, you need to modify `configuration\config.ini`. Replace this line:
+```
+eclipse.application=com.sigasi.runner.open
+```
+by the following line: 
+```
+eclipse.application=org.eclipse.ui.ide.workbench
+```
+
+After you do this, each time you call `sigasi.exe`, a new copy will be started.
+
+## Can I revert to an older version of Sigasi?
+
+You can revert Sigasi to an older version with following procedure:
+
+1. **Help > About Eclipse > Installation Details > Installation History**
+2. Select the configuration you want to revert to
+3. **Revert**
+
+Alternatively, you can contact support for an older download location.
+
+## How can I suppress (ignore) warnings?
+
+If you see warnings that are not useful for you, you can do one of the following:
+
+* **Disable rule**: You can either disable the markers of a certain type: Click **Window > Preferences > Sigasi > VHDL > Errors/Warnings**, then select a rule and set the **severity** to **Ignore**
+* **Suppress one marker**: Or you can suppress markers on a given line, using the [/tech/eclipse-marker-manager] plugin.
+
+## Black text on black hovers is not readable on Ubuntu Linux
+
+See : <http://devshards.blogspot.it/2012/10/how-to-fix-unreadable-eclipse-tooltips.html>
+
+## Where is the path variable information stored?
+
+There are two places where you can configure your own **path variables**: in the **workspace** and in your **projects**.
+
+The **workspace path variables** (set via preferences) are stored in: `<workspace>/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs` (e.g. `pathvariable.FOOBAR=/Users/heeckhau/tmp/foobar`)
+
+You can also set this per **project** (in the project properties). In that case the info is stored in the `.project` file.
+
+You can find more info on: [here](http://www.sigasi.com/content/how-avoid-absolute-library-paths-your-sigasi-project-files) and [here](http://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Fconcepts%2Fcpathvars.htm)
+
+## Sigasi/Eclipse hangs on startup
+
+If Sigasi/Eclipse hangs while the splash screen is shown during startup, you can try this to resolve the issue:
+
+* In the workspace folder remove: `<workspaceSigasi>/.metadata/.plugins/org.eclipse.ui.workbench`
+* If this is not enough, also remove `<workspaceSigasi>/.metadata/.plugins/org.eclipse.ui.ide` and `<workspaceSigasi>/org.eclipse.ui.workbench.texteditor`
+* If this still fails remove `<workspaceSigasi>/.metadata/.plugins/org.eclipse.core.resources`, note that you will have to re-import your projects if remove this folder.
+
+## How can I check the version numbers of Sigasi Plugins?
+
+All Sigasi plugins should be at the same version number. You can check the version numbers at:
+**Help > About Eclipse > Plug-ins.**
+
+Here you can **sort** by Plug-in Id by clicking on the title of the "Plug-in Id" column, so that you can check all the plugins that start with "com.sigasi...."
