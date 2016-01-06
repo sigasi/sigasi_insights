@@ -3,8 +3,9 @@ GH-PAGES = ${HOME}/dev/urubu-gh-pages/
 help:
 	@echo make build
 	@echo make serve
+	@echo make stop
 	@echo make publish
-	@echo make urubu
+	@echo make dependencies
 
 all: build
 
@@ -22,7 +23,7 @@ serve: server.PID
 	@echo 'http://localhost:8000'
 
 stop: server.PID
-	kill `cat $<` && rm $<
+	kill `cat $<`; rm $<
 
 # linkchecker can be installed from http://wummel.github.io/linkchecker/ (or sudo dnf install linkchecker)
 dolinkchecker:
