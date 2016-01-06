@@ -9,9 +9,13 @@ date: 2016-01-20
 
 ## Sigasi 3 Rebranding: Sigasi Studio Starter, Sigasi Studio Creator, Sigasi Studio XL
 
-### Sigasi Studio Starter
+The different Sigasi version (Starter, Pro and Premium) were renamed to Sigasi Studio **Starter**, **Creator** and **XL**.
+
+We optimized Sigasi Studio **Starter** as much as possible to work with **single files**. The UI in Sigasi Studio **Starter** only show menus relevant for editing VHDL and Verilog files. 
+
+screenshot [todo]
   
-  [todo] screenshot
+Sigasi Studio **Starter** now only works with **single files**, and _not with projects_. So all features in Sigasi Studio Starter, only take information of the current file into account. So there is no longer a _project size threshold_, which tweaked some features as in Sigasi 2.
 
 ### Sigasi Studio Creator
 
@@ -19,31 +23,9 @@ date: 2016-01-20
 
 ### What about my current license?
 
-The feature set of of Sigasi Studio Creator  is nearly the same as the feature set of Sigasi Pro (2.x) and the feature set of Sigasi Studio XL is nearly the same as the feature set of Sigasi Premium Desktop.
-
-A valid Sigasi 2 license is also valid for Sigasi Studio 3.x. If you have a valid Sigasi Pro license, all Sigasi Pro features continue to work in Sigasi 3.
+Valid Sigasi 2 licenses are also valid for Sigasi Studio 3.x. If you have a valid Sigasi Pro license, all Sigasi Pro features continue to work in Sigasi 3.
   
-What changed?
-
-* Sigasi Studio Starter now only works with **single files**, and not with **projects**. So all features in Sigasi Studio Starter, only take information of the current file into account. So there is no longer a Project size threshold, which tweaked some features as in Sigasi 2.x. 
-* A few Sigasi Pro features now require a Sigasi Studio XL license instead of a Sigasi Creator license:
-    * **Hierarchy elaboration**: With a Sigasi Studio Creator license, you can still set (and start a simulation of) a toplevel. But you can no longer explore the elaborated hierarchy in the hierarchy view.
-    * **Linting**: Following lintings now need a Sigasi Studio XL license:
-       - Check for null ranges
-       - Check for redundant choices in case statements
-       - Check for redundant `others` choice in case statements
-       - Check for infinite loops
-       - Check for unbound component instantiations
-       - Check for dead states in state machines
-* A few Sigasi Premium features now require only a Creator license instead of a Sigasi XL license:
-    * Check for duplicate signals in the sensitivity list
-* A few Sigasi Pro features no longer require a license in Sigasi Studio:
-    * More (VHDL) syntax checks
-    * Open declaration
-    * Hover
-
-Note that if you are using a floating license, you need to update your [Flexnet daemon](#floating-license-updates).
-
+If you are using a floating license, you need to update your [Flexnet daemon](#floating-license-updates).
 
 ## Sigasi Studio improvements
 
@@ -69,48 +51,61 @@ Note that if you are using a floating license, you need to update your [Flexnet 
 
 ### Other new and noteworthy improvements
 
-* Dropped Eclipse 3 support
-* Merge Hierarchy and Generics View
+* We dropped Eclipse 3 support (new [requirements](/faq.html#what-are-the-system-requirements))
+* The Hierarchy and Generics View are now merged. You can now inspect the values of generics and constants directly in the hierarchy view.
   [todo] screenshot
-* Create perspective for Sigasi: Starter and Sigasi
-* Show In > Documentation View
+* Added new, minimalistic perspective for **Sigasi Starter**
+* **Show In > Documentation View**
   [todo] screenshot
-- ticket 3490 : Long names in docbook tables
+* Added [solarized theme](http://ethanschoonover.com/solarized) for the Sigasi editors
   [todo] screenshot
-* Add solarized theme
-  [todo] screenshot
-* Avoid flickering and scrolling in the documentation view page
-* Export hiearchy as CSV: use toplevel in UI as default value
-* Mac app
-* Formatter: Add option to ignore keyword casing
-* New Flexnet version -> See also
-* Warn if Sigasi version is too old
-* Update to xtext 2.9
+* Improved **Documenation View**: the documentation preview no longer flickers and scrolls to the top of your file when you edit your VHDL sources.
+* Added new option to **Export hierarchy as CSV**: use current toplevel in Hierarchy View as default value ([documentation](/manual/tools.html#export))
+* The Mac OS X version now is a real 'App' contained in one, clean `Sigasi.app`
+* The formatter now offers an option to **ignore keyword casing**
+* We updated the Flexnet client. If you use a floating license, you need to [update the daemon too](floating-license-updates).
+* We added a warning if your Sigasi installation is outdated. If you use Sigasi without a commercial license, an update is required if Sigasi is older than 6 months. 
+* We updated the Xtext dependency to `2.9.0`.
 
 
-### bugfixes
+### Bug fixes
 
 - ticket 3412 : Stuttering does not work in Eclipse 4
-- ticket 3433 : Heidenhain syntax error
+- ticket 3433 : Linking error in VHDL `for generate` index
 - ticket 3460 : Support comments without leading whitespace
-- ticket 3483 : Clear HDL nature setting when "clear" button is pressed in HDL preference page
+- ticket 3483 : Clear nature settings when **Clear** button is pressed on the VHDL/Verilog preference pages
+- ticket 3490 : Split long names in documentation tables
+  [todo] screenshot
 
 ## How to update?
 
+The update procedure is different for the Standalone version and for Sigasi as Eclipse plugin.
+
 ### Standalone version
 
-* Fresh [download_sigasi] (All settings are stored in the workspace)
-* Startup warning
-* Re-install extra plugins
+To update the standalone version to Sigasi Studio 3.0, you need to perform a fresh download and replace your old installation:
+
+0. Backup your current **Sigasi installation folder** and **Sigasi workspace folder**.
+1. **[download_sigasi]** and **Unzip**.
+2. **Start**. Note that during the first start, you will see the info dialog below. Click **OK**
+   ![Older Workspace Version Info](3.00/older-workspace-dialog.png)
+3. [Re-install extra plugins](/tech/install-plugins-from-existing-installation.html)
 
 ### Plugin version
 
-* Check new requirements
-* new Uri
+0. Check that your system meets the new [requirements](/faq.html#what-are-the-system-requirements)
+1. Add the new update URL via **Window > Preferences > Install/Update > Available update sites**
+2. Click the **Add...** button:
+    * Name: `Sigasi`
+    * Location: `http://download.sigasi.com/update/latest`
+3. **OK**    
+4. Install the updates via **Help > Check for Updates**
 
-<http://download.sigasi.com/udpate/latest>
+Note that we replaced the **VHDL perspective** in Sigasi 2.31 with a new **Sigasi perspective**. If the perspective was not automatically switched, you can switch via **Window > Perspective > Show Perspective > Other...**. Next select **Sigasi Starter** or **Sigasi**.
 
 ### Floating license updates
 
-* Update daemon
+Because the FlexNet license framework was updated in Sigasi Studio, the Flexnet license **daemon** needs to be updated too. You can find the download details in "[/manual/license_key#License server setup]".
+
+Users with a **node-locked license** do not have to perform extra actions. 
  

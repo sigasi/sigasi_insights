@@ -135,7 +135,7 @@ You can release a floating license (_check a license in_) without closing your S
 
 First, make sure that all VHDL and Verilog files are closed and all VHDL and Verilog projects are closed. Next select  **Help > Sigasi > Floating license > Release Sigasi Floating Licenses**
 
-To get the license back (to check the licnese out), open the license dialog **Help > Sigasi > Configure License...** and press **Apply**.
+To get the license back (to check the license out), open the license dialog **Help > Sigasi > Configure License...** and press **Apply**.
 
 Similarly a floating Sigasi XL Doc addon license can be released via: **Help > Sigasi > Floating license > Release Sigasi Studio XL Doc Floating Licenses**.
 
