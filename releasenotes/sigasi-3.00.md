@@ -68,7 +68,7 @@ If you are using a floating license, you need to update your [Flexnet daemon](#f
 * Added new option to **Export hierarchy as CSV**: use current toplevel in Hierarchy View as default value ([documentation](/manual/tools.html#export))
 * The Mac OS X version now is a real 'App' contained in one, clean `Sigasi.app`
 * The formatter now offers an option to **ignore keyword casing**
-* We updated the Flexnet client. If you use a floating license, you need to [update the daemon too](floating-license-updates).
+* We updated the Flexnet client. If you use a floating license, you need to [update the daemon too](#floating-license-updates).
 * We added a warning if your Sigasi installation is outdated. If you use Sigasi without a commercial license, an update is required if Sigasi is older than 6 months. 
 * We updated the Xtext dependency to `2.9.0`.
 
