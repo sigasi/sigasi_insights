@@ -7,7 +7,7 @@ date: 2016-01-20
 
 [todo] intro
 
-## Sigasi 3 Rebranding: Sigasi Studio Starter, Sigasi Studio Creator, Sigasi Studio XL
+## Sigasi Studio 3: Starter, Creator and XL
 
 The different Sigasi version (Starter, Pro and Premium) were renamed to Sigasi Studio **Starter**, **Creator** and **XL**.
 
@@ -17,9 +17,9 @@ screenshot [todo]
   
 Sigasi Studio **Starter** now only works with **single files**, and _not with projects_. So all features in Sigasi Studio Starter, only take information of the current file into account. So there is no longer a _project size threshold_, which tweaked some features as in Sigasi 2.
 
-### Sigasi Studio Creator
+Sigasi Studio Starter works without a license key, but requires [/manual/talkback] and you need to keep your version up to date.
 
-### Sigasi Studio XL
+Sigasi Studio **Creator** is the go-to design entry tool and code browser for all your HDL projects, just like Sigasi Pro was. And Sigasi Studio XL is our flagship product, which can be further extended with addons.
 
 ### What about my current license?
 
