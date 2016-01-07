@@ -102,7 +102,7 @@ To update the standalone version to Sigasi Studio 3.0, you need to perform a fre
 1. Add the new update URL via **Window > Preferences > Install/Update > Available update sites**
 2. Click the **Add...** button:
     * Name: `Sigasi`
-    * Location: `http://download.sigasi.com/update/latest`
+    * Location: `http://download.sigasi.com/update/studio`
 3. **OK**    
 4. Install the updates via **Help > Check for Updates**
 

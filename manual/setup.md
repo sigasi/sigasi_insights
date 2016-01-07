@@ -70,10 +70,11 @@ Note that we do not support Eclipse 3 any more. ([System Requirements](/faq.html
 After starting Eclipse:
 
 1. Click **Help > Install New Software…**
-2. In the **Work with:** field enter **http://download.sigasi.com/updates/latest** and press **enter**.
+2. In the **Work with:** field enter **http://download.sigasi.com/updates/studio
+** and press **enter**.
 3. Check the checkbox next to **Sigasi 3**
-4. [todo] If you have Eclipse 3.8 or newer, you can also install optional features such as the <em>Block Diagram View</em>
-5. **On Eclipse 4.x** (Juno, Kepler, ...) make sure you **Enable** the checkbox **Contact all update sites during install to find required software**.
+4. We recommend to install the optional features too.
+5. [todo] **On Eclipse 4.x** (Juno, Kepler, ...) make sure you **Enable** the checkbox **Contact all update sites during install to find required software**.
    ![Install Sigasi plugin](images/install-plugin.png)
 6. Click the **Next** button.
 7. The following steps are pretty self-explaining.</a>
