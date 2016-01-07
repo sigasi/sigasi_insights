@@ -5,7 +5,9 @@ pager: true
 date: 2016-01-20
 ---
 
-[todo] intro
+The Sigasi Studio 3.0 release brings you a rebranded HDL IDE. This release brings many improvements, especially for SystemVerilog and the Eclipse workbench.
+
+Because this release brings major changes, carefully read the "[#How to update?]" section.
 
 ## Sigasi Studio 3: Starter, Creator and XL
 
@@ -34,7 +36,6 @@ If you are using a floating license, you need to update your [Flexnet daemon](#f
 * The toolbar now contains a global search field **[Quick Access](/manual/keyshortcuts.html#quick-access-ctrl3)**. With Quick Access you can quickly find open editors, available perspectives, views, preferences, wizards, commands, etc. Simply start typing the name of the item you wish to invoke.
   ![Quick Access](3.00/global-search-bar.png)
 * You can now select a **dark theme** in Sigasi: **Window > Preferences > General > appearance > Theme** 
-  [todo] screenshot
 * **Lightweight refresh on access** option. When this option is enabled, out-of-sync files will be automatically refreshed when you open an editor.  
 * When you right click in an editor, you can now select **Show in > System explorer**, to select the file in the system explorer.
   ![Show in System Explorere](3.00/show-in-system-explorer.png)
@@ -45,11 +46,14 @@ If you are using a floating license, you need to update your [Flexnet daemon](#f
 
 ### Verilog and SystemVerilog improvements
 
-* In Sigasi 3.0 we implemented an convenient way to preview the result of preprocessing the active Verilog file. When you **Hover** a Verilog macro, you will see the **preprocessed** text. At the bottom of the hover you will also see a link to open the **Preprocessor (Macro) View**. This view _automatically synchronizes its position and selection* with the active editor. [documentation](/manual/verilog_editor.html#verilog-preprocessingmacros)  
+* In Sigasi 3.0 we implemented an convenient way to preview the result of preprocessing the active Verilog file. When you **Hover** a Verilog macro, you will see the **preprocessed** text. At the bottom of the hover you will also see a link to open the **Preprocessor View**.
+  ![Verilog macro hover](3.00/verilog-macro-hover.png)
+* The **Preprocessor (Macro) View** is another way to easily inspect the preprocessed Verilog code. It _automatically synchronizes its position and selection_ with the active editor. [documentation](/manual/verilog_editor.html#verilog-preprocessingmacros)  
   ![Preprocessor View](3.00/verilog-preprocessor-view.png)
+* Verilog **include paths** can now be configured. Right click your Verilog project in the project explorere and select **Properties > Verilog Preprocessor**. Here you can enter a `;`-separated list of include paths (relative to the project folder). 
 * We also improved our SystemVerilog analyzer. Sigasi now correctly _link_ `packages`, `records`, `structs`, `unions` and `enums`. This improves **Open Declaration** and **Find References**. 
 * Improved hover for `wire` and `reg`
-  [todo] screenshot
+  ![improved hover verilog reg](3.00/verilog-hover-reg.png)
 
 ### Other new and noteworthy improvements
 
@@ -59,7 +63,7 @@ If you are using a floating license, you need to update your [Flexnet daemon](#f
 * Added new, minimalistic perspective for **Sigasi Starter**
 * Add option to open documentation view from the editor: **Show In > Documentation View**
 * Added [solarized theme](http://ethanschoonover.com/solarized) for the Sigasi editors
-  [todo] screenshot
+  ![solarized theme Dark and Light](3.00/solarized-mixed.png)
 * Improved **Documenation View**: the documentation preview no longer flickers and scrolls to the top of your file when you edit your VHDL sources.
 * Added new option to **Export hierarchy as CSV**: use current toplevel in Hierarchy View as default value ([documentation](/manual/tools.html#export))
 * The Mac OS X version now is a real 'App' contained in one, clean `Sigasi.app`
