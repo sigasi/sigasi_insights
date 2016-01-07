@@ -13,7 +13,7 @@ The different Sigasi version (Starter, Pro and Premium) were renamed to Sigasi S
 
 We optimized Sigasi Studio **Starter** as much as possible to work with **single files**. The UI in Sigasi Studio **Starter** only show menus relevant for editing VHDL and Verilog files. 
 
-screenshot [todo]
+![Sigasi Studio Starter perspective](3.00/sigasi-studio-starter.png)
   
 Sigasi Studio **Starter** now only works with **single files**, and _not with projects_. So all features in Sigasi Studio Starter, only take information of the current file into account. So there is no longer a _project size threshold_, which tweaked some features as in Sigasi 2.
 
@@ -31,32 +31,33 @@ If you are using a floating license, you need to update your [Flexnet daemon](#f
 
 ### Updated to Eclipse 4
 
-* Global search bar
+* The toolbar now contains a global search field **[Quick Access](/manual/keyshortcuts.html#quick-access-ctrl3)**. With Quick Access you can quickly find open editors, available perspectives, views, preferences, wizards, commands, etc. Simply start typing the name of the item you wish to invoke.
+  ![Quick Access](3.00/global-search-bar.png)
+* You can now select a **dark theme** in Sigasi: **Window > Preferences > General > appearance > Theme** 
   [todo] screenshot
-* Support for Dark theme
-  [todo] screenshot
-* Show in System explorer
-  [todo] screenshot
-* Close tabs + tab overflow
-  [todo] screenshot
-* [more](https://www.eclipse.org/eclipse/news/4.5/platform.php)
+* **Lightweight refresh on access** option. When this option is enabled, out-of-sync files will be automatically refreshed when you open an editor.  
+* When you right click in an editor, you can now select **Show in > System explorer**, to select the file in the system explorer.
+  ![Show in System Explorere](3.00/show-in-system-explorer.png)
+* **Word Wrap** and **automatic scroll lock** in the **Console View**
+* The context menus of editor and view tabs now offer **Close Tabs to the left** (and **right**). There are also more options on what happens when there is not enough space to show tabs for all open editors. You can configure this in **Window > Preferences > General > Appearance > Visible tabs on overflow**.
+  ![Close tabs](3.00/close-tabs.png)
+* [And even more improvements](https://www.eclipse.org/eclipse/news/4.5/platform.php)
 
-### Verilog improvements
+### Verilog and SystemVerilog improvements
 
-* Preprocessor (Macro) View
-  [todo] screenshot
-* Better linking
-* Hover for wire and reg
+* In Sigasi 3.0 we implemented an convenient way to preview the result of preprocessing the active Verilog file. When you **Hover** a Verilog macro, you will see the **preprocessed** text. At the bottom of the hover you will also see a link to open the **Preprocessor (Macro) View**. This view _automatically synchronizes its position and selection* with the active editor. [documentation](/manual/verilog_editor.html#verilog-preprocessingmacros)  
+  ![Preprocessor View](3.00/verilog-preprocessor-view.png)
+* We also improved our SystemVerilog analyzer. Sigasi now correctly _link_ `packages`, `records`, `structs`, `unions` and `enums`. This improves **Open Declaration** and **Find References**. 
+* Improved hover for `wire` and `reg`
   [todo] screenshot
 
 ### Other new and noteworthy improvements
 
 * We dropped Eclipse 3 support (new [requirements](/faq.html#what-are-the-system-requirements))
 * The Hierarchy and Generics View are now merged. You can now inspect the values of generics and constants directly in the hierarchy view.
-  [todo] screenshot
+  ![generics in hierarchy view](3.00/hierarchy-generics.png)
 * Added new, minimalistic perspective for **Sigasi Starter**
-* **Show In > Documentation View**
-  [todo] screenshot
+* Add option to open documentation view from the editor: **Show In > Documentation View**
 * Added [solarized theme](http://ethanschoonover.com/solarized) for the Sigasi editors
   [todo] screenshot
 * Improved **Documenation View**: the documentation preview no longer flickers and scrolls to the top of your file when you edit your VHDL sources.
@@ -75,7 +76,7 @@ If you are using a floating license, you need to update your [Flexnet daemon](#f
 - ticket 3460 : Support comments without leading whitespace
 - ticket 3483 : Clear nature settings when **Clear** button is pressed on the VHDL/Verilog preference pages
 - ticket 3490 : Split long names in documentation tables
-  [todo] screenshot
+  ![Split long names in documentation tables](3.00/documentation_long_names_table.png)
 
 ## How to update?
 
