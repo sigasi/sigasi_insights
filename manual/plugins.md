@@ -11,8 +11,7 @@ The best place to start looking for a plugin is the [eclipse-marketplace]. We li
 plugins here. Since these are third party plugins, there is no official
 support from Sigasi.
 
-Revision Control Systems
-========================
+## Revision Control Systems
 
 Sigasi supports a wide range of [Revision Control
 Systems](http://en.wikipedia.org/wiki/Revision_control) (also know as
@@ -20,19 +19,16 @@ Version Control or Source Control systems). Support for revision control
 is based on Eclipse plugins. This chapter contains a preliminary listing
 of the most popular revision control systems.
 
-GIT {#revision-git}
----
+### GIT {#revision-git}
 
 Recommended plugin: [EGit](http://www.eclipse.org/egit/)
 This plugin is shipped with the standalone version of Sigasi.
 
-Subversion (SVN) {#revision-svn}
-----------------
+### Subversion (SVN) {#revision-svn}
 
 Recommended plugin: [Subversive](http://www.eclipse.org/subversive/)
 
-ClearCase {#revision-clearcase}
----------
+### ClearCase {#revision-clearcase}
 
 Recommended plugin:
 [ClearCase](http://sourceforge.net/apps/mediawiki/eclipse-ccase/index.php?title=Main_Page)
@@ -46,16 +42,14 @@ IBM](http://www.ibm.com/developerworks/rational/downloads/07/cc_eclipse3_2/clear
 [Learn more about
 ClearCase](http://www.ibm.com/developerworks/rational/downloads/07/cc_eclipse3_2/clearcase_plugins.html).
 
-Local history {#revision-local}
--------------
+### Local history {#revision-local}
 
 While this is not strictly speaking a version control system, Sigasi has
 a built-in feature that keeps a local history of your files. 
 [Learn
 more.](http://help.eclipse.org/helios/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2FgettingStarted%2Fqs-55.htm)
 
-Other systems
--------------
+### Other systems
 
 Some other popular revision control systems include:
 
@@ -65,3 +59,7 @@ Some other popular revision control systems include:
 3.  Perforce [learn
     more](http://www.perforce.com/product/components/eclipse_plugin).
 
+
+## Other languages
+
+* [/tech/eclipse_tcl_support_in_sigasi]
