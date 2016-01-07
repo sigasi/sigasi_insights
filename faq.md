@@ -446,3 +446,32 @@ All Sigasi plugins should be at the same version number. You can check the versi
 **Help > About Eclipse > Plug-ins.**
 
 Here you can **sort** by Plug-in Id by clicking on the title of the "Plug-in Id" column, so that you can check all the plugins that start with "com.sigasi...."
+
+## What is the eclipse.ini file and where can I find it? {#eclipse-ini}
+
+The file `eclipse.ini` contains information that is passed to the Eclipse platform and to the Java Virtual Machine (JVM).
+
+If you are using an Eclipse distribution on Windows or Linux, the file is located in your eclipse directory.
+On Mac OS X distributions, the file is usually in `Eclipse.app/Contents/MacOS/eclipse.ini`.
+
+For the Sigasi standalone product, the file called `sigasi.ini`
+More information about this file can be found at <http://wiki.eclipse.org/Eclipse.ini>
+
+
+## Which free VHDL simulator can I use?
+
+Sigasi does not offer simulators. If you don't have a VHDL simulator yet, we would recommend the following simulators. You can download them free of charge.
+
+| Simulator	                        | Comment            | Download from              | Windows | Linux | Mac OSX |
+| --------------------------------- | ------------------ | -------------------------- | ------- | ----- | ------- |
+| Aldec Lattice Edition	            | Only Lattice FPGAs | [Lattice Download page](http://www.latticesemi.com/licensing/flexlmlicense.cfm?p=diamond)	  | Yes     | No    | No      |
+| Aldec Active-HDL, Student Edition | Students only      | [Aldec Download page](http://www.aldec.com/Downloads/default.aspx)        | Yes     | No    | No      |
+| ModelSim Altera Starter Edition   | Only Altera FPGAs  | [Altera Quartus Web Edition](http://www.altera.com/products/software/quartus-ii/web-edition/qts-we-index.html) | Yes     | Yes   | No      |
+| ISim	                            | Only Xilinx FPGAs  | [Xilinx Webpack](http://www.xilinx.com/products/design-tools/ise-design-suite/ise-webpack.htm)             | Yes     | Yes   | No      |
+
+At this time, Sigasi does not support [Simili](http://www.symphonyeda.com/products.htm) or [GHDL](http://ghdl.free.fr/). Note that [GHDL on Mac OSX](http://eng-osx.sourceforge.net/GHDL.html) uses Wine, but works without problems.
+We have not had good results with FreeHDL or with Green Mountain VHDL. It seems that these two projects may have been terminated.
+
+You need a VHDL editor too
+
+After you choose your simulator, you need a VHDL editor too. Sigasi has a [free starter edition](http://www.sigasi.com/sigasi-starter-edition) of its popular VHDL development environment.
