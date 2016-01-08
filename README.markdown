@@ -6,6 +6,11 @@ You can find the rendered version at <http://doc.sigasi.com>
 
 ## Authoring guide
 
+We are using markdown
+
+* [MarkDown tutorial](http://markdowntutorial.com/)
+* [MarkDown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
 ### Filenames
 
 * Use dashes as separator. E.g.: **`test-me.md`** and **not** ~~`test_me.md`~~
