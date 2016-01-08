@@ -195,7 +195,12 @@ You can watch a screencast at [/screencasts/state_machine_viewer]
 
 [xl_only]
 
-[todo]
+The **Dependencies View** visualizes the dependencies of the VHDL or Verilog file in the current editor. 
+This view is automatically updated each time you save your files.
+
+![Dependencies View](images/dependencies-view.png "Dependencies View")
+
+If you are working on a mixed language project, the Dependencies View will also show cross language dependencies.
 
 # Documentation View {#documentation}
 
