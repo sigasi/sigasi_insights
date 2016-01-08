@@ -96,7 +96,7 @@ See [/manual/config#Font Size].
 Click the little triangle to the upper right-hand side of the problems view and look at the Group By and Sort By menu.
 
 You can also filter which problem markers you will see in the Show menu; for example only errors and warnings for the current project.
-![Problems View](/images/screenshots/organize_problem_markers.png "Problems View")
+![Problems View](faq-images/organize_problem_markers.png "Problems View")
 
 ## How can I check a SHA sum?
 The SHA1 sum (or hash) is a fingerprint of a file. After you download a file, you can check that it is downloaded correctly by calculating its SHA sum. If the SHA sum is correct, you can be sure that the download was correct too. On the Sigasi download page, you find the zip files that contain the actual Sigasi application, and also a small text file with the correct SHA sums .
@@ -171,7 +171,7 @@ If the project explorer shows the hidden files in from your revision control sys
 
 Select the View Menu (small triangle pointing down) **Customize View > Filters**. 
 
-![](images/screenshots/customize-view.png)
+![](faq-images/customize-view.png)
 
 Now you can filter out hidden files (`.* resources`) or `All non VHDL Files`.
 
@@ -217,7 +217,7 @@ Sigasi Studio does not attempt to check full correctness of your VHDL and Verilo
 
 As you design, you put your code through a funnel: first Sigasi finds the first 90% of errors in your code, without ever running a simulation. Next you compile with the simulator and you find another bunch of problems. In each successive step of your design flow, you find harder to track errors in your design. Sigasi just helps you get a big number of issues out of the way early on, so that you can concentrate on finding the hard problems down the road.
 
-![](images/screenshots/funnel_small.png)
+![](faq-images/funnel_small.png)
 
 If you want to check more errors, enable the [/manual/tools#Save-time Compilation]
 
@@ -270,7 +270,7 @@ Note that in many cases where you are used to using block editing (e.g. [/screen
 ## What is this MouseFeed pop-up?
 Many actions can be accessed using your mouse and using a keyboard shortcut, e.g. copying text can be done either by clicking **Edit > Copy** or by pressing **Ctrl-C**. Of course, pressing a key combination is a lot faster than clicking in a menu.
 
-![](/images/screenshots/mousefeed.png)
+![](faq-images/mousefeed.png)
 
 Whenever you use your mouse for something that also has a key binding, the MouseFeed function tells you what this keyboard shortcuts is. This will help you remember keyboard shortcuts for the actions you use most often.
 
@@ -288,7 +288,7 @@ You do not have to change your directory structure, the names of your VHDL files
 ## How can I change settings?
 Most settings can be changed in **Window > Preferences**. In this dialog, you can either browse the menus to the left, or search for an item in the search field in the top left.
 
-![](images/screenshots/settings1.png)
+![](faq-images/settings1.png)
 
 
 ## How can I insert tabs in Block Selection Mode
@@ -323,13 +323,13 @@ In some situations you may not want Sigasi's VHDL aware search (**Find Reference
 
 If you want textual search inside one file, you can use **Find** (Ctrl-F). This dialog has an easy "**Whole word**" option.
 
-![](images/screenshots/find.png)
+![](faq-images/find.png)
 
 I you want to search for textual matches in the **entire workspace** with the **Search** dialog. This method does not have a 'Whole word' option.
 
 You can achieve the same effect by toggling the '**Regular Expression**' option and by adding a `\b` before and after the text you search. The `\b` stands for "word boundary" in regular expressions.
 
-![](images/screenshots/search.png)
+![](faq-images/search.png)
 
 ## I have error markers in files that are not even mapped to a library?
 
@@ -354,8 +354,7 @@ Procedure:
 2. In the context menu, select **Quick Fix**
 3. Click **Finish** in the Dialog
 
-![](images/screenshots/quick_fix_all_code_menu.png)
-![](images/screenshots/quick_fix_all_dialog.png)
+![](faq-images/quick_fix_all_code_menu.png)
 
 
 ## Can I use the features of the upcoming release?

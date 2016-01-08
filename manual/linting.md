@@ -76,7 +76,7 @@ of lint is configurable for additional flexibility. The configuration
 interface is available in **Window \> Preferences \> VHDL \>
 Errors/Warnings**.
 
-![Configuring the severity of Sigasi linting checks](/images/screenshots/problemseveritypreferencepage.png "Configuring the severity of Sigasi linting checks")
+![Configuring the severity of Sigasi linting checks](images/problemseveritypreferencepage.png "Configuring the severity of Sigasi linting checks")
 
 ## Creating Custom VHDL Linter Rules {#linting-custom-rules}
 
@@ -190,7 +190,7 @@ Input ports and generics with a default value, as well as output ports
 do not need to be assigned explicitly. However, this is often not
 intended. For that reason, Sigasi can warn you about this.
 
-![](/images/screenshots/warn-incomplete-map.png)
+![](images/warn-incomplete-map.png)
 
 ### Posititional Association in Instantiations
 
@@ -206,7 +206,7 @@ If you are using vendor libraries from Altera or Xilinx (ISE or Vivado),
 you do not need to set up these libraries by hand. Sigasi has a QuickFix
 to do this for you.
 
-![](/images/screenshots/alteraquickfix.png)
+![](images/alteraquickfix.png)
 
 The `library` statement that tries to import a missing library (like
 `altera`) will be have a yellow warning marker next to it. Click this
@@ -275,14 +275,14 @@ anybody would type the use clause, but quite some people start all of
 their files with two extra library clauses. Sigasi flags this as
 warning.
 
-![](/images/screenshots/warn-superfluous-library.png)
+![](images/warn-superfluous-library.png)
 
 ### Dead Code (unreachable code)
 
 If the Sigasi analyser can determine that a condition is always false,
 it will mark the if-statement because it contains dead code.
 
-![](/images/screenshots/unreachable_code.png)
+![](images/unreachable_code.png)
 
 ### Null Range (empty range) (#nullRange)
 
@@ -292,7 +292,7 @@ want: `7 downto 0` is a range of eight. `7 to 0` is an null range.
 We have a lint check that warns about this, even if you use constants
 (or some simple arithmetic).
 
-![](/images/screenshots/nullrange.png)
+![](images/nullrange.png)
 
 ### Space Before the Physical Unit
 
@@ -315,7 +315,7 @@ Although VHDL is not case sensitive, it is recommend to always use the same capi
 
 Since Sigasi 2.31 this can easily be fixed with a quickfix.
 
-![](/images/screenshots/captalization_references.png)
+![](images/captalization_references.png)
 
 ### Naming Conventions
 

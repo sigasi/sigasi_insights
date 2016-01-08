@@ -7,7 +7,7 @@ When you open a project in Sigasi HDT, a number of views are presented
 in the user interface. Here is a typical screenshot, with the views
 highlighted.
 
-![](/images/screenshots/sigasiviewsannotated.png)
+![](images/sigasiviewsannotated.png)
 
 The views provide alternative ways to access the information in a
 project. They permit efficient navigation, inspection and editing.
@@ -88,7 +88,7 @@ You can **launch a simulation** with the ![](icons/run_exc.gif) button, if you f
 
 The Hierarchy View also offers an action **Select required files**, which selects all design files that are part of the current hierarchy, in the project explorer. This allows you to easily perform the same action on all files in the hierarchy. E.g. team commands, ... [xl_only]
 
-![](/images/screenshots/select_required_files_in_hierarchy.png)
+![](images/select_required_files_in_hierarchy.png)
 
 # Problems view {#problems}
 
@@ -106,7 +106,7 @@ problems, …
 
 [vhdl_only]
 
-![](/images/screenshots/libraries-view.png)
+![](images/libraries-view.png)
 
 The libraries view shows the library mapping of the design units in all
 projects. You can use it to navigate to a particular design unit in your
@@ -121,7 +121,7 @@ always be selected in the Library view.
 
 # Tasks View {#tasks}
 
-![](/images/screenshots/tasks-view.png)
+![](images/tasks-view.png)
 
 It is common practice to add **TODO** and **FIXME** comments in your
 code. Sigasi automatically scans your comments for TODO and FIXME tags
@@ -143,7 +143,7 @@ This viewer **automatically updates** when you **save** your code and
 gives a convenient way to visually inspect and navigate your code, even
 when your code is still unfinished or broken.
 
-![](/images/screenshots/block_diagram.png)
+![](images/block_diagram.png)
 
 You can open the block diagram view by right clicking in the editor and
 selecting **Show In \> Block Diagram**. Alternatively you can open the
@@ -172,7 +172,7 @@ select the Block Diagram View during installation</a>.
 
 The **State Machine View** displays a graphical (bubble diagram) view of all state machines in your current VHDL editor. This viewer automatically updates while you are editing your code and gives a convenient way to visually inspect and navigate your code, even when your code is still unfinished or broken.
 
-![](/images/screenshots/statemachineviewer.png)
+![](images/statemachineviewer.png)
 
 You can open the state machine view by right clicking in the editor and selecting **Show In > State Machines**. Alternatively you can open the view via **Window > View > Other... > VHDL > State Machines**.
 
@@ -207,7 +207,7 @@ If you are working on a mixed language project, the Dependencies View will also 
 The **Documentation view** gives you a live preview of the automatic
 documentation Sigasi can generate for your project.
 
-![](/images/screenshots/documentationview.png)
+![](images/documentationview.png)
 
 ## Export Documentation
 
@@ -241,7 +241,7 @@ can press **CTRL+SHIFT+H**.
 The **Net Search** view will appear. For big designs, it might take a
 while before the results appear.
 
-![](/images/screenshots/netsearch.png)
+![](images/netsearch.png)
 
 From the **Net Search** view, you can navigate to the VHDL code by
 double-clicking the search results.

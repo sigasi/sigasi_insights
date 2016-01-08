@@ -10,7 +10,7 @@ Sigasi is built upon the Eclipse platform, which permits to use multiple languag
 
 Sigasi Studio provides two perspectives to work with both **VHDL** and **Verilog** files: **Sigasi** and **Sigasi Starter**.
 
-![](/images/screenshots/sigasi_perspectives.png)
+![](images/sigasi_perspectives.png)
 
 **Sigasi** is the recommended perspective to work with **projects** [creator]. **Sigasi Starter** is the recommended perspective to work with VHDL and Verilog files in _single file mode_.
 
@@ -121,7 +121,7 @@ course, the actual parameter names need to be reviewed and edited by the
 user. Therefore, the editor will go into template editing mode after the
 autocompletion.
 
-![](/images/screenshots/entity_instantiation.png)
+![](images/entity_instantiation.png)
 
 Instantiating a *component* is similar to instantiating an entity. Note
 that components will only be shown if they are visible in the current
@@ -184,7 +184,7 @@ allows to select rectangular regions, or to set the cursor over multiple
 lines. Block selection is ideal for selecting vertical regions, for
 example a column of a table or all port names in a port map.
 
-![Block selection](/images/screenshots/block-select.png "Block selection Mode")
+![Block selection](images/block-select.png "Block selection Mode")
 
 To toggle between normal and block selection modes use **Alt+Shift+A**
 or press the **Toggle Block Selection** icon in the tool bar.

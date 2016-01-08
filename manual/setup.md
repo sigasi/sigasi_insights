@@ -88,7 +88,7 @@ For small projects, all features of Sigasi can be used without a
 license. You can monitor the relative size of your VHDL and Verilog
 projects in the right corner of the status bar:
 
-![](/images/screenshots/smallprojectstatus.png)
+![](images/smallprojectstatus.png)
 
 The relative size is shown as a percentage. For projects larger than
 100%, the size indication area turns red and Sigasi 2.0 falls back to a
@@ -105,8 +105,8 @@ Sigasi stores its projects on the file system in one or more
 When you start the tool for the first time, it will propose to create a
 workspace for you:
 
-![Choose workspace](/images/screenshots/chooseworkspace2.png)
-
+![Choose workspace](images/chooseworkspace2.png)
+j
 Although you can work with multiple workspaces, we recommend to use a
 single workspace for all your projects.
 
@@ -117,7 +117,7 @@ Sigasi has an automated update system. When updates are available, you
 are notified by a pop-up window called **Updates Available** in the
 bottom right corner:
 
-![Update](/images/screenshots/update.png)
+![Update](images/update.png)
 
 If you want to install the updates, click anywhere in the pop-up window.
 After a few seconds, a new window will appear with further instructions.

@@ -72,14 +72,14 @@ your toolchain is installed on a default location. After you press
 **Apply**, you can select your toolchain on the **Sigasi \> Toolchains**
 page.
 
-![](/images/screenshots/toolchains-settings.png)
+![](images/toolchains-settings.png)
 
 For some toolchains you can specify extra command line arguments. Note
 that these preference pages support [Eclipse
 Variables](http://help.eclipse.org/indigo/topic/org.eclipse.platform.doc.user/concepts/concepts-exttools.htm)
 which allow you to more easily share settings in a team.
 
-![](/images/screenshots/toolchains-settings-rivierapro.png)
+![](images/toolchains-settings-rivierapro.png)
 
 List of toolchains
 ==================
@@ -138,7 +138,7 @@ All output from external compilers is logged in Sigasi’s console view
 for your convenience. Paths to your design files are automatically
 converted to hyperlinks to ease naviation.
 
-![](/images/screenshots/vcom-console.png)
+![](images/vcom-console.png)
 
 The table below lists some examples of VHDL errors that are detected in
 Sigasi at type time, at save time and with the external compiler
@@ -186,12 +186,12 @@ You can test your tool configuration with the **Run** button.
 The following example screenshot shows how to set up configuration to
 run a `simulate.sh` script from within Sigasi Pro.
 
-![](/images/screenshots/tutorialconfiguration.png)
+![](images/tutorialconfiguration.png)
 
 The following example screenshot shows how to set up a configuration to
 run `make clean` on a Linux machine.
 
-![](/images/screenshots/makeconfiguration.png)
+![](images/makeconfiguration.png)
 
 To run the external tool just select the configuration from the dropdown
 menu on the ![](icons/externaltool.png)-icon. You can rerun the
@@ -214,7 +214,7 @@ Builders**.
 
 Click **New…** and the builder configuration window will pop up:
 
-![](/images/screenshots/makefiles_buildersoverview.png)
+![](images/makefiles_buildersoverview.png)
 
 You will be asked to select a configuration type:
 select ![](icons/externaltool.png) **Program**.
@@ -226,7 +226,7 @@ Next, configure the builder in a configuration window pop up window:
 * **Working Directory**: The working directory for your program. For example, click **Browse Workspace…** and select the root folder of your project.
 * **Arguments**: The arguments to your program, e.g.  `--makefile=Makefile.vsim all`.
 
-![](/images/screenshots/makefiles_builderconfigurationmain.png)
+![](images/makefiles_builderconfigurationmain.png)
 
 
 With the default settings the ModelSim Makefile will only be run during
@@ -234,19 +234,19 @@ a manual build or after a “Clean”. To make sure Sigasi HDT runs `make`
 every time you save a change to a file, click the **Build Options** tab
 and check the **During auto builds** checkbox.
 
-![](/images/screenshots/makefiles_builderconfigurationoptions.png)
+![](images/makefiles_builderconfigurationoptions.png)
 
 
 After configuration, the new builder will appear in the builder list.
 
-![](/images/screenshots/makefiles_buildersoverview.png)
+![](images/makefiles_buildersoverview.png)
 
 
 When you close the builder configuration dialog windows, the new builder
 will automatically be run. In our example of a Modelsim Makefile,
 Modelsim’s messages will appear in the console view.
 
-![](/images/screenshots/makefiles_consoleoutput.png)
+![](images/makefiles_consoleoutput.png)
 
 For the specific case of Modelsim, warnings and error messages in the
 console are made clickable. When you click a message, the corresponding
@@ -310,7 +310,7 @@ Add files to your Quartus II project in Sigasi
 To add a file to your Quartus II project, you can use the default**New
 VHDL file\* wizard of Sigasi (**File \> New \> VHDL File**).
 
-![Add a new VHDL file to a Altera Quartus II project in Sigasi](/images/screenshots/quartusnewfile.png "Add a new VHDL file to a Altera Quartus II project in Sigasi")
+![Add a new VHDL file to a Altera Quartus II project in Sigasi](images/quartusnewfile.png "Add a new VHDL file to a Altera Quartus II project in Sigasi")
 
 Note that Quartus II does not automatically update its UI after you add
 files to your project. In order to update the files list, you should run

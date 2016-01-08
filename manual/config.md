@@ -38,7 +38,7 @@ You have to restart Sigasi HDT before these changes take effect.
 *Annotations* are colors added on top of your text editor, and to the right of your text editor, in the scroll bar. The image below shows annotations for each occurrence of a certain data type. The color has
 been changed to bright green.
 
-![Annotations in Bright Green](/images/screenshots/annotations-in-green.png "Annotations in Bright Green")
+![Annotations in Bright Green](images/annotations-in-green.png "Annotations in Bright Green")
 
 You can change the color of annotations in **Window > Preferences > General > Editors > Text Editors > Annotations**. For the particular case of *occurrence* annotations, you want to modify the color for
 annotation type **Occurrences**. 
