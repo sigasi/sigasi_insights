@@ -14,11 +14,11 @@ typing* your code.
 
 # Marker Icons {#linting-icons}
 
--   ![](/images/icons/info.png) marks an info message.
--   ![](/images/icons/warning_lightbulb.png) marks a warning that can be resolved automatically with a quickfix.
--   ![](/images/icons/warning.png) marks a warning that cannot be resolved automatically.
--   ![](/images/icons/error_lightbulb.png) marks an error that can be resolved automatically with a quick fix.
--   ![](/images/icons/error.png) marks an error that cannot be resolved automatically.
+-   ![](icons/info.png) marks an info message.
+-   ![](icons/warning_lightbulb.png) marks a warning that can be resolved automatically with a quickfix.
+-   ![](icons/warning.png) marks a warning that cannot be resolved automatically.
+-   ![](icons/error_lightbulb.png) marks an error that can be resolved automatically with a quick fix.
+-   ![](icons/error.png) marks an error that cannot be resolved automatically.
 
 # Linting {#linting-linting}
 
@@ -52,7 +52,7 @@ Linting is skipped for all files in the Common Libraries folder.
 
 Some of the VHDL lint problems can be automatically resolved with
 *quickfixes*. These problems have *markers* annotated with a lightbulb
-icon (like ![](/images/icons/warning\_lightbulb.png)). To trigger
+icon (like ![](icons/warning\_lightbulb.png)). To trigger
 a quickfix, click the problem marker or press **Ctrl-1** and select the
 quickfix.
 

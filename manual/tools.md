@@ -54,11 +54,11 @@ Launch simulator
 If an external compiler is enabled, you can also start a simulation from
 Sigasi. You can start a simulation by first selecting your *top level*
 in the [/manual/views#hierarchy] view. Next click the
-**Simulate** button ![](/images/icons/run_exc.gif) in the hierarchy
+**Simulate** button ![](icons/run_exc.gif) in the hierarchy
 view to launch the simulator gui with an elaborated design ready for
 simulation. Sigasi opens a new console for each simulation launch. You
 can terminate a simulation by clicking the **Stop** icon
-![](/images/icons/stop.png) .
+![](icons/stop.png) .
 
 Configure external compiler
 ===========================
@@ -168,11 +168,11 @@ External Tools Configuration
 ============================
 
 Select **Run \> External tools \> External Tools Configurations** to get
-started, or use the ![](/images/icons/externaltool.png) icon.
+started, or use the ![](icons/externaltool.png) icon.
 
 To create a new configuration, first select
-![](/images/icons/externaltool.png) **Program**, then click
-![](/images/icons/newconfiguration.png) .
+![](icons/externaltool.png) **Program**, then click
+![](icons/newconfiguration.png) .
 
 Enter all necessary information to start your external tool:
 
@@ -194,9 +194,9 @@ run `make clean` on a Linux machine.
 ![](/images/screenshots/makeconfiguration.png)
 
 To run the external tool just select the configuration from the dropdown
-menu on the ![](/images/icons/externaltool.png)-icon. You can rerun the
+menu on the ![](icons/externaltool.png)-icon. You can rerun the
 last configuration by simply clicking
-![](/images/icons/externaltool.png).
+![](icons/externaltool.png).
 
 
 Creating a Builder
@@ -217,7 +217,7 @@ Click **New…** and the builder configuration window will pop up:
 ![](/images/screenshots/makefiles_buildersoverview.png)
 
 You will be asked to select a configuration type:
-select ![](/images/icons/externaltool.png) **Program**.
+select ![](icons/externaltool.png) **Program**.
 
 Next, configure the builder in a configuration window pop up window:
 
@@ -294,7 +294,7 @@ Quartus II to open them in the Sigasi Studio editor view.
 
 If your Quartus II Project File (**.QPF file**) contains a reference to a
 file that does not exist, Sigasi will show an icon for that file with
-the *broken link* icon ![](/images/icons/brokenlink.png) .
+the *broken link* icon ![](icons/brokenlink.png) .
 
 Quartus II Preferences
 ----------------------

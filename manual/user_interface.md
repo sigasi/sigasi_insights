@@ -14,7 +14,7 @@ Sigasi Studio provides two perspectives to work with both **VHDL** and **Verilog
 
 **Sigasi** is the recommended perspective to work with **projects** [creator]. **Sigasi Starter** is the recommended perspective to work with VHDL and Verilog files in _single file mode_.
 
-If you use the standalone version of Sigasi, these perspective are the default. If you use the Eclipse plugin, another perspective may be open instead. You can select the Sigasi perspectives by clicking the button ![](/images/icons/perspectivebutton.png) next the perspective icon. A window pops up in which you can select the perspective.
+If you use the standalone version of Sigasi, these perspective are the default. If you use the Eclipse plugin, another perspective may be open instead. You can select the Sigasi perspectives by clicking the button ![](icons/perspectivebutton.png) next the perspective icon. A window pops up in which you can select the perspective.
 
 # Project exploration and navigation {#gui-navigate}
 
@@ -29,7 +29,7 @@ highlighting is intelligent: it is not based on the identifier’s string
 value, but on the object that the identifier refers to.
 
 You can turn occurrence highlighting on or off. Click 
-the "Toggle Mark Occurences" icon ![Mark Occurences](/images/icons/mark_occurences_icon.png "Mark Occurences") in the toolbar.
+the "Toggle Mark Occurences" icon ![Mark Occurences](icons/mark_occurences_icon.png "Mark Occurences") in the toolbar.
 
 
 **Finding References** To look for occurrences of a given identifier in
@@ -37,9 +37,9 @@ different files, place your cursor on the identifier and right-click.
 Now select **Search References**. A search window will appear on the
 bottom of your workbench, displaying all occurrences of the selected
 identifier. You can easily navigate through all occurrences by clicking
-the **Show Next Match** arrow ![](/images/icons/shownextmatch.png)
+the **Show Next Match** arrow ![](icons/shownextmatch.png)
 and the **Show Previous Match** arrow
-![](/images/icons/showpreviousmatch.png) in the search result
+![](icons/showpreviousmatch.png) in the search result
 view. Note that all occurrences are highlighted and marked with a small
 arrow at the left border of the editor for easy recognition.
 

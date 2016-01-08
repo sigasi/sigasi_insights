@@ -25,12 +25,12 @@ extra commands.
 You can customize the behavior of the **Project Explorer** view in ways
 that can be particularly handy for large projects. For example, if you
 click the **Link with Editor** icon
-![](/images/icons/linkprojectexplorer.png) , the Project Explorer
+![](icons/linkprojectexplorer.png) , the Project Explorer
 will be linked to the Editor view. Now, the active file in the editor
 view will always be selected in the Project Explorer.
 
 You can apply filters to choose which files are shown. Select the icon
-**View Menu** ![](/images/icons/viewmenuicon.png) and then
+**View Menu** ![](icons/viewmenuicon.png) and then
 **Customize view**. You can then select a filter whose matching files
 will be hidden in the view. For example, you can filter out all non-VHDL
 or non-Verilog files.
@@ -48,16 +48,16 @@ The Outline view displays the contents of the active file, in terms of
 the HDL objects that it contains.
 
 You can sort the elements in the outline alphabetically, by enabling the
-**sort** button ![](/images/icons/alphab\_sort\_co.gif).
+**sort** button ![](icons/alphab\_sort\_co.gif).
 
 You can also filter all concurrent signal assignments from the outline
 by enabling the **Hide Signal Assignments** button
-![](/images/icons/signal_assignments_filter.png).
+![](icons/signal_assignments_filter.png).
 Double-click in the Outline view to navigate to the corresponding
 location in the editor.
 
 If you enable the **Link with Editor** icon
-![](/images/icons/linkprojectexplorer.png) and you click an
+![](icons/linkprojectexplorer.png) and you click an
 element in the outline view, the corresponding code will be selected in
 the editor.
 
@@ -74,7 +74,7 @@ You can use the filter field to quickly search for a certain top level.
 The hierarchy view automatically refreshes itself when you save your
 design files. If you have a really large design this could slow you
 down. You can turn the automatic refresh on and off by toggling the
-**refresh** button ![](/images/icons/refresh.gif).
+**refresh** button ![](icons/refresh.gif).
 
 The hierarchy view also shows the **generic and constants values** of components in the hierarchy.
 The internal compiler computes the generics and constants, even if they are passed down through the hierarchy, and even if arithmetic operations are used to define new values. If the value cannot be computed for some reason, the
@@ -82,9 +82,9 @@ Hierarchy View will report the value to be _unknown_.
 
 When you **double-click** an object in the hierarchy, the Editor view is updated accordingly, possibly by displaying the contents of a different file.
 
-Use the **instantiations** filter ![](/images/icons/instantiation.png), to hide everything except instantiations and structural statements are shown.
+Use the **instantiations** filter ![](icons/instantiation.png), to hide everything except instantiations and structural statements are shown.
 
-You can **launch a simulation** with the ![](/images/icons/run_exc.gif) button, if you first set up an [tools#Launch simulator].
+You can **launch a simulation** with the ![](icons/run_exc.gif) button, if you first set up an [tools#Launch simulator].
 
 The Hierarchy View also offers an action **Select required files**, which selects all design files that are part of the current hierarchy, in the project explorer. This allows you to easily perform the same action on all files in the hierarchy. E.g. team commands, ... [xl_only]
 
@@ -98,7 +98,7 @@ an external compiler tool.
 You can navigate to the source of the problem by double clicking on a
 given problem. Problems can be sorted by clicking the column headers.
 The content of this view can be customized via the **View Menu**
-![](/images/icons/viewmenuicon.png) . Possible customizations are
+![](icons/viewmenuicon.png) . Possible customizations are
 *scope* (workspace, project, selection), *type*, maximum number of
 problems, …
 
@@ -115,7 +115,7 @@ view. If you right-click a file, you see the *context menu* which offers
 extra commands for [libraries#libraries-mapping].
 
 If you enable the **Link with Editor** button
-![](/images/icons/linkprojectexplorer.png), the Library view will
+![](icons/linkprojectexplorer.png), the Library view will
 be linked to the Editor view. Now, active file in the editor view will
 always be selected in the Library view.
 
@@ -155,7 +155,7 @@ have to **select** it, right click and click **open entity
 declaration**.
 
 You can export the block diagram view to an image with the save
-![](/images/icons/save.gif) button. Both **SVG** and **PNG** are supported. Choose a the \*.svg filename for SVG export or a \*.png filename for PNG export.
+![](icons/save.gif) button. Both **SVG** and **PNG** are supported. Choose a the \*.svg filename for SVG export or a \*.png filename for PNG export.
 
 You can also export **all** *block diagrams of an entire project* at once: Click **Project > Export... > Sigasi > Block Diagrams export** and select your project. All SVGs will be created in **diagrams/blockdiagrams/** in your project. 
 
@@ -182,10 +182,10 @@ If you have documented your state transitions (i.e. the assignments), the commen
 
 You can also **double-click nodes** or **transitions** to navigate to the corresponding VHDL code.
 
-With the ![](/images/icons/font.png) button, you can toggle the display of edge labels. These labels show the code comments of the transition statements.
+With the ![](icons/font.png) button, you can toggle the display of edge labels. These labels show the code comments of the transition statements.
 You also have to option to **Zoom In**, **Zoom Out** or **Zoom to Fit**.
 
-You can export the state machine view to an image with the save ![](/images/icons/save.gif) button. Both **SVG** and **PNG** are supported. Choose a the \*.svg filename for SVG export or a \*.png filename for PNG export.
+You can export the state machine view to an image with the save ![](icons/save.gif) button. Both **SVG** and **PNG** are supported. Choose a the \*.svg filename for SVG export or a \*.png filename for PNG export.
 
 You can also export **all** *state machines of an entire project* at once: Click **Project > Export... > Sigasi > State Machine Diagrams export** and select your project. All SVGs will be created in **diagrams/statemachines/** in your project. 
 

@@ -7,7 +7,7 @@ pager: true
 The user interface is unresponsive {#ts-unresponsive}
 ----------------------------------
 
-If the user interface of Sigasi HDT is unresponsive, you can interrupt the internal compilation process by pressing the **stop** button in the progress view. To activate the progress view, select **Window > Show View > Other... > General > Progress**, or click the tiny conveyor belt icon ![]/images/icons/progressicon.png), on the right side of the status bar.
+If the user interface of Sigasi HDT is unresponsive, you can interrupt the internal compilation process by pressing the **stop** button in the progress view. To activate the progress view, select **Window > Show View > Other... > General > Progress**, or click the tiny conveyor belt icon ![](icons/progressicon.png), on the right side of the status bar.
 
 The editor displays old contents of a file {#ts-refresh-editor}
 ------------------------------------------
@@ -98,7 +98,7 @@ By default, Sigasi assumes that all VHDL or Verilog files are part of the projec
 
 To exclude files (or directories) from analysis, consult the [/manual/libraries].
 
-Ignored resources are decorated with a ![]/images/icons/ignoreicon.png) icon in the project explorer view.
+Ignored resources are decorated with a ![](icons/ignoreicon.png) icon in the project explorer view.
 
 I do not get automatic updates {#ts-updates}
 ------------------------------
