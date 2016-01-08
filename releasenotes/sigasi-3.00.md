@@ -54,6 +54,14 @@ If you are using a floating license, you need to update your [Flexnet daemon](#f
 * We also improved our SystemVerilog analyzer. Sigasi now correctly _link_ `packages`, `records`, `structs`, `unions` and `enums`. This improves **Open Declaration** and **Find References**. 
 * Improved hover for `wire` and `reg`
   ![improved hover verilog reg](3.00/verilog-hover-reg.png)
+  
+### Sigasi XL Doc improvements
+
+* Improved **Documenation View**: the documentation preview no longer flickers and scrolls to the top of your file when you edit your VHDL sources.
+* Add option to open documentation view from the editor: **Show In > Documentation View**
+* The **Block Diagram View** now also displays more concurrent statements. In addition to instantiation statements, the block diagram view now also show **processes**, **concurrent signal assignments** and **asserts**.
+
+![Processes and signal assignments in block diagram view](3.00/statements_in_block_diagram.png "Processes and signal assignments in block diagram view")
 
 ### Other new and noteworthy improvements
 
@@ -61,10 +69,8 @@ If you are using a floating license, you need to update your [Flexnet daemon](#f
 * The Hierarchy and Generics View are now merged. You can now inspect the values of generics and constants directly in the hierarchy view.
   ![generics in hierarchy view](3.00/hierarchy-generics.png)
 * Added new, minimalistic perspective for **Sigasi Starter**
-* Add option to open documentation view from the editor: **Show In > Documentation View**
 * Added [solarized theme](http://ethanschoonover.com/solarized) for the Sigasi editors
   ![solarized theme Dark and Light](3.00/solarized-mixed.png)
-* Improved **Documenation View**: the documentation preview no longer flickers and scrolls to the top of your file when you edit your VHDL sources.
 * Added new option to **Export hierarchy as CSV**: use current toplevel in Hierarchy View as default value ([documentation](/manual/tools.html#export))
 * The Mac OS X version now is a real 'App' contained in one, clean `Sigasi.app`
 * The formatter now offers an option to **ignore keyword casing**
