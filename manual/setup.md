@@ -53,33 +53,30 @@ executing this startup file.
 Installation of Sigasi Eclipse Plugin
 -------------------------------------
 
-To download and install Sigasi as an Eclipse Plugin, follow the [Sigasi as Eclipse VHDL Plugin installation instructions](http://www.sigasi.com/install-eclipse-vhdl-plugin).
-
-![Eclipse Foundation member](images/eclipse_foundationmember.png){: style="float:right"}
-
 ### Prerequisites: Eclipse
 
+![Eclipse Foundation member](images/eclipse_foundationmember.png){: style="float:right"}
 * You need to have at least <a href="http://www.eclipse.org">Eclipse</a> version 4.2, nicknamed <em>Juno</em>.
-* If you don't have Eclipse installed yet, the C/C++ flavor would be good place to start. Just** download** ([Windows 64 bit](http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/1/eclipse-cpp-mars-1-win32-x86_64.zip)/[Linux 64 bit](http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/1/eclipse-cpp-mars-1-linux-gtk-x86_64.tar.gz)/[Other versions](http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/mars1)), **unzip** and **start**.
+* If you don't have Eclipse installed yet, the C/C++ flavor would be good place to start. Just** download** ([Windows 64 bit][latest-eclipse-cpp-windows64]/[Linux 64 bit][latest-eclipse-cpp-linux64]/[Other versions][latest-eclipse-cpp]), **unzip** and **start**.
 * We recommend you also increase the heap size for Eclipse ([/faq#how-do-i-increase-the-heap-size-for-eclipse]).
 
-Note that we do not support Eclipse 3 any more. ([System Requirements](/faq.html#what-are-the-system-requirements))
+_Note that we do **not** support Eclipse 3 any more._ ([System Requirements](/faq.html#what-are-the-system-requirements))
+
+[latest-eclipse-cpp-windows64]: http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/1/eclipse-cpp-mars-1-win32-x86_64.zip
+[latest-eclipse-cpp-linux64]: http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/1/eclipse-cpp-mars-1-linux-gtk-x86_64.tar.gz
+[latest-eclipse-cpp]: http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/mars1
 
 ### Install the VHDL Eclipse Plugin
 
 After starting Eclipse:
 
 1. Click **Help > Install New Software…**
-2. In the **Work with:** field enter **http://download.sigasi.com/updates/studio
-** and press **enter**.
-3. Check the checkbox next to **Sigasi 3**
+2. In the **Work with:** field enter **http://download.sigasi.com/updates/studio** and press **enter**.
+3. Check the checkbox next to **Sigasi Studio**
 4. We recommend to install the optional features too.
-5. [todo] **On Eclipse 4.x** (Juno, Kepler, ...) make sure you **Enable** the checkbox **Contact all update sites during install to find required software**.
-   ![Install Sigasi plugin](images/install-plugin.png)
-6. Click the **Next** button.
-7. The following steps are pretty self-explaining.</a>
-8. There will be a security warning about two unsigned Google plugins. Press **OK** to continue the installation.</a>
-
+   ![Install Sigasi plugin](images/setup-install-plugin.png)
+5. Click the **Next** button.
+6. The following steps are pretty self-explaining.
 
 Licensing
 ---------
