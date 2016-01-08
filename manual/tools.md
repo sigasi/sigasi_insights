@@ -49,7 +49,7 @@ and how to [/manual/tools#Configure external compiler].
 
 Launch simulator
 ================
-[vhdl]
+[vhdl_only]
 
 If an external compiler is enabled, you can also start a simulation from
 Sigasi. You can start a simulation by first selecting your *top level*
@@ -258,10 +258,10 @@ additional linting tools or code generators.
 Altera Quartus II integration
 =============================
 
-If you are using Altera Quartus II 12.1 , you can use Sigasi Pro as
+If you are using Altera Quartus II 12.1 , you can use Sigasi Studio as
 preferred HDL editor.
 
-If you use the Sigasi Pro / Altera Quartus II integration, you can
+If you use the Sigasi Studio/ Altera Quartus II integration, you can
 easily open VHDL files by double clicking on them in Quartus II. Sigasi
 Pro will be aware of the entire Quartus II project, so that you can
 perform project-wide searches and navigation actions in Sigasi.
@@ -280,17 +280,17 @@ Pro as preferred editor in [/manual/opening#Altera Quartus II].
 Open a Quartus II Project in Sigasi
 -----------------------------------
 
-After you have configured Sigasi Pro to be the preferred editor in
+After you have configured Sigasi Studio to be the preferred editor in
 Quartus II, you can open files by double clicking on them in Quartus II.
 
-Sigasi Pro will import entire Quartus II project and your file will open
+Sigasi Studio will import entire Quartus II project and your file will open
 in the Sigasi editor view. If you make changes to your Quartus II
 project (like adding or removing files), these changes are reflected in
 Sigasi as well.
 
 The first time you import your project, it may take a few minutes. After
-that, you can leave Sigasi Pro open and double-click other files in
-Quartus II to open them in the Sigasi Pro editor view.
+that, you can leave Sigasi Studio open and double-click other files in
+Quartus II to open them in the Sigasi Studio editor view.
 
 If your Quartus II Project File (**.QPF file**) contains a reference to a
 file that does not exist, Sigasi will show an icon for that file with

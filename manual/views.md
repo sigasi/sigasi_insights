@@ -62,7 +62,7 @@ element in the outline view, the corresponding code will be selected in
 the editor.
 
 # Hierarchy view {#hierarchy}
-[vhdl]
+[vhdl_only]
 
 The Hierarchy view shows the VHDL design hierarchy starting at a
 selected top level object. To choose a top level, open a file and
@@ -86,7 +86,7 @@ Use the **instantiations** filter ![](/images/icons/instantiation.png), to hide 
 
 You can **launch a simulation** with the ![](/images/icons/run_exc.gif) button, if you first set up an [tools#Launch simulator].
 
-The Hierarchy View also offers an action **Select required files**, which selects all design files that are part of the current hierarchy, in the project explorer. This allows you to easily perform the same action on all files in the hierarchy. E.g. team commands, ... [premium]
+The Hierarchy View also offers an action **Select required files**, which selects all design files that are part of the current hierarchy, in the project explorer. This allows you to easily perform the same action on all files in the hierarchy. E.g. team commands, ... [xl_only]
 
 ![](/images/screenshots/select_required_files_in_hierarchy.png)
 
@@ -104,7 +104,7 @@ problems, …
 
 # Libraries view {#libraries}
 
-[vhdl]
+[vhdl_only]
 
 ![](/images/screenshots/libraries-view.png)
 
@@ -134,7 +134,7 @@ You can configure extra tags in the Task Tag preference page:
 
 # Block Diagram View {#block}
 
-[premium]
+[xl_only]
 
 The **Block Diagram View** displays a graphical (block diagram) view
 of all architectures and its instantiations in your current VHDL editor.
@@ -168,7 +168,7 @@ select the Block Diagram View during installation</a>.
 
 # State Machine View {#fsm}
 
-[doc]
+[xl_doc_only]
 
 The **State Machine View** displays a graphical (bubble diagram) view of all state machines in your current VHDL editor. This viewer automatically updates while you are editing your code and gives a convenient way to visually inspect and navigate your code, even when your code is still unfinished or broken.
 
@@ -193,7 +193,7 @@ You can watch a screencast at [/screencasts/state_machine_viewer]
 
 # Dependencies View {#dependencies}
 
-[premium]
+[xl_only]
 
 [todo]
 
@@ -206,23 +206,23 @@ documentation Sigasi can generate for your project.
 
 ## Export Documentation
 
-[doc]
+[xl_doc_only]
 
 You can export documentation for the entire project to **pdf** by
 clicking the save icon or via the **Export…** menu.
 Since Sigasi 2.27 this export also saves the DocBook source code, if you
-have a Premium Doc license. This enables you to customize the pdf
+have a [xl_doc] license. This enables you to customize the pdf
 generation flow to your liking.
 
 All errors are logged to the console view.
 
-Users without a Premium Doc License can also export a (watermarked) pdf.
+Users without a XL Doc License can also export a (watermarked) pdf.
 
 <!-- # Preprocessor View {#preprocessor} [todo] -->
 
 # Net Search View {#netsearch}
 
-[premium]
+[xl_only]
 
 With **Net search**, you can you to find *loads* and *drivers* of a net.
 A *net* is defined as a signal or port and all other signals and ports
@@ -244,7 +244,7 @@ double-clicking the search results.
 
 # Preprocessor view
 
-[verilog]
+[verilog_only]
 
 ![](images/preprocessor-view.png)
 

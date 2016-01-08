@@ -4,7 +4,7 @@ layout: page
 pager: true
 ---
 
-[premium]
+[xl_only]
 
 You can create mixed language projects by adding both **VHDL** and
 **Verilog** support to your project: right click your project and select

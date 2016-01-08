@@ -4,7 +4,7 @@ layout: page
 pager: true
 ---
 
-[vhdl]
+[vhdl_only]
 
 In addition to syntax validation, Sigasi also checks your code for
 semantic problems (**Linting**, or **Linter checks**). Some of these
@@ -92,7 +92,7 @@ and contact us to discuss your requirements.
 
 ### Basic VHDL coding rules
 
-(available for Sigasi Pro, Sigasi Premium Desktop, Sigasi Premium Doc)
+[creator_only]
 
 -   NULL\_RANGE\_ERROR [link](#null-range)
 -   DEPRECATED\_PACKAGE [link](#deprecated-ieee-packages-non-standard-packages)
@@ -110,9 +110,9 @@ and contact us to discuss your requirements.
     <!--* BITSTRING_STD_LOGIC: invalid characters in bit string-->
 -   SENSITIVITY\_LIST [link](#sensitivity-list)
 
-### Premium VHDL coding rules
+### Advanced VHDL coding rules
 
-(available for Sigasi Premium Desktop, Sigasi Premium Doc)
+[xl_only]
 
 -   FSM\_DEAD\_STATE
 -   DEAD\_CODE (unreachable statements) [link](#dead-code)
@@ -140,7 +140,7 @@ before they realize that they are dealing with dead code. This makes it
 more expensive to review code and to reuse code. In general, dead code
 is a form of technological debt that should be avoided.
 
-Sigasi Pro flags some kinds of dead code:
+Sigasi Studio flags some kinds of dead code:
 
 -   unused or unnecessary library and use clauses,
 -   unused declarations (signals, constants, …)

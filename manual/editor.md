@@ -72,9 +72,8 @@ You can set your preferences for Tabs or spaces under **Window \>
 Preferences \> General \> Editors \> Text Editors \> Insert Spaces for
 Tabs.**
 
-Other preferences for code formatting are part of Sigasi Premium. You
-can configure them at **Window \> Preferences \> Sigasi \> VHDL \>
-Formatting**
+Other preferences for code formatting are part of [xl]. You
+can configure them at **Window > Preferences > Sigasi > VHDL > Formatting**
 Configurable settings currently include:
 
 -   Preserve newline characters

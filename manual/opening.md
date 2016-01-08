@@ -118,13 +118,13 @@ Repeat this procedure for `*.vhd` files and for `*.vhdl` files.
 
 ### Mac OS X
 
-When I double-click a VHDL file, I want it to open with my favorite VHDL editor. Sigasi Pro, obviously.
+When I double-click a VHDL file, I want it to open with my favorite VHDL editor. Sigasi Studio, obviously.
 
 Here is how to set this up in Mac OS X:
 
 * Find a VHDL file in the Finder
 * Right-click and select **Get Info**
-* Select **Open with > Other…** and find your Sigasi Pro application
+* Select **Open with > Other…** and find your Sigasi Studio application
 * Click **Change All…** so that all other VHDL files will also get opened with Sigasi.
 
 Repeat this procedure for `*.vhd` files and for `*.vhdl` files.

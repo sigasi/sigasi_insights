@@ -105,7 +105,7 @@ The tool provides help to autocomplete:
 -  case statements (based on variables/signals with an enumeration type)
 
 ### Instantiating an entity
-[vhdl]
+[vhdl_only]
 
 **Note:** In other tools this feature may be know as *paste as
 instantiation* or *port translation*.
@@ -128,7 +128,7 @@ that components will only be shown if they are visible in the current
 scope.
 
 ### Declaring a component
-[vhdl]
+[vhdl_only]
 
 **Note:** In other tools this feature may be know as *paste as
 component* or *port translation*.
@@ -142,7 +142,7 @@ selection, the tool will automatically complete the component
 declaration.
 
 ### Type Conversion
-[vhdl]
+[vhdl_only]
 
 In VHDL design you need to do a lot of type conversions. Sigasi’s
 autocomplete functionality can help you with those. Put a dot (`.`)
