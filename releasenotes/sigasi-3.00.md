@@ -116,7 +116,7 @@ Note that we replaced the **VHDL perspective** in Sigasi 2.31 with a new **Sigas
 
 ### Floating license updates
 
-Because the FlexNet license framework was updated in Sigasi Studio, the Flexnet license **daemon** needs to be updated too. You can find the download details in "[/manual/license_key#License server setup]".
+Because the FlexNet license framework was updated in Sigasi Studio, the Flexnet license **daemon** needs to be updated too. You can find the download details in "[/manual/license-key#License server setup]".
 
 Users with a **node-locked license** do not have to perform extra actions. 
  

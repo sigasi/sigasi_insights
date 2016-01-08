@@ -84,17 +84,9 @@ After starting Eclipse:
 Licensing
 ---------
 
-For small projects, all features of Sigasi can be used without a
-license. You can monitor the relative size of your VHDL and Verilog
-projects in the right corner of the status bar:
-
-![](images/smallprojectstatus.png)
-
-The relative size is shown as a percentage. For projects larger than
-100%, the size indication area turns red and Sigasi 2.0 falls back to a
-base-line modus (which is still more powerful than any other editor). To
-enable full Sigasi support for such projects, you need a valid license.
 The license key can be filled in under **Window > Preferences > Sigasi > License Key**.
+
+More details can be found in [/manual/license-key]
 
 Configuration
 -------------
