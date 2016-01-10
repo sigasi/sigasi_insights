@@ -223,8 +223,6 @@ All errors are logged to the console view.
 
 Users without a XL Doc License can also export a (watermarked) pdf.
 
-<!-- # Preprocessor View {#preprocessor} [todo] -->
-
 # Net Search View {#netsearch}
 
 [xl_only]

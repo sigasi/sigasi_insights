@@ -64,7 +64,12 @@ There is not much to configure about markers, but the other categories can be tu
 To enable line numbers, right-click in the gutter and select **Show Line Numbers**.
 
 ## Quick Diff
-[todo]
+
+Instead of using a compare editor, you can enable **quick diff** support and see the changes within the text editor. This feature can be enabled via **Window > Preferences > General > Editors > Text Editors > Quick Diff**.
+
+When you enable Quick Diff, you can see changes in the active editor with the version on disk (or the latest version in version control), by hovering the annotations in the gutter.
+
+[more info](http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftasks-cvs-quickdiff.htm)
 
 ## Folding
 [todo]

@@ -113,10 +113,9 @@ Right-click on your project in the explorer view and apply menu-entry
 
 ![](images/librarymappingrestorecommonlibraries.png)
 
-# IEEE Vital 
-[todo]
+# IEEE Vital
 
-[See this article](http://support.sigasi.com/Knowledgebase/Article/View/39/2/how-can-i-use-the-ieee-vital-libraries-with-sigasi-pro).
+See [/tech/how-can-i-use-the-ieee-vital-libraries-with-sigasi-pro]
 
 # Shared libraries
 

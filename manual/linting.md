@@ -157,18 +157,15 @@ Different vendors have shipped different versions, with incompatible
 implementation. These packages should not be used and are flagged as
 **Deprecated IEEE packages**.
 
--   `ieee.std_logic_arith`
--   `ieee.std_logic_signed`
--   `ieee.std_logic_unsigned`
+```vhdl
+ieee.std_logic_arith
+ieee.std_logic_signed
+ieee.std_logic_unsigned
+```
 
 Instead, use the standard `ieee.numeric_std` package.
 
-The package:
-
--   `ieee.std_logic_misc`
-
-has the same problem of not being standardized by IEEE. Contrary to the
-packages above, there is no consensus on how to replace this package.
+The package `ieee.std_logic_misc` has the same problem of not being standardized by IEEE. Contrary to the packages above, there is no consensus on how to replace this package.  
 Sigasi flags this package as **Non-standard package**.
 
 Read more in [/tech/deprecated-ieee-libraries].
@@ -265,9 +262,10 @@ The VHDL language reference manual states that:
 <em>Every design unit except package STANDARD is assumed to contain the
 following implicit context items as part of its context clause:</em>
 
-	:::VHDL
+```vhdl
 	library STD, WORK;
 	use STD.STANDARD.all;
+```
 
 Hence, any extra library statement that includes `STD` or `WORK` is
 pointless, as is any use clause that includes `std.standard.all`. Hardly
@@ -299,9 +297,10 @@ We have a lint check that warns about this, even if you use constants
 If you type a numeric literal with a physical unit, there should be a
 space between the number and the unit.
 
-	:::VHDL
-	T := 25ns; — ILLEGAL, but accepted by ModelSim
-	T := 25 ns; — OK; according to VHDL language standard
+```vhdl
+	T := 25ns; -- ILLEGAL, but accepted by ModelSim
+	T := 25 ns; -- OK; according to VHDL language standard
+```
 
 Mentor Graphics’ ModelSim and QuestaSim accept the former (illegal)
 version. As a result, some VHDL designers got used to writing the
@@ -313,7 +312,7 @@ warns about this.
 
 Although VHDL is not case sensitive, it is recommend to always use the same capitalization when referring to the same declaration. Since version 2.30, Sigasi warns when the capitalization of a reference differs from the capitalization of the declaration. Because external libraries can have different code styles, this linting only checks references in the same library as its declaration.
 
-Since Sigasi 2.31 this can easily be fixed with a quickfix.
+Since [/releasenotes/sigasi-2.31] this can easily be fixed with a quickfix.
 
 ![](images/captalization_references.png)
 

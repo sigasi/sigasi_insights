@@ -461,12 +461,17 @@ More information about this file can be found at <http://wiki.eclipse.org/Eclips
 
 Sigasi does not offer simulators. If you don't have a VHDL simulator yet, we would recommend the following simulators. You can download them free of charge.
 
-| Simulator	                        | Comment            | Download from              | Windows | Linux | Mac OSX |
-| --------------------------------- | ------------------ | -------------------------- | ------- | ----- | ------- |
-| Aldec Lattice Edition	            | Only Lattice FPGAs | [Lattice Download page](http://www.latticesemi.com/licensing/flexlmlicense.cfm?p=diamond)	  | Yes     | No    | No      |
-| Aldec Active-HDL, Student Edition | Students only      | [Aldec Download page](http://www.aldec.com/Downloads/default.aspx)        | Yes     | No    | No      |
-| ModelSim Altera Starter Edition   | Only Altera FPGAs  | [Altera Quartus Web Edition](http://www.altera.com/products/software/quartus-ii/web-edition/qts-we-index.html) | Yes     | Yes   | No      |
-| ISim	                            | Only Xilinx FPGAs  | [Xilinx Webpack](http://www.xilinx.com/products/design-tools/ise-design-suite/ise-webpack.htm)             | Yes     | Yes   | No      |
+| Simulator	                        | Comment            | Download from                                 | Windows | Linux | Mac OSX |
+| --------------------------------- | ------------------ | --------------------------------------------- | ------- | ----- | ------- |
+| Aldec Lattice Edition	            | Only Lattice FPGAs | [Lattice Download page][latic_download]	     | Yes     | No    | No      |
+| Aldec Active-HDL, Student Edition | Students only      | [Aldec Download page][aldec_download]         | Yes     | No    | No      |
+| ModelSim Altera Starter Edition   | Only Altera FPGAs  | [Altera Quartus Web Edition][altera_download] | Yes     | Yes   | No      |
+| ISim	                            | Only Xilinx FPGAs  | [Xilinx Webpack][xilinx_download]             | Yes     | Yes   | No      |
+
+[latic_download]: http://www.latticesemi.com/licensing/flexlmlicense.cfm?p=diamond
+[aldec_download]: http://www.aldec.com/Downloads/default.aspx
+[altera_download]: http://www.altera.com/products/software/quartus-ii/web-edition/qts-we-index.html
+[xilinx_download]: http://www.xilinx.com/products/design-tools/ise-design-suite/ise-webpack.htm
 
 At this time, Sigasi does not support [Simili](http://www.symphonyeda.com/products.htm) or [GHDL](http://ghdl.free.fr/). Note that [GHDL on Mac OSX](http://eng-osx.sourceforge.net/GHDL.html) uses Wine, but works without problems.
 We have not had good results with FreeHDL or with Green Mountain VHDL. It seems that these two projects may have been terminated.
