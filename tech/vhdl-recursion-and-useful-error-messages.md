@@ -63,4 +63,4 @@ If you run in to cryptic error messages like this, please <em>report them to you
 
 ## Disclaimer
 
-Sigasi is not without sin either. We work hard to make our software user friendly, and sometimes we fail, so [send_email].
+Sigasi is not without sin either. We work hard to make our software user friendly, and sometimes we fail, so [send-email].

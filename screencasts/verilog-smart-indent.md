@@ -6,4 +6,4 @@ comments: false
 videoid: 3y3d6y8r3l
 ---
 <br/>
-You can find more info in the manual: [/manual/verilog_editor#smartindent]
+You can find more info in the manual: [/manual/verilog-editor#smartindent]

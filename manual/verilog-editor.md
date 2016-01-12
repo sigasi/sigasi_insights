@@ -9,6 +9,20 @@ editor that comes with Sigasi supports a number of advanced editing
 features which are specifically useful for Verilog editing. These are
 described in this chapter.
 
+# Type-time Syntax error reporting
+
+Sigasi Studio marks Verilog syntax errors while you type.
+
+These markers can be [disabled](#disable-errors).
+
+# Verilog version
+
+You can configure the Verilog version (Verilog or SystemVerilog) via **Window > Preferences**, **Sigasi > Verilog** and **Verilog version**.
+
+## Disable Error Markers
+
+_Note that Sigasi Studio does not cover the entire SystemVerilog grammar yet. So if you are using _'unsupported'_ syntax, you will see lots of incorrect [syntax error markers](#type-time-syntax-error-reporting). You can disable these error markers by pressing **Ctrl-3** and typing `Toggle Verilog error markers`._
+
 # Smart Indentation {#smartindent}
 
 When you press enter, Sigasi automatically adjusts the indentation of

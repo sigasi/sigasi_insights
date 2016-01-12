@@ -16,5 +16,5 @@ To install the beta features, first make sure you have <a href="http://www.sigas
 * Select the Sigasi HDT 2.x Labs feature
 * The other steps are straightforward!
 
-If you need any help, or if you have questions or comments, [send_email].
+If you need any help, or if you have questions or comments, [send-email].
 

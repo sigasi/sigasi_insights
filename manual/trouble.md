@@ -167,7 +167,7 @@ Obviously, you should upgrade the project. If this message keeps popping up, you
 Contact support
 ---------------
 
-If this troubleshooting guide did not solve your problem, please [send_email].
+If this troubleshooting guide did not solve your problem, please [send-email].
 
 Any of the following information will help us help you:
 

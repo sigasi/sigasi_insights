@@ -19,4 +19,4 @@ If the language settings in your operating system are set correctly, Eclipse wil
 
 ![Eclipse with Japanese localisation](images/screenshot_sigasi_jp.png)
 
-Note that Sigasi and all of its VHDL-specific components are not translated. If you require translation for your language, please [send_email].
+Note that Sigasi and all of its VHDL-specific components are not translated. If you require translation for your language, please [send-email].
