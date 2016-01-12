@@ -11,8 +11,6 @@ def cutoff(name,length=30):
 def filtercontent(sections,url="/tech/"):
     for section in sections:
         if section['url'] == url:
-            print section['url']
-            print section.keys()
             return section['content']
     return []
 
