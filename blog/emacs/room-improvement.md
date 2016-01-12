@@ -16,4 +16,4 @@ But we have to say that the VHDL Emacs mode has given us quite a bad time when i
 
 ## What is still missing?
 
-There is an [Emacs emulator available](/faq.html#Emacs) for Sigasi (and for Eclipse), so you can keep using your old key bindings. But there must be other things that you miss when switching from Emacs to Sigasi. Let's build a list of (relevant and technical) things that are missing from Sigasi HDT. Please [send_email] for the Emacs features you still miss.
+There is an [Emacs emulator available](/faq.html#Emacs) for Sigasi (and for Eclipse), so you can keep using your old key bindings. But there must be other things that you miss when switching from Emacs to Sigasi. Let's build a list of (relevant and technical) things that are missing from Sigasi HDT. Please [send-email] for the Emacs features you still miss.

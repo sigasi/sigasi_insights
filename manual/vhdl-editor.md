@@ -11,8 +11,7 @@ editor that comes with Sigasi supports a number of advanced editing
 features which are specifically useful for VHDL editing. These are
 described in this chapter.
 
-Stuttering
-==========
+# Stuttering
 
 Stuttering is an editing technique popularized by Emacs, that lets you
 type certain things really fast. Stuttering means that you tap a certain
@@ -31,8 +30,7 @@ Keys           | Effect
 
 Stuttering can be disabled or enabled in **Window \> Preferences \> VHDL \> Enable Stuttering**.
 
-Smart Indentation {#smartindent}
-=================
+# Smart Indentation {#smartindent}
 
 When you press enter, Sigasi automatically adjusts the indentation of
 current and the new line. Depending on the content of the preceding
@@ -54,8 +52,7 @@ according to your preferences.
 <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js">
 </script>
 
-VHDL code formatting
-====================
+# VHDL code formatting
 
 Press CTRL+SHIFT+F to format your current VHDL file.
 
@@ -65,8 +62,7 @@ This includes:
 * vertical alignment of certain symbols like “<=”
 * wrapping lines that are too long
 
-Configuration
--------------
+## Configuration
 
 You can set your preferences for Tabs or spaces under **Window \>
 Preferences \> General \> Editors \> Text Editors \> Insert Spaces for

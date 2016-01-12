@@ -41,6 +41,9 @@ The Editor view shows the content of files, and allows you to edit
 files. It is a tabbed view so that multiple files can be open for
 editing simultaneously. The currently selected file is the active file.
 
+* [/manual/vhdl-editor]
+* [/manual/verilog-editor]
+
 
 # Outline view {#outline}
 

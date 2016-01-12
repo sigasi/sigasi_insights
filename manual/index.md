@@ -8,8 +8,8 @@ content:
    - libraries
    - user_interface
    - views
-   - editor
-   - verilog_editor
+   - vhdl-editor
+   - verilog-editor
    - mixed
    - opening
    - linting

@@ -50,4 +50,4 @@ with Emacs VHDL mode and etags.
 
 
 Should there be anything technically incorrect in this post, please feel
-free to [send_email].
+free to [send-email].

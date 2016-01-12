@@ -18,7 +18,7 @@ reflinks:
     eclipse-marketplace:
         title: Eclipse Marketplace
         url: http://marketplace.eclipse.org
-    send_email:
+    send-email:
         url: mailto:support@sigasi.com
         title: send us an email
     contact-us:

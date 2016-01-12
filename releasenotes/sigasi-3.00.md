@@ -46,14 +46,26 @@ If you are using a floating license, you need to update your [Flexnet daemon](#f
 
 ### Verilog and SystemVerilog improvements
 
+We figured out an elegant way to deal with **preprocessor (Macro) directives**.
+This results in major improvements in how we can offer you (System)Verilog support.
+
+#### Verilog
+* We enabled **type time syntax error reporting**  
+  screenshot [todo]
 * In Sigasi 3.0 we implemented an convenient way to preview the result of preprocessing the active Verilog file. When you **Hover** a Verilog macro, you will see the **preprocessed** text. At the bottom of the hover you will also see a link to open the **Preprocessor View**.
   ![Verilog macro hover](3.00/verilog-macro-hover.png)
 * The **Preprocessor (Macro) View** is another way to easily inspect the preprocessed Verilog code. It _automatically synchronizes its position and selection_ with the active editor. [documentation](/manual/verilog_editor.html#verilog-preprocessingmacros)  
   ![Preprocessor View](3.00/verilog-preprocessor-view.png)
 * Verilog **include paths** can now be configured. Right click your Verilog project in the project explorere and select **Properties > Verilog Preprocessor**. Here you can enter a `;`-separated list of include paths (relative to the project folder). 
-* We also improved our SystemVerilog analyzer. Sigasi now correctly _link_ `packages`, `records`, `structs`, `unions` and `enums`. This improves **Open Declaration** and **Find References**. 
 * Improved hover for `wire` and `reg`
   ![improved hover verilog reg](3.00/verilog-hover-reg.png)
+
+####SystemVerilog
+
+* We also improved our SystemVerilog analyzer. Sigasi now correctly *links* `packages`, `records`, `structs`, `unions` and `enums`. This improves **Open Declaration** and **Find References**.
+* Notes:
+    * You can switch the [/manual/verilog-editor#Verilog version] via **Window > Preferences > Sigasi > Verilog > Verilog version**
+    * We do no support *the entire SystemVerilog Syntax* yet. So if you see unexpected syntax error markers, [send-email] or [/manual/verilog-editor#disable error markers].
   
 ### Sigasi XL Doc improvements
 

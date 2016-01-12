@@ -87,4 +87,4 @@ Avoid all of this fuss by not announcing that your question is simple. Maybe it 
 
 In hindsight, I notice that these seven laws spell VETSMOD. I don't think that's a word and it's probably for the better. In fact, I bet this page will show up <a href="http://www.google.be/search?q=vetsmod">on Google</a> in a few days. Anyway, if you could make their code snippets a little more VETSMOD, you'd get better help faster.
 
-Go try it out by [send_email] or on the <a href="http://electronics.stackexchange.com/questions/ask?tags=vhdl">Electronics StackExchange</a>.
+Go try it out by [send-email] or on the <a href="http://electronics.stackexchange.com/questions/ask?tags=vhdl">Electronics StackExchange</a>.

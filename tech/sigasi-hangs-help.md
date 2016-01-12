@@ -22,4 +22,4 @@ _Note that you can skip this step if you already have a recent JDK (> JDK 1.6 up
 2. In the Applications view: connect to Sigasi by **double clicking** the `org.eclipse.equinox.launcher.Main` item
 3. Open the **Threads** tab
 4. Click the **Thread Dump** button
-5. [send_email] with the output
+5. [send-email] with the output
