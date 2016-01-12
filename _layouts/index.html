@@ -2,32 +2,66 @@
 
 {% block body %}
 
-{% block jumbotron %}
-<div class="jumbotron">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2 text-center">
-        <h1>{{this.title}}</h1>
-          <p>{{this.abstract}}</p>
-       </div>
-    </div>
-  </div>
-</div>
-{% endblock %}
+{% block title %}
+    {% block breadcrumbs %}
+    <ol class="breadcrumb">
+        <li><a href="{{mainsite}}">Home</a></li>
+        <li><a href="{{url_prefix + '/'}}">Insights</a></li>
+        {% for bc in this.breadcrumbs[:-1] %}
+        <li><a href="{{bc.url}}">{{bc.title}}</a></li>
+        {% endfor %}
+        <li class="active">{{this.breadcrumbs[-1].title}}</li>
+    </ol>
+    {% endblock %}
+    
+    <section class="container">
+      <div class="row">
+        <div class="spb_content_element col-sm-12 spb_text_column">
+          <div class="spb-asset-content" style="padding-top:0%;padding-bottom:0%;padding-left:0%;padding-right:0%;text-align: center;">
+            {% block title_ %}
+            <h1>{{this.title}}</h1>
+            {% endblock %}
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-7 col-md-offset-2" role="main">
-      {% for item in this.content %}
-      <h4><a href="{{item.url}}">{{item.title}}</a>
-        {% if item.date|d %}
-        <small>{{item.date|dateformat}}</small></h4>
-        {% endif %}
-      </h4>
-      <p>{{item.teaser}}</p>
+    <div style="margin: 10px 0 10px">
+      {% for tag in this.tags %}
+          <a href="/tag/{{tag}}/" class="btn btn-default btn-xs">{{tag}}</a>
       {% endfor %}
     </div>
-  </div>
+{% endblock %}
+
+
+<div class="container">
+  {% block index %}
+    {% block selectedindex %}
+    {% endblock %}
+    
+    {% block mainindex %}
+    <div class="row">
+      <div class="col-md-offset-0 col-md-6" >
+        {% for item in this.content|recurse|split(0) %}
+        <p style="margin-bottom: 10px"><a href="{{item.url}}" title="{{item.title}}">{{item.title|cutoff(50)}}</a>
+          {% if item.date|d %}
+          <small>{{item.date|dateformat}}</small>
+          {% endif %}
+        </p>
+        {% endfor %}
+      </div>
+      <div class="col-md-offset-0 col-md-6" >
+        {% for item in this.content|recurse|split(1) %}
+        <p style="margin-bottom: 10px"><a href="{{item.url}}" title="{{item.title}}">{{item.title|cutoff(50)}}</a>
+          {% if item.date|d %}
+          <small>{{item.date|dateformat}}</small>
+          {% endif %}
+        </p>
+        {% endfor %}
+      </div>
+    </div>
+    {% endblock %}
+  {% endblock %}
 </div>
 
 

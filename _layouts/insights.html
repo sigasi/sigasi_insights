@@ -1,0 +1,45 @@
+{% extends "_base.html" %}
+
+{% block body %}
+
+{% block title %}
+    <section class="container">
+      <div class="row">
+      	
+        <div class="spb_content_element col-sm-12 spb_text_column">
+          <div class="spb-asset-content" style="padding-top:0%;padding-bottom:0%;padding-left:0%;padding-right:0%;">
+            <h1 style="text-align: center;">{{this.title}}</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div style="margin: 10px 0 10px">
+      {% for tag in this.tags %}
+          <a href="/tag/{{tag}}/" class="btn btn-default btn-xs">{{tag}}</a>
+      {% endfor %}
+    </div>
+    {% endblock %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-0 col-md-6" >
+      <h2>Test</h2>
+      {% for item in this.content|filtercontent|filterlatest %}
+          <h5>{{ item.title}}</h5>
+      {% endfor %}
+      <h2>Popular Opinion Articles</h2>
+      {% for item in this.content %}
+        {% if item.title == "Opinion" %}
+          {% for article in item.content %}
+            {% if article.popular %}
+              <h5>{{ article.title}}</h5>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    
+  </div>
+</div>
+
+
+{% endblock %}
