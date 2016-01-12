@@ -2,7 +2,7 @@
 title: "Second Belgian Eclipse User Group meeting"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2009-04-29
 tags: 
   - planeteclipse

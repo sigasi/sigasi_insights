@@ -2,7 +2,7 @@
 title: "Configuration files and Version control"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-01-19
 tags: 
   - EDA2.0

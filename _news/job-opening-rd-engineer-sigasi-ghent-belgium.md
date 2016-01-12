@@ -2,7 +2,7 @@
 title: "Job opening for R&D engineer at Sigasi, Ghent Belgium"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2010-03-01
 tags: 
   - planeteclipse

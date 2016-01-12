@@ -2,7 +2,7 @@
 title: "Pitfalls for circuit girls"
 layout: page 
 pager: true
-author: jdecaluwe (Sigasi)
+author: Jan Decaluwe
 date: 2011-02-10
 tags: 
   - JanHDL

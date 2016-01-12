@@ -2,7 +2,7 @@
 title: "Sigasi in Bits&Chips"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2008-03-04
 ---
 <div class="content">

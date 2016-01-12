@@ -2,7 +2,7 @@
 title: "Add support for Sigasi VHDL libraries to Eclipse without installing all Sigasi plugins"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2014-10-14
 ---
 

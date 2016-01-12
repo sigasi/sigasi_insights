@@ -2,7 +2,8 @@
 title: "And the winner is: Facebook!"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+popular: true
+author: Philippe Faes
 date: 2011-03-02
 tags: 
   - social media

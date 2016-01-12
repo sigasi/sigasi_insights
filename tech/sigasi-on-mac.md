@@ -2,7 +2,7 @@
 title: "Using Sigasi on your Mac"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2013-01-01
 ---
 

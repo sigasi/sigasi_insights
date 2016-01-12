@@ -2,7 +2,7 @@
 title: "Missing libraries"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2011-11-30
 tags: 
   - hdt-2.0

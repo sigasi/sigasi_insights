@@ -2,7 +2,7 @@
 title: "Call for feedback: A new way to compile Sigasi/Eclipse project dependencies with an External Compiler"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2013-09-16
 tags: 
   - external tools

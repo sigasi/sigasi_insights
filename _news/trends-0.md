@@ -2,7 +2,7 @@
 title: "Trends"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2009-01-29
 ---
 <div class="content">

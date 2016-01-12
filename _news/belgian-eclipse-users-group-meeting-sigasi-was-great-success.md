@@ -2,7 +2,7 @@
 title: "Belgian Eclipse Users Group Meeting at Sigasi was a great success!"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2009-09-02
 tags: 
   - planeteclipse

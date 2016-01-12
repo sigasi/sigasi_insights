@@ -2,7 +2,7 @@
 title: "List of known VHDL metacomment pragma's"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-04-28
 tags: 
   - Aldec

@@ -2,7 +2,7 @@
 title: "Why hardware designers should switch to Eclipse"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-03-17
 tags: 
   - eclipse

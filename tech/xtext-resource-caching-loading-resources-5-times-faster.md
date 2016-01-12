@@ -2,7 +2,7 @@
 title: "Xtext resource caching: loading resources 5 times faster"
 layout: page 
 pager: true
-author: mark.christiaens (Sigasi)
+author: Mark Christiaens
 date: 2012-01-31
 tags: 
   - emf

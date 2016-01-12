@@ -2,7 +2,7 @@
 title: "No VHDL Plugin for IE or Chrome"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2013-04-01
 tags: 
   - april fools

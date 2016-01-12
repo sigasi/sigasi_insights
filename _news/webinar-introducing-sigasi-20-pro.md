@@ -2,7 +2,7 @@
 title: "Webinar Introducing Sigasi 2.0 Pro "
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-09-28
 tags: 
   - webinar

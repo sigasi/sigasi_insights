@@ -2,7 +2,8 @@
 title: "Are VHDL post-93 versions used in real life?"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+popular: true
+author: Philippe Faes
 date: 2010-06-03
 tags: 
   - VHDL

@@ -2,7 +2,7 @@
 title: "Verilog's major flaw"
 layout: page 
 pager: true
-author: jdecaluwe (Sigasi)
+author: Jan Decaluwe
 date: 2010-10-06
 tags: 
   - JanHDL

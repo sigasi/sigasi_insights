@@ -2,7 +2,7 @@
 title: "A new EDA 2.0 company: Plunify"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-08-24
 tags: 
   - Plunify

@@ -2,7 +2,7 @@
 title: "Belgian Eclipse User meeting (2009-09-01)"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2009-07-26
 tags: 
   - Belgian Eclipse Community

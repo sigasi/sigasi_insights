@@ -2,7 +2,7 @@
 title: "Headers and templates"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-11-22
 tags: 
   - howto

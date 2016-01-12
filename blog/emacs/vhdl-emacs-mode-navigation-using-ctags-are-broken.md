@@ -2,7 +2,7 @@
 title: "VHDL Emacs mode navigation using ctags are broken"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-05-13
 tags: 
   - Emacs

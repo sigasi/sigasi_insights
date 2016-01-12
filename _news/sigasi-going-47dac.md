@@ -2,7 +2,7 @@
 title: "Sigasi is going to #47DAC"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2010-05-21
 tags: 
   - EDA

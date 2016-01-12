@@ -2,7 +2,7 @@
 title: "Eclipse VHDL plugin vs Sigasi Application"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-04-17
 ---
 Here is a comparison matrix to see which is best suited for you: using Sigasi as an _Eclipse VHDL plugin_ or downloading it as a standalone _VHDL editor_.

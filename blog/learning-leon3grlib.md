@@ -2,7 +2,7 @@
 title: "Learning from LEON3/GRLIB"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-02-07
 tags: 
   - webinar

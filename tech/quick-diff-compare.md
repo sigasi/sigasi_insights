@@ -2,7 +2,7 @@
 title: "Quick diff / compare with"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-03-25
 tags: 
   - diff

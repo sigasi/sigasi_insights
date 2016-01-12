@@ -2,7 +2,7 @@
 title: "Sigasi Better than Emacs"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-06-21
 tags: 
   - Emacs

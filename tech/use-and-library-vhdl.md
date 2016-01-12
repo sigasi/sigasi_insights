@@ -2,7 +2,7 @@
 title: '"Use" and "Library" in VHDL'
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2013-09-09
 tags: 
   - VHDL

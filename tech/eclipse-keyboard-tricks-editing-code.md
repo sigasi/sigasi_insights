@@ -2,7 +2,7 @@
 title: "Eclipse keyboard tricks: Editing code"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-02-17
 tags: 
   - eclipse

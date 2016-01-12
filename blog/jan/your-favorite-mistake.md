@@ -2,7 +2,7 @@
 title: "Your favorite mistake"
 layout: page 
 pager: true
-author: jdecaluwe (Sigasi)
+author: Jan Decaluwe
 date: 2010-09-08
 tags: 
   - JanHDL

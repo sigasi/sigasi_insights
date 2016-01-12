@@ -2,7 +2,7 @@
 title: "Advanced VHDL Configurations: Tying a component to an unrelated entity"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-03-22
 tags: 
   - advanced

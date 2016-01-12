@@ -2,7 +2,7 @@
 title: "Learn keyboard shortcuts with MouseFeed"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2011-11-11
 tags: 
   - keyboard shortcuts

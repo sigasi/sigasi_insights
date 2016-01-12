@@ -2,7 +2,7 @@
 title: "Duplicate std_logic_textio packages in VHDL 2008 projects"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2013-07-22
 ---
 

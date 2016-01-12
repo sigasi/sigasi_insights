@@ -2,7 +2,7 @@
 title: "Coding conventions"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-04-06
 tags: 
   - coding guidelines

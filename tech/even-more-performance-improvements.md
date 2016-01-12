@@ -2,7 +2,7 @@
 title: "Even more performance improvements"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2010-10-22
 tags: 
   - performance

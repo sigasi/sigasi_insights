@@ -2,7 +2,7 @@
 title: "Emacs Code Coloring is Outdated"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-05-18
 tags: 
   - Emacs

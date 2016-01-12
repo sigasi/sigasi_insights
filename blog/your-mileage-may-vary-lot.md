@@ -2,7 +2,7 @@
 title: "Your mileage may vary. A lot."
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-03-07
 tags: 
   - EDA2.0

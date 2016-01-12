@@ -2,7 +2,7 @@
 title: "Sigasi's Public Beta featured in EETimes"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2009-05-20
 tags: 
   - EE-times

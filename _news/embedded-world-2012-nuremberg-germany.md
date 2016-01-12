@@ -2,7 +2,7 @@
 title: "Embedded World 2012, Nuremberg, Germany"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2012-01-11
 tags: 
   - Sigasi

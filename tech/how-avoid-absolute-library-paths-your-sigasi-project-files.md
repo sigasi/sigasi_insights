@@ -2,7 +2,7 @@
 title: "How to avoid absolute (library) paths in your Sigasi Project files"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2014-02-07
 tags: 
   - hdt-2.0

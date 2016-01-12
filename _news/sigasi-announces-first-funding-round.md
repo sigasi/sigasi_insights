@@ -2,7 +2,7 @@
 title: "Sigasi announces first funding round"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-07-29
 tags: 
   - press release

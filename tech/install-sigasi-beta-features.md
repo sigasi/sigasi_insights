@@ -2,7 +2,7 @@
 title: "Install Sigasi beta features"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-12-19
 tags: 
   - howto

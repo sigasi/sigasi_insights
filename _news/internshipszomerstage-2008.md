@@ -2,7 +2,7 @@
 title: "Internships/Zomerstage 2008"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2008-06-01
 tags: 
   - internship

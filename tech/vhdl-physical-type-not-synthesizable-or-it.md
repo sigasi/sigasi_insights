@@ -2,7 +2,7 @@
 title: "VHDL Physical Type is not Synthesizable, or is it?"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-10-11
 tags: 
   - Altera

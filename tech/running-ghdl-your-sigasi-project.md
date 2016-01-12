@@ -2,7 +2,7 @@
 title: "Running GHDL on your Sigasi project"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-10-10
 tags: 
   - GHDL

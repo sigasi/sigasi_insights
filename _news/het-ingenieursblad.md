@@ -2,7 +2,7 @@
 title: "Het Ingenieursblad"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2008-02-03
 ---
 <div class="content">

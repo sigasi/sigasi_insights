@@ -2,7 +2,7 @@
 title: "Why can't HDL designers live without block selection mode?"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2009-05-20
 tags: 
   - autocomplete

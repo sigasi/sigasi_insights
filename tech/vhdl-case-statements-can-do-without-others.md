@@ -2,7 +2,7 @@
 title: 'VHDL case statements can do without the "others"'
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-10-24
 tags: 
   - case

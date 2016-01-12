@@ -2,7 +2,7 @@
 title: "Design Creation"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-08-08
 tags: 
   - Design creation

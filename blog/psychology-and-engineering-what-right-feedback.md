@@ -2,7 +2,7 @@
 title: "Psychology and engineering: what is the right feedback?"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-09-08
 tags: 
   - psychology

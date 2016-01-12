@@ -2,7 +2,7 @@
 title: "Code comprehension without clicking your mouse: Hovering"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-08-23
 tags: 
   - code comprehension

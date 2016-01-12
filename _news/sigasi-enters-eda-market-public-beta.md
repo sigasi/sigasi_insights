@@ -2,7 +2,7 @@
 title: "Sigasi Enters EDA Market with Public Beta"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2009-05-20
 tags: 
   - public beta

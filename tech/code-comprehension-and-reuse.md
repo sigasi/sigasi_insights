@@ -2,7 +2,7 @@
 title: "Code Comprehension and Reuse"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-08-23
 tags: 
   - code comprehension

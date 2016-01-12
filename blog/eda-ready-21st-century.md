@@ -2,7 +2,7 @@
 title: "Is EDA ready for the 21st century..."
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-07-14
 tags: 
   - EDA2.0

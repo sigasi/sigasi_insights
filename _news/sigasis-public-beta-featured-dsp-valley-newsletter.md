@@ -2,7 +2,7 @@
 title: "Sigasi's Public Beta featured in DSP Valley Newsletter"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2009-06-18
 tags: 
   - public beta

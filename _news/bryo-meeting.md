@@ -2,7 +2,7 @@
 title: "Bryo meeting"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2009-01-10
 tags: 
   - Bryo

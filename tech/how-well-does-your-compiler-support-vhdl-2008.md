@@ -2,7 +2,7 @@
 title: "How well does your compiler support VHDL 2008?"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-10-23
 tags: 
   - VHDL

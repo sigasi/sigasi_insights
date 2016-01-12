@@ -2,7 +2,7 @@
 title: "Installing translations for Eclipse"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2014-04-29
 tags: 
   - eclipse

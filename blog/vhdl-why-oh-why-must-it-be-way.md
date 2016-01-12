@@ -2,7 +2,7 @@
 title: "VHDL: Why, oh why must it be this way"
 layout: page 
 pager: true
-author: mark.christiaens (Sigasi)
+author: Mark Christiaens
 date: 2010-12-01
 tags: 
   - VHDL

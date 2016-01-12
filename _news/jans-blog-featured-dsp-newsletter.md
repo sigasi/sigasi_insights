@@ -2,7 +2,7 @@
 title: "Jan's blog featured in DSP newsletter"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2010-01-20
 ---
 <div class="content">

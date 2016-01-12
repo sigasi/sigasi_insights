@@ -2,7 +2,7 @@
 title: "Sigasi's VHDL Eclipse plugin ready for new Eclipse 3.6 (Helios) "
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2010-06-28
 tags: 
   - eclipse

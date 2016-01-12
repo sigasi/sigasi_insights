@@ -2,7 +2,7 @@
 title: "Belgian Eclipse DemoCamp on May 31st in Lier (near Antwerp)"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2011-05-24
 tags: 
   - planeteclipse

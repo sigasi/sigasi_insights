@@ -2,7 +2,7 @@
 title: "Why Emacs VHDL mode is so Great. And Why We Want to Beat it"
 layout: page
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-03-30
 tags: 
   - Emacs

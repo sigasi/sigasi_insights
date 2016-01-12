@@ -2,7 +2,7 @@
 title: "Build Eclipse documentation from wikitext with Maven Tycho"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2011-08-16
 tags: 
   - eclipse

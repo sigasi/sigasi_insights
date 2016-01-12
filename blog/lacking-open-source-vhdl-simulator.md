@@ -2,7 +2,7 @@
 title: "Lacking an open source VHDL simulator"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-04-11
 tags: 
   - VHDL

@@ -2,7 +2,7 @@
 title: "Importing a Xilinx ISE project in Sigasi"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2014-11-07
 tags: 
   - GitHub

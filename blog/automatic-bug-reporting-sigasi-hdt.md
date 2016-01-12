@@ -2,7 +2,8 @@
 title: "Automatic Bug Reporting in Sigasi HDT"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+popular: true
+author: Philippe Faes
 date: 2011-04-13
 ---
 In the latest release of Sigasi HDT, we introduced a problem reporting tool. This features sends error reports back to our servers so that we can find and squash even more bugs.

@@ -2,7 +2,7 @@
 title: "First Belgian Eclipse Community meeting"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2009-02-11
 tags: 
   - planeteclipse

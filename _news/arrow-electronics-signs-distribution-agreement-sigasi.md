@@ -2,7 +2,7 @@
 title: "Arrow Electronics Signs Distribution Agreement with Sigasi"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2013-08-13
 tags: 
   - press release

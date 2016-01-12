@@ -2,7 +2,7 @@
 title: 'To "to" or to "downto"... Ranges in VHDL'
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2014-09-05
 tags: 
   - VHDL

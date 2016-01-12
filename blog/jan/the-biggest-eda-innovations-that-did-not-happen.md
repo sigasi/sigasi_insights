@@ -2,7 +2,7 @@
 title: "The biggest EDA innovations that did not happen"
 layout: page 
 pager: true
-author: jdecaluwe (Sigasi)
+author: Jan Decaluwe
 date: 2010-02-12
 tags: 
   - JanHDL

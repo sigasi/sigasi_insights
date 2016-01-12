@@ -2,7 +2,7 @@
 title: "Package and Package Body: in the same file or in separate files?"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-07-22
 tags: 
   - coding guidelines

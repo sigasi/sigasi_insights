@@ -2,7 +2,7 @@
 title: "Datanews"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2009-02-13
 ---
 <div class="content">

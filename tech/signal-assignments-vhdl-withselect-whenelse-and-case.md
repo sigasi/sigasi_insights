@@ -2,7 +2,7 @@
 title: "Signal Assignments in VHDL: with/select, when/else and case"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-07-04
 tags: 
   - case

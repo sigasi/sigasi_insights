@@ -2,7 +2,7 @@
 title: "Next Belgian Eclipse User Group Meeting (Tuesday February 23)"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2010-02-09
 tags: 
   - planeteclipse

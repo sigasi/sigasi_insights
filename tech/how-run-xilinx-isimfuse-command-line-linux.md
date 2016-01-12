@@ -2,7 +2,7 @@
 title: "How to run Xilinx ISim/Fuse from the command line on Linux"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2010-04-08
 tags: 
   - Xilinx

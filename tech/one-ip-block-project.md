@@ -2,7 +2,7 @@
 title: "One IP block per project"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-01-22
 tags: 
   - best practices

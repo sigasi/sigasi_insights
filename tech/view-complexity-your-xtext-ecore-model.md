@@ -2,7 +2,7 @@
 title: "A view on the complexity of your Xtext ecore model"
 layout: page 
 pager: true
-author: mark.christiaens (Sigasi)
+author: Mark Christiaens
 date: 2011-05-27
 tags: 
   - planeteclipse

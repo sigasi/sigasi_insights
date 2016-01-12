@@ -2,7 +2,7 @@
 title: "Coding styles"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-09-14
 tags: 
   - coding guidelines

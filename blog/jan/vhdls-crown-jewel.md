@@ -2,7 +2,7 @@
 title: "VHDL's crown jewel"
 layout: page 
 pager: true
-author: jdecaluwe (Sigasi)
+author: Jan Decaluwe
 date: 2010-11-03
 tags: 
   - JanHDL

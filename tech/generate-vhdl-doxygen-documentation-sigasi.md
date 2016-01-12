@@ -2,7 +2,7 @@
 title: "Generate VHDL Doxygen documentation in Sigasi"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2012-08-17
 tags: 
   - documentation

@@ -2,7 +2,7 @@
 title: "Be careful with VHDL operator precedence"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2014-12-02
 tags: 
   - operators

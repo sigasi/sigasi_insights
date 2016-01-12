@@ -2,7 +2,7 @@
 title: "Design, Automation and Test in Europe"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2009-04-14
 ---
 <div class="content">

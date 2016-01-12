@@ -2,7 +2,7 @@
 title: "Free tutorial webinar on December 15th"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2009-12-09
 tags: 
   - webinar

@@ -2,7 +2,7 @@
 title: "ParkOffice Lunch cafe"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2009-02-26
 ---
 <div class="content">

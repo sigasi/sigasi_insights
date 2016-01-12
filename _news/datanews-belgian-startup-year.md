@@ -2,7 +2,7 @@
 title: "DataNews Belgian Startup of the Year"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-02-23
 tags: 
   - awards

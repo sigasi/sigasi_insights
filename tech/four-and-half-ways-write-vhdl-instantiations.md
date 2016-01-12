@@ -2,7 +2,7 @@
 title: "Four (and a half) ways to write VHDL instantiations"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2009-01-18
 tags: 
   - VHDL

@@ -2,7 +2,7 @@
 title: "VHDL word search puzzle"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2010-04-23
 tags: 
   - VHDL

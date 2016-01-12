@@ -2,7 +2,7 @@
 title: "VHDL Editors vs. VHDL Editors"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-12-20
 tags: 
   - VIM

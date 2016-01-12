@@ -2,7 +2,7 @@
 title: "Product release featured in DSP Valley Newsletter"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2010-03-15
 tags: 
   - DSP Valley

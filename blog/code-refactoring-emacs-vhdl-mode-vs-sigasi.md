@@ -2,7 +2,7 @@
 title: "Code refactoring:  Emacs VHDL mode vs Sigasi"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-06-22
 tags: 
   - Emacs

@@ -2,7 +2,7 @@
 title: "Announcing Starter Edition"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-06-29
 tags: 
   - freemium

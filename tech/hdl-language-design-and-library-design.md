@@ -2,7 +2,7 @@
 title: "On HDL language design and library design"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2009-09-22
 tags: 
   - philosophical

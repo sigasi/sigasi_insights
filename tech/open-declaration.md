@@ -2,7 +2,7 @@
 title: "Open Declaration"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-09-20
 tags: 
   - howto

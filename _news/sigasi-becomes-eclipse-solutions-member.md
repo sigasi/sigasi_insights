@@ -2,7 +2,7 @@
 title: "Sigasi becomes an Eclipse Solutions Member"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-06-30
 tags: 
   - planeteclipse

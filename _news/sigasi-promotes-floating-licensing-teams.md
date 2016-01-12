@@ -2,7 +2,7 @@
 title: "Sigasi promotes floating licensing for teams"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-09-06
 tags: 
   - press release

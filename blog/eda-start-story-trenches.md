@@ -2,7 +2,7 @@
 title: "EDA Start-up story from the trenches"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2009-10-23
 tags: 
   - planeteclipse

@@ -2,7 +2,7 @@
 title: "Spell Checking in Sigasi/Eclipse"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2014-09-17
 ---
 

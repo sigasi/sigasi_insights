@@ -2,7 +2,7 @@
 title: "Sigasi hangs. How can I help to fix this?"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2011-11-11
 tags: 
   - howto

@@ -2,7 +2,7 @@
 title: "Community of hardware designers"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-12-08
 tags: 
   - community

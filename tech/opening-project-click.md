@@ -2,7 +2,7 @@
 title: "Opening a project with one (double) click"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2014-04-29
 ---
 

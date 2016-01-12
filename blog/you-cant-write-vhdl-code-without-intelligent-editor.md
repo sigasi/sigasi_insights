@@ -2,7 +2,7 @@
 title: "You can't write VHDL code without an intelligent editor!"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2011-08-22
 tags: 
   - VHDL

@@ -2,7 +2,7 @@
 title: "'Run As' menu item strangely disappearing in the context menu"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2010-12-09
 tags: 
   - planeteclipse

@@ -2,7 +2,7 @@
 title: "Announcing Sigasi 2.0 Pro VHDL editor"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-10-05
 tags: 
   - press release

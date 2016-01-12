@@ -2,7 +2,7 @@
 title: "Looking for a new CRM"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-12-14
 ---
 <div class="content">

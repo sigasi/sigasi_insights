@@ -2,7 +2,7 @@
 title: "Sigasi covered in De Tijd"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-05-05
 ---
 <div class="content">

@@ -2,7 +2,7 @@
 title: "Tricking your Mac in to Believing it can run ModelSim"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-07-28
 tags: 
   - modelsim

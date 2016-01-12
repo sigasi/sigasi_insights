@@ -2,7 +2,7 @@
 title: "Room for Improvement"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-06-24
 tags: 
   - Emacs

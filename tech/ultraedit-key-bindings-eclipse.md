@@ -2,7 +2,7 @@
 title: "UltraEdit key bindings for Eclipse"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2013-10-23
 tags: 
   - eclipse

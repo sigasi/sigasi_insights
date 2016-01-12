@@ -2,7 +2,7 @@
 title: "Opening up our documentation"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-03-03
 ---
 As of today, all of our user documentation will be freely available on <a href="/manual/">our website</a>. We realize that this is not conventional for <a href="http://en.wikipedia.org/wiki/Electronic_design_automation" class="elf-external elf-icon">EDA</a> software. A few months ago, John Ford noted that some companies make it <a href="http://jab-semi.blogspot.com/2008/11/password-arms-race.html">unnecessarily hard</a> to access their documentation or knowledge bases. We think that there is a better way.

@@ -2,7 +2,7 @@
 title: "No VHDL Rename in Emacs VHDL mode"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-06-15
 tags: 
   - code reuse

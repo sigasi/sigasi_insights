@@ -2,7 +2,7 @@
 title: "Using Autocomplete Templates in Sigasi 2"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2012-09-24
 tags: 
   - hdt-2.0

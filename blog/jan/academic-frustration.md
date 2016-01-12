@@ -2,7 +2,7 @@
 title: "Academic frustration"
 layout: page 
 pager: true
-author: jdecaluwe (Sigasi)
+author: Jan Decaluwe
 date: 2009-12-17
 tags: 
   - JanHDL

@@ -2,7 +2,7 @@
 title: "Is Sigasi ready for the 21st century?"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2010-04-15
 tags: 
   - Sigasi

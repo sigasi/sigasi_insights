@@ -2,7 +2,7 @@
 title: "Opinion: Why IDEs for hardware design fail [Published in EE Times]"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-09-12
 tags: 
   - eetimes

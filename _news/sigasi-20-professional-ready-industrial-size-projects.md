@@ -2,7 +2,7 @@
 title: "Sigasi 2.0 Professional: ready for industrial size projects"
 layout: page 
 pager: true
-author: mark.christiaens (Sigasi)
+author: Mark Christiaens
 date: 2011-10-13
 tags: 
   - hdt-2.0

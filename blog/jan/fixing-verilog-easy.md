@@ -2,7 +2,7 @@
 title: "Fixing Verilog is easy"
 layout: page 
 pager: true
-author: jdecaluwe (Sigasi)
+author: Jan Decaluwe
 date: 2011-09-19
 tags: 
   - JanHDL

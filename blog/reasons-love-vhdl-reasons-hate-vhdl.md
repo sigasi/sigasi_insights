@@ -2,7 +2,7 @@
 title: "Reasons to Love VHDL, Reasons to Hate VHDL"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-01-23
 tags: 
   - VHDL

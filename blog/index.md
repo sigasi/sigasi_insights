@@ -1,12 +1,9 @@
 ---
 title: Opinion
-layout: index2 
-order: title
+layout: index-opinion
+order: date
 reverse: true
 ---
 
 Opinion pieces from Sigasi team and guest bloggers.
 
-* [/blog/jan]
-* [/blog/emacs]
-* subjects

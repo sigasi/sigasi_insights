@@ -2,7 +2,7 @@
 title: "VHDL Pragmas"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-04-05
 tags: 
   - VHDL

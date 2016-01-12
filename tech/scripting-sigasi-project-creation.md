@@ -2,7 +2,7 @@
 title: "Scripting Sigasi project creation"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2013-10-17
 tags: 
   - hdt-2.0

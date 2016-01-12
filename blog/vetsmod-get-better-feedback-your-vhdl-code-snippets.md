@@ -2,7 +2,7 @@
 title: "VETSMOD: Get better feedback from your VHDL code snippets"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-04-27
 tags: 
   - VHDL

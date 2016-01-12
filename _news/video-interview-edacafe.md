@@ -2,7 +2,7 @@
 title: "Video interview on EDAcafe"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2009-05-06
 ---
 <div class="content">

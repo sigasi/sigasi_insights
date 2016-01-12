@@ -2,7 +2,7 @@
 title: "Sigasi HDT 2.0 Technology Preview available in the Eclipse MarketPlace"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2011-04-28
 tags: 
   - hdt-2.0

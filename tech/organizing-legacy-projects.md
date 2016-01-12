@@ -2,7 +2,7 @@
 title: "Organizing legacy projects"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-08-15
 tags: 
   - helios

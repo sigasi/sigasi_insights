@@ -2,7 +2,7 @@
 title: "Evaluating Xtext"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-10-11
 tags: 
   - Xtext

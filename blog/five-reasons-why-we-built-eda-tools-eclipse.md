@@ -2,7 +2,7 @@
 title: "Five reasons why we built EDA tools on Eclipse"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-12-13
 tags: 
   - eclipse

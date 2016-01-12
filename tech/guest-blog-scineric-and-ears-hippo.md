@@ -2,7 +2,7 @@
 title: "Guest Blog: Scineric and the ears of the hippo"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-09-06
 tags: 
   - Guest Blog

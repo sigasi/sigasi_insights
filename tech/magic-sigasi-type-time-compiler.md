@@ -2,7 +2,7 @@
 title: "The magic of Sigasi's type-time compiler. Part 1: Models"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2011-12-22
 tags: 
   - hdt-2.0

@@ -2,7 +2,7 @@
 title: "WORK is not a VHDL Library"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-02-09
 tags: 
   - VHDL

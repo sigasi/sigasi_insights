@@ -2,7 +2,7 @@
 title: "Sigasi Makes its IDE for VHDL available as an Eclipse plugin"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-03-17
 tags: 
   - eclipse

@@ -2,7 +2,7 @@
 title: "No organization"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-12-03
 tags: 
   - best practices

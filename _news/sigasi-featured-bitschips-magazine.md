@@ -2,7 +2,7 @@
 title: "Sigasi featured in Bits&Chips magazine"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2009-05-25
 tags: 
   - public beta

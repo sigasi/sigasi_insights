@@ -2,7 +2,7 @@
 title: "Synthesis was my first love"
 layout: page 
 pager: true
-author: jdecaluwe (Sigasi)
+author: Jan Decaluwe
 date: 2009-12-03
 tags: 
   - JanHDL

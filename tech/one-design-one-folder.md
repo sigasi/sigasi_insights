@@ -2,7 +2,7 @@
 title: "One design in one folder"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-12-29
 tags: 
   - best practices

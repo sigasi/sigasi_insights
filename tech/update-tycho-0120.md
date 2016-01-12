@@ -2,7 +2,7 @@
 title: "Update Tycho to 0.12.0"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2011-05-11
 tags: 
   - planeteclipse

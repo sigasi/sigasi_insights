@@ -2,7 +2,7 @@
 title: "Deprecated IEEE Libraries"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2012-05-15
 tags: 
   - linting

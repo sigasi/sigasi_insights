@@ -2,7 +2,7 @@
 title: "Too smart to accept any help?"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-03-02
 ---
 Are you so smart you don't need any help? Are you infallible even when you pressed for time or under stress?

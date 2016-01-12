@@ -2,7 +2,7 @@
 title: "Monitoring and optimizing memory usage of Sigasi"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2011-11-11
 tags: 
   - performance

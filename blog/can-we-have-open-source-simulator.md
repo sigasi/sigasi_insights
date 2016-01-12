@@ -2,7 +2,7 @@
 title: "Can we have an open source simulator?"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-04-27
 tags: 
   - EDA

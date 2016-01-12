@@ -2,7 +2,7 @@
 title: "Creating e-books with Eclipse"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2012-02-08
 tags: 
   - documentation

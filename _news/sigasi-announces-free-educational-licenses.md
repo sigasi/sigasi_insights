@@ -2,7 +2,7 @@
 title: "Sigasi announces Free Educational Licenses"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-08-25
 tags: 
   - FPL

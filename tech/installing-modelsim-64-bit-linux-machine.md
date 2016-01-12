@@ -2,7 +2,7 @@
 title: "Installing ModelSim on a 64-bit linux machine"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2013-09-07
 tags: 
   - modelsim

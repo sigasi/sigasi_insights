@@ -2,7 +2,7 @@
 title: "New tools for teaching VHDL with Sigasi Pro for VHDL"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-08-14
 tags: 
   - event

@@ -2,7 +2,7 @@
 title: "Sigasi in Semiconductor Times"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2009-06-01
 tags: 
   - public beta

@@ -2,7 +2,7 @@
 title: "Hendrik Eeckhaut speaks at Eclipse Summit Europe"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2009-09-14
 ---
 <div class="content">

@@ -2,7 +2,7 @@
 title: "What is hardware refactoring?"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2008-12-18
 tags: 
   - Refactoring

@@ -2,7 +2,7 @@
 title: "How to organize source code? Learn from Java."
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2009-09-28
 tags: 
   - source code

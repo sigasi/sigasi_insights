@@ -2,7 +2,7 @@
 title: "Sigasi Public Beta: future of VHDL design"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2009-05-19
 tags: 
   - public beta

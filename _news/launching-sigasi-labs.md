@@ -2,7 +2,7 @@
 title: "Launching Sigasi Labs"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-11-12
 tags: 
   - labs

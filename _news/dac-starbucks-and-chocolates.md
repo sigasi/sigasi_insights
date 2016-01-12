@@ -2,7 +2,7 @@
 title: "DAC, Starbucks and Chocolates"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-06-13
 tags: 
   - DAC

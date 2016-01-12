@@ -2,7 +2,7 @@
 title: "Bits&Chips"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2008-05-26
 ---
 <div class="content">

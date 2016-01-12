@@ -2,7 +2,7 @@
 title: "The scope of VHDL use clauses and VHDL library clauses"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-12-14
 tags: 
   - VHDL

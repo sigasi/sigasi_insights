@@ -2,7 +2,7 @@
 title: "Display line numbers by default"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2009-06-29
 tags: 
   - planeteclipse

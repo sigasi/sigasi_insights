@@ -2,7 +2,7 @@
 title: "Code Comprehension Tool"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-03-04
 tags: 
   - strategy

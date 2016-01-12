@@ -2,7 +2,7 @@
 title: "The most needed EDA innovation"
 layout: page 
 pager: true
-author: jdecaluwe (Sigasi)
+author: Jan Decaluwe
 date: 2010-03-11
 tags: 
   - JanHDL

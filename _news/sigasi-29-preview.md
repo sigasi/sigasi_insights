@@ -2,7 +2,7 @@
 title: "Sigasi 2.9 Preview"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2012-11-01
 tags: 
   - hdt-2.0

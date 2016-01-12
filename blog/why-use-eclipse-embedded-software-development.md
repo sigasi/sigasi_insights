@@ -2,7 +2,7 @@
 title: "Why use Eclipse for embedded software development?"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-02-26
 tags: 
   - invited talk

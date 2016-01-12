@@ -2,7 +2,7 @@
 title: "VHDL Assert and Report"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2015-02-02
 ---
 How can you check invariants in VHDL? How can you write information to the console? That is what the VHDL assert statement and report statement are for!

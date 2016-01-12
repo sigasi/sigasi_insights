@@ -2,7 +2,7 @@
 title: "Project Management and team collaboration"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-08-25
 tags: 
   - collaboration

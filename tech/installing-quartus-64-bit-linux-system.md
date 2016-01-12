@@ -2,7 +2,7 @@
 title: "Installing Quartus on a 64-bit Linux system"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-06-23
 tags: 
   - Quartus

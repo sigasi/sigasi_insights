@@ -2,7 +2,7 @@
 title: "How to use the new VHDL 2008 libraries in Sigasi"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2012-02-08
 tags: 
   - vhdl 2008

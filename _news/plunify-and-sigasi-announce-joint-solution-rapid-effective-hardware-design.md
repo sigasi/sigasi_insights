@@ -2,7 +2,7 @@
 title: "Plunify and Sigasi announce joint solution for rapid, effective hardware design"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-11-03
 tags: 
   - press release

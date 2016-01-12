@@ -2,7 +2,7 @@
 title: "Getting started with the Altera BeMicro SDK on Linux"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2011-01-07
 tags: 
   - Altera

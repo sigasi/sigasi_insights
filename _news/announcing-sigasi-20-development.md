@@ -2,7 +2,7 @@
 title: "Announcing Sigasi 2.0 Development"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-03-11
 tags: 
   - press release

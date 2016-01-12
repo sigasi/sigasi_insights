@@ -2,7 +2,7 @@
 title: "VHDL Recursion and Useful Error Messages"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-01-16
 tags: 
   - EDA2.0

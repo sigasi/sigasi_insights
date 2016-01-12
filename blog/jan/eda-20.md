@@ -2,7 +2,7 @@
 title: "EDA 2.0"
 layout: page 
 pager: true
-author: jdecaluwe (Sigasi)
+author: Jan Decaluwe
 date: 2010-05-30
 tags: 
   - EDA2.0

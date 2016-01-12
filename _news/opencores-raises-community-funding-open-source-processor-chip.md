@@ -2,7 +2,7 @@
 title: "Opencores raises community funding for Open Source processor chip"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-05-09
 tags: 
   - open source

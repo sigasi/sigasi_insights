@@ -2,7 +2,7 @@
 title: "Sigasi announces Affirmative Action"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-04-01
 tags: 
   - press release

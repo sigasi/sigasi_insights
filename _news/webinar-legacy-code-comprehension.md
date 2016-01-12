@@ -2,7 +2,7 @@
 title: "Webinar: Legacy Code Comprehension"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-03-08
 tags: 
   - webinar

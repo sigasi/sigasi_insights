@@ -2,7 +2,7 @@
 title: "7-segment display"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2009-09-30
 tags: 
   - VHDL

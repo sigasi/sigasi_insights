@@ -2,7 +2,7 @@
 title: "How to work with Gaisler's Leon3 SPARC processor"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-02-04
 tags: 
   - howto

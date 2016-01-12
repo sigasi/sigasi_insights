@@ -2,7 +2,7 @@
 title: "How to get multiple search result tabs?"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2010-05-28
 tags: 
   - howto

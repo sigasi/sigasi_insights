@@ -2,7 +2,7 @@
 title: "Five reasons why Emacs will always be better"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-09-02
 tags: 
   - Emacs

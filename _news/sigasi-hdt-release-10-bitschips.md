@@ -2,7 +2,7 @@
 title: "Sigasi HDT release 1.0 in Bits&Chips"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2010-02-11
 ---
 <div class="content">

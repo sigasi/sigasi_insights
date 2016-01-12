@@ -1,6 +1,6 @@
 ---
 title: Tech Articles
-layout: index 
+layout: index-blog 
 order: date
 reverse: true
 ---

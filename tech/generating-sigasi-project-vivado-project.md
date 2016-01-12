@@ -2,7 +2,7 @@
 title: "Generating a Sigasi project from a Vivado project"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2015-06-30
 tags: 
   - hdt-2.0

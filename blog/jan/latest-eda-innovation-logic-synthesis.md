@@ -2,7 +2,7 @@
 title: "The latest EDA innovation: logic synthesis!"
 layout: page 
 pager: true
-author: jdecaluwe (Sigasi)
+author: Jan Decaluwe
 date: 2010-01-18
 tags: 
   - JanHDL

@@ -2,7 +2,7 @@
 title: "[Announce] Jan on HDL Design"
 layout: page 
 pager: true
-author: jdecaluwe (Sigasi)
+author: Jan Decaluwe
 date: 2009-11-10
 tags: 
   - JanHDL

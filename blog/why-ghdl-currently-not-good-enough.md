@@ -2,7 +2,7 @@
 title: "Why is GHDL (currently) not good enough?"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-04-19
 tags: 
   - EDA

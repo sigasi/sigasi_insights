@@ -2,7 +2,7 @@
 title: "Whitepaper: Standard Editor for Teams"
 layout: page 
 pager: true
-author: walker.r
+author: Walker R.
 date: 2014-11-07
 tags: 
   - Emacs

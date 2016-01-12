@@ -2,7 +2,7 @@
 title: "Why people hate VHDL ... and what to do about it."
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-02-25
 tags: 
   - VHDL

@@ -2,7 +2,7 @@
 title: "Lego photo contest"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-08-16
 tags: 
   - FPL

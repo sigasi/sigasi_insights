@@ -2,7 +2,7 @@
 title: "Summertime: trial period doubled"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-07-09
 ---
 <div class="content">

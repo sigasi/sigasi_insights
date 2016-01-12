@@ -2,7 +2,7 @@
 title: "Press Release: Sigasi integrates Aldec Simulator to Accelerate Feedback Cycle"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-05-22
 tags: 
   - press release

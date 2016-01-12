@@ -2,7 +2,7 @@
 title: "Press Release: Sigasi digs through legacy VHDL code "
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-03-16
 tags: 
   - press release

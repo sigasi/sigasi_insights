@@ -2,7 +2,7 @@
 title: "the Future of Design"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2009-05-06
 tags: 
   - rtl

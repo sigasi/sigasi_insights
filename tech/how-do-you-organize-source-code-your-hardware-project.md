@@ -2,7 +2,7 @@
 title: "How do you organize the source code of your hardware project?"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2009-09-25
 tags: 
   - source code

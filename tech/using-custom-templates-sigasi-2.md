@@ -2,7 +2,7 @@
 title: "Using Custom Templates in Sigasi 2"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2012-10-02
 tags: 
   - autocomplete

@@ -2,7 +2,7 @@
 title: "Graphic Design is dead - long live Graphical Views"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2015-09-08
 ---
 ## Introduction

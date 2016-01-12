@@ -2,7 +2,7 @@
 title: "How to sell EDA tools in Liechtenstein"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2010-04-08
 tags: 
   - strategy

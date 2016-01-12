@@ -2,7 +2,7 @@
 title: "Engineers are smart enough to change editors"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-06-07
 comments: true
 tags: 

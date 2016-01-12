@@ -2,7 +2,7 @@
 title: "What is the Sigasi alternative for “jEdit-F3” functionality."
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2014-04-30
 ---
 In jEdit one can get a list of all search-results in the current file in a separate part of the frontend (always visible) with **F3**. Is this also possible in Sigasi?

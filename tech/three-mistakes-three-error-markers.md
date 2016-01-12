@@ -2,7 +2,7 @@
 title: "Three mistakes, three error markers"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-09-21
 tags: 
   - recovering VHDL parser

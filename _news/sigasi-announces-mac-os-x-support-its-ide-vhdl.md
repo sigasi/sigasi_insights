@@ -2,7 +2,7 @@
 title: "Sigasi Announces Mac OS X support for its IDE for VHDL"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2009-09-07
 tags: 
   - Mac

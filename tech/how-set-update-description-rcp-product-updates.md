@@ -2,7 +2,7 @@
 title: "How to set the update description of RCP product updates"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2011-11-08
 tags: 
   - eclipse

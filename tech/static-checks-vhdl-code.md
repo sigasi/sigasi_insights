@@ -2,7 +2,7 @@
 title: "Static Checks for VHDL Code"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-08-03
 tags: 
   - case statement

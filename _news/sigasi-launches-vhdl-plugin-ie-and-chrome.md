@@ -2,7 +2,7 @@
 title: "Sigasi launches VHDL plugin for IE and Chrome"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2013-04-01
 tags: 
   - press release

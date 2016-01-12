@@ -2,7 +2,7 @@
 title: "Sigasi brings together the Belgian Eclipse community"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2009-01-30
 tags: 
   - planeteclipse

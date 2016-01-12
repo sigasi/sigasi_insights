@@ -2,7 +2,7 @@
 title: "Adding custom code checkers to your project"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2015-05-08
 tags: 
   - howto

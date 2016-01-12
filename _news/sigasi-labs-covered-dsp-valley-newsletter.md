@@ -2,7 +2,7 @@
 title: "Sigasi Labs covered in DSP Valley Newsletter"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2010-12-23
 tags: 
   - DSP Valley

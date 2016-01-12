@@ -2,7 +2,7 @@
 title: "A 20-year old relationship"
 layout: page 
 pager: true
-author: jdecaluwe (Sigasi)
+author: Jan Decaluwe
 date: 2009-11-17
 tags: 
   - JanHDL

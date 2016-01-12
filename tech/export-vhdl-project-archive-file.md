@@ -2,7 +2,7 @@
 title: "Export a VHDL project to an archive file"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2009-10-19
 tags: 
   - hdt-2.0

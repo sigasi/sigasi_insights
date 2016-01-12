@@ -3,7 +3,7 @@ title: "Better than Emacs VHDL mode"
 layout: index2 
 order: date
 reverse: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2012-03-30
 tags: 
   - Emacs

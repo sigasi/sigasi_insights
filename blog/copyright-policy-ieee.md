@@ -2,7 +2,7 @@
 title: "Copyright policy of IEEE"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2009-11-12
 tags: 
   - IEEE

@@ -2,7 +2,7 @@
 title: "The State of Logic Design Internet Communities"
 layout: page 
 pager: true
-author: brobinson
+author: Bryan Robinson
 date: 2011-03-21
 tags: 
   - Guest Blog
