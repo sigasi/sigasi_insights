@@ -1,6 +1,6 @@
 ---
 title: Release Notes
-layout: index
+layout: index-blog
 order: date
 reverse: true
 dropdown: true

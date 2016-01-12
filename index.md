@@ -1,6 +1,6 @@
 ---
 title: Sigasi Insights
-layout: index
+layout: insights
 content:
     - manual 
     - faq
