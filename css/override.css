@@ -1,0 +1,13 @@
+.nav > li {
+    position: relative;
+    display: block;
+    font-weight: bold;
+}
+
+.nav > li.active {
+    position: relative;
+    display: block;
+    font-weight: bold;
+    background-color: #262262; // navy blue
+    color: white;
+}
