@@ -95,7 +95,7 @@ When you start the tool for the first time, it will propose to create a
 workspace for you:
 
 ![Choose workspace](images/chooseworkspace2.png)
-j
+
 Although you can work with multiple workspaces, we recommend to use a
 single workspace for all your projects.
 
