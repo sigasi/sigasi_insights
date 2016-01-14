@@ -1,7 +1,9 @@
+// secondary navigation menu
+
 .nav > li {
     position: relative;
     display: block;
-    font-weight: bold;
+    font-size: 14px;
 }
 
 .nav > li.active {
@@ -9,5 +11,21 @@
     display: block;
     font-weight: bold;
     background-color: #262262; // navy blue
+    color: white;
+}
+.nav > li > a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #262262; // navy blue
+}
+.nav > li > a:hover {
+    background-color: white;
+    color: orange;
+}
+.nav > li.active > a:hover {
+    background-color: white;
+    color: orange;
+}
+.nav > li.active > a {
     color: white;
 }

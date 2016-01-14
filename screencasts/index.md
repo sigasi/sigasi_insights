@@ -1,6 +1,6 @@
 ---
 title: Screencasts
-layout: index
+layout: index-screencast
 order: title
 ---
 

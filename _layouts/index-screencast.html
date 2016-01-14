@@ -1,0 +1,46 @@
+{% extends "index.html" %}
+
+{% block title %}
+{% endblock %}
+
+{% set video_width = "300" %}
+{% set video_height = "200" %}
+  {% block selectedindex %}
+  <div class="row">
+    <div class="col-md-12" >
+      <h3>Recommended Screencasts</h3>
+      <p>
+      {% for item in this.content|filterlatest(6) %}
+      <div class="col-md-4" >
+        <div id="wistia_{{item.videoid}}" class="wistia_embed" style="width:{{video_width}}px;height:{{video_height}}px;" data-video-width="{{video_width}}" data-video-height="{{video_height}}">
+              <object id="wistia_efw03up0ck_seo" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" style="display:block;height:{{video_height}}px;position:relative;width:{{video_width}}px;">
+                <param name="movie" value="http://embed.wistia.com/flash/embed_player_v2.0.swf?2012-06-01"></param>
+                <param name="allowfullscreen" value="true"></param><param name="allowscriptaccess" value="always"></param>
+                <param name="bgcolor" value="#ffffff"></param><param name="wmode" value="opaque"></param>
+                <param name="flashvars" value="controlsVisibleOnLoad=true&mediaDuration=30.47&image_crop_resized%3D{{video_width}}x{{video_height}}&unbufferedSeek=true&videoUrl=http%3A%2F%2Fembed.wistia.com%2Fdeliveries%2Fddf8cead70053c77e1400fad8185242b6fa596e5.bin"></param>
+                <embed src="http://embed.wistia.com/flash/embed_player_v2.0.swf?2012-06-01" allowfullscreen="true" allowscriptaccess="always" bgcolor=#ffffff flashvars="controlsVisibleOnLoad=true&mediaDuration=30.47&stillUrl=http%3A%2F%2Fembed.wistia.com%2Fdeliveries%2Fe1e5db77747eca2f9b721f1b396af988cc38eb8b.jpg%3Fimage_crop_resized%3D{{video_width}}x{{video_heigth}}&unbufferedSeek=true&videoUrl=http%3A%2F%2Fembed.wistia.com%2Fdeliveries%2Fddf8cead70053c77e1400fad8185242b6fa596e5.bin" name="wistia_efw03up0ck_html" style="display:block;height:100%;position:relative;width:100%;" type="application/x-shockwave-flash" wmode="opaque"></embed>
+                </object>
+        </div>
+        <script charset="ISO-8859-1" src="http://fast.wistia.com/static/concat/E-v1%2Csocialbar-v1.js"></script>
+        <script>
+          wistiaEmbed = Wistia.embed("{{item.videoid}}", {
+            version: "v1",
+            videoWidth: {{video_width}},
+            videoHeight: {{video_width}},
+            controlsVisibleOnLoad: true
+          });
+          Wistia.plugin.socialbar(wistiaEmbed, {
+            version: "v1",
+            buttons: "twitter-googlePlus-facebook"
+          });
+        </script>
+        <script charset="ISO-8859-1" src="http://fast.wistia.com/embed/medias/efw03up0ck/metadata.js"></script>
+        <div style="height:80px"><a href="{{item.url}}"><h4>{{item.title}}</h4></a></div>
+      </div>
+      {% endfor %}
+      </p>
+    </div>
+  </div>
+  
+  <h3>All Screencasts</h3>
+  {% endblock %}

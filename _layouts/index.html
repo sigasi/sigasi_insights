@@ -3,17 +3,7 @@
 {% block body %}
 
 {% block title %}
-    {% block breadcrumbs %}
-    <ol class="breadcrumb">
-        <li><a href="{{mainsite}}">Home</a></li>
-        <li><a href="{{url_prefix + '/'}}">Insights</a></li>
-        {% for bc in this.breadcrumbs[:-1] %}
-        <li><a href="{{bc.url}}">{{bc.title}}</a></li>
-        {% endfor %}
-        <li class="active">{{this.breadcrumbs[-1].title}}</li>
-    </ol>
-    {% endblock %}
-    
+
     <section class="container">
       <div class="row">
         <div class="spb_content_element col-sm-12 spb_text_column">
@@ -32,7 +22,6 @@
       {% endfor %}
     </div>
 {% endblock %}
-
 
 <div class="container">
   {% block index %}
