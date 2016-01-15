@@ -264,7 +264,7 @@ There can be a number of reasons why Sigasi connects to the internet.
 ## Do you support block select (a.k.a. column editing mode)?
 You can enable and disable block editing with **Ctrl+Alt+A** or **Edit > Toggle Block Selection**
 
-Note that in many cases where you are used to using block editing (e.g. [/screencasts/short_entity_component_instantiation]), you may not need it any more, thanks to intelligent code completion (see this blog post: [/blog/why-cant-hdl-designers-live-without-block-selection-mode]).
+Note that in many cases where you are used to using block editing (e.g. [/screencasts/short_entity_component_instantiation]), you may not need it any more, thanks to intelligent code completion (see this blog post: [/opinion/why-cant-hdl-designers-live-without-block-selection-mode]).
 
 
 ## What is this MouseFeed pop-up?
@@ -302,7 +302,7 @@ If you still need to insert tabs in Block Selection Mode, you should **copy** a 
 
 ## How to create a component declaration ("Paste As" Emacs)
 
-Some other editors (most notably [Reto Zimmermann's Emacs VHDL Mode](/blog/emacs)) have the concept of **"port translation"**. You first copy the source code of an entity declaration, and then you can paste it as an instantiation or as a component declaration.
+Some other editors (most notably [Reto Zimmermann's Emacs VHDL Mode](/opinion/emacs)) have the concept of **"port translation"**. You first copy the source code of an entity declaration, and then you can paste it as an instantiation or as a component declaration.
 
 Sigasi supports the same, but in a different way: using **Autocomplete**. You don't need to go find the original entity declaration, since Sigasi knows where to find it in your project. For example for instantiation: just start typing the **label name**, `:` and the word `entity` and press **Ctrl-Space** to trigger the autocomplete feature.
 

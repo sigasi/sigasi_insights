@@ -17,7 +17,7 @@ We are using markdown
 
 ### Images
 
-* Images are stored in an `images` folder (e.g. `/blog/images`, `/tech/images/`, ...)
+* Images are stored in an `images` folder (e.g. `/opinion/images`, `/tech/images/`, ...)
 * Image file names must be **lower case**
 
 Tips:

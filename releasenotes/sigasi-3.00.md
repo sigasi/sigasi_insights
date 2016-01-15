@@ -52,9 +52,9 @@ This results in major improvements in how we can offer you (System)Verilog suppo
 #### Verilog
 * We enabled **type time syntax error reporting**  
   screenshot [todo]
-* In Sigasi 3.0 we implemented an convenient way to preview the result of preprocessing the active Verilog file. When you **Hover** a Verilog macro, you will see the **preprocessed** text. At the bottom of the hover you will also see a link to open the **Preprocessor View**.
+* In Sigasi 3.0 we implemented an convenient way to preview the result of preprocessing the active Verilog file. When you **Hover** a Verilog macro, you will see the **preprocessed** text. At the bottom of the hover you will also see a link to open the **Preprocessor View**.  
   ![Verilog macro hover](3.00/verilog-macro-hover.png)
-* The **Preprocessor (Macro) View** is another way to easily inspect the preprocessed Verilog code. It _automatically synchronizes its position and selection_ with the active editor. [documentation](/manual/verilog_editor.html#verilog-preprocessingmacros)  
+* The **Preprocessor (Macro) View** is another way to easily inspect the preprocessed Verilog code. It _automatically synchronizes its position and selection_ with the active editor. [documentation](/manual/editor.html#verilog-preprocessingmacros)  
   ![Preprocessor View](3.00/verilog-preprocessor-view.png)
 * Verilog **include paths** can now be configured. Right click your Verilog project in the project explorere and select **Properties > Verilog Preprocessor**. Here you can enter a `;`-separated list of include paths (relative to the project folder). 
 * Improved hover for `wire` and `reg`
@@ -64,8 +64,8 @@ This results in major improvements in how we can offer you (System)Verilog suppo
 
 * We also improved our SystemVerilog analyzer. Sigasi now correctly *links* `packages`, `records`, `structs`, `unions` and `enums`. This improves **Open Declaration** and **Find References**.
 * Notes:
-    * You can switch the [/manual/verilog-editor#Verilog version] via **Window > Preferences > Sigasi > Verilog > Verilog version**
-    * We do no support *the entire SystemVerilog Syntax* yet. So if you see unexpected syntax error markers, [send-email] or [/manual/verilog-editor#disable error markers].
+    * You can switch the [/manual/editor#Verilog version] via **Window > Preferences > Sigasi > Verilog > Verilog version**
+    * We do no support *the entire SystemVerilog Syntax* yet. So if you see unexpected syntax error markers, [send-email] or [/manual/editor#disable verilog error markers].
   
 ### Sigasi XL Doc improvements
 
@@ -94,6 +94,7 @@ This results in major improvements in how we can offer you (System)Verilog suppo
 ### Bug fixes
 
 - ticket 3412 : Stuttering does not work in Eclipse 4
+- ticket 3505 : Incorrect type error in record initialisation with multiple choices and others
 - ticket 3433 : Linking error in VHDL `for generate` index
 - ticket 3460 : Support comments without leading whitespace
 - ticket 3483 : Clear nature settings when **Clear** button is pressed on the VHDL/Verilog preference pages

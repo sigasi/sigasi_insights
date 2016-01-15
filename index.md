@@ -7,7 +7,7 @@ content:
     - releasenotes
     - screencasts
     - tech
-    - blog
+    - opinion
 ---
 
 
