@@ -59,6 +59,10 @@ Some other popular revision control systems include:
 3.  Perforce [learn
     more](http://www.perforce.com/product/components/eclipse_plugin).
 
+## VI and Emacs
+
++ VI: <http://vrapper.sourceforge.net/home/>
++ Emacs: <http://marketplace.eclipse.org/content/emacs>
 
 ## Other languages
 

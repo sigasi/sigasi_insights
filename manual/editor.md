@@ -178,7 +178,11 @@ selection by pressing: **Ctrl+Alt+Down**.
 
 ### Configure key bindings
 
+See [keyshortcuts]
+
 ### Emacs/VI emulation mode
+
+See [plugins#VI-and-Emacs]
 
 ### Remove Trailing Whitespace {#trailing-whitespace}
 
@@ -186,9 +190,9 @@ The action to remove trailing whitespace is hidden by default. You can access it
 
 ### Customize color preferences
 
-### Multiple screen support
+### Multiple Screen Support
 
-### Side-by-side diff for:			
+### Side-by-side Diff
 
 - Previous versions (local history or version control)
 - Comparing two files
