@@ -21,4 +21,4 @@ Read the follow-up posts:
 Coming up:
 
 * How to organize source code? Learn from OpenCores.
-* How to organize source code? [/blog/learning-leon3grlib].
+* How to organize source code? [/opinion/learning-leon3grlib].

@@ -54,5 +54,5 @@ Billion dollar companies are very good at many things. There is no use in trying
 
 ## Do More with Less
 
-<em><a href="http://theasicguy.com">Harry "the ASIC guy" Gries</a> (<a href="http://www.xuropa.com">Xuropa</a>) has asked us how Sigasi accomplishes <a href="http://www.xuropa.com/blog/domorewithless/">"More with Less"</a>. This blog post explains how we generate sales without a large sales force. I share this information with the world, hoping that more people with good ideas start their own company and bring their technology to the market.
-Please consider <a href="http://www.xuropa.com/blog/domorewithless/entries/howtosellinliechtenstein/">voting for this article on the Xuropa site</a>.</em>
+<em><a href="http://theasicguy.com">Harry "the ASIC guy" Gries</a> (<a href="http://www.xuropa.com">Xuropa</a>) has asked us how Sigasi accomplishes <a href="http://www.xuropa.com/opinion/domorewithless/">"More with Less"</a>. This blog post explains how we generate sales without a large sales force. I share this information with the world, hoping that more people with good ideas start their own company and bring their technology to the market.
+Please consider <a href="http://www.xuropa.com/opinion/domorewithless/entries/howtosellinliechtenstein/">voting for this article on the Xuropa site</a>.</em>

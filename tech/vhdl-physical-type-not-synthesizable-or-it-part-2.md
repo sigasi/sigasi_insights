@@ -38,7 +38,7 @@ I don't want to force anybody in to using any of these constructs. I'm just worr
 
 ## Back to physical types
 
-But for now, let's focus on physical types. To pin everybody to the _facts_, here is a [/blog/vetsmod-get-better-feedback-your-vhdl-code-snippets] example of physical types in action:
+But for now, let's focus on physical types. To pin everybody to the _facts_, here is a [/opinion/vetsmod-get-better-feedback-your-vhdl-code-snippets] example of physical types in action:
 
 ```vhdl
 library ieee;
