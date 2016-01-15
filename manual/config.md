@@ -71,9 +71,6 @@ When you enable Quick Diff, you can see changes in the active editor with the ve
 
 [more info](http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftasks-cvs-quickdiff.htm)
 
-## Folding
-[todo]
-
 # Linting rules {#configure-linting}
 
 You can choose the severity of linting rules in: **Window > Preferences > Sigasi > VHDL > Errors/Warnings**.
