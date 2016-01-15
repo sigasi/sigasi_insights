@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+
+{% block title %}
+{% endblock %}
+
+{% block selectedindex %}
+  <div class="row">
+    <div class="col-md-6" >
+      <h3>Popular Tech Articles on VHDL</h3>
+      <p>
+      {% for item in this.content|sortpopular|filtertag("VHDL")|filterfirst(9) %}
+      <a href="{{item.url}}" title="{{item.title}}">{{item.title|cutoff(50)}}</a> <br/>
+      {% endfor %}
+      <a href="/tags/VHDL" title="Articles on VHDL">more...</a> <br/>
+      </p>
+    </div>
+    <div class="col-md-6">
+      <h3>Popular Tech Articles on Eclipse</h3>
+      <p>
+      {% for item in this.content|sortpopular|filtertag("eclipse")|filterfirst(9) %}
+      <a href="{{item.url}}" title="{{item.title}}">{{item.title|cutoff(50)}}</a> <br/>
+      {% endfor %}
+      <a href="/tags/eclipse" title="Articles on eclipse">more...</a> <br/>
+      </p>
+    </div>
+  </div>
+  
+  <h3>All Tech Articles</h3>
+{% endblock %}
