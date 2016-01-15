@@ -69,7 +69,7 @@ I find this kind of fixes unsatisfactory also. At the behavioral level, I want a
 
 Nonblocking assignments were introduced in Verilog to make synchronous communication deterministic. Nonblocking update events are put in a special queue that is processed later in the simulation cycle. When all processes are triggered by the same clock edge, the update events appear to happen concurrently.
 
-However, as I discussed in an earlier post, [/blog/jan/vhdls-crown-jewel], update events and process evaluation events do not happen in separate phases. That is the reason why nonblocking assignments do not solve the problem in general and why we are stuck with the problems I am discussing.
+However, as I discussed in an earlier post, [/opinion/jan/vhdls-crown-jewel], update events and process evaluation events do not happen in separate phases. That is the reason why nonblocking assignments do not solve the problem in general and why we are stuck with the problems I am discussing.
 
 The language fix is easy with a rule like the following:
 
@@ -79,7 +79,7 @@ That is all that it would take to solve the problem in general. Probably, severa
 
 ## Blocking assignments as red herrings
 
-Several commentators to my previous post, [/blog/jan/wasting-real-time-zero-time], insisted that using  blocking instead of nonblocking assignments would resolve the problem.  They are mistaken. Not every Verilog problem can be reduced to the proper choice between the two types of assignments. 
+Several commentators to my previous post, [/opinion/jan/wasting-real-time-zero-time], insisted that using  blocking instead of nonblocking assignments would resolve the problem.  They are mistaken. Not every Verilog problem can be reduced to the proper choice between the two types of assignments. 
 
 First, the nonblocking assignments were there for a good reason that can be inferred from the context. The original `DUT` was a synthesizable FSM. For  RTL-style FSM modeling in a clocked process, nonblocking assignments to the output ports are mandatory. Note that writing testbenches for that kind of Verilog modules is a very common situation.
 

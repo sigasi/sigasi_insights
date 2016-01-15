@@ -52,7 +52,7 @@ module delay_line(clock, a, y);
 endmodule
 ```
 
-With the models as presented, this model may behave as the intended two-stage delay line, or as an unintended single stage. There is nothing in Verilog to prefer one behavior over the other. It depends on your simulator brand. Or version. Or on source code order. Or on some random, unpredictable event.  Both outcomes are equally valid. This is <a href="/blog/jan/verilogs-major-flaw.html">nondeterminism</a> in practice.
+With the models as presented, this model may behave as the intended two-stage delay line, or as an unintended single stage. There is nothing in Verilog to prefer one behavior over the other. It depends on your simulator brand. Or version. Or on source code order. Or on some random, unpredictable event.  Both outcomes are equally valid. This is <a href="/opinion/jan/verilogs-major-flaw.html">nondeterminism</a> in practice.
 
 To see the problem more clearly, consider the following code, which is equivalent from the point of view of the Verilog scheduling algorithm:
 

@@ -17,6 +17,6 @@ Naturally, they looked for something similar for hardware development. However, 
 
 <a href="http://www.jandecaluwe.com/professional/resume.html">My own career</a> has been guided by the vision that digital hardware design can be viewed as a kind of software development. That explains why I am so excited about Sigasi HDT. However, even today, almost 20 years after I subscribed to this vision, I hesitate to write it down. It is still often met with scepticism. For example, it is still often asserted that "one shouldn't write HDL code like a software engineer". However, I believe the sceptics have it wrong. They misunderstand how a good software engineer actually thinks and works.
 
-Today, I am announcing a blog about my personal views on HDL design. I believe they are relevant for the future, but I will talk frequently about the past. Insight in the past is very helpful to understand the issues, especially for younger engineers. If you are interested, you can easily follow my contributions on <a href="/blog/jan/">this page</a>.
+Today, I am announcing a blog about my personal views on HDL design. I believe they are relevant for the future, but I will talk frequently about the past. Insight in the past is very helpful to understand the issues, especially for younger engineers. If you are interested, you can easily follow my contributions on <a href="/opinion/jan/">this page</a>.
 
 

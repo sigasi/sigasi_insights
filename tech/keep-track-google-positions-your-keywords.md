@@ -17,7 +17,7 @@ As a small EDA startup that sells its software via Internet, it is of upmost imp
 
 ## But how can we keep track of the result of our SEO efforts?
 
-Of course, the number of trials and sales remain the most important metrics. But I also wanted to easily keep track of the search position of individual keywords. To that purpose I combined some scripts to visualize the position of the keywords we optimize for. I customized the <a href="http://www.geekology.co.za/blog/2009/02/python-script-to-check-google-rankings-for-domain-and-search-term/">rankcheck script of Willem van Zyl</a> to get the Google search position and combined it with the <a href="http://danvk.org/dygraphs/">dygraph library from Dan Vanderkam</a> to visualize the results. 
+Of course, the number of trials and sales remain the most important metrics. But I also wanted to easily keep track of the search position of individual keywords. To that purpose I combined some scripts to visualize the position of the keywords we optimize for. I customized the <a href="http://www.geekology.co.za/opinion/2009/02/python-script-to-check-google-rankings-for-domain-and-search-term/">rankcheck script of Willem van Zyl</a> to get the Google search position and combined it with the <a href="http://danvk.org/dygraphs/">dygraph library from Dan Vanderkam</a> to visualize the results. 
 
 ## Example
 
@@ -101,7 +101,7 @@ Every night a server at Sigasi runs the attached cron-script (`cron.sh`) that ge
 
 This is what `cron.sh` does:
 
-* `cron.sh` calls `rankcheck.py` (The <a href="http://www.geekology.co.za/blog/2009/02/python-script-to-check-google-rankings-for-domain-and-search-term/">original rankcheck script</a> was slightly modified according to the <a href="http://googlesystem.blogspot.com/2010/05/googles-new-interface-colorful-and-more.html">recent changes in the Google result pages</a>.) for each of the keywords specified in `terms.csv`. Make sure you use `+` instead of spaces. 
+* `cron.sh` calls `rankcheck.py` (The <a href="http://www.geekology.co.za/opinion/2009/02/python-script-to-check-google-rankings-for-domain-and-search-term/">original rankcheck script</a> was slightly modified according to the <a href="http://googlesystem.blogspot.com/2010/05/googles-new-interface-colorful-and-more.html">recent changes in the Google result pages</a>.) for each of the keywords specified in `terms.csv`. Make sure you use `+` instead of spaces. 
 * The results are stored in `data.csv`.
 * Next, the data file is converted (`generate.py`) in a html page (`data.html`) which contains the plot and the check-boxes to select the keywords to visualize. For your convenience the dygraph Javascript library is also bundled in the attached sources.
 
