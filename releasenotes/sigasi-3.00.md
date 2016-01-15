@@ -51,13 +51,15 @@ This results in major improvements in how we can offer you (System)Verilog suppo
 
 #### Verilog
 * We enabled **type time syntax error reporting**  
-  screenshot [todo]
+  ![Verilog syntax error](3.00/verilog-syntax-error.png)
+* Sigasi 3.0 reports **errors in macro definitions**  
+  ![Verilog Macro syntax error](3.00/macro-errors.png)
 * In Sigasi 3.0 we implemented an convenient way to preview the result of preprocessing the active Verilog file. When you **Hover** a Verilog macro, you will see the **preprocessed** text. At the bottom of the hover you will also see a link to open the **Preprocessor View**.  
   ![Verilog macro hover](3.00/verilog-macro-hover.png)
 * The **Preprocessor (Macro) View** is another way to easily inspect the preprocessed Verilog code. It _automatically synchronizes its position and selection_ with the active editor. [documentation](/manual/editor.html#verilog-preprocessingmacros)  
   ![Preprocessor View](3.00/verilog-preprocessor-view.png)
 * Verilog **include paths** can now be configured. Right click your Verilog project in the project explorere and select **Properties > Verilog Preprocessor**. Here you can enter a `;`-separated list of include paths (relative to the project folder). 
-* Improved hover for `wire` and `reg`
+* Improved hover for `wire` and `reg`  
   ![improved hover verilog reg](3.00/verilog-hover-reg.png)
 
 ####SystemVerilog
@@ -78,10 +80,10 @@ This results in major improvements in how we can offer you (System)Verilog suppo
 ### Other new and noteworthy improvements
 
 * We dropped Eclipse 3 support (new [requirements](/faq.html#what-are-the-system-requirements))
-* The Hierarchy and Generics View are now merged. You can now inspect the values of generics and constants directly in the hierarchy view.
+* The Hierarchy and Generics View are now merged. You can now inspect the values of generics and constants directly in the hierarchy view.  
   ![generics in hierarchy view](3.00/hierarchy-generics.png)
 * Added new, minimalistic perspective for **Sigasi Starter**
-* Added [solarized theme](http://ethanschoonover.com/solarized) for the Sigasi editors
+* Added [solarized theme](http://ethanschoonover.com/solarized) for the Sigasi editors  
   ![solarized theme Dark and Light](3.00/solarized-mixed.png)
 * Added new option to **Export hierarchy as CSV**: use current toplevel in Hierarchy View as default value ([documentation](/manual/tools.html#export))
 * The Mac OS X version now is a real 'App' contained in one, clean `Sigasi.app`
