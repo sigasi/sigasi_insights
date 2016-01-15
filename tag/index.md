@@ -1,5 +1,5 @@
 ---
 title: Tags
-layout: index 
+layout: index-tag 
 order: title
 ---
