@@ -5,31 +5,31 @@
 <div class="container">
   <div class="page-header">
     {% block title %}
-    <section class="container">
-      <div class="row">
-      	
-        <div class="spb_content_element col-sm-12 spb_text_column">
-          <div class="spb-asset-content" style="padding-top:0%;padding-bottom:0%;padding-left:0%;padding-right:0%;">
-            <h1 style="text-align: center;">{{this.title}}</h1>
-          </div>
-        </div>
+    <div>
+        <h1 style="margin-bottom: 0px;margin-top: 30px;">{{this.title}}</h1>
+    </div>
         
+    <div style="margin: 10px 0 10px">
+        <span>
         {% if this.date %}
         {% if "/releasenotes/" in this.url %}
-          released on {{this.date|dateformat}}
+          Released on {{this.date|dateformat}}
         {% else %}
-          posted on {{this.date|dateformat}}
+          Posted on {{this.date|dateformat}}
         {% endif %}
         {% endif %}
         {% if this.author %}
             by {{this.author|author}}
-        {% endif %} 
-      </div>
-    </section>
-    <div style="margin: 10px 0 10px">
-      {% for tag in this.tags %}
-          <a href="/tag/{{tag}}/" class="btn btn-default btn-xs">{{tag}}</a>
-      {% endfor %}
+        {% endif %}
+        </span>
+        {% if this.tags %}
+        <span style="padding-left:50px">
+        Tagged as: 
+          {% for tag in this.tags %}
+              <a href="/tag/{{tag}}/" class="btn btn-default btn-xs" style="margin-bottom: 2px;">{{tag}}</a>
+          {% endfor %}
+        </span>
+        {% endif %}
     </div>
     {% endblock %}
   </div>
