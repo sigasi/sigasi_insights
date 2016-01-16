@@ -18,6 +18,7 @@ tags:
 We will need a computer with SSH acces that has a working version of ModelSim installed. I suggest you use a _Linux_ computer because Mac OSX and Linux are both Unix-like systems. If you use a Windows compile server, you may run in to troubles with the path format (backslashes on Windows!). You can either use a remote computer, or set up a virtual machine (using something like [Parallels](http://www.parallels.com/products/desktop/) or [VirtualBox](http://www.virtualbox.org/) on your Mac.
 
 You will need the following info:
+
 * the host name (or IP address) of your build server
 * your user name on that server
 * the install path of ModelSim on the server
