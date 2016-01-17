@@ -8,6 +8,18 @@ bootstrap: 3.3.4
 cname: doc.sigasi.com
 # mainsite: www.sigasi.com
 mainsite: sigasi.wpengine.com
+menuitems:
+  - title: Home
+    url: http://www.sigasi.com
+  - title: About
+    url: http://www.sigasi.com/about
+  - title: Products
+    url: http://www.sigasi.com/products
+  - title: Contact
+    url: http://www.sigasi.com/contact
+  - title: Insights
+    url: http://insights.sigasi.com
+    active: true
 reflinks:
     content_license:
         url: http://creativecommons.org/licenses/by-sa/3.0/

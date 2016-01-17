@@ -11,7 +11,7 @@
       {% for item in this.content|sortpopular|filterfirst(6) %}
       <div class="col-md-4" >
         {{item.videoid|wistia(300,200)}}
-        <div style="height:80px"><a href="{{item.url}}"><h4>{{item.title}}</h4></a></div>
+        <div style="height:80px;text-align:center"><a href="{{item.url}}"><h4>{{item.title}}</h4></a></div>
       </div>
       {% endfor %}
       <script charset="ISO-8859-1" src="http://fast.wistia.com/embed/medias/efw03up0ck/metadata.js"></script>

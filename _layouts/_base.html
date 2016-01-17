@@ -151,11 +151,12 @@ img.emoji {
 <div id="site-loading" class="three-bounce"><div class="spinner "><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div></div><div id="mobile-menu-wrap" class="menu-is-right">
 <form method="get" class="mobile-search-form" action="http://{{site.mainsite}}/"><input type="text" placeholder="Enter text to search" name="s" autocomplete="off" /></form>
 <nav id="mobile-menu" class="clearfix">
-<div class="menu-main-container"><ul id="menu-main" class="menu"><li  class="menu-item-11838 menu-item menu-item-type-post_type menu-item-object-page   "><a href="http://{{site.mainsite}}/"><span class="menu-item-text">Home</span></a></li>
-<li  class="menu-item-11825 menu-item menu-item-type-post_type menu-item-object-page   "><a href="http://{{site.mainsite}}/about/"><span class="menu-item-text">About</span></a></li>
-<li  class="menu-item-11846 menu-item menu-item-type-post_type menu-item-object-page   "><a href="http://{{site.mainsite}}/products/"><span class="menu-item-text">Products</span></a></li>
-<li  class="menu-item-11833 menu-item menu-item-type-post_type menu-item-object-page   "><a href="http://{{site.mainsite}}/contact/"><span class="menu-item-text">Contact</span></a></li>
-<li  class="menu-item-11859 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-11858 current_page_item   "><a href="/"><span class="menu-item-text">Insights</span></a></li>
+<div class="menu-main-container"><ul id="menu-main" class="menu">
+  {% for menuitem in menuitems %}
+    <li  class="menu-item-11838 menu-item menu-item-type-post_type menu-item-object-page   ">
+      <a href="{{menuitem.url}}"><span class="menu-item-text">{{menuitem.title}}</span></a>
+    </li>
+  {% endfor %}
 </ul></div></nav>
 </div>
 
@@ -193,11 +194,12 @@ img.emoji {
 
 <div class="float-menu container">
 <nav id="main-navigation" class="std-menu clearfix">
-<div class="menu-main-container"><ul id="menu-main-1" class="menu"><li  class="menu-item-11838 menu-item menu-item-type-post_type menu-item-object-page sf-std-menu         " ><a href="http://{{site.mainsite}}/"><span class="menu-item-text">Home</span></a></li>
-<li  class="menu-item-11825 menu-item menu-item-type-post_type menu-item-object-page sf-std-menu         " ><a href="http://{{site.mainsite}}/about/"><span class="menu-item-text">About</span></a></li>
-<li  class="menu-item-11846 menu-item menu-item-type-post_type menu-item-object-page sf-std-menu         " ><a href="http://{{site.mainsite}}/products/"><span class="menu-item-text">Products</span></a></li>
-<li  class="menu-item-11833 menu-item menu-item-type-post_type menu-item-object-page sf-std-menu         " ><a href="http://{{site.mainsite}}/contact/"><span class="menu-item-text">Contact</span></a></li>
-<li  class="menu-item-11859 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-11858 current_page_item sf-std-menu         " ><a href="/"><span class="menu-item-text">Insights</span></a></li>
+<div class="menu-main-container"><ul id="menu-main-1" class="menu">
+    {% for menuitem in site.menuitems %}
+    <li  class="menu-item-11838 menu-item menu-item-type-post_type menu-item-object-page sf-std-menu {% if menuitem.active %}current-menu-item page_item page-item-11858 current_page_item{% endif %}" >
+    	<a href="{{menuitem.url}}"><span class="menu-item-text">{{menuitem.title}}</span></a>
+    </li>
+  {% endfor %}
 </ul></div></nav>
 
 <nav class="std-menu float-alt-menu">
