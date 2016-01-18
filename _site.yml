@@ -20,6 +20,11 @@ menuitems:
   - title: Insights
     url: http://insights.sigasi.com
     active: true
+ignore_patterns:
+  - linkchecker_result.html 
+  - .gitignore 
+  - .project
+  - server.PID
 reflinks:
     content_license:
         url: http://creativecommons.org/licenses/by-sa/3.0/
