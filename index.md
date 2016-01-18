@@ -37,7 +37,3 @@ links1:
     - url: /manual/keyshortcuts.html
       title: Learn the Keyboard Shortcuts
 ---
-
-
-
-
