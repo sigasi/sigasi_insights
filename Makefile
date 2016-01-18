@@ -12,7 +12,7 @@ all: build
 build: NOCAPS
 	python -m urubu build
 	touch _build/.nojekyll
-	ls _gh-pages > /dev/null|| git clone --branch gh-pages git@github.com:sigasi/sigasi_doc.git _gh-pages
+	ls _gh-pages > /dev/null|| git clone --branch gh-pages git@github.com:sigasi/sigasi_insights.git _gh-pages
 	rm -Rf _gh-pages/*
 	cp -R _build/* _gh-pages
 
