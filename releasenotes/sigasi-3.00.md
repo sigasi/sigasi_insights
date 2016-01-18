@@ -100,6 +100,7 @@ This results in major improvements in how we can offer you (System)Verilog suppo
 - ticket 3433 : Linking error in VHDL `for generate` index
 - ticket 3460 : Support comments without leading whitespace
 - ticket 3483 : Clear nature settings when **Clear** button is pressed on the VHDL/Verilog preference pages
+- ticket 3441, 2985 : Unexpected unread warning when alias is used
 - ticket 3490 : Split long names in documentation tables
   ![Split long names in documentation tables](3.00/documentation_long_names_table.png)
 
