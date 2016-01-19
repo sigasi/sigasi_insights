@@ -53,13 +53,10 @@ ul {
     line-height: inherrit;
 }
 
+#mobile-menu > div > ul {
+    list-style: none;
+}
+
 .page-header {
   margin-top: 10px;
 }
-
-/*.crmform td {
-		padding: 0px;
-		border-spacing: 0px;
-		border-width: 0px;
-		border-top-style: none;
-}*/
