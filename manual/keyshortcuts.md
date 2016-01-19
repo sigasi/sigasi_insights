@@ -69,110 +69,90 @@ Switch between regular and block selection mode.
 Keyboard shortcut reference
 ---------------------------
 
-| description            | Keyboard shortcut            |
-| ---------------------- | ---------------------------- |
-|                        |                              |
-| *Basic Editing*        |                              |
-| Delete                 | **Delete**                   |
-| Copy                   | **Ctrl+C**, **Ctrl+Insert**  |
-| Paste                  | **Ctrl+V**, **Shift+Insert** |
-| Cut                    | **Ctrl+X**, **Shift+Delete** |
-| Undo                   | **Ctrl+Z**                   |
-| Redo                   | **Ctrl+Y**                   |
-| Select All             | **Ctrl+A**                   |
-| Toggle Block Selection | **Shift+Alt+A**              |
-|                        |                              |
-| *Quickfixes*           |                              |
-| Quick Fix              | **Ctrl+1**                    |
-|                        |                              |
-| *Autocompletion*       | |
-| Content Assist         | **Ctrl+Space** |
-| Word completio         | **Alt+/** |
-|                        |                              |
-| *Basic Search*  |  |
-| Find and Replace | **Ctrl+F** |
-| Find Next | **Ctrl+K** |
-| Find Previous | **Shift+Ctrl+K** |
-| Incremental Find | **Ctrl+J** |
-| Incremental Find Reverse | **Shift+Ctrl+J** |
-|                        |                              |
-| *Files* |  |
-| Print | **Ctrl+P** |
-| New | **Ctrl+N** |
-| Rename | **F2** |
-| Close All | **Shift+Ctrl+F4**, **Shift+Ctrl+W** |
-| Refresh | **F5** |
-| Close | **Ctrl+F4**, **Ctrl+W** |
-| Properties | **Alt+Enter** |
-| Save | **Ctrl+S** |
-| New menu | **Shift+Alt+N** |
-| Save All | **Shift+Ctrl+S** |
-|                        |                              |
-| *Navigation* | |
-| Last Edit Location | **Ctrl+Q** | 
-| Open Resource | **Shift+Ctrl+R** |
-| Backward History | **Alt+Left** |
-| Show In… | **Shift+Alt+W** |
-| Go to Line | **Ctrl+L** |
-| Previous | **Ctrl*,** |
-| Next | **Ctrl*.** |
-| Collapse All | **Shift+Ctrl+Numpad\_Divide** |
-| Forward History | **Alt+Right** |
-|                        |                              |
-| *VHDL specific* |  |
-| Search references | **Shift+Ctrl+G** |
-| Rename - Refactoring | **Shift+Alt+R** |
-| Toggle Comment | **Ctrl+/** |
-| Comment | **Shift+Ctrl+/** |
-| Uncomment | **Shift+Ctrl+\*** |
-| Open Declaration | **F3** |
-| Open matching entity | **Shift+F3** |
-| Go to next problem | **Shift*.** |
-| Go to previous problem | **Shift*,** |
-|                        |                              |
-| *Advanced search* |  |
-| Find Text in Workspace | **Ctrl+Alt+G** |
-| Open Search Dialog | **Ctrl+H** |
-| Previous Word | **Ctrl+Left** |
-|                        |                              |
-| *Advanced editing* | |
-| Insert Line Above Current Line | **Shift+Ctrl+Enter** |
-| Scroll Line Down | **Ctrl+Down** |
-| Delete Next Word | **Ctrl+Delete** |
-| Test Start | **Ctrl+Home** |
-| Toggle Overwrite | **Insert** |
-| Insert Line Below Current Line | **Shift+Enter** |
-| Delete Previous Word | **Ctrl+Backspace** |
-| Delete Line | **Ctrl+D** |
-| Copy Lines | **Ctrl+Alt+Down** |
-| Duplicate Lines | **Ctrl+Alt+Up** |
-| Move Lines Down | **Alt+Down** |
-| Delete to End of Line | **Shift+Ctrl+Delete** |
-| Select Next Word | **Shift+Ctrl+Right** |
-| Scroll Line Up | **Ctrl+Up** |
-| Select Line End | **Shift+End** |
-| Move Lines Up | **Alt+Up** |
-| Join Lines | **Ctrl+Alt+J** |
-| To Upper Case | **Shift+Ctrl+X** |
-| Select Line Start | **Shift+Home** |
-| To Lower Case | **Shift+Ctrl+Y** |
-| Select Previous Word | **Shift+Ctrl+Left** |
-| Next Word | **Ctrl+Right** |
-| Text End | **Ctrl+End** |
-| Line Start | **Home** |
-| Line End | **End** |
-|                        |                              |
-| *Views* | |
-| Maximize Active View or Editor | **Ctrl+M** |
-| Next Editor | **Ctrl+F6** |
-| Next View | **Ctrl+F7** |
-| Show View Menu | **Ctrl+F10** |
-| Show Key Assist | **Shift+Ctrl+L** |
-| Show System Menu | **Alt*-** |
-| Show Ruler Context Menu | **Ctrl+F10** |
-| Previous Editor | **Shift+Ctrl+F6** |
-| Activate Editor | **F12** |
-| Switch to Editor | **Shift+Ctrl+E** |
-| Previous View | **Shift+Ctrl+F7** |
-| Quick Access | **Ctrl+3** |
-| Quick Switch Editor | **Ctrl+E** |
+| Category               | Description                  | Keyboard shortcut            |
+| ---------------------- | ---------------------------- | -----------------------------|
+| *Basic Editing*        | Delete                       | **Delete**                   |
+|                        | Copy                         | **Ctrl+C**, **Ctrl+Insert**  |
+|                        | Paste                        | **Ctrl+V**, **Shift+Insert** |
+|                        | Cut                          | **Ctrl+X**, **Shift+Delete** |
+|                        | Undo                         | **Ctrl+Z**                   |
+|                        | Redo                         | **Ctrl+Y**                   |
+|                        | Select All                   | **Ctrl+A**                   |
+|                        | Toggle Block Selection       | **Shift+Alt+A**              |
+| *Quickfixes*           | Quick Fix                    | **Ctrl+1**                   |
+| *Autocompletion*       | Content Assist               | **Ctrl+Space**               |
+|                        | Word completion              | **Alt+/**                    |
+| *Basic Search*         | Find and Replace             | **Ctrl+F**                   |
+|                        | Find Next                    | **Ctrl+K**                   |
+|                        | Find Previous                | **Shift+Ctrl+K**             |
+|                        | Incremental Find             | **Ctrl+J**                   |
+|                        | Incremental Find Reverse     | **Shift+Ctrl+J**             |
+| *Files*                | Print                        | **Ctrl+P**                   |
+|                        | New                          | **Ctrl+N** |
+|                        | Rename                       | **F2** |
+|                        | Close All           | **Shift+Ctrl+F4**, **Shift+Ctrl+W** |
+|                        | Refresh | **F5** |
+|                        | Close | **Ctrl+F4**, **Ctrl+W** |
+|                        | Properties | **Alt+Enter** |
+|                        | Save | **Ctrl+S** |
+|                        | New menu | **Shift+Alt+N** |
+|                        | Save All | **Shift+Ctrl+S** |
+| *Navigation*           | Last Edit Location | **Ctrl+Q** | 
+|                        | Open Resource | **Shift+Ctrl+R** |
+|                        | Backward History | **Alt+Left** |
+|                        | Show In… | **Shift+Alt+W** |
+|                        | Go to Line | **Ctrl+L** |
+|                        | Previous | **Ctrl*,** |
+|                        | Next | **Ctrl*.** |
+|                        | Collapse All | **Shift+Ctrl+Numpad\_Divide** |
+|                        | Forward History | **Alt+Right** |
+| *VHDL specific*        | Search references | **Shift+Ctrl+G** |
+|                        | Rename - Refactoring | **Shift+Alt+R** |
+|                        | Toggle Comment | **Ctrl+/** |
+|                        | Comment | **Shift+Ctrl+/** |
+|                        | Uncomment | **Shift+Ctrl+\*** |
+|                        | Open Declaration | **F3** |
+|                        | Open matching entity | **Shift+F3** |
+|                        | Go to next problem | **Shift*.** |
+|                        | Go to previous problem | **Shift*,** |
+| *Advanced search*      | Find Text in Workspace | **Ctrl+Alt+G** |
+|                        | Open Search Dialog | **Ctrl+H** |
+|                        | Previous Word | **Ctrl+Left** |
+| *Advanced editing*     | Insert Line Above Current Line | **Shift+Ctrl+Enter** |
+|                        | Scroll Line Down | **Ctrl+Down** |
+|                        | Delete Next Word | **Ctrl+Delete** |
+|                        | Test Start | **Ctrl+Home** |
+|                        | Toggle Overwrite | **Insert** |
+|                        | Insert Line Below Current Line | **Shift+Enter** |
+|                        | Delete Previous Word | **Ctrl+Backspace** |
+|                        | Delete Line | **Ctrl+D** |
+|                        | Copy Lines | **Ctrl+Alt+Down** |
+|                        | Duplicate Lines | **Ctrl+Alt+Up** |
+|                        | Move Lines Down | **Alt+Down** |
+|                        | Delete to End of Line | **Shift+Ctrl+Delete** |
+|                        | Select Next Word | **Shift+Ctrl+Right** |
+|                        | Scroll Line Up | **Ctrl+Up** |
+|                        | Select Line End | **Shift+End** |
+|                        | Move Lines Up | **Alt+Up** |
+|                        | Join Lines | **Ctrl+Alt+J** |
+|                        | To Upper Case | **Shift+Ctrl+X** |
+|                        | Select Line Start | **Shift+Home** |
+|                        | To Lower Case | **Shift+Ctrl+Y** |
+|                        | Select Previous Word | **Shift+Ctrl+Left** |
+|                        | Next Word | **Ctrl+Right** |
+|                        | Text End | **Ctrl+End** |
+|                        | Line Start | **Home** |
+|                        | Line End | **End** |
+| *Views*                | Maximize Active View or Editor | **Ctrl+M** |
+|                        | Next Editor | **Ctrl+F6** |
+|                        | Next View | **Ctrl+F7** |
+|                        | Show View Menu | **Ctrl+F10** |
+|                        | Show Key Assist | **Shift+Ctrl+L** |
+|                        | Show System Menu | **Alt+-** |
+|                        | Show Ruler Context Menu | **Ctrl+F10** |
+|                        | Previous Editor | **Shift+Ctrl+F6** |
+|                        | Activate Editor | **F12** |
+|                        | Switch to Editor | **Shift+Ctrl+E** |
+|                        | Previous View | **Shift+Ctrl+F7** |
+|                        | Quick Access | **Ctrl+3** |
+|                        | Quick Switch Editor | **Ctrl+E** |
