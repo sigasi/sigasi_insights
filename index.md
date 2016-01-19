@@ -30,7 +30,7 @@ b2:
 links1: 
     - url: 'http://www.sigasi.com/download'
       title: Download
-    - url: /tutorial
+    - url: /tutorial.html
       title: Walk Through the Tutorial
     - url: 'http://www.sigasi.com/try'
       title: Get a Trial License
