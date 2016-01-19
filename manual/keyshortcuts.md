@@ -18,53 +18,29 @@ Top keyboard shortcuts
 
 In this section, we list the most important shortcuts.
 
-### Open Resource (**Shift+Ctrl+R**)
-
-**Shift+Ctrl+R** opens a dialog that allows you to swiftly open an
+1. *Open Resource* (**Shift+Ctrl+R**):  
+   **Shift+Ctrl+R** opens a dialog that allows you to swiftly open an
 editor on any file in the workspace.
-
-### Open Declaration (**F3**)
-
-Use **F3** to navigate to the declaration of the selected identifier.
-
-### Backward History (**Alt+Left**)
-
-Often, when you navigate to a declaration you want to go back to where
-you came from; just press **Alt+Left**.
-
-### Content Assist (**Ctrl+Space**)
-
-With content assist (autocomplete) you can really speed up coding VHDL.
-Just press **Ctrl+Space** to get a suggestion of possible autocompletes
-in the current context.
-
-### Go to next marker (**Ctrl+.**)
-
-Does your file contain warnings or errors? Quickly navigate to the next problem by pressing **Ctrl+.** (**Ctrl+,** jumps to the previous problem).
-
-### Quick Fix (**Ctrl+1**)
-
-To fix problems even quicker, navigate to the problem with the previous shortcut. Press **Ctrl+1** to activate the quickfix, select the fix with the **UP** or **DOWN** keys and execute the quickfix with **Enter**.
-
-### Go to Line (**Ctrl+L**)
-
-You can directly jump to a certain line with this shortcut. You can display the line numbers by right-clicking on on the gray bar on the left side of the editor view and clicking on **Show Line Numbers**.
-
-### Search references (**Shift+Ctrl+G**)
-
-To search for all occurrences of a given identifier, just select the identifier and press **Shift+Ctrl+G**. The search view is displayed, with a match for each occurrence (possibly in multiple files)
-
-### Rename Refactoring (**Shift+Alt+R**)
-
-Once you get used to the rename refactoring you will be using it all the time. Use **Shift+Alt+R** to run it even quicker.
-
-### Toggle Block Selection (**Shift+Alt+A**)
-
-Switch between regular and block selection mode.
-
-### Quick Access (**Ctrl+3**)
-
-**Ctrl+3** is the shortcut to use, when you forgot the shortcut you actually need. With Quick Access you can quickly find open editors, available perspectives, views, preferences, wizards, commands, etc. Simply start typing the name of the item you wish to invoke.
+2. *Open Declaration* (**F3**):  
+   Use **F3** to navigate to the declaration of the selected identifier.
+3. Backward History (**Alt+Left**):  
+   Often, when you navigate to a declaration you want to go back to where you came from; just press **Alt+Left**.
+4. Content Assist (**Ctrl+Space**):  
+   With content assist (autocomplete) you can really speed up coding VHDL. Just press **Ctrl+Space** to get a suggestion of possible autocompletes in the current context.
+5. Go to next marker (**Ctrl+.**)  
+    Does your file contain warnings or errors? Quickly navigate to the next problem by pressing **Ctrl+.** (**Ctrl+,** jumps to the previous problem).
+6. Quick Fix (**Ctrl+1**):  
+   To fix problems even quicker, navigate to the problem with the previous shortcut. Press **Ctrl+1** to activate the quickfix, select the fix with the **UP** or **DOWN** keys and execute the quickfix with **Enter**.
+7. Go to Line (**Ctrl+L**)  
+   You can directly jump to a certain line with this shortcut. You can display the line numbers by right-clicking on on the gray bar on the left side of the editor view and clicking on **Show Line Numbers**.
+8. Search references (**Shift+Ctrl+G**)  
+   To search for all occurrences of a given identifier, just select the identifier and press **Shift+Ctrl+G**. The search view is displayed, with a match for each occurrence (possibly in multiple files)
+9. Rename Refactoring (**Shift+Alt+R**)  
+   Once you get used to the rename refactoring you will be using it all the time. Use **Shift+Alt+R** to run it even quicker.
+10. Toggle Block Selection (**Shift+Alt+A**)  
+   Switch between regular and block selection mode.
+11. Quick Access (**Ctrl+3**)
+  _**Ctrl+3** is the shortcut to use, when you forgot the shortcut you actually need._ With Quick Access you can quickly find open editors, available perspectives, views, preferences, wizards, commands, etc. Simply start typing the name of the item you wish to invoke.
 
 Keyboard shortcut reference
 ---------------------------
