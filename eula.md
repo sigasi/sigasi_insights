@@ -8,7 +8,7 @@ pager: false
 SIGASI SOFTWARE LICENSE AGREEMENT REVISION 2016-01-20
 
 Patent: US 8,881,074 B2
-Copyright (c) 2008-2015, SIGASI All rights reserved.
+Copyright (c) 2008-2016, SIGASI All rights reserved.
 
 Carefully read all terms and conditions of this Software License Agreement
 before you use the Software
