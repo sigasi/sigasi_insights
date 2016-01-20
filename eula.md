@@ -5,7 +5,7 @@ pager: false
 ---
 
 ```text
-SIGASI SOFTWARE LICENSE AGREEMENT REVISION 2015-03-27
+SIGASI SOFTWARE LICENSE AGREEMENT REVISION 2016-01-20
 
 Patent: US 8,881,074 B2
 Copyright (c) 2008-2015, SIGASI All rights reserved.
@@ -15,7 +15,7 @@ before you use the Software
 
 This Software License Agreement (the "Agreement") is a legally binding
 agreement between the User of the software (the "User") and SIGASI nv
-("SIGASI"), seated at Franklin Rooseveltlaan 348/N, 9000 Ghent, Belgium. By using,
+("SIGASI"), seated at Kerkstraat 108, 9050 Gentbrugge, Belgium. By using,
 installing or clicking the acceptance button of the software (as updated by
 SIGASI from time to time, the "Software"), the User is accepting to be bound
 by all of the terms and conditions of this Agreement.
