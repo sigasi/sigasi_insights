@@ -8,9 +8,13 @@ help:
 all: build
 
 MAKEFILE_PATH=$(realpath $(@D))
+WORKTREE_PATH=$(MAKEFILE_PATH)/.git/worktrees/_build
+
+gh-pages-update:
+	@ls $(WORKTREE_PATH) || (rm -rf _build && git worktree prune && git worktree add _build gh-pages)
+	cd _build && git pull origin gh-pages
 
 build: NOCAPS
-	@ls _build > /dev/null || git worktree add _build gh-pages
 	python -m urubu build
 	@touch _build/.nojekyll
 	@echo "gitdir: $(MAKEFILE_PATH)/.git/worktrees/_build" > _build/.git
@@ -39,8 +43,7 @@ dependencies:
 	pip install --upgrade urubu 
 	pip install linkchecker
 
-publish: build
-	ls _build/.git > /dev/null #assert that there is a worktree in _build
+publish: gh-pages-update build
 	cd _build && git add -A && git commit -m "Update documentation" && git push
 
 NOCAPS:
