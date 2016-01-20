@@ -2,7 +2,7 @@ Sigasi Documentation source
 ===========================
 
 This repository contains the source of the Sigasi documentation.
-You can find the rendered version at <http://doc.sigasi.com>
+You can find the rendered version at <http://insights.sigasi.com>
 
 ## Authoring guide
 
