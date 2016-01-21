@@ -6,6 +6,7 @@ author: Smrita
 date: 2014-10-17
 tags: 
   - documentation
+comments: true
 ---
 Software with good documentation is far more valuable than software without. 
 Software that needs to be reliable will be subject to a code review. Good documentation makes the review go more smoothly, and makes it more likely that the review will accomplish its intended purpose. \[[ref](http://www.av8n.com/computer/htm/good-software.htm)\]

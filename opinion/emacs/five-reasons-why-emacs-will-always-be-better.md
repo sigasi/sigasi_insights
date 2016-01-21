@@ -7,6 +7,7 @@ date: 2011-09-02
 tags: 
   - Emacs
   - VHDL
+comments: true
 ---
 
 In the past months, we have made large efforts to [make Emacs obsolete](.). After enquiring on some Emacs-friendly newsgroups, I can only conclude that we have indeed offered a better solution than Emacs, in _most_ ways. 

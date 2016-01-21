@@ -8,6 +8,7 @@ tags:
   - recovering VHDL parser
   - VHDL compiler
   - VHDL Parser
+comments: true
 ---
 
 It is useful to analyze code that is only partly finished, code that still has errors in it. Analyzing broken code helps people understand, improve and complete the code. In order to perform such an analysis, you need a parser that recovers after it encounters an error. In the world of hardware design, hardly any recovering parsers exist and engineers are left out in the cold. All but a few EDA tools fail miserably at parsing incorrect VHDL code.

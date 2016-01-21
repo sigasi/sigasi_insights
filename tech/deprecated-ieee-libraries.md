@@ -8,6 +8,7 @@ tags:
   - linting
   - VHDL IEEE
   - VHDL packages
+comments: true
 ---
 # What are deprecated IEEE libraries?
 

@@ -10,6 +10,7 @@ tags:
   - VHDL
   - VHDL IDE
   - whitepaper
+comments: true
 ---
 \[[pdf](resources/whitepaper-Eclipse-2010-03-17.pdf)\]
 

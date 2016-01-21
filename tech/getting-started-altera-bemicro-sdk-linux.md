@@ -8,6 +8,7 @@ tags:
   - Altera
   - BeMicro
   - FPGA
+comments: true
 ---
 _I recently got an FPGA-on-a-USB-stick as a Christmas present: an [Altera/Arrow BeMicro SDK](http://www.altera.com/b/bemicro-sdk.html"). Fun to play with and ideal to refresh my hardware design skills... I thought... Immediately I was confronted again with how much work it is to set up all necessary hardware design tools._
 

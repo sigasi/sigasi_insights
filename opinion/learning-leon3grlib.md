@@ -6,6 +6,7 @@ author: Philippe Faes
 date: 2010-02-07
 tags: 
   - webinar
+comments: true
 ---
 The LEON3/GRLIB project from <a href="http://www.gaisler.com">Airoflex Gaisler</a> (formerly Gaisler Research) is one of the largest <em>open source VHDL projects</em>. It contains almost 700 VHDL files, for a total of 600.000 lines of code. The project is based on the <a href="http://en.wikipedia.org/wiki/Advanced_Microcontroller_Bus_Architecture">AMBA</a> on-chip bus and serves as a framework for building <a href="http://en.wikipedia.org/wiki/System_on_Chip">SoCs</a>. It is used in consumer electronics, automotive and aerospace applications.
 

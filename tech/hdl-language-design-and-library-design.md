@@ -9,6 +9,7 @@ tags:
   - EDA
   - constrained random
   - assert
+comments: true
 ---
 
 ## Assertions and Constrained Random

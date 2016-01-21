@@ -7,6 +7,7 @@ date: 2012-03-30
 tags: 
   - Emacs
   - VHDL
+comments: true
 ---
 Reto Zimmermann's Emacs <a href="http://www.iis.ee.ethz.ch/~zimmi/emacs/vhdl-mode.html">VHDL mode</a> is one of the most advanced tools for VHDL entry on the planet. Other general purpose editors like VI and Notepad++ might be great editors, but they are also very "general purpose". They have very few language specific features. The engineer is left with a tool that manipulates ASCII text, not with a tool that understands VHDL.
 

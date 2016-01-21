@@ -8,11 +8,13 @@ tags:
   - code reuse
   - Emacs
   - VHDL
+comments: true
 ---
 In my series of how Sigasi is [index], this entry
 deals with code reuse, more specifically with **renaming**.
 
 Code Reuse
+comments: true
 ----------
 
 The situation where you write code once, produce a chip and never look
@@ -39,6 +41,7 @@ want to talk about: naming conventions, cleaning up code layout and code
 encapsulation. For today, let’s stick to naming conventions.
 
 Global Rename
+comments: true
 -------------
 
 Suppose you have some legacy code that uses the signal `clock` instead
@@ -71,6 +74,7 @@ incorporated in the next update of the Emacs VHDL mode. Let’s see if
 your new improvement would solve the next problem.
 
 Specific Renaming
+comments: true
 -----------------
 
 Reusing legacy code, you could be facing a design where all modules name
@@ -91,6 +95,7 @@ analyzes the entire VHDL project and tries to find the declaration for
 every name it encounters.
 
 Not Just a Missing Feature
+comments: true
 --------------------------
 
 As I did in most of my [previous posts on Emacs VHDL](.), I have
@@ -103,6 +108,7 @@ will be hard to take this technology one step further. And it will be
 impossible to take it two or three steps further.
 
 Disclaimer
+comments: true
 ----------
 
 Sigasi’s rename refactoring is still inaccurate in some cases: for

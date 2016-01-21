@@ -8,6 +8,7 @@ date: 2011-03-02
 tags: 
   - social media
   - educational license
+comments: true
 ---
 Two weeks ago, we started a survey among our student users, about social media networks. Today, I'm presenting some of the results from this poll.
 

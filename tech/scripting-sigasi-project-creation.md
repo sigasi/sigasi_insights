@@ -10,6 +10,7 @@ tags:
   - project management
   - Python
   - Sigasi
+comments: true
 ---
 
 When you start using Sigasi, the first thing you have to do is [/manual/projectsetup]. This consists of two steps: _(1) selecting the VHDL files that you want in your project_ and _(2) configuring in which VHDL library these files must be mapped_. In most cases you already have this information in one form or another. For example in a makefile, in a Tcl simulation script, or in the project descriptor file of a third-party EDA tool.

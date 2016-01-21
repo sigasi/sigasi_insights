@@ -7,6 +7,7 @@ date: 2011-12-22
 tags: 
   - hdt-2.0
   - Sigasi
+comments: true
 ---
 _How does your Sigasi editor gather all **information** on your projects to enable features like navigation, outline, hovering, linting, refactorings ...? And how did they make it so *fast* that it works while you type? And how does Sigasi keeps its **memory** footprint under control?_
 

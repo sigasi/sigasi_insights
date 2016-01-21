@@ -9,6 +9,7 @@ tags:
   - eclipse
   - howto
   - planeteclipse
+comments: true
 ---
 Since the release of Eclipse 3.6 it’s been possible [to open files in Eclipse from the command line](http://download.eclipse.org/eclipse/downloads/drops/R-3.6-201006080911/eclipse-news-part1.html#Platform). There are [a](http://aniefer.blogspot.com/2010/05/opening-files-in-eclipse-from-command.html) [few](http://dsdp.eclipse.org/help/latest/index.jsp?topic=/org.eclipse.platform.doc.isv/guide/product_open_file.htm) [blogs}(http://wiki.eclipse.org/Eclipse/OpenFileFeature) that explain in great detail how this feature can be implemented.  I however would like to show you the simplest way to make use of this feature in your RCP application.
 

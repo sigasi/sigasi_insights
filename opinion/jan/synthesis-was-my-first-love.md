@@ -6,6 +6,7 @@ author: Jan Decaluwe
 date: 2009-12-03
 tags: 
   - JanHDL
+comments: true
 ---
 In my previous blog post, [20-year-old-relationship], I mentioned that when I first met VHDL, it wasn't love at first sight. However, I did experience love at first sight with another hardware design technology: synthesis.
 

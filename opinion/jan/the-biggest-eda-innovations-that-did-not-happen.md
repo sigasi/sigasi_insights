@@ -6,6 +6,7 @@ author: Jan Decaluwe
 date: 2010-02-12
 tags: 
   - JanHDL
+comments: true
 ---
 In my previous blog post, [latest-eda-innovation-logic-synthesis], I concluded that RTL synthesis was the latest of the all-time most important EDA innovations. Although it is more than 20 years old, nothing with a similar impact has happened since.
 

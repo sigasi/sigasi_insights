@@ -7,6 +7,7 @@ date: 2011-06-21
 tags: 
   - Emacs
   - VHDL
+comments: true
 ---
 Over the past few weeks, I have made an effort to demonstrate that Sigasi 2.0 is better than Emacs VHDL mode. I have also argued that Emacs VHDL mode used to be the best VHDL editor on the planet. In summary, I wrote about:
 

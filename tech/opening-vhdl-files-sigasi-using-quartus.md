@@ -8,6 +8,7 @@ tags:
   - Quartus
   - Altera
   - VHDL editor
+comments: true
 ---
 
 This page deals with step three of using the Quartus integration plugin for Sigasi. We assume you've gone through steps one and two:

@@ -6,6 +6,7 @@ author: Jan Decaluwe
 date: 2009-11-10
 tags: 
   - JanHDL
+comments: true
 ---
 I met <a href="http://www.sigasi.com/team">Hendrik and Philippe</a>, Sigasi's founders, for the first time in early 2008. They explained their plans and showed me a prototype of their IDE for VHDL. That prototype has since evolved into the product you all know and love: <a href="http://www.sigasi.com/product">Sigasi HDT</a>.
 

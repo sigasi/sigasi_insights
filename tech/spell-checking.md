@@ -4,6 +4,7 @@ layout: page
 pager: true
 author: Hendrik Eeckhaut
 date: 2014-09-17
+comments: true
 ---
 
 Sigasi supports spelling checking in comments and strings, but you need to **install a spell checking plugin** first. Next you need to **download** and **configure** a **dictionary** for your language.

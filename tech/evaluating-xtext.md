@@ -7,6 +7,7 @@ date: 2010-10-11
 tags: 
   - Xtext
   - innovation
+comments: true
 ---
 ## Sven's talk
 

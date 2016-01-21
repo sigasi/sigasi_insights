@@ -6,6 +6,7 @@ author: Philippe Faes
 date: 2012-12-19
 tags: 
   - howto
+comments: true
 ---
 Sigasi has some Beta features that are not part of the main product.
 

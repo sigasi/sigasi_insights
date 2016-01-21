@@ -7,6 +7,7 @@ date: 2014-02-07
 tags: 
   - hdt-2.0
   - eclipse
+comments: true
 ---
 
 In this blog post, I will describe how you can use *path variables* to

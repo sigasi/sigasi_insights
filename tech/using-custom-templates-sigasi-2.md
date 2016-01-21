@@ -8,6 +8,7 @@ tags:
   - autocomplete
   - hdt-2.0
   - templates
+comments: true
 ---
 In a previous blog post, [using-autocomplete-templates-sigasi-2], I introduced **autocomplete templates** in Sigasi 2
 and demonstrated how to use the pre-defined templates. In this post I'll
@@ -17,6 +18,7 @@ your preferred style or that you have your own standard pieces of code
 that you use on a regular basis.
 
 Edit existing templates
+comments: true
 -----------------------
 
 To demonstrate the power of custom templates I will tailor the
@@ -60,6 +62,7 @@ Feel free to experiment with more customizations to the templates like
 adding default comments or changing white space and indentation.
 
 Create new templates
+comments: true
 --------------------
 
 Creating new templates is the evident next step. In the Templates
@@ -96,6 +99,7 @@ Useful examples of custom templates are file headers, default library
 and use clauses, `(others=>'0')`, ...
 
 Conclusion
+comments: true
 ----------
 
 Custom templates can really help you improve you coding speed by

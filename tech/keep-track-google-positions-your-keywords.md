@@ -10,6 +10,7 @@ tags:
   - SEO
   - Sigasi
   - visualization
+comments: true
 ---
 > "The numbers tell the tale"
 

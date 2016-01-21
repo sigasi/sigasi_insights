@@ -7,6 +7,7 @@ date: 2011-11-11
 tags: 
   - performance
   - memory
+comments: true
 ---
 
 Recent versions of Sigasi include a number of improvements that reduce the memory usage with 20 to 30% and a number of potential memory leaks have been fixed. If you think you are still experiencing memory issues with Sigasi, here are a few tips that may help you diagnose the problem.

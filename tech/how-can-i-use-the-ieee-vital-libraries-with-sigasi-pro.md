@@ -7,6 +7,7 @@ date: 2011-11-11
 tags: 
   - IEEE
   - VITAL
+comments: true
 ---
 Some projects use the IEEE VITAL packages:
 

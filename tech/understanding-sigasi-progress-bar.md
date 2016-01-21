@@ -7,6 +7,7 @@ date: 2011-12-23
 tags: 
   - hdt-2.0
   - Xtext
+comments: true
 ---
 In a previous post ([magic-sigasi-type-time-compiler]), I explained about the different Models (internal representations) that Sigasi builds to provide all the exciting Sigasi features. Today, I will explain the different phases of how these models are build. I also added screenshots of the progress view in the different phases. This should help you understand what is going on.
 

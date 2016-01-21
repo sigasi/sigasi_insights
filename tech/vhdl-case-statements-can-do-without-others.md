@@ -9,6 +9,7 @@ tags:
   - mythbuster
   - others
   - VHDL
+comments: true
 ---
 I was talking to some engineering students the other day, as they were doing a VHDL lab. I noticed a VHDL case statement for state machine with named states (enumerated data type). All states were handled in their VHDL case statement, and still they put an `others` section in their code. I had a hard time explaining that this clause was useless. The students mumbled something about their professor eating them alive if they'd forget the `others` and problems with uninitialized stated and high-impedance state. As you might know, these concepts are related to the `std_ulogic` and `std_logic` type, but not to enumerated types. 
 

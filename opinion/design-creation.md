@@ -7,6 +7,7 @@ date: 2012-08-08
 tags: 
   - Design creation
   - VHDL
+comments: true
 ---
 Sigasi Pro helps electronics engineers to create their hardware designs faster and with less errors. 
 

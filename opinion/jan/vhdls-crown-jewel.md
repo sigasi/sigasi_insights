@@ -6,6 +6,7 @@ author: Jan Decaluwe
 date: 2010-11-03
 tags: 
   - JanHDL
+comments: true
 ---
 
 ## How VHDL preserves determinism

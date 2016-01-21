@@ -7,6 +7,7 @@ date: 2009-10-19
 tags: 
   - hdt-2.0
   - howto
+comments: true
 ---
 
 If you want to mail a Sigasi VHDL project to a colleague (or to support), you can easily archive your project within Sigasi  itself.

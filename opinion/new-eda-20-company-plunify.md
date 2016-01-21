@@ -8,6 +8,7 @@ tags:
   - Plunify
   - EDA2.0
   - cloud computing
+comments: true
 ---
 Last week was the first time I heard about <a href="http://www.plunify.com">Plunify</a>. If I may over simplify, their product is to EDA what Hotmail and Google are to e-mail. They provide a single web 2.0 based interface to an entire tool chain for FPGA design. In the back-end, they run the simulation and synthesis tools from Xilinx and Altera. But the user only sees a single interface. 
 

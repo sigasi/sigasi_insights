@@ -8,6 +8,7 @@ tags:
   - eclipse
   - howto
   - VHDL editor
+comments: true
 ---
 When you start using a new editor, you probably lose some of your coding productivity at first. This happens regardless of the editor you were used to and regardless of the editor you move to. Most people think their loss in productivity is because the new editor has less features or does not have the features they need. In reality, the new editor just has less features <em>known to the new user</em>.
 

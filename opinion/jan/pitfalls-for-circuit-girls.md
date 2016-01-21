@@ -6,6 +6,7 @@ author: Jan Decaluwe
 date: 2011-02-10
 tags: 
   - JanHDL
+comments: true
 ---
 
 ## The Circuit Girl

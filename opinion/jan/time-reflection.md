@@ -6,6 +6,7 @@ author: Jan Decaluwe
 date: 2010-12-17
 tags: 
   - JanHDL
+comments: true
 ---
 Dear reader,
 

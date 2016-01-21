@@ -9,6 +9,7 @@ tags:
   - maven
   - planeteclipse
   - tycho
+comments: true
 ---
 
 For [Sigasi 2.0](/releasenotes/sigasi-2.0.html) we decided to write all documentation in the <a href="http://en.wikipedia.org/wiki/Textile_(markup_language)">textile</a> wiki markup language. With the [Mylyn Wikitext](http://wiki.eclipse.org/Mylyn/FAQ#WikiText) plugin, textile files can be converted in lots of different output formats such as Eclipse help, html, pdf,...

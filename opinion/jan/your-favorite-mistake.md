@@ -6,6 +6,7 @@ author: Jan Decaluwe
 date: 2010-09-08
 tags: 
   - JanHDL
+comments: true
 ---
 As a visitor of the Sigasi website, you are probably interested in Sigasi's products. Therefore, there is a good chance that you are using VHDL and that you like it. (If you are here for other reasons or if you hate VHDL, you are most welcome too :-))
 

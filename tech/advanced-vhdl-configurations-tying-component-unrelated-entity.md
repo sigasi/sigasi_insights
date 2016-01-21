@@ -9,6 +9,7 @@ tags:
   - configurations
   - howto
   - VHDL
+comments: true
 ---
 Usually, people use VHDL configurations to select a given architecture for their component, or even to set generics that were not set in the instantiation. But you can also do more advanced stuff with configurations: you can tie a component to a completely unrelated entity. You can even re-wire the signals!
 

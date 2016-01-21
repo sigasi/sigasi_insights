@@ -9,6 +9,7 @@ tags:
   - hdt-2.0
   - vcom
   - vmap
+comments: true
 ---
 Sigasi allows you to split your design in multiple projects ([/tech/one-ip-block-project]). This is an efficient way to deal with with big designs. Moreover, it is the _recommended_ way if you work with reuse libraries between different designs.
 

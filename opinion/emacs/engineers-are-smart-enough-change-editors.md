@@ -8,6 +8,7 @@ comments: true
 tags: 
   - Emacs
   - VHDL
+comments: true
 ---
 > Too stupid or too stubborn?
 

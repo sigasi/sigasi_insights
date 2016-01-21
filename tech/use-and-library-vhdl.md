@@ -8,6 +8,7 @@ tags:
   - VHDL
   - use
   - library
+comments: true
 ---
 Beginning VHDL engineers, and advanced engineers too, can get confused about the exact scope of a _use clause_ and a _library clause_ in VHDL. They usually show up at the top of a file, which would make you think that they are visible in the entire file. Unfortunately, the truth is a bit more complex. 
 

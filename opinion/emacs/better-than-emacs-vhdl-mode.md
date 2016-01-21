@@ -6,6 +6,7 @@ date: 2011-05-07
 tags: 
   - Emacs
   - VHDL
+comments: true
 ---
 
 The big difference in approach between Sigasi and Emacs VHDL mode is this:  Emacs uses **regular expressions** to make _guesses_ about your code, while Sigasi has a **real parser** that _understands_ your VHDL code. As a result you get:

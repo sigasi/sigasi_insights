@@ -7,6 +7,7 @@ date: 2012-04-09
 tags: 
   - coding guidelines
   - VHDL
+comments: true
 ---
 There are two largely accepted ways to detect clock edges, and many style books prescribe or prefer one over the other. 
 Let's investigate.

@@ -8,6 +8,7 @@ tags:
   - JanHDL
   - tape-out
   - verilog
+comments: true
 ---
 
 ## One day, a few days before tape-out....

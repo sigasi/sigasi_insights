@@ -8,6 +8,7 @@ tags:
   - Emacs
   - VHDL
   - Screencast
+comments: true
 ---
 In my series of how Sigasi is [index], we want to demonstrate that *Emacs VHDL mode* is becoming
 outdated. I do this by comparing relevant and technical features of the

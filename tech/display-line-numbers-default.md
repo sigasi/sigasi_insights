@@ -7,6 +7,7 @@ date: 2009-06-29
 tags: 
   - planeteclipse
   - eclipse
+comments: true
 ---
 
 I wanted to display line numbers by default in our <a href="http://www.sigasi.com/product">Eclipse RCP application</a>. I knew this had to be trivial but I couldn't find how to do this anywhere on the web. 

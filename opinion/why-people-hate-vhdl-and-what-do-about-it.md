@@ -7,6 +7,7 @@ date: 2011-02-25
 tags: 
   - VHDL
   - philosophical
+comments: true
 ---
 Last month, I asked for [reasons-love-vhdl-reasons-hate-vhdl]. From the answers on the forum and in <a href="http://kiss.ly/h2IGY9">the poll</a>, my first conclusion is that you hate VHDL more than you love it. 
 

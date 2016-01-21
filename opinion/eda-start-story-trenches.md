@@ -7,6 +7,7 @@ date: 2009-10-23
 tags: 
   - planeteclipse
   - eclipse
+comments: true
 ---
 I just uploaded my slides for my <a href="http://www.eclipsecon.org/summiteurope2009/">Eclipse Summit Europe</a> presentation <a href="http://www.eclipsecon.org/summiteurope2009/sessions?id=990">"EDA Start-up story from the trenches"</a> to <a href="http://www.slideshare.net/sigasi/eda-startup-story-from-the-trenches">SlideShare</a>. For some reason adding the slides to my <a href="http://www.eclipsecon.org/summiteurope2009/sessions?id=990">session page</a> did not work, I will try that again later.
 

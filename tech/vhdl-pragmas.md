@@ -6,6 +6,7 @@ author: Philippe Faes
 date: 2011-04-05
 tags: 
   - VHDL
+comments: true
 ---
 
 In VHDL, some tools support so-called <em>compiler directives</em>. A compiler directive, or pragma is additional information that you give to the VHDL compiler (the simulator or synthesis tool). While your directive has no influence on the VHDL code itself, it changes the behavior. The IEEE, in their VHDL RTL standard, defines a pragma as <em> A generic term used to deﬁne a construct with no predeﬁned language semantics that inﬂuences how a synthesis tool will synthesize VHDL code into an equivalent hardware representation.</em>

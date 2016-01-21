@@ -7,6 +7,7 @@ date: 2011-05-18
 tags: 
   - Emacs
   - VHDL
+comments: true
 ---
 In my series of how Sigasi is [index], I want to talk about code coloring.
 

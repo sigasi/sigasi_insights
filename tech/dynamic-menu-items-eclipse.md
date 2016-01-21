@@ -9,6 +9,7 @@ tags:
   - eclipse
   - java
   - planeteclipse
+comments: true
 ---
 I wanted to add a dynamic menu contribution item to the popup menu of project explorer. I could not immediately find out how to do this, so I decided to document it here. Eventually it turned out to be quite easy.
 

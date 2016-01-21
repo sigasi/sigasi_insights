@@ -7,6 +7,7 @@ date: 2009-11-12
 tags: 
   - IEEE
   - VHDL
+comments: true
 ---
 Of course our users want to have access to all standard libraries. The most important libraries are `std.standard` and the `IEEE` libraries, including `std_logic_1164` and `std_numeric`. A more recent standard is IEEE 1076.2-1996. This standard defines two packages: `math_real` and `math_complex`. IEEE does not allow the distribution of the source code of these packages. In order to serve our users, we have packaged the best legal alternative: a preliminary draft of these packages.
 

@@ -6,6 +6,7 @@ author: Philippe Faes
 date: 2011-02-09
 tags: 
   - VHDL
+comments: true
 ---
 WORK is not the name of a VHDL library. This may surprise some (or even most) VHDL designers, even experienced engineers. Most of the time, nobody gets bothered by this. But on occasion, it can cause great confusion and waste of time.
 

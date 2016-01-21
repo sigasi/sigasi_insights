@@ -9,6 +9,7 @@ tags:
   - EPL
   - planeteclipse
   - ultraedit
+comments: true
 ---
 Sigasi has just released a new plugin for Eclipse: the [UltraEdit Key Bindings](https://marketplace.eclipse.org/content/ultraedit-key-bindings).
 

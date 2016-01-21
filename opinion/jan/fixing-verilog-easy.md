@@ -7,6 +7,7 @@ date: 2011-09-19
 tags: 
   - JanHDL
   - verilog
+comments: true
 ---
 The example in my previous post ([wasting-real-time-zero-time]) has triggered some interesting responses, providing more than enough material for a follow-up post. VHDL designers beware, hardcore Verilog stuff ahead!
 

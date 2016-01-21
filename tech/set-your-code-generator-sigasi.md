@@ -8,6 +8,7 @@ tags:
   - Code generation
   - Register mapping
   - VHDL
+comments: true
 ---
 In many projects, some of the VHDL code is generated in one way or another. For instance, many projects manage their register map in one master file and generate their  VHDL packages and C headers using some kind of tool (either commercial or an in house script).
 

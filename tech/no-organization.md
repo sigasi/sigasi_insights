@@ -8,6 +8,7 @@ tags:
   - best practices
   - hdt-2.0
   - howto
+comments: true
 ---
 
 The Sigasi development environment allows a very large flexibility on how to organize VHDL projects. So much in fact, that it can become confusing. Let me outline three _recommended ways_ of organizing your VHDL project. 

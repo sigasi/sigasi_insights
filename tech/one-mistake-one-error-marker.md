@@ -9,6 +9,7 @@ tags:
   - VHDL
   - VHDL compiler
   - VHDL Parser
+comments: true
 ---
 Ideally, if you make one mistake in VHDL, you want your compiler to show one error marker. Here is a small example.
 

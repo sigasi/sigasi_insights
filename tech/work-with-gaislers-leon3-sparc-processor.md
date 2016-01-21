@@ -7,6 +7,7 @@ date: 2010-02-04
 tags: 
   - howto
   - VHDL
+comments: true
 ---
 ## Big projects
 

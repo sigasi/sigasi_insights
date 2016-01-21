@@ -6,6 +6,7 @@ author: Jan Decaluwe
 date: 2010-01-18
 tags: 
   - JanHDL
+comments: true
 ---
 A few months ago <a href="http://www.cadence.com/community/members/rgoering.aspx">Richard Goering</a> blogged about the <a href="http://www.cadence.com/Community/blogs/ii/archive/2009/11/03/greatest-moments-in-eda-innovation.aspx">5 greatest moments in EDA innovation</a>. Here is the list: Spice, Verilog, Multi-level logic synthesis, Automated IC layout and Structured VLSI design.
 

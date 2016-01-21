@@ -6,6 +6,7 @@ author: Hendrik Eeckhaut
 date: 2014-09-05
 tags: 
   - VHDL
+comments: true
 ---
 Most VHDL designers write 'something `downto` something' in their code all the time. But what does this `downto` actually mean. And what is the difference with `to`?
 

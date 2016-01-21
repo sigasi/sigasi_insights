@@ -4,6 +4,7 @@ layout: page
 pager: true
 author: Philippe Faes
 date: 2010-03-02
+comments: true
 ---
 Are you so smart you don't need any help? Are you infallible even when you pressed for time or under stress?
 

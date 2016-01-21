@@ -7,6 +7,7 @@ date: 2010-03-25
 tags: 
   - diff
   - howto
+comments: true
 ---
 
 In Sigasi HDT for VHDL, as in any other Eclipse plugin tools, you can

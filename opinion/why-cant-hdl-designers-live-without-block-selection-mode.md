@@ -8,6 +8,7 @@ tags:
   - autocomplete
   - block selection
   - VHDL
+comments: true
 ---
 One of the most frequently asked questions we get is :
 

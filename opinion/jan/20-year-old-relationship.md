@@ -6,6 +6,7 @@ author: Jan Decaluwe
 date: 2009-11-17
 tags: 
   - JanHDL
+comments: true
 ---
 Next year, in 2010, my relationship with VHDL will be 20 years old. It has been a good journey, but I can't say that it was love at first sight.
 

@@ -4,6 +4,7 @@ layout: page
 pager: true
 author: Hendrik Eeckhaut
 date: 2011-11-11
+comments: true
 ---
 
 Sigasi has incompatibilities with the [Visual Source Safe plugin](http://vssplugin.sourceforge.net/). The VSS plugin blocks an Eclipse framework feature that Sigasi needs to run. Sigasi uses Eclipse's Linked resource mechanism to add the common VHDL libraries to your project (`std` and `ieee`). But VSS does not support Linked resources —The last update of the VSS plugin was in 2007 for Eclipse 3.3— and it inhibits Sigasi from creating these links.

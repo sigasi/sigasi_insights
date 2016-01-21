@@ -8,6 +8,7 @@ tags:
   - recovering VHDL parser
   - VHDL
   - VHDL Parser
+comments: true
 ---
 Ideally, if you make three mistakes in VHDL, you want to see three error markers. Here is a small example.
 

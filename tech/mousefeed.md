@@ -6,6 +6,7 @@ author: Hendrik Eeckhaut
 date: 2011-11-11
 tags: 
   - keyboard shortcuts
+comments: true
 ---
 Using keyboard shortcuts makes you a lot more efficient compared to using your mouse. But how to learn all shortcuts in an unobstructive and efficient way?
 

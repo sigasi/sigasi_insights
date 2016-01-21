@@ -6,6 +6,7 @@ author: Jan Decaluwe
 date: 2009-12-17
 tags: 
   - JanHDL
+comments: true
 ---
 In my <a href="/opinion/jan/synthesis-was-my-first-love.html">previous blog post</a>, I told you that back in 1990 I got pretty excited about my first experiments with Synopsys Design Compiler.
 

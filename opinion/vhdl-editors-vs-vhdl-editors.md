@@ -10,6 +10,7 @@ tags:
   - VHDL editor
   - gVIM
   - Emacs
+comments: true
 ---
 ## A (relatively) painless upgrade path for VI and Emacs users
 

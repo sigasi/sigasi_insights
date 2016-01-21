@@ -6,6 +6,7 @@ author: Philippe Faes
 date: 2015-05-08
 tags: 
   - howto
+comments: true
 ---
 
 Sometimes, you want to check some simple properties in your projects. For example, you might want to check for a standard company copyright header, or you might check for the use of lower-case keywords in your files. While Sigasi offers a lot or VHDL code rule checks out of the box, there is a way to implement your own rules very easily.

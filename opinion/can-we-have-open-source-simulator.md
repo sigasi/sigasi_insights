@@ -7,6 +7,7 @@ date: 2010-04-27
 tags: 
   - EDA
   - VHDL
+comments: true
 ---
 In my previous post, [why-ghdl-currently-not-good-enough], I talked about GHDL, and why it is not good enough as an open source parser and simulator ([lacking-open-source-vhdl-simulator]). In this post, I talk about possible solutions. I see three options today.
 

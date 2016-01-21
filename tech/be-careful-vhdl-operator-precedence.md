@@ -7,6 +7,7 @@ date: 2014-12-02
 tags: 
   - operators
   - VHDL
+comments: true
 ---
 
 I was recently writing some tests for our VHDL expression evaluator and was amazed by the the result of evaluting `-16 ** 2`. 

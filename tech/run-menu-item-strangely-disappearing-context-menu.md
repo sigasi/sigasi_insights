@@ -8,6 +8,7 @@ tags:
   - planeteclipse
   - java
   - eclipse
+comments: true
 ---
 <em>In this post I explain how I found the <strong>Run As</strong> menu item mysteriously disappear and how it can be fixed.</em>
 

@@ -8,6 +8,7 @@ tags:
   - hdt-2.0
   - Vivado
   - Xilinx
+comments: true
 ---
 I have blogged before on how to import Xilinx ISE projects in Sigasi before ([/tech/importing-xilinx-ise-project-sigasi]). In this blog post I show how you can import an existing Vivado project into Sigasi.
 

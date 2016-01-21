@@ -7,6 +7,7 @@ date: 2012-08-23
 tags: 
   - code comprehension
   - code reuse
+comments: true
 ---
 Understanding a big body of code is always a difficult task. But the correct tools will help you speed up and do in hours what would otherwise take a week.
 

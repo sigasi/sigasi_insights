@@ -7,6 +7,7 @@ date: 2014-04-29
 tags: 
   - eclipse
   - translation
+comments: true
 ---
 
 Even though Sigasi does not have internationalisation (it is not translated to any languages other than English), much of Eclipse is in fact translated. If your native language is not English, you might consider installing the [Babel language packs](http://eclipse.org/babel/downloads.php). For example, you can install the language pack for French, German, Japanese or dozens of other languages.

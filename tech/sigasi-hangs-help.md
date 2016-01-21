@@ -6,6 +6,7 @@ author: Hendrik Eeckhaut
 date: 2011-11-11
 tags: 
   - howto
+comments: true
 ---
 
 Sometimes, bugs could cause an application (including Sigasi) to hang, block, freeze and be dead. The user interface freezes and there is nothing you can do to bring the application back to life. If this happens, you can help us out by sending us a thread dump (i,e, the name and stack of every thread in Sigasi). To create such a **thread dump**, follow these steps.

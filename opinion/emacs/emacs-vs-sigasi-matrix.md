@@ -7,6 +7,7 @@ date: 2012-09-28
 tags: 
   - Emacs
   - matrix
+comments: true
 ---
 
 <table>

@@ -7,6 +7,7 @@ date: 2010-05-14
 tags: 
   - Xilinx
   - modelsim
+comments: true
 ---
 For years, both Xilinx and Altera have provided a free version of Mentor Graphics' Modelsim. This was a nice symbioses, since FPGA customers need a simulator in order to create designs. Xilinx and Altera have always provided EDA tools at a very low cost, and made their money on silicon rather than EDA software. Teams that create large hardware designs would still need an expensive full version of Modelsim, rather than the free version that comes with their FPGA tools.
 

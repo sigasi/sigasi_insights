@@ -8,6 +8,7 @@ tags:
   - documentation
   - doxygen
   - Sigasi
+comments: true
 ---
 
 *I don't know any hardware developer who likes to document her design,

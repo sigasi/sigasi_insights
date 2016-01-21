@@ -7,6 +7,7 @@ date: 2010-04-19
 tags: 
   - EDA
   - VHDL
+comments: true
 ---
 In my previous post, [lacking-open-source-vhdl-simulator], I argued that the world would be a better place if we had a freely (<a href="http://en.wikipedia.org/wiki/Gratis_versus_libre"><em>libre</em></a>) available VHDL parser and simulator. Today, I will explain why one particular open source compiler is honorable, but not sufficient.
 

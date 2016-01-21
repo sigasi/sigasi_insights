@@ -8,6 +8,7 @@ date: 2010-06-03
 tags: 
   - VHDL
   - EDA
+comments: true
 ---
 I've just finished implementing VHDL protected types, as defined in the VHDL 2000 standard. 
 

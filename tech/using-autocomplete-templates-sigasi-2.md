@@ -8,6 +8,7 @@ tags:
   - hdt-2.0
   - templates
   - tutorial
+comments: true
 ---
 
 VHDL is a very *verbose language*. You have to type a lot to describe

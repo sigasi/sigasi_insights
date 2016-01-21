@@ -7,6 +7,7 @@ date: 2010-04-08
 tags: 
   - Xilinx
   - VHDL
+comments: true
 ---
 
 Xilinx no longer ships

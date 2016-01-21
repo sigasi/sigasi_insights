@@ -6,6 +6,7 @@ author: Smrita
 date: 2013-11-27
 tags: 
   - documentation
+comments: true
 ---
 ## Estimation of time for technical documentation and software development
 

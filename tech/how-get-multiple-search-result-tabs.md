@@ -7,6 +7,7 @@ date: 2010-05-28
 tags: 
   - howto
   - Sigasi
+comments: true
 ---
 Sigasi HDT (and Eclipse) allow to perform <strong>multiple, simultaneous searches</strong>. The user interface is a bit hidden —this is considered advanced usage— therefore this short HOWTO:
 

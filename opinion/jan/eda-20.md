@@ -7,6 +7,7 @@ date: 2010-05-30
 tags: 
   - EDA2.0
   - JanHDL
+comments: true
 ---
 It has been quiet around this corner for some time, but on the broader Sigasi front,  a lot has happened. A few days after my previous post ([/opinion/jan/most-needed-eda-innovation]), Sigasi released their VHDL IDE as an Eclipse plugin. Previously it was only available as a standalone product, which somewhat hided its Eclipse foundation. Following this important release, Philippe Faes (Sigasi's CEO) published two whitepapers explaining the ideas and the vision behind the product: "[/opinion/why-hardware-designers-should-switch-eclipse]" and "[How to sell EDA tools in Liechtenstein](http://www.xuropa.com/opinion/domorewithless/entries/howtosellinliechtenstein)". The latter was actually an invited (and winning) entry to [Xuropa's](http://www.xuropa.com) "Do More with Less" contest.
 

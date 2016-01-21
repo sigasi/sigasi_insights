@@ -7,6 +7,7 @@ date: 2011-01-16
 tags: 
   - EDA2.0
   - VHDL
+comments: true
 ---
 If hardware designers are to be more productive, the tools need to be better. Instead of building more complex tools (think: ESL and the likes) the EDA vendors should keep an appropriate focus on basic usability. Because, as Richard Goering says, <a href="http://www.cadence.com/Community/blogs/ii/archive/2010/05/24/what-is-eda-software-quality.aspx">just because it doesn't crash doesn't mean "quality."</a>
 

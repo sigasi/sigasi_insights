@@ -7,6 +7,7 @@ date: 2010-02-26
 tags: 
   - invited talk
   - eclipse
+comments: true
 ---
 Sigasi's CTO Hendrik Eeckhaut gives a talk a the <a href="http://www.dspvalley.be">DSP-Valley</a> technology seminar on Eclipse. Everybody working on embedded systems should seriously consider Eclipse for an IDE (intelligent development environment).
 

@@ -6,6 +6,7 @@ author: Hendrik Eeckhaut
 date: 2010-10-22
 tags: 
   - performance
+comments: true
 ---
 In our latest release we focused development on improving the performance of our VHDL compiler so that Sigasi HDT can give faster feedback. We optimized VHDL analysis so that both the full build and incremental builds are much faster.
 

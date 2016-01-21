@@ -7,6 +7,7 @@ date: 2010-08-15
 tags: 
   - helios
   - howto
+comments: true
 ---
 
 ***Note** This article was originally written for Sigasi 1.0. The

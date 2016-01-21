@@ -7,6 +7,7 @@ date: 2010-07-14
 tags: 
   - EDA2.0
   - EDA
+comments: true
 ---
 <h2>... or do we need an EDA 2.0 revolution?</h2>
 

@@ -7,6 +7,7 @@ date: 2011-07-28
 tags: 
   - modelsim
   - Mac
+comments: true
 ---
 
 **Disclaimer 1:** This is in no way a crack; we're not messing with ModelSim! You'll need a legal copy and a valid license, which you can get from your Mentor Graphics sales rep, or (a limited version, free of charge) from the [Altera website](http://www.altera.com/products/software/quartus-ii/web-edition/qts-we-index.html).
