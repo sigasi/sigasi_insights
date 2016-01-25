@@ -4,12 +4,9 @@ layout: page
 pager: true
 ---
 
-As you become more experienced with Sigasi, you will find that there are
-a number of actions that you perform quite often. At some point, you may
-feel that the GUI-based approach becomes too slow for these actions. For
-that reason, Sigasi provides a number of keyboard shortcuts. They are a
-great way to boost your productivity. A printable cheat sheet with [all
-shortcuts on one page is available on for download](/tech/resources/keyboard_shortcuts.pdf).
+As you become more experienced with Sigasi, you will find that there are a number of actions that you perform quite often. At some point, you may feel that the GUI-based approach becomes too slow for these actions. For that reason, Sigasi provides a number of keyboard shortcuts. They are a great way to boost your productivity. A printable cheat sheet with [all shortcuts on one page is available for download](resources/keyboard-shortcuts.pdf).
+
+[![A printable cheat sheet with all shortcuts](images/keyboard-shortcuts.png)](resources/keyboard-shortcuts.pdf "A printable cheat sheet with all shortcuts")
 
 In this chapter, we describe the available keyboard shortcuts.
 
