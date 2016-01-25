@@ -31,7 +31,7 @@ a line like:
 
 `gtk-font-name = "Sans 10"`
 
-You have to restart Sigasi HDT before these changes take effect.
+You have to restart Sigasi Studio before these changes take effect.
 
 ## Annotations Colors
 

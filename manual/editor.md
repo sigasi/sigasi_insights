@@ -89,7 +89,7 @@ Sigasi associates comments with HDL declarations with following rules:
 
 ## Auto-complete and Content Assist
 
-Sigasi HDT provides powerful autocompletion capabilities. This means
+Sigasi Studio provides powerful autocompletion capabilities. This means
 that the tool can help you to complete identifiers and constructs as you are working on the code. Like other tools, the tool provides
 autocompletion based on the VHDL language. However, it goes much
 further. It also provides autocompletion based on the design context. It can provide this additional level of intelligence as it knows all
@@ -226,7 +226,7 @@ Highlighting Classes for VHDL:
 **Note:** In other tools this feature may be know as *paste as
 instantiation* or *port translation*.
 
-Sigasi HDT knows all entities in the design and their interfaces, and
+Sigasi Studio knows all entities in the design and their interfaces, and
 can therefore automate much of the instantiation process. At the point
 in the code where you normally enter the entity name, you can use
 autocompletion instead to suggest a list of possible entities. Upon
