@@ -166,6 +166,14 @@ example a column of a table or all port names in a port map.
 To toggle between normal and block selection modes use **Alt+Shift+A**
 or press the **Toggle Block Selection** icon in the tool bar.
 
+### Structured selection
+
+Structured Select enables you to select VHDL or Verilog code, based on its *syntactic structure*. (Screencast: "[/screencasts/structured-select]")
+
+  * **Shift+Alt+Up**, expands the selection to the smallest syntax element that contains the current selection. You can then further expand the selection by invoking the action again.
+  * **Shift+Alt+Down**, contracts the current selection to the nested syntax expression that still contains the current cursor position. You can then further contract the selection by invoking the action again.
+  * **Shift+Alt+Left**, adds the syntax element left of the current selection to the selection. You can then further expand the selection by invoking the action again. You can also expand the selection in the other direction with **Shift+Alt+Right**
+
 ### Show whitespace
 
 ### Move and Duplicate lines {#move-lines}
@@ -196,8 +204,6 @@ The action to remove trailing whitespace is hidden by default. You can access it
 
 - Previous versions (local history or version control)
 - Comparing two files
-
-
 
 # VHDL Specific
 
