@@ -45,7 +45,7 @@ dependencies:
 	pip install linkchecker
 
 publish: gh-pages-update build
-	cd _build && git add -A && git commit -m "Update documentation" && git push
+	cd _build && git add -A && git commit -m "Update documentation" && git push origin gh-pages
 
 NOCAPS:
 	@ ! find . -name '*.png'|grep -v _build/ | grep "[A-Z]"
