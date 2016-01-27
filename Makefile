@@ -17,6 +17,7 @@ gh-pages-update:
 build: NOCAPS
 	python -m urubu build
 	@touch _build/.nojekyll
+	( cd _build && find . -name "*html" | grep -v "./google" |grep -v '^.html' | sed -e "s/^./http:\/\/insights.sigasi.com/" > sitemap.txt )
 	@echo "gitdir: $(MAKEFILE_PATH)/.git/worktrees/_build" > _build/.git
 
 server.PID:
