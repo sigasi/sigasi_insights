@@ -72,7 +72,6 @@ This results in major improvements in how we can offer you (System)Verilog suppo
   
 ### Sigasi XL Doc improvements
 
-* Improved **Documenation View**: the documentation preview no longer flickers and scrolls to the top of your file when you edit your VHDL sources.
 * Add option to open documentation view from the editor: **Show In > Documentation View**
 * The **Block Diagram View** now also displays more concurrent statements. In addition to instantiation statements, the block diagram view now also show **processes**, **concurrent signal assignments** and **asserts**.
 
@@ -84,7 +83,7 @@ This results in major improvements in how we can offer you (System)Verilog suppo
 * The Hierarchy and Generics View are now merged. You can now inspect the values of generics and constants directly in the hierarchy view.  
   ![generics in hierarchy view](3.00/hierarchy-generics.png)
 * Added new, minimalistic perspective for **Sigasi Starter**
-* Added [solarized theme](http://ethanschoonover.com/solarized) for the Sigasi editors  
+* Added [solarized theme](http://ethanschoonover.com/solarized) for the Sigasi editors (Linux and Mac) 
   ![solarized theme Dark and Light](3.00/solarized-mixed.png)
 * Added new option to **Export hierarchy as CSV**: use current toplevel in Hierarchy View as default value ([documentation](/manual/tools.html#export))
 * The Mac OS X version now is a real 'App' contained in one, clean `Sigasi.app`
