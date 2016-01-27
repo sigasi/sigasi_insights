@@ -42,6 +42,7 @@ If you are using a floating license, you need to update your [Flexnet daemon](#f
 * **Word Wrap** and **automatic scroll lock** in the **Console View**
 * The context menus of editor and view tabs now offer **Close Tabs to the left** (and **right**). There are also more options on what happens when there is not enough space to show tabs for all open editors. You can configure this in **Window > Preferences > General > Appearance > Visible tabs on overflow**.
   ![Close tabs](3.00/close-tabs.png)
+* You can now **double click** on a **closed project** to **open** it.
 * [And even more improvements](https://www.eclipse.org/eclipse/news/4.5/platform.php)
 
 ### Verilog and SystemVerilog improvements

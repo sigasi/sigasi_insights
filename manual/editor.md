@@ -89,7 +89,7 @@ Sigasi associates comments with HDL declarations with following rules:
 
 ## Auto-complete and Content Assist
 
-Sigasi HDT provides powerful autocompletion capabilities. This means
+Sigasi Studio provides powerful autocompletion capabilities. This means
 that the tool can help you to complete identifiers and constructs as you are working on the code. Like other tools, the tool provides
 autocompletion based on the VHDL language. However, it goes much
 further. It also provides autocompletion based on the design context. It can provide this additional level of intelligence as it knows all
@@ -166,6 +166,14 @@ example a column of a table or all port names in a port map.
 To toggle between normal and block selection modes use **Alt+Shift+A**
 or press the **Toggle Block Selection** icon in the tool bar.
 
+### Structured selection
+
+Structured Select enables you to select VHDL or Verilog code, based on its *syntactic structure*. (Screencast: "[/screencasts/structured-select]")
+
+  * **Shift+Alt+Up**, expands the selection to the smallest syntax element that contains the current selection. You can then further expand the selection by invoking the action again.
+  * **Shift+Alt+Down**, contracts the current selection to the nested syntax expression that still contains the current cursor position. You can then further contract the selection by invoking the action again.
+  * **Shift+Alt+Left**, adds the syntax element left of the current selection to the selection. You can then further expand the selection by invoking the action again. You can also expand the selection in the other direction with **Shift+Alt+Right**
+
 ### Show whitespace
 
 ### Move and Duplicate lines {#move-lines}
@@ -197,8 +205,6 @@ The action to remove trailing whitespace is hidden by default. You can access it
 - Previous versions (local history or version control)
 - Comparing two files
 
-
-
 # VHDL Specific
 
 In addition to the powerful features of an Eclipse editor, the VHDL
@@ -220,7 +226,7 @@ Highlighting Classes for VHDL:
 **Note:** In other tools this feature may be know as *paste as
 instantiation* or *port translation*.
 
-Sigasi HDT knows all entities in the design and their interfaces, and
+Sigasi Studio knows all entities in the design and their interfaces, and
 can therefore automate much of the instantiation process. At the point
 in the code where you normally enter the entity name, you can use
 autocompletion instead to suggest a list of possible entities. Upon

@@ -7,19 +7,19 @@ pager: true
 The user interface is unresponsive {#ts-unresponsive}
 ----------------------------------
 
-If the user interface of Sigasi HDT is unresponsive, you can interrupt the internal compilation process by pressing the **stop** button in the progress view. To activate the progress view, select **Window > Show View > Other... > General > Progress**, or click the tiny conveyor belt icon ![](icons/progressicon.png), on the right side of the status bar.
+If the user interface of Sigasi Studio is unresponsive, you can interrupt the internal compilation process by pressing the **stop** button in the progress view. To activate the progress view, select **Window > Show View > Other... > General > Progress**, or click the tiny conveyor belt icon ![](icons/progressicon.png), on the right side of the status bar.
 
 The editor displays old contents of a file {#ts-refresh-editor}
 ------------------------------------------
 
-If you edit a file outside of HDT with an external editor, Sigasi will normally notice the changes and ask if you want to load the changes. If
+If you edit a file outside of Sigasi Studio with an external editor, Sigasi will normally notice the changes and ask if you want to load the changes. If
 it doesn’t, you can refresh the editor’s content by pressing **F5** or by right-clicking a file or a project in the project explorer and
 selecting **Refresh**.
 
 How much local history will be stored?
 --------------------------------------
 
-Sigasi HDT stores the history of your file so that you can compare your current version with the version you saved an hour ago.
+Sigasi Studio stores the history of your file so that you can compare your current version with the version you saved an hour ago.
 
 You can define how much disk space is used for storing local history in **Windows > Preferences**, select **General > Workspace > Local History**.
 
@@ -91,10 +91,10 @@ Cause: Common libraries are not configured correctly.
 
 Resolution: Reset the common libraries: **right-click the project > Library Mapping > Reset Library Mapping**
 
-HDT analyzes HDL files that I do not need {#ts-stale-files}
+Sigasi Studio analyzes HDL files that I do not need {#ts-stale-files}
 -----------------------------------------
 
-By default, Sigasi assumes that all VHDL or Verilog files are part of the project. However, some projects may contain multiple files with older or alternative definitions of a VHDL object. We call these *stale* files, because they are no longer used. In such a case you will want HDT to ignore certain files.
+By default, Sigasi assumes that all VHDL or Verilog files are part of the project. However, some projects may contain multiple files with older or alternative definitions of a VHDL object. We call these *stale* files, because they are no longer used. In such a case you will want Sigasi Studio to ignore certain files.
 
 To exclude files (or directories) from analysis, consult the [/manual/libraries].
 
@@ -103,7 +103,7 @@ Ignored resources are decorated with a ![](icons/ignoreicon.png) icon in the pro
 I do not get automatic updates {#ts-updates}
 ------------------------------
 
-If the updates are not automatically fetched from the Sigasi update server you are probably behind a firewall or proxy server. You can configure HDT’s proxy settings in **Window > Preferences > General > Network connections**. If you can not add a firewall exception for our update site, the fall back solution is to download the complete application from our website. You can completely replace your old installation; all settings are stored in your workspace (the default is
+If the updates are not automatically fetched from the Sigasi update server you are probably behind a firewall or proxy server. You can configure Sigasi Studio’s proxy settings in **Window > Preferences > General > Network connections**. If you can not add a firewall exception for our update site, the fall back solution is to download the complete application from our website. You can completely replace your old installation; all settings are stored in your workspace (the default is
 `workspaceSigasi` in your home directory).
 
 Sigasi startup fails: "Could not create the Java virtual machine"

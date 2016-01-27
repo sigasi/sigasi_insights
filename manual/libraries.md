@@ -16,7 +16,7 @@ located on the file system. We will describe how the library
 configuration can be examined and modified using the GUI.
 
 We will also present some use case about how to set up libraries with
-Sigasi HDT to organize your projects.
+Sigasi Studio to organize your projects.
 
 # Examining the library configuration {#libraries-examine}
 

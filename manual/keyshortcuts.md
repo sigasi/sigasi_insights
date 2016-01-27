@@ -4,12 +4,9 @@ layout: page
 pager: true
 ---
 
-As you become more experienced with Sigasi, you will find that there are
-a number of actions that you perform quite often. At some point, you may
-feel that the GUI-based approach becomes too slow for these actions. For
-that reason, Sigasi provides a number of keyboard shortcuts. They are a
-great way to boost your productivity. A printable cheat sheet with [all
-shortcuts on one page is available on for download](/tech/resources/keyboard_shortcuts.pdf).
+As you become more experienced with Sigasi, you will find that there are a number of actions that you perform quite often. At some point, you may feel that the GUI-based approach becomes too slow for these actions. For that reason, Sigasi provides a number of keyboard shortcuts. They are a great way to boost your productivity. A printable cheat sheet with [all shortcuts on one page is available for download](resources/keyboard-shortcuts.pdf).
+
+[![A printable cheat sheet with all shortcuts](images/keyboard-shortcuts.png)](resources/keyboard-shortcuts.pdf "A printable cheat sheet with all shortcuts")
 
 In this chapter, we describe the available keyboard shortcuts.
 
@@ -39,8 +36,10 @@ editor on any file in the workspace.
    Once you get used to the rename refactoring you will be using it all the time. Use **Shift+Alt+R** to run it even quicker.
 10. Toggle Block Selection (**Shift+Alt+A**)  
    Switch between regular and block selection mode.
-11. Quick Access (**Ctrl+3**)
-  _**Ctrl+3** is the shortcut to use, when you forgot the shortcut you actually need._ With Quick Access you can quickly find open editors, available perspectives, views, preferences, wizards, commands, etc. Simply start typing the name of the item you wish to invoke.
+11. Structured Select (**Shift+Alt+Up/Down/Left/Right**)  
+  Select VHDL or Verilog code, based on its *syntactic structure*. ([/manual/editor#Structured selection])  
+12. Quick Access (**Ctrl+3**, <mark>This is the shortcut to use, when you forgot the shortcut you actually need.</mark>)  
+  With Quick Access you can quickly find open editors, available perspectives, views, preferences, wizards, commands, etc. Simply start typing the name of the item you wish to invoke.
 
 Keyboard shortcut reference
 ---------------------------
@@ -82,7 +81,7 @@ Keyboard shortcut reference
 |                        | Next | **Ctrl*.** |
 |                        | Collapse All | **Shift+Ctrl+Numpad\_Divide** |
 |                        | Forward History | **Alt+Right** |
-| *VHDL specific*        | Search references | **Shift+Ctrl+G** |
+| *VHDL/Verilog specific*| Search references | **Shift+Ctrl+G** |
 |                        | Rename - Refactoring | **Shift+Alt+R** |
 |                        | Toggle Comment | **Ctrl+/** |
 |                        | Comment | **Shift+Ctrl+/** |
@@ -91,6 +90,10 @@ Keyboard shortcut reference
 |                        | Open matching entity | **Shift+F3** |
 |                        | Go to next problem | **Shift*.** |
 |                        | Go to previous problem | **Shift*,** |
+|                        | Expand structured selection | **Shift+Alt+Up** |
+|                        | Contact structured selection | **Shift+Alt+Down** |
+|                        | Expand structured selection left | **Shift+Alt+Left** |
+|                        | Expand structured selection right | **Shift+Alt+Right** |
 | *Advanced search*      | Find Text in Workspace | **Ctrl+Alt+G** |
 |                        | Open Search Dialog | **Ctrl+H** |
 |                        | Previous Word | **Ctrl+Left** |

@@ -230,7 +230,7 @@ Next, configure the builder in a configuration window pop up window:
 
 
 With the default settings the ModelSim Makefile will only be run during
-a manual build or after a “Clean”. To make sure Sigasi HDT runs `make`
+a manual build or after a “Clean”. To make sure Sigasi Studio runs `make`
 every time you save a change to a file, click the **Build Options** tab
 and check the **During auto builds** checkbox.
 

@@ -3,7 +3,7 @@ title: Views
 layout: page
 ---
 
-When you open a project in Sigasi HDT, a number of views are presented
+When you open a project in Sigasi Studio, a number of views are presented
 in the user interface. Here is a typical screenshot, with the views
 highlighted.
 
