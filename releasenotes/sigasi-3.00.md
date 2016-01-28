@@ -3,6 +3,7 @@ title: Sigasi 3.0
 layout: page
 pager: true
 date: 2016-01-20
+comments: true
 ---
 
 The Sigasi Studio 3.0 release brings you a rebranded HDL IDE. This release brings many improvements, especially for SystemVerilog and the Eclipse workbench.
