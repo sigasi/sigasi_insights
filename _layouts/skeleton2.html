@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" prefix="og: http://ogp.me/ns#">
+	{% set url_prefix = '' %}
+	{% if site.baseurl %}
+	{%   set url_prefix = '/' + site.baseurl %}
+	{% endif %}
+	<!--// OPEN HEAD //-->
+	<head>
+		<!--// SITE TITLE //-->
+		<title>{{this.title}} - Sigasi</title>
+		<link rel="stylesheet" href="http://{{site.mainsite}}/wp-content/plugins/sitepress-multilingual-cms/res/css/language-selector.css?v=3.2.7" type="text/css" media="all" />
+		<!--// SITE META //-->
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!--// PINGBACK & FAVICON //-->
+		<link rel="pingback" href="http://{{site.mainsite}}/xmlrpc.php"/>
+		<link rel="shortcut icon" href="http://{{site.mainsite}}/wp-content/uploads/2015/11/sigasi_favicon.png" />
+		<script>
+			writeCookie();
+			function writeCookie() {
+				the_cookie = document.cookie;
+				if (the_cookie) {
+					if (window.devicePixelRatio >= 2) {
+						the_cookie = "pixel_ratio=" + window.devicePixelRatio + ";" + the_cookie;
+						document.cookie = the_cookie;
+						//location = '';
+					}
+				}
+			}
+		</script>
+		<!-- This site is optimized with the Yoast SEO plugin v3.0.6 - https://yoast.com/wordpress/plugins/seo/ -->
+		<link rel="canonical" href="http://{{site.cname}}/{{this.url}}" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="{{this.title}} - Sigasi" />
+		<meta property="og:url" content="http://{{site.cname}}/{{this.url}}" />
+		<meta property="og:site_name" content="Sigasi" />
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:title" content="{{this.title}} - Sigasi"/>
+		<!-- / Yoast SEO plugin. -->
+		{% block rss %}
+		<link rel="alternate" type="application/rss+xml" title="Sigasi &raquo; Feed" href="http://{{site.mainsite}}/feed/" />
+		<link rel="alternate" type="application/rss+xml" title="Sigasi &raquo; Comments Feed" href="http://{{site.mainsite}}/comments/feed/" />
+		{% endblock %}
+		<script type="text/javascript">
+			window._wpemojiSettings = {
+				"baseUrl" : "http:\/\/s.w.org\/images\/core\/emoji\/72x72\/",
+				"ext" : ".png",
+				"source" : {
+					"concatemoji" : "http:\/\/{{site.mainsite}}\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.2"
+				}
+			}; ! function(a, b, c) {
+				function d(a) {
+					var c = b.createElement("canvas"),
+					    d = c.getContext && c.getContext("2d");
+					return d && d.fillText ? (d.textBaseline = "top", d.font = "600 32px Arial", "flag" === a ? (d.fillText(String.fromCharCode(55356, 56812, 55356, 56807), 0, 0), c.toDataURL().length > 3e3) : (d.fillText(String.fromCharCode(55357, 56835), 0, 0), 0 !== d.getImageData(16,16,1,1).data[0])) : !1
+				}
+
+				function e(a) {
+					var c = b.createElement("script");
+					c.src = a, c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
+				}
+
+				var f,
+				    g;
+				c.supports = {
+					simple : d("simple"),
+					flag : d("flag")
+				}, c.DOMReady = !1, c.readyCallback = function() {
+					c.DOMReady = !0
+				}, c.supports.simple && c.supports.flag || ( g = function() {
+					c.readyCallback()
+				}, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function() {
+					"complete" === b.readyState && c.readyCallback()
+				})),
+				f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji)))
+			}(window, document, window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+			img.wp-smiley, img.emoji {
+				display: inline !important;
+				border: none !important;
+				box-shadow: none !important;
+				height: 1em !important;
+				width: 1em !important;
+				margin: 0 .07em !important;
+				vertical-align: -0.1em !important;
+				background: none !important;
+				padding: 0 !important;
+			}
+		</style>
+		<link rel='stylesheet' id='wgs-css'  href='http://{{site.mainsite}}/wp-content/plugins/wp-google-search/wgs.css?ver=4.3.2' type='text/css' media='all' />
+		<link rel='stylesheet' id='layerslider-css'  href='http://{{site.mainsite}}/wp-content/plugins/LayerSlider/static/css/layerslider.css?ver=5.5.1' type='text/css' media='all' />
+		<link rel='stylesheet' id='ls-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900%7COpen+Sans:300%7CIndie+Flower:regular%7COswald:300,regular,700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+		<link rel='stylesheet' id='contact-form-7-css'  href='http://{{site.mainsite}}/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.3.1' type='text/css' media='all' />
+		<link rel='stylesheet' id='cookielawinfo-style-css'  href='http://{{site.mainsite}}/wp-content/plugins/cookie-law-info/css/cli-style.css?ver=1.5.3' type='text/css' media='all' />
+		<link rel='stylesheet' id='go-pricing-styles-css'  href='http://{{site.mainsite}}/wp-content/plugins/go_pricing/assets/css/go_pricing_styles.css?ver=3.1.0' type='text/css' media='all' />
+		<link rel='stylesheet' id='rs-plugin-settings-css'  href='http://{{site.mainsite}}/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.0.8.5' type='text/css' media='all' />
+		<style id='rs-plugin-settings-inline-css' type='text/css'>
+			.txtcenter {
+				text-align: center
+			}
+		</style>
+		<link rel='stylesheet' id='spb-frontend-min-css'  href='http://{{site.mainsite}}/wp-content/plugins/swift-framework/includes/page-builder/frontend-assets/css/page-builder.min.css?ver=3.0' type='text/css' media='all' />
+		<link rel='stylesheet' id='swift-slider-min-css'  href='http://{{site.mainsite}}/wp-content/plugins/swift-framework/includes/swift-slider/assets/css/swift-slider.min.css' type='text/css' media='all' />
+		<link rel='stylesheet' id='ms-main-css'  href='http://{{site.mainsite}}/wp-content/plugins/masterslider/public/assets/css/masterslider.main.css?ver=2.19.0' type='text/css' media='all' />
+		<link rel='stylesheet' id='ms-custom-css'  href='http://{{site.mainsite}}/wp-content/uploads/masterslider/custom.css?ver=1.2' type='text/css' media='all' />
+		<link rel='stylesheet' id='bootstrap-css'  href='http://{{site.mainsite}}/wp-content/themes/cardinal/css/bootstrap.min.css' type='text/css' media='all' />
+		<link rel='stylesheet' id='ssgizmo-css'  href='http://{{site.mainsite}}/wp-content/themes/cardinal/css/ss-gizmo.css' type='text/css' media='all' />
+		<link rel='stylesheet' id='fontawesome-css'  href='http://{{site.mainsite}}/wp-content/themes/cardinal/css/font-awesome.min.css' type='text/css' media='all' />
+		<link rel='stylesheet' id='sf-main-css'  href='http://{{site.mainsite}}/wp-content/themes/cardinal/style.css' type='text/css' media='all' />
+		<link rel='stylesheet' id='sf-responsive-css'  href='http://{{site.mainsite}}/wp-content/themes/cardinal/css/responsive.css' type='text/css' media='screen' />
+		<link rel='stylesheet' id='redux-google-fonts-sf_cardinal_options-css'  href='http://fonts.googleapis.com/css?family=Lato%3A100%2C300%2C400%2C700%2C900%2C100italic%2C300italic%2C400italic%2C700italic%2C900italic%7COpen+Sans%3A300%2C400%2C600%2C700%2C800%2C300italic%2C400italic%2C600italic%2C700italic%2C800italic&#038;subset=latin&#038;ver=1454412270' type='text/css' media='all' />
+		<script type='text/javascript' src='http://{{site.mainsite}}/wp-content/plugins/LayerSlider/static/js/greensock.js?ver=1.11.8'></script>
+		<script type='text/javascript' src='http://{{site.mainsite}}/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+		<script type='text/javascript' src='http://{{site.mainsite}}/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+		<script type='text/javascript' src='http://{{site.mainsite}}/wp-content/plugins/LayerSlider/static/js/layerslider.kreaturamedia.jquery.js?ver=5.5.1'></script>
+		<script type='text/javascript' src='http://{{site.mainsite}}/wp-content/plugins/LayerSlider/static/js/layerslider.transitions.js?ver=5.5.1'></script>
+		<script type='text/javascript' src='http://{{site.mainsite}}/wp-content/plugins/cookie-law-info/js/cookielawinfo.js?ver=1.5.3'></script>
+		<script type='text/javascript' src='http://{{site.mainsite}}/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.0.8.5'></script>
+		<script type='text/javascript' src='http://{{site.mainsite}}/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.0.8.5'></script>
+		<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://{{site.mainsite}}/xmlrpc.php?rsd" />
+		<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://{{site.mainsite}}/wp-includes/wlwmanifest.xml" />
+		<link rel='shortlink' href='http://{{site.mainsite}}/?p=12016' />
+		<script>
+			var ms_grabbing_curosr = 'http://{{site.mainsite}}/wp-content/plugins/masterslider/public/assets/css/common/grabbing.cur',
+			    ms_grab_curosr = 'http://{{site.mainsite}}/wp-content/plugins/masterslider/public/assets/css/common/grab.cur';
+		</script>
+		<meta name="generator" content="MasterSlider 2.19.0 - Responsive Touch Image Slider" />
+		<meta name="generator" content="WPML ver:3.2.7 stt:1;" />
+		
+		<link href="{{url_prefix}}/css/site.css" rel="stylesheet" media="screen">
+		<link href="{{url_prefix}}/css/syntax.css" rel="stylesheet" media="screen">
+		{% include 'style.html' %}
+		<link href="{{url_prefix + '/css/override.css'}}" rel="stylesheet" media="screen">
+		
+		<meta name="generator" content="Powered by Slider Revolution 5.0.8.5 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+		<link rel="icon" href="http://{{site.mainsite}}/wp-content/uploads/2016/01/cropped-site_icon-32x32.png" sizes="32x32" />
+		<link rel="icon" href="http://{{site.mainsite}}/wp-content/uploads/2016/01/cropped-site_icon-192x192.png" sizes="192x192" />
+		<link rel="apple-touch-icon-precomposed" href="http://{{site.mainsite}}/wp-content/uploads/2016/01/cropped-site_icon-180x180.png">
+		<meta name="msapplication-TileImage" content="http://{{site.mainsite}}/wp-content/uploads/2016/01/cropped-site_icon-270x270.png">
+		<!-- BEGIN GADWP v4.9.0.1 Universal Tracking - https://deconf.com/google-analytics-dashboard-wordpress/ -->
+		{% include 'analytics.html' %}
+		
+	</head>
+	<!--// OPEN BODY //-->
+	<body class="page page-id-12016 page-template-default bright-design mobile-header-left-logo mhs-mobile mh-slideout responsive-fluid sticky-header-disabled page-shadow product-shadows header-standard layout-boxed page-heading-standard disable-mobile-animations  _masterslider _msp_version_2.19.0">
+		<div id="site-loading" class="three-bounce">
+			<div class="spinner ">
+				<div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div>
+			</div>
+		</div>
+		{% include 'menu_mobile.html' %}
+		<!--// OPEN #container //-->
+		<div id="container">
+			<header id="mobile-header" class="mobile-left-logo clearfix">
+				<div id="mobile-logo" class="logo-left has-img clearfix">
+					<a href="http://{{site.mainsite}}"> <img class="standard" src="http://{{site.mainsite}}/wp-content/uploads/2015/11/Sigasi_logo_001.jpg" alt="Sigasi" height="40" width="122" /> <img class="retina" src="http://{{site.mainsite}}/wp-content/uploads/2015/11/Sigasi_logo_001.jpg" alt="Sigasi" height="0" width="0" /> <div class="text-logo"></div> </a>
+				</div>
+				<div class="mobile-header-opts">
+					<a href="#" class="mobile-menu-link menu-bars-link"><span class="menu-bars"></span></a>
+				</div>
+			</header>
+			<!--// TOP BAR //-->
+			{% block top_bar %}
+			{% endblock %}
+
+			<!--// HEADER //-->
+			<div class="header-wrap  full-center full-header-stick page-header-standard">
+				<div id="header-section" class="header-4 ">
+					<header id="header" class="sticky-header clearfix">
+						<div class="container">
+							<div class="row">
+								<div id="logo" class="col-sm-4 logo-left has-img clearfix">
+									<a href="http://{{site.mainsite}}"> <img class="standard" src="http://{{site.mainsite}}/wp-content/uploads/2015/11/Sigasi_logo_001.jpg" alt="Sigasi" height="40" width="122" /> <img class="retina" src="http://{{site.mainsite}}/wp-content/uploads/2015/11/Sigasi_logo_001.jpg" alt="Sigasi" height="0" width="0" /> <div class="text-logo"></div> </a>
+								</div>
+							{% include 'menu.html' %}
+							</div>
+							<!-- CLOSE .row -->
+						</div>
+						<!-- CLOSE .container -->
+					</header>
+				</div>
+			</div>
+			{% block insights_slider %}
+			<div id="rev_slider_11_1_wrapper_" class="rev_slider_wrapper fullwidthbanner-container" style="margin: 0px auto; padding: 0px; height: 145px; overflow: visible; background-color: transparent;">
+				<div id="rev_slider_11_1" class="rev_slider fullwidthabanner revslider-initialised tp-simpleresponsive" style="margin-top: 0px; margin-bottom: 0px; height: 145px;" data-version="5.0.8.5">
+					<ul class="tp-revslider-mainul" style="visibility: visible; display: block; overflow: hidden; width: 1200px; height: 100%; max-height: none; left: 0px;">
+						<li data-index="rs-13" data-transition="notransition" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="http://sigasi.wpengine.com/wp-content/uploads/2015/12/Sigasi_headerinsights_001-100x50.png" data-delay="4440" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="" class="tp-revslider-slidesli active-revslide" style="width: 100%; height: 100%; overflow: hidden; z-index: 20; visibility: inherit; opacity: 1;">
+							<div class="slotholder" style="width: 100%; height: 100%; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+								<div class="tp-bgimg defaultimg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20; background-image: url(&quot;http://sigasi.wpengine.com/wp-content/uploads/2015/12/Sigasi_headerinsights_001.png&quot;); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;" src="http://sigasi.wpengine.com/wp-content/uploads/2015/12/Sigasi_headerinsights_001.png"></div>
+							</div>
+							<div class="tp-parallax-wrap" style="position: absolute; visibility: visible; left: 11px; top: -6px; z-index: 5;">
+								<div class="tp-loop-wrap" style="position:absolute;">
+									<div class="tp-mask-wrap" style="position: absolute; overflow: visible; height: auto; width: auto;">
+										<div class="tp-caption   tp-resizeme rs-parallaxlevel-0" id="slide-13-layer-4" data-x="['left','left','left','left']" data-hoffset="['11','11','11','11']" data-y="['top','top','top','top']" data-voffset="['-6','-6','-6','-6']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="1040" data-responsive_offset="on" style="z-index: 5; visibility: inherit; transition: none; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 15px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;"><img src="http://sigasi.wpengine.com/wp-content/uploads/2015/12/Sigasi_headerinsights_002.png" alt="" width="490" height="158" data-ww="['490px','490px','490px','490px']" data-hh="['158px','158px','158px','158px']" data-no-retina="" style="width: 473.667px; height: 152.733px; transition: none; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 15px;">
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important; width: 0%;"></div>
+					<div class="tp-loader off" style="display: none;">
+						<div class="dot1"></div><div class="dot2"></div><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div>
+					</div>
+				</div>
+			</div>
+			{% endblock %}
+			<div id="main-container" class="clearfix">
+				{% block page_heading %}
+				<div class="page-heading  clearfix" >
+					<div class="container">
+						<div class="heading-text">
+							<h1 class="entry-title" >{{this.title}}</h1>
+						</div>
+					</div>
+				</div>
+				{% endblock %}
+				<div class="content-divider-wrap container">
+					<div class="content-divider"></div>
+				</div>
+				{% block secondmenu %}
+				{% endblock %}
+				<div class="inner-page-wrap has-no-sidebar clearfix">
+					<!-- OPEN page -->
+					<div class="clearfix">
+						<div class="page-content hfeed clearfix">
+							<section  class="container">
+								<div class="row">
+									<div class="spb_content_element col-sm-12 spb_raw_html">
+										<div class="spb-asset-content">
+											{% block body %}
+											{% endblock %}
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+						<!-- CLOSE page -->
+					</div>
+				</div>
+				<!--// CLOSE #main-container //-->
+			</div>
+			<div id="footer-wrap">
+				{% block copyright %}
+				<footer id="copyright" class="copyright-divider">
+					<div class="container">
+						<div
+						class="text-left">
+							Copyright Sigasi | <a href="http://{{site.mainsite}}">{{site.mainsite}}</a>
+						</div>
+						<div
+						class="text-right">
+							Site concept &amp; design Cantilis |<a href="http://www.cantilis.be" target="_blank">www.cantilis.be</a>
+						</div>
+					</div>
+				</footer>
+				{% endblock %}
+			</div>
+			<!--// CLOSE #container //-->
+		</div>
+		<!--// BACK TO TOP //-->
+		<div id="back-to-top" class="animate-top">
+			<i class="ss-navigateup"></i>
+		</div>
+		<!--// FULL WIDTH VIDEO //-->
+		<div class="fw-video-area">
+			<div class="fw-video-close">
+				<i class="ss-delete"></i>
+			</div>
+			<div class="fw-video-wrap"></div>
+		</div>
+		<div class="fw-video-spacer"></div>
+		<!--// FRAMEWORK INCLUDES //-->
+		<div id="sf-included" class=""></div>
+		<div id="sf-option-params" data-slider-slidespeed="7000"
+		data-slider-animspeed="600"
+		data-slider-autoplay="0"
+		data-slider-loop="1"
+		data-carousel-pagespeed="800"
+		data-carousel-slidespeed="200"
+		data-carousel-autoplay="0"
+		data-carousel-pagination="1"
+		data-lightbox-nav="default"
+		data-lightbox-thumbs="1"
+		data-lightbox-skin="light"
+		data-lightbox-sharing="1"
+		data-product-zoom-type="inner"
+		data-product-slider-thumbs-pos="bottom"
+		data-product-slider-vert-height="700"
+		data-quickview-text="Quickview"
+		data-cart-notification=""></div>
+		<div id="loveit-locale" data-ajaxurl="http://{{site.mainsite}}/wp-admin/admin-ajax.php" data-nonce="da20e7d233"
+		data-alreadyloved="You have already loved this item." data-error="Sorry, there was a problem processing your request."
+		data-loggedin="false"></div>
+		<div id="cookie-law-info-bar">
+			<span>This website uses cookies, as explained in our <a href="/cookies/">cookie policy</a>. By continuing to use this site you are giving consent to cookies being used. <a href="#" id="cookie_action_close_header"  class="medium cli-plugin-button cli-plugin-main-button" >Accept & close</a> </span>
+		</div>
+		<script type="text/javascript">
+			//<![CDATA[
+			jQuery(document).ready(function() {
+				cli_show_cookiebar({
+					settings : '{"animate_speed_hide":"500","animate_speed_show":"500","background":"#fff","border":"#444","border_on":true,"button_1_button_colour":"#000","button_1_button_hover":"#000000","button_1_link_colour":"#fff","button_1_as_button":true,"button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":false,"font_family":"inherit","header_fix":false,"notify_animate_hide":true,"notify_animate_show":false,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":false,"scroll_close_reload":false,"showagain_tab":false,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#000","show_once_yn":false,"show_once":"10000"}'
+				});
+			});
+			//]]>
+		</script>
+		<script></script>
+		<script type='text/javascript'>
+			/* <![CDATA[ */
+			var scriptParams = {
+				"google_search_engine_id" : "003567020762616216307:5macv9ff3am"
+			};
+			/* ]]> */
+		</script>
+		<script type='text/javascript' src='http://{{site.mainsite}}/wp-content/plugins/wp-google-search/assets/js/google_cse_v2.js?ver=1'></script>
+		<script type='text/javascript' src='http://{{site.mainsite}}/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+		<script type='text/javascript'>
+			/* <![CDATA[ */
+			var _wpcf7 = {
+				"loaderUrl" : "http:\/\/{{site.mainsite}}\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif",
+				"recaptchaEmpty" : "Please verify that you are not a robot.",
+				"sending" : "Sending ...",
+				"cached" : "1"
+			};
+			/* ]]> */
+		</script>
+		<script type='text/javascript' src='http://{{site.mainsite}}/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.3.1'></script>
+		<script type='text/javascript' src='http://{{site.mainsite}}/wp-content/plugins/swift-framework/includes/swift-slider/assets/js/swift-slider.min.js'></script>
+		<script type='text/javascript' src='http://{{site.mainsite}}/wp-content/themes/cardinal/js/combine/bootstrap.min.js'></script>
+		<script type='text/javascript' src='http://{{site.mainsite}}/wp-content/themes/cardinal/js/combine/jquery-ui-1.10.2.custom.min.js'></script>
+		<script type='text/javascript' src='http://{{site.mainsite}}/wp-content/themes/cardinal/js/combine/jquery.flexslider-min.js'></script>
+		<script type='text/javascript' src='http://{{site.mainsite}}/wp-content/themes/cardinal/js/combine/owl.carousel.min.js'></script>
+		<script type='text/javascript' src='http://{{site.mainsite}}/wp-content/themes/cardinal/js/combine/theme-scripts.js'></script>
+		<script type='text/javascript' src='http://{{site.mainsite}}/wp-content/themes/cardinal/js/combine/ilightbox.min.js'></script>
+		<script type='text/javascript' src='//maps.google.com/maps/api/js?sensor=false'></script>
+		<script type='text/javascript' src='http://{{site.mainsite}}/wp-content/themes/cardinal/js/combine/jquery.isotope.min.js'></script>
+		<script type='text/javascript' src='http://{{site.mainsite}}/wp-content/themes/cardinal/js/combine/imagesloaded.js'></script>
+		<script type='text/javascript' src='http://{{site.mainsite}}/wp-content/themes/cardinal/js/combine/jquery.infinitescroll.min.js'></script>
+		<script type='text/javascript' src='http://{{site.mainsite}}/wp-content/themes/cardinal/js/functions.js'></script>
+		<script type='text/javascript'>
+			/* <![CDATA[ */
+			var icl_vars = {
+				"current_language" : "en",
+				"icl_home" : "http:\/\/{{site.mainsite}}",
+				"ajax_url" : "http:\/\/{{site.mainsite}}\/wp-admin\/admin-ajax.php",
+				"url_type" : "3"
+			};
+			/* ]]> */
+		</script>
+		<script type='text/javascript' src='http://{{site.mainsite}}/wp-content/plugins/sitepress-multilingual-cms/res/js/sitepress.js?ver=4.3.2'></script>
+		<!--// CLOSE BODY //-->
+	</body>
+	<!--// CLOSE HTML //-->
+</html>

@@ -5,9 +5,8 @@ copyright_years: 2008-2015
 bootswatch: null 
 navbar_inverse: false 
 bootstrap: 3.3.4
-cname: doc.sigasi.com
-# mainsite: www.sigasi.com
-mainsite: sigasi.wpengine.com
+cname: insights.sigasi.com
+mainsite: www.sigasi.com
 menuitems:
   - title: Home
     url: http://www.sigasi.com

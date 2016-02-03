@@ -1,62 +1,68 @@
 /* secondary navigation menu */
 
 .nav > li {
-    position: relative;
-    display: block;
-    font-size: 14px;
+	position: relative;
+	display: block;
+	font-size: 14px;
 }
 
 .nav > li.active {
-    position: relative;
-    display: block;
-    font-weight: bold;
-    background-color: #262262; // navy blue
-    color: white;
+	position: relative;
+	display: block;
+	font-weight: bold;
+	background-color: #262262;// navy blue
+	color: white;
 }
 .nav > li > a {
-    font-size: 14px;
-    font-weight: bold;
-    color: #262262; // navy blue
+	font-size: 14px;
+	font-weight: bold;
+	color: #262262;// navy blue
 }
 .nav > li > a:hover {
-    background-color: white;
-    color: orange;
+	background-color: white;
+	color: orange;
 }
 .nav > li.active > a:hover {
-    background-color: white;
-    color: orange;
+	background-color: white;
+	color: orange;
 }
 .nav > li.active > a {
-    color: white;
+	color: white;
 }
 
 /* Don't have yellow for emphasis */
 mark {
-    background: transparent;
-    color:inherit;
-    font-style:italic;
-    
+	background: transparent;
+	color: inherit;
+	font-style: italic;
 }
 
 /* bullet lists */
+.std-menu > div > ul {
+	list-style: none;
+}
 ol {
-    list-style: initial;
-    margin: auto auto 20px 20px;
-    padding: 0;
-    line-height: inherrit;
+	list-style: initial;
+	margin: auto auto 20px 20px;
+	padding: 0;
+	line-height: inherrit;
 }
 
 ul {
-    list-style: initial;
-    margin: auto auto 20px 20px;
-    padding: 0;
-    line-height: inherrit;
+	list-style: initial;
+	margin: auto auto 20px 20px;
+	padding: 0;
+	line-height: inherrit;
 }
 
 #mobile-menu > div > ul {
-    list-style: none;
+	list-style: none;
 }
 
 .page-header {
-  margin-top: 10px;
+	margin-top: 10px;
+}
+
+h3, h3 a {
+	color: #262262;
 }
