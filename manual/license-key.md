@@ -55,13 +55,16 @@ In the Sigasi Studio, navigate to the **License Key** preference page via:
 
 Next enter `<port number>@<servername>` (for example: `5050@myserver.example.com`) as license key in:  
 
-You can also set your license via an environment variable. Both `SIGASI_LM_LICENSE_FILE` and `LM_LICENSE_FILE` are supported.
+You can also set your license via an environment variable. Both `SIGASI_LM_LICENSE_FILE` and `LM_LICENSE_FILE` are supported. But when `SIGASI_LM_LICENSE_FILE` is set, `LM_LICENSE_FILE` is ignored.
+
 Note that if you want to use the environment variable, you can not enter a path in the License Key preference page. The value on this page has priority over environment variables. 
 
 Linux Example:
 ```
 export SIGASI_LM_LICENSE_FILE=27000@flexnet.sigasi.com
 ```
+
+
 
 ## License server setup
 

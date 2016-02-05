@@ -3,6 +3,7 @@ title: Sigasi 3.0
 layout: page
 pager: true
 date: 2016-01-20
+comments: true
 ---
 
 The Sigasi Studio 3.0 release brings you a rebranded HDL IDE. This release brings many improvements, especially for SystemVerilog and the Eclipse workbench.
@@ -72,7 +73,6 @@ This results in major improvements in how we can offer you (System)Verilog suppo
   
 ### Sigasi XL Doc improvements
 
-* Improved **Documenation View**: the documentation preview no longer flickers and scrolls to the top of your file when you edit your VHDL sources.
 * Add option to open documentation view from the editor: **Show In > Documentation View**
 * The **Block Diagram View** now also displays more concurrent statements. In addition to instantiation statements, the block diagram view now also show **processes**, **concurrent signal assignments** and **asserts**.
 
@@ -84,7 +84,7 @@ This results in major improvements in how we can offer you (System)Verilog suppo
 * The Hierarchy and Generics View are now merged. You can now inspect the values of generics and constants directly in the hierarchy view.  
   ![generics in hierarchy view](3.00/hierarchy-generics.png)
 * Added new, minimalistic perspective for **Sigasi Starter**
-* Added [solarized theme](http://ethanschoonover.com/solarized) for the Sigasi editors  
+* Added [solarized theme](http://ethanschoonover.com/solarized) for the Sigasi editors (Linux and Mac) 
   ![solarized theme Dark and Light](3.00/solarized-mixed.png)
 * Added new option to **Export hierarchy as CSV**: use current toplevel in Hierarchy View as default value ([documentation](/manual/tools.html#export))
 * The Mac OS X version now is a real 'App' contained in one, clean `Sigasi.app`
@@ -125,7 +125,7 @@ To update the standalone version to Sigasi Studio 3.0, you need to perform a fre
 1. Add the new update URL via **Window > Preferences > Install/Update > Available update sites**
 2. Click the **Add...** button:
     * Name: `Sigasi`
-    * Location: `http://download.sigasi.com/update/studio`
+    * Location: `http://download.sigasi.com/updates/studio`
 3. **OK**    
 4. Install the updates via **Help > Check for Updates**
 

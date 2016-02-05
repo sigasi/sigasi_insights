@@ -10,9 +10,7 @@ A common problem in larger teams is how to share Sigasi preferences (configurati
 
 Sigasi (and the underlying Eclipse platform) does not have one single configuration file. Preferences are stored in several files. Most preferences are stored with a workspace scope and some per project. So how can you share preferences in a team?
 
-Option 1: Corporate wiki and exporting preferences
-comments: true
---------------------------------------------------
+## Option 1: Corporate wiki and exporting preferences
 
 The classic approach to share preferences in teams is a Wiki or a readme file. This offers a textual description on how to setup Sigasi/Eclipse. But going through a checklist is a dull task. It is easy to make mistakes and is simply a waste of time. And what if the wiki page is updated?
 
@@ -31,9 +29,7 @@ If you distribute a customized version of Sigasi internally, you can also set de
             -pluginCustomization
             plugin_customization.ini
 
-Option 2: Fully automated with Workspace Mechanic
-comments: true
--------------------------------------------------
+## Option 2: Fully automated with Workspace Mechanic
 
 Google also ran into this problem and solved it by developing the Workspace Mechanic plugin for Eclipse. This plugin, which also works fine in Sigasi, allows to automate the maintenance of Eclipse environments.
 
