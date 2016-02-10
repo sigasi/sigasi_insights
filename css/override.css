@@ -66,3 +66,18 @@ ul {
 h3, h3 a {
 	color: #262262;
 }
+
+/* search button */
+input[type="submit"].gsc-search-button {
+    border-color: #262262 !important;
+    margin-bottom: 0px;
+    background-color: #262262 !important;
+    color: #fff !important;
+    height: 22px !important;
+}
+input.gsc-input {
+    margin: 2px;
+    margin-top: 4px;
+    padding-top: 2px;
+    height: 24px !important;
+}
