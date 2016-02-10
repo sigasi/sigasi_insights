@@ -2,11 +2,10 @@
 title: "Guest Blog: Scineric and the ears of the hippo"
 layout: page 
 pager: true
-author: Philippe Faes
+author: Jaco Naude
 date: 2012-09-06
 tags: 
   - Guest Blog
-  - scieneric
 comments: true
 ---
 <img style="float: right;" src="images/jaco_sigasi_pic.img_assist_custom-150x145.png" alt="Jaco Naude">

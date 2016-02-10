@@ -6,7 +6,6 @@ author: Philippe Faes
 date: 2012-08-23
 tags: 
   - code comprehension
-  - hover
 comments: true
 ---
 If you place your mouse over an identifier in a VHDL file, a yellow pop-up with extra information will will appear. This is called _hovering_.

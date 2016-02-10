@@ -5,7 +5,6 @@ pager: true
 author: Philippe Faes
 date: 2010-08-24
 tags: 
-  - Plunify
   - EDA2.0
   - cloud computing
 comments: true

@@ -6,7 +6,6 @@ author: Philippe Faes
 date: 2014-04-29
 tags: 
   - eclipse
-  - translation
 comments: true
 ---
 

@@ -6,8 +6,7 @@ author: Hendrik Eeckhaut
 date: 2012-05-15
 tags: 
   - linting
-  - VHDL IEEE
-  - VHDL packages
+  - VHDL
 comments: true
 ---
 # What are deprecated IEEE libraries?

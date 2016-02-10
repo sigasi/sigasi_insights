@@ -5,10 +5,8 @@ pager: true
 author: Philippe Faes
 date: 2011-07-04
 tags: 
-  - case
   - VHDL
-  - when-else
-  - with-select
+  - VHDL syntax
 comments: true
 ---
 

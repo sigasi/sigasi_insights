@@ -6,10 +6,10 @@ author: Philippe Faes
 date: 2012-10-11
 tags: 
   - Altera
-  - book
   - mythbuster
   - VHDL
   - VHDL synthesis
+  - rtl
 comments: true
 ---
 Everybody who has been taught VHDL in college or in a company with senior colleagues has heard the following _"wisdom"_:

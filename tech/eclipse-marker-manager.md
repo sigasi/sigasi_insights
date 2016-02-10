@@ -7,7 +7,6 @@ date: 2013-12-03
 tags: 
   - eclipse
   - planeteclipse
-  - public beta
 comments: true
 ---
 Did you ever want to suppress warnings in Eclipse? For Java, there is the `@SuppressWarnings` directive, but what to do for other programming languages?

@@ -7,7 +7,6 @@ date: 2012-09-24
 tags: 
   - hdt-2.0
   - templates
-  - tutorial
 comments: true
 ---
 

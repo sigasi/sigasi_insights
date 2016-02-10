@@ -4,8 +4,6 @@ layout: page
 pager: true
 author: Philippe Faes
 date: 2008-12-18
-tags: 
-  - Refactoring
 comments: true
 ---
 Hardware refactoring, or more specifically <em>VHDL refactoring</em>, is a technology that helps digital hardware designers create better hardware in a shorter time.

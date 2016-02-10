@@ -6,7 +6,7 @@ author: Philippe Faes
 date: 2009-09-30
 tags: 
   - VHDL
-  - simulation
+  - VHDL code
 comments: true
 ---
 

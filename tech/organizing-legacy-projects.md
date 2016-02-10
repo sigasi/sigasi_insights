@@ -5,7 +5,7 @@ pager: true
 author: Philippe Faes
 date: 2010-08-15
 tags: 
-  - helios
+  - project
   - howto
 comments: true
 ---

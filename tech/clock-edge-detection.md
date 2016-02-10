@@ -6,6 +6,8 @@ author: philippe.faes (Sigasi)
 date: 2012-04-09
 tags: 
   - coding guidelines
+  - rtl
+  - VHDL synthesis
   - VHDL
 comments: true
 ---

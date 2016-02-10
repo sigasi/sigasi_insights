@@ -5,6 +5,7 @@ pager: true
 author: Smrita
 date: 2013-11-10
 tags: 
+  - Guest Blog
   - documentation
 comments: true
 ---

@@ -46,4 +46,4 @@ Here are some things that a built-in style checker could flag:
 * Deprecated constructs (blocks?)
 * Many, many more!
 
-If you are interested, we can [implement your coding guidelines configured in Sigasi Pro](http://www.sigasi.com/custom-linting).
+If you are interested, we can [implement your coding guidelines configured in Sigasi Studio XL](http://www.sigasi.com/custom-linting).

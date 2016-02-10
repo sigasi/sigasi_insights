@@ -6,9 +6,8 @@ author: Philippe Faes
 date: 2013-10-23
 tags: 
   - eclipse
-  - EPL
   - planeteclipse
-  - ultraedit
+  - editors
 comments: true
 ---
 Sigasi has just released a new plugin for Eclipse: the [UltraEdit Key Bindings](https://marketplace.eclipse.org/content/ultraedit-key-bindings).

@@ -6,7 +6,6 @@ author: Hendrik Eeckhaut
 date: 2011-11-08
 tags: 
   - eclipse
-  - open source
   - planeteclipse
 comments: true
 ---

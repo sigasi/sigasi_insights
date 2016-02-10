@@ -6,6 +6,9 @@ author: Philippe Faes
 date: 2011-04-05
 tags: 
   - VHDL
+  - VHDL synthesis
+  - VHDL syntax
+  - rtl
 comments: true
 ---
 

@@ -6,10 +6,7 @@ author: heeckhau (Sigasi)
 date: 2010-05-18
 tags: 
   - Python
-  - scripts
-  - SEO
   - Sigasi
-  - visualization
 comments: true
 ---
 > "The numbers tell the tale"

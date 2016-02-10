@@ -5,6 +5,8 @@ pager: true
 author: Hendrik Eeckhaut
 date: 2013-01-01
 comments: true
+tags:
+  - Mac
 ---
 
 Unlike most EDA tools, Sigasi also has a version that runs on the **Mac OS X platform**. Here are some things that you should know before using the Mac version.

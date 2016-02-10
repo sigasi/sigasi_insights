@@ -6,6 +6,7 @@ author: Philippe Faes
 date: 2011-03-04
 tags: 
   - strategy
+  - code comprehension
 comments: true
 ---
 I recently found the correct word for something that has for years been an obvious tool for me: a <em>code comprehension tool</em>. A code comprehension tool, as you might guess helps you comprehend your code. All the smart work is still up to you, but your tool offers an overlay of extra information, much like the iPhone's <a href="http://www.commoncraft.com/augmented-reality-video">augmented reality</a> or a cockpit's head-up display ([why-hardware-designers-should-switch-eclipse]). Additionally, you get super navigation powers like <a href="http://www.youtube.com/watch?v=2PQi5ueqig4">Jumpers</a>.
