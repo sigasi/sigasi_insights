@@ -366,7 +366,7 @@ You can configure the Verilog version (Verilog or SystemVerilog) via **Window > 
 
 ### Disable Verilog Error Markers
 
-_Note that Sigasi Studio does not cover the entire SystemVerilog grammar yet. So if you are using _'unsupported'_ syntax, you will see lots of incorrect [syntax error markers](#type-time-syntax-error-reporting). You can disable these error markers by pressing **Ctrl-3** and typing `Toggle Verilog error markers`._
+_Note that Sigasi Studio does not cover the entire SystemVerilog grammar yet. So if you are using _'unsupported'_ syntax, you will see lots of incorrect [syntax error markers](#type-time-syntax-error-reporting). You can disable these error markers by pressing **Ctrl-3** and typing `Toggle Verilog error markers`. Next close and re-open all open Verilog editors to force a refresh._
 
 ## Smart Indentation {#smartindent-verilog}
 
