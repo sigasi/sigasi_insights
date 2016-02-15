@@ -14,6 +14,13 @@ project. They permit efficient navigation, inspection and editing.
  
 This chapter lists and explains the most important views in Sigasi. Some views are not covered here, more specifically some views that are either inherited from Eclipse, or views that are provided by third-party plugins. Please refer to the Eclipse documentation or to the specific plugin documentation for further information on those views.
 
+Views can be opened in multiple ways:
+
+* By typing the view name in the [/manual/user_interface#Quick Access] field
+* Via **Window > Show View**. If the view is not in the visible list, choose **Other...** and select the view in the selection dialog.
+* By right clicking in the **editor** and selecting **Show in > ...**. 
+  Some Views also support to open the current selection (e.g. the Block Diagram View). This selects the element in the view that corresponds to the current selection in the editor.
+
 # Project Explorer View {#explorer}
 
 This view shows the directory structure of all files in all projects.
