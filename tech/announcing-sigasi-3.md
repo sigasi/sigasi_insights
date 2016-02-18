@@ -18,6 +18,13 @@ features that you were able to use in Sigasi 2.x, plus the new Sigasi Studio 3 f
 The free Sigasi Studio **Starter** edition has now been optimized to work with minimal set-up.
 Sigasi Studio Starter now works as a file editor, with the added power of navigation and code checking, rather than a project-based IDE.
 
+## Updating
+
+> Floating license users: **update your FlexLM license server daemon**!
+> 
+> Fill out your license server address in the **license dialog** instead of an environment variable. This is needed
+> because of a bug in the FlexLM library. We are working to fix this.
+
 Read the [release notes and update instructions](/releasenotes/sigasi-3.00.html#how-to-update)
 
 For any questions, please contact your local distributor or contact Sigasi directly.
