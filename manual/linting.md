@@ -330,8 +330,8 @@ omitted.
 **Example:** to enforce a style where all variables have a `_v` suffix,
 you whould specify `.*_v` pattern in the **Variable name** field.
 
-Project specific Linting settings
-=============================
+## Project specific Linting settings
+
 The default way to configure the severity of the Sigasi linting checks is to set their severity in the **Errors/Warnings** preference page.
 You can override these setting by creating a settings file for your projects. 
 
@@ -372,38 +372,38 @@ Examples:
 	72/severity//test/top.vhd=WARNING
 	all/severity/<project>=IGNORE
 
-# Validation IDs
+### Validation IDs
 
 |Validation ID|Description|
 |-------------|-----------|
-|50|Library is not available|
-|64|Duplicate design units|
-|84|Report encrypted files|
-|8|Deprecated IEEE packages|
-|37|Non-standard packages|
-|38|A process must either have a sensitivity list or contain one or more wait statements|
-|47|There has to be a whitespace before physical units|
-|49|Superfluous library clause|
-|55|Find unused declarations|
-|57|Bitstrings may only contain std_logic metavalues|
-|67|Find unused ports|
-|68|Find unused generics|
-|72|Find incomplete sensitivity lists|
-|73|Find superfluous signals in sensitivity lists|
-|85|Find duplicate signals in sensitivity lists|
-|1|Null range: The left argument is strictly larger than the right|
-|12|Case alternative contains redundant choices|
-|13|Case statement contains all choices explicitly. You can safely remove the redundant 'others'|
-|20|Infinite loop. Loop is missing a wait|
-|26|Null range: The left argument is strictly smaller than the right|
-|48|Unbound component instantiations|
-|71|Find dead states in state machines|
-|79|Find dead code|
-|88|Detect signals and variables that are never written|
-|89|Detect signals and variables that are never read|
-|92|Check naming conventions|
-|94|Incomplete port map or generic map|
-|144|Array assignment validation|
-|163|All references must have the same capitalization as their declaration|
-|164|Check for positional associations in instantiations|
+| 50 | Library is not available|
+| 64 | Duplicate design units|
+| 84 | Report encrypted files|
+|  8 | Deprecated IEEE packages|
+| 37 | Non-standard packages|
+| 38 | A process must either have a sensitivity list or contain one or more wait statements|
+| 47 | There has to be a whitespace before physical units|
+| 49 | Superfluous library clause|
+| 55 | Find unused declarations|
+| 57 | Bitstrings may only contain std_logic metavalues|
+| 67 | Find unused ports|
+| 68 | Find unused generics|
+| 72 | Find incomplete sensitivity lists|
+| 73 | Find superfluous signals in sensitivity lists|
+| 85 | Find duplicate signals in sensitivity lists|
+|  1 | Null range: The left argument is strictly larger than the right|
+| 12 | Case alternative contains redundant choices|
+| 13 | Case statement contains all choices explicitly. You can safely remove the redundant 'others'|
+| 20 | Infinite loop. Loop is missing a wait|
+| 26 | Null range: The left argument is strictly smaller than the right|
+| 48 | Unbound component instantiations|
+| 71 | Find dead states in state machines|
+| 79 | Find dead code|
+| 88 | Detect signals and variables that are never written|
+| 89 | Detect signals and variables that are never read|
+| 92 | Check naming conventions|
+| 94 | Incomplete port map or generic map|
+|144 | Array assignment validation|
+|163 | All references must have the same capitalization as their declaration|
+|164 | Check for positional associations in instantiations|
 
