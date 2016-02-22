@@ -4,8 +4,7 @@ layout: page
 pager: true
 ---
 
-Introduction {#project-intro}
-------------
+# Introduction {#project-intro}
 
 Your work with Sigasi typically is organized as a *project*. A project
 is a collection of VHDL or Verilog files that belong together. Sigasi
@@ -21,41 +20,22 @@ this. The most common ways are:
 These two methods and other methods are discussed in detail in the
 following sections.
 
-Importing a project from the file system
-========================================
+# Importing a project from the file system
 
-Other ways to set up a project
-------------------------------
-
-### Importing a project from an archive
-
-Sigasi projects can be shared using file archives. All project-related
-settings are stored in two hidden files in the project folder.
-Therefore, you can create an archive of the entire top level folder
-(**File \> Export \> General \> Archive file**) and send it to someone
-else.
-
-You can import a project from an archive by clicking **File \> Import…
-\> General \> Existing projects into Workspace**, and selecting **Select
-archive file**. Browse to your project archive, and press **Finish**.
-
-1: Import the project
----------------------
+## 1: Import the project
 
 You can import an existing VHDL project from the file system by clicking
 **File \> Import… \> Sigasi \> Import a VHDL project**. Browse to the
 root directory of the project, and press **Finish**.
 
-2: Set Libraries
-----------------
+## 2: Set Libraries
 
 If you use other libraries than just work, you can assign different
 libraries to your files and folders. Right-click on a file or folder and
 select **Library Mapping \> New Library…**. Then fill out the correct
 library name.
 
-3: Add any files that are in other directories
-----------------------------------------------
+## 3: Add any files that are in other directories
 
 If you need additional files that are not in the project root directory,
 just drag them from your Windows Explorer (or other file browser) into
@@ -66,8 +46,7 @@ copying the files.
 Mac OS X (using Finder) and on Linux (using Gnome Nautilus). If you use
 KDE, you should install Nautilus.
 
-Creating a new, empty project
-=============================
+# Creating a new, empty project
 
 To create a new project, select **File \> New \> Empty VHDL Project** or
 **File \> New \> Empty Verilog Project**. Then give your project a name.
@@ -83,8 +62,10 @@ them from your filesystem into the project explorer. New files can be
 added by clicking **File \> New \> VHDL file** or **File \> New \>
 Verilog file**.
 
-Adding VHDL or Verilog support to an existing Eclipse project
-=============================================================
+
+# Other ways to set up a project
+
+## Adding VHDL or Verilog support to an existing Eclipse project
 
 You can add also add VHDL or Verilog project to any project in your
 workspace by right-clicking the project in the project explorer and
@@ -99,3 +80,15 @@ Verilog support at the same time.
 With a [creator] license, a project can contain both VHDL and
 Verilog files, but only one of the languages will have full support.
 Files in the other language will be treated as [/manual/opening#External Files].
+
+## Importing a project from an archive
+
+Sigasi projects can be shared using file archives. All project-related
+settings are stored in two hidden files in the project folder.
+Therefore, you can create an archive of the entire top level folder
+(**File \> Export \> General \> Archive file**) and send it to someone
+else.
+
+You can import a project from an archive by clicking **File \> Import…
+\> General \> Existing projects into Workspace**, and selecting **Select
+archive file**. Browse to your project archive, and press **Finish**.
