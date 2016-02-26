@@ -368,11 +368,11 @@ _If you run into any problems, please let us know_.
  
 You can download the Stand-alone version of the latest preview version from:
 
-* <http://download.sigasi.com/preview/hdt2/com.sigasi.hdt.product-linux.gtk.x86_64.zip>
-* <http://download.sigasi.com/preview/hdt2/com.sigasi.hdt.product-linux.gtk.x86.zip>
-* <http://download.sigasi.com/preview/hdt2/com.sigasi.hdt.product-macosx.cocoa.x86_64.zip>
-* <http://download.sigasi.com/preview/hdt2/com.sigasi.hdt.product-win32.win32.x86_64.zip>
-* <http://download.sigasi.com/preview/hdt2/com.sigasi.hdt.product-win32.win32.x86.zip>
+* <http://download.sigasi.com/preview/latest/com.sigasi.hdt.product-linux.gtk.x86_64.zip>
+* <http://download.sigasi.com/preview/latest/com.sigasi.hdt.product-linux.gtk.x86.zip>
+* <http://download.sigasi.com/preview/latest/com.sigasi.hdt.product-macosx.cocoa.x86_64.zip>
+* <http://download.sigasi.com/preview/latest/com.sigasi.hdt.product-win32.win32.x86_64.zip>
+* <http://download.sigasi.com/preview/latest/com.sigasi.hdt.product-win32.win32.x86.zip>
 
 You can also update from (configure via Preferences > Install/Update > Available Software Sites > Add...) :
 
