@@ -4,8 +4,8 @@ layout: page
 pager: true
 ---
 
-Distribution and flavours
--------------------------
+## Distribution and flavours
+
 
 Sigasi is distributed online. It is available in two versions: as a
 stand-alone application or as a plugin inside a standard Eclipse
@@ -37,8 +37,7 @@ The Eclipse plugin has the following characteristics:
 -   Support for C, C++, Tcl and other languages
 -   Support for many version control systems
 
-Installation of Sigasi App
---------------------------
+## Installation of Sigasi App
 
 To download and install Sigasi as a stand-alone application, follow the
 online [Installation
@@ -50,8 +49,7 @@ single top-level folder called `sigasi`. Inside the folder there is an
 application startup file, also called `sigasi`. Start the application by
 executing this startup file.
 
-Installation of Sigasi Eclipse Plugin
--------------------------------------
+## Installation of Sigasi Eclipse Plugin
 
 ### Prerequisites: Eclipse
 
@@ -78,15 +76,13 @@ After starting Eclipse:
 5. Click the **Next** button.
 6. The following steps are pretty self-explaining.
 
-Licensing
----------
+## Licensing
 
 The license key can be filled in under **Window > Preferences > Sigasi > License Key**.
 
 More details can be found in [/manual/license-key]
 
-Configuration
--------------
+## Configuration
 
 Sigasi stores its projects on the file system in one or more
 *workspaces*.
@@ -99,8 +95,7 @@ workspace for you:
 Although you can work with multiple workspaces, we recommend to use a
 single workspace for all your projects.
 
-Software updates
-=================
+## Software updates
 
 Sigasi has an automated update system. When updates are available, you
 are notified by a pop-up window called **Updates Available** in the
@@ -116,5 +111,18 @@ updates at any time by clicking the
 ![Update icon](icons/updatesavailableicon.png)-icon in the status bar
 at the bottom of the screen.
 
-Consult the [trouble#ts-updates] if the update
-does not start automatically.
+It is good practice to first create a backup of your installation folder before running an update. This can be done by simply compressing the `eclipse` or the `sigasi` folder in an archive (zip file)
+
+### Sigasi App
+If you run Sigasi as a **standalone application**, the automated update system will periodically check for [/manual/setup#software-updates].
+
+### Sigasi Eclipse plugin
+
+If you run Sigasi as an **Eclipse plugin**, you may need to check for updates manually, by clicking **Help > Check for Updates**.
+
+You can enable automatic updates by opening this preference page : **Install/Update > Automatic Updates**. Next enable **Automatically find new updates and notify me**. Feel free to modify any of the available options.
+
+### Firewalls and Proxies
+
+If the updates are not automatically fetched from the Sigasi update server you are probably behind a firewall or proxy server. You can configure Sigasi Studio’s proxy settings in **Window > Preferences > General > Network connections**. If you can not add a firewall exception for our update site, the fall back solution is to download the complete application from our website. You can completely replace your old installation; all settings are stored in your workspace (the default is
+`workspaceSigasi` in your home directory).

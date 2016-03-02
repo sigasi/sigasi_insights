@@ -235,17 +235,7 @@ This sets the maximum heap size to 1400 MB. If you system has plenty of memory, 
 
 ## How can I update Sigasi? {#update}
 
-If you run Sigasi as a **standalone application**, the automated update system will periodically check for [/manual/setup#software-updates].
-
-If the updates are not automatically fetched from our update server you are probably behind a **firewall** or **proxy server**. You can configure Sigasi's proxy settings in **Window > Preferences > General > Network connections**. If you can not add a firewall exception for our update site, the fallback solution is to [download](http://www.sigasi.com/download) the complete application from our website. You can completely replace your old installation; all settings are stored in your workspace (the default is `workspaceSigasi` in your home directory).
-
-If you run Sigasi as an **Eclipse plugin**, you may need to check for updates manually, by clicking **Help > Check for Updates**.
-
-You can enable automatic updates by opening this preference page : **Install/Update > Automatic Updates**. Next enable **Automatically find new updates and notify me**. Feel free to modify any of the available options.
-
-It is good practice to first create a backup of your installation folder before running an update. This can be done by simply compressing the `eclipse` or the `sigasi` folder in an archive (zip file)
-
-After you update, all Sigasi caches will be cleared. Your initial build will take a bit longer than usual.
+See [/manual/setup#Software Updates].
 
 ## Where can I find the log file?
 Sigasi logs all internal errors to a log file. You can find this file in: `workspaceSigasi/.metadata/.log` This file is also reachable in Sigasi Studio itself via **Help > Sigasi > Open log**
