@@ -218,6 +218,8 @@ documentation Sigasi can generate for your project.
 
 ![](images/documentationview.png)
 
+You do not need to add any special annotations to your code. Sigasi uses the same code/comment association as the hover provider ([/manual/editor#Comment Association]). So to document a `port`, you append a comment to a port declaration. To document an `architecture`, you put the comment just on top of the architecture.
+
 ## Export Documentation
 
 [xl_doc_only]

@@ -191,6 +191,7 @@ If your floating license server does not function properly, try the following st
   Other users have reported that you are *not* allowed to have the directory name being the same as the daemon name. For example: `c:\flexlm\sigasi\sigasi.exe` is invalid, but `c:\flexlm\vhdl_editor\sigasi.exe` works fine.
 * Make sure the environment variable is correct: SIGASI_LM_LICENSE_FILE=<port number>@<servername>
 * Verify that your server meets the [/faq#what-are-the-system-requirements]. Contact us for options if it does not.
-* You can easily check the status of your license via the License Key preference page : **Preferences > VHDL > License Key**. At the bottom of this preference page you can see the type and expiration date of your license.
+* You can easily check the status of your license via the License Key preference page : **Preferences > Sigasi > License Key**. At the bottom of this preference page you can see the type and expiration date of your license.
 
 If the steps above do not help, feel free to [contact-us] and send us a **screenshot of the license dialog** with the error message.
+

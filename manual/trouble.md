@@ -100,12 +100,6 @@ To exclude files (or directories) from analysis, consult the [/manual/libraries]
 
 Ignored resources are decorated with a ![](icons/ignoreicon.png) icon in the project explorer view.
 
-I do not get automatic updates {#ts-updates}
-------------------------------
-
-If the updates are not automatically fetched from the Sigasi update server you are probably behind a firewall or proxy server. You can configure Sigasi Studio’s proxy settings in **Window > Preferences > General > Network connections**. If you can not add a firewall exception for our update site, the fall back solution is to download the complete application from our website. You can completely replace your old installation; all settings are stored in your workspace (the default is
-`workspaceSigasi` in your home directory).
-
 Sigasi startup fails: "Could not create the Java virtual machine"
 -----------------------------------------------------------------
 
