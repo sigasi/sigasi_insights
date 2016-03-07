@@ -37,6 +37,10 @@ This log file is rotated for each new Sigasi session or when the log reaches a c
 
 Talkback is _always disabled by default_. To enable Talkback, or to disable it later on, click **Window > Preferences > Sigasi > Talkback** and select or deselect the checkbox "Enable Talkback".
 
+## What about my Firewall or Proxy?
+
+Talkback does not support Proxies. If Sigasi Talkback is unable to connect to our server directly because of your firewall or proxy server, you need to purchase a commercial license.
+
 ## Features like Talkback are against our corporate policy, even if it is disabled. What can I do?
 
 Please [contact-us] so that we can discuss a solution for your company.
