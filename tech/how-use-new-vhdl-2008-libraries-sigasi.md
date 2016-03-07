@@ -5,7 +5,7 @@ pager: true
 author: Hendrik Eeckhaut
 date: 2012-02-08
 tags: 
-  - vhdl 2008
+  - VHDL-2008
   - Sigasi
   - hdt-2.0
 comments: true
