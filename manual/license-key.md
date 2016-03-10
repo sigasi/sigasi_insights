@@ -192,6 +192,11 @@ If your floating license server does not function properly, try the following st
 * Make sure the environment variable is correct: SIGASI_LM_LICENSE_FILE=<port number>@<servername>
 * Verify that your server meets the [/faq#what-are-the-system-requirements]. Contact us for options if it does not.
 * You can easily check the status of your license via the License Key preference page : **Preferences > Sigasi > License Key**. At the bottom of this preference page you can see the type and expiration date of your license.
+* The Java version of the Flexera Library does not support asking the floating server to check whether a FlexNet feature is available without actually trying to check it out. As a result, you might see warning message like this in your server log: (These messages can be safely ignored)
+```
+9:14:47 (sigasi) UNSUPPORTED: "com.sigasi.hdt.custom" (PORT_AT_HOST_PLUS   ) testuser@testmachine  (License server system does not support this feature. (-18,327:10054 ""))
+9:14:47 (sigasi) UNSUPPORTED: "com.sigasi.hdt.preview" (PORT_AT_HOST_PLUS   ) testuser@testmachine  (License server system does not support this feature. (-18,327:10054 ""))  
+```
 
 If the steps above do not help, feel free to [contact-us] and send us a **screenshot of the license dialog** with the error message.
 
