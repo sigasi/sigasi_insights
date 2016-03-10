@@ -21,9 +21,6 @@ Sigasi Studio Starter now works as a file editor, with the added power of naviga
 ## Updating
 
 > Floating license users: **update your FlexLM license server daemon**!
-> 
-> Fill out your license server address in the **license dialog** instead of an environment variable. This is needed
-> because of a bug in the FlexLM library. We are working to fix this.
 
 Read the [release notes and update instructions](/releasenotes/sigasi-3.00.html#how-to-update)
 
