@@ -478,3 +478,8 @@ Sigasi Studio supports VHDL-2008 features, except:
 * New generics on packages: type generics (to be released in Sigasi Studio 3.1)
 * New generics on packages: subprogram generics (not supported)
 * New generics on subprograms (not supported)
+
+## "Show In -> System Explorer" does not work on Red Hat Linux 6
+
+On preference page **General > Workspace** you can configure the command that is used to open files with the System Explorer. The default Linux command does not work on older linux systems. 
+On RedHat 6 linux, you can use the nautilus command: `nautilus "${selected_resource_parent_loc}"` ([More info](http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-9.htm)).
