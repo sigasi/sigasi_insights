@@ -105,7 +105,7 @@ Currently the following external compilers are supported:
 | Xilinx ISE            | true                  | true             | false                        | false                                |
 | Xilinx Vivado         | true                  | false            | false                        | false                                |
 | Cadence Incisive      | true                  | false            | false                        | false                                |
-| OneSpin               | true                  | false            | false                        | false                                |
+| [OneSpin]             | true                  | false            | false                        | false                                |
 
 ### Save-time compilation
 
