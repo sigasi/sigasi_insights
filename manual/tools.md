@@ -32,8 +32,7 @@ allow you to call any program or script from within the Sigasi GUI. You
 have to write and maintain the scripts yourself, but you have complete
 flexibility as to what is in the scripts.
 
-External Compilers
-==================
+## External Compilers
 
 If you have a simulator or lint tool installed, you can use this for two
 purposes:
@@ -47,8 +46,8 @@ purposes:
 Learn about [which external compilers are supported](#list-of-toolchains)
 and how to [/manual/tools#Configure external compiler].
 
-Launch simulator
-================
+### Launch simulator
+
 [vhdl_only]
 
 If an external compiler is enabled, you can also start a simulation from
@@ -60,8 +59,7 @@ simulation. Sigasi opens a new console for each simulation launch. You
 can terminate a simulation by clicking the **Stop** icon
 ![](icons/stop.png) .
 
-Configure external compiler
-===========================
+### Configure external compiler
 
 You can configure the external compiler settings by clicking **Window \>
 Preferences \> Sigasi \> Toolchains**. There is a sub-page for each
@@ -81,8 +79,7 @@ which allow you to more easily share settings in a team.
 
 ![](images/toolchains-settings-rivierapro.png)
 
-List of toolchains
-==================
+### List of toolchains
 
 By “toolchains”, we mean any tool or set of tools that processes VHDL or
 Verilog code, and that is supported by Sigasi. At this time, external
@@ -108,9 +105,9 @@ Currently the following external compilers are supported:
 | Xilinx ISE            | true                  | true             | false                        | false                                |
 | Xilinx Vivado         | true                  | false            | false                        | false                                |
 | Cadence Incisive      | true                  | false            | false                        | false                                |
+| OneSpin               | true                  | false            | false                        | false                                |
 
-Save-time compilation
-=====================
+### Save-time compilation
 
 Sigasi can use an external VHDL or Verilog compiler for additional code validation. At this time, Sigasi supports:
 
@@ -152,8 +149,7 @@ integration.
 | Data type mismatch | no        | no        | yes               |
 | Multiple drivers   | no        | no        | yes               |
 
-Libraries
-----------
+### Libraries
 
 Libraries are fully supported. But note that Sigasi does not send common
 libraries to the external compiler for compilation. These libraries are
@@ -164,8 +160,7 @@ If your project contains a `modelsim.ini` file , Sigasi will add this
 file to the `vcom` command with `-modelsimini`. This allows you to
 configure custom settings for Mentor’s `vcom`.
 
-External Tools Configuration
-============================
+## External Tools Configuration
 
 Select **Run \> External tools \> External Tools Configurations** to get
 started, or use the ![](icons/externaltool.png) icon.
@@ -199,8 +194,7 @@ last configuration by simply clicking
 ![](icons/externaltool.png).
 
 
-Creating a Builder
--------------------
+### Creating a Builder
 
 An external tool configuration as described in the previous section
 makes it easy to run an external tool, but you still have to do so
@@ -255,8 +249,7 @@ location will automatically be opened in the Editor view.
 You can add as many extra builders as you want. This can be useful for
 additional linting tools or code generators.
 
-Altera Quartus II integration
-=============================
+## Altera Quartus II integration
 
 If you are using Altera Quartus II 12.1 , you can use Sigasi Studio as
 preferred HDL editor.
@@ -271,14 +264,12 @@ changes are automatically applied in Sigasi Pro.
 *Note:\_ If you want to set up a project independent of Altera Quartus
 II, please read the documentation on [/manual/projectsetup].
 
-Setting the preferred editor
-----------------------------
+### Setting the preferred editor
 
 To open a Quartus Project in Sigasi, you first have to configure Sigasi
 Pro as preferred editor in [/manual/opening#Altera Quartus II].
 
-Open a Quartus II Project in Sigasi
------------------------------------
+### Open a Quartus II Project in Sigasi
 
 After you have configured Sigasi Studio to be the preferred editor in
 Quartus II, you can open files by double clicking on them in Quartus II.
@@ -296,16 +287,14 @@ If your Quartus II Project File (**.QPF file**) contains a reference to a
 file that does not exist, Sigasi will show an icon for that file with
 the *broken link* icon ![](icons/brokenlink.png) .
 
-Quartus II Preferences
-----------------------
+### Quartus II Preferences
 
 The first time you import a Quartus II project, Sigasi will ask for the
 Quartus II installation location. Sigasi needs this path to find the
 Quartus II libraries. You can change the Quartus II installation
 location by selecting**Window \> Preferences \> Sigasi \> Toolchains**.
 
-Add files to your Quartus II project in Sigasi
------------------------------------------------
+### Add files to your Quartus II project in Sigasi
 
 To add a file to your Quartus II project, you can use the default**New
 VHDL file\* wizard of Sigasi (**File \> New \> VHDL File**).
@@ -316,40 +305,35 @@ Note that Quartus II does not automatically update its UI after you add
 files to your project. In order to update the files list, you should run
 a workflow action in Quartus II, like starting a compilation.
 
-Xilinx integration
-==================
+## Xilinx integration
 
-Setting the preferred editor
-----------------------------
+### Setting the preferred editor
 
 To open the Sigasi editor from Xilinx, you first have to configure Sigasi as preferred editor in [/manual/opening#Xilinx Vivado] or [/manual/opening#Xilinx ISE].
 
-Importing Xilinx Projects in Sigasi
------------------------------------
+### Importing Xilinx Projects in Sigasi
 
-### Vivado
+#### Vivado
 
 The process of importing a Xilinx Vivado project is explained in [/tech/generating-sigasi-project-vivado-project]
 
-### ISE
+#### ISE
 
 The process of importing a Xilinx ISE project is explained in [/tech/importing-xilinx-ise-project-sigasi]
 
-Xininx Preferences
-------------------
+### Xilinx Preferences
 
-### Vivado
+#### Vivado
 
 You can change the Xilinx Vivado installation location by selecting **Window > Preferences > Sigasi > Toolchains > Xilinx Vivado**.
 Sigasi needs this path to find the Xilinx Vivado libraries. 
 
-### ISE
+#### ISE
 
 You can change the Xilinx ISE installation location by selecting **Window > Preferences > Sigasi > Toolchains > Xilinx ISE**.
 Sigasi needs this path to find the Xilinx Vivado libraries and to run the ISim compiler and simulator.
 
-Export
-======
+## Export
 
 You can export a list of all VHDL files in your project, sorted in the correct compilation order.
 You can use your own simple scripts to manipulate such list and run any EDA tool, including simulators, synthesis and linter tools.
