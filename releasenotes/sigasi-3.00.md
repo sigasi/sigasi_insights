@@ -137,3 +137,11 @@ Because the FlexNet license framework was updated in Sigasi Studio, the Flexnet 
 
 Users with a **node-locked license** do not have to perform extra actions. 
  
+## Sigasi 3.0.x point releases
+
+* Sigasi 3.0.1: Use current toplevel in hierarchy view as default for CSV hierarchy export
+* Sigasi 3.0.2: Fixed Talback in simulation plugin
+* Sigasi 3.0.3: Re-enabled 'toggle Verilog markers' action
+* Sigasi 3.0.4: Reverted to FlexNet 11.9 and fixed Licensing issues with Sigasi Pro and Premium floating licenses
+* Sigasi 3.0.5: Fixed Block Diagram View rendering on Red Hat Linux 6.
+  
