@@ -9,9 +9,14 @@ comments: true
 
 > Notepad++ highlights all textual occurrence of the currently selected identifier. Can Sigasi also do this too?
 
-If you use the search dialog (**Search > Search...**), Sigasi will mark all text occurrences. Clearing the search in Search View, removes the annotations.
+Sigasi has [*occurrence highlighting*](http://insights.sigasi.com/manual/editor.html#occurrence-highlighting) enabled by default. Occurrence highlighting highlights all identifiers in your editor that refer to the same declaration as the currently selected identifier. This makes it really convenient to see where the current identifier is used.
 
-Alternatively, to have a behavior more similar to notepad++, you can install the [Glance Search plugin](http://ystrot.github.io/glance/)
+Occurrence highlighting in VHDL and Verilog files is based on the semantics of the language, it is **not** based on the identifier's text value.
+If you really want to a textual search Sigasi offers multiple options: **Edit > Find/Replace...** (**Ctrl+F**) opens a search window for the current editor. **Ctrl+J** starts an _incremental find_. **Search > Search...** (**Ctrl+H**) allows you to search for text in the entire project or workspace. When you run such a search, the search results will be shown in the **Search View**. All text occurrences will also be marked in the editor. Clearing the **Search View** removes the occurrence markers in the editor.
+Note that this works for all text files/editors in Sigasi/Eclipse.
+
+
+But if you are really used to the Notepad++ behaviour, you might also consider to install the [Glance Search plugin](http://ystrot.github.io/glance/). This plugins provides _incremental text search_, with highlighting.
 
 ## Install Glance plugin
 
