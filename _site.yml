@@ -6,7 +6,7 @@ bootswatch: null
 navbar_inverse: false 
 bootstrap: 3.3.4
 cname: insights.sigasi.com
-mainsite: www.sigasi.com
+main_url: http://www.sigasi.com
 menuitems:
   - title: Home
     url: http://www.sigasi.com
