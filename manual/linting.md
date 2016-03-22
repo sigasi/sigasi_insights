@@ -330,6 +330,14 @@ omitted.
 **Example:** to enforce a style where all variables have a `_v` suffix,
 you whould specify `.*_v` pattern in the **Variable name** field.
 
+
+### Vector width in assignments and port maps 
+
+Sigasi checks the vector size in assignments (Since [/releasenotes/sigasi-2.28]) and port maps (Since Sigasi 3.1). This check works at type-time and takes the (symbolic) value of generis into account.
+ 
+![](images/linting_vector_width.png)
+
+
 ## Project specific Linting settings
 
 The default way to configure the severity of the Sigasi linting checks is to set their severity in the **Errors/Warnings** preference page.
