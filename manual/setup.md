@@ -58,7 +58,7 @@ executing this startup file.
 * If you don't have Eclipse installed yet, the C/C++ flavor would be good place to start. Just** download** ([Windows 64 bit][latest-eclipse-cpp-windows64]/[Linux 64 bit][latest-eclipse-cpp-linux64]/[Other versions][latest-eclipse-cpp]), **unzip** and **start**.
 * We recommend you also increase the heap size for Eclipse ([/faq#how-do-i-increase-the-heap-size-for-eclipse]).
 
-_Note that we do **not** support Eclipse 3 any more._ ([System Requirements](/faq.html#what-are-the-system-requirements))
+_Note that we do **not** support Eclipse 3 any more._ ([System Requirements][/faq#what-are-the-system-requirements])
 
 [latest-eclipse-cpp-windows64]: http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/1/eclipse-cpp-mars-1-win32-x86_64.zip
 [latest-eclipse-cpp-linux64]: http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/1/eclipse-cpp-mars-1-linux-gtk-x86_64.tar.gz

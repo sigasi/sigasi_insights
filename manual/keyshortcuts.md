@@ -38,7 +38,7 @@ editor on any file in the workspace.
    Switch between regular and block selection mode.
 11. Structured Select (**Shift+Alt+Up/Down/Left/Right**)  
   Select VHDL or Verilog code, based on its *syntactic structure*. ([/manual/editor#Structured selection])  
-12. Quick Access (**Ctrl+3**, <mark>This is the shortcut to use, when you forgot the shortcut you actually need.</mark>)  
+12. <a name="quick-access"></a>Quick Access (**Ctrl+3**, <mark>This is the shortcut to use, when you forgot the shortcut you actually need.</mark>)  
   With Quick Access you can quickly find open editors, available perspectives, views, preferences, wizards, commands, etc. Simply start typing the name of the item you wish to invoke.
 
 Keyboard shortcut reference

@@ -11,6 +11,13 @@ We are using markdown
 * [MarkDown tutorial](http://markdowntutorial.com/)
 * [MarkDown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
+### links
+
+* external link : `[text](http://www.example.com)`
+* internal link : `[/manual/demo]`
+* internal link with different text : `[text][/manual/setup]
+* link with link text  : `<http://www.sigasi.com>`
+
 ### Filenames
 
 * Use dashes as separator. E.g.: **`test-me.md`** and **not** ~~`test_me.md`~~
