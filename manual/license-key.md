@@ -75,7 +75,7 @@ export SIGASI_LM_LICENSE_FILE=27000@flexnet.sigasi.com
 	* [Linux 32 bit](http://download.sigasi.com/flexnet/sigasi-flexnet-linux32.zip)
 * Windows (Windows 7 or newer):
 	* [Windows 64 bit](http://download.sigasi.com/flexnet/sigasi-flexnet-win64.zip)
-	* [Windows 32 bit](http://download.sigasi.com/flexnet/sigasi-flexnet-win32.zip) (works on Windows Server 2003 too)
+	* [Windows 32 bit](http://download.sigasi.com/flexnet/sigasi-flexnet-win32.zip)
 * Solaris (on SPARC):
 	* [Solaris 64 bit](http://download.sigasi.com/flexnet/sigasi-flexnet-solaris64.zip)
 
