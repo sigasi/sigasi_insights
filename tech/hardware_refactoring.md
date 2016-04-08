@@ -20,8 +20,3 @@ Hardware refactoring is a natural extension of software code refactoring, a well
 * High interactivity and fast feedback
 * Smooth learning curve
 
-## Top 3 VHDL Refactorings
-
-* Rename: See [/screencasts/rename_refactoring] in action.
-* Add Port: See [/screencasts/adding_ports] in action.
-* Encapsulate statements.
