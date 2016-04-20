@@ -23,7 +23,7 @@ In this post, I'll start with the simplest way of organizing: not organizing at 
 
 ## Setting it up
 
-There is no set up required. You just open the VHDL file you want to edit. Either click **File > Open File...** or drag a VHDL file from your file browser to the edit area. Here is a short screencast on how to work with external VHDL files: [/screencasts/edit_vhdl_without_project].
+There is no set up required. You just open the VHDL file you want to edit. Either click **File > Open File...** or drag a VHDL file from your file browser to the edit area.
 
 ## Pros and Cons
 
