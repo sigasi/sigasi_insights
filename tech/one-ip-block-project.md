@@ -19,7 +19,6 @@ reminder:
 3. Aggregation of reusable projects (described in this article)
 
 What is a reusable project?
-comments: true
 ---------------------------
 
 If you have a set of VHDL files, which may include packages, entities
@@ -31,7 +30,6 @@ working on large projects, such as a System on Chip (SoC) design, you
 are using IP cores.
 
 Setting it up: STD and IEEE
-comments: true
 ---------------------------
 
 *You can turn off the automatic builder while you are setting up your
@@ -52,7 +50,6 @@ folders from that project. Now you need to make IEEE depend on STD:
 project reference for IEEE.
 
 Adding your own libraries
-comments: true
 -------------------------
 
 Now that you have the first two libraries, it is time to add your own
@@ -88,7 +85,6 @@ automatically***
 ![Setting up GRLIB as a multi-project](images/multi-project.png)
 
 Pros and Cons
-comments: true
 -------------
 
 This is a robust way of organizing large projects. Setting projects up
@@ -97,7 +93,6 @@ separate reusable blocks in separate projects makes it easier to work in
 teams and to deal with third party IP.
 
 When to use
-comments: true
 -----------
 
 If you are working on a serious industrial design, with reusable
@@ -111,7 +106,6 @@ We especially recommended it for any mid or large scale project, or:
     IP blocks.
 
 Real life: GRLIB
-comments: true
 ----------------
 
 To show you an example of how to get started, I have created [a video

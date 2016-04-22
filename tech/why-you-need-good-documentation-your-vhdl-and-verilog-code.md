@@ -34,7 +34,6 @@ Technical documentation is characterised by its systematic and
 structured framework.
 
 Introduction
-comments: true
 ------------
 
 Code documentation is an important aspect of both software and hardware
@@ -62,7 +61,6 @@ in the software
 field](http://en.wikipedia.org/wiki/Software_documentation#Technical_documentation).
 
 Benefits of documentation for software and hardware code
-comments: true
 --------------------------------------------------------
 
 By definition a *complex* hardware design is [difficult to
@@ -145,7 +143,6 @@ better understanding of the product and prevent customer errors, making
 business processes more reliable.
 
 Coming up
-comments: true
 ---------
 
 Next week we'll discuss: [/tech/how-much-time-spent-writing-documentation-versus-developing-rtl-code]

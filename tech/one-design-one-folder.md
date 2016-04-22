@@ -46,7 +46,6 @@ Let's assume your file list looks something like this. You have a bunch of files
 ```
 
 Setting it up
-comments: true
 -------------
 
 First, we will **create a Sigasi project** that lives in the directory
@@ -80,7 +79,6 @@ project explorer and select **Library Mapping &gt; New Library ...**.
 Now give the correct library name, in this case: `altera_mf`.
 
 Building your project
-comments: true
 ---------------------
 
 Make sure your project is set to build automatically: **Project &gt; Build Automatically**.
@@ -92,7 +90,6 @@ it a legacy junk file? Is there a bug in your VHDL code? Did you forget
 to add a library?
 
 Extra tips
-comments: true
 ----------
 
 Sigasi creates a few hidden files in your project directory. If you use
@@ -103,7 +100,6 @@ a revision control system, we recommend you check in these files:
 -   `.settings` (This directory is only created when you have configured extra options.)
 
 Pros and Cons
-comments: true
 -------------
 
 This is a relatively easy way of organizing your project. There is some
@@ -112,7 +108,6 @@ minutes. If your files are not neatly organized in a single folder, or
 if you have a bunch of junk files in your folder,
 
 When to use
-comments: true
 -----------
 
 If you are just learning to use Sigasi, or if you are studying VHDL, we
