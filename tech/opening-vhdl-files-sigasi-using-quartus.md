@@ -11,10 +11,7 @@ tags:
 comments: true
 ---
 
-This page deals with step three of using the Quartus integration plugin for Sigasi. We assume you've gone through steps one and two:
-
-1. Installing the Quartus integration plugin in Sigasi via [install-sigasi-beta-features] 
-2. Set up Sigasi as default editor in [/manual/opening#altera-quartus-ii]
+This page deals with step three of using the Quartus integration plugin for Sigasi. We assume have already set up Sigasi as default editor in [/manual/opening#altera-quartus-ii].
 
 ## How to open an HDL file in Quartus
 
