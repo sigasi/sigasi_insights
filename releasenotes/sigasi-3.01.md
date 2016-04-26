@@ -6,15 +6,25 @@ date: 2016-04-28
 comments: true
 ---
 
-The Sigasi Studio 3.1 ...
+The Sigasi Studio 3.1 brings OnseSpin integration, Verilog improvements and more.
 
-If you have not yet updated your Flexnet license **daemon** after the Sigasi 3 update, you need to do this before the Sigasi 3.1 update. You can find the download details in "[/manual/license-key#License server setup]".
+If you have not yet updated your **Flexnet license daemon** after the Sigasi Studio 3 update, you need to do this before you update to Sigasi Studio 3.1. You can find the download details in "[/manual/license-key#License server setup]".
 
-## Onespin integration
+## OneSpin integration
+
+The Sigasi/OneSpin integration makes is easy to run basic formal verification checks on your Sigasi projects. Without extra configuration, you can see if your code is ready a formal analysis with OneSpin.
+
+If the (VHDL or Verilog) code still has problems, these problems will appear in the editor as problem markers. This is similar to the existing [Riviera Pro and ModelSim integration][/manual/tools].
+
+To enable OneSpin, make sure the `$ONESPINROOT` environment variable is set. Next select **OneSpin** in the **Sigasi > Toolchains** Preference page. \[[Full documentation][/manual/onespin]\].
 
 ![Onespin Save-Time Integration](3.01/onespin_console.png "OneSpin Save-Time Integration")
 
+If the OneSpin toolchain is enabled and if you have set a _top level_ (VHDL only), you can run the **OneSpin Consistency Checks** on your hierarchy. 
+
 ![Run Onespin Consistency Checks](3.01/onespin_consistency_checks.png "Run OneSpin Consistency Checks")
+
+Running the OneSpin Consistency Checks can be a long process. It can be canceled by clicking the stop button in the Progress View.
 
 ## Check vector width in port maps \[Sigasi Studio XL, VHDL\]
 
@@ -38,13 +48,13 @@ Just like the [_width check_ in instantiations][/manual/linting#vector-width-in-
 ## Other new and noteworthy improvements
 
 * Improved License error messages (e.g. _all licenses are in use_)
-* \[VHDL 2008] initial support for type generics in packages
+* Initial support for **type generics** in **packages** \[VHDL 2008]
 * The Xtext framework was updated to version 2.9.2
 
 ## Bug fixes
 
 - ticket 3333 : Unexpected _unwritten_ warning when alias for procedure is used
-- ticket 3475 : Skip encrypted VHDL code (``protect begin_protected` -> ``protect end_protected`)
+- ticket 3475 : Skip encrypted VHDL code (```protect begin_protected`` → ```protect end_protected``)
 ![Ignore encrypted VHDL](3.01/encrypted_vhdl.png "Ignore encrypted VHDL")
 - ticket 3535 : Unexpected dead code warning
 - ticket 3543 : Unreported errors in vector width check 
