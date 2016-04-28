@@ -19,7 +19,6 @@ handled by specialized tools. So Emacs uses a simulator (like ModelSim)
 to check the syntax of VHDL code.
 
 Batch compilation
-comments: true
 -----------------
 
 Let’s assume you have installed ModelSim and configured Emacs
@@ -37,7 +36,6 @@ like this:
     -   Fix the error
 
 Type time compilation
-comments: true
 ---------------------
 
 Modern development environment, including Sigasi HDT 2.0 have type time
@@ -55,7 +53,6 @@ performed, much like Emacs does it, only when the user requests them.
 ![Type-time error checking in Sigasi HDT 2.0](images/type_time_error.png)
 
 Feedback loop and word processors
-comments: true
 ---------------------------------
 
 The difference between the ways of working lies in the shorter feedback

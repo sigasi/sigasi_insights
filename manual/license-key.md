@@ -68,7 +68,7 @@ export SIGASI_LM_LICENSE_FILE=27000@flexnet.sigasi.com
 
 ## License server setup
 
-### Download the FlexNet daemons
+### Download the FlexNet daemons {: #download-flexnet-daemons}
 
 * Linux:
 	* [Linux 64 bit](http://download.sigasi.com/flexnet/sigasi-flexnet-linux64.zip)
@@ -177,7 +177,14 @@ INCREMENT com.sigasi.hdt sigasi 2.0 18-nov-2012 uncounted \
 If your floating license server does not function properly, try the following steps:
 
 * Start the FlexLM daemon with the `-z` option to see what is going wrong
-* Make sure the server name in the license key file is correct
+* You can check that the FlexNet daemon is running as expected by following these steps:
+    * [Download][#download-flexnet-daemons] the daemon zip file on the client machine
+    * Run
+    ```bash
+    lmutil[.exe] lmdiag -c "<port>@<server>" -n
+    ```
+    * If the server is running correctly, you should see a description of the valid FlexNet features served by you license server. 
+* Make sure the server name in the license key file is correct.
 * **Firewall** problems:
 	* make sure that the port for the Sigasi FlexLM license daemon is open
 	* you can force the port for the Sigasi license daemon by adding USE_SERVER and DAEMON sigasi port=<port number>to your license key
@@ -189,7 +196,7 @@ If your floating license server does not function properly, try the following st
 * You can not have spaces in the daemon path.
 * Some users reported that specifying an arbitrary absolute path for the Sigasi daemon on Windows (e.g. `DAEMON sigasi C:\\sigasi.exe port=27021`) does not work. It only works if the sigasi daemon is in the `C:\Sigasi` folder.
   Other users have reported that you are *not* allowed to have the directory name being the same as the daemon name. For example: `c:\flexlm\sigasi\sigasi.exe` is invalid, but `c:\flexlm\vhdl_editor\sigasi.exe` works fine.
-* Make sure the environment variable is correct: SIGASI_LM_LICENSE_FILE=<port number>@<servername>
+* Make sure the environment variable is correct: `SIGASI_LM_LICENSE_FILE=<port number>@<servername>`
 * Verify that your server meets the [/faq#what-are-the-system-requirements]. Contact us for options if it does not.
 * You can easily check the status of your license via the License Key preference page : **Preferences > Sigasi > License Key**. At the bottom of this preference page you can see the type and expiration date of your license.
 * Sigasi Studio pre-emptively tries to check out certain license features. As a result, you might see warning message like this in your server log. These messages can be safely ignored.
