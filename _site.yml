@@ -133,9 +133,4 @@ reflinks:
     logfile:
       title: "log file"
       url: /faq.html#where-can-i-find-the-log-file
-    jandecaluwe:
-      title: Jan Decaluwe
-      url: http://www.jandecaluwe.com/
-    urubu_site:
-      title: Urubu
-      url: http://urubu.jandecaluwe.com/
+
