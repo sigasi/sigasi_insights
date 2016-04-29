@@ -49,6 +49,8 @@ Just like the [_width check_ in instantiations][/manual/linting#vector-width-in-
 
 * Improved License error messages (e.g. _all licenses are in use_)
 * Initial support for **type generics** in **packages** \[VHDL 2008]
+* An autocomplete template for **Finite State Machines**  
+  ![Autcomplete template for Finite State Machines](3.01/fsm_autocomplete.png)
 * The Xtext framework was updated to version 2.9.2
 
 ## Bug fixes

@@ -324,7 +324,6 @@ Procedure:
 Sigasi Studio supports VHDL-2008 features, except:
 
 * Inline PSL (not supported, but PSL in comments is safely ignored)
-* New generics on packages: type generics (to be released in Sigasi Studio 3.1)
 * New generics on packages: subprogram generics (not supported)
 * New generics on subprograms (not supported)
 
@@ -492,4 +491,3 @@ We have not had good results with FreeHDL or with Green Mountain VHDL. It seems 
 You need a VHDL editor too
 
 After you choose your simulator, you need a VHDL editor too. Sigasi has a [free starter edition](http://www.sigasi.com/sigasi-starter-edition) of its popular VHDL development environment.
-
