@@ -36,7 +36,7 @@ Some good reasons for visualizing a complex design exist:
 * **Inspection**: People unfamiliar with a complex design can get a general idea of how the design works, in a short amount of time. 
 * **Navigation**: Designers who are debugging or working on improvements can get to the correct file faster. They don’t need to memorize file names or directory structure. Instead they can click in graphic representations to navigate to the correct code.
 * **Documentation**: Documentation is useful for understanding a design, and for reviewing its correctness. It is also required for various certification authorities.
-Graphics serve a purpose as a means of communication. They exist to get a point across. Often
+Graphics serve a purpose as a means of communication. They exist to get a point across. 
 
 ## Disadvantages of graphical design entry
 There are several disadvantages to graphical design entry for VLSI design. 
@@ -68,5 +68,4 @@ The graphical view provides graphics that are:
 ## Summary
 
 To conclude, graphic editing poses several problems, including scalability and manageability problems. These problems are addressed when design teams switch to language-based design entry with graphical views. 
-Sigasi is working on this vision and finding followers (and customers) among teams who formerly used graphical design entry tools.
-
+Sigasi is working on this vision, specifically in the specifically [Sigasi Studio XL Doc](http://www.sigasi.com/products) product. We are gaining followers (and customers) among teams who formerly used graphical design entry tools. 
