@@ -86,28 +86,28 @@ reflinks:
         url: "/todo_.html"
     creator:
         title: "Sigasi Studio Creator"
-        url: "editions.html#creator"
+        url: "/manual/editions.html#creator"
     creator_only:
         title: "[Needs Sigasi Studio Creator or XL license]"
-        url: "editions.html#creator"
+        url: "/manual/editions.html#creator"
     xl:
         title: "Sigasi Studio XL"
-        url: "editions.html#xl"
-    xl_only:
-        title: "[Only in Sigasi Studio XL]"
-        url: "editions.html#xl"
+        url: "/manual/editions.html#xl"
     xl_doc:
         title: "Sigasi Studio XL Doc"
-        url: "editions.html#xl_doc"
+        url: "/manual/editions.html#xl_doc"
+    xl_only:
+        title: "[Only in Sigasi Studio XL]"
+        url: "/manual/editions.html#xl"
     xl_doc_only:
         title: "[Only in Sigasi Studio XL Doc]"
-        url: "editions.html#xl_doc"
+        url: "/manual/editions.html#xl_doc"
     vhdl_only:
         title: "[Only for VHDL]"
-        url: "editions.html#vhdl"
+        url: "/manual/editions.html#vhdl"
     verilog_only:
         title: "[Only for Verilog]"
-        url: "editions.html#vhdl"
+        url: "/manual/editions.html#vhdl"
     eula:
         title: Sigasi Software Agreement
         url: "/eula.html"
