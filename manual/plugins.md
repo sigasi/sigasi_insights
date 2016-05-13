@@ -26,7 +26,10 @@ This plugin is shipped with the standalone version of Sigasi.
 
 ### Subversion (SVN) {#revision-svn}
 
-Recommended plugin: [Subversive](http://www.eclipse.org/subversive/)
+Recommended plugin: [Subversive](http://www.eclipse.org/subversive/) ([Installation instructions](https://www.eclipse.org/subversive/installation-instructions.php))
+
+As **update site**, you should use: <http://download.eclipse.org/releases/mars/>
+
 
 ### ClearCase {#revision-clearcase}
 
