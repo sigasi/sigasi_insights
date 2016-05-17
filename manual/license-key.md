@@ -185,6 +185,7 @@ If your floating license server does not function properly, try the following st
     ```
     * If the server is running correctly, you should see a description of the valid FlexNet features served by you license server. 
 * Make sure the server name in the license key file is correct.
+* Make sure both the Sigasi and Flexnet Daemon are the same version (i.e. from the same zip-file from the Sigasi download server).   
 * **Firewall** problems:
 	* make sure that the port for the Sigasi FlexLM license daemon is open
 	* you can force the port for the Sigasi license daemon by adding USE_SERVER and DAEMON sigasi port=<port number>to your license key
