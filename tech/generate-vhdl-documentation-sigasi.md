@@ -10,39 +10,46 @@ tags:
   - Sigasi
 comments: true
 ---
+In a previous post "[generate-vhdl-doxygen-documentation-sigasi]" I wrote about how you can use Doxygen in Sigasi to document your VHDL designs.
 
+Although I like the basic idea of Doxygen, it has some annoying disadvantages. Doxygen tries to make the documentation process easier by extracting information from your VHDL source files. The biggest advantage is that there is only a single source for both your design and your documentation. While this gives no guarantee for the design staying in sync with the documentation, it certainly makes it easier.
 
-Intro:
+The major disadvantages are:
 
-[tech/generate-vhdl-doxygen-documentation-sigasi]
+* You need to add **special comments** to your VHDL code before any useful documentation can be generated
+* Doxygen does not use a real **VHDL compiler**. So not all VHDL code is supported (e.g. VHDL 2008 features)
+* **Long feedback loop**: the documentation for the entire projects needs to generated before you inspect the result.
 
-doxygen: 
+## Sigasi documentation Generator
 
-basic idea: tries to make the documentation process easier. It extracts information from your VHDL source files to generate documentation. If you annotate your source files with special comments, this documentation can give a nice extra view on your code. A large advantage is that there is only a single source for both your design and your documentation. While this gives no guarantee for the design staying in sync with the documentation, it certainly makes it easier.
-
-disadvantages:
-need to add special comments before anything is documented
-
-Not using a real VHDL compiler. So not all VHDL code is supported (e.g. VHDL 2008 features)
-
-So we developed an alternative at Sigasi....
+For these reasons, we developed an alternative based on Sigasi's internal VHDL analyzer.
 
 Benefits:
 
-No special coding requirements: the plain comments in your code are extracted for the documentation. Comments next to a declaration or above a declaration form the documentation.
-Live preview: you can see what the documentation will look like while you type your code and comments.
-Fully hyperlinked PDF. If you save the documentation, you get a fully hyperlinked PDF.
-All included. All documentation processing is done in Sigasi/Eclipse with no external tool dependencies.
+* **No special coding requirements**: the plain comments in your code are extracted for the documentation, no need for special annotations. Sigasi uses the same code/comment association as the hover provider ([/manual/editor#Comment Association]). So to document a `port`, you append a comment to a port declaration. To document an `architecture`, you put the comment just on top of the architecture.
+* **All included**. All documentation processing is done in Sigasi/Eclipse. So you do not need install extra tools.
+* **Fully hyperlinked PDF**. If you export the documentation, you get a fully hyperlinked PDF.
+* **Live preview**: you can see what the documentation will look like while you type your code and comments.
+
+![](images/sigasi-docgen-preview.png)
 
 
 Example:
+[Example project](resources/DocumentationExample.zip)
+[Example output](resources/documentation.pdf)
 
+## How does it work?
 
-How does it work?
+Sigasi creates a pdf with your project's documentation in multiple steps:
 
-More info about DocBook
+1. Extracts all relevant information (content, comments,...) into an intermediate model
+2. Generate all diagrams
+3. Use templates to convert the result of steps 1. and 2. into a DocBook source file. ([DocBook](https://en.wikipedia.org/wiki/DocBook) is a standard for writing technical documentation.)
+4. Convert the DocBook file to a PDF.
+ 
+![](images/sigasi-docgen.png)
 
-TODO:
+## Future work
 
 * Make templates configurable
 * Add Markup support (e.g. paragraphs, bold,...)
@@ -50,6 +57,6 @@ TODO:
 * Add option to document hierarchy instead of project
 * Add state machine diagrams to the documentation
 
-Conclusion
+## Conclusion
 
 go try this out
