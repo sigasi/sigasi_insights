@@ -84,6 +84,9 @@ reflinks:
     todo:
         title: "[Not Documented Yet]"
         url: "/todo_.html"
+    starter:
+        title: "Sigasi Studio Starter"
+        url: "/manual/editions.html#starter"
     creator:
         title: "Sigasi Studio Creator"
         url: "/manual/editions.html#creator"
