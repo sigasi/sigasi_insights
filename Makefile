@@ -20,6 +20,21 @@ build: NOCAPS
 	@( cd _build && find . -name "*html" | grep -v "./google" |grep -v '^.html' | sed -e "s/^./http:\/\/insights.sigasi.com/" > sitemap.txt )
 	@echo "gitdir: $(MAKEFILE_PATH)/.git/worktrees/_build" > _build/.git
 
+build_offline: build
+	rm -Rf _build_offline
+	cp -R _build _build_offline
+	# make relative links
+	sed -i -e 's|<a href="/|<a href="./|'         _build_offline/*.html
+	sed -i -e 's|<a href="/|<a href="./../|'      _build_offline/*/*.html
+	sed -i -e 's|<a href="/|<a href="./../../|'   _build_offline/*/*/*.html
+	# fix links to index files
+	sed -i -e 's|<a href="\.\(.*\)/"|<a href=".\1/index.html"|'   _build_offline/*.html
+	sed -i -e 's|<a href="\.\(.*\)/"|<a href=".\1/index.html"|'   _build_offline/*/*.html
+	sed -i -e 's|<a href="\.\(.*\)/"|<a href=".\1/index.html"|'   _build_offline/*/*/*.html
+	# remove SED backup files
+	find _build_offline -name '*.html-e'  -exec rm {} \;
+	tar czf _sigasi_insights_offline.tgz _build_offline
+	
 server.PID:
 	{ python -m urubu serve & echo $$! > $@; } 
 
