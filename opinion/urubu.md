@@ -13,7 +13,7 @@ articles and an opinionated blog, among other sections.
 
 We decided on using [Urubu](http://urubu.jandecaluwe.com/) as CMS system for the Insights website. Urubu was created by Sigasi co-founder 
 and VHDL guru [Jan Decaluwe](http://www.jandecaluwe.com/).
-Jan describes Urubu as "a micro CMS for static websites". We write all content in Markdown. The Urubu tool generates static HTML files and 
+Jan describes Urubu as _"a micro CMS for static websites"_. We write all content in Markdown. The Urubu tool generates static HTML files and 
 Github serves these static pages.
 
 There are tons of advantages for us, like easy content writing and reviewing, website staging, easy theming. Just as important are the advantages
@@ -22,6 +22,6 @@ for you, the Sigasi Studio user, as compared to other CMS systems.
   * First, Urubu allows [/tech/local_hosting].
   * The second advantage is that you can [add improvements][/todo_] to the documentation using the well known Github workflow of pull requests. 
 
-After a few months of experience with Urubu, we are very satisfied with this technology. We have creates some extre micro-websites, like the 
+After a few months of experience with Urubu, we are very satisfied with this technology. We have created some extra micro-websites, like the 
 website for the Sigasi [Marker Manager](http://www.markermanager.com/). If you want to get started with Urubu, you should look at 
 the [Urubu Quickstart](http://urubu-quickstart.jandecaluwe.com). You'll get started in no time. 

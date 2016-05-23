@@ -16,16 +16,15 @@ avoid system dependent, absolute paths in your project files.
 The default way to add a third party library (e.g. `modelsim_lib`) to
 your project is as follows:
 
-1.  Add files to project
-    -   **File &gt; New &gt; Folder**
-    -   **Advanced**
-    -   **Link to alternate location (Linked Folder)**
-    -   Enter location. In my case this is
-        `/home/heeckhau/altera/12.1/modelsim_ase/vhdl_src/modelsim_lib`
-
-2.  Map library
-    -   **right-click**
-    -   **Library Mapping &gt; Library modelsim\_lib**
+* Add files to project
+    * **File > New > Folder**
+    * **Advanced**
+    * **Link to alternate location (Linked Folder)**
+    * Enter location. In my case this is  
+      `/home/heeckhau/altera/15.0/modelsim_ase/vhdl_src/modelsim_lib`
+* Map library
+    * **right-click**
+    * **Library Mapping &gt; Library modelsim\_lib**
 
 ![](images/modelsimlib.png)
 

@@ -11,7 +11,7 @@ MAKEFILE_PATH=$(realpath $(@D))
 WORKTREE_PATH=$(MAKEFILE_PATH)/.git/worktrees/_build
 
 gh-pages-update:
-	@ls $(WORKTREE_PATH) || (rm -rf _build && git worktree prune && git worktree add _build gh-pages)
+	@ls $(WORKTREE_PATH) || (rm -rf _build && git worktree prune && git worktree -b gh-pages add _build origin/gh-pages)
 	cd _build && git pull origin gh-pages
 
 build: NOCAPS
