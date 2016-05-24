@@ -37,6 +37,6 @@ There are many benefits of extracting documentation from software code:
 
 In order to extract the documentation from software code it is recommended to use tools, because a large amount of duplication is normally involved when code and its documentation are written and maintained as separate entities. As code grows, so does the complexity of the related documentation and the effort needed to maintain both in sync. So, a proper source code documentation tool solves this problem.
 
-h2. Summary
+## Summary
 
 It cannot be overstated just how important documentation really is to writing good software. When we code a project, we are not thinking about the future. We are most likely thinking about the present and getting the program finished. In most likelihood, what we write will need some kind of updating, modifying, or fixing. It may be we and it may be some other person dealing with these issues in the future. The code we write today will probably look terribly confusing in the not too distant future. Technical Documentation will help greatly to alleviate this difficulty.

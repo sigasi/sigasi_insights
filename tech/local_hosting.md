@@ -8,7 +8,7 @@ tags:
 comments: true
 ---
 
-Some development teams are completely disconnected from the public internet, for security reasons. Engineers in these teams can still access the documentation on [Sigasi Insights](http://insights.sigasi.com), using one of the procedures below.
+Some development teams are completely disconnected from the public internet, for security reasons. Engineers in these teams can still access the documentation on [Sigasi Insights](/), using one of the procedures below.
 
 Some things will not work if you view this website offline:
 
