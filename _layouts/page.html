@@ -30,6 +30,12 @@
           {% endfor %}
         </span>
         {% endif %}
+        
+        {% if this.license %}
+        <span style="padding-left:50px">
+            Licensed under {{this.license | license}} 
+        </span>
+        {% endif %}
     </div>
     {% endblock %}
   </div>

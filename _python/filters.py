@@ -1,6 +1,14 @@
 import markdown
 import datetime
 
+def license(licenseName):
+    if licenseName == 'CC BY-ND 4.0':
+        link = "http://creativecommons.org/licenses/by-nd/4.0/"
+        return "the <a href='%s'>%s license</a>"%(link,licenseName)
+    if licenseName == 'Sigasi Insights':
+        return "the <a href='/LICENSE.html'>Sigasi Insights license</a>"
+    else:
+        raise "unknown license: " + licenseName
 def today(unusedArgumetn):
     return str(datetime.date.today())
 def dateformat(value, format="%Y-%m-%d"):
@@ -104,3 +112,4 @@ filters['sortpopular'] = sortpopular
 filters['split'] = split
 filters['wistia'] = wistia
 filters['today'] = today
+filters['license'] = license

@@ -86,6 +86,6 @@ NOCAPS:
 	@ ! find . -name '*.png'|grep -v _build/ | grep "[A-Z]"
 	@ ! find . -name '*.jpg'|grep -v _build/ | grep "[A-Z]"
 	@ ! find . -name '*.gif'|grep -v _build/ | grep "[A-Z]"
-	@ ! find . -name '*.md' |grep -v README.md| grep -v _build/ |grep -v _gh-pages | grep "[A-Z]"
+	@ ! find . -name '*.md' |grep -v README.md|grep -v LICENSE.md| grep -v _build/ |grep -v _gh-pages | grep "[A-Z]"
 
 .PHONY: help all build serve publish urubu
