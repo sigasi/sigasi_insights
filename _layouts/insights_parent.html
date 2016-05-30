@@ -52,7 +52,7 @@
                           <h4><span style="color: #262262;">First Start</span></h4>
                           <p>
                             {% for item in this.links1 %}
-                              <img class="alignnone size-full wp-image-11863" src="{{site.main_url}}/wp-content/uploads/2015/12/sigasi_chainicon.png" alt="sigasi_chainicon" width="13" height="12">
+                              <img class="alignnone size-full wp-image-11863" src="{{url_prefix}}/css/sigasi_chainicon.png" alt="sigasi_chainicon" width="13" height="12">
                               &nbsp;<a href="{{item.url}}" title="{{item.title}}"><span style="color: #262262;">{{item.title|truncate(40)}}</span></a>
                               <br/>
                             {% endfor %}

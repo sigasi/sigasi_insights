@@ -24,9 +24,21 @@ build_offline: build
 	rm -Rf _build_offline
 	cp -R _build _build_offline
 	# make relative links
-	sed -i -e 's|<a href="/|<a href="./|'         _build_offline/*.html
-	sed -i -e 's|<a href="/|<a href="./../|'      _build_offline/*/*.html
-	sed -i -e 's|<a href="/|<a href="./../../|'   _build_offline/*/*/*.html
+	sed -i -e 's|href="/|href="./|g'         _build_offline/*.html
+	sed -i -e 's|href="/|href="./../|g'      _build_offline/*/*.html
+	sed -i -e 's|href="/|href="./../../|g'   _build_offline/*/*/*.html
+	sed -i -e "s|href='/|href='./|g"         _build_offline/*.html
+	sed -i -e "s|href='/|href='./../|g"      _build_offline/*/*.html
+	sed -i -e "s|href='/|href='./../../|g"   _build_offline/*/*/*.html
+	sed -i -e 's|src="/|src="./|g'           _build_offline/*.html
+	sed -i -e 's|src="/|src="./../|g'        _build_offline/*/*.html
+	sed -i -e 's|src="/|src="./../../|g'     _build_offline/*/*/*.html
+	sed -i -e "s|src='/|src='./|g"           _build_offline/*.html
+	sed -i -e "s|src='/|src='./../|g"        _build_offline/*/*.html
+	sed -i -e "s|src='/|src='./../../|g"     _build_offline/*/*/*.html
+	sed -i -e "s|quot;/css|quot;./css|g"       _build_offline/*.html
+	sed -i -e "s|quot;/css|quot;./../css|g"    _build_offline/*/*.html
+	sed -i -e "s|quot;/css|quot;./../../css|g" _build_offline/*/*/*.html
 	# fix links to index files
 	sed -i -e 's|<a href="\.\(.*\)/"|<a href=".\1/index.html"|'   _build_offline/*.html
 	sed -i -e 's|<a href="\.\(.*\)/"|<a href=".\1/index.html"|'   _build_offline/*/*.html
@@ -34,7 +46,6 @@ build_offline: build
 	# remove SED backup files
 	find _build_offline -name '*.html-e'  -exec rm {} \;
 	# replace css (created with CSS remove and combine Chrome plugin)
-	cp css/combined.css _build_offline/css/site.css
 	tar czf _sigasi_insights_offline.tgz _build_offline
 	
 server.PID:
