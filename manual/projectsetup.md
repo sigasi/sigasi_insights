@@ -48,8 +48,8 @@ KDE, you should install Nautilus.
 
 # Creating a new, empty project
 
-To create a new project, select **File \> New \> Empty VHDL Project** or
-**File \> New \> Empty Verilog Project**. Then give your project a name.
+To create a new project, select **File \> New \> VHDL Project** or
+**File \> New \> Verilog Project**. Then give your project a name.
 
 By default, the **Use default location** checkbox is checked, which
 means that new projects will be located in the workspace folder.

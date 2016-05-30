@@ -53,7 +53,7 @@ Adding your own libraries
 -------------------------
 
 Now that you have the first two libraries, it is time to add your own
-library. Select **File &gt; New &gt; Empty VHDL Project**. Clear the
+library. Select **File &gt; New &gt; VHDL Project**. Clear the
 **Use default location** mark and select the location of your library.
 Choose the library name (we'll use `my_lib` for this example) as your
 project name and click **Finish**. Now, perform the following four

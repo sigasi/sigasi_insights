@@ -51,7 +51,7 @@ Setting it up
 First, we will **create a Sigasi project** that lives in the directory
 where you have your files.
 
-1.  **File &gt; Empty VHDL Project**
+1.  **File &gt; VHDL Project**
 2.  **Un**-tick **Use default location**
 3.  Browse to your folder: `c:\my_home\project_dir`.
 4.  Fill in a name for your project
