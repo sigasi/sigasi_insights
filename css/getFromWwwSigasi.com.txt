@@ -49,3 +49,10 @@ http://www.sigasi.com/wp-content/themes/cardinal/js/combine/imagesloaded.js
 http://www.sigasi.com/wp-content/themes/cardinal/js/combine/jquery.infinitescroll.min.js
 http://www.sigasi.com/wp-content/themes/cardinal/js/functions.js
 http://www.sigasi.com/wp-content/plugins/sitepress-multilingual-cms/res/js/sitepress.js
+http://www.sigasi.com/wp-content/themes/cardinal/js/html5shiv.js
+http://www.sigasi.com/wp-content/themes/cardinal/js/excanvas.compiled.js
+http://www.sigasi.com/wp-content/themes/cardinal/js/respond.js
+http://www.sigasi.com/wp-content/plugins/masterslider/public/assets/css/common/grab.cur
+http://www.sigasi.com/wp-content/plugins/masterslider/public/assets/css/common/grabbing.cur
+http://www.sigasi.com//wp-content/plugins/contact-form-7/images/ajax-loader.gif
+
