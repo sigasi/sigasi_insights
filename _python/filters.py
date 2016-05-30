@@ -1,5 +1,8 @@
 import markdown
+import datetime
 
+def today(unusedArgumetn):
+    return str(datetime.date.today())
 def dateformat(value, format="%Y-%m-%d"):
     return value.strftime(format).replace('-','&#8209;') #non-breaking hyphen
 
@@ -100,3 +103,4 @@ filters['recurse'] = recurse
 filters['sortpopular'] = sortpopular
 filters['split'] = split
 filters['wistia'] = wistia
+filters['today'] = today
