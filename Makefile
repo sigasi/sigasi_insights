@@ -9,6 +9,7 @@ all: build
 
 MAKEFILE_PATH=$(realpath $(@D))
 WORKTREE_PATH=$(MAKEFILE_PATH)/.git/worktrees/_build
+DATE=$(shell date "+%Y-%m-%d")
 
 gh-pages-update:
 	@ls $(WORKTREE_PATH) || (rm -rf _build && git worktree prune && git worktree -b gh-pages add _build origin/gh-pages)
@@ -52,7 +53,7 @@ build_offline: build
 	sed -i -e 's|<a href="\.\(.*\)/"|<a href=".\1/index.html"|'   _build_offline/*/*/*.html
 	# remove SED backup files
 	find _build_offline -name '*.html-e'  -exec rm {} \;
-	tar czf _sigasi_insights_offline.tgz _build_offline
+	tar -c -z -s /_build_offline/insights.sigasi.com-${DATE}/ -f insights.sigasi.com-${DATE}.tgz _build_offline
 	
 server.PID:
 	{ python -m urubu serve & echo $$! > $@; } 
