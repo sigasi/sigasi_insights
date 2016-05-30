@@ -42,6 +42,10 @@ build_offline: build
 	sed -i -e 's|"\\/css\\/|"css\\/|g'        _build_offline/*.html
 	sed -i -e 's|"\\/css\\/|"..\\/css\\/|g'     _build_offline/*/*.html
 	sed -i -e 's|"\\/css\\/|"..\\/..\\/css\\/|g'  _build_offline/*/*/*.html
+
+	sed -i -e 's|http\:\/\/insights.sigasi.com|.|g'        _build_offline/*.html
+	sed -i -e 's|http\:\/\/insights.sigasi.com|./..|g'     _build_offline/*/*.html
+	sed -i -e 's|http\:\/\/insights.sigasi.com|./../..|g'  _build_offline/*/*/*.html
 	# fix links to index files
 	sed -i -e 's|<a href="\.\(.*\)/"|<a href=".\1/index.html"|'   _build_offline/*.html
 	sed -i -e 's|<a href="\.\(.*\)/"|<a href=".\1/index.html"|'   _build_offline/*/*.html
