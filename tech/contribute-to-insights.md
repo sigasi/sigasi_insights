@@ -23,9 +23,9 @@ For bigger changes, it is better to build the website on your own machine first,
   * Select the _"Create a new branch for this commit and start a pull request" option_.
   * Click the **Commit Changes** button.
   ![](images/insights_github_patch.png)
-* Next add a message to your pull request and click 
-**Create pull request**
-  ![](images/insights_github_patch_1.png)
+* Next add a message to your pull request and click **Create pull request**  
+  ![](images/insights_github_patch_1.png)  
+  By sending a pull request, you give all rights of your change to Sigasi ([Copyright info](/LICENSE.html))
 
 <!--  ![](images/insights_github_patch_2.png) -->
 
@@ -44,7 +44,21 @@ If pip is not yet available on your system, follow the [pip installation instruc
 ### Clone the sources and create Pull Request
 
 * Clone the Insights repository, as explained in [#github]. 
-* Add your content (e.g. a guest blog in the `/opinion/` folder). ([Authoring information](https://github.com/sigasi/sigasi_insights/blob/master/README.markdown))
+* Add your content (e.g. a guest blog in the `/opinion/` folder). ([Authoring information](https://github.com/sigasi/sigasi_insights/blob/master/README.markdown))  
+  Your MarkDown file must have following header:  
+```
+---
+title: "Your Sigasi guest blog contribution"
+layout: page 
+pager: true
+author: Your Name
+date: Publishing date
+license: CC BY-ND 4.0
+comments: true
+---
+```  
+  If you omit the license field, you give all rights to Sigasi.
+
 * Generate the html sources:
   ```
   make build

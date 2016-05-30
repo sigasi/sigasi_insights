@@ -147,6 +147,12 @@ and `/opt/altera` for Altera.
 For many common third party libraries, you can set up the library using
 a [/manual/linting#Quickfix for third party libraries].
 
+## XilinxCoreLib
+
+XilinxCoreLib is a very big library with more than a thousand entities and architectures. Including all these design units, slows down Sigasi Studio. So by default, Sigasi Studio only adds the packages with the component declarations to your project, and _excludes_ the entities and architectures _from compilation_.
+
+You can easily add selected entities (and architectures) to your project by right clicking the corresponding file (`filename = entity name.vhd`) in the [Project Explorer][/manual/views#explorer], and selecting **Set Library > xilinxcorelib**.
+
 # Library errors from external compilers
 
 If you are using the [/manual/tools#External Compilers], the external compiler can also put error markers on library clauses. You can easily
