@@ -19,13 +19,13 @@ For bigger changes, it is better to build the website on your own machine first,
 * Browse to the file you want to edit and click the edit button
   ![](images/insights_github_edit.png)
 * At the bottom of the screen:
-  * Add a commit message
-  * Select the _"Create a new branch for this commit and start a pull request" option_.
-  * Click the **Commit Changes** button.
-  ![](images/insights_github_patch.png)
+    * Add a commit message
+    * Select the _"Create a new branch for this commit and start a pull request" option_.
+    * Click the **Commit Changes** button.
+      ![](images/insights_github_patch.png)
 * Next add a message to your pull request and click **Create pull request**  
   ![](images/insights_github_patch_1.png)  
-  By sending a pull request, you give all rights of your change to Sigasi ([Copyright info](/LICENSE.html))
+  By sending a pull request, you give all rights of your change to Sigasi ([Copyright info][/LICENSE])
 
 <!--  ![](images/insights_github_patch_2.png) -->
 
