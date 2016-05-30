@@ -45,8 +45,8 @@ If pip is not yet available on your system, follow the [pip installation instruc
 
 * Clone the Insights repository, as explained in [#github]. 
 * Add your content (e.g. a guest blog in the `/opinion/` folder). ([Authoring information](https://github.com/sigasi/sigasi_insights/blob/master/README.markdown))  
-  Your MarkDown file must have following header:
-  ```
+  Your MarkDown file must have following header:  
+```
 ---
 title: "Your Sigasi guest blog contribution"
 layout: page 
@@ -56,7 +56,7 @@ date: Publishing date
 license: CC BY-ND 4.0
 comments: true
 ---
-  ```  
+```  
   If you omit the license field, you give all rights to Sigasi.
 
 * Generate the html sources:
