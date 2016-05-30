@@ -20,7 +20,7 @@ There are tons of advantages for us, like easy content writing and reviewing, we
 for you, the Sigasi Studio user, as compared to other CMS systems. 
 
   * First, Urubu allows [/tech/local_hosting].
-  * The second advantage is that you can [add improvements][/todo_] to the documentation using the well known Github workflow of pull requests. 
+  * The second advantage is that you can [add improvements][/tech/contribute-to-insights] to the documentation using the well known Github workflow of pull requests. 
 
 After a few months of experience with Urubu, we are very satisfied with this technology. We have created some extra micro-websites, like the 
 website for the Sigasi [Marker Manager](http://www.markermanager.com/). If you want to get started with Urubu, you should look at 
