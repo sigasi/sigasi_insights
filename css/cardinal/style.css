@@ -5841,7 +5841,7 @@ a.contact-menu-link > i {
 }
 
 .ajax-search-wrap .ajax-loading {
-    background: transparent url('images/loader.gif') no-repeat center center;
+    background: transparent url('images/loader.gif') no-repeat center center;
     background-size: 75%;
     width: 18px;
     height: 18px;
@@ -6615,7 +6615,6 @@ body[class*="header-naked"] .inner-page-wrap {
     display: inline-block;
     position: relative;
     margin: 0 10px 10px 0;
-    background-image: url(images/crease.svg);
     background-size: 100% 100%;
     background-position: center center;
     -webkit-backface-visibility: hidden;
@@ -12349,7 +12348,6 @@ input[type="file"] {
 }
 
 .gallery-item .gallery-icon {
-    background: #222 url(images/view-image.png) no-repeat center center;
     width: 100%;
     height: auto;
 }
