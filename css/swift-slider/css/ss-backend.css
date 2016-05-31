@@ -1,0 +1,108 @@
+/*
+*
+*	Swift Slider Backend CSS
+*	------------------------------------------------
+*	Swift Slider
+* 	Copyright Swift Ideas 2015 - http://www.swiftideas.com
+*
+*/
+
+/* --------------------------------------------
+	HIDE SLUG BOX
+-------------------------------------------- */
+.post-type-swift-slider #edit-slug-box {
+    display: none;
+}
+
+/* --------------------------------------------
+	HIDE POST UPDATED VIEW PORT LINK
+-------------------------------------------- */
+.post-type-swift-slider #message.updated > p > a {
+    display: none;
+}
+
+/* --------------------------------------------
+	HIDE UNWANTED META BOXES
+-------------------------------------------- */
+
+.post-type-swift-slider #mymetabox_revslider_0 {
+    display: none;
+}
+
+/* --------------------------------------------
+	META BOX
+-------------------------------------------- */
+
+.ss-meta-tabs-wrap {
+    margin-top: 10px;
+}
+
+#ss-tabbed-meta-boxes {
+    position: relative;
+    z-index: 1;
+}
+
+#ss-tabbed-meta-boxes > div > .hndle, #ss-tabbed-meta-boxes > div > .handlediv {
+    display: none !important;
+}
+
+#ss-tabbed-meta-boxes .inside {
+    display: block !important;
+}
+
+#ss-tabbed-meta-boxes > div {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+#ss-meta-box-tabs {
+    margin: 15px 0 0 15px;
+    position: relative;
+    z-index: 2;
+}
+
+#ss-meta-box-tabs li {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: -1px;
+}
+
+#ss-meta-box-tabs li > a {
+    display: inline-block;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+    text-decoration: none;
+}
+
+#ss-meta-box-tabs li > a:hover {
+    color: #222;
+}
+
+#ss-meta-box-tabs li > a.active {
+    border-bottom-color: #fff;
+    box-shadow: none;
+}
+
+#ss_content .wp-media-buttons > a, #ss_add_button {
+    display: none;
+}
+
+#ss_content .wp-media-buttons > #ss_add_button {
+    display: block;
+}
+
+#ss_content #ss_caption_text_toolbargroup {
+    display: none;
+}
+
+#ss_caption_text_ifr {
+    min-height: 100px;
+}
+
+.ss-meta-tabs-wrap .rwmb-meta-box {
+    padding: 20px 10px;
+}
