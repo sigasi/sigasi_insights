@@ -83,7 +83,7 @@ publish: gh-pages-update build
 	cd _build && git add -A && git commit -m "Update documentation" && git push origin gh-pages
 
 NOCAPS:
-	@ ! find . -name '*.png'|grep -v _build/ | grep "[A-Z]"
+	@ ! find . -path ./css -prune -o -name '*.png' |grep -v _build/ | grep "[A-Z]"
 	@ ! find . -name '*.jpg'|grep -v _build/ | grep "[A-Z]"
 	@ ! find . -name '*.gif'|grep -v _build/ | grep "[A-Z]"
 	@ ! find . -name '*.md' |grep -v README.md|grep -v LICENSE.md| grep -v _build/ |grep -v _gh-pages | grep "[A-Z]"

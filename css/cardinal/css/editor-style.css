@@ -1,0 +1,16 @@
+p.impact-text {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 0;
+}
+
+p.impact-text-large {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 0;
+}
+
+p.aligncenter {
+    width: 100%;
+    text-align: center;
+}
