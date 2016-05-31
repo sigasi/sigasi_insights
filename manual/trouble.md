@@ -4,12 +4,12 @@ layout: page
 pager: true
 ---
 
-The user interface is unresponsive {#ts-unresponsive}
+The user interface is unresponsive {: #ts-unresponsive}
 ----------------------------------
 
 If the user interface of Sigasi Studio is unresponsive, you can interrupt the internal compilation process by pressing the **stop** button in the progress view. To activate the progress view, select **Window > Show View > Other... > General > Progress**, or click the tiny conveyor belt icon ![](icons/progressicon.png), on the right side of the status bar.
 
-The editor displays old contents of a file {#ts-refresh-editor}
+The editor displays old contents of a file {: #ts-refresh-editor}
 ------------------------------------------
 
 If you edit a file outside of Sigasi Studio with an external editor, Sigasi will normally notice the changes and ask if you want to load the changes. If
@@ -35,7 +35,7 @@ If you see a large number of errors, you either have very, very buggy code (not 
 3.  Check that all third party libraries are included.
 4.  Make sure that automatic build is enabled.
 
-Auto Build is not Enabled {#ts-autobuild}
+Auto Build is not Enabled {: #ts-autobuild}
 -------------------------
 
 Symptoms:
@@ -49,7 +49,7 @@ Cause: Project is not built automatically
 
 Resolution: Enable automatic project builds: **Project > Build Automatically**
 
-Project does not have VHDL support {#ts-vhdl-support}
+Project does not have VHDL support {: #ts-vhdl-support}
 ----------------------------------
 
 Symptoms:
@@ -63,7 +63,7 @@ Cause: The project does not have VHDL support enabled
 
 Resolution: Enable VHDL support: **right-click the project > Configure > Add VHDL support**
 
-Project does not have a Library Mapping Information {#ts-missing-library-mapping-informatino}
+Project does not have a Library Mapping Information {: #ts-missing-library-mapping-informatino}
 ---------------------------------------------------
 
 Symptoms:
@@ -77,7 +77,7 @@ Cause: The project does not have a (valid) VHDL library mapping information file
 
 Resolution: Reset the library mapping: **right-click the project > Library Mapping > Reset Library Mapping**
 
-Project does not have Common Libraries {#ts-commonlib}
+Project does not have Common Libraries {: #ts-commonlib}
 --------------------------------------
 
 Symptoms:
@@ -91,7 +91,7 @@ Cause: Common libraries are not configured correctly.
 
 Resolution: Reset the common libraries: **right-click the project > Library Mapping > Reset Library Mapping**
 
-Sigasi Studio analyzes HDL files that I do not need {#ts-stale-files}
+Sigasi Studio analyzes HDL files that I do not need {: #ts-stale-files}
 -----------------------------------------
 
 By default, Sigasi assumes that all VHDL or Verilog files are part of the project. However, some projects may contain multiple files with older or alternative definitions of a VHDL object. We call these *stale* files, because they are no longer used. In such a case you will want Sigasi Studio to ignore certain files.
@@ -117,7 +117,7 @@ This sets the maximum heap size to 1000 MB (instead of the standard 1400MB).
 **Note:** Do not use `eclipsec.exe`, as this will ignore all of the settings configured in the eclipse.ini file.
 
 
-I want a clean restart {#ts-clean}
+I want a clean restart {: #ts-clean}
 ----------------------
 
 If you ever suspect that the state of your project is inconsistent in Sigasi, you can do one or all of the following things. Consider these

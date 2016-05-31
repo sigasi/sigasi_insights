@@ -18,7 +18,7 @@ configuration can be examined and modified using the GUI.
 We will also present some use case about how to set up libraries with
 Sigasi Studio to organize your projects.
 
-# Examining the library configuration {#libraries-examine}
+# Examining the library configuration {: #libraries-examine}
 
 You can examine the library configuration in the [/manual/views#libraries] 
 and in the [/manual/views#explorer] 
@@ -54,7 +54,7 @@ the entire contents of the `STD` folder will be mapped into the library
 performed. If this needed, any individual file can be mapped to a
 separate library.
 
-# Modifying the library configuration {#libraries-mapping}
+# Modifying the library configuration {: #libraries-mapping}
 
 The library mapping for project files can be modified in the Libraries
 and Project Explorer view.
@@ -95,7 +95,7 @@ not a part of the project and will not include that resource in a
 project build. This is typically useful when you have stale copies of
 HDL files or folders lying around that you want simply to be ignored.
 
-# Common libraries {#libraries-common}
+# Common libraries {: #libraries-common}
 
 In any newly created VHDL project, the `Common Libraries` folder
 contains the VHDL files of the `IEEE` and `STD` libraries. This folder
@@ -126,7 +126,7 @@ project dependencies, right click the project (the one that uses the
 shared library) and select **Properties**. Next click **Project
 References** and mark the library project as referenced project.
 
-# Using third party libraries {#libraries-third-party}
+# Using third party libraries {: #libraries-third-party}
 
 Many projects use third party libraries. These can be added to the
 project as any other set of VHDL files.

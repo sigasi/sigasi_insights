@@ -12,7 +12,7 @@ problems can be automatically resolved with **Quickfixes**. Both syntax
 checking and linting happen at type-time: new markers appear *as you are
 typing* your code.
 
-# Marker Icons {#linting-icons}
+# Marker Icons {: #linting-icons}
 
 -   ![](icons/info.png) marks an info message.
 -   ![](icons/warning_lightbulb.png) marks a warning that can be resolved automatically with a quickfix.
@@ -20,7 +20,7 @@ typing* your code.
 -   ![](icons/error_lightbulb.png) marks an error that can be resolved automatically with a quick fix.
 -   ![](icons/error.png) marks an error that cannot be resolved automatically.
 
-# Linting {#linting-linting}
+# Linting {: #linting-linting}
 
 VHDL code **Lint** is defined as code that is strictly correct according
 to the language definition, but still suspicious or problematic.
@@ -43,12 +43,12 @@ in the design. Sigasi’s VHDL linter checks for the following problems:
 -   Port, signal, variable, constant or generic declarations that are
     never read or written
 
-## No Linting for Common Libraries {#linting-common-libraries}
+## No Linting for Common Libraries {: #linting-common-libraries}
 
 Common Libraries are considered to be production ready libraries.
 Linting is skipped for all files in the Common Libraries folder.
 
-## Quickfixes {#linting-quickfix}
+## Quickfixes {: #linting-quickfix}
 
 Some of the VHDL lint problems can be automatically resolved with
 *quickfixes*. These problems have *markers* annotated with a lightbulb
@@ -68,7 +68,7 @@ quickfix.
 -   Add missing signals to sensitivity list
 -   Fix capitalization of identifier to correspond to its declaration
 
-## Configuring the Severity Level {#linting-severity-level}
+## Configuring the Severity Level {: #linting-severity-level}
 
 The Sigasi VHDL linter has reasonable defaults for the severity level of
 reported lint problems. However, the severity level of certain classes
@@ -78,7 +78,7 @@ Errors/Warnings**.
 
 ![Configuring the severity of Sigasi linting checks](images/problemseveritypreferencepage.png "Configuring the severity of Sigasi linting checks")
 
-## Creating Custom VHDL Linter Rules {#linting-custom-rules}
+## Creating Custom VHDL Linter Rules {: #linting-custom-rules}
 
 At this time, most linting rules are not user-configurable. We will be happy
 to work with you on implementing your own custom linting rules and
@@ -127,7 +127,7 @@ and contact us to discuss your requirements.
 This is the list of VHDL coding rules that can be checked automatically
 by Sigasi.
 
-### Dead Code lint {#dead-code}
+### Dead Code lint {: #dead-code}
 
 Dead code is code that is does have any effect in your simulation or
 synthesis. Examples of dead code are signals that are never used, or

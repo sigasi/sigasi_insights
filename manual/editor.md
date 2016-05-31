@@ -30,7 +30,7 @@ Semantic highlighting means that code gets colored according to their
 Code highlighting is fully configurable. **Color**, **background**,
 **style** and **font** can be customized. Learn more about configuring [/manual/config#configure-colors]
 
-## Project exploration and navigation {#gui-navigate}
+## Project exploration and navigation {: #gui-navigate}
 
 Sigasi offers powerful techniques to explore a file or project, and navigate through it. This section covers: hovering, Occurrence Highlighting, Open Declaration and Find References.
 
@@ -150,7 +150,7 @@ You can also enable/disable code folding and perform other actions by right-clic
 
 ### Full screen view
 
-### Block selection {#block-select}
+### Block selection {: #block-select}
 
 **Note:** In other tools, this feature may be known as *column editing*
 or *column select*.
@@ -176,7 +176,7 @@ Structured Select enables you to select VHDL or Verilog code, based on its *synt
 
 ### Show whitespace
 
-### Move and Duplicate lines {#move-lines}
+### Move and Duplicate lines {: #move-lines}
 
 You can easily *move* lines up and down by pressing: **Alt+Up** and
 **Alt+Down**.
@@ -192,7 +192,7 @@ See [keyshortcuts]
 
 See [plugins#VI-and-Emacs]
 
-### Remove Trailing Whitespace {#trailing-whitespace}
+### Remove Trailing Whitespace {: #trailing-whitespace}
 
 The action to remove trailing whitespace is hidden by default. You can access it by pressing **Ctrl+3**, type **RTW** and then select the correct action. Alternatively, you can bind this action to [/manual/keyshortcuts] of your preference.
 
@@ -283,7 +283,7 @@ The following stuttering keys are available:
 
 Stuttering can be disabled or enabled in **Window \> Preferences \> VHDL \> Enable Stuttering**.
 
-## Smart Indentation  {#smartindent-vhdl}
+## Smart Indentation  {: #smartindent-vhdl}
 
 When you press enter, Sigasi automatically adjusts the indentation of
 current and the new line. Depending on the content of the preceding
@@ -368,7 +368,7 @@ You can configure the Verilog version (Verilog or SystemVerilog) via **Window > 
 
 _Note that Sigasi Studio does not cover the entire SystemVerilog grammar yet. So if you are using _'unsupported'_ syntax, you will see lots of incorrect [syntax error markers](#type-time-syntax-error-reporting). You can disable these error markers by pressing **Ctrl-3** and typing `Toggle Verilog error markers`. Next close and re-open all open Verilog editors to force a refresh._
 
-## Smart Indentation {#smartindent-verilog}
+## Smart Indentation {: #smartindent-verilog}
 
 When you press enter, Sigasi automatically adjusts the indentation of
 current and the new line. Depending on the content of the preceding

@@ -21,7 +21,7 @@ You can open a View in several different ways:
 * By right clicking in the **editor** and selecting **Show in > ...**. 
   Some Views also support to open the current selection (e.g. the Block Diagram View). This selects the element in the view that corresponds to the current selection in the editor.
 
-# Project Explorer View {#explorer}
+# Project Explorer View {: #explorer}
 
 This view shows the directory structure of all files in all projects.
 You can use it to navigate to a particular file in your project and
@@ -51,7 +51,7 @@ editing simultaneously. The currently selected file is the active file.
 * [/manual/editor]
 
 
-# Outline view {#outline}
+# Outline view {: #outline}
 
 The Outline view displays the contents of the active file, in terms of
 the HDL objects that it contains.
@@ -70,7 +70,7 @@ If you enable the **Link with Editor** icon
 element in the outline view, the corresponding code will be selected in
 the editor.
 
-# Hierarchy view {#hierarchy}
+# Hierarchy view {: #hierarchy}
 [vhdl_only]
 
 The Hierarchy view shows the VHDL design hierarchy starting at a
@@ -99,7 +99,7 @@ The Hierarchy View also offers an action **Select required files**, which select
 
 ![](images/select_required_files_in_hierarchy.png)
 
-# Problems view {#problems}
+# Problems view {: #problems}
 
 The Problems view shows problems (errors and warnings) related to your
 code. These problems were reported either by the internal compiler or by
@@ -111,7 +111,7 @@ The content of this view can be customized via the **View Menu**
 *scope* (workspace, project, selection), *type*, maximum number of
 problems, …
 
-# Libraries view {#libraries}
+# Libraries view {: #libraries}
 
 [vhdl_only]
 
@@ -128,7 +128,7 @@ If you enable the **Link with Editor** button
 be linked to the Editor view. Now, active file in the editor view will
 always be selected in the Library view.
 
-# Tasks View {#tasks}
+# Tasks View {: #tasks}
 
 ![](images/tasks-view.png)
 
@@ -141,7 +141,7 @@ nice overview of all task markers in your workspace in the **Task View**
 You can configure extra tags in the Task Tag preference page:
 **Preferences \> Sigasi \> VHDL \> Task Tags**
 
-# Block Diagram View {#block}
+# Block Diagram View {: #block}
 
 [xl_only]
 
@@ -175,7 +175,7 @@ select the Block Diagram View during installation</a>.
 </div>
 
 
-# State Machine View {#fsm}
+# State Machine View {: #fsm}
 
 [xl_doc_only]
 
@@ -200,7 +200,7 @@ You can also export **all** *state machines of an entire project* at once: Click
 
 You can watch a screencast at [/screencasts/state_machine_viewer]
 
-# Dependencies View {#dependencies}
+# Dependencies View {: #dependencies}
 
 [xl_only]
 
@@ -211,7 +211,7 @@ This view is automatically updated each time you save your files.
 
 If you are working on a mixed language project, the Dependencies View will also show cross language dependencies.
 
-# Documentation View {#documentation}
+# Documentation View {: #documentation}
 
 The **Documentation view** gives you a live preview of the automatic
 documentation Sigasi can generate for your project.
@@ -234,7 +234,7 @@ All errors are logged to the console view.
 
 Users without a XL Doc License can also export a (watermarked) pdf.
 
-# Net Search View {#netsearch}
+# Net Search View {: #netsearch}
 
 [xl_only]
 

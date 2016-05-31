@@ -58,7 +58,7 @@ This sets the maximum heap size to 1400 MB. If you system has plenty of memory, 
 **Note**: If your `eclipse.ini` already contains these arguments, you should not append these parameters again, but instead modify the existing values. If `-vmargs` is there already, but `-Xmx1400m` is not; you should add `-Xmx1400m` after the existing `-vmargs`.
 **Note**: If you run the stand alone version of Sigasi Studio, this settings file is called `sigasi.ini` instead of `eclipse.ini`
 
-## How can I update Sigasi? {#update}
+## How can I update Sigasi? {: #update}
 
 See [/manual/setup#Software Updates].
 
@@ -71,7 +71,7 @@ In short: you are **not** locked in at all!
 ## How does Sigasi change my existing project?
 You do not have to change your directory structure, the names of your VHDL files or anything in your project folder. The only thing Sigasi HDT does, is add a few hidden files with project information.
 
-## What is the eclipse.ini file and where can I find it? {#eclipse-ini}
+## What is the eclipse.ini file and where can I find it? {: #eclipse-ini}
 
 The file `eclipse.ini` contains information that is passed to the Eclipse platform and to the Java Virtual Machine (JVM).
 

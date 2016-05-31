@@ -4,7 +4,7 @@ layout: page
 pager: true
 ---
 
-# Choosing your VHDL version {#configure-vhdl-version}
+# Choosing your VHDL version {: #configure-vhdl-version}
 
 Sigasi supports VHDL 1993, 2002 and 2008. You can select which VHDL version to use in: **Window > Preferences > Sigasi > VHDL > VHDL version**.
 
@@ -13,7 +13,7 @@ If you want to write VHDL 87 code, you should select the “1993” option. Howe
 Any new project that you create will have the common libraries (`STD` and `IEEE`) that correspond to your selected VHDL version. Your _existing project will **not** be modified_. If you want to update the common libraries for an existing project, right-click the project and select **Library Mapping > Reset Common Libraries**.
 
 
-# Colors and Fonts {#configure-colors}
+# Colors and Fonts {: #configure-colors}
 
 You can configure the code coloring by selecting **Window > Preferences > Sigasi > VHDL > Syntax Coloring**. For each class of semantic and syntactic elements, you can select the font, letter color, background color, style (bold, italic, underline, strike through).
 
@@ -71,7 +71,7 @@ When you enable Quick Diff, you can see changes in the active editor with the ve
 
 [more info](http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftasks-cvs-quickdiff.htm)
 
-# Linting rules {#configure-linting}
+# Linting rules {: #configure-linting}
 
 You can choose the severity of linting rules in: **Window > Preferences > Sigasi > VHDL > Errors/Warnings**.
 Read more information about [linting].

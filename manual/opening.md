@@ -4,7 +4,7 @@ layout: page
 pager: true
 ---
 
-Opening Files from the Command Line {#files-command-line}
+Opening Files from the Command Line {: #files-command-line}
 -----------------------------------
 
 You can call Sigasi from the command line to open files. Just run
