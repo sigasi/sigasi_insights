@@ -5841,7 +5841,7 @@ a.contact-menu-link > i {
 }
 
 .ajax-search-wrap .ajax-loading {
-    background: transparent url('images/loader.gif') no-repeat center center;
+    background: transparent url('images/loader.gif') no-repeat center center;
     background-size: 75%;
     width: 18px;
     height: 18px;
