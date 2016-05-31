@@ -12,6 +12,7 @@ http://www.sigasi.com/wp-content/uploads/masterslider/custom.css
 http://www.sigasi.com/wp-content/themes/cardinal/css/bootstrap.min.css
 http://www.sigasi.com/wp-content/themes/cardinal/css/ss-gizmo.css
 http://www.sigasi.com/wp-content/themes/cardinal/css/font-awesome.min.css
+http://www.sigasi.com/wp-content/themes/cardinal/css/font/fontawesome-webfont.eot
 http://www.sigasi.com/wp-content/themes/cardinal/style.css
 http://www.sigasi.com/wp-content/themes/cardinal/css/responsive.css
 http://www.sigasi.com/wp-content/uploads/2015/11/sigasi_favicon.png
