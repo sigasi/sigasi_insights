@@ -26,7 +26,7 @@ In the past years, the chair of VLSI design developed a lot of "IP cores". So Th
 CVS repository called *PoC* to gather this lose set of HDL designs. The repository grow over the years to a collection of basic
 HDL implementations like ALUs, FIFOs, UARTs or RAM controllers. For their final projects (bachelor, master, diploma thesis),
 students got access to PoC, so they could focus more on their main tasks than wasting time in developing and testing basic IP
-core implementations from scratch. But the library was initially for internal and educational use only.
+core implementations from scratch. However, the library was initially for internal and educational use only.
 
 As a university chair for VLSI design, we have a wide range of different FPGA prototyping boards from various vendors and
 device families as well as generations. So most of the IP cores were developed for both major FPGA vendor platforms and
@@ -34,7 +34,7 @@ their specific vendor tool chains. The main focus was to describe hardware in a 
 core could be reused on multiple target platforms.
 
 As the number of cores increased, the set of common functions and types increased too. In the end PoC is not only a collection
-of IP cores, its also shipped with a set of packages containing utility functions, new types and type conversions, which are
+of IP cores, it's also shipped with a set of packages containing utility functions, new types and type conversions, which are
 used by most of the cores. This makes PoC a *library*, not only a *collection* of IPs.
 
 As we started to search for ways to publish IP cores and maybe the whole PoC-Library, we found several platforms on the
@@ -73,7 +73,7 @@ implementations.
 
 One special feature of PoC is it, that the user has not to take care of such implementation switchings. PoC's IP cores
 decide on their own what's the *best* implementation for the chosen target platform. For this feature, PoC implements a
-configuration package, which accepts a well-known development board name or a target device string. For example a FPGA
+configuration package, which accepts a well-known development board name or a target device string. For example, a FPGA
 device string is decoded into: vendor, device, generation, family, subtype, speed grade, pin count, etc. Out of these
 information, the PoC component can for example implement a vendor specific carry-chain description to speed up an
 algorithm or group computation units to effectively use 6-input LUTs.
@@ -130,7 +130,7 @@ yet, PoC already uses sub-namespaces enforced by a strict naming scheme. To give
 
 In addition to these IP cores, a set of common, syntheziable VHDL packages provides new types, utility functions, string operations or 2-D vector handling.
 Another set of simulation only packages (in VHDL-93 and VHDL-2008) was created to ease simulations and the creation of
-automated testbenches. For example a testbench tracks how many asserts were called and failed, or if all processes (stimuli
+automated testbenches. For example, a testbench tracks how many asserts were called and failed, or if all processes (stimuli
 and checker) have been deactivated when the testbench ends. The results are gathered in a testbench report, which is parsed
 and evaluated by the Python-based infrastructure.
 
@@ -166,7 +166,7 @@ After a short semi-automatic configuration process, PoC can be used to run a sin
 Additionally, an IP core can be synthesized to a netlist, either to use it in a project or to check it's resource
 utilization. Using more than one tool chains can reveal bugs, warnings and coding smells, which were not reported by the
 first tool of choice. Especially, synthesis and simulation tools can have a very different understanding of a HDL model.
-Using PoC to check the source code with different tool chains can improve its quality. With this infrastructure it's even
+Using PoC to check the source code with different tool chains can improve its quality. With this infrastructure, it's even
 possible to compare different implementations with generic parameters or to compare implementations
 for different device targets. For example to see the advantages of a newer device generation.
 
@@ -200,7 +200,7 @@ by a user on his local machine to validate these results.
 Sigasi Studio is a vendor tool chain independent IDE with similar goals to PoC. The next release will contain a Sigasi
 Studio project, to ease the exploration of our PoC-Library.
 
-Sigasi Studio has contributed to our code quality by discovering bugs and smells in the source code. On the one hand it
+Sigasi Studio has contributed to our code quality by discovering bugs and smells in the source code. On the one hand, it
 reported some bugs, which were buried in long warning lists by the used tool chains. On the other hand, it reports coding
 style hints, which are irrelevant for most tools, as long as the code fits the language rules. Moreover, having an IDE,
 which links warnings and style hints to the correct source code position can be very helpful in large projects.
@@ -213,12 +213,12 @@ v1.1 it will also be possible to use the shipped Python infrastructure for own I
 
 
 ### Why should you use PoC?
-We explicitly use the wording *PoC-Library* rather then *collection*, because PoC's packages and IP cores build an
-ecosystem. Complex IP cores are build on-top of basic IP cores - they are no lose set of cores. The cores offer a clean
+We explicitly use the wording *PoC-Library* rather than *collection*, because PoC's packages and IP cores build an
+ecosystem. Complex IP cores are built on-top of basic IP cores - they are no lose set of cores. The cores offer a clean
 interface and can be configured by many generic parameters.
 
 PoC is target independent: It's possible to switch the target device or even the device vendor without switching the IP
-core and the IDE, because your already using Sigasi Studio 😉. 
+core and the IDE, because you're already using Sigasi Studio 😉. 
 
 ---------------------------
 
