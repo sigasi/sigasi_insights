@@ -3,7 +3,8 @@ title: "PoC - A Pile of Cores"
 layout: page 
 pager: true
 author: Patrick Lehmann, Oliver Knodel
-date: 2016-06-01
+license: CC BY-ND 4.0
+date: 2016-06-10
 tags: 
   - PoC
   - VHDL
@@ -81,15 +82,14 @@ algorithm or group computation units to effectively use 6-input LUTs.
 <tr><td><img src="images/poc-a-pile-of-cores/sigasistudio.png"/></td></tr>
 <tr><td>
   The screenshot of Sigasi Studio shows our basic 2-FF synchronizer called
-  [`PoC.misc.sync.Bits`][sync_Bits]. It encapsulates a 2-FF synchronizer and instantiates vendor
-  specific variants, if suitable.
+  [`PoC.misc.sync.Bits`][sync_Bits]. It encapsulates a generic 2-FF synchronizer description and instantiates vendor specific variants, if applicable. Currently, PoC has improved implementations for Altera and Xilinx devices.
 </td></tr>
 </table>
 
 
 ### PoC's IP Cores and Packages
 PoC uses namespaces and sub-namespaces to categorize more than 120 VHDL modules. Despite VHDL doesn’t support sub-namespaces
-yet, PoC already uses sub-namespaces enforced by a strict naming schema. To give an overview on our wide range of IP cores, here is the current namespace tree of PoC:
+yet, PoC already uses sub-namespaces enforced by a strict naming scheme. To give an overview on our wide range of IP cores, here is the current namespace tree of PoC including a short description:
 
 * **arith** (Arithmetic modules / ALUs)
 * **bus** (Bus arbiters)
@@ -128,7 +128,7 @@ yet, PoC already uses sub-namespaces enforced by a strict naming schema. To give
 * **xil** (Xilinx specific modules)
   * **mig** (Pre-configured Memory Interface Generator solutions)
 
-In addition to these IP cores, a set of common, syntheziable VHDL packages provide new types, utility functions, string operations or 2-D vector handling.
+In addition to these IP cores, a set of common, syntheziable VHDL packages provides new types, utility functions, string operations or 2-D vector handling.
 Another set of simulation only packages (in VHDL-93 and VHDL-2008) was created to ease simulations and the creation of
 automated testbenches. For example a testbench tracks how many asserts were called and failed, or if all processes (stimuli
 and checker) have been deactivated when the testbench ends. The results are gathered in a testbench report, which is parsed
@@ -136,13 +136,13 @@ and evaluated by the Python-based infrastructure.
 
 
 ### The Python-based Infrastructure
-PoC has a huge set of testbenches for mostly all IP cores, which are published for local evaluations on the user's
-workstation. The users can also investigate our IP core's behavior by viewing the generated waveforms in a simulator of
-his choice. For this use case, PoC contains pre-configured waveform configuration files.
+PoC has a huge set of testbenches for mostly all IP cores, which are also published for local evaluations on the user's
+workstation. The users can investigate our IP core's behavior by viewing the generated waveforms in a simulator of
+theirs choice. For this use case, PoC contains pre-configured waveform configuration files.
 
 Supplying testbenches for different FPGA manufacturer and various simulator vendors is a time intensive task, especially
 when different operating system platforms should be supported. To provide and automate all this, we provide a Python-based
-infrastructure, with an unified command line interface. This infrastructure supports platform independent testbench and
+infrastructure, with a unified command line interface. This infrastructure supports platform independent testbench and
 synthesis checks for all tools, platforms and targets. An additional feature of this infrastructure is to check new vendor
 tool releases, if PoC's IP cores and testbenches still provide the comparable results, especially when vendors change their
 algorithms or even tool chains for new device families.
@@ -168,7 +168,7 @@ utilization. Using more than one tool chains can reveal bugs, warnings and codin
 first tool of choice. Especially, synthesis and simulation tools can have a very different understanding of a HDL model.
 Using PoC to check the source code with different tool chains can improve its quality. With this infrastructure it's even
 possible to compare different implementations with generic parameters or to compare implementations
-for different device targets, for example to see the advantages of a newer device generation.
+for different device targets. For example to see the advantages of a newer device generation.
 
 <table width=610>
 <tr><td><img src="images/poc-a-pile-of-cores/arith_prng_tb.png"/></td></tr>
@@ -182,10 +182,10 @@ for different device targets, for example to see the advantages of a newer devic
 </table>
 
 
-### Continuous Integration (CI)
+### Continuous Integration
 One of the major problems of public available IP cores is the absence of quality indicators. In contrast to other projects,
-PoC uses continuous integration provided by Travis-CI to publish the testbench results. A full CI run can also be executed
-by an user on his local machine to validate these results.
+PoC uses continuous integration (CI) provided by Travis-CI to publish the testbench results. A full CI run can also be executed
+by a user on his local machine to validate these results.
 
 <table width=610>
 <tr><td><img src="images/poc-a-pile-of-cores/all.png"/></td></tr>
