@@ -149,7 +149,7 @@ a [/manual/linting#Quickfix for third party libraries].
 
 ## XilinxCoreLib
 
-XilinxCoreLib is a very big library with more than a thousand entities and architectures. Including all these design units, slows down Sigasi Studio. So by default, Sigasi Studio only adds the packages with the component declarations to your project, and _excludes_ the entities and architectures _from compilation_.
+XilinxCoreLib is a very big library with more than a thousand entities and architectures. If you include all of these design units, it slows down the compilation phase of Sigasi Studio. In order to avoid that, Sigasi Studio only adds the packages with the component declarations to your project by default. It _excludes_ the entities and architectures _from compilation_.
 
 You can easily add selected entities (and architectures) to your project by right clicking the corresponding file (`filename = entity name.vhd`) in the [Project Explorer][/manual/views#explorer], and selecting **Set Library > xilinxcorelib**.
 
