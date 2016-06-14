@@ -25,7 +25,7 @@ developed a lot of "IP cores". To organize this unstructured set of HDL
 designs, Thomas B. Preußer and Martin Zabel, created a CVS repository called
 *PoC*. The repository grew over the years to a collection of basic HDL
 implementations such as ALUs, FIFOs, UARTs or RAM controllers. Students got
-access to PoC For their final projects (bachelor, master, diploma thesis), so
+access to PoC for their final projects (bachelor, master, diploma thesis), so
 they could focus on their main task instead of wasting time developing and
 testing basic IP cores from scratch. However, the library was initially for
 internal and educational use only.
@@ -37,7 +37,7 @@ core could be reused on multiple target platforms.
 
 As the number of cores increased, the set of common functions and types increased too. In the end PoC is no longer only a collection
 of IP cores, it is also shipped with a set of packages containing utility functions, new types and type conversions, which are
-used by most of the cores. This made PoC a *library*, not just a *collection* of IPs.
+used by most of the cores. This makes PoC a *library*, not just a *collection* of IPs.
 
 As we started to search for ways to publish IP cores and maybe the whole PoC-Library, we found several platforms on the
 Internet. But none were very convincing. Some collective websites contained inactive projects. Others were controlled by
@@ -61,6 +61,7 @@ repository.
 ## PoC's Main Goals
 
 The PoC-Library pursues the following five goals:
+
 * independence in the platform, target, vendor and tool chain
 * generic, efficient, resource sparing and fast implementations of IP cores
 * optimized for several device architectures, if applicable
@@ -69,6 +70,7 @@ The PoC-Library pursues the following five goals:
 * ship all IP cores with testbenches for local and online verification
 
 In detail the PoC-Library is: 
+
 * synthesizable for ASIC and FPGA devices, e.g. from Altera, Lattice, Xilinx, ...
 * supports a wide range of simulation and synthesis tool chains
 * executable on several host platforms: Darwin, Linux or Windows
@@ -81,7 +83,8 @@ implementations.
 
 One special feature of PoC is that the user does not have to take care of selecting the correct implementation. PoC can automatically select
 the *best* implementation for the chosen target platform. For this feature, PoC contains a
-configuration package, which accepts a development board name or a target device string. For example, an FPGA
+configuration package, which accepts a development board name or a target device string.  
+For example, an FPGA
 device string is decoded into: vendor, device, generation, family, subtype, speed grade, pin count, etc. From this
 information, PoC can for example implement a vendor specific carry-chain description to speed up an
 algorithm or group computation units to effectively use 6-input LUTs.
@@ -153,12 +156,14 @@ tool releases*. This allows one to check that PoC's IP cores and testbenches sti
 algorithms or even tool chains for new device families.
 
 The current version of PoC's infrastructure (v1.0) can handle four synthesis tool chains: 
+
 * Altera Quartus
 * Lattice Diamond
 * Xilinx ISE
 * Xilinx Vivado
 
 Plus six simulation tools:
+
 * Aldec Active-HDL
 * Cocotb with Mentor QuestaSim back-end
 * Mentor Graphics QuestaSim/ModelSim
