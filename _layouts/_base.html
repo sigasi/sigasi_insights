@@ -42,36 +42,17 @@
 		</div>
 		<div class="col-sm-6 tb-right">
 			<nav class="std-menu clearfix">
+				{% block top_nav %}
 				<div class="menu-sub_eng-container">
 					<ul id="menu-sub_eng" class="menu">
-						<li class="menu-item-11999 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children		parent">
-							<a href="http://www.sigasi.com/try/"><span class="menu-item-text">Try &amp; Buy</span></a>
-							<ul class="sub-menu" style="top: 36px;">
-								<li class="menu-item-11930 menu-item menu-item-type-post_type menu-item-object-page	 ">
-									<a href="http://www.sigasi.com/pricing/">Pricing</a>
-								</li>
-								<li class="menu-item-11932 menu-item menu-item-type-post_type menu-item-object-page	 ">
-									<a href="http://www.sigasi.com/download/">Download</a>
-								</li>
-								<li class="menu-item-11977 menu-item menu-item-type-post_type menu-item-object-page	 ">
-									<a href="http://www.sigasi.com/edu-stud/">Request Student license</a>
-								</li>
-								<li class="menu-item-11976 menu-item menu-item-type-post_type menu-item-object-page	 ">
-									<a href="http://www.sigasi.com/edu-prof/">Request Professor license</a>
-								</li>
-								<li class="menu-item-11983 menu-item menu-item-type-post_type menu-item-object-page	 ">
-									<a href="http://www.sigasi.com/edu-float/">Request Classroom license</a>
-								</li>
-								<li class="menu-item-11935 menu-item menu-item-type-custom menu-item-object-custom	 ">
-									<a href="https://sites.fastspring.com/sigasi/instant/S2NL-FS1Y-01-S">Buy direct</a>
-								</li>
-							</ul>
-						</li>
-						<li class="menu-item-11958 menu-item menu-item-type-custom menu-item-object-custom	 ">
-							<a href="/support.html"><span class="menu-item-text">Support</span></a>
-						</li>
+						{% for menuitem in site.topmenuitems %}
+							<li class="menu-item-11999 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children		parent">
+								<a href="{{menuitem.url}}"><span class="menu-item-text">{{menuitem.title}}</span></a>
+							</li>
+						{% endfor %}
 					</ul>
 				</div>
+				{% endblock %}
 			</nav>
 		</div>
 	</div>

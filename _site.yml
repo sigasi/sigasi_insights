@@ -10,15 +10,22 @@ main_url: http://www.sigasi.com
 menuitems:
   - title: Home
     url: http://www.sigasi.com
-  - title: About
-    url: http://www.sigasi.com/about
   - title: Products
     url: http://www.sigasi.com/products
+  - title: "Try & Buy"
+    url: http://www.sigasi.com/try-buy
+  - title: Insights
+    url: /
+    active: True
+  - title: About
+    url: http://www.sigasi.com/about
+topmenuitems:
   - title: Contact
     url: http://www.sigasi.com/contact
-  - title: Insights
-    url: http://insights.sigasi.com
-    active: true
+  - title: Support
+    url: /support
+  - title: Jobs
+    url: http://www.sigasi.com/category/jobs/
 ignore_patterns:
   - linkchecker_result.html 
   - .gitignore 
