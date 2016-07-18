@@ -27,6 +27,6 @@ else
   echo "Commit changes"
   git add -A || exit -1
   git commit -m "Update urubu site" || exit -1
-  #git push origin gh-pages || exit -1
+  git push origin gh-pages || exit -1
 fi
 
