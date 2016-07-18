@@ -57,7 +57,7 @@ serve: stop server.PID
 	@echo 'http://localhost:8000'
 
 stop: server.PID
-	kill `cat $<`; rm $<
+	-kill `cat $<`; rm $<
 
 # linkchecker can be installed from http://wummel.github.io/linkchecker/ (or sudo dnf install linkchecker)
 dolinkchecker:
