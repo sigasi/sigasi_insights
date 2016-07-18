@@ -15,6 +15,9 @@ fi
 echo "Fetch and checkout latest version from Assembla"
 git fetch origin gh-pages -q || exit -1
 git worktree add _build origin/gh-pages || exit -1
+pushd _build || exit -1
+  git reset --hard origin/master
+popd
 
 echo "Build"
 make build || exit -1
