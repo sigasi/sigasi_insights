@@ -9,11 +9,6 @@ all: build
 
 MAKEFILE_PATH=$(realpath $(@D))
 WORKTREE_PATH=$(MAKEFILE_PATH)/.git/worktrees/_build
-DATE=$(shell date "+%Y-%m-%d")
-
-gh-pages-update:
-	@ls $(WORKTREE_PATH) || (rm -rf _build && git worktree prune && git worktree -b gh-pages add _build origin/gh-pages)
-	cd _build && git pull origin gh-pages
 
 build: NOCAPS
 	python -m urubu build
@@ -58,7 +53,7 @@ build_offline: build
 server.PID:
 	{ python -m urubu serve & echo $$! > $@; } 
 
-serve: server.PID
+serve: stop server.PID
 	@echo 'http://localhost:8000'
 
 stop: server.PID
@@ -79,8 +74,8 @@ dependencies:
 	pip install --upgrade urubu 
 	pip install linkchecker
 
-publish: gh-pages-update build
-	cd _build && git add -A && git commit -m "Update documentation" && git push origin gh-pages
+publish:
+	./publish.sh
 
 NOCAPS:
 	@ ! find . \( -path ./css -o -path _build -o -path _build_offline \) -prune -name '*.png' | grep "[A-Z]"

@@ -11,12 +11,25 @@ The best place to start looking for a plugin is the [eclipse-marketplace]. We li
 plugins here. Since these are third party plugins, there is no official
 support from Sigasi.
 
+## Installing plugins
+
+Unlike most Eclipse distributions Sigasi Studio is shipped without the *Eclipse Marketplace* plugin, and without the standard Eclipse update sites.
+Hence, you have to use the old mechanism for installing new plugins, and add the plugin update site. 
+
+* Adding the update site
+    * First , find the *update site* for the plugin you want to install. For example: for the Mercuial plugin, the update site is `http://eclipse-ccase.sourceforge.net/update/`
+    * Click **Help > Install New Software** Now click **Add** and fill out the update site. Press **OK** to confirm.
+* Installing
+    * Still in the *Install* dialog, search for the plugin you want to install. You can browse the list of available plugins or use the filter text above the list of plugins.
+    * Select the checkbox for the plugin and click **Next**
+    * Follow the instructions for the rest of the wizard.
+
 ## Revision Control Systems
 
 Sigasi supports a wide range of [Revision Control
 Systems](http://en.wikipedia.org/wiki/Revision_control) (also know as
 Version Control or Source Control systems). Support for revision control
-is based on Eclipse plugins. This chapter contains a preliminary listing
+is based on Eclipse plugins. This section contains a preliminary listing
 of the most popular revision control systems.
 
 ### GIT {: #revision-git}
