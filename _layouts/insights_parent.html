@@ -8,15 +8,13 @@
           <div class="spb_content_element" style="padding-top:0px;padding-bottom:0px;">
             <section class="container">
               <div class="row">
-                <div class="spb-column-container col-sm-8  " style="">
+                <div class="spb-column-container col-sm-6  " style="">
                   <div class="spb-asset-content" style="padding:2%;">
                     <section class="container">
                       <div class="row">
                         <div class="spb_content_element col-sm-12 spb_text_column">
-                          <div class="spb-asset-content" style="padding-top:0%;padding-bottom:0%;padding-left:0%;padding-right:0%;">
-                            <h3>{{this.b1.title}}</h3>
-                            {{this.b1.content|md}}
-                          </div>
+                          {% block b1 %}
+                          {% endblock %}
                         </div>
                       </div>
                     </section>
@@ -30,10 +28,8 @@
                     <section class="container">
                       <div class="row">
                         <div class="spb_content_element col-sm-12 spb_text_column">
-                          <div class="spb-asset-content" style="padding-top:0%;padding-bottom:0%;padding-left:0%;padding-right:0%;">
-                            <h3>{{this.b2.title}}</h3>
-                            {{this.b2.content|md}}
-                          </div>
+                          {% block b2 %}
+                          {% endblock %}
                         </div>
                       </div>
                     </section>
@@ -48,16 +44,8 @@
                     </section>
                     <section class="container">
                       <div class="row">
-                        <div class="spb_content_element col-sm-12 spb_text_column spb-asset-content" style="padding-top:0%;padding-bottom:0%;padding-left:0%;padding-right:0%;">
-                          <h4><span style="color: #262262;">First Start</span></h4>
-                          <p>
-                            {% for item in this.links1 %}
-                              <img class="alignnone size-full wp-image-11863" src="{{url_prefix}}/css/sigasi_chainicon.png" alt="sigasi_chainicon" width="13" height="12">
-                              &nbsp;<a href="{{item.url}}" title="{{item.title}}"><span style="color: #262262;">{{item.title|truncate(40)}}</span></a>
-                              <br/>
-                            {% endfor %}
-                          </p>
-                        </div>
+                      	{% block a1 %}
+                        {% endblock %}
                       </div>
                     </section>
                     <section class="row fw-row">
@@ -67,19 +55,8 @@
                     </section>
                     <section class="container">
                       <div class="row">
-                        <div class="spb_content_element col-sm-12 spb_text_column spb-asset-content" style="padding-top:0%;padding-bottom:0%;padding-left:0%;padding-right:0%;">
-                          <h4><span style="color: #262262;">Popular Tech Articles</span></h4>
-                          <p>
-                            {% for item in this.content|filtercontent('/tech/')|sortpopular|filterfirst(9) %}
-                              <img class="alignnone size-full wp-image-11863" src="{{url_prefix}}/css/sigasi_chainicon.png" alt="sigasi_chainicon" width="13" height="12">
-                              &nbsp;<a href="{{item.url}}" title="{{item.title}}"><span style="color: #262262;">{{item.title|truncate(40)}}</span></a>
-                              <br/>
-                            {% endfor %}
-                            <img class="alignnone size-full wp-image-11863" src="{{url_prefix}}/css/sigasi_chainicon.png" alt="sigasi_chainicon" width="13" height="12">
-                            &nbsp;<a href="/tech" title="More Tech Articles"><span style="color: #262262;">more...</span></a>
-                            <br/>
-                          </p>
-                        </div>
+                      	{% block a2 %}
+                        {% endblock %}
                       </div>
                     </section>
                   </div>
@@ -91,25 +68,8 @@
       </section>
       <section class="row fw-row">
         <div class="spb-row-container spb-row-full-width col-sm-12  remove-element-spacing col-natural" data-v-center="true" data-top-style="none" data-bottom-style="none" style="padding-left:0%;padding-right:0%;margin-top:0px;margin-bottom:0px;">
-          <div class="spb_content_element" style="padding-top:0px;padding-bottom:0px;">
-            <section class="container">
-              <div class="row multi-column-row" style="min-height: 172px;background: #262262!important;color: #ffffff!important">
-                {% for item in this.content|filtercontent('/screencasts/')|sortpopular|filterfirst(4) %}
-                <div class="spb_content_element spb_box_content col-sm-3" style="min-height: 172px;">
-                  <div class="spb-bg-color-wrap coloured" >
-                    <div class="spb-asset-content">
-                      <div class="box-content-wrap" style="padding-top:10%;padding-bottom:10%;padding-left:0%;padding-right:0%;">
-                        {{item.videoid|wistia(240,160)}}
-                        <h5 style="text-align: center;" title="{{item.title}}"><span style="color: #ffffff;">{{item.title|truncate(35)}}</span></h5>
-                      </div> 
-                    </div>
-                  </div>
-                </div>
-                {% endfor %}
-              <!-- <p style="text-align:right"><a href="/screencast">more screencasts...</a></p> -->
-              </div>
-            </section>
-          </div>
+          {% block c1 %}
+          {% endblock %}
         </div>
       </section>
       <section class="container">
@@ -117,7 +77,7 @@
           <div class="blank_spacer col-sm-12  " style="height:30px;"> </div>
         </div>
       </section>
-      {% block disabled %}
+      {% block d1 %}
       <section class="container">
         <div class="row">
           <div class="spb_content_element col-sm-12 spb_text_column">
