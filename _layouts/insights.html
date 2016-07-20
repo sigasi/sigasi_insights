@@ -43,6 +43,20 @@
 </div>
 {% endblock %}
 
+{% block a3 %}
+<div class="spb_content_element col-sm-12 spb_text_column spb-asset-content" style="padding-top:0%;padding-bottom:0%;padding-left:0%;padding-right:0%;">
+	<h4><span style="color: #262262;">Recent Articles</span></h4>
+	<p>
+		{% for item in this.content|filtercontent(['/tech/','/opinion/'])|filterlatest(10) %}
+		<img class="alignnone size-full wp-image-11863" src="{{url_prefix}}/css/sigasi_chainicon.png" alt="sigasi_chainicon" width="13" height="12">
+		&nbsp;<a href="{{item.url}}" title="{{item.title}}"><span style="color: #262262;">{{item.title|truncate(32)}}</span></a>
+			<small>{{item.date|dateformat}}</small>
+		<br/>
+		{% endfor %}
+	</p>
+</div>
+{% endblock %}
+
 {% block c1 %}
 <div class="spb_content_element" style="padding-top:0px;padding-bottom:0px;">
 	<section class="container">
@@ -65,3 +79,6 @@
 </div>
 {% endblock %}
 
+
+{% block d1 %}
+{% endblock %}
