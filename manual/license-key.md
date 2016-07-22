@@ -226,3 +226,6 @@ Check the content of the Sigasi License preference page via : **Window > Prefere
 
   * Check the daemon log on the license server
   
+> Updating DACL Failed: "Service has been created but failed to update the DACL settings of FlexNet Licensing Service. It will give problem for accessing TS features. Check whether FlexNet Licensing Service is correctly installed or not and delete and create this service again."
+
+  * There seems to be a bug in `lmtools.exe` version 11 on some systems. You can work around this issue by configuring the (latest) Sigasi daemon with an older version of lmtools (e.g. version 10). 
