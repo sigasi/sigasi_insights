@@ -24,11 +24,11 @@ def cutoff(name,length=30):
         return name[:length]+"..."
     else:
         return name
-def filtercontent(sections,url="/tech/"):
-    for section in sections:
-        if section['url'] == url:
-            return section['content']
-    return []
+def filtercontent(sections,urls=["/tech/"]):
+    if type(urls)==str:
+        urls=[urls]
+    contents = [section['content'] for section in sections if section['url'] in urls]
+    return sum(contents,[])
 def filtertag(content,tag):
     return [item for item in content if tag in item.get('tags',[])]
 def loadWeights():
