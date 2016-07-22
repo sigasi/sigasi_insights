@@ -22,6 +22,8 @@ popd
 echo "Build"
 make build || exit -1
 
+echo "gitdir: $(pwd)/.git/worktrees/_build" > _build/.git
+
 pushd _build || exit -1
   echo "Commit changes"
   git add -A || exit -1

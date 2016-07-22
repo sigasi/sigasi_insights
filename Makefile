@@ -7,14 +7,10 @@ help:
 
 all: build
 
-MAKEFILE_PATH=$(realpath $(@D))
-WORKTREE_PATH=$(MAKEFILE_PATH)/.git/worktrees/_build
-
 build: NOCAPS
 	python -m urubu build
 	@touch _build/.nojekyll
 	@( cd _build && find . -name "*html" | grep -v "./google" |grep -v '^.html' | sed -e "s/^./http:\/\/insights.sigasi.com/" > sitemap.txt )
-	@echo "gitdir: $(MAKEFILE_PATH)/.git/worktrees/_build" > _build/.git
 
 build_offline: build
 	rm -Rf _build_offline
@@ -68,7 +64,6 @@ linkchecker: serve dolinkchecker stop
 
 clean:
 	rm -Rf _build
-	git worktree prune
 
 dependencies:
 	pip install --upgrade urubu 
