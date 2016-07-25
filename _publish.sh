@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#if gh-pages does not exist yet, create it with:
+#git worktree add --detach _build
+#cd _build
+#git checkout --orphan gh-pages
+
 # make sure everything is clean
 rm -rf _build || exit -1
 git worktree prune || exit -1
