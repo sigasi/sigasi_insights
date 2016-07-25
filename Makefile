@@ -49,7 +49,7 @@ build_offline: build
 server.PID:
 	{ python -m urubu serve & echo $$! > $@; } 
 
-serve: stop server.PID
+serve: server.PID
 	@echo 'http://localhost:8000'
 
 stop: server.PID
