@@ -31,6 +31,7 @@ ignore_patterns:
   - .gitignore 
   - .project
   - server.PID
+  - README.markdown
 reflinks:
     content_license:
         url: http://creativecommons.org/licenses/by-sa/3.0/

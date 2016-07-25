@@ -70,7 +70,7 @@ dependencies:
 	pip install linkchecker
 
 publish:
-	./publish.sh
+	./_publish.sh
 
 NOCAPS:
 	@ ! find . \( -path ./css -o -path _build -o -path _build_offline \) -prune -name '*.png' | grep "[A-Z]"
