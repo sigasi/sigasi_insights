@@ -247,6 +247,12 @@ You can also set this per **project** (in the project properties). In that case 
 
 You can find more info on: [here](http://www.sigasi.com/content/how-avoid-absolute-library-paths-your-sigasi-project-files) and [here](http://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Fconcepts%2Fcpathvars.htm)
 
+## Can I use a Dark Theme?
+
+In **Window > Preferences > General > Appearance**, select **Dark** in the **Theme** field. Restart to apply the settings in all windows.
+
+If you want a _fully black background in the editor_, right click in the editor view and select **Preferences...**, next navigate to **General > Editors > Text Editors**. In the **Appearance color options**, select **Background color** and next click the **Color** button to select your preferred editor background color.
+
 # Warnings and Lint rules
 
 ## Can Sigasi replace my linter?
