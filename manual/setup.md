@@ -64,7 +64,7 @@ _Note that we do **not** support Eclipse 3 any more._ ([System Requirements][/fa
 [latest-eclipse-cpp-linux64]: http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/1/eclipse-cpp-mars-1-linux-gtk-x86_64.tar.gz
 [latest-eclipse-cpp]: http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/mars1
 
-### Install the VHDL Eclipse Plugin
+### Install the Eclipse Plugin {: #eclipse-plugin}
 
 After starting Eclipse:
 
@@ -75,6 +75,17 @@ After starting Eclipse:
    ![Install Sigasi plugin](images/setup-install-plugin.png)
 5. Click the **Next** button.
 6. The following steps are pretty self-explaining.
+
+### Installing the offline update site (Sigasi Studio XL)
+
+Installing the offline update site is very similar to installing from the [main update site][#eclipse-plugin], but _step 2_ is replaced with these steps:
+
+1. Download the offline update site from the link you received from your sales representative.
+2. In the **Install** Wizard, click **Add...**
+3. Click **Archive...**, browse to the zip file you downloaded, and confirm with **OK**.
+   ![Add offline update site archive](images/offline_update_site_add.png)
+
+Next, continue with step 3. in the [general eclipse installation instructions][#eclipse-plugin].
 
 ## Licensing
 
