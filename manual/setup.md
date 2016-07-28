@@ -54,6 +54,7 @@ executing this startup file.
 ### Prerequisites: Eclipse
 
 ![Eclipse Foundation member](images/eclipse_foundationmember.png){: style="float:right"}
+
 * You need to have at least <a href="http://www.eclipse.org">Eclipse</a> version 4.2, nicknamed <em>Juno</em>.
 * If you don't have Eclipse installed yet, the C/C++ flavor would be good place to start. Just** download** ([Windows 64 bit][latest-eclipse-cpp-windows64]/[Linux 64 bit][latest-eclipse-cpp-linux64]/[Other versions][latest-eclipse-cpp]), **unzip** and **start**.
 * We recommend you also increase the heap size for Eclipse ([/faq#how-do-i-increase-the-heap-size-for-eclipse]).
@@ -75,6 +76,8 @@ After starting Eclipse:
    ![Install Sigasi plugin](images/setup-install-plugin.png)
 5. Click the **Next** button.
 6. The following steps are pretty self-explaining.
+
+**Note about Eclipse Neon (4.6):** Sigasi 3.1 works fine in the newly release Eclipse Neon. However, the bundled (optional) **Mousefeed plugin** does not. So if you did install the Mousefeed plugin: (1) add **`http://download.sigasi.com/updates/mousefeed`** as update site and (2) update Mousefeed to the latest version.
 
 ### Installing the offline update site (Sigasi Studio XL)
 
