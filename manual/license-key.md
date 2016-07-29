@@ -160,7 +160,7 @@ The Doc add-on is checked out automatically in the following cases:
 * When you try to export PDF documentation
 * When you click **Help > Sigasi > Floating License > Check out Sigasi Studio XL Doc license**
 
-To the Doc add-on license is released via: **Help > Sigasi > Floating license > Release Sigasi Studio XL Doc Floating Licenses**.
+The Doc add-on license is released via: **Help > Sigasi > Floating license > Release Sigasi Studio XL Doc Floating Licenses**.
 
 
 # Troubleshooting
