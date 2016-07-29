@@ -13,13 +13,19 @@
   <stream name="master"
       label="Master">
     <setupTask
+        xsi:type="setup:CompoundTask"
+        name="User Preferences">
+      <annotation
+          source="http://www.eclipse.org/oomph/setup/UserPreferences"/>
+    </setupTask>
+    <setupTask
         xsi:type="setup:VariableTask"
         name="eclipse.target.platform"
         value="None"/>
     <setupTask
         xsi:type="setup:VariableTask"
         name="workspace.location"
-        value="${installation.location/ws}&#xA;"/>
+        value="${installation.location/ws}"/>
     <setupTask
         xsi:type="setup:VariableTask"
         name="git.clone.sigasi_insights"
