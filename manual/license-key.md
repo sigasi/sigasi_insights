@@ -132,6 +132,7 @@ The license server should now be configured correctly, and looks a bit like this
 
 ## Floating License options
 
+
 ### Release a floating license
 
 You can release a floating license (_check a license in_) without closing your Sigasi application or Eclipse application. This is useful if you use Eclipse to edit other files than VHDL files, like C or Tcl.
@@ -140,15 +141,26 @@ First, make sure that all VHDL and Verilog files are closed and all VHDL and Ver
 
 To get the license back (to check the license out), open the license dialog **Help > Sigasi > Configure License...** and press **Apply**.
 
-Similarly a floating Sigasi XL Doc addon license can be released via: **Help > Sigasi > Floating license > Release Sigasi Studio XL Doc Floating Licenses**.
-
 ### How to block Sigasi Studio from checking out a license?
 
 If you have configured an environment variable with the location of a Flexnet license server, you can instruct Sigasi **not** to check out a license by setting the Sigasi Studio License key to `none`.
 
-### Extra floating license options in Sigasi Studio
+### Mix of Creator and XL licenses
 
 If your license server serves both Sigasi Studio **Creator** and **XL** licenses, you can configure Sigasi studio to only checkout Sigasi **Creator** licenses (and **not** XL licenses) by enabling the "**Do not try to checkout floating Sigasi Studio XL licenses**" option on **Window > Preferences > Sigasi > License Key > Floating Options**
+
+### Checking out and releasing the Doc addon license
+
+If you have licenses for Sigasi Studio XL Doc, this is actually licensed as Sigasi Studio XL, with a Doc add-on license. The XL license is checked out as described above.
+
+The Doc add-on is checked out automatically in the following cases:
+
+* When you open the Block Diagram view
+* When you open the State Machine view
+* When you try to export PDF documentation
+* When you click **Help > Sigasi > Floating License > Check out Sigasi Studio XL Doc license**
+
+To the Doc add-on license is released via: **Help > Sigasi > Floating license > Release Sigasi Studio XL Doc Floating Licenses**.
 
 
 # Troubleshooting
