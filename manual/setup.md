@@ -54,6 +54,7 @@ executing this startup file.
 ### Prerequisites: Eclipse
 
 ![Eclipse Foundation member](images/eclipse_foundationmember.png){: style="float:right"}
+
 * You need to have at least <a href="http://www.eclipse.org">Eclipse</a> version 4.2, nicknamed <em>Juno</em>.
 * If you don't have Eclipse installed yet, the C/C++ flavor would be good place to start. Just** download** ([Windows 64 bit][latest-eclipse-cpp-windows64]/[Linux 64 bit][latest-eclipse-cpp-linux64]/[Other versions][latest-eclipse-cpp]), **unzip** and **start**.
 * We recommend you also increase the heap size for Eclipse ([/faq#how-do-i-increase-the-heap-size-for-eclipse]).
@@ -64,7 +65,7 @@ _Note that we do **not** support Eclipse 3 any more._ ([System Requirements][/fa
 [latest-eclipse-cpp-linux64]: http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/1/eclipse-cpp-mars-1-linux-gtk-x86_64.tar.gz
 [latest-eclipse-cpp]: http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/mars1
 
-### Install the VHDL Eclipse Plugin
+### Install the Eclipse Plugin {: #eclipse-plugin}
 
 After starting Eclipse:
 
@@ -75,6 +76,19 @@ After starting Eclipse:
    ![Install Sigasi plugin](images/setup-install-plugin.png)
 5. Click the **Next** button.
 6. The following steps are pretty self-explaining.
+
+**Note about Eclipse Neon (4.6):** Sigasi 3.1 works fine in the newly release Eclipse Neon. However, the bundled (optional) **Mousefeed plugin** does not. So if you did install the Mousefeed plugin: (1) add **`http://download.sigasi.com/updates/mousefeed`** as update site and (2) update Mousefeed to the latest version.
+
+### Installing the offline update site (Sigasi Studio XL)
+
+Installing the offline update site is very similar to installing from the [main update site][#eclipse-plugin], but _step 2_ is replaced with these steps:
+
+1. Download the offline update site from the link you received from your sales representative.
+2. In the **Install** Wizard, click **Add...**
+3. Click **Archive...**, browse to the zip file you downloaded, and confirm with **OK**.
+   ![Add offline update site archive](images/offline_update_site_add.png)
+
+Next, continue with step 3. in the [general eclipse installation instructions][#eclipse-plugin].
 
 ## Licensing
 

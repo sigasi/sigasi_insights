@@ -4,6 +4,7 @@
 #git worktree add --detach _build
 #cd _build
 #git checkout --orphan gh-pages
+#git push origin gh-pages
 
 # make sure everything is clean
 rm -rf _build || exit -1
