@@ -14,31 +14,7 @@
 <div id="top-bar" class="">
 	<div class="container">
 		<div class="col-sm-6 tb-left">
-			<div class="tb-text">
-				<div class="wgs_wrapper" id="wgs_widget_wrapper_id">
-					<div id="___gcse_0">
-						<div class="gsc-control-searchbox-only gsc-control-searchbox-only-en" dir="ltr">
-							<form action="http://www.sigasi.com/search_gcse" method="GET">
-								<table cellspacing="0" cellpadding="0" class="gsc-search-box">
-									<tbody>
-										<tr>
-											<td class="gsc-input">
-											<input autocomplete="off" type="text" size="10" class=" gsc-input " name="q" title="search" id="gsc-i-id1" dir="ltr" spellcheck="false" style="outline: none; background:rgb(255, 255, 255);">
-											<input type="hidden" name="bgresponse" id="bgresponse">
-											</td><td class="gsc-search-button">
-											<input type="submit" value="Search" class="gsc-search-button" title="search">
-											</td><td class="gsc-clear-button">
-											<div class="gsc-clear-button" title="clear results">
-												&nbsp;
-											</div></td>
-										</tr>
-									</tbody>
-								</table>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
+			{% include 'googlesearch.html' %}
 		</div>
 		<div class="col-sm-6 tb-right">
 			<nav class="std-menu clearfix">
