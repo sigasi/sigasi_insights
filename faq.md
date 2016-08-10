@@ -107,8 +107,7 @@ You can download the Stand-alone version of the latest preview version from:
 
 You can also update from (configure via Preferences > Install/Update > Available Software Sites > Add...) :
 
-* http://download.sigasi.com/preview/composite-rcp/ (Preview update site for stand alone version)
-* http://download.sigasi.com/preview/composite-eclipse/ (Preview update site for installing in Eclipse)
+* http://download.sigasi.com/preview/studio/
 
 SHA Sums (more info):
 
