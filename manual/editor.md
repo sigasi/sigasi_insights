@@ -315,6 +315,18 @@ This includes:
 * vertical alignment of certain symbols like “<=”
 * wrapping lines that are too long
 
+### Context based
+
+Sigasi Studio's formatter is context based and tries to respect the style of the author. So depending on the original source style, the formatter might make different choices.
+
+On example is the decision to format a _conditional signal assignment_ on one, or multiple lines. Sigasi makes this decision base on the position of the first `else` keyword. If you put the `else` keyword on the first line, the formatter will put everythin on one line. If you put the `else` keyword on a new line, the formatter will use multiple lines for the assignment.
+
+```vhdl
+	demo <= (others => '0') when enable = '1'
+		else (others => '1') when input = '1' -- else on new line
+		else (others => 'X');
+```
+
 ### Configuration
 
 You can set your preferences for Tabs or spaces under **Window \>
