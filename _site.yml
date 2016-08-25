@@ -23,7 +23,7 @@ topmenuitems:
   - title: Contact
     url: http://www.sigasi.com/contact
   - title: Support
-    url: /support
+    url: /support.html
   - title: Jobs
     url: http://www.sigasi.com/category/jobs/
 ignore_patterns:
