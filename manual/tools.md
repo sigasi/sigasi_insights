@@ -48,8 +48,6 @@ and how to [/manual/tools#Configure external compiler].
 
 ### Launch simulator
 
-[vhdl_only]
-
 If an external compiler is enabled, you can also start a simulation from
 Sigasi. You can start a simulation by first selecting your *top level*
 in the [/manual/views#hierarchy] view. Next click the
@@ -57,7 +55,13 @@ in the [/manual/views#hierarchy] view. Next click the
 view to launch the simulator gui with an elaborated design ready for
 simulation. Sigasi opens a new console for each simulation launch. You
 can terminate a simulation by clicking the **Stop** icon
-![](icons/stop.png) .
+![](icons/stop.png).
+
+When you launch a simulation, Sigasi opens a new console in the [Console View][views#console-view]
+You can switch between different consoles by clicking the ![icon console display](icons/icon_con_disp_console.png)-icon.
+
+![](images/launch_simulation_console.png)
+
 
 ### Configure external compiler
 

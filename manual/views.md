@@ -263,3 +263,12 @@ double-clicking the search results.
 ![](images/preprocessor-view.png)
 
 In the preprocessor view you can preview the expanded text of Verilog macros. This view automatically synchronizes with the active editor.
+
+# Console view
+
+When Sigasi launches external tools (e.g. external compiler, documentation generation,...) the output is logged to the console view.
+This is a generic Eclipse view \[[Documentation](http://help.eclipse.org/neon/index.jsp?topic=%2Forg.eclipse.cdt.doc.user%2Freference%2Fcdt_u_console_view.htm)].
+
+Different tools can open different consoles. You can switch between different consoles by clicking the ![icon console display](icons/icon_con_disp_console.png)-icon.
+
+
