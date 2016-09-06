@@ -412,4 +412,4 @@ You can configure the include paths of your Verilog projects in the Verilog Prep
 
 ![](images/preprocessor-property-page.png)
 
-You can specify multiple include paths by separating them with a `;`. All paths are relative to the project folder.
+You can specify multiple include paths by separating them with a `;`. All paths are relative to the project folder. You can add the main project folder as include path by entering `.`.
