@@ -143,7 +143,7 @@ You can configure extra tags in the Task Tag preference page:
 
 # Block Diagram View {: #block}
 
-[xl_only]
+[xl_only],[vhdl_only]
 
 The **Block Diagram View** displays a graphical (block diagram) view
 of all architectures and its instantiations in your current VHDL editor.
@@ -160,8 +160,7 @@ view via **Window \> View \> Other… \> VHDL \> Block Diagram**.
 
 You can also **double click blocks**, **ports** or **wires** to navigate
 to the corresponding VHDL code. If you want to *go into* a block, you
-have to **select** it, right click and click **open entity
-declaration**.
+have to **select** it, right click and click **Open Entity Declaration** or **Open Architecture**.
 
 You can export the block diagram view to an image with the save
 ![](icons/save.gif) button. Both **SVG** and **PNG** are supported. Choose a the \*.svg filename for SVG export or a \*.png filename for PNG export.
@@ -177,7 +176,7 @@ select the Block Diagram View during installation</a>.
 
 # State Machine View {: #fsm}
 
-[xl_doc_only]
+[xl_doc_only],[vhdl_only]
 
 The **State Machine View** displays a graphical (bubble diagram) view of all state machines in your current VHDL editor. This viewer automatically updates while you are editing your code and gives a convenient way to visually inspect and navigate your code, even when your code is still unfinished or broken.
 
@@ -213,6 +212,8 @@ If you are working on a mixed language project, the Dependencies View will also 
 
 # Documentation View {: #documentation}
 
+[xl_doc_only],[vhdl_only]
+
 The **Documentation view** gives you a live preview of the automatic
 documentation Sigasi can generate for your project.
 
@@ -222,7 +223,7 @@ You do not need to add any special annotations to your code. Sigasi uses the sam
 
 ## Export Documentation
 
-[xl_doc_only]
+[xl_doc_only],[vhdl_only]
 
 You can export documentation for the entire project to **pdf** by
 clicking the save icon or via the **Export…** menu.
@@ -236,7 +237,7 @@ Users without a XL Doc License can also export a (watermarked) pdf.
 
 # Net Search View {: #netsearch}
 
-[xl_only]
+[xl_doc_only],[vhdl_only]
 
 With **Net search**, you can you to find *loads* and *drivers* of a net.
 A *net* is defined as a signal or port and all other signals and ports
