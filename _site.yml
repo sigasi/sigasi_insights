@@ -5,6 +5,7 @@ google_analytics: UA-2852630-4
 bootswatch: null 
 navbar_inverse: false 
 bootstrap: 3.3.4
+banner: "Insights."
 cname: insights.sigasi.com
 main_url: http://www.sigasi.com
 menuitems:

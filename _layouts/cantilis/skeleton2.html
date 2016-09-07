@@ -125,7 +125,7 @@
 		
 		<link href="{{url_prefix}}/css/site.css" rel="stylesheet" media="screen">
 		<link href="{{url_prefix}}/css/syntax.css" rel="stylesheet" media="screen">
-		{% include 'style.html' %}
+		{% include 'cantilis/style.html' %}
 		<link href="{{url_prefix + '/css/override.css'}}" rel="stylesheet" media="screen">
 		
 		<meta name="generator" content="Powered by Slider Revolution 5.0.8.5 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
@@ -134,7 +134,7 @@
 		<link rel="apple-touch-icon-precomposed" href="{{url_prefix}}/css/cropped-site_icon-180x180.png">
 		<meta name="msapplication-TileImage" content="{{url_prefix}}/css/cropped-site_icon-270x270.png">
 		<!-- BEGIN GADWP v4.9.0.1 Universal Tracking - https://deconf.com/google-analytics-dashboard-wordpress/ -->
-		{% include 'analytics.html' %}
+		{% include 'cantilis/analytics.html' %}
 		
 	</head>
 	<!--// OPEN BODY //-->
@@ -144,7 +144,7 @@
 				<div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div>
 			</div>
 		</div>
-		{% include 'menu_mobile.html' %}
+		{% include 'cantilis/menu_mobile.html' %}
 		<!--// OPEN #container //-->
 		<div id="container">
 			<header id="mobile-header" class="mobile-left-logo clearfix">
@@ -168,7 +168,7 @@
 								<div id="logo" class="col-sm-4 logo-left has-img clearfix">
 									<a href="{{site.main_url}}"> <img class="standard" src="{{url_prefix}}/css/sigasi_logo_001.jpg" alt="Sigasi" height="40" width="122" /> <img class="retina" src="{{url_prefix}}/css/sigasi_logo_001.jpg" alt="Sigasi" height="0" width="0" /> <div class="text-logo"></div> </a>
 								</div>
-							{% include 'menu.html' %}
+							{% include 'cantilis/menu.html' %}
 							</div>
 							<!-- CLOSE .row -->
 						</div>
@@ -179,7 +179,7 @@
 			{% block insights_slider %}
 			<div id="rev_slider_11_1_wrapper_" class="rev_slider_wrapper fullwidthbanner-container" style="margin: 0px auto; padding: 0px; height: 145px; overflow: visible; background-color: transparent;">
 				<div id="rev_slider_11_1" class="rev_slider fullwidthabanner revslider-initialised tp-simpleresponsive" style="margin-top: 0px; margin-bottom: 0px; height: 145px;" data-version="5.0.8.5">
-					<ul class="tp-revslider-mainul" style="visibility: visible; display: block; overflow: hidden; width: 1200px; height: 100%; max-height: none; left: 0px;">
+					<ul class="tp-revslider-mainul" style="visibility: visible; display: block; overflow: hidden; width: 100%; height: 100%; max-height: none; left: 0px;">
 						<li data-index="rs-13" data-transition="notransition" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{{url_prefix}}/css/sigasi_headerinsights_001-100x50.png" data-delay="4440" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="" class="tp-revslider-slidesli active-revslide" style="width: 100%; height: 100%; overflow: hidden; z-index: 20; visibility: inherit; opacity: 1;">
 							<div class="slotholder" style="width: 100%; height: 100%; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
 								<div class="tp-bgimg defaultimg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20; background-image: url(&quot;{{url_prefix}}/css/sigasi_headerinsights_001.png&quot;); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;" src="{{url_prefix}}/css/sigasi_headerinsights_001.png"></div>

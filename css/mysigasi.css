@@ -1,0 +1,29 @@
+
+.activator-form tr {
+	border-top-style: hidden;
+	border-bottom-style: hidden;
+}
+
+.activator-form td input{
+}
+
+.activator-form p.submit{
+	text-align: center;
+}
+div.test{
+	color: red;
+}
+
+.errors {
+	color: red
+}
+
+input[type="text"], 
+input[type="email"],
+input[type="number"],
+select{
+	color:black
+}
+select{
+	-webkit-appearance:menulist-button
+}

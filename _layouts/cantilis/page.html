@@ -1,4 +1,4 @@
-{% extends "_base.html" %}
+{% extends "cantilis/_base.html" %}
 
 {% block body %}
 
@@ -10,30 +10,12 @@
     </div>
         
     <div style="margin: 10px 0 10px">
-        <span>
-        {% if this.date %}
-        {% if "/releasenotes/" in this.url %}
-          Released on {{this.date|dateformat}}
-        {% else %}
-          Posted on {{this.date|dateformat}}
-        {% endif %}
-        {% endif %}
-        {% if this.author %}
-            by {{this.author|author}}
-        {% endif %}
-        </span>
         {% if this.tags %}
         <span style="padding-left:50px">
         Tagged as: 
           {% for tag in this.tags %}
               <a href="/tag/{{tag}}/" class="btn btn-default btn-xs" style="margin-bottom: 2px;">{{tag}}</a>
           {% endfor %}
-        </span>
-        {% endif %}
-        
-        {% if this.license %}
-        <span style="padding-left:50px">
-            Licensed under {{this.license | license}} 
         </span>
         {% endif %}
     </div>
@@ -50,7 +32,7 @@
         {{this.body}}
 
         {% if this.comments %}
-          {% include 'cantilis/comments.html' %}
+          {% include 'comments.html' %}
         {% endif %}
       </div>
       {% endblock %}
@@ -86,5 +68,12 @@
       
 </div>
 
+{% endblock %}
+
+
+{% block acknowledgement %}
+<div class="text-right">
+	my.sigasi.com is powered by <a href="http://flask.pocoo.org">Flask</a>
+</div>
 {% endblock %}
 

@@ -14,6 +14,9 @@ def today(unusedArgumetn):
 def dateformat(value, format="%Y-%m-%d"):
     return value.strftime(format).replace('-','&#8209;') #non-breaking hyphen
 
+def coloredDot(title):
+    return title.replace('.','<font color="#f47920">.</font>')
+    
 def md(text):
     return markdown.markdown(text)
 
@@ -113,3 +116,4 @@ filters['split'] = split
 filters['wistia'] = wistia
 filters['today'] = today
 filters['license'] = license
+filters['coloredDot'] = coloredDot
