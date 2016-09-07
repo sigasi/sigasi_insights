@@ -1,5 +1,5 @@
 ---
-title: "Sigasi vs than Emacs VHDL mode"
+title: "Sigasi vs Emacs VHDL mode"
 layout: index-blog
 order: date
 reverse: false
