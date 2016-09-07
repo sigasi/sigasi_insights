@@ -213,6 +213,7 @@ If your floating license server does not function properly, try the following st
 * Verify that your server meets the [/faq#what-are-the-system-requirements].  
   If you try to run the daemon on an unsupported version of Windows, you will typically see this error message: `CreateProcess error code: 0xc1   File= sigasi.exe`. 
 * You can easily check the status of your license via the License Key preference page : **Preferences > Sigasi > License Key**. At the bottom of this preference page you can see the type and expiration date of your license.
+* If you are accessing your license server through an SSH tunnel, try using `127.0.0.1` instead of `localhost`. 
 * Sigasi Studio pre-emptively tries to check out certain license features. As a result, you might see warning message like this in your server log. These messages can be safely ignored.
 ```
 9:14:47 (sigasi) UNSUPPORTED: "com.sigasi.hdt.custom" (PORT_AT_HOST_PLUS   ) testuser@testmachine  (License server system does not support this feature. (-18,327:10054 ""))

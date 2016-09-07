@@ -95,6 +95,13 @@ not a part of the project and will not include that resource in a
 project build. This is typically useful when you have stale copies of
 HDL files or folders lying around that you want simply to be ignored.
 
+# Configuration file
+
+All library configuration information is stored in the `.library_mapping.xml` file in the root of your project.
+Editing this file will trigger a _Clean Build_ of your project.
+
+Sigasi only writes changes to this configuration file when you make changes to the library configuration with the context menu in the _Project Explorer_. When you do make changes, Sigasi first checks that all paths in the library configuration still exist. If paths no longer exit, they are automatically removed from the configuration file.   
+
 # Common libraries {: #libraries-common}
 
 In any newly created VHDL project, the `Common Libraries` folder
