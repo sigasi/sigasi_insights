@@ -1,5 +1,5 @@
 ---
-title: Sigasi 3.2
+title: Sigasi Studio 3.2
 layout: page
 pager: true
 date: 2016-09-13
