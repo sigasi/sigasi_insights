@@ -6,22 +6,21 @@ pager: true
 
 # Choosing your VHDL and Verilog version {: #configure-version}
 
-Sigasi supports VHDL version 1993, 2002 and 2008, and Verilog (2005) and SystemVerilog (2012). You can select the default VHDL version to use in: **Window > Preferences > Sigasi > VHDL**. The default Verilog version can be set on **Window > Preferences > Sigasi > Verilog**. 
+Sigasi supports VHDL version 1993, 2002 and 2008, and Verilog (2005) and SystemVerilog (2012). You can select the default VHDL version to use in: **Window > Preferences > Sigasi > VHDL**. You can set the default Verilog in: **Window > Preferences > Sigasi > Verilog**. 
 
-Since [Sigasi 3.2][/releasenotes/sigasi-3.02], you can also set the language version per project, folder or file. In the Project Explorer, right click your project, folder or file; select **Properties**, **VHDL Version** (**Verilog Version** for Verilog projects) and select the version via the dropdown menu. 
+Since [Sigasi 3.2][/releasenotes/sigasi-3.02], you can also set the language version per project, per folder and per file. In the Project Explorer, right click your project, folder or file; select **Properties**, **VHDL Version** (**Verilog Version** for Verilog projects) and select the version via the dropdown menu. 
 
 ![](images/project_vhdl_version.png)
 
-When you change the version of a file, only that file is affected. However, when you change the version of a folder, then everything in that folder
-will have this version. Any overrides in the folder and its sub-folders will be removed. When you are defining the language versions for a new project you should map from top to bottom.
+When you change the language version of a file, only that file is affected. However, when you change the version of a folder, then everything in that folder will have the new language version. Any overrides in the folder and its sub-folders will be removed. When you are defining the language versions for a new project you should map from top (project root) to bottom (files).
 
-The version information is stored in `<project path>/.settings/com.sigasi.hdt.vhdl.version.prefs` and `<project path>/.settings/com.sigasi.hdt.verilog.version.prefs`. We recommend to add this file to version control so you can share it with your team.
+The version information is stored in `<project path>/.settings/com.sigasi.hdt.vhdl.version.prefs` and `<project path>/.settings/com.sigasi.hdt.verilog.version.prefs`. We recommend you add this file to version control so you can share it with your team.
 
 **Notes**:
 
 * **VHDL libaries:** Any new project that you create will have the common libraries (`STD` and `IEEE`) that correspond to your selected VHDL version. Your _existing project will **not** be modified_. If you want to update the common libraries for an existing project, right-click the project and select **Library Mapping > Reset Common Libraries**.
 * **No automatic rebuild**: You files will not be automatically re-analyzed when you change the language version. You can force this with **Projct > Clean...** and select your project.
-* If you want to write VHDL 87 code, you should select the “1993” option. However, the tool will not warn about constructs that were not supported in 1987, but that were introduced in 1993.
+* If you want to compile VHDL 87 code, you should select the “1993” option. There are no checks to warn about constructs that were not supported in 1987, but that were introduced in 1993.
 
 
 # Colors and Fonts {: #configure-colors}
