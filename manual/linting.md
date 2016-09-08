@@ -30,7 +30,7 @@ in the design. Sigasi’s VHDL linter checks for the following problems:
 -   Unused declarations
 -   Duplicate declarations
 -   Declaration could not be found
--   VHDL 2008 features in VHDL 93 mode (Learn about [/manual/config#configure-vhdl-version])
+-   VHDL 2008 features in VHDL 93 mode (Learn about [choosing your VHDL version][/manual/config#configure-version])
 -   Assignment validation
 -   Case statement validation
 -   Instantiation statement validation
