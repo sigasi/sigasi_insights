@@ -5,7 +5,9 @@ pager: true
 author: Philippe Faes
 date: 2016-04-27
 comments: true
+bannerad: true
 ---
+
 
 Since Sigasi's rebranding in January 2016, most content has been separated from the main Sigasi website. We now have a website hosted at
 <http://insights.sigasi.com>. This new Insights site contains the user manual, a collection of technological 

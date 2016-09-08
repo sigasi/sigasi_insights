@@ -9,7 +9,9 @@ tags:
   - Sigasi
   - EDA
 comments: true
+bannerad: true
 ---
+
 The most important tasks of digital designers is to write VHDL (or Verilog) code and to verify it. The two tools you need for that are: an editor (or rather: an IDE) and a simulator. Editors are available for free and I've discussed IDE's elsewhere ([why-hardware-designers-should-switch-eclipse]). What concerns me is that there are no high quality open source implementations of a VHDL simulator available. 
 
 Now, why is that a concern? I think there are two points to be made.

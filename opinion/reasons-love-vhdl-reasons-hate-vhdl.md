@@ -8,7 +8,9 @@ tags:
   - VHDL
   - philosophical
 comments: true
+bannerad: true
 ---
+
 People <a href="http://www.google.be/search?q=hate+vhdl">hate VHDL</a>. People <a href="http://www.google.be/search?q=love+vhdl">love VHDL</a>. But most of all people love to complain about VHDL. 
 I want to make a list of reasons to love or hate VHDL. Not to complain about them and not to prove that VHDL is better or worse than Verilog. No, I want to make this list so that we can use the strengths of VHDL, and find ways to overcome its weaknesses.
 

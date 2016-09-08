@@ -8,7 +8,9 @@ tags:
   - VHDL
   - VHDL-2008
 comments: true
+bannerad: true
 ---
+
 While some design teams will stick to VHDL-93 until the sun burns out, some people are using as much of the new VHDL-2008 standard as is supported by their tools. Big question is: how much is actually supported by which tools?
 
 > Spoiler Alert: The market leader in VHDL 2008 is Aldec.

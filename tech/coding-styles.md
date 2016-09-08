@@ -7,7 +7,9 @@ date: 2012-09-14
 tags: 
   - coding guidelines
 comments: true
+bannerad: true
 ---
+
 
 There is a lot of debate about which [coding-conventions] are best. We know that many teams have their own coding conventions but often times they are not enforced. Let's see why and how coding guidelines can help you.
 

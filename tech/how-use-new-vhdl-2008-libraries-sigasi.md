@@ -9,7 +9,9 @@ tags:
   - Sigasi
   - hdt-2.0
 comments: true
+bannerad: true
 ---
+
 
 The VHDL 2008 standard (1076-2008) revises and adds extra functionality to the STD and IEEE libraries. In an upcoming release, Sigasi will ship these revised libraries with the Sigasi VHDL tool. Until that time, you have to jump a few hoops to get everything to work with the latest libraries. This blog post describes how.
 

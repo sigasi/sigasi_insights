@@ -9,7 +9,9 @@ tags:
   - VHDL
   - VHDL Parser
 comments: true
+bannerad: true
 ---
+
 Ideally, if you make three mistakes in VHDL, you want to see three error markers. Here is a small example.
 
 ![Sigasi shows three error markers for these three errors](images/recovering-vhdl-parser-3errors.png)

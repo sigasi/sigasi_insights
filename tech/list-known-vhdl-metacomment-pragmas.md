@@ -12,7 +12,9 @@ tags:
   - VHDL
   - Xilinx
 comments: true
+bannerad: true
 ---
+
 
 Following up on a previous post, [vhdl-pragmas], this is an incomplete list of supported VHDL pragmas, organized by vendor.
 

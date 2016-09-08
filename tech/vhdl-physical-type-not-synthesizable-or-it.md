@@ -11,7 +11,9 @@ tags:
   - VHDL synthesis
   - rtl
 comments: true
+bannerad: true
 ---
+
 Everybody who has been taught VHDL in college or in a company with senior colleagues has heard the following _"wisdom"_:
 
 > *Pysical types are for simulation only. They cannot be synthesized.*

@@ -8,7 +8,9 @@ tags:
   - diff
   - howto
 comments: true
+bannerad: true
 ---
+
 
 In Sigasi HDT for VHDL, as in any other Eclipse plugin tools, you can
 easily compare your current file with older versions. There are two

@@ -7,7 +7,9 @@ date: 2009-12-03
 tags: 
   - JanHDL
 comments: true
+bannerad: true
 ---
+
 In my previous blog post, [20-year-old-relationship], I mentioned that when I first met VHDL, it wasn't love at first sight. However, I did experience love at first sight with another hardware design technology: synthesis.
 
 It was early 1990, and I had just started as a hardware designer at Alcatel. My very first assignment was an evaluation of a new tool called Synopsys Design Compiler. Within a few days after I got my hands on it, I was hooked. This was a tool that could convert a non-trivial hardware description "program" into an efficient implementation. I felt that I had discovered the missing link in the vision that hardware design is a kind of software development.

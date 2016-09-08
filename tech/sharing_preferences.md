@@ -4,7 +4,9 @@ layout: page
 pager: true 
 date : 2015-10-12
 comments: true
+bannerad: true
 ---
+
 
 A common problem in larger teams is how to share Sigasi preferences (configuration) in design teams. There are always some options that need to be set for Sigasi to work well, for example: the simulator path, license key, custom autocomplete templates,VHDL version.
 

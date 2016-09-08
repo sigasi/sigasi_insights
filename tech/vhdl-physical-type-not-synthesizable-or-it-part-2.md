@@ -11,7 +11,9 @@ tags:
   - VHDL synthesis
   - rtl
 comments: true
+bannerad: true
 ---
+
 In a previous post, [vhdl-physical-type-not-synthesizable-or-it], I pointed out that VHDL synthesis tools can indeed synthesize VHDL physical types. In the example I gave, all computations with physical types were done at elaboration time, so that the synthesis tool does not really have to deal with physical types at all.
 
 I choose a example that was too weak and I want to make that right. So here is my new claim:

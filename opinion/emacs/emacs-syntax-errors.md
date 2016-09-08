@@ -8,7 +8,9 @@ tags:
   - Emacs
   - VHDL
 comments: true
+bannerad: true
 ---
+
 Here is a new example of why Sigasi is [index]: syntax checking.
 
 In Emacs VHDL mode, there is no built-in syntax checker. This design

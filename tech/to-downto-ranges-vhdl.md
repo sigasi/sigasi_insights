@@ -7,7 +7,9 @@ date: 2014-09-05
 tags: 
   - VHDL
 comments: true
+bannerad: true
 ---
+
 Most VHDL designers write 'something `downto` something' in their code all the time. But what does this `downto` actually mean? And what is the difference with `to`?
 
 The keywords `downto` and `to` specify the *direction* of *ranges* in VHDL. `downto` is descending (going down); `to` is ascending (going up).

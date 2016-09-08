@@ -10,7 +10,9 @@ tags:
   - constrained random
   - assert
 comments: true
+bannerad: true
 ---
+
 
 ## Assertions and Constrained Random
 

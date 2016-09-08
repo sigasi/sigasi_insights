@@ -5,7 +5,9 @@ pager: true
 author: Hendrik Eeckhaut
 date: 2014-04-30
 comments: true
+bannerad: true
 ---
+
 In jEdit one can get a list of all search-results in the current file in a separate part of the frontend (always visible) with **F3**. Is this also possible in Sigasi?
 
 There are multiple, similar 'actions' in Sigasi:

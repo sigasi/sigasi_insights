@@ -8,7 +8,9 @@ tags:
   - eclipse
   - planeteclipse
 comments: true
+bannerad: true
 ---
+
 
 Thanks to Ian Bull on [Eclipse Con Europe](http://www.eclipsecon.org) last week, I finally found out how to set the update description for an RCP product update. This was a tiny annoyance that has been itching since the first release of Sigasi. For the Eclipse plugin version of Sigasi, this never was a problem. The feature description is shown in the update dialog. But for the standalone version (RCP), there was always an empty description...
 

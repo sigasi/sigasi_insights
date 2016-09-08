@@ -8,7 +8,9 @@ tags:
   - Xilinx
   - VHDL
 comments: true
+bannerad: true
 ---
+
 
 Xilinx no longer ships
 <a href="http://www.xilinx.com/products/ipcenter/ModelSim.htm">ModelSim</a>

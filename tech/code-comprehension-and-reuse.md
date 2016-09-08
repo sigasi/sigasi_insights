@@ -8,7 +8,9 @@ tags:
   - code comprehension
   - code reuse
 comments: true
+bannerad: true
 ---
+
 Understanding a big body of code is always a difficult task. But the correct tools will help you speed up and do in hours what would otherwise take a week.
 
 ## Key Features:

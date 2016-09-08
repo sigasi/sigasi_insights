@@ -8,7 +8,9 @@ tags:
   - Python
   - Sigasi
 comments: true
+bannerad: true
 ---
+
 > "The numbers tell the tale"
 
 As a small EDA startup that sells its software via Internet, it is of upmost importance to be easily found. Therefore SEO (Search Engine Optimization) is one of our major tasks. The higher www.sigasi.com ranks on the search pages for the keywords related to our business, the more visitors we can expect.

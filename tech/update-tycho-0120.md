@@ -10,7 +10,9 @@ tags:
   - maven
   - eclipse
 comments: true
+bannerad: true
 ---
+
 Tycho, the new Maven base Eclipse build system, was recently accepted as an [Eclipse project](http://www.eclipse.org/tycho/). In the latest, [0.12.0 release](http://dev.eclipse.org/mhonarc/lists/tycho-user/msg00102.html), the namespace was updated from _org.sonatype.tycho_ to _org.eclipse.tycho_. This results in lots of changes to your pom.xml files.
 
 I used following script to update; it might save you some time too:

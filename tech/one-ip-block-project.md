@@ -9,7 +9,9 @@ tags:
   - hdt-2.0
   - howto
 comments: true
+bannerad: true
 ---
+
 In earlier posts, I have explained that there are basically three ways
 of how to organize your VHDL code within your Sigasi environment. As a
 reminder:

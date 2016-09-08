@@ -6,7 +6,9 @@ popular: true
 author: Philippe Faes
 date: 2011-04-13
 comments: true
+bannerad: true
 ---
+
 In the latest release of Sigasi HDT, we introduced a problem reporting tool. This features sends error reports back to our servers so that we can find and squash even more bugs.
 
 ![Our Lava Lamps](images/lavalamp.jpg){: align="right"}

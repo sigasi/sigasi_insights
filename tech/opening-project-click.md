@@ -5,7 +5,9 @@ pager: true
 author: Hendrik Eeckhaut
 date: 2014-04-29
 comments: true
+bannerad: true
 ---
+
 
 Many IDE's have a project descriptor file that you can double click to open that project. If you want your colleagues to open your project, all you need to do is make sure that they have the IDE installed, and ask them to double click the project file descriptor.
 

@@ -7,7 +7,9 @@ date: 2010-11-03
 tags: 
   - JanHDL
 comments: true
+bannerad: true
 ---
+
 
 ## How VHDL preserves determinism
 

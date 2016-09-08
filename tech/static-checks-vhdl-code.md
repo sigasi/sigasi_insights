@@ -10,7 +10,9 @@ tags:
   - linting
   - VHDL
 comments: true
+bannerad: true
 ---
+
 [Sigasi Lint](http://www.sigasi.com/vhdl-lint) performs static analysis for VHDL code in order to find VHDL code <a href="http://en.wikipedia.org/wiki/Lint_(software)">lint</a>. The built in VHDL linter will issue warning when you use certain suspicious VHDL constructions. While your code does not violate the VHDL syntax, there might be a problem with your code.
 
 ## "Others"

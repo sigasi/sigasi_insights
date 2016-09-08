@@ -8,7 +8,9 @@ tags:
   - EDA
   - VHDL
 comments: true
+bannerad: true
 ---
+
 In my previous post, [lacking-open-source-vhdl-simulator], I argued that the world would be a better place if we had a freely (<a href="http://en.wikipedia.org/wiki/Gratis_versus_libre"><em>libre</em></a>) available VHDL parser and simulator. Today, I will explain why one particular open source compiler is honorable, but not sufficient.
 
 If you have ever searched for a VHDL simulator, you will surely have found (and perhaps tried) <a href="http://gna.org/projects/ghdl">GHDL</a>. GHDL is an open source simulator for VHDL, implemented as a front-end for the popular GCC compiler. While it is the best open source alternative available at the moment, there are some problems with it.

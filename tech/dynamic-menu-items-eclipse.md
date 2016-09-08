@@ -10,7 +10,9 @@ tags:
   - java
   - planeteclipse
 comments: true
+bannerad: true
 ---
+
 I wanted to add a dynamic menu contribution item to the popup menu of project explorer. I could not immediately find out how to do this, so I decided to document it here. Eventually it turned out to be quite easy.
 
 First you have to add the menu contribution to your `plugin.xml`. I wanted to add an extra menu item to the project explorer so I used `"popup:org.eclipse.ui.navigator.ProjectExplorer#PopupMenu?after=additions"` as locationURI. Next you only have to specify a class that will create the menu item and specify an id.

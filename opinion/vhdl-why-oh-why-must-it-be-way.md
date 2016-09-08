@@ -7,7 +7,9 @@ date: 2010-12-01
 tags: 
   - VHDL
 comments: true
+bannerad: true
 ---
+
 I have been wrestling the VHDL grammar for our <a href="http://www.eclipse.org/Xtext/" >Xtext</a>-based IDE-prototype for a while now (note to self: blog about Xtext).  Ever since I learned VHDL at the university and later on, while designing a video decoder, I have had the uncanny feeling that the language is somehow crooked.  It is a reasonable language to express hardware designs at a higher abstraction level but its syntax does not imprint itself well upon my brain, forcing me to make silly typing errors all the time.  As of late, I see more clearly why this is the case. Some simple examples of design flaws of the syntax will illustrate my point.
 
 ## The end is near 

@@ -7,7 +7,9 @@ date: 2010-12-17
 tags: 
   - JanHDL
 comments: true
+bannerad: true
 ---
+
 Dear reader,
 
 In my previous post, [vhdls-crown-jewel], I announced further considerations about nondeterminism in Verilog. However, I am getting worried that you may be losing interest. As a visitor of the Sigasi site, you are likely a VHDL design professional, or aspiring to become one. Why should you care about Verilog? Moreover, you are probably a busy person, looking for productivity solutions in your day-to-day work. What is the relevancy of all this pseudo-philosophical talk about nondeterminism? Before continuing, I think I have to give you an indication of where I am heading.

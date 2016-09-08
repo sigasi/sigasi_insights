@@ -7,7 +7,9 @@ date: 2011-12-13
 tags: 
   - eclipse
 comments: true
+bannerad: true
 ---
+
 Somebody asked me why we had build our Sigasi VHDL plugin on top of Eclipse. There are several reasons. Here are five of them.
 
 ## 1. Familiar environment for software developers

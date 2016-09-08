@@ -9,7 +9,9 @@ tags:
   - project management
   - VHDL IDE
 comments: true
+bannerad: true
 ---
+
 Most teams consist of more than one design engineer. The Sigasi Pro platform does not only offer editing capabilities, but it is above all an extensible and customizable platform for _team collaboration_ and _project management_.   
 
 Features

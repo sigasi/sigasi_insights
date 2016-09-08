@@ -9,7 +9,9 @@ tags:
   - VHDL
   - VHDL Libraries
 comments: true
+bannerad: true
 ---
+
 In VHDL, the concept of <em>libraries </em> is used to separate
 namespaces. The idea is that separate teams can develop code in their
 own library, without previously agreeing on naming conventions. Even if

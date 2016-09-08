@@ -8,7 +8,9 @@ tags:
   - coding guidelines
   - VHDL
 comments: true
+bannerad: true
 ---
+
 
 Style guides can be a religion. Like religion, style guides can help people make the right choices. But also like religion, style guides can make people stick to unjustified dogma and block any constructive dialogue. 
 

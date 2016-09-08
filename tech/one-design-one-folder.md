@@ -9,7 +9,9 @@ tags:
   - hdt-2.0
   - howto
 comments: true
+bannerad: true
 ---
+
 
 As discussed in [how-do-you-organize-source-code-your-hardware-project], you
 can organize your VHDL files in many ways in Sigasi. The three *recommended ways* are:

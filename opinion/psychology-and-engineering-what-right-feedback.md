@@ -5,7 +5,9 @@ pager: true
 author: Philippe Faes
 date: 2010-09-08
 comments: true
+bannerad: true
 ---
+
 Yesterday, I had an interesting conversation with a professor of psychology. He researches how people react to feedback. I offered to buy him lunch in exchange for some of his thoughts. I prefer lunch over having to read academic research papers.
 
 It turns out that feedback from a machine is in general better received than feedback from humans. There are some important factors that influence how efficient feedback can be:

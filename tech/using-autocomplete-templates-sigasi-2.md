@@ -8,7 +8,9 @@ tags:
   - hdt-2.0
   - templates
 comments: true
+bannerad: true
 ---
+
 
 VHDL is a very *verbose language*. You have to type a lot to describe
 your design and there is often a lot of redundancy in what you write.

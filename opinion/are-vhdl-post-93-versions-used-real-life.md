@@ -9,7 +9,9 @@ tags:
   - VHDL
   - EDA
 comments: true
+bannerad: true
 ---
+
 I've just finished implementing VHDL protected types, as defined in the VHDL 2000 standard. 
 
 As part of our quality assurance process, we run a bunch of VHDL code through our tool. In fact, we've downloaded all freely available VHDL from the internet to stress test our tool. However, <em>none</em> of these projects seem to use protected types. All I can do is run the tests that I have created and compile the VHDL files that one of our users has sent me.

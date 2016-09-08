@@ -7,7 +7,9 @@ tags:
   - eclipse
   - howto
 comments: true
+bannerad: true
 ---
+
 [Tcl](http://en.wikipedia.org/wiki/Tcl) is the de facto standard for scripting in EDA software. So every hardware designer has to deal with Tcl. Luckily for us there is an Eclipse Tcl plugin available that can help us read and write Tcl code. This plugin offers open declaration, (quick) outline,autocomplete, debugging and other features that will make you more productive.
 
 ## Install

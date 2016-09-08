@@ -5,7 +5,9 @@ pager: true
 author: Philippe Faes
 date: 2015-01-26
 comments: true
+bannerad: true
 ---
+
 Like many other languages, it is possible in VHDL to perform _name scoping_. This happens if you declare a new object in a nested scope that reuses the name of an object that was already declared. This is not an error in VHDL, but it can be confusing and it can cause errors. In general, I would advice against name scoping unless you have a very good reason. Even then, it would be best if you document (comment) your code so that everybody understands what is going on.
 
 This is a straightforward example of name shadowing:

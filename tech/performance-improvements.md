@@ -7,7 +7,9 @@ date: 2010-10-15
 tags: 
   - performance
 comments: true
+bannerad: true
 ---
+
 
 For the upcoming release of Sigasi's VHDL Eclipse plugin, we have reviewed the performance of our product for some very big VHDL projects.
 

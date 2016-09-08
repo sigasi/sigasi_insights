@@ -7,7 +7,9 @@ date: 2011-03-07
 tags: 
   - EDA2.0
 comments: true
+bannerad: true
 ---
+
 Dear Mr. Rhines,
 Dear Mr. De Geus,
 Dear Mr. Tan,

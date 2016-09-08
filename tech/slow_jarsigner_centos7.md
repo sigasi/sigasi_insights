@@ -7,7 +7,9 @@ date: 2016-08-18
 tags: 
   - java
 comments: true
+bannerad: true
 ---
+
 
 While I was setting up a new build server for [Sigasi Studio](http://www.sigasi.com/products), I noticed that the full product build script was a lot slower. _A lot slower_ in this case is 9+ hours instead of an expected 3.5 hours. This post describes my debug quest and solution.
 

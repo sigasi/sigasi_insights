@@ -7,7 +7,9 @@ date: 2012-06-23
 tags: 
   - Quartus
 comments: true
+bannerad: true
 ---
+
 
 When you try to install Altera Quartus on a 64-bit Linux system (like Fedora or RedHat RHEL), you will get error messages about missing libraries. The Quartus installer actually looks for the 32-bit versions of these libraries. Here is the list of libraries that I ran in to and had to install:
 

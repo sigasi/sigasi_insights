@@ -8,7 +8,9 @@ tags:
   - coding guidelines
   - VHDL
 comments: true
+bannerad: true
 ---
+
 
 A hardware design project will often contain code that does nothing. Still, there might be a good reason to have this code. Here are some guidelines to determine if this dead code is useful or not:
 

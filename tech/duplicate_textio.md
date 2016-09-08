@@ -5,7 +5,9 @@ pager: true
 author: Hendrik Eeckhaut
 date: 2013-07-22
 comments: true
+bannerad: true
 ---
+
 
 Since [/releasenotes/sigasi-2.15], Sigasi detects **duplicate (conflicting) design units**. Duplicate design units are a bad idea because the compilation order determines which unit will eventually be used. This can lead to a lot of confusion and frustrating debugging sessions.
 

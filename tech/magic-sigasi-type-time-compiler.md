@@ -8,7 +8,9 @@ tags:
   - hdt-2.0
   - Sigasi
 comments: true
+bannerad: true
 ---
+
 _How does your Sigasi editor gather all **information** on your projects to enable features like navigation, outline, hovering, linting, refactorings ...? And how did they make it so *fast* that it works while you type? And how does Sigasi keeps its **memory** footprint under control?_
 
 This blog post tries to shed some light on the apparent magic behind Sigasi 2.x. In this blog I explain Sigasi's _datastructures_. A follow-up blog will explain how these datastructures are built. This should make you understand what the messages in the progress view mean. This will help you better understand what is going on.

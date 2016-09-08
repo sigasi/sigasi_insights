@@ -8,7 +8,9 @@ tags:
   - eclipse
   - planeteclipse
 comments: true
+bannerad: true
 ---
+
 
 For our <a href="http://www.sigasi.com/product">VHDL editor view</a> I wanted to implement <em>highlight matching bracket</em> like it exists in <a href="http://www.eclipse.org/jdt/">JDT</a>. I had to dig a lot longer in the JDT code than anticipated to find out how JDT implements this functionality. As so often is the case in Eclipse development, in the end this turned out to be really easy. It was again a matter of finding with few lines to add...
 

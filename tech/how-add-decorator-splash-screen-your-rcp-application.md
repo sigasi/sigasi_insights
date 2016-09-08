@@ -10,7 +10,9 @@ tags:
   - java
   - planeteclipse
 comments: true
+bannerad: true
 ---
+
 ![Decorated Splash Screen](images/decorated_splash.png){: style="float:right"} I wanted to add a decorator to the splash screen our RCP application 'Sigasi HDT' to give our users a visual clue about which version they are running (beta, trial, ...). After some digging and searching for the correct Google search terms, this turned out to be really simple. There is an extension for that: `org.eclipse.ui.splashHandlers`.
 
 This extension point allows to contribute a splash handler in which you can add custom behavior to the splash screen.

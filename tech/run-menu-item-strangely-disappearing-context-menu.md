@@ -9,7 +9,9 @@ tags:
   - java
   - eclipse
 comments: true
+bannerad: true
 ---
+
 <em>In this post I explain how I found the <strong>Run As</strong> menu item mysteriously disappear and how it can be fixed.</em>
 
 I ran into an unexpected issue while I was implementing a new launch configuration shortcut for our <a href="http://www.sigasi.com/product">RCP application</a>. The <strong>Run as</strong> menu only appeared the first time the Project Explorer's context menu was shown. (The <strong>Run as</strong> menu item was shown together with the <strong>Debug as</strong> and <strong>Profile as</strong> menu item, even though I did not declare any debug or profile shortcuts.) After it was shown once, it disappeared, regardless whether the action was run or not. Since I spend considerable time debugging this issue, I took the time to blog my solution to this strange behavior.

@@ -8,7 +8,9 @@ tags:
   - project
   - howto
 comments: true
+bannerad: true
 ---
+
 
 ***Note** This article was originally written for Sigasi 1.0. The
 general concepts still apply, but you will need to change some details.

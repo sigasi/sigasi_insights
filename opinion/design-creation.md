@@ -8,7 +8,9 @@ tags:
   - Design creation
   - VHDL
 comments: true
+bannerad: true
 ---
+
 Sigasi Pro helps electronics engineers to create their hardware designs faster and with less errors. 
 
 Writing VHDL is cumbersome and error prone. VHDL is extremely **verbose** (you need a lot of text to express even simple things) and **pedantic** (even small errors will cause compiler or run-time errors). These two characteristics unnecessarily add complexity to digital design. They raise the bar for junior engineers learning VHDL and they lock up mental energy of senior engineers working on large digital circuits.

@@ -8,7 +8,9 @@ tags:
   - VHDL
   - philosophical
 comments: true
+bannerad: true
 ---
+
 Last month, I asked for [reasons-love-vhdl-reasons-hate-vhdl]. From the answers on the forum and in <a href="http://kiss.ly/h2IGY9">the poll</a>, my first conclusion is that you hate VHDL more than you love it. 
 
 VHDL is made by man, so it is imperfect. In fact, VHDL is made by many, many men, so it is very, very imperfect. Let's analyze and see what VHDL users think and how we can work around (some of) it.

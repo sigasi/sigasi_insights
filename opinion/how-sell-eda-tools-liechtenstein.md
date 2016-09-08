@@ -9,7 +9,9 @@ tags:
   - Sigasi
 comments: true
 comments: true
+bannerad: true
 ---
+
 <em>In the EDA sector, about 80% is turned over by the three market leaders, who have a tremendous world wide sales force. Does this market still allow new players to sell their products in different parts of the world? The only way to compete is not to compete: focus on the areas that large corporations are not good at.</em>
 
 ## Traditional sales

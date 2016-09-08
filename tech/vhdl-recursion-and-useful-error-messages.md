@@ -8,7 +8,9 @@ tags:
   - EDA2.0
   - VHDL
 comments: true
+bannerad: true
 ---
+
 If hardware designers are to be more productive, the tools need to be better. Instead of building more complex tools (think: ESL and the likes) the EDA vendors should keep an appropriate focus on basic usability. Because, as Richard Goering says, <a href="http://www.cadence.com/Community/blogs/ii/archive/2010/05/24/what-is-eda-software-quality.aspx">just because it doesn't crash doesn't mean "quality."</a>
 
 I just <em>lost two hours struggling with VHDL simulators</em>, while in fact I wrote a silly error in my VHDL code. If I write a simple VHDL error, I expect a simple error message. Now, the error I made was a function call with infinite recursion. Granted, most VHDL designers avoid recursion all together, but that is beside the point. Recursion makes it easy to express an algorithm, and is is fully supported in the VHDL standard. There should be no reason to avoid it (at least not in behavioral code).

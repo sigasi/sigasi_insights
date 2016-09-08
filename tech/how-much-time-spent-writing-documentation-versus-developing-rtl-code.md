@@ -8,7 +8,9 @@ tags:
   - documentation
   - Guest Blog
 comments: true
+bannerad: true
 ---
+
 ## Estimation of time for technical documentation and software development
 
 Estimating software development schedules is a skill. The programmer who is going to do the work can figure out what steps they will need to take to implement that feature. And only the programmer can estimate how long each one will take. The nature of software development is that things which seem simple are often surprisingly complicated when we think about all the details. Attempting to estimate a feature before we've figured out how the feature is going to work, in detail, can't possibly work, even if we [multiply our best guess by three,](http://www.fogcreek.com/fogbugz/docs/70/topics/schedules/Estimatingsoftwaretasks.html) because our "best guess" is based on very little in the way of facts.

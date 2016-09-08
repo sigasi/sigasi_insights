@@ -8,7 +8,9 @@ tags:
   - Emacs
   - matrix
 comments: true
+bannerad: true
 ---
+
 
 <table>
 <tr><th>		</th>			<th>	Other editors	</th>			<th>	Emacs <span class="caps">VHDL</span> mode	</th>			<th>	Sigasi Pro	</th>		</tr>

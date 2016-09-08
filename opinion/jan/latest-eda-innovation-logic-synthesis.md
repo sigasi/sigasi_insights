@@ -7,7 +7,9 @@ date: 2010-01-18
 tags: 
   - JanHDL
 comments: true
+bannerad: true
 ---
+
 A few months ago <a href="http://www.cadence.com/community/members/rgoering.aspx">Richard Goering</a> blogged about the <a href="http://www.cadence.com/Community/blogs/ii/archive/2009/11/03/greatest-moments-in-eda-innovation.aspx">5 greatest moments in EDA innovation</a>. Here is the list: Spice, Verilog, Multi-level logic synthesis, Automated IC layout and Structured VLSI design.
 
 I would make some minor edits to the list. Instead of Verilog, I would nominate <strong>VHDL and Verilog</strong>, because I believe we have at least as much to thank to VHDL as to Verilog. Instead of multi-level logic synthesis, I would list <strong>RTL synthesis</strong>, because that has been the standard for digital design standard during the last 20 years. It builds on logic synthesis by adding the concept of synthesizing from clocked hardware descriptions written in a hardware description language.

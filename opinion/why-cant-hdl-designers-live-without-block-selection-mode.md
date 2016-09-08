@@ -9,7 +9,9 @@ tags:
   - block selection
   - VHDL
 comments: true
+bannerad: true
 ---
+
 One of the most frequently asked questions we get is :
 
 > Does Sigasi support block selection (a.k.a. column selection) mode?.

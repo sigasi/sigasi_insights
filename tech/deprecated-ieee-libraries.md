@@ -8,7 +8,9 @@ tags:
   - linting
   - VHDL
 comments: true
+bannerad: true
 ---
+
 # What are deprecated IEEE libraries?
 
 Don't use `ieee.std_logic_unsigned` and similar libraries because they are not standardized. 

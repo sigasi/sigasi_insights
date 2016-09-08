@@ -9,7 +9,9 @@ tags:
   - naming conventions
   - file structure
 comments: true
+bannerad: true
 ---
+
 
 Some computer languages force a certain directory structure upon its users. While this may seem like a restriction of your freedom, in fact well-chosen directory conventions give you the liberty to concentrate on more important matters. Regrettably, languages like C and VHDL leave their users with total freedom to make bad choices about their file structures. Since you don't get rules enforced by the language, you are faced with the choice between either total chaos or composing your own guidelines for file names and directory structures. If you choose the latter, some lessons are to be learned from other computer languages' conventions, as well as from publicly available VHDL sources.
 

@@ -9,7 +9,9 @@ tags:
   - howto
   - VHDL editor
 comments: true
+bannerad: true
 ---
+
 When you start using a new editor, you probably lose some of your coding productivity at first. This happens regardless of the editor you were used to and regardless of the editor you move to. Most people think their loss in productivity is because the new editor has less features or does not have the features they need. In reality, the new editor just has less features <em>known to the new user</em>.
 
 So here is a post for everybody moving to Eclipse, and especially <em>VHDL coders</em> trying out the Sigasi HDT Eclipse plugin. I have written down some cool features that you might not find during your first week with Eclipse. Today I focus on <em>code editing</em>.

@@ -8,7 +8,9 @@ tags:
   - hdt-2.0
   - eclipse
 comments: true
+bannerad: true
 ---
+
 
 In this blog post, I will describe how you can use *path variables* to
 avoid system dependent, absolute paths in your project files.

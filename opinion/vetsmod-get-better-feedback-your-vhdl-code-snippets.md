@@ -7,7 +7,9 @@ date: 2011-04-27
 tags: 
   - VHDL
 comments: true
+bannerad: true
 ---
+
 Code snippets are an excellent way to communicate a complex question in a concrete, easy to understand way. 
 Whether you file a bug report with your EDA vendor ([which you always should](/tech/vhdl-recursion-and-useful-error-messages.html)), or you ask a question on <a href="http://stackexchange.com/filters/5287/digital-design">a Q&A forum</a>, an easy to understand code snippet will make it easy for others to understand your problem, and you will get a faster and more accurate response.
 

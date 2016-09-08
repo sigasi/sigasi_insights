@@ -9,7 +9,9 @@ tags:
   - Register mapping
   - VHDL
 comments: true
+bannerad: true
 ---
+
 In many projects, some of the VHDL code is generated in one way or another. For instance, many projects manage their register map in one master file and generate their  VHDL packages and C headers using some kind of tool (either commercial or an in house script).
 
 This article deals with integrating such a script in the Sigasi Pro development environment, so that your generated files are always up to date. In order to make it easy for you to reproduce this, we have created a demo project that you can <a href="https://github.com/philippefaes/sigasi_demo_codegen/archive/master.zip">download</a> or <a href="https://github.com/philippefaes/sigasi_demo_codegen">clone from Github</a>. The demo project already contains a working "Builder" that runs the generator script each time you change the values in the script.

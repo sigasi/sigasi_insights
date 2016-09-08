@@ -7,7 +7,9 @@ date: 2010-03-11
 tags: 
   - JanHDL
 comments: true
+bannerad: true
 ---
+
 Regular readers of my blog may be wondering what I have been doing during the past decade. I have been talking about EDA innovations, both those that succeeded and those that didn't. But I realize that all technologies that I discussed may sound like old news, coming from the nineties of the previous century.
 
 However, we are 2010 by now. Therefore, some of you may think that I am overlooking or underestimating the more recent innovations that are happening before my eyes. What about Constrained Random Verification? Assertion-based Design? SystemC? C-Based High-Level Synthesis?

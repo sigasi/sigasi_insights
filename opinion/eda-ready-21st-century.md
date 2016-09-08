@@ -8,7 +8,9 @@ tags:
   - EDA2.0
   - EDA
 comments: true
+bannerad: true
 ---
+
 <h2>... or do we need an EDA 2.0 revolution?</h2>
 
 Last month, at 47DAC, I participated in a panel that was announced as Lucio's Litmus Test: Is Your Start-Up Ready for the 21st Century?

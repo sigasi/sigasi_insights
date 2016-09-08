@@ -7,7 +7,9 @@ date: 2012-09-06
 tags: 
   - Guest Blog
 comments: true
+bannerad: true
 ---
+
 <img style="float: right;" src="images/jaco_sigasi_pic.img_assist_custom-150x145.png" alt="Jaco Naude">
 <em>Jaco Naude is a firmware and hardware design engineer and has been working for the Experimental Radar Systems group at the CSIR in South Africa for the last 4 years. Before that, he has done technical support at Xilinx on their DSP cores and System Generator for 2 years. Jaco has done a lot of research into ways to make firmware design management, sharing and packaging easier. The result of this effort is a tool called [Scineric Workspace](http://scineric.csir.co.za). Lastly, Jaco is a fan of the Qt C++ framework and the author of an open source Qt library called [Qtilities](http://www.qtilities.org).</em>
 

@@ -8,7 +8,9 @@ tags:
   - coding guidelines
   - VHDL
 comments: true
+bannerad: true
 ---
+
 
 Some coding guidelines require that a package and its body should be in the same file. Other guidelines require two separate files, often with rules about the file names. What is the reason for this?
 

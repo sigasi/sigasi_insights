@@ -9,7 +9,9 @@ tags:
   - VHDL
   - Sigasi
 comments: true
+bannerad: true
 ---
+
 In a previous post "[generate-vhdl-doxygen-documentation-sigasi]", I wrote about how you can use Doxygen in Sigasi to document your VHDL designs.
 
 Doxygen tries to make the documentation process easier by extracting information from your VHDL source files. The biggest advantage is that there is only a single source for both your design and your documentation. While this gives no guarantee for the design staying in sync with the documentation, it certainly makes it easier.

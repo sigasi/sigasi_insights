@@ -7,7 +7,9 @@ date: 2011-02-10
 tags: 
   - JanHDL
 comments: true
+bannerad: true
 ---
+
 
 ## The Circuit Girl
 

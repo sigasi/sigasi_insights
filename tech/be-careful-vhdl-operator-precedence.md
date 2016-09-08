@@ -8,7 +8,9 @@ tags:
   - operators
   - VHDL
 comments: true
+bannerad: true
 ---
+
 
 I was recently writing some tests for our VHDL expression evaluator and was amazed by the the result of evaluting `-16 ** 2`. 
 I expected `256`, but it wasn't.

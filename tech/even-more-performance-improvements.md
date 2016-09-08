@@ -7,7 +7,9 @@ date: 2010-10-22
 tags: 
   - performance
 comments: true
+bannerad: true
 ---
+
 In our latest release we focused development on improving the performance of our VHDL compiler so that Sigasi HDT can give faster feedback. We optimized VHDL analysis so that both the full build and incremental builds are much faster.
 
 We also added another improvement to Sigasi HDT that we did not communicate about yet. In the [latest download of the stand-alone application](http://www.sigasi.com/download), we also updated the JRE, the <a href="http://en.wikipedia.org/wiki/Java_Virtual_Machine#Execution_environment">Java Runtime Environment</a> to version 1.6.0_22. The JRE is the engine that runs Sigasi HDT (and Eclipse). So every <a href="http://en.wikipedia.org/wiki/Java_performance">performance improvement to the JRE</a> also speeds up Sigasi HDT.

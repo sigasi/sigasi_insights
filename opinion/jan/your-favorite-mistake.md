@@ -7,7 +7,9 @@ date: 2010-09-08
 tags: 
   - JanHDL
 comments: true
+bannerad: true
 ---
+
 As a visitor of the Sigasi website, you are probably interested in Sigasi's products. Therefore, there is a good chance that you are using VHDL and that you like it. (If you are here for other reasons or if you hate VHDL, you are most welcome too :-))
 
 Call yourself lucky. If it had depended on some EDA heavyweights, you would not have had that choice today. You would have been forced to use Verilog.

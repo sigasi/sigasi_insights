@@ -8,7 +8,9 @@ tags:
   - VHDL editor
   - poll
 comments: true
+bannerad: true
 ---
+
 In a small poll on the Sigasi website, 220 people responded to the question: <strong>Which editor do/did you use before you heard about Sigasi?</strong> We know that there is no reason to think that this test was representative of the entire VHDL development community, but the results are nevertheless interesting.  
 
 ![VHDL Editors Survey Results](images/editors_poll.png){: style="float:right"}

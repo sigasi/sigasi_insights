@@ -8,7 +8,9 @@ tags:
   - Emacs
   - VHDL
 comments: true
+bannerad: true
 ---
+
 In my series of how Sigasi is [index], I want to talk about code coloring.
 
 ## Syntax Highlighting

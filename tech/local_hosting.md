@@ -6,7 +6,9 @@ date: 2016-04-01
 tags: 
   - howto
 comments: true
+bannerad: true
 ---
+
 
 Some development teams are completely disconnected from the public internet, for security reasons. Engineers in these teams can still access the documentation on [Sigasi Insights](/), using one of the procedures below.
 

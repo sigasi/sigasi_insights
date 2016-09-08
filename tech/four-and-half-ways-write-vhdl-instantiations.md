@@ -7,7 +7,9 @@ date: 2009-01-18
 tags: 
   - VHDL
 comments: true
+bannerad: true
 ---
+
 
 Most hardware designers stick to their own way of typing VHDL instantiations. In this post, I list four styles that I've come across.
 

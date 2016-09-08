@@ -8,7 +8,9 @@ date: 2011-03-02
 tags: 
   - poll
 comments: true
+bannerad: true
 ---
+
 Two weeks ago, we started a survey among our student users, about social media networks. Today, I'm presenting some of the results from this poll.
 
 But first, we randomly picked a winner from the participants. Shafqat from the <a href="http://www.kth.se">Royal Institute of Technology, Sweden</a> will receive a BeMicro SDK development board, with an Altera Cyclone IV FPGA. Congrats, Shafqat and have fun!

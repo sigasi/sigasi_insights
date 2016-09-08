@@ -7,7 +7,9 @@ date: 2011-02-09
 tags: 
   - VHDL
 comments: true
+bannerad: true
 ---
+
 WORK is not the name of a VHDL library. This may surprise some (or even most) VHDL designers, even experienced engineers. Most of the time, nobody gets bothered by this. But on occasion, it can cause great confusion and waste of time.
 
 All knowledge about VHDL starts with the IEEE Standard VHDL Language Reference Manual. LRM for short. Not much is said about "WORK", but in section 11.2 (in the LRM 1076-2000) you can read the following:

@@ -9,7 +9,9 @@ tags:
   - Emacs
   - VHDL
 comments: true
+bannerad: true
 ---
+
 In my series of how Sigasi is [index], this entry
 deals with code reuse, more specifically with **renaming**.
 

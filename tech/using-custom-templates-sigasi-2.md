@@ -9,7 +9,9 @@ tags:
   - hdt-2.0
   - templates
 comments: true
+bannerad: true
 ---
+
 In a previous blog post, [using-autocomplete-templates-sigasi-2], I introduced **autocomplete templates** in Sigasi 2
 and demonstrated how to use the pre-defined templates. In this post I'll
 explain how to customize these templates and how to create your own.

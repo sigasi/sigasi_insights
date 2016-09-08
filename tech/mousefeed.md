@@ -7,7 +7,9 @@ date: 2011-11-11
 tags: 
   - keyboard shortcuts
 comments: true
+bannerad: true
 ---
+
 Using keyboard shortcuts makes you a lot more efficient compared to using your mouse. But how to learn all shortcuts in an unobstructive and efficient way?
 
 The users of our standalone VHDL development environment have certainly noticed the subtle popups with the keyboard shortcut, every time you click a button or menu item. This effect is achieved through the [MouseFeed plugin](https://github.com/heeckhau/mousefeed). MouseFeed helps you to form the good habit of using keyboard shortcuts.

@@ -7,7 +7,9 @@ date: 2009-11-17
 tags: 
   - JanHDL
 comments: true
+bannerad: true
 ---
+
 Next year, in 2010, my relationship with VHDL will be 20 years old. It has been a good journey, but I can't say that it was love at first sight.
 
 The first chip I designed while at Alcatel was done with Verilog. I remember that I was quite happy with Verilog. However, at the time (1990) there was this idea that very soon VHDL would take over the whole market. I remember very well how that idea was cultivated by a start-up CAD company called Synopsys.

@@ -8,7 +8,9 @@ tags:
   - GHDL
   - VHDL simulator
 comments: true
+bannerad: true
 ---
+
 
 Now that Sigasi can export a list of the VHDL files in a project, you can write your own scripts for virtually any EDA tool; compilers, linters or synthesis tools. As a first example, I have created a short python script that reads the file list that comes from Sigasi and compiles your project using GHDL.
 

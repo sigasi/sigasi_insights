@@ -9,7 +9,9 @@ tags:
   - doxygen
   - Sigasi
 comments: true
+bannerad: true
 ---
+
 
 *I don't know any hardware developer who likes to document her design,
 but as far as I know everybody has to write documentation. Writing

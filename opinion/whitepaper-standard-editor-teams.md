@@ -10,7 +10,9 @@ tags:
   - VI
   - whitepaper
 comments: true
+bannerad: true
 ---
+
 This whitepaper explains why programmers tend to cling to the text editors they are used to using and are not always eager to move to a standardized product.  Here we explain why a standardized text editor, one that is complete Integrated Development Environment (IDE), benefits the development organization.  
 
 ##  Standardized Software

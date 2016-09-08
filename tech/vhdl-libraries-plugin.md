@@ -5,7 +5,9 @@ pager: true
 author: Hendrik Eeckhaut
 date: 2014-10-14
 comments: true
+bannerad: true
 ---
+
 
 When you want to open Sigasi projects in an Eclipse that does not have the Sigasi plugins installed, you get an error message saying that the links to the STD and IEEE libraries can not be resolved.
 

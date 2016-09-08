@@ -8,7 +8,9 @@ tags:
   - howto
   - VHDL
 comments: true
+bannerad: true
 ---
+
 ## Big projects
 
 In the very first versions of Sigasi, some people have had trouble loading very large designs into Sigasi HDT. The processing power required by Sigasi HDT rises with the size of your project, as opposed to the processing power required by a <em>VHDL editor</em> which increases with the size of the file you are editing.

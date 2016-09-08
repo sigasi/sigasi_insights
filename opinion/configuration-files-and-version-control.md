@@ -8,7 +8,9 @@ tags:
   - EDA2.0
   - version control
 comments: true
+bannerad: true
 ---
+
 If you are using a version control system (which you should!) for your hardware designs, you might occasionally run in to an unpleasant surprise. Settings files that stay the same may change anyway and if you change just one setting, the settings file may have changed completely.
 
 ## Stability 

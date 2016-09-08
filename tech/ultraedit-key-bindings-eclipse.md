@@ -9,7 +9,9 @@ tags:
   - planeteclipse
   - editors
 comments: true
+bannerad: true
 ---
+
 Sigasi has just released a new plugin for Eclipse: the [UltraEdit Key Bindings](https://marketplace.eclipse.org/content/ultraedit-key-bindings).
 
 It is a keyboard scheme (like the well-known Emacs keyboard schema) that mimics the keyboard bindings of the popular UltraEdit editor. The plugin is released under the EPL license and is [hosted on GitHub](https://github.com/sigasi/com.sigasi.ultraedit.bindings). We hope this plugin is useful for people who have previously used UltraEdit and have a hard time changing their habits.

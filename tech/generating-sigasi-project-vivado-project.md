@@ -9,7 +9,9 @@ tags:
   - Vivado
   - Xilinx
 comments: true
+bannerad: true
 ---
+
 I have blogged before on how to import Xilinx ISE projects in Sigasi before ([/tech/importing-xilinx-ise-project-sigasi]). In this blog post I show how you can import an existing Vivado project into Sigasi.
 
 If you have a Vivado project which uses one or more IP cores, the project becomes complex quickly. Vivado generates different sources for _Simulation_ and _Synthesis_. And although VHDL has elegant support for this –entities can have multiple architectures–, Vivado generates duplicate entities instead. This forces you to switch between two complete different views on your project. If you have multiple IP cores this is really annoying.

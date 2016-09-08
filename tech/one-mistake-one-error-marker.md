@@ -10,7 +10,9 @@ tags:
   - VHDL compiler
   - VHDL Parser
 comments: true
+bannerad: true
 ---
+
 Ideally, if you make one mistake in VHDL, you want your compiler to show one error marker. Here is a small example.
 
 For this single mistake, Sigasi flags one error marker:

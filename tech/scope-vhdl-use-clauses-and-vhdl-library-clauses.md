@@ -7,7 +7,9 @@ date: 2011-12-14
 tags: 
   - VHDL
 comments: true
+bannerad: true
 ---
+
 
 When I first learned VHDL, I bumped in to quite a few language quirks. Here is one thing that I learned the hard way: the scope of VHDL use clauses.
 
@@ -44,7 +46,9 @@ Even if the architecture is in a different file, you don't have to repeat the us
 So finally, here is some [VETSMOD] VHDL code to play with:
 ```vhdl
 comments: true
----- New "Design Unit" starts here ----
+bannerad: true
+---
+- New "Design Unit" starts here ----
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -56,7 +60,9 @@ entity e1 is
 end entity e1;
 
 comments: true
----- New "Design Unit" starts here ----
+bannerad: true
+---
+- New "Design Unit" starts here ----
 
 -- architecture inherits use clause from its entity 
 architecture RTL of e1 is
@@ -65,7 +71,9 @@ begin
 end architecture RTL;
 
 comments: true
----- New "Design Unit" starts here ----
+bannerad: true
+---
+- New "Design Unit" starts here ----
 
 -- No library or use clauses inherited!
 entity e2 is

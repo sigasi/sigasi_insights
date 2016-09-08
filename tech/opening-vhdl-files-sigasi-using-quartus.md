@@ -9,7 +9,9 @@ tags:
   - Altera
   - VHDL editor
 comments: true
+bannerad: true
 ---
+
 
 This page deals with step three of using the Quartus integration plugin for Sigasi. We assume have already set up Sigasi as default editor in [/manual/opening#altera-quartus-ii].
 

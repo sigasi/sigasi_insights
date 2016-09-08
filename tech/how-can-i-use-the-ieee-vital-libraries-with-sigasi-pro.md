@@ -8,7 +8,9 @@ tags:
   - IEEE
   - VITAL
 comments: true
+bannerad: true
 ---
+
 Some projects use the IEEE VITAL packages:
 
 ```vhdl

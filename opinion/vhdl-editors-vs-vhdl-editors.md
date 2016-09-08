@@ -11,7 +11,9 @@ tags:
   - gVIM
   - Emacs
 comments: true
+bannerad: true
 ---
+
 ## A (relatively) painless upgrade path for VI and Emacs users
 
 One editor is not as good as the next. Likewise, one VHDL editor is not as good as the next. In fact, even the word VHDL <em>editor</em> is not chosen correctly. You want to <em>design your hardware</em>, you don't want to <em>edit VHDL</em>. VHDL (or Verilog) is just a means to an end. 

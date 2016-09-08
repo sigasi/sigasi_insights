@@ -7,7 +7,9 @@ date: 2015-05-11
 tags: 
   - howto
 comments: true
+bannerad: true
 ---
+
 Because Sigasi stores all your settings inside the Sigasi workspace, you can have multiple versions of Sigasi next to each other. This is very handy to quickly try the new features in the [preview version of the next release](/faq.html#can-i-use-the-features-of-the-upcoming-release).
 
 > But what if you use extra Eclipse plugins in Sigasi?

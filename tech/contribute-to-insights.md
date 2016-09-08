@@ -5,7 +5,9 @@ pager: true
 author: Hendrik Eeckhaut
 date: 2016-05-30
 comments: true
+bannerad: true
 ---
+
 
 The sources of the Sigasi Insights portal are hosted on Github. So if you find a typo or an error, you can fix this yourself. GitHub also makes it easy to make bigger contributes such as a guest blog.
 
@@ -55,7 +57,9 @@ author: Your Name
 date: Publishing date
 license: CC BY-ND 4.0
 comments: true
+bannerad: true
 ---
+
 ```  
   If you omit the license field, you give all rights to Sigasi.
 

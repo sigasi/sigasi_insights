@@ -8,7 +8,9 @@ tags:
   - VHDL
   - VHDL syntax
 comments: true
+bannerad: true
 ---
+
 
 Sometimes, there is more than one way to do something in VHDL. OK, _most of the time_, you can do things in many ways in VHDL. Let's look at the situation where you want to assign different values to a signal, based on the value of another signal.
 

@@ -9,7 +9,9 @@ tags:
   - VHDL
   - Xtext
 comments: true
+bannerad: true
 ---
+
 Last month I was introduced to [Yakindu](http://www.yakindu.org), an open-source-toolkit for model-driven development of embedded systems. One component of the Yakindu toolkit supports the graphical development of finite-state machines: the **Yakindu Statechart Tools (SCT)**. Although I'm personally rather skeptical to graphical development tools and prefer textual entry with visualization, the Yakindu Statechart Tools seemed really powerful. For example, SCT supports hierarchical states, parallel states, ... So it was worth giving it a try for VHDL design.
 
 [![Yakindu state machine](images/yakindu.png)](http://www.yakindu.org/2012/01/31/yakindu-m11-new-and-noteworthy)

@@ -9,7 +9,9 @@ tags:
   - planeteclipse
   - Xtext
 comments: true
+bannerad: true
 ---
+
 > Those who cannot remember the past are condemned to repeat it  ([George Santayana](http://en.wikipedia.org/wiki/George_Santayana)). 
 
 I've always felt ambivalent about that quote.  History never ever repeats itself exactly.  In computer science on the other hand, it applies very well.  In all our collective software applications, we recalculate the same results time and time again and are therefore faced with constant question to remember or not to remember.   In this blog series, I'm going to talk about a cache for Xtext resources that we've developed over the past year.  The code is available from [GitHub](https://github.com/mark-christiaens/xtext) under EPL license (the cache branch).  The series will be structured as follows.  In this first installment I'll talk about the context and give an overview of our cache.  The next installment will show you how to integrate the code into your own project.  The third installment discusses the underlying architecture of the cache for those who wish to enhance it. 

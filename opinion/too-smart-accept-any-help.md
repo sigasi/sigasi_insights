@@ -5,7 +5,9 @@ pager: true
 author: Philippe Faes
 date: 2010-03-02
 comments: true
+bannerad: true
 ---
+
 Are you so smart you don't need any help? Are you infallible even when you pressed for time or under stress?
 
 I know I'm not. I take all the help I can get. While I am typing this text, I have a spell checker that marks incorrectly spelled words as I type. Really, my English spelling is not too bad. I'm sure I am quite capable of writing short blog posts like this without a spell checker and without any errors. I'm also sure that someone could write terrible English sentences that would not be flagged by a spell checker.

@@ -7,7 +7,9 @@ date: 2010-10-06
 tags: 
   - JanHDL
 comments: true
+bannerad: true
 ---
+
 In my previous post, [your-favorite-mistake], I argued that a Verilog monopoly would have been bad for the electronic design industry. In this post, I would like to make that concrete.
 
 ## A bit of HDL theory

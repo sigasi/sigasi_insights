@@ -9,7 +9,9 @@ tags:
   - Emacs
   - VHDL
 comments: true
+bannerad: true
 ---
+
 > Too stupid or too stubborn?
 
 A few weeks ago, one of my colleagues at Sigasi (a VI user himself)

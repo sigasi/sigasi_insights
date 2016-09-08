@@ -11,7 +11,9 @@ tags:
   - Sigasi
   - Xilinx
 comments: true
+bannerad: true
 ---
+
 Although project setup in Sigasi is in most cases straight forward, it remains a hurdle, certainly if you already have a _'project definition'_ in another tool. I have blogged about [/tech/scripting-sigasi-project-creation] for importing custom project descriptions before. But now we extended the Python scripts to make even easier to import *Xilinx ISE* and *Mentor Graphics HDL Designer* projects. In this post I show how easy this has become.
 
 ## Download scripts

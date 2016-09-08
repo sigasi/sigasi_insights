@@ -7,7 +7,9 @@ date: 2010-11-22
 tags: 
   - howto
 comments: true
+bannerad: true
 ---
+
 
 Most VHDL files in any organization start with the same few lines: a copyright header and the same few library and use clauses. It's a pain if you have to go look for another file and <a href="http://en.wikipedia.org/wiki/Copy_and_paste_programming">copy and paste</a> the header. 
 

@@ -8,7 +8,9 @@ tags:
   - documentation
   - planeteclipse
 comments: true
+bannerad: true
 ---
+
 <img style="float:right" src="images/epub.png" />
 In November last year, I attended a very interesting session of [Torkild Resheim about creating e-books in Eclipse](http://eclipsecon.org/sessions/build-your-epubs-eclipse-and-read-them-too) at EclipseCon Europe in Nuremburg. Torkild demonstrated a [new plugin](https://bugs.eclipse.org/bugs/show_bug.cgi?id=332122)  he developed that converts wiki markup files into e-books. I intended to try this as soon as I got home from the conference. But I did not get to it until now.
 

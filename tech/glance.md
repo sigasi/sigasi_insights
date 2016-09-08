@@ -5,7 +5,9 @@ pager: true
 author: Hendrik Eeckhaut
 date: 2016-03-17
 comments: true
+bannerad: true
 ---
+
 
 > Notepad++ highlights all textual occurrence of the currently selected identifier. Can Sigasi also do this too?
 

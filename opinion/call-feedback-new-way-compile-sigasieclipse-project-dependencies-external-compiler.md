@@ -7,7 +7,9 @@ date: 2013-09-16
 tags: 
   - hdt-2.0
 comments: true
+bannerad: true
 ---
+
 Sigasi allows you to split your design in multiple projects ([/tech/one-ip-block-project]). This is an efficient way to deal with with big designs. Moreover, it is the _recommended_ way if you work with reuse libraries between different designs.
 
 However, in its current form ([/releasenotes/sigasi-2.15]), this does not work together well with the [/manual/tools#External Compilers].

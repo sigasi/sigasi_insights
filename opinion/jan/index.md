@@ -4,4 +4,6 @@ layout: index-blog
 order: date
 date: 2011-09-19
 comments: true
+bannerad: true
 ---
+

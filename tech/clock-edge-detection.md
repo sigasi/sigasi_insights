@@ -10,7 +10,9 @@ tags:
   - VHDL synthesis
   - VHDL
 comments: true
+bannerad: true
 ---
+
 There are two largely accepted ways to detect clock edges, and many style books prescribe or prefer one over the other. 
 Let's investigate.
 

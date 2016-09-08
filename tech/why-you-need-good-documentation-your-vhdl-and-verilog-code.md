@@ -8,7 +8,9 @@ tags:
   - Guest Blog
   - documentation
 comments: true
+bannerad: true
 ---
+
 
 <em>In this blog series, guest blogger Smrita talks about the need for
 [documentation for complex RTL designs](http://www.sigasi.com/sigasi-doc). </em>

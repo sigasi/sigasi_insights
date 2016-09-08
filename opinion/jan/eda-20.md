@@ -8,7 +8,9 @@ tags:
   - EDA2.0
   - JanHDL
 comments: true
+bannerad: true
 ---
+
 It has been quiet around this corner for some time, but on the broader Sigasi front,  a lot has happened. A few days after my previous post ([/opinion/jan/most-needed-eda-innovation]), Sigasi released their VHDL IDE as an Eclipse plugin. Previously it was only available as a standalone product, which somewhat hided its Eclipse foundation. Following this important release, Philippe Faes (Sigasi's CEO) published two whitepapers explaining the ideas and the vision behind the product: "[/opinion/why-hardware-designers-should-switch-eclipse]" and "[How to sell EDA tools in Liechtenstein](http://www.xuropa.com/opinion/domorewithless/entries/howtosellinliechtenstein)". The latter was actually an invited (and winning) entry to [Xuropa's](http://www.xuropa.com) "Do More with Less" contest.
 
 With all these events, one would swear that those Sigasi guys had heard me :-) Joking aside, it is clear why I am happy to be part of the Sigasi team. I think that we have a credible offering to help change EDA along the lines that I described in my previous post. There definitely is some great technology behind Sigasi HDT. However, I believe the most interesting and innovative aspect is the model used to develop, package, sell and support the product. Let me elaborate on this a little further.
