@@ -6,13 +6,13 @@ date: 2016-09-13
 comments: true
 ---
 
-The summer holiday was very productive at Sigasi. We didn't only enjoy the weahter and took some time off. We also prepared the Sigasi Studio 3.2 release.
+The summer holiday was very productive at Sigasi. We didn't only enjoy the weather and took some time off. We also prepared the Sigasi Studio 3.2 release.
 Sigasi Studio 3.2 brings an **updated Eclipse platform**, fine grained **language version configuration**, **ALINT elaboration** checks, **SystemVerilog improvements** and much more.
 
 ## Eclipse Neon
 
 Sigasi Studio 3.2 is build on top of the newly released [Eclipse Neon](https://eclipse.org/neon/) platform. This brings a number of nice enhancements:
-s
+
 
 - Resolution-based auto-scaling: Sigasi Studio will now be rendered correctly on **high-DPI** monitors. Everything will now be scaled correctly
 - **Word wrap** in text editors: The workbench toolbar now contains a Toggle Word Wrap button ![word wrap](3.2/wordwrap.png) (Shortcut: Alt+Shift+Y).  
