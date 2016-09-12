@@ -338,10 +338,11 @@ As any tech company, our stack of good ideas is far larger than the amount of ti
 
 Deciding which features to put on the roadmap is a very complicated process. Some of the things that help are:
 
-If your feature is useful for all users, not just for your specific case.
-If your feature brings a lot of value to you and to other users. For example, a feature that saves you thirty seconds each month brings less value than something that saves you half a day each week.
-If other users comment on your feature request on the forum, to tell us that they want your feature.
-Obviously, we can also build custom features or add-ons on a project basis. Projects can take up to several man-months of engineering or just one or two days. Feel free to talk to us about any feature, big or small.
+* If your feature is useful for all users, not just for your specific case.
+* If your feature brings a lot of value to you and to other users. For example, a feature that saves you thirty seconds each month brings less value than something that saves you half a day each week.
+* If other users comment on your feature request on the forum, to tell us that they want your feature.
+
+Feel free to talk to us about any feature, big or small.
 
 ## Do you support block select (a.k.a. column editing mode)?
 You can enable and disable block editing with **Ctrl+Alt+A** or **Edit > Toggle Block Selection**
