@@ -336,7 +336,7 @@ Sigasi Studio supports VHDL-2008 features, except:
 ## Why don't you have feature XYZ? How can I put in on your roadmap?
 As any tech company, our stack of good ideas is far larger than the amount of time we have to work on them. We're grateful for any suggestions that users send us on the user forum and we often build new features based on your suggestions. However, we have to prioritize and maybe your favorite feature is not on our short-term roadmap.
 
-Deciding which features is a very complicated process. Some of the things that help are:
+Deciding which features to put on the roadmap is a very complicated process. Some of the things that help are:
 
 If your feature is useful for all users, not just for your specific case.
 If your feature brings a lot of value to you and to other users. For example, a feature that saves you thirty seconds each month brings less value than something that saves you half a day each week.
