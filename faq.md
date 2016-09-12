@@ -336,12 +336,12 @@ Sigasi Studio supports VHDL-2008 features, except:
 ## Why don't you have feature XYZ? How can I put in on your roadmap?
 As any tech company, our stack of good ideas is far larger than the amount of time we have to work on them. We're grateful for any suggestions that users send us on the user forum and we often build new features based on your suggestions. However, we have to prioritize and maybe your favorite feature is not on our short-term roadmap.
 
-Deciding which features is very complicated process. Some of the things that help are:
+Deciding which features to put on the roadmap is a very complicated process. Some of the things that help are:
 
 If your feature is useful for all users, not just for your specific case.
 If your feature brings a lot of value to you and to other users. For example, a feature that saves you thirty seconds each month brings less value than something that saves you half a day each week.
 If other users comment on your feature request on the forum, to tell us that they want your feature.
-Obviously, we can also build custom features or add-ons on a project basis. Projects can several man-months or years, but also a feature in just a one or two days of engineering to. So feel free to talk to us about any feature, big or small.
+Obviously, we can also build custom features or add-ons on a project basis. Projects can take up to several man-months of engineering or just one or two days. Feel free to talk to us about any feature, big or small.
 
 ## Do you support block select (a.k.a. column editing mode)?
 You can enable and disable block editing with **Ctrl+Alt+A** or **Edit > Toggle Block Selection**
