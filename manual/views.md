@@ -167,13 +167,6 @@ You can export the block diagram view to an image with the save
 
 You can also export **all** *block diagrams of an entire project* at once: Click **Project > Export... > Sigasi > Block Diagrams export** and select your project. All SVGs will be created in **diagrams/blockdiagrams/** in your project. 
 
-<div class="messages status">
-<b>Note:</b> If you are using the Sigasi Eclipse plugin, you need to
-<a href="http://www.sigasi.com/install-eclipse-vhdl-plugin">explicitly
-select the Block Diagram View during installation</a>.
-</div>
-
-
 # State Machine View {: #fsm}
 
 [xl_doc_only],[vhdl_only]

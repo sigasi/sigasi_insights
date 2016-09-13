@@ -98,9 +98,9 @@ HDL files or folders lying around that you want simply to be ignored.
 # Configuration file
 
 All library configuration information is stored in the `.library_mapping.xml` file in the root of your project.
-Editing this file will trigger a _Clean Build_ of your project.
+If you edit this file, your project will be cleared and rebuilt automatically (a so-called _Clean Build_).
 
-Sigasi only writes changes to this configuration file when you make changes to the library configuration with the context menu in the _Project Explorer_. When you do make changes, Sigasi first checks that all paths in the library configuration still exist. If paths no longer exit, they are automatically removed from the configuration file.   
+Sigasi only writes changes to this configuration file when you make changes to the library configuration with the context menu in the _Project Explorer_. When you do make changes, Sigasi first checks that all paths in the library configuration still exist. If a path no longer exists, is will be removed from the configuration file.
 
 # Common libraries {: #libraries-common}
 
