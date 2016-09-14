@@ -15,7 +15,7 @@ def dateformat(value, format="%Y-%m-%d"):
     return value.strftime(format).replace('-','&#8209;') #non-breaking hyphen
 
 def coloredDot(title):
-    return title.replace('.','<font color="#f47920">.</font>')
+    return title.replace('.','<span style="color:#f47920">.</span>')
     
 def md(text):
     return markdown.markdown(text)

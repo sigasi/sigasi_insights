@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" prefix="og: http://ogp.me/ns#">
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
 	{% set url_prefix = '' %}
 	{% if site.baseurl %}
 	{%   set url_prefix = '/' + site.baseurl %}
@@ -135,9 +135,8 @@
 		<meta name="msapplication-TileImage" content="{{url_prefix}}/css/cropped-site_icon-270x270.png">
 		<!-- BEGIN GADWP v4.9.0.1 Universal Tracking - https://deconf.com/google-analytics-dashboard-wordpress/ -->
 		{% include 'cantilis/analytics.html' %}
-		
-	</head>
 		{% if site.optimizely %}<script src="https://cdn.optimizely.com/js/{{site.optimizely}}.js"></script>{% endif %}
+	</head>
 	<!--// OPEN BODY //-->
 	<body class="page page-id-12016 page-template-default bright-design mobile-header-left-logo mhs-mobile mh-slideout responsive-fluid sticky-header-disabled page-shadow product-shadows header-standard layout-boxed page-heading-standard disable-mobile-animations  _masterslider _msp_version_2.19.0">
 		<div id="site-loading" class="three-bounce">
@@ -219,21 +218,21 @@
 				{% endblock %}
 				<div class="inner-page-wrap has-no-sidebar clearfix">
 					<!-- OPEN page -->
+					{% block body %}
 					<div class="clearfix">
 						<div class="page-content hfeed clearfix">
 							<section  class="container">
 								<div class="row">
 									<div class="spb_content_element col-sm-12 spb_raw_html">
 										<div class="spb-asset-content">
-											{% block body %}
-											{% endblock %}
 										</div>
 									</div>
 								</div>
 							</section>
 						</div>
-						<!-- CLOSE page -->
 					</div>
+					{% endblock %}
+					<!-- CLOSE page -->
 				</div>
 				<!--// CLOSE #main-container //-->
 			</div>
@@ -285,19 +284,9 @@
 		<div id="loveit-locale" data-ajaxurl="{{site.main_url}}/wp-admin/admin-ajax.php" data-nonce="da20e7d233"
 		data-alreadyloved="You have already loved this item." data-error="Sorry, there was a problem processing your request."
 		data-loggedin="false"></div>
-		<div id="cookie-law-info-bar">
-			<span>This website uses cookies, as explained in our <a href="http://www.sigasi.com/cookies/">cookie policy</a>. By continuing to use this site you are giving consent to cookies being used. <a href="#" id="cookie_action_close_header"  class="medium cli-plugin-button cli-plugin-main-button" >Accept & close</a> </span>
-		</div>
-		<script type="text/javascript">
-			//<![CDATA[
-			jQuery(document).ready(function() {
-				cli_show_cookiebar({
-					settings : '{"animate_speed_hide":"500","animate_speed_show":"500","background":"#fff","border":"#444","border_on":true,"button_1_button_colour":"#000","button_1_button_hover":"#000000","button_1_link_colour":"#fff","button_1_as_button":true,"button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":false,"font_family":"inherit","header_fix":false,"notify_animate_hide":true,"notify_animate_show":false,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":false,"scroll_close_reload":false,"showagain_tab":false,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#000","show_once_yn":false,"show_once":"10000"}'
-				});
-			});
-			//]]>
-		</script>
-		<script></script>
+		{% if site.cookie_law_info %}
+			{% include 'cantilis/cookie-law-info.html' %}
+		{% endif %}
 		<script type='text/javascript'>
 			/* <![CDATA[ */
 			var scriptParams = {

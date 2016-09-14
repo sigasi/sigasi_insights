@@ -3,6 +3,7 @@ sigasi_version: 2.31
 copyright_years: 2008-2016
 google_analytics: UA-2852630-4
 optimizely: 5566441142
+cookie_law_info: True
 
 bootswatch: null 
 navbar_inverse: false 

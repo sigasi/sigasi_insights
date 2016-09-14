@@ -1,0 +1,75 @@
+{% extends "_base.html" %}
+
+{% block body %}
+<div class="clearfix">
+	<div class="page-content hfeed clearfix">
+		<div class="clearfix post-11858 page type-page status-publish hentry" id="11858">
+
+			<div class="row" style="">
+				{% block about %}
+				<div class="spb_content_element col-sm-12 spb_text_column">
+					<div class="spb-asset-content" style="margin-top: 0px;margin-bottom: 0px;border-top: 0px ;border-left: 0px ;border-right: 0px ;border-bottom: 0px ;padding-top: 0px;padding-left: 0px;padding-right: 0px;padding-bottom: 0px;">
+
+						<h1 style="text-align: center;">About Sigasi Insights</h1>
+						<p style="text-align: center;">
+							The Sigasi Insights portal is your entry point to all knowledge about Sigasi Studio, and VHDL and SystemVerilog design. It combines the Sigasi Studio Manual, a list of Frequently Asked Questions, a collection of Screencasts, Opinion articles by Sigasi staff and guest bloggers, and Tech Articles with tips and tricks on VHDL, Eclipse, Design methodology and other subjects.
+						</p>
+
+					</div>
+				</div>
+				{% endblock %}
+			</div>
+
+			<div class="row" style="background:#e0e0e0">
+				{% block gettingstarted %}
+				<div class="spb_content_element col-sm-12 spb_text_column" >
+					<div class="spb-asset-content" style="margin-top: 0px;margin-bottom: 0px;border-top: 0px ;border-left: 0px ;border-right: 0px ;border-bottom: 0px ;padding-top: 0px;padding-left: 0px;padding-right: 0px;padding-bottom: 0px;">
+
+						<h1 style="text-align: center;">Getting Started with  Sigasi Studio</h1>
+						<p style="text-align: center;">
+							If you have a question and you cannot find the answer in the Sigasi Insights portal, feel free to reach out and send us an email.
+						</p>
+
+					</div>
+					<div class="spb_button spb_content_element col-sm-12" data-align="center" data-animation="none" data-delay="0" style="min-height: 66px;">
+						<div class="spb-asset-content">
+							<a class="sf-button standard sbc-sigasi-green default " href="/support.html" target="_self"><span class="text">Support</span></a>
+						</div>
+					</div>
+				</div>
+				{% endblock %}
+			</div>
+			
+			<div class="row" style="background:#e0e0e0;">
+				{% block previews %}
+				{% endblock %}
+			</div>
+
+			<div class="row" style="">
+				{% block screencasts %}
+				<div class="spb_content_element" style="padding-top:0px;padding-bottom:0px;">
+						<div class="row multi-column-row" style="min-height: 172px;width:100%;background: #262262!important;color: #ffffff!important">
+							<h2 style="text-align: center;color: #ffffff"> Recommended Screencasts</h2>
+							{% for item in this.content|filtercontent('/screencasts/')|sortpopular|filterfirst(6) %}
+							<div class="spb_content_element spb_box_content col-sm-4" style="min-height: 172px;">
+								<div class="spb-bg-color-wrap coloured" >
+									<div class="spb-asset-content">
+										<div class="box-content-wrap" style="padding-top:10%;padding-bottom:10%;padding-left:0%;padding-right:0%;">
+											{{item.videoid|wistia(300,200)}}
+											<h5 style="text-align: center;" title="{{item.title}}"><span style="color: #ffffff;">{{item.title|truncate(35)}}</span></h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							{% endfor %}
+							<!-- <p style="text-align:right"><a href="/screencast">more screencasts...</a></p> -->
+						</div>
+				</div>
+				{% endblock %}
+			</div>
+
+		</div>
+	</div>
+	<!-- CLOSE page -->
+</div>
+{% endblock %}
