@@ -15,14 +15,14 @@ bannerad: true
 #Intro
 
 Last academic year (2015-2016), [Winand Seldeslachts](https://be.linkedin.com/in/winandseldeslachts/en) joined Sigasi to work on his masters thesis. For his thesis he investigated a new way to test VHDL code by extending Wavedrom.
-Wavedrom is a simple, textual language that is used to describe and visualized _timing diagrams_.
+Wavedrom is a simple, textual language that is used to describe and visualize _timing diagrams_.
 Winand investigated how Wavedrom files could be used to generate input for VHDL testbenches.
 
 You can read his report below. All sources are available [on GitHub][thesis].
 
 # VHDL verifier 9000
 
-My name is Winand Seldeslachts, student at the university of Ghent. For my masters thesis i have developed a software tool I call "VHDL verifier 9000" together with [Sigasi][Sigasi], as a tribute to the town of Ghent and, mostly, because I can.
+My name is Winand Seldeslachts, student at the university of Ghent. For my master's thesis I have developed a software tool together with [Sigasi][Sigasi]. I call it "VHDL verifier 9000", as a tribute to the town of Ghent and, mostly, because I can.
 
 ## Okay, cool name, but what does it do?
 
@@ -59,7 +59,7 @@ end RTL;
 
 ### Design => ??? => profit.
 
-Before I can start selling this design, I need be able to prove to potential customers that my design works and I need to show them how it works. I need to verify and document my design.
+Before I can start selling this design, I need to be able to prove to potential customers that my design works and I need to show them how it works. I need to verify and document my design.
 
 To verify, I implement a self-checking VHDL testbench and simulate it with Modelsim. The output of the simulation for a full functionality test looks like this.
 
@@ -72,7 +72,7 @@ If we compare the signal representations in the two pictures above, we can see t
 
 ### Enter the VHDL Verifier 9000
 
-This was the starting point for the project. The result was the VHDL Verifier 9000. It is a simple tool that can help build both the test and the documentation from one source file. On top of that, it automatically runs the test, analyses the result and offers an easy way find discrepancies in simulation output and expected output.
+This was the starting point for the project. The result was the VHDL Verifier 9000. It is a simple tool that can help build both the test and the documentation from one source file. On top of that, it automatically runs the test, analyses the result and offers an easy way to find discrepancies in simulation output and expected output.
 
 ![GUI screenshot][GUI]
 
@@ -95,22 +95,22 @@ A source file has to hold a lot more information than a standard WaveDrom file. 
 Note that this file can still be processed with WaveDrom to generate the documenation. The resulting documentation image will be exactly the same with both files.
 
 ### Running the tool
-When the tool is run, it combines information from the design file and the source file to generate a testbench. This testbench is then run using the [vUnit][vunit] framework, which logs important information. The output of this process is then used to build a comparison file that will compare the behavior of the design to the expected behavior. This file is called the result file.
+When the tool runs, it combines information from the design file and the source file to generate a testbench. This testbench is then run using the [vUnit][vunit] framework, which logs important information. The output of this process is then used to build a comparison file that will compare the behavior of the design to the expected behavior. This file is called the result file.
 
 ### Output files
-A result file is very similar to the source file. It is also a waveJSON formatted file that can be processed by WaveDrom. It will show the discrepancies between expected output and simulated output.
+A result file is very similar to the source file. It's also a waveJSON formatted file that can be processed by WaveDrom. It will show the discrepancies between expected output and simulated output.
 
 In this case the design meets the specifications, so there are no discrepancies between documention and simulation signals.  
 
 ![output example][output file]
 
 ## Is this the solution to all life's problems?
-Perhaps one day. For now it is only a proof of concept that has it limitations. It is useful for relatively simple designs and smaller (unit) tests. For example, for designs the size of an SPI master interface the system will still function, but the result file will become crowded and less readable when there are a lot of errors.
+Perhaps one day. For now it is only a proof of concept that has limitations. It is useful for relatively simple designs and smaller (unit) tests. For example: for designs the size of an SPI master interface, the system will still function. But the result file will become crowded and less readable when there are a lot of errors.
 
 ## That's it!
 Thank you for reading! If you want to learn more, you can find the source code, the full thesis report and more [here][thesis].
 
-Finally I would like to thank Lieven, Hendrik and Philippe at Sigasi one last time for the opportunity to do my masters thesis with them and for the support they have given me.
+Finally I would like to thank Lieven, Hendrik and Philippe at Sigasi one last time for the opportunity to do my master's thesis with them and for the support they have given me.
 
 
 [Sigasi]: https://www.sigasi.com
