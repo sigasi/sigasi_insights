@@ -218,20 +218,20 @@
 				{% endblock %}
 				<div class="inner-page-wrap has-no-sidebar clearfix">
 					<!-- OPEN page -->
-					{% block body %}
 					<div class="clearfix">
 						<div class="page-content hfeed clearfix">
 							<section  class="container">
 								<div class="row">
 									<div class="spb_content_element col-sm-12 spb_raw_html">
 										<div class="spb-asset-content">
+											{% block body %}
+											{% endblock %}
 										</div>
 									</div>
 								</div>
 							</section>
 						</div>
 					</div>
-					{% endblock %}
 					<!-- CLOSE page -->
 				</div>
 				<!--// CLOSE #main-container //-->

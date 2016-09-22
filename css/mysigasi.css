@@ -27,3 +27,17 @@ select{
 select{
 	-webkit-appearance:menulist-button
 }
+
+
+/* copied from strak-sbc.css*/
+.sbc-sigasi-green{
+     color: #fff;
+     background-color: rgb(39, 174, 96);
+     border-color: rgb(39, 174, 96);
+ }
+
+.sbc-sigasi-green:hover{
+    color: #fff;
+    background-color: rgb(37, 33, 97);
+    border-color: rgb(37, 33, 97);
+}
