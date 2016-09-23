@@ -58,7 +58,7 @@ We further extended our SystemVerilog support:
 
 - ticket 3636 : Open architectures in Block diagram view
   ![](3.2/block_open_architecture.png)
-- ticket 3546 : Support Generic Functions in packages (VHDL 2008)
+- ticket 3546 : Support Generic Functions in packages (VHDL 2008) \[[Example VHDL file](3.2/package_generic_functions.vhdl)\]
   ![](3.2/generic_functions.png)
 - ticket 3644 : Add New VHDL File Wizard template for FSMs
   ![](3.2/new_fsm.png)
