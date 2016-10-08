@@ -10,8 +10,7 @@ As you become more experienced with Sigasi, you will find that there are a numbe
 
 In this chapter, we describe the available keyboard shortcuts.
 
-Top keyboard shortcuts
-----------------------
+## Top keyboard shortcuts
 
 In this section, we list the most important shortcuts.
 
@@ -41,8 +40,7 @@ editor on any file in the workspace.
 12. <a name="quick-access"></a>Quick Access (**Ctrl+3**, <mark>This is the shortcut to use, when you forgot the shortcut you actually need.</mark>)  
   With Quick Access you can quickly find open editors, available perspectives, views, preferences, wizards, commands, etc. Simply start typing the name of the item you wish to invoke.
 
-Keyboard shortcut reference
----------------------------
+## Keyboard shortcut reference
 
 | Category               | Description                  | Keyboard shortcut            |
 | ---------------------- | ---------------------------- | -----------------------------|
@@ -135,3 +133,9 @@ Keyboard shortcut reference
 |                        | Previous View | **Shift+Ctrl+F7** |
 |                        | Quick Access | **Ctrl+3** |
 |                        | Quick Switch Editor | **Ctrl+E** |
+
+## Customizing keyboard shortcuts
+
+Keyboard shortcuts can be easily customized via **Preferences > General > Keys**.
+
+This preferece page also enables you to select the **Emacs** scheme, for more Emacs-like keyboard shortcuts.
