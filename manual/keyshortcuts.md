@@ -52,6 +52,9 @@ editor on any file in the workspace.
 |                        | Redo                         | **Ctrl+Y**                   |
 |                        | Select All                   | **Ctrl+A**                   |
 |                        | Toggle Block Selection       | **Shift+Alt+A**              |
+|                        | Toggle Word Wrap             | **Shift+Alt+Y**              |
+|                        | Zoom in                      | **Ctrl++**                   |
+|                        | Zoom out                     | **Ctrl+-**                   |
 | *Quickfixes*           | Quick Fix                    | **Ctrl+1**                   |
 | *Autocompletion*       | Content Assist               | **Ctrl+Space**               |
 |                        | Word completion              | **Alt+/**                    |
@@ -75,6 +78,7 @@ editor on any file in the workspace.
 |                        | Backward History | **Alt+Left** |
 |                        | Show In… | **Shift+Alt+W** |
 |                        | Go to Line | **Ctrl+L** |
+|                        | Go to Matching Bracket | **Ctrl+Shift+P** |
 |                        | Previous | **Ctrl*,** |
 |                        | Next | **Ctrl*.** |
 |                        | Collapse All | **Shift+Ctrl+Numpad\_Divide** |
@@ -86,8 +90,8 @@ editor on any file in the workspace.
 |                        | Uncomment | **Shift+Ctrl+\*** |
 |                        | Open Declaration | **F3** |
 |                        | Open matching entity | **Shift+F3** |
-|                        | Go to next problem | **Shift*.** |
-|                        | Go to previous problem | **Shift*,** |
+|                        | Go to next problem | **Ctrl+.** |
+|                        | Go to previous problem | **Ctrl+,** |
 |                        | Expand structured selection | **Shift+Alt+Up** |
 |                        | Contact structured selection | **Shift+Alt+Down** |
 |                        | Expand structured selection left | **Shift+Alt+Left** |
@@ -120,6 +124,7 @@ editor on any file in the workspace.
 |                        | Text End | **Ctrl+End** |
 |                        | Line Start | **Home** |
 |                        | Line End | **End** |
+|                        | Show Tool Tip | **F2** |
 | *Views*                | Maximize Active View or Editor | **Ctrl+M** |
 |                        | Next Editor | **Ctrl+F6** |
 |                        | Next View | **Ctrl+F7** |
@@ -133,6 +138,7 @@ editor on any file in the workspace.
 |                        | Previous View | **Shift+Ctrl+F7** |
 |                        | Quick Access | **Ctrl+3** |
 |                        | Quick Switch Editor | **Ctrl+E** |
+|                        | Toggle Full screen | **Alt+F11** |
 
 ## Customizing keyboard shortcuts
 
