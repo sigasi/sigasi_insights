@@ -10,8 +10,7 @@ As you become more experienced with Sigasi, you will find that there are a numbe
 
 In this chapter, we describe the available keyboard shortcuts.
 
-Top keyboard shortcuts
-----------------------
+## Top keyboard shortcuts
 
 In this section, we list the most important shortcuts.
 
@@ -41,8 +40,7 @@ editor on any file in the workspace.
 12. <a name="quick-access"></a>Quick Access (**Ctrl+3**, <mark>This is the shortcut to use, when you forgot the shortcut you actually need.</mark>)  
   With Quick Access you can quickly find open editors, available perspectives, views, preferences, wizards, commands, etc. Simply start typing the name of the item you wish to invoke.
 
-Keyboard shortcut reference
----------------------------
+## Keyboard shortcut reference
 
 | Category               | Description                  | Keyboard shortcut            |
 | ---------------------- | ---------------------------- | -----------------------------|
@@ -54,6 +52,9 @@ Keyboard shortcut reference
 |                        | Redo                         | **Ctrl+Y**                   |
 |                        | Select All                   | **Ctrl+A**                   |
 |                        | Toggle Block Selection       | **Shift+Alt+A**              |
+|                        | Toggle Word Wrap             | **Shift+Alt+Y**              |
+|                        | Zoom in                      | **Ctrl++**                   |
+|                        | Zoom out                     | **Ctrl+-**                   |
 | *Quickfixes*           | Quick Fix                    | **Ctrl+1**                   |
 | *Autocompletion*       | Content Assist               | **Ctrl+Space**               |
 |                        | Word completion              | **Alt+/**                    |
@@ -77,6 +78,7 @@ Keyboard shortcut reference
 |                        | Backward History | **Alt+Left** |
 |                        | Show In… | **Shift+Alt+W** |
 |                        | Go to Line | **Ctrl+L** |
+|                        | Go to Matching Bracket | **Ctrl+Shift+P** |
 |                        | Previous | **Ctrl*,** |
 |                        | Next | **Ctrl*.** |
 |                        | Collapse All | **Shift+Ctrl+Numpad\_Divide** |
@@ -88,8 +90,8 @@ Keyboard shortcut reference
 |                        | Uncomment | **Shift+Ctrl+\*** |
 |                        | Open Declaration | **F3** |
 |                        | Open matching entity | **Shift+F3** |
-|                        | Go to next problem | **Shift*.** |
-|                        | Go to previous problem | **Shift*,** |
+|                        | Go to next problem | **Ctrl+.** |
+|                        | Go to previous problem | **Ctrl+,** |
 |                        | Expand structured selection | **Shift+Alt+Up** |
 |                        | Contact structured selection | **Shift+Alt+Down** |
 |                        | Expand structured selection left | **Shift+Alt+Left** |
@@ -122,6 +124,7 @@ Keyboard shortcut reference
 |                        | Text End | **Ctrl+End** |
 |                        | Line Start | **Home** |
 |                        | Line End | **End** |
+|                        | Show Tool Tip | **F2** |
 | *Views*                | Maximize Active View or Editor | **Ctrl+M** |
 |                        | Next Editor | **Ctrl+F6** |
 |                        | Next View | **Ctrl+F7** |
@@ -135,3 +138,10 @@ Keyboard shortcut reference
 |                        | Previous View | **Shift+Ctrl+F7** |
 |                        | Quick Access | **Ctrl+3** |
 |                        | Quick Switch Editor | **Ctrl+E** |
+|                        | Toggle Full screen | **Alt+F11** |
+
+## Customizing keyboard shortcuts
+
+Keyboard shortcuts can be easily customized via **Preferences > General > Keys**.
+
+This preferece page also enables you to select the **Emacs** scheme, for more Emacs-like keyboard shortcuts.

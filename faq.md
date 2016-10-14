@@ -456,6 +456,13 @@ See : <http://devshards.blogspot.it/2012/10/how-to-fix-unreadable-eclipse-toolti
 
 If Sigasi/Eclipse hangs while the splash screen is shown during startup, you can try this to resolve the issue:
 
+* First try to disable the Workspace preference _refresh using native hooks or polling_. You can do this by setting the contents of  `<workspaceSigasi>/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs` to:
+```
+eclipse.preferences.version=1
+refresh.enabled=false
+version=1
+```
+
 * In the workspace folder remove: `<workspaceSigasi>/.metadata/.plugins/org.eclipse.ui.workbench`
 * If this is not enough, also remove `<workspaceSigasi>/.metadata/.plugins/org.eclipse.ui.ide` and `<workspaceSigasi>/org.eclipse.ui.workbench.texteditor`
 * If this still fails remove `<workspaceSigasi>/.metadata/.plugins/org.eclipse.core.resources`, note that you will have to re-import your projects if remove this folder.
