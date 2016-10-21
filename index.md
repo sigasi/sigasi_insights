@@ -12,7 +12,7 @@ content:
 b1:
     title: How may we help you?
     content: |
-        If have a questions and you can't find the answer in on this Sigasi Insights portal, 
+        If you have a question and you can't find the answer on this Sigasi Insights portal, 
         feel free to reach out and send us an email.
         
         * For support questions: [support@sigasi.com](mailto:support@sigasi.com)
