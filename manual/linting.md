@@ -371,7 +371,7 @@ Where `${severity}` can be:
 * INFO 
 * IGNORE 
 
-Whitespace must be escaped with a back slash (`\`)
+Whitespace must be escaped with a back slash (`\`). You can add comments with `#`.
 
 Examples:
 
