@@ -30,6 +30,8 @@ topmenuitems:
     url: /support.html
   - title: Jobs
     url: http://www.sigasi.com/category/jobs/
+  - title: News
+    url: http://www.sigasi.com/category/news/
 ignore_patterns:
   - linkchecker_result.html 
   - .gitignore 
