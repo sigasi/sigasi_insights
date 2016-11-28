@@ -38,7 +38,7 @@ Sigasi offers powerful techniques to explore a file or project, and navigate thr
 
 If you click on an identifier, it is highlighted. In addition, all other occurrences of the identifier that refer to the same object are highlighted. Note that this occurrence highlighting is intelligent: it is not based on the identifier’s string value, but on the object that the identifier refers to.
 
-You can turn occurrence highlighting on or off. Click the "Toggle Mark Occurences" icon ![Mark Occurences](icons/mark_occurences_icon.png "Mark Occurences") in the toolbar.
+You can turn occurrence highlighting on or off. Click the "Toggle Mark Occurrences" icon ![Mark Occurrences](icons/mark_occurences_icon.png "Mark Occurences") in the toolbar.
 
 ### Find References
 
