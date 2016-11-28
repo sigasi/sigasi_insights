@@ -140,8 +140,11 @@ editor on any file in the workspace.
 |                        | Quick Switch Editor | **Ctrl+E** |
 |                        | Toggle Full screen | **Alt+F11** |
 
+## Mac users
+If you are using Mac OS X, most of these keyboard shortcuts use Command instead of Ctrl. To inspect the exact list of keyboard shortcuts, go to **Preferences > General > Keys**.
+
 ## Customizing keyboard shortcuts
 
 Keyboard shortcuts can be easily customized via **Preferences > General > Keys**.
 
-This preferece page also enables you to select the **Emacs** scheme, for more Emacs-like keyboard shortcuts.
+This preferece page also enables you to select the **Emacs** scheme, for more Emacs-like keyboard shortcuts, or (if you have installed the [/tech/ultraedit-key-bindings-eclipse] plugin) the UltraEdit key bindings.
