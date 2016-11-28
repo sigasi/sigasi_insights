@@ -217,7 +217,7 @@ described in this chapter.
 Highlighting Classes for VHDL:
 
 - *Syntax*  :  Comment, Keyword, Number, String, Task tag 
-- *Semantic* :  Constant, Port, Signal, Type, Variable, Attribute, Function/Procedure 
+- *Semantic* :  Constant, Port, Signal, Type, Variable, Attribute, Function/Procedure, Labels
 
 ## VHDL specific autocompletes
 
@@ -319,7 +319,7 @@ This includes:
 
 Sigasi Studio's formatter is context based and tries to respect the style of the author. So depending on the original source style, the formatter might make different choices.
 
-On example is the decision to format a _conditional signal assignment_ on one, or multiple lines. Sigasi makes this decision base on the position of the first `else` keyword. If you put the `else` keyword on the first line, the formatter will put everythin on one line. If you put the `else` keyword on a new line, the formatter will use multiple lines for the assignment.
+On example is the decision to format a _conditional signal assignment_ on one, or multiple lines. Sigasi makes this decision base on the position of the first `else` keyword. If you put the `else` keyword on the first line, the formatter will put everything on one line. If you put the `else` keyword on a new line, the formatter will use multiple lines for the assignment.
 
 ```vhdl
 	demo <= (others => '0') when enable = '1'
@@ -340,6 +340,10 @@ Configurable settings currently include:
 -   Preserve newline characters
 -   Upper case for VHDL keywords
 -   Alignment column for trailing comments
+
+### Format code on save
+
+You can configure Sigasi Studio to automatically format your VHDL files when you save your source files via **Preferences > Sigasi > VHDL**, next enable **Enable code format on save**.
 
 ## Lightweight editor for large VHDL files
 
