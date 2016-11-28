@@ -75,7 +75,7 @@ the editor.
 
 The Hierarchy view shows the VHDL design hierarchy starting at a selected top level object. To choose a top level, open a file and right-click on an architecture (or entity or configuration). Then click **Set as Top Level**. Alternatively you can click the **Set Top** button in the hierarchy view to open a hierarchy top level selection dialog. You can use the filter field to quickly search for a certain top level.
 
-The hierarchy view automatically refreshes itself when you save yourdesign files. If you have a really large design this could slow you down. You can turn the automatic refresh on and off by toggling the **refresh** button ![](icons/refresh.gif).
+The hierarchy view automatically refreshes itself when you save your design files. If you have a really large design this could slow you down. You can turn the automatic refresh on and off by toggling the **refresh** button ![](icons/refresh.gif).
 
 To highlight the current selection of the VHDL editor in the hierarchy view, enable the **Link with Editor** button ![](icons/linkprojectexplorer.png). If the editor selection is part of the evaluated hierarchy tree, the corresponding hierarchy tree node will be selected.
 
