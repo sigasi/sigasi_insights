@@ -1,7 +1,6 @@
 help:
 	@echo make build
 	@echo make serve
-	@echo make stop
 	@echo make publish
 	@echo make dependencies
 
@@ -46,14 +45,10 @@ build_offline: build
 	find _build_offline -name '*.html-e'  -exec rm {} \;
 	tar -c -z -s /_build_offline/insights.sigasi.com-${DATE}/ -f insights.sigasi.com-${DATE}.tgz _build_offline
 	
-server.PID:
-	{ python -m urubu serve & echo $$! > $@; } 
 
-serve: server.PID
+serve:
 	@echo 'http://localhost:8000'
-
-stop: server.PID
-	-kill `cat $<`; rm $<
+	python -m urubu serve
 
 # linkchecker can be installed from http://wummel.github.io/linkchecker/ (or sudo dnf install linkchecker)
 dolinkchecker:
