@@ -9,7 +9,6 @@ all: build
 build: NOCAPS
 	python -m urubu build
 	@touch _build/.nojekyll
-	@( cd _build && find . -name "*html" | grep -v "./google" |grep -v '^.html' | sed -e "s/^./http:\/\/insights.sigasi.com/" > sitemap.txt )
 
 build_offline: build
 	rm -Rf _build_offline
