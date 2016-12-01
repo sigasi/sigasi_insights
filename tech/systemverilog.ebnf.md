@@ -14,7 +14,8 @@ IEEE owns the copyright to this Document in all forms of media. Copyright in the
 
 Get the full Language Reference Manual, free of charge, at <http://standards.ieee.org/getieee/1800/download/1800-2012.pdf>
 
-Sigasi has created this browsable version of the grammar, hoping that it would be useful to you, but without any warranty whatsoever.
+Sigasi has created this browsable version of the grammar, hoping that it would be useful to you, but without any warranty whatsoever. We have also created a browsable [/tech/vhdl2008.ebnf].
+
 </em>  
 ## Source text
   
