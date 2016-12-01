@@ -42,6 +42,7 @@ in the design. Sigasi’s VHDL linter checks for the following problems:
 -   Missing, unnecessary and duplicate signals in the sensitivity list
 -   Port, signal, variable, constant or generic declarations that are never read or written
 -   Invalid port associations (incompatible port modes in instantiations)
+-   Order of generic and port associations
 
 ## No Linting for Common Libraries {: #linting-common-libraries}
 
@@ -67,6 +68,7 @@ quickfix.
 -   Correct attribute entity class in attribute specifications
 -   Add missing signals to sensitivity list
 -   Fix capitalization of identifier to correspond to its declaration
+-   Match order of generic and port associations with declaration order
 
 ## Configuring the Severity Level {: #linting-severity-level}
 
