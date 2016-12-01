@@ -389,7 +389,7 @@ If you cannot see the problem decorators or library decorators in the Project Ex
 * The file was not compiled as VHDL/Verilog file. To fix this try:
 	* Check that your file is saved
 	* Make sure your project is being built: **Project > Build Automatically**
-	* Check that the project has VHDL or Verilog support: Right-click on the project **Configure > Add VHDL Support** [more info][projectsetup#adding-vhdl-or-verilog-support-to-an-existing-eclipse-project].o
+	* Check that the project has VHDL or Verilog support: Right-click on the project **Configure > Add VHDL Support** [more info][/manual/projectsetup#adding-vhdl-or-verilog-support-to-an-existing-eclipse-project].
 	* Is the Eclipse builder enabled for your project? You can check this by right-clicking your project in the Project explorer and selecting **Properties > Builders**. The **Xtext Project Builder** must be enabled. If not, exit the property page. Next, right-click on the project **Configure > remove VHDL Support**, and right-click again **Configure > Add VHDL Support**.
 
 * The decorators are disabled. To fix this, enable:
