@@ -53,7 +53,7 @@ In addition we solved some rendering issues with **overlapping labels.**
 ## Other new and noteworthy improvements
 
 - Automatically [export the compilation order][/manual/tools#export], based on either the entire project, or based on a top level.
-  You can configure this in the Project Properties. \[[creator]].
+  You can configure this in the Project Properties.
   ![](3.3/auto_export_property_page.png)
 - Semantic highlighting for labels. The color can be configured via **Window > Preferences > Sigasi > VHDL > Syntax coloring**. Labels are colored gray by default.
 - Option to automatically format VHDL files when they are saved
