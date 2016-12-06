@@ -5,7 +5,7 @@ pager: true
 date: 2016-12-06
 comments: true
 ---
-The Sigasi Studio 3.3 release brings a lot of improvements. We added a lot of extra **VHDL syntax checks** and **quick fixes** ([starter], [creator], [xl]). We also enhanced the **block diagram view** ([xl_doc]) and added numerous other noteworthy improvements.
+The Sigasi Studio 3.3 release brings many improvements. We added a lot of extra **VHDL syntax checks** and **quick fixes** \[[starter], [creator], [xl]]. We also enhanced the **block diagram view** \[[xl_doc]] and added numerous other noteworthy improvements.
 
 We are also working vigorously on **SystemVerilog** improvements, but we didn't make the 3.3 release deadline. You can expect improvements in the [preview version][/faq#can-i-use-the-features-of-the-upcoming-release] soon.
 
@@ -19,7 +19,7 @@ We are also working vigorously on **SystemVerilog** improvements, but we didn't 
     - Linting checks for function specifications
     ![](3.3/function_signature.png)
     - Check the signature of subprograms: the declarations in the package and package body have to match.
-    - Check protected type bodies: these are not allowed .
+    - Check protected type bodies: these are not allowed in packages.
 
 - New [creator] checks:
     - Warn when the VHDL version of the project is more recent than the version of the common libraries. This mismatch results in unexpected type problems.
@@ -30,7 +30,7 @@ We are also working vigorously on **SystemVerilog** improvements, but we didn't 
     ![](3.3/association_order.png)
 
 - New Quick Fixes
-    - Declare constant.
+    - Declare constant.  
     ![](3.3/declare_constant.png)
     - Fix the order or generic maps or port maps (see above).
     - Fix argument names in function specification. 
@@ -52,7 +52,7 @@ In addition we solved some rendering issues with **overlapping labels.**
 
 ## Other new and noteworthy improvements
 
-- Automatically [export the compilation order][/manual/tools#export], based on either the entire project, or based on a top level.
+- Automatically [export the compilation order][/manual/tools#auto-export], based on either the entire project, or based on a top level.
   You can configure this in the Project Properties.
   ![](3.3/auto_export_property_page.png)
 - Semantic highlighting for labels. The color can be configured via **Window > Preferences > Sigasi > VHDL > Syntax coloring**. Labels are colored gray by default.
@@ -68,7 +68,7 @@ In addition we solved some rendering issues with **overlapping labels.**
 
 ## Bug fixes
 
-- \[VHDL] Fixed Sigasi Studio startup issues.
+- Fixed Sigasi Studio startup issues.
 - \[VHDL] Fixed a caching problem when VHDL version of files was changed.
 - \[VHDL] The State Machine View was not updated when **Show in** was used the first time.
 - \[VHDL] Scoping error with `arrays of unconstraint records` (ticket 3712).
