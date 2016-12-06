@@ -351,21 +351,16 @@ work, clock_generator.vhd
 work, testbench.vhd
 ```
 
+### Auto-export
+
 You can also configure Sigasi Studio to **auto-export** this CSV file, every time the dependencies change.
 
-In the project you want to auto-export, create a file `.settings/com.sigasi.hdt.vhdl.ui.prefs` with following content: 
-```
-eclipse.preferences.version=1
-autoexport=csv
-```
+Right click on the project you want to auto-export in the Project Explorer, and select **Properties** and **VHDL auto export**.
 
-If you only want to export the dependencies of the top level, set the content of `.settings/com.sigasi.hdt.vhdl.ui.prefs` to:
-```
-eclipse.preferences.version=1
-autoexport=csv_top_level
-autoexport.top_level=work.testbench(STR)
-```
-Where `work.testbench(STR)` is the name of your top level.
+![Auto export CSV file with dependencies](images/auto_export_property_page.png "Auto export CSV file with dependencies")
 
-If you omit the `autoexport.top_level`, Sigasi will try to use the current toplevel in the [views#hierarchy] as input (if it belongs to this project).
+If you do not set a fixed top level name (i.e. empty _top level name_ in the property page), Sigasi Studio will use the current top level in the [Hierarchy View][views#hierarchy] as input. Note that this only works if the top level belongs to the selected project.
+
+
+This information is stored in `.settings/com.sigasi.hdt.vhdl.ui.prefs` in your project.
 

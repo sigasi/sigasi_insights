@@ -40,8 +40,9 @@ in the design. Sigasi’s VHDL linter checks for the following problems:
 -   Duplicate, conflicting design unit names
 -   Missing return statement in function bodies
 -   Missing, unnecessary and duplicate signals in the sensitivity list
--   Port, signal, variable, constant or generic declarations that are
-    never read or written
+-   Port, signal, variable, constant or generic declarations that are never read or written
+-   Invalid port associations (incompatible port modes in instantiations)
+-   Order of generic and port associations
 
 ## No Linting for Common Libraries {: #linting-common-libraries}
 
@@ -57,7 +58,7 @@ a quickfix, click the problem marker or press **Ctrl-1** and select the
 quickfix.
 
 -   Remove unused declaration
--   Declare signals
+-   Declare signals and constants
 -   Switch to VHDL 2008 mode
 -   Correct signal/variable assignment operator
 -   Ignore deprecated libraries
@@ -67,6 +68,7 @@ quickfix.
 -   Correct attribute entity class in attribute specifications
 -   Add missing signals to sensitivity list
 -   Fix capitalization of identifier to correspond to its declaration
+-   Match order of generic and port associations with declaration order
 
 ## Configuring the Severity Level {: #linting-severity-level}
 
