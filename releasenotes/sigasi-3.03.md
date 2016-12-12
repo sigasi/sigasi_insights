@@ -63,7 +63,6 @@ In addition we solved some rendering issues with **overlapping labels.**
 - Hyperlinks to open matching declarations in `protected type` bodies.
 - Autocomplete template for `case generate` statements.
 - Components are foldable in the editor.
-- When you change the Top level, the csv file export is automatically updated.
 - [Stuttering][/manual/editor#stuttering] in the Verilog Editor
 
 ## Bug fixes
