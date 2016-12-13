@@ -104,7 +104,7 @@ $LOCATION/lmgrd -c $LOCATION/sigasi.lic -l $LOCATION/debug.log
 ### Starting the Flexnet and Sigasi Daemon on Windows
 
 1. Download the Sigasi daemon (see above)
-2. Create a folder in your Sigasi installation to hold the license manager software, in this example we will use license.
+2. Create a folder to hold the license manager software, in this example we will use `D:\Sigsi\license`.
 3. Unpack the zip file into the license folder  (`D:\Sigasi\license`)
 4. Run the license configuration tool `lmtools.exe` as administrator.
 5. Save the license file supplied for Sigasi to the license folder
