@@ -112,13 +112,3 @@ img {
   max-height: 630px;
   max-width: 630px;
 }
-
-.dl-horizontal dt {
-    float: none; 
-    width: 768px; 
-    clear: left;
-    text-align: left;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
