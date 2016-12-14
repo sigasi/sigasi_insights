@@ -60,8 +60,10 @@ clicking hyperlinks. If you press and hold the **Ctrl** key, hyperlinks will app
 Sigasi offers following links:
 
 - Link to **Declaration**: this has the same behaviour as **Open Declaration** (**F3**)
-- Link to **Matching Entity** \[VHDL]: this links a **component** declaration of instantiation to the matching entity declaration. This also works for component **generics** and **ports**.
-- Link to **Matching When Clause** \[VHDL]: in finite state machines (FSMs) you can jump directly to the matching *when* part of your case statement from state transitions.
+- Link to **Matching Entity** \[VHDL]: this links a **component** declaration of instantiation to the matching entity declaration. This also works for component **generics** and **ports** (**Shift+F3**).
+- Link to **Matching When Clause** \[VHDL]: in finite state machines (FSMs) you can jump directly to the matching *when* part of your case statement from state transitions (**Shift+F3**).
+- Link to **Open Declaration in Package Body** \[VHDL]: in packages you can jump directly to the matching *declaration* in the package body (**Shift+F3**). This also works in the opposite direction, **Open Declaration in Package Body**.
+- Link to **Open Declaration in Protected Type Body** \[VHDL]: in protected types you can jump directly to the matching *declaration* in the protected type body. This also works in the opposite direction, **Open Declaration in Protected Type**.
 - URLs in **comments**
 
 ## Hover
@@ -217,7 +219,7 @@ described in this chapter.
 Highlighting Classes for VHDL:
 
 - *Syntax*  :  Comment, Keyword, Number, String, Task tag 
-- *Semantic* :  Constant, Port, Signal, Type, Variable, Attribute, Function/Procedure 
+- *Semantic* :  Constant, Port, Signal, Type, Variable, Attribute, Function/Procedure, Labels
 
 ## VHDL specific autocompletes
 
@@ -319,7 +321,7 @@ This includes:
 
 Sigasi Studio's formatter is context based and tries to respect the style of the author. So depending on the original source style, the formatter might make different choices.
 
-On example is the decision to format a _conditional signal assignment_ on one, or multiple lines. Sigasi makes this decision base on the position of the first `else` keyword. If you put the `else` keyword on the first line, the formatter will put everythin on one line. If you put the `else` keyword on a new line, the formatter will use multiple lines for the assignment.
+One example is the decision to format a _conditional signal assignment_ on one, or multiple lines. Sigasi makes this decision based on the position of the first `else` keyword. If you put the `else` keyword on the first line, the formatter will put everything on one line. If you put the `else` keyword on a new line, the formatter will use multiple lines for the assignment.
 
 ```vhdl
 	demo <= (others => '0') when enable = '1'
@@ -340,6 +342,10 @@ Configurable settings currently include:
 -   Preserve newline characters
 -   Upper case for VHDL keywords
 -   Alignment column for trailing comments
+
+### Format code on save
+
+You can configure Sigasi Studio to automatically format your VHDL files when you save your source files via **Preferences > Sigasi > VHDL**, next enable **Enable code format on save**.
 
 ## Lightweight editor for large VHDL files
 

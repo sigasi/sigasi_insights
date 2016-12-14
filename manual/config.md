@@ -8,7 +8,7 @@ pager: true
 
 Sigasi supports VHDL version 1993, 2002 and 2008, and Verilog (2005) and SystemVerilog (2012). You can select the default VHDL version to use in: **Window > Preferences > Sigasi > VHDL**. You can set the default Verilog in: **Window > Preferences > Sigasi > Verilog**. 
 
-Since [Sigasi 3.2][/releasenotes/sigasi-3.02], you can also set the language version per project, per folder and per file. In the Project Explorer, right click your project, folder or file; select **Properties**, **VHDL Version** (**Verilog Version** for Verilog projects) and select the version via the dropdown menu. Sigasi Studio does not automatically rebuild your files when you change the version. So you need to close and re-open your editors and perform a _Clean Build_ before the error markers are updated.
+Since [Sigasi 3.2][/releasenotes/sigasi-3.02], you can also set the language version per project, per folder and per file. In the Project Explorer, right click your project, folder or file; select **Properties**, **VHDL Version** (**Verilog Version** for Verilog projects) and select the version via the dropdown menu. 
 
 ![](images/project_vhdl_version.png)
 
@@ -18,8 +18,7 @@ The version information is stored in `<project path>/.settings/com.sigasi.hdt.vh
 
 **Notes**:
 
-* **VHDL libaries:** Any new project that you create will have the common libraries (`STD` and `IEEE`) that correspond to your selected VHDL version. Your _existing project will **not** be modified_. If you want to update the common libraries for an existing project, right-click the project and select **Library Mapping > Reset Common Libraries**.
-* **No automatic rebuild**: You files will not be automatically re-analyzed when you change the language version. You can force this with **Projct > Clean...** and select your project.
+* **VHDL libaries:** Any new project that you create will have the common libraries (`STD` and `IEEE`) that correspond to your selected VHDL version. Your _existing project will **not** be modified_. If you want to update the common libraries for an existing project, right-click the project and select **Library Mapping > Reset Common Libraries**. Since [Sigasi 3.3][/releasenotes/sigasi-3.03], you will get a warning if your common libraries do not match the VHDL version of you VHDL file. You can use the proposed quick fix to resolve the issue.
 * If you want to compile VHDL 87 code, you should select the “1993” option. There are no checks to warn about constructs that were not supported in 1987, but that were introduced in 1993.
 
 
