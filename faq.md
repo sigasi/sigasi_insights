@@ -91,27 +91,7 @@ Here you can **sort** by Plug-in Id by clicking on the title of the "Plug-in Id"
 
 ## Can I use the features of the upcoming release?
 
-For those users who want to get early access to the features and bugfixes of upcomming Sigasi releases, we have setup an extra release channel, called "_Sigasi Preview_".
-
-The Sigasi Preview release channel offers more frequent releases than the official releases. Although these preview release are less rigorously tested than than the official releases, they are stable enough for daily use. 
- 
-_If you run into any problems, please let us know_.
- 
-You can download the Stand-alone version of the latest preview version from:
-
-* <http://download.sigasi.com/preview/latest/com.sigasi.hdt.product-linux.gtk.x86_64.zip>
-* <http://download.sigasi.com/preview/latest/com.sigasi.hdt.product-linux.gtk.x86.zip>
-* <http://download.sigasi.com/preview/latest/com.sigasi.hdt.product-macosx.cocoa.x86_64.zip>
-* <http://download.sigasi.com/preview/latest/com.sigasi.hdt.product-win32.win32.x86_64.zip>
-* <http://download.sigasi.com/preview/latest/com.sigasi.hdt.product-win32.win32.x86.zip>
-
-You can also update from (configure via Preferences > Install/Update > Available Software Sites > Add...) :
-
-* http://download.sigasi.com/preview/studio/
-
-SHA Sums (more info):
-
-* <http://download.sigasi.com/preview/hdt2/sha1.txt>
+Yes! You can find the details on [/tech/preview].
 
 # Licensing
 
