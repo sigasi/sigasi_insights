@@ -13,15 +13,10 @@ For the VHDL community a better path to Advanced VHDL Verification is by using V
 These features include:
 
 * Simplified printing, error reporting, verbosity control, and Affirmations
-
 * Constrained Random tests
-
 * Functional Coverage
-
 * Intelligent Coverage Random tests
-
 * Scoreboards
-
 * Memory Modeling
 
 Like SystemVerilog's UVM, OSVVM is implemented as a library of free, open-source packages.  Using these packages, OSVVM provides a simple methodology to implement these features.
@@ -30,41 +25,41 @@ Unlike SystemVerilog, OSVVM is designed to be simple to use and intended to crea
 
 ## Simplified Printing, Error Handling, Verbosity Control, and Affirmations
 
-OSVVM's TranscriptPkg and AlertLogPkg simplify printing, error handling, verbosity control, and affirmations.
+OSVVM's `TranscriptPkg` and `AlertLogPkg` simplify printing, error handling, verbosity control, and affirmations.
 
 ### Simplified Printing
 
-Printing is a fundamental part of a testbench.  VHDL's TEXTIO is verbose.  OSVVM makes printing easy.  Simply call OSVVM's "print" and VHDL-2008's "to_string" to print a string, enumerated, integer, std_logic_vector, and time value.
+Printing is a fundamental part of a testbench.  VHDL's TEXTIO is verbose.  OSVVM makes printing easy.  Simply call OSVVM's `print` and VHDL-2008's `to_string` to print a `string`, `enum` type, `integer`, `std_logic_vector`, and `time` value.
 
 ```vhdl
-type   StateType is (S1, S2, S3, S4) ; 
-signal State : StateType ;
+type   StateType is (S1, S2, S3, S4); 
+signal State : StateType;
 ... 
 print("State = "   & to_string(State) &	   -- enum
       ", Count = " & to_string(Count) &	   -- integer
       ", Data = "  & to_hstring(Data) &    -- slv
       " at time "  & to_string(NOW, 1 ns)  -- time
-  ) ;
+  );
 ```
 
 TranscriptPkg also provides capability to:
 
-* Print to OUTPUT: default
+* Print to `OUTPUT`: default
 * Print to file: `TranscriptOpen("./results/test1.txt");`
-* Print to a file and OUTPUT: `SetTranscriptMirror(TRUE);`
+* Print to a file and `OUTPUT`: `SetTranscriptMirror(TRUE);`
 
-These features control all printing in OSVVM.  Hence, all printing done by OSVVM and "print" go to the same location, either OUTPUT, the transcript file, or both.  
+These features control all printing in OSVVM.  Hence, all printing done by OSVVM and `print` go to the same location, either `OUTPUT`, the transcript file, or both.  
 
 ### Error Handling
 
-For error handling, both VHDL and SystemVerilog have assert, however, this leaves counting of errors up to user code.  
+For error handling, both VHDL and SystemVerilog have `assert`, however, this leaves counting of errors up to user code.  
 
-OSVVM's alert procedure both signals and counts errors.  Alerts can be level WARNING, ERROR (default), or FAILURE.  The following alerts signal and count an error when indicated in the comments.  
+OSVVM's alert procedure both signals and counts errors.  Alerts can be level `WARNING`, `ERROR` (default), or `FAILURE`.  The following alerts signal and count an error when indicated in the comments.  
 
 ```vhdl
-Alert("Illegal State", FAILURE) ;  -- always err
-AlertIf(MaxVal < MinVal, "Parameter Error …") ;  -- if true
-AlertIfDiff("./File1.txt", "./File2.txt") ;  -- if files differ
+Alert("Illegal State", FAILURE);  -- always err
+AlertIf(MaxVal < MinVal, "Parameter Error …");  -- if true
+AlertIfDiff("./File1.txt", "./File2.txt");  -- if files differ
 ```
 
 Alerts produce a formatted output, such as the one below for the first alert above.
@@ -76,7 +71,7 @@ Alerts produce a formatted output, such as the one below for the first alert abo
 When using alerts, calling ReportAlerts uses the internal error count values to produce a test completion pass/fail message.  
 
 ```vhdl
-ReportAlerts ; 
+ReportAlerts; 
 ```
 
 When there are no errors, a report of the following form is printed:
@@ -115,9 +110,9 @@ OSVVM's log procedures provide verbosity control based on an enumerated value.  
 Printing with log is similar to using print.  Log level ALWAYS is the default.  ALWAYS is always enabled.  INFO, DEBUG, and PASSED are disabled by default.
 
 ```vhdl
-Log("Test 1 Starting") ;
+Log("Test 1 Starting");
 ...
-Log("Entered Hold State", DEBUG) ;
+Log("Entered Hold State", DEBUG);
 ```
 
 The output of log contains the following additional formatting.
@@ -141,7 +136,7 @@ Affirmations are intended for self-checking a design.  They are always condition
 ```vhdl
 AffirmIf (Data = Expected, 
           "Data: " & to_string(Data) &
-          " = Expected: " & to_string(Expected)) ;
+          " = Expected: " & to_string(Expected));
 ```
 
 When an affirmation fails, it uses alert ERROR to print the message and when it passes it uses log PASSED.    Hence, depending on whether the affirmation passed or failed, one of the following messages will be generated (assuming that PASSED is enabled).
@@ -162,30 +157,28 @@ In OSVVM, constrained random tests use a randomization library to generate rando
 A few basic capabilities of OSVVM's RandomPkg are:
 
 ```vhdl
-variable RV : RandomPType ;
-
+variable RV : RandomPType;
 ...
-
 -- Randomize a value in an inclusive range, 0 to 15
-Data1 := RV.RandInt(Min => 0, Max => 15) ;
-Data2 := RV.RandInt(0, 15, (5,11) ) ;  -- except 5 & 11
+Data1 := RV.RandInt(Min => 0, Max => 15);
+Data2 := RV.RandInt(0, 15, (5,11) );  -- except 5 & 11
 
 -- Randomize a value within the set (1, 2, 3, 5, 7, 11)
-Data3 := RV.RandInt( (1,2,3,5,7,11) ) ; 
+Data3 := RV.RandInt( (1,2,3,5,7,11) ); 
 Data4 := RV.RandInt((1,2,3,5,7,11), (5,11)); -- except 5 ,11
 ```
 
 RandomPkg also supports weighted distributions.   By default weighted distributions return a value between 0 and N-1 where N is the number of weights specified.  Each value will be randomly selected approximately (its weight)/(sum of all weights) times.   Hence, in the following example, the value 0 will be generated 7/10 or 70% of the time, 1 will generated 20% of the time, and 2 will be generated 10% of the time.  
 
 ```vhdl
-Data5 := RV.DistInt ( (7, 2, 1) ) ; 
+Data5 := RV.DistInt( (7, 2, 1) ); 
 ```
 
 By itself, a randomization library is not constrained random.  In OSVVM, we use the randomization library plus code patterns to create a constrained random test.  The following test generates the first test case 70% of the time (Nominal case), the second 20% of the time (Parity Error), and the final one 10% of the time (Stop Error).  
 
  
 ```vhdl
-variable RV : RandomPType ;
+variable RV : RandomPType;
 ...
 StimGen: while TestActive loop    
   case RV.DistInt( (7, 2, 1) ) is
@@ -196,7 +189,7 @@ StimGen: while TestActive loop
       Operation := UARTTB_PARITY_ERROR; 
       Data := RV.RandSlv(0, 255, Data'length); 
     when  2 =>    -- Stop Error     10% 
-  end case ;
+  end case;
 
   UartRxScoreboard.Push( (Data, Operation) ); 
   UartSend(UartTxRec, Data, Operation); 
@@ -229,28 +222,28 @@ The cross coverage for this example is the 8 registers of SRC1 crossed with the 
 
 The steps for modeling functional coverage are the same whether doing item or cross coverage.  We must declare, model, interact, accumulate, and report coverage.
 
-The code below tersely walks us through the steps.  The shared variable, `ACov`, declares the coverage object.   The call to AddCross creates the cross coverage model.  Its two parameters of GenBin(0,7) create descriptors to generate 8 bin values: 0, 1, 2, 3, 4, 5, 6, 7.  AddCross uses these parameters to create the 8x8 cross product shown in the picture above.  `IsCovered` is used to exit the loop when all items in the coverage model are covered (have been encountered).   Each register is selected using uniform randomization (`RandInt`).  Since the inputs are independent of each other, this produces similar results to any other constrained random test generation method.  The transaction procedure, `DoAluOp`, applies the stimulus.   `ICover` accumulates the coverage.  WriteBin reports the coverage.    
+The code below tersely walks us through the steps.  The shared variable, `ACov`, declares the coverage object.   The call to AddCross creates the cross coverage model.  Its two parameters of `GenBin(0,7)` create descriptors to generate 8 bin values: 0, 1, 2, 3, 4, 5, 6, 7.  `AddCross` uses these parameters to create the 8x8 cross product shown in the picture above.  `IsCovered` is used to exit the loop when all items in the coverage model are covered (have been encountered).   Each register is selected using uniform randomization (`RandInt`).  Since the inputs are independent of each other, this produces similar results to any other constrained random test generation method.  The transaction procedure, `DoAluOp`, applies the stimulus.   `ICover` accumulates the coverage.  `WriteBin` reports the coverage.    
 
 ```vhdl
 architecture Test2 of tb is
-  shared variable ACov : CovPType ;    -- Declare 
+  shared variable ACov : CovPType;    -- Declare 
 begin
   TestProc : process 
-    variable RV : RandomPType ;
-    variable Src1, Src2 : integer ;
+    variable RV : RandomPType;
+    variable Src1, Src2 : integer;
   begin
     -- create coverage model
     ACov.AddCross( GenBin(0,7), GenBin(0,7) ); 
     while not ACov.IsCovered loop     -- Done?
-      Src1 := RV.RandInt(0, 7) ;      -- Randomize 
-      Src2 := RV.RandInt(0, 7) ; 
-      DoAluOp(TRec, Src1, Src2) ;    -- Transaction
-      ACov.ICover( (Src1, Src2) ) ;  -- Accumulate
-    end loop ;
+      Src1 := RV.RandInt(0, 7);      -- Randomize 
+      Src2 := RV.RandInt(0, 7); 
+      DoAluOp(TRec, Src1, Src2);    -- Transaction
+      ACov.ICover( (Src1, Src2) );  -- Accumulate
+    end loop;
 
-    ACov.WriteBin ;                  -- Report 
-    EndStatus(. . . ) ;   
-  end process ;
+    ACov.WriteBin;                  -- Report 
+    EndStatus(. . . );   
+  end process;
 ```
 
 This was a very quick walk through of Functional Coverage basics.  See the references at the end of this article for more details.   
@@ -265,31 +258,31 @@ SystemVerilog + UVM solves this problem with either coverage driven randomizatio
 
 OSVVM provides a simplified intelligent testbench capability in its Intelligent Coverage Test randomization.  The concept is very simple.  When you do any form of randomization, you need to write functional coverage to determine what the test actually does.  Hence, rather than writing constraints to do constrained random testing, instead do a random walk across coverage holes.   
 
-OSVVM randomizes across functional coverage holes using the method RandCovPoint.  Hence, we can create an intelligent Coverage random test of the ALU simply by replacing the calls to RandInt in the example from the functional coverage section with a call to RandCovPoint.   This is shown below.
+OSVVM randomizes across functional coverage holes using the method RandCovPoint.  Hence, we can create an intelligent Coverage random test of the ALU simply by replacing the calls to RandInt in the example from the functional coverage section with a call to `RandCovPoint`.   This is shown below.
 
 ```vhdl
 architecture Test2 of tb is
-  shared variable ACov : CovPType ;    -- Declare 
+  shared variable ACov : CovPType;    -- Declare 
 begin
   TestProc : process 
-    variable RV : RandomPType ;
-    variable Src1, Src2 : integer ;
+    variable RV : RandomPType;
+    variable Src1, Src2 : integer;
   begin
     -- create coverage model
     ACov.AddCross( GenBin(0,7), GenBin(0,7) ); 
-    while not ACov.IsCovered loop         -- Done?
-      (Src1, Src2) := ACov.RandCovPoint ; -- Randomize 
-      DoAluOp(TRec, Src1, Src2) ;         -- Transaction
-      ACov.ICover( (Src1, Src2) ) ;       -- Accumulate
-    end loop ;
-    ACov.WriteBin ;                       -- Report 
-    EndStatus(. . . ) ;   
-  end process ;   
+    while not ACov.IsCovered loop        -- Done?
+      (Src1, Src2) := ACov.RandCovPoint; -- Randomize 
+      DoAluOp(TRec, Src1, Src2);         -- Transaction
+      ACov.ICover( (Src1, Src2) );       -- Accumulate
+    end loop;
+    ACov.WriteBin;                       -- Report 
+    EndStatus(...);   
+  end process;   
 ```
 
 ## Scoreboards
 
-A scoreboard is a data structure used for self-checking in an environment where inputs are closely related to outputs, such as in data transmission (serial ports, networking, …).   
+A scoreboard is a data structure used for self-checking in an environment where inputs are closely related to outputs, such as in data transmission (serial ports, networking, ...).   
 
 Internal to a scoreboard there is a FIFO for holding values and a data checker.  The use model is simple.  When the testbench stimulus generation process generates a transaction, it first sends the transaction (via push) to the scoreboard and then sends the transaction to the DUT.   As a result of the push operation, the scoreboard stores the transaction value in the scoreboard.  When the testbench checking process receives a transaction, it sends that value to the scoreboard (via check) to be checked.  Internally the scoreboard pops the top value off the FIFO and compares it to the value sent via check using AffirmIf from the AlertLogPkg.  
 
@@ -301,93 +294,93 @@ From a VHDL code perspective, this is as follows.
 
 ```vhdl
 architecture Uart_Test1 of TestCtrl is 
-  shared variable SB : ScoreboardPType ; 
-  . . . 
+  shared variable SB : ScoreboardPType; 
+  ... 
 begin
   GenerateProc : process
   begin
-    SetAlertLogName("UART_Test1") ; 
-    SB.SetAlertLogId("UART_SB", TB_ID) ; 
-    SB.Push(X"10") ; 
-    UartSend(UartTxRec, X"10") ;
-    . . . 
-    SB.Push(X"FF") ; 
-    UartSend(UartTxRec, X"FF") ;
-    TestDone <= TRUE ; 
-    wait ; 
-  end process GenerateProc ; 
+    SetAlertLogName("UART_Test1"); 
+    SB.SetAlertLogId("UART_SB", TB_ID); 
+    SB.Push(X"10"); 
+    UartSend(UartTxRec, X"10");
+    ... 
+    SB.Push(X"FF"); 
+    UartSend(UartTxRec, X"FF");
+    TestDone <= TRUE; 
+    wait; 
+  end process GenerateProc; 
   CheckProc : process
     variable RcvD : std_logic_vector(7 downto 0);
   begin
     while not TestDone loop 
-      UartGet(UartRxRec, RcvD) ; 
-      SB.Check(RcvD) ; 
-      wait for UART_BAUD_PERIOD ;
-    end loop ; 
-    ReportAlerts ;     
-  end process CheckProc ; 
-end architecture UART_Test1 ;
+      UartGet(UartRxRec, RcvD); 
+      SB.Check(RcvD); 
+      wait for UART_BAUD_PERIOD;
+    end loop; 
+    ReportAlerts;     
+  end process CheckProc; 
+end architecture UART_Test1;
 ```
 
 Note that while the test generation process generates numerous values using either directed (shown) or random methods, the checking side is just a simple loop.   Hence, the big advantage of using a scoreboard is that the checking side remains simple and has no need to know what the test generation side is doing.  
 
-The ScoreboardGenericPkg uses type and subprogram generics.  Be sure to reference the ScoreboardGenericPkg_user_guide.pdf for usage details.  
+The `ScoreboardGenericPkg` uses type and subprogram generics.  Be sure to reference the [ScoreboardGenericPkg_user_guide.pdf](https://github.com/OSVVM/OSVVM/blob/master/doc/ScoreboardPkg_user_guide.pdf) for usage details.  
 
 ## Memory Modeling
 
 Memory models when implemented using simple array types can consume a significant amount of memory in your workstation and slow a simulation down significantly.   Most tests do not use the entire memory, and hence, there is no need to allocate storage for all of it.  
 
-OSVVM's MemoryPkg uses a sparse data structure and only allocates a block of storage when it is written to. This uses the same strategy that cache memory does – most accesses to memory are local to a particular region.   Allocating memory this way reduces the amount of memory used during a simulation and can result in significant speed up of simulations.  
+OSVVM's `MemoryPkg` uses a sparse data structure and only allocates a block of storage when it is written to. This uses the same strategy that cache memory does – most accesses to memory are local to a particular region.   Allocating memory this way reduces the amount of memory used during a simulation and can result in significant speed up of simulations.  
 
-While modeling memory with an array is inefficient, it is also easy.  Fortunately, modeling memory with MemoryPkg is both efficient and easy.   A call to MemInit creates the initial memory structure.  A call to MemWrite writes to a memory location.  A call to MemoryRead reads a memory location.  The following example uses these to create a simple static RAM without any timing.   Note that the size of memory is determined by the size of the Address and Data that are mapped to the entity (supported by the language, but not commonly by synthesis tools).
+While modeling memory with an array is inefficient, it is also easy.  Fortunately, modeling memory with `MemoryPkg` is both efficient and easy.   A call to `MemInit` creates the initial memory structure.  A call to `MemWrite` writes to a memory location.  A call to `MemoryRead` reads a memory location.  The following example uses these to create a simple static RAM without any timing.   Note that the size of memory is determined by the size of the `Address` and `Data` that are mapped to the entity (supported by the language, but not commonly by synthesis tools).
 
 ```vhdl
-library ieee ;
-use ieee.std_logic_1164.all ;
-use ieee.numeric_std.all ;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 entity SRAM is
   port (
-    Address  : in     std_logic_vector ; 
-    Data     : inout  std_logic_vector ;
-    nCE      : in     std_logic ;
-    nOE      : in     std_logic ; 
+    Address  : in     std_logic_vector; 
+    Data     : inout  std_logic_vector;
+    nCE      : in     std_logic;
+    nOE      : in     std_logic; 
     nWE      : in     std_logic 
-  ) ;
-end SRAM ; 
+  );
+end SRAM; 
 architecture model of SRAM is
-  shared variable ptRam : MemoryPType ; 
-  signal WriteEnable, ReadEnable : std_logic ; 
+  shared variable ptRam : MemoryPType; 
+  signal WriteEnable, ReadEnable : std_logic; 
 begin
   ptRam.MemInit (
       AddrWidth   => Address'length, 
       DataWidth  = > Data'length
-  ) ; 
-  WriteEnable <= not nWE and not nCE ; 
+  ); 
+  WriteEnable <= not nWE and not nCE; 
   RamWriteProc : process 
   begin
-    wait until falling_edge(WriteEnable) ;
-    ptRam.MemWrite(Address, Data) ; 
-  end process RamWriteProc ; 
-  ReadEnable <= not nCE and not nOE ;
+    wait until falling_edge(WriteEnable);
+    ptRam.MemWrite(Address, Data); 
+  end process RamWriteProc; 
+  ReadEnable <= not nCE and not nOE;
   ReadProc : process
   begin
-    wait on Address, ReadEnable ; 
+    wait on Address, ReadEnable; 
     case ReadEnable is
-      when '1' =>      Data <= ptRam.MemRead(Address) ;
-      when '0' =>      Data <= (Data'range => 'Z') ; 
-      when others =>   Data <= (Data'range => 'X') ; 
-    end case ; 
-  end process ReadProc ; 
-end model ;
+      when '1' =>      Data <= ptRam.MemRead(Address);
+      when '0' =>      Data <= (Data'range => 'Z'); 
+      when others =>   Data <= (Data'range => 'X'); 
+    end case; 
+  end process ReadProc; 
+end model;
 ```
 
 ## Assertions, PSL, and VHDL-2008
 
 IEEE standard 1850, Property Specification Language (PSL) has a notation that is customized to a number of languages, including VHDL.   VHDL-2008 choose PSL as its assertion language and integrated it directly into the language.
 
-All of PSL can be used within a VHDL design and/or testbench.  PSL properties are VHDL declarations.  Assert and cover are VHDL concurrent statements.  PSL design units VUNIT, VPROP, and VMODE are VHDL design units and can be compiled into the VHDL library.  
+All of PSL can be used within a VHDL design and/or testbench.  PSL properties are VHDL declarations.  Assert and cover are VHDL concurrent statements.  PSL design units `VUNIT`, `VPROP`, and `VMODE` are VHDL design units and can be compiled into the VHDL library.  
 
-Note that for many vendors, usage of PSL requires an additional license above a regular VHDL license.  
+Note that for many vendors, usage of PSL requires an additional license above a regular VHDL license.
 
 ## Summary
 
@@ -405,9 +398,9 @@ Here I have provided a small taste of OSVVM.   Want to learn more?  See "Going F
 
 The fastest way to learn OSVVM is to take SynthWorks' Advanced VHDL Testbenches and Verification class.  SynthWorks developed OSVVM and supports it as a open source project.  Please support SynthWorks by buying training from us or one of our partners.  In UK and Scandinavia regions we offer this class through FirstEDA.  In Germany and other European regions, we offer this class through PLC2.  
 
-If you would prefer to self learn, there are further blog posts at:
+If you would prefer to self learn, there are further blog posts at: <http://www.synthworks.com/blog/osvvm>.
 
-http://www.synthworks.com/blog/osvvm.   There are also blog posts and a user forum at http://www.osvvm.org.  
+There are also blog posts and a user forum at <http://www.osvvm.org>.  
 
 In addition, in the docs directory of the OSVVM release you will find an extensive user guide for most of the packages.      
 
@@ -415,5 +408,5 @@ Note that the user guides are intended to inform you of the details of what is i
 
 ## Getting OSVVM
 
-OSVVM can be downloaded from either http://www.osvvm.org or https://github.com/JimLewis/OSVVM. 
+OSVVM can be downloaded from either <http://www.osvvm.org> or <https://github.com/JimLewis/OSVVM>. 
 
