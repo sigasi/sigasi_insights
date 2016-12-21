@@ -49,7 +49,7 @@ E.g.:
 ```vhdl
 -- @formatter:off
       -- skipped region
--- @formatter:oni
+-- @formatter:on
 ```
 
 In general the new formatter should format your code the same way as earlier versions of Sigasi Studio. Let us know if you see unexpected changes.
