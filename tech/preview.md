@@ -21,6 +21,24 @@ We now process all SystemVerilog in a predictable order and keep track of all pr
 <div class="wistia_responsive_padding" style="padding:118.13% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/wu2qqrjhu0?videoFoam=true" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
 
+### What features are already supported?
+* Syntax error feedback: **All** valid SystemVerilog-2012 code should be accepted as valid code. Most syntax errors should be flagged.  
+   This works for both **SystemVerilog** _and_ **Include** files.
+* Preprocessor/Macros: Macros are fully supported. You can preview the text expansion with a hover or in the “Preprocessor View”.
+* Include paths can be specified by right clicking a project, selecting **Properties**, and opening the **Verilog Preprocessor page**. Currently, only project-relative paths are supported.
+* Open Declaration and Find References (for regular Verilog Code)
+* Autocomplete (Ctrl+Space):
+     * Syntax: autocomplete for keywords and identifiers
+     * Fixed Templates: these templates can be modified
+     * Smart Templates: module instantiations
+* Integration with an external compiler (Riviera-Pro, ModelSim, NCsim)
+
+### What SystemVerilog features are we currently working on?
+
+We are currently implementing the scoping rules of SystemVerilog. This will result in better **semantic highlighting**, **Find References** and **Open Declaration** for all SystemVerilog code.
+
+We are also experimenting with SV formatting. The first feature we target is **Clean Indentation**.
+
 ## New VHDL formatter
 
 For Sigasi Studio 3.4 we did a rewrite of the VHDL formatter. This fixed a lot of reported formatting issues.
