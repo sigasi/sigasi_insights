@@ -1,5 +1,14 @@
-import markdown
 import datetime
+filters = {}
+
+try:
+    import markdown
+    def md(text):
+        return markdown.markdown(text)
+    filters['md'] = md
+except ImportError:
+    print "Could not find module markdown. Continuing without markdown"
+
 
 def license(licenseName):
     if licenseName == 'CC BY-ND 4.0':
@@ -16,9 +25,7 @@ def dateformat(value, format="%Y-%m-%d"):
 
 def coloredDot(title):
     return title.replace('.','<span style="color:#f47920">.</span>')
-    
-def md(text):
-    return markdown.markdown(text)
+
 
 def author(name):
     return name
@@ -101,7 +108,7 @@ def wistia(videoid,video_width=600,video_height=400):
           });
         </script>""".replace('{{video_width}}',str(video_width)).replace('{{video_height}}',str(video_height)).replace('{{videoid}}',str(videoid))
 
-filters = {}
+
 filters['author'] = author
 filters['cutoff'] = cutoff
 filters['dateformat'] = dateformat
@@ -109,7 +116,6 @@ filters['filtercontent'] = filtercontent
 filters['filterfirst'] = filterfirst
 filters['filterlatest'] = filterlatest
 filters['filtertag'] = filtertag
-filters['md'] = md
 filters['recurse'] = recurse
 filters['sortpopular'] = sortpopular
 filters['split'] = split
