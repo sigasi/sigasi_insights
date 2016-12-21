@@ -14,9 +14,13 @@ Although these preview release are less rigorously tested than than the official
  
 _If you run into any problems, please let us know_.
 
+# Current preview release
+
+These features are available in the current preview release.
+
 ## SystemVerilog improvements
 
-We now process all SystemVerilog in a predictable order and keep track of all preprocessor state. This avoids problems with the ``` `ifndef ... `define  ... ``` pattern. This also allows us to offer **full support for include files**. You can now edit include files _as if they were included in a Verilog file_. This requires no extra configuration, except for [setting your include paths][/manual/editor#verilog-preprocessingmacros].
+All SystemVerilog is processed in a predictable order and keep track of the preprocessor state. This avoids problems with the ``` `ifndef ... `define  ... ``` pattern. This also allows us to offer **full support for include files**. You can edit include files _as if they were included in a Verilog file_. This requires no extra configuration, except for [setting your include paths][/manual/editor#verilog-preprocessingmacros].
 
 <div class="wistia_responsive_padding" style="padding:118.13% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/wu2qqrjhu0?videoFoam=true" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
@@ -49,16 +53,16 @@ E.g.:
 ```vhdl
 -- @formatter:off
       -- skipped region
--- @formatter:oni
+-- @formatter:on
 ```
 
-In general the new formatter should format your code the same way as earlier versions of Sigasi Studio. Let us know if you see unexpected changes.
+The new formatter has roughly the same rules as you have seen in earlier versions of Sigasi Studio. Let us know if you see unexpected and unwanted changes.
 
 ### Extras
 
-We also added a **Correct Indentation** action. This action only modifies the indentation of your (selected) VHDL code. You can run via the context menu in the editor and **Source > Correct Indentation** or via **Ctrl+I**
+Sigasi Studio now has a **Correct Indentation** action. This action only modifies the indentation of your (selected) VHDL code. You can run via the context menu in the editor and **Source > Correct Indentation** or via **Ctrl+I**
 
-## Update or install?
+# Update or install?
 
 You can download the Stand-alone version of the latest preview version from:
 
