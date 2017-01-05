@@ -85,11 +85,9 @@ Errors/Warnings**.
 At this time, most linting rules are not user-configurable. We will be happy
 to work with you on implementing your own custom linting rules and
 coding style rules. 
-Discover more about [customer linting rules](http://www.sigasi.com/custom-linting).
 
 If your company has a set of coding rule and you need tool support, we
-can implement your coding rules at minimal cost. [Read more](http://www.sigasi.com/vhdl-lint)
-and contact us to discuss your requirements.
+can implement your coding rules at minimal cost. [contact-us] to discuss your requirements.
 
 
 ### Basic VHDL coding rules
@@ -119,7 +117,7 @@ and contact us to discuss your requirements.
 -   FSM\_DEAD\_STATE
 -   DEAD\_CODE (unreachable statements) [link](#dead-code)
 -   NEVER\_WRITTEN / NEVER\_READs
--   NAMING\_CONVENTIONS
+-   [#naming-conventions]
 -   INCOMPLETE\_ASSOCIATIVE\_OPTIONAL [link](#incomplete-port-maps-and-generic-maps)
 -   POSITIONAL_ASSOCIATION_IN_INSTANTIATIONS [link](#posititional-association-in-instantiations)
 -   CASE_REFERENCES [link](#capitalization-of-identifiers)
