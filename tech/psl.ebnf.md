@@ -1,11 +1,19 @@
 ---
-title: "PSL BNF Grammar"
+title: "PSL 1.1 BNF Grammar"
 layout: page 
 pager: true
 author: Sigasi
-date: 2016-12-12
+date: 2017-01-06
 comments: true
 ---
+<em>
+This document is copyrighted by the IEEE. It is made available for a wide variety of both public and private uses. These include both use, by reference, in laws and regulations, and use in private self-regulation, standardization, and the promotion of engineering practices and methods. By making this document available for use and adoption by public authorities and private users, the IEEE does not waive any rights in copyright to this document.
+</em>  
+
+Get the full Language Reference Manual, at <https://standards.ieee.org/findstds/standard/1850-2010.html>
+
+Sigasi has created this browsable version of the grammar, hoping that it would be useful to you, but without any warranty whatsoever.
+
 ## A.4 Syntax productions
   
 <em> The rest of this section defines the PSL syntax. </em>  
