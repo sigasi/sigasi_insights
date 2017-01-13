@@ -80,16 +80,6 @@ Errors/Warnings**.
 
 ![Configuring the severity of Sigasi linting checks](images/problemseveritypreferencepage.png "Configuring the severity of Sigasi linting checks")
 
-## Creating Custom VHDL Linter Rules {: #linting-custom-rules}
-
-At this time, most linting rules are not user-configurable. We will be happy
-to work with you on implementing your own custom linting rules and
-coding style rules. 
-
-If your company has a set of coding rule and you need tool support, we
-can implement your coding rules at minimal cost. [contact-us] to discuss your requirements.
-
-
 ### Basic VHDL coding rules
 
 [creator_only]
