@@ -124,6 +124,7 @@ $LOCATION/lmgrd -c $LOCATION/sigasi.lic -l $LOCATION/debug.log
 	* **Use Services**
 	* **Start Server at Power Up**
 9. Now click the **Save Service** button, and click **yes** on the confirmation dialog.
+10. Switch to the **Start/Stop/Reread** tab and start the server.
 
 The license server should now be configured correctly, and looks a bit like this one
 
@@ -242,4 +243,4 @@ Check the content of the Sigasi License preference page via : **Window > Prefere
   
 > Updating DACL Failed: "Service has been created but failed to update the DACL settings of FlexNet Licensing Service. It will give problem for accessing TS features. Check whether FlexNet Licensing Service is correctly installed or not and delete and create this service again."
 
-  * There seems to be a bug in `lmtools.exe` version 11 on some systems. You can work around this issue by configuring the (latest) Sigasi daemon with an older version of lmtools (e.g. version 10). 
+  * There seems to be a bug in `lmtools.exe` version 11 on some systems. You can work around this issue by configuring the (latest) Sigasi daemon with an older version of lmtools ([Download here](http://download.sigasi.com/flexnet/lmtools.zip)). 
