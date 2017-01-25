@@ -233,6 +233,10 @@ Check the content of the Sigasi License preference page via : **Window > Prefere
   * Is a valid _license key path_ configured (or are valid environment variables used)?
   * Is the user trying to use a Sigasi Studio 3 license in Sigasi 2.x?
 
+> No Such Feature Exists
+
+  * If you have an XL (doc) license, make sure you did **not enable** the **Do not try to checkout floating Sigasi Studio XL licenses** option on **Preferences > Sigasi > License Key > Options**.
+
 > Internal Flexlm Error
 
   * Check version number of FlexNet daemon, it is probably outdated. If not, check the daemon log on the license server
