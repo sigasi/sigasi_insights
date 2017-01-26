@@ -132,6 +132,7 @@ end package StringTest;
 ```
 
 Both tools report errors:
+
 * Riviera Pro:  
 ```
 COMP96 Compile Package "StringTest"
