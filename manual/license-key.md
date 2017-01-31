@@ -237,6 +237,10 @@ Check the content of the Sigasi License preference page via : **Window > Prefere
 
   * If you have an XL (doc) license, make sure you did **not enable** the **Do not try to checkout floating Sigasi Studio XL licenses** option on **Preferences > Sigasi > License Key > Options**.
 
+> Invalid license key (inconsistent authentication code)
+
+* Did you correct the server name to the actual server name in the (floating) license key file?
+
 > Internal Flexlm Error
 
   * Check version number of FlexNet daemon, it is probably outdated. If not, check the daemon log on the license server
@@ -248,3 +252,5 @@ Check the content of the Sigasi License preference page via : **Window > Prefere
 > Updating DACL Failed: "Service has been created but failed to update the DACL settings of FlexNet Licensing Service. It will give problem for accessing TS features. Check whether FlexNet Licensing Service is correctly installed or not and delete and create this service again."
 
   * There seems to be a bug in `lmtools.exe` version 11 on some systems. You can work around this issue by configuring the (latest) Sigasi daemon with an older version of lmtools ([Download here](http://download.sigasi.com/flexnet/lmtools.zip)). 
+  
+
