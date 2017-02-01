@@ -63,7 +63,7 @@ Select a file or a folder in the Project Explorer and right-click.
 
 ![](images/librarymappingcontextmenu.png)
 
-You get a `Set Library` context menu, with a a number of options:
+You get a `Set Library` context menu, with a number of options:
 
 -   Select the name of an existing library to map the file or folder to
     that library

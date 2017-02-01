@@ -448,6 +448,12 @@ version=1
 * If this is not enough, also remove `<workspaceSigasi>/.metadata/.plugins/org.eclipse.ui.ide` and `<workspaceSigasi>/org.eclipse.ui.workbench.texteditor`
 * If this still fails remove `<workspaceSigasi>/.metadata/.plugins/org.eclipse.core.resources`, note that you will have to re-import your projects if remove this folder.
 
+## How can I undo "Exclude from build"?
+
+If you accidentally [excluded a file from the VHDL or Verilog build][/manual/libraries#libraries-mapping], you can easily undo this by right-clicking the file again and selecting **Set Library**. Next, select the library in which this file needs to compiled.
+
+If you use a version control system, you can also revert the `.library_mapping.xml` file. Sigasi Studio will automatically pick up changes to this file and update the library information. Note that you can also the _Local history_ feature for this (**Team > Show Local History**).
+
 # Other tools
 
 ## Do you have an UltraEdit emulation mode so that I can use the UltraEdit key bindings?
