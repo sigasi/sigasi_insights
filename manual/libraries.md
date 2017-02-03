@@ -20,8 +20,8 @@ Sigasi Studio to organize your projects.
 
 # Examining the library configuration {: #libraries-examine}
 
-You can examine the library configuration in the [/manual/views#libraries] 
-and in the [/manual/views#explorer] 
+You can examine the library configuration in the [/manual/views#libraries]
+and in the [/manual/views#explorer]
 view. The Libraries view shows how
 *design units* are mapped. The Project Explorer view show how VHDL or
 Verilog *files* are mapped.
@@ -65,11 +65,9 @@ Select a file or a folder in the Project Explorer and right-click.
 
 You get a `Set Library` context menu, with a number of options:
 
--   Select the name of an existing library to map the file or folder to
-    that library
--   Select **Exclude from build** to exclude the file or folder from any library
--   Select **New Library** to define a new library and map the file or
-    folder to it
+* Select the name of an existing library to map the file or folder to that library
+* Select **Exclude from build** to exclude the file or folder from any library
+* Select **New Library** to define a new library and map the file or folder to it
 
 When you map a file into a library, only that file is affected. However,
 when you map a folder into a library, then everything in that folder

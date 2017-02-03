@@ -14,35 +14,35 @@ typing* your code.
 
 # Marker Icons {: #linting-icons}
 
--   ![](icons/info.png) marks an info message.
--   ![](icons/warning_lightbulb.png) marks a warning that can be resolved automatically with a quickfix.
--   ![](icons/warning.png) marks a warning that cannot be resolved automatically.
--   ![](icons/error_lightbulb.png) marks an error that can be resolved automatically with a quick fix.
--   ![](icons/error.png) marks an error that cannot be resolved automatically.
+* ![](icons/info.png) marks an info message.
+* ![](icons/warning_lightbulb.png) marks a warning that can be resolved automatically with a quickfix.
+* ![](icons/warning.png) marks a warning that cannot be resolved automatically.
+* ![](icons/error_lightbulb.png) marks an error that can be resolved automatically with a quick fix.
+* ![](icons/error.png) marks an error that cannot be resolved automatically.
 
 # Linting {: #linting-linting}
 
 VHDL code **Lint** is defined as code that is strictly correct according
 to the language definition, but still suspicious or problematic.
 Sigasi has a built-in VHDL linter, which provides info about code lint
-in the design. Sigasi’s VHDL linter checks for the following problems:
+in the design. Sigasi’s VHDL linter checks for the following problem*
 
--   Unused declarations
--   Duplicate declarations
--   Declaration could not be found
--   VHDL 2008 features in VHDL 93 mode (Learn about [choosing your VHDL version][/manual/config#configure-version])
--   Assignment validation
--   Case statement validation
--   Instantiation statement validation
--   Library validation
--   Range validation
--   Deprecated and non-standard packages
--   Duplicate, conflicting design unit names
--   Missing return statement in function bodies
--   Missing, unnecessary and duplicate signals in the sensitivity list
--   Port, signal, variable, constant or generic declarations that are never read or written
--   Invalid port associations (incompatible port modes in instantiations)
--   Order of generic and port associations
+* Unused declarations
+* Duplicate declarations
+* Declaration could not be found
+* VHDL 2008 features in VHDL 93 mode (Learn about [choosing your VHDL version][/manual/config#configure-version])
+* Assignment validation
+* Case statement validation
+* Instantiation statement validation
+* Library validation
+* Range validation
+* Deprecated and non-standard packages
+* Duplicate, conflicting design unit names
+* Missing return statement in function bodies
+* Missing, unnecessary and duplicate signals in the sensitivity list
+* Port, signal, variable, constant or generic declarations that are never read or written
+* Invalid port associations (incompatible port modes in instantiations)
+* Order of generic and port associatio*
 
 ## No Linting for Common Libraries {: #linting-common-libraries}
 
@@ -57,18 +57,18 @@ icon (like ![](icons/warning\_lightbulb.png)). To trigger
 a quickfix, click the problem marker or press **Ctrl-1** and select the
 quickfix.
 
--   Remove unused declaration
--   Declare signals and constants
--   Switch to VHDL 2008 mode
--   Correct signal/variable assignment operator
--   Ignore deprecated libraries
--   Configure Altera, Xilinx and ModelSim libraries
--   Declare missing enumeration literal in case statements
--   Add missing when clause in case statements
--   Correct attribute entity class in attribute specifications
--   Add missing signals to sensitivity list
--   Fix capitalization of identifier to correspond to its declaration
--   Match order of generic and port associations with declaration order
+* Remove unused declaration
+* Declare signals and constants
+* Switch to VHDL 2008 mode
+* Correct signal/variable assignment operator
+* Ignore deprecated libraries
+* Configure Altera, Xilinx and ModelSim libraries
+* Declare missing enumeration literal in case statements
+* Add missing when clause in case statements
+* Correct attribute entity class in attribute specifications
+* Add missing signals to sensitivity list
+* Fix capitalization of identifier to correspond to its declaration
+* Match order of generic and port associations with declaration order
 
 ## Configuring the Severity Level {: #linting-severity-level}
 
@@ -84,40 +84,39 @@ Errors/Warnings**.
 
 [creator_only]
 
--   NULL\_RANGE\_ERROR [link](#null-range)
--   DEPRECATED\_PACKAGE [link](#deprecated-ieee-packages-non-standard-packages)
-    <!--* REDUNDANT_CHOICES -->
--   REDUNDANT\_OTHERS [link](#redundant-others)
-
--   Subprograms in packages (e.g. function body in a package, rather than in the package body)
--   Infinite loops in simulations:
-    -   INFINTE\_LOOP\_STATEMENT
-    -   PROCESS\_WITHOUT\_SENSITIVITY\_AND\_WAIT
--   NUMERIC\_LITERAL\_WHITESPACE\_BEFORE\_UNIT [link](#space-physical-unit)
--   SUPERFLUOUS\_LIBRARY [link](#/manual/superfluous-library-clause)
-    <!-- * MISSING_LIBRARY -->
--   UNUSED\_DECLARATION: PORT, GENERIC, SIGNAL, ...  [link](#dead-code-lint)
-    <!--* BITSTRING_STD_LOGIC: invalid characters in bit string-->
--   SENSITIVITY\_LIST [link](#sensitivity-list)
+* NULL\_RANGE\_ERROR [link](#null-range)
+* DEPRECATED\_PACKAGE [link](#deprecated-ieee-packages-non-standard-packages)
+ <!--* REDUNDANT_CHOICES -->
+* REDUNDANT\_OTHERS [link](#redundant-others)
+* Subprograms in packages (e.g. function body in a package, rather than in the package body)
+* Infinite loops in simulations:
+    * INFINTE\_LOOP\_STATEMENT
+    * PROCESS\_WITHOUT\_SENSITIVITY\_AND\_WAIT
+* NUMERIC\_LITERAL\_WHITESPACE\_BEFORE\_UNIT [link](#space-physical-unit)
+* SUPERFLUOUS\_LIBRARY [link](#/manual/superfluous-library-clause)
+ <!-- * MISSING_LIBRARY -->
+* UNUSED\_DECLARATION: PORT, GENERIC, SIGNAL, ...  [link](#dead-code-lint)
+ <!--* BITSTRING_STD_LOGIC: invalid characters in bit string-->
+* SENSITIVITY\_LIST [link](#sensitivity-list)
 
 ### Advanced VHDL coding rules
 
 [xl_only]
 
--   FSM\_DEAD\_STATE
--   DEAD\_CODE (unreachable statements) [link](#dead-code)
--   NEVER\_WRITTEN / NEVER\_READs
--   [#naming-conventions]
--   INCOMPLETE\_ASSOCIATIVE\_OPTIONAL [link](#incomplete-port-maps-and-generic-maps)
--   POSITIONAL_ASSOCIATION_IN_INSTANTIATIONS [link](#posititional-association-in-instantiations)
--   CASE_REFERENCES [link](#capitalization-of-identifiers)
+* FSM\_DEAD\_STATE
+* DEAD\_CODE (unreachable statements) [link](#dead-code)
+* NEVER\_WRITTEN / NEVER\_READs
+* [#naming-conventions]
+* INCOMPLETE\_ASSOCIATIVE\_OPTIONAL [link](#incomplete-port-maps-and-generic-maps)
+* POSITIONAL_ASSOCIATION_IN_INSTANTIATIONS [link](#posititional-association-in-instantiations)
+* CASE_REFERENCES [link](#capitalization-of-identifiers)
 
 # List of VHDL code rules
 
 This is the list of VHDL coding rules that can be checked automatically
 by Sigasi.
 
-### Dead Code lint {: #dead-code}
+## Dead Code lint {: #dead-code}
 
 Dead code is code that is does have any effect in your simulation or
 synthesis. Examples of dead code are signals that are never used, or
@@ -132,15 +131,15 @@ is a form of technological debt that should be avoided.
 
 Sigasi Studio flags some kinds of dead code:
 
--   unused or unnecessary library and use clauses,
--   unused declarations (signals, constants, …)
--   unused ports
--   unreachable statements
+* unused or unnecessary library and use clauses,
+* unused declarations (signals, constants, …)
+* unused ports
+* unreachable statements
 
 For unused declarations, there is also a quickfix to help you remove
 unused declarations fast.
 
-### Deprecated IEEE Packages, Non-Standard Packages
+## Deprecated IEEE Packages, Non-Standard Packages
 
 Some packages are widely spread, but were never standardized by IEEE.
 Different vendors have shipped different versions, with incompatible
@@ -160,12 +159,11 @@ Sigasi flags this package as **Non-standard package**.
 
 Read more in [/tech/deprecated-ieee-libraries].
 
-### Incomplete Port Maps and Generic Maps
+## Incomplete Port Maps and Generic Maps
 
 Available since Sigasi 2.25
 
-Sigasi warns about port maps and generic maps that are not complete:
-
+Sigasi warns about port maps and generic maps that are not complete:  
 **Port map is using default values. Missing optional actuals: yourport**
 
 Input ports and generics need to be be assigned in your instantiation
@@ -179,15 +177,14 @@ intended. For that reason, Sigasi can warn you about this.
 
 ![](images/warn-incomplete-map.png)
 
-### Posititional Association in Instantiations
+## Posititional Association in Instantiations
 
 Available since Sigasi 2.30
 
 Most VHDL designers prefer named associations in port and generic maps in instantiations. This makes it a lot easier to spot wrong connections.
 By default Sigasi warns when positional associations are used. You can change the severity of this check via **Preferences > Sigasi > VHDL > Errors/Warnings** in the **Instantiation statement valiadation** section.
 
-
-### Quickfix for Third Party Libraries
+## Quickfix for Third Party Libraries
 
 If you are using vendor libraries from Altera or Xilinx (ISE or Vivado),
 you do not need to set up these libraries by hand. Sigasi has a QuickFix
@@ -207,7 +204,7 @@ declarations are not mapped (excluded). This significantly reduces the
 time for a clean build. If you use direct entity instantiations, you can
 easily map the entities you need.
 
-### Redundant "others"
+## Redundant "others"
 
 If a case statement contains all the possible choices (usually in an
 enumerated datatype), you can safely remove the “when others” clause.
@@ -221,7 +218,7 @@ synthesis tools do not take the “others” into account if all choices are
 enumerated. If the synthesis tool is set up to generate fault-tolerant
 hardware, the fallback state is the same as the reset state (for most
 synthesis tools). Check the manual of your synthesis tools and run some
-experiments. 
+experiments.
 For more information, see [/tech/vhdl-case-statements-can-do-without-others]
 
 ### Sensitivity List
@@ -241,20 +238,19 @@ earlier saves time and lets you catch the problem early.
 
 Sigasi can warn about problems with your sensitivity list:
 
--   **Incomplete sensitivity list** (there is quickfix for this)
--   **Superfluous signals in sensitivity list**
--   **Duplicate signals in sensitivity list**
+* **Incomplete sensitivity list** (there is quickfix for this)
+* **Superfluous signals in sensitivity list**
+* **Duplicate signals in sensitivity list**
 
-### Superfluous Library Clause
+## Superfluous Library Clause
 
 The VHDL language reference manual states that:
 
-<em>Every design unit except package STANDARD is assumed to contain the
-following implicit context items as part of its context clause:</em>
+_Every design unit except package STANDARD is assumed to contain the following implicit context items as part of its context clause:_
 
 ```vhdl
-	library STD, WORK;
-	use STD.STANDARD.all;
+    library STD, WORK;
+    use STD.STANDARD.all;
 ```
 
 Hence, any extra library statement that includes `STD` or `WORK` is
@@ -265,14 +261,14 @@ warning.
 
 ![](images/warn-superfluous-library.png)
 
-### Dead Code (unreachable code)
+## Dead Code (unreachable code)
 
 If the Sigasi analyser can determine that a condition is always false,
 it will mark the if-statement because it contains dead code.
 
 ![](images/unreachable_code.png)
 
-### Null Range (empty range) (#nullRange)
+## Null Range (empty range) (#nullRange)
 
 In VHDL, you can use ranges with `to` and `downto`. But, if you use the
 wrong direction, you get an empty range, which is usually not what you
@@ -282,14 +278,14 @@ We have a lint check that warns about this, even if you use constants
 
 ![](images/nullrange.png)
 
-### Space Before the Physical Unit
+## Space Before the Physical Unit
 
 If you type a numeric literal with a physical unit, there should be a
 space between the number and the unit.
 
 ```vhdl
-	T := 25ns; -- ILLEGAL, but accepted by ModelSim
-	T := 25 ns; -- OK; according to VHDL language standard
+    T := 25ns; -- ILLEGAL, but accepted by ModelSim
+    T := 25 ns; -- OK; according to VHDL language standard
 ```
 
 Mentor Graphics’ ModelSim and QuestaSim accept the former (illegal)
@@ -298,7 +294,7 @@ incorrect version, producing code that is not portable to other
 simulators. Sigasi accepts the ModelSim-style physical literals, but
 warns about this.
 
-### Capitalization of Identifiers
+## Capitalization of Identifiers
 
 Although VHDL is not case sensitive, it is recommend to always use the same capitalization when referring to the same declaration. Since version 2.30, Sigasi warns when the capitalization of a reference differs from the capitalization of the declaration. Because external libraries can have different code styles, this linting only checks references in the same library as its declaration.
 
@@ -306,7 +302,7 @@ Since [/releasenotes/sigasi-2.31] this can easily be fixed with a quickfix.
 
 ![](images/captalization_references.png)
 
-### Naming Conventions
+## Naming Conventions
 
 On the **Navigation conventions** preference page (**Window \>
 Preferences \> Sigasi \> VHDL \> Naming conventions**) you can configure
@@ -320,28 +316,30 @@ omitted.
 **Example:** to enforce a style where all variables have a `_v` suffix,
 you whould specify `.*_v` pattern in the **Variable name** field.
 
-
-### Vector width in assignments and port maps 
+## Vector width in assignments and port maps
 
 Sigasi checks the vector size in assignments (Since [/releasenotes/sigasi-2.28]) and port maps (Since [/releasenotes/sigasi-3.01]). This check works at type-time and takes the (symbolic) value of generics into account.
- 
+
 ![](images/linting_vector_width.png)
 
-
-## Project specific Linting settings
+# Project specific Linting settings
 
 The default way to configure the severity of the Sigasi linting checks is to set their severity in the **Errors/Warnings** preference page.
-You can override these setting by creating a settings file for your projects. 
+You can override these setting by creating a settings file for your projects.
 
 In each project, you can override the coding rules settings. You can override rules for the **entire project**, for **folders** in the project, or for individual **files**.
 
 Project settings are stored in this settings file:
 
-	${project location}/.settings/com.sigasi.hdt.vhdl.linting.prefs
+```text
+    ${project location}/.settings/com.sigasi.hdt.vhdl.linting.prefs
+```
 
 To configure the severity of validations, add a line for each validation:
 
-	${validation id}/severity/${path}=${severity}
+```text
+    ${validation id}/severity/${path}=${severity}
+```
 
 Where `${validation id}` can be
 
@@ -357,20 +355,22 @@ Where `${path}` can be:
 Where `${severity}` can be:
 
 * ERROR
-* WARNING 
-* INFO 
-* IGNORE 
+* WARNING
+* INFO
+* IGNORE
 
 Whitespace must be escaped with a back slash (`\`). You can add comments with `#`.
 
 Examples:
 
-	72/severity/<project>=IGNORE
-	72/severity//Folder\ name/Extra\ folder=INFO
-	72/severity//test/top.vhd=WARNING
-	all/severity/<project>=IGNORE
+```text
+    72/severity/<project>=IGNORE
+    72/severity//Folder\ name/Extra\ folder=INFO
+    72/severity//test/top.vhd=WARNING
+    all/severity/<project>=IGNORE
+```
 
-### Validation IDs
+## Validation IDs
 
 |Validation ID|Description|
 |-------------|-----------|
@@ -404,4 +404,3 @@ Examples:
 |144 | Array assignment validation|
 |163 | All references must have the same capitalization as their declaration|
 |164 | Check for positional associations in instantiations|
-

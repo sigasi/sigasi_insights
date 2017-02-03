@@ -14,8 +14,8 @@ between them.
 Your first step is to set up a project. There are a number of ways to do
 this. The most common ways are:
 
--   [/manual/projectsetup#Importing a project from the file system]
--   [/manual/projectsetup#Creating a new, empty project]
+* [/manual/projectsetup#Importing a project from the file system]
+* [/manual/projectsetup#Creating a new, empty project]
 
 These two methods and other methods are discussed in detail in the
 following sections.
@@ -61,7 +61,6 @@ After creating a new project, you can add existing files by dragging
 them from your filesystem into the project explorer. New files can be
 added by clicking **File \> New \> VHDL file** or **File \> New \>
 Verilog file**.
-
 
 # Other ways to set up a project
 

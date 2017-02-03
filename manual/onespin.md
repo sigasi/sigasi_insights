@@ -6,14 +6,14 @@ pager: true
 
 Since Sigasi 3.1
 
-## OneSpin Setup
+# OneSpin Setup
 
 Before you can run OneSpin as external tool in Sigasi, it needs to be correctly set up.
 
 * Make sure the environment variable `ONESPINROOT` is set, and points to the root folder of your OneSpin installation
 * Make sure the FlexNet environment variable `OSSLMGR_LICENSE_FILE` is set, and points to a valid OneSpin License server.
 
-## Running Onespin in Sigasi
+# Running Onespin in Sigasi
 
 If the `ONESPINROOT` environment variable is set, **OneSpin** will be available on the **Sigasi > Toolchains** Preference page.
 
@@ -21,7 +21,7 @@ Once OneSpin is selected as external compiler, Sigasi will automatically run `re
 
 ![OneSpin compilation results](images/onespin_compilation.png)
 
-## Consistency checks
+# Consistency checks
 
 You can also run the OneSpin **Consistency Checks** on your design:
 
@@ -35,4 +35,3 @@ All OneSpin output will logged to a new tab in the _Console View_. All warnings 
 ![OneSpin consistency checks result](images/onespin_consistency.png)
 
 Running the OneSpin Consistency Checks can be a long process. It can be canceled by clicking the stop button in the _Progress View_.
-

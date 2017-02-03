@@ -11,7 +11,7 @@ You can create mixed language projects by adding both **VHDL** and
 **Configure \> Add VHDL support** and **Configure \> Add Verilog
 support**
 
-## Features
+# Features
 
 In mixed language projects you can **navigate** from instantiation
 statements to the matching entity or module. This works for both VHDL
@@ -28,7 +28,7 @@ Other supported features:
 
 Screencast : [/screencasts/mixed_language_instantiation]
 
-## Using two languages in Sigasi Pro
+# Using two languages in Sigasi Pro
 
 If you don't have the correct license for mixed language projects, you can still create your designs using two separate languages. In this case, choose your main language and enable support for this language (in this example: VHDL). Now, the files in the other language (in this example: Verilog) can still be in your project. You can still edit them and you even get Sigasi support inside any one Verilog file. What is disabled now are the references from and to any Verilog files, but they work within a single Verilog file.
 

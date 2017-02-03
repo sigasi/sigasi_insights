@@ -10,13 +10,12 @@ As you become more experienced with Sigasi, you will find that there are a numbe
 
 In this chapter, we describe the available keyboard shortcuts.
 
-## Top keyboard shortcuts
+# Top keyboard shortcuts
 
 In this section, we list the most important shortcuts.
 
 1. *Open Resource* (**Shift+Ctrl+R**):  
-   **Shift+Ctrl+R** opens a dialog that allows you to swiftly open an
-editor on any file in the workspace.
+   **Shift+Ctrl+R** opens a dialog that allows you to swiftly open an editor on any file in the workspace.
 2. *Open Declaration* (**F3**):  
    Use **F3** to navigate to the declaration of the selected identifier.
 3. Backward History (**Alt+Left**):  
@@ -40,7 +39,7 @@ editor on any file in the workspace.
 12. <a name="quick-access"></a>Quick Access (**Ctrl+3**, <mark>This is the shortcut to use, when you forgot the shortcut you actually need.</mark>)  
   With Quick Access you can quickly find open editors, available perspectives, views, preferences, wizards, commands, etc. Simply start typing the name of the item you wish to invoke.
 
-## Keyboard shortcut reference
+# Keyboard shortcut reference
 
 | Category               | Description                  | Keyboard shortcut            |
 | ---------------------- | ---------------------------- | -----------------------------|
@@ -73,7 +72,7 @@ editor on any file in the workspace.
 |                        | Save | **Ctrl+S** |
 |                        | New menu | **Shift+Alt+N** |
 |                        | Save All | **Shift+Ctrl+S** |
-| *Navigation*           | Last Edit Location | **Ctrl+Q** | 
+| *Navigation*           | Last Edit Location | **Ctrl+Q** |
 |                        | Open Resource | **Shift+Ctrl+R** |
 |                        | Backward History | **Alt+Left** |
 |                        | Show In… | **Shift+Alt+W** |
@@ -140,10 +139,11 @@ editor on any file in the workspace.
 |                        | Quick Switch Editor | **Ctrl+E** |
 |                        | Toggle Full screen | **Alt+F11** |
 
-## Mac users
+# Mac users
+
 If you are using Mac OS X, most of these keyboard shortcuts use Command instead of Ctrl. To inspect the exact list of keyboard shortcuts, go to **Preferences > General > Keys**.
 
-## Customizing keyboard shortcuts
+# Customizing keyboard shortcuts
 
 Keyboard shortcuts can be easily customized via **Preferences > General > Keys**.
 

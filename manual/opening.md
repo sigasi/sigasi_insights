@@ -4,8 +4,7 @@ layout: page
 pager: true
 ---
 
-Opening Files from the Command Line {: #files-command-line}
------------------------------------
+# Opening Files from the Command Line {: #files-command-line}
 
 You can call Sigasi from the command line to open files. Just run
 `sigasi yourFile.vhd`. You can also drag and drop files on the Sigasi
@@ -17,7 +16,7 @@ line 10.
 
 You can also specify the project location with the `-p <project path>` parameter.
 If the specified project was not open in the workspace yet, this will import
-and open the project in the workspace. 
+and open the project in the workspace.
 
 Note that the VHDL file you specify on the command line has to be in an
 *open Sigasi project* to enjoy all of Sigasi’s powerful editing and
@@ -35,7 +34,7 @@ for the communication between the running Sigasi instance and the
 command line executable. Configure your firewall to allow Sigasi access
 for opening this port.
 
-### Eclipse Plugin
+## Eclipse Plugin
 
 Eclipse plugin users can also use this feature but need to specify a few
 more command line options. You have to type
@@ -43,31 +42,28 @@ more command line options. You have to type
 example: `eclipse -application com.sigasi.runner.open test.vhd +10` will
 open `test.vhd` at line 10.
 
-### Other command line options
+## Other command line options
 
 You can add some extra parameters to Sigasi to modify the behavior.
 
--   `-help` : show simple command line usage information
--   `-data <location>` : specifies the workspace location
--   `-noSplash` : do not show the splash screen at startup
--   `-application org.eclipse.ui.ide.workbench` : to use the default
-    Eclipse workbench launcher instead of the Sigasi workbench launcher
--   `-consoleLog` : log all debug information in the console (in
-    addition to the regular log file)
--   `-refresh` : force refresh of workspace
--   `-showLocation` : show workspace location in title bar
+* `-help` : show simple command line usage information
+* `-data <location>` : specifies the workspace location
+* `-noSplash` : do not show the splash screen at startup
+* `-application org.eclipse.ui.ide.workbench` : to use the defaul* Eclipse workbench launcher instead of the Sigasi workbench launcher
+* `-consoleLog` : log all debug information in the console (i* addition to the regular log file)
+* `-refresh` : force refresh of workspace
+* `-showLocation` : show workspace location in title bar
 
-External Files
---------------
+# External Files
 
 You can edit VHDL files without setting up a project. This feature is
 called editing *external files* or *single file mode*. There are several
 ways to open VHDL files:
 
--   Drag the files to the editor window.
--   Open the file [from the command line](#files-command-line)
--   Drag the files to the Sigasi icon
--   Click **File \> Open File…**
+* Drag the files to the editor window.
+* Open the file [from the command line](#files-command-line)
+* Drag the files to the Sigasi icon
+* Click **File \> Open File…**
 
 If the file belongs to a project, Sigasi will open the file as part of
 that project. If not Sigasi opens the file as *external file*. **Not all
@@ -76,10 +72,9 @@ works within a file. For the same reason, missing declaration are not
 flagged as errors. In general, if you want to benefit from all of the
 Sigasi features, you should set up a proper project.
 
-Setting up Sigasi as Default Editor
------------------------------------
+# Setting up Sigasi as Default Editor
 
-### Windows
+## Windows
 
 To configure Sigasi as default VHDL editor in Windows:
 
@@ -94,9 +89,9 @@ To configure Sigasi as default VHDL editor in Windows:
 
 Repeat this procedure for `*.vhd` files and for `*.vhdl` files.
 
-### Linux
+## Linux
 
-#### KDE
+### KDE
 
 * Find a VHDL file in Dolpin or Konqueror
 * Right-click and select **Open with > Other…**
@@ -106,17 +101,17 @@ Repeat this procedure for `*.vhd` files and for `*.vhdl` files.
 
 ![Sigasi as default editor in KDE](images/kde.png)
 
-#### Gnome
+### Gnome
 
 * Find a VHDL file in Nautilus
 * Right-click and select **Open with > Other Application…**
-*  In Use a custom command: Enter the path of the Sigasi executable (or use the **browse** button)
+* In Use a custom command: Enter the path of the Sigasi executable (or use the **browse** button)
 * Click the **Remember this appliation for "VHDL document" files** so that all other VHDL files will also get opened with Sigasi.
 * **Click Open**
 
 ![Sigasi as default editor in Gnome](images/gnome.png)
 
-### Mac OS X
+## Mac OS X
 
 When I double-click a VHDL file, I want it to open with my favorite VHDL editor. Sigasi Studio, obviously.
 
@@ -131,7 +126,7 @@ Repeat this procedure for `*.vhd` files and for `*.vhdl` files.
 
 ![Setting the default application for VHDL files](images/default_application_for_mac.png)
 
-### Altera Quartus II
+## Altera Quartus II
 
 In Altera Quartus II, open the preferences page in **Tools \> Options \>
 General \> Preferred Text Editor**.
@@ -141,11 +136,11 @@ General \> Preferred Text Editor**.
 As command-line options, you should have `%f +%l -p %p`. Optionally you
 could add `-noSplash` to skip the splash dialog.
 
-### Xilinx Vivado
+## Xilinx Vivado
 
 You can configure Sigasi to be the preferred editor for Xilinx Vivado.
 
-1. In Xilinx Vivado, Click **Tools > Options...** 
+1. In Xilinx Vivado, Click **Tools > Options...**
 2. Open the **General** tab (selected by default)
 3. Look for the **Text Editor** section and replace the '**Vivado Text Editor** (default)' with '**Custom Editor...**'
 4. Next click the **...** (Custom editor)  button and enter:
@@ -155,7 +150,7 @@ You can configure Sigasi to be the preferred editor for Xilinx Vivado.
 ![Configuring Sigasi as default editor in Xilinx Vivado menu](images/vivado_a1.png "Configuring Sigasi as default editor in Xilinx Vivado menu")
 ![Configuring Sigasi as default editor in Xilinx Vivado](images/vivado_a2.png "Configuring Sigasi as default editor in Xilinx Vivado")
 
-### Xilinx ISE
+## Xilinx ISE
 
 To configure Sigasi as default VHDL editor in Xilinx ISE:
 

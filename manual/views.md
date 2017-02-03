@@ -11,14 +11,14 @@ highlighted.
 
 The views provide alternative ways to access the information in a
 project. They permit efficient navigation, inspection and editing.
- 
+
 This chapter lists and explains the most important views in Sigasi. Some views are not covered here, more specifically some views that are either inherited from Eclipse, or views that are provided by third-party plugins. Please refer to the Eclipse documentation or to the specific plugin documentation for further information on those views.
 
 You can open a View in several different ways:
 
 * By typing the view name in the [/manual/user_interface#Quick Access] field
 * Via **Window > Show View**. If the view is not in the visible list, choose **Other...** and select the view in the selection dialog.
-* By right clicking in the **editor** and selecting **Show in > ...**. 
+* By right clicking in the **editor** and selecting **Show in > ...**.  
   Some Views also support to open the current selection (e.g. the Block Diagram View). This selects the element in the view that corresponds to the current selection in the editor.
 
 # Project Explorer View {: #explorer}
@@ -50,7 +50,6 @@ editing simultaneously. The currently selected file is the active file.
 
 * [/manual/editor]
 
-
 # Outline view {: #outline}
 
 The Outline view displays the contents of the active file, in terms of
@@ -71,6 +70,7 @@ element in the outline view, the corresponding code will be selected in
 the editor.
 
 # Hierarchy view {: #hierarchy}
+
 [vhdl_only]
 
 The Hierarchy view shows the VHDL design hierarchy starting at a selected top level object. To choose a top level, open a file and right-click on an architecture (or entity or configuration). Then click **Set as Top Level**. Alternatively you can click the **Set Top** button in the hierarchy view to open a hierarchy top level selection dialog. You can use the filter field to quickly search for a certain top level.
@@ -97,7 +97,7 @@ The Hierarchy View also offers an action **Select required files**, which select
 
 The Problems view shows problems (errors and warnings) related to your
 code. These problems were reported either by the internal compiler or by
-an external compiler tool. 
+an external compiler tool.
 You can navigate to the source of the problem by double clicking on a
 given problem. Problems can be sorted by clicking the column headers.
 The content of this view can be customized via the **View Menu**
@@ -159,7 +159,7 @@ have to **select** it, right click and click **Open Entity Declaration** or **Op
 You can export the block diagram view to an image with the save
 ![](icons/save.gif) button. Both **SVG** and **PNG** are supported. Choose a the \*.svg filename for SVG export or a \*.png filename for PNG export.
 
-You can also export **all** *block diagrams of an entire project* at once: Click **Project > Export... > Sigasi > Block Diagrams export** and select your project. All SVGs will be created in **diagrams/blockdiagrams/** in your project. 
+You can also export **all** *block diagrams of an entire project* at once: Click **Project > Export... > Sigasi > Block Diagrams export** and select your project. All SVGs will be created in **diagrams/blockdiagrams/** in your project.
 
 # State Machine View {: #fsm}
 
@@ -173,7 +173,7 @@ You can open the state machine view by right clicking in the editor and selectin
 
 If you have more that one state machine in your file, you switch between machines by clicking the tabs. Each tab is named after the signal/variable that represents the state machine's state.
 
-If you have documented your state transitions (i.e. the assignments), the comments will be added as text to the transitions in the view. 
+If you have documented your state transitions (i.e. the assignments), the comments will be added as text to the transitions in the view.
 
 You can also **double-click nodes** or **transitions** to navigate to the corresponding VHDL code.
 
@@ -182,7 +182,7 @@ You also have to option to **Zoom In**, **Zoom Out** or **Zoom to Fit**.
 
 You can export the state machine view to an image with the save ![](icons/save.gif) button. Both **SVG** and **PNG** are supported. Choose a the \*.svg filename for SVG export or a \*.png filename for PNG export.
 
-You can also export **all** *state machines of an entire project* at once: Click **Project > Export... > Sigasi > State Machine Diagrams export** and select your project. All SVGs will be created in **diagrams/statemachines/** in your project. 
+You can also export **all** *state machines of an entire project* at once: Click **Project > Export... > Sigasi > State Machine Diagrams export** and select your project. All SVGs will be created in **diagrams/statemachines/** in your project.
 
 You can watch a screencast at [/screencasts/state_machine_viewer]
 
@@ -190,7 +190,7 @@ You can watch a screencast at [/screencasts/state_machine_viewer]
 
 [xl_only]
 
-The **Dependencies View** visualizes the dependencies of the VHDL or Verilog file in the current editor. 
+The **Dependencies View** visualizes the dependencies of the VHDL or Verilog file in the current editor.
 This view is automatically updated each time you save your files.
 
 ![Dependencies View](images/dependencies-view.png "Dependencies View")
@@ -233,7 +233,7 @@ value of the net and the drivers are where you write to this net.
 
 To find the entire net of a signal or port, place your cursor on the
 identifier and right-click. Now select **Find Net**. Alternatively, you
-can press **CTRL+SHIFT+H**. 
+can press **CTRL+SHIFT+H**.
 
 The **Net Search** view will appear. For big designs, it might take a
 while before the results appear.
@@ -242,7 +242,6 @@ while before the results appear.
 
 From the **Net Search** view, you can navigate to the VHDL code by
 double-clicking the search results.
-
 
 # Preprocessor view
 
@@ -258,5 +257,3 @@ When Sigasi launches external tools (e.g. external compiler, documentation gener
 This is a generic Eclipse view \[[Documentation](http://help.eclipse.org/neon/index.jsp?topic=%2Forg.eclipse.cdt.doc.user%2Freference%2Fcdt_u_console_view.htm)].
 
 Different tools can open different consoles. You can switch between different consoles by clicking the ![icon console display](icons/icon_con_disp_console.png)-icon.
-
-

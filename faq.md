@@ -101,6 +101,7 @@ If you purchase a Sigasi Studio license, you can use this for either the _Plugin
 If you have floating licenses, each running instance of the Sigasi application or the Sigasi plugin will check out one floating license.
 
 ## Do you sell floating licenses?
+
 We offer floating licenses, based on the well known FlexNet (a.k.a. FlexLM) license manager.
 Floating licenses are available at a minimum volume of five licenses. The price is the same as for node-locked licenses.
 
@@ -116,6 +117,7 @@ In order to use Eclipse without locking up a Sigasi license, you should close th
 # Getting Started
 
 ## What is a Workspace?
+
 A workspace holds all Sigasi Studio's meta-information (preferences, project information,...) and serves as the default location for your projects.
 
 ## Which Sigasi files should I add to my Revision Control System?
@@ -124,11 +126,12 @@ Sigasi stores all project information in two files: `.project` and `.library_map
 
 * `.project` describes all generic information on your project: which files belong to your project, …
 * `.library_mapping.xml` describes the mapping of your VHDL libraries.
-* `.settings` (if it exists) is a directory that contains additional settings 
+* `.settings` (if it exists) is a directory that contains additional settings
 
 You can revert to older revisions of these files while Sigasi is running. Sigasi will update as soon as the files are refreshed.
 
 ## How can I hide files from the Project Explorer?
+
 If the project explorer shows the hidden files in from your revision control system (.hg or .svn directory), or there are too many files from Altera Quatrus or Xilinx ISE that clutter the project explorer, you can hide those files from view:
 
 Select the View Menu (small triangle pointing down) **Customize View > Filters**. 
@@ -141,8 +144,8 @@ Now you can filter out hidden files (`.* resources`) or `All non VHDL Files`.
 # Editing
 
 ## What do you mean by "Type-Time"?
-"At type-time" means "while you type". 
-The Sigasi development environment checks your code at type-time. In other tools, your code gets checked only after you save all files and explicitly start a compiler, Sigasi has a type-time compiler. While you are typing, the Sigasi compiler checks your code and marks your errors.
+
+"At type-time" means "while you type". The Sigasi development environment checks your code at type-time. In other tools, your code gets checked only after you save all files and explicitly start a compiler, Sigasi has a type-time compiler. While you are typing, the Sigasi compiler checks your code and marks your errors.
 
 Related terms include:
 

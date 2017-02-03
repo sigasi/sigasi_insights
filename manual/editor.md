@@ -49,7 +49,7 @@ and the **Show Previous Match** arrow ![](icons/showpreviousmatch.png) in the se
 
 ### Open Declaration and Hyperlinks
 
-**Open Declaration** You can easily navigate to the declaration of any 
+**Open Declaration** You can easily navigate to the declaration of any
 port, signal, entity, etc. Place the cursor on the identifier,
 right-click and select **Open Declaration**. The editor immediately
 switches to the line that declares the object. Since this operation is
@@ -59,12 +59,12 @@ so commonly used, it is assigned to the shortcut key **F3**.
 clicking hyperlinks. If you press and hold the **Ctrl** key, hyperlinks will appear in your editor. If you click the link (while holding the **Ctrl** key), you will navigate to the target of the link.
 Sigasi offers following links:
 
-- Link to **Declaration**: this has the same behaviour as **Open Declaration** (**F3**)
-- Link to **Matching Entity** \[VHDL]: this links a **component** declaration of instantiation to the matching entity declaration. This also works for component **generics** and **ports** (**Shift+F3**).
-- Link to **Matching When Clause** \[VHDL]: in finite state machines (FSMs) you can jump directly to the matching *when* part of your case statement from state transitions (**Shift+F3**).
-- Link to **Open Declaration in Package Body** \[VHDL]: in packages you can jump directly to the matching *declaration* in the package body (**Shift+F3**). This also works in the opposite direction, **Open Declaration in Package Body**.
-- Link to **Open Declaration in Protected Type Body** \[VHDL]: in protected types you can jump directly to the matching *declaration* in the protected type body. This also works in the opposite direction, **Open Declaration in Protected Type**.
-- URLs in **comments**
+* Link to **Declaration**: this has the same behaviour as **Open Declaration** (**F3**)
+* Link to **Matching Entity** \[VHDL]: this links a **component** declaration of instantiation to the matching entity declaration. This also works for component **generics** and **ports** (**Shift+F3**).
+* Link to **Matching When Clause** \[VHDL]: in finite state machines (FSMs) you can jump directly to the matching *when* part of your case statement from state transitions (**Shift+F3**).
+* Link to **Open Declaration in Package Body** \[VHDL]: in packages you can jump directly to the matching *declaration* in the package body (**Shift+F3**). This also works in the opposite direction, **Open Declaration in Package Body**.
+* Link to **Open Declaration in Protected Type Body** \[VHDL]: in protected types you can jump directly to the matching *declaration* in the protected type body. This also works in the opposite direction, **Open Declaration in Protected Type**.
+* URLs in **comments**
 
 ## Hover
 
@@ -73,12 +73,12 @@ mouse pointer over it. After about a second, a popup shows you the name and data
 
 In the hover pop-up, can show different kinds of information:
 
--   datatype
--   comments: inline documentation written at the declaration
--   value: the value of constants
--   errors or warnings: a message, if the given identifier has an error or warning associated to it
--   binary / decimal conversion: for hexadecimal, octal or binary values, the decimal equivalent
-    
+* datatype
+* comments: inline documentation written at the declaration
+* value: the value of constants
+* errors or warnings: a message, if the given identifier has an error or warning associated to it
+* binary / decimal conversion: for hexadecimal, octal or binary values, the decimal equivalent
+
 ### Comment Association
 
 Comments in HDL code are used to add extra information or documentation to that code. Sigasi uses certain rules to determine which comment belongs to which code. This is important for documentation hovers, refactoring, formatting,...
@@ -86,8 +86,8 @@ Which comment belongs to which exact code is subjective.
 
 Sigasi associates comments with HDL declarations with following rules:
 
-- If there is a declaration before a comment and in the same line, the comment is associated with this declaration.
-- In all other cases, the comment is associated with the next following declaration.
+* If there is a declaration before a comment and in the same line, the comment is associated with this declaration.
+* In all other cases, the comment is associated with the next following declaration.
 
 ## Auto-complete and Content Assist
 
@@ -107,16 +107,16 @@ Some autocompletions are templates which require further user input. In such a c
 
 Sigasi can help you to declare VHDL and Verilog objects, using autocompletion based on templates. Sigasi comes preconfigured with templates for all common declarations and statements, including (for VHDL):
 
--   function, procedure
--   process
--   type: enum, file, range, array, record
--   signal, constant, variable
--   component
--   entity
--   architecture
--   entity/architecture pair
--   package/package body pair
--   and much more
+* function, procedure
+* process
+* type: enum, file, range, array, record
+* signal, constant, variable
+* component
+* entity
+* architecture
+* entity/architecture pair
+* package/package body pair
+* and much more
 
 After the autocompletion, the editor will be into templating editing
 mode. You can also configure your own templates.
@@ -133,10 +133,10 @@ autocompletion candidates.
 
 The tool provides help to autocomplete:
 
--  component declarations
--  component instantiations
--  entity instantiations
--  case statements (based on variables/signals with an enumeration type)
+* component declarations
+* component instantiations
+* entity instantiations
+* case statements (based on variables/signals with an enumeration type)
 
 ## Other editor features
 
@@ -172,9 +172,9 @@ or press the **Toggle Block Selection** icon in the tool bar.
 
 Structured Select enables you to select VHDL or Verilog code, based on its *syntactic structure*. (Screencast: "[/screencasts/structured-select]")
 
-  * **Shift+Alt+Up**, expands the selection to the smallest syntax element that contains the current selection. You can then further expand the selection by invoking the action again.
-  * **Shift+Alt+Down**, contracts the current selection to the nested syntax expression that still contains the current cursor position. You can then further contract the selection by invoking the action again.
-  * **Shift+Alt+Left**, adds the syntax element left of the current selection to the selection. You can then further expand the selection by invoking the action again. You can also expand the selection in the other direction with **Shift+Alt+Right**
+* **Shift+Alt+Up**, expands the selection to the smallest syntax element that contains the current selection. You can then further expand the selection by invoking the action again.
+* **Shift+Alt+Down**, contracts the current selection to the nested syntax expression that still contains the current cursor position. You can then further contract the selection by invoking the action again.
+* **Shift+Alt+Left**, adds the syntax element left of the current selection to the selection. You can then further expand the selection by invoking the action again. You can also expand the selection in the other direction with **Shift+Alt+Right**
 
 ### Show whitespace
 
@@ -204,8 +204,8 @@ The action to remove trailing whitespace is hidden by default. You can access it
 
 ### Side-by-side Diff
 
-- Previous versions (local history or version control)
-- Comparing two files
+* Previous versions (local history or version control)
+* Comparing two files
 
 # VHDL Specific
 
@@ -218,8 +218,8 @@ described in this chapter.
 
 Highlighting Classes for VHDL:
 
-- *Syntax*  :  Comment, Keyword, Number, String, Task tag 
-- *Semantic* :  Constant, Port, Signal, Type, Variable, Attribute, Function/Procedure, Labels
+* *Syntax*  :  Comment, Keyword, Number, String, Task tag
+* *Semantic* :  Constant, Port, Signal, Type, Variable, Attribute, Function/Procedure, Labels
 
 ## VHDL specific autocompletes
 
@@ -277,11 +277,11 @@ arrow `=>`. Stuttering works like double clicking: if you type keys
 
 The following stuttering keys are available:
 
-| Keys      | Effect       | 
-| --------- | ------------ | 
-| **,,**    | `<=`         | 
-| **..**    | `=>`         | 
-| **::**    | `:=`         | 
+| Keys      | Effect       |
+| --------- | ------------ |
+| **,,**    | `<=`         |
+| **..**    | `=>`         |
+| **::**    | `:=`         |
 
 Stuttering can be disabled or enabled in **Window \> Preferences \> VHDL \> Enable Stuttering**.
 
@@ -298,9 +298,9 @@ Sigasi \> VHDL** by toggling the **“Enter adjusts indentation on current
 and next line”** setting.
 
 **Tabs vs. spaces:** This features inserts tabs characters or spaces,
-according to your preferences. 
+according to your preferences.
 
-- See also: [tabs-and-spaces]
+* See also: [tabs-and-spaces]
 
 <a href="//fast.wistia.net/embed/iframe/asr4pf7p8e?popover=true" class="wistia-popover\[height=533,playerColor=7b796a,width=800\]"><img src="https://embed-ssl.wistia.com/deliveries/85b4fd88af9a4430f70df330bb8409bc8557da2f.jpg?image_play_button=true&image_play_button_color=7b796ae0&image_crop_resized=200x133" alt="" /></a>
 
@@ -324,9 +324,9 @@ Sigasi Studio's formatter is context based and tries to respect the style of the
 One example is the decision to format a _conditional signal assignment_ on one, or multiple lines. Sigasi makes this decision based on the position of the first `else` keyword. If you put the `else` keyword on the first line, the formatter will put everything on one line. If you put the `else` keyword on a new line, the formatter will use multiple lines for the assignment.
 
 ```vhdl
-	demo <= (others => '0') when enable = '1'
-		else (others => '1') when input = '1' -- else on new line
-		else (others => 'X');
+  demo <= (others => '0') when enable = '1'
+    else (others => '1') when input = '1' -- else on new line
+    else (others => 'X');
 ```
 
 ### Configuration
@@ -339,9 +339,9 @@ Other preferences for code formatting are part of [xl]. You
 can configure them at **Window > Preferences > Sigasi > VHDL > Formatting**
 Configurable settings currently include:
 
--   Preserve newline characters
--   Upper case for VHDL keywords
--   Alignment column for trailing comments
+* Preserve newline characters
+* Upper case for VHDL keywords
+* Alignment column for trailing comments
 
 ### Format code on save
 
@@ -363,9 +363,7 @@ VHDL editor will check for errors when you save your file.
 The current threshold VHDL file size that is used to switch to the
 lightweight editor is 1 MB.
 
-
 # Verilog Specific
-
 
 In addition to the powerful features of an Eclipse editor, the Verilog
 editor that comes with Sigasi supports a number of advanced editing
@@ -399,7 +397,7 @@ Sigasi \> Verilog** by toggling the **“Enter adjusts indentation on
 current and next line”** setting.
 
 **Tabs vs. spaces:** This features inserts tabs characters or spaces,
-according to your preferences. 
+according to your preferences.
 
 See also:
 
