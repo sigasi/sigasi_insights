@@ -9,17 +9,21 @@ pager: true
 ## Can I run several copies of Sigasi on my machine
 
 The normal behavior when you start Sigasi is that the tools searches for another running copy and to re-use that copy. Sometimes you may want to run two or more copies of Sigasi at the same time on one computer. In order to do this, you need to modify `configuration\config.ini`. Replace this line:
-```
+
+```text
 eclipse.application=com.sigasi.runner.open
 ```
-by the following line: 
-```
+
+by the following line:
+
+```text
 eclipse.application=org.eclipse.ui.ide.workbench
 ```
 
 After you do this, each time you call `sigasi.exe`, a new copy will be started.
 
 ## How can I check a SHA sum?
+
 The SHA1 sum (or hash) is a fingerprint of a file. After you download a file, you can check that it is downloaded correctly by calculating its SHA sum. If the SHA sum is correct, you can be sure that the download was correct too. On the Sigasi download page, you find the zip files that contain the actual Sigasi application, and also a small text file with the correct SHA sums .
 
 * On Windows, you can compute the SHA using [sha-util].
@@ -28,31 +32,31 @@ The SHA1 sum (or hash) is a fingerprint of a file. After you download a file, yo
 ## What are the system requirements?
 
 * Sigasi Studio Standalone is supported on:
-	* Windows: Windows 7 and Windows 8 (32 bit and 64 bit) or newer
-	* Mac OS: X Yosemite or newer
-	* Linux: RedHat Enterprise Linux RHEL 6 (64 bit) or newer.
-	
-	However, it should work on most of the recent Linux distributions, on Windows XP and up, and on Mac OS X.
-	We recommend at least **2GB of memory**, and you need **about 200MB** of free disk space. 
+    * Windows: Windows 7 and Windows 8 (32 bit and 64 bit) or newer
+    * Mac OS: X Yosemite or newer
+    * Linux: RedHat Enterprise Linux RHEL 6 (64 bit) or newer.  
+    However, it should work on most of the recent Linux distributions, on Windows XP and up, and on Mac OS X.
+    We recommend at least **2GB of memory**, and you need **about 200MB** of free disk space.
 
 * Sigasi Studio as Plugin in your own Eclipse installation:
-	* Eclipse 4.2 or higher
-	* Java JRE 7 or higher
-	
-	And all requirements from the standalone version:
+    * Eclipse 4.3 or higher
+    * Java JRE 8 or higher  
+    * And all requirements from the standalone version
 
 * License servers (FlexNet):
-	* RedHat Enterprise Linux 5.2 (32 bit and 64 bit) or newer
-	* Windows 7 (32 bit and 64 bit) or newer
-	* Solaris on SPARC (64 bit)
+    * RedHat Enterprise Linux 5.2 (32 bit and 64 bit) or newer
+    * Windows 7 (32 bit and 64 bit) or newer
+    * Solaris on SPARC (64 bit)
 
 ## How do I increase the heap size for Eclipse?
 
 We recommend to increase the default heap size settings of Eclipse. You can do this by adding following lines to eclipse.ini in your Eclipse installation folder:
-```
+
+```text
 -vmargs
 -Xmx1400m
 ```
+
 This sets the maximum heap size to 1400 MB. If you system has plenty of memory, you can even choose higher numbers.
 
 **Note**: If your `eclipse.ini` already contains these arguments, you should not append these parameters again, but instead modify the existing values. If `-vmargs` is there already, but `-Xmx1400m` is not; you should add `-Xmx1400m` after the existing `-vmargs`.
@@ -70,6 +74,7 @@ If you ever want to get back to your old tools (but we hope you won't), you'll h
 In short: you are **not** locked in at all!
 
 ## How does Sigasi change my existing project?
+
 You do not have to change your directory structure, the names of your VHDL files or anything in your project folder. The only thing Sigasi HDT does, is add a few hidden files with project information.
 
 ## What is the eclipse.ini file and where can I find it? {: #eclipse-ini}
@@ -110,9 +115,9 @@ If your team is purchasing at least five licenses, you will have the choice betw
 If you currently have five node-locked licenses and you want to upgrade to floating licenses, please [contact-us].
 
 ## How can I avoid locking up a license when I'm working with Eclipse?
+
 If you are using Eclipse for both VHDL and C development, you probably don't want to lock up a floating Sigasi VHDL license while you are working on C.
 In order to use Eclipse without locking up a Sigasi license, you should close the VHDL perspective, close all VHDL projects and restart Eclipse.
-
 
 # Getting Started
 
@@ -134,12 +139,11 @@ You can revert to older revisions of these files while Sigasi is running. Sigasi
 
 If the project explorer shows the hidden files in from your revision control system (.hg or .svn directory), or there are too many files from Altera Quatrus or Xilinx ISE that clutter the project explorer, you can hide those files from view:
 
-Select the View Menu (small triangle pointing down) **Customize View > Filters**. 
+Select the View Menu (small triangle pointing down) **Customize View > Filters**.
 
 ![](faq-images/customize-view.png)
 
 Now you can filter out hidden files (`.* resources`) or `All non VHDL Files`.
-
 
 # Editing
 
@@ -154,9 +158,11 @@ Related terms include:
 * Simulation-time (or run-time): during the simulation
 
 ## Does Sigasi support multi-byte characters?
+
 Yes, the Sigasi VHDL Eclipse editor supports all unicode characters, including Japanese characters. Note that the VHDL language does not allow any non-ASCII characters as identifiers, so you cannot use multi-byte characters in signal names.
 
 ## What is this MouseFeed pop-up?
+
 Many actions can be accessed using your mouse and using a keyboard shortcut, e.g. copying text can be done either by clicking **Edit > Copy** or by pressing **Ctrl-C**. Of course, pressing a key combination is a lot faster than clicking in a menu.
 
 ![](faq-images/mousefeed.png)
@@ -183,6 +189,7 @@ You can open a new Window via **Window > New window**
 Once have configured the windows and the views inside the windows, you can save this as a custom perspective (**Window > Save Perspective As...**).
 
 ## Whole word textual search
+
 In some situations you may not want Sigasi's VHDL aware search (**Find References**), but you want an old-fashioned textual search instead.
 
 If you want textual search inside one file, you can use **Find** (Ctrl-F). This dialog has an easy "**Whole word**" option.
@@ -195,22 +202,26 @@ You can achieve the same effect by toggling the '**Regular Expression**' option 
 
 ![](faq-images/search.png)
 
-# Configure 
+# Configure
 
 ## How can I make Sigasi generate spaces instead of TAB's?
+
 See [tabs-and-spaces].
 
 ## How can I change the font size?
+
 See [/manual/config#Font Size].
 
-## Sigasi keeps compiling everything while I am trying to configure ...
+## Sigasi keeps compiling everything while I am trying to configure my VHDL Libraries
 
 While you are configuring your libraries (mapping and unmapping files), the built-in compiler may trigger a full rebuild several times. In order to avoid this, and make Sigasi more responsive while you configure your libraries, you can _turn of auto...
 
 ## How can I change the default key bindings?
+
 To change the key binding (keyboard shortcuts) within Eclipse: **Window > Preferences** and next **General > Keys**.
 
 ## How can I change settings?
+
 Most settings can be changed in **Window > Preferences**. In this dialog, you can either browse the menus to the left, or search for an item in the search field in the top left.
 
 ![](faq-images/settings1.png)
@@ -238,25 +249,30 @@ If you want a _fully black background in the editor_, right click in the editor 
 # Warnings and Lint rules
 
 ## Can Sigasi replace my linter?
+
 Depending on which features you use, it might.
 
 But Sigasi Lint does not aim to replace your $ 100.000 power lint checker with CDC (clock domain crossing) checks. Instead, Sigasi Lint helps you get the coding conventions right first time around. In addition to style linting, Sigasi Lint can interface with your third party power linter tool (like Aldec ALINT), giving you feedback faster. Contact us to discuss your requirements.
 
 ## How fast is the Sigasi linter?
+
 Depending on your exact coding rule, the Sigasi Linter can flag violations either within seconds after you type (type-time linting) or after you save (save-time linting). Over 80% of common coding rules can be checked at type time.
 
 ## How can I organize my errors and warnings (problem markers) in the problems view?
+
 Click the little triangle to the upper right-hand side of the problems view and look at the Group By and Sort By menu.
 
 You can also filter which problem markers you will see in the Show menu; for example only errors and warnings for the current project.
 ![Problems View](faq-images/organize_problem_markers.png "Problems View")
 
 ## Does the Sigasi Studio's built-in Linter replace my code reviews?
+
 No.
 
 The Sigasi Pro linting functionality is aimed to free up time wasted in code review meetings; time wasted on trivial things like naming conventions and deprecated data types. We hope you can use this time to discuss complex design decisions and computation algorithms which have an impact on the product you are design.
 
 ## What kind of linting rules are possible?
+
 The answer to this question is not straightforward. However, some examples may help. We can implement (but are in not limited to) the following types of custom linting rules:
 
 * Naming conventions (e.g. constants should be in capitals, signals should start with "s",...)
@@ -265,7 +281,7 @@ The answer to this question is not straightforward. However, some examples may h
 * Required file headers
 * Maximum sizes of files, processes,...
 * How to instantiate components/entities
-* Unused signals, constants,... 
+* Unused signals, constants,...
 * Dead code
 * ... and much more
 
@@ -274,10 +290,11 @@ We cannot implement overly complex or fuzzy requirements, like:
 * Post-synthesis checks
 * CDC checks
 * Fuzzy requirements, like: _"Entities should be sufficiently commented."_ (How can an algorithm decide what is sufficient?)
- 
+
 If you get in touch with us, we will evaluate your coding rules to determine which rules we can implement.
 
 ## I typed an error in my VHDL code. Why doesn't Sigasi catch this?
+
 Sigasi Studio does not attempt to check full correctness of your VHDL and Verilog code. We just run a set of syntax checks and general "sanity checks". This way, 90% of the common errors are caught before you even start your simulator.
 
 As you design, you put your code through a funnel: first Sigasi finds the first 90% of errors in your code, without ever running a simulation. Next you compile with the simulator and you find another bunch of problems. In each successive step of your design flow, you find harder to track errors in your design. Sigasi just helps you get a big number of issues out of the way early on, so that you can concentrate on finding the hard problems down the road.
@@ -294,8 +311,8 @@ Although the procedure is not very elegant, there is a way to apply multiple Qui
 
 Conditions:
 
-1. Make sure you are dealing with identical solutions to the same problem. 
-	For example: five "declare signal" Quick Fixes
+1. Make sure you are dealing with identical solutions to the same problem.
+   For example: five "declare signal" Quick Fixes
 2. All problems have to be in the same file
 
 Procedure:
@@ -317,6 +334,7 @@ Sigasi Studio supports VHDL-2008 features, except:
 * New generics on subprograms (not supported)
 
 ## Why don't you have feature XYZ? How can I put in on your roadmap?
+
 As any tech company, our stack of good ideas is far larger than the amount of time we have to work on them. We're grateful for any suggestions that users send us on the user forum and we often build new features based on your suggestions. However, we have to prioritize and maybe your favorite feature is not on our short-term roadmap.
 
 Deciding which features to put on the roadmap is a very complicated process. Some of the things that help are:
@@ -328,6 +346,7 @@ Deciding which features to put on the roadmap is a very complicated process. Som
 Feel free to talk to us about any feature, big or small.
 
 ## Do you support block select (a.k.a. column editing mode)?
+
 You can enable and disable block editing with **Ctrl+Alt+A** or **Edit > Toggle Block Selection**
 
 Note that in many cases where you are used to using block editing (e.g. [/screencasts/short_entity_component_instantiation]), you may not need it any more, thanks to intelligent code completion (see this blog post: [/opinion/why-cant-hdl-designers-live-without-block-selection-mode]).
@@ -351,7 +370,7 @@ If you see warnings that are not useful for you, you can do one of the following
 
 ## "Show In -> System Explorer" does not work on Red Hat Linux 6
 
-On preference page **General > Workspace** you can configure the command that is used to open files with the System Explorer. The default Linux command does not work on older linux systems. 
+On preference page **General > Workspace** you can configure the command that is used to open files with the System Explorer. The default Linux command does not work on older linux systems.
 On RedHat 6 linux, you can use the nautilus command: `nautilus "${selected_resource_parent_loc}"` ([More info](http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-9.htm)).
 
 ## Sigasi switches my keyboard layout! Did I find a bug?
@@ -360,26 +379,25 @@ This sometimes happens on Windows. You have probably triggered a keyboard shortc
 Read Microsoft's documentation of the [language-bar].
 If you only use your local keyboard lay-out and not the standard English lay-out, you might as well diable the language bar.
 
-## I don't see error icons in the Project Explorer, or I don't see the library names in the Project Explorer!
+## I don't see error icons in the Project Explorer, or I don't see the library names in the Project Explorer
 
 Normally, if your file contains an error, you will see error markers in several places, including in the Project Explorer. Those so-called **label decorators** can be either a red square with a white cross for errors, or a yellow triangle with an exclamation mark for warnings. Sigasi puts the decorators on the file that contains an error and all of its ancestors (the folder that contains the file, and the folder that contains that folder, all the way up to the project.
 
 Sigasi also puts the name of the library next to each HDL file and folder that is mapped to that library. In order to map files to a library, right-click on a HDL or Verilog file, or folder and select **Set Library**.
 
-
 If you cannot see the problem decorators or library decorators in the Project Explorer, there are two possible reasons:
 
 * The file was not compiled as VHDL/Verilog file. To fix this try:
-	* Check that your file is saved
-	* Make sure your project is being built: **Project > Build Automatically**
-	* Check that the project has VHDL or Verilog support: Right-click on the project **Configure > Add VHDL Support** [more info][/manual/projectsetup#adding-vhdl-or-verilog-support-to-an-existing-eclipse-project].
-	* Is the Eclipse builder enabled for your project? You can check this by right-clicking your project in the Project explorer and selecting **Properties > Builders**. The **Xtext Project Builder** must be enabled. If not, exit the property page. Next, right-click on the project **Configure > remove VHDL Support**, and right-click again **Configure > Add VHDL Support**.
+    * Check that your file is saved
+    * Make sure your project is being built: **Project > Build Automatically**
+    * Check that the project has VHDL or Verilog support: Right-click on the project **Configure > Add VHDL Support** [more info][/manual/projectsetup#adding-vhdl-or-verilog-support-to-an-existing-eclipse-project].
+    * Is the Eclipse builder enabled for your project? You can check this by right-clicking your project in the Project explorer and selecting **Properties > Builders**. The **Xtext Project Builder** must be enabled. If not, exit the property page. Next, right-click on the project **Configure > remove VHDL Support**, and right-click again **Configure > Add VHDL Support**.
 
 * The decorators are disabled. To fix this, enable:
-	* **Window > Preferences > General > Appearance > Label Decorations > Sigasi Problem Decorator**
-	* **Window > Preferences > General > Appearance > Label Decorations > Library Decorator**
+    * **Window > Preferences > General > Appearance > Label Decorations > Sigasi Problem Decorator**
+    * **Window > Preferences > General > Appearance > Label Decorations > Library Decorator**
 
-##  I get lots of errors in files that are not even really a part of my project. Can I hide them? {: #junk-files}
+## I get lots of errors in files that are not even really a part of my project. Can I hide them? {: #junk-files}
 
 Legacy projects tend to accumulate files that are no longer needed in the projects. These files are still on your disk, or even in your revision control system, but the scripts don't feed them to the simulator or to the synthesis tools any more. These junk files can accumulate over time.
 
@@ -404,15 +422,17 @@ When Sigasi's default settings do not work on your Linux system, try the followi
 [Complete info on Eclipse website](https://www.eclipse.org/swt/faq.php#browserplatforms)
 
 ## Where can I find the log file?
+
 Sigasi logs all internal errors to a log file. You can find this file in: `workspaceSigasi/.metadata/.log` This file is also reachable in Sigasi Studio itself via **Help > Sigasi > Open log**
 
 The log file contains no sensitive information about your organization. On some occasions, the Sigasi Team may suggest to send them the log file to debug or improve the product. However, the option to do so or not remains yours.
 
 ## Why is Sigasi trying to get through my firewall?
-There can be a number of reasons why Sigasi connects to the internet. 
 
-* Updates: Each time you start Sigasi, the program checks to see if there are new [/manual/setup#software-updates] from our update website (currently located at http://download.sigasi.com). Sigasi downloads the updates in the background and, when done, it asks you if it can install them.
-* [Talkback](http://www.sigasi.com/sigasi-talkback) 
+There can be a number of reasons why Sigasi connects to the internet.
+
+* Updates: Each time you start Sigasi, the program checks to see if there are new [/manual/setup#software-updates] from our update website (currently located at <http://download.sigasi.com>). Sigasi downloads the updates in the background and, when done, it asks you if it can install them.
+* [Talkback](http://www.sigasi.com/sigasi-talkback)
 * Other Plugins: Obviously, other plugins can also connect to the internet. Some examples are plugins for revision control or issue tracking, or the built-in Eclipse web browser.
 
 **Enhanced security**: Customers with strict security policies can contact us to discuss compliance with their policies.
@@ -441,7 +461,8 @@ See : <http://devshards.blogspot.it/2012/10/how-to-fix-unreadable-eclipse-toolti
 If Sigasi/Eclipse hangs while the splash screen is shown during startup, you can try this to resolve the issue:
 
 * First try to disable the Workspace preference _refresh using native hooks or polling_. You can do this by setting the contents of  `<workspaceSigasi>/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs` to:
-```
+
+```text
 eclipse.preferences.version=1
 refresh.enabled=false
 version=1
@@ -460,29 +481,31 @@ If you use a version control system, you can also revert the `.library_mapping.x
 # Other tools
 
 ## Do you have an UltraEdit emulation mode so that I can use the UltraEdit key bindings?
+
 You can add a plugin with the UltraEdit key bindings.
 
 1. Install the [ultra-edit-keybindings-plugin]
-2. After installing, you should activate the UltraEdtit keybindings in **Window > Preferences > General > Keys**. 
-Then as Scheme, select "UltraEdit".
+2. After installing, you should activate the UltraEdtit keybindings in **Window > Preferences > General > Keys**.
+3. As Scheme, select "UltraEdit".
 
 ## I really like VI / VIM / gVIM. Do you have a VI emulation mode?
 
 If you use Sigasi HDT as a plugin (meaning: not the standalone version), you can add a VI emulator plugin, called [vrapper]. Surely not the same as a genuine VI clone, but it will give you a warm and familiar feeling when you type `:q!`.
 
 ## Do you have an Emacs emulation mode so that I can use the Emacs key bindings? {: #Emacs}
+
 All Eclipse products, including Sigasi HDT, can be configured to support [emacs-keybindings]. While it is not the same as Emacs, you can keep your habit of pressing *CTRL-C* and *CTRL-X* all the time.
 
 ## Which free VHDL simulator can I use?
 
 Sigasi does not offer simulators. If you don't have a VHDL simulator yet, we would recommend the following simulators. You can download them free of charge.
 
-| Simulator	                        | Comment            | Download from                                 | Windows | Linux | Mac OSX |
+| Simulator                         | Comment            | Download from                                 | Windows | Linux | Mac OSX |
 | --------------------------------- | ------------------ | --------------------------------------------- | ------- | ----- | ------- |
-| Aldec Lattice Edition	            | Only Lattice FPGAs | [Lattice Download page][latic_download]	     | Yes     | No    | No      |
+| Aldec Lattice Edition             | Only Lattice FPGAs | [Lattice Download page][latic_download]       | Yes     | No    | No      |
 | Aldec Active-HDL, Student Edition | Students only      | [Aldec Download page][aldec_download]         | Yes     | No    | No      |
 | ModelSim Altera Starter Edition   | Only Altera FPGAs  | [Altera Quartus Web Edition][altera_download] | Yes     | Yes   | No      |
-| ISim	                            | Only Xilinx FPGAs  | [Xilinx Webpack][xilinx_download]             | Yes     | Yes   | No      |
+| ISim                              | Only Xilinx FPGAs  | [Xilinx Webpack][xilinx_download]             | Yes     | Yes   | No      |
 
 [latic_download]: http://www.latticesemi.com/licensing/flexlmlicense.cfm?p=diamond
 [aldec_download]: http://www.aldec.com/Downloads/default.aspx
