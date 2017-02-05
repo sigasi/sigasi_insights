@@ -147,4 +147,4 @@ If you are using Mac OS X, most of these keyboard shortcuts use Command instead 
 
 Keyboard shortcuts can be easily customized via **Preferences > General > Keys**.
 
-This preferece page also enables you to select the **Emacs** scheme, for more Emacs-like keyboard shortcuts, or (if you have installed the [/tech/ultraedit-key-bindings-eclipse] plugin) the UltraEdit key bindings.
+This preference page also enables you to select the **Emacs** scheme, for more Emacs-like keyboard shortcuts, or (if you have installed the [/tech/ultraedit-key-bindings-eclipse] plugin) the UltraEdit key bindings.
