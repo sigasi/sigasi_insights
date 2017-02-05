@@ -1,9 +1,3 @@
----
-title: FAQ
-layout: faq 
-pager: true
----
-
 # Install and Run
 
 ## Can I run several copies of Sigasi on my machine
@@ -137,7 +131,7 @@ You can revert to older revisions of these files while Sigasi is running. Sigasi
 
 ## How can I hide files from the Project Explorer?
 
-If the project explorer shows the hidden files in from your revision control system (.hg or .svn directory), or there are too many files from Altera Quatrus or Xilinx ISE that clutter the project explorer, you can hide those files from view:
+If the project explorer shows the hidden files in from your revision control system (.hg or .svn directory), or there are too many files from Altera Quartus or Xilinx ISE that clutter the project explorer, you can hide those files from view:
 
 Select the View Menu (small triangle pointing down) **Customize View > Filters**.
 

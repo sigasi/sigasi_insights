@@ -56,7 +56,7 @@ Cause: The project does not have VHDL support enabled
 
 Resolution: Enable VHDL support: **right-click the project > Configure > Add VHDL support**
 
-# Project does not have a Library Mapping Information {: #ts-missing-library-mapping-informatino}
+<!--# Project does not have a Library Mapping Information {: #ts-missing-library-mapping-information}-->
 
 Symptoms:
 

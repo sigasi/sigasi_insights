@@ -207,14 +207,14 @@ easily map the entities you need.
 ## Redundant "others"
 
 If a case statement contains all the possible choices (usually in an
-enumerated datatype), you can safely remove the “when others” clause.
+enumerated datatype), you can safely remove the `when others` clause.
 Sigasi warns about this:
 
 **Case statement contains all choices explicitly. You can safely remove
-the redundant “others”.**
+the redundant `others`.**
 
 There is some debate on this coding rule. However, the vast majority of
-synthesis tools do not take the “others” into account if all choices are
+synthesis tools do not take the `others` into account if all choices are
 enumerated. If the synthesis tool is set up to generate fault-tolerant
 hardware, the fallback state is the same as the reset state (for most
 synthesis tools). Check the manual of your synthesis tools and run some
@@ -263,7 +263,7 @@ warning.
 
 ## Dead Code (unreachable code)
 
-If the Sigasi analyser can determine that a condition is always false,
+If the Sigasi analyzer can determine that a condition is always false,
 it will mark the if-statement because it contains dead code.
 
 ![](images/unreachable_code.png)
@@ -307,8 +307,7 @@ Since [/releasenotes/sigasi-2.31] this can easily be fixed with a quickfix.
 On the **Navigation conventions** preference page (**Window \>
 Preferences \> Sigasi \> VHDL \> Naming conventions**) you can configure
 patterns to check correct naming of your VHDL identifiers. Patterns are
-configured with [Java regex
-syntax](http://www.vogella.com/tutorials/JavaRegularExpressions/article.html)
+configured with [Java regex syntax](http://www.vogella.com/tutorials/JavaRegularExpressions/article.html)
 
 Only name with a specified pattern are checked. Empty patterns are
 omitted.
