@@ -1,3 +1,9 @@
+---
+title: FAQ
+layout: faq 
+pager: true
+---
+
 # Install and Run
 
 ## Can I run several copies of Sigasi on my machine
