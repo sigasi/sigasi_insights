@@ -171,9 +171,11 @@ If your license key does not work, the first things to check are:
 * Which version of the Sigasi license daemon are you using?  
   **Note:** The Sigasi 2 daemon needs to be updated to run Sigasi 3. Otherwise you will see an `License is not valid (Internal Flexlm Error)` error message in the Sigasi preference page.
 * Is the MAC address correct?
+* Are you on Arch Linux?  
+  Make sure to install the "net-tools" package
 * Has the license expired?
 * Did you copy the license string exactly as it was sent to you?
-* Did you accidently try to use a License Token as a license key?
+* Did you accidentally try to use a License Token as a license key?
     * A *License Token* is a 24 character string. You can use your license token to [activate_key].
     * A *License Key*  (or license file) looks like this:
 ```
