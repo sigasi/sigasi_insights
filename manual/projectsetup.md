@@ -66,7 +66,7 @@ Verilog file**.
 
 ## Adding VHDL or Verilog support to an existing Eclipse project
 
-You can add also add VHDL or Verilog project to any project in your
+You can also add VHDL or Verilog support to any project in your
 workspace by right-clicking the project in the project explorer and
 selecting **Configure \> Add VHDL support** or **Configure \> Add
 Verilog support**. You can also remove VHDL or Verilog support from
@@ -89,5 +89,5 @@ Therefore, you can create an archive of the entire top level folder
 else.
 
 You can import a project from an archive by clicking **File \> Import…
-\> General \> Existing projects into Workspace**, and selecting **Select
-archive file**. Browse to your project archive, and press **Finish**.
+\> General \> Existing projects into Workspace** and selecting **Select
+archive file**. Browse to your project archive and press **Finish**.
