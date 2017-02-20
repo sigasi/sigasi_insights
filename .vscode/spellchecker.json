@@ -22,7 +22,12 @@
         "metadata",
         "JSON",
         "UUID",
-        "checkbox"
+        "checkbox",
+        "FPGA",
+        "ASIC",
+        "SystemVerilog",
+        "Lieven",
+        "Lemiengre"
     ],
     "documentTypes": [
         "markdown",

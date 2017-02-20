@@ -7,6 +7,7 @@ date: 2017-02-03
 tags: 
   - VHDL
   - SystemVerilog
+  - Verification
 comments: true
 ---
 
