@@ -11,6 +11,8 @@ tags:
 comments: true
 ---
 
+![](images/chips_on_pcb.jpg){: style="float:right"}
+
 In the last decade a lot has changed in the field of digital hardware design verification. To cope with the increasing complexity of designs, the industry needed better solutions to test hardware. A lot of novel solutions were developed. Some of them have became very successful and some are already obsolete. This can be very confusing for engineers who are new to this field.
 
 In this article I sketch the verification landscape and give an overview of verification methodologies. 
