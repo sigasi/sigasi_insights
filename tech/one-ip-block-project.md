@@ -62,7 +62,7 @@ project name and click **Finish**. Now, perform the following four
 steps:
 
 1.  Set the project dependencies: **Project &gt; Properties &gt; Project
-    References** and select STD and IEEE as a project references.
+    References** and select STD and IEEE as project references.
 2.  Remove the virtual folder `Common Libraries` from the
     `my_lib` project.
 3.  Map the entire project to the correct library (`my_lib`):
@@ -105,7 +105,7 @@ We especially recommended it for any mid or large scale project, or:
 -   If you have more than 5 VHDL libraries
 -   If you are using third-party code that you don't want to modify
 -   If you are working on several designs with shared libraries and
-    IP blocks.
+    IP blocks
 
 Real life: GRLIB
 ----------------
@@ -114,7 +114,7 @@ To show you an example of how to get started, I have created [a video
 where I set up the first few
 libraries](/screencasts/organizing-grlib-one-project-library.html) in the open
 source [GRLIB](http://www.gaisler.com/) collection.
-You can also download [a zip file with the all the GRLIB libraries (and
+You can also download [a zip file with all the GRLIB libraries (and
 a few of its example designs)](resources/grlib-gpl-1.0.20-b3403-b.tgz).
 Use **File &gt; Import... &gt; General &gt; Existing Projects into
 Workspace**. Then **Select archive file**, **Select All** and click
