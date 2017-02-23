@@ -22,7 +22,7 @@ Integrated Development Environments (IDEs) have long been the primary tool for s
 
 However, until now, IDEs have not been popular in hardware development circles. This is partly because many of the available IDEs for hardware development have not lived up to the potential of IDEs that is typical in the software world. Instead, IDEs tend to be overly complex, closed, and they lock the customer in.
 
-Today, though, Eclipse is finally gaining traction among EDA (electronic design automation) and FPGA companies. One such EDA company, Sigasi, has just released the first commercial VHDL plugin for Eclipse. Now, at last, hardware design teams can use Eclipse as a basis for their own customized IDEs, based on the commercial and open-source plugins that they need in their central cockpit for hardware design.
+Today, though, Eclipse is finally gaining traction among EDA (electronic design automation) and FPGA companies. Sigasi, has released the first commercial VHDL plugin for Eclipse in 2010. Now, at last, hardware design teams can use Eclipse as a basis for their own customized IDEs, based on the commercial and open-source plugins that they need in their central cockpit for hardware design.
 
 ## Cockpit view {: id="cockpit-view" name="cockpit-view}
 
@@ -83,4 +83,4 @@ As increasingly more EDA tools become available as Eclipse plugins, Eclipse trul
 
 Now is the moment to take some time to reevaluate IDEs for hardware design. Go download Eclipse, explore the plugins, and experience the power of a state-of-the-art hardware development cockpit.
 
-What do you use for your hardware design? What do you think the future will bring? Let us know the comments section.
+What do you use for your hardware design? What do you think the future will bring? Let us know in the comments section.
