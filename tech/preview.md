@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (3.4)
 layout: page
 pager: true
-date: 2016-12-16
+date: 2017-03-03
 comments: true
 ---
 
@@ -36,12 +36,11 @@ All SystemVerilog is processed in a predictable order and keep track of the prep
      * Fixed Templates: these templates can be modified
      * Smart Templates: module instantiations
 * Integration with an external compiler (Riviera-Pro, ModelSim, NCsim)
+* We have a first version of SV formatting. **Clean Indentation** (**Ctrl+Shift+F**). Note that this format the entire file in the editor; formatting selections is not supported yet.
 
 ### What SystemVerilog features are we currently working on?
 
 We are currently implementing the scoping rules of SystemVerilog. This will result in better **semantic highlighting**, **Find References** and **Open Declaration** for all SystemVerilog code.
-
-We are also experimenting with SV formatting. The first feature we target is **Clean Indentation**.
 
 ## New VHDL formatter
 
