@@ -16,22 +16,22 @@ I have blogged before on how to import Xilinx ISE projects in Sigasi before ([/t
 
 If you have a Vivado project which uses one or more IP cores, the project becomes complex quickly. Vivado generates different sources for _Simulation_ and _Synthesis_. And although VHDL has elegant support for this –entities can have multiple architectures–, Vivado generates duplicate entities instead. This forces you to switch between two complete different views on your project. If you have multiple IP cores this is really annoying.
 
-To make it easier to use Sigasi in combination with Vivado projects, we added a Vivado tcl script to our [SigasiProjectCreator Github project](https://github.com/sigasi/SigasiProjectCreator). This Vivado [tcl script](https://github.com/sigasi/SigasiProjectCreator/blob/master/convertVivadoProjectToCsv.tcl) creates a list of all HDL source files in your Vivado project and writes this list together with the HDL library name to a CSV-file. This CSV-file can be converted to a Sigasi project with the existing [convertCsvFileToTree.py](https://github.com/sigasi/SigasiProjectCreator/blob/master/convertCsvFileToTree.py) script:
+To make it easier to use Sigasi in combination with Vivado projects, we added a Vivado tcl script to our [SigasiProjectCreator Github project](https://github.com/sigasi/SigasiProjectCreator). This Vivado [tcl script](https://github.com/sigasi/SigasiProjectCreator/blob/master/src/convertVivadoProjectToCsv.tcl) creates a list of all HDL source files in your Vivado project and writes this list together with the HDL library name to a CSV-file. This CSV-file can be converted to a Sigasi project with the existing [convertCsvFileToTree.py](https://github.com/sigasi/SigasiProjectCreator/blob/master/src/convertCsvFileToTree.py) script:
 
 # How to generate a Sigasi project from a Vivado project?
 
 ## 1. Extract a list of source files from your Vivado project with TCL:
 
 ```
-vivado -mode batch -source ~/git/SigasiProjectCreator/convertVivadoProjectToCsv.tcl project_1.xpr
+vivado -mode batch -source ~/git/SigasiProjectCreator/src/convertVivadoProjectToCsv.tcl project_1.xpr
 ```
 
-This TCL scripts creates a file `vivado_files.csv` which contains a list of VHDL and Verilog source files and their library information. When you inspect the source of [this TCL script](https://github.com/sigasi/SigasiProjectCreator/blob/master/convertVivadoProjectToCsv.tcl), you will see that we filter for _Simulation_ source files only. You can switch to synthesis by replacing `USED_IN_SIMULATION` with `USED_IN_SYNTHESIS`.
+This TCL scripts creates a file `vivado_files.csv` which contains a list of VHDL and Verilog source files and their library information. When you inspect the source of [this TCL script](https://github.com/sigasi/SigasiProjectCreator/blob/master/src/convertVivadoProjectToCsv.tcl), you will see that we filter for _Simulation_ source files only. You can switch to synthesis by replacing `USED_IN_SIMULATION` with `USED_IN_SYNTHESIS`.
 
 ### 2. Generate the Sigasi project files from the csv-files
 
 ```
-~/git/SigasiProjectCreator/convertCsvFileToTree.py project_1 vivado_files.csv
+~/git/SigasiProjectCreator/src/convertCsvFileToTree.py project_1 vivado_files.csv
 ```
 This scripts generates the `.project` and `.library_mapping.xml` files that define the Sigasi project.
 
