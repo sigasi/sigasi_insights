@@ -54,15 +54,15 @@ executing this startup file.
 
 ![Eclipse Foundation member](images/eclipse_foundationmember.png){: style="float:right"}
 
-* You need to have at least [Eclipse](http://www.eclipse.org) version 4.2, nicknamed _Juno_.
+* You need to have at least [Eclipse](http://www.eclipse.org) version 4.4, nicknamed _Neon_.
 * If you don't have Eclipse installed yet, the C/C++ flavor would be good place to start. Just** download** ([Windows 64 bit][latest-eclipse-cpp-windows64]/[Linux 64 bit][latest-eclipse-cpp-linux64]/[Other versions][latest-eclipse-cpp]), **unzip** and **start**.
 * We recommend you also increase the heap size for Eclipse ([/faq#how-do-i-increase-the-heap-size-for-eclipse]).
 
 _Note that we do **not** support Eclipse 3 any more._ ([System Requirements][/faq#what-are-the-system-requirements])
 
-[latest-eclipse-cpp-windows64]: http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/1/eclipse-cpp-mars-1-win32-x86_64.zip
-[latest-eclipse-cpp-linux64]: http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/1/eclipse-cpp-mars-1-linux-gtk-x86_64.tar.gz
-[latest-eclipse-cpp]: http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/mars1
+[latest-eclipse-cpp-windows64]:http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/neon/2/eclipse-cpp-neon-2-win32-x86_64.zip
+[latest-eclipse-cpp-linux64]:http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/neon/2/eclipse-cpp-neon-2-linux-gtk-x86_64.tar.gz
+[latest-eclipse-cpp]:http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/neon2
 
 ## Install the Eclipse Plugin {: #eclipse-plugin}
 
