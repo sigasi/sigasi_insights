@@ -10,7 +10,7 @@ For those users who want to get early access to the features and bugfixes of upc
 
 The Sigasi Preview release channel offers more frequent releases than the official releases. This page gives an introduction to the most important changes.
 
-Although these preview release are less rigorously tested than than the official releases, they are stable enough for daily use.
+Although these preview releases are less rigorously tested than than the official releases, they are stable enough for daily use.
  
 _If you run into any problems, please let us know_.
 
@@ -20,7 +20,7 @@ These features are available in the current preview release.
 
 ## SystemVerilog improvements
 
-All SystemVerilog is processed in a predictable order and keep track of the preprocessor state. This avoids problems with the ``` `ifndef ... `define  ... ``` pattern. This also allows us to offer **full support for include files**. You can edit include files _as if they were included in a Verilog file_. This requires no extra configuration, except for [setting your include paths][/manual/editor#verilog-preprocessingmacros].
+All SystemVerilog is processed in a predictable order and Sigasi keeps track of the preprocessor state. This avoids problems with the ``` `ifndef ... `define  ... ``` pattern. This also allows us to offer **full support for include files**. You can edit include files _as if they were included in a Verilog file_. This requires no extra configuration, except for [setting your include paths][/manual/editor#verilog-preprocessingmacros].
 
 <div class="wistia_responsive_padding" style="padding:118.13% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/wu2qqrjhu0?videoFoam=true" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
@@ -30,13 +30,13 @@ All SystemVerilog is processed in a predictable order and keep track of the prep
    This works for both **SystemVerilog** _and_ **Include** files.
 * Preprocessor/Macros: Macros are fully supported. You can preview the text expansion with a hover or in the “Preprocessor View”.
 * Include paths can be specified by right clicking a project, selecting **Properties**, and opening the **Verilog Preprocessor page**. Currently, only project-relative paths are supported.
-* Open Declaration and Find References (for regular Verilog Code)
+* Open Declaration and Find References (for regular Verilog Code).
 * Autocomplete (Ctrl+Space):
      * Syntax: autocomplete for keywords and identifiers
      * Fixed Templates: these templates can be modified
      * Smart Templates: module instantiations
-* Integration with an external compiler (Riviera-Pro, ModelSim, NCsim)
-* We have a first version of SV formatting. **Clean Indentation** (**Ctrl+Shift+F**). Note that this format the entire file in the editor; formatting selections is not supported yet.
+* Integration with an external compiler (Riviera-Pro, ModelSim, NCsim).
+* We have a first version of SV formatting. **Clean Indentation** (**Ctrl+Shift+F**). Note that this formats the entire file in the editor; formatting selections is not supported yet.
 
 ### What SystemVerilog features are we currently working on?
 
@@ -47,7 +47,7 @@ We are currently implementing the scoping rules of SystemVerilog. This will resu
 For Sigasi Studio 3.4 we did a rewrite of the VHDL formatter. This fixed a lot of reported formatting issues.
 In addition, we also implemented a way to disable the formatter for custom sections of your VHDL files.
 
-To disable the formatter for a section by enclosing it between `-- @formatter:off` and a `-- @formatter:on` comment.
+To disable the formatter for a section, enclose it between a `-- @formatter:off` and a `-- @formatter:on` comment.
 E.g.:
 ```vhdl
 -- @formatter:off
@@ -59,7 +59,7 @@ The new formatter has roughly the same rules as you have seen in earlier version
 
 ### Extras
 
-Sigasi Studio now has a **Correct Indentation** action. This action only modifies the indentation of your (selected) VHDL code. You can run via the context menu in the editor and **Source > Correct Indentation** or via **Ctrl+I**
+Sigasi Studio now has a **Correct Indentation** action. This action only modifies the indentation of your (selected) VHDL code. You can run it via the context menu in the editor and **Source > Correct Indentation** or via **Ctrl+I**
 
 # Update or install?
 
