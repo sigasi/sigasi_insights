@@ -73,6 +73,20 @@ single_element_array <= (others => '0'); -- OK
 single_element_array(0) <= '0'; -- OK
 ```
 
+### Negative index ranges
+
+Depending on index type of ranges you can use negative index values to get specific element of array.
+
+```vhdl
+type neg_index_array is array (-5 to 5) of integer;
+variable my_neg_array : neg_index_array;
+my_neg_array(-5) := 15;
+my_neg_array(-3 to -1) := 12 & 13 & 14; -- & - concatenation
+my_neg_array(0 to 1) := my_neg_array(4 to 5);
+-- illegal, Slice range direction (downto) does not match slice prefix direction (to).
+my_neg_array(0 to 1) := my_neg_array(3 downto 2);
+```
+
 ### Unconstrained ranges
 
 VHDL also allows you to define *unconstrained arrays*, which are array declarations where the *type* of the index values is specified, but not the *bounds*.
