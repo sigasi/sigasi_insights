@@ -49,8 +49,8 @@ You can add some extra parameters to Sigasi to modify the behavior.
 * `-help` : show simple command line usage information
 * `-data <location>` : specifies the workspace location
 * `-noSplash` : do not show the splash screen at startup
-* `-application org.eclipse.ui.ide.workbench` : to use the defaul* Eclipse workbench launcher instead of the Sigasi workbench launcher
-* `-consoleLog` : log all debug information in the console (i* addition to the regular log file)
+* `-application org.eclipse.ui.ide.workbench` : to use the default Eclipse workbench launcher instead of the Sigasi workbench launcher
+* `-consoleLog` : log all debug information in the console (in addition to the regular log file)
 * `-refresh` : force refresh of workspace
 * `-showLocation` : show workspace location in title bar
 
