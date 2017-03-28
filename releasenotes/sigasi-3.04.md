@@ -5,17 +5,27 @@ pager: true
 date: 2017-03-30
 comments: true
 ---
-intro
+The major improvement in Sigasi Studio 3.4 is a new formatting engine. This enabled us to close most of the reported formatting issues and offer some new features. Read more below:
 
 # New VHDL formatting engine
 
-Bug fixes -> new engine
+Code formatting is a delicate matter. Everybody has his own taste and style.
+The VHDL formatter in Sigasi Studio 1, 2 and 3 evolved a lot to try to support the many requested styles. Alas, the approach was reaching its limits and we could not fix some reported bugs.
 
-New features:
-* skip region
- `-- @formatter:off` skip this part `-- @formatter:on`
-* Option to disable vertical alignmnet
-* Indent only
+Therefor we decided to rewrite the VHDL formatting engine in Sigasi Studio 3.5. In addition to some popular bug fixes, this enabled us to add some extra features too:
+
+## New Formatting features:
+
+* Skip formatting in defined regions:  
+  The code formatter now detects **off** (`-- @formatter:off`) and **on** (`-- @formatter:on`) tags. This allows you to disable the Sigasi formatter in defined regions in your code.
+  ![](3.4/formatter_off_region.png)
+* Optionally disable vertical alignment  
+  You can now disable vertical alignment in the formatter: **Windows > Preferences > Sigasi > VHDL > Formatting > Use Vertical Alignment**
+  ![](3.4/vertical_alignment_a.png)
+* New action to correct indentation only  
+  Inside a VHDL editor, you can now correct the indentation only via the context menu **Source > Correct Indentation**, or via **Ctrl+I**. This only changes whitespace at the start of you lines.
+  If you select code first, only the code in the selection will be indented.
+  ![](3.4/correct_indentation_a.png)
 
 ## Formatting bug fixes:
 - ticket 3771 : Align case statements
@@ -28,24 +38,30 @@ New features:
 
 # More improvements to the Block Diagram view
 
-* Layout improvements
-* Visualization of assignments and assert
-* Pin view
+We further improved the layout, looks and interaction of the Block Diagram View.
+We changed the looks of `assignment` and `assert` statements. We made them smaller to improve the clarity of most diagrams. We also improve hover and the selection behavior. 
+
+  ![](3.4/blockdiagram_a.png)
+
+We also added a **Pin View** feature. This allows you to 'pin', or lock, the Block Diagram view to the current diagram. If you pin a view, the diagram will remain unchanged if you navigate to other VHDL files. Note that changes in your VHDL code will still result in updates of the Block Diagram View.
+
+Note: In Sigasi Studio 3.3 we accidentally released a prototype feature. Depending on your license key, you may have noticed "..." buttons in the block diagram view toolbar. These buttons filtered certain blocks and connections from the Block Diagram. In Sigasi 3.4, we have removed these buttons. An improved version of these buttons will re-introduced in a later version.
+
+# SystemVerilog
+
+See the Preview Builds to track our SystemVerilog progress.
 
 # Other new and noteworthy improvements
 
-- We no require at least Java 8 to run Sigasi Studio (plugins)
+- We now require at least Java 8 to run Sigasi Studio (plugins)
 - We updated the Eclipse Xtext dependency to `2.11.0`
-- We improved the message for "Duplicate design unit" problems. We now mention the path of conflicting design files:
-
-TODO:image
-
+- We improved the message for "Duplicate design unit" problems. We now mention the path of conflicting design files.
+  ![](3.4/duplicate_design_units_a.png)
 - We added three extra name conventions checks:
     - Labels of instantiation statements
     - Labels of generate statements
     - Labels of process statements
-
-TODO:image
+    ![](3.4/naming_conventions_a.png)
 
 # Bug fixes
 
