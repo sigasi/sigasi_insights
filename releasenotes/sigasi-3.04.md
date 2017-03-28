@@ -34,7 +34,7 @@ New features:
 
 # Other new and noteworthy improvements
 
-- We no require at least Java 8 to run Sigasi Studio (plugins)
+- We now require at least Java 8 to run Sigasi Studio (plugins)
 - We updated the Eclipse Xtext dependency to `2.11.0`
 - We improved the message for "Duplicate design unit" problems. We now mention the path of conflicting design files:
 
