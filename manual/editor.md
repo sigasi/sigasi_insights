@@ -309,7 +309,7 @@ according to your preferences.
 
 ## VHDL code formatting
 
-Press CTRL+SHIFT+F to format your current VHDL file.
+Press **Ctrl+Shift+f** to format your current VHDL file.
 
 This includes:
 
@@ -340,8 +340,24 @@ can configure them at **Window > Preferences > Sigasi > VHDL > Formatting**
 Configurable settings currently include:
 
 * Preserve newline characters
+* Vertical alignment
 * Upper case for VHDL keywords
 * Alignment column for trailing comments
+
+### Correct indentation only
+
+Sigasi Studio can also correct the indentation of your code without making any other changes.  Inside a VHDL editor, open the context menu and click **Source > Correct Indentation**, or hit **Ctrl+I**. This only changes whitespace at the start of you lines.
+
+If you select code first, only the code in the selection will be indented.
+
+### Disable formatting in defined regions
+
+You can disable the formatter for defined regions in your VHDL source files by enclosing them by **off** and **on** tags:
+
+* **off** tag: `-- @formatter:off`
+* **on** tag: `-- @formatter:on`
+
+![](images/formatter_off.png)
 
 ### Format code on save
 
@@ -383,6 +399,12 @@ You can configure the Verilog version (Verilog or SystemVerilog) via **Window > 
 ### Disable Verilog Error Markers
 
 _Note that Sigasi Studio does not cover the entire SystemVerilog grammar yet. So if you are using _'unsupported'_ syntax, you will see lots of incorrect [syntax error markers](#type-time-syntax-error-reporting). You can disable these error markers by pressing **Ctrl-3** and typing `Toggle Verilog error markers`. Next close and re-open all open Verilog editors to force a refresh._
+
+## Format
+
+Press **Ctrl+Shift+F** to format your current SystemVerilog file.
+
+The current formatter implementation corrects indentation only.
 
 ## Smart Indentation {: #smartindent-verilog}
 

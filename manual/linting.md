@@ -309,11 +309,11 @@ Preferences \> Sigasi \> VHDL \> Naming conventions**) you can configure
 patterns to check correct naming of your VHDL identifiers. Patterns are
 configured with [Java regex syntax](http://www.vogella.com/tutorials/JavaRegularExpressions/article.html)
 
-Only name with a specified pattern are checked. Empty patterns are
+Only names with a specified pattern are checked. Empty patterns are
 omitted.
 
 **Example:** to enforce a style where all variables have a `_v` suffix,
-you whould specify `.*_v` pattern in the **Variable name** field.
+you would specify `.*_v` pattern in the **Variable name** field.
 
 ## Vector width in assignments and port maps
 
