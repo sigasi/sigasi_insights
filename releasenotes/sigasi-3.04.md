@@ -53,7 +53,7 @@ See the Preview Builds to track our SystemVerilog progress.
 
 # Other new and noteworthy improvements
 
-- We now require at least Java 8 to run Sigasi Studio (plugins)
+- We now require at least Java 8 to run Sigasi Studio (plugins) [System Requirements][/faq#what-are-the-system-requirements]
 - We updated the Eclipse Xtext dependency to `2.11.0`
 - We improved the message for "Duplicate design unit" problems. We now mention the path of conflicting design files.
   ![](3.4/duplicate_design_units_a.png)
