@@ -12,7 +12,7 @@ The major improvement in Sigasi Studio 3.4 is a new formatting engine. This enab
 Code formatting is a delicate matter. Everybody has his own taste and style.
 The VHDL formatter in Sigasi Studio 1, 2 and 3 evolved a lot to try to support the many requested styles. Alas, the approach was reaching its limits and we could not fix some reported bugs.
 
-Therefor we decided to rewrite the VHDL formatting engine in Sigasi Studio 3.5. In addition to some popular bug fixes, this enabled us to add some extra features too:
+Therefor we decided to rewrite the VHDL formatting engine in Sigasi Studio 3.4. In addition to some popular bug fixes, this enabled us to add some extra features too:
 
 ## New Formatting features:
 
