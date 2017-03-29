@@ -45,7 +45,7 @@ We changed the looks of `assignment` and `assert` statements. We made them small
 
 We also added a **Pin View** feature. This allows you to 'pin', or lock, the Block Diagram view to the current diagram. If you pin a view, the diagram will remain unchanged if you navigate to other VHDL files. Note that changes in your VHDL code will still result in updates of the Block Diagram View.
 
-Note: In Sigasi Studio 3.3 we accidentally released a prototype feature. Depending on your license key, you may have noticed "..." buttons in the block diagram view toolbar. These buttons filtered certain blocks and connections from the Block Diagram. In Sigasi 3.4, we have removed these buttons. An improved version of these buttons will re-introduced in a later version.
+Note: In Sigasi Studio 3.3 we accidentally released a prototype feature. Depending on your license key, you may have noticed "..." buttons in the block diagram view toolbar. These buttons filtered certain blocks and connections from the Block Diagram. In Sigasi 3.4, we have removed these buttons. An improved version of these buttons will be re-introduced in a later version.
 
 # SystemVerilog
 
