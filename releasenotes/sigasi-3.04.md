@@ -49,7 +49,7 @@ Note: In Sigasi Studio 3.3 we accidentally released a prototype feature. Dependi
 
 # SystemVerilog
 
-See the Preview Builds to track our SystemVerilog progress.
+See the [Preview Builds][tech/preview] to track our SystemVerilog progress.
 
 # Other new and noteworthy improvements
 
