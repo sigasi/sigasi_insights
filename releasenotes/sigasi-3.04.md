@@ -5,7 +5,7 @@ pager: true
 date: 2017-03-30
 comments: true
 ---
-The major improvement in Sigasi Studio 3.4 is a new formatting engine. This enabled us to close most of the reported formatting issues and offer some new features. Read more below:
+The major improvement in Sigasi Studio 3.4 is a new formatting engine. This enabled us to close most of the reported formatting issues and offer some new formatting features. Read below for more:
 
 # New VHDL formatting engine
 
@@ -16,13 +16,13 @@ Therefor we decided to rewrite the VHDL formatting engine in Sigasi Studio 3.4. 
 
 ## New Formatting features:
 
-* Skip formatting in defined regions:  
+* **Skip formatting** in defined regions:  
   The code formatter now detects **off** (`-- @formatter:off`) and **on** (`-- @formatter:on`) tags. This allows you to disable the Sigasi formatter in defined regions in your code.
   ![](3.4/formatter_off_region.png)
-* Optionally disable vertical alignment  
-  You can now disable vertical alignment in the formatter: **Windows > Preferences > Sigasi > VHDL > Formatting > Use Vertical Alignment**
+* Optionally **disable vertical alignment**  
+  You can now disable vertical alignment in the formatter: **Windows > Preferences > Sigasi > VHDL > Formatting > Use Vertical Alignment**. Note that vertical aligment is enabled by default.
   ![](3.4/vertical_alignment_a.png)
-* New action to correct indentation only  
+* New action to **correct indentation** only  
   Inside a VHDL editor, you can now correct the indentation only via the context menu **Source > Correct Indentation**, or via **Ctrl+I**. This only changes whitespace at the start of you lines.
   If you select code first, only the code in the selection will be indented.
   ![](3.4/correct_indentation_a.png)
@@ -39,25 +39,25 @@ Therefor we decided to rewrite the VHDL formatting engine in Sigasi Studio 3.4. 
 # More improvements to the Block Diagram view
 
 We further improved the layout, looks and interaction of the Block Diagram View.
-We changed the looks of `assignment` and `assert` statements. We made them smaller to improve the clarity of most diagrams. We also improve hover and the selection behavior. 
+We changed the looks of `assignment` and `assert` statements. We made them smaller to improve the clarity of most diagrams. We also improved _hover_ and the _selection behavior_. 
 
   ![](3.4/blockdiagram_a.png)
 
-We also added a **Pin View** feature. This allows you to 'pin', or lock, the Block Diagram view to the current diagram. If you pin a view, the diagram will remain unchanged if you navigate to other VHDL files. Note that changes in your VHDL code will still result in updates of the Block Diagram View.
+We also added a **Pin View** feature. This allows you to 'pin', or lock, the Block Diagram view to the current diagram. If you pin a view (![](3.4/pin_view.png)), the diagram will remain unchanged if you navigate to other VHDL files. Editing your VHDL code will still result in updates of the Block Diagram View.
 
-Note: In Sigasi Studio 3.3 we accidentally released a prototype feature. Depending on your license key, you may have noticed "..." buttons in the block diagram view toolbar. These buttons filtered certain blocks and connections from the Block Diagram. In Sigasi 3.4, we have removed these buttons. An improved version of these buttons will be re-introduced in a later version.
+**Note:** In Sigasi Studio 3.3 we accidentally released a prototype feature. Depending on your license key, you may have noticed ![](3.4/prototype.png) buttons in the Block Diagram view tool bar. These buttons filtered certain blocks and connections from the Block Diagram. In Sigasi 3.4, we have removed these buttons. An improved version of this functionallity will be re-introduced in a later version.
 
 # SystemVerilog
 
-See the [Preview Builds][tech/preview] to track our SystemVerilog progress.
+See the [Preview Builds][/tech/preview] to track the latest SystemVerilog progress.
 
 # Other new and noteworthy improvements
 
-- We now require at least Java 8 to run Sigasi Studio (plugins)
+- We now require at least **Java 8** to run Sigasi Studio (plugins)
 - We updated the Eclipse Xtext dependency to `2.11.0`
-- We improved the message for "Duplicate design unit" problems. We now mention the path of conflicting design files.
+- We improved the message for _"Duplicate design unit"_ problems. We now mention the path of conflicting design files.
   ![](3.4/duplicate_design_units_a.png)
-- We added three extra name conventions checks:
+- We added three extra **name conventions checks**:
     - Labels of instantiation statements
     - Labels of generate statements
     - Labels of process statements
@@ -65,13 +65,13 @@ See the [Preview Builds][tech/preview] to track our SystemVerilog progress.
 
 # Bug fixes
 
-- ticket 3779 : \[VHDL 2008\] protected type issue with incomplete type declarations
+- ticket 3779 : \[VHDL 2008\] Protected type issue with incomplete type declarations
 - ticket 3743 : \[VHDL 2008\] Incorrect error for unconstrained nested arrays
 - ticket 3753 : ModelSim compilation fails (silently) when project contains encrypted files
 - ticket 3725 : Incorrect error for aggregates as return types for subprograms
-- ticket 3795 : exception running the external compiler for project with certain library/VHDL version setups
-- ticket 3792 : Two temp folders created for external compilation
-- ticket 3769 : Improved message in popup when Sigasi warns about its age.
+- ticket 3795 : Exception running the external compiler for project with certain library/VHDL version setups
+- ticket 3792 : Two temporary folders created for external compilation
+- ticket 3769 : Improved message in pop up when Sigasi warns about its age.
 - ticket 3767 : Only open port 4444 when Sigasi Studio is started with `com.sigasi.runner.open application` (default)
 - ticket 3783 : Block diagram incorrectly displays `generate` statements without instantiations as "unknown"
 - ticket 3794 : Improve error handling of Quartus integration
