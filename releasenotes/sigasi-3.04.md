@@ -14,9 +14,9 @@ The VHDL formatter in Sigasi Studio 1, 2 and 3 evolved a lot to try to support t
 
 Therefor we decided to rewrite the VHDL formatting engine in Sigasi Studio 3.4. In addition to some popular bug fixes, this enabled us to add some extra features too:
 
-## New Formatting features:
+## New Formatting features
 
-* **Skip formatting** in defined regions:  
+* **Skip formatting** in defined regions  
   The code formatter now detects **off** (`-- @formatter:off`) and **on** (`-- @formatter:on`) tags. This allows you to disable the Sigasi formatter in defined regions in your code.
   ![](3.4/formatter_off_region.png)
 * Optionally **disable vertical alignment**  
@@ -27,7 +27,8 @@ Therefor we decided to rewrite the VHDL formatting engine in Sigasi Studio 3.4. 
   If you select code first, only the code in the selection will be indented.
   ![](3.4/correct_indentation_a.png)
 
-## Formatting bug fixes:
+## Formatting bug fixes
+
 - ticket 3771 : Align case statements
 - ticket 3204 : [Block formatting if there are real structural syntax errors](https://twitter.com/geschema/status/549550717393178624)
 - ticket 3622 : Tweak vertical alignment in formatter
@@ -55,7 +56,7 @@ See the [Preview Builds][/tech/preview] to track the latest SystemVerilog progre
 
 - We now require at least **Java 8** to run Sigasi Studio for both the Stand-alone and the Plugin version. The Plugin version now requires Eclipse 4.4 or newer. [System Requirements][/faq#what-are-the-system-requirements]
 - We updated the Eclipse Xtext dependency to `2.11.0`
-- We improved the message for _"Duplicate design unit"_ problems. We now mention the path of conflicting design files.
+- We improved the message for _"Duplicate design unit"_ problems. We now mention the path of conflicting design files
   ![](3.4/duplicate_design_units_a.png)
 - We added three extra **name conventions checks**:
     - Labels of instantiation statements
