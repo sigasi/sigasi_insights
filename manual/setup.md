@@ -54,7 +54,7 @@ executing this startup file.
 
 ![Eclipse Foundation member](images/eclipse_foundationmember.png){: style="float:right"}
 
-* You need to have at least [Eclipse](http://www.eclipse.org) version 4.4, nicknamed _Neon_.
+* You need to have at least [Eclipse](http://www.eclipse.org) version 4.4, nicknamed _Luna_.
 * If you don't have Eclipse installed yet, the C/C++ flavor would be good place to start. Just** download** ([Windows 64 bit][latest-eclipse-cpp-windows64]/[Linux 64 bit][latest-eclipse-cpp-linux64]/[Other versions][latest-eclipse-cpp]), **unzip** and **start**.
 * We recommend you also increase the heap size for Eclipse ([/faq#how-do-i-increase-the-heap-size-for-eclipse]).
 
