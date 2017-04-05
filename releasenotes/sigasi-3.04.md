@@ -102,7 +102,7 @@ stacktrace=
 ------------------------------- document snippet -------------------------------
 mem_www          : out std_logic_vector(4 - 1 downto 0);
 mem_xxx          : in  std_logic_vector(4 - 1 downto 0) := (others => '0');
-mem_yyy          : in  std_logic_vector(4 - 1 downto 0) :={{{[[[ }}}]]](others => '0');
+mem_yyy          : in  std_logic_vector(4 - 1 downto 0) :={​{​{​[​​[​[ }​}​}​]​]​](others => '0');
 mem_zzz          : in  std_logic_vector(4 - 1 downto 0) := (others => '0');
 --------------------------------------------------------------------------------
     at org.eclipse.xtext.formatting2.internal.TextSegmentSet.handleConflict(TextSegmentSet.java:83)
