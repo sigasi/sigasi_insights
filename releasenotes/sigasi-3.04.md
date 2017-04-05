@@ -81,3 +81,34 @@ See the [Preview Builds][/tech/preview] to track the latest SystemVerilog progre
 ## How to update?
 
 If you have Sigasi Studio 3 installed, you can [update][update_sigasi] or [download a fresh install of the latest version][download_latest].
+
+## Sigasi 3.4.1 point release
+
+We noticed in the error reports of Sigasi Studio 3.4 Talkback, that we accidentally uploaded small snippets of VHDL code that triggered a bug in the new formatter.
+We [promised we would never do this](http://insights.sigasi.com/manual/talkback.html#what-kind-of-information-is-sent-through-talkback), so we immediately fixed the issue in the Sigasi Studio 3.4.1 release.
+
+When was it send? If Talkback was enabled and you hit a bug in the formatter
+What was send? The VHDL source line that triggered the issue, plus some lines before and after the issue.
+
+Example:
+```
+BugReport [
+version=3.4.0.201703291150
+pluginName=org.apache.log4j
+pluginVersion=1.2.15.v201012070815
+stacktrace=
+{{{}}}: space='' at offset=6836 length=1
+[[[]]]: space=' ' at offset=6836 length=1
+------------------------------- document snippet -------------------------------
+mem_www          : out std_logic_vector(4 - 1 downto 0);
+mem_xxx          : in  std_logic_vector(4 - 1 downto 0) := (others => '0');
+mem_yyy          : in  std_logic_vector(4 - 1 downto 0) :={{{[[[ }}}]]](others => '0');
+mem_zzz          : in  std_logic_vector(4 - 1 downto 0) := (others => '0');
+--------------------------------------------------------------------------------
+    at org.eclipse.xtext.formatting2.internal.TextSegmentSet.handleConflict(TextSegmentSet.java:83)
+    at org.eclipse.xtext.formatting2.internal.ArrayListTextSegmentSet.replaceExistingEntry(ArrayListTextSegmentSet.java:139)
+    at org.eclipse.xtext.formatting2.internal.ArrayListTextSegmentSet.add(ArrayListTextSegmentSet.java:49)
+    at org.eclipse.xtext.formatting2.internal.FormattableDocument.addReplacer(FormattableDocument.java:77)
+    at org.eclipse.xtext.formatting2.internal.FormattableDocument.set(FormattableDocument.java:326)
+    at org.eclipse.xtext.formatting2.internal.FormattableDocument.prepend(FormattableDocument.java:278)
+```
