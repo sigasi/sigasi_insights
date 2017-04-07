@@ -99,6 +99,7 @@ All library configuration information is stored in the `.library_mapping.xml` fi
 If you edit this file, your project will be cleared and rebuilt automatically (a so-called _Clean Build_).
 
 Sigasi only writes changes to this configuration file when you make changes to the library configuration with the context menu in the _Project Explorer_. When you do make changes, Sigasi first checks that all paths in the library configuration still exist. If a path no longer exists, is will be removed from the configuration file.
+Note that the library configuration file is **case-sensitive**, even on Windows.
 
 # Common libraries {: #libraries-common}
 
