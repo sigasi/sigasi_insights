@@ -12,18 +12,19 @@ How can you check invariants in VHDL? How can you write information to the conso
 
 The basic syntax of a report statements in VHDL is:
 ```vhdl
-report <messagestring> [severity <severitylevel>];
+report <message_string> [severity <severity_level>];
 ```
 
 The message string obviously has to be a string. The severity level has the datatype `std.standard.severity_level`. Possible values are: `NOTE, WARNING, ERROR, FAILURE`
 
 For example:
 ```vhdl
-report "this is a message";
+report "this is a message"; -- severity note
 -- or:
 report "this is a serious message" severity warning;
 ```
 
+If the `severity_level` clause is omitted in a report statement it is implicitly assumed to be `NOTE`.
 Report statements are _sequential_ statements. This means they can only be in sequential regions, like inside the statements part of  process or a procedure. They can not be by themselves in an architecture.
 
 ```vhdl
@@ -57,13 +58,21 @@ begin
 end architecture demo;
 ```
 
-These are the allowed ways of writing a VHDL assert statement, where `condition` has the datatype `boolean`.
+These are several ways of writing a VHDL assert statement, where `condition` is of `boolean` type.
 
 ```vhdl
     assert <condition>;
-    assert <condition> severity <severitylevel>;
+    assert <condition> severity <severity_level>;
     assert <condition> report <message_string>;
-    assert <condition> report <message_string> severity <severitylevel>;
+    assert <condition> report <message_string> severity <severity_level>;
+```
+
+If no `message_string` specified then default `Assertion violation.` will be used by default. If the `severity_level` clause is omitted in a report statement it is implicitly assumed to be `ERROR`.
+
+```vhdl
+    assert 3 = 2 + 2;
+    assert 3 = 2 + 2 report "Assertion violation.";
+    assert 3 = 2 + 2 report "Assertion violation." severity error;
 ```
 
 One last important thing is how to generate strings for the message. You may want to report the value of a signal (or variable) that is not a string. You need to know the datatype and use the `image` attribute.
