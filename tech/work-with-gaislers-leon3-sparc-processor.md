@@ -35,3 +35,7 @@ Download the <a href="resources/grlib-gpl-1.0.20-b3403-b.tgz">GRLIB project</a>.
 
 ## What do you think?
 I'd love to hear which publicly available <em>VHDL projects</em> you have inspected and learned from. Was it easy to understand them? Were the files well-structured? Did it include documentation or did you have to dive in <em>head first</em>?
+
+## Update Grlib 1.5.0-b4164 and Sigasi 3
+
+You can now [download an updated version for 1.5.0-b4164](resources/grlib-gpl-1.5.0-b4164.tgz) with the correct library setup.
