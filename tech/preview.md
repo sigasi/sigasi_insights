@@ -1,8 +1,8 @@
 ---
-title: Sigasi Studio Preview (3.4)
+title: Sigasi Studio Preview (3.5)
 layout: page
 pager: true
-date: 2017-03-03
+date: 2017-04-26
 comments: true
 ---
 
@@ -32,9 +32,9 @@ All SystemVerilog is processed in a predictable order and Sigasi keeps track of 
 * Include paths can be specified by right clicking a project, selecting **Properties**, and opening the **Verilog Preprocessor page**. Currently, only project-relative paths are supported.
 * Open Declaration and Find References (for regular Verilog Code).
 * Autocomplete (Ctrl+Space):
-     * Syntax: autocomplete for keywords and identifiers
-     * Fixed Templates: these templates can be modified
-     * Smart Templates: module instantiations
+    * Syntax: autocomplete for keywords and identifiers
+    * Fixed Templates: these templates can be modified
+    * Smart Templates: module instantiations
 * Integration with an external compiler (Riviera-Pro, ModelSim, NCsim).
 * We have a first version of SV formatting. **Clean Indentation** (**Ctrl+Shift+F**). Note that this formats the entire file in the editor; formatting selections is not supported yet.
 
@@ -44,22 +44,14 @@ We are currently implementing the scoping rules of SystemVerilog. This will resu
 
 ## New VHDL formatter
 
-For Sigasi Studio 3.4 we did a rewrite of the VHDL formatter. This fixed a lot of reported formatting issues.
-In addition, we also implemented a way to disable the formatter for custom sections of your VHDL files.
-
-To disable the formatter for a section, enclose it between a `-- @formatter:off` and a `-- @formatter:on` comment.
-E.g.:
-```vhdl
--- @formatter:off
-      -- skipped region
--- @formatter:on
-```
-
-The new formatter has roughly the same rules as you have seen in earlier versions of Sigasi Studio. Let us know if you see unexpected and unwanted changes.
+In Sigasi 3.4 we introduced a new formatter. In some cases the behavior was different than the previous version.
+Sigasi Studio 3.5 will contain fixes for the reported issues.
 
 ### Extras
 
-Sigasi Studio now has a **Correct Indentation** action. This action only modifies the indentation of your (selected) VHDL code. You can run it via the context menu in the editor and **Source > Correct Indentation** or via **Ctrl+I**
+* Open Design Unit: **Ctrl+Shift+D**
+* Libraries View for SystemVerilog
+* "Set Toplevel" in Libraries View
 
 # Update or install?
 
