@@ -455,6 +455,10 @@ Alternatively, you can contact support for an older download location.
 * Black text on black hovers is not readable. See : <http://devshards.blogspot.it/2012/10/how-to-fix-unreadable-eclipse-tooltips.html>
 * Slow and choppy text scrolling: start Sigasi/Eclipse with this extra command line option: `--launcher.GTK_version 2`w
 
+## Sigasi plugins not started/visible in Eclipse
+
+If you installed Sigasi in an older version of Eclipse (pre Mars), make sure you are running Eclipse with Java 8.
+
 ## Sigasi/Eclipse hangs on startup
 
 If Sigasi/Eclipse hangs while the splash screen is shown during startup, you can try this to resolve the issue:
