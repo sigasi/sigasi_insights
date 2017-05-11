@@ -17,7 +17,7 @@ bannerad: true
 To install the Tcl plugin in Sigasi:
 
 1. Click **Help > Install New Software…**
-2. Enter `http://download.eclipse.org/releases/mars` as update site in the **Work with:** field
+2. Enter `http://download.eclipse.org/releases/neon` as update site in the **Work with:** field
 3. When the index of the update is downloaded (this can take a while) enter **tcl** in the _type filter_ text box
 4. Select the **Dynamic Languages Toolkit – Tcl Development Tools**
 5. Click through the straightforward, subsequent steps

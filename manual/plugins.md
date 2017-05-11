@@ -41,7 +41,7 @@ This plugin is shipped with the standalone version of Sigasi.
 
 Recommended plugin: [Subversive](http://www.eclipse.org/subversive/) ([Installation instructions](https://www.eclipse.org/subversive/installation-instructions.php))
 
-As **update site**, you should use: <http://download.eclipse.org/releases/mars/>
+As **update site**, you should use: <http://download.eclipse.org/releases/neon/>
 
 
 ### ClearCase {: #revision-clearcase}
