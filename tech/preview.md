@@ -42,7 +42,9 @@ All SystemVerilog is processed in a predictable order and Sigasi keeps track of 
 
 We are currently implementing the scoping rules of SystemVerilog. This will result in better **semantic highlighting**, **Find References** and **Open Declaration** for all SystemVerilog code.
 
-## New VHDL formatter
+We are also working on autocomplete. We are making autocomplete more accurate and a lot faster.
+
+## VHDL
 
 In Sigasi 3.4 we introduced a new formatter. In some cases the behavior was different than the previous version.
 Sigasi Studio 3.5 will contain fixes for the reported issues.
@@ -52,6 +54,14 @@ Sigasi Studio 3.5 will contain fixes for the reported issues.
 * Open Design Unit: **Ctrl+Shift+D**
 * Libraries View for SystemVerilog
 * "Set Toplevel" in Libraries View
+
+### State Machine Viewer
+
+* Improved looks ('bubbles') and layout
+* All statemachines on same page (no more tabs)
+* Show (simple) conditions on edges
+
+### 
 
 # Update or install?
 
