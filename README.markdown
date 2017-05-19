@@ -37,3 +37,6 @@ Tips:
 * You can specify the language of code blocks by appending the language to the first three back ticks: e.g.
   ````` ```vhdl `````
 
+### Testing
+* Make sure [Urubu](https://github.com/jandecaluwe/urubu) is installed (`pip install urubu`)
+* Run `make build` to build the website and `make serve` to serve it on localhost:8000
