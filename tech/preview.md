@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (3.5)
 layout: page
 pager: true
-date: 2017-04-26
+date: 2017-05-19
 comments: true
 ---
 
@@ -32,9 +32,9 @@ All SystemVerilog is processed in a predictable order and Sigasi keeps track of 
 * Include paths can be specified by right clicking a project, selecting **Properties**, and opening the **Verilog Preprocessor page**. Currently, only project-relative paths are supported.
 * Open Declaration and Find References (for regular Verilog Code).
 * Autocomplete (Ctrl+Space):
-    * Syntax: autocomplete for keywords and identifiers
-    * Fixed Templates: these templates can be modified
-    * Smart Templates: module instantiations
+     * Syntax: autocomplete for keywords and identifiers
+     * Fixed Templates: these templates can be modified
+     * Smart Templates: module instantiations
 * Integration with an external compiler (Riviera-Pro, ModelSim, NCsim).
 * We have a first version of SV formatting. **Clean Indentation** (**Ctrl+Shift+F**). Note that this formats the entire file in the editor; formatting selections is not supported yet.
 
@@ -42,18 +42,13 @@ All SystemVerilog is processed in a predictable order and Sigasi keeps track of 
 
 We are currently implementing the scoping rules of SystemVerilog. This will result in better **semantic highlighting**, **Find References** and **Open Declaration** for all SystemVerilog code.
 
-We are also working on autocomplete. We are making autocomplete more accurate and a lot faster.
+We are also working on **autocomplete**. We are making autocomplete more accurate and a lot faster.
+
+**Libraries View** for SystemVerilog
 
 ## VHDL
 
-In Sigasi 3.4 we introduced a new formatter. In some cases the behavior was different than the previous version.
-Sigasi Studio 3.5 will contain fixes for the reported issues.
-
-### Extras
-
-* Open Design Unit: **Ctrl+Shift+D**
-* Libraries View for SystemVerilog
-* "Set Toplevel" in Libraries View
+In Sigasi 3.4 we introduced a new formatter. In some cases the behavior was different than the previous version. Sigasi Studio 3.5 will contain fixes for the reported issues.
 
 ### State Machine Viewer
 
@@ -61,7 +56,21 @@ Sigasi Studio 3.5 will contain fixes for the reported issues.
 * All statemachines on same page (no more tabs)
 * Show (simple) conditions on edges
 
-### 
+![New State Machien View](preview/new-statemachines.png)
+
+### Configurations
+
+* Better autocomplete
+* Better validations
+
+## Others
+
+* **Open Design Unit** dialog (Ctrl+Shift+D)
+  ![Open Design Unit Dialog](preview/open-design-unit.png)
+* Hyperlink from Entity to its architectures
+  ![Open Design Unit Dialog](preview/open-matching-architecture.png)
+* **Set toplevel** action in Libraries View
+ ![Open Design Unit Dialog](preview/libraries-view-set-toplevel.png)
 
 # Update or install?
 
