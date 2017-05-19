@@ -56,7 +56,7 @@ In Sigasi 3.4 we introduced a new formatter. In some cases the behavior was diff
 * All statemachines on same page (no more tabs)
 * Show (simple) conditions on edges
 
-![New State Machien View](preview/new-statemachines.png)
+![New State Machine View](preview/new-statemachines.png)
 
 ### Configurations
 
@@ -66,11 +66,16 @@ In Sigasi 3.4 we introduced a new formatter. In some cases the behavior was diff
 ## Others
 
 * **Open Design Unit** dialog (Ctrl+Shift+D)
-  ![Open Design Unit Dialog](preview/open-design-unit.png)
+
+![Open Design Unit Dialog](preview/open-design-unit.png)
+
 * Hyperlink from Entity to its architectures
-  ![Open Design Unit Dialog](preview/open-matching-architecture.png)
+
+![Open Design Unit Dialog](preview/open-matching-architecture.png)
+
 * **Set toplevel** action in Libraries View
- ![Open Design Unit Dialog](preview/libraries-view-set-toplevel.png)
+
+![Open Design Unit Dialog](preview/libraries-view-set-toplevel.png)
 
 # Update or install?
 
