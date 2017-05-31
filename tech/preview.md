@@ -26,15 +26,16 @@ All SystemVerilog is processed in a predictable order and Sigasi keeps track of 
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
 
 ### What features are already supported?
+
 * Syntax error feedback: **All** valid SystemVerilog-2012 code should be accepted as valid code. Most syntax errors should be flagged.  
    This works for both **SystemVerilog** _and_ **Include** files.
 * Preprocessor/Macros: Macros are fully supported. You can preview the text expansion with a hover or in the “Preprocessor View”.
 * Include paths can be specified by right clicking a project, selecting **Properties**, and opening the **Verilog Preprocessor page**. Currently, only project-relative paths are supported.
 * Open Declaration and Find References (for regular Verilog Code).
 * Autocomplete (Ctrl+Space):
-     * Syntax: autocomplete for keywords and identifiers
-     * Fixed Templates: these templates can be modified
-     * Smart Templates: module instantiations
+    * Syntax: autocomplete for keywords and identifiers
+    * Fixed Templates: these templates can be modified
+    * Smart Templates: module instantiations
 * Integration with an external compiler (Riviera-Pro, ModelSim, NCsim).
 * We have a first version of SV formatting. **Clean Indentation** (**Ctrl+Shift+F**). Note that this formats the entire file in the editor; formatting selections is not supported yet.
 
@@ -64,6 +65,10 @@ In Sigasi 3.4 we introduced a new formatter. In some cases the behavior was diff
 * Better validations
 
 ## Others
+
+* Quickfix all undeclared signals in a port map:
+
+![Quick fix all signals in port map](preview/quick-fix-all-signals-in-port-map.png)
 
 * **Open Design Unit** dialog (Ctrl+Shift+D)
 
