@@ -65,6 +65,8 @@ Sigasi offers following links:
 * Link to **Matching When Clause** \[VHDL]: in finite state machines (FSMs) you can jump directly to the matching *when* part of your case statement from state transitions (**Shift+F3**).
 * Link to **Open Declaration in Package Body** \[VHDL]: in packages you can jump directly to the matching *declaration* in the package body (**Shift+F3**). This also works in the opposite direction, **Open Declaration in Package Body**.
 * Link to **Open Declaration in Protected Type Body** \[VHDL]: in protected types you can jump directly to the matching *declaration* in the protected type body. This also works in the opposite direction, **Open Declaration in Protected Type**.
+* Link to **Include files** in SystemVerilog sources.
+* Link to **Macro definition** in SystemVerilog sources.
 * URLs in **comments**
 
 ## Hover
@@ -456,3 +458,5 @@ You can configure the include paths of your Verilog projects in the Verilog Prep
 ![](images/preprocessor-property-page.png)
 
 You can specify multiple include paths by separating them with a `;`. All paths are relative to the project folder. You can add the main project folder as include path by entering `.`.
+
+**Ctrl+Click** on _\`defines_ (or **F3**) will lead you to the corresponding declaration. Autocomplete will also offer you a list of all visible _\`defines_.
