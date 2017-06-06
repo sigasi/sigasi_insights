@@ -207,6 +207,22 @@ The action to remove trailing whitespace is hidden by default. You can access it
 * Previous versions (local history or version control)
 * Comparing two files
 
+## Extra navigation features
+
+The default way to open files in the VHDL and SystemVerilog editor, is to double click the files in the [Project Explorer][views#explorer]. But there are more methods to open files in your projects.
+
+### Open Resource
+
+When you press **Ctrl+Shift+R** the **Open Resource** dialog opens. In this dialog you can type a name or pattern to open a specific file name.
+
+### Open Design Unit
+
+When you press **Ctrl+Shift+D** the **Open Design Unit** dialog opens. In this dialog you can type a name or pattern to open a specific VHDL or SystemVerilog design unit name.
+
+![Open Design Unit Dialog](images/open-design-unit.png)
+
+Note that [**excluded** design files][libraries#libraries-mapping] do not appear in this list.
+
 # VHDL Specific
 
 In addition to the powerful features of an Eclipse editor, the VHDL
