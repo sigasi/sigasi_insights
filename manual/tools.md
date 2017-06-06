@@ -182,7 +182,7 @@ Enter all necessary information to start your external tool:
 You can test your tool configuration with the **Run** button.
 
 The following example screenshot shows how to set up configuration to
-run a `simulate.sh` script from within Sigasi Pro.
+run a `simulate.sh` script from within Sigasi Studio.
 
 ![](images/tutorialconfiguration.png)
 
@@ -255,10 +255,10 @@ preferred HDL editor.
 
 If you use the Sigasi Studio/ Altera Quartus II integration, you can
 easily open VHDL files by double clicking on them in Quartus II. Sigasi
-Pro will be aware of the entire Quartus II project, so that you can
+Studio will be aware of the entire Quartus II project, so that you can
 perform project-wide searches and navigation actions in Sigasi.
 Furthermore, if you add or remove files in the Quartus II project, these
-changes are automatically applied in Sigasi Pro.
+changes are automatically applied in Sigasi Studio.
 
 *Note:\_ If you want to set up a project independent of Altera Quartus
 II, please read the documentation on [/manual/projectsetup].
@@ -266,7 +266,7 @@ II, please read the documentation on [/manual/projectsetup].
 ## Setting the preferred editor
 
 To open a Quartus Project in Sigasi, you first have to configure Sigasi
-Pro as preferred editor in [/manual/opening#Altera Quartus II].
+Studio as preferred editor in [/manual/opening#Altera Quartus II].
 
 ## Open a Quartus II Project in Sigasi
 
@@ -302,7 +302,7 @@ VHDL file\* wizard of Sigasi (**File \> New \> VHDL File**).
 
 Note that Quartus II does not automatically update its UI after you add
 files to your project. In order to update the files list, you should run
-a workflow action in Quartus II, like starting a compilation.
+a work flow action in Quartus II, like starting a compilation.
 
 # Xilinx integration
 
