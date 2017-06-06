@@ -61,6 +61,7 @@ Sigasi offers following links:
 
 * Link to **Declaration**: this has the same behaviour as **Open Declaration** (**F3**)
 * Link to **Matching Entity** \[VHDL]: this links a **component** declaration of instantiation to the matching entity declaration. This also works for component **generics** and **ports** (**Shift+F3**).
+* Link to **Matching Architecture** for entity declarations \[VHDL].
 * Link to **Matching When Clause** \[VHDL]: in finite state machines (FSMs) you can jump directly to the matching *when* part of your case statement from state transitions (**Shift+F3**).
 * Link to **Open Declaration in Package Body** \[VHDL]: in packages you can jump directly to the matching *declaration* in the package body (**Shift+F3**). This also works in the opposite direction, **Open Declaration in Package Body**.
 * Link to **Open Declaration in Protected Type Body** \[VHDL]: in protected types you can jump directly to the matching *declaration* in the protected type body. This also works in the opposite direction, **Open Declaration in Protected Type**.
@@ -99,7 +100,7 @@ objects that have been declared in the design.
 
 ### Autocompletion interface
 
-Autocompletions may come from different sources, as will be discussed in the following sections. However, the user interface to initiate them is always the same. At any point as you are entering code, you can press **CTRL+SPACE** and the tool will suggest appropriate autocompletions.
+Autocompletions may come from different sources, as will be discussed in the following sections. However, the user interface to initiate them is always the same. At any point as you are entering code, you can press **Ctrl+Space** and the tool will suggest appropriate autocompletions.
 
 Some autocompletions are templates which require further user input. In such a case, the editor goes into a special *template editing* mode after the autocompletion has been performed. You can use TAB to cycle through the items that have to be modified or completed. When done, you can press ENTER to return to the normal editing mode. The cursor will be placed at an appropriate position to continue working.
 
@@ -207,7 +208,7 @@ The action to remove trailing whitespace is hidden by default. You can access it
 * Previous versions (local history or version control)
 * Comparing two files
 
-## Extra navigation features
+## Opening project files
 
 The default way to open files in the VHDL and SystemVerilog editor, is to double click the files in the [Project Explorer][views#explorer]. But there are more methods to open files in your projects.
 
