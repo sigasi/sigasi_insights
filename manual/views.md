@@ -169,8 +169,6 @@ The **State Machine View** displays a graphical (bubble diagram) view of all sta
 
 You can open the state machine view by right clicking in the editor and selecting **Show In > State Machines**. Alternatively you can open the view via **Window > View > Other... > VHDL > State Machines**.
 
-If you have more that one state machine in your file, you switch between machines by clicking the tabs. Each tab is named after the signal/variable that represents the state machine's state.
-
 If you have documented your state transitions (i.e. the assignments), the comments will be added as text to the transitions in the view.
 
 You can also **double-click nodes** or **transitions** to navigate to the corresponding VHDL code.
