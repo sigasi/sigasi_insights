@@ -244,6 +244,8 @@ In **Window > Preferences > General > Appearance**, select **Dark** in the **The
 
 If you want a _fully black background in the editor_, right click in the editor view and select **Preferences...**, next navigate to **General > Editors > Text Editors**. In the **Appearance color options**, select **Background color** and next click the **Color** button to select your preferred editor background color.
 
+If you encounter problems with button text and colors on RedHat (and Centos), use a dark OS theme like 'AdwaitaDark'. Sigasi Studio then inherits the dark buttons from the OS theme.
+
 # Warnings and Lint rules
 
 ## Can Sigasi replace my linter?
