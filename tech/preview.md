@@ -1,5 +1,5 @@
 ---
-title: Sigasi Studio Preview (3.5)
+title: Sigasi Studio Preview (3.6)
 layout: page
 pager: true
 date: 2017-05-19
@@ -15,72 +15,7 @@ Although these preview releases are less rigorously tested than than the officia
 _If you run into any problems, please let us know_.
 
 # Current preview release
-
-These features are available in the current preview release.
-
-## SystemVerilog improvements
-
-All SystemVerilog is processed in a predictable order and Sigasi keeps track of the preprocessor state. This avoids problems with the ``` `ifndef ... `define  ... ``` pattern. This also allows us to offer **full support for include files**. You can edit include files _as if they were included in a Verilog file_. This requires no extra configuration, except for [setting your include paths][/manual/editor#verilog-preprocessingmacros].
-
-<div class="wistia_responsive_padding" style="padding:118.13% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/wu2qqrjhu0?videoFoam=true" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
-<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
-
-### What features are already supported?
-
-* Syntax error feedback: **All** valid SystemVerilog-2012 code should be accepted as valid code. Most syntax errors should be flagged.  
-   This works for both **SystemVerilog** _and_ **Include** files.
-* Preprocessor/Macros: Macros are fully supported. You can preview the text expansion with a hover or in the “Preprocessor View”.
-* Include paths can be specified by right clicking a project, selecting **Properties**, and opening the **Verilog Preprocessor page**. Currently, only project-relative paths are supported.
-* Open Declaration and Find References (for regular Verilog Code).
-* Autocomplete (Ctrl+Space):
-    * Syntax: autocomplete for keywords and identifiers
-    * Fixed Templates: these templates can be modified
-    * Smart Templates: module instantiations
-* Integration with an external compiler (Riviera-Pro, ModelSim, NCsim).
-* We have a first version of SV formatting. **Clean Indentation** (**Ctrl+Shift+F**). Note that this formats the entire file in the editor; formatting selections is not supported yet.
-
-### What SystemVerilog features are we currently working on?
-
-We are currently implementing the scoping rules of SystemVerilog. This will result in better **semantic highlighting**, **Find References** and **Open Declaration** for all SystemVerilog code.
-
-We are also working on **autocomplete**. We are making autocomplete more accurate and a lot faster.
-
-**Libraries View** for SystemVerilog
-
-## VHDL
-
-In Sigasi 3.4 we introduced a new formatter. In some cases the behavior was different than the previous version. Sigasi Studio 3.5 will contain fixes for the reported issues.
-
-### State Machine Viewer
-
-* Improved looks ('bubbles') and layout
-* All statemachines on same page (no more tabs)
-* Show (simple) conditions on edges
-
-![New State Machine View](preview/new-statemachines.png)
-
-### Configurations
-
-* Better autocomplete
-* Better validations
-
-## Others
-
-* Quickfix all undeclared signals in a port map:
-
-![Quick fix all signals in port map](preview/quick-fix-all-signals-in-port-map.png)
-
-* **Open Design Unit** dialog (Ctrl+Shift+D)
-
-![Open Design Unit Dialog](preview/open-design-unit.png)
-
-* Hyperlink from Entity to its architectures
-
-![Open Design Unit Dialog](preview/open-matching-architecture.png)
-
-* **Set toplevel** action in Libraries View
-
-![Open Design Unit Dialog](preview/libraries-view-set-toplevel.png)
+We just released [/releasenotes/sigasi-3.05], so there is nothing to mention here yet.
 
 # Update or install?
 
