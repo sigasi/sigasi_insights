@@ -7,44 +7,37 @@ comments: true
 ---
 Sigasi Studio 3.5 brings full support for the **SystemVerilog** language, a frequently asked **VHDL quickfix**, a better **State Machine Viewer** and much more.
 
-# SystemVerilog (Creator)
+# Full SystemVerilog language support
 
-All SystemVerilog is processed in a predictable order and Sigasi keeps track of the preprocessor state. This avoids problems with the ``` `ifndef ... `define  ... ``` pattern. This also allows us to offer **full support for include files**. You can edit include files _as if they were included in a Verilog file_. This requires no extra configuration, except for [setting your include paths][/manual/editor#verilog-preprocessingmacros].
+Sigasi Studio 3.5 finally brings full SystemVerilog support. Providing good editing and navigation support for SystemVerilog was an interesting technical challenge. The size and complexity of the language, plus the impact of the SystemVerilog Preprocessor, daring trip through many valleys of despair. But we made it, and are proud to present our solution, that is both powerful and requires only very limited configuration.
 
-Libraries View
-* Syntax error feedback: **All** valid SystemVerilog-2012 code should be accepted as valid code. Most syntax errors should be flagged.  
+In addition to the SystemVerilog source files, Sigasi Studio only needs to know the [include paths][/manual/editor#verilog-preprocessingmacros]. Based on this information, Sigasi Studio automatically figures out in which order to analyze the files.
+Sigasi Studio processes the code in a predictable order and Sigasi keeps track of the preprocessor state. This also allows us to offer **full support for both SystemVerilog source files and include files**. With Sigasi Studio, you can edit include files _as if they were included in a Verilog file_. 
+
+What SystemVerilog features do we offer:
+
+* **Syntax error feedback**: All valid SystemVerilog-2012 code should be accepted as valid code. Most syntax errors should be flagged while you type.  
    This works for both **SystemVerilog** _and_ **Include** files.
-* Preprocessor/Macros: Macros are fully supported. You can preview the text expansion with a hover or in the “Preprocessor View”.
-* Include paths can be specified by right clicking a project, selecting **Properties**, and opening the **Verilog Preprocessor page**. Currently, only project-relative paths are supported.
-* Open Declaration and Find References (for regular Verilog Code).
-* Autocomplete (Ctrl+Space):
+* **Preprocessor**: Sigasi Studio has a complete preprocessor. You can preview the text expansion with a **hover** or in the **Preprocessor View**.
+* **Include paths** can be specified by right clicking a project, selecting **Properties**, and opening the **Verilog Preprocessor page**. Currently, only project-relative paths are supported.
+* **semantic highlighting**, **Open Declaration** and **Find References**
+* **Autocomplete** (Ctrl+Space):
     * Syntax: autocomplete for keywords and identifiers
     * Fixed Templates: these templates can be modified
     * Smart Templates: module instantiations
-* Integration with an external compiler (Riviera-Pro, ModelSim, NCsim).
-* We have a first version of SV formatting. **Clean Indentation** (**Ctrl+Shift+F**). Note that this formats the entire file in the editor; formatting selections is not supported yet.
-
-
-<div class="wistia_responsive_padding" style="padding:118.13% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/wu2qqrjhu0?videoFoam=true" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
-<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
-
-
-We are currently implementing the scoping rules of SystemVerilog. This will result in better **semantic highlighting**, **Find References** and **Open Declaration** for all SystemVerilog code.
-
-We are also working on **autocomplete**. We are making autocomplete more accurate and a lot faster.
-
-**Libraries View** for SystemVerilog
+    * Preprocessor directives
+* Integration with an **external compiler** (Riviera-Pro, ModelSim, NCsim).
+* We have a first version of SV formatting. **Clean Indentation** (**Ctrl+Shift+F**) formats the entire file in the editor.
+* **Libraries View** gives an overview of all design units in your project.
 
 # Improved State Machine Viewer (VHDL)
 
-We gave the State Machine Viewer
-
-* Improved looks ('bubbles') and layout
-* All statemachines on same page (no more tabs)
-* Show (simple) conditions on edges
+We gave the State Machine Viewer a refreshing update. We improved the looks. We have real bubbles now and transitions (edges) no longer overlap with states.
+If a design file has multiple state machines, we now display all statemachines next to each other (i.e. no more tabs).
 
 ![New state machine view](3.5/new-statemachines.png)
 
+If your state machine uses simple `if`-conditions for transitions, the conditions will be displayed on the transistions (if you enable the "Aa"-button).
 
 # Other new and noteworthy improvements
 
