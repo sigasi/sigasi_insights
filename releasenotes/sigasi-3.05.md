@@ -9,7 +9,7 @@ Sigasi Studio 3.5 brings full support for the **SystemVerilog** language, a freq
 
 # Full SystemVerilog language support
 
-Sigasi Studio 3.5 finally brings **full SystemVerilog support**. Providing good editing and navigation support for SystemVerilog was an _interesting technical challenge_. The _size_ and _complexity_ of the language, plus the impact of the SystemVerilog Preprocessor, proved to be a daring trip through many valleys of despair. But we made it, and are proud to present our solution, that is both _powerful_ and requires only _very limited configuration_.
+Sigasi Studio 3.5 finally brings **full SystemVerilog support**. Providing good editing and navigation support for SystemVerilog was an _interesting technical challenge_. The _size_ and _complexity_ of the language, plus the impact of the SystemVerilog Preprocessor, proved to be a very interesting journey. We are proud to present our solution, that is both _powerful_ and requires only _very limited configuration_.
 
 In addition to the SystemVerilog source files, Sigasi Studio only needs to know the [include paths][/manual/editor#verilog-preprocessingmacros]. Based on this information, Sigasi Studio automatically figures out in which order to analyze the files.
 
