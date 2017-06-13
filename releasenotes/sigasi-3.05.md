@@ -43,7 +43,7 @@ What SystemVerilog features does Sigasi Studio offer:
 # Improved State Machine Viewer (VHDL)
 
 We gave the State Machine Viewer a refreshing update. We improved the looks. We have real bubbles now and transitions (edges) no longer overlap with states.
-If a design file has multiple state machines, we now display all statemachines next to each other (i.e. no more tabs).
+If a design file has multiple state machines, we now display all state machines next to each other (i.e. no more tabs).
 
 ![New state machine view](3.5/new-statemachines.png)
 
