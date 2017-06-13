@@ -153,7 +153,13 @@ You can also enable/disable code folding and perform other actions by right-clic
 
 ![Configure Code Folding](images/configure_folding.png)
 
+### Rename refactoring
+
+Right click on any identifier (VHDL or SystemVerilog) and select **Refactor > Rename element** (**Ctrl+Shift+R**) to change the name of the declaration and all its references. If you press **Ctrl+Shift+R** twice, you can preview the rename before applying it.
+
 ### Full screen view
+
+Double click on the editor tab to make it full screen.
 
 ### Block selection {: #block-select}
 
@@ -454,9 +460,10 @@ When you hover over a Verilog preprocessor directive (e.g. `include ...`), Sigas
 In the [views#Preprocessor View], you can preview the expanded version of your preprocessed Verilog source files.
 
 You can configure the include paths of your Verilog projects in the Verilog Preprocessor Property page. You can open this page by right clicking your Verilog project and selecting **Properties > Verilog Preprocessor**.
-
 ![](images/preprocessor-property-page.png)
 
 You can specify multiple include paths by separating them with a `;`. All paths are relative to the project folder. You can add the main project folder as include path by entering `.`.
+
+You can also add an include path by running the quickfix on \``include` errors.
 
 **Ctrl+Click** on _\`defines_ (or **F3**) will lead you to the corresponding declaration. Autocomplete will also offer you a list of all visible _\`defines_.
