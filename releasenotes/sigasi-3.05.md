@@ -17,17 +17,26 @@ Sigasi Studio processes the code in a predictable order and Sigasi keeps track o
 What SystemVerilog features do we offer:
 
 * **Syntax error feedback**: All valid SystemVerilog-2012 code should be accepted as valid code. Most syntax errors should be flagged while you type.  
-   This works for both **SystemVerilog** _and_ **Include** files.
-* **Preprocessor**: Sigasi Studio has a complete preprocessor. You can preview the text expansion with a **hover** or in the **Preprocessor View**.
-* **Include paths** can be specified by right clicking a project, selecting **Properties**, and opening the **Verilog Preprocessor page**. Currently, only project-relative paths are supported.
+   ![SystemVerilog syntax error](3.5/systemverilog_syntax_error.png)
+   This works for both **SystemVerilog** _and_ **Include** files, and for both **Preprocessor** and real **SystemVerilog code**.
+   ![Preprocessor error](3.5/preprocessor_error.png)
+* **Preprocessor**: Sigasi Studio has a complete preprocessor. You can preview the text expansion with a **hover** or in the **Preprocessor View**.  
+  ![Preview preprocessed code in hover and Preprocessor View](3.5/preprocessor_hover_view.png)
+* **Include paths** can be set with a quickfix, or by right clicking a project, selecting **Properties**, and opening the **Verilog Preprocessor page**.
+![Add include path with QuickFix](3.5/systemverilog_include_quickfix.png)
 * **semantic highlighting**, **Open Declaration** and **Find References**
+   ![Press ctrl to jump to define definition](3.5/preprocessor_define_hyperlink.png)
 * **Autocomplete** (Ctrl+Space):
     * Syntax: autocomplete for keywords and identifiers
     * Fixed Templates: these templates can be modified
     * Smart Templates: module instantiations
+      ![Use autocomplete to instantiate any module](3.5/systemverilog_inst_autocomplete.png)
     * Preprocessor directives
-* Integration with an **external compiler** (Riviera-Pro, ModelSim, NCsim).
+      ![Use autocomplete to complete Preprocessor defines](3.5/preprocessor_define_autocomplete.png)
+* Integration with an **external compiler** (Riviera-Pro, ModelSim, NCsim, Onespin).
 * We have a first version of SV formatting. **Clean Indentation** (**Ctrl+Shift+F**) formats the entire file in the editor.
+* **Rename** refactoring  
+  ![Rename SystemVerilog identifiers](3.5/systemverilog_rename.png)
 * **Libraries View** gives an overview of all design units in your project.
 
 # Improved State Machine Viewer (VHDL)
@@ -41,7 +50,7 @@ If your state machine uses simple `if`-conditions for transitions, the condition
 
 # Other new and noteworthy improvements
 
-* [vhdl_only] **Quickfix all undeclared signals in a port map**. This was the number one feature request for our VHDL editor. You can now declare all signals in a port map (and all constants in a generic map) in a single action.  
+* [vhdl_only] **Quickfix all undeclared signals in a port map**. This was the number one feature request for our VHDL editor. You can now declare all signals in a port map (and all constants in a generic map) in a single action  
 ![Quick fix all signals in port map](3.5/quick-fix-all-signals-in-port-map.png)
 
 * Improved **Libraries View**:
@@ -49,19 +58,18 @@ If your state machine uses simple `if`-conditions for transitions, the condition
     - Added action to **Set toplevel**  
       ![Open Design Unit Dialog](3.5/libraries-view-set-toplevel.png)
 
-* **Open Design Unit** dialog (**Ctrl+Shift+D**): We added an extra action to quickly open a (VHDL or SystemVerilog) design unit in an editor: hit **Ctrl+Shift+D** (or via **Navigate > Open Design unit...**), and type a pattern that matches the design unit name you look for.  
+* **Open Design Unit** dialog (**Ctrl+Shift+D**): We added an extra action to quickly open a (VHDL or SystemVerilog) design unit in an editor: hit **Ctrl+Shift+D** (or via **Navigate > Open Design unit...**), and type a pattern that matches the design unit name you look for  
 ![Open Design Unit Dialog](3.5/open-design-unit.png)
 
-* [vhdl_only] **Hyperlink from Entity to its architectures**. There has always been an easy way to navigate from an architecture to its entity, by **Ctrl+clicking** (**Open Declaration**) the entity name. You can now also easily navigate in the other direction with **Ctrl+click**. If an enity has multiple architectures, they will all be listed in a drop down menu.  
+* [vhdl_only] **Hyperlink from Entity to its architectures**. There has always been an easy way to navigate from an architecture to its entity, by **Ctrl+clicking** (**Open Declaration**) the entity name. You can now also easily navigate in the other direction with **Ctrl+click**. If an enity has multiple architectures, they will all be listed in a drop down menu  
 ![Open matching architecture](3.5/open-matching-architecture.png)
 
 * [vhdl_only] Better autocomplete for `configurations`
-* [vhdl_only] Offer *"Declare variable"* quickfix for procedure parameters inside processes.
+* [vhdl_only] Offer *"Declare variable"* quickfix for procedure parameters inside processes
 *  \[[xl]] Better validations for `configuration`  
-   **TODO**: add screenshot
-
-* \[[xl]] keyword autocomplete should respect uppercase/lowercase formatting settings
-* \[[xl_doc]]Add the component name to component instantiation blocks in the graphical view.
+     ![Better validation of configurations](3.5/vhdl_configuration_error.png)
+* \[[xl]] keyword autocomplete now respects the uppercase/lowercase formatting settings
+* \[[xl_doc]] The block diagram view now displays the component name of component instantiations
 * We updated the Eclipse Xtext dependency to `2.12.0`
 
 
