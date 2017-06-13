@@ -25,7 +25,7 @@ What SystemVerilog features does Sigasi Studio offer:
   ![Preview preprocessed code in hover and Preprocessor View](3.5/preprocessor_hover_view.png)
 * **Include paths** can be set with a quickfix, or by right clicking a project, selecting **Properties**, and opening the **Verilog Preprocessor page**.
 ![Add include path with QuickFix](3.5/systemverilog_include_quickfix.png)
-* **semantic highlighting**, **Open Declaration** and **Find References**
+* **Semantic highlighting**, **Open Declaration** and **Find References**
    ![Press ctrl to jump to define definition](3.5/preprocessor_define_hyperlink.png)
 * **Autocomplete** (Ctrl+Space):
     * Syntax: autocomplete for keywords and identifiers
@@ -59,7 +59,7 @@ If your state machine uses simple `if`-conditions for transitions, the condition
     - Added action to **Set toplevel**  
       ![Open Design Unit Dialog](3.5/libraries-view-set-toplevel.png)
 
-* **Open Design Unit** dialog (**Ctrl+Shift+D**): We added an extra action to quickly open a (VHDL or SystemVerilog) design unit in an editor: hit **Ctrl+Shift+D** (or via **Navigate > Open Design unit...**), and type a pattern that matches the design unit name you look for  
+* **Open Design Unit** dialog (**Ctrl+Shift+D**): We added an extra action to quickly open a (VHDL or SystemVerilog) design unit in an editor: hit **Ctrl+Shift+D** (or via **Navigate > Open Design unit...**), and type a pattern that matches the design unit name you're looking for  
 ![Open Design Unit Dialog](3.5/open-design-unit.png)
 
 * [vhdl_only] **Hyperlink from Entity to its architectures**. There has always been an easy way to navigate from an architecture to its entity, by **Ctrl+clicking** (**Open Declaration**) the entity name. You can now also easily navigate in the other direction with **Ctrl+click**. If an entity has multiple architectures, they will all be listed in a drop down menu  
