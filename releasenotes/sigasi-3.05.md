@@ -9,12 +9,13 @@ Sigasi Studio 3.5 brings full support for the **SystemVerilog** language, a freq
 
 # Full SystemVerilog language support
 
-Sigasi Studio 3.5 finally brings full SystemVerilog support. Providing good editing and navigation support for SystemVerilog was an interesting technical challenge. The size and complexity of the language, plus the impact of the SystemVerilog Preprocessor, daring trip through many valleys of despair. But we made it, and are proud to present our solution, that is both powerful and requires only very limited configuration.
+Sigasi Studio 3.5 finally brings **full SystemVerilog support**. Providing good editing and navigation support for SystemVerilog was an _interesting technical challenge_. The _size_ and _complexity_ of the language, plus the impact of the SystemVerilog Preprocessor, proved to be a daring trip through many valleys of despair. But we made it, and are proud to present our solution, that is both _powerful_ and requires only _very limited configuration_.
 
 In addition to the SystemVerilog source files, Sigasi Studio only needs to know the [include paths][/manual/editor#verilog-preprocessingmacros]. Based on this information, Sigasi Studio automatically figures out in which order to analyze the files.
+
 Sigasi Studio processes the code in a predictable order and Sigasi keeps track of the preprocessor state. This also allows us to offer **full support for both SystemVerilog source files and include files**. With Sigasi Studio, you can edit include files _as if they were included in a Verilog file_. 
 
-What SystemVerilog features do we offer:
+What SystemVerilog features does Sigasi Studio offer:
 
 * **Syntax error feedback**: All valid SystemVerilog-2012 code should be accepted as valid code. Most syntax errors should be flagged while you type.  
    ![SystemVerilog syntax error](3.5/systemverilog_syntax_error.png)
@@ -76,29 +77,30 @@ If your state machine uses simple `if`-conditions for transitions, the condition
 # Bug fixes
 
 As expected the old formatter had some untested "features", that the new formatter in Sigasi 3.4 didn't have.
-This release brings many improvements to make the new formatter return the same results. Thanks a lot for all the feedback
+This release brings many improvements to make the new formatter return the same results.  
+Thanks a lot for all the feedback
 
 ## Formatting bug fixes:
 
-- ticket 3826 : Formatting performance issues for certain VHDL constructs
+- ticket 3826 : Performance issues for certain VHDL constructs
 - ticket 3827 : Format alignment on first parameter does not indent if a comment precedes the line
 - ticket 3841 : Comments do not always break alignment blocks
-- ticket 3848 : Formatting issue in Component declarations
-- ticket 3856 : Do not break doxygen comments
-- ticket 3857 : Transport keyword confuses the formatter
+- ticket 3848 : Formatting issue in `component` declarations
+- ticket 3856 : Do not break **Doxygen** comments
+- ticket 3857 : `transport` keyword confuses the formatter
 - ticket 3858 : Formatting on first parameter with a component declaration and commented ports confuses the formatter
 - ticket 3866 : Format on first parameter gets confused when declarations are grouped
 - ticket 3869 : Align comments in group goes wrong
 - ticket 3879 : Comments preceded by a tab break syntax on format
-- ticket 3902 : Comments are not indented during format when they proceed the end of an indented region
+- ticket 3902 : Comments are not indented during format when they are before the end of an indented region
 
 ## Other bug fixes:
 
-- ticket 3845 : \[VHDL-2008] Scoping issue with package generics in UVVM 
+- ticket 3845 : \[VHDL-2008] Scoping issue with package generics in UVVM
 - ticket 3019 : Entity instantiation autocomplete does not work in `generate` statements
 - ticket 3895 : Avoid `NoSuchMethodError` when Sigasi is used with newer Guava versions (*Eclipse 4.6.3*)
 - ticket 3884 : Scoping error with `if` condition labels in `generate` statements
-- ticket 3876 : Bugreport while exporting block diagrams (project without mapped files)
+- ticket 3876 : Silent exception while exporting block diagrams (project without mapped files)
 - ticket 3844 : Calling QuickFix from problems view applies the changes twice
 - ticket 3820 : `Case`/`for`/`else` generate show as `unknown` in Block Diagram
 - ticket 3893 : SystemVerilog parse error on Properties
