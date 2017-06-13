@@ -13,7 +13,7 @@ Sigasi Studio 3.5 finally brings **full SystemVerilog support**. Providing good 
 
 In addition to the SystemVerilog source files, Sigasi Studio only needs to know the [include paths][/manual/editor#verilog-preprocessingmacros]. Based on this information, Sigasi Studio automatically figures out in which order to analyze the files.
 
-Sigasi Studio processes the code in a predictable order and Sigasi keeps track of the preprocessor state. This also allows us to offer **full support for both SystemVerilog source files and include files**. With Sigasi Studio, you can edit include files _as if they were included in a Verilog file_. 
+Sigasi Studio processes the code in a predictable order and keeps track of the preprocessor state. This also allows us to offer **full support for both SystemVerilog source files and include files**. With Sigasi Studio, you can edit include files _as if they were included in a Verilog file_. 
 
 What SystemVerilog features does Sigasi Studio offer:
 
@@ -62,7 +62,7 @@ If your state machine uses simple `if`-conditions for transitions, the condition
 * **Open Design Unit** dialog (**Ctrl+Shift+D**): We added an extra action to quickly open a (VHDL or SystemVerilog) design unit in an editor: hit **Ctrl+Shift+D** (or via **Navigate > Open Design unit...**), and type a pattern that matches the design unit name you look for  
 ![Open Design Unit Dialog](3.5/open-design-unit.png)
 
-* [vhdl_only] **Hyperlink from Entity to its architectures**. There has always been an easy way to navigate from an architecture to its entity, by **Ctrl+clicking** (**Open Declaration**) the entity name. You can now also easily navigate in the other direction with **Ctrl+click**. If an enity has multiple architectures, they will all be listed in a drop down menu  
+* [vhdl_only] **Hyperlink from Entity to its architectures**. There has always been an easy way to navigate from an architecture to its entity, by **Ctrl+clicking** (**Open Declaration**) the entity name. You can now also easily navigate in the other direction with **Ctrl+click**. If an entity has multiple architectures, they will all be listed in a drop down menu  
 ![Open matching architecture](3.5/open-matching-architecture.png)
 
 * [vhdl_only] Better autocomplete for `configurations`
@@ -78,7 +78,7 @@ If your state machine uses simple `if`-conditions for transitions, the condition
 
 As expected the old formatter had some untested "features", that the new formatter in Sigasi 3.4 didn't have.
 This release brings many improvements to make the new formatter return the same results.  
-Thanks a lot for all the feedback
+Thanks a lot for all the feedback!
 
 ## Formatting bug fixes:
 
