@@ -15,7 +15,7 @@ Setting up a SystemVerilog project in Sigasi Studio is easy. First you add all y
 
 Sigasi Studio follows the Eclipse approach in setting up projects. This means that there is a lot of flexibility, but in most cases it is a matter of pointing Sigasi Studio to the correct source folder. If you want to exclude some SystemVerilog source files from your project, right click on the source files and select *Exclude from build* (This also works for folders).
 
-If you are using Verilog Preprocessor includes, and the include files are not next to your source files, you also have to set _include paths_. The most convenient way to configure this, is with a _Quick Fix_: Open the source file with the `\`include` directive, click on the error marker, and select the suggested fix.
+If you are using Verilog Preprocessor includes, and the include files are not next to your source files, you also have to set _include paths_. The most convenient way to configure this, is with a _Quick Fix_: Open the source file with the `` `include`` directive, click on the error marker, and select the suggested fix.
 
 # Example: Opening the SCR1, open-source RISC-V project from GitHub
 
