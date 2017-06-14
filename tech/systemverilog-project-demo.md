@@ -1,5 +1,5 @@
 ---
-title: "How to setup a SystemVerilog project in Sigasi"
+title: "How to setup a SystemVerilog project in Sigasi Studio"
 layout: page 
 pager: false
 author: Hendrik Eeckhaut

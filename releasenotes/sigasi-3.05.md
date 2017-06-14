@@ -9,16 +9,16 @@ Sigasi Studio 3.5 brings full support for the **SystemVerilog** language, a freq
 
 # Full SystemVerilog language support
 
-Sigasi Studio 3.5 finally brings **full SystemVerilog support**. Providing good editing and navigation support for SystemVerilog was an _interesting technical challenge_. The _size_ and _complexity_ of the language, plus the impact of the SystemVerilog Preprocessor, proved to be a very interesting journey. We are proud to present our solution, that is both _powerful_ and requires only _very limited configuration_.
+Sigasi Studio 3.5 finally brings **full SystemVerilog support**. Providing good editing and navigation support for the complex and colossal SystemVerilog language was an _interesting technical challenge_. We are proud to present our solution, that is both _powerful_ and requires only _very limited configuration_.
 
 In addition to the SystemVerilog source files, Sigasi Studio only needs to know the [include paths][/manual/editor#verilog-preprocessingmacros]. Based on this information, Sigasi Studio automatically figures out in which order to analyze the files.
 
-Sigasi Studio processes the code in a predictable order and keeps track of the preprocessor state. This also allows us to offer **full support for both SystemVerilog source files and include files**. With Sigasi Studio, you can edit include files _as if they were included in a Verilog file_. 
+Sigasi Studio processes the code in a predictable order and keeps track of the preprocessor state. This allows us to offer **full support for both SystemVerilog source files and include files**. With Sigasi Studio, you can edit include files _as if they were included in a SystemVerilog file_. 
 
-What SystemVerilog features does Sigasi Studio offer:
+## SystemVerilog features in Sigasi Studio
 
-* **Syntax error feedback**: All valid SystemVerilog-2012 code should be accepted as valid code. Most syntax errors should be flagged while you type.  
-   ![SystemVerilog syntax error](3.5/systemverilog_syntax_error.png)
+* **Syntax error feedback**: All valid SystemVerilog-2012 code should be accepted as valid code. Dyntax errors are flagged while you type.  
+   ![SystemVerilog syntax error](3.5/systemverilog_syntax_error.png)  
    This works for both **SystemVerilog** _and_ **Include** files, and for both **Preprocessor** and real **SystemVerilog code**.
    ![Preprocessor error](3.5/preprocessor_error.png)
 * **Preprocessor**: Sigasi Studio has a complete preprocessor. You can preview the text expansion with a **hover** or in the **Preprocessor View**.  
@@ -35,10 +35,14 @@ What SystemVerilog features does Sigasi Studio offer:
     * Preprocessor directives
       ![Use autocomplete to complete Preprocessor defines](3.5/preprocessor_define_autocomplete.png)
 * Integration with an **external compiler** (Riviera-Pro, ModelSim, NCsim, Onespin).
-* We have a first version of SV formatting. **Clean Indentation** (**Ctrl+Shift+F**) formats the entire file in the editor.
+* We have a first version of SystemVerilog formatting. **Clean Indentation** (**Ctrl+Shift+F**) formats the entire file in the editor.
 * **Rename** refactoring  
   ![Rename SystemVerilog identifiers](3.5/systemverilog_rename.png)
 * **Libraries View** gives an overview of all design units in your project.
+
+## Getting started
+
+Getting started with Sigasi Studio on your own projects is easy. The blog post "[/tech/systemverilog-project-demo]", describes how easy it is.
 
 # Improved State Machine Viewer (VHDL)
 
@@ -86,7 +90,7 @@ Thanks a lot for all the feedback!
 - ticket 3827 : Format alignment on first parameter does not indent if a comment precedes the line
 - ticket 3841 : Comments do not always break alignment blocks
 - ticket 3848 : Formatting issue in `component` declarations
-- ticket 3856 : Do not break **Doxygen** comments
+- ticket 3856 : Do not break Doxygen (`!--`) comments
 - ticket 3857 : `transport` keyword confuses the formatter
 - ticket 3858 : Formatting on first parameter with a component declaration and commented ports confuses the formatter
 - ticket 3866 : Format on first parameter gets confused when declarations are grouped
