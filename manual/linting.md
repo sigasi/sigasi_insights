@@ -42,7 +42,7 @@ in the design. Sigasi’s VHDL linter checks for the following problem*
 * Missing, unnecessary and duplicate signals in the sensitivity list
 * Port, signal, variable, constant or generic declarations that are never read or written
 * Invalid port associations (incompatible port modes in instantiations)
-* Order of generic and port associatio*
+* Order of generic and port associations
 
 ## No Linting for Common Libraries {: #linting-common-libraries}
 

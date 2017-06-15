@@ -18,5 +18,43 @@
         }
     },
     "editor.tabSize": 4,
-    "editor.insertSpaces": true
+    "editor.insertSpaces": true,
+    "spellchecker.language": "en_US",
+    "spellchecker.ignoreWordsList": [
+        "Sigasi",
+        "SHA1",
+        "sha1sum",
+        "plugins",
+        "VHDL",
+        "FlexNet",
+        "FlexLM",
+        "Quartus",
+        "linting",
+        "Verilog",
+        "Altera",
+        "Xilinx",
+        "Graphics'",
+        "ModelSim",
+        "QuestaSim",
+        "Vivado",
+        "plugin",
+        "Talkback",
+        "metadata",
+        "JSON",
+        "UUID",
+        "checkbox",
+        "FPGA",
+        "ASIC",
+        "SystemVerilog",
+        "Lieven",
+        "Lemiengre"
+    ],
+    "spellchecker.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+    "spellchecker.ignoreRegExp": [],
+    "spellchecker.ignoreFileExtensions": [],
+    "spellchecker.checkInterval": 5000
 }
