@@ -90,7 +90,7 @@ Thanks a lot for all the feedback!
 - ticket 3827 : Format alignment on first parameter does not indent if a comment precedes the line
 - ticket 3841 : Comments do not always break alignment blocks
 - ticket 3848 : Formatting issue in `component` declarations
-- ticket 3856 : Do not break Doxygen (`!--`) comments
+- ticket 3856 : Do not break Doxygen (`--!`) comments
 - ticket 3857 : `transport` keyword confuses the formatter
 - ticket 3858 : Formatting on first parameter with a component declaration and commented ports confuses the formatter
 - ticket 3866 : Format on first parameter gets confused when declarations are grouped
