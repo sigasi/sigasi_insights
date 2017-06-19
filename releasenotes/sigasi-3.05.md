@@ -17,7 +17,7 @@ Sigasi Studio processes the code in a predictable order and keeps track of the p
 
 ## SystemVerilog features in Sigasi Studio
 
-* **Syntax error feedback**: All valid SystemVerilog-2012 code should be accepted as valid code. Dyntax errors are flagged while you type.  
+* **Syntax error feedback**: All valid SystemVerilog-2012 code should be accepted as valid code. Syntax errors are flagged while you type.  
    ![SystemVerilog syntax error](3.5/systemverilog_syntax_error.png)  
    This works for both **SystemVerilog** _and_ **Include** files, and for both **Preprocessor** and real **SystemVerilog code**.
    ![Preprocessor error](3.5/preprocessor_error.png)
