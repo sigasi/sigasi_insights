@@ -255,4 +255,8 @@ Check the content of the Sigasi License preference page via : **Window > Prefere
 
   * There seems to be a bug in `lmtools.exe` version 11 on some systems. You can work around this issue by configuring the (latest) Sigasi daemon with an older version of lmtools ([Download here](http://download.sigasi.com/flexnet/lmtools.zip)). 
   
+> (lmgrd) license manager: can't initialize:No SERVER lines in license file.  
+> (lmgrd) License Path: "C:\FlexLM\sigasi\license.dat"  
+> (lmgrd) FlexNet Licensing error:-13,66
 
+  * If you see this error message. Double check you license file contains line with `USE_SERVER`.
