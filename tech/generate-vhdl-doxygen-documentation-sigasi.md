@@ -28,7 +28,7 @@ and your documentation. While this gives no guarantee for the design
 staying in sync with the documentation, it certainly makes it easier.
 
 Although I am personally not that fond of Doxygen (but that is for
-another blog post). It is the only usable VHDL documentation system I
+another blog post), it is the only usable VHDL documentation system I
 have encountered so far.
 
 Sigasi/Eclipse offers an easy way to get started and work with Doxygen.
@@ -52,7 +52,7 @@ install it with your favorite package manager. You should also install
 ## Doxygen Eclipse plugin
 
 [Eclox](http://home.gna.org/eclox) is a simple Doxygen plug-in for
-Eclipse. It provides an graphical user interface to configure and run
+Eclipse. It provides a graphical user interface to configure and run
 Doxygen. Eclox is available under the GNU General Public Licence (GPL).
 
 Note that this plugin is no longer actively maintained. But I did not
@@ -120,15 +120,15 @@ To really document your source with Doxygen you need to add special
 Instead of regular VHDL comments (`-- ...`), you have to use
 doxygen VHDL comments (`--! ...`). You have to place your
 comments in front of the item that you want to document. The only
-exception are ports and generics. You can document these with a a
+exceptions are ports and generics. You can document these with a
 one-line description on the same line.
 
-You can [download the VHDL source of an example Sigasi here](resources/doxygen-sigasi.zip). For more details consult the [Doxygen manual](http://www.stack.nl/~dimitri/doxygen/manual.html)
+You can [download the VHDL source of an example Sigasi here](resources/doxygen-sigasi.zip). For more details consult the [Doxygen manual](http://www.stack.nl/~dimitri/doxygen/manual.html).
 
 # Useful links
 
 -   [Doxygen](http://www.doxygen.org)
 -   [Doxygen manual](http://www.doxygen.org/manual.html)
 -   [Eclox](http://home.gna.org/eclox) : a simple doxygen frontend plug-in for eclipse
--   update site: <http://download.gna.org/eclox/update>
+-   Update site: <http://download.gna.org/eclox/update>
 -   [VHDL sources for the example](resources/doxygen-sigasi.zip)
