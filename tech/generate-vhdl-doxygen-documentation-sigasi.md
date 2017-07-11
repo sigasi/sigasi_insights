@@ -51,17 +51,14 @@ install it with your favorite package manager. You should also install
 
 ## Doxygen Eclipse plugin
 
-[Eclox](http://home.gna.org/eclox) is a simple Doxygen plug-in for
+[Eclox](https://anb0s.github.io/eclox/) is a simple Doxygen plug-in for
 Eclipse. It provides a graphical user interface to configure and run
 Doxygen. Eclox is available under the GNU General Public Licence (GPL).
-
-Note that this plugin is no longer actively maintained. But I did not
-encounter any problems so it looks good enough to be useful.
 
 To install the doxygen plugin:
 
 1. Click **Help &gt; Install New Software...**
-2. Enter **http://download.gna.org/eclox/update/** in the **Work with**
+2. Enter **http://anb0s.github.io/eclox** in the **Work with**
 field
 3. Select **Eclox**
 4. **Finish** and **Restart**
@@ -129,6 +126,6 @@ You can [download the VHDL source of an example Sigasi here](resources/doxygen-s
 
 -   [Doxygen](http://www.doxygen.org)
 -   [Doxygen manual](http://www.doxygen.org/manual.html)
--   [Eclox](http://home.gna.org/eclox) : a simple doxygen frontend plug-in for eclipse
--   Update site: <http://download.gna.org/eclox/update>
+-   [Eclox](https://anb0s.github.io/eclox/) : a simple doxygen frontend plug-in for eclipse
+-   Update site: <http://anb0s.github.io/eclox>
 -   [VHDL sources for the example](resources/doxygen-sigasi.zip)
