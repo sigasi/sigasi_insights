@@ -37,7 +37,7 @@ The procedure consists of 11 simple steps:
 10. Open `examples/ubus_tb_top.sv` by double clicking the file in the project explorer. Notice the error markers on the `` `include``s.
 11. Click on the error marker in the margin (with the small light bulb) and select **Add sv to include paths**. This automatically adds the `sv` folder to the include paths.
 
-Your Sigasi Studio UVM project is now ready for use. Feel free to experiment with _hovers_, _open declaration (**F3**), _find references_ and _autocomplete_ (**Ctrl+Space**).
+Your Sigasi Studio UVM project is now ready for use. Feel free to experiment with _hovers_, _open declaration (**F3**)_, _find references_ and _autocomplete_ (**Ctrl+Space**).
 
 ![UVM interface example hover](systemverilog-uvm-demo/uvm_hover.png)
 ![UVM open declaration](systemverilog-uvm-demo/uvm_open_declaration.png)
