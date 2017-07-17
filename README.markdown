@@ -8,6 +8,7 @@ You can find the rendered version at <http://insights.sigasi.com>
 We are using markdown
 
 * [MarkDown tutorial](http://markdowntutorial.com/)
+* [New MarkDown tutorial](http://commonmark.org/help/tutorial/index.html)
 * [MarkDown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ### Links
