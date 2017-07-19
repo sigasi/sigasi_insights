@@ -25,7 +25,7 @@ typing* your code.
 VHDL code **Lint** is defined as code that is strictly correct according
 to the language definition, but still suspicious or problematic.
 Sigasi has a built-in VHDL linter, which provides info about code lint
-in the design. Sigasi’s VHDL linter checks for the following problem*
+in the design. Sigasi’s VHDL linter checks for the following problems:
 
 * Unused declarations
 * Duplicate declarations
@@ -43,6 +43,8 @@ in the design. Sigasi’s VHDL linter checks for the following problem*
 * Port, signal, variable, constant or generic declarations that are never read or written
 * Invalid port associations (incompatible port modes in instantiations)
 * Order of generic and port associations
+* Consistent capitalization of identifiers [link](#capitalization-of-identifiers)
+* Advanced Configuration validation (component mismatch, missing binding, ...)
 
 ## No Linting for Common Libraries {: #linting-common-libraries}
 
