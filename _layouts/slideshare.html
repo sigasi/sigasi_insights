@@ -1,0 +1,49 @@
+{% extends "_base.html" %}
+
+{% block body %}
+
+<div class="container">
+
+  <div class="page-header">
+    {% block title %}
+    <h1>{{this.title}}</h1>
+    <div>
+    {% if this.date %}
+        posted on {{this.date|dateformat}}
+    {% endif %}
+    {% if this.author %}
+        by {{this.author|author}}
+    {% endif %}
+    </div>
+    <div style="margin: 10px 0 10px">
+    {% for tag in this.tags %}
+        <a href="/tag/{{tag}}/" class="btn btn-default btn-xs">{{tag}}</a>
+    {% endfor %}
+    </div>
+    {% endblock %}
+  </div>
+  
+  <center>
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/{{this.key}}" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen>
+    </iframe>
+  </center>
+
+  <div class="row">
+
+    <div class="content">
+      {% block content %}
+      <div class="" role="main">
+        {{this.body}}
+
+        {% if this.comments %}
+          {% include 'cantilis/comments.html' %}
+        {% endif %}
+      </div>
+      {% endblock %}
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
+

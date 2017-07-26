@@ -76,7 +76,7 @@ export SIGASI_LM_LICENSE_FILE=27000@flexnet.sigasi.com
 * Windows (Windows 7 or newer):
 	* [Windows 64 bit](http://download.sigasi.com/flexnet/sigasi-flexnet-win64.zip)
 	* [Windows 32 bit](http://download.sigasi.com/flexnet/sigasi-flexnet-win32.zip)
-* Solaris (on SPARC) [Deprecated. Last supported Sigasi Studio version will be 3.6]:
+* Solaris (on SPARC) \[Deprecated. Last supported Sigasi Studio version will be 3.6]:
 	* [Solaris 64 bit](http://download.sigasi.com/flexnet/sigasi-flexnet-solaris64.zip)
 
 ### Customize License Server settings

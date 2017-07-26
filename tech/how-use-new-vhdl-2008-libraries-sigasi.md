@@ -5,6 +5,7 @@ pager: true
 author: Hendrik Eeckhaut
 date: 2017-07-26
 tags: 
+  - VHDL
   - VHDL-2008
   - Sigasi
 comments: true
