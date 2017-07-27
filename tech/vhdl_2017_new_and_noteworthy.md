@@ -6,8 +6,8 @@ author: Lieven Lemiengre
 date: 2017-07-26
 tags: 
   - VHDL
-  - VHDL-2008
   - VHDL-2017
+  - slideshare
 comments: true
 bannerad: true
 
