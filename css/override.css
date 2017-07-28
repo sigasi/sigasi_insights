@@ -30,13 +30,6 @@
 	color: white;
 }
 
-/* Don't have yellow for emphasis */
-mark {
-	background: transparent;
-	color: inherit;
-	font-style: italic;
-}
-
 /* bullet lists */
 .std-menu > div > ul {
 	list-style: none;
