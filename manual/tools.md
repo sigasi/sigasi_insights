@@ -260,7 +260,7 @@ perform project-wide searches and navigation actions in Sigasi.
 Furthermore, if you add or remove files in the Quartus II project, these
 changes are automatically applied in Sigasi Studio.
 
-*Note:\_ If you want to set up a project independent of Altera Quartus
+*Note:* If you want to set up a project independent of Altera Quartus
 II, please read the documentation on [/manual/projectsetup].
 
 ## Setting the preferred editor
@@ -355,6 +355,6 @@ Right click on the project you want to auto-export in the Project Explorer, and 
 
 ![Auto export CSV file with dependencies](images/auto_export_property_page.png "Auto export CSV file with dependencies")
 
-If you do not set a fixed top level name (i.e. empty _top level name_ in the property page), Sigasi Studio will use the current top level in the [Hierarchy View][views#hierarchy] as input. Note that this only works if the top level belongs to the selected project.
+If you do not set a fixed top level name (i.e. empty *top level name* in the property page), Sigasi Studio will use the current top level in the [Hierarchy View][views#hierarchy] as input. Note that this only works if the top level belongs to the selected project.
 
 This information is stored in `.settings/com.sigasi.hdt.vhdl.ui.prefs` in your project.

@@ -24,12 +24,12 @@ There are three kinds of coding rules:
 
 ## Useful
 
-*Useful* coding rules have an important practical implication. Following these rules reduces some risk or adds some value. For example, adding two registers when crossing clock domains reduces the risk of meta-stability. Sometimes two coding rules contradict each other, even though they are both _useful_. If you encounter a coding rule that violates a useful coding rule, you need to weigh the benefits and risks.
-Rules that are required by the IEEE VHDL standards would obviously be _useful_, but are more accurately described as _imperative_. Even if your current tool set is more lenient than the standards, your code may one day encounter tools that adhere more strictly to the standards.
+*Useful* coding rules have an important practical implication. Following these rules reduces some risk or adds some value. For example, adding two registers when crossing clock domains reduces the risk of meta-stability. Sometimes two coding rules contradict each other, even though they are both *useful*. If you encounter a coding rule that violates a useful coding rule, you need to weigh the benefits and risks.
+Rules that are required by the IEEE VHDL standards would obviously be *useful*, but are more accurately described as *imperative*. Even if your current tool set is more lenient than the standards, your code may one day encounter tools that adhere more strictly to the standards.
 
 ## Arbitrary
 
-*Arbitrary* rules do not have important practical implications. There might be minor implications and subjective implications like aesthetics or readability. Important examples are indentation rules and the choice between CamelCase and underscore_separated.  Many of the most visually obvious coding rules are arbitrary in nature. It does not matter so much which convention you choose. It's just important that you stick to your conventions. There is no use in wasting energy debating arbitrary coding rules. Just stick with the conventions of your project, your team or your client.
+*Arbitrary* rules do not have important practical implications. There might be minor implications and subjective implications like aesthetics or readability. Important examples are indentation rules and the choice between CamelCase and underscore\_separated.  Many of the most visually obvious coding rules are arbitrary in nature. It does not matter so much which convention you choose. It's just important that you stick to your conventions. There is no use in wasting energy debating arbitrary coding rules. Just stick with the conventions of your project, your team or your client.
 
 ## Adverse
 
@@ -40,4 +40,4 @@ I'm sure you don't have any adverse rules in *your* organization, but it is usef
 
 This is what wikipedians call [weasel terms](http://en.wikipedia.org/wiki/Weasel_word). Relevant questions you might ask are: which synthesis tools, and which versions? (Are we using these tools at all?) In which circumstances? Is this something that happened only once? (And are we sure that \[this and that\] was the cause? 
 
-The good thing about style books is that they often grade rules. Some rules are _suggestions_ or _strong suggestions_, while others are in the _must comply_ category. However, the problem with these coding guidelines is that they usually do not explain the _rationale_ behind each of their rules. You cannot asses for yourself if any given rule is useful, arbitrary or adverse. This means you don't know when it is OK to bend or break the rules. Or when to propose an amendment to the rule book.
+The good thing about style books is that they often grade rules. Some rules are *suggestions* or *strong suggestions*, while others are in the *must comply* category. However, the problem with these coding guidelines is that they usually do not explain the *rationale* behind each of their rules. You cannot asses for yourself if any given rule is useful, arbitrary or adverse. This means you don't know when it is OK to bend or break the rules. Or when to propose an amendment to the rule book.

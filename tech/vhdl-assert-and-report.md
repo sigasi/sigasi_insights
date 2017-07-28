@@ -25,7 +25,7 @@ report "this is a serious message" severity warning;
 ```
 
 If the `severity_level` clause is omitted in a report statement it is implicitly assumed to be `note`.
-Report statements are _sequential_ statements. This means they can only be in sequential regions, like inside the statements part of  process or a procedure. They can not be by themselves in an architecture.
+Report statements are *sequential* statements. This means they can only be in sequential regions, like inside the statements part of  process or a procedure. They can not be by themselves in an architecture.
 
 ```vhdl
 entity e0 is
@@ -67,7 +67,7 @@ These are several ways of writing a VHDL assert statement, where `condition` is 
     assert <condition> report <message_string> severity <severity_level>;
 ```
 
-If no `message_string` specified then _"Assertion violation."_ will be used by default. If the `severity_level` clause is omitted in an assert statement it is implicitly assumed to be `error`.
+If no `message_string` specified then *"Assertion violation."* will be used by default. If the `severity_level` clause is omitted in an assert statement it is implicitly assumed to be `error`.
 
 ```vhdl
     assert 3 = 2 + 2;

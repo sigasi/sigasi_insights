@@ -17,8 +17,8 @@ Sigasi Studio 3.2 is build on top of the newly released [Eclipse Neon](https://e
 - Support for **high-DPI** monitors. ("Resolution-based auto-scaling") Everything scales correctly now on high-resolution screens.
 - **Word wrap** in text editors: The workbench toolbar now contains a Toggle Word Wrap button ![word wrap](3.2/wordwrap.png) (Shortcut: Alt+Shift+Y).  
      ![](3.2/word_wrap_editor.png)  
-- Easy **zoom in text editors**: You can now use _Zoom In_ (**Ctrl++** or **Ctrl+=**) and _Zoom Out_ (**Ctrl+-**) commands to increase and decrease the font size.
-- **Automatic Save of dirty editors**: Sigasi Studio now has an option to automatically save your editors when there is _no activity_ for a certain amount of time. This option is disabled by default, but you can enable it on the new _autosave preference page_ (**Preferences > General > Editors > Autosave**). You can also set the autosave interval here.
+- Easy **zoom in text editors**: You can now use *Zoom In* (**Ctrl++** or **Ctrl+=**) and *Zoom Out* (**Ctrl+-**) commands to increase and decrease the font size.
+- **Automatic Save of dirty editors**: Sigasi Studio now has an option to automatically save your editors when there is *no activity* for a certain amount of time. This option is disabled by default, but you can enable it on the new *autosave preference page* (**Preferences > General > Editors > Autosave**). You can also set the autosave interval here.
 - **Hide the window toolbars**: You can use the "Toggle visibility of the window toolbars" command (via Quick Access: **Ctrl+3**) to hide all currently visible toolbars of the current window. Executing the command again reveals these toolbars again. This allows you to maximize the space available for editors and views.
 - **Full Screen Mode**: You can toggle the full Screen mode via the shortcut **Alt+F11** or menu **Window > Appearance > Toggle Full Screen**.
 - If you now open a file type that is not registered in Sigasi Studio, a dialog will ask you which editor to use. You can select a built-in editor or choose an external program.

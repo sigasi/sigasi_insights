@@ -8,7 +8,7 @@ comments: true
 bannerad: true
 ---
 
-Here is a comparison matrix to see which is best suited for you: using Sigasi as an _Eclipse VHDL plugin_ or downloading it as a standalone _VHDL editor_.
+Here is a comparison matrix to see which is best suited for you: using Sigasi as an *Eclipse VHDL plugin* or downloading it as a standalone *VHDL editor*.
 
 <table>
 <tr>

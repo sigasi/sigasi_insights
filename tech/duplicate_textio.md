@@ -23,7 +23,7 @@ If the `Common Libraries` folder in your project only contains the standard fold
 
 ## Customized Common Libraries setup
 
-If you have added extra folders to the `Common Libraries`, you may not want to reset the Common Libraries. (_You will loose your changes!_) Instead, you can edit the project file by hand:
+If you have added extra folders to the `Common Libraries`, you may not want to reset the Common Libraries. (*You will loose your changes!*) Instead, you can edit the project file by hand:
 
 * Open the `.project` file of your project (**Ctrl-Shift-R** and type `.project`)
 * Replace:

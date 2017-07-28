@@ -14,14 +14,14 @@ comments: true
 bannerad: true
 ---
 
-Everybody who has been taught VHDL in college or in a company with senior colleagues has heard the following _"wisdom"_:
+Everybody who has been taught VHDL in college or in a company with senior colleagues has heard the following *"wisdom"*:
 
 > *Pysical types are for simulation only. They cannot be synthesized.*
 > \[commonly heard claim – debunked in this article\]
 
 This is the kind of knowledge was somehow made up in the latter years of the Cold War and was passed down from one generation of digital design engineers to the next. 
 
-Before we investigate this claim, let's examine what VHDL physical types are. A physical type is defined by a range and a number of units. For example, the pre-defined `time` type can have any integer value (the _range_) and has _units_ including `ns`, `us` (microseconds) and even `hr` for hours. Internally, physical values are treated as integers, but the compiler adds some extra checks to make sure you don't mix the wrong physical values. The language definition says that adding, substracting, multiplication and division are always defined on physical types. This means you can add or subtract two values of the same physical type and you can multiply a physical value with an integer value or devide d physical value by an integer value. The result will always be a physical value. If you divide a physical value by another physical value, you get an integer:
+Before we investigate this claim, let's examine what VHDL physical types are. A physical type is defined by a range and a number of units. For example, the pre-defined `time` type can have any integer value (the *range*) and has *units* including `ns`, `us` (microseconds) and even `hr` for hours. Internally, physical values are treated as integers, but the compiler adds some extra checks to make sure you don't mix the wrong physical values. The language definition says that adding, substracting, multiplication and division are always defined on physical types. This means you can add or subtract two values of the same physical type and you can multiply a physical value with an integer value or devide d physical value by an integer value. The result will always be a physical value. If you divide a physical value by another physical value, you get an integer:
 
 ```vhdl
 assert 1 sec = 1000 ms; -- convert units of the same physical type

@@ -27,11 +27,11 @@ VHDL's pedantic syntax checking and data type system were a design decision. The
 ![Write-Inspect-Fix cycle](images/write-inspect-fix.png)
 ![Write-Compile-Fix cycle](images/write-compile-fix.png) 
 
-Sigasi's solution to writing correct data is to shorten the feedback loop. As soon as an engineer types a few characters, the ultra-fast built-in VHDL parser kicks in. Much like a spell checker in word processos, Sigasi marks errors in the code only seconds after they arise. We call this _type-time_ error checking.
+Sigasi's solution to writing correct data is to shorten the feedback loop. As soon as an engineer types a few characters, the ultra-fast built-in VHDL parser kicks in. Much like a spell checker in word processos, Sigasi marks errors in the code only seconds after they arise. We call this *type-time* error checking.
 
 ![Undeclared signal: error is marked as soon as the assignment is written](images/undeclared_signal_0.png)
 
-The type-time compiler has to be very fast, so it does not perform a full analysis. In order to provide even more feedback about your code, Sigasi uses an external compiler for a full analysis. The external compiler is called as soon as you _save_ the file, which is still a lot sooner than with a traditional flow.
+The type-time compiler has to be very fast, so it does not perform a full analysis. In order to provide even more feedback about your code, Sigasi uses an external compiler for a full analysis. The external compiler is called as soon as you *save* the file, which is still a lot sooner than with a traditional flow.
 
 Watch this video about catching errors at type-time and save-time: [/screencasts/save_time_compilation]
 

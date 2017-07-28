@@ -65,6 +65,6 @@ We will also explore other features that are not specific to VHDL.
 * Multiple Search Views
   1. Run a first search (e.g. Find Reference on `std_logic`)
   2. Click the **Pin the Search View** button
-  3. Start a new search. This search will open in a new _Search View_
+  3. Start a new search. This search will open in a new *Search View*
 * Configure project specific settings <http://insights.sigasi.com/manual/linting.html#project-specific-linting-settings>
   

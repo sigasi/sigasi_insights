@@ -29,4 +29,4 @@ How can you enable this feature if you are using a standard Eclipse distribution
 
 ## Note: Enforce the use of keyboard shortcuts
 
-For die hard keyboard fetishists, MouseFeed offers an interesting option in its preference page to _enforce the use of keyboard shortcuts_ (**Preferences > Mousefeed > Action invocation**). If you enable this preference, every time you try to start an action with your mouse that has has a keyboard shortcut, the action will not be executed; instead the popup will show you the shortcut. This way you are forced to learn and use the shortcut.
+For die hard keyboard fetishists, MouseFeed offers an interesting option in its preference page to *enforce the use of keyboard shortcuts* (**Preferences > Mousefeed > Action invocation**). If you enable this preference, every time you try to start an action with your mouse that has has a keyboard shortcut, the action will not be executed; instead the popup will show you the shortcut. This way you are forced to learn and use the shortcut.

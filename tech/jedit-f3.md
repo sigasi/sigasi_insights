@@ -12,7 +12,7 @@ In jEdit one can get a list of all search-results in the current file in a separ
 
 There are multiple, similar 'actions' in Sigasi:
 
-1. Occurrence highlighting: (_enabled by default_) this highlights all other occurrences of the same identifier in the current editor. You can also click on the highlights in the scroll bar to navigate to other occurrences
+1. Occurrence highlighting: (*enabled by default*) this highlights all other occurrences of the same identifier in the current editor. You can also click on the highlights in the scroll bar to navigate to other occurrences
 2. Find references: (**Ctrl+Shift+G** by default). When you use find references, all references to the current identifier are listed in the search view. Note that you can change the shortcuts as you like via **Preferences > General > Keys**
 3. Sigasi also offers multiple ways to search for text. The one you need is **"Find Text in File"**. You can associate a shortcut for it via **Preferences > General > Keys**.
    **Note** that **F3** is by default associated with **"Open Declaration"**, which is the most used action in Sigasi. So I really recommend to also find a good shortcut for this action.

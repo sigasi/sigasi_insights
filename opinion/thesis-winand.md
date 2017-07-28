@@ -15,7 +15,7 @@ bannerad: true
 #Intro
 
 Last academic year (2015-2016), [Winand Seldeslachts](https://be.linkedin.com/in/winandseldeslachts/en) joined Sigasi to work on his masters thesis. For his thesis he investigated a new way to test VHDL code by extending Wavedrom.
-Wavedrom is a simple, textual language that is used to describe and visualized _timing diagrams_.
+Wavedrom is a simple, textual language that is used to describe and visualized *timing diagrams*.
 Winand investigated how Wavedrom files could be used to generate input for VHDL testbenches.
 
 You can read his report below. All sources are available [on GitHub][thesis].

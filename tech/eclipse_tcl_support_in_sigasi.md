@@ -18,7 +18,7 @@ To install the Tcl plugin in Sigasi:
 
 1. Click **Help > Install New Software…**
 2. Enter `http://download.eclipse.org/releases/neon` as update site in the **Work with:** field
-3. When the index of the update is downloaded (this can take a while) enter **tcl** in the _type filter_ text box
+3. When the index of the update is downloaded (this can take a while) enter **tcl** in the *type filter* text box
 4. Select the **Dynamic Languages Toolkit – Tcl Development Tools**
 5. Click through the straightforward, subsequent steps
 
@@ -38,11 +38,11 @@ To verify that the interpreter is working, you can open an interactive Tcl conso
 
 ![](images/install_tcl_console.png)
 
-The next thing you should try is opening a Tcl file and play around. You can test _autocomplete, outline, open declaration,…_
+The next thing you should try is opening a Tcl file and play around. You can test *autocomplete, outline, open declaration,…*
 
 ![](images/install_tcl_demo.png)
 
-To enable all Tcl support features (e.g. run, debug) you need to create a _Tcl project_ (**File > New > Project… > Tcl Project**).
+To enable all Tcl support features (e.g. run, debug) you need to create a *Tcl project* (**File > New > Project… > Tcl Project**).
 To convert an existing project to a Tcl project you need to edit the `.project` file.
 You need to add
 ```

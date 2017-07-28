@@ -6,13 +6,13 @@ date: 2017-05-19
 comments: true
 ---
 
-For those users who want to get early access to the features and bugfixes of upcoming Sigasi Studio releases, we have set up an extra release channel, called "_Sigasi Preview_".
+For those users who want to get early access to the features and bugfixes of upcoming Sigasi Studio releases, we have set up an extra release channel, called "*Sigasi Preview*".
 
 The Sigasi Preview release channel offers more frequent releases than the official releases. This page gives an introduction to the most important changes.
 
 Although these preview releases are less rigorously tested than than the official releases, they are stable enough for daily use.
  
-_If you run into any problems, please let us know_.
+*If you run into any problems, please let us know*.
 
 # Current preview release
 We just released [/releasenotes/sigasi-3.05], so there is nothing to mention here yet.

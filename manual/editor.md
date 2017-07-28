@@ -346,7 +346,7 @@ This includes:
 
 Sigasi Studio's formatter is context based and tries to respect the style of the author. So depending on the original source style, the formatter might make different choices.
 
-One example is the decision to format a _conditional signal assignment_ on one, or multiple lines. Sigasi makes this decision based on the position of the first `else` keyword. If you put the `else` keyword on the first line, the formatter will put everything on one line. If you put the `else` keyword on a new line, the formatter will use multiple lines for the assignment.
+One example is the decision to format a *conditional signal assignment* on one, or multiple lines. Sigasi makes this decision based on the position of the first `else` keyword. If you put the `else` keyword on the first line, the formatter will put everything on one line. If you put the `else` keyword on a new line, the formatter will use multiple lines for the assignment.
 
 ```vhdl
   demo <= (others => '0') when enable = '1'
@@ -423,7 +423,7 @@ You can configure the Verilog version (Verilog or SystemVerilog) via **Window > 
 
 ### Disable Verilog Error Markers
 
-_Note that Sigasi Studio does not cover the entire SystemVerilog grammar yet. So if you are using _'unsupported'_ syntax, you will see lots of incorrect [syntax error markers](#type-time-syntax-error-reporting). You can disable these error markers by pressing **Ctrl-3** and typing `Toggle Verilog error markers`. Next close and re-open all open Verilog editors to force a refresh._
+*Note that Sigasi Studio does not cover the entire SystemVerilog grammar yet. So if you are using *'unsupported'* syntax, you will see lots of incorrect [syntax error markers](#type-time-syntax-error-reporting). You can disable these error markers by pressing **Ctrl-3** and typing `Toggle Verilog error markers`. Next close and re-open all open Verilog editors to force a refresh.*
 
 ## Format
 
@@ -466,4 +466,4 @@ You can specify multiple include paths by separating them with a `;`. All paths 
 
 You can also add an include path by running the quickfix on \``include` errors.
 
-**Ctrl+Click** on _\`defines_ (or **F3**) will lead you to the corresponding declaration. Autocomplete will also offer you a list of all visible _\`defines_.
+**Ctrl+Click** on *\`defines* (or **F3**) will lead you to the corresponding declaration. Autocomplete will also offer you a list of all visible *\`defines*.

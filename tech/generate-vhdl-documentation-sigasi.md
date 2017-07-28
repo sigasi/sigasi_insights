@@ -21,7 +21,7 @@ But although I like the base idea of Doxygen, it has some annoying disadvantages
 * You need to add **special comments** to your VHDL code before any useful documentation can be generated
 * Doxygen does not use a real **VHDL compiler**. So not all VHDL code is supported (e.g. VHDL 2008 features)
 * A lot of work to set up: To create PDFs with basic diagrams, you do no only need to install Doxygen, but also DOT and LaTeX. Especially LaTeX can be a real challenge...
-* The output can be confusing: _"Inheritance diagram"_? _"The output for this **class** was generated ..."_? This terminology makes sense for C++ projects, but not for HDLs.
+* The output can be confusing: *"Inheritance diagram"*? *"The output for this **class** was generated ..."*? This terminology makes sense for C++ projects, but not for HDLs.
 * **Long feedback loop**: the documentation for the entire projects needs to generated before you can inspect the result.
 
 ## Sigasi documentation Generator

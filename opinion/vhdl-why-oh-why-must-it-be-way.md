@@ -19,7 +19,7 @@ VHDL allows you to annotate the closure of a block (like the end of functions, p
 end [X] [X's name]
 ```
 
-That means that for an architecture it is fine to close it with a simple "end" keyword or, if you choose to do so, with a complete "end architecture my_architecture_s_name". 
+That means that for an architecture it is fine to close it with a simple `end` keyword or, if you choose to do so, with a complete `end architecture my_architecture_s_name`.
 
 In contrast, the proper way to close a component or a unit declaration is 
 ```vhdl
@@ -49,4 +49,4 @@ All this is very unfortunate.  It is the cause of that uneasy feeling I always e
 
 So, what do I hope to achieve with this rant?  A redesign of VHDL?  Not only, will it never happen, what is more, it would not be a good idea.  Let VHDL be VHDL but if you ever decide to design a new HDL language, make it simple and consistent and I will salute you, Sir or Madam.  No, the right attitude is to get a good editor, preferably from a company beginning with "Sigas", and let it help you get beyond the petty limitations of your language so you can focus on what is really important: your product.
 
-_Mark Christiaens_
+*Mark Christiaens*

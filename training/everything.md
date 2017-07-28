@@ -8,14 +8,14 @@ comments: true
 
 ## Part 1: VHDL files
 
-The goal of the first part is to get comfortable with the Sigasi Studio VHDL editor. By the end you will be able to _easily detect and fix VHDL syntax issues_, _customize editor preferences_ and _know the basic keyboard shortcuts_.
+The goal of the first part is to get comfortable with the Sigasi Studio VHDL editor. By the end you will be able to *easily detect and fix VHDL syntax issues*, *customize editor preferences* and *know the basic keyboard shortcuts*.
 
 ### Edit
 
 * Open file `part1_edit.vhd` via **File > Open File...**
-* Make the editor _full screen_ (Double click on the tab)
-* Double click again to exit _full screen_ mode
-* Format the VHDL code (**Ctrl+Shift+F**, _Make sure that no text is selected_)
+* Make the editor *full screen* (Double click on the tab)
+* Double click again to exit *full screen* mode
+* Format the VHDL code (**Ctrl+Shift+F**, *Make sure that no text is selected*)
 * Fix all VHDL syntax issues, use the QuickFix where possible (When in doubt, **Hover** over the error Marker)
 
 * Delete a line with **Ctrl+D**
@@ -24,16 +24,16 @@ The goal of the first part is to get comfortable with the Sigasi Studio VHDL edi
 * Autocomplete (**Ctrl+Space**)
   * Name
   * Constant declaration  
-  * `if` statement in a `process` (Use **enter** to exit the _template mode_)
+  * `if` statement in a `process` (Use **enter** to exit the *template mode*)
   * `if generate` in an `architecture`  
 * Block select (**Shift+Alt+A**, or button in toolbar)
   * Delete a Block
   * Add content on multiple lines 
-* Enable _Show whitespace_ (¶-button) and type some _tabs_ and _spaces_ to see the difference
+* Enable *Show whitespace* (¶-button) and type some *tabs* and *spaces* to see the difference
 * Find & Replace  
 	* Experiment with **Ctrl+F**, e.g. find all `TODO`'s
 	* Use **Ctrl+K** to find the next occurrence of the current selection
-	* Use **Ctrl+J** (and start typing) for an inline, incremental search. _Look at the status bar to see what you have already typed_.
+	* Use **Ctrl+J** (and start typing) for an inline, incremental search. *Look at the status bar to see what you have already typed*.
 * Use **Quick Access** to convert an identifier to UpperCase (Select the identifier, type `upper` in the Quick Access Field in the Toolbar and confirm with **Enter**)
 * Mess up the indentation of a part of the source code, select it and **format only the selection**.
 
@@ -53,8 +53,8 @@ Preferences can be set via **Window > Preferences**.
 
 * Open file `part1_custom.vhd`
 * Switch to VHDL 2008 (**Preferences > Sigasi > VHDL**) and note that the syntax error get resolved
-* Tabs or spaces ( Use the search box in the preference dialog and type `tab`) Use _Show whitespace_ to check.
-* Uppercase keywords (**Preferences > Sigasi > VHDL > Formatting**) (Use _format_ to check)
+* Tabs or spaces ( Use the search box in the preference dialog and type `tab`) Use *Show whitespace* to check.
+* Uppercase keywords (**Preferences > Sigasi > VHDL > Formatting**) (Use *format* to check)
 
 ### Optional Extra tasks
 
@@ -64,7 +64,7 @@ Preferences can be set via **Window > Preferences**.
 * Drag and drop a file from your file explorer in the Editor part of Sigasi Studio
 * Create a new file  (**File > New External File**)
 * Outline: Figure out what *Link with editor* button (⇆) does
-* Add a keyboard shortcut preference for _show whitespace_ (Search for the **Keys** preference page)
+* Add a keyboard shortcut preference for *show whitespace* (Search for the **Keys** preference page)
 
 <p style="page-break-after:always;"></p>
 
@@ -141,7 +141,7 @@ As an extra, you will learn how to efficiently work with Finite State Machines.
 * Set the project to library `uart_lib` (right click, **Set Library**)  
   Check the library annotations in the project explorer
 * Add library `vunit_lib`:
-  * Drag and drop the `vunit_lib` folder from you File System Explorer (e.g.: Windows Explorer, Mac Finder, Nautilus) into the `Common Libraries` folder (in the Project explorer). Choose the option to _link to files and folders_.
+  * Drag and drop the `vunit_lib` folder from you File System Explorer (e.g.: Windows Explorer, Mac Finder, Nautilus) into the `Common Libraries` folder (in the Project explorer). Choose the option to *link to files and folders*.
   * Set the library to `vunit_lib`  
 * Set the library for the test files (`uart/src/test`). Read the source code for the library name.
 * One more library is not correctly set. Try to fix this. (Tip: the sources are already in the project)
@@ -218,7 +218,7 @@ We will also explore other features that are not specific to VHDL.
 * Multiple Search Views
   1. Run a first search (e.g. Find Reference on `std_logic`)
   2. Click the **Pin the Search View** button
-  3. Start a new search. This search will open in a new _Search View_
+  3. Start a new search. This search will open in a new *Search View*
 * Configure project specific settings <http://insights.sigasi.com/manual/linting.html#project-specific-linting-settings>
   
 <p style="page-break-after:always;"></p>

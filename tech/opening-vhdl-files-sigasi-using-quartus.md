@@ -27,7 +27,7 @@ Sigasi will now start and find a workspace (the place where all of your Sigasi m
 
 ## First time Sigasi sees your Quartus project.
 
-When you double-click a VHDL file, Quartus (as of version 12.1) opens Sigasi and passes three bits of information: (1) the file (2) the line number and (3) the project. The first time you open a file in a given project, Sigasi needs to _import_ your project.
+When you double-click a VHDL file, Quartus (as of version 12.1) opens Sigasi and passes three bits of information: (1) the file (2) the line number and (3) the project. The first time you open a file in a given project, Sigasi needs to *import* your project.
 
 ![Import Quartus project](images/import_quartus_project.png) 
 

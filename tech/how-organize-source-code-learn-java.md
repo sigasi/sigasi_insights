@@ -33,7 +33,7 @@ c:\projectdir1\com\sigasi\reusable\HelloUtils.java
 c:\projectdir2\com\sigasi\example\HelloWorld.java
 ```
  
-The only thing a Java tool needs to know to process this aggregated project, is the root directories of each subproject. In this case `c:\projectdir1` and `c:\projectdir1`. This way, you do not have to list which files should be included or excluded in your build. The convention is simple: _all_ files will be compiled.
+The only thing a Java tool needs to know to process this aggregated project, is the root directories of each subproject. In this case `c:\projectdir1` and `c:\projectdir1`. This way, you do not have to list which files should be included or excluded in your build. The convention is simple: *all* files will be compiled.
 
 Note that package names start with internet domain names, in inverse order (here: `sigasi.com`). This avoids name clashes, since each organization can create its own package structure within its own domain.
 

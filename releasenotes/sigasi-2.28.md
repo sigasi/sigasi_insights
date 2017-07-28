@@ -19,7 +19,7 @@ The *dependencies view*: and the CSV [/manual/tools#export] feature now also tak
 ## Check size in array assignments 
 \[VHDL; Sigasi Premium Desktop and Premium Doc\]
 
-_There are *2* hard problems in computer science: *caching*, *naming*, and *off-by-1 errors*_ — [Twitter wisdom](https://twitter.com/codinghorror/status/506010907021828096)
+*There are *2* hard problems in computer science: *caching*, *naming*, and *off-by-1 errors** — [Twitter wisdom](https://twitter.com/codinghorror/status/506010907021828096)
 
 Because it is so easy to get the size wrong in array assignments —especially when you are working with *generics*—, we developed a new VHDL design check to catch these mistakes as early as possible.  
 

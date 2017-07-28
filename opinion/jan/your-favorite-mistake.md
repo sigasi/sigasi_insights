@@ -22,7 +22,7 @@ have been better spent on handling sub-micron design, testability
 issues, or even a new type of HDL that had significantly more
 capabilities than what Verilog and VHDL offer today?
 >
-> _- Joe Costello, then the CEO of Cadence, in his 1995 OVI keynote_
+> *- Joe Costello, then the CEO of Cadence, in his 1995 OVI keynote*
 
 There you have it: the CEO of the dominant EDA company at the time called your favorite HDL a mistake. In those years, Verilog and VHDL were the main HDL contenders, and Cadence dominated the Verilog simulation market. So what Mr. Costello really was saying is that a monopoly for Verilog (and his company) would be in the broader interest of the industry. I don't remember anymore, but it's easy to imagine how the Verilog and VHDL camp must have reacted. More significantly however, I don't recall that anyone warned about the economic consequences of such a scenario: the fact that a monopoly is generally a really bad idea.
 

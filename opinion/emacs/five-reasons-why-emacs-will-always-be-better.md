@@ -12,7 +12,7 @@ bannerad: true
 ---
 
 
-In the past months, we have made large efforts to [make Emacs obsolete](.). After enquiring on some Emacs-friendly newsgroups, I can only conclude that we have indeed offered a better solution than Emacs, in _most_ ways. 
+In the past months, we have made large efforts to [make Emacs obsolete](.). After enquiring on some Emacs-friendly newsgroups, I can only conclude that we have indeed offered a better solution than Emacs, in *most* ways. 
 
 Of course, you can't win every battle and you probably shouldn't even try. Here are some things at which Emacs will always be better. We're not even going to try.
 
@@ -23,7 +23,7 @@ Of course, you can't win every battle and you probably shouldn't even try. Here 
 Twenty years ago, Emacs was one of the largest and slowest editors around. But for the power editing features that Emacs enabled, the users accepted the somewhat slower response time and larger memory requirements.
 
 The same is happening today. We do spend a lot of engineering effort on speed performance and memory usage. But you cannot do more computations and offer cooler features without a cost. It just takes more time and memory.
-If you try to run Emacs on a laptop you bought five years ago for $500, you'll be fine. If you want to run Sigasi on the same laptop, you'll have to do what Emacs users had to do twenty years ago: _buy a decent computer_.
+If you try to run Emacs on a laptop you bought five years ago for $500, you'll be fine. If you want to run Sigasi on the same laptop, you'll have to do what Emacs users had to do twenty years ago: *buy a decent computer*.
 
 ## 2. Complete user-configurability
 
@@ -35,7 +35,7 @@ You're going to need X11 forwarding.
 
 ## 4. Win the hearts of the Emacs community
 
-We can't _make_ you love us. We can only build better technology and hope you'll join us.
+We can't *make* you love us. We can only build better technology and hope you'll join us.
 
 ## 5. Number five
 

@@ -33,12 +33,12 @@ Comments are meant to clarify things. If they are written well, they have their 
 
 ### Unused declarations
 
-Declarations of signals, data types, constants or other things that are never used later on have no value. They are confusing to the reader (_Why is this here?_) and should be avoided or removed from your code.
+Declarations of signals, data types, constants or other things that are never used later on have no value. They are confusing to the reader (*Why is this here?*) and should be avoided or removed from your code.
 
 ### Superfluous "others" in case statements
 
-In a state machine with enumerated states you usually cover all states explicitly in a _case_ statement. If you do this, there is [very little reason to add a `when others` clause](/tech/vhdl-case-statements-can-do-without-others.html).
-The only reason for writing `when others` is your synthesis tool uses this information for recovering from an illegal state _and_ you need this recovery for some reason. Ask yourself these questions: Does my design need to recover from an illegal state (usually military, safety-critical or radiation sensitive application)? Does my synthesis tool use the "others" clause for recovering? (Some do, some don't – read the documentation and/or inspect the synthesis results!). If you find yourself in a situation where you want to use a `when others` clause, make sure that there is recovery code there.
+In a state machine with enumerated states you usually cover all states explicitly in a *case* statement. If you do this, there is [very little reason to add a `when others` clause](/tech/vhdl-case-statements-can-do-without-others.html).
+The only reason for writing `when others` is your synthesis tool uses this information for recovering from an illegal state *and* you need this recovery for some reason. Ask yourself these questions: Does my design need to recover from an illegal state (usually military, safety-critical or radiation sensitive application)? Does my synthesis tool use the "others" clause for recovering? (Some do, some don't – read the documentation and/or inspect the synthesis results!). If you find yourself in a situation where you want to use a `when others` clause, make sure that there is recovery code there.
 
 ### Assertions
 

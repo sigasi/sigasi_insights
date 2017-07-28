@@ -15,7 +15,7 @@ Setting up a SystemVerilog project in Sigasi Studio is easy. First you add all y
 
 Sigasi Studio follows the Eclipse approach in setting up projects. This means that there is a lot of flexibility, but in most cases it is a matter of pointing Sigasi Studio to the correct source folder. If you want to exclude some SystemVerilog source files from your project, right click on the source files and select *Exclude from build* (This also works for folders).
 
-If you are using Verilog Preprocessor includes, and the include files are not next to your source files, you also have to set _include paths_. The most convenient way to configure this, is with a _Quick Fix_: Open the source file with the `` `include`` directive, click on the error marker, and select the suggested fix.
+If you are using Verilog Preprocessor includes, and the include files are not next to your source files, you also have to set *include paths*. The most convenient way to configure this, is with a *Quick Fix*: Open the source file with the `` `include`` directive, click on the error marker, and select the suggested fix.
 
 # Example: Opening the SCR1, open-source RISC-V project from GitHub
 
@@ -28,9 +28,9 @@ If you already have cloned the project on your computer, follow these steps:
 1. Select **File > Open Project from File System...**, click **Directory...** and browse to the location of the source files (in my case this is `/Users/heeckhau/git/scr1`).
 ![Import project](systemverilog-project-demo/import_wizard.png)
 2. Click **Finish**
-3. Open any SystemVerilog source file (e.g. `src/scr1_memory_tb_ahb.sv`) and confirm that you want to add _Sigasi's (System)Verilog support_ to the project.
+3. Open any SystemVerilog source file (e.g. `src/scr1_memory_tb_ahb.sv`) and confirm that you want to add *Sigasi's (System)Verilog support* to the project.
 ![Add SystemVerilog support](systemverilog-project-demo/add_verilog_support.png)
-4. Click on the error marker (with the light bulb decorator) next to the \`include directive and select _Add 'src/includes' to include paths._.
+4. Click on the error marker (with the light bulb decorator) next to the \`include directive and select *Add 'src/includes' to include paths.*.
 ![Use the quickfix to configure the include path](systemverilog-project-demo/quickfix_include.png)
 
 ## Clone the project using the Git plugin
@@ -50,7 +50,7 @@ Sigasi Studio offers [Git](https://git-scm.com/) support via the [EGit plugin](h
 
 ## Remarks
 
-* In most cases it is recommended to _exclude_ include files from the build, because often they are not real SystemVerilog design files. You can easily do this for the SCR1 project by right clicking the `src/includes` folder and selecting **Exclude from build**. (If you accidentaly exclude the wrong file, you can add it again by right clicking the file and selecting **Set Library > Work**).
+* In most cases it is recommended to *exclude* include files from the build, because often they are not real SystemVerilog design files. You can easily do this for the SCR1 project by right clicking the `src/includes` folder and selecting **Exclude from build**. (If you accidentally exclude the wrong file, you can add it again by right clicking the file and selecting **Set Library > Work**).
 * The project information is stored in:
     * The `.project` file, it describes which files belong to the project
     * The `.library_mapping.xml` file, it describes the project's library information (and excluded files)

@@ -16,7 +16,7 @@ bannerad: true
 There are two largely accepted ways to detect clock edges, and many style books prescribe or prefer one over the other. 
 Let's investigate.
 
-This article deals with edge detection in _synthesizable_ code, not with behavioral code as found in test benches and behavioral models.
+This article deals with edge detection in *synthesizable* code, not with behavioral code as found in test benches and behavioral models.
 
 ## Old style
 
@@ -24,14 +24,14 @@ What I call the old style is:
 ```vhdl
 if clk'event and clk='1' then -- old style: outdated
 ```
-This coding style is accepted by the _IEEE Standard for VHDL Register Transfer Level (RTL) Synthesis_ (IEEE 1076.6-1999), so all compliant synthesis tools should be able to handle this. However, there are some loopholes for simulators. This condition will also trigger when the `clk` signal changes from `'U'` to `'1'`, or even from `'H'` to `'1'`. These events have no meaning in physical hardware, but they are perfectly legal in simulated VHDL code. Hence, this coding style introduces a discrepancy between simulation and synthesized hardware. 
+This coding style is accepted by the *IEEE Standard for VHDL Register Transfer Level (RTL) Synthesis* (IEEE 1076.6-1999), so all compliant synthesis tools should be able to handle this. However, there are some loopholes for simulators. This condition will also trigger when the `clk` signal changes from `'U'` to `'1'`, or even from `'H'` to `'1'`. These events have no meaning in physical hardware, but they are perfectly legal in simulated VHDL code. Hence, this coding style introduces a discrepancy between simulation and synthesized hardware. 
 
-Another argument against the old style edge detection is that it does not clearly express the intent of the VHDL designer. Checking for an _event_ makes sense in the domain of discrete event simulators, but is utter nonsense both in the (more low-level) domain physical electronics and in the (more high-level) domain of interacting state machines. Code is more readable when you use the `rising_edge` and `falling_edge` functions for edge detection.
+Another argument against the old style edge detection is that it does not clearly express the intent of the VHDL designer. Checking for an *event* makes sense in the domain of discrete event simulators, but is utter nonsense both in the (more low-level) domain physical electronics and in the (more high-level) domain of interacting state machines. Code is more readable when you use the `rising_edge` and `falling_edge` functions for edge detection.
 
 In VHDL 87, this was the only way to detect edges. VHDL 93 has introduced the `rising_edge` and `falling_edge` functions for edge detection.
-For more than twenty years, the _old style_ edge detection has been [outdated](/tech/coding-conventions.html#adverse).
+For more than twenty years, the *old style* edge detection has been [outdated](/tech/coding-conventions.html#adverse).
 
-## Rising_edge and Falling_edge
+## Rising\_edge and Falling\_edge
 
 In the VHDL 93 standard, the IEEE introduced two functions which are meant to be used for clock edge detection: `rising_edge` and `falling_edge`. 
 
@@ -50,7 +50,7 @@ FUNCTION rising_edge(SIGNAL s : std_ulogic) RETURN BOOLEAN IS
 ## Rising or falling?
 
 If you use a single edge, by convention, you should use the *rising edge*. This is [arbitrary](/tech/coding-conventions.html#arbitrary), but universally accepted. If you make a different choice, people will be surprised and confused.
-Of course, if you have a design with two clock edges, you also need the falling edge. If your process uses both edges (to instantiate _dual edge triggered_ flip-flops), you should write:
+Of course, if you have a design with two clock edges, you also need the falling edge. If your process uses both edges (to instantiate *dual edge triggered* flip-flops), you should write:
 ```vhdl
 if rising_edge(clk) or falling_edge(clk) then
 ```
@@ -63,7 +63,7 @@ you end up with the same problems as in the [#old-style]. Moreover, this is not 
 
 ## Other rules
 
-Here are some more coding rules that are required by IEEE 1076.6-1999, and hence should be considered [imperative](/tech/coding-conventions.html#useful).
+Here are some more coding rules that are required by IEEE 1076.6-1999, and hence should be considered [imperative]([/tech/coding-conventions#useful)].
 
 No enable conditions in the same if statement. Do not write:
 ```vhdl

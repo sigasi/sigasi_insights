@@ -17,7 +17,7 @@ It is useful to analyze code that is only partly finished, code that still has e
 
 ## Your code is (almost) never correct
 
-When you write VHDL code, it is broken 99% of the time. While you are adding or removing code, while you are typing new statements your code is not syntactically correct. Only when you save and press compile, your VHDL code is correct (or so you hope). This means that traditional parsers are useless for your code _most_ of the time.
+When you write VHDL code, it is broken 99% of the time. While you are adding or removing code, while you are typing new statements your code is not syntactically correct. Only when you save and press compile, your VHDL code is correct (or so you hope). This means that traditional parsers are useless for your code *most* of the time.
 
 ## Why compile broken VHDL code?
 

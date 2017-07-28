@@ -15,7 +15,7 @@ Did you ever want to suppress warnings in Eclipse? For Java, there is the `@Supp
 
 [Sigasi](http://www.sigasi.com) is planning a new Eclipse plugin, called the [Eclipse Marker Manager](http://www.markermanager.com), that helps you deal with Problem Markers (warnings and errors). 
 
-You can **export your warnings to HTML** and you will be able to suppress warnings in _any_ programming language, using directives in comments:
+You can **export your warnings to HTML** and you will be able to suppress warnings in *any* programming language, using directives in comments:
 
 ```vhdl
 architecture STR of testbench is

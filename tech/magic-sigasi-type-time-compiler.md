@@ -11,11 +11,11 @@ comments: true
 bannerad: true
 ---
 
-_How does your Sigasi editor gather all **information** on your projects to enable features like navigation, outline, hovering, linting, refactorings ...? And how did they make it so *fast* that it works while you type? And how does Sigasi keeps its **memory** footprint under control?_
+*How does your Sigasi editor gather all **information** on your projects to enable features like navigation, outline, hovering, linting, refactorings ...? And how did they make it so *fast* that it works while you type? And how does Sigasi keeps its **memory** footprint under control?*
 
-This blog post tries to shed some light on the apparent magic behind Sigasi 2.x. In this blog I explain Sigasi's _datastructures_. A follow-up blog will explain how these datastructures are built. This should make you understand what the messages in the progress view mean. This will help you better understand what is going on.
+This blog post tries to shed some light on the apparent magic behind Sigasi 2.x. In this blog I explain Sigasi's *datastructures*. A follow-up blog will explain how these datastructures are built. This should make you understand what the messages in the progress view mean. This will help you better understand what is going on.
 
-Sigasi builds a _Model_ —an internal representation— of your project, and it updates and refines this Model while processing your VHDL files. The Model is a structured, high level representation of your VHDL code. It serves as input for all of Sigasi's features: Autocomplete, Open Declaration, Format ... Whenever you change your code, the Model changes too. And all individual features are notified of these changes.
+Sigasi builds a *Model* —an internal representation— of your project, and it updates and refines this Model while processing your VHDL files. The Model is a structured, high level representation of your VHDL code. It serves as input for all of Sigasi's features: Autocomplete, Open Declaration, Format ... Whenever you change your code, the Model changes too. And all individual features are notified of these changes.
 
 The complete Model of large VHDL projects can be very large.  A rule of thumb for the size of the complete Model is to multiply the size of the original VHDL source by a factor of 60.  To keep memory usage under control, the Model is, at any time, only partially loaded in memory at any time.
 

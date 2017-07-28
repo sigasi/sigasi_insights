@@ -86,7 +86,7 @@ Several commentators to my previous post, [/opinion/jan/wasting-real-time-zero-t
 
 First, the nonblocking assignments were there for a good reason that can be inferred from the context. The original `DUT` was a synthesizable FSM. For  RTL-style FSM modeling in a clocked process, nonblocking assignments to the output ports are mandatory. Note that writing testbenches for that kind of Verilog modules is a very common situation.
 
-Typically, nonblocking assignments are used in conjunction with a clock. (Actually, the fact that they _only_ work reliably with a clock is exactly what I am complaining about.) By simplifying the `DUT` code so much that it doesn’t use a clock, I may have caused some confusion. However, let me be clear: the Verilog simulation algorithm does not know about clocks. It puts nonblocking update events in a separate queue, that is all.
+Typically, nonblocking assignments are used in conjunction with a clock. (Actually, the fact that they *only* work reliably with a clock is exactly what I am complaining about.) By simplifying the `DUT` code so much that it doesn’t use a clock, I may have caused some confusion. However, let me be clear: the Verilog simulation algorithm does not know about clocks. It puts nonblocking update events in a separate queue, that is all.
 
 Even if blocking assignments were an option, they would not fix the issue. The `DUT` code would become:
 
@@ -104,7 +104,7 @@ To show that this code  is also nondeterministic, we don’t have to refer to ev
 * the statements in a begin-end block in a process are guaranteed to execute in the order written
 * the statements in a Verilog process may be interleaved by statements from other processes
 
-See _"Thomas & Moorby’s, The Verilog Hardware Description Language, 5th edition, p. 225"_
+See *"Thomas & Moorby’s, The Verilog Hardware Description Language, 5th edition, p. 225"*
 
 One simulation scenario that complies with these rules is:
 
@@ -130,7 +130,7 @@ Another one is:
     ...
 ```
 
-Clearly, the assertions in the two scenario’s will behave differently. Hence, the code is nondeterministic. _QED_
+Clearly, the assertions in the two scenario’s will behave differently. Hence, the code is nondeterministic. *QED*
 
 In summary, the example is nondeterministic regardless of the type of the assignments. The problem with either type is very similar, and the possible fixes are the same: reversing the order of the assignments, or suspending the `TEST` process before the assertion.
 
@@ -146,4 +146,4 @@ Likewise, when a commentator asserts that the issue does not exist for “proper
 
 ## Where are the benefits?
 
-In the present post and the previous one I have analyzed the costs associated with nondeterminism. However, for a fair assessment we should also consider the potential benefits.  Therefore, my question is the following: suppose Verilog would have been deterministic, what would you have missed? In other words, how is the quality of your design methodology better _thanks to_ nondeterminism?  How does it _help_ you with modeling, verification and creating better chips? Absent such benefits, the conclusion must be that a deterministic Verilog would have been a much better Verilog.
+In the present post and the previous one I have analyzed the costs associated with nondeterminism. However, for a fair assessment we should also consider the potential benefits.  Therefore, my question is the following: suppose Verilog would have been deterministic, what would you have missed? In other words, how is the quality of your design methodology better *thanks to* nondeterminism?  How does it *help* you with modeling, verification and creating better chips? Absent such benefits, the conclusion must be that a deterministic Verilog would have been a much better Verilog.

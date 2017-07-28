@@ -14,11 +14,11 @@ bannerad: true
 
 **Disclaimer 1:** This is in no way a crack; we're not messing with ModelSim! You'll need a legal copy and a valid license, which you can get from your Mentor Graphics sales rep, or (a limited version, free of charge) from the [Altera website](http://www.altera.com/products/software/quartus-ii/web-edition/qts-we-index.html).
 
-**Disclaimer 2:** Consider this semi-advanced stuff. I'm sharing this idea because I think it will be useful to other people, it is _not_ a supported Sigasi feature.
+**Disclaimer 2:** Consider this semi-advanced stuff. I'm sharing this idea because I think it will be useful to other people, it is *not* a supported Sigasi feature.
 
 **Disclaimer 3:** I hate disclaimers!
 
-We will need a computer with SSH acces that has a working version of ModelSim installed. I suggest you use a _Linux_ computer because Mac OSX and Linux are both Unix-like systems. If you use a Windows compile server, you may run in to troubles with the path format (backslashes on Windows!). You can either use a remote computer, or set up a virtual machine (using something like [Parallels](http://www.parallels.com/products/desktop/) or [VirtualBox](http://www.virtualbox.org/) on your Mac.
+We will need a computer with SSH acces that has a working version of ModelSim installed. I suggest you use a *Linux* computer because Mac OSX and Linux are both Unix-like systems. If you use a Windows compile server, you may run in to troubles with the path format (backslashes on Windows!). You can either use a remote computer, or set up a virtual machine (using something like [Parallels](http://www.parallels.com/products/desktop/) or [VirtualBox](http://www.virtualbox.org/) on your Mac.
 
 You will need the following info:
 
@@ -85,7 +85,7 @@ Now all you need to do, is tell Sigasi (or whatever tool you are using) to use `
 
 ## Other tools and Feedback
 
-All of this will work just as well with _Xilinx ISim_, or with the _Altera Quartus II_, or for a million other EDA and non-EDA tools. You can extend the script to copy the compiled files back to your local computer, or you can use a shared folder instead of `rsync`. Feel free to improve and share.
+All of this will work just as well with *Xilinx ISim*, or with the *Altera Quartus II*, or for a million other EDA and non-EDA tools. You can extend the script to copy the compiled files back to your local computer, or you can use a shared folder instead of `rsync`. Feel free to improve and share.
 
 ## Setting up Sigasi
 

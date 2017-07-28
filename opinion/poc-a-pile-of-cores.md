@@ -22,7 +22,7 @@ we improved PoC's VHDL source files with the help of Sigasi Studio.
 
 ## The Way to Git and Open Source
 
-In the past years, the _VLSI Design, Diagnostics and Architecture_ group
+In the past years, the *VLSI Design, Diagnostics and Architecture* group
 developed a lot of "IP cores". To organize this unstructured set of HDL
 designs, Thomas B. Preußer and Martin Zabel, created a CVS repository called
 *PoC*. The repository grew over the years to a collection of basic HDL

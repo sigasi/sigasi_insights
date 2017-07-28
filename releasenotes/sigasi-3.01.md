@@ -20,7 +20,7 @@ To enable OneSpin, make sure the `$ONESPINROOT` environment variable is set. Nex
 
 ![Onespin Save-Time Integration](3.01/onespin_console.png "OneSpin Save-Time Integration")
 
-If the OneSpin toolchain is enabled and if you have set a _top level_ (VHDL only), you can run the **OneSpin Consistency Checks** on your hierarchy. 
+If the OneSpin toolchain is enabled and if you have set a *top level* (VHDL only), you can run the **OneSpin Consistency Checks** on your hierarchy. 
 
 ![Run Onespin Consistency Checks](3.01/onespin_consistency_checks.png "Run OneSpin Consistency Checks")
 
@@ -33,7 +33,7 @@ Sigasi Studio now also checks the vector width in instantiation port maps:
  
 ![Check vector width in instantiations](3.01/instantiations_vector_width.png "Check vector width in instantiations")
 
-Just like the [_width check_ in instantiations][/manual/linting#vector-width-in-assignments-and-port-maps], this check calculates with generic values **symbolically** (and does not work with elaborated generic constants).
+Just like the [*width check* in instantiations][/manual/linting#vector-width-in-assignments-and-port-maps], this check calculates with generic values **symbolically** (and does not work with elaborated generic constants).
 
 ## Verilog improvements
 
@@ -48,7 +48,7 @@ Just like the [_width check_ in instantiations][/manual/linting#vector-width-in-
 
 ## Other new and noteworthy improvements
 
-* Improved License error messages (e.g. _all licenses are in use_)
+* Improved License error messages (e.g. *all licenses are in use*)
 * Initial support for **type generics** in **packages** \[VHDL 2008]
 * An autocomplete template for **Finite State Machines**  
   ![Autcomplete template for Finite State Machines](3.01/fsm_autocomplete.png)
@@ -56,7 +56,7 @@ Just like the [_width check_ in instantiations][/manual/linting#vector-width-in-
 
 ## Bug fixes
 
-- ticket 3333 : Unexpected _unwritten_ warning when alias for procedure is used
+- ticket 3333 : Unexpected *unwritten* warning when alias for procedure is used
 - ticket 3475 : Skip encrypted VHDL code (```protect begin_protected`` → ```protect end_protected``)
 ![Ignore encrypted VHDL](3.01/encrypted_vhdl.png "Ignore encrypted VHDL")
 - ticket 3535 : Unexpected dead code warning

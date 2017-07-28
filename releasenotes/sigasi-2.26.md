@@ -12,7 +12,7 @@ The Sigasi 2.26 release brings better *Verilog* and *Mixed language* support, an
 
 We significantly improved the Verilog and Mixed language support in Sigasi 2.26. 
 
-* All ports and generics/parameters in module instantiations are now linked. This enables _hovers_, _'open declaration'_ and _search_.
+* All ports and generics/parameters in module instantiations are now linked. This enables *hovers*, *'open declaration'* and *search*.
 ![Mixed language instantiations](2.26/mixed-language.png "Mixed language instantiations")
 * Better hovers in Verilog
 ![Verilog hover](2.26/hover-verilog.png "Verilog hover")
@@ -35,7 +35,7 @@ In instantiations you only have to specify input *ports* without a default value
 ## Other new and noteworthy improvements
 
 * We extended our import scripts to import *Xilinx ISE* and *Mentor Graphics HDL Designer* projects: "More info":/content/importing-xilinx-ise-project-sigasi
-* Automatically try to check out a _Premium Doc_ license when a _Premium Doc_ feature is activated \[Premium\]
+* Automatically try to check out a *Premium Doc* license when a *Premium Doc* feature is activated \[Premium\]
 * The offline update site now also contains the Premium features \[Premium\]
 
 ## Bugfixes

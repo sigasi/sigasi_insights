@@ -100,7 +100,7 @@ Yes! You can find the details on [/tech/preview].
 
 ## Same license for Plugin and Standalone
 
-If you purchase a Sigasi Studio license, you can use this for either the _Plugin version_, or the _Standalone version_, or _both_.
+If you purchase a Sigasi Studio license, you can use this for either the *Plugin version*, or the *Standalone version*, or *both*.
 If you have floating licenses, each running instance of the Sigasi application or the Sigasi plugin will check out one floating license.
 
 ## Do you sell floating licenses?
@@ -173,7 +173,7 @@ The easiest way to avoid getting these pop ups --and gain a good deal of develop
 
 With **Block Selection Mode**, you can easily insert the same text on multiple lines. This works great for regular text and spaces, but not for **tabs**. When you press **Tab** the entire line will indent an extra level to the right (instead of inserting a tab character).
 
-This was a design decision because in _most cases you do not want tabs inside your code_ (except for indentation) because different tab width settings break your vertical alignment. We recommend to stick to Sigasi's default formatting rules and use the **Format action** instead.
+This was a design decision because in *most cases you do not want tabs inside your code* (except for indentation) because different tab width settings break your vertical alignment. We recommend to stick to Sigasi's default formatting rules and use the **Format action** instead.
 
 If you still need to insert tabs in Block Selection Mode, you should **copy** a tab character first and subsequently **paste** it into the Block Selection.
 
@@ -212,7 +212,7 @@ See [/manual/config#Font Size].
 
 ## Sigasi keeps compiling everything while I am trying to configure my VHDL Libraries
 
-While you are configuring your libraries (mapping and unmapping files), the built-in compiler may trigger a full rebuild several times. In order to avoid this, and make Sigasi more responsive while you configure your libraries, you can _turn of auto...
+While you are configuring your libraries (mapping and unmapping files), the built-in compiler may trigger a full rebuild several times. In order to avoid this, and make Sigasi more responsive while you configure your libraries, you can turn of auto...
 
 ## How can I change the default key bindings?
 
@@ -242,7 +242,7 @@ You can find more info on: [here](http://www.sigasi.com/content/how-avoid-absolu
 
 In **Window > Preferences > General > Appearance**, select **Dark** in the **Theme** field. Restart to apply the settings in all windows.
 
-If you want a _fully black background in the editor_, right click in the editor view and select **Preferences...**, next navigate to **General > Editors > Text Editors**. In the **Appearance color options**, select **Background color** and next click the **Color** button to select your preferred editor background color.
+If you want a *fully black background in the editor*, right click in the editor view and select **Preferences...**, next navigate to **General > Editors > Text Editors**. In the **Appearance color options**, select **Background color** and next click the **Color** button to select your preferred editor background color.
 
 If you encounter problems with button text and colors on RedHat (and CentOS), use a dark OS theme like 'AdwaitaDark'. Sigasi Studio then inherits the dark buttons from the OS theme.
 
@@ -276,7 +276,7 @@ The Sigasi Pro linting functionality is aimed to free up time wasted in code rev
 The answer to this question is not straightforward. However, some examples may help. We can implement (but are in not limited to) the following types of custom linting rules:
 
 * Naming conventions (e.g. constants should be in capitals, signals should start with "s",...)
-* Deprecated libraries, data types, constructs (e.g. don’t use block statements; don’t use std_logic_unsigned,...)
+* Deprecated libraries, data types, constructs (e.g. don’t use block statements; don’t use `std_logic_unsigned`,...)
 * Project structure, file names (e.g. an entity should be in a file named “_e.vhd”)
 * Required file headers
 * Maximum sizes of files, processes,...
@@ -289,7 +289,7 @@ We cannot implement overly complex or fuzzy requirements, like:
 
 * Post-synthesis checks
 * CDC checks
-* Fuzzy requirements, like: _"Entities should be sufficiently commented."_ (How can an algorithm decide what is sufficient?)
+* Fuzzy requirements, like: *"Entities should be sufficiently commented."* (How can an algorithm decide what is sufficient?)
 
 If you get in touch with us, we will evaluate your coding rules to determine which rules we can implement.
 
@@ -465,7 +465,7 @@ If you installed Sigasi in an older version of Eclipse (pre Mars), make sure you
 
 If Sigasi/Eclipse hangs while the splash screen is shown during startup, you can try this to resolve the issue:
 
-* First try to disable the Workspace preference _refresh using native hooks or polling_. You can do this by setting the contents of  `<workspaceSigasi>/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs` to:
+* First try to disable the Workspace preference *refresh using native hooks or polling*. You can do this by setting the contents of  `<workspaceSigasi>/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs` to:
 
 ```text
 eclipse.preferences.version=1
@@ -481,7 +481,7 @@ version=1
 
 If you accidentally [excluded a file from the VHDL or Verilog build][/manual/libraries#libraries-mapping], you can easily undo this by right-clicking the file again and selecting **Set Library**. Next, select the library in which this file needs to compiled.
 
-If you use a version control system, you can also revert the `.library_mapping.xml` file. Sigasi Studio will automatically pick up changes to this file and update the library information. Note that you can also the _Local history_ feature for this (**Team > Show Local History**).
+If you use a version control system, you can also revert the `.library_mapping.xml` file. Sigasi Studio will automatically pick up changes to this file and update the library information. Note that you can also the *Local history* feature for this (**Team > Show Local History**).
 
 # Other tools
 

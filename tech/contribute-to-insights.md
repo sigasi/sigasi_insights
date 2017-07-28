@@ -12,7 +12,7 @@ bannerad: true
 The sources of the Sigasi Insights portal are hosted on Github. So if you find a typo or an error, you can fix this yourself. GitHub also makes it easy to make bigger contributes such as a guest blog.
 
 Small fixes can be made on the website of GitHub, without installing extra tools.  
-For bigger changes, it is better to build the website on your own machine first, and creating a _pull request_ later.
+For bigger changes, it is better to build the website on your own machine first, and creating a *pull request* later.
 
 ## Fixing a typo, directly on GitHub {: #github}
 
@@ -22,7 +22,7 @@ For bigger changes, it is better to build the website on your own machine first,
   ![](images/insights_github_edit.png)
 * At the bottom of the screen:
     * Add a commit message
-    * Select the _"Create a new branch for this commit and start a pull request" option_.
+    * Select the *"Create a new branch for this commit and start a pull request" option*.
     * Click the **Commit Changes** button.
       ![](images/insights_github_patch.png)
 * Next add a message to your pull request and click **Create pull request**  
