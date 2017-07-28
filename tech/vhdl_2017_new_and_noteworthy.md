@@ -7,6 +7,7 @@ date: 2017-07-26
 tags: 
   - VHDL
   - VHDL-2008
+  - VHDL-2017
 comments: true
 bannerad: true
 
