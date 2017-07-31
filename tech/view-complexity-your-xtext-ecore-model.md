@@ -23,7 +23,7 @@ R1: A | B | C;
 R2: a=A | b=B | c=C;
 ```
 
-However, the resulting number of objects, once a resource is actually parsed, is quite different.  For example, suppose we have an input string that can be parsed by grammar rule `A`.  If we present that string as input to rule `R1` it will result in the production of _one_ EMF object of `EClass A`.  Rule `R2` will produce a little tree containing an EMF object of `EClass R2` with three fields, `a`, `b` and `c`.  Fields `b` and `c` will be `null` while field `a` will point to an object of `EClass A`.  
+However, the resulting number of objects, once a resource is actually parsed, is quite different.  For example, suppose we have an input string that can be parsed by grammar rule `A`.  If we present that string as input to rule `R1` it will result in the production of *one* EMF object of `EClass A`.  Rule `R2` will produce a little tree containing an EMF object of `EClass R2` with three fields, `a`, `b` and `c`.  Fields `b` and `c` will be `null` while field `a` will point to an object of `EClass A`.  
 
 Why would you care?  "It works!  Doesn't it?".  Indeed it does.  Nevertheless, keeping your ecore model in check can be very beneficial to the overall performance of your application!  Having a messy ecore model may result in EMF classes with many more fields than you would actually need.  That will make things somewhat slower and more memory hungry.  Not to mention that the semantics of those classes becomes unclear.  More importantly, having parser rules that generate much more objects than you need will definitely slow things down noticeably and consume a lot more memory.  Not a good thing. 
 
@@ -35,12 +35,12 @@ So I present to you [a few classes](https://github.com/mark-christiaens/EMF-Stat
 
 [These classes, available at GitHub,](https://github.com/mark-christiaens/EMF-Statistics-View) implement a little "EMF Stats" view that shows statistics for the active (Xtext) editor.  The view shows three things:
 
-1. _Class name_: The name of the `EClass`,
-2. _Instance count_: The number of objects of this `EClass`,
-3. _Feature count_: The number of features of the `EClass`,
-4. _Feature load_: The product of the _instance_ and the _feature count_.
+1. *Class name*: The name of the `EClass`,
+2. *Instance count*: The number of objects of this `EClass`,
+3. *Feature count*: The number of features of the `EClass`,
+4. *Feature load*: The product of the *instance* and the *feature count*.
 
-The most interesting statistic is the _instance count_.  Optimizing my grammar, I was able to reduce the total instance count by 50%.  The _feature count_ tells you which `EClass`es are "fat" i.e., contain a lot of fields.  I originally had introduced many inefficiencies in my grammar that caused `EClass`es to contain features that where not relevant.  By cleaning up, I reduced the total number of features by at least another 50%.  The impact was not as big as the _feature count_ but still noticeable.  Finally, the _feature load_ tells you which `EClass`es carry the most weight dynamically.  You can focus primarily on those with a high _feature load_ and ignore the infrequently used ones.
+The most interesting statistic is the *instance count*.  Optimizing my grammar, I was able to reduce the total instance count by 50%.  The *feature count* tells you which `EClass`es are "fat" i.e., contain a lot of fields.  I originally had introduced many inefficiencies in my grammar that caused `EClass`es to contain features that where not relevant.  By cleaning up, I reduced the total number of features by at least another 50%.  The impact was not as big as the *feature count* but still noticeable.  Finally, the *feature load* tells you which `EClass`es carry the most weight dynamically.  You can focus primarily on those with a high *feature load* and ignore the infrequently used ones.
 
 To finish, just a quick note about the supplied classes.  It's a standard view that needs to be enabled in your UI `plugin.xml`:
 

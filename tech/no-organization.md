@@ -13,7 +13,7 @@ bannerad: true
 ---
 
 
-The Sigasi development environment allows a very large flexibility on how to organize VHDL projects. So much in fact, that it can become confusing. Let me outline three _recommended ways_ of organizing your VHDL project. 
+The Sigasi development environment allows a very large flexibility on how to organize VHDL projects. So much in fact, that it can become confusing. Let me outline three *recommended ways* of organizing your VHDL project. 
 
 1. No organization (described in this article)
 2. [one-design-one-folder]
@@ -21,7 +21,7 @@ The Sigasi development environment allows a very large flexibility on how to org
 
 (One not-so-recommended way, "[organizing-legacy-projects]", is useful if you are working with legacy projects whose files are scattered over many folders).
 
-In this post, I'll start with the simplest way of organizing: not organizing at all. In technical terms, we call this _editing external VHDL files_, because the files are outside of any projects.
+In this post, I'll start with the simplest way of organizing: not organizing at all. In technical terms, we call this *editing external VHDL files*, because the files are outside of any projects.
 
 ## Setting it up
 

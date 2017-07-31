@@ -17,7 +17,7 @@ Before you can run OneSpin as external tool in Sigasi, it needs to be correctly 
 
 If the `ONESPINROOT` environment variable is set, **OneSpin** will be available on the **Sigasi > Toolchains** Preference page.
 
-Once OneSpin is selected as external compiler, Sigasi will automatically run `read_vhdl` and `read_verilog` on your HDL source files. All OneSpin output will logged to the _Console View_. All warnings and errors will be shown as problem markers in the Sigasi editor.
+Once OneSpin is selected as external compiler, Sigasi will automatically run `read_vhdl` and `read_verilog` on your HDL source files. All OneSpin output will logged to the *Console View*. All warnings and errors will be shown as problem markers in the Sigasi editor.
 
 ![OneSpin compilation results](images/onespin_compilation.png)
 
@@ -30,8 +30,8 @@ You can also run the OneSpin **Consistency Checks** on your design:
 
 ![Run OneSpin consistency checks](images/onespin_run.png)
 
-All OneSpin output will logged to a new tab in the _Console View_. All warnings and errors will be shown as problem markers in the Sigasi editor.
+All OneSpin output will logged to a new tab in the *Console View*. All warnings and errors will be shown as problem markers in the Sigasi editor.
 
 ![OneSpin consistency checks result](images/onespin_consistency.png)
 
-Running the OneSpin Consistency Checks can be a long process. It can be canceled by clicking the stop button in the _Progress View_.
+Running the OneSpin Consistency Checks can be a long process. It can be canceled by clicking the stop button in the *Progress View*.

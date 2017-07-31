@@ -53,4 +53,4 @@ It turns out **unary** minus has a lower priority than the modulo and exponentia
 
 So be careful when you are typing expressions; make sure you use enough parentheses.
 
-_P.S_: You may have noticed that I wrote `-5 mod (-3)` and not `-5 mod -3`. The latter, `-5 mod -3`, is not valid VHDL. This again is because unary minus has lower priority than the modulo operator.
+*P.S*: You may have noticed that I wrote `-5 mod (-3)` and not `-5 mod -3`. The latter, `-5 mod -3`, is not valid VHDL. This again is because unary minus has lower priority than the modulo operator.

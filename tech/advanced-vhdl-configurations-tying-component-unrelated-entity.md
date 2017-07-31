@@ -36,7 +36,7 @@ port(
 end component dut;
 ```
 
-As I will explain in another blog post, these objects have no relation whatsoever, except that the _default binding_ for `component dut` is the `entity dut`.
+As I will explain in another blog post, these objects have no relation whatsoever, except that the *default binding* for `component dut` is the `entity dut`.
 So if you type an instantiation:
 ```vhdl
 	dut_inst : component dut
@@ -45,7 +45,7 @@ So if you type an instantiation:
 			     c => c);
 ```
 
-The VHDL elaborator will instantiate `entity dut` by default, unless it is told otherwise. Here is where _VHDL configurations_ come in.
+The VHDL elaborator will instantiate `entity dut` by default, unless it is told otherwise. Here is where *VHDL configurations* come in.
 
 You can configure this to instantiate a completely `unrelated` entity, with an unrelated entity name, and unrelated port names. Even a different number of ports:
 

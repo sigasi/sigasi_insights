@@ -35,7 +35,7 @@ This log file is rotated for each new Sigasi session or when the log reaches a c
 
 # How do I enable or disable Talkback?
 
-Talkback is _always disabled by default_. To enable Talkback, or to disable it later on, click **Window > Preferences > Sigasi > Talkback** and select or deselect the checkbox "Enable Talkback".
+Talkback is *always disabled by default*. To enable Talkback, or to disable it later on, click **Window > Preferences > Sigasi > Talkback** and select or deselect the checkbox "Enable Talkback".
 
 # What about my Firewall or Proxy?
 

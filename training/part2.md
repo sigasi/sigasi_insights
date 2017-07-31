@@ -76,7 +76,7 @@ As an extra, you will learn how to efficiently work with Finite State Machines.
 * Set the project to library `uart_lib` (right click, **Set Library**)  
   Check the library annotations in the project explorer
 * Add library `vunit_lib`:
-  * Drag and drop the `vunit_lib` folder from you File System Explorer (e.g.: Windows Explorer, Mac Finder, Nautilus) into the `Common Libraries` folder (in the Project explorer). Choose the option to _link to files and folders_.
+  * Drag and drop the `vunit_lib` folder from you File System Explorer (e.g.: Windows Explorer, Mac Finder, Nautilus) into the `Common Libraries` folder (in the Project explorer). Choose the option to *link to files and folders*.
   * Set the library to `vunit_lib`  
 * Set the library for the test files (`uart/src/test`). Read the source code for the library name.
 * One more library is not correctly set. Try to fix this. (Tip: the sources are already in the project)

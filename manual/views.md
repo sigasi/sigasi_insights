@@ -81,7 +81,7 @@ To highlight the current selection of the VHDL editor in the hierarchy view, ena
 
 The hierarchy view also shows the **generic and constants values** of components in the hierarchy.
 The internal compiler computes the generics and constants, even if they are passed down through the hierarchy, and even if arithmetic operations are used to define new values. If the value cannot be computed for some reason, the
-Hierarchy View will report the value to be _unknown_.
+Hierarchy View will report the value to be *unknown*.
 
 When you **double-click** an object in the hierarchy, the Editor view is updated accordingly, possibly by displaying the contents of a different file.
 

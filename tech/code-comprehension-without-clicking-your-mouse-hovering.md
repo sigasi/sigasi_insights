@@ -10,7 +10,7 @@ comments: true
 bannerad: true
 ---
 
-If you place your mouse over an identifier in a VHDL file, a yellow pop-up with extra information will will appear. This is called _hovering_.
+If you place your mouse over an identifier in a VHDL file, a yellow pop-up with extra information will will appear. This is called *hovering*.
 Depending on the object that the identifier represents, the hover pop-up can show different information:
 
 * Declaration

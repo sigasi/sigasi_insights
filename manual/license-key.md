@@ -108,7 +108,7 @@ $LOCATION/lmgrd -c $LOCATION/sigasi.lic -l $LOCATION/debug.log
 3. Unpack the zip file into the license folder  (`D:\Sigasi\license`)
 4. Run the license configuration tool `lmtools.exe` as administrator.
 5. Save the license file supplied for Sigasi to the license folder
-6. Using a text editor edit the license file and replace your_server_name1 with the name of the machine you are using, for example:
+6. Using a text editor edit the license file and replace `your_server_name1` with the name of the machine you are using, for example:
 	From: `SERVER your_server_name1 74e50bb0911e`
 	To: `SERVER Maple 74e50bb0911e`
 	
@@ -136,7 +136,7 @@ The license server should now be configured correctly, and looks a bit like this
 
 ### Release a floating license
 
-You can release a floating license (_check a license in_) without closing your Sigasi application or Eclipse application. This is useful if you use Eclipse to edit other files than VHDL files, like C or Tcl.
+You can release a floating license (*check a license in*) without closing your Sigasi application or Eclipse application. This is useful if you use Eclipse to edit other files than VHDL files, like C or Tcl.
 
 First, make sure that all VHDL and Verilog files are closed and all VHDL and Verilog projects are closed. Next select  **Help > Sigasi > Floating license > Release Sigasi Floating Licenses**
 
@@ -232,7 +232,7 @@ Check the content of the Sigasi License preference page via : **Window > Prefere
 
 > No license
 
-  * Is a valid _license key path_ configured (or are valid environment variables used)?
+  * Is a valid *license key path* configured (or are valid environment variables used)?
   * Is the user trying to use a Sigasi Studio 3 license in Sigasi 2.x?
 
 > No Such Feature Exists

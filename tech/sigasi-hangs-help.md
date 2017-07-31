@@ -15,7 +15,7 @@ Sometimes, bugs could cause an application (including Sigasi) to hang, block, fr
 
 ## Download and install the Java Development Toolkit (JDK)
 
-_Note that you can skip this step if you already have a recent JDK (> JDK 1.6 update 7) on your system._
+*Note that you can skip this step if you already have a recent JDK (> JDK 1.6 update 7) on your system.*
 
 [Download and install the latest JDK version](https://java.com/en/download/help/download_options.xml)
 

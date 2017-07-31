@@ -18,7 +18,7 @@ The version information is stored in `<project path>/.settings/com.sigasi.hdt.vh
 
 **Notes**:
 
-* **VHDL libaries:** Any new project that you create will have the common libraries (`STD` and `IEEE`) that correspond to your selected VHDL version. Your _existing project will **not** be modified_. If you want to update the common libraries for an existing project, right-click the project and select **Library Mapping > Reset Common Libraries**. Since [Sigasi 3.3][/releasenotes/sigasi-3.03], you will get a warning if your common libraries do not match the VHDL version of you VHDL file. You can use the proposed quick fix to resolve the issue.
+* **VHDL libaries:** Any new project that you create will have the common libraries (`STD` and `IEEE`) that correspond to your selected VHDL version. Your *existing project will **not** be modified*. If you want to update the common libraries for an existing project, right-click the project and select **Library Mapping > Reset Common Libraries**. Since [Sigasi 3.3][/releasenotes/sigasi-3.03], you will get a warning if your common libraries do not match the VHDL version of you VHDL file. You can use the proposed quick fix to resolve the issue.
 * If you want to compile VHDL 87 code, you should select the “1993” option. There are no checks to warn about constructs that were not supported in 1987, but that were introduced in 1993.
 
 

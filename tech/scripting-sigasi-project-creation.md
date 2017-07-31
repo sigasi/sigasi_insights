@@ -15,7 +15,7 @@ bannerad: true
 ---
 
 
-When you start using Sigasi, the first thing you have to do is [/manual/projectsetup]. This consists of two steps: _(1) selecting the VHDL files that you want in your project_ and _(2) configuring in which VHDL library these files must be mapped_. In most cases you already have this information in one form or another. For example in a makefile, in a Tcl simulation script, or in the project descriptor file of a third-party EDA tool.
+When you start using Sigasi, the first thing you have to do is [/manual/projectsetup]. This consists of two steps: *(1) selecting the VHDL files that you want in your project* and *(2) configuring in which VHDL library these files must be mapped*. In most cases you already have this information in one form or another. For example in a makefile, in a Tcl simulation script, or in the project descriptor file of a third-party EDA tool.
 
 Because there are so many different formats to describe this information, we cannot offer one universal solution. But to make the import process easier, we have developed [Python scripts](https://github.com/sigasi/SigasiProjectCreator) that make it easy for you to convert your own project description into a Sigasi project description.
 

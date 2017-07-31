@@ -12,7 +12,7 @@ comments: true
 bannerad: true
 ---
 
-_I recently got an FPGA-on-a-USB-stick as a Christmas present: an [Altera/Arrow BeMicro SDK](http://www.altera.com/b/bemicro-sdk.html"). Fun to play with and ideal to refresh my hardware design skills... I thought... Immediately I was confronted again with how much work it is to set up all necessary hardware design tools._
+*I recently got an FPGA-on-a-USB-stick as a Christmas present: an [Altera/Arrow BeMicro SDK](http://www.altera.com/b/bemicro-sdk.html"). Fun to play with and ideal to refresh my hardware design skills... I thought... Immediately I was confronted again with how much work it is to set up all necessary hardware design tools.*
 
 The system requirements states that you need Windows, but fortunately I got it working on Linux (Fedora release 13 (Goddard)). Installing Altera Quartus and Nios II went flawlessly. Finding out how to get JTAG with the USB blaster to work was a bit harder.
 

@@ -14,7 +14,7 @@ bannerad: true
 
 ## One day, a few days before tape-out....
 
-Suppose that you are the  project leader for a large ASIC or FPGA design. (Maybe you are.) The project’s delivery milestone (a.k.a. _tape-out_)  is due soon.  There is a nice regression test suite that makes sure nothing breaks as bugs are being fixed. The suite runs for a couple of hours overnight. Developers are required to run some basic checks before checking in changes, but not the full regression suite as that would take too long.
+Suppose that you are the  project leader for a large ASIC or FPGA design. (Maybe you are.) The project’s delivery milestone (a.k.a. *tape-out*)  is due soon.  There is a nice regression test suite that makes sure nothing breaks as bugs are being fixed. The suite runs for a couple of hours overnight. Developers are required to run some basic checks before checking in changes, but not the full regression suite as that would take too long.
 
 One morning, it turns out that some tests have failed mysteriously. At some point, the timing and the order of the logged events becomes different,  and the differences increase with simulation time. Inspecting the changesets in the revision control system does not  reveal an obvious cause. Some small bugs have been fixed, some code has been refactored, but no drastic or strange changes are observed. Then some clever junior developer offers the following analysis: “I have reviewed the code and found the cause. There is nothing wrong with the design or the tests. The differences are simply caused by nondeterministic event scheduling in Verilog. We can  simply consider the new log files as the golden reference.” 
 
@@ -34,13 +34,13 @@ There is evidence that some design teams use a low level coding style, such as s
 
 Assuming most design teams use the modeling power of the language in the  intended way, why don’t we hear more about problems? One reason may  be that companies are typically not that eager to share the details of their development difficulties. But the most important reason is probably that nondeterminism can go unnoticed for a long time.  The most likely way to detect it is a change of simulator brand. If you never do that, you may not realize  how fragile the IP really is.
 
-Sometimes we  hear rumours  about the difficulties to use Verilog IP, especially testbenches. This may be an indirect indication of the issues I am talking about, although I realize this sounds a little vague. Fortunately, there is also a crystal-clear  testimonial from a credible source. In his book __Writing Testbenches Using SystemVerilog__, Janick Bergeron writes:
+Sometimes we  hear rumours  about the difficulties to use Verilog IP, especially testbenches. This may be an indirect indication of the issues I am talking about, although I realize this sounds a little vague. Fortunately, there is also a crystal-clear  testimonial from a credible source. In his book *Writing Testbenches Using SystemVerilog*, Janick Bergeron writes:
 
 > In my many years of consulting in design verification, I have yet to see a *single* testbench that simulates with identical results on different simulators. \[...\] Yet, all simulators are fully compliant with the IEEE standard. Most of the time, the differences are due to race conditions. \[...\]
 > 
 > The primary cause of simulation differences are the authors. SystemVerilog appears easy to learn because it produces the expected response rather quickly. Making sure that the results are reproducible under different conditions is another matter. Learning the idiosynchrasies of the language is what takes time and differentiates an experienced modeler from a new one.
 >
-> _Janick Bergeron - Writing Testbenches using SystemVerilog_
+> *Janick Bergeron - Writing Testbenches using SystemVerilog*
 
 According to Janick,  problems with nondeterminism in Verilog  are the rule, not the exception.  Also, he asserts that it takes a lot of experience to avoid them. Janick Bergeron is a Synopys fellow with  a career devoted to verification. Somehow I find him far more credible than those who flatly deny the problem. However, I don’t agree with his statement on the authors being the primary cause of the problem. Clearly, the primary cause of the simulation differences is the language that allows them. In Verilog, you have to dedicate a lot of engineering resources to  something that  VHDL does automatically.
 

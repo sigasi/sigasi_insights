@@ -5,7 +5,7 @@ pager: true
 date: 2014-07-29
 ---
 
-_The Sigasi 2.23 release introduces basic *datatype checking* at type-time for VHDL; improved *Verilog* support; and much more._
+*The Sigasi 2.23 release introduces basic *datatype checking* at type-time for VHDL; improved *Verilog* support; and much more.*
 
 ## Basic datatype checking at type-time for VHDL
 

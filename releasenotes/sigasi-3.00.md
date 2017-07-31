@@ -18,7 +18,7 @@ We optimized Sigasi Studio **Starter** as much as possible to work with **single
 
 ![Sigasi Studio Starter perspective](3.00/sigasi-studio-starter.png)
   
-Sigasi Studio **Starter** now only works with **single files**, and _not with projects_. So all features in Sigasi Studio Starter, only take information of the current file into account. So there is no longer a _project size threshold_, which tweaked some features as in Sigasi 2.
+Sigasi Studio **Starter** now only works with **single files**, and *not with projects*. So all features in Sigasi Studio Starter, only take information of the current file into account. So there is no longer a *project size threshold*, which tweaked some features as in Sigasi 2.
 
 Sigasi Studio Starter works without a license key, but requires [/manual/talkback] and you need to keep your version up to date.
 
@@ -58,7 +58,7 @@ This results in major improvements in how we can offer you (System)Verilog suppo
   ![Verilog Macro syntax error](3.00/macro-errors.png)
 * In Sigasi 3.0 we implemented an convenient way to preview the result of preprocessing the active Verilog file. When you **Hover** a Verilog macro, you will see the **preprocessed** text. At the bottom of the hover you will also see a link to open the **Preprocessor View**.  
   ![Verilog macro hover](3.00/verilog-macro-hover.png)
-* The **Preprocessor (Macro) View** is another way to easily inspect the preprocessed Verilog code. It _automatically synchronizes its position and selection_ with the active editor. [documentation][/manual/editor#verilog-preprocessingmacros]  
+* The **Preprocessor (Macro) View** is another way to easily inspect the preprocessed Verilog code. It *automatically synchronizes its position and selection* with the active editor. [documentation][/manual/editor#verilog-preprocessingmacros]  
   ![Preprocessor View](3.00/verilog-preprocessor-view.png)
 * Verilog **include paths** can now be configured. Right click your Verilog project in the project explorere and select **Properties > Verilog Preprocessor**. Here you can enter a `;`-separated list of include paths (relative to the project folder). 
 * Improved hover for `wire` and `reg`  

@@ -96,9 +96,9 @@ HDL files or folders lying around that you want simply to be ignored.
 # Configuration file
 
 All library configuration information is stored in the `.library_mapping.xml` file in the root of your project.
-If you edit this file, your project will be cleared and rebuilt automatically (a so-called _Clean Build_).
+If you edit this file, your project will be cleared and rebuilt automatically (a so-called *Clean Build*).
 
-Sigasi only writes changes to this configuration file when you make changes to the library configuration with the context menu in the _Project Explorer_. When you do make changes, Sigasi first checks that all paths in the library configuration still exist. If a path no longer exists, is will be removed from the configuration file.
+Sigasi only writes changes to this configuration file when you make changes to the library configuration with the context menu in the *Project Explorer*. When you do make changes, Sigasi first checks that all paths in the library configuration still exist. If a path no longer exists, is will be removed from the configuration file.
 Note that the library configuration file is **case-sensitive**, even on Windows.
 
 # Common libraries {: #libraries-common}
@@ -155,7 +155,7 @@ a [/manual/linting#Quickfix for third party libraries].
 
 ## XilinxCoreLib
 
-XilinxCoreLib is a very big library with more than a thousand entities and architectures. If you include all of these design units, it slows down the compilation phase of Sigasi Studio. In order to avoid that, Sigasi Studio only adds the packages with the component declarations to your project by default. It _excludes_ the entities and architectures _from compilation_.
+XilinxCoreLib is a very big library with more than a thousand entities and architectures. If you include all of these design units, it slows down the compilation phase of Sigasi Studio. In order to avoid that, Sigasi Studio only adds the packages with the component declarations to your project by default. It *excludes* the entities and architectures *from compilation*.
 
 You can easily add selected entities (and architectures) to your project by right clicking the corresponding file (`filename = entity name.vhd`) in the [Project Explorer][/manual/views#explorer], and selecting **Set Library > xilinxcorelib**.
 

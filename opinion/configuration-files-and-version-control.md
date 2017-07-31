@@ -15,7 +15,7 @@ If you are using a version control system (which you should!) for your hardware 
 
 ## Stability 
 
-Version control systems like CVS, Subversion (SVN), Git and Clearcase help you in tracking changes in files. While many project descriptor file formats are not meant to be modified by the user, they are text based. Hence, they should be ideally suited for a version control system. One would expect (and should be able to count on) these two _stability criteria_:
+Version control systems like CVS, Subversion (SVN), Git and Clearcase help you in tracking changes in files. While many project descriptor file formats are not meant to be modified by the user, they are text based. Hence, they should be ideally suited for a version control system. One would expect (and should be able to count on) these two *stability criteria*:
 
 1. if nothing has changed (to the settings), the files should stay the same.
 2. if (the settings) have changed just a little bit, the files should have minimal changes.

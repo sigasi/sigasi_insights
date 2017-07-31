@@ -24,7 +24,7 @@ Short and powerful: no "but", no "caveat". Synthesis works fine if, even signals
 
 ## Side note: about VHDL synthesis 
 
-There are dozens of constructs that are marked as _not for synthesis_ in traditional courseware, including:
+There are dozens of constructs that are marked as *not for synthesis* in traditional courseware, including:
 
 * bits, booleans and integers 
 * configurations
@@ -35,13 +35,13 @@ There are dozens of constructs that are marked as _not for synthesis_ in traditi
 * initial values of signals
 * and much more...
 
-My first step will be to demonstrate which (none, some or all?) of them them are wrong. When I do that, a lot of traditionalists will argue that: "OK, it might work for you, but it's still bad practice because _blah blah blah_." When that happens, the discussion has shifted from "the tools can't handle it" to "the humans don't want to handle it." We can then get to the _reasons why_ humans don't want to handle those particular constructs. We can have an informed discussion on a case by case basis to see if there is a valid argument to be made. 
+My first step will be to demonstrate which (none, some or all?) of them them are wrong. When I do that, a lot of traditionalists will argue that: "OK, it might work for you, but it's still bad practice because *blah blah blah*." When that happens, the discussion has shifted from "the tools can't handle it" to "the humans don't want to handle it." We can then get to the *reasons why* humans don't want to handle those particular constructs. We can have an informed discussion on a case by case basis to see if there is a valid argument to be made. 
 
 I don't want to force anybody in to using any of these constructs. I'm just worried that VHDL educators are scaring people away from useful and powerful VHDL language features that could save engineers a lot of work.
 
 ## Back to physical types
 
-But for now, let's focus on physical types. To pin everybody to the _facts_, here is a [/opinion/vetsmod-get-better-feedback-your-vhdl-code-snippets] example of physical types in action:
+But for now, let's focus on physical types. To pin everybody to the *facts*, here is a [/opinion/vetsmod-get-better-feedback-your-vhdl-code-snippets] example of physical types in action:
 
 ```vhdl
 library ieee;

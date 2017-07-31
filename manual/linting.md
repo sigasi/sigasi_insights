@@ -110,8 +110,8 @@ Errors/Warnings**.
 * NEVER\_WRITTEN / NEVER\_READs
 * [#naming-conventions]
 * INCOMPLETE\_ASSOCIATIVE\_OPTIONAL [link](#incomplete-port-maps-and-generic-maps)
-* POSITIONAL_ASSOCIATION_IN_INSTANTIATIONS [link](#posititional-association-in-instantiations)
-* CASE_REFERENCES [link](#capitalization-of-identifiers)
+* POSITIONAL\_ASSOCIATION\_IN\_INSTANTIATIONS [link](#posititional-association-in-instantiations)
+* CASE\_REFERENCES [link](#capitalization-of-identifiers)
 
 # List of VHDL code rules
 
@@ -248,7 +248,7 @@ Sigasi can warn about problems with your sensitivity list:
 
 The VHDL language reference manual states that:
 
-_Every design unit except package STANDARD is assumed to contain the following implicit context items as part of its context clause:_
+*Every design unit except package STANDARD is assumed to contain the following implicit context items as part of its context clause:*
 
 ```vhdl
     library STD, WORK;
@@ -384,7 +384,7 @@ Examples:
 | 47 | There has to be a whitespace before physical units|
 | 49 | Superfluous library clause|
 | 55 | Find unused declarations|
-| 57 | Bitstrings may only contain std_logic metavalues|
+| 57 | Bitstrings may only contain std\_logic metavalues|
 | 67 | Find unused ports|
 | 68 | Find unused generics|
 | 72 | Find incomplete sensitivity lists|

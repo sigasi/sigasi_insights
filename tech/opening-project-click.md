@@ -24,7 +24,7 @@ sigasi.exe -p %~dp0
 
 Now, you just have to **double-click** the BAT file to import and open the project in your Sigasi workspace!
 
-Note that _importing_ does not mean that your project is copied to the workspace directory. It only means that the workspace knows that you want to work with this project.
+Note that *importing* does not mean that your project is copied to the workspace directory. It only means that the workspace knows that you want to work with this project.
 
 ![Sigasi Project Launcher](images/sigasi_project_launcher.png)
 

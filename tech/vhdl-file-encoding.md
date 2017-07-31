@@ -16,7 +16,7 @@ As a dinosaur in this post-truth era, I decided to go old-school and research th
 
 ## UTF-what?
 
-[UTF-8](https://en.wikipedia.org/wiki/UTF-8) is character encoding standard that can encode all possible characters defined by Unicode. It encodes characters with _variable length_. Some characters are represented with one byte, others with more than one. [ISO-8859-1](https://en.wikipedia.org/wiki/ISO-8859-1) uses a single byte to encode all characters. As a result, ISO-8859-1 can encode less characters than UTF-8.
+[UTF-8](https://en.wikipedia.org/wiki/UTF-8) is character encoding standard that can encode all possible characters defined by Unicode. It encodes characters with *variable length*. Some characters are represented with one byte, others with more than one. [ISO-8859-1](https://en.wikipedia.org/wiki/ISO-8859-1) uses a single byte to encode all characters. As a result, ISO-8859-1 can encode less characters than UTF-8.
 
 The first 126 characters of both UTF-8 and ISO-8859-1 are the same, and map to the corresponding ASCII characters. The extra characters of ISO-8859-1 consist of characters of American, Western European, Oceanian and African languages.
 
@@ -44,10 +44,10 @@ You can choose only one encoding for your entire source file. You can not mix, a
 
 I can think of 4 ways it can go wrong:
 
-* Character literals with _special_ characters
-* Strings with _special_ characters
-* Extended identifiers with _special_ characters
-* Comments with _special_ characters
+* Character literals with *special* characters
+* Strings with *special* characters
+* Extended identifiers with *special* characters
+* Comments with *special* characters
 
 I created snippets for each of these cases and tested them with both Riviera Pro and ModelSim.
 
@@ -103,7 +103,7 @@ begin
 end architecture char;
 ```
 
-Both tools report a _Syntax error_:
+Both tools report a *Syntax error*:
 
 * Riviera Pro:  
 ```

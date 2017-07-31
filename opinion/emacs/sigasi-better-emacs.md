@@ -22,7 +22,7 @@ Over the past few weeks, I have made an effort to demonstrate that Sigasi 2.0 is
 * [vhdl-emacs-mode-navigation-using-ctags-are-broken],
 * [room-improvement],
 
-One of the most common comments I got was that Emacs is free. I know there is a bit of ambiguity in the word [free](http://en.wikipedia.org/wiki/Gratis_versus_libre), but I get the feeling that most people are worried about their money. They don't want to pay for an _editor_. It seems hard for people to compare a $840 tool, with [one](http://www.iis.ee.ethz.ch/~zimmi/emacs/vhdl-mode.html) that comes at a flat $0.00. 
+One of the most common comments I got was that Emacs is free. I know there is a bit of ambiguity in the word [free](http://en.wikipedia.org/wiki/Gratis_versus_libre), but I get the feeling that most people are worried about their money. They don't want to pay for an *editor*. It seems hard for people to compare a $840 tool, with [one](http://www.iis.ee.ethz.ch/~zimmi/emacs/vhdl-mode.html) that comes at a flat $0.00. 
 
-Tomorrow, we will launch the Sigasi 2.0 Starter Edition. The _Starter Edition_ will be free. Not just for a week or for a beta period, but forever.
-The Starter Edition is designed to be better than Emacs for any VHDL work you do. If your VHDL design is _small_ enough, you even get access to _all of the nice features_ that paying customers will have. Stay tuned for more info.
+Tomorrow, we will launch the Sigasi 2.0 Starter Edition. The *Starter Edition* will be free. Not just for a week or for a beta period, but forever.
+The Starter Edition is designed to be better than Emacs for any VHDL work you do. If your VHDL design is *small* enough, you even get access to *all of the nice features* that paying customers will have. Stay tuned for more info.

@@ -40,7 +40,7 @@ Therefor we decided to rewrite the VHDL formatting engine in Sigasi Studio 3.4. 
 # More improvements to the Block Diagram view
 
 We further improved the layout, looks and interaction of the Block Diagram View.
-We changed the looks of `assignment` and `assert` statements. We made them smaller to improve the clarity of most diagrams. We also improved _hover_ and the _selection behavior_. 
+We changed the looks of `assignment` and `assert` statements. We made them smaller to improve the clarity of most diagrams. We also improved *hover* and the *selection behavior*. 
 
   ![](3.4/blockdiagram_a.png)
 
@@ -56,7 +56,7 @@ See the [Preview Builds][/tech/preview] to track the latest SystemVerilog progre
 
 - We now require at least **Java 8** to run Sigasi Studio for both the Stand-alone and the Plugin version. The Plugin version now requires Eclipse 4.4 or newer. [System Requirements][/faq#what-are-the-system-requirements]
 - We updated the Eclipse Xtext dependency to `2.11.0`
-- We improved the message for _"Duplicate design unit"_ problems. We now mention the path of conflicting design files
+- We improved the message for *"Duplicate design unit"* problems. We now mention the path of conflicting design files
   ![](3.4/duplicate_design_units_a.png)
 - We added three extra **name conventions checks**:
     - Labels of instantiation statements

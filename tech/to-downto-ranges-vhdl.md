@@ -94,7 +94,7 @@ A typical examples is  `std_ulogic_vector`:
 ```vhdl
 type std_ulogic_vector is array ( natural range <> ) of std_ulogic;
 ```
-This defines `std_ulogic_vector` as an array type with indexes of type natural. The bounds can be specified via _object_ creation or via a _subtype_.
+This defines `std_ulogic_vector` as an array type with indexes of type natural. The bounds can be specified via *object* creation or via a *subtype*.
 
 ```vhdl
 subtype myarray is std_ulogic_vector(7 downto 0);
