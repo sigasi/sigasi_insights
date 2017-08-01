@@ -8,6 +8,7 @@ tags:
   - VHDL
   - Xtext
   - formatting
+  - slideshare
 comments: true
 bannerad: true
 
