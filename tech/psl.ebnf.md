@@ -7,7 +7,7 @@ date: 2017-02-02
 comments: true
 tags: 
   - PSL
-  - EBNF
+  - ebnf
 ---
 <em> IEEE Std 1850-2010 </em>  
 <em>
@@ -20,7 +20,7 @@ Get the full Language Reference Manual, at <https://standards.ieee.org/findstds/
 
 Sigasi has created this browsable version of the grammar, hoping that it would be useful to you, but without any warranty whatsoever.
 
-[More browsable grammars of Hardware Description and Verification languages][/tag/EBNF].
+[More browsable grammars of Hardware Description and Verification languages][/tag/ebnf].
 
 </em>  
 ## A.4 Syntax productions

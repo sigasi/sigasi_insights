@@ -7,7 +7,7 @@ date: 2016-11-11
 comments: true
 tags: 
   - SystemVerilog
-  - EBNF
+  - ebnf
 ---
 <em>
 Copyright 
@@ -19,7 +19,7 @@ Get the full Language Reference Manual, free of charge, at <http://standards.iee
 
 Sigasi has created this browsable version of the grammar, hoping that it would be useful to you, but without any warranty whatsoever.
 
-[More browsable grammars of Hardware Description and Verification languages][/tag/EBNF].
+[More browsable grammars of Hardware Description and Verification languages][/tag/ebnf].
 </em>  
 ## Source text
   
