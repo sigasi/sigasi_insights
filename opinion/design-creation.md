@@ -16,6 +16,7 @@ Sigasi Pro helps electronics engineers to create their hardware designs faster a
 Writing VHDL is cumbersome and error prone. VHDL is extremely **verbose** (you need a lot of text to express even simple things) and **pedantic** (even small errors will cause compiler or run-time errors). These two characteristics unnecessarily add complexity to digital design. They raise the bar for junior engineers learning VHDL and they lock up mental energy of senior engineers working on large digital circuits.
 
 Sigasi Pro takes the weight off your shoulders on those two fronts. Its differentiating features are:
+
 * type-time error checking,
 * tool-assisted quick-fixes,
 * code snippet generation, based on the context.
@@ -49,8 +50,8 @@ Watch "this short video about how to write a VHDL testbench":/screencast/create-
 
 In addition to these super advanced features, Sigasi's editor is simply great. Based on the industry standard Eclipse platform, Sigasi's editor includes all standard features:
 
-* block select a.k.a. column mode editing \[[/screencasts/block_selection_mode]\], \[[/manual/editor#block-select]\]
-* code folding \[[/manual/editor#Code folding]\]
+* block select a.k.a. column mode editing [screencast][/screencasts/block_selection_mode], [manual][[/manual/editor#block-select]
+* code folding [manual][/manual/editor#Code folding]
 * multi-screen support
 * configurable key bindings
 * and much more...
