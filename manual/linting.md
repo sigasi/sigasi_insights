@@ -321,6 +321,10 @@ you would specify `.*_v` pattern in the **Variable name** field.
 
 Sigasi checks the vector size in assignments (Since [/releasenotes/sigasi-2.28]) and port maps (Since [/releasenotes/sigasi-3.01]). This check works at type-time and takes the (symbolic) value of generics into account.
 
+## Order of assocations
+
+Sigasi Studio gives a warning when the **order** of generics or ports in a `map` differs from the original generics or ports declaration order.
+
 ![](images/linting_vector_width.png)
 
 # Project specific Linting settings
@@ -405,3 +409,5 @@ Examples:
 |144 | Array assignment validation|
 |163 | All references must have the same capitalization as their declaration|
 |164 | Check for positional associations in instantiations|
+|169 | Invalid port association
+|177 | Order of generic and port associations

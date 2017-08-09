@@ -114,3 +114,9 @@ Thanks a lot for all the feedback!
 ## How to update?
 
 If you have Sigasi Studio 3 installed, you can [update][update_sigasi] or [download a fresh install of the latest version][download_latest].
+
+# Sigasi 3.5.1 point release
+
+On August 10 we released Sigasi Studio 3.5.1. This release contains only minor bug fixes.
+
+Thanks for all bug reports and enabling Talkback.
