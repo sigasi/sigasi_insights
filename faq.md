@@ -214,7 +214,10 @@ See [/manual/config#Font Size].
 
 ## Sigasi keeps compiling everything while I am trying to configure my VHDL Libraries
 
-While you are configuring your libraries (mapping and unmapping files), the built-in compiler may trigger a full rebuild several times. In order to avoid this, and make Sigasi more responsive while you configure your libraries, you can turn of auto...
+While you are configuring your libraries (mapping and unmapping files), the built-in compiler may trigger a full rebuild several times. In order to avoid this, and make Sigasi more responsive while you configure your libraries, you can temporarily turn of auto-build via **Project > Build Automatically**.
+
+Make sure you re-enable auto-build when you are finished configuring your libraries to make sure all Sigasi Studio features work as expected (**Project > Build Automatically**). 
+
 
 ## How can I change the default key bindings?
 
