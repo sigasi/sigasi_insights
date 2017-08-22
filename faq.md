@@ -412,8 +412,11 @@ The recommended approach is to remove these junk files. If you are using a revis
 
 Sigasi node-locked licenses are locked to the unique MAC address (NIC address) of your computer's network interface. An example of a MAC address is: `00:1c:42:00:00:09`.
 
+Since Sigasi 2.24, you can find your MAC address in the license dialog of Sigasi Studio: click **Help > Sigasi > Configure License...** and look for the line **Local MAC addresses:**
+
 Floating licenses also require a MAC address, but this needs to be the MAC address of the license server. Ask your system administrator.
-Since Sigasi 2.24, you can find your MAC address, in the license dialog of the Sigasi tool. Start the tool and click *Help > Sigasi > Configure License...*
+
+
 
 ## The internal web browser does not work on Linux
 
