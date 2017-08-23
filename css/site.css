@@ -112,3 +112,8 @@ img {
   max-height: 630px;
   max-width: 630px;
 }
+
+.dl-horizontal dt:hover {
+    overflow: visible;
+    white-space: normal;
+}
