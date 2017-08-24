@@ -1,0 +1,20 @@
+pipeline {
+    agent { 
+        dockerfile {
+            dir '_jenkins'
+            args '-l sigasi_insights'
+        }
+    }
+    stages {
+        stage('Build') {
+            steps {
+                sh 'make build'
+            }
+        }
+        stage('Archive') {
+            steps {
+                archiveArtifacts artifacts: '_build/**/*'
+            }
+        }
+    }
+}

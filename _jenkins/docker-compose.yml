@@ -7,5 +7,3 @@ services:
     volumes:
      - ..:/sigasi_insights
     container_name: sigasi_insights
-    command: /bin/bash -c "sleep 5000"
-
