@@ -136,6 +136,9 @@
 		<!-- BEGIN GADWP v4.9.0.1 Universal Tracking - https://deconf.com/google-analytics-dashboard-wordpress/ -->
 		{% include 'cantilis/analytics.html' %}
 		{% if site.optimizely %}<script src="https://cdn.optimizely.com/js/{{site.optimizely}}.js"></script>{% endif %}
+
+		{% block head_addon %}
+		{% endblock %}
 	</head>
 	<!--// OPEN BODY //-->
 	<body class="page page-id-12016 page-template-default bright-design mobile-header-left-logo mhs-mobile mh-slideout responsive-fluid sticky-header-disabled page-shadow product-shadows header-standard layout-boxed page-heading-standard disable-mobile-animations  _masterslider _msp_version_2.19.0">
@@ -330,6 +333,9 @@
 		<script type='text/javascript' src='{{url_prefix}}/css/sitepress.js?ver=4.3.2'></script>
 		<!--// CLOSE BODY //-->
 		{% include 'cantilis/clicky.html' %}
+
+		{% block body_addon %}
+		{% endblock %}
 	</body>
 	<!--// CLOSE HTML //-->
 </html>

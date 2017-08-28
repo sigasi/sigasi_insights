@@ -1,0 +1,28 @@
+{% extends "page.html" %}
+
+{% block head_addon %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400">
+
+<link rel="stylesheet" href="tipuesearch/css/normalize.css">
+<link rel="stylesheet" href="tipuesearch/css/tipuesearch.css">
+<script src="tipuesearch/tipuesearch_set.js"></script>
+<script src="tipuesearch/tipuesearch.min.js"></script>
+{% endblock %}
+
+{% block body_addon %}
+<script src="tipuesearch/tipuesearch_content.js"></script>
+<script src="tipuesearch/tipuesearch_set.js"></script>
+<script src="tipuesearch/tipuesearch.min.js"></script>
+
+
+
+<script>
+$(document).ready(function() {
+     $('#tipue_search_input').tipuesearch({
+          'mode': 'json',
+          'contentLocation': 'tipuesearch/tipuesearch_content.json' 
+     });
+});
+</script>
+{% endblock %}

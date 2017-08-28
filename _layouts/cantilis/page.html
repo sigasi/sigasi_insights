@@ -27,6 +27,7 @@
   <div class="row">
 
     <div class="content">
+      <main>
       {% block content %}
       <div class="col-md-9" role="main">
         {{this.body}}
@@ -36,6 +37,7 @@
         {% endif %}
       </div>
       {% endblock %}
+      </main>
     </div>
 
     {% block sidebar %}
