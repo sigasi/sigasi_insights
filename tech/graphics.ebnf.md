@@ -1,5 +1,5 @@
 ---
-title: "TODO Grammar"
+title: "Sigasi Studio Graphics Confguration Language Grammar"
 layout: page 
 pager: true
 author: Sigasi
