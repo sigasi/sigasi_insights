@@ -6,6 +6,7 @@ author: Sigasi
 date: 2017-08-25
 comments: true
 ---
+<em>This grammar allows you to filter, group and color your BlockDiagrams and StateMachines in Sigasi Studio.</em>  
 ## Grammar
   
 **DiagramConfiguration**{: #DiagramConfiguration }

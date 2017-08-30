@@ -77,7 +77,7 @@ Graphics Configuration Editor features:
 ### BlockDiagram
 
 To demonstrate the power of the new DSL we will make use of an existing open-source project, [VME64x core](https://www.ohwr.org/projects/vme64x-core).
-You can clone the [repository](git://ohwr.org/hdl-core-lib/vme64x-core.git) and download the DSL file [here](TODO).
+You can clone the [repository](git://ohwr.org/hdl-core-lib/vme64x-core.git) and download the DSL file [here](using-graphics-configuration/VME64xCore_Top.blockdiagram).
 
 The diagram we are going to filter down is the one associated with the architecture `RTL` that implements the entity `VME64xCore_Top`.
 We express this on the first line using `diagram work.VME64xCore_Top.RTL`.
@@ -90,9 +90,8 @@ The syntax for a regex is `regex"regex_pattern"`. This uses [Java regexes](https
 
 Following this, we configure the leftover blocks, wires and ports as well as the block groups and buses we just created.
 The syntax for a configuration block is as follows: `Type Identifiers { ConfigurationItem* }` where `Type` is `block, wire` or `port`.
-The syntax for a ConfigurationItem is as follows: `hide | collapse | color GraphicsColor`. You can discover which colors are available [here](graphics.ebnf.html) or through auto-complete.
 
-Note that the DSL can not see everything, it can not see blocks, wires or ports that are within another block.
+The syntax for a ConfigurationItem is as follows: `hide | collapse | color GraphicsColor`. You can discover which colors are available [here](graphics.ebnf.html#GraphicsColor) or through autocomplete.
 
 To color our new group, `sampling`, green and hide it's internals we can write `block sampling { color green collapse }`.
 However we can't type `block WRITEinputSample { color red }`. To access a block within a block, we have to nest configurations as follows:
@@ -114,7 +113,7 @@ You can also configure lone ports e.g. `port clk_i { hide }`
 
 StateMachines are just like the BlockDiagrams above, except the only `Type` that can be used is `state`.
 The header is also slightly different, the syntax is as follows: `statemachine architecture : state_variable`.
-For an example you can check out `4_state_machines.vhd` (in our VHDL Tutorial) with [this](TODO) filter file.
+For an example you can check out `4_state_machines.vhd` (in our VHDL Tutorial) with [this](using-graphics-configuration/4_state_machines.statemachine) filter file.
 
 ## Things to remember
 
