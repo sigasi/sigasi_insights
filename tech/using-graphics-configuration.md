@@ -82,9 +82,9 @@ You can clone the [repository](git://ohwr.org/hdl-core-lib/vme64x-core.git) and 
 
 The diagram we are going to filter down is the one associated with the architecture `RTL` that implements the entity `VME64xCore_Top`.
 We express this on the first line using `diagram work.VME64xCore_Top.RTL`.
-The file is then read from bottom to top. First you define all the groups then you start configuring the diagram.
+The file is then read from bottom to top. First you define all the groups, then you start configuring the diagram.
 
-We then start grouping away, first grouping all of the blocks that end in `nputSample`, and then creating a bunch of busses.
+We start by grouping all of the blocks that end in `nputSample`, and then creating a bunch of busses.
 The syntax for a group is as follows `def Type group ID (Identifiers)` where `Type` is `block` or `wire`.
 `ID` is the new name of the group and `Identifiers` is a comma separated list of existing `ID`s (Graphics Configuration or VHDL) or a regex.
 The syntax for a regex is `regex"regex_pattern"`. This uses [Java regexes](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html), you can also find a cheat sheet [here](http://files.zeroturnaround.com/pdf/zt_regular-expressions-cheat-sheet.pdf).
@@ -110,6 +110,9 @@ Configurations are also not cascading (unlike CSS), otherwise coloring our `samp
 
 You are not able to group ports as we have not found a good use case for it yet (however if you find one let us know!), but grouped ports are created when you group wires into a bus.
 You can also configure lone ports e.g. `port clk_i { hide }`
+
+It is also possible to show only the instantiations blocks, hiding all of the assertions, signal assignments, processes,... .
+You do this by adding `show : instantiations` between the header and the group declarations.
 
 ### StateMachine
 
