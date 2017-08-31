@@ -1,16 +1,16 @@
 ---
-title: "Sigasi Studio Graphics Confguration Language Grammar"
+title: "Sigasi Studio Graphics Configuration Grammar"
 layout: page 
 pager: true
 author: Sigasi
-date: 2017-08-25
+date: 2017-08-31
 comments: true
 ---
 <em>This grammar allows you to filter, group and color your BlockDiagrams and StateMachines in Sigasi Studio.</em>  
 ## Grammar
   
 **DiagramConfiguration**{: #DiagramConfiguration }
-:	<a href="#Header">Header</a> <font color="purple"><b>{</b></font>  { <a href="#GraphicsDeclaration">GraphicsDeclaration</a>  }   { <a href="#ConfigurationBlock">ConfigurationBlock</a>  }  <font color="purple"><b>}</b></font> 
+:	<a href="#Header">Header</a> <font color="purple"><b>{</b></font>  { <a href="#GraphicsRestriction">GraphicsRestriction</a>  }   { <a href="#GraphicsDeclaration">GraphicsDeclaration</a>  }   { <a href="#ConfigurationBlock">ConfigurationBlock</a>  }  <font color="purple"><b>}</b></font> 
   
 **Header**{: #Header }
 :	<a href="#BlockDiagramHeader">BlockDiagramHeader</a>   
@@ -31,6 +31,15 @@ comments: true
   
 **Regex**{: #Regex }
 :	<font color="purple"><b>regex</b></font> <a href="#STRING">STRING</a> 
+  
+**GraphicsRestriction**{: #GraphicsRestriction }
+:	<a href="#BlockVisibilityRestriction">BlockVisibilityRestriction</a> 
+  
+**BlockVisibilityRestriction**{: #BlockVisibilityRestriction }
+:	<font color="purple"><b>show</b></font> <font color="purple"><b>:</b></font> <a href="#BlockVisibilityRestrictionType">BlockVisibilityRestrictionType</a> 
+  
+**BlockVisibilityRestrictionType**{: #BlockVisibilityRestrictionType }
+:	<font color="purple"><b>instantiations</b></font> 
   
 **GraphicsDeclaration**{: #GraphicsDeclaration }
 :	<a href="#GroupDeclaration">GroupDeclaration</a> 

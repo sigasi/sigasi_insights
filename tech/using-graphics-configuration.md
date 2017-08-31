@@ -3,7 +3,7 @@ title: "Using Sigasi Studio's Graphics Configuration"
 layout: page
 pager: true
 author: Titouan Vervack
-date: 2017-08-26
+date: 2017-08-31
 tags: 
   - VHDL
   - Graphics
@@ -67,11 +67,11 @@ Do note that in the BlockDiagram you can group blocks and wires while in the Sta
 
 Graphics Configuration Editor features:
 
-* Auto-complete (Ctrl+Space)
-* Formatting (Shift+Ctrl+F)
+* Auto-complete (**Ctrl+Space**)
+* Formatting (**Shift+Ctrl+F**)
 * Show in BlockDiagram/StateMachine (on right of an identifier, to show it in the diagram)
 * Double-click on a diagram element to navigate to it in the code
-* Navigate to declaration (Ctrl+click or F3 on identifier)
+* Navigate to declaration (**Ctrl+click** or **F3** on identifier)
 
 ## Show me!
 
