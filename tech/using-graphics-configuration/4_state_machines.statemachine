@@ -1,0 +1,18 @@
+statemachine work.dut.RTL : ^state {
+	def state group test2 (idle, ready)
+	def state group test (almost_ready, test2)
+
+	state preparing { color green }
+
+	state running { color yellow }
+
+	state test {
+		state almost_ready { color aqua }
+		state test2 {
+			color blue
+			state idle { color gray }
+			state ready { color purple }
+		}
+		color orange
+	}
+}

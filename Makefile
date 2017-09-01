@@ -1,6 +1,7 @@
 help:
 	@echo make build
 	@echo make serve
+	@echo make berve
 	@echo make publish
 	@echo make dependencies
 
@@ -49,6 +50,8 @@ serve:
 	@echo 'http://localhost:8000'
 	python -m urubu serve
 
+berve: build serve
+
 # linkchecker can be installed from http://wummel.github.io/linkchecker/ (or sudo dnf install linkchecker)
 dolinkchecker:
 	@echo Checking links at 'http://localhost:8000'
@@ -72,4 +75,4 @@ NOCAPS:
 	@ ! find . -name '*.gif'|grep -v _build/ | grep "[A-Z]"
 	@ ! find . -name '*.md' |grep -v README.md|grep -v LICENSE.md| grep -v _build/ |grep -v _gh-pages | grep "[A-Z]"
 
-.PHONY: help all build serve publish urubu
+.PHONY: help all build serve berve publish urubu
