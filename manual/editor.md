@@ -421,10 +421,6 @@ These markers can be [disabled](#disable-errors).
 
 You can configure the Verilog version (Verilog or SystemVerilog) via **Window > Preferences**, **Sigasi > Verilog** and **Verilog version**.
 
-### Disable Verilog Error Markers
-
-*Note that Sigasi Studio does not cover the entire SystemVerilog grammar yet. So if you are using *'unsupported'* syntax, you will see lots of incorrect [syntax error markers](#type-time-syntax-error-reporting). You can disable these error markers by pressing **Ctrl-3** and typing `Toggle Verilog error markers`. Next close and re-open all open Verilog editors to force a refresh.*
-
 ## Format
 
 Press **Ctrl+Shift+F** to format your current SystemVerilog file.

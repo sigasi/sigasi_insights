@@ -69,7 +69,7 @@ This results in major improvements in how we can offer you (System)Verilog suppo
 * We also improved our SystemVerilog analyzer. Sigasi now correctly *links* `packages`, `records`, `structs`, `unions` and `enums`. This improves **Open Declaration** and **Find References**.
 * Notes:
     * You can switch the [/manual/editor#Verilog version] via **Window > Preferences > Sigasi > Verilog > Verilog version**
-    * We do no support *the entire SystemVerilog Syntax* yet. So if you see unexpected syntax error markers, [send-email] or [/manual/editor#disable verilog error markers].
+    * We do no support *the entire SystemVerilog Syntax* yet. So if you see unexpected syntax error markers, [send-email].
   
 ### Sigasi XL Doc improvements
 
