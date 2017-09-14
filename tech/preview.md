@@ -21,7 +21,7 @@ We have updated our integrated JRE to 8u144. We have also updated our [EULA](htt
 
 ## Improved linting and Quick Fixes
 
-Some of these checks were enabled in 3.3 but were not enabled, they are now!
+Some of these checks were developed in 3.3 but were not enabled, they are now!
 
 - New [creator] checks
     - Quick fix when the VHDL version of the project is more recent than the version of the common libraries
@@ -39,12 +39,19 @@ The old view:
 The new view:
 ![Reskinned dependencies view](/releasenotes/3.6/newDependenciesView.png)  
 
+## Toolchains
+
+Sigasi Studio 3.6 now also offers following integrations:
+
+* ALINT-PRO (2017.07) checks
+* Vivado Xsim: compilation + simulation
+
+
 ## Rewrites
 These are internal rewrites meant to keep our technical debt in check while making it easier to add new features and fix bugs.
-As an end-user you shouldn't notice anything different (if you do please [contact us](mailto:info@sigasi.com)).
+As an end-user you shouldn't notice anything different (if you do please [contact us](mailto:support@sigasi.com)).
 
 - We've rewritten the VHDL formatter's Preserve Newline function
-- We've rewritten our librarymapper
 
 ## Bug fixes
 
