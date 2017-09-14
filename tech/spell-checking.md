@@ -9,14 +9,15 @@ bannerad: true
 ---
 
 
-Sigasi supports spelling checking in comments and strings, but you need to **install a spell checking plugin** first. Next you need to **download** and **configure** a **dictionary** for your language.
+Sigasi Studio supports spelling checking in comments and strings, but you need to **install a spell checking plugin** first. Next you need to **download** and **configure** a **dictionary** for your language.
 
 ## Install Hunspell4Eclipse
 
-Install the [Hunspell4Eclipse}(http://code.google.com/p/hunspell4eclipse) plugin:
+
+Install the [Hunspell4Eclipse](http://code.google.com/p/hunspell4eclipse) plugin:
 
 1. **Help > Install New Software ...**
-2. Enter this update site: <http://hunspell4eclipse.googlecode.com/svn/trunk/com.lorands.hunspell4eclipse.updatesite> and press **enter**
+2. Enter this update site: <http://download.sigasi.com/updates/hunspell4eclipse> and press **enter**
 3. Select **Hunspell4Eclipse > Hunspell4Eclipse**
 4. Click **Next >** and **Finish**, and restart Sigasi
 
@@ -35,3 +36,7 @@ The file you downloaded will have an `.oxt` extension. If you rename this extens
 Open the Spelling preference page:
 **Window > Preferences > General > Editors > Text Editors > Spelling**
 Next, enter the dictionary file path.
+
+## Update 2017-09
+
+Hunspell4Eclipse was originally hosted on the Google Code Project Hosting Service. Because this service was turned down in early 2016, we cloned the project's code on [GitHub](https://github.com/heeckhau/hunspell4eclipse) and made binaries available on Sigasi's download server (<http://download.sigasi.com/updates/hunspell4eclipse>).
