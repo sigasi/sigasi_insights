@@ -64,7 +64,7 @@ quickfix.
 * Switch to VHDL 2008 mode
 * Correct signal/variable assignment operator
 * Ignore deprecated libraries
-* Configure Altera, Xilinx and ModelSim libraries
+* Configure Altera, Xilinx, ModelSim and VUnit libraries
 * Declare missing enumeration literal in case statements
 * Add missing when clause in case statements
 * Correct attribute entity class in attribute specifications
