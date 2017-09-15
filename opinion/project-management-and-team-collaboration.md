@@ -18,7 +18,7 @@ Features
 
 * [/tech/coding-styles]
 * [/screencasts/custom_linting]
-* [/tech/generate-vhdl-doxygen-documentation-sigasi]
+* [/tech/generate-vhdl-documentation-sigasi]
 * [/manual/plugins#Revision Control Systems]
 * Code reviews
 * [Issue tracking](http://wiki.eclipse.org/Mylyn)
