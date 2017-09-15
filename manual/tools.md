@@ -98,17 +98,18 @@ For each toolchain Sigasi can support any combination of the following:
 
 Currently the following external compilers are supported:
 
-| Toolchain             | save-time compilation | start simulation | import third party libraries | import project from third party tool |
-| --------------------- | --------------------- | ---------------- | ---------------------------- | ------------------------------------ |
-| Aldec Riviera-PRO     | true                  | true             | false                        | false                                |
-| Aldec Active-HDL      | true                  | false            | false                        | false                                |
-| Aldec ALINT |true     | false                 | false            | false                        |                                      |
-| Altera Quartus II     | false                 | false            | false                        | true                                 |
-| ModelSim / QuestaSim  | true                  | true             | false                        | false                                |
-| Xilinx ISE            | true                  | true             | false                        | false                                |
-| Xilinx Vivado         | true                  | false            | false                        | false                                |
-| Cadence Incisive      | true                  | false            | false                        | false                                |
-| [OneSpin]             | true                  | false            | false                        | false                                |
+| Toolchain             | save-time compilation | start simulation         |
+| --------------------- | --------------------- | -------------------------|
+| Aldec Riviera-PRO     | true                  | true                     |
+| Aldec Active-HDL      | true                  | false                    |
+| Aldec ALINT           | true                  | (run elaboration checks) |
+| Aldec ALINT-PRO       | true                  | false                    |
+| Altera Quartus II     | false                 | false                    |
+| ModelSim / QuestaSim  | true                  | true                     |
+| Xilinx ISE            | true                  | true                     |
+| Xilinx Vivado         | true                  | true                     |
+| Cadence Incisive      | true                  | false                    |
+| [OneSpin]             | true                  | (run elaboration checks) |
 
 ## Save-time compilation
 
