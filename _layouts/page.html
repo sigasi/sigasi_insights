@@ -1,14 +1,18 @@
 {% extends "cantilis/page.html" %}
 
 {% block title %}
+    <div>
+        <h1 style="margin-bottom: 0px;margin-top: 30px;">{{this.title}}</h1>
+    </div>
+
     <div style="margin: 10px 0 10px">
         <span>
         {% if this.date %}
-        {% if "/releasenotes/" in this.url %}
-          Released on {{this.date|dateformat}}
-        {% else %}
-          Posted on {{this.date|dateformat}}
-        {% endif %}
+          {% if "/releasenotes/" in this.url %}
+            Released on {{this.date|dateformat}}
+          {% else %}
+            Posted on {{this.date|dateformat}}
+          {% endif %}
         {% endif %}
         {% if this.author %}
             by {{this.author|author}}
@@ -22,7 +26,7 @@
           {% endfor %}
         </span>
         {% endif %}
-        
+
         {% if this.license %}
         <span style="padding-left:50px">
             Licensed under {{this.license | license}} 
