@@ -347,6 +347,8 @@ work, clock_generator.vhd
 work, testbench.vhd
 ```
 
+This file will use relative paths, except when the file is on a different drive (on Windows).
+
 ## Auto-export
 
 You can also configure Sigasi Studio to **auto-export** this CSV file, every time the dependencies change.
