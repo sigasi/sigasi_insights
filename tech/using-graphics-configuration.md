@@ -129,4 +129,7 @@ For an example you can check out `4_state_machines.vhd` (in our VHDL Tutorial) w
 * StateMachine's only `Type` is `state` while BlockDiagram's `Type` contains `block, wire` and `port`.
 * If you want to match pattern X and Y, use regex pattern `(?=X)Y`
 * If you want to match pattern X or Y, use regex pattern `(X|Y)`
+* If you want to match pattern X case insensitively, use regex pattern `(?i:X)`
+* To point to an identifier in your code, that is a keyword in the GraphicsConfiguration, e.g. state in FSM,
+you can prefix it with a `^`, e.g. `^state`
 
