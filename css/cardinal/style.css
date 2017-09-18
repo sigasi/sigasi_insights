@@ -6322,10 +6322,10 @@ body[class*="header-naked"] .inner-page-wrap {
 
 .widget_search form input {
     margin: 0;
-    margin-top: 4px;
+    margin-top: 5px;
     border: 1px solid #BCCDF0;
     width: 99%;
-    height: 24px;
+    height: 25px;
     font-size: 14px;
     line-height: 19px;
     padding-left: 15px;
