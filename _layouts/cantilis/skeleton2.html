@@ -315,7 +315,35 @@
 		<script type='text/javascript' src='{{url_prefix}}/css/cardinal/js/combine/jquery.isotope.min.js'></script>
 		<script type='text/javascript' src='{{url_prefix}}/css/cardinal/js/combine/imagesloaded.js'></script>
 		<script type='text/javascript' src='{{url_prefix}}/css/cardinal/js/combine/jquery.infinitescroll.min.js'></script>
-		<script type='text/javascript' src='{{url_prefix}}/css/cardinal/js/functions.js'></script>
+		<script type='text/javascript'>
+			if (jQuery('#back-to-top').length > 0) {
+			    var scrollTrigger = 300,
+			    backToTop = function () {
+			        var scrollPosition = jQuery(window).scrollTop();
+			        if (scrollPosition > scrollTrigger) {
+			            jQuery('#back-to-top').stop().animate({
+			    		'bottom': '10px',
+			    		'opacity': 1
+				    	}, 300, "easeOutQuart");
+			        } else if (scrollPosition < 300) {
+			            jQuery('#back-to-top').stop().animate({
+			    		'bottom': '-80px',
+			    		'opacity': 0
+				    	}, 300, "easeInQuart");
+			        }
+			    };
+			    backToTop();
+			    jQuery(window).on('scroll', function () {
+			        backToTop();
+			    });
+			    jQuery('#back-to-top').on('click', function (e) {
+			        e.preventDefault();
+			        jQuery('html,body').animate({
+			            scrollTop: 0
+			        }, 700);
+			    });
+			}
+		</script>
 		<script type='text/javascript'>
 			/* <![CDATA[ */
 			var icl_vars = {
