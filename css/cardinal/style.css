@@ -6346,7 +6346,6 @@ body[class*="header-naked"] .inner-page-wrap {
 }
 
 .widget_search form:after {
-    content: "\1F50E";
     font-family: "SSGizmo";
     font-weight: normal;
     font-style: normal;
