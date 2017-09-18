@@ -18,7 +18,7 @@ def license(licenseName):
         return "the <a href='/LICENSE.html'>Sigasi Insights license</a>"
     else:
         raise "unknown license: " + licenseName
-def today(unusedArgumetn):
+def today(unusedArgument):
     return str(datetime.date.today())
 def dateformat(value, format="%Y-%m-%d"):
     return value.strftime(format).replace('-','&#8209;') #non-breaking hyphen
@@ -85,28 +85,10 @@ def split(items,i):
     return [items[:len(items)/2], items[len(items)/2:]] [i]
 def wistia(videoid,video_width=600,video_height=400):
     return """
-        <div id="wistia_{{videoid}}" style="height:{{video_height}}px;width:{{video_width}}px;margin: 0 auto" class="wistia_embed" data-video-width="{{video_width}}" data-video-height="{{video_height}}">
-              <object id="wistia_efw03up0ck_seo" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" style="display:block;height:{{video_height}}px;position:relative;width:{{video_width}}px;">
-                <param name="movie" value="http://embed.wistia.com/flash/embed_player_v2.0.swf?2012-06-01"></param>
-                <param name="allowfullscreen" value="true"></param><param name="allowscriptaccess" value="always"></param>
-                <param name="bgcolor" value="#ffffff"></param><param name="wmode" value="opaque"></param>
-                <param name="flashvars" value="controlsVisibleOnLoad=true&mediaDuration=30.47&image_crop_resized%3D{{video_width}}x{{video_height}}&unbufferedSeek=true&videoUrl=http%3A%2F%2Fembed.wistia.com%2Fdeliveries%2Fddf8cead70053c77e1400fad8185242b6fa596e5.bin"></param>
-                <embed src="http://embed.wistia.com/flash/embed_player_v2.0.swf?2012-06-01" allowfullscreen="true" allowscriptaccess="always" bgcolor=#ffffff flashvars="controlsVisibleOnLoad=true&mediaDuration=30.47&stillUrl=http%3A%2F%2Fembed.wistia.com%2Fdeliveries%2Fe1e5db77747eca2f9b721f1b396af988cc38eb8b.jpg%3Fimage_crop_resized%3D{{video_width}}x{{video_height}}&unbufferedSeek=true&videoUrl=http%3A%2F%2Fembed.wistia.com%2Fdeliveries%2Fddf8cead70053c77e1400fad8185242b6fa596e5.bin" name="wistia_efw03up0ck_html" style="display:block;height:100%;position:relative;width:100%;" type="application/x-shockwave-flash" wmode="opaque"></embed>
-                </object>
-        </div>
-        <script charset="ISO-8859-1" src="http://fast.wistia.com/static/concat/E-v1%2Csocialbar-v1.js"></script>
-        <script>
-          wistiaEmbed = Wistia.embed("{{videoid}}", {
-            version: "v1",
-            videoWidth: {{video_width}},
-            videoHeight: {{video_height}},
-            controlsVisibleOnLoad: false,
-          });
-          Wistia.plugin.socialbar(wistiaEmbed, {
-            version: "v1",
-            buttons: "twitter-googlePlus-facebook"
-          });
-        </script>""".replace('{{video_width}}',str(video_width)).replace('{{video_height}}',str(video_height)).replace('{{videoid}}',str(videoid))
+        <script src="//fast.wistia.com/embed/medias/j38ihh83m5.jsonp" async></script>
+        <script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_embed wistia_async_{{videoid}}" style="height:{{video_height}}px;width:{{video_width}}px;margin: 0 auto"></div>
+        """.replace('{{video_width}}',str(video_width)).replace('{{video_height}}',str(video_height)).replace('{{videoid}}',str(videoid))
 
 
 filters['author'] = author
