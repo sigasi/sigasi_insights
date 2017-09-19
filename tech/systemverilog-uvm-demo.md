@@ -1,7 +1,7 @@
 ---
 title: "How to setup a SystemVerilog UVM project in Sigasi"
-layout: page 
-pager: false
+layout: page
+pager: true
 author: Hendrik Eeckhaut
 date: 2017-06-17
 tags: 

@@ -135,7 +135,7 @@
 		<meta name="msapplication-TileImage" content="{{url_prefix}}/css/cropped-site_icon-270x270.png">
 		<!-- BEGIN GADWP v4.9.0.1 Universal Tracking - https://deconf.com/google-analytics-dashboard-wordpress/ -->
 		{% include 'cantilis/analytics.html' %}
-		{% if site.optimizely %}<script src="https://cdn.optimizely.com/js/{{site.optimizely}}.js"></script>{% endif %}
+		{% if site.optimizely %}<script type="text/javascript" src="https://cdn.optimizely.com/js/{{site.optimizely}}.js"></script>{% endif %}
 	</head>
 	<!--// OPEN BODY //-->
 	<body class="page page-id-12016 page-template-default bright-design mobile-header-left-logo mhs-mobile mh-slideout responsive-fluid sticky-header-disabled page-shadow product-shadows header-standard layout-boxed page-heading-standard disable-mobile-animations  _masterslider _msp_version_2.19.0">
@@ -315,6 +315,7 @@
 		<script type='text/javascript' src='{{url_prefix}}/css/cardinal/js/combine/jquery.isotope.min.js'></script>
 		<script type='text/javascript' src='{{url_prefix}}/css/cardinal/js/combine/imagesloaded.js'></script>
 		<script type='text/javascript' src='{{url_prefix}}/css/cardinal/js/combine/jquery.infinitescroll.min.js'></script>
+		<script type='text/javascript' src='{{url_prefix}}/css/cardinal/js/functions.min.js'></script>
 		<script type='text/javascript'>
 			if (jQuery('#back-to-top').length > 0) {
 			    var scrollTrigger = 300,
@@ -343,7 +344,7 @@
 			        }, 700);
 			    });
 			}
-		</script>
+                </script>
 		<script type='text/javascript'>
 			/* <![CDATA[ */
 			var icl_vars = {
