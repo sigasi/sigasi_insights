@@ -69,9 +69,11 @@ Graphics Configuration Editor features:
 
 * Auto-complete (**Ctrl+Space**)
 * Formatting (**Shift+Ctrl+F**)
-* Show in BlockDiagram/StateMachine (on right of an identifier, to show it in the diagram)
+* Quick outline (**Ctrl+O**)
+* Show in BlockDiagram/StateMachine (**Alt+Shift+W**)
 * Double-click on a diagram element to navigate to it in the code
 * Navigate to declaration (**Ctrl+click** or **F3** on identifier)
+* Hovering to show more information
 
 ## Show me!
 
@@ -88,6 +90,7 @@ We start by grouping all of the blocks that end in `nputSample`, and then creati
 The syntax for a group is as follows `def Type group ID (Identifiers)` where `Type` is `block` or `wire`.
 `ID` is the new name of the group and `Identifiers` is a comma separated list of existing `ID`s (Graphics Configuration or VHDL) or a regex.
 The syntax for a regex is `regex"regex_pattern"`. This uses [Java regexes](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html), you can also find a cheat sheet [here](http://files.zeroturnaround.com/pdf/zt_regular-expressions-cheat-sheet.pdf).
+You can also check what the regex matches by hovering over the query.
 
 Following this, we configure the leftover blocks, wires and ports as well as the block groups and buses we just created.
 The syntax for a configuration block is as follows: `Type Identifiers { ConfigurationItem* }` where `Type` is `block, wire` or `port`.
