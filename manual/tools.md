@@ -98,18 +98,18 @@ For each toolchain Sigasi can support any combination of the following:
 
 Currently the following external compilers are supported:
 
-| Toolchain             | save-time compilation | start simulation         |
-| --------------------- | --------------------- | -------------------------|
-| Aldec Riviera-PRO     | true                  | true                     |
-| Aldec Active-HDL      | true                  | false                    |
-| Aldec ALINT           | true                  | (run elaboration checks) |
-| Aldec ALINT-PRO       | true                  | false                    |
-| Altera Quartus II     | false                 | false                    |
-| ModelSim / QuestaSim  | true                  | true                     |
-| Xilinx ISE            | true                  | true                     |
-| Xilinx Vivado         | true                  | true                     |
-| Cadence Incisive      | true                  | false                    |
-| [OneSpin]             | true                  | (run elaboration checks) |
+| Toolchain               | save-time compilation | start simulation         |
+| ----------------------- | --------------------- | -------------------------|
+| Aldec Riviera-PRO       | true                  | true                     |
+| Aldec Active-HDL        | true                  | false                    |
+| Aldec ALINT             | true                  | (run elaboration checks) |
+| Aldec ALINT-PRO         | true                  | false                    |
+| Altera Quartus II       | false                 | false                    |
+| ModelSim / QuestaSim    | true                  | true                     |
+| Xilinx ISE              | true                  | true                     |
+| [Xilinx Vivado][vivado] | true                  | true                     |
+| Cadence Incisive        | true                  | false                    |
+| [OneSpin]               | true                  | (run elaboration checks) |
 
 ## Save-time compilation
 

@@ -13,19 +13,37 @@ Sigasi Studio 3.6 brings ...
 
 # Other new and noteworthy improvements
 
+## Xilinx Vivado XSIM
+
+![XSIM errors are displayed with markers in the editor and problems view](/releasenotes/3.6/xsim_compilation_error.png)
+![Start a simulation by setting a toplevel and clicking the run button](/releasenotes/3.6/xsim_simulation.png)
 
 # Bug fixes
 
-- ticket 3845 : \[VHDL-2008] Scoping issue with package generics in UVVM
-- ticket 3019 : Entity instantiation autocomplete does not work in `generate` statements
-- ticket 3895 : Avoid `NoSuchMethodError` when Sigasi is used with newer Guava versions (*Eclipse 4.6.3*)
-- ticket 3884 : Scoping error with `if` condition labels in `generate` statements
-- ticket 3876 : Silent exception while exporting block diagrams (project without mapped files)
-- ticket 3844 : Calling QuickFix from problems view applies the changes twice
-- ticket 3820 : `Case`/`for`/`else` generate show as `unknown` in Block Diagram
-- ticket 3893 : SystemVerilog parse error on Properties
-- ticket 3741 : One off error in Verilog macros
-- ticket 3921 : Autocomplete does not work after a SL comment
+- ticket 3891 : Formatter can't handle multiple replacements at the same offset
+- ticket 3930 : Crashes in formatter with preserve newlines
+- ticket 3932 : Comments before "when" get indented too much
+- ticket 3961 : Formatting crashes when NBSP is used
+- ticket 3968 : Formatting issue in case statement quick fix
+- ticket 3979 : Report statement is not being formatted
+- ticket 3980 : Package instantiation is formatted incorrectly
+
+### SystemVerilog bug fixes:
+
+- ticket 3927 : Improve double click behaviour inside preprocessor code
+- ticket 3943 : Non UTF-8 file encoding can cause preprocessor offset issues
+- ticket 3956 : Fixed grammar issue with delay control
+- ticket 3957 : Grammar & linking support for import statements inside VerilogUnitHeader
+- ticket 3959 : SystemVerilog parse error: import between module name and parameters
+
+### Other bug fixes:
+
+- ticket 3929 : Use project relative paths in CSV export for linked files
+- ticket 3935 : No icons in LibrariesView
+- ticket 3940 : Use all relative paths in CSV export
+- ticket 3945 : Hierarchy: some ProcedureCallStatements are actually ComponentInstantiatons
+- ticket 3946 : Attribute "subtype" & "base" should be available on all types
+- ticket 3958 : Support VHDL 2008 constructs in State Machine View
 
 ## How to update?
 
