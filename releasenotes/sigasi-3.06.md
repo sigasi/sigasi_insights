@@ -8,15 +8,35 @@ comments: true
 Sigasi Studio 3.6 brings ...
 
 
-# Improved Dependencies Viewer (VHDL)
 
 
 # Other new and noteworthy improvements
+
+## Standalone version now build on Eclipse Oxygen
+
+## Improved Dependencies Viewer (VHDL)
+
+## ALINT-PRO
 
 ## Xilinx Vivado XSIM
 
 ![XSIM errors are displayed with markers in the editor and problems view](/releasenotes/3.6/xsim_compilation_error.png)
 ![Start a simulation by setting a toplevel and clicking the run button](/releasenotes/3.6/xsim_simulation.png)
+
+## SystemVerilog improvements
+
+* Default defines
+* selection behaviour in preprocessor code
+* generate case in outline
+
+## Other
+
+* Better library mapping menu (easier to undo "exclude from build")
+* Simplified EULA
+* new JRE
+* relative paths in exported CSV file
+* QuickFix for VUnit libraries
+
 
 # Bug fixes
 
