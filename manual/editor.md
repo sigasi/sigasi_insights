@@ -417,7 +417,7 @@ Sigasi Studio marks Verilog syntax errors while you type.
 
 ## Initial preprocessor definitions for (System)Verilog projects
 
-Since [/releasenotes/sigasi-3.06.md] you can configure definitions that are set before other files in the project are processed.
+Since [/releasenotes/sigasi-3.06] you can configure definitions that are set before other files in the project are processed.
 Right click your project and select **Properties > (System)Verilog Preprocessor**.
 
 ![](/releasenotes/3.6/preprocessor_properties.png)

@@ -45,6 +45,7 @@ in the design. Sigasi’s VHDL linter checks for the following problems:
 * Order of generic and port associations
 * Consistent capitalization of identifiers [link](#capitalization-of-identifiers)
 * Advanced Configuration validation (component mismatch, missing binding, ...)
+* Redundant boolean equality expressions (`boolean = true`)
 
 ## No Linting for Common Libraries {: #linting-common-libraries}
 
@@ -303,6 +304,10 @@ Although VHDL is not case sensitive, it is recommend to always use the same capi
 Since [/releasenotes/sigasi-2.31] this can easily be fixed with a quickfix.
 
 ![](images/captalization_references.png)
+
+Since [/releasenotes/sigasi-3.06] all capitalization issues in a file can be fixed in one click.
+
+![](/releasenotes/3.6/capitalization_all.png)
 
 ## Naming Conventions
 
