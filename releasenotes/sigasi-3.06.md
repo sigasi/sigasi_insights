@@ -14,9 +14,9 @@ The [BlockDiagram][/manual/views#block] and [StateMachine][/manual/views#fsm] Vi
 
 With Graphics Configuration files you can customize the content of the graphical views in a **predictable** and **reproducible** way. Because the files have a **simple and readable syntax**, they can easily be **shared (and merged)** in a Version Control System. They can also naturally **evolve** and always **stay in sync with the original VHDL source files**.
 
-![Configuring Block Diagrams](/releasenotes/3.6/BlockDiagramSlider/BlockDiagram.gif)
+![Configuring Block Diagrams](/releasenotes/3.6/blockdiagramslider/block_diagram.gif)
 
-![Configuring State Machines](/releasenotes/3.6/StateMachineSlider/StateMachine.gif)
+![Configuring State Machines](/releasenotes/3.6/statemachineslider/state_machine.gif)
 
 [Read more and getting started](/tech/using-graphics-configuration)
 
