@@ -28,8 +28,7 @@ The syntax of the Graphic Configuration files is explained in "[/tech/graphics.e
 
 # Improved Dependencies Viewer (VHDL)
 
-Sigasi Studio's [dependencies view](/manual/views#dependencies) has a new skin. Its visuals are now in line with Block Diagram and Statemachine Views.
-
+Sigasi Studio's [dependencies view](/manual/views#dependencies) has a new skin. Its visuals are now in line with Block Diagram and Statemachine Views.  
 ![Old and New dependencies view](/releasenotes/3.6/dependencies_view.png)
 
 # Extra external tools
@@ -67,15 +66,20 @@ Double clicking in preprocessor code now selects individual words instead of the
 
 Sigasi Studio 3.6 is build on top of the newly released [Eclipse Oxygen](https://eclipse.org/oxygen/) platform. This brings a number of UI and other improvements. You can find all new and noteworthy changes in Eclipse Oxygen on the [Eclipse website](http://www.eclipse.org/eclipse/news/4.7/)
 
+If you open an existing workspace after the update to Sigasi Studio 3.6, you might see a warning about updating your workspace. You can safely confirm the update by clicking **OK**.  
+![Workspace Warning](3.6/workspace_older_version_warning.png)
+
 # Other new and noteworthy improvements
 
 * Better library mapping menu (easier to undo "exclude from build")
 * We updated the bundled Java Runtime Environment (JRE) to 8u144 (Note that this only applies to a fresh download of the stand-alone version. The JRE is not updated via the embedded update mechanism)
 * The CSV file export now uses *relative paths* for linked files too
 * We added a [quickFix for VUnit libraries][/tech/vunit-quickfix]
+![Quickfix for the VUnit library](/tech/vunit/quickfix.png)
 * Block Diagram: `buffer` ports are now displayed as output ports
 * Block Diagram: visual distinction between `input` and `inout` ports
-* We added a new quickfix to correct the capitalization of all references in the entire VHDL source file.
+* We added a new quickfix to correct the capitalization of all references in the entire VHDL source file.  
+![Correct the capitalization of all references in the entire VHDL source file.](/releasenotes/3.6/capitalization_all.png)
 * We simplified the [EULA][/eula]
 * New linting check: redundant `= true` or `= false` in boolean expressions
 
