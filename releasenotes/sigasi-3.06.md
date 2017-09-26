@@ -10,7 +10,7 @@ Read below to find all new and noteworthy changes.
 
 # Graphics Configuration \[[xl_doc]]
 
-The [BlockDiagram][/manual/views#block] and [StateMachine][/manual/views#fsm] Views are very useful ways to **explore** and **understand** HDL designs. But sometimes this just doesn't cut it. The diagrams are **too complex** and **crowded** to understand a design. They contain to much detail to see the big picture.
+The [BlockDiagram][/manual/views#block] and [StateMachine][/manual/views#fsm] Views are very useful ways to **explore** and **understand** HDL designs. But sometimes this just doesn't cut it. The diagrams are **too complex** and **crowded** to understand a design. They contain too much detail to see the big picture.
 **Sigasi Studio's Graphics Configuration files** are a new solution for this challenge.
 
 With Graphics Configuration files you can customize the content of the graphical views in a **predictable** and **reproducible** way. Because the files have a **simple and clear syntax**, they can easily be **shared (and merged)** in a Version Control System. They can also naturally **evolve** and always **stay in sync with the original VHDL source files**.
