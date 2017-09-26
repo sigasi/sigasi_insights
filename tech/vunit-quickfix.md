@@ -25,12 +25,10 @@ Make sure you use `vunit_hdl` and not `vunit`. The latter is a completely differ
 
 You can check that VUnit is installed correctly by for example running:
 ```sh
-echo -e "import vunit\nprint dir(vunit)" | python
+pip freeze
 ```
-The expected output is:
-```txt
-['ROOT', 'VUnit', 'VUnitCLI', '__builtins__', '__doc__', '__file__', '__name__', '__package__', '__path__', '__version__', 'about', 'abspath', 'activehdl_interface', 'builtins', 'cached', 'cds_file', 'check_preprocessor', 'color_printer', 'com', 'configuration', 'database', 'dependency_graph', 'design_unit', 'dirname', 'doc', 'exceptions', 'ghdl_interface', 'hashing', 'incisive_interface', 'join', 'location_preprocessor', 'modelsim_interface', 'ostools', 'parsing', 'persistent_tcl_shell', 'project', 'rivierapro_interface', 'simulator_factory', 'simulator_interface', 'test_bench', 'test_bench_list', 'test_list', 'test_report', 'test_runner', 'test_suites', 'ui', 'version', 'version_check', 'vhdl_parser', 'vsim_simulator_mixin', 'vunit', 'vunit_cli']
-```
+In the list of installed Python packages you will find a `vunit-hdl` entry and its version number.
+
 
 # Using VUnit in Sigasi Studio
 
