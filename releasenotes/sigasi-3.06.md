@@ -5,15 +5,15 @@ pager: true
 date: 2017-09-26
 comments: true
 ---
-Sigasi Studio 3.6 brings a powerful method to customize *Block Diagrams* and *State Machine Diagrams* with *Graphic Configuration* files.
+Sigasi Studio 3.6 introduces powerful methodologies with customizable *Block Diagrams* and *State Machine Diagrams* with *Graphic Configuration* files.
 Read below to find all new and noteworthy changes.
 
 # Graphics Configuration \[[xl_doc]]
 
-The [BlockDiagram][/manual/views#block] and [StateMachine][/manual/views#fsm] Views are a very useful way to **explore** and **understand** HDL designs. But sometimes it just doesn't cut it. The diagrams are **too complex** and **crowded** to understand a design. They contain to much detail to see the big picture.
+The [BlockDiagram][/manual/views#block] and [StateMachine][/manual/views#fsm] Views are very useful ways to **explore** and **understand** HDL designs. But sometimes this just doesn't cut it. The diagrams are **too complex** and **crowded** to understand a design. They contain to much detail to see the big picture.
 **Sigasi Studio's Graphics Configuration files** are a new solution for this challenge.
 
-With Graphics Configuration files you can customize the content of the graphical views in a **predictable** and **reproducible** way. Because the files have a **simple and readable syntax**, they can easily be **shared (and merged)** in a Version Control System. They can also naturally **evolve** and always **stay in sync with the original VHDL source files**.
+With Graphics Configuration files you can customize the content of the graphical views in a **predictable** and **reproducible** way. Because the files have a **simple and clear syntax**, they can easily be **shared (and merged)** in a Version Control System. They can also naturally **evolve** and always **stay in sync with the original VHDL source files**.
 
 The animation below shows different **Block Diagram** Graphic Configurations applied to the same VHDL source file.
 
@@ -23,18 +23,18 @@ The animation below shows different **State Machine** Graphic Configurations app
 
 ![Configuring State Machines](/releasenotes/3.6/statemachineslider/state_machine.gif)
 
-You can find more details and tips on getting started in "[/tech/using-graphics-configuration]".  
+Please find more details and tips on getting started in "[/tech/using-graphics-configuration]".  
 The syntax of the Graphic Configuration files is explained in "[/tech/graphics.ebnf]".
 
 # Improved Dependencies Viewer (VHDL)
 
-We've reskinned our [dependencies view](/manual/views#dependencies), it's visuals are now in line with Block Diagram and Statemachine Views.
+Sigasi Studio's [dependencies view](/manual/views#dependencies)has a new skin. Its visuals are now in line with Block Diagram and Statemachine Views.
 
 ![Old and New dependencies view](/releasenotes/3.6/dependencies_view.png)
 
 # Extra external tools
 
-In Sigasi Studio 3.6 you can also enable two extra external tools: [ALINT-PRO](https://www.aldec.com/en/products/functional_verification/alint-pro) and [Xilinx Vivado XSIM](https://www.xilinx.com/products/design-tools/vivado/simulator.html)
+Sigasi Studio 3.6 enables two extra external tools in your workflow: [ALINT-PRO](https://www.aldec.com/en/products/functional_verification/alint-pro) and [Xilinx Vivado XSIM](https://www.xilinx.com/products/design-tools/vivado/simulator.html)
 
 ## ALINT-PRO
 
@@ -56,7 +56,7 @@ By popular demand, we have also added the Xilinx Vivado simulator as external co
 
 * Improved outline
 * Configure project wide defines:  
-You can now configure definitions that are set before other (System)Verilog files in the project are processed.
+You can configure definitions that are set before other (System)Verilog files in the project are processed.
 ![](/releasenotes/3.6/preprocessor_properties.png)  
 The code in the **Initial preprocessor definitions** field is preprocessed before all other (System)Verilog code in your project. This allows you to, for example, set global defines without an explicit `include` statement.
 
