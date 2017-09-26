@@ -28,7 +28,7 @@ The syntax of the Graphic Configuration files is explained in "[/tech/graphics.e
 
 # Improved Dependencies Viewer (VHDL)
 
-Sigasi Studio's [dependencies view](/manual/views#dependencies)has a new skin. Its visuals are now in line with Block Diagram and Statemachine Views.
+Sigasi Studio's [dependencies view](/manual/views#dependencies) has a new skin. Its visuals are now in line with Block Diagram and Statemachine Views.
 
 ![Old and New dependencies view](/releasenotes/3.6/dependencies_view.png)
 
@@ -70,7 +70,7 @@ Sigasi Studio 3.6 is build on top of the newly released [Eclipse Oxygen](https:/
 # Other new and noteworthy improvements
 
 * Better library mapping menu (easier to undo "exclude from build")
-* We updated the bundled Java Runtime Environment (JRE) to 8u144 (Note that this only aplies to a fresh download of the stand-alone version. The JRE is not updated via the embedded update mechanism)
+* We updated the bundled Java Runtime Environment (JRE) to 8u144 (Note that this only applies to a fresh download of the stand-alone version. The JRE is not updated via the embedded update mechanism)
 * The CSV file export now uses *relative paths* for linked files too
 * We added a [quickFix for VUnit libraries][/tech/vunit-quickfix]
 * Block Diagram: `buffer` ports are now displayed as output ports
