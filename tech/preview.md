@@ -16,71 +16,7 @@ Although these preview releases are less rigorously tested than than the officia
 
 # Current preview release
 
-## General updates
-We have updated our integrated JRE to 8u144. We have also updated our [EULA](http://insights.sigasi.com/eula.html).
-
-## Improved linting and Quick Fixes
-
-Some of these checks were developed in 3.3 but were not enabled, they are now!
-
-- New [creator] checks
-    - Quick fix when the VHDL version of the project is more recent than the version of the common libraries
-
-- New [xl] checks
-    - Flag illegal output/input port connections
-    - Quick Fix when ports or generics are mapped in a different order than their declaration
-    ![Association order](/releasenotes/3.3/association_order.png)
-
-## Improved graphics
-- We're introducing our GraphicsConfiguration Language which allows you to simplify your blockdiagrams and statemachines. Read more about it [here](using-graphics-configuration.html).
-- We've reskinned our [dependencies view](http://insights.sigasi.com/manual/views.html#dependencies), it's visuals are now in line with blockdiagrams and statemachines  
-The old view:
-![Old dependencies view](/releasenotes/3.6/oldDependenciesView.png)  
-The new view:
-![Reskinned dependencies view](/releasenotes/3.6/newDependenciesView.png)  
-
-## Toolchains
-
-Sigasi Studio 3.6 now also offers following integrations:
-
-* ALINT-PRO (2017.07) checks
-* Vivado Xsim: compilation + simulation
-
-
-## Rewrites
-These are internal rewrites meant to keep our technical debt in check while making it easier to add new features and fix bugs.
-As an end-user you shouldn't notice anything different (if you do please [contact us](mailto:support@sigasi.com)).
-
-- We've rewritten the VHDL formatter's Preserve Newline function
-
-## Bug fixes
-
-### Formatting bug fixes:
-
-- ticket 3891 : Formatter can't handle multiple replacements at the same offset
-- ticket 3930 : Crashes in formatter with preserve newlines
-- ticket 3932 : Comments before "when" get indented too much
-- ticket 3961 : Formatting crashes when NBSP is used
-- ticket 3968 : Formatting issue in case statement quick fix
-- ticket 3979 : Report statement is not being formatted
-- ticket 3980 : Package instantiation is formatted incorrectly
-
-### SystemVerilog bug fixes:
-
-- ticket 3927 : Improve double click behaviour inside preprocessor code
-- ticket 3943 : Non UTF-8 file encoding can cause preprocessor offset issues
-- ticket 3956 : Fixed grammar issue with delay control
-- ticket 3957 : Grammar & linking support for import statements inside VerilogUnitHeader
-- ticket 3959 : SystemVerilog parse error: import between module name and parameters
-
-### Other bug fixes:
-
-- ticket 3929 : Use project relative paths in CSV export for linked files
-- ticket 3935 : No icons in LibrariesView
-- ticket 3940 : Use all relative paths in CSV export
-- ticket 3945 : Hierarchy: some ProcedureCallStatements are actually ComponentInstantiatons
-- ticket 3946 : Attribute "subtype" & "base" should be available on all types
-- ticket 3958 : Support VHDL 2008 constructs in State Machine View
+We just released [/releasenotes/sigasi-3.06], so there is nothing to mention here yet.
 
 # Update or install?
 
