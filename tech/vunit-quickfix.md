@@ -14,10 +14,10 @@ Since [version 3.6](/releasenotes/sigasi-3.06), Sigasi Studio has a **quickfix**
 
 VUnit is an open source **unit testing framework for VHDL/SystemVerilog** that helps to write, and automatically run, tests. 
 The VUnit project was started by Lars Asplund from [Synective Labs](http://www.synective.se) and its source code is hosted at [GitHub](https://github.com/VUnit/vunit).
-VUnit automatically scans your projects for unit tests (aka test benches), runs your them with your favorite simulator and reports you the results.
+VUnit automatically scans your projects for unit tests (aka test benches), runs them with your favorite simulator and reports you the results.
 This automation helps to run tests frequently and iterate faster.
 
-The VUnit scripts are written in Python, so first make sure python is installed on your system. The recommended way to install the latest stable release of VUnit is via `pip`. On most system running the following command should do the trick:
+The VUnit scripts are written in Python, so first make sure python is installed on your system. The recommended way to install the latest stable release of VUnit is via `pip`. On most systems running the following command should do the trick:
 ```sh
 pip install vunit_hdl
 ```
@@ -32,7 +32,7 @@ In the list of installed Python packages you will find a `vunit-hdl` entry and i
 
 # Using VUnit in Sigasi Studio
 
-If you want to use VUnit in your VHDL testbenches. You need to add a library clause for the `vunit_lib` library. All necesary packages can be imported with the predifined `vunit_context` context.
+If you want to use VUnit in your VHDL testbenches. You need to add a library clause for the `vunit_lib` library. All necessary packages can be imported with the predefined `vunit_context` context.
 
 A typical VUnit test bench file will have following entity declaration:
 ```vhdl
@@ -45,7 +45,7 @@ end entity;
 ```
 *Note that the `context` clause is VHDL-2008 syntax. So, make sure your project is configured accordingly: Right click project, **Properties > VHDL Version > VHDL-2008**.*
 
-When you enter this VHDL snippet in a VHDL file in a Sigasi Studio project, you will see a warning (*Library "vunit\_lib" is not available*) on the library clause and multiple errors because references to missing declarations.
+When you enter this VHDL snippet in a VHDL file in a Sigasi Studio project, you will see a warning (*Library "vunit\_lib" is not available*) on the library clause and multiple errors because of references to missing declarations.
 ![vunit...](/tech/vunit/before.png)
 
 To automatically add the VUnit library to your project, click the light bulb icon to trigger the quick fix (or press **Ctrl-F1** on the line with the warning).

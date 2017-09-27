@@ -5,7 +5,7 @@ pager: true
 date: 2017-09-26
 comments: true
 ---
-Sigasi Studio 3.6 introduces powerful methodologies with customizable *Block Diagrams* and *State Machine Diagrams* with *Graphic Configuration* files.
+Sigasi Studio 3.6 introduces powerful methodologies with customizable *Block Diagrams* and *State Machine Diagrams* with *Graphics Configuration* files.
 Read below to find all new and noteworthy changes.
 
 # Graphics Configuration \[[xl_doc]]
@@ -15,16 +15,16 @@ The [BlockDiagram][/manual/views#block] and [StateMachine][/manual/views#fsm] Vi
 
 With Graphics Configuration files you can customize the content of the graphical views in a **predictable** and **reproducible** way. Because the files have a **simple and clear syntax**, they can easily be **shared (and merged)** in a Version Control System. They can also naturally **evolve** and always **stay in sync with the original VHDL source files**.
 
-The animation below shows different **Block Diagram** Graphic Configurations applied to the same VHDL source file.
+The animation below shows different **Block Diagram** Graphics Configurations applied to the same VHDL source file.
 
 ![Configuring Block Diagrams](/releasenotes/3.6/blockdiagramslider/block_diagram.gif)
 
-The animation below shows different **State Machine** Graphic Configurations applied to the same VHDL source file.
+The animation below shows different **State Machine** Graphics Configurations applied to the same VHDL source file.
 
 ![Configuring State Machines](/releasenotes/3.6/statemachineslider/state_machine.gif)
 
 Please find more details and tips on getting started in "[/tech/using-graphics-configuration]".  
-The syntax of the Graphic Configuration files is explained in "[/tech/graphics.ebnf]".
+The syntax of the Graphics Configuration files is explained in "[/tech/graphics.ebnf]".
 
 # Improved Dependencies Viewer (VHDL)
 
