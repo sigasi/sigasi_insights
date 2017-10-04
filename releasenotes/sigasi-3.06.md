@@ -110,3 +110,9 @@ If you open an existing workspace after the update to Sigasi Studio 3.6, you mig
 ## How to update?
 
 If you have Sigasi Studio 3 installed, you can [update][update_sigasi] or [download a fresh install of the latest version][download_latest].
+
+# Sigasi 3.6.1 point release
+
+On October 4th we released Sigasi Studio 3.6.1. This release fixes an issue when launching ModelSim simulations. The Sigasi Studio 3.6.1 release contains some minor bug fixes too.
+
+Thanks for all bug reports and enabling Talkback.
