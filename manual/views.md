@@ -135,7 +135,7 @@ You can configure extra tags in the Task Tag preference page:
 
 # Block Diagram View {: #block}
 
-[xl_only],[vhdl_only]
+[xl_doc_only],[vhdl_only]
 
 The **Block Diagram View** displays a graphical (block diagram) view
 of all architectures and its instantiations in your current VHDL editor.
@@ -220,7 +220,7 @@ Users without a XL Doc License can also export a (watermarked) pdf.
 
 # Net Search View {: #netsearch}
 
-[xl_doc_only],[vhdl_only]
+[xl_only],[vhdl_only]
 
 With **Net search**, you can you to find *loads* and *drivers* of a net.
 A *net* is defined as a signal or port and all other signals and ports
