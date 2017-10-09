@@ -160,7 +160,7 @@ libraries to the external compiler for compilation. These libraries are
 expected to be pre-compiled . Contact support@sigasi.com if you want to
 add more libraries to this list.
 
-If your project contains a `modelsim.ini` file , Sigasi will add this
+If your project root contains a `modelsim.ini` file , Sigasi will add this
 file to the `vcom` command with `-modelsimini`. This allows you to
 configure custom settings for Mentor’s `vcom`.
 
