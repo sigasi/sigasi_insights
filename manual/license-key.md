@@ -195,7 +195,7 @@ If your floating license server does not function properly, try the following st
 * You can check that the FlexNet daemon is running as expected by following these steps:
     * [Download][#download-flexnet-daemons] the daemon zip file on the client machine
     * Run
-    ```bash
+    ```
     lmutil[.exe] lmdiag -c "<port>@<server>" -n
     ```
     * If the server is running correctly, you should see a description of the valid FlexNet features served by you license server. 
