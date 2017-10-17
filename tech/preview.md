@@ -1,8 +1,8 @@
 ---
-title: Sigasi Studio Preview (3.6)
+title: Sigasi Studio Preview (3.7)
 layout: page
 pager: true
-date: 2017-05-19
+date: 2017-10-17
 comments: true
 ---
 
