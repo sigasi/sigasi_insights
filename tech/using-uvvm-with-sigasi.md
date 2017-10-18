@@ -31,19 +31,15 @@ By default Sigasi Studio maps all files to library *work*. This is not what the 
     * In the Project Explorer, right click the project and select **Properties > VHDL Version**.
     * In the drop=down menu select **VHDL 2008** and press **Apply and Close**.
     * In your project right click **Common Libraries** and select **Set Library > Reset Common Libraries**.
-* In the Project Explorer, right click the project and select **Exclude from build**.
 * Select all folders in the project, right click and choose **Set Library > Map folders to folder name**.
 * Go into the *uvvm_vvc_framework* folder, right click on *src_target_dependent* and select **Exclude from build**.
 * Next we need to add symbolic links to the *src_target_dependent* folder in all of the *bitvis_vip_* folders. We'll create the symbolic link once and then copy and paste it into the other folders.
-    * Right click on the *bitvis_vip_avalon_mm* folder and select **New > Folder**.
-    * Open the **Advanced** section and set the radio button to **Link to alternate location (Linked Folder)**.
-    * Click the **Variables...** button. A new dialog window opens where you choose the **PROJECT_LOC** variable. Then click **Extend...**.
-    * A the new dialog window opens where you need to select **uvvm_vvc_framework > src_target_dependent**. Pressing **OK** will close the two opened dialog windows.
-    * Then click **Finish** to create the linked folder.
-    ![Link_the_src_target_dependent_folder](using-uvvm-with-sigasi/LinkedFolder.png)
+    * Left click and drag the *src_target_dependent* folder onto one of the **bitvis_vip_** folders while pressing the **Ctrl** key.
+    * After dropping the folder the **File and Folder Operations** dialog opens. Here you set the radio button to **Link to files and folders** and make sure the link locations are created relative to **PROJECT_LOC**. Then press **OK**.
     * You now can right click on the linked folder and select **Copy**.
     * Right click each of the remaining *bitvis_vip_* folders and select **Paste**.
 
+# Conclusion
 The UVVM framework is now mapped correctly in Sigasi Studio. There are two testbenches that can be set as toplevel and used to start a simulation.
 
 * *bitvis_irq/tb/irqc_tb.vhd*
@@ -52,5 +48,5 @@ The UVVM framework is now mapped correctly in Sigasi Studio. There are two testb
 If you want to skip all these steps, you can also download the UVVM_All framework including project files from [where we cloned it][UVVM_All_Sigasi].
 
 [UVVM_All]: https://github.com/UVVM/UVVM_All
-[UVVM_All_Sigasi]: https://github.com/heeckhau/UVVM_All
+[UVVM_All_Sigasi]: https://github.com/sigasi/UVVM_All
 
