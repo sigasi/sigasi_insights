@@ -6,3 +6,4 @@ _sigasi_insights_offline.tgz
 _build_offline
 linkchecker_result.html
 server.PID
+*.sw?
