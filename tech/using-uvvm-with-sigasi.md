@@ -47,6 +47,8 @@ The UVVM framework is now mapped correctly in Sigasi Studio. There are two testb
 * *bitvis_irq/tb/irqc_tb.vhd*
 * *bitvis_uart/tb/uart_vvc_tb.vhd*
 
+To define a toplevel, open one of these files and right click on an architecture, entity or configuration. Then click **Set as Top Level**.
+
 If you want to skip all these steps, you can also download the UVVM_All framework including project files from [where we cloned it][UVVM_All_Sigasi]. Then you can just import the existing VHDL Project.
 
 [UVVM_All]: https://github.com/UVVM/UVVM_All
