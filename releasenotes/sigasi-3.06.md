@@ -117,3 +117,12 @@ On October 4th we released Sigasi Studio 3.6.1. This release fixes an issue when
 
 Thanks for all bug reports and enabling Talkback.
 
+# Sigasi 3.6.2 point release
+
+On October 19th we released Sigasi Studio 3.6.2. This release fixes a few important Sigasi Studio issues:
+
+* Avoid that the vector width linting analysis goes into an infinite loop for any VHDL code
+* Fixed PDF documentation export when project has excluded VHDL files
+* Fixed refresh issues in the graphical views
+
+ 
