@@ -76,8 +76,6 @@ After starting Eclipse:
 5. Click the **Next** button.
 6. The following steps are pretty self-explaining.
 
-**Note about Eclipse Neon (4.6):** Sigasi 3.1 works fine in the newly release Eclipse Neon. However, the bundled (optional) **Mousefeed plugin** does not. So if you did install the Mousefeed plugin: (1) add **`http://download.sigasi.com/updates/mousefeed`** as update site and (2) update Mousefeed to the latest version.
-
 ## Installing the offline update site (Sigasi Studio XL)
 
 Installing the offline update site is very similar to installing from the [main update site][#eclipse-plugin], but *step 2* is replaced with these steps:

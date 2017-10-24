@@ -92,7 +92,7 @@ Ignored resources are decorated with a ![](icons/ignoreicon.png) icon in the pro
 
 # Sigasi startup fails: "Could not create the Java virtual machine"
 
-On some computers, the standalone version of Sigasi will fail to start with an error message similar to: "Could not create the Java virtual machine." This happens especially on 32-bit Windows machines with less than 2GB of physical memory. The reason is that the Java virtual machine tries to allocate more much memory than what is available.
+On some computers, the standalone version of Sigasi will fail to start with an error message similar to: "Could not create the Java virtual machine." This happens especially on 32-bit Windows machines with less than 2GB of physical memory. The reason is that the Java virtual machine tries to allocate more memory than what is available.
 
 In order to solve this, you can decrease the default heap size settings. You can do this by adding following lines to `sigasi.ini` or `eclipse.ini` in your Sigasi installation folder:
 
