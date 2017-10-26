@@ -19,10 +19,10 @@ When you start using Sigasi, the first thing you have to do is [/manual/projects
 
 Because there are so many different formats to describe this information, we cannot offer one universal solution. But to make the import process easier, we have developed [Python scripts](https://github.com/sigasi/SigasiProjectCreator) that make it easy for you to convert your own project description into a Sigasi project description.
 
-The [`convertCsvFileToLinks.py` script](https://github.com/sigasi/SigasiProjectCreator/blob/master/convertCsvFileToLinks.py) converts a CSV file ([example file](https://github.com/sigasi/SigasiProjectCreator/blob/master/test-files/compilation_order.csv)) into a Sigasi Project. This scripts adds a link to each file in the list and maps it to the corresponding library. 
+The [`convertCsvFileToLinks.py` script](https://github.com/sigasi/SigasiProjectCreator/blob/master/src/convertCsvFileToLinks.py) converts a CSV file ([example file](https://github.com/sigasi/SigasiProjectCreator/blob/master/tests/test-files/compilation_order.csv)) into a Sigasi Project. This scripts adds a link to each file in the list and maps it to the corresponding library. 
 
 All scripts are open sourced under a [BSD license](https://github.com/sigasi/SigasiProjectCreator/blob/master/LICENSE). So you can freely customize them to your specific needs. Feel free to suggest or contribute improvements.
 
 Of course we can help you write your scripts. [contact-us] for more info.
 
-**P.S.**: You can also [/manual/opening#files-command-line] with a script. Simply start Sigasi with parameter `-p <path to your project folder>`
+**P.S.**: You can also [open files or projects](/manual/opening.html#files-command-line) with a script. Simply start Sigasi with parameter `-p <path to your project folder>`
