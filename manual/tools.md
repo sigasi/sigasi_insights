@@ -9,14 +9,9 @@ simulators. Different techniques offer varying degrees of flexibility
 and automation.
 
 Most people will want to set up their [/manual/tools#External Compilers]
-so that Sigasi can use
-them to compile and start simulations. This is currently supported only
-for `vcom`-style simulators, Aldec Riviera-PRO and Mentor Graphics
-ModelSim and QuestaSim; and `isim` from Xilinx. Learn about [/manual/tools#External Compilers].
+so that Sigasi can use them to compile and start simulations.
 
-Another way to compile your project is to export your project in one of
-two formats. The first format is a Makefile for compiling your project
-with ModelSim. The second format is a CSV (comma separated values) list
+Another way to compile your project is to export your project to a CSV (comma separated values) list
 of all the files in your project, in the correct compilation order.
 Learn more about how to [/manual/tools#Export] your project's file list.
 

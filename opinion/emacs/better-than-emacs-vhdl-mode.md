@@ -16,7 +16,7 @@ The big difference in approach between Sigasi and Emacs VHDL mode is this:  Emac
 * **Error messages while you type.** The ultra fast built-in compiler gives you error messages while you are typing, much like a spell checker in a word processor.
 * **Navigation** Every declaration is just one button away. Do you want to go to the declaration of a certain constant, signal or entity? Just press F3!
 * **Mouse-over hovers** Learn about any identifier just by hovering your mouse over the name.
-* **Compile your files** Export the correct build order of your VHDL files: either as a simple list, or as a full fledged Makefile with support for configurations and multiple libraries.
+* **Compile your files** Export the correct build order and library mapping of your VHDL files as an [automatically updated csv file](/manual/tools.html#auto-export).
 
 As a special, non technical criterium:
 
