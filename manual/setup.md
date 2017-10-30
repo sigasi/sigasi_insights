@@ -60,9 +60,9 @@ executing this startup file.
 
 *Note that we do **not** support Eclipse 3 any more.* ([System Requirements][/faq#what-are-the-system-requirements])
 
-[latest-eclipse-cpp-windows64]:http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/neon/2/eclipse-cpp-neon-2-win32-x86_64.zip
-[latest-eclipse-cpp-linux64]:http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/neon/2/eclipse-cpp-neon-2-linux-gtk-x86_64.tar.gz
-[latest-eclipse-cpp]:http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/neon2
+[latest-eclipse-cpp-windows64]:http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/1a/eclipse-cpp-oxygen-1a-win32-x86_64.zip
+[latest-eclipse-cpp-linux64]:http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/1a/eclipse-cpp-oxygen-1a-linux-gtk-x86_64.tar.gz
+[latest-eclipse-cpp]:https://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/oxygen1a
 
 ## Install the Eclipse Plugin {: #eclipse-plugin}
 
