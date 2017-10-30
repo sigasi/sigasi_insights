@@ -17,7 +17,7 @@ bannerad: true
 To install the Tcl plugin in Sigasi:
 
 1. Click **Help > Install New Software…**
-2. Enter `http://download.eclipse.org/releases/neon` as update site in the **Work with:** field
+2. Enter `http://download.eclipse.org/releases/oxygen` as update site in the **Work with:** field
 3. When the index of the update is downloaded (this can take a while) enter **tcl** in the *type filter* text box
 4. Select the **Dynamic Languages Toolkit – Tcl Development Tools**
 5. Click through the straightforward, subsequent steps
@@ -28,7 +28,7 @@ To install the Tcl plugin in Sigasi:
 
 After the Tcl plugin is installed you need to configure at least one Tcl interpreter.
 
-Select **Window > Preferences > TCL > Interpreters**. You can add an interpreter manually with the **Add** button or you can try automatic detection with the **Search** button.
+Select **Window > Preferences > Tcl > Interpreters**. You can add an interpreter manually with the **Add** button or you can try automatic detection with the **Search** button.
 
 ![](images/install_tcl_pref.png)
 
@@ -59,5 +59,5 @@ to the `<natures></natures>` element.
 
 ## More
 
-You can find more information in the bundled help pages:  **Help > Help Contens > TCL Development User Guide**.
+You can find more information in the bundled help pages:  **Help > Help Contens > Tcl/Xotcl Development User Guide**.
 The help pages also contain a **tutorial** that guides you through all Tcl features.
