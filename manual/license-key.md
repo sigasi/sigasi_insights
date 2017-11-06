@@ -49,22 +49,45 @@ INCREMENT com.sigasi.hdt sigasi 2.0 18-nov-2012 4 \
 ## Configuring Floating license in Sigasi Studio (Flexnet Client)
 
 In order to use a floating license, Sigasi Studio needs to know how to contact the server.
+The license server can be configured in Sigasi Studio or using an environment variable.
 
-In the Sigasi Studio, navigate to the **License Key** preference page via:
-**Window > Preferences > Sigasi > License Key** 
+### Configure the license server in Sigasi Studio
 
-Next enter `<port number>@<servername>` (for example: `5050@myserver.example.com`) as license key in:  
+In Sigasi Studio, navigate to the **License Key** preference page via:
+**Window > Preferences > Sigasi > License Key**.
+Next enter `<portnumber>@<servername>` in the **License key path**. For example:
+```
+27000@myserver.example.com
+```
 
-You can also set your license via an environment variable. Both `SIGASI_LM_LICENSE_FILE` and `LM_LICENSE_FILE` are supported. But when `SIGASI_LM_LICENSE_FILE` is set, `LM_LICENSE_FILE` is ignored.
+If you have redundant license servers, enter each of the license servers separated by "&".
+For example:
+```
+27000@myserver1.example.com&27000@myserver2.example.com&27000@myserver3.example.com
+```
 
-Note that if you want to use the environment variable, you can not enter a path in the License Key preference page. The value on this page has priority over environment variables. 
+If you leave the **License key path** empty, Sigasi Studio will try to use an environment variable
+to find the license server.
+
+### Configure the license server in an environment variable
+
+You can also set your license server via an environment variable instead of configuring it in Sigasi Studio.
+Both `SIGASI_LM_LICENSE_FILE` and `LM_LICENSE_FILE` are supported.
+When `SIGASI_LM_LICENSE_FILE` is set, `LM_LICENSE_FILE` is ignored.
+
+Note that if you want to use an environment variable, you can not enter a path in the License Key preference page. The value on this page has priority over environment variables. 
 
 Linux Example:
 ```
-export SIGASI_LM_LICENSE_FILE=27000@flexnet.sigasi.com
+export SIGASI_LM_LICENSE_FILE=27000@myserver.example.com
 ```
 
+For redundant license servers, the servers should be separated using ":" on Linux and using ";" on Windows.
 
+Linux Example:
+```
+export SIGASI_LM_LICENSE_FILE="27000@myserver1.example.com:27000@myserver2.example.com:27000@myserver3.example.com"
+```
 
 ## License server setup
 
