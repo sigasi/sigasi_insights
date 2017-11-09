@@ -12,7 +12,7 @@ highlighted.
 The views provide alternative ways to access the information in a
 project. They permit efficient navigation, inspection and editing.
 
-This chapter lists and explains the most important views in Sigasi. Some views are not covered here, more specifically some views that are either inherited from Eclipse, or views that are provided by third-party plugins. Please refer to the Eclipse documentation or to the specific plugin documentation for further information on those views.
+This chapter lists and explains the most important views in Sigasi Studio. Some views are not covered here, more specifically some views that are either inherited from Eclipse, or views that are provided by third-party plugins. Please refer to the Eclipse documentation or to the specific plugin documentation for further information on those views.
 
 You can open a View in several different ways:
 
@@ -125,7 +125,7 @@ always be selected in the Library view.
 ![](images/tasks-view.png)
 
 It is common practice to add **TODO** and **FIXME** comments in your
-code. Sigasi automatically scans your comments for TODO and FIXME tags
+code. Sigasi Studio automatically scans your comments for TODO and FIXME tags
 and clearly highlights these comments with **Task Tags**. You can get a
 nice overview of all task markers in your workspace in the **Task View**
 (**Windows \> Show View \> Tasks**).
@@ -198,11 +198,11 @@ If you are working on a mixed language project, the Dependencies View will also 
 [xl_doc_only],[vhdl_only]
 
 The **Documentation view** gives you a live preview of the automatic
-documentation Sigasi can generate for your project.
+documentation Sigasi Studio can generate for your project.
 
 ![](images/documentationview.png)
 
-You do not need to add any special annotations to your code. Sigasi uses the same code/comment association as the hover provider ([/manual/editor#Comment Association]). So to document a `port`, you append a comment to a port declaration. To document an `architecture`, you put the comment just on top of the architecture.
+You do not need to add any special annotations to your code. Sigasi Studio uses the same code/comment association as the hover provider ([/manual/editor#Comment Association]). So to document a `port`, you append a comment to a port declaration. To document an `architecture`, you put the comment just on top of the architecture.
 
 ## Export Documentation
 
@@ -249,7 +249,7 @@ In the preprocessor view you can preview the expanded text of Verilog macros. Th
 
 # Console view
 
-When Sigasi launches external tools (e.g. external compiler, documentation generation,...) the output is logged to the console view.
+When Sigasi Studio launches external tools (e.g. external compiler, documentation generation,...) the output is logged to the console view.
 This is a generic Eclipse view \[[Documentation](http://help.eclipse.org/neon/index.jsp?topic=%2Forg.eclipse.cdt.doc.user%2Freference%2Fcdt_u_console_view.htm)].
 
 Different tools can open different consoles. You can switch between different consoles by clicking the ![icon console display](icons/icon_con_disp_console.png)-icon.

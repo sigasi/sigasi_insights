@@ -1,21 +1,21 @@
 ---
-title: "Sigasi Talkback"
+title: "Sigasi Studio Talkback"
 layout: page 
 pager: true
 ---
 
-Talkback is a Sigasi service that automatically collects metadata about how Sigasi is used and sends this metadata to Sigasi through a secured connection.
+Talkback is a Sigasi Studio service that automatically collects metadata about how Sigasi Studio is used and sends this metadata to Sigasi through a secured connection.
 
 # Why should I enable Talkback?
 
-By enabling Talkback you help us improve Sigasi:
+By enabling Talkback you help us improve Sigasi Studio:
 
-* Talkback lets us **determine which features are heavily used**. This helps in planning which kind of features are valuable for you as Sigasi user, so that we can adjust our product roadmap.
-* Talkback collects **performance statistics**, that we can relate to the project sizes. Together with to our in-house performance test, this helps us keep the Sigasi compiler and user interface fast.
+* Talkback lets us **determine which features are heavily used**. This helps in planning which kind of features are valuable for you as Sigasi Studio user, so that we can adjust our product roadmap.
+* Talkback collects **performance statistics**, that we can relate to the project sizes. Together with to our in-house performance test, this helps us keep the Sigasi Studio compiler and user interface fast.
 * Talkback helps us **reduce software errors** by collecting incident reports from a wide range of use cases.
 * Talkback is automatic and less cumbersome that feedback surveys
 
-The end result is that you can use an always-improving Sigasi.
+The end result is that you can use an always-improving Sigasi Studio.
 
 # How does Sigasi use this information
 
@@ -31,7 +31,7 @@ Talkback stores all the information it transmits in a log file, so that you can 
 
 You can access the Talkback log to verify by clicking **Window > Preferences > Sigasi > Talkback > Talkback log**
 
-This log file is rotated for each new Sigasi session or when the log reaches a certain size.
+This log file is rotated for each new Sigasi Studio session or when the log reaches a certain size.
 
 # How do I enable or disable Talkback?
 
@@ -39,7 +39,7 @@ Talkback is *always disabled by default*. To enable Talkback, or to disable it l
 
 # What about my Firewall or Proxy?
 
-Talkback does not support Proxies. If Sigasi Talkback is unable to connect to our server directly because of your firewall or proxy server, you need to purchase a commercial license.
+Talkback does not support Proxies. If Sigasi Studio Talkback is unable to connect to our server directly because of your firewall or proxy server, you need to purchase a commercial license.
 
 # Features like Talkback are against our corporate policy, even if it is disabled. What can I do?
 

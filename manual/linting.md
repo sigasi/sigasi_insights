@@ -6,7 +6,7 @@ pager: true
 
 [vhdl_only]
 
-In addition to syntax validation, Sigasi also checks your code for
+In addition to syntax validation, Sigasi Studio also checks your code for
 semantic problems (**Linting**, or **Linter checks**). Some of these
 problems can be automatically resolved with **Quickfixes**. Both syntax
 checking and linting happen at type-time: new markers appear *as you are
@@ -24,8 +24,8 @@ typing* your code.
 
 VHDL code **Lint** is defined as code that is strictly correct according
 to the language definition, but still suspicious or problematic.
-Sigasi has a built-in VHDL linter, which provides info about code lint
-in the design. Sigasi’s VHDL linter checks for the following problems:
+Sigasi Studio has a built-in VHDL linter, which provides info about code lint
+in the design. Sigasi Studio’s VHDL linter checks for the following problems:
 
 * Unused declarations
 * Duplicate declarations
@@ -75,13 +75,13 @@ quickfix.
 
 ## Configuring the Severity Level {: #linting-severity-level}
 
-The Sigasi VHDL linter has reasonable defaults for the severity level of
+The Sigasi Studio VHDL linter has reasonable defaults for the severity level of
 reported lint problems. However, the severity level of certain classes
 of lint is configurable for additional flexibility. The configuration
 interface is available in **Window \> Preferences \> VHDL \>
 Errors/Warnings**.
 
-![Configuring the severity of Sigasi linting checks](images/problemseveritypreferencepage.png "Configuring the severity of Sigasi linting checks")
+![Configuring the severity of Sigasi Studio linting checks](images/problemseveritypreferencepage.png "Configuring the severity of Sigasi Studio linting checks")
 
 ### Basic VHDL coding rules
 
@@ -117,7 +117,7 @@ Errors/Warnings**.
 # List of VHDL code rules
 
 This is the list of VHDL coding rules that can be checked automatically
-by Sigasi.
+by Sigasi Studio.
 
 ## Dead Code lint {: #dead-code}
 
@@ -158,7 +158,7 @@ ieee.std_logic_unsigned
 Instead, use the standard `ieee.numeric_std` package.
 
 The package `ieee.std_logic_misc` has the same problem of not being standardized by IEEE. Contrary to the packages above, there is no consensus on how to replace this package.  
-Sigasi flags this package as **Non-standard package**.
+Sigasi Studio flags this package as **Non-standard package**.
 
 Read more in [/tech/deprecated-ieee-libraries].
 
@@ -166,17 +166,17 @@ Read more in [/tech/deprecated-ieee-libraries].
 
 Available since Sigasi 2.25
 
-Sigasi warns about port maps and generic maps that are not complete:  
+Sigasi Studio warns about port maps and generic maps that are not complete:  
 **Port map is using default values. Missing optional actuals: yourport**
 
 Input ports and generics need to be be assigned in your instantiation
 statement, if they don’t already have a default value. If you don’t do
-this, you are writing illegal VHDL. Sigasi will mark an error, and so
+this, you are writing illegal VHDL. Sigasi Studio will mark an error, and so
 will all other tools.
 
 Input ports and generics with a default value, as well as output ports
 do not need to be assigned explicitly. However, this is often not
-intended. For that reason, Sigasi can warn you about this.
+intended. For that reason, Sigasi Studio can warn you about this.
 
 ![](images/warn-incomplete-map.png)
 
@@ -185,12 +185,12 @@ intended. For that reason, Sigasi can warn you about this.
 Available since Sigasi 2.30
 
 Most VHDL designers prefer named associations in port and generic maps in instantiations. This makes it a lot easier to spot wrong connections.
-By default Sigasi warns when positional associations are used. You can change the severity of this check via **Preferences > Sigasi > VHDL > Errors/Warnings** in the **Instantiation statement valiadation** section.
+By default Sigasi Studio warns when positional associations are used. You can change the severity of this check via **Preferences > Sigasi > VHDL > Errors/Warnings** in the **Instantiation statement valiadation** section.
 
 ## Quickfix for Third Party Libraries
 
 If you are using vendor libraries from Altera or Xilinx (ISE or Vivado),
-you do not need to set up these libraries by hand. Sigasi has a QuickFix
+you do not need to set up these libraries by hand. Sigasi Studio has a QuickFix
 to do this for you.
 
 ![](images/alteraquickfix.png)
@@ -198,7 +198,7 @@ to do this for you.
 The `library` statement that tries to import a missing library (like
 `altera`) will be have a yellow warning marker next to it. Click this
 marker and select **Configure library altera**. If the path tho your
-Altera Quartus (or Xilinx ISE) installation is not yet set, Sigasi will
+Altera Quartus (or Xilinx ISE) installation is not yet set, Sigasi Studio will
 ask to set the path now. You can always change these paths in **Window
 \> Preferences \> Sigasi \> Toolchains**.
 Note that for the Xilinx libraries we only map the packages with the
@@ -211,7 +211,7 @@ easily map the entities you need.
 
 If a case statement contains all the possible choices (usually in an
 enumerated datatype), you can safely remove the `when others` clause.
-Sigasi warns about this:
+Sigasi Studio warns about this:
 
 **Case statement contains all choices explicitly. You can safely remove
 the redundant `others`.**
@@ -239,7 +239,7 @@ list is incomplete. This report will be available only hours or even
 days after you have finished typing your code. Flagging this problem
 earlier saves time and lets you catch the problem early.
 
-Sigasi can warn about problems with your sensitivity list:
+Sigasi Studio can warn about problems with your sensitivity list:
 
 * **Incomplete sensitivity list** (there is quickfix for this)
 * **Superfluous signals in sensitivity list**
@@ -259,14 +259,14 @@ The VHDL language reference manual states that:
 Hence, any extra library statement that includes `STD` or `WORK` is
 pointless, as is any use clause that includes `std.standard.all`. Hardly
 anybody would type the use clause, but quite some people start all of
-their files with two extra library clauses. Sigasi flags this as
+their files with two extra library clauses. Sigasi Studio flags this as
 warning.
 
 ![](images/warn-superfluous-library.png)
 
 ## Dead Code (unreachable code)
 
-If the Sigasi analyzer can determine that a condition is always false,
+If the Sigasi Studio analyzer can determine that a condition is always false,
 it will mark the if-statement because it contains dead code.
 
 ![](images/unreachable_code.png)
@@ -294,12 +294,12 @@ space between the number and the unit.
 Mentor Graphics’ ModelSim and QuestaSim accept the former (illegal)
 version. As a result, some VHDL designers got used to writing the
 incorrect version, producing code that is not portable to other
-simulators. Sigasi accepts the ModelSim-style physical literals, but
+simulators. Sigasi Studio accepts the ModelSim-style physical literals, but
 warns about this.
 
 ## Capitalization of Identifiers
 
-Although VHDL is not case sensitive, it is recommend to always use the same capitalization when referring to the same declaration. Since version 2.30, Sigasi warns when the capitalization of a reference differs from the capitalization of the declaration. Because external libraries can have different code styles, this linting only checks references in the same library as its declaration.
+Although VHDL is not case sensitive, it is recommend to always use the same capitalization when referring to the same declaration. Since version 2.30, Sigasi Studio warns when the capitalization of a reference differs from the capitalization of the declaration. Because external libraries can have different code styles, this linting only checks references in the same library as its declaration.
 
 Since [/releasenotes/sigasi-2.31] this can easily be fixed with a quickfix.
 
@@ -324,7 +324,7 @@ you would specify `.*_v` pattern in the **Variable name** field.
 
 ## Vector width in assignments and port maps
 
-Sigasi checks the vector size in assignments (Since [/releasenotes/sigasi-2.28]) and port maps (Since [/releasenotes/sigasi-3.01]). This check works at type-time and takes the (symbolic) value of generics into account.
+Sigasi Studio checks the vector size in assignments (Since [/releasenotes/sigasi-2.28]) and port maps (Since [/releasenotes/sigasi-3.01]). This check works at type-time and takes the (symbolic) value of generics into account.
 
 ## Order of assocations
 
@@ -334,7 +334,7 @@ Sigasi Studio gives a warning when the **order** of generics or ports in a `map`
 
 # Project specific Linting settings
 
-The default way to configure the severity of the Sigasi linting checks is to set their severity in the **Errors/Warnings** preference page.
+The default way to configure the severity of the Sigasi Studio linting checks is to set their severity in the **Errors/Warnings** preference page.
 You can override these setting by creating a settings file for your projects.
 
 In each project, you can override the coding rules settings. You can override rules for the **entire project**, for **folders** in the project, or for individual **files**.

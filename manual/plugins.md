@@ -4,7 +4,7 @@ layout: page
 pager: true
 ---
 
-Since Sigasi is built on Eclipse, you can install third party Eclipse
+Since Sigasi Studio is built on Eclipse, you can install third party Eclipse
 plugins.
 
 The best place to start looking for a plugin is the [eclipse-marketplace]. We list some interesting
@@ -26,7 +26,7 @@ Hence, you have to use the old mechanism for installing new plugins, and add the
 
 ## Revision Control Systems
 
-Sigasi supports a wide range of [Revision Control
+Sigasi Studio supports a wide range of [Revision Control
 Systems](http://en.wikipedia.org/wiki/Revision_control) (also know as
 Version Control or Source Control systems). Support for revision control
 is based on Eclipse plugins. This section contains a preliminary listing
@@ -35,7 +35,7 @@ of the most popular revision control systems.
 ### GIT {: #revision-git}
 
 Recommended plugin: [EGit](http://www.eclipse.org/egit/)
-This plugin is shipped with the standalone version of Sigasi.
+This plugin is shipped with the standalone version of Sigasi Studio.
 
 ### Subversion (SVN) {: #revision-svn}
 
@@ -60,7 +60,7 @@ ClearCase](http://www.ibm.com/developerworks/rational/downloads/07/cc_eclipse3_2
 
 ### Local history {: #revision-local}
 
-While this is not strictly speaking a version control system, Sigasi has
+While this is not strictly speaking a version control system, Sigasi Studio has
 a built-in feature that keeps a local history of your files. 
 [Learn
 more.](http://help.eclipse.org/helios/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2FgettingStarted%2Fqs-55.htm)
@@ -82,4 +82,4 @@ Some other popular revision control systems include:
 
 ## Other languages
 
-* [/tech/eclipse_tcl_support_in_sigasi]
+* [Eclipse Tcl support in Sigasi Studio](/tech/eclipse_tcl_support_in_sigasi.html)

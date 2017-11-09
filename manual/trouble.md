@@ -10,7 +10,7 @@ If the user interface of Sigasi Studio is unresponsive, you can interrupt the in
 
 # The editor displays old contents of a file {: #ts-refresh-editor}
 
-If you edit a file outside of Sigasi Studio with an external editor, Sigasi will normally notice the changes and ask if you want to load the changes. If
+If you edit a file outside of Sigasi Studio with an external editor, Sigasi Studio will normally notice the changes and ask if you want to load the changes. If
 it doesn’t, you can refresh the editor’s content by pressing **F5** or by right-clicking a file or a project in the project explorer and
 selecting **Refresh**.
 
@@ -84,17 +84,17 @@ Resolution: Reset the common libraries: **right-click the project > Library Mapp
 
 # Sigasi Studio analyzes HDL files that I do not need {: #ts-stale-files}
 
-By default, Sigasi assumes that all VHDL or Verilog files are part of the project. However, some projects may contain multiple files with older or alternative definitions of a VHDL object. We call these *stale* files, because they are no longer used. In such a case you will want Sigasi Studio to ignore certain files.
+By default, Sigasi Studio assumes that all VHDL or Verilog files are part of the project. However, some projects may contain multiple files with older or alternative definitions of a VHDL object. We call these *stale* files, because they are no longer used. In such a case you will want Sigasi Studio to ignore certain files.
 
 To exclude files (or directories) from analysis, consult the [/manual/libraries].
 
 Ignored resources are decorated with a ![](icons/ignoreicon.png) icon in the project explorer view.
 
-# Sigasi startup fails: "Could not create the Java virtual machine"
+# Sigasi Studio startup fails: "Could not create the Java virtual machine"
 
-On some computers, the standalone version of Sigasi will fail to start with an error message similar to: "Could not create the Java virtual machine." This happens especially on 32-bit Windows machines with less than 2GB of physical memory. The reason is that the Java virtual machine tries to allocate more memory than what is available.
+On some computers, the standalone version of Sigasi Studio will fail to start with an error message similar to: "Could not create the Java virtual machine." This happens especially on 32-bit Windows machines with less than 2GB of physical memory. The reason is that the Java virtual machine tries to allocate more memory than what is available.
 
-In order to solve this, you can decrease the default heap size settings. You can do this by adding following lines to `sigasi.ini` or `eclipse.ini` in your Sigasi installation folder:
+In order to solve this, you can decrease the default heap size settings. You can do this by adding following lines to `sigasi.ini` or `eclipse.ini` in your Sigasi Studio installation folder:
 
 ```bash
 -vmargs
@@ -107,7 +107,7 @@ This sets the maximum heap size to 1000 MB (instead of the standard 1400MB).
 
 # I want a clean restart {: #ts-clean}
 
-If you ever suspect that the state of your project is inconsistent in Sigasi, you can do one or all of the following things. Consider these
+If you ever suspect that the state of your project is inconsistent in Sigasi Studio, you can do one or all of the following things. Consider these
 steps to be advanced usage; you should not need them during normal operation.
 
 ## Force a clean compilation
@@ -124,7 +124,7 @@ Note that during the next build, the tool may generate new markers. If you want 
 
 ## Remove the workspace state
 
-Much of your configuration and cached data is stored in your workspace. By default, Sigasi’s workspace is located in `${HOME}/workspaceSigasi`.
+Much of your configuration and cached data is stored in your workspace. By default, Sigasi Studio’s workspace is located in `${HOME}/workspaceSigasi`.
 A lot of this data is stored in the hidden `.metadata` directory. Sometimes, a part of your metadata can become corrupt. It can help to
 remove the `.metadata` directory (take a backup first!). This clears all of your workspace state.
 
@@ -140,7 +140,7 @@ If you are using the integration with Altera Quartus II. Some people keep gettin
 > Project interface was created with an older, incompatible version of Quartus II.
 > Is it OK to upgrade the project to match the installed version of Quartus II?
 
-Obviously, you should upgrade the project. If this message keeps popping up, you may want to check that Sigasi is using the correct version of Quartus II, in the Sigasi application: **Window > Preferences > Sigasi > Toolchains > Altera Quartus II**.
+Obviously, you should upgrade the project. If this message keeps popping up, you may want to check that Sigasi Studio is using the correct version of Quartus II, in the Sigasi Studio application: **Window > Preferences > Sigasi > Toolchains > Altera Quartus II**.
 
 # Contact support
 
@@ -152,5 +152,5 @@ Any of the following information will help us help you:
 * Description of the expected behavior and the actual behavior.
 * A [VETSMOD] code snippet.
 * A screenshot
-* The version number of your Sigasi tool: **Help > About Sigasi > Installation details** Note that the version number contains the date of the release. (For example, version `2.0.1.20110809…` was released on August 9, 2011.)
+* The version number of your Sigasi Studio: **Help > About Sigasi > Installation details** Note that the version number contains the date of the release. (For example, version `2.0.1.20110809…` was released on August 9, 2011.)
 * The log file: **Help > Open Log**

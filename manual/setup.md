@@ -1,12 +1,12 @@
 ---
-title: Setting Up Sigasi
+title: Setting Up Sigasi Studio
 layout: page 
 pager: true
 ---
 
 # Distribution and flavours
 
-Sigasi is distributed online. It is available in two versions: as a
+Sigasi Studio is distributed online. It is available in two versions: as a
 stand-alone application or as a plugin inside a standard Eclipse
 installation. Your license gives you the right to use either version, at
 any time, at your discretion. Therefore, your first task is to decide
@@ -14,7 +14,7 @@ which version suits your requirements, based on the description below.
 Depending on the chosen version, you should then follow the
 corresponding installation instructions.
 
-## Sigasi App
+## Sigasi Studio App
 
 The stand-alone application has the following characteristics:
 
@@ -25,7 +25,7 @@ The stand-alone application has the following characteristics:
 * Optimized for VHDL and Verilog development
 * Complete freedom to add and configure plugins
 
-## Sigasi Eclipse plugin
+## Sigasi Studio Eclipse plugin
 
 The Eclipse plugin has the following characteristics:
 
@@ -36,9 +36,9 @@ The Eclipse plugin has the following characteristics:
 * Support for C, C++, Tcl and other languages
 * Support for many version control systems
 
-# Installation of Sigasi App
+# Installation of Sigasi Studio App
 
-To download and install Sigasi as a stand-alone application, follow the
+To download and install Sigasi Studio as a stand-alone application, follow the
 online [Installation
 Instructions](http://www.sigasi.com/download).
 
@@ -48,7 +48,7 @@ single top-level folder called `sigasi`. Inside the folder there is an
 application startup file, also called `sigasi`. Start the application by
 executing this startup file.
 
-# Installation of Sigasi Eclipse Plugin
+# Installation of Sigasi Studio Eclipse Plugin
 
 ## Prerequisites: Eclipse
 
@@ -72,7 +72,7 @@ After starting Eclipse:
 2. In the **Work with:** field enter **<http://download.sigasi.com/updates/studio>** and press **enter**.
 3. Check the checkbox next to **Sigasi Studio**
 4. We recommend to install the optional features too.
-   ![Install Sigasi plugin](images/setup-install-plugin.png)
+   ![Install Sigasi Studio plugin](images/setup-install-plugin.png)
 5. Click the **Next** button.
 6. The following steps are pretty self-explaining.
 
@@ -95,7 +95,7 @@ More details can be found in [/manual/license-key]
 
 # Configuration
 
-Sigasi stores its projects on the file system in one or more
+Sigasi Studio stores its projects on the file system in one or more
 *workspaces*.
 
 When you start the tool for the first time, it will propose to create a
@@ -108,7 +108,7 @@ single workspace for all your projects.
 
 # Software updates
 
-Sigasi has an automated update system. When updates are available, you
+Sigasi Studio has an automated update system. When updates are available, you
 are notified by a pop-up window called **Updates Available** in the
 bottom right corner:
 
@@ -124,17 +124,17 @@ at the bottom of the screen.
 
 It is good practice to first create a backup of your installation folder before running an update. This can be done by simply compressing the `eclipse` or the `sigasi` folder in an archive (zip file)
 
-## Sigasi App
+## Sigasi Studio App
 
-If you run Sigasi as a **standalone application**, the automated update system will periodically check for [/manual/setup#software-updates].
+If you run Sigasi Studio as a **standalone application**, the automated update system will periodically check for [/manual/setup#software-updates].
 
-## Sigasi Eclipse plugin
+## Sigasi Studio Eclipse plugin
 
-If you run Sigasi as an **Eclipse plugin**, you may need to check for updates manually, by clicking **Help > Check for Updates**.
+If you run Sigasi Studio as an **Eclipse plugin**, you may need to check for updates manually, by clicking **Help > Check for Updates**.
 
 You can enable automatic updates by opening this preference page : **Install/Update > Automatic Updates**. Next enable **Automatically find new updates and notify me**. Feel free to modify any of the available options.
 
 ## Firewalls and Proxies
 
-If the updates are not automatically fetched from the Sigasi update server you are probably behind a firewall or proxy server. You can configure Sigasi Studio’s proxy settings in **Window > Preferences > General > Network connections**. If you can not add a firewall exception for our update site, the fall back solution is to download the complete application from our website. You can completely replace your old installation; all settings are stored in your workspace (the default is
+If the updates are not automatically fetched from the Sigasi Studio update server you are probably behind a firewall or proxy server. You can configure Sigasi Studio’s proxy settings in **Window > Preferences > General > Network connections**. If you can not add a firewall exception for our update site, the fall back solution is to download the complete application from our website. You can completely replace your old installation; all settings are stored in your workspace (the default is
 `workspaceSigasi` in your home directory).

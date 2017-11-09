@@ -6,12 +6,12 @@ pager: true
 
 # Introduction
 
-HDL libraries are a very powerful feature of the HDL languages. Sigasi
+HDL libraries are a very powerful feature of the HDL languages. Sigasi Studio
 makes it easy to configure and use them. In this chapter, we assume that
 the basic concepts of VHDL libraries are understood. We will explain how
-they are implemented in Sigasi.
+they are implemented in Sigasi Studio.
 
-Like with any HDL tool, Sigasi needs to know where the libraries are
+Like with any HDL tool, Sigasi Studio needs to know where the libraries are
 located on the file system. We will describe how the library
 configuration can be examined and modified using the GUI.
 
@@ -88,7 +88,7 @@ Automatically** option.
 
 To exclude a file from all libraries, the library mapping context menu
 provides an `Exclude from build` option. You can apply that to any file or folder in
-the project. Sigasi will then assume that the corresponding resource is
+the project. Sigasi Studio will then assume that the corresponding resource is
 not a part of the project and will not include that resource in a
 project build. This is typically useful when you have stale copies of
 HDL files or folders lying around that you want simply to be ignored.
@@ -98,7 +98,7 @@ HDL files or folders lying around that you want simply to be ignored.
 All library configuration information is stored in the `.library_mapping.xml` file in the root of your project.
 If you edit this file, your project will be cleared and rebuilt automatically (a so-called *Clean Build*).
 
-Sigasi only writes changes to this configuration file when you make changes to the library configuration with the context menu in the *Project Explorer*. When you do make changes, Sigasi first checks that all paths in the library configuration still exist. If a path no longer exists, is will be removed from the configuration file.
+Sigasi Studio only writes changes to this configuration file when you make changes to the library configuration with the context menu in the *Project Explorer*. When you do make changes, Sigasi Studio first checks that all paths in the library configuration still exist. If a path no longer exists, is will be removed from the configuration file.
 Note that the library configuration file is **case-sensitive**, even on Windows.
 
 # Common libraries {: #libraries-common}
@@ -107,7 +107,7 @@ In any newly created VHDL project, the `Common Libraries` folder
 contains the VHDL files of the `IEEE` and `STD` libraries. This folder
 is special in the sense that its contents is not stored in regular files
 on your hard drive. Instead, the files’ contents is shipped as part of
-the Sigasi installation. Other than that, the `Common Libraries` folder
+the Sigasi Studio installation. Other than that, the `Common Libraries` folder
 behaves like any other folder. You can delete it, rename it, and apply a
 different library mapping. In most cases, however, the default
 configuration is just what you need.
@@ -125,7 +125,7 @@ See [/tech/how-can-i-use-the-ieee-vital-libraries-with-sigasi-pro]
 
 # Shared libraries
 
-Sigasi allows you to share libraries between multiple projects. The
+Sigasi Studio allows you to share libraries between multiple projects. The
 easiest way to do this, is to develop each library in a separate project
 and configure the **Project Dependencies** accordingly. To configure the
 project dependencies, right click the project (the one that uses the

@@ -6,9 +6,9 @@ pager: true
 
 # Choosing your VHDL and Verilog version {: #configure-version}
 
-Sigasi supports VHDL version 1993, 2002 and 2008, and Verilog (2005) and SystemVerilog (2012). You can select the default VHDL version to use in: **Window > Preferences > Sigasi > VHDL**. You can set the default Verilog in: **Window > Preferences > Sigasi > Verilog**. 
+Sigasi Studio supports VHDL version 1993, 2002 and 2008, and Verilog (2005) and SystemVerilog (2012). You can select the default VHDL version to use in: **Window > Preferences > Sigasi > VHDL**. You can set the default Verilog in: **Window > Preferences > Sigasi > Verilog**. 
 
-Since [Sigasi 3.2][/releasenotes/sigasi-3.02], you can also set the language version per project, per folder and per file. In the Project Explorer, right click your project, folder or file; select **Properties**, **VHDL Version** (**Verilog Version** for Verilog projects) and select the version via the dropdown menu. 
+Since [Sigasi Studio 3.2][/releasenotes/sigasi-3.02], you can also set the language version per project, per folder and per file. In the Project Explorer, right click your project, folder or file; select **Properties**, **VHDL Version** (**Verilog Version** for Verilog projects) and select the version via the dropdown menu. 
 
 ![](images/project_vhdl_version.png)
 
@@ -18,7 +18,7 @@ The version information is stored in `<project path>/.settings/com.sigasi.hdt.vh
 
 **Notes**:
 
-* **VHDL libaries:** Any new project that you create will have the common libraries (`STD` and `IEEE`) that correspond to your selected VHDL version. Your *existing project will **not** be modified*. If you want to update the common libraries for an existing project, right-click the project and select **Library Mapping > Reset Common Libraries**. Since [Sigasi 3.3][/releasenotes/sigasi-3.03], you will get a warning if your common libraries do not match the VHDL version of you VHDL file. You can use the proposed quick fix to resolve the issue.
+* **VHDL libaries:** Any new project that you create will have the common libraries (`STD` and `IEEE`) that correspond to your selected VHDL version. Your *existing project will **not** be modified*. If you want to update the common libraries for an existing project, right-click the project and select **Library Mapping > Reset Common Libraries**. Since [Sigasi Studio 3.3][/releasenotes/sigasi-3.03], you will get a warning if your common libraries do not match the VHDL version of you VHDL file. You can use the proposed quick fix to resolve the issue.
 * If you want to compile VHDL 87 code, you should select the “1993” option. There are no checks to warn about constructs that were not supported in 1987, but that were introduced in 1993.
 
 
@@ -91,7 +91,7 @@ Eclipse is available in several languages, and you can install the language pack
 
 # Keyboard shortcuts
 
-Sigasi comes with a large number of [keyshortcuts] preconfigured. You can configure keyboard shortcuts (key bindings) in **Window > Preferences > General > Keys**. You can modify individual keyboard shortcuts or add new key bindings.
+Sigasi Studio comes with a large number of [keyshortcuts] preconfigured. You can configure keyboard shortcuts (key bindings) in **Window > Preferences > General > Keys**. You can modify individual keyboard shortcuts or add new key bindings.
 There is also a preconfigured scheme for Emacs-like keyboard shortcuts.
 
 After you have configured your keyboard shortcuts, you can export your settings and share them with your colleagues (or re-import them on another computer):
@@ -104,7 +104,7 @@ You can set formatting options in the Formatter preference page:
 
 -   **Preserve newlines**: this option configures the formatter to not add or remove newlines in your code
 -   **Upper case keywords**: when this option is enabled the formatter will convert all keywords to uppercase. When this option is **not** enabled, uppercase keywords will be converted to lowercase. (Without a [xl] license, keywords are not changed by the formatter).
--   **Alignment column for trailing comments**: this setting configures the column Sigasi uses to align trailing comments (default is column 40)
+-   **Alignment column for trailing comments**: this setting configures the column Sigasi Studio uses to align trailing comments (default is column 40)
 
 # Finding more options
 [todo]

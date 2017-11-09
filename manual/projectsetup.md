@@ -6,8 +6,8 @@ pager: true
 
 # Introduction {: #project-intro}
 
-Your work with Sigasi typically is organized as a *project*. A project
-is a collection of VHDL or Verilog files that belong together. Sigasi
+Your work with Sigasi Studio typically is organized as a *project*. A project
+is a collection of VHDL or Verilog files that belong together. Sigasi Studio
 understands the HDL units defined in the files, and the relationships
 between them.
 
@@ -55,7 +55,7 @@ By default, the **Use default location** checkbox is checked, which
 means that new projects will be located in the workspace folder.
 Alternatively, you can uncheck the checkbox and choose an arbitrary
 location for your project. This is especially useful if you want to *use
-Sigasi with an existing design*.
+Sigasi Studio with an existing design*.
 
 After creating a new project, you can add existing files by dragging
 them from your filesystem into the project explorer. New files can be
@@ -70,7 +70,7 @@ You can also add VHDL or Verilog support to any project in your
 workspace by right-clicking the project in the project explorer and
 selecting **Configure \> Add VHDL support** or **Configure \> Add
 Verilog support**. You can also remove VHDL or Verilog support from
-Sigasi projects by selecting **Configure \> Remove VHDL support** or
+Sigasi Studio projects by selecting **Configure \> Remove VHDL support** or
 **Configure \> Remove Verilog support**.
 
 Note that only with a [xl] license, you can have **mixed** VHDL and
@@ -82,7 +82,7 @@ Files in the other language will be treated as [/manual/opening#External Files].
 
 ## Importing a project from an archive
 
-Sigasi projects can be shared using file archives. All project-related
+Sigasi Studio projects can be shared using file archives. All project-related
 settings are stored in two hidden files in the project folder.
 Therefore, you can create an archive of the entire top level folder
 (**File \> Export \> General \> Archive file**) and send it to someone
