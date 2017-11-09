@@ -16,11 +16,11 @@ The VHDL and Verilog editors are optimized to help you browse and edit VHDL and 
 
 ## Code highlighting (syntax coloring)
 
-As all editors, Sigasi colors your code to make the structure more
-clear. Unlike other tools, Sigasi offers coloring based on the
+As all editors, Sigasi Studio colors your code to make the structure more
+clear. Unlike other tools, Sigasi Studio offers coloring based on the
 **meaning** of a word, rather than just the syntax.
 
-Sigasi supports both **syntax highlighting** and **semantic
+Sigasi Studio supports both **syntax highlighting** and **semantic
 highlighting**. Syntax highlighting colors pieces of code according to
 the lexical class the code belongs to, such as a *keyword* or *string*.
 Semantic highlighting means that code gets colored according to their
@@ -28,11 +28,11 @@ Semantic highlighting means that code gets colored according to their
 *signal*.
 
 Code highlighting is fully configurable. **Color**, **background**,
-**style** and **font** can be customized. Learn more about configuring [/manual/config#configure-colors]
+**style** and **font** can be customized. Learn more about [configuring colors](/manual/config.html#configure-colors).
 
 ## Project exploration and navigation {: #gui-navigate}
 
-Sigasi offers powerful techniques to explore a file or project, and navigate through it. This section covers: hovering, Occurrence Highlighting, Open Declaration and Find References.
+Sigasi Studio offers powerful techniques to explore a file or project, and navigate through it. This section covers: hovering, Occurrence Highlighting, Open Declaration and Find References.
 
 ### Occurrence Highlighting
 
@@ -57,7 +57,7 @@ so commonly used, it is assigned to the shortcut key **F3**.
 
 **Hyperlinks** You can also navigate your code like a web browser by
 clicking hyperlinks. If you press and hold the **Ctrl** key, hyperlinks will appear in your editor. If you click the link (while holding the **Ctrl** key), you will navigate to the target of the link.
-Sigasi offers following links:
+Sigasi Studio offers following links:
 
 * Link to **Declaration**: this has the same behaviour as **Open Declaration** (**F3**)
 * Link to **Matching Entity** \[VHDL]: this links a **component** declaration of instantiation to the matching entity declaration. This also works for component **generics** and **ports** (**Shift+F3**)
@@ -84,10 +84,10 @@ In the hover pop-up, can show different kinds of information:
 
 ### Comment Association
 
-Comments in HDL code are used to add extra information or documentation to that code. Sigasi uses certain rules to determine which comment belongs to which code. This is important for documentation hovers, refactoring, formatting,...
+Comments in HDL code are used to add extra information or documentation to that code. Sigasi Studio uses certain rules to determine which comment belongs to which code. This is important for documentation hovers, refactoring, formatting,...
 Which comment belongs to which exact code is subjective.
 
-Sigasi associates comments with HDL declarations with following rules:
+Sigasi Studio associates comments with HDL declarations with following rules:
 
 * If there is a declaration before a comment and in the same line, the comment is associated with this declaration.
 * In all other cases, the comment is associated with the next following declaration.
@@ -108,7 +108,7 @@ Some autocompletions are templates which require further user input. In such a c
 
 ### Based on templates
 
-Sigasi can help you to declare VHDL and Verilog objects, using autocompletion based on templates. Sigasi comes preconfigured with templates for all common declarations and statements, including (for VHDL):
+Sigasi Studio can help you to declare VHDL and Verilog objects, using autocompletion based on templates. Sigasi Studio comes preconfigured with templates for all common declarations and statements, including (for VHDL):
 
 * function, procedure
 * process
@@ -206,6 +206,7 @@ See [plugins#VI-and-Emacs]
 ### Remove Trailing Whitespace {: #trailing-whitespace}
 
 The action to remove trailing whitespace is hidden by default. You can access it by pressing **Ctrl+3**, type **RTW** and then select the correct action. Alternatively, you can bind this action to [/manual/keyshortcuts] of your preference.
+This action is being executed on the saved file, not in the editor. So before using this action you have to make sure your file is saved.
 
 ### Customize color preferences
 
@@ -235,7 +236,7 @@ Note that [**excluded** design files][libraries#libraries-mapping] do not appear
 # VHDL Specific
 
 In addition to the powerful features of an Eclipse editor, the VHDL
-editor that comes with Sigasi supports a number of advanced editing
+editor that comes with Sigasi Studio supports a number of advanced editing
 features which are specifically useful for VHDL editing. These are
 described in this chapter.
 
@@ -277,7 +278,7 @@ component* or *port translation*.
 
 If you want to use instantiation based on a component (as opposed to
 direct instantiation) you need to associate an entity with a component.
-Sigasi can automatically declare a component for an existing entity. At
+Sigasi Studio can automatically declare a component for an existing entity. At
 the point where you normally enter the component name, you can use
 autocompletion instead to show the list of available entities. Upon
 selection, the tool will automatically complete the component
@@ -285,7 +286,7 @@ declaration.
 
 ### Type Conversion
 
-In VHDL design you need to do a lot of type conversions. Sigasi’s
+In VHDL design you need to do a lot of type conversions. Sigasi Studio’s
 autocomplete functionality can help you with those. Put a dot (`.`)
 after the element you want to convert, and the autocomplete suggestions
 will appear. The conversion functions have descriptions like “convert
@@ -312,9 +313,9 @@ Stuttering can be disabled or enabled in **Window \> Preferences \> VHDL \> Enab
 
 ## Smart Indentation  {: #smartindent-vhdl}
 
-When you press enter, Sigasi automatically adjusts the indentation of
+When you press enter, Sigasi Studio automatically adjusts the indentation of
 current and the new line. Depending on the content of the preceding
-line, Sigasi will automatically increase or decrease the indentation
+line, Sigasi Studio will automatically increase or decrease the indentation
 level. E.g. an extra indent after and `if`-statement and remove an
 indent for the matching `else`-clause.
 
@@ -346,7 +347,7 @@ This includes:
 
 Sigasi Studio's formatter is context based and tries to respect the style of the author. So depending on the original source style, the formatter might make different choices.
 
-One example is the decision to format a *conditional signal assignment* on one, or multiple lines. Sigasi makes this decision based on the position of the first `else` keyword. If you put the `else` keyword on the first line, the formatter will put everything on one line. If you put the `else` keyword on a new line, the formatter will use multiple lines for the assignment.
+One example is the decision to format a *conditional signal assignment* on one, or multiple lines. Sigasi Studio makes this decision based on the position of the first `else` keyword. If you put the `else` keyword on the first line, the formatter will put everything on one line. If you put the `else` keyword on a new line, the formatter will use multiple lines for the assignment.
 
 ```vhdl
   demo <= (others => '0') when enable = '1'
@@ -391,11 +392,11 @@ You can configure Sigasi Studio to automatically format your VHDL files when you
 ## Lightweight editor for large VHDL files
 
 Sometimes you have to deal with very large VHDL files such as large
-concatenated library files and generated files. Unfortunately the Sigasi
+concatenated library files and generated files. Unfortunately the Sigasi Studio
 VHDL editor can not cope with huge VHDL files yet. Large files stress
 the interactive compiler too much to give timely feedback.
 
-To allow you to edit large VHDL files the Sigasi IDE contains a
+To allow you to edit large VHDL files the Sigasi Studio IDE contains a
 lightweight VHDL editor that can handle all files without problems. This
 editor does not analyze your files a type time. It only offers syntax
 highlighting and the default Eclipse editing features. The lightweight
@@ -407,7 +408,7 @@ lightweight editor is 1 MB.
 # Verilog Specific
 
 In addition to the powerful features of an Eclipse editor, the Verilog
-editor that comes with Sigasi supports a number of advanced editing
+editor that comes with Sigasi Studio supports a number of advanced editing
 features which are specifically useful for Verilog editing. These are
 described in this chapter.
 
@@ -437,9 +438,9 @@ The current formatter implementation corrects indentation only.
 
 ## Smart Indentation {: #smartindent-verilog}
 
-When you press enter, Sigasi automatically adjusts the indentation of
+When you press enter, Sigasi Studio automatically adjusts the indentation of
 current and the new line. Depending on the content of the preceding
-line, Sigasi will automatically increase or decrease the indentation
+line, Sigasi Studio will automatically increase or decrease the indentation
 level. E.g. an extra indent after a `module` and remove an indent for
 the matching `endmodule`.
 
@@ -457,7 +458,7 @@ See also:
 
 ## Verilog Preprocessing/Macros
 
-When you hover over a Verilog preprocessor directive (e.g. `include ...`), Sigasi presents you the preprocessed text. This hover also shows you, at the bottom, a convenient link to open the [views#Preprocessor View].
+When you hover over a Verilog preprocessor directive (e.g. `include ...`), Sigasi Studio presents you the preprocessed text. This hover also shows you, at the bottom, a convenient link to open the [views#Preprocessor View].
 
 ![](images/preprocessor-hover.png)
 
