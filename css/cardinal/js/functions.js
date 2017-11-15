@@ -1506,30 +1506,6 @@ var SWIFT = SWIFT || {};
 					});
 				}
 			});
-
-			// Change menu active when scroll through sections
-			SWIFT.nav.currentScrollIndication();
-			$window.scroll(function () {
-				SWIFT.nav.currentScrollIndication();
-			});
-		},
-		currentScrollIndication: function() {
-			var adjustment = 0;
-
-			if (body.hasClass('sticky-header-enabled')) {
-				adjustment = jQuery('.header-wrap').height();
-			}
-
-			var inview = jQuery('section.row:in-viewport('+adjustment+')').attr('id'),
-				menuItems = jQuery('#main-navigation .menu li a'),
-				link = menuItems.filter('[href=#' + inview + ']');
-
-			menuItems.parent().removeClass('current-scroll-item');
-
-			if (link.length > 0 && !link.hasClass('.current-scroll-item')) {
-				menuItems.parent().removeClass('current-scroll-item');
-				link.parent().addClass('current-scroll-item');
-			}
 		},
 		mobileMenuInit: function() {
 
