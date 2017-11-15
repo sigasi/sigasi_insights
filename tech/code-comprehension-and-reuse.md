@@ -37,5 +37,5 @@ Without Sigasi, all of these questions would take a lot of mental energy, scroll
 
 ## Nice, but not-so-unique features
 
-* Place bookmarks in your code \[[/screencasts/bookmarks]\] or \[[documentation](http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2FgettingStarted%2Fqs-37-3e.htm)\]
+* Place bookmarks in your code \[[/screencasts/bookmarks]\] or \[[documentation](https://help.eclipse.org/oxygen/topic/org.eclipse.platform.doc.user/gettingStarted/qs-37-3e.htm?cp=0_1_0_13_1)\]
 * Open multiple editors side by side

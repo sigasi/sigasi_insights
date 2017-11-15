@@ -72,7 +72,7 @@ page.
 
 For some toolchains you can specify extra command line arguments. Note
 that these preference pages support [Eclipse
-Variables](http://help.eclipse.org/indigo/topic/org.eclipse.platform.doc.user/concepts/concepts-exttools.htm)
+Variables](https://help.eclipse.org/oxygen/topic/org.eclipse.platform.doc.user/concepts/concepts-exttools.htm)
 which allow you to more easily share settings in a team.
 
 ![](images/toolchains-settings-rivierapro.png)
