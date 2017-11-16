@@ -18,8 +18,9 @@
             by {{this.author|author}}
         {% endif %}
         </span>
+        </br>
         {% if this.tags %}
-        <span style="padding-left:50px">
+        <span>
         Tagged as: 
           {% for tag in this.tags %}
               <a href="/tag/{{tag}}/" class="btn btn-default btn-xs" style="margin-bottom: 2px;">{{tag}}</a>
