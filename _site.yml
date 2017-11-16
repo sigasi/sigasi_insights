@@ -24,14 +24,14 @@ menuitems:
   - title: About
     url: http://www.sigasi.com/about
 topmenuitems:
-  - title: Contact
-    url: http://www.sigasi.com/contact
   - title: Support
     url: /support.html
   - title: Jobs
     url: http://www.sigasi.com/category/jobs/
   - title: News
     url: http://www.sigasi.com/category/news/
+  - title: Contact
+    url: http://www.sigasi.com/contact
 ignore_patterns:
   - linkchecker_result.html 
   - .gitignore 
