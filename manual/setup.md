@@ -86,6 +86,8 @@ Installing the offline update site is very similar to installing from the [main 
    ![Add offline update site archive](images/offline_update_site_add.png)
 
 Next, continue with step 3. in the [general eclipse installation instructions][#eclipse-plugin].
+It is recommended to disable the option *Contact all update sites during install to find required software*
+when installing the offline update site.
 
 # Licensing
 
