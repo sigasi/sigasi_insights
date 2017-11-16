@@ -41,14 +41,14 @@ This plugin is shipped with the standalone version of Sigasi Studio.
 
 Recommended plugin: [Subversive](http://www.eclipse.org/subversive/) ([Installation instructions](https://www.eclipse.org/subversive/installation-instructions.php))
 
-As **update site**, you should use: <http://download.eclipse.org/releases/neon/>
+As **update site**, you should use: <http://download.eclipse.org/releases/oxygen/>
 
 
 ### ClearCase {: #revision-clearcase}
 
 Recommended plugin:
-[ClearCase](http://sourceforge.net/apps/mediawiki/eclipse-ccase/index.php?title=Main_Page)
-(Update site: http://eclipse-ccase.sourceforge.net/update/ )
+[ClearCase](https://sourceforge.net/projects/eclipse-ccase/)
+(Update site: <http://eclipse-ccase.sourceforge.net/update/>)
 
 Note that this is the **Open Source ClearCase plugin** hosted on
 SourceForge, not the [**official** ClearCase plugin distributed by
@@ -62,8 +62,7 @@ ClearCase](http://www.ibm.com/developerworks/rational/downloads/07/cc_eclipse3_2
 
 While this is not strictly speaking a version control system, Sigasi Studio has
 a built-in feature that keeps a local history of your files. 
-[Learn
-more.](http://help.eclipse.org/helios/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2FgettingStarted%2Fqs-55.htm)
+[Learn more](https://help.eclipse.org/oxygen/topic/org.eclipse.platform.doc.user/tasks/tasks-1f.htm?cp=0_3_9).
 
 ### Other systems
 
