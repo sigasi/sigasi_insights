@@ -101,13 +101,15 @@ If you edit this file, your project will be cleared and rebuilt automatically (a
 Sigasi Studio only writes changes to this configuration file when you make changes to the library configuration with the context menu in the *Project Explorer*. When you do make changes, Sigasi Studio first checks that all paths in the library configuration still exist. If a path no longer exists, is will be removed from the configuration file.
 Note that the library configuration file is **case-sensitive**, even on Windows.
 
-# Common libraries {: #libraries-common}
+# Common Libraries {: #libraries-common}
 
 In any newly created VHDL project, the `Common Libraries` folder
 contains the VHDL files of the `IEEE` and `STD` libraries. This folder
-is special in the sense that its contents is not stored in regular files
-on your hard drive. Instead, the files’ contents is shipped as part of
-the Sigasi Studio installation. Other than that, the `Common Libraries` folder
+is special in the sense that its contents are not stored in regular files
+on your hard drive. Instead, the files’ contents are shipped as part of
+the Sigasi Studio installation. These files are not sent to an
+external compiler since it is expected that the contents of the Common Libraries
+are pre-compiled. Other than that, the `Common Libraries` folder
 behaves like any other folder. You can delete it, rename it, and apply a
 different library mapping. In most cases, however, the default
 configuration is just what you need.

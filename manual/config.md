@@ -18,8 +18,9 @@ The version information is stored in `<project path>/.settings/com.sigasi.hdt.vh
 
 **Notes**:
 
-* **VHDL libaries:** Any new project that you create will have the common libraries (`STD` and `IEEE`) that correspond to your selected VHDL version. Your *existing project will **not** be modified*. If you want to update the common libraries for an existing project, right-click the project and select **Library Mapping > Reset Common Libraries**. Since [Sigasi Studio 3.3][/releasenotes/sigasi-3.03], you will get a warning if your common libraries do not match the VHDL version of you VHDL file. You can use the proposed quick fix to resolve the issue.
+* **VHDL libaries:** Any new project that you create will have the Common Libraries (`STD` and `IEEE`) that correspond to your selected VHDL version. Your *existing project will **not** be modified*. If you want to update the Common Libraries for an existing project, right-click the project and select **Library Mapping > Reset Common Libraries**. Since [Sigasi Studio 3.3][/releasenotes/sigasi-3.03], you will get a warning if your Common Libraries do not match the VHDL version of you VHDL file. You can use the proposed quick fix to resolve the issue.
 * If you want to compile VHDL 87 code, you should select the “1993” option. There are no checks to warn about constructs that were not supported in 1987, but that were introduced in 1993.
+* Sigasi Studio does not send the Common Libraries to an external compiler. It is expected that these libraries are pre-compiled.
 
 
 # Colors and Fonts {: #configure-colors}
