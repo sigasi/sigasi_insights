@@ -6,7 +6,7 @@ date: 2016-04-28
 comments: true
 ---
 
-The Sigasi Studio 3.1 brings OnseSpin integration, Verilog improvements and more.
+The Sigasi Studio 3.1 brings OneSpin integration, Verilog improvements and more.
 
 If you have not yet updated your **Flexnet license daemon** after the Sigasi Studio 3 update, you need to do this before you update to Sigasi Studio 3.1. You can find the download details in "[/manual/license-key#License server setup]".
 
@@ -18,11 +18,11 @@ If the (VHDL or Verilog) code still has problems, these problems will appear in 
 
 To enable OneSpin, make sure the `$ONESPINROOT` environment variable is set. Next select **OneSpin** in the **Sigasi > Toolchains** Preference page. \[[Full documentation][/manual/onespin]\].
 
-![Onespin Save-Time Integration](3.01/onespin_console.png "OneSpin Save-Time Integration")
+![OneSpin Save-Time Integration](3.01/onespin_console.png "OneSpin Save-Time Integration")
 
 If the OneSpin toolchain is enabled and if you have set a *top level* (VHDL only), you can run the **OneSpin Consistency Checks** on your hierarchy. 
 
-![Run Onespin Consistency Checks](3.01/onespin_consistency_checks.png "Run OneSpin Consistency Checks")
+![Run OneSpin Consistency Checks](3.01/onespin_consistency_checks.png "Run OneSpin Consistency Checks")
 
 Running the OneSpin Consistency Checks can be a long process. You can abort it by clicking the stop button in the Progress View.
 

@@ -13,7 +13,7 @@ Before you can run OneSpin as external tool in Sigasi Studio, it needs to be cor
 * Make sure the environment variable `ONESPINROOT` is set, and points to the root folder of your OneSpin installation
 * Make sure the FlexNet environment variable `OSSLMGR_LICENSE_FILE` is set, and points to a valid OneSpin License server.
 
-# Running Onespin in Sigasi Studio
+# Running OneSpin in Sigasi Studio
 
 If the `ONESPINROOT` environment variable is set, **OneSpin** will be available on the **Sigasi > Toolchains** Preference page.
 

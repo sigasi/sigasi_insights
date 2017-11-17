@@ -34,7 +34,7 @@ Sigasi Studio processes the code in a predictable order and keeps track of the p
       ![Use autocomplete to instantiate any module](3.5/systemverilog_inst_autocomplete.png)
     * Preprocessor directives
       ![Use autocomplete to complete Preprocessor defines](3.5/preprocessor_define_autocomplete.png)
-* Integration with an **external compiler** (Riviera-Pro, ModelSim, NCsim, Onespin).
+* Integration with an **external compiler** (Riviera-Pro, ModelSim, NCsim, OneSpin).
 * We have a first version of SystemVerilog formatting. **Clean Indentation** (**Ctrl+Shift+F**) formats the entire file in the editor.
 * **Rename** refactoring  
   ![Rename SystemVerilog identifiers](3.5/systemverilog_rename.png)
