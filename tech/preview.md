@@ -16,7 +16,30 @@ Although these preview releases are less rigorously tested than than the officia
 
 # Current preview release
 
-We just released [/releasenotes/sigasi-3.06], so there is nothing to mention here yet.
+New features:
+
+* Check equivalence between component declarations and their matching entity
+* Export CSV file as action in hierarhcy view
+
+Improvements:
+
+* Faster processing of (System)Verilog include(d) files
+* Faster autocomplete for big VHDL projects
+* Open full Sigasi perspective by default
+* VHDL 2008 tool directives (`)
+
+Fixes:
+
+* Fixed Export diagrams in Eclipse plugin version
+* Shorter timeouts for floating licenses
+* respect tabs/spaces setting in (System)Verilog templates autocomplete
+* Support sampled functions syntax in (System)Verilog
+* Sort associations quickfix breaks code.
+
+Other:
+
+* Update to Xtext 2.13
+* Dropped Eclipse 4.3 (Kepler) support
 
 # Update or install?
 
