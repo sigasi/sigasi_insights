@@ -314,17 +314,13 @@ Quick Fixes are a really useful Sigasi Studio feature to resolve common problems
 
 Although the procedure is not very elegant, there is a way to apply multiple Quick Fixes at the same time.
 
-Conditions:
-
-1. Make sure you are dealing with identical solutions to the same problem.
-   For example: five "declare signal" Quick Fixes
-2. All problems have to be in the same file
-
 Procedure:
 
 1. Select all problems you want to fix in the problems view
-2. In the context menu, select **Quick Fix**
-3. Click **Finish** in the Dialog
+1. In the context menu, select **Quick Fix**
+1. Make sure you are dealing with identical solutions to the same problem.
+   For example: five "declare signal" Quick Fixes
+1. Click **Finish** in the Dialog
 
 ![](faq-images/quick_fix_all_code_menu.png)
 
