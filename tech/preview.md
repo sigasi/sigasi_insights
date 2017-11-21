@@ -34,7 +34,7 @@ Fixes:
 * Shorter timeouts for floating licenses
 * respect tabs/spaces setting in (System)Verilog templates autocomplete
 * Support sampled functions syntax in (System)Verilog
-* Sort associations quickfix breaks code.
+* Sort associations Quick Fix breaks code.
 
 Other:
 

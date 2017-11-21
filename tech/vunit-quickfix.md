@@ -8,7 +8,7 @@ comments: true
 bannerad: true
 ---
 
-Since [version 3.6](/releasenotes/sigasi-3.06), Sigasi Studio has a **quickfix** to automatically add the VUnit `vunit_lib` VHDL library to your project.
+Since [version 3.6](/releasenotes/sigasi-3.06), Sigasi Studio has a **Quick Fix** to automatically add the VUnit `vunit_lib` VHDL library to your project.
 
 # About VUnit
 
@@ -48,7 +48,7 @@ end entity;
 When you enter this VHDL snippet in a VHDL file in a Sigasi Studio project, you will see a warning (*Library "vunit\_lib" is not available*) on the library clause and multiple errors because of references to missing declarations.
 ![vunit...](/tech/vunit/before.png)
 
-To automatically add the VUnit library to your project, click the light bulb icon to trigger the quick fix (or press **Ctrl-F1** on the line with the warning).
+To automatically add the VUnit library to your project, click the light bulb icon to trigger the Quick Fix (or press **Ctrl-F1** on the line with the warning).
 
 ![vunit...](/tech/vunit/quickfix.png)
 

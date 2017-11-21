@@ -8,7 +8,7 @@ Sigasi Studio is often used in combination with Xilinx Vivado Design Suite and o
 
 * [Configure Sigasi Studio as default editor in Vivado][/manual/opening#xilinx-vivado]
 * [Automatically generate a Sigasi Studio project from an existing Vivado project][/tech/generating-sigasi-project-vivado-project]
-* [Automatically add the VHDL sources of Vivado libraries to your Sigasi Studio projects with a quickfix][/manual/linting#quickfix-for-third-party-libraries]
+* [Automatically add the VHDL sources of Vivado libraries to your Sigasi Studio projects with a Quick Fix][/manual/linting#quick-fix-for-third-party-libraries]
 * Automatically compile your files with Vivado's XSIM and launch a simulation with a simple click.
 
 # Configure Vivado

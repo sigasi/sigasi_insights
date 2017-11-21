@@ -1,5 +1,5 @@
 ---
-title: Linting and Quickfixes
+title: Linting and Quick Fixes
 layout: page 
 pager: true
 ---
@@ -8,16 +8,16 @@ pager: true
 
 In addition to syntax validation, Sigasi Studio also checks your code for
 semantic problems (**Linting**, or **Linter checks**). Some of these
-problems can be automatically resolved with **Quickfixes**. Both syntax
+problems can be automatically resolved with **Quick Fixes**. Both syntax
 checking and linting happen at type-time: new markers appear *as you are
 typing* your code.
 
 # Marker Icons {: #linting-icons}
 
 * ![](icons/info.png) marks an info message.
-* ![](icons/warning_lightbulb.png) marks a warning that can be resolved automatically with a quickfix.
+* ![](icons/warning_lightbulb.png) marks a warning that can be resolved automatically with a Quick Fix.
 * ![](icons/warning.png) marks a warning that cannot be resolved automatically.
-* ![](icons/error_lightbulb.png) marks an error that can be resolved automatically with a quick fix.
+* ![](icons/error_lightbulb.png) marks an error that can be resolved automatically with a Quick Fix.
 * ![](icons/error.png) marks an error that cannot be resolved automatically.
 
 # Linting {: #linting-linting}
@@ -52,13 +52,13 @@ in the design. Sigasi Studio’s VHDL linter checks for the following problems:
 Common Libraries are considered to be production ready libraries.
 Linting is skipped for all files in the Common Libraries folder.
 
-## Quickfixes {: #linting-quickfix}
+## Quick Fixes {: #linting-quick-fix}
 
 Some of the VHDL lint problems can be automatically resolved with
-*quickfixes*. These problems have *markers* annotated with a lightbulb
+*Quick Fixes*. These problems have *markers* annotated with a lightbulb
 icon (like ![](icons/warning\_lightbulb.png)). To trigger
-a quickfix, click the problem marker or press **Ctrl-1** and select the
-quickfix.
+a Quick Fix, click the problem marker or press **Ctrl-1** and select the
+Quick Fix.
 
 * Remove unused declaration
 * Declare signals and constants
@@ -139,7 +139,7 @@ Sigasi Studio flags some kinds of dead code:
 * unused ports
 * unreachable statements
 
-For unused declarations, there is also a quickfix to help you remove
+For unused declarations, there is also a Quick Fix to help you remove
 unused declarations fast.
 
 ## Deprecated IEEE Packages, Non-Standard Packages
@@ -187,10 +187,10 @@ Available since Sigasi 2.30
 Most VHDL designers prefer named associations in port and generic maps in instantiations. This makes it a lot easier to spot wrong connections.
 By default Sigasi Studio warns when positional associations are used. You can change the severity of this check via **Preferences > Sigasi > VHDL > Errors/Warnings** in the **Instantiation statement valiadation** section.
 
-## Quickfix for Third Party Libraries
+## Quick Fix for Third Party Libraries
 
 If you are using vendor libraries from Altera or Xilinx (ISE or Vivado),
-you do not need to set up these libraries by hand. Sigasi Studio has a QuickFix
+you do not need to set up these libraries by hand. Sigasi Studio has a Quick Fix
 to do this for you.
 
 ![](images/alteraquickfix.png)
@@ -241,7 +241,7 @@ earlier saves time and lets you catch the problem early.
 
 Sigasi Studio can warn about problems with your sensitivity list:
 
-* **Incomplete sensitivity list** (there is quickfix for this)
+* **Incomplete sensitivity list** (there is Quick Fix for this)
 * **Superfluous signals in sensitivity list**
 * **Duplicate signals in sensitivity list**
 
@@ -301,7 +301,7 @@ warns about this.
 
 Although VHDL is not case sensitive, it is recommend to always use the same capitalization when referring to the same declaration. Since version 2.30, Sigasi Studio warns when the capitalization of a reference differs from the capitalization of the declaration. Because external libraries can have different code styles, this linting only checks references in the same library as its declaration.
 
-Since [/releasenotes/sigasi-2.31] this can easily be fixed with a quickfix.
+Since [/releasenotes/sigasi-2.31] this can easily be fixed with a Quick Fix.
 
 ![](images/captalization_references.png)
 

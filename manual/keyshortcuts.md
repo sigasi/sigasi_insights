@@ -25,7 +25,7 @@ In this section, we list the most important shortcuts.
 5. Go to next marker (**Ctrl+.**)  
     Does your file contain warnings or errors? Quickly navigate to the next problem by pressing **Ctrl+.** (**Ctrl+,** jumps to the previous problem).
 6. Quick Fix (**Ctrl+1**):  
-   To fix problems even quicker, navigate to the problem with the previous shortcut. Press **Ctrl+1** to activate the quickfix, select the fix with the **UP** or **DOWN** keys and execute the quickfix with **Enter**.
+   To fix problems even quicker, navigate to the problem with the previous shortcut. Press **Ctrl+1** to activate the Quick Fix, select the fix with the **UP** or **DOWN** keys and execute the Quick Fix with **Enter**.
 7. Go to Line (**Ctrl+L**)  
    You can directly jump to a certain line with this shortcut. You can display the line numbers by right-clicking on on the gray bar on the left side of the editor view and clicking on **Show Line Numbers**.
 8. Search references (**Shift+Ctrl+G**)  
@@ -54,7 +54,7 @@ In this section, we list the most important shortcuts.
 |                        | Toggle Word Wrap             | **Shift+Alt+Y**              |
 |                        | Zoom in                      | **Ctrl++**                   |
 |                        | Zoom out                     | **Ctrl+-**                   |
-| *Quickfixes*           | Quick Fix                    | **Ctrl+1**                   |
+| *Quick Fixes*          | Quick Fix                    | **Ctrl+1**                   |
 | *Autocompletion*       | Content Assist               | **Ctrl+Space**               |
 |                        | Word completion              | **Alt+/**                    |
 | *Basic Search*         | Find and Replace             | **Ctrl+F**                   |

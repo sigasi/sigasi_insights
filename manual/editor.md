@@ -469,6 +469,6 @@ You can configure the include paths of your Verilog projects in the Verilog Prep
 
 You can specify multiple include paths by separating them with a `;`. All paths are relative to the project folder. You can add the main project folder as include path by entering `.`.
 
-You can also add an include path by running the quickfix on \``include` errors.
+You can also add an include path by running the Quick Fix on \``include` errors.
 
 **Ctrl+Click** on *\`defines* (or **F3**) will lead you to the corresponding declaration. Autocomplete will also offer you a list of all visible *\`defines*.

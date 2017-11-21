@@ -104,4 +104,4 @@ Note that the variables are only available when a valid path is configured in th
 To access *environment variables*, you have to prefix the environment variable with `ENV-`.
 For example: to refer to the home directory you can use `ENV-HOME`
 
-Since Sigasi 2.21, the quickfixes for Altera, Xilinx and Modelsim libraries, automatically use these path variables.
+Since Sigasi 2.21, the Quick Fixes for Altera, Xilinx and Modelsim libraries, automatically use these path variables.

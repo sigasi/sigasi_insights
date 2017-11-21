@@ -153,7 +153,7 @@ On Linux the default installation location for Xilinx is `/opt/Xilinx`
 and `/opt/altera` for Altera.
 
 For many common third party libraries, you can set up the library using
-a [/manual/linting#Quickfix for third party libraries].
+a [/manual/linting#Quick Fix for third party libraries].
 
 ## XilinxCoreLib
 
