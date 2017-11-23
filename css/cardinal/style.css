@@ -4212,6 +4212,10 @@ body.header-below-slider .home-slider-wrap #slider-continue {
     right: 0;
 }
 
+ul.sub-menu {
+    list-style: none;
+}
+
 /* --------------------------------------------
 	HEADER OVERLAY
 -------------------------------------------- */
