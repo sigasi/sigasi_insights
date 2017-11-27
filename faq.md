@@ -516,10 +516,10 @@ Sigasi does not offer simulators. If you don't have a VHDL simulator yet, we wou
 | ModelSim Altera Starter Edition   | Only Altera FPGAs  | [Altera Quartus Web Edition][altera_download] | Yes     | Yes   | No      |
 | ISim                              | Only Xilinx FPGAs  | [Xilinx Webpack][xilinx_download]             | Yes     | Yes   | No      |
 
-[latic_download]: http://www.latticesemi.com/licensing/flexlmlicense.cfm?p=diamond
-[aldec_download]: http://www.aldec.com/Downloads/default.aspx
-[altera_download]: http://www.altera.com/products/software/quartus-ii/web-edition/qts-we-index.html
-[xilinx_download]: http://www.xilinx.com/products/design-tools/ise-design-suite/ise-webpack.htm
+[latic_download]: http://www.latticesemi.com/en/Products/DesignSoftwareAndIP/FPGAandLDS/LatticeDiamond.aspx
+[aldec_download]: https://www.aldec.com/en/downloads
+[altera_download]: https://www.altera.com/products/design-software/model---simulation/modelsim-altera-software.html
+[xilinx_download]: https://www.xilinx.com/products/design-tools/ise-design-suite/ise-webpack.html
 
 At this time, Sigasi does not support [Simili](http://www.symphonyeda.com/products.htm) or [GHDL](http://ghdl.free.fr/). Note that [GHDL on Mac OSX](http://eng-osx.sourceforge.net/GHDL.html) uses Wine, but works without problems.
 We have not had good results with FreeHDL or with Green Mountain VHDL. It seems that these two projects may have been terminated.
