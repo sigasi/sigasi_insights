@@ -459,7 +459,7 @@ Alternatively, you can contact support for an older download location.
 ## Problems on Ubuntu Linux
 
 * Black text on black hovers is not readable. See : <http://devshards.blogspot.it/2012/10/how-to-fix-unreadable-eclipse-tooltips.html>
-* Slow and choppy text scrolling: start Sigasi/Eclipse with this extra command line option: `--launcher.GTK_version 2`w
+* Slow and choppy text scrolling: start Sigasi/Eclipse with this extra command line option: `--launcher.GTK_version 2`
 
 ## Sigasi plugins not started/visible in Eclipse
 

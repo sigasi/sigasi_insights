@@ -1,13 +1,13 @@
 ---
 title: Setting Up a Project
-layout: page 
+layout: page
 pager: true
 ---
 
 # Introduction {: #project-intro}
 
 Your work with Sigasi Studio typically is organized as a *project*. A project
-is a collection of VHDL or Verilog files that belong together. Sigasi Studio
+is a collection of VHDL and/or Verilog files that belong together. Sigasi Studio
 understands the HDL units defined in the files, and the relationships
 between them.
 
