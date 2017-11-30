@@ -6,7 +6,7 @@ author: Titouan Vervack
 date: 2017-08-31
 tags: 
   - VHDL
-  - Graphics
+  - graphics
   - BlockDiagram
   - StateMachine
 comments: true
