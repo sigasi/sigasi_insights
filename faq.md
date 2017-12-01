@@ -33,7 +33,7 @@ The SHA1 sum (or hash) is a fingerprint of a file. After you download a file, yo
 
 * Sigasi Studio Standalone is supported on:
     * Windows: Windows 8 (32 bit and 64 bit) or newer
-    * Mac OS: X Yosemite or newer
+    * Mac OS X: latest version
     * Linux: RedHat Enterprise Linux RHEL 6 (64 bit) or newer.  
   We recommend at least **2GB of memory**, and you need **about 300MB** of free disk space.
 
