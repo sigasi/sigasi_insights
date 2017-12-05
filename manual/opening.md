@@ -56,9 +56,15 @@ You can add some extra parameters to Sigasi Studio to modify the behavior.
 
 # External Files
 
-You can edit VHDL files without setting up a project. This feature is
-called editing *external files* or *single file mode*. There are several
-ways to open VHDL files:
+You can edit VHDL files without setting up a project.
+When a file that doesn't belong to a project is opened in Sigasi Studio, this
+file is called an *external file* and it will be opened in *single file mode*.
+
+*Single file mode* is a **limited environment** in which **not all Sigasi Studio
+features are available**. Navigation only works within a file. For that reason
+missing declaration are not flagged as errors.
+
+There are several ways to open VHDL files:
 
 * Drag the files to the editor window.
 * Open the file [from the command line](#files-command-line)
@@ -66,11 +72,10 @@ ways to open VHDL files:
 * Click **File \> Open File…**
 
 If the file belongs to a project, Sigasi Studio will open the file as part of
-that project. If not Sigasi Studio opens the file as *external file*. **Not all
-Sigasi Studio features are available** for external files. Navigation only
-works within a file. For the same reason, missing declaration are not
-flagged as errors. In general, if you want to benefit from all of the
-Sigasi Studio features, you should set up a proper project.
+that project. If not Sigasi Studio opens the file as *external file*.
+
+In general, if you want to benefit from all of the Sigasi Studio features,
+you should set up a proper project.
 
 # Setting up Sigasi Studio as Default Editor
 
