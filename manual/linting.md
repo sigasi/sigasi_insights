@@ -34,6 +34,7 @@ in the design. Sigasi Studio’s VHDL linter checks for the following problems:
 * Assignment validation
 * Case statement validation
 * Instantiation statement validation
+* Component validation (Entity/Component mismatch)
 * Library validation
 * Range validation
 * Deprecated and non-standard packages
@@ -72,6 +73,7 @@ Quick Fix.
 * Add missing signals to sensitivity list
 * Fix capitalization of identifier to correspond to its declaration
 * Match order of generic and port associations with declaration order
+* Update component declaration when the entity declaration has changed
 
 ## Configuring the Severity Level {: #linting-severity-level}
 
@@ -113,6 +115,7 @@ Errors/Warnings**.
 * INCOMPLETE\_ASSOCIATIVE\_OPTIONAL [link](#incomplete-port-maps-and-generic-maps)
 * POSITIONAL\_ASSOCIATION\_IN\_INSTANTIATIONS [link](#posititional-association-in-instantiations)
 * CASE\_REFERENCES [link](#capitalization-of-identifiers)
+* Check for component/entity mismatch
 
 # List of VHDL code rules
 
@@ -332,6 +335,12 @@ Sigasi Studio gives a warning when the **order** of generics or ports in a `map`
 
 ![](images/linting_vector_width.png)
 
+## Check for component/entity mismatch
+
+Sigasi Studio gives a warning if a component declaration is not equal to its matching entity. You can easily fix this by applying the quick fix.
+
+![](images/linting_component_entity.png)
+
 # Project specific Linting settings
 
 The default way to configure the severity of the Sigasi Studio linting checks is to set their severity in the **Errors/Warnings** preference page.
@@ -416,3 +425,6 @@ Examples:
 |164 | Check for positional associations in instantiations|
 |169 | Invalid port association
 |177 | Order of generic and port associations
+|185 | Redundant boolean equality check with true"
+|186 |Boolean equality check with false
+|187  |Check for component/entity mismatch"
