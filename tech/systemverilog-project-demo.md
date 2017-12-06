@@ -3,7 +3,7 @@ title: "How to setup a SystemVerilog project in Sigasi Studio"
 layout: page
 pager: true
 author: Hendrik Eeckhaut
-date: 2017-06-14
+date: 2017-12-06
 tags: 
   - sigasi studio
   - SystemVerilog
@@ -50,7 +50,7 @@ Sigasi Studio offers [Git](https://git-scm.com/) support via the [EGit plugin](h
 
 ## Remarks
 
-* In most cases it is recommended to *exclude* include files from the build, because often they are not real SystemVerilog design files. You can easily do this for the SCR1 project by right clicking the `src/includes` folder and selecting **Exclude from build**. (If you accidentally exclude the wrong file, you can add it again by right clicking the file and selecting **Set Library > Work**).
+* Sigasi Studio treats SystemVerilog include files as regular SystemVerilog code by taking the *'including' context* into account. This requires no extra setup or configuration from your part.
 * The project information is stored in:
     * The `.project` file, it describes which files belong to the project
     * The `.library_mapping.xml` file, it describes the project's library information (and excluded files)
