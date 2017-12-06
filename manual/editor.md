@@ -355,6 +355,8 @@ One example is the decision to format a *conditional signal assignment* on one, 
     else (others => 'X');
 ```
 
+** Note about broken code**: If your VHDL source file contains syntactical errors, the formatter can not always figure out an appropriate formatting. For this reason the formatter is programmed to stop applying (whitespace) changes when unsupported syntax errors are encountered.
+
 ### Configuration
 
 You can set your preferences for Tabs or spaces under **Window \>
