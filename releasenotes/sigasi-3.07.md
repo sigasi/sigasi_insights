@@ -10,23 +10,43 @@ Sigasi Studio 3.7 ...
 
 # Check for component/entity mismatch + QuickFix
 
-Check + QuickFix
+Sigasi Studio gives a warning if a component declaration is not equal to its matching entity. You can easily fix this by applying the quick fix.
+
+![](3.7/linting_component_entity.png)
 
 # SystemVerilog improvements
 
-TODO
+We significantly improved and optimized the way we analyze include files. Because we now track, project-wide, all includer/included-relationships, we can provide very accurate navigation without any extra configuration effort from your part. This allows you to focus on the code, instead of tracking yourself which parts of your are already in scope.
+
+For example, to add UVM support to your project, you now only have to:
+1. drag and drop the source folder in your project
+2. add the UVM source folder to your project's include path
+
+Next, Sigasi Studio figures out all relations automatically, allowing you to easily follow declarations, use autocomplete or preview preprocessor macro expansions. For more information, you should read the updated [UVM example post](tech/systemverilog-uvm-demo).
+
+![](3.7/uvm_ubus.png)
+
+We also reduced the memory footprint and improved the project analysis time.
 
 # Dependencies Viewer (Mixed language) 
 
-Show all HDL files in project
+The *Dependencies Viewer** can now display the dependencies of your entire project. This make it very easy to recognize *top levels* and *orphaned files*.
+
+![](3.7/dependencies_project.png)
 
 # GHDL support (VHDL) 
 
-TODO
+Especially for our educational users using Apple MacBooks, we added support for the open-source GHDL simulator.
+
+![](3.7/ghdl_support.png)
+
+Make sure to [download the latest version of ghdl from GitHub](https://github.com/tgingold/ghdl/releases). Do not download the outdated version from http://ghdl.free.fr.
 
 # Autocomplete performance (Mixed language) 
 
-TODO
+We did a thorough performance analysis of the SystemVerilog and VHDL autocomplete feature. This way we could vastly reduce the autocomplete latency, especially for larger projects.
+
+![](3.7/faster_autocomplete.png)
 
 # Other new and noteworthy improvements
 
