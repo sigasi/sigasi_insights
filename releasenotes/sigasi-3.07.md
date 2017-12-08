@@ -5,14 +5,15 @@ pager: true
 date: 2017-12-13
 comments: true
 ---
-Sigasi Studio 3.7 ...
-
+Sigasi Studio 3.7 brings type-time component/entity mismatch checking (+QuickFix), SystemVerilog improvements, GHDL support and many more new features and bug fixes.
 
 # Check for component/entity mismatch + QuickFix
 
-Sigasi Studio gives a warning if a component declaration is not equal to its matching entity. You can easily fix this by applying the quick fix.
+Sigasi Studio now gives a warning if a component declaration and its matching entity get out of sync. This is a common annoyance in HDL design that is typically discovered very late in the design flow (at *elaboration time*). Sigasi Studio now reports mismatches immediately (at **type time**).
 
 ![](3.7/linting_component_entity.png)
+
+You can easily update a component declaration to match its entity declaration by applying the quick fix.
 
 # SystemVerilog improvements
 
@@ -50,23 +51,26 @@ We did a thorough performance analysis of the SystemVerilog and VHDL autocomplet
 
 # Other new and noteworthy improvements
 
-* Show warning bar at top of editor when editing external files (and or starter mode)
-* The formatter now stops formatting your HDL code when it encounters unrecoverable syntax errors
-* Add "Export CSV file with dependencies" feature available as action in the hierarchy view
-* You can now open the **Dependencies View** via the "Show in" menu in the editor
+* Because some of our users did not realize is more powerful when you use it on projects, we made some UI changes to make this more clear. The **Sigasi Starter** perspective is no longer the default perspective. In addition, when an external file is opened, we now show a warning bar at the top of editor to clearly indicate you are missing out on a lot of features.  
+![](3.7/external_file_banner.png)
+* Add "Export CSV file with dependencies" feature available as action in the hierarchy view  
+![](3.7/csv_hierarchy.png)
+* You can now open the **Dependencies View** via the "Show in" menu in the editor  
+![](3.7/show_in_dependencies.png)
 * The Riviera-Pro toolchain now has `-dbg` as default option.
-
 * \[VHDL] Allow to simulate a `configuration` as toplevel
-* \[VHDL] Improved constant evaluation in hovers
-* \[VHDL] Renaming procedure arguments in package body, does not rename arguments in signature in package
-* \[VHDL] Support VHDL 2008 tool directives (`)
-* \[VHDL] Add autocomplete template for formatter tags
-* \[VHDL] Vivado unisim quickfix includes old files/Unisim mapping issue: duplicate design units
-
-* \[Graphics configuration]Allow referencing of labeled assignments
-
+* \[VHDL] Improved constant evaluation in hovers  
+![](3.7/constant_in_hover.png)
+* \[VHDL] Renaming procedure arguments in package body, does not rename arguments in signature in package  
+![](3.7/rename_procedure_parameter.png)
+* \[VHDL] Support VHDL 2008 tool directives (`)  
+![](3.7/vhdl2008_tool_directive.png)
+* \[VHDL] Add autocomplete template for formatter tags  
+![](3.7/formatter_tags.png)
+* \[VHDL] The quickfix for the **Vivado Unisim** library now uses the real Vivado library, and not the legacy ISE compatibility version.
+* \[Graphics configuration] You can now also reference of labeled assignments
 * The **Sigasi Starter** perspective is no longer the default perspective
-* The FlexNet floating license key checkout now times out faster
+* The **FlexNet** floating license key checkout now **times out faster**
 * We updated the Eclipse Xtext dependency to `2.13.0`
 
 # Bug fixes
@@ -81,6 +85,7 @@ We did a thorough performance analysis of the SystemVerilog and VHDL autocomplet
 - ticket 4084 : "Format on save" puts the cursor on line 1 after save
 - ticket 4095 : "Unused declaration" should not consider a component end name as a 'usage' of the component.
 - ticket 4030 : \[VHDL Formatting] Comments before (generate) elsif/else are not indented correctly
+- ticket 4030 : \[VHDL Formatting] The formatter now stops formatting your HDL code when it encounters unrecoverable syntax errors (such as missing parenthesis, braces and `end` keywords)
 - ticket 4069 : \[VHDL Formatting] Preserve newlines fails when line breaks are different from OS-line breaks
 - ticket 4107 : \[Graphics configuration] Collapse wires in block diagram generates wrong identifier names
 
