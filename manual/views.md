@@ -186,12 +186,21 @@ You can watch a screencast at [/screencasts/state_machine_viewer]
 
 [xl_only]
 
-The **Dependencies View** visualizes the dependencies of the VHDL or Verilog file in the current editor.
-This view is automatically updated each time you save your files.
+The **Dependencies View** visualizes the dependencies of your VHDL, SystemVerilog or *mixed language* projects.
+This view shows the relationships between your source files and makes it easy to see *top levels* and important *packages*.
+The Dependencies View also makes it easy to detect *orphaned files*.
+
+The view is *automatically updated* each time you save your files.
 
 ![Dependencies View](images/dependencies-view.png "Dependencies View")
 
-If you are working on a mixed language project, the Dependencies View will also show cross language dependencies.
+To focus on the dependencies of the active editor only, uncheck the project button (![Dependencies View](images/dependencies-view_project.png)).
+
+The dependencies view can help you navigate too. Double click a file name in the diagram to open the corresponding editor.
+
+The dependencies View can also be pinned. This prevents the diagram from changing when you switch editors.
+
+You can export this diagram for documentation by clicking the save icon.
 
 # Documentation View {: #documentation}
 
