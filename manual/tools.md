@@ -105,6 +105,7 @@ Currently the following external compilers are supported:
 | [Xilinx Vivado][vivado] | true                  | true                     |
 | Cadence Incisive        | true                  | false                    |
 | [OneSpin]               | true                  | (run elaboration checks) |
+| GHDL                    | true                  | true                     |
 
 ## Save-time compilation
 
