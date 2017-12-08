@@ -93,6 +93,8 @@ The Hierarchy View also offers an action **Select required files**, which select
 
 ![](images/select_required_files_in_hierarchy.png)
 
+You can also export a CSV-file with all dependencies of the selected element via the context menu: **right click** and select **Export Dependencies to CSV file**.
+
 # Problems view {: #problems}
 
 The Problems view shows problems (errors and warnings) related to your
