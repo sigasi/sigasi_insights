@@ -3,13 +3,12 @@ title: "PSS Early Adopter (EA) Portable Test and Stimulus Standard"
 layout: page 
 pager: true
 author: Sigasi
-date: 2017-12-03
+date: 2017-12-11
 comments: true
 ---
 <em>
 Copyright © 2017 Accellera. All rights reserved.
 This is an unapproved Accellera Standards Draft, subject to change.
- 
 
 Get the full Language Reference Manual, free of charge, at <http://www.accellera.org/images/downloads/drafts-review/PSS\_Early\_Adopter\_Release.pdf>
 
@@ -51,12 +50,12 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :	<font color="purple"><b>import</b></font> <a href="#package_import_pattern">package\_import\_pattern</a> <font color="purple"><b>;</b></font> 
   
 **package\_import\_pattern**{: #package_import_pattern }
-:	<a href="#type_identifier">type\_identifier</a>  \[ <font color="purple"><b>:: \*</b></font>  ]  
+:	<a href="#type_identifier">type\_identifier</a>  \[ <font color="purple"><b>::</b></font> <font color="purple"><b>\*</b></font>  ]  
   
 **extend\_stmt**{: #extend_stmt }
 :	<font color="purple"><b>extend</b></font> <font color="purple"><b>action</b></font> <a href="#type_identifier">type\_identifier</a> <font color="purple"><b>{</b></font>  { <a href="#action_body_item">action\_body\_item</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]    
         | <font color="purple"><b>extend</b></font> <font color="purple"><b>struct</b></font> <a href="#type_identifier">type\_identifier</a> <font color="purple"><b>{</b></font>  { <a href="#struct_body_item">struct\_body\_item</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]    
-        | <font color="purple"><b>extend</b></font> <font color="purple"><b>enum</b></font> <a href="#type_identifier">type\_identifier</a>  {  \[ <a href="#enum_item">enum\_item</a>  { <font color="purple"><b>,</b></font> <a href="#enum_item">enum\_item</a>  }   ]   }   \[ <font color="purple"><b>;</b></font>  ]    
+        | <font color="purple"><b>extend</b></font> <font color="purple"><b>enum</b></font> <a href="#type_identifier">type\_identifier</a> <font color="purple"><b>{</b></font>  \[ <a href="#enum_item">enum\_item</a>  { <font color="purple"><b>,</b></font> <a href="#enum_item">enum\_item</a>  }   ]  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]    
         | <font color="purple"><b>extend</b></font> <font color="purple"><b>component</b></font> <a href="#type_identifier">type\_identifier</a> <font color="purple"><b>{</b></font>  { <a href="#component_body_item">component\_body\_item</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]  
   
 ## B.2 Action declarations
@@ -97,7 +96,8 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :	<font color="purple"><b>input</b></font>   
         | <font color="purple"><b>output</b></font> 
   
-<em> Exec blocks </em>  
+### Exec blocks
+  
 **exec\_block\_stmt**{: #exec_block_stmt }
 :	<a href="#exec_block">exec\_block</a>   
         | <a href="#target_code_exec_block">target\_code\_exec\_block</a>   
@@ -166,7 +166,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 ## B.4 Procedural interface (PI)
   
 **import\_method\_decl**{: #import_method_decl }
-:	<font color="purple"><b>import</b></font> <a href="#method_prototype">method\_prototype</a> 
+:	<font color="purple"><b>import</b></font> <a href="#method_prototype">method\_prototype</a> <font color="purple"><b>;</b></font> 
   
 **method\_prototype**{: #method_prototype }
 :	<a href="#method_return_type">method\_return\_type</a> <a href="#method_identifier">method\_identifier</a> <a href="#method_parameter_list_prototype">method\_parameter\_list\_prototype</a> 
@@ -294,7 +294,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :	 \[ <font color="purple"><b>sequence</b></font>  ]  <font color="purple"><b>{</b></font>  { <a href="#activity_labeled_stmt">activity\_labeled\_stmt</a>  }  <font color="purple"><b>}</b></font> 
   
 **activity\_constraint\_stmt**{: #activity_constraint_stmt }
-:	<a href="#constraint">constraint</a> <font color="purple"><b>{</b></font>  { <a href="#constraint_body_item">constraint\_body\_item</a>  }  <font color="purple"><b>}</b></font>   
+:	<font color="purple"><b>constraint</b></font> <font color="purple"><b>{</b></font>  { <a href="#constraint_body_item">constraint\_body\_item</a>  }  <font color="purple"><b>}</b></font>   
         | <a href="#single_stmt_constraint">single\_stmt\_constraint</a> 
   
 **activity\_foreach\_stmt**{: #activity_foreach_stmt }
@@ -346,7 +346,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <a href="#instance_override">instance\_override</a> 
   
 **type\_override**{: #type_override }
-:	<a href="#type">type</a> <a href="#identifier">identifier</a> <font color="purple"><b>with</b></font> <a href="#type_identifier">type\_identifier</a> <font color="purple"><b>;</b></font> 
+:	<font color="purple"><b>type</b></font> <a href="#identifier">identifier</a> <font color="purple"><b>with</b></font> <a href="#type_identifier">type\_identifier</a> <font color="purple"><b>;</b></font> 
   
 **instance\_override**{: #instance_override }
 :	<font color="purple"><b>instance</b></font> <a href="#hierarchical_id">hierarchical\_id</a> <font color="purple"><b>with</b></font> <a href="#identifier">identifier</a> <font color="purple"><b>;</b></font> 
@@ -426,7 +426,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :	<a href="#type_identifier">type\_identifier</a> 
   
 **enum\_declaration**{: #enum_declaration }
-:	<font color="purple"><b>enum</b></font> <a href="#enum_identifier">enum\_identifier</a>  {  \[ <a href="#enum_item">enum\_item</a>  { <font color="purple"><b>,</b></font> <a href="#enum_item">enum\_item</a>  }   ]   }   \[ <font color="purple"><b>;</b></font>  ]  
+:	<font color="purple"><b>enum</b></font> <a href="#enum_identifier">enum\_identifier</a> <font color="purple"><b>{</b></font>  \[ <a href="#enum_item">enum\_item</a>  { <font color="purple"><b>,</b></font> <a href="#enum_item">enum\_item</a>  }   ]  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]  
   
 **enum\_item**{: #enum_item }
 :	<a href="#identifier">identifier</a>  \[ <font color="purple"><b>=</b></font> <a href="#constant_expression">constant\_expression</a>  ]  
@@ -496,7 +496,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <a href="#constraint_declaration">constraint\_declaration</a> 
   
 **coverspec\_option**{: #coverspec_option }
-:	<a href="#option">option</a> <font color="purple"><b>.</b></font> <a href="#identifier">identifier</a> <font color="purple"><b>=</b></font> <a href="#constant_expression">constant\_expression</a> <font color="purple"><b>;</b></font> 
+:	<font color="purple"><b>option</b></font> <font color="purple"><b>.</b></font> <a href="#identifier">identifier</a> <font color="purple"><b>=</b></font> <a href="#constant_expression">constant\_expression</a> <font color="purple"><b>;</b></font> 
   
 **coverspec\_coverpoint**{: #coverspec_coverpoint }
 :	<a href="#coverpoint_identifier">coverpoint\_identifier</a> <font color="purple"><b>:</b></font> <font color="purple"><b>coverpoint</b></font> <a href="#coverpoint_target_identifier">coverpoint\_target\_identifier</a> <font color="purple"><b>{</b></font>  { <a href="#coverspec_coverpoint_body_item">coverspec\_coverpoint\_body\_item</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]    
@@ -527,7 +527,8 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <a href="#ignore_constraint">ignore\_constraint</a>   
         | <a href="#illegal_constraint">illegal\_constraint</a> 
   
-<em> Bins </em>  
+### Bins
+  
 **bins\_declaration**{: #bins_declaration }
 :	<font color="purple"><b>bins</b></font> <a href="#identifier">identifier</a>  \[ <a href="#variable_identifier">variable\_identifier</a>  ]  <a href="#bin_specification">bin\_specification</a> <font color="purple"><b>;</b></font> 
   
@@ -541,10 +542,10 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <a href="#bin_range_size">bin\_range\_size</a> 
   
 **explicit\_bin\_value**{: #explicit_bin_value }
-:	 \[ <a href="#constant">constant</a>  ]  
+:	<font color="purple"><b>\[</b></font> <a href="#constant">constant</a> <font color="purple"><b>]</b></font> 
   
 **explicit\_bin\_range**{: #explicit_bin_range }
-:	 \[ <a href="#constant">constant</a> <font color="purple"><b>..</b></font> <a href="#constant">constant</a>  ]  
+:	<font color="purple"><b>\[</b></font> <a href="#constant">constant</a> <font color="purple"><b>..</b></font> <a href="#constant">constant</a> <font color="purple"><b>]</b></font> 
   
 **bin\_range\_divide**{: #bin_range_divide }
 :	<a href="#explicit_bin_range">explicit\_bin\_range</a> <font color="purple"><b>/</b></font> <a href="#constant">constant</a> 
@@ -553,7 +554,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :	<a href="#explicit_bin_range">explicit\_bin\_range</a> <font color="purple"><b>:</b></font> <a href="#constant">constant</a> 
   
 **bin\_wildcard**{: #bin_wildcard }
-:	 \[ <font color="purple"><b>\*</b></font>  ]  
+:	<font color="purple"><b>\[</b></font> <font color="purple"><b>\*</b></font> <font color="purple"><b>]</b></font> 
   
 ## B.12 Expression
   
