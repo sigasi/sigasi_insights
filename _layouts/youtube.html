@@ -1,48 +1,20 @@
-{% extends "_base.html" %}
+{% extends "page.html" %}
 
-{% block body %}
+{% block content %}
+  <div class="col-md-12" role="main">
+    <div class="container">
+      <center>
+        <iframe src="https://www.youtube.com/embed/{{this.videoid}}?modestbranding=1&rel=0&showinfo=0" gesture="media" allow="encrypted-media" allowfullscreen="" width="640" height="360" frameborder="0">
+	</iframe>
+      </center>
+    </div>
+    {{ this.body }}
 
-<div class="container">
-
-  <div class="page-header">
-    {% block title %}
-    <h1>{{this.title}}</h1>
-    <div>
-    {% if this.date %}
-        posted on {{this.date|dateformat}}
+    {% if this.comments %}
+      {% include 'cantilis/comments.html' %}
     {% endif %}
-    {% if this.author %}
-        by {{this.author|author}}
-    {% endif %}
-    </div>
-    <div style="margin: 10px 0 10px">
-    {% for tag in this.tags %}
-        <a href="/tag/{{tag}}/" class="btn btn-default btn-xs">{{tag}}</a>
-    {% endfor %}
-    </div>
-    {% endblock %}
   </div>
-
-  <center>
-   <iframe src="https://www.youtube.com/embed/{{this.videoid}}?modestbranding=1&rel=0&showinfo=0" gesture="media" allow="encrypted-media" allowfullscreen="" width="640" height="360" frameborder="0"></iframe>
-  </center>
-
-  <div class="row">
-
-    <div class="content">
-      {% block content %}
-      <div class="" role="main">
-        {{this.body}}
-
-        {% if this.comments %}
-          {% include 'cantilis/comments.html' %}
-        {% endif %}
-      </div>
-      {% endblock %}
-    </div>
-
-  </div>
-</div>
-
 {% endblock %}
 
+{% block sidebar %}
+{% endblock %}
