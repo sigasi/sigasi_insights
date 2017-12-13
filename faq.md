@@ -516,13 +516,18 @@ Sigasi does not offer simulators. If you don't have a VHDL simulator yet, we wou
 | Aldec Active-HDL, Student Edition | Students only      | [Aldec Download page][aldec_download]         | Yes     | No    | No      |
 | ModelSim Altera Starter Edition   | Only Altera FPGAs  | [Altera Quartus Web Edition][altera_download] | Yes     | Yes   | No      |
 | ISim                              | Only Xilinx FPGAs  | [Xilinx Webpack][xilinx_download]             | Yes     | Yes   | No      |
+| [GHDL][GHDL_site]                 | Open source        | [GHDL download page][ghdl_download]           | Yes     | Yes   | Yes     |
 
 [latic_download]: http://www.latticesemi.com/en/Products/DesignSoftwareAndIP/FPGAandLDS/LatticeDiamond.aspx
 [aldec_download]: https://www.aldec.com/en/downloads
 [altera_download]: https://www.altera.com/products/design-software/model---simulation/modelsim-altera-software.html
 [xilinx_download]: https://www.xilinx.com/products/design-tools/ise-design-suite/ise-webpack.html
+[ghdl_download]: https://github.com/tgingold/ghdl/releases
+[GHDL_site]: http://ghdl.free.fr
 
-At this time, Sigasi does not support [Simili](http://www.symphonyeda.com/products.htm) or [GHDL](http://ghdl.free.fr/). Note that [GHDL on Mac OSX](http://eng-osx.sourceforge.net/GHDL.html) uses Wine, but works without problems.
+Note that [GHDL on Mac OSX](http://eng-osx.sourceforge.net/GHDL.html) uses Wine, but works without problems.
+
+At this time, Sigasi does not support [Simili](http://www.symphonyeda.com/products.htm).
 We have not had good results with FreeHDL or with Green Mountain VHDL. It seems that these two projects may have been terminated.
 
 You need a VHDL editor too
