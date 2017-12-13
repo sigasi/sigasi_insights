@@ -44,7 +44,7 @@ in the design. Sigasi Studio’s VHDL linter checks for the following problems:
 * Port, signal, variable, constant or generic declarations that are never read or written
 * Invalid port associations (incompatible port modes in instantiations)
 * Order of generic and port associations
-* Consistent capitalization of identifiers [link](#capitalization-of-identifiers)
+* [Consistent capitalization of identifiers](#capitalization-of-identifiers)
 * Advanced Configuration validation (component mismatch, missing binding, ...)
 * Redundant boolean equality expressions (`boolean = true`)
 
@@ -89,32 +89,32 @@ Errors/Warnings**.
 
 [creator_only]
 
-* NULL\_RANGE\_ERROR [link](#null-range)
-* DEPRECATED\_PACKAGE [link](#deprecated-ieee-packages-non-standard-packages)
+* [NULL\_RANGE\_ERROR](#null-range)
+* [DEPRECATED\_PACKAGE](#deprecated-ieee-packages-non-standard-packages)
  <!--* REDUNDANT_CHOICES -->
-* REDUNDANT\_OTHERS [link](#redundant-others)
+* [REDUNDANT\_OTHERS](#redundant-others)
 * Subprograms in packages (e.g. function body in a package, rather than in the package body)
 * Infinite loops in simulations:
     * INFINTE\_LOOP\_STATEMENT
     * PROCESS\_WITHOUT\_SENSITIVITY\_AND\_WAIT
-* NUMERIC\_LITERAL\_WHITESPACE\_BEFORE\_UNIT [link](#space-physical-unit)
-* SUPERFLUOUS\_LIBRARY [link](#/manual/superfluous-library-clause)
+* [NUMERIC\_LITERAL\_WHITESPACE\_BEFORE\_UNIT](#space-physical-unit)
+* [SUPERFLUOUS\_LIBRARY](#superfluous-library-clause)
  <!-- * MISSING_LIBRARY -->
-* UNUSED\_DECLARATION: PORT, GENERIC, SIGNAL, ...  [link](#dead-code-lint)
+* [UNUSED\_DECLARATION: PORT, GENERIC, SIGNAL, ... ](#dead-code-lint)
  <!--* BITSTRING_STD_LOGIC: invalid characters in bit string-->
-* SENSITIVITY\_LIST [link](#sensitivity-list)
+* [SENSITIVITY\_LIST](#sensitivity-list)
 
 ### Advanced VHDL coding rules
 
 [xl_only]
 
 * FSM\_DEAD\_STATE
-* DEAD\_CODE (unreachable statements) [link](#dead-code)
+* [DEAD\_CODE (unreachable statements)](#dead-code)
 * NEVER\_WRITTEN / NEVER\_READs
 * [#naming-conventions]
-* INCOMPLETE\_ASSOCIATIVE\_OPTIONAL [link](#incomplete-port-maps-and-generic-maps)
-* POSITIONAL\_ASSOCIATION\_IN\_INSTANTIATIONS [link](#posititional-association-in-instantiations)
-* CASE\_REFERENCES [link](#capitalization-of-identifiers)
+* [INCOMPLETE\_ASSOCIATIVE\_OPTIONAL](#incomplete-port-maps-and-generic-maps)
+* [POSITIONAL\_ASSOCIATION\_IN\_INSTANTIATIONS](#posititional-association-in-instantiations)
+* [CASE\_REFERENCES](#capitalization-of-identifiers)
 * Check for component/entity mismatch
 
 # List of VHDL code rules
@@ -248,7 +248,7 @@ Sigasi Studio can warn about problems with your sensitivity list:
 * **Superfluous signals in sensitivity list**
 * **Duplicate signals in sensitivity list**
 
-## Superfluous Library Clause
+## Superfluous Library Clause {: superfluous-library-clause }
 
 The VHDL language reference manual states that:
 
@@ -274,7 +274,7 @@ it will mark the if-statement because it contains dead code.
 
 ![](images/unreachable_code.png)
 
-## Null Range (empty range) (#nullRange)
+## Null Range (empty range) {: #null-range}
 
 In VHDL, you can use ranges with `to` and `downto`. But, if you use the
 wrong direction, you get an empty range, which is usually not what you
@@ -284,7 +284,7 @@ We have a lint check that warns about this, even if you use constants
 
 ![](images/nullrange.png)
 
-## Space Before the Physical Unit
+## Space Before the Physical Unit {: #space-physical-unit }
 
 If you type a numeric literal with a physical unit, there should be a
 space between the number and the unit.
