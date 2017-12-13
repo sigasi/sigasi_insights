@@ -26,7 +26,7 @@ The animation below shows different **State Machine** Graphics Configurations ap
 Please find more details and tips on getting started in "[/tech/using-graphics-configuration]".  
 The syntax of the Graphics Configuration files is explained in "[/tech/graphics.ebnf]".
 
-# Improved Dependencies Viewer (VHDL)
+# Improved Dependencies Viewer
 
 Sigasi Studio's [dependencies view](/manual/views#dependencies) has a new skin. Its visuals are now in line with Block Diagram and Statemachine Views.  
 ![Old and New dependencies view](/releasenotes/3.6/dependencies_view.png)
