@@ -65,13 +65,13 @@ This way we could vastly reduce the autocomplete latency, especially for larger 
 
 # Other new and noteworthy improvements
 
-* Because some of our users did not realize Sigasi Studio is more powerful when you use it on projects, we made some UI changes to clarify this. The **Sigasi Starter** perspective is no longer the default perspective. In addition, when an external file is opened, we now show a warning bar at the top of editor to clearly indicate you are missing out on a lot of features.  
+* Because some of our users did not realize Sigasi Studio is more powerful when you use it on projects, we made some UI changes to clarify this. When an external file is opened, we now show a warning bar at the top of editor to clearly indicate you are missing out on a lot of features  
   ![editing an external file](3.7/external_file_banner.png)
 * Add "Export CSV file with dependencies" feature available as action in the hierarchy view  
   ![export csv in hierarchy view](3.7/csv_hierarchy.png)
 * You can now open the **Dependencies View** via the "Show in" menu in the editor  
   ![show in dependencies](3.7/show_in_dependencies.png)
-* The Riviera-Pro toolchain now has `-dbg` as default option.
+* The Riviera-Pro toolchain now has `-dbg` as default option
 * \[VHDL] Allow to simulate a `configuration` as toplevel
 * \[VHDL] Improved constant evaluation in hovers  
   ![constant evaluation in hover](3.7/constant_evaluation_hover.png)
@@ -81,7 +81,7 @@ This way we could vastly reduce the autocomplete latency, especially for larger 
   ![VHDL 2008 tool directives](3.7/vhdl2008_tool_directive.png)
 * \[VHDL] Add autocomplete template for formatter tags  
   ![formatter tags autocomplete](3.7/formatter_tags.png)
-* \[VHDL] The Quick Fix for the **Vivado Unisim** library now uses the real Vivado library, and not the legacy ISE compatibility version.
+* \[VHDL] The Quick Fix for the **Vivado Unisim** library now uses the real Vivado library, and not the legacy ISE compatibility version
 * \[Graphics configuration] You can now also reference labeled assignments
 * The **Sigasi Starter** perspective is no longer the default perspective
 * The **FlexNet** floating license key checkout now **times out faster**
@@ -93,7 +93,7 @@ This way we could vastly reduce the autocomplete latency, especially for larger 
 * ticket 3789 : \[VHDL] Scoping issue in configurations
 * ticket 4016 : \[SystemVerilog] Incorrect syntax error report in assertion variable declarations (Used in Tidal library)
 * ticket 3993 : \[SystemVerilog] Formatting issue in case generate statements
-* ticket 4004,4007,4027 : \[VHDL] "Sort associations" Quick Fix generates wrong VHDL code
+* ticket 4004, 4007, 4027 : \[VHDL] "Sort associations" Quick Fix generates wrong VHDL code
 * ticket 4088 : Project > Export generating bogus diagrams when Sigasi Studio is installed as Eclipse plugin
 * ticket 4071 : Rename issue in component, when matching entity is defined in a different library
 * ticket 4084 : "Format on save" puts the cursor on line 1 after save
