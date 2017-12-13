@@ -1,8 +1,8 @@
 ---
-title: Sigasi Studio Preview (3.7)
+title: Sigasi Studio Preview (3.8)
 layout: page
 pager: true
-date: 2017-10-17
+date: 2017-12-13
 comments: true
 ---
 
@@ -16,30 +16,7 @@ Although these preview releases are less rigorously tested than than the officia
 
 # Current preview release
 
-New features:
-
-* Check equivalence between component declarations and their matching entity
-* Export CSV file as action in hierarhcy view
-
-Improvements:
-
-* Faster processing of (System)Verilog include(d) files
-* Faster autocomplete for big VHDL projects
-* Open full Sigasi perspective by default
-* VHDL 2008 tool directives (`)
-
-Fixes:
-
-* Fixed Export diagrams in Eclipse plugin version
-* Shorter timeouts for floating licenses
-* respect tabs/spaces setting in (System)Verilog templates autocomplete
-* Support sampled functions syntax in (System)Verilog
-* Sort associations Quick Fix breaks code.
-
-Other:
-
-* Update to Xtext 2.13
-* Dropped Eclipse 4.3 (Kepler) support
+We just released [/releasenotes/sigasi-3.07], so there is nothing to mention here yet.
 
 # Update or install?
 
@@ -56,7 +33,7 @@ You can also update from (configure via Preferences > Install/Update > Available
 
 SHA Sums ([more info][/faq#how-can-i-check-a-sha-sum]) can be checked via <http://download.sigasi.com/preview/latest/sha1.txt>
 
-## Feedback
+# Feedback
 
 We welcome your feedback trough the usual channels or the comments below. Note that comments are cleared after each [official release][/releasenotes].
 
