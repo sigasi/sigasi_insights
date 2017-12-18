@@ -1,6 +1,6 @@
 ---
 title: Linting and Quick Fixes
-layout: page 
+layout: page
 pager: true
 ---
 
@@ -227,7 +227,7 @@ synthesis tools). Check the manual of your synthesis tools and run some
 experiments.
 For more information, see [/tech/vhdl-case-statements-can-do-without-others]
 
-### Sensitivity List
+## Sensitivity List
 
 VHDL requires a sensitivity list for each process (or wait statements in
 the project).
