@@ -43,7 +43,7 @@ in the design. Sigasi Studio’s VHDL linter checks for the following problems:
 * Missing, unnecessary and duplicate signals in the sensitivity list
 * Port, signal, variable, constant or generic declarations that are never read or written
 * Invalid port associations (incompatible port modes in instantiations)
-* Order of generic and port associations
+* [Order of generic and port associations](#order-of-associations)
 * [Consistent capitalization of identifiers](#capitalization-of-identifiers)
 * Advanced Configuration validation (component mismatch, missing binding, ...)
 * Redundant boolean equality expressions (`boolean = true`)
@@ -66,7 +66,7 @@ Quick Fix.
 * Switch to VHDL 2008 mode
 * Correct signal/variable assignment operator
 * Ignore deprecated libraries
-* Configure Altera, Xilinx, ModelSim and VUnit libraries
+* [Configure Altera, Xilinx, ModelSim and VUnit libraries](#quick-fix-for-third-party-libraries)
 * Declare missing enumeration literal in case statements
 * Add missing when clause in case statements
 * Correct attribute entity class in attribute specifications
@@ -90,7 +90,7 @@ Errors/Warnings**.
 [creator_only]
 
 * [NULL\_RANGE\_ERROR](#null-range)
-* [DEPRECATED\_PACKAGE](#deprecated-ieee-packages-non-standard-packages)
+* [Deprecated Packages](#deprecated-ieee-packages-non-standard-packages)
  <!--* REDUNDANT_CHOICES -->
 * [REDUNDANT\_OTHERS](#redundant-others)
 * Subprograms in packages (e.g. function body in a package, rather than in the package body)
@@ -112,17 +112,18 @@ Errors/Warnings**.
 * [DEAD\_CODE (unreachable statements)](#dead-code)
 * NEVER\_WRITTEN / NEVER\_READs
 * [#naming-conventions]
-* [INCOMPLETE\_ASSOCIATIVE\_OPTIONAL](#incomplete-port-maps-and-generic-maps)
-* [POSITIONAL\_ASSOCIATION\_IN\_INSTANTIATIONS](#posititional-association-in-instantiations)
-* [CASE\_REFERENCES](#capitalization-of-identifiers)
-* Check for component/entity mismatch
+* [Incomplete Port Maps and Generic Maps](#incomplete-port-maps-and-generic-maps)
+* [Posititional Association in Instantiations](#posititional-association-in-instantiations)
+* [Capitalization of Identifiers](#capitalization-of-identifiers)
+* [Vector width in assignments and port maps](#vector-width)
+* [Check for component/entity mismatch](#component-entity)
 
 # List of VHDL code rules
 
 This is the list of VHDL coding rules that can be checked automatically
 by Sigasi Studio.
 
-## Dead Code lint {: #dead-code}
+## Dead Code lint
 
 Dead code is code that is does have any effect in your simulation or
 synthesis. Examples of dead code are signals that are never used, or
@@ -267,7 +268,7 @@ warning.
 
 ![](images/warn-superfluous-library.png)
 
-## Dead Code (unreachable code)
+## Dead Code (unreachable code) {: #dead-code}
 
 If the Sigasi Studio analyzer can determine that a condition is always false,
 it will mark the if-statement because it contains dead code.
@@ -325,17 +326,17 @@ omitted.
 **Example:** to enforce a style where all variables have a `_v` suffix,
 you would specify `.*_v` pattern in the **Variable name** field.
 
-## Vector width in assignments and port maps
+## Vector width in assignments and port maps {: #vector-width }
 
 Sigasi Studio checks the vector size in assignments (Since [/releasenotes/sigasi-2.28]) and port maps (Since [/releasenotes/sigasi-3.01]). This check works at type-time and takes the (symbolic) value of generics into account.
 
-## Order of assocations
+## Order of associations
 
 Sigasi Studio gives a warning when the **order** of generics or ports in a `map` differs from the original generics or ports declaration order.
 
 ![](images/linting_vector_width.png)
 
-## Check for component/entity mismatch
+## Check for component/entity mismatch {: #component-entity }
 
 Sigasi Studio gives a warning if a component declaration is not equal to its matching entity. You can easily fix this by applying the quick fix.
 
