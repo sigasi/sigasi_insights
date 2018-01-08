@@ -106,3 +106,15 @@ This way we could vastly reduce the autocomplete latency, especially for larger 
 # How to update?
 
 If you have Sigasi Studio 3 installed, you can [update][/manual/setup#Software Updates] or [download a fresh install of the latest version][download_latest].
+
+# Sigasi 3.7.1 point release
+
+On January 7th we released Sigasi Studio 3.7.1. This release fixes following reported issues:
+
+* Fixed refresh when editing Graphics Configuration files
+* Fixed error in Dependencies View when using project dependencies.
+* Allow to use multiple arguments on the Vivado XSim preference page
+* Solved plugin dependency issue in older (pre Oxygen) Eclipse versions
+* Fixed showing constant values in hover
+
+Thanks for all bug reports and enabling Talkback.
