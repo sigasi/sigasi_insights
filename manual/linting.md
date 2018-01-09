@@ -330,11 +330,11 @@ you would specify `.*_v` pattern in the **Variable name** field.
 
 Sigasi Studio checks the vector size in assignments (Since [/releasenotes/sigasi-2.28]) and port maps (Since [/releasenotes/sigasi-3.01]). This check works at type-time and takes the (symbolic) value of generics into account.
 
+![](images/linting_vector_width.png)
+
 ## Order of associations
 
 Sigasi Studio gives a warning when the **order** of generics or ports in a `map` differs from the original generics or ports declaration order.
-
-![](images/linting_vector_width.png)
 
 ## Check for component/entity mismatch {: #component-entity }
 
