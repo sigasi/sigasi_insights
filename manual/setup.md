@@ -58,7 +58,7 @@ executing this startup file.
 * If you don't have Eclipse installed yet, the C/C++ flavor would be good place to start. Just** download** ([Windows 64 bit][latest-eclipse-cpp-windows64]/[Linux 64 bit][latest-eclipse-cpp-linux64]/[Other versions][latest-eclipse-cpp]), **unzip** and **start**.
 * We recommend you also increase the heap size for Eclipse ([/faq#how-do-i-increase-the-heap-size-for-eclipse]).
 
-*Note that we do **not** support Eclipse 3 any more.* ([System Requirements][/faq#what-are-the-system-requirements])
+*Note that we do **not** support Eclipse 3 any more.* For more information on system requirements: ([System Requirements][/faq#what-are-the-system-requirements])
 
 [latest-eclipse-cpp-windows64]:http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/1a/eclipse-cpp-oxygen-1a-win32-x86_64.zip
 [latest-eclipse-cpp-linux64]:http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/1a/eclipse-cpp-oxygen-1a-linux-gtk-x86_64.tar.gz
