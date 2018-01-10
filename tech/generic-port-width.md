@@ -20,7 +20,7 @@ On a regular basis we receive questions from customers about *Incorrect array si
 Declarations for data_out and result:
 ```vhdl
 entity with_generic is
-  generic(datawidth  : natural := 8);
+  generic(datawidth : natural := 8);
   port(data_out : out std_logic_vector(datawidth - 1 downto 0));
 end entity with_generic;
 
@@ -49,7 +49,7 @@ so that the code remains valid for other values of the generic.
 
 ```vhdl
 entity with_generic is
-  generic(datawidth  : natural := 8);
+  generic(datawidth : natural := 8);
   port(data_out : out std_logic_vector(datawidth - 1 downto 0));
 end entity with_generic;
 
@@ -69,17 +69,17 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity nogenerics is
-	port(
-		data_out : out std_logic_vector;
-		data_in  : in  std_logic_vector
-	);
+  port(
+    data_out : out std_logic_vector;
+    data_in  : in  std_logic_vector
+  );
 end entity nogenerics;
 
 architecture RTL of nogenerics is
-	signal intermediate : std_logic_vector(data_out'range);
+  signal intermediate : std_logic_vector(data_out'range);
 begin
-	intermediate <= data_in;
-	data_out     <= intermediate;
+  intermediate <= data_in;
+  data_out     <= intermediate;
 end architecture RTL;
 ```
 
