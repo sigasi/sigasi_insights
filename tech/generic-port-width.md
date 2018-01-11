@@ -20,7 +20,7 @@ On a regular basis we receive questions from customers about *Incorrect array si
 Declarations for data_out and result:
 ```vhdl
 entity with_generic is
-  generic(datawidth : natural := 8);
+  generic(datawidth : natural);
   port(data_out : out std_logic_vector(datawidth - 1 downto 0));
 end entity with_generic;
 
@@ -49,7 +49,7 @@ so that the code remains valid for other values of the generic.
 
 ```vhdl
 entity with_generic is
-  generic(datawidth : natural := 8);
+  generic(datawidth : natural);
   port(data_out : out std_logic_vector(datawidth - 1 downto 0));
 end entity with_generic;
 
