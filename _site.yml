@@ -124,7 +124,10 @@ reflinks:
         url: "/manual/editions.html#vhdl"
     verilog_only:
         title: "[Only for Verilog]"
-        url: "/manual/editions.html#vhdl"
+        url: "/manual/editions.html#verilog"
+    systemverilog_only:
+        title: "[Only for SystemVerilog]"
+        url: "/manual/editions.html#systemverilog"
     eula:
         title: Sigasi Software Agreement
         url: "/eula.html"

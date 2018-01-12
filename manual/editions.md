@@ -55,3 +55,7 @@ Sigasi supports VHDL and Verilog.
 ## Verilog {: #verilog}
 
 <https://en.wikipedia.org/wiki/Verilog>
+
+## SystemVerilog {: #systemverilog}
+
+<https://en.wikipedia.org/wiki/SystemVerilog>
