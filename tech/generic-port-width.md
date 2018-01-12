@@ -17,7 +17,7 @@ On a regular basis we receive questions from customers about *Incorrect array si
 
 ![Incorrect array size warning](generic-port-width/warning_message.png "Incorrect array size warning")
 
-Declarations for `data_out` and `result`:
+Declarations for data_out and result:
 ```vhdl
 entity with_generic is
   generic(datawidth : natural);
@@ -28,11 +28,11 @@ architecture RTL of with_generic is
   signal result : std_logic_vector(7 downto 0);
 ```
 
-This linting message tells us that the array sizes in an assignment do not match.
+This linting message tells that array sizes in an assignment do not match.
 Typically, one side of the assignment is a port and the other side an internal signal.
-A generic defines the width of the port, while the signal width is defined by a constant value.
+A generic defines the width of the port while the signal width is defined by a constant value.
 
-The core question asked is:  
+The core question asked is
 *Why does Sigasi Studio not take into account the value of the generic when calculating the array sizes?
 After all, in the instantiation the value of the generic was set to match the constant value.*
 
@@ -44,7 +44,7 @@ Because the array size is fixed to 8, the example above will only be valid if th
 of the generic is set to 8 in any instantiation. For any other value assigned to the generic,
 the code will break.
 
-In order to resolve the warning above, the array size should be written in terms of `datawidth`
+In order to resolve the warning above, the array size should be written in terms of datawidth
 so that the code remains valid for other values of the generic.
 
 ```vhdl
@@ -62,7 +62,7 @@ Taking this a step further, the warning could be interpreted more bluntly:
 *stop using the generic since it only gives a false sense of re-usability*.
 
 Why would generics be needed to define port or signal widths?
-VHDL allows us to write code without using generics or fixed port widths like in the code example below.
+VHDL allows to write code without using generics or fixed port widths like in the code example below.
 
 ```vhdl
 library ieee;
@@ -84,7 +84,7 @@ end architecture RTL;
 ```
 
 The actual port and signal widths are only defined once this design unit is instantiated.
-No constants or generics are involved, allowing us to write less and cleaner code.
+No constants or generics are involved, allowing to write less and cleaner code.
 
 Generics can be used to express relations between ports that are checked at compilation
 or at elaboration time. You can express these relations also with asserts:
