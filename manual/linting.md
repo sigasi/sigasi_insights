@@ -12,68 +12,20 @@ problems can be automatically resolved with **Quick Fixes**. Both syntax
 checking and linting happen at type-time: new markers appear *as you are
 typing* your code.
 
-# Marker Icons {: #linting-icons}
+# Linting {: #linting-linting}
+
+VHDL code **Lint** is defined as code that is strictly correct according
+to the language definition, but still suspicious or problematic.
+Sigasi Studio has a built-in VHDL linter, which provides info about code lint
+in the design.
+
+## Marker Icons {: #linting-icons}
 
 * ![](icons/info.png) marks an info message.
 * ![](icons/warning_lightbulb.png) marks a warning that can be resolved automatically with a Quick Fix.
 * ![](icons/warning.png) marks a warning that cannot be resolved automatically.
 * ![](icons/error_lightbulb.png) marks an error that can be resolved automatically with a Quick Fix.
 * ![](icons/error.png) marks an error that cannot be resolved automatically.
-
-# Linting {: #linting-linting}
-
-VHDL code **Lint** is defined as code that is strictly correct according
-to the language definition, but still suspicious or problematic.
-Sigasi Studio has a built-in VHDL linter, which provides info about code lint
-in the design. Sigasi Studio’s VHDL linter checks for the following problems:
-
-* Unused declarations
-* Duplicate declarations
-* Declaration could not be found
-* VHDL 2008 features in VHDL 93 mode (Learn about [choosing your VHDL version][/manual/config#configure-version])
-* Assignment validation
-* Case statement validation
-* Instantiation statement validation
-* Component validation (Entity/Component mismatch)
-* Library validation
-* Range validation
-* Deprecated and non-standard packages
-* Duplicate, conflicting design unit names
-* Missing return statement in function bodies
-* Missing, unnecessary and duplicate signals in the sensitivity list
-* Port, signal, variable, constant or generic declarations that are never read or written
-* Invalid port associations (incompatible port modes in instantiations)
-* [Order of generic and port associations](#order-of-associations)
-* [Consistent capitalization of identifiers](#capitalization-of-identifiers)
-* Advanced Configuration validation (component mismatch, missing binding, ...)
-* Redundant boolean equality expressions (`boolean = true`)
-
-## No Linting for Common Libraries {: #linting-common-libraries}
-
-Common Libraries are considered to be production ready libraries.
-Linting is skipped for all files in the Common Libraries folder.
-
-## Quick Fixes {: #linting-quick-fix}
-
-Some of the VHDL lint problems can be automatically resolved with
-*Quick Fixes*. These problems have *markers* annotated with a lightbulb
-icon (like ![](icons/warning\_lightbulb.png)). To trigger
-a Quick Fix, click the problem marker or press **Ctrl-1** and select the
-Quick Fix.
-
-* Remove unused declaration
-* Declare signals and constants
-* Switch to VHDL 2008 mode
-* Correct signal/variable assignment operator
-* Ignore deprecated libraries
-* [Configure Altera, Xilinx, ModelSim and VUnit libraries](#quick-fix-for-third-party-libraries)
-* Declare missing enumeration literal in case statements
-* Add missing when clause in case statements
-* Correct attribute entity class in attribute specifications
-* Add missing signals to sensitivity list
-* Fix capitalization of identifier to correspond to its declaration
-* Match order of generic and port associations with declaration order
-* Update component declaration when the entity declaration has changed
 
 ## Configuring the Severity Level {: #linting-severity-level}
 
@@ -85,43 +37,77 @@ Errors/Warnings**.
 
 ![Configuring the severity of Sigasi Studio linting checks](images/problemseveritypreferencepage.png "Configuring the severity of Sigasi Studio linting checks")
 
-### Basic VHDL coding rules
+## No Linting for Common Libraries {: #linting-common-libraries}
 
-[creator_only]
+Common Libraries are considered to be production ready libraries.
+Linting is skipped for all files in the Common Libraries folder.
 
-* [NULL\_RANGE\_ERROR](#null-range)
-* [Deprecated Packages](#deprecated-ieee-packages-non-standard-packages)
- <!--* REDUNDANT_CHOICES -->
-* [REDUNDANT\_OTHERS](#redundant-others)
-* Subprograms in packages (e.g. function body in a package, rather than in the package body)
-* Infinite loops in simulations:
-    * INFINTE\_LOOP\_STATEMENT
-    * PROCESS\_WITHOUT\_SENSITIVITY\_AND\_WAIT
-* [NUMERIC\_LITERAL\_WHITESPACE\_BEFORE\_UNIT](#space-physical-unit)
-* [SUPERFLUOUS\_LIBRARY](#superfluous-library-clause)
- <!-- * MISSING_LIBRARY -->
-* [UNUSED\_DECLARATION: PORT, GENERIC, SIGNAL, ... ](#dead-code-lint)
- <!--* BITSTRING_STD_LOGIC: invalid characters in bit string-->
-* [SENSITIVITY\_LIST](#sensitivity-list)
+# Quick Fixes {: #linting-quick-fix}
 
-### Advanced VHDL coding rules
-
-[xl_only]
-
-* FSM\_DEAD\_STATE
-* [DEAD\_CODE (unreachable statements)](#dead-code)
-* NEVER\_WRITTEN / NEVER\_READs
-* [#naming-conventions]
-* [Incomplete Port Maps and Generic Maps](#incomplete-port-maps-and-generic-maps)
-* [Posititional Association in Instantiations](#posititional-association-in-instantiations)
-* [Capitalization of Identifiers](#capitalization-of-identifiers)
-* [Vector width in assignments and port maps](#vector-width)
-* [Check for component/entity mismatch](#component-entity)
+Some of the VHDL lint problems can be automatically resolved with *Quick Fixes*.
+These problems have *markers* annotated with a lightbulb icon (like ![](icons/warning\_lightbulb.png)).
+To trigger a Quick Fix, click the problem marker or press **Ctrl-1** and select the Quick Fix.
 
 # List of VHDL code rules
 
-This is the list of VHDL coding rules that can be checked automatically
-by Sigasi Studio.
+The table below lists the VHDL code rules that can be checked automatically by Sigasi Studio.
+The availability of code rules depends on the license requirements.
+
+* ST code rules are available for all licenses including [starter]
+* CR code rules require at least a [creator] license.
+* XL code rules are only available with a [xl] license.
+
+| License | Quick Fix                        | Description                                                                                                             |  ID |
+|---------|----------------------------------|-------------------------------------------------------------------------------------------------------------------------|----:|
+| ST      | ![](icons/warning_lightbulb.png) | Declaration could not be found                                                                                          |     |
+| ST      |                                  | Duplicate declarations                                                                                                  |     |
+| ST      | ![](icons/warning_lightbulb.png) | Signal/variable assignment operator                                                                                     |     |
+| ST      | ![](icons/warning_lightbulb.png) | Missing when clause in case statements                                                                                  |     |
+| ST      | ![](icons/warning_lightbulb.png) | Missing enumeration literal in case statements                                                                          |     |
+| ST      |                                  | Instantiation statement validation                                                                                      |     |
+| ST      |                                  | Library validation                                                                                                      |     |
+| ST      |                                  | Advanced Configuration validation (component mismatch, missing binding, ...)                                            |     |
+| ST      |                                  | Subprograms in packages (e.g. function body in a package, rather than in the package body)                              |     |
+| ST      |                                  | Missing return statement in function bodies                                                                             |     |
+| ST      | ![](icons/warning_lightbulb.png) | Correct attribute entity class in attribute specifications                                                              |     |
+| ST      | ![](icons/warning_lightbulb.png) | VHDL 2008 features in VHDL 93 mode (Learn about [choosing your VHDL version][/manual/config#configure-version])         |     |
+| CR      | ![](icons/warning_lightbulb.png) | [Deprecated IEEE packages](#deprecated-ieee-packages-non-standard-packages)                                             |   8 |
+| CR      | ![](icons/warning_lightbulb.png) | [Non-standard packages](#deprecated-ieee-packages-non-standard-packages)                                                |  37 |
+| CR      | ![](icons/warning_lightbulb.png) | [A process must either have a sensitivity list or contain one or more wait statements](#sensitivity-list)               |  38 |
+| CR      |                                  | [There has to be a whitespace before physical units](#space-physical-unit)                                              |  47 |
+| CR      |                                  | [Superfluous library clause](#superfluous-library-clause)                                                               |  49 |
+| CR      | ![](icons/warning_lightbulb.png) | Library is not available [Configure Altera, Xilinx, ModelSim and VUnit libraries](#quick-fix-for-third-party-libraries) |  50 |
+| CR      | ![](icons/warning_lightbulb.png) | [Find unused declarations](#dead-code-lint)                                                                             |  55 |
+| CR      |                                  | Bitstrings may only contain std\_logic metavalues                                                                       |  57 |
+| CR      |                                  | Duplicate, conflicting design unit names                                                                                |  64 |
+| CR      |                                  | [Find unused ports](#dead-code-lint)                                                                                    |  67 |
+| CR      |                                  | [Find unused generics](#dead-code-lint)                                                                                 |  68 |
+| CR      | ![](icons/warning_lightbulb.png) | [Find incomplete sensitivity lists](#sensitivity-list)                                                                  |  72 |
+| CR      |                                  | [Find superfluous signals in sensitivity lists](#sensitivity-list)                                                      |  73 |
+| CR      |                                  | Report encrypted files                                                                                                  |  84 |
+| CR      |                                  | [Find duplicate signals in sensitivity lists](#sensitivity-list)                                                        |  85 |
+| XL      |                                  | [Null range: The left argument is strictly larger than the right](#null-range)                                          |   1 |
+| XL      |                                  | Case alternative contains redundant choices                                                                             |  12 |
+| XL      |                                  | [Case statement contains all choices explicitly. You can safely remove the redundant 'others'](#redundant-others)       |  13 |
+| XL      |                                  | Infinite loop. Loop is missing a wait                                                                                   |  20 |
+| XL      |                                  | [Null range: The left argument is strictly smaller than the right](#null-range)                                         |  26 |
+| XL      |                                  | Unbound component instantiations                                                                                        |  48 |
+| XL      |                                  | [Find dead states in state machines](#dead-code)                                                                        |  71 |
+| XL      |                                  | [Find dead code (unreachable statements)](#dead-code)                                                                   |  79 |
+| XL      |                                  | Detect signals and variables that are never written                                                                     |  88 |
+| XL      |                                  | Detect signals and variables that are never read                                                                        |  89 |
+| XL      |                                  | [Check naming conventions](#naming-conventions)                                                                         |  92 |
+| XL      | ![](icons/warning_lightbulb.png) | [Incomplete port map or generic map](#incomplete-port-maps-and-generic-maps)                                            |  94 |
+| XL      |                                  | [Vector width in assignments and port maps](#vector-width)                                                              | 144 |
+| XL      | ![](icons/warning_lightbulb.png) | [All references must have the same capitalization as their declaration](#capitalization-of-identifiers)                 | 163 |
+| XL      | ![](icons/warning_lightbulb.png) | [Check for positional associations in instantiations](#positional-association-in-instantiations)                        | 164 |
+| XL      |                                  | Invalid port associations (incompatible port modes in instantiations)                                                   | 169 |
+| XL      | ![](icons/warning_lightbulb.png) | [Order of generic and port associations](#order-of-associations)                                                        | 177 |
+| XL      |                                  | Redundant boolean equality check with true                                                                              | 185 |
+| XL      |                                  | Boolean equality check with false                                                                                       | 186 |
+| XL      | ![](icons/warning_lightbulb.png) | [Check for component/entity mismatch](#component-entity)                                                                | 187 |
+
+# Detailed explanation of VHDL code rules
 
 ## Dead Code lint
 
@@ -141,7 +127,7 @@ Sigasi Studio flags some kinds of dead code:
 * unused or unnecessary library and use clauses,
 * unused declarations (signals, constants, …)
 * unused ports
-* unreachable statements
+* unreachable statements (see [Dead code](#dead-code))
 
 For unused declarations, there is also a Quick Fix to help you remove
 unused declarations fast.
@@ -184,7 +170,7 @@ intended. For that reason, Sigasi Studio can warn you about this.
 
 ![](images/warn-incomplete-map.png)
 
-## Posititional Association in Instantiations
+## Positional Association in Instantiations
 
 Available since Sigasi 2.30
 
@@ -390,42 +376,3 @@ Examples:
     all/severity/<project>=IGNORE
 ```
 
-## Validation IDs
-
-|Validation ID|Description|
-|-------------|-----------|
-| 50 | Library is not available|
-| 64 | Duplicate design units|
-| 84 | Report encrypted files|
-|  8 | Deprecated IEEE packages|
-| 37 | Non-standard packages|
-| 38 | A process must either have a sensitivity list or contain one or more wait statements|
-| 47 | There has to be a whitespace before physical units|
-| 49 | Superfluous library clause|
-| 55 | Find unused declarations|
-| 57 | Bitstrings may only contain std\_logic metavalues|
-| 67 | Find unused ports|
-| 68 | Find unused generics|
-| 72 | Find incomplete sensitivity lists|
-| 73 | Find superfluous signals in sensitivity lists|
-| 85 | Find duplicate signals in sensitivity lists|
-|  1 | Null range: The left argument is strictly larger than the right|
-| 12 | Case alternative contains redundant choices|
-| 13 | Case statement contains all choices explicitly. You can safely remove the redundant 'others'|
-| 20 | Infinite loop. Loop is missing a wait|
-| 26 | Null range: The left argument is strictly smaller than the right|
-| 48 | Unbound component instantiations|
-| 71 | Find dead states in state machines|
-| 79 | Find dead code|
-| 88 | Detect signals and variables that are never written|
-| 89 | Detect signals and variables that are never read|
-| 92 | Check naming conventions|
-| 94 | Incomplete port map or generic map|
-|144 | Array assignment validation|
-|163 | All references must have the same capitalization as their declaration|
-|164 | Check for positional associations in instantiations|
-|169 | Invalid port association
-|177 | Order of generic and port associations
-|185 | Redundant boolean equality check with true"
-|186 |Boolean equality check with false
-|187  |Check for component/entity mismatch"
