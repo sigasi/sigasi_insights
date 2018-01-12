@@ -17,7 +17,7 @@ On a regular basis we receive questions from customers about *Incorrect array si
 
 ![Incorrect array size warning](generic-port-width/warning_message.png "Incorrect array size warning")
 
-Declarations for data_out and result:
+Declarations for `data_out` and `result`:
 ```vhdl
 entity with_generic is
   generic(datawidth : natural);
@@ -44,7 +44,7 @@ Because the array size is fixed to 8, the example above will only be valid if th
 of the generic is set to 8 in any instantiation. For any other value assigned to the generic,
 the code will break.
 
-In order to resolve the warning above, the array size should be written in terms of datawidth
+In order to resolve the warning above, the array size should be written in terms of `datawidth`
 so that the code remains valid for other values of the generic.
 
 ```vhdl
