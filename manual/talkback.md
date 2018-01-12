@@ -39,7 +39,7 @@ Talkback is *always disabled by default*. To enable Talkback, or to disable it l
 
 # What about my Firewall or Proxy?
 
-Talkback does not support Proxies. If Sigasi Studio Talkback is unable to connect to our server directly because of your firewall or proxy server, you need to purchase a commercial license.
+Talkback does not support Proxies. If Talkback is unable to connect to our server directly because of your firewall or proxy server, you need to purchase a commercial license.
 
 # Features like Talkback are against our corporate policy, even if it is disabled. What can I do?
 
