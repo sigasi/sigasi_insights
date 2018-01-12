@@ -1,6 +1,7 @@
 ---
 title: Views
 layout: page
+pager: true
 ---
 
 When you open a project in Sigasi Studio, a number of views are presented
