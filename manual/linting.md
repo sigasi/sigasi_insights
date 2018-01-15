@@ -62,11 +62,10 @@ The availability of code rules depends on the license requirements.
 | ST      | ![](icons/warning_lightbulb.png) | Declaration could not be found                                                                                          |     |
 | ST      |                                  | Duplicate declarations                                                                                                  |     |
 | ST      | ![](icons/warning_lightbulb.png) | Signal/variable assignment operator                                                                                     |     |
-| ST      | ![](icons/warning_lightbulb.png) | Missing when clause in case statements                                                                                  |     |
+| ST      | ![](icons/warning_lightbulb.png) | Case statement does not cover all choices                                                                               |     |
 | ST      | ![](icons/warning_lightbulb.png) | Missing enumeration literal in case statements                                                                          |     |
 | ST      |                                  | Instantiation statement validation                                                                                      |     |
 | ST      |                                  | Library validation                                                                                                      |     |
-| ST      |                                  | Advanced Configuration validation (component mismatch, missing binding, ...)                                            |     |
 | ST      |                                  | Subprograms in packages (e.g. function body in a package, rather than in the package body)                              |     |
 | ST      |                                  | Missing return statement in function bodies                                                                             |     |
 | ST      | ![](icons/warning_lightbulb.png) | Correct attribute entity class in attribute specifications                                                              |     |
@@ -86,6 +85,7 @@ The availability of code rules depends on the license requirements.
 | CR      |                                  | [Find superfluous signals in sensitivity lists](#sensitivity-list)                                                      |  73 |
 | CR      |                                  | Report encrypted files                                                                                                  |  84 |
 | CR      |                                  | [Find duplicate signals in sensitivity lists](#sensitivity-list)                                                        |  85 |
+| CR      |                                  | Incorrect use of keyword all                                                                                            | 184 |
 | XL      |                                  | [Null range: The left argument is strictly larger than the right](#null-range)                                          |   1 |
 | XL      |                                  | Case alternative contains redundant choices                                                                             |  12 |
 | XL      |                                  | [Case statement contains all choices explicitly. You can safely remove the redundant 'others'](#redundant-others)       |  13 |
@@ -96,6 +96,7 @@ The availability of code rules depends on the license requirements.
 | XL      |                                  | [Find dead code (unreachable statements)](#dead-code)                                                                   |  79 |
 | XL      |                                  | Detect signals and variables that are never written                                                                     |  88 |
 | XL      |                                  | Detect signals and variables that are never read                                                                        |  89 |
+| XL      |                                  | None or multiple matching entities for component                                                                        |  90 |
 | XL      |                                  | [Check naming conventions](#naming-conventions)                                                                         |  92 |
 | XL      | ![](icons/warning_lightbulb.png) | [Incomplete port map or generic map](#incomplete-port-maps-and-generic-maps)                                            |  94 |
 | XL      |                                  | [Vector width in assignments and port maps](#vector-width)                                                              | 144 |
@@ -103,6 +104,10 @@ The availability of code rules depends on the license requirements.
 | XL      | ![](icons/warning_lightbulb.png) | [Check for positional associations in instantiations](#positional-association-in-instantiations)                        | 164 |
 | XL      |                                  | Invalid port associations (incompatible port modes in instantiations)                                                   | 169 |
 | XL      | ![](icons/warning_lightbulb.png) | [Order of generic and port associations](#order-of-associations)                                                        | 177 |
+| XL      |                                  | Incorrect component name in configuration                                                                               | 180 |
+| XL      |                                  | Incorrect instantiation statement label in configuration                                                                | 181 |
+| XL      |                                  | Missing or incorrect binding indication                                                                                 | 182 |
+| XL      |                                  | Incorrect name in binding indication                                                                                    | 183 |
 | XL      |                                  | Redundant boolean equality check with true                                                                              | 185 |
 | XL      |                                  | Boolean equality check with false                                                                                       | 186 |
 | XL      | ![](icons/warning_lightbulb.png) | [Check for component/entity mismatch](#component-entity)                                                                | 187 |
@@ -317,6 +322,8 @@ you would specify `.*_v` pattern in the **Variable name** field.
 Sigasi Studio checks the vector size in assignments (Since [/releasenotes/sigasi-2.28]) and port maps (Since [/releasenotes/sigasi-3.01]). This check works at type-time and takes the (symbolic) value of generics into account.
 
 ![](images/linting_vector_width.png)
+
+Sigasi Studio will not take into account the value assigned to a generic in instantiations. The reasoning begind this is explained in [/tech/generic-port-width].
 
 ## Order of associations
 
