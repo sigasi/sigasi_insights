@@ -56,7 +56,9 @@ clean:
 	rm -Rf _build
 
 dependencies:
-	pip install --upgrade urubu 
+	#pip install --upgrade urubu 
+	# Work-around until PRs #71 and #73 are merged into https://github.com/jandecaluwe/urubu
+	pip install git+https://github.com/bartbrosens/urubu.git
 
 publish:
 	./_publish.sh
