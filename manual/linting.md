@@ -428,7 +428,7 @@ Naming Conventions can be restricted to a specific library using `${lib}`.
 Possible values are:
 
 * `<project>` (literally, with brackets!) to set Naming Conventions for the entire project
-* the library name to which the Naming Convention should be apply
+* the library name to which the Naming Convention should apply
 
 The pattern that defines the Naming Convention is set in `${convention}`.
 Patterns are configured with [Java regex syntax][JavaRegexSyntax].
