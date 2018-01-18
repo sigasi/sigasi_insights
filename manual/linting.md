@@ -192,7 +192,7 @@ to do this for you.
 
 The `library` statement that tries to import a missing library (like
 `altera`) will be have a yellow warning marker next to it. Click this
-marker and select **Configure library altera**. If the path tho your
+marker and select **Configure library altera**. If the path to your
 Altera Quartus (or Xilinx ISE) installation is not yet set, Sigasi Studio will
 ask to set the path now. You can always change these paths in **Window
 \> Preferences \> Sigasi \> Toolchains**.
@@ -309,7 +309,7 @@ Since [/releasenotes/sigasi-3.06] all capitalization issues in a file can be fix
 On the **Navigation conventions** preference page (**Window \>
 Preferences \> Sigasi \> VHDL \> Naming conventions**) you can configure
 patterns to check correct naming of your VHDL identifiers. Patterns are
-configured with [Java regex syntax](http://www.vogella.com/tutorials/JavaRegularExpressions/article.html)
+configured with [Java regex syntax][JavaRegexSyntax].
 
 Only names with a specified pattern are checked. Empty patterns are
 omitted.
@@ -337,6 +337,8 @@ Sigasi Studio gives a warning if a component declaration is not equal to its mat
 
 # Project specific Linting settings
 
+## Severity of Linting checks
+
 The default way to configure the severity of the Sigasi Studio linting checks is to set their severity in the **Errors/Warnings** preference page.
 You can override these setting by creating a settings file for your projects.
 
@@ -359,9 +361,12 @@ Where `${validation id}` can be
 * the number of the validation ID (e.g. 140)
 * `all` to specify all validation ids in one rule
 
+Validation ID numbers are listed in the [List of VHDL code rules](#list-of-vhdl-code-rules)
+and can also be found in the **Project Properties** under **VHDL Errors/Warnings**.
+
 Where `${path}` can be:
 
-* `<project>` (literally, with brackets!)  to set the severity of the entire project
+* `<project>` (literally, with brackets!) to set the severity of the entire project
 * `/path/to/folder` to set the severity of an entire folder
 * `/path/to/file.vhd` to set the severity of a specific file
 
@@ -383,3 +388,60 @@ Examples:
     all/severity/<project>=IGNORE
 ```
 
+## Naming Conventions per project
+
+While [Naming Conventions](#naming-conventions) can be configured
+globally for a workspace, they can also be defined per project.
+The project-specific Naming Conventions are stored in this settings file:
+
+```text
+    ${project location}/.settings/com.sigasi.hdt.vhdl.linting.prefs
+```
+
+The validation ID for Naming Conventions is *92*.
+Therefore all lines that configure Naming Conventions should start
+with *92* and are of this format:
+
+```text
+    92/params/${identifier}/${lib}=${convention}
+```
+
+Valid `${identifier}` values are:
+```text
+    architecture_name
+    configuration_name
+    constant_name
+    entity_name
+    generate_statement_name
+    generic_name
+    instantiation_statement_name
+    label
+    package_name
+    port_name
+    process_statement_name
+    signal_name
+    type_name
+    variable_name
+```
+
+Naming Conventions can be restricted to a specific library using `${lib}`.
+Possible values are:
+
+* `<project>` (literally, with brackets!) to set Naming Conventions for the entire project
+* the library name to which the Naming Convention should be apply
+
+The pattern that defines the Naming Convention is set in `${convention}`.
+Patterns are configured with [Java regex syntax][JavaRegexSyntax].
+
+Naming Conventions for a project and setting the severity of the linting checks
+are configured in the same settings file. Examples:
+
+```text
+    92/severity/<project>=INFO
+    92/params/constant_name/<project>=c_.*
+    92/params/entity_name/my_lib=e_([A-Z_0-9])*
+```
+
+Errors in the patterns will be reported in the log file: **Help > Open Log**.
+
+[JavaRegexSyntax]: http://www.vogella.com/tutorials/JavaRegularExpressions/article.html
