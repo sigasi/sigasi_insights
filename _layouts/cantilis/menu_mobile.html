@@ -1,19 +1,7 @@
 <div id="mobile-menu-wrap" class="menu-is-right">
-	<!--
-	<form method="get" class="mobile-search-form" action="{{site.main_url}}/">
-		<input type="text" placeholder="Enter text to search" name="s" autocomplete="off" />
-	</form>
-	-->
 	<nav id="mobile-menu" class="clearfix">
 		<div class="menu-main_eng-container">
 			<ul id="menu-main_eng" class="menu">
-				<!-- 
-				{% for menuitem in site.menuitems %}
-				<li  class="menu-item menu-item-type-post_type menu-item-object-page">
-					<a href="{{menuitem.url}}"><span class="menu-item-text">{{menuitem.title}}</span></a>
-				</li>
-				{% endfor %} 
-				-->
 				
 				{% for item in site.reflinks['/'].content %}
 				{%	 set context = '' %}
