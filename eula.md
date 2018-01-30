@@ -5,10 +5,10 @@ pager: false
 ---
 
 ```text
-SIGASI SOFTWARE LICENSE AGREEMENT REVISION 2017-08-18
+SIGASI SOFTWARE LICENSE AGREEMENT REVISION 2018-01-30
 
-Patent: US 8,881,074 B2
-Copyright (c) 2008-2017, SIGASI All rights reserved.
+Patent: EP 2175387, US 8881074
+Copyright (c) 2008-present, SIGASI All rights reserved.
 
 Carefully read all terms and conditions of this Software License Agreement
 before you use the Software
