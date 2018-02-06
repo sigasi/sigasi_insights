@@ -5,7 +5,7 @@ pager: true
 author: Hendrik Eeckhaut
 date: 2017-12-06
 tags: 
-  - sigasi studio
+  - Sigasi Studio
   - SystemVerilog
 comments: true
 bannerad: true

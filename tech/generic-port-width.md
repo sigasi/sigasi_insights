@@ -5,7 +5,7 @@ pager: true
 author: Bart Brosens
 date: 2018-01-09
 tags:
-  - sigasi studio
+  - Sigasi Studio
   - linting
   - generics
 comments: true

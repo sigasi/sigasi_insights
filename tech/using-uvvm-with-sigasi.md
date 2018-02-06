@@ -5,7 +5,7 @@ pager: true
 author: Bart Brosens
 date: 2017-10-18
 tags: 
-  - sigasi studio
+  - Sigasi Studio
   - UVVM
   - Verification
   - VHDL

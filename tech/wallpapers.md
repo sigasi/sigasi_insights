@@ -5,7 +5,7 @@ pager: true
 author: Bart Brosens
 date: 2017-11-30
 tags: 
-  - sigasi studio
+  - Sigasi Studio
   - graphics
 comments: true
 bannerad: true
