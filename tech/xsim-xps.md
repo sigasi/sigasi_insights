@@ -27,3 +27,6 @@ ip to the *XSim.ini* file:
 ```
 xpm=$RDI_DATADIR/xsim/ip/xpm
 ```
+
+This only works for Vivado 2016.3 and newer as stated by
+[this Xilinx Answer Record](https://www.xilinx.com/support/answers/69875.html).
