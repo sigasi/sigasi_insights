@@ -262,8 +262,10 @@ II, please read the documentation on [/manual/projectsetup].
 
 ## Setting the preferred editor
 
-To open a Quartus Project in Sigasi Studio, you first have to configure Sigasi
-Studio as preferred editor in [/manual/opening#Altera Quartus II].
+While importing a Quartus Project in Sigasi Studio, you have the
+possibility to configure Sigasi Studio as preferred editor
+in [/manual/opening#Altera Quartus II].
+This offers the ability to open files in Sigasi Studio from within Quartus.
 
 ## Open a Quartus II Project in Sigasi Studio
 
