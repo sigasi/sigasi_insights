@@ -407,6 +407,15 @@ VHDL editor will check for errors when you save your file.
 The current threshold VHDL file size that is used to switch to the
 lightweight editor is 1 MB.
 
+If you still want to edit large files using the Sigasi Studio VHDL editor,
+this can be done following these steps:
+
+* In the Project Explorer right-click the file and select
+ **Open With > Other...**
+* In the dialog select **VHDL Editor**.
+* A warning will show offering to open the file in read-only mode.
+Choose **No** if you want to edit the file.
+
 # Verilog Specific
 
 In addition to the powerful features of an Eclipse editor, the Verilog
