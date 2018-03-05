@@ -98,6 +98,12 @@ Here you can **sort** by Plug-in Id by clicking on the title of the "Plug-in Id"
 
 Yes! You can find the details on [/tech/preview].
 
+## How do I uninstall Sigasi Studio?
+
+To uninstall the standalone Sigasi Studio app, it is sufficient to remove the
+extracted installation folder.
+Optionally, the workspace(s) can be removed from where they were created.
+
 # Licensing
 
 ## Same license for Plugin and Standalone
