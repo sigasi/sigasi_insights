@@ -194,7 +194,7 @@ If your license key does not work, the first things to check are:
 * Which version of the Sigasi license daemon are you using?  
   **Note:** The Sigasi 2 daemon needs to be updated to run Sigasi 3. Otherwise you will see an `License is not valid (Internal Flexlm Error)` error message in the Sigasi Studio preference page.
 * Is the MAC address correct?
-* Are you on Arch or Ubuntu Linux?  
+* Are you on Arch, Debian or Ubuntu Linux?  
   Make sure to install the "net-tools" package
 * Has the license expired?
 * Did you copy the license string exactly as it was sent to you?
