@@ -8,7 +8,7 @@ pager: true
 
 HDL libraries are a very powerful feature of the HDL languages. Sigasi Studio
 makes it easy to configure and use them. In this chapter, we assume that
-the basic concepts of VHDL libraries are understood. We will explain how
+the basic concepts of HDL libraries are understood. We will explain how
 they are implemented in Sigasi Studio.
 
 Like with any HDL tool, Sigasi Studio needs to know where the libraries are
@@ -24,7 +24,7 @@ You can examine the library configuration in the [/manual/views#libraries]
 and in the [/manual/views#explorer]
 view. The Libraries view shows how
 *design units* are mapped. The Project Explorer view show how VHDL or
-Verilog *files* are mapped.
+SystemVerilog *files* are mapped.
 
 In the Libraries view you can see a tree of all libraries in your
 projects. You can open each library to see all contained design units.
@@ -37,13 +37,14 @@ with the library it belongs to, between square brackets:
 ![](images/librarymappinginitialview.png)
 
 What you see here is the initial library mapping of a demo project (you
-can create such a project by selecting **File \> New \> Other \> Demo
-Vhdl project**). We see a project called Demo, with a folder named
+can create such a project by selecting **File \> New \> Other \> Tutorial
+VHDL Project** or **Tutorial SystemVerilog Project**).  
+In the screenshot we see a project called Demo, with a folder named
 `Common Libraries`. In that folder, you see the typical standard
 libraries (`std` and `ieee`) upon which all VHDL projects depend. The
 demo project itself consists of a few VHDL files.
 
-Next to the project’s name, `Demo`, is the annotation `work`. This means
+Next to the project’s name `Demo`, is the annotation `work`. This means
 that, barring any overrides, everything in the project will be stored
 inside the `work` library.
 
@@ -65,9 +66,10 @@ Select a file or a folder in the Project Explorer and right-click.
 
 You get a `Set Library` context menu, with a number of options:
 
-* Select the name of an existing library to map the file or folder to that library
 * Select **Exclude from build** to exclude the file or folder from any library
-* Select **New Library** to define a new library and map the file or folder to it
+* Select **New Library...** to define a new library and map the file or folder to it
+* If one ore more folders are selected, the folder can be added to a library with the folder name(s)
+* Select the name of an existing library to map the file or folder to that library
 
 When you map a file into a library, only that file is affected. However,
 when you map a folder into a library, then everything in that folder
@@ -95,10 +97,17 @@ HDL files or folders lying around that you want simply to be ignored.
 
 # Configuration file
 
-All library configuration information is stored in the `.library_mapping.xml` file in the root of your project.
-If you edit this file, your project will be cleared and rebuilt automatically (a so-called *Clean Build*).
+All library configuration information is stored in the `.library_mapping.xml`
+file in the root of your project.
+If you edit this file, your project will be cleared and rebuilt automatically
+(a so-called *Clean Build*).
 
-Sigasi Studio only writes changes to this configuration file when you make changes to the library configuration with the context menu in the *Project Explorer*. When you do make changes, Sigasi Studio first checks that all paths in the library configuration still exist. If a path no longer exists, is will be removed from the configuration file.
+Sigasi Studio only writes changes to this configuration file when you make
+changes to the library configuration with the context menu in the
+*Project Explorer*.
+When you do make changes, Sigasi Studio first checks that all paths in the
+library configuration still exist. If a path no longer exists, is will be
+removed from the configuration file.
 Note that the library configuration file is **case-sensitive**, even on Windows.
 
 # Common Libraries {: #libraries-common}
@@ -117,7 +126,7 @@ configuration is just what you need.
 If you have modified the `Common Libraries` folder, you can always
 revert it back to the original state.
 Right-click on your project in the explorer view and apply menu-entry
-**Reset Library Mapping**.
+**Reset Common Libraries**.
 
 ![](images/librarymappingrestorecommonlibraries.png)
 
