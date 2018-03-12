@@ -112,21 +112,46 @@ Note that the library configuration file is **case-sensitive**, even on Windows.
 
 # Common Libraries {: #libraries-common}
 
+Each VHDL project has a folder called `Common Libraries`.
+This is where reusable libraries go: either vendor libraries, third party IP
+libraries or your own reusable libraries. By default, the `STD` and `IEEE`
+libraries are added to this folder.
+The `Common Libraries` folder behaves like any other folder.
+You can delete it, rename it, and apply a different library mapping.
+In most cases, however, the default configuration is just what you need.
+
+## How to add files to Common Libraries ?
+
 In any newly created VHDL project, the `Common Libraries` folder
-contains the VHDL files of the `IEEE` and `STD` libraries. This folder
-is special in the sense that its contents are not stored in regular files
-on your hard drive. Instead, the files’ contents are shipped as part of
-the Sigasi Studio installation. These files are not sent to an
-external compiler since it is expected that the contents of the Common Libraries
-are pre-compiled. Other than that, the `Common Libraries` folder
-behaves like any other folder. You can delete it, rename it, and apply a
-different library mapping. In most cases, however, the default
-configuration is just what you need.
+contains the VHDL files of the `IEEE` and `STD` libraries.
+To add files to the Common Libraries folder, locate a folder with VHDL files
+on your file system using the Project Explorer or the file explorer of your OS
+and drag the folder with VHDL files to the Common Libraries folder.
+
+## How is Common Libraries different from another folder ?
+
+* `Common Libraries` is a *virtual* folder. This means that it is not a real
+folder in the project directory and it can only contain references to folders
+on your file system.
+
+* Files in `Common Libraries` are supposed to be error free. Sigasi Studio
+will not mark errors or warnings in these files.
+
+* While you work on your project, you don't want to edit the files in the
+`Common Libraries`, but you need them to compile your project.
+
+* Files in `Common Libraries` are supposed to be pre-compiled. If you tell
+Sigasi Studio to compile your project using an external compiler, the
+Common Libraries are skipped. You need to pre-compile them yourself and let
+your compiler know where the compiled libraries are. For ModelSim, you can
+use the "modelsim.ini" file for this.
+
+## What if I broke my Common Libraries folder?
 
 If you have modified the `Common Libraries` folder, you can always
 revert it back to the original state.
-Right-click on your project in the explorer view and apply menu-entry
-**Reset Common Libraries**.
+Right-click on the Common Libraries folder of your project in the explorer
+view and apply menu-entry **Set Library > Reset Common Libraries**.
 
 ![](images/librarymappingrestorecommonlibraries.png)
 
