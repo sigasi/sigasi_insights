@@ -21,8 +21,7 @@ Sigasi Studio to organize your projects.
 # Examining the library configuration {: #libraries-examine}
 
 You can examine the library configuration in the [/manual/views#libraries]
-and in the [/manual/views#explorer]
-view. The Libraries view shows how
+and in the [/manual/views#explorer] view. The Libraries view shows how
 *design units* are mapped. The Project Explorer view show how VHDL or
 SystemVerilog *files* are mapped.
 
@@ -117,7 +116,7 @@ This is where reusable libraries go: either vendor libraries, third party IP
 libraries or your own reusable libraries. By default, the `STD` and `IEEE`
 libraries are added to this folder.
 The `Common Libraries` folder behaves like any other folder.
-You can delete it, rename it, and apply a different library mapping.
+You can delete it, rename it and apply a different library mapping.
 In most cases, however, the default configuration is just what you need.
 
 ## How to add files to Common Libraries ?
@@ -191,11 +190,22 @@ a [/manual/linting#Quick Fix for third party libraries].
 
 ## XilinxCoreLib
 
-XilinxCoreLib is a very big library with more than a thousand entities and architectures. If you include all of these design units, it slows down the compilation phase of Sigasi Studio. In order to avoid that, Sigasi Studio only adds the packages with the component declarations to your project by default. It *excludes* the entities and architectures *from compilation*.
+XilinxCoreLib is a very big library with more than a thousand entities and
+architectures. If you include all of these design units, it slows down the
+compilation phase of Sigasi Studio. In order to avoid that, Sigasi Studio
+only adds the packages with the component declarations to your project by
+default. It *excludes* the entities and architectures *from compilation*.
 
-You can easily add selected entities (and architectures) to your project by right clicking the corresponding file (`filename = entity name.vhd`) in the [Project Explorer][/manual/views#explorer], and selecting **Set Library > xilinxcorelib**.
+You can easily add selected entities (and architectures) to your project by
+right clicking the corresponding file (`filename = entity name.vhd`) in the
+[Project Explorer][/manual/views#explorer], and selecting
+**Set Library > xilinxcorelib**.
 
 # Library errors from external compilers
 
-If you are using the [/manual/tools#External Compilers], the external compiler can also put error markers on library clauses. You can easily
-verify this by checking the prefix of the error message (e.g. `vcom:` for vcom errors). Consult the [/manual/tools#Libraries] section of the external compiler integration for more information on configuring libraries for your external compiler.
+If you are using the [/manual/tools#External Compilers], the external compiler
+can also put error markers on library clauses. You can easily verify this by
+checking the prefix of the error message (e.g. `vcom:` for vcom errors).
+Consult the [/manual/tools#Libraries] section of the external compiler
+integration for more information on configuring libraries for your external
+compiler.
