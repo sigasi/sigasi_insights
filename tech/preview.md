@@ -26,7 +26,7 @@ Note that the (System)Verilog rules are identical.
 
 ## Markdown markup in comments
 
-VHDL and SystemVerilog comments are now processes with a [Markdown processor](https://en.wikipedia.org/wiki/Markdown). This allows to add markup (e.g. bold, code, paragraphs, hyperlinks,...) to comments. This results in nicer hovers and documentation.
+VHDL and SystemVerilog comments are now processed with a [Markdown processor](https://en.wikipedia.org/wiki/Markdown). This allows to add markup (e.g. bold, code, paragraphs, hyperlinks,...) to comments. This results in nicer hovers and documentation.
 
 ![MarkDown in comments](/releasenotes/3.8/markdown_comments.png "markdown comments")
 
