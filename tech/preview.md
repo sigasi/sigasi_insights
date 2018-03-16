@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (3.8)
 layout: page
 pager: true
-date: 2017-12-13
+date: 2018-03-16
 comments: true
 ---
 
@@ -29,6 +29,11 @@ Note that the (System)Verilog rules are identical.
 VHDL and SystemVerilog comments are now processed with a [Markdown processor](https://en.wikipedia.org/wiki/Markdown). This allows to add markup (e.g. bold, code, paragraphs, hyperlinks,...) to comments. This results in nicer hovers and documentation.
 
 ![MarkDown in comments](/releasenotes/3.8/markdown_comments.png "markdown comments")
+
+## PDF documentation update
+
+The blockdiagrams and state machine diagrams needed to generate the PDF documentation are now generated in a new *sigasi-doc* folder inside your project.
+The generated PDF documentation will also be written in this folder instead of in the project root.
 
 
 # Update or install?
