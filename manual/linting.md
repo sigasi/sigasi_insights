@@ -69,6 +69,7 @@ The availability of code rules depends on the license requirements.
 | ST      |                                  | Subprograms in packages (e.g. function body in a package, rather than in the package body)                              |     |
 | ST      |                                  | Missing return statement in function bodies                                                                             |     |
 | ST      | ![](icons/warning_lightbulb.png) | Correct attribute entity class in attribute specifications                                                              |     |
+| ST      | ![](icons/warning_lightbulb.png) | C-style equality and inequality operator (`=` and `/=` vs `==` and `!=`)                                                |     |
 | ST      | ![](icons/warning_lightbulb.png) | VHDL 2008 features in VHDL 93 mode (Learn about [choosing your VHDL version][/manual/config#configure-version])         |     |
 | CR      | ![](icons/warning_lightbulb.png) | [Deprecated IEEE packages](#deprecated-ieee-packages-non-standard-packages)                                             |   8 |
 | CR      | ![](icons/warning_lightbulb.png) | [Non-standard packages](#deprecated-ieee-packages-non-standard-packages)                                                |  37 |
