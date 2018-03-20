@@ -52,19 +52,27 @@ We also did significant improvements to the documentation export:
 ![Top level only export](3.8/export_doc_toplevel.png "Export documentation for a top level")
 * **State machines**: If architectures contain state machines, these will be included in the documentation
 ![State machines in documentation](3.8/statemachine_doc_pdf.png "State machines in documentation")
-* **Result folder**: The generated *DocBook* and *PDF* files are now written in the `sigasi-doc` folder (and no longer in the roof of your project).
+* **Result folder**: The generated `DocBook` and `PDF` files are now written in the `sigasi-doc` folder (and no longer in the roof of your project).
 * **Diagram paths**: Diagrams are now generated in `sigasi-doc\blockdiagrams` and `sigasi-doc\statemachines`.
 * **Duplicate design units**: If your project contains duplicate design units, documentation export is not possible. We now show a clear dialog instead of a cryptic message in the console view.
 
 # Dependencies Viewer (Mixed language)
 
+# Full VHDL 2008 support
+
+* 
+
 # Other new and noteworthy improvements
 
-* Quickfix for c-style equals
+* We implemented the last missing VHDL 2008 features in Sigasi Studio: functions with generic parameters
+* Quickfix for c-style equals  
+![C-style equals quick fix](3.8/c_style_equals_quickfix.png "C-style equals quick fix")
 * Improved autocomplete priorities (`records > conversion functions`)
 * Allow (System)Verilog Preprocessor settings dialog to globally include files
+![Allow `includes` on preprocessor page](3.8/includes_sv.png)
 * Updated Eclipse in standalone version to Eclipse 4.7.2
 * Added VHDL autocomplete template for `function` prototypes (useful in packages)
+![Function prototype autocomplete template](3.8/function_prototype_autocomplete.png)
 * Add parameter to `procedure body` autocomplete template
 * \[XL] Added extra linting check for file names: check that the primary unit names in the file are part of the file name. Note that this check is **ignored** by default. You can enable it in the VHDL **Errors/Warnings** preference page.
 
@@ -83,8 +91,8 @@ We also did significant improvements to the documentation export:
 - ticket 4049 : \[(System)Verilog] `global` not accepted as package name
 - ticket 4048 : \[(System)Verilog] Imports with `global` keyword are not recognized
 - ticket 4120 : \[VHDL] Alias for package
+- ticket 4185 : \[VHDL 2008] allow local package instantiations in processes
 - ticket 4194 : \[(System)Verilog] Missing Questa `vlog` errors in the Problems View
-
 
 # How to update?
 
