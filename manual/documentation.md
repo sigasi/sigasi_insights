@@ -15,15 +15,14 @@ The Sigasi documentation generator has following advantages:
 
 # Export Documentation
 
-You can export documentation for the entire project to **pdf** by
-clicking the save icon or via the **Export…** menu.
-Since Sigasi 2.27 this export also saves the DocBook source code, if you
-have a [xl_doc] license. This enables you to customize the pdf
-generation flow to your liking.
+You can export documentation for the **entire project** or a **specific toplevel** to **pdf** by clicking the save icon or via the **Export…** menu.
+
+The result is saved in the `sigasi-doc` folder in the root of your project.
+
+Since Sigasi Studio 2.27 this export also saves the DocBook source code, if you have a [xl_doc] license. This enables you to customize the pdf
+generation flow to your liking. Users without a XL Doc License can also export a pdf, but it will contain a watermark.
 
 All errors are logged to the console view.
-
-Users without a XL Doc License can also export a (watermarked) pdf.
 
 # Comment Association
 
@@ -37,7 +36,9 @@ Sigasi Studio associates comments with HDL declarations with following rules:
 * *Empty lines* break comment blocks
 
 The association rules are illustrated in the image below:  
-![comment association rules](/releasenotes/3.8/comment_association.png "comment association rules comment association")  
+![comment association rules](/releasenotes/3.8/comment_association.png "comment association rules comment association")
+
+The **Formatter** and **[Structural select][/screencasts/structured-select]** respect (and fix) comments according to the association rules.
 
 # Comment markup with MarkDown
 
