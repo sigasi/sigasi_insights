@@ -29,17 +29,19 @@ In hovers the complete Markdown syntax is supported. For PDF documentation gener
 
 Sigasi Studio has a few simple rules to [associate comments with HDL declarations][/manual/editor#comment-association]. In version 3.8 we have refined and extended the association rules to support multiple single line trailing comments.
 
-TODO add image
+![Multi line trailing comments](3.8/comment_association_multiple_trailing.png "Multi line trailing comments")
 
 *Empty lines* between comments now break the comment blocks. This provides a convenient way to *un-associate* comments from declarations. You can add an *empty **comment** line* to combine comments with multiple paragraphs.
 
-TODO add image
+![Unassociated comments](3.8/comment_association_unassociated_comment.png "Unassociated comments")
 
 We have also updated the **Formatter** and **[Structural select][/screencasts/structured-select]** to respect (and fix) comments according to the new association rules.
 
-TODO add image
+![Comments formatter](3.8/comment_association_formatter.png "Comments formatter")
 
 Note that the comment association rules are identical for both (System)Verilog and VHDL.
+
+[Complete comment association documentation][/manual/editor#comment-association]
 
 ## PDF documentation update
 
@@ -47,10 +49,12 @@ We also did significant improvements to the documentation export:
 
 * **Support for (System)Verilog modules**: The documentation now also documents (System)Verilog modules.
 * **Top Level only export**: In the export wizard you can now select either a **Project** or just a **top level**. Selecting a **top level** will only add the documentation of design units that are part of the selected hierarchy.
+![Top level only export](3.8/export_doc_toplevel.png "Export documentation for a top level")
 * **State machines**: If architectures contain state machines, these will be included in the documentation
+![State machines in documentation](3.8/statemachine_doc_pdf.png "State machines in documentation")
 * **Result folder**: The generated *DocBook* and *PDF* files are now written in the `sigasi-doc` folder (and no longer in the roof of your project).
 * **Diagram paths**: Diagrams are now generated in `sigasi-doc\blockdiagrams` and `sigasi-doc\statemachines`.
-* **Duplicate design units**: If your project contains duplicate design units documentation export is not possible. We now show a clear dialog instead of a cryptic message in the console view.
+* **Duplicate design units**: If your project contains duplicate design units, documentation export is not possible. We now show a clear dialog instead of a cryptic message in the console view.
 
 # Dependencies Viewer (Mixed language)
 
@@ -64,11 +68,22 @@ We also did significant improvements to the documentation export:
 * Add parameter to `procedure body` autocomplete template
 * \[XL] Added extra linting check for file names: check that the primary unit names in the file are part of the file name. Note that this check is **ignored** by default. You can enable it in the VHDL **Errors/Warnings** preference page.
 
-## VHDL
-
-## Verilog
-
 # Bug fixes
+
+- ticket 4099 : Wrong error message in pop-up when all licenses are in use
+- ticket 4138 and 4019 : Rename refactoring `StackOverflowError`
+- ticket 4184 : \[VHDL] Duplicate design unit markers occur multiple times
+- ticket 4160 : \[VHDL] Sort associations mangles up bit string literals (`10x"12"` becomes `"12"10x`)
+- ticket 3813 : Rename in autocompletes steals enter keystroke from QF
+- ticket 4070 : \[VHDL] Undo is incorrect after rename refactoring with format on save
+- ticket 4046 : Block Diagram: Entity instantiation without ports is displayed as unknown
+- ticket 4036 : Vivado integration is missing VHDL (2008) version parameter
+- ticket 4037 : \[VHDL] incorrect duplicates declaration error for vhdl 2008 package instantiations
+- ticket 4102 : \[VHDL] Check for missing procedure implementation in protected types
+- ticket 4049 : \[(System)Verilog] `global` not accepted as package name
+- ticket 4048 : \[(System)Verilog] Imports with `global` keyword are not recognized
+- ticket 4120 : \[VHDL] Alias for package
+- ticket 4194 : \[(System)Verilog] Missing Questa `vlog` errors in the Problems View
 
 
 # How to update?
