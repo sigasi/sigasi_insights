@@ -58,10 +58,19 @@ We also did significant improvements to the documentation export:
 
 # Dependencies Viewer (Mixed language)
 
+The *Dependencies Viewer* can now also show the libraries in which files are built and it can show the
+design units within the files.
+Use the new icons to enable or disable the features of the Dependencies Viewer:
+
+* ![](3.8/icon_project.png) Show all files in project
+* ![](3.8/icon_libraries.png) Show libraries
+* ![](3.8/icon_units.png) Show design units
+
+![Dependencies Viewer for entire project with libraries and design units](3.8/dependencies_project_libraries_units.png)
+
 # Full VHDL 2008 support
 
 * 
-
 # Other new and noteworthy improvements
 
 * We implemented the last missing VHDL 2008 features in Sigasi Studio: functions with generic parameters
