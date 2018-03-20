@@ -16,6 +16,7 @@ VHDL and SystemVerilog comments are now processed with a [Markdown processor](ht
 ![MarkDown in comments](3.8/markdown_comments.png "markdown comments")
 
 In hovers the complete Markdown syntax is supported. For PDF documentation generation following features are supported:
+
 * paragraphs (add and empty comment line to break paragraphs)
 * line breaks (by adding two trailing spaces)
 * *emphasis* (`*emphasis*`)
@@ -68,9 +69,6 @@ Use the new icons to enable or disable the features of the Dependencies Viewer:
 
 ![Dependencies Viewer for entire project with libraries and design units](3.8/dependencies_project_libraries_units.png)
 
-# Full VHDL 2008 support
-
-* 
 # Other new and noteworthy improvements
 
 * We implemented the last missing VHDL 2008 features in Sigasi Studio: functions with generic parameters
