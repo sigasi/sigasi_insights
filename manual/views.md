@@ -207,28 +207,10 @@ You can export this diagram for documentation by clicking the save icon.
 
 # Documentation View {: #documentation}
 
-[xl_doc_only],[vhdl_only]
-
-The **Documentation view** gives you a live preview of the automatic
-documentation Sigasi Studio can generate for your project.
+The **Documentation view** gives you a live preview of the [automatic documentation][documentation] Sigasi Studio can generate for your project.
 
 ![](images/documentationview.png)
 
-You do not need to add any special annotations to your code. Sigasi Studio uses the same code/comment association as the hover provider ([/manual/editor#Comment Association]). So to document a `port`, you append a comment to a port declaration. To document an `architecture`, you put the comment just on top of the architecture.
-
-## Export Documentation
-
-[xl_doc_only],[vhdl_only]
-
-You can export documentation for the entire project to **pdf** by
-clicking the save icon or via the **Export…** menu.
-Since Sigasi 2.27 this export also saves the DocBook source code, if you
-have a [xl_doc] license. This enables you to customize the pdf
-generation flow to your liking.
-
-All errors are logged to the console view.
-
-Users without a XL Doc License can also export a (watermarked) pdf.
 
 # Net Search View {: #netsearch}
 

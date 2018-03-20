@@ -18,7 +18,7 @@ Although these preview releases are less rigorously tested than than the officia
 
 ## Multiline trailing comments
 
-Sigasi Studio has a few simple rules to [associate comments with HDL declarations][/manual/editor#comment-association]. In version 3.8 we have refined and extended the association rules to support multiple single line trailing comments.
+Sigasi Studio has a few simple rules to [associate comments with HDL declarations][/manual/documentation#Comment Association]. In version 3.8 we have refined and extended the association rules to support multiple single line trailing comments.
 
 The new association rules (for VHDL) are illustrated in the image below:  
 ![comment association rules](/releasenotes/3.8/comment_association.png "comment association rules comment association")  
