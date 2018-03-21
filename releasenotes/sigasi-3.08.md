@@ -26,7 +26,7 @@ In hovers the complete Markdown syntax is supported. For PDF documentation gener
 * external links and email addresses (`<http://www.sigasi.com>`, `[Sigasi](http://www.sigasi.com)` and `<sales@sigasi.com>`)
 
 
-## Multiline trailing comments
+## Multi line trailing comments
 
 Sigasi Studio has a few simple rules to [associate comments with HDL declarations][/manual/documentation#Comment Association]. In version 3.8 we have refined and extended the association rules to support multiple single line trailing comments.
 
@@ -81,7 +81,7 @@ Use the new icons to enable or disable the features of the Dependencies Viewer:
 * Added VHDL autocomplete template for `function` prototypes (useful in packages)
 ![Function prototype autocomplete template](3.8/function_prototype_autocomplete.png)
 * Add parameter to `procedure body` autocomplete template
-* \[XL] Added extra linting check for file names: check that the primary unit names in the file are part of the file name. Note that this check is **ignored** by default. You can enable it in the VHDL **Errors/Warnings** preference page.
+* \[XL] Added extra linting check for file names: check that the primary unit names in the file are part of the file name. Note that this check is **ignored** by default. You can enable it in the VHDL **Errors/Warnings** preference page (**Style Validation > Filename must contain primary name**)
 
 # Bug fixes
 
@@ -100,6 +100,7 @@ Use the new icons to enable or disable the features of the Dependencies Viewer:
 - ticket 4120 : \[VHDL] Alias for package
 - ticket 4185 : \[VHDL 2008] allow local package instantiations in processes
 - ticket 4194 : \[(System)Verilog] Missing Questa `vlog` errors in the Problems View
+- ticket 4219 : Issue launching `xsim` simulation
 
 # How to update?
 
