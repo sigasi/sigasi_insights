@@ -195,15 +195,19 @@ The Dependencies View also makes it easy to detect *orphaned files*.
 
 The view is *automatically updated* each time you save your files.
 
-![Dependencies View](images/dependencies-view.png "Dependencies View")
+![Dependencies View for a complete project with libraries and design units](/releasenotes/3.8/dependencies_project_libraries_units.png "Dependencies View for a complete project with libraries and design units")
 
-To focus on the dependencies of the active editor only, uncheck the project button (![Dependencies View](images/dependencies-view_project.png)).
+The dependencies view has following options:
 
-The dependencies view can help you navigate too. Double click a file name in the diagram to open the corresponding editor.
+* ![](/releasenotes/3.8/icon_project.png) show dependencies of entire projct. Uncheck to focus on the dependencies of the active editor only.
+* ![](/releasenotes/3.8/icon_libraries.png) Group design files per library
+* ![](/releasenotes/3.8/icon_units.png) Show design units inside design files. The design units are prefixed with an abbreviation of their kind (**a**rchitecture, **m**odule, **p**ackage, ...)
 
-The dependencies View can also be pinned. This prevents the diagram from changing when you switch editors.
+The dependencies view can help you **navigate** too. Double click a file name in the diagram to open the corresponding editor.
 
-You can export this diagram for documentation by clicking the save icon.
+The dependencies View can also be **pinned**. This prevents the diagram from changing when you switch editors.
+
+You can **export** this diagram for documentation by clicking the save icon.
 
 # Documentation View {: #documentation}
 
