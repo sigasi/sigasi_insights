@@ -81,7 +81,10 @@ Use the new icons to enable or disable the features of the Dependencies Viewer:
 * Added VHDL autocomplete template for `function` prototypes (useful in packages)
 ![Function prototype autocomplete template](3.8/function_prototype_autocomplete.png)
 * Add parameter to `procedure body` autocomplete template
+* \[XL] Added extra linting check for file header comments: check that header comment matches a pattern
+![Check header comments](/releasenotes/3.8/header_comment.png "Check header comments")
 * \[XL] Added extra linting check for file names: check that the primary unit names in the file are part of the file name. Note that this check is **ignored** by default. You can enable it in the VHDL **Errors/Warnings** preference page (**Style Validation > Filename must contain primary name**)
+![Check file name](/releasenotes/3.8/filename_linting.png "Check file name")
 
 # Bug fixes
 
