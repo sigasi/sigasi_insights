@@ -348,7 +348,7 @@ The check can be enabled in **Preferences > Sigasi > VHDL > Naming conventions**
 
 ## Check that filename contains primary unit name {:file-name}
 
-Sigasi Studio cn check that the filename contains the name of a least one of the design unit names inside that file.  Note that this check is **ignored** by default. You can enable it in the VHDL **Errors/Warnings** preference page (**Style Validation > Filename must contain primary name**).
+Sigasi Studio can check that the filename contains the name of at least one of the design unit names inside that file.  Note that this check is **ignored** by default. You can enable it in the VHDL **Errors/Warnings** preference page (**Style Validation > Filename must contain primary name**).
 
 ![Check file name](/releasenotes/3.8/filename_linting.png "Check file name")
 
