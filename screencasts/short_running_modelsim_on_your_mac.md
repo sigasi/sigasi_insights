@@ -2,6 +2,7 @@
 title: "Running ModelSim on your Mac"
 layout: screencast 
 pager: false
+date: 2016-01-01
 comments: false
 videoid: 95a3d6c4de
 ---

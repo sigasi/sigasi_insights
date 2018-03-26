@@ -2,6 +2,7 @@
 title: "Organizing GRLIB with one project per library."
 layout: screencast 
 pager: false
+date: 2016-01-01
 comments: false
 videoid: d8028ffad5
 ---

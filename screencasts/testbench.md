@@ -2,6 +2,7 @@
 title: "Create a testbench with autocomplete"
 layout: screencast 
 pager: false
+date: 2016-01-01
 comments: false
 videoid: 36865dbffa
 ---

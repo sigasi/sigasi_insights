@@ -2,6 +2,7 @@
 title: "Context Sensitive Autocompletion"
 layout: screencast 
 pager: false
+date: 2016-01-01
 comments: false
 videoid: 7b20151b4f
 video: mute

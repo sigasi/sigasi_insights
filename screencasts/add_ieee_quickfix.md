@@ -2,6 +2,7 @@
 title: "Add library and use clause for IEEE with Quick Fix"
 layout: screencast 
 pager: false
+date: 2016-01-01
 comments: false
 videoid: wgvxcid2uv
 video: mute

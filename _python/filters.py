@@ -159,7 +159,12 @@ def wistia(videoid,video_width=600,video_height=400):
     return """
         <script src="//fast.wistia.com/embed/medias/j38ihh83m5.jsonp" async></script>
         <script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
-        <div class="wistia_embed wistia_async_{{videoid}}" style="height:{{video_height}}px;width:{{video_width}}px;margin: 0 auto"></div>
+        <div class="wistia_embed wistia_async_{{videoid}}" style="height:{{video_height}}px;width:{{video_width}}px;margin: 0 auto;"></div>
+        """.replace('{{video_width}}',str(video_width)).replace('{{video_height}}',str(video_height)).replace('{{videoid}}',str(videoid))
+def youtube(videoid,video_width=600,video_height=400):
+    return """
+        <iframe src="https://www.youtube.com/embed/{{videoid}}?modestbranding=1&rel=0&showinfo=0" gesture="media" allow="encrypted-media" allowfullscreen="" width={{video_width}} height={{video_height}} frameborder="0" id={{videoid}}> 
+        </iframe>
         """.replace('{{video_width}}',str(video_width)).replace('{{video_height}}',str(video_height)).replace('{{videoid}}',str(videoid))
 
 
@@ -174,6 +179,7 @@ filters['recurse'] = recurse
 filters['sortpopular'] = sortpopular
 filters['split'] = split
 filters['wistia'] = wistia
+filters['youtube'] = youtube
 filters['today'] = today
 filters['license'] = license
 filters['coloredDot'] = coloredDot

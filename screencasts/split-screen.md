@@ -2,6 +2,7 @@
 title: "Split Screen Editing"
 layout: screencast 
 pager: false
+date: 2016-01-01
 comments: false
 videoid: 0fb5770799
 ---

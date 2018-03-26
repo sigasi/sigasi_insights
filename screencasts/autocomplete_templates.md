@@ -2,6 +2,7 @@
 title: "Autocomplete templates"
 layout: screencast 
 pager: false
+date: 2017-05-24
 comments: false
 videoid: q1abuu7nma
 ---

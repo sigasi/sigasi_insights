@@ -2,6 +2,7 @@
 title: "Block Selection for VHDL Code Editing"
 layout: screencast 
 pager: false
+date: 2016-01-15
 comments: false
 videoid: 30cf86ee3d
 video: chicago

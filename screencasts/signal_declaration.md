@@ -2,6 +2,7 @@
 title: "Signal Declaration"
 layout: screencast 
 pager: false
+date: 2016-01-01
 comments: false
 videoid: 1ba2d8d48c
 ---

@@ -2,6 +2,7 @@
 title: "Side-by-side Diff"
 layout: screencast 
 pager: false
+date: 2016-01-01
 comments: false
 videoid: 7b5bb5b344
 ---

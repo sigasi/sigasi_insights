@@ -2,6 +2,7 @@
 title: "Save-time compilation"
 layout: screencast 
 pager: false
+date: 2016-01-01
 comments: false
 videoid: 3f7ba5f0d5
 ---
