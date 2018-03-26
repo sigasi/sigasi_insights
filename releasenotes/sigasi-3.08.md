@@ -5,9 +5,9 @@ pager: true
 date: 2018-03-28
 comments: true
 ---
-Sigasi Studio 3.8 brings support for **Markdown in Comments** and for **Multi-line trailing comments**.
-**Generating documentation** has become *more flexible* and **State Machine Diagrams** are now also *included in the documentation*.
-There are many more new features and bug fixes.
+Sigasi Studio 3.8 brings support for **Markdown in Comments** and for **Multiline trailing comments**.
+We also improved the **Documentation Generation** and the **Dependencies View**.
+Read below to find more new and noteworthy changes.
 
 # Documentation and hover improvements
 
@@ -28,11 +28,11 @@ In hovers the complete Markdown syntax is supported. For PDF documentation gener
 * external links and email addresses (`<http://www.sigasi.com>`, `[Sigasi](http://www.sigasi.com)` and `<sales@sigasi.com>`)
 
 
-## Multi line trailing comments
+## Multiline trailing comments
 
 Sigasi Studio has a few simple rules to [associate comments with HDL declarations][/manual/documentation#Comment Association]. In version 3.8 we have refined and extended the association rules to support multiple single line trailing comments.
 
-[![Multi line trailing comments](3.8/comment_association_multiple_trailing.png "Multi line trailing comments")](3.8/comment_association_multiple_trailing.png)
+[![Multiline trailing comments](3.8/comment_association_multiple_trailing.png "Multiline trailing comments")](3.8/comment_association_multiple_trailing.png)
 
 *Empty lines* between comments now break the comment blocks. This provides a convenient way to *un-associate* comments from declarations. You can add an *empty **comment** line* to combine comments with multiple paragraphs.
 
