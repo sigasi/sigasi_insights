@@ -127,7 +127,7 @@ inspect which information is being sent and will be able to cancel the
 transmission. SIGASI will not disclose such information, unless in a
 sufficiently aggregated and anonymized form. 
 
-9. NO WARRANTIES( LIMITED WARRANTY). 
+9. NO WARRANTIES (LIMITED WARRANTY). 
 
 Sigasi declares it has all rights to enter into this agreement. 
 THE SOFTWARE IS MADE AVAILABLE TO THE USER ON AN "AS IS" BASIS WITHOUT
@@ -179,7 +179,10 @@ with the industrial standards.
 This Agreement will be governed by and construed in
 accordance with the laws of Belgium, without giving effect to the conflicts of
 laws principles thereof.
-12. Other Terms. Additional or different terms and conditions may be
+
+12. Other Terms.
+
+Additional or different terms and conditions may be
 applicable to the User if so agreed in writing by SIGASI, its
 distributors, its licensors and/or their respective licensors. 
 
