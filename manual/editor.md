@@ -77,20 +77,10 @@ mouse pointer over it. After about a second, a popup shows you the name and data
 In the hover pop-up, can show different kinds of information:
 
 * datatype
-* comments: inline documentation written at the declaration
+* comments: inline documentation written at the declaration ([association rules][documentation#comment-association])
 * value: the value of constants
 * errors or warnings: a message, if the given identifier has an error or warning associated to it
 * binary / decimal conversion: for hexadecimal, octal or binary values, the decimal equivalent
-
-### Comment Association
-
-Comments in HDL code are used to add extra information or documentation to that code. Sigasi Studio uses certain rules to determine which comment belongs to which code. This is important for documentation hovers, refactoring, formatting,...
-Which comment belongs to which exact code is subjective.
-
-Sigasi Studio associates comments with HDL declarations with following rules:
-
-* If there is a declaration before a comment and in the same line, the comment is associated with this declaration.
-* In all other cases, the comment is associated with the next following declaration.
 
 ## Auto-complete and Content Assist
 
