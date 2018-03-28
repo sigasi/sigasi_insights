@@ -3,42 +3,59 @@
 {% block title %}
 {% endblock %}
 
-  {% block selectedindex %}
-  <div class="row">
-    <div class="col-md-12" >
-      <h3>Recommended Screencasts</h3>
-      {% for item in this.content|sortpopular|filterfirst(6) %}
-      <div class="col-md-4" >
-	<div style="position:relative;">
-	{% if item.layout == 'youtube' %}
-	  {{item.videoid|youtube(300,200)}}
-	{% else %}
-          {{item.videoid|wistia(300,200)}}
-	{% endif %}
-	</div>
-        <div style="height:80px;text-align:center"><a href="{{item.url}}"><h4>{{item.title}}</h4></a></div>
+    {% block selectedindex %}
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Recommended Screencasts</h3>
+        {% for item in this.content|sortpopular|filterfirst(6) %}
+        <div class="col-md-4">
+          {% if item.layout == 'youtube' %}
+          <div style="display: table;margin: 0 auto;">
+            {{item.videoid|youtube(300,200)}}
+          </div>
+          {% else %}
+            {{item.videoid|wistia(300,200)}}
+          {% endif %}
+          <div style="height:80px;text-align:center"><a href="{{item.url}}"><h4>{{item.title}}</h4></a></div>
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col-md-12" >
-      <h3>Latests Screencasts</h3>
-      {% for item in this.content|filterlatest(6) %}
-      <div class="col-md-4" >
-	<div style="align:center">
-	{% if item.layout == 'youtube' %}
-	  {{item.videoid|youtube(300,200)}}
-	{% else %}
-          {{item.videoid|wistia(300,200)}}
-	{% endif %}
-	</div>
-        <div style="height:80px;text-align:center"><a href="{{item.url}}"><h4>{{item.title}}</h4></a></div>
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Latests Screencasts</h3>
+        {% for item in this.content|filterlatest(6) %}
+        <div class="col-md-4">
+          {% if item.layout == 'youtube' %}
+          <div style="display: table;margin: 0 auto;">
+            {{item.videoid|youtube(300,200)}}
+          </div>
+          {% else %}
+            {{item.videoid|wistia(300,200)}}
+          {% endif %}
+          <div style="height:80px;text-align:center"><a href="{{item.url}}"><h4>{{item.title}}</h4></a></div>
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
-  </div>
 
-  <h3>All Screencasts</h3>
-  {% endblock %}
+    <h3>All Screencasts</h3>
+    {% endblock %}
+
+    {% block mainindex %}
+    <div class="row">
+      <div class="col-md-offset-0 col-md-6" >
+        {% for item in this.content|recurse|split(0) %}
+        <p style="margin-bottom: 10px"><a href="{{item.url}}" title="{{item.title}}">{{item.title|cutoff(50)}}</a>
+        </p>
+        {% endfor %}
+      </div>
+      <div class="col-md-offset-0 col-md-6" >
+        {% for item in this.content|recurse|split(1) %}
+        <p style="margin-bottom: 10px"><a href="{{item.url}}" title="{{item.title}}">{{item.title|cutoff(50)}}</a>
+        </p>
+        {% endfor %}
+      </div>
+    </div>
+    {% endblock %}
