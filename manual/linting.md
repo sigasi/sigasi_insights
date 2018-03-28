@@ -69,6 +69,7 @@ The availability of code rules depends on the license requirements.
 | ST      |                                  | Subprograms in packages (e.g. function body in a package, rather than in the package body)                              |     |
 | ST      |                                  | Missing return statement in function bodies                                                                             |     |
 | ST      | ![](icons/warning_lightbulb.png) | Correct attribute entity class in attribute specifications                                                              |     |
+| ST      | ![](icons/warning_lightbulb.png) | C-style equality and inequality operator (`=` and `/=` vs `==` and `!=`)                                                |     |
 | ST      | ![](icons/warning_lightbulb.png) | VHDL 2008 features in VHDL 93 mode (Learn about [choosing your VHDL version][/manual/config#configure-version])         |     |
 | CR      | ![](icons/warning_lightbulb.png) | [Deprecated IEEE packages](#deprecated-ieee-packages-non-standard-packages)                                             |   8 |
 | CR      | ![](icons/warning_lightbulb.png) | [Non-standard packages](#deprecated-ieee-packages-non-standard-packages)                                                |  37 |
@@ -111,6 +112,8 @@ The availability of code rules depends on the license requirements.
 | XL      |                                  | Redundant boolean equality check with true                                                                              | 185 |
 | XL      |                                  | Boolean equality check with false                                                                                       | 186 |
 | XL      | ![](icons/warning_lightbulb.png) | [Check for component/entity mismatch](#component-entity)                                                                | 187 |
+| XL      |                                  | [Header comment check](#header-comment)                                                                | 188 |
+| XL      |                                  | [Filename must contain primary unit name](#file-name)                                                                | 189 |
 
 # Detailed explanation of VHDL code rules
 
@@ -334,6 +337,21 @@ Sigasi Studio gives a warning when the **order** of generics or ports in a `map`
 Sigasi Studio gives a warning if a component declaration is not equal to its matching entity. You can easily fix this by applying the quick fix.
 
 ![](images/linting_component_entity.png)
+
+## Check header comment {: #header-comment}
+
+Sigasi Studio can check that the **header comment** matches a specified pattern. A **header comment** is the comment that starts at the first character of your file (*no leading whitespace*).
+
+The check can be enabled in **Preferences > Sigasi > VHDL > Naming conventions**.  The pattern can be set on the same page.
+
+![Check header comments](/releasenotes/3.8/header_comment.png "Check header comments")
+
+## Check that filename contains primary unit name {:file-name}
+
+Sigasi Studio can check that the filename contains the name of at least one of the design unit names inside that file.  Note that this check is **ignored** by default. You can enable it in the VHDL **Errors/Warnings** preference page (**Style Validation > Filename must contain primary name**).
+
+![Check file name](/releasenotes/3.8/filename_linting.png "Check file name")
+
 
 # Project specific Linting settings
 

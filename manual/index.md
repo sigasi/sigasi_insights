@@ -13,6 +13,7 @@ content:
     - opening
     - linting
     - tools
+    - documentation
     - plugins
     - trouble
     - keyshortcuts
