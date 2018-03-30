@@ -145,12 +145,12 @@ could add `-noSplash` to skip the splash dialog.
 
 You can configure Sigasi Studio to be the preferred editor for Xilinx Vivado.
 
-1. In Xilinx Vivado, Click **Tools > Options...**
-2. Open the **General** tab (selected by default)
-3. Look for the **Text Editor** section and replace the '**Vivado Text Editor** (default)' with '**Custom Editor...**'
-4. Next click the **...** (Custom editor)  button and enter:
+1. In Xilinx Vivado, click **Tools > Settings...**
+2. Open the **Tool Settings > Text Editor** tab
+3. Locate the **Current Editor** drop down menu and instead of '**Vivado Text Editor** (default)' select '**Custom Editor...**'
+4. If needed click the **...** button and in the pop-up dialog enter:
     `<path to Sigasi Studio>/sigasi.exe [file name] +[line number]`
-5. Click **OK** to close the dialog
+5. Click **OK** to close the dialog and **OK** to close the Settings window.
 
 ![Configuring Sigasi Studio as default editor in Xilinx Vivado menu](images/vivado_a1.png "Configuring Sigasi Studio as default editor in Xilinx Vivado menu")
 ![Configuring Sigasi Studio as default editor in Xilinx Vivado](images/vivado_a2.png "Configuring Sigasi Studio as default editor in Xilinx Vivado")
