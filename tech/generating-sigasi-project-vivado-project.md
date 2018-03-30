@@ -5,7 +5,9 @@ pager: true
 author: Hendrik Eeckhaut
 date: 2015-06-30
 tags: 
+  - GitHub
   - hdt-2.0
+  - Python
   - Vivado
   - Xilinx
 comments: true
@@ -33,7 +35,7 @@ This TCL scripts creates a file `vivado_files.csv` which contains a list of VHDL
 ```
 ~/git/SigasiProjectCreator/src/convertCsvFileToTree.py project_1 vivado_files.csv
 ```
-This scripts generates the `.project` and `.library_mapping.xml` files that define the Sigasi project.
+This script generates the `.project` and `.library_mapping.xml` files that define the Sigasi project.
 
 # Notes
 
