@@ -13,7 +13,7 @@ Since [version 3.6](/releasenotes/sigasi-3.06), Sigasi Studio has a **Quick Fix*
 # About VUnit
 
 VUnit is an open source **unit testing framework for VHDL/SystemVerilog** that helps to write, and automatically run, tests. 
-The VUnit project was started by Lars Asplund from [Synective Labs](http://www.synective.se) and its source code is hosted at [GitHub](https://github.com/VUnit/vunit).
+The VUnit project was started by Lars Asplund from [Synective Labs](http://www.synective.se) and [Olof Kraigher](https://github.com/kraigher). The source code is hosted at [GitHub](https://github.com/VUnit/vunit).
 VUnit automatically scans your projects for unit tests (aka test benches), runs them with your favorite simulator and reports you the results.
 This automation helps to run tests frequently and iterate faster.
 
