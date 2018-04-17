@@ -18,6 +18,8 @@ In this section, we list the most important shortcuts.
    **Shift+Ctrl+R** opens a dialog that allows you to swiftly open an editor on any file in the workspace.
 2. *Open Declaration* (**F3**):  
    Use **F3** to navigate to the declaration of the selected identifier.
+3. *Open Design Unit* (**Shift+Ctrl+D**):  
+   **Shift+Ctrl+D** opens a dialog in which you can type a name or pattern to open a specific VHDL or SystemVerilog design unit name.
 3. Backward History (**Alt+Left**):  
    Often, when you navigate to a declaration you want to go back to where you came from; just press **Alt+Left**.
 4. Content Assist (**Ctrl+Space**):  
@@ -74,6 +76,7 @@ In this section, we list the most important shortcuts.
 |                        | Save All | **Shift+Ctrl+S** |
 | *Navigation*           | Last Edit Location | **Ctrl+Q** |
 |                        | Open Resource | **Shift+Ctrl+R** |
+|                        | Open Design Unit | **Shift+Ctrl+D** |
 |                        | Backward History | **Alt+Left** |
 |                        | Show In… | **Shift+Alt+W** |
 |                        | Go to Line | **Ctrl+L** |
