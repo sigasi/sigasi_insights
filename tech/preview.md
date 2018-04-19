@@ -16,11 +16,12 @@ Although these preview releases are less rigorously tested than than the officia
 
 # Current preview release
 
-* State Machine view for enum-based statemachines in **SystemVerilog**.
-![State Machine View for SystemVerilog](/releasenotes/3.9/systemverilog_fsm.png)
-* Block Diagram view for (System)Verilog modules
+## SystemVerilog Graphical Views
+* **State Machine** view for enum-based statemachines in **SystemVerilog**.
+[![State Machine View for SystemVerilog](/releasenotes/3.9/systemverilog_fsm.png)](/releasenotes/3.9/systemverilog_fsm.png)
+* **Block Diagram** view for SystemVerilog modules
 
-Other:
+##Other
 
 * Support alignment in Markdown tables
 * Dropped support for legacy (Pro, Premium) licenses
