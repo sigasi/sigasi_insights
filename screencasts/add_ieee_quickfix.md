@@ -9,4 +9,5 @@ tags:
   - Quick Fix
   - VHDL
   - libraries
+  - Basic instruction
 ---

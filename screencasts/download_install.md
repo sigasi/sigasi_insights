@@ -7,4 +7,5 @@ comments: false
 videoid: au-SZ61lXp0
 tags:
   - Sigasi Studio
+  - Basic instruction
 ---
