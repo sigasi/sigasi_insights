@@ -16,7 +16,14 @@ Although these preview releases are less rigorously tested than than the officia
 
 # Current preview release
 
-We just released [/releasenotes/sigasi-3.08], so there is nothing to mention here yet.
+* State Machine view for enum-based statemachines in **SystemVerilog**.
+![State Machine View for SystemVerilog](/releasenotes/3.9/systemverilog_fsm.png)
+* Block Diagram view for (System)Verilog modules
+
+Other:
+
+* Support alignment in Markdown tables
+* Dropped support for legacy (Pro, Premium) licenses
 
 # Update or install?
 
