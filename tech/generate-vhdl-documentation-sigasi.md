@@ -1,5 +1,5 @@
 ---
-title: "Generate VHDL documentation in Sigasi"
+title: "Generate VHDL documentation in Sigasi Studio"
 layout: page 
 pager: true
 author: Hendrik Eeckhaut
@@ -7,7 +7,7 @@ date: 2016-05-19
 tags: 
   - documentation
   - VHDL
-  - Sigasi
+  - Sigasi Studio
 comments: true
 bannerad: true
 ---
@@ -24,14 +24,14 @@ But although I like the base idea of Doxygen, it has some annoying disadvantages
 * The output can be confusing: *"Inheritance diagram"*? *"The output for this **class** was generated ..."*? This terminology makes sense for C++ projects, but not for HDLs.
 * **Long feedback loop**: the documentation for the entire projects needs to generated before you can inspect the result.
 
-## Sigasi documentation Generator
+## Sigasi Studio documentation Generator
 
 For these reasons, we developed an alternative, based on Sigasi Studio's internal VHDL analyzer. We stuck with the base idea, but followed a different approach to overcome the disadvantages.
 
-The new Sigasi documentation generator has following advantages:
+The new Sigasi Studio documentation generator has following advantages:
 
-* **No special coding requirements**: the plain comments in your code are extracted for the documentation, no need for special annotations. Sigasi uses the same code/comment association as the hover provider (See "[/manual/documentation#Comment Association]"). So to document a `port`, you append a comment to a port declaration. To document an `architecture`, you put the comment just on top of the architecture.
-* **All included**. All documentation processing is done in Sigasi/Eclipse. So you do *not* need to install extra tools.
+* **No special coding requirements**: the plain comments in your code are extracted for the documentation, no need for special annotations. Sigasi Studio uses the same code/comment association as the hover provider (See "[/manual/documentation#Comment Association]"). So to document a `port`, you append a comment to a port declaration. To document an `architecture`, you put the comment just on top of the architecture.
+* **All included**. All documentation processing is done in Sigasi Studio/Eclipse. So you do *not* need to install extra tools.
 * **Fully hyperlinked PDF**. If you export the documentation, you get a fully hyperlinked PDF.
 * **Live preview**: you can see what the documentation will look like while you type your code and comments.
 
@@ -44,7 +44,7 @@ To get an idea of the output, I generated a [pdf](resources/documentation.pdf) f
 
 ## How does it work?
 
-Sigasi creates a pdf with your project's documentation in multiple steps:
+Sigasi Studio creates a pdf with your project's documentation in multiple steps:
 
 1. Extract all relevant information (content, comments,...) into an intermediate model
 2. Generate all diagrams
@@ -53,12 +53,12 @@ Sigasi creates a pdf with your project's documentation in multiple steps:
  
 ![](images/sigasi-docgen.png)
 
-If you have a full [xl_doc] license, Sigasi also makes the intermediate DocBook file available. This allows you to fully customize the pdf generation. With a custom DocBook→pdf-flow, you could for example apply your company's colors, add your and logo or append extra sections, etc.
+If you have a full [xl_doc] license, Sigasi Studio also makes the intermediate DocBook file available. This allows you to fully customize the pdf generation. With a custom DocBook→pdf-flow, you could for example apply your company's colors, add your and logo or append extra sections, etc.
 
 
 ## Future work
 
-* Although Sigasi already uses templates internally, these templates are not really user-configurable. In a future release we want to make these templates customizable. This way the exact content of the documentation can be easily tweaked.
+* Although Sigasi Studio already uses templates internally, these templates are not really user-configurable. In a future release we want to make these templates customizable. This way the exact content of the documentation can be easily tweaked.
 * Add [state machine diagrams][/manual/views#fsm] to the documentation
 * Add Markup support. The VHDL comments are currently copied verbatim to the output. In a future release, we need to come up with a way to add markup (e.g. paragraphs, bold, italic, lists, ...)
 * Some users reported they actually prefer special comments (e.g. Doxygen's `!--`) to mark documentation. They like to explicitly indicate what text gets into the documentation (and what not). So in a future release, we may add the option to require special comments for documentation.

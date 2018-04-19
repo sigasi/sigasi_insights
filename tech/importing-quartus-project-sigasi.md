@@ -1,5 +1,5 @@
 ---
-title: "Importing a Quartus project in Sigasi"
+title: "Importing a Quartus project in Sigasi Studio"
 layout: page
 pager: true
 author: Bart Brosens
@@ -8,7 +8,7 @@ tags:
   - GitHub
   - hdt-2.0
   - Python
-  - Sigasi
+  - Sigasi Studio
   - Altera
   - Quartus
 comments: true
