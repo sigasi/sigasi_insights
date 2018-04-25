@@ -417,14 +417,14 @@ described in this chapter.
 
 Sigasi Studio marks Verilog syntax errors while you type.
 
-## Initial preprocessor definitions for (System)Verilog projects
+## Initial preprocessor definitions for SystemVerilog projects
 
 Since [/releasenotes/sigasi-3.06] you can configure definitions that are set before other files in the project are processed.
 Right click your project and select **Properties > (System)Verilog Preprocessor**.
 
 ![](/releasenotes/3.6/preprocessor_properties.png)
 
-The code in the **Initial preprocessor definitions** field is preprocessed before all other (System)Verilog code in your project. This allows you to, for example, set global defines without an explicit `include` statement.
+The code in the **Initial preprocessor definitions** field is preprocessed before all other SystemVerilog code in your project. This allows you to, for example, set global defines without an explicit `include` statement.
 
 
 ## Verilog version
