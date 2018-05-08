@@ -46,7 +46,8 @@ Throughout the documentation, features that are only available in this version a
 
 # Languages
 
-Sigasi supports VHDL and Verilog.
+Sigasi Studio supports VHDL, Verilog and SystemVerilog.
+Whenever SystemVerilog is used in this manual, Verilog is implied.
 
 ## VHDL {: #vhdl}
 
