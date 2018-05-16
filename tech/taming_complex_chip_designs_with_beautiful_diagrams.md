@@ -7,6 +7,7 @@ date: 2017-10-24
 tags:
   - VHDL
   - Xtext
+  - graphics
   - graphics configuration
   - slideshare
 comments: true

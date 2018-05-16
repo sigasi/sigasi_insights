@@ -7,6 +7,7 @@ date: 2017-08-31
 tags: 
   - VHDL
   - graphics
+  - graphics configuration
   - BlockDiagram
   - StateMachine
 comments: true
