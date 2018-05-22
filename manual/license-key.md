@@ -46,7 +46,7 @@ INCREMENT com.sigasi.hdt sigasi 2.0 18-nov-2012 4 \
         8DF4 106C 52B4 EECE 0A69 CBAC 0CF2 47E2 00F2 A244 E22F"
 ```
 
-## Configuring Floating license in Sigasi Studio (Flexnet Client)
+## Configuring Floating license in Sigasi Studio (FlexNet Client)
 
 In order to use a floating license, Sigasi Studio needs to know how to contact the server.
 The license server can be configured in Sigasi Studio or using an environment variable.
@@ -99,7 +99,7 @@ export SIGASI_LM_LICENSE_FILE="27000@myserver1.example.com:27000@myserver2.examp
 * Windows (Windows 7 or newer):
 	* [Windows 64 bit](http://download.sigasi.com/flexnet/sigasi-flexnet-win64.zip)
 	* [Windows 32 bit](http://download.sigasi.com/flexnet/sigasi-flexnet-win32.zip)
-* Solaris (on SPARC) \[Deprecated. Last supported Sigasi Studio version will be 3.6]:
+* Solaris (on SPARC) \[Deprecated. The last supported Sigasi Studio version is 3.6]:
 	* [Solaris 64 bit](http://download.sigasi.com/flexnet/sigasi-flexnet-solaris64.zip)
 
 ### Customize License Server settings
@@ -113,9 +113,9 @@ The port of the FlexNet daemon is set on the `SERVER` line For example: `SERVER 
 You can change the ports and servername without breaking the signature.
 	
 
-### Starting the Flexnet and Sigasi Daemon on Linux
+### Starting the FlexNet and Sigasi daemon on Linux
 
-the easiest way to start the Sigasi Flexnet Daemon is like this (on Linux)
+the easiest way to start the Sigasi FlexNet daemon is like this (on Linux)
 
 ```
 #!/bin/sh
@@ -124,7 +124,7 @@ LOCATION=/home/flex/flexnet-sigasi
 $LOCATION/lmgrd -c $LOCATION/sigasi.lic -l $LOCATION/debug.log
 ```
 
-### Starting the Flexnet and Sigasi Daemon on Windows
+### Starting the FlexNet and Sigasi daemon on Windows
 
 1. Download the Sigasi daemon (see above)
 2. Create a folder to hold the license manager software, in this example we will use `D:\Sigsi\license`.
@@ -167,7 +167,7 @@ To get the license back (to check the license out), open the license dialog **He
 
 ### How to block Sigasi Studio from checking out a license?
 
-If you have configured an environment variable with the location of a Flexnet license server, you can instruct Sigasi Studio **not** to check out a license by setting the Sigasi Studio License key to `none`.
+If you have configured an environment variable with the location of a FlexNet license server, you can instruct Sigasi Studio **not** to check out a license by setting the Sigasi Studio License key to `none`.
 
 ### Mix of Creator and XL licenses
 
@@ -223,7 +223,7 @@ If your floating license server does not function properly, try the following st
     ```
     * If the server is running correctly, you should see a description of the valid FlexNet features served by you license server. 
 * Make sure the server name in the license key file is correct.
-* Make sure both the Sigasi and Flexnet Daemon are the same version (i.e. from the same zip-file from the Sigasi download server).   
+* Make sure both the Sigasi and FlexNet daemon are the same version (i.e. from the same zip-file from the Sigasi download server). If you need to mix versions, the FlexNet daemon version should be equal to or higher than the Sigasi daemon version.
 * **Firewall** problems:
 	* make sure that the port for the Sigasi FlexLM license daemon is open
 	* you can force the port for the Sigasi license daemon by adding USE_SERVER and DAEMON sigasi port=<port number>to your license key
