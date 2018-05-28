@@ -145,7 +145,7 @@ You can also enable/disable code folding and perform other actions by right-clic
 
 ### Rename refactoring
 
-Right click on any identifier (VHDL or SystemVerilog) and select **Refactor > Rename element** (**Ctrl+Shift+R**) to change the name of the declaration and all its references. If you press **Ctrl+Shift+R** twice, you can preview the rename before applying it.
+Right click on any identifier (VHDL or SystemVerilog) and select **Refactor > Rename element** (**Alt+Shift+R**) to change the name of the declaration and all its references. If you press **Alt+Shift+R** twice, you can preview the rename before applying it.
 
 ### Full screen view
 
