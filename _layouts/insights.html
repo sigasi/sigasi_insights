@@ -57,12 +57,18 @@
 <div class="spb_content_element" style="padding-top:0px;padding-bottom:0px;">
 	<section class="container">
 		<div class="row multi-column-row" style="min-height: 172px;background: #262262!important;color: #ffffff!important">
-			{% for item in this.content|filtercontent('/screencasts/')|sortpopular|filterfirst(4) %}
+			{% for item in this.content|filtercontent('/screencasts/')|filterlatest(4) %}
 			<div class="spb_content_element spb_box_content col-sm-3" style="min-height: 172px;">
 				<div class="spb-bg-color-wrap coloured" >
 					<div class="spb-asset-content">
 						<div class="box-content-wrap" style="padding-top:10%;padding-bottom:10%;padding-left:0%;padding-right:0%;">
-							{{item.videoid|wistia(240,160)}}
+							{% if item.layout == 'youtube'%}
+							<div style="display: table;margin: 0 auto;">
+							  {{item.videoid|youtube(240,160)}}
+							</div>
+							{% else %}
+							  {{item.videoid|wistia(240,160)}}
+							{% endif %}
 							<h5 style="text-align: center;" title="{{item.title}}"><span style="color: #ffffff;">{{item.title|truncate(35)}}</span></h5>
 						</div>
 					</div>
