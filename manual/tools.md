@@ -107,6 +107,8 @@ Currently the following external compilers are supported:
 | [OneSpin]               | true                  | (run elaboration checks) |
 | GHDL                    | true                  | true                     |
 
+For information on where to obtain free HDL simulators, see [this section in our FAQ][/faq#Which free VHDL simulator can I use].
+
 ## Save-time compilation
 
 Sigasi Studio can use an external VHDL or Verilog compiler for additional code validation. At this time, Sigasi Studio supports:
