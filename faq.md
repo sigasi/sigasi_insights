@@ -334,11 +334,8 @@ Procedure:
 
 ## Does Sigasi Studio support VHDL-2008?
 
-Sigasi Studio supports VHDL-2008 features, except:
-
-* Inline PSL (not supported, but PSL in comments is safely ignored)
-* New generics on packages: subprogram generics (not supported)
-* New generics on subprograms (not supported)
+Sigasi Studio supports VHDL-2008 features.
+Inline PSL is not supported, but PSL in comments is safely ignored.
 
 ## Why don't you have feature XYZ? How can I put in on your roadmap?
 
