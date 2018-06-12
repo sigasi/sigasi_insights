@@ -40,6 +40,10 @@ The association rules are illustrated in the image below:
 
 The **Formatter** and **[Structural select][/screencasts/structured-select]** respect (and fix) comments according to the association rules.
 
+## Special cases
+
+* VHDL **components** and **component instantiations**: If a `component` (or one of its ports or generics) does not have comment itself, Sigasi Studio will use the comment of the corresponding `entity`. This also works for component instantiations.
+
 # Comment markup with MarkDown
 
 VHDL and SystemVerilog comments are processed with a [Markdown processor](https://en.wikipedia.org/wiki/Markdown). This allows to add markup (e.g. bold, code, paragraphs, hyperlinks,...) to comments. This results in nicer hovers and documentation.
@@ -53,5 +57,5 @@ In hovers the complete Markdown syntax is supported. For PDF documentation gener
 * *emphasis* (`*emphasis*`)
 * **strong** (`**strong**`)
 * lists
-* tables
+* tables (with alignment)
 * external links and email addresses (`<http://www.sigasi.com>`, `[Sigasi](http://www.sigasi.com)` and `<sales@sigasi.com>`)

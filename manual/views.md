@@ -72,15 +72,13 @@ the editor.
 
 # Hierarchy view {: #hierarchy}
 
-[vhdl_only]
-
-The Hierarchy view shows the VHDL design hierarchy starting at a selected top level object. To choose a top level, open a file and right-click on an architecture (or entity or configuration). Then click **Set as Top Level**. Alternatively you can click the **Set Top** button in the hierarchy view to open a hierarchy top level selection dialog. You can use the filter field to quickly search for a certain top level.
+The Hierarchy view shows the design hierarchy starting at a selected top level object. To choose a top level, open a file and right-click on an `architecture` (or `entity` or `configuration` or `module`). Then click **Set as Top Level**. Alternatively you can click the **Set Top** button in the hierarchy view to open a hierarchy top level selection dialog. You can use the filter field to quickly search for a certain top level.
 
 The hierarchy view automatically refreshes itself when you save your design files. If you have a really large design this could slow you down. You can turn the automatic refresh on and off by toggling the **refresh** button ![](icons/refresh.gif).
 
-To highlight the current selection of the VHDL editor in the hierarchy view, enable the **Link with Editor** button ![](icons/linkprojectexplorer.png). If the editor selection is part of the evaluated hierarchy tree, the corresponding hierarchy tree node will be selected.
+To highlight the current selection of the HDL editor in the hierarchy view, enable the **Link with Editor** button ![](icons/linkprojectexplorer.png). If the editor selection is part of the evaluated hierarchy tree, the corresponding hierarchy tree node will be selected.
 
-The hierarchy view also shows the **generic and constants values** of components in the hierarchy.
+The hierarchy view also shows the **generic and constants values** of VHDL components in the hierarchy.
 The internal compiler computes the generics and constants, even if they are passed down through the hierarchy, and even if arithmetic operations are used to define new values. If the value cannot be computed for some reason, the
 Hierarchy View will report the value to be *unknown*.
 
@@ -138,10 +136,10 @@ You can configure extra tags in the Task Tag preference page:
 
 # Block Diagram View {: #block}
 
-[xl_doc_only],[vhdl_only]
+[xl_doc_only]
 
 The **Block Diagram View** displays a graphical (block diagram) view
-of all architectures and its instantiations in your current VHDL editor.
+of all architectures and its instantiations in your current VHDL or (System)Verilog editor.
 
 This viewer **automatically updates** when you **save** your code and
 gives a convenient way to visually inspect and navigate your code, even
@@ -151,7 +149,7 @@ when your code is still unfinished or broken.
 
 You can open the block diagram view by right clicking in the editor and
 selecting **Show In \> Block Diagram**. Alternatively you can open the
-view via **Window \> View \> Other… \> VHDL \> Block Diagram**.
+view via **Window \> Show View \> Other… \> Sigasi \> Block Diagram**.
 
 You can also **double click blocks**, **ports** or **wires** to navigate
 to the corresponding VHDL code. If you want to *go into* a block, you
@@ -164,17 +162,17 @@ You can also export **all** *block diagrams of an entire project* at once: Click
 
 # State Machine View {: #fsm}
 
-[xl_doc_only],[vhdl_only]
+[xl_doc_only]
 
-The **State Machine View** displays a graphical (bubble diagram) view of all state machines in your current VHDL editor. This viewer automatically updates while you are editing your code and gives a convenient way to visually inspect and navigate your code, even when your code is still unfinished or broken.
+The **State Machine View** displays a graphical (bubble diagram) view of all state machines in your current VHDL or SystemVerilog editor. This viewer automatically updates while you are editing your code and gives a convenient way to visually inspect and navigate your code, even when your code is still unfinished or broken.
 
 ![](images/statemachineviewer.png)
 
-You can open the state machine view by right clicking in the editor and selecting **Show In > State Machines**. Alternatively you can open the view via **Window > View > Other... > VHDL > State Machines**.
+You can open the state machine view by right clicking in the editor and selecting **Show In > State Machines**. Alternatively you can open the view via **Window \> Show View \> Other… \> Sigasi \> State Machines**.
 
 If you have documented your state transitions (i.e. the assignments), the comments will be added as text to the transitions in the view.
 
-You can also **double-click nodes** or **transitions** to navigate to the corresponding VHDL code.
+You can also **double-click nodes** or **transitions** to navigate to the corresponding HDL code.
 
 With the ![](icons/font.png) button, you can toggle the display of edge labels. These labels show the code comments of the transition statements.
 You also have to option to **Zoom In**, **Zoom Out** or **Zoom to Fit**.
@@ -243,7 +241,8 @@ double-clicking the search results.
 
 ![](images/preprocessor-view.png)
 
-In the preprocessor view you can preview the expanded text of Verilog macros. This view automatically synchronizes with the active editor.
+In the preprocessor view you can preview the expanded text of Verilog macros. This view automatically synchronizes with the active editor. 
+When you select text in the (System)Verilog editor, the expanded text will be highlighted in the Preprocessor view. This also works the other way: when you select text in the Preprocessor view, the corresponding, original source will be selected in the editor.
 
 # Console view
 

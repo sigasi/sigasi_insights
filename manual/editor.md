@@ -129,7 +129,9 @@ The tool provides help to autocomplete:
 * component declarations
 * component instantiations
 * entity instantiations
+* module instantiations
 * case statements (based on variables/signals with an enumeration type)
+* (System)Verilog preprocessor/macro directives (`` `define``, `` `ifndef``, ...)
 
 ## Other editor features
 
@@ -415,7 +417,7 @@ described in this chapter.
 
 ## Type-time Syntax error reporting
 
-Sigasi Studio marks Verilog syntax errors while you type.
+Sigasi Studio marks Verilog syntax errors while you type. It will also report broken preprocessor code.
 
 ## Initial preprocessor definitions for SystemVerilog projects
 
