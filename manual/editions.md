@@ -16,19 +16,17 @@ Sigasi Studio Starter works without a license key, but requires [/manual/talkbac
 
 Sigasi Studio **Creator** is the go-to design entry tool and code browser for all your HDL projects.
 
-Throughout the documentation, features that are only available in this version are marked as "\[[creator]\]".
-
 ## Sigasi Studio XL {: #xl}
 
 Sigasi Studio XL is Sigasi's flagship product. A license for Sigasi Studio XL unlocks all features that come with Sigasi Creator.
 
-Throughout the documentation, features that are only available in this version are marked as "\[[xl]\]".
+Throughout the documentation, features that are only available in this version are marked as "[xl_only]".
 
-## Sigasi Studio XL Doc {: #xl_doc}
+## Sigasi Studio XPRT {: #xprt}
 
-*Sigasi Studio XL Doc* is the short name for Sigasi Studio XL with the **Documentation add-on**. A license for Sigasi Studio XL Doc unlocks all features that come with Sigasi Studio Creator and Sigasi Studio XL.
+*Sigasi Studio XPRT* is the most complete version of Sigasi Studio. It unlocks all features of Sigasi Studio Creator and XL, plus the graphical views, documentation generation,...
 
-Throughout the documentation, features that are only available in this version are marked as "\[[xl_doc]\]".
+Throughout the documentation, features that are only available in this version are marked as "[xprt_only]".
 
 # Legacy Editions
 
@@ -43,6 +41,10 @@ Throughout the documentation, features that are only available in this version a
 ## Sigasi Premium with Documentation add-on {: #premium-doc}
 
 *Sigasi Premium Doc* was the [#xl_doc] edition of Sigasi 2.x
+
+## Sigasi Studio XL Doc {: #xl_doc}
+
+*Sigasi Studio XL Doc* is the old name for Sigasi Studio XPRT.
 
 # Languages
 

@@ -113,12 +113,15 @@ reflinks:
     xl_doc:
         title: "Sigasi Studio XL Doc"
         url: "/manual/editions.html#xl_doc"
+    xprt:
+        title: "Sigasi Studio XPRT"
+        url: "/manual/editions.html#xprt"
     xl_only:
         title: "[Only in Sigasi Studio XL]"
         url: "/manual/editions.html#xl"
-    xl_doc_only:
-        title: "[Only in Sigasi Studio XL Doc]"
-        url: "/manual/editions.html#xl_doc"
+    xprt_only:
+        title: "[Only in Sigasi Studio XPRT]"
+        url: "/manual/editions.html#xprt"
     vhdl_only:
         title: "[Only for VHDL]"
         url: "/manual/editions.html#vhdl"

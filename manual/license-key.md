@@ -173,18 +173,19 @@ If you have configured an environment variable with the location of a FlexNet li
 
 If your license server serves both Sigasi Studio **Creator** and **XL** licenses, you can configure Sigasi Studio to only checkout Sigasi Studio **Creator** licenses (and **not** XL licenses) by enabling the "**Do not try to checkout floating Sigasi Studio XL licenses**" option on **Window > Preferences > Sigasi > License Key > Floating Options**
 
-### Checking out and releasing the Doc addon license
+### Checking out and releasing the XPRT license
 
-If you have licenses for Sigasi Studio XL Doc, this is actually licensed as Sigasi Studio XL, with a Doc add-on license. The XL license is checked out as described above.
+If you have licenses for Sigasi Studio XPRT, this is actually licensed as a Sigasi Studio XL Flexnet feature and an 
+XPRT Flexnet feature. The XL license is checked out as described above.
 
-The Doc add-on is checked out automatically in the following cases:
+The XPRT license is checked out automatically in the following cases:
 
 * When you open the Block Diagram view
 * When you open the State Machine view
 * When you try to export PDF documentation
-* When you click **Help > Sigasi > Floating License > Check out Sigasi Studio XL Doc license**
+* When you click **Help > Sigasi > Floating License > Check out Sigasi Studio XPRT license**
 
-The Doc add-on license is released via: **Help > Sigasi > Floating license > Release Sigasi Studio XL Doc Floating Licenses**.
+The XPRT license is released via: **Help > Sigasi > Floating license > Release Sigasi Studio XPRT Floating Licenses**.
 
 
 # Troubleshooting

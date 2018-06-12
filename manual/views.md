@@ -136,7 +136,7 @@ You can configure extra tags in the Task Tag preference page:
 
 # Block Diagram View {: #block}
 
-[xl_doc_only]
+[xprt_only]
 
 The **Block Diagram View** displays a graphical (block diagram) view
 of all architectures and its instantiations in your current VHDL or (System)Verilog editor.
@@ -162,7 +162,7 @@ You can also export **all** *block diagrams of an entire project* at once: Click
 
 # State Machine View {: #fsm}
 
-[xl_doc_only]
+[xprt_only]
 
 The **State Machine View** displays a graphical (bubble diagram) view of all state machines in your current VHDL or SystemVerilog editor. This viewer automatically updates while you are editing your code and gives a convenient way to visually inspect and navigate your code, even when your code is still unfinished or broken.
 
