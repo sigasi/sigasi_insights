@@ -1,5 +1,5 @@
 ---
-title: Sigasi Studio Preview (3.9)
+title: Sigasi Studio Preview (4.0)
 layout: page
 pager: true
 date: 2018-04-19
@@ -18,7 +18,7 @@ Although these preview releases are less rigorously tested than than the officia
 
 ## SystemVerilog Graphical Views
 * **State Machine** view for enum-based statemachines in **SystemVerilog**.
-[![State Machine View for SystemVerilog](/releasenotes/3.9/systemverilog_fsm.png)](/releasenotes/3.9/systemverilog_fsm.png)
+[![State Machine View for SystemVerilog](/releasenotes/4.0/systemverilog_fsm.png)](/releasenotes/4.0/systemverilog_fsm.png)
 * **Block Diagram** view for SystemVerilog modules
 
 ##Other
