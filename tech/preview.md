@@ -1,8 +1,8 @@
 ---
-title: Sigasi Studio Preview (4.0)
+title: Sigasi Studio Preview (4.1)
 layout: page
 pager: true
-date: 2018-04-19
+date: 2018-06-20
 comments: true
 ---
 
@@ -15,16 +15,6 @@ Although these preview releases are less rigorously tested than than the officia
 *If you run into any problems, please let us know*.
 
 # Current preview release
-
-## SystemVerilog Graphical Views
-* **State Machine** view for enum-based statemachines in **SystemVerilog**.
-[![State Machine View for SystemVerilog](/releasenotes/4.0/systemverilog_fsm.png)](/releasenotes/4.0/systemverilog_fsm.png)
-* **Block Diagram** view for SystemVerilog modules
-
-##Other
-
-* Support alignment in Markdown tables
-* Dropped support for legacy (Pro, Premium) licenses
 
 # Update or install?
 

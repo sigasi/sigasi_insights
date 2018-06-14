@@ -5,20 +5,20 @@ pager: true
 date: 2018-06-20
 comments: true
 ---
-Sigasi Studio 4.0 ...
+Sigasi Studio 4.0 is ...
 Read below to find more new and noteworthy changes.
 
 # Sigasi Studio 4.0
 
-- XL_DOC -> XPRT
-
+- Major release
+- "XL DOC" now "XPRT"
 [![Sigasi Studio XPRT license](/releasenotes/4.0/xprt.png "Sigasi Studio XPRT license")](/releasenotes/4.0/xprt.png)
-
 - Dropped support for legacy Sigasi 2.0 licenses
 
+**Notes** about the update:
 **TODO** add note about perspectives (fall back : close all editors and reset perspective)
 
-# Block Diagrams for (System)Verilog modules
+# Block Diagrams for SystemVerilog modules
 
 Sigasi Studio 4.0 introduces **block diagrams** for SystemVerilog modules. You can open the block diagram view by right clicking in a SystemVerilog editor and selecting **Show In > Block Diagram**.  
 
@@ -59,23 +59,23 @@ Sigasi Studio 4.0 also contains a lot of improvements to enhance your SystemVeri
 
 - Improved performance for SystemVerilog autocomplete
 - **Autocomplete** for **preprocessor directives**
-[![Autocomplete for (System)Verilog preprocessor directives](/releasenotes/4.0/autocomplete_verilog_directives.png "Autocomplete for (System)Verilog preprocessor directives")](/releasenotes/4.0/autocomplete_verilog_directives.png)
+[![Autocomplete for SystemVerilog preprocessor directives](/releasenotes/4.0/autocomplete_verilog_directives.png "Autocomplete for SystemVerilog preprocessor directives")](/releasenotes/4.0/autocomplete_verilog_directives.png)
 - Report **errors** for incorrect SystemVerilog **preprocessor directives**
-[![Report errors in (System)Verilog preprocessor directives](/releasenotes/4.0/directive_errors.png "Report errors in (System)Verilog preprocessor directives")](/releasenotes/4.0/directive_errors.png)
+[![Report errors in SystemVerilog preprocessor directives](/releasenotes/4.0/directive_errors.png "Report errors in SystemVerilog preprocessor directives")](/releasenotes/4.0/directive_errors.png)
 - Improved and polished the SystemVerilog [/manual/views#outline]
 - Extra autocomplete templates for SystemVerilog assertions
 [![Autocomplete templates for SystemVerilog assertions](/releasenotes/4.0/assertion_templates.png "Autocomplete templates for SystemVerilog assertions")](/releasenotes/4.0/assertion_templates.png)
 - A new wizard to easily import existing SystemVerilog projects (that were created before you were using Sigasi Studio)  
-[![Import wizard for existing (System)Verilog projects](/releasenotes/4.0/import_existing_systemverilog_project.png "Import wizard for existing (System)Verilog projects")](/releasenotes/4.0/import_existing_systemverilog_project.png)
+[![Import wizard for existing SystemVerilog projects](/releasenotes/4.0/import_existing_systemverilog_project.png "Import wizard for existing SystemVerilog projects")](/releasenotes/4.0/import_existing_systemverilog_project.png)
 - Improved handling of **include files**: Sigasi Studio analyses includes files in the context of their *includer*. This results in better error reporting and autocompletes. This release improves the **outline** and **formatting** of include files.
-- Improved (System)Verilog preprocessor view:
+- Improved SystemVerilog preprocessor view:
     * Added an overview ruler
     * Show squiggly lines for errors
     * Highlight current line
     * Synchronise selection in both directions: changing the selection in the preprocessor view now updates the selection in the edtior too
     * Improved syntax highlighting
-[![(System)Verilog preprocessor view](/releasenotes/4.0/better_preprocessor_view.png "(System)Verilog preprocessor view")](/releasenotes/4.0/better_preprocessor_view.png)
-- We also improved Systemverilog scoping (i.e. linking identifiers with their declaration). This results in a more accurate **Find references**, **Occurrence highlighting** and **Rename refactoring**. You can also enable **warnings for undeclared identifiers** via the **Ctrl-3** keyboard shortcut, and next typing **Toggle (System)Verilog problem markers**  
+[![SystemVerilog preprocessor view](/releasenotes/4.0/better_preprocessor_view.png "SystemVerilog preprocessor view")](/releasenotes/4.0/better_preprocessor_view.png)
+- We also improved Systemverilog scoping (i.e. linking identifiers with their declaration). This results in a more accurate **Find references**, **Occurrence highlighting** and **Rename refactoring**. You can also enable **warnings for undeclared identifiers** via the **Ctrl-3** keyboard shortcut, and next typing **Toggle SystemVerilog problem markers**  
 [![Warn about unresolved declarations](/releasenotes/4.0/toggle_verilog_markers.png "Warn about unresolved declarations")](/releasenotes/4.0/toggle_verilog_markers.png)
 
 # Other new and noteworthy improvements

@@ -152,7 +152,7 @@ selecting **Show In \> Block Diagram**. Alternatively you can open the
 view via **Window \> Show View \> Other… \> Sigasi \> Block Diagram**.
 
 You can also **double click blocks**, **ports** or **wires** to navigate
-to the corresponding VHDL code. If you want to *go into* a block, you
+to the corresponding HDL code. If you want to *go into* a block, you
 have to **select** it, right click and click **Open Entity Declaration** or **Open Architecture**.
 
 You can export the block diagram view to an image with the save
