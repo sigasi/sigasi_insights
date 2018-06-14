@@ -33,7 +33,7 @@ You can also customize and filter block diagrams by creating a [Graphic Configur
 
 # SystemVerilog State Machines
 
-The [/manual/views#fsm] now also visualizes `enum`-based statemachines in your SystemVerilog code. This view automatically updates while you are editing your code and gives a convenient way to visually inspect and navigate your code, even when your code is still unfinished or broken.
+The [State Machine View][/manual/views#fsm] now also visualizes `enum`-based statemachines in your SystemVerilog code. This view automatically updates while you are editing your code and gives a convenient way to visually inspect and navigate your code, even when your code is still unfinished or broken.
 
 You can open the state machine view by right clicking in the editor and selecting **Show In > State Machines**.
 
@@ -65,7 +65,7 @@ Sigasi Studio 4.0 also contains a lot of improvements to enhance your SystemVeri
 - Improved and polished the SystemVerilog [/manual/views#outline]
 - Extra autocomplete templates for SystemVerilog assertions
 [![Autocomplete templates for SystemVerilog assertions](/releasenotes/4.0/assertion_templates.png "Autocomplete templates for SystemVerilog assertions")](/releasenotes/4.0/assertion_templates.png)
-- A new wizard to easily import existing SystemVerilog projects (that were created before you were using Sigasi Studio)
+- A new wizard to easily import existing SystemVerilog projects (that were created before you were using Sigasi Studio)  
 [![Import wizard for existing (System)Verilog projects](/releasenotes/4.0/import_existing_systemverilog_project.png "Import wizard for existing (System)Verilog projects")](/releasenotes/4.0/import_existing_systemverilog_project.png)
 - Improved handling of **include files**: Sigasi Studio analyses includes files in the context of their *includer*. This results in better error reporting and autocompletes. This release improves the **outline** and **formatting** of include files.
 - Improved (System)Verilog preprocessor view:
@@ -75,7 +75,7 @@ Sigasi Studio 4.0 also contains a lot of improvements to enhance your SystemVeri
     * Synchronise selection in both directions: changing the selection in the preprocessor view now updates the selection in the edtior too
     * Improved syntax highlighting
 [![(System)Verilog preprocessor view](/releasenotes/4.0/better_preprocessor_view.png "(System)Verilog preprocessor view")](/releasenotes/4.0/better_preprocessor_view.png)
-- We also improved Systemverilog scoping (i.e. linking identifiers with their declaration). This results in a more accurate **Find references**, **Occurrence highlighting** and **Rename refactoring**. You can also enable **warnings for undeclared identifiers** via the **Ctrl-3** keyboard shortcut, and next typing **Toggle (System)Verilog problem markers**.
+- We also improved Systemverilog scoping (i.e. linking identifiers with their declaration). This results in a more accurate **Find references**, **Occurrence highlighting** and **Rename refactoring**. You can also enable **warnings for undeclared identifiers** via the **Ctrl-3** keyboard shortcut, and next typing **Toggle (System)Verilog problem markers**  
 [![Warn about unresolved declarations](/releasenotes/4.0/toggle_verilog_markers.png "Warn about unresolved declarations")](/releasenotes/4.0/toggle_verilog_markers.png)
 
 # Other new and noteworthy improvements
@@ -84,7 +84,7 @@ Sigasi Studio 4.0 also contains a lot of improvements to enhance your SystemVeri
 - Documentation: support alignment in tables
 [![Alignment in tables](/releasenotes/4.0/alignment_in_tables.png "Alignment in tables")](/releasenotes/4.0/alignment_in_tables.png)
 - Mixed: Added a hyperlink (**Ctrl**) from VHDL `component` declarations and instantiations to the corresponding `module` declaration in mixed designs.
-- VHDL: The `component` autocomplete in Sigasi Studio does not copy comments because it is to dangerous for these copied comments to get out of sync and cause confusion. To still easily access the comments of the original `entity`, the hover of `components` now fetches to comments of the entity. This also works for `component` instantiations.
+- VHDL: The `component` autocomplete in Sigasi Studio does not copy comments because it is to dangerous for these copied comments to get out of sync and cause confusion. To still easily access the comments of the original `entity`, the hover of `components` now fetches to comments of the entity. This also works for `component` instantiations.  
 [![Entity comments in component (instantiation) hovers](/releasenotes/4.0/component_instantiation_hover.png "Entity comments in component (instantiation) hovers")](/releasenotes/4.0/component_instantiation_hover.png)
 
 # Bug fixes
