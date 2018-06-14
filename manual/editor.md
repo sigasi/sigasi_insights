@@ -8,11 +8,13 @@ The Editor shows the content of files, and allows you to edit
 files. It is a tabbed view so that multiple files can be open for
 editing simultaneously. The currently selected file is the active file.
 
-# VHDL and Verilog Editor
+# VHDL and SystemVerilog Editor
 
-The VHDL and Verilog editors are optimized to help you browse and edit VHDL and Verilog code. Most browsing and editing features are similar for both languages.
+The VHDL and SystemVerilog (or Verilog) editors are optimized to help
+you browse and edit VHDL and SystemVerilog code.
+Most browsing and editing features are similar for both languages.
 
-*Language specific features* are explained in "[#VHDL Specific]" and "[#Verilog Specific]".
+*Language specific features* are explained in "[#VHDL Specific]" and "[#SystemVerilog Specific]".
 
 ## Code highlighting (syntax coloring)
 
@@ -29,6 +31,10 @@ Semantic highlighting means that code gets colored according to their
 
 Code highlighting is fully configurable. **Color**, **background**,
 **style** and **font** can be customized. Learn more about [configuring colors](/manual/config.html#configure-colors).
+
+## Type-time Syntax error reporting
+
+Sigasi Studio marks VHDL and SystemVerilog syntax errors while you type. It will also report broken SystemVerilog preprocessor code.
 
 ## Project exploration and navigation {: #gui-navigate}
 
@@ -98,7 +104,8 @@ Some autocompletions are templates which require further user input. In such a c
 
 ### Based on templates
 
-Sigasi Studio can help you to declare VHDL and Verilog objects, using autocompletion based on templates. Sigasi Studio comes preconfigured with templates for all common declarations and statements, including (for VHDL):
+Sigasi Studio can help you to declare VHDL and SystemVerilog objects, using autocompletion based on templates.
+Sigasi Studio comes preconfigured with templates for all common declarations and statements, including (for VHDL):
 
 * function, procedure
 * process
@@ -131,7 +138,7 @@ The tool provides help to autocomplete:
 * entity instantiations
 * module instantiations
 * case statements (based on variables/signals with an enumeration type)
-* (System)Verilog preprocessor/macro directives (`` `define``, `` `ifndef``, ...)
+* SystemVerilog preprocessor/macro directives (`` `define``, `` `ifndef``, ...)
 
 ## Other editor features
 
@@ -147,7 +154,8 @@ You can also enable/disable code folding and perform other actions by right-clic
 
 ### Rename refactoring
 
-Right click on any identifier (VHDL or SystemVerilog) and select **Refactor > Rename element** (**Alt+Shift+R**) to change the name of the declaration and all its references. If you press **Alt+Shift+R** twice, you can preview the rename before applying it.
+Right click on any identifier (VHDL or SystemVerilog) and select **Refactor > Rename element** (**Alt+Shift+R**) to change the name of the declaration and all its references.
+If you press **Alt+Shift+R** twice, you can preview the rename before applying it.
 
 ### Full screen view
 
@@ -171,7 +179,7 @@ or press the **Toggle Block Selection** icon in the tool bar.
 
 ### Structured selection
 
-Structured Select enables you to select VHDL or Verilog code, based on its *syntactic structure*. (Screencast: "[/screencasts/structured-select]")
+Structured Select enables you to select VHDL or SystemVerilog code, based on its *syntactic structure*. (Screencast: "[/screencasts/structured-select]")
 
 * **Shift+Alt+Up**, expands the selection to the smallest syntax element that contains the current selection. You can then further expand the selection by invoking the action again.
 * **Shift+Alt+Down**, contracts the current selection to the nested syntax expression that still contains the current cursor position. You can then further contract the selection by invoking the action again.
@@ -408,16 +416,12 @@ this can be done following these steps:
 * A warning will show offering to open the file in read-only mode.
 Choose **No** if you want to edit the file.
 
-# Verilog Specific
+# SystemVerilog Specific
 
-In addition to the powerful features of an Eclipse editor, the Verilog
+In addition to the powerful features of an Eclipse editor, the SystemVerilog
 editor that comes with Sigasi Studio supports a number of advanced editing
-features which are specifically useful for Verilog editing. These are
+features which are specifically useful for SystemVerilog editing. These are
 described in this chapter.
-
-## Type-time Syntax error reporting
-
-Sigasi Studio marks Verilog syntax errors while you type. It will also report broken preprocessor code.
 
 ## Initial preprocessor definitions for SystemVerilog projects
 
@@ -431,7 +435,8 @@ The code in the **Initial preprocessor definitions** field is preprocessed befor
 
 ## Verilog version
 
-You can configure the Verilog version (Verilog or SystemVerilog) via **Window > Preferences**, **Sigasi > Verilog** and **Verilog version**.
+You can configure the Verilog version via **Window > Preferences > Sigasi > (System)Verilog**
+and select whether \*.v files are treated as **Verilog** or **SystemVerilog**.
 
 ## Format
 
@@ -448,7 +453,7 @@ level. E.g. an extra indent after a `module` and remove an indent for
 the matching `endmodule`.
 
 You can enable/disable this feature via **Window \> Preferences \>
-Sigasi \> Verilog** by toggling the **“Enter adjusts indentation on
+Sigasi \> (System)Verilog** by toggling the **“Enter adjusts indentation on
 current and next line”** setting.
 
 **Tabs vs. spaces:** This features inserts tabs characters or spaces,
@@ -459,19 +464,26 @@ See also:
 * [tabs-and-spaces].
 * Screencast : [/screencasts/verilog-smart-indent]
 
-## Verilog Preprocessing/Macros
+## SystemVerilog Preprocessing/Macros
 
-When you hover over a Verilog preprocessor directive (e.g. `include ...`), Sigasi Studio presents you the preprocessed text. This hover also shows you, at the bottom, a convenient link to open the [views#Preprocessor View].
+When you hover over a SystemVerilog preprocessor directive (e.g. `include ...`), Sigasi Studio presents you the preprocessed text.
+This hover also shows you, at the bottom, a convenient link to open the [views#Preprocessor View].
 
 ![](images/preprocessor-hover.png)
 
-In the [views#Preprocessor View], you can preview the expanded version of your preprocessed Verilog source files.
+In the [views#Preprocessor View], you can preview the expanded version of your preprocessed SystemVerilog source files.
 
-You can configure the include paths of your Verilog projects in the Verilog Preprocessor Property page. You can open this page by right clicking your Verilog project and selecting **Properties > Verilog Preprocessor**.
+You can configure the include paths of your SystemVerilog projects in the (System)Verilog Preprocessor Property page.
+You can open this page by right clicking your SystemVerilog project and selecting **Properties > (System)Verilog Preprocessor**.
 ![](images/preprocessor-property-page.png)
 
-You can specify multiple include paths by separating them with a `;`. All paths are relative to the project folder. You can add the main project folder as include path by entering `.`.
+You can specify multiple include paths by separating them with a `;`.
+All paths are relative to the project folder.
+You can add the main project folder as include path by entering `.`.
 
 You can also add an include path by running the Quick Fix on \``include` errors.
 
-**Ctrl+Click** on *\`defines* (or **F3**) will lead you to the corresponding declaration. Autocomplete will also offer you a list of all visible *\`defines*.
+On the (System)Verilog Preprocessor Property page you can also declare **Initial preprocessor definitions**.
+
+**Ctrl+Click** on *\`defines* (or **F3**) will lead you to the corresponding declaration.
+Autocomplete will also offer you a list of all visible *\`defines*.
