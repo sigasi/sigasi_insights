@@ -20,56 +20,72 @@ Read below to find more new and noteworthy changes.
 
 # Block Diagrams for (System)Verilog modules
 
+Sigasi Studio 4.0 introduces **block diagrams** for SystemVerilog modules. You can open the block diagram view by right clicking in a SystemVerilog editor and selecting **Show In > Block Diagram**.  
+
 [![Block Diagram View for SystemVerilog](/releasenotes/4.0/sv_block_diagram.png "Block Diagram View for SystemVerilog")](/releasenotes/4.0/sv_block_diagram.png)
 
+The [Block Diagram View][/manual/views#block] **automatically updates** when you **save** your code and gives a convenient way to visually inspect and navigate your code, even
+when your code is still unfinished or broken.
 
 [![Block Diagram Graphics Configuration for SystemVerilog](/releasenotes/4.0/sv_graphic_configuration.png "Block Diagram Graphics Configuration for SystemVerilog")](/releasenotes/4.0/sv_graphic_configuration.png)
 
-* **Block Diagram** view for SystemVerilog modules
-* \+ Graphics Configuration
+You can also customize and filter block diagrams by creating a [Graphic Configuration][/tech/using-graphics-configuration].
 
 # SystemVerilog State Machines
 
-* **State Machine** view for enum-based statemachines in **SystemVerilog**.
+The [/manual/views#fsm] now also visualizes `enum`-based statemachines in your SystemVerilog code. This view automatically updates while you are editing your code and gives a convenient way to visually inspect and navigate your code, even when your code is still unfinished or broken.
+
+You can open the state machine view by right clicking in the editor and selecting **Show In > State Machines**.
+
 [![State Machine View for SystemVerilog](/releasenotes/4.0/systemverilog_fsm.png)](/releasenotes/4.0/systemverilog_fsm.png)
 
-* \+ Graphics Configuration
+You can **double-click nodes** or **transitions** to navigate to the corresponding SystemVerilog code. 
+
+You can also customize and filter state machine diagrams by creating a [Graphic Configuration][/tech/using-graphics-configuration].
 
 # SystemVerilog and Mixed Hierarchies in the Hierarchy View
 
-- Hierarchy for System Verilog and Mixed
+The hierarchy engine in Sigasi Studio was updated to handle SystemVerilog, VHDL and mixed language designs. The [/manual/views#hierarchy] automatically refreshes itself when you save your design files.
+
+This is a convenient and powerful method to navigate through your design.
 
 [![SystemVerilog and Mixed Hierarchies in the Hierarchy View](/releasenotes/4.0/mixed_hierarchy.png "SystemVerilog and Mixed Hierarchies in the Hierarchy View")](/releasenotes/4.0/mixed_hierarchy.png)
 
+[Hierarchy View documentation][/manual/views#hierarchy]
+
 # More SystemVerilog improvements
 
-- Autocomplete for preprocessor directives
-[![Autocomplete for (System)Verilog preprocessor directives](/releasenotes/4.0/autocomplete_verilog_directives.png "Autocomplete for (System)Verilog preprocessor directives")](/releasenotes/4.0/autocomplete_verilog_directives.png)
-- Report error markers for incorrect (System)Verilog preprocessor directives
-[![Report errors in (System)Verilog preprocessor directives](/releasenotes/4.0/directive_errors.png "Report errors in (System)Verilog preprocessor directives")](/releasenotes/4.0/directive_errors.png)
-- Improved Systemverilog scoping (show warnings with ...)
-- Improved SV outline
-- Autocomplete templates for SystemVerilog assertions
-[![Autocomplete templates for SystemVerilog assertions](/releasenotes/4.0/assertion_templates.png "Autocomplete templates for SystemVerilog assertions")](/releasenotes/4.0/assertion_templates.png)
-- Add wizard to import existing verilog project
-[![Import wizard for existing (System)Verilog projects](/releasenotes/4.0/import_existing_systemverilog_project.png "Import wizard for existing (System)Verilog projects")](/releasenotes/4.0/import_existing_systemverilog_project.png)
-- Improved handling of include files (formatting, outline ,...)
-- Improved (System)Verilog preprocessor view: ...
-[![(System)Verilog preprocessor view](/releasenotes/4.0/better_preprocessor_view.png "(System)Verilog preprocessor view")](/releasenotes/4.0/better_preprocessor_view.png)
-- Improved performance for SystemVerilog autocomplete
+Sigasi Studio 4.0 also contains a lot of improvements to enhance your SystemVerilog editing experience:
 
+- Improved performance for SystemVerilog autocomplete
+- **Autocomplete** for **preprocessor directives**
+[![Autocomplete for (System)Verilog preprocessor directives](/releasenotes/4.0/autocomplete_verilog_directives.png "Autocomplete for (System)Verilog preprocessor directives")](/releasenotes/4.0/autocomplete_verilog_directives.png)
+- Report **errors** for incorrect SystemVerilog **preprocessor directives**
+[![Report errors in (System)Verilog preprocessor directives](/releasenotes/4.0/directive_errors.png "Report errors in (System)Verilog preprocessor directives")](/releasenotes/4.0/directive_errors.png)
+- Improved and polished the SystemVerilog [/manual/views#outline]
+- Extra autocomplete templates for SystemVerilog assertions
+[![Autocomplete templates for SystemVerilog assertions](/releasenotes/4.0/assertion_templates.png "Autocomplete templates for SystemVerilog assertions")](/releasenotes/4.0/assertion_templates.png)
+- A new wizard to easily import existing SystemVerilog projects (that were created before you were using Sigasi Studio)
+[![Import wizard for existing (System)Verilog projects](/releasenotes/4.0/import_existing_systemverilog_project.png "Import wizard for existing (System)Verilog projects")](/releasenotes/4.0/import_existing_systemverilog_project.png)
+- Improved handling of **include files**: Sigasi Studio analyses includes files in the context of their *includer*. This results in better error reporting and autocompletes. This release improves the **outline** and **formatting** of include files.
+- Improved (System)Verilog preprocessor view:
+    * Added an overview ruler
+    * Show squiggly lines for errors
+    * Highlight current line
+    * Synchronise selection in both directions: changing the selection in the preprocessor view now updates the selection in the edtior too
+    * Improved syntax highlighting
+[![(System)Verilog preprocessor view](/releasenotes/4.0/better_preprocessor_view.png "(System)Verilog preprocessor view")](/releasenotes/4.0/better_preprocessor_view.png)
+- We also improved Systemverilog scoping (i.e. linking identifiers with their declaration). This results in a more accurate **Find references**, **Occurrence highlighting** and **Rename refactoring**. You can also enable **warnings for undeclared identifiers** via the **Ctrl-3** keyboard shortcut, and next typing **Toggle (System)Verilog problem markers**.
+[![Warn about unresolved declarations](/releasenotes/4.0/toggle_verilog_markers.png "Warn about unresolved declarations")](/releasenotes/4.0/toggle_verilog_markers.png)
 
 # Other new and noteworthy improvements
 
-- Update to Xtext 2.14
+- We updated the Eclipse Xtext dependency to `2.14.0`
 - Documentation: support alignment in tables
 [![Alignment in tables](/releasenotes/4.0/alignment_in_tables.png "Alignment in tables")](/releasenotes/4.0/alignment_in_tables.png)
-- Mixed: missing link from VHDL component declaration/instantiation to SV module declaration
-- Component declaration autocomplete should copy comments
-
+- Mixed: Added a hyperlink (**Ctrl**) from VHDL `component` declarations and instantiations to the corresponding `module` declaration in mixed designs.
+- VHDL: The `component` autocomplete in Sigasi Studio does not copy comments because it is to dangerous for these copied comments to get out of sync and cause confusion. To still easily access the comments of the original `entity`, the hover of `components` now fetches to comments of the entity. This also works for `component` instantiations.
 [![Entity comments in component (instantiation) hovers](/releasenotes/4.0/component_instantiation_hover.png "Entity comments in component (instantiation) hovers")](/releasenotes/4.0/component_instantiation_hover.png)
-
-
 
 # Bug fixes
 
@@ -77,11 +93,11 @@ Read below to find more new and noteworthy changes.
 - ticket 4237 : \[Mixed] Broken PDF (DocBook xml) for "<=" and "------------------" in comments
 - ticket 4318 : \[Mixed] Component declaration generation for modules should use `std_logic_vector` for vector types
 - ticket 4317 : \[SystemVerilog] Unexpected formatting
-- ticket 4301 : \[SystemVerilog] Parser error with ` `{}`
+- ticket 4301 : \[SystemVerilog] Parser error with`` `{}``
 - ticket 4296 : \[SystemVerilog] `SVH`-files are treated as Verilog files instead of SystemVerilog (when they are not included)
 - ticket 4240 : \[SystemVerilog] Parser error with missing arguments in `$width`
 - ticket 4238 : \[SystemVerilog] Formatter should indent clocking blocks
-- ticket 4151 : \[SystemVerilog] Pre-processor definitions in project properties have no visible effect
+- ticket 4151 : \[SystemVerilog] Preprocessor definitions in project properties have no visible effect
 - ticket 4152 : \[SystemVerilog] New type is not available in the editor until editor is closed and reopened
 
 # How to update?
