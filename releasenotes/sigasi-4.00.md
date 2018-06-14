@@ -5,18 +5,22 @@ pager: true
 date: 2018-06-20
 comments: true
 ---
-Sigasi Studio 4.0 is ...
+Sigasi Studio 4.0 is new, major release. The most visible new features are 
+
 Read below to find more new and noteworthy changes.
 
 # Sigasi Studio 4.0
 
-- Major release
-- "XL DOC" now "XPRT"
+Sigasi Studio is a new, major release.
+- "XL DOC" now "XPRT"  
 [![Sigasi Studio XPRT license](/releasenotes/4.0/xprt.png "Sigasi Studio XPRT license")](/releasenotes/4.0/xprt.png)
 - Dropped support for legacy Sigasi 2.0 licenses
 
-**Notes** about the update:
-**TODO** add note about perspectives (fall back : close all editors and reset perspective)
+**Notes**: We made huge efforts to make the *"3.8→4.0" update* as smooth as always. But in some corner cases, it is possible you'll see an empty editor or a hierarchy view with an error. In that case, follow these steps:
+* Close all editors
+* Make sure you are in the "Sigasi" perspective: **Window > Perspective > Open Perspective > Other... > Sigasi** and **Open**
+* Reset the perspective: **Window > Perspective > Reset Perspective...** and **Yes**
+
 
 # Block Diagrams for SystemVerilog modules
 
