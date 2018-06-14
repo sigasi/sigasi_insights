@@ -6,26 +6,40 @@ pager: true
 
 # Choosing your VHDL and Verilog version {: #configure-version}
 
-Sigasi Studio supports VHDL version 1993, 2002 and 2008, and Verilog (2005) and SystemVerilog (2012). You can select the default VHDL version to use in: **Window > Preferences > Sigasi > VHDL**. You can set the default Verilog in: **Window > Preferences > Sigasi > Verilog**. 
+Sigasi Studio supports VHDL version 1993, 2002 and 2008 and Verilog (2005) and SystemVerilog (2012).
+You can select the default VHDL version to use in: **Window > Preferences > Sigasi > VHDL**.
+You can set the default Verilog version in: **Window > Preferences > Sigasi > (System)Verilog**.
 
-Since [Sigasi Studio 3.2][/releasenotes/sigasi-3.02], you can also set the language version per project, per folder and per file. In the Project Explorer, right click your project, folder or file; select **Properties**, **VHDL Version** (**Verilog Version** for Verilog projects) and select the version via the dropdown menu. 
+Since [Sigasi Studio 3.2][/releasenotes/sigasi-3.02], you can also set the language version
+per project, per folder and per file.
+In the Project Explorer, right click your project, folder or file; select **Properties > VHDL Version**
+or **Properties > (System)Verilog Version** and select the version via the dropdown menu.
 
-![](images/project_vhdl_version.png)
+![](images/project_verilog_version.png)
 
-When you change the language version of a file, only that file is affected. However, when you change the version of a folder, then everything in that folder will have the new language version. Any overrides in the folder and its sub-folders will be removed. When you are defining the language versions for a new project you should map from top (project root) to bottom (files).
+When you change the language version of a file, only that file is affected.
+However, when you change the version of a folder, then everything in that folder will have the new language version.
+Any overrides in the folder and its sub-folders will be removed.
+When you are defining the language versions for a new project you should map from top (project root) to bottom (files).
 
-The version information is stored in `<project path>/.settings/com.sigasi.hdt.vhdl.version.prefs` and `<project path>/.settings/com.sigasi.hdt.verilog.version.prefs`. We recommend you add this file to version control so you can share it with your team.
+The version information is stored in `<project path>/.settings/com.sigasi.hdt.vhdl.version.prefs` and `<project path>/.settings/com.sigasi.hdt.verilog.version.prefs`.
+We recommend you add this file to version control so you can share it with your team.
 
 **Notes**:
 
-* **VHDL libaries:** Any new project that you create will have the Common Libraries (`STD` and `IEEE`) that correspond to your selected VHDL version. Your *existing project will **not** be modified*. If you want to update the Common Libraries for an existing project, right-click the project and select **Library Mapping > Reset Common Libraries**. Since [Sigasi Studio 3.3][/releasenotes/sigasi-3.03], you will get a warning if your Common Libraries do not match the VHDL version of you VHDL file. You can use the proposed quick fix to resolve the issue.
+* **VHDL libaries:** Any new project that you create will have the Common Libraries (`STD` and `IEEE`) that correspond to your selected VHDL version.
+Your *existing project will **not** be modified*.
+If you want to update the Common Libraries for an existing project, right-click the project and select **Library Mapping > Reset Common Libraries**.
+Since [Sigasi Studio 3.3][/releasenotes/sigasi-3.03], you will get a warning if your Common Libraries do not match the VHDL version of you VHDL file.
+You can use the proposed quick fix to resolve the issue.
 * If you want to compile VHDL 87 code, you should select the “1993” option. There are no checks to warn about constructs that were not supported in 1987, but that were introduced in 1993.
-* Sigasi Studio does not send the Common Libraries to an external compiler. It is expected that these libraries are pre-compiled.
+* Sigasi Studio does not send the [Common Libraries][/manual/libraries#libraries-common] to an external compiler. It is expected that these libraries are pre-compiled.
 
 
 # Colors and Fonts {: #configure-colors}
 
-You can configure the code coloring by selecting **Window > Preferences > Sigasi > VHDL > Syntax Coloring**. For each class of semantic and syntactic elements, you can select the font, letter color, background color, style (bold, italic, underline, strike through).
+You can configure the code coloring by selecting **Window > Preferences > Sigasi > VHDL > Syntax Coloring**.
+For each class of semantic and syntactic elements, you can select the font, letter color, background color, style (bold, italic, underline, strike through).
 
 ## Font size
 
