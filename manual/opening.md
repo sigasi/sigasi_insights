@@ -22,7 +22,7 @@ Note that the VHDL file you specify on the command line has to be in an
 *open Sigasi project* to enjoy all of Sigasi Studio’s powerful editing and
 navigation features. If the file you open from the command line is not
 in a Sigasi Studio project, Sigasi Studio opens the file as an [external
-file](#files-external). This is nevertheless really handy for quick
+file](#external-files). This is nevertheless really handy for quick
 edits.
 
 This feature enables you to configure Sigasi Studio as default editor for other
