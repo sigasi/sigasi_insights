@@ -5,22 +5,31 @@ pager: true
 date: 2018-06-20
 comments: true
 ---
-Sigasi Studio 4.0 is new, major release. The most visible new features are 
+Sigasi Studio 4.0 is our newest major release.
+
+Hardware design & verification engineers are facing more and more complex challenges and Sigasi Studio continues to deliver the best productivity features. **SystemVerilog**, **VHDL** and **mixed language** projects can now all benefit from the best methods to handle:
+
+* Block Diagrams
+* State Machines
+* Hierarchy
+* Autocompletes
+* Errors
+* Code reuse
+* Documentation
 
 Read below to find more new and noteworthy changes.
 
-# Sigasi Studio 4.0
+# Sigasi Studio XPRT
 
-Sigasi Studio is a new, major release.
-- "XL DOC" now "XPRT"  
+We have added Sigasi Studio XPRT to the Sigasi product line.
+
+Sigasi Studio XPRT is our newest flagship product and offers all Sigasi Studio features, both new and trusted. It will include all features you know from Sigasi Studio XL and XL-DOC, and has a lot more new features for you to discover.
+
+Good news for our loyal XL-DOC users: **existing and valid 3.x license keys will automatically unlock all Sigasi Studio XPRT 4.0 features.**
+
 [![Sigasi Studio XPRT license](/releasenotes/4.0/xprt.png "Sigasi Studio XPRT license")](/releasenotes/4.0/xprt.png)
-- Dropped support for legacy Sigasi 2.0 licenses
 
-**Notes**: We made huge efforts to make the *"3.8→4.0" update* as smooth as always. But in some corner cases, it is possible you'll see an empty editor or a hierarchy view with an error. In that case, follow these steps:
-* Close all editors
-* Make sure you are in the "Sigasi" perspective: **Window > Perspective > Open Perspective > Other... > Sigasi** and **Open**
-* Reset the perspective: **Window > Perspective > Reset Perspective...** and **Yes**
-
+**Update Notes**: We made huge efforts to make the *"3.8→4.0" update* as smooth as always. But in some specific cases, it is possible you'll see an empty editor or a hierarchy view with an error. In that case, follow [these steps][#reset-perspective].
 
 # Block Diagrams for SystemVerilog modules
 
@@ -82,11 +91,11 @@ Sigasi Studio 4.0 also contains a lot of improvements to enhance your SystemVeri
 - We also improved Systemverilog scoping (i.e. linking identifiers with their declaration). This results in a more accurate **Find references**, **Occurrence highlighting** and **Rename refactoring**. You can also enable **warnings for undeclared identifiers** via the **Ctrl-3** keyboard shortcut, and next typing **Toggle SystemVerilog problem markers**  
 [![Warn about unresolved declarations](/releasenotes/4.0/toggle_verilog_markers.png "Warn about unresolved declarations")](/releasenotes/4.0/toggle_verilog_markers.png)
 
-# Other new and noteworthy improvements
+# Other news and noteworthy changes
 
 - We updated the Eclipse Xtext dependency to `2.14.0`
-- Documentation: support alignment in tables
-[![Alignment in tables](/releasenotes/4.0/alignment_in_tables.png "Alignment in tables")](/releasenotes/4.0/alignment_in_tables.png)
+- Legacy Sigasi 2 licenses are not compatible with Sigasi Studio 4.0
+- Documentation: support alignment in tables  [![Alignment in tables](/releasenotes/4.0/alignment_in_tables.png "Alignment in tables")](/releasenotes/4.0/alignment_in_tables.png)
 - Mixed: Added a hyperlink (**Ctrl**) from VHDL `component` declarations and instantiations to the corresponding `module` declaration in mixed designs.
 - VHDL: The `component` autocomplete in Sigasi Studio does not copy comments because it is to dangerous for these copied comments to get out of sync and cause confusion. To still easily access the comments of the original `entity`, the hover of `components` now fetches to comments of the entity. This also works for `component` instantiations.  
 [![Entity comments in component (instantiation) hovers](/releasenotes/4.0/component_instantiation_hover.png "Entity comments in component (instantiation) hovers")](/releasenotes/4.0/component_instantiation_hover.png)
@@ -108,4 +117,9 @@ Sigasi Studio 4.0 also contains a lot of improvements to enhance your SystemVeri
 
 If you have Sigasi Studio 3 installed, you can [update][/manual/setup#Software Updates] or [download a fresh install of the latest version][download_latest].
 
+## Reset perspective
 
+If you see an empty editor or a hierarchy view with an error, follow these steps:
+* Close all editors 
+* Make sure you are in the "Sigasi" perspective: **Window > Perspective > Open Perspective > Other... > Sigasi** and **Open**
+* Reset the perspective: **Window > Perspective > Reset Perspective...** and **Yes**
