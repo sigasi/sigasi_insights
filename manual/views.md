@@ -139,7 +139,7 @@ You can configure extra tags in the Task Tag preference page:
 [xprt_only]
 
 The **Block Diagram View** displays a graphical (block diagram) view
-of all architectures and its instantiations in your current VHDL or (System)Verilog editor.
+of all architectures, modules and their instantiations in your current VHDL or SystemVerilog editor.
 
 This viewer **automatically updates** when you **save** your code and
 gives a convenient way to visually inspect and navigate your code, even
