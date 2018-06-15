@@ -33,7 +33,7 @@ Good news for our loyal XL-DOC users: **existing and valid 3.x license keys will
 
 # Block Diagrams for SystemVerilog modules
 
-Sigasi Studio 4.0 introduces **block diagrams** for SystemVerilog modules. You can open the block diagram view by right clicking in a SystemVerilog editor and selecting **Show In > Block Diagram**.  
+Sigasi Studio 4.0 introduces **block diagrams** for SystemVerilog modules. You can open the Block Diagram View by right clicking in a SystemVerilog editor and selecting **Show In > Block Diagram**.  
 
 [![Block Diagram View for SystemVerilog](/releasenotes/4.0/sv_block_diagram.png "Block Diagram View for SystemVerilog")](/releasenotes/4.0/sv_block_diagram.png)
 
@@ -42,19 +42,19 @@ when your code is still unfinished or broken.
 
 [![Block Diagram Graphics Configuration for SystemVerilog](/releasenotes/4.0/sv_graphic_configuration.png "Block Diagram Graphics Configuration for SystemVerilog")](/releasenotes/4.0/sv_graphic_configuration.png)
 
-You can also customize and filter block diagrams by creating a [Graphic Configuration][/tech/using-graphics-configuration].
+You can also customize and filter block diagrams by creating a [Graphics Configuration][/tech/using-graphics-configuration].
 
 # SystemVerilog State Machines
 
 The [State Machine View][/manual/views#fsm] now also visualizes `enum`-based statemachines in your SystemVerilog code. This view automatically updates while you are editing your code and gives a convenient way to visually inspect and navigate your code, even when your code is still unfinished or broken.
 
-You can open the state machine view by right clicking in the editor and selecting **Show In > State Machines**.
+You can open the State Machine View by right clicking in the editor and selecting **Show In > State Machines**.
 
 [![State Machine View for SystemVerilog](/releasenotes/4.0/systemverilog_fsm.png)](/releasenotes/4.0/systemverilog_fsm.png)
 
-You can **double-click nodes** or **transitions** to navigate to the corresponding SystemVerilog code. 
+You can **double-click nodes** or **transitions** to navigate to the corresponding SystemVerilog code.
 
-You can also customize and filter state machine diagrams by creating a [Graphic Configuration][/tech/using-graphics-configuration].
+You can also customize and filter state machine diagrams by creating a [Graphics Configuration][/tech/using-graphics-configuration].
 
 # SystemVerilog and Mixed Hierarchies in the Hierarchy View
 
@@ -71,12 +71,12 @@ This is a convenient and powerful method to navigate through your design.
 Sigasi Studio 4.0 also contains a lot of improvements to enhance your SystemVerilog editing experience:
 
 - Improved performance for SystemVerilog autocomplete
-- **Autocomplete** for **preprocessor directives**
+- **Autocomplete** for **preprocessor directives**  
 [![Autocomplete for SystemVerilog preprocessor directives](/releasenotes/4.0/autocomplete_verilog_directives.png "Autocomplete for SystemVerilog preprocessor directives")](/releasenotes/4.0/autocomplete_verilog_directives.png)
-- Report **errors** for incorrect SystemVerilog **preprocessor directives**
+- Report **errors** for incorrect SystemVerilog **preprocessor directives**  
 [![Report errors in SystemVerilog preprocessor directives](/releasenotes/4.0/directive_errors.png "Report errors in SystemVerilog preprocessor directives")](/releasenotes/4.0/directive_errors.png)
 - Improved and polished the SystemVerilog [/manual/views#outline]
-- Extra autocomplete templates for SystemVerilog assertions
+- Extra autocomplete templates for SystemVerilog assertions  
 [![Autocomplete templates for SystemVerilog assertions](/releasenotes/4.0/assertion_templates.png "Autocomplete templates for SystemVerilog assertions")](/releasenotes/4.0/assertion_templates.png)
 - A new wizard to easily import existing SystemVerilog projects (that were created before you were using Sigasi Studio)  
 [![Import wizard for existing SystemVerilog projects](/releasenotes/4.0/import_existing_systemverilog_project.png "Import wizard for existing SystemVerilog projects")](/releasenotes/4.0/import_existing_systemverilog_project.png)
