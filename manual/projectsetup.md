@@ -7,7 +7,7 @@ pager: true
 # Introduction {: #project-intro}
 
 Your work with Sigasi Studio typically is organized as a *project*. A project
-is a collection of VHDL and/or Verilog files that belong together. Sigasi Studio
+is a collection of VHDL and/or SystemVerilog files that belong together. Sigasi Studio
 understands the HDL units defined in the files, and the relationships
 between them.
 
@@ -24,8 +24,8 @@ following sections.
 
 ## 1: Import the project
 
-You can import an existing VHDL project from the file system by clicking
-**File \> Import… \> Sigasi \> Import a VHDL project**. Browse to the
+You can import an existing VHDL or SystemVerilog project from the file system by clicking
+**File \> Import… \> Sigasi \> Import a VHDL project** (or **Import a (System)Verilog project**). Browse to the
 root directory of the project, and press **Finish**.
 
 ## 2: Set Libraries
@@ -49,7 +49,7 @@ KDE, you should install Nautilus.
 # Creating a new, empty project
 
 To create a new project, select **File \> New \> VHDL Project** or
-**File \> New \> Verilog Project**. Then give your project a name.
+**File \> New \> (System)Verilog Project**. Then give your project a name.
 
 By default, the **Use default location** checkbox is checked, which
 means that new projects will be located in the workspace folder.
@@ -59,8 +59,7 @@ Sigasi Studio with an existing design*.
 
 After creating a new project, you can add existing files by dragging
 them from your filesystem into the project explorer. New files can be
-added by clicking **File \> New \> VHDL file** or **File \> New \>
-Verilog file**.
+added by clicking **File \> New \> VHDL file** or **File \> New \> Verilog file**.
 
 # Other ways to set up a project
 
@@ -71,7 +70,7 @@ workspace by right-clicking the project in the project explorer and
 selecting **Configure \> Add VHDL support** or **Configure \> Add
 Verilog support**. You can also remove VHDL or Verilog support from
 Sigasi Studio projects by selecting **Configure \> Remove VHDL support** or
-**Configure \> Remove Verilog support**.
+**Configure \> Remove (System)Verilog support**.
 
 Note that only with a [xl] license, you can have **mixed** VHDL and
 Verilog support at the same time.
