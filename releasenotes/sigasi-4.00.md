@@ -81,14 +81,14 @@ Sigasi Studio 4.0 also contains a lot of improvements to enhance your SystemVeri
 - A new wizard to easily import existing SystemVerilog projects (that were created before you were using Sigasi Studio)  
 [![Import wizard for existing SystemVerilog projects](/releasenotes/4.0/import_existing_systemverilog_project.png "Import wizard for existing SystemVerilog projects")](/releasenotes/4.0/import_existing_systemverilog_project.png)
 - Improved handling of **include files**: Sigasi Studio analyses includes files in the context of their *includer*. This results in better error reporting and autocompletes. This release improves the **outline** and **formatting** of include files.
-- Improved SystemVerilog preprocessor view:
+- Improved SystemVerilog [preprocessor view][/manual/views#preprocessor-view]:
     * Added an overview ruler
     * Show squiggly lines for errors
     * Highlight current line
     * Synchronise selection in both directions: changing the selection in the preprocessor view now updates the selection in the edtior too
     * Improved syntax highlighting
 [![SystemVerilog preprocessor view](/releasenotes/4.0/better_preprocessor_view.png "SystemVerilog preprocessor view")](/releasenotes/4.0/better_preprocessor_view.png)
-- We also improved Systemverilog scoping (i.e. linking identifiers with their declaration). This results in a more accurate **Find references**, **Occurrence highlighting** and **Rename refactoring**. You can also enable **warnings for undeclared identifiers** via the **Ctrl-3** keyboard shortcut, and next typing **Toggle SystemVerilog problem markers**  
+- We also improved SystemVerilog scoping (i.e. linking identifiers with their declaration). This results in a more accurate **Find references**, **Occurrence highlighting** and **Rename refactoring**. You can also enable **warnings for undeclared identifiers** via the **Ctrl-3** keyboard shortcut, and next typing **Toggle SystemVerilog problem markers**  
 [![Warn about unresolved declarations](/releasenotes/4.0/toggle_verilog_markers.png "Warn about unresolved declarations")](/releasenotes/4.0/toggle_verilog_markers.png)
 
 # Other news and noteworthy changes
@@ -97,7 +97,7 @@ Sigasi Studio 4.0 also contains a lot of improvements to enhance your SystemVeri
 - Legacy Sigasi 2 licenses are not compatible with Sigasi Studio 4.0
 - Documentation: support alignment in tables  [![Alignment in tables](/releasenotes/4.0/alignment_in_tables.png "Alignment in tables")](/releasenotes/4.0/alignment_in_tables.png)
 - Mixed: Added a hyperlink (**Ctrl**) from VHDL `component` declarations and instantiations to the corresponding `module` declaration in mixed designs.
-- VHDL: The `component` autocomplete in Sigasi Studio does not copy comments because it is to dangerous for these copied comments to get out of sync and cause confusion. To still easily access the comments of the original `entity`, the hover of `components` now fetches to comments of the entity. This also works for `component` instantiations.  
+- VHDL: The `component` autocomplete in Sigasi Studio does not copy comments because it is too dangerous for these copied comments to get out of sync and cause confusion. To still easily access the comments of the original `entity`, the hover of `components` now fetches to comments of the entity. This also works for `component` instantiations.  
 [![Entity comments in component (instantiation) hovers](/releasenotes/4.0/component_instantiation_hover.png "Entity comments in component (instantiation) hovers")](/releasenotes/4.0/component_instantiation_hover.png)
 
 # Bug fixes
@@ -120,6 +120,7 @@ If you have Sigasi Studio 3 installed, you can [update][/manual/setup#Software U
 ## Reset perspective
 
 If you see an empty editor or a hierarchy view with an error, follow these steps:
-* Close all editors 
+
+* Close all editors
 * Make sure you are in the "Sigasi" perspective: **Window > Perspective > Open Perspective > Other... > Sigasi** and **Open**
 * Reset the perspective: **Window > Perspective > Reset Perspective...** and **Yes**
