@@ -97,7 +97,7 @@ Sigasi Studio 4.0 also contains a lot of improvements to enhance your SystemVeri
 - Legacy Sigasi 2 licenses are not compatible with Sigasi Studio 4.0
 - Documentation: support alignment in tables  [![Alignment in tables](/releasenotes/4.0/alignment_in_tables.png "Alignment in tables")](/releasenotes/4.0/alignment_in_tables.png)
 - Mixed: Added a hyperlink (**Ctrl**) from VHDL `component` declarations and instantiations to the corresponding `module` declaration in mixed designs.
-- VHDL: The `component` autocomplete in Sigasi Studio does not copy comments because it is too dangerous for these copied comments to get out of sync and cause confusion. To still easily access the comments of the original `entity`, the hover of `components` now fetches to comments of the entity. This also works for `component` instantiations.  
+- VHDL: The `component` autocomplete in Sigasi Studio does not copy comments because these copied comments can get out of sync and cause confusion. To still easily access the comments of the original `entity`, the hover of `components` now fetches to comments of the entity. This also works for `component` instantiations.  
 [![Entity comments in component (instantiation) hovers](/releasenotes/4.0/component_instantiation_hover.png "Entity comments in component (instantiation) hovers")](/releasenotes/4.0/component_instantiation_hover.png)
 
 # Bug fixes
