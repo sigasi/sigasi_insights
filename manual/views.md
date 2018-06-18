@@ -153,7 +153,7 @@ view via **Window \> Show View \> Other… \> Sigasi \> Block Diagram**.
 
 You can also **double click blocks**, **ports** or **wires** to navigate
 to the corresponding HDL code. If you want to *go into* a block, you
-have to **select** it, right click and click **Open Entity Declaration** or **Open Architecture**.
+have to **select** it, right click and click **Open Entity Declaration**, **Open Architecture** or **Open Module**.
 
 You can export the block diagram view to an image with the save
 ![](icons/save.gif) button. Both **SVG** and **PNG** are supported. Choose a the \*.svg filename for SVG export or a \*.png filename for PNG export.
