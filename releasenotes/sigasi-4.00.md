@@ -70,25 +70,26 @@ This is a convenient and powerful method to navigate through your design.
 
 Sigasi Studio 4.0 also contains a lot of improvements to enhance your SystemVerilog editing experience:
 
-- Improved performance for SystemVerilog autocomplete
+- Improved **performance** for SystemVerilog **autocomplete**
 - **Autocomplete** for **preprocessor directives**  
 [![Autocomplete for SystemVerilog preprocessor directives](/releasenotes/4.0/autocomplete_verilog_directives.png "Autocomplete for SystemVerilog preprocessor directives")](/releasenotes/4.0/autocomplete_verilog_directives.png)
 - Report **errors** for incorrect SystemVerilog **preprocessor directives**  
 [![Report errors in SystemVerilog preprocessor directives](/releasenotes/4.0/directive_errors.png "Report errors in SystemVerilog preprocessor directives")](/releasenotes/4.0/directive_errors.png)
-- Improved and polished the SystemVerilog [/manual/views#outline]
-- Extra autocomplete templates for SystemVerilog assertions  
+- Improved and polished the SystemVerilog **[/manual/views#outline]**
+- Extra autocomplete **templates** for **SystemVerilog assertions**  
 [![Autocomplete templates for SystemVerilog assertions](/releasenotes/4.0/assertion_templates.png "Autocomplete templates for SystemVerilog assertions")](/releasenotes/4.0/assertion_templates.png)
-- A new wizard to easily import existing SystemVerilog projects (that were created before you were using Sigasi Studio)  
+- A new **wizard** to easily ***import existing SystemVerilog projects** (that were created before you were using Sigasi Studio)  
 [![Import wizard for existing SystemVerilog projects](/releasenotes/4.0/import_existing_systemverilog_project.png "Import wizard for existing SystemVerilog projects")](/releasenotes/4.0/import_existing_systemverilog_project.png)
-- Improved handling of **include files**: Sigasi Studio analyses includes files in the context of their *includer*. This results in better error reporting and autocompletes. This release improves the **outline** and **formatting** of include files.
+- Improved handling of **include files**: Sigasi Studio analyses includes files in the context of their *includer*. This results in better error reporting and autocompletes. This release also improves the **outline** and **formatting** of include files.
 - Improved SystemVerilog [preprocessor view][/manual/views#preprocessor-view]:
-    * Added an overview ruler
-    * Show squiggly lines for errors
-    * Highlight current line
-    * Synchronise selection in both directions: changing the selection in the preprocessor view now updates the selection in the edtior too
+    * Added an **overview ruler**
+    * Show **squiggly lines** for errors
+    * Highlight **current** line
+    * **Synchronise selection** in both directions: changing the selection in the preprocessor view now updates the selection in the edtior too
     * Improved syntax highlighting
 [![SystemVerilog preprocessor view](/releasenotes/4.0/better_preprocessor_view.png "SystemVerilog preprocessor view")](/releasenotes/4.0/better_preprocessor_view.png)
-- We also improved SystemVerilog scoping (i.e. linking identifiers with their declaration). This results in a more accurate **Find references**, **Occurrence highlighting** and **Rename refactoring**. You can also enable **warnings for undeclared identifiers** via the **Ctrl-3** keyboard shortcut, and next typing **Toggle SystemVerilog problem markers**  
+- We also improved SystemVerilog scoping (i.e. linking identifiers with their declaration). This results in a more accurate **Find references**, **Occurrence highlighting** and **Rename refactoring**.  
+You can also enable **warnings for undeclared identifiers** via the **Ctrl-3** keyboard shortcut, and next typing **Toggle SystemVerilog problem markers**  
 [![Warn about unresolved declarations](/releasenotes/4.0/toggle_verilog_markers.png "Warn about unresolved declarations")](/releasenotes/4.0/toggle_verilog_markers.png)
 
 # Other news and noteworthy changes
