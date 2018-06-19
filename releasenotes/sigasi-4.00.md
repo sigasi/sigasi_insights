@@ -25,7 +25,7 @@ We have added Sigasi Studio XPRT to the Sigasi product line.
 
 Sigasi Studio XPRT is our newest flagship product and offers all Sigasi Studio features, both new and trusted. It will include all features you know from Sigasi Studio XL and XL-DOC, and has a lot more new features for you to discover.
 
-Good news for our loyal XL-DOC users: **existing and valid 3.x license keys will automatically unlock all Sigasi Studio XPRT 4.0 features.**
+Good news for our loyal XL-DOC users: **existing and valid XL-DOC 3.x license keys will automatically unlock all Sigasi Studio XPRT 4.0 features.**
 
 [![Sigasi Studio XPRT license](/releasenotes/4.0/xprt.png "Sigasi Studio XPRT license")](/releasenotes/4.0/xprt.png)
 
@@ -78,7 +78,7 @@ Sigasi Studio 4.0 also contains a lot of improvements to enhance your SystemVeri
 - Improved and polished the SystemVerilog **[/manual/views#outline]**
 - Extra autocomplete **templates** for **SystemVerilog assertions**  
 [![Autocomplete templates for SystemVerilog assertions](/releasenotes/4.0/assertion_templates.png "Autocomplete templates for SystemVerilog assertions")](/releasenotes/4.0/assertion_templates.png)
-- A new **wizard** to easily ***import existing SystemVerilog projects** (that were created before you were using Sigasi Studio)  
+- A new **wizard** to easily **import existing SystemVerilog projects** (that were created before you were using Sigasi Studio)  
 [![Import wizard for existing SystemVerilog projects](/releasenotes/4.0/import_existing_systemverilog_project.png "Import wizard for existing SystemVerilog projects")](/releasenotes/4.0/import_existing_systemverilog_project.png)
 - Improved handling of **include files**: Sigasi Studio analyses includes files in the context of their *includer*. This results in better error reporting and autocompletes. This release also improves the **outline** and **formatting** of include files.
 - Improved SystemVerilog [preprocessor view][/manual/views#preprocessor-view]:
@@ -117,6 +117,8 @@ You can also enable **warnings for undeclared identifiers** via the **Ctrl-3** k
 # How to update?
 
 If you have Sigasi Studio 3 installed, you can [update][/manual/setup#Software Updates] or [download a fresh install of the latest version][download_latest].
+
+Good news for our loyal XL-DOC users: **existing and valid XL-DOC 3.x license keys will automatically unlock all Sigasi Studio XPRT 4.0 features.**
 
 ## Reset perspective
 
