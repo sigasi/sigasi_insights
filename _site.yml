@@ -10,28 +10,28 @@ navbar_inverse: false
 bootstrap: 3.3.4
 banner: "Insights."
 cname: insights.sigasi.com
-main_url: http://www.sigasi.com
+main_url: https://www.sigasi.com
 menuitems:
   - title: Home
-    url: http://www.sigasi.com
+    url: https://www.sigasi.com
   - title: Products
-    url: http://www.sigasi.com/products
+    url: https://www.sigasi.com/products
   - title: "Try & Buy"
-    url: http://www.sigasi.com/try-buy
+    url: https://www.sigasi.com/try-buy
   - title: Insights
     url: /
     active: True
   - title: About
-    url: http://www.sigasi.com/about
+    url: https://www.sigasi.com/about
 topmenuitems:
   - title: Support
     url: /support.html
   - title: Jobs
-    url: http://www.sigasi.com/category/jobs/
+    url: https://www.sigasi.com/category/jobs/
   - title: News
-    url: http://www.sigasi.com/category/news/
+    url: https://www.sigasi.com/category/news/
   - title: Contact
-    url: http://www.sigasi.com/contact
+    url: https://www.sigasi.com/contact
 ignore_patterns:
   - linkchecker_result.html 
   - .gitignore 
@@ -55,16 +55,16 @@ reflinks:
         title: contact us
         url: mailto:sales@sigasi.com
     download_sigasi:
-        url: http://www.sigasi.com/download
+        url: https://www.sigasi.com/download
         title: Download Sigasi
     sigasi_com:
-        url: http://www.sigasi.com/
+        url: https://www.sigasi.com/
         title: Sigasi Main Site
     activate_key:
         title: Activate Your License Key
-        url: http://www.sigasi.com/activate-your-license-key
+        url: https://www.sigasi.com/activate-your-license-key
     install_sigasi_plugin:
-        url: http://www.sigasi.com/install-eclipse-vhdl-plugin
+        url: https://www.sigasi.com/install-eclipse-vhdl-plugin
         title: Install Sigasi as Eclipse Plugin
     jan_decaluwe:
         url: http://www.jandecaluwe.com
@@ -77,7 +77,7 @@ reflinks:
         title: Update Sigasi
     download_latest:
         title: Download the Latest Version of Sigasi
-        url: http://www.sigasi.com/download
+        url: https://www.sigasi.com/download
     tabs-and-spaces:
         title: Tabs and Spaces
         url: "/manual/config.html#tabs-and-spaces"

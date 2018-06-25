@@ -247,7 +247,7 @@ The **workspace path variables** (set via preferences) are stored in: `<workspac
 
 You can also set this per **project** (in the project properties). In that case the info is stored in the `.project` file.
 
-You can find more info on: [here](http://www.sigasi.com/content/how-avoid-absolute-library-paths-your-sigasi-project-files) and [here](https://help.eclipse.org/oxygen/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Fconcepts%2Fcpathvars.htm)
+You can find more info on: [here](https://www.sigasi.com/content/how-avoid-absolute-library-paths-your-sigasi-project-files) and [here](https://help.eclipse.org/oxygen/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Fconcepts%2Fcpathvars.htm)
 
 ## Can I use a Dark Theme?
 
@@ -438,8 +438,8 @@ The log file contains no sensitive information about your organization. On some 
 
 There can be a number of reasons why Sigasi connects to the internet.
 
-* Updates: Each time you start Sigasi, the program checks to see if there are new [/manual/setup#software-updates] from our update website (currently located at <http://download.sigasi.com>). Sigasi downloads the updates in the background and, when done, it asks you if it can install them.
-* [Talkback](http://www.sigasi.com/sigasi-talkback)
+* Updates: Each time you start Sigasi, the program checks to see if there are new [/manual/setup#software-updates] from our update website (currently located at <https://download.sigasi.com>). Sigasi downloads the updates in the background and, when done, it asks you if it can install them.
+* [Talkback](https://www.sigasi.com/sigasi-talkback)
 * Other Plugins: Obviously, other plugins can also connect to the internet. Some examples are plugins for revision control or issue tracking, or the built-in Eclipse web browser.
 
 **Enhanced security**: Customers with strict security policies can contact us to discuss compliance with their policies.
@@ -535,4 +535,4 @@ We have not had good results with FreeHDL or with Green Mountain VHDL. It seems 
 
 ## You need a VHDL editor too
 
-After you choose your simulator, you need a VHDL editor too. Sigasi has a [free starter edition](http://www.sigasi.com/sigasi-starter-edition) of its popular VHDL development environment.
+After you choose your simulator, you need a VHDL editor too. Sigasi has a [free starter edition](https://www.sigasi.com/sigasi-starter-edition) of its popular VHDL development environment.
