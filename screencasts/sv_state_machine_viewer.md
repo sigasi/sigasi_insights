@@ -10,3 +10,6 @@ tags:
   - StateMachine
   - graphics
 ---
+
+
+The State Machine View is documented [here][/manual/views#fsm].

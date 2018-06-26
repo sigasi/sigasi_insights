@@ -9,3 +9,6 @@ tags:
   - SystemVerilog
   - Preprocessor
 ---
+
+
+The Preprocessor View is documented [here][/manual/views#preprocessor-view].
