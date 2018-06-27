@@ -1,16 +1,16 @@
 ---
-title: "Portable Test and Stimulus Standard, PSS Beta"
+title: "Portable Test and Stimulus Standard Version 1.0"
 layout: page 
 pager: true
 author: Sigasi
-date: 2018-03-02
+date: 2018-06-27
 comments: true
 ---
 <em>
 Copyright © 2017 - 2018 Accellera. All rights reserved.
-This is an unapproved Accellera Standards Draft, subject to change.
 
-Get the full Language Reference Manual, free of charge, at <http://www.accellera.org/images/downloads/drafts-review/PSS\_Beta\_Feb\_21\_2018\_Public\_Review.pdf>
+Get the full Language Reference Manual, free of charge, at 
+<http://www.accellera.org/downloads/standards/portable-stimulus>
 
 Sigasi has created this browsable version of the grammar, hoping that it would be useful to you, but without any warranty whatsoever.
 
@@ -36,14 +36,18 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :	<a href="#abstract_action_declaration">abstract\_action\_declaration</a>   
         | <a href="#struct_declaration">struct\_declaration</a>   
         | <a href="#enum_declaration">enum\_declaration</a>   
-        | <a href="#coverspec_declaration">coverspec\_declaration</a>   
+        | <a href="#covergroup_declaration">covergroup\_declaration</a>   
         | <a href="#function_decl">function\_decl</a>   
         | <a href="#import_class_decl">import\_class\_decl</a>   
         | <a href="#function_qualifiers">function\_qualifiers</a>   
         | <a href="#export_action">export\_action</a>   
         | <a href="#typedef_declaration">typedef\_declaration</a>   
         | <a href="#import_stmt">import\_stmt</a>   
-        | <a href="#extend_stmt">extend\_stmt</a> 
+        | <a href="#extend_stmt">extend\_stmt</a>   
+        | <a href="#const_field_declaration">const\_field\_declaration</a>   
+        | <a href="#static_const_field_declaration">static\_const\_field\_declaration</a>   
+        | <a href="#compile_assert_stmt">compile\_assert\_stmt</a>   
+        | <a href="#package_body_compile_if">package\_body\_compile\_if</a> 
   
 **import\_stmt**{: #import_stmt }
 :	<font color="purple"><b>import</b></font> <a href="#package_import_pattern">package\_import\_pattern</a> <font color="purple"><b>;</b></font> 
@@ -53,9 +57,21 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
   
 **extend\_stmt**{: #extend_stmt }
 :	<font color="purple"><b>extend</b></font> <font color="purple"><b>action</b></font> <a href="#type_identifier">type\_identifier</a> <font color="purple"><b>{</b></font>  { <a href="#action_body_item">action\_body\_item</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]    
-        | <font color="purple"><b>extend</b></font> <font color="purple"><b>struct</b></font> <a href="#type_identifier">type\_identifier</a> <font color="purple"><b>{</b></font>  { <a href="#struct_body_item">struct\_body\_item</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]    
-        | <font color="purple"><b>extend</b></font> <font color="purple"><b>enum</b></font> <a href="#type_identifier">type\_identifier</a> <font color="purple"><b>{</b></font>  \[ <a href="#enum_item">enum\_item</a>  { <font color="purple"><b>,</b></font> <a href="#enum_item">enum\_item</a>  }   ]  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]    
-        | <font color="purple"><b>extend</b></font> <font color="purple"><b>component</b></font> <a href="#type_identifier">type\_identifier</a> <font color="purple"><b>{</b></font>  { <a href="#component_body_item">component\_body\_item</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]  
+        | <font color="purple"><b>extend</b></font> <font color="purple"><b>component</b></font> <a href="#type_identifier">type\_identifier</a> <font color="purple"><b>{</b></font>  { <a href="#component_body_item">component\_body\_item</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]    
+        | <font color="purple"><b>extend</b></font> <a href="#struct_kind">struct\_kind</a> <a href="#type_identifier">type\_identifier</a> <font color="purple"><b>{</b></font>  { <a href="#struct_body_item">struct\_body\_item</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]    
+        | <font color="purple"><b>extend</b></font> <font color="purple"><b>enum</b></font> <a href="#type_identifier">type\_identifier</a> <font color="purple"><b>{</b></font>  \[ <a href="#enum_item">enum\_item</a>  { <font color="purple"><b>,</b></font> <a href="#enum_item">enum\_item</a>  }   ]  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]  
+  
+**const\_field\_declaration**{: #const_field_declaration }
+:	<font color="purple"><b>const</b></font> <a href="#const_data_declaration">const\_data\_declaration</a> 
+  
+**const\_data\_declaration**{: #const_data_declaration }
+:	<a href="#scalar_data_type">scalar\_data\_type</a> <a href="#const_data_instantiation">const\_data\_instantiation</a>  { <font color="purple"><b>,</b></font> <a href="#const_data_instantiation">const\_data\_instantiation</a>  }  <font color="purple"><b>;</b></font> 
+  
+**const\_data\_instantiation**{: #const_data_instantiation }
+:	<a href="#identifier">identifier</a> <font color="purple"><b>=</b></font> <a href="#constant_expression">constant\_expression</a> 
+  
+**static\_const\_field\_declaration**{: #static_const_field_declaration }
+:	<font color="purple"><b>static</b></font> <font color="purple"><b>const</b></font> <a href="#const_data_declaration">const\_data\_declaration</a> 
   
 ## B.2 Action declarations
   
@@ -74,25 +90,63 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <a href="#constraint_declaration">constraint\_declaration</a>   
         | <a href="#action_field_declaration">action\_field\_declaration</a>   
         | <a href="#symbol_declaration">symbol\_declaration</a>   
-        | <a href="#coverspec_declaration">coverspec\_declaration</a>   
-        | <a href="#exec_block_stmt">exec\_block\_stmt</a> 
+        | <a href="#covergroup_declaration">covergroup\_declaration</a>   
+        | <a href="#exec_block_stmt">exec\_block\_stmt</a>   
+        | <a href="#static_const_field_declaration">static\_const\_field\_declaration</a>   
+        | <a href="#action_scheduling_constraint">action\_scheduling\_constraint</a>   
+        | <a href="#attr_group">attr\_group</a>   
+        | <a href="#compile_assert_stmt">compile\_assert\_stmt</a>   
+        | <a href="#inline_covergroup">inline\_covergroup</a>   
+        | <a href="#action_body_compile_if">action\_body\_compile\_if</a> 
   
 **activity\_declaration**{: #activity_declaration }
 :	<font color="purple"><b>activity</b></font> <font color="purple"><b>{</b></font>  {  \[ <a href="#identifier">identifier</a> <font color="purple"><b>:</b></font>  ]  <a href="#activity_stmt">activity\_stmt</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]  
   
 **action\_field\_declaration**{: #action_field_declaration }
-:	 \[ <a href="#action_field_modifier">action\_field\_modifier</a>  ]  <a href="#action_data_declaration">action\_data\_declaration</a> 
+:	<a href="#object_ref_field">object\_ref\_field</a>   
+        | <a href="#attr_field">attr\_field</a>   
+        | <a href="#attr_group">attr\_group</a>   
+        | <a href="#action_handle_declaration">action\_handle\_declaration</a>   
+        | <a href="#activity_data_field">activity\_data\_field</a> 
   
-**action\_field\_modifier**{: #action_field_modifier }
-:	<font color="purple"><b>rand</b></font>   
-        | <a href="#io_direction">io\_direction</a>   
-        | <font color="purple"><b>lock</b></font>   
-        | <font color="purple"><b>share</b></font>   
-        | <font color="purple"><b>action</b></font> 
+**object\_ref\_field**{: #object_ref_field }
+:	<a href="#flow_ref_field">flow\_ref\_field</a>   
+        | <a href="#resource_ref_field">resource\_ref\_field</a> 
   
-**io\_direction**{: #io_direction }
-:	<font color="purple"><b>input</b></font>   
-        | <font color="purple"><b>output</b></font> 
+**flow\_ref\_field**{: #flow_ref_field }
+:	 ( <font color="purple"><b>input</b></font>   
+         | <font color="purple"><b>output</b></font>  )  <a href="#flow_object_type">flow\_object\_type</a> <a href="#identifier">identifier</a>  { <font color="purple"><b>,</b></font> <a href="#identifier">identifier</a>  }  <font color="purple"><b>;</b></font> 
+  
+**resource\_ref\_field**{: #resource_ref_field }
+:	 ( <font color="purple"><b>lock</b></font>   
+         | <font color="purple"><b>share</b></font>  )  <a href="#resource_object_type">resource\_object\_type</a> <a href="#identifier">identifier</a>  { <font color="purple"><b>,</b></font> <a href="#identifier">identifier</a>  }  <font color="purple"><b>;</b></font> 
+  
+**flow\_object\_type**{: #flow_object_type }
+:	<a href="#type_identifier">type\_identifier</a> 
+  
+**resource\_object\_type**{: #resource_object_type }
+:	<a href="#type_identifier">type\_identifier</a> 
+  
+**attr\_field**{: #attr_field }
+:	 \[ <a href="#access_modifier">access\_modifier</a>  ]   \[ <font color="purple"><b>rand</b></font>  ]  <a href="#data_declaration">data\_declaration</a> 
+  
+**access\_modifier**{: #access_modifier }
+:	<font color="purple"><b>public</b></font>   
+        | <font color="purple"><b>protected</b></font>   
+        | <font color="purple"><b>private</b></font> 
+  
+**attr\_group**{: #attr_group }
+:	<a href="#access_modifier">access\_modifier</a> <font color="purple"><b>:</b></font> 
+  
+**action\_handle\_declaration**{: #action_handle_declaration }
+:	<a href="#action_type">action\_type</a> <a href="#identifier">identifier</a>  \[ <a href="#array_dim">array\_dim</a>  ]  <font color="purple"><b>;</b></font> 
+  
+**activity\_data\_field**{: #activity_data_field }
+:	<font color="purple"><b>action</b></font> <a href="#data_declaration">data\_declaration</a> 
+  
+**action\_scheduling\_constraint**{: #action_scheduling_constraint }
+:	<font color="purple"><b>constraint</b></font>  ( <font color="purple"><b>parallel</b></font>   
+         | <font color="purple"><b>sequence</b></font>  )  <font color="purple"><b>{</b></font> <a href="#hierarchical_id">hierarchical\_id</a>  { <font color="purple"><b>,</b></font> <a href="#hierarchical_id">hierarchical\_id</a>  }  <font color="purple"><b>}</b></font> <font color="purple"><b>;</b></font> 
   
 <em> Exec blocks </em>  
 **exec\_block\_stmt**{: #exec_block_stmt }
@@ -101,7 +155,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <a href="#target_file_exec_block">target\_file\_exec\_block</a> 
   
 **exec\_block**{: #exec_block }
-:	<font color="purple"><b>exec</b></font> <a href="#exec_kind_identifier">exec\_kind\_identifier</a> <font color="purple"><b>{</b></font>  { <a href="#exec_body_stmt">exec\_body\_stmt</a>  }  <font color="purple"><b>}</b></font> 
+:	<font color="purple"><b>exec</b></font> <a href="#exec_kind_identifier">exec\_kind\_identifier</a> <font color="purple"><b>{</b></font>  { <a href="#exec_body_stmt">exec\_body\_stmt</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]  
   
 **exec\_kind\_identifier**{: #exec_kind_identifier }
 :	<font color="purple"><b>pre\_solve</b></font>   
@@ -134,13 +188,13 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 ## B.3 Struct declarations
   
 **struct\_declaration**{: #struct_declaration }
-:	<a href="#struct_type">struct\_type</a> <a href="#identifier">identifier</a>  \[ <font color="purple"><b>:</b></font> <a href="#struct_identifier">struct\_identifier</a>  ]  <font color="purple"><b>{</b></font>  { <a href="#struct_body_item">struct\_body\_item</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]  
+:	<a href="#struct_kind">struct\_kind</a> <a href="#identifier">identifier</a>  \[ <font color="purple"><b>:</b></font> <a href="#struct_identifier">struct\_identifier</a>  ]  <font color="purple"><b>{</b></font>  { <a href="#struct_body_item">struct\_body\_item</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]  
   
-**struct\_type**{: #struct_type }
+**struct\_kind**{: #struct_kind }
 :	<font color="purple"><b>struct</b></font>   
-        | <a href="#struct_qualifier">struct\_qualifier</a> 
+        | <a href="#object_kind">object\_kind</a> 
   
-**struct\_qualifier**{: #struct_qualifier }
+**object\_kind**{: #object_kind }
 :	<font color="purple"><b>buffer</b></font>   
         | <font color="purple"><b>stream</b></font>   
         | <font color="purple"><b>state</b></font>   
@@ -148,16 +202,15 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
   
 **struct\_body\_item**{: #struct_body_item }
 :	<a href="#constraint_declaration">constraint\_declaration</a>   
-        | <a href="#struct_field_declaration">struct\_field\_declaration</a>   
+        | <a href="#attr_field">attr\_field</a>   
         | <a href="#typedef_declaration">typedef\_declaration</a>   
-        | <a href="#coverspec_declaration">coverspec\_declaration</a>   
-        | <a href="#exec_block_stmt">exec\_block\_stmt</a> 
-  
-**struct\_field\_declaration**{: #struct_field_declaration }
-:	 \[ <a href="#struct_field_modifier">struct\_field\_modifier</a>  ]  <a href="#data_declaration">data\_declaration</a> 
-  
-**struct\_field\_modifier**{: #struct_field_modifier }
-:	<font color="purple"><b>rand</b></font> 
+        | <a href="#covergroup_declaration">covergroup\_declaration</a>   
+        | <a href="#exec_block_stmt">exec\_block\_stmt</a>   
+        | <a href="#static_const_field_declaration">static\_const\_field\_declaration</a>   
+        | <a href="#attr_group">attr\_group</a>   
+        | <a href="#compile_assert_stmt">compile\_assert\_stmt</a>   
+        | <a href="#inline_covergroup">inline\_covergroup</a>   
+        | <a href="#struct_body_compile_if">struct\_body\_compile\_if</a> 
   
 ## B.4 Procedural interface (PI)
   
@@ -228,16 +281,17 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <a href="#component_field_declaration">component\_field\_declaration</a>   
         | <a href="#action_declaration">action\_declaration</a>   
         | <a href="#object_bind_stmt">object\_bind\_stmt</a>   
-        | <a href="#inline_type_object_declaration">inline\_type\_object\_declaration</a>   
         | <a href="#exec_block">exec\_block</a>   
-        | <a href="#package_body_item">package\_body\_item</a> 
+        | <a href="#package_body_item">package\_body\_item</a>   
+        | <a href="#attr_group">attr\_group</a>   
+        | <a href="#component_body_compile_if">component\_body\_compile\_if</a> 
   
 **component\_field\_declaration**{: #component_field_declaration }
 :	<a href="#component_data_declaration">component\_data\_declaration</a>   
         | <a href="#component_pool_declaration">component\_pool\_declaration</a> 
   
 **component\_data\_declaration**{: #component_data_declaration }
-:	<a href="#data_declaration">data\_declaration</a> 
+:	 \[ <font color="purple"><b>static</b></font> <font color="purple"><b>const</b></font>  ]  <a href="#data_declaration">data\_declaration</a> 
   
 **component\_pool\_declaration**{: #component_pool_declaration }
 :	<font color="purple"><b>pool</b></font>  \[ <font color="purple"><b>\[</b></font> <a href="#expression">expression</a> <font color="purple"><b>]</b></font>  ]  <a href="#type_identifier">type\_identifier</a> <a href="#identifier">identifier</a> <font color="purple"><b>;</b></font> 
@@ -257,40 +311,46 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :	<a href="#component_action_identifier">component\_action\_identifier</a>   
         | <font color="purple"><b>\*</b></font> 
   
-**inline\_type\_object\_declaration**{: #inline_type_object_declaration }
-:	<font color="purple"><b>pool</b></font>  \[ <font color="purple"><b>\[</b></font> <a href="#expression">expression</a> <font color="purple"><b>]</b></font>  ]  <a href="#struct_qualifier">struct\_qualifier</a> <font color="purple"><b>struct</b></font> <a href="#identifier">identifier</a>  \[ <font color="purple"><b>:</b></font> <a href="#struct_identifier">struct\_identifier</a>  ]  <font color="purple"><b>{</b></font>  { <a href="#struct_body_item">struct\_body\_item</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]  
-  
 ##  B.6 Activity statements
   
 **activity\_stmt**{: #activity_stmt }
+:	 \[ <a href="#identifier">identifier</a> <font color="purple"><b>:</b></font>  ]  <a href="#labeled_activity_stmt">labeled\_activity\_stmt</a>   
+        | <a href="#activity_data_field">activity\_data\_field</a>   
+        | <a href="#activity_bind_stmt">activity\_bind\_stmt</a>   
+        | <a href="#action_handle_declaration">action\_handle\_declaration</a>   
+        | <a href="#activity_constraint_stmt">activity\_constraint\_stmt</a>   
+        | <a href="#action_scheduling_constraint">action\_scheduling\_constraint</a> 
+  
+**labeled\_activity\_stmt**{: #labeled_activity_stmt }
 :	<a href="#activity_if_else_stmt">activity\_if\_else\_stmt</a>   
         | <a href="#activity_repeat_stmt">activity\_repeat\_stmt</a>   
-        | <a href="#activity_constraint_stmt">activity\_constraint\_stmt</a>   
         | <a href="#activity_foreach_stmt">activity\_foreach\_stmt</a>   
         | <a href="#activity_action_traversal_stmt">activity\_action\_traversal\_stmt</a>   
         | <a href="#activity_sequence_block_stmt">activity\_sequence\_block\_stmt</a>   
         | <a href="#activity_select_stmt">activity\_select\_stmt</a>   
+        | <a href="#activity_match_stmt">activity\_match\_stmt</a>   
         | <a href="#activity_parallel_stmt">activity\_parallel\_stmt</a>   
         | <a href="#activity_schedule_stmt">activity\_schedule\_stmt</a>   
-        | <a href="#activity_bind_stmt">activity\_bind\_stmt</a> 
+        | <a href="#activity_super_stmt">activity\_super\_stmt</a>   
+        | <a href="#function_symbol_call">function\_symbol\_call</a> 
   
 **activity\_if\_else\_stmt**{: #activity_if_else_stmt }
 :	<font color="purple"><b>if</b></font> <font color="purple"><b>(</b></font> <a href="#expression">expression</a> <font color="purple"><b>)</b></font> <a href="#activity_stmt">activity\_stmt</a>  \[ <font color="purple"><b>else</b></font> <a href="#activity_stmt">activity\_stmt</a>  ]  
   
 **activity\_repeat\_stmt**{: #activity_repeat_stmt }
-:	<font color="purple"><b>repeat</b></font> <font color="purple"><b>while</b></font> <font color="purple"><b>(</b></font> <a href="#expression">expression</a> <font color="purple"><b>)</b></font> <a href="#activity_sequence_block_stmt">activity\_sequence\_block\_stmt</a>   
-        | <font color="purple"><b>repeat</b></font> <font color="purple"><b>(</b></font>  \[ <a href="#identifier">identifier</a> <font color="purple"><b>:</b></font>  ]  <a href="#expression">expression</a> <font color="purple"><b>)</b></font> <a href="#activity_sequence_block_stmt">activity\_sequence\_block\_stmt</a>   
-        | <font color="purple"><b>repeat</b></font> <a href="#activity_sequence_block_stmt">activity\_sequence\_block\_stmt</a>  \[ <font color="purple"><b>while</b></font> <font color="purple"><b>(</b></font> <a href="#expression">expression</a> <font color="purple"><b>)</b></font> <font color="purple"><b>;</b></font>  ]  
+:	<font color="purple"><b>while</b></font> <font color="purple"><b>(</b></font> <a href="#expression">expression</a> <font color="purple"><b>)</b></font> <a href="#activity_stmt">activity\_stmt</a>   
+        | <font color="purple"><b>repeat</b></font> <font color="purple"><b>(</b></font>  \[ <a href="#identifier">identifier</a> <font color="purple"><b>:</b></font>  ]  <a href="#expression">expression</a> <font color="purple"><b>)</b></font> <a href="#activity_stmt">activity\_stmt</a>   
+        | <font color="purple"><b>repeat</b></font> <a href="#activity_stmt">activity\_stmt</a>  \[ <font color="purple"><b>while</b></font> <font color="purple"><b>(</b></font> <a href="#expression">expression</a> <font color="purple"><b>)</b></font> <font color="purple"><b>;</b></font>  ]  
   
 **activity\_sequence\_block\_stmt**{: #activity_sequence_block_stmt }
-:	 \[ <font color="purple"><b>sequence</b></font>  ]  <font color="purple"><b>{</b></font>  { <a href="#activity_labeled_stmt">activity\_labeled\_stmt</a>  }  <font color="purple"><b>}</b></font> 
+:	 \[ <font color="purple"><b>sequence</b></font>  ]  <font color="purple"><b>{</b></font>  { <a href="#activity_stmt">activity\_stmt</a>  }  <font color="purple"><b>}</b></font> 
   
 **activity\_constraint\_stmt**{: #activity_constraint_stmt }
 :	<font color="purple"><b>constraint</b></font> <font color="purple"><b>{</b></font>  { <a href="#constraint_body_item">constraint\_body\_item</a>  }  <font color="purple"><b>}</b></font>   
         | <font color="purple"><b>constraint</b></font> <a href="#single_stmt_constraint">single\_stmt\_constraint</a> 
   
 **activity\_foreach\_stmt**{: #activity_foreach_stmt }
-:	<font color="purple"><b>foreach</b></font> <font color="purple"><b>(</b></font> <a href="#expression">expression</a> <font color="purple"><b>)</b></font> <a href="#activity_sequence_block_stmt">activity\_sequence\_block\_stmt</a> 
+:	<font color="purple"><b>foreach</b></font> <font color="purple"><b>(</b></font>  \[ <a href="#iterator_identifier">iterator\_identifier</a> <font color="purple"><b>:</b></font>  ]  <a href="#expression">expression</a>  \[ <font color="purple"><b>\[</b></font> <a href="#index_identifier">index\_identifier</a> <font color="purple"><b>]</b></font>  ]  <font color="purple"><b>)</b></font> <a href="#activity_stmt">activity\_stmt</a> 
   
 **activity\_action\_traversal\_stmt**{: #activity_action_traversal_stmt }
 :	<a href="#identifier">identifier</a>  \[ <a href="#inline_with_constraint">inline\_with\_constraint</a>  ]    
@@ -298,19 +358,26 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
   
 **inline\_with\_constraint**{: #inline_with_constraint }
 :	<font color="purple"><b>with</b></font> <font color="purple"><b>{</b></font>  { <a href="#constraint_body_item">constraint\_body\_item</a>  }  <font color="purple"><b>}</b></font>   
-        | <font color="purple"><b>with</b></font> <a href="#constant_expression">constant\_expression</a> 
+        | <font color="purple"><b>with</b></font> <a href="#single_stmt_constraint">single\_stmt\_constraint</a> 
   
 **activity\_select\_stmt**{: #activity_select_stmt }
-:	<font color="purple"><b>select</b></font> <font color="purple"><b>{</b></font> <a href="#activity_labeled_stmt">activity\_labeled\_stmt</a> <a href="#activity_labeled_stmt">activity\_labeled\_stmt</a>  { <a href="#activity_labeled_stmt">activity\_labeled\_stmt</a>  }  <font color="purple"><b>}</b></font> 
+:	<font color="purple"><b>select</b></font> <font color="purple"><b>{</b></font> <a href="#select_branch">select\_branch</a> <a href="#select_branch">select\_branch</a>  { <a href="#select_branch">select\_branch</a>  }  <font color="purple"><b>}</b></font> 
   
-**activity\_labeled\_stmt**{: #activity_labeled_stmt }
-:	 \[ <a href="#identifier">identifier</a> <font color="purple"><b>:</b></font>  ]  <a href="#activity_stmt">activity\_stmt</a> 
+**select\_branch**{: #select_branch }
+:	 \[  \[ <font color="purple"><b>(</b></font> <a href="#expression">expression</a> <font color="purple"><b>)</b></font>  ]   \[ <font color="purple"><b>\[</b></font> <a href="#expression">expression</a> <font color="purple"><b>]</b></font>  ]  <font color="purple"><b>:</b></font>  ]  <a href="#activity_stmt">activity\_stmt</a> 
+  
+**activity\_match\_stmt**{: #activity_match_stmt }
+:	<font color="purple"><b>match</b></font> <font color="purple"><b>(</b></font> <a href="#expression">expression</a> <font color="purple"><b>)</b></font> <font color="purple"><b>{</b></font> <a href="#match_choice">match\_choice</a>  { <a href="#match_choice">match\_choice</a>  }  <font color="purple"><b>}</b></font> 
+  
+**match\_choice**{: #match_choice }
+:	<font color="purple"><b>\[</b></font> <a href="#open_range_list">open\_range\_list</a> <font color="purple"><b>]</b></font> <font color="purple"><b>:</b></font> <a href="#activity_stmt">activity\_stmt</a>   
+        | <font color="purple"><b>default</b></font> <font color="purple"><b>:</b></font> <a href="#activity_stmt">activity\_stmt</a> 
   
 **activity\_parallel\_stmt**{: #activity_parallel_stmt }
-:	<font color="purple"><b>parallel</b></font> <font color="purple"><b>{</b></font>  { <a href="#activity_labeled_stmt">activity\_labeled\_stmt</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]  
+:	<font color="purple"><b>parallel</b></font> <font color="purple"><b>{</b></font>  { <a href="#activity_stmt">activity\_stmt</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]  
   
 **activity\_schedule\_stmt**{: #activity_schedule_stmt }
-:	<font color="purple"><b>schedule</b></font> <font color="purple"><b>{</b></font>  { <a href="#activity_labeled_stmt">activity\_labeled\_stmt</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]  
+:	<font color="purple"><b>schedule</b></font> <font color="purple"><b>{</b></font>  { <a href="#activity_stmt">activity\_stmt</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]  
   
 **activity\_bind\_stmt**{: #activity_bind_stmt }
 :	<font color="purple"><b>bind</b></font> <a href="#hierarchical_id">hierarchical\_id</a> <a href="#activity_bind_item_or_list">activity\_bind\_item\_or\_list</a> <font color="purple"><b>;</b></font> 
@@ -320,13 +387,16 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <font color="purple"><b>{</b></font> <a href="#hierarchical_id">hierarchical\_id</a>  { <font color="purple"><b>,</b></font> <a href="#hierarchical_id">hierarchical\_id</a>  }  <font color="purple"><b>}</b></font> 
   
 **symbol\_declaration**{: #symbol_declaration }
-:	<font color="purple"><b>symbol</b></font> <a href="#identifier">identifier</a>  \[ <font color="purple"><b>(</b></font> <a href="#symbol_paramlist">symbol\_paramlist</a> <font color="purple"><b>)</b></font>  ]  <font color="purple"><b>=</b></font> <a href="#activity_stmt">activity\_stmt</a> 
+:	<font color="purple"><b>symbol</b></font> <a href="#identifier">identifier</a>  \[ <font color="purple"><b>(</b></font> <a href="#symbol_paramlist">symbol\_paramlist</a> <font color="purple"><b>)</b></font>  ]  <font color="purple"><b>{</b></font>  { <a href="#activity_stmt">activity\_stmt</a>  }  <font color="purple"><b>}</b></font> 
   
 **symbol\_paramlist**{: #symbol_paramlist }
 :	 \[ <a href="#symbol_param">symbol\_param</a>  { <font color="purple"><b>,</b></font> <a href="#symbol_param">symbol\_param</a>  }   ]  
   
 **symbol\_param**{: #symbol_param }
 :	<a href="#data_type">data\_type</a> <a href="#identifier">identifier</a> 
+  
+**activity\_super\_stmt**{: #activity_super_stmt }
+:	<font color="purple"><b>super</b></font> <font color="purple"><b>;</b></font> 
   
 ## B.7 Overrides
   
@@ -338,7 +408,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <a href="#instance_override">instance\_override</a> 
   
 **type\_override**{: #type_override }
-:	<font color="purple"><b>type</b></font> <a href="#identifier">identifier</a> <font color="purple"><b>with</b></font> <a href="#type_identifier">type\_identifier</a> <font color="purple"><b>;</b></font> 
+:	<font color="purple"><b>type</b></font> <a href="#type_identifier">type\_identifier</a> <font color="purple"><b>with</b></font> <a href="#type_identifier">type\_identifier</a> <font color="purple"><b>;</b></font> 
   
 **instance\_override**{: #instance_override }
 :	<font color="purple"><b>instance</b></font> <a href="#hierarchical_id">hierarchical\_id</a> <font color="purple"><b>with</b></font> <a href="#identifier">identifier</a> <font color="purple"><b>;</b></font> 
@@ -348,17 +418,15 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 **data\_declaration**{: #data_declaration }
 :	<a href="#data_type">data\_type</a> <a href="#data_instantiation">data\_instantiation</a>  { <font color="purple"><b>,</b></font> <a href="#data_instantiation">data\_instantiation</a>  }  <font color="purple"><b>;</b></font> 
   
-**action\_data\_declaration**{: #action_data_declaration }
-:	<a href="#action_data_type">action\_data\_type</a> <a href="#data_instantiation">data\_instantiation</a>  { <font color="purple"><b>,</b></font> <a href="#data_instantiation">data\_instantiation</a>  }  <font color="purple"><b>;</b></font> 
-  
 **data\_instantiation**{: #data_instantiation }
-:	<a href="#identifier">identifier</a>  \[ <font color="purple"><b>(</b></font> <a href="#coverspec_portmap_list">coverspec\_portmap\_list</a> <font color="purple"><b>)</b></font>  ]   \[ <a href="#array_dim">array\_dim</a>  ]   \[ <font color="purple"><b>=</b></font> <a href="#constant_expression">constant\_expression</a>  ]  
+:	<a href="#covergroup_instantiation">covergroup\_instantiation</a>   
+        | <a href="#plain_data_instantiation">plain\_data\_instantiation</a> 
   
-**coverspec\_portmap\_list**{: #coverspec_portmap_list }
-:	 \[ <a href="#coverspec_portmap">coverspec\_portmap</a>  { <font color="purple"><b>,</b></font> <a href="#coverspec_portmap">coverspec\_portmap</a>  }    
+**covergroup\_portmap\_list**{: #covergroup_portmap_list }
+:	 \[ <a href="#covergroup_portmap">covergroup\_portmap</a>  { <font color="purple"><b>,</b></font> <a href="#covergroup_portmap">covergroup\_portmap</a>  }    
          | <a href="#hierarchical_id">hierarchical\_id</a>  { <font color="purple"><b>,</b></font> <a href="#hierarchical_id">hierarchical\_id</a>  }   ]  
   
-**coverspec\_portmap**{: #coverspec_portmap }
+**covergroup\_portmap**{: #covergroup_portmap }
 :	<font color="purple"><b>.</b></font> <a href="#identifier">identifier</a> <font color="purple"><b>(</b></font> <a href="#hierarchical_id">hierarchical\_id</a> <font color="purple"><b>)</b></font> 
   
 **array\_dim**{: #array_dim }
@@ -391,17 +459,17 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :	<font color="purple"><b>int</b></font>   
         | <font color="purple"><b>bit</b></font> 
   
-**open\_range\_list**{: #open_range_list }
-:	<a href="#open_range_value">open\_range\_value</a>  { <font color="purple"><b>,</b></font> <a href="#open_range_value">open\_range\_value</a>  }  
+**domain\_open\_range\_list**{: #domain_open_range_list }
+:	<a href="#domain_open_range_value">domain\_open\_range\_value</a>  { <font color="purple"><b>,</b></font> <a href="#domain_open_range_value">domain\_open\_range\_value</a>  }  
   
-**open\_range\_value**{: #open_range_value }
+**domain\_open\_range\_value**{: #domain_open_range_value }
 :	<a href="#expression">expression</a>  \[ <font color="purple"><b>..</b></font> <a href="#expression">expression</a>  ]    
         | <a href="#expression">expression</a> <font color="purple"><b>..</b></font>   
         | <font color="purple"><b>..</b></font> <a href="#expression">expression</a>   
         | <a href="#expression">expression</a> 
   
 **string\_type**{: #string_type }
-:	<font color="purple"><b>string</b></font> 
+:	<font color="purple"><b>string</b></font>  \[ <font color="purple"><b>in</b></font> <font color="purple"><b>\[</b></font> <a href="#DOUBLE_QUOTED_STRING">DOUBLE\_QUOTED\_STRING</a>  { <font color="purple"><b>,</b></font> <a href="#DOUBLE_QUOTED_STRING">DOUBLE\_QUOTED\_STRING</a>  }  <font color="purple"><b>]</b></font>  ]  
   
 **bool\_type**{: #bool_type }
 :	<font color="purple"><b>bool</b></font> 
@@ -412,17 +480,17 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 **action\_type**{: #action_type }
 :	<a href="#type_identifier">type\_identifier</a> 
   
-**struct\_type**{: #struct_type }
-:	<a href="#type_identifier">type\_identifier</a> 
-  
-**enum\_type**{: #enum_type }
-:	<a href="#type_identifier">type\_identifier</a> 
-  
 **enum\_declaration**{: #enum_declaration }
 :	<font color="purple"><b>enum</b></font> <a href="#enum_identifier">enum\_identifier</a> <font color="purple"><b>{</b></font>  \[ <a href="#enum_item">enum\_item</a>  { <font color="purple"><b>,</b></font> <a href="#enum_item">enum\_item</a>  }   ]  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]  
   
 **enum\_item**{: #enum_item }
 :	<a href="#identifier">identifier</a>  \[ <font color="purple"><b>=</b></font> <a href="#constant_expression">constant\_expression</a>  ]  
+  
+**enum\_type**{: #enum_type }
+:	<a href="#enum_type_identifier">enum\_type\_identifier</a>  \[ <font color="purple"><b>in</b></font> <font color="purple"><b>\[</b></font> <a href="#open_range_list">open\_range\_list</a> <font color="purple"><b>]</b></font>  ]  
+  
+**enum\_type\_identifier**{: #enum_type_identifier }
+:	<a href="#type_identifier">type\_identifier</a> 
   
 **typedef\_declaration**{: #typedef_declaration }
 :	<font color="purple"><b>typedef</b></font> <a href="#data_type">data\_type</a> <a href="#identifier">identifier</a> <font color="purple"><b>;</b></font> 
@@ -455,93 +523,129 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :	<font color="purple"><b>{</b></font>  { <a href="#constraint_body_item">constraint\_body\_item</a>  }  <font color="purple"><b>}</b></font> 
   
 **foreach\_constraint\_item**{: #foreach_constraint_item }
-:	<font color="purple"><b>foreach</b></font> <font color="purple"><b>(</b></font> <a href="#expression">expression</a> <font color="purple"><b>)</b></font> <a href="#constraint_set">constraint\_set</a> 
+:	<font color="purple"><b>foreach</b></font> <font color="purple"><b>(</b></font>  \[ <a href="#iterator_identifier">iterator\_identifier</a> <font color="purple"><b>:</b></font>  ]  <a href="#expression">expression</a>  \[ <font color="purple"><b>\[</b></font> <a href="#index_identifier">index\_identifier</a> <font color="purple"><b>]</b></font>  ]  <font color="purple"><b>)</b></font> <a href="#constraint_set">constraint\_set</a> 
   
 **if\_constraint\_item**{: #if_constraint_item }
 :	<font color="purple"><b>if</b></font> <font color="purple"><b>(</b></font> <a href="#expression">expression</a> <font color="purple"><b>)</b></font> <a href="#constraint_set">constraint\_set</a>  \[ <font color="purple"><b>else</b></font> <a href="#constraint_set">constraint\_set</a>  ]  
   
 **unique\_constraint\_item**{: #unique_constraint_item }
-:	<font color="purple"><b>unique</b></font> <font color="purple"><b>{</b></font> <a href="#hierarchical_id">hierarchical\_id</a>  { <font color="purple"><b>,</b></font> <a href="#hierarchical_id">hierarchical\_id</a>  }  <font color="purple"><b>}</b></font> <font color="purple"><b>;</b></font> 
+:	<font color="purple"><b>unique</b></font> <font color="purple"><b>{</b></font> <a href="#open_range_list">open\_range\_list</a> <font color="purple"><b>}</b></font> <font color="purple"><b>;</b></font> 
   
 **single\_stmt\_constraint**{: #single_stmt_constraint }
 :	<a href="#expression_constraint_item">expression\_constraint\_item</a>   
         | <a href="#unique_constraint_item">unique\_constraint\_item</a> 
   
-**scheduling\_constraint**{: #scheduling_constraint }
-:	<font color="purple"><b>constraint</b></font>  ( <font color="purple"><b>parallel</b></font>   
-         | <font color="purple"><b>sequence</b></font>  )  <font color="purple"><b>{</b></font> <a href="#hierarchical_id">hierarchical\_id</a> <font color="purple"><b>,</b></font> <a href="#hierarchical_id">hierarchical\_id</a>  { <font color="purple"><b>,</b></font> <a href="#hierarchical_id">hierarchical\_id</a>  }  <font color="purple"><b>}</b></font> <font color="purple"><b>;</b></font> 
+## B.11 Coverage specification
   
-## B.11 Coverspec
+**covergroup\_declaration**{: #covergroup_declaration }
+:	<font color="purple"><b>coverspec</b></font> <a href="#covergroup_identifier">covergroup\_identifier</a> <font color="purple"><b>(</b></font> <a href="#covergroup_port">covergroup\_port</a>  { <font color="purple"><b>,</b></font> <a href="#covergroup_port">covergroup\_port</a>  }  <font color="purple"><b>)</b></font> <font color="purple"><b>{</b></font>  { <a href="#covergroup_body_item">covergroup\_body\_item</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]  
   
-**coverspec\_declaration**{: #coverspec_declaration }
-:	<font color="purple"><b>coverspec</b></font> <a href="#identifier">identifier</a> <font color="purple"><b>(</b></font> <a href="#coverspec_port">coverspec\_port</a>  { <font color="purple"><b>,</b></font> <a href="#coverspec_port">coverspec\_port</a>  }  <font color="purple"><b>)</b></font> <font color="purple"><b>{</b></font>  { <a href="#coverspec_body_item">coverspec\_body\_item</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]  
-  
-**coverspec\_port**{: #coverspec_port }
+**covergroup\_port**{: #covergroup_port }
 :	<a href="#data_type">data\_type</a> <a href="#identifier">identifier</a> 
   
-**coverspec\_body\_item**{: #coverspec_body_item }
-:	<a href="#coverspec_option">coverspec\_option</a>   
-        | <a href="#coverspec_coverpoint">coverspec\_coverpoint</a>   
-        | <a href="#coverspec_cross">coverspec\_cross</a>   
-        | <a href="#constraint_declaration">constraint\_declaration</a> 
+**covergroup\_body\_item**{: #covergroup_body_item }
+:	<a href="#covergroup_option">covergroup\_option</a>   
+        | <a href="#covergroup_coverpoint">covergroup\_coverpoint</a>   
+        | <a href="#covergroup_cross">covergroup\_cross</a> 
   
-**coverspec\_option**{: #coverspec_option }
+**covergroup\_option**{: #covergroup_option }
 :	<font color="purple"><b>option</b></font> <font color="purple"><b>.</b></font> <a href="#identifier">identifier</a> <font color="purple"><b>=</b></font> <a href="#constant_expression">constant\_expression</a> <font color="purple"><b>;</b></font> 
   
-**coverspec\_coverpoint**{: #coverspec_coverpoint }
-:	<a href="#coverpoint_identifier">coverpoint\_identifier</a> <font color="purple"><b>:</b></font> <font color="purple"><b>coverpoint</b></font> <a href="#coverpoint_target_identifier">coverpoint\_target\_identifier</a> <font color="purple"><b>{</b></font>  { <a href="#coverspec_coverpoint_body_item">coverspec\_coverpoint\_body\_item</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]    
-        | <a href="#coverpoint_identifier">coverpoint\_identifier</a> <font color="purple"><b>:</b></font> <font color="purple"><b>coverpoint</b></font> <a href="#coverpoint_target_identifier">coverpoint\_target\_identifier</a> <font color="purple"><b>;</b></font> 
+**inline\_covergroup**{: #inline_covergroup }
+:	<font color="purple"><b>covergroup</b></font> <font color="purple"><b>{</b></font>  { <a href="#covergroup_body_item">covergroup\_body\_item</a>  }  <font color="purple"><b>}</b></font> <a href="#identifier">identifier</a> <font color="purple"><b>;</b></font> 
   
-**coverspec\_coverpoint\_body\_item**{: #coverspec_coverpoint_body_item }
-:	<a href="#coverspec_option">coverspec\_option</a>   
-        | <a href="#coverspec_coverpoint_binspec">coverspec\_coverpoint\_binspec</a> 
+**data\_declaration**{: #data_declaration }
+:	<a href="#data_type">data\_type</a> <a href="#data_instantiation">data\_instantiation</a>  { <font color="purple"><b>,</b></font> <a href="#data_instantiation">data\_instantiation</a>  }  <font color="purple"><b>;</b></font> 
   
-**coverspec\_coverpoint\_binspec**{: #coverspec_coverpoint_binspec }
-:	<a href="#bins_keyword">bins\_keyword</a> <a href="#identifier">identifier</a> <a href="#bin_specification">bin\_specification</a>   
-        | <a href="#bins_keyword">bins\_keyword</a> <a href="#identifier">identifier</a> <a href="#hierarchical_id">hierarchical\_id</a> <font color="purple"><b>;</b></font> 
+**covergroup\_instantiation**{: #covergroup_instantiation }
+:	<a href="#covergroup_identifier">covergroup\_identifier</a>  \[ <font color="purple"><b>(</b></font> <a href="#covergroup_portmap_list">covergroup\_portmap\_list</a> <font color="purple"><b>)</b></font>  ]   \[ <font color="purple"><b>with</b></font> <font color="purple"><b>{</b></font>  { <a href="#covergroup_option">covergroup\_option</a>  }  <font color="purple"><b>}</b></font>  ]  
+  
+**plain\_data\_instantiation**{: #plain_data_instantiation }
+:	<a href="#identifier">identifier</a>  \[ <a href="#array_dim">array\_dim</a>  ]   \[ <font color="purple"><b>=</b></font> <a href="#constant_expression">constant\_expression</a>  ]  
+  
+**covergroup\_coverpoint**{: #covergroup_coverpoint }
+:	 \[  \[ <a href="#data_type">data\_type</a>  ]  <a href="#coverpoint_identifier">coverpoint\_identifier</a> <font color="purple"><b>:</b></font>  ]  <font color="purple"><b>coverpoint</b></font> <a href="#expression">expression</a>  \[ <font color="purple"><b>iff</b></font> <font color="purple"><b>(</b></font> <a href="#expression">expression</a> <font color="purple"><b>)</b></font>  ]  <a href="#bins_or_empty">bins\_or\_empty</a> 
+  
+**bins\_or\_empty**{: #bins_or_empty }
+:	<font color="purple"><b>{</b></font>  { <a href="#covergroup_coverpoint_body_item">covergroup\_coverpoint\_body\_item</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]    
+        | <font color="purple"><b>;</b></font> 
+  
+**covergroup\_coverpoint\_body\_item**{: #covergroup_coverpoint_body_item }
+:	<a href="#covergroup_option">covergroup\_option</a>   
+        | <a href="#covergroup_coverpoint_binspec">covergroup\_coverpoint\_binspec</a> 
+  
+**covergroup\_coverpoint\_binspec**{: #covergroup_coverpoint_binspec }
+:	<a href="#bins_keyword">bins\_keyword</a> <a href="#identifier">identifier</a>  \[ <font color="purple"><b>\[</b></font> <a href="#constant_expression">constant\_expression</a> <font color="purple"><b>]</b></font>  ]  <font color="purple"><b>=</b></font> <a href="#coverpoint_bins">coverpoint\_bins</a> 
+  
+**coverpoint\_bins**{: #coverpoint_bins }
+:	<font color="purple"><b>\[</b></font> <a href="#covergroup_range_list">covergroup\_range\_list</a> <font color="purple"><b>]</b></font>  \[ <font color="purple"><b>with</b></font> <font color="purple"><b>(</b></font> <a href="#covergroup_expression">covergroup\_expression</a> <font color="purple"><b>)</b></font>  ]  <font color="purple"><b>;</b></font>   
+        | <a href="#coverpoint_identifier">coverpoint\_identifier</a> <font color="purple"><b>with</b></font> <font color="purple"><b>(</b></font> <a href="#covergroup_expression">covergroup\_expression</a> <font color="purple"><b>)</b></font> <font color="purple"><b>;</b></font>   
+        | <font color="purple"><b>default</b></font> <font color="purple"><b>;</b></font> 
+  
+**covergroup\_range\_list**{: #covergroup_range_list }
+:	<a href="#covergroup_value_range">covergroup\_value\_range</a>  { <font color="purple"><b>,</b></font> <a href="#covergroup_value_range">covergroup\_value\_range</a>  }  
+  
+**covergroup\_value\_range**{: #covergroup_value_range }
+:	<a href="#expression">expression</a>   
+        | <a href="#expression">expression</a> <font color="purple"><b>..</b></font>  \[ <a href="#expression">expression</a>  ]    
+        |  \[ <a href="#expression">expression</a>  ]  <font color="purple"><b>..</b></font> <a href="#expression">expression</a> 
   
 **bins\_keyword**{: #bins_keyword }
 :	<font color="purple"><b>bins</b></font>   
-        | <font color="purple"><b>ignore\_bins</b></font>   
-        | <font color="purple"><b>illegal\_bins</b></font> 
+        | <font color="purple"><b>illegal\_bins</b></font>   
+        | <font color="purple"><b>ignore\_bins</b></font> 
   
-**coverspec\_cross**{: #coverspec_cross }
-:	<a href="#ID">ID</a> <font color="purple"><b>:</b></font> <font color="purple"><b>cross</b></font> <a href="#coverpoint_identifier">coverpoint\_identifier</a>  { <font color="purple"><b>,</b></font> <a href="#coverpoint_identifier">coverpoint\_identifier</a>  }  <font color="purple"><b>{</b></font>  { <a href="#coverspec_cross_body_item">coverspec\_cross\_body\_item</a>  }  <font color="purple"><b>}</b></font>   
-        | <a href="#ID">ID</a> <font color="purple"><b>:</b></font> <font color="purple"><b>cross</b></font> <a href="#coverpoint_identifier">coverpoint\_identifier</a>  { <font color="purple"><b>,</b></font> <a href="#coverpoint_identifier">coverpoint\_identifier</a>  }  <font color="purple"><b>;</b></font> 
+**covergroup\_cross**{: #covergroup_cross }
+:	<a href="#covercross_identifier">covercross\_identifier</a> <font color="purple"><b>:</b></font> <font color="purple"><b>cross</b></font> <a href="#coverpoint_identifier">coverpoint\_identifier</a>  { <font color="purple"><b>,</b></font> <a href="#coverpoint_identifier">coverpoint\_identifier</a>  }   \[ <font color="purple"><b>iff</b></font> <font color="purple"><b>(</b></font> <a href="#expression">expression</a> <font color="purple"><b>)</b></font>  ]  <a href="#cross_item_or_null">cross\_item\_or\_null</a> 
   
-**coverspec\_cross\_body\_item**{: #coverspec_cross_body_item }
-:	<a href="#coverspec_option">coverspec\_option</a> 
+**cross\_item\_or\_null**{: #cross_item_or_null }
+:	<font color="purple"><b>{</b></font>  { <a href="#covergroup_cross_body_item">covergroup\_cross\_body\_item</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]    
+        | <font color="purple"><b>;</b></font> 
   
-<em> Bins </em>  
-**bins\_declaration**{: #bins_declaration }
-:	<font color="purple"><b>bins</b></font> <a href="#identifier">identifier</a>  \[ <a href="#variable_identifier">variable\_identifier</a>  ]  <a href="#bin_specification">bin\_specification</a> <font color="purple"><b>;</b></font> 
+**covergroup\_cross\_body\_item**{: #covergroup_cross_body_item }
+:	<a href="#covergroup_option">covergroup\_option</a>   
+        | <a href="#covergroup_cross_binspec">covergroup\_cross\_binspec</a> 
   
-**bin\_specification**{: #bin_specification }
-:	<a href="#bin_specifier">bin\_specifier</a>  { <a href="#bin_specifier">bin\_specifier</a>  }   \[ <a href="#bin_wildcard">bin\_wildcard</a>  ]    
-        | <font color="purple"><b>with</b></font> <font color="purple"><b>(</b></font> <a href="#expression">expression</a> <font color="purple"><b>)</b></font> 
+**covergroup\_cross\_binspec**{: #covergroup_cross_binspec }
+:	<a href="#bins_keyword">bins\_keyword</a> <a href="#identifier">identifier</a> <font color="purple"><b>=</b></font> <a href="#covercross_identifier">covercross\_identifier</a> <font color="purple"><b>with</b></font> <font color="purple"><b>(</b></font> <a href="#covergroup_expression">covergroup\_expression</a> <font color="purple"><b>)</b></font> <font color="purple"><b>;</b></font> 
   
-**bin\_specifier**{: #bin_specifier }
-:	<a href="#explicit_bin_value">explicit\_bin\_value</a>   
-        | <a href="#explicit_bin_range">explicit\_bin\_range</a>   
-        | <a href="#bin_range_divide">bin\_range\_divide</a>   
-        | <a href="#bin_range_size">bin\_range\_size</a> 
+## B.12 Conditional-compile
   
-**explicit\_bin\_value**{: #explicit_bin_value }
-:	<font color="purple"><b>\[</b></font> <a href="#constant">constant</a> <font color="purple"><b>]</b></font> 
+**package\_body\_compile\_if**{: #package_body_compile_if }
+:	<font color="purple"><b>compile</b></font> <font color="purple"><b>if</b></font>  ( <a href="#constant_expression">constant\_expression</a>  )  <a href="#package_body_compile_if_item">package\_body\_compile\_if\_item</a>  \[ <font color="purple"><b>else</b></font> <a href="#package_body_compile_if_item">package\_body\_compile\_if\_item</a>  ]  
   
-**explicit\_bin\_range**{: #explicit_bin_range }
-:	<font color="purple"><b>\[</b></font> <a href="#constant">constant</a> <font color="purple"><b>..</b></font> <a href="#constant">constant</a> <font color="purple"><b>]</b></font> 
+**package\_body\_compile\_if\_item**{: #package_body_compile_if_item }
+:	<a href="#package_body_item">package\_body\_item</a>   
+        | <font color="purple"><b>{</b></font>  { <a href="#package_body_item">package\_body\_item</a>  }  <font color="purple"><b>}</b></font> 
   
-**bin\_range\_divide**{: #bin_range_divide }
-:	<a href="#explicit_bin_range">explicit\_bin\_range</a> <font color="purple"><b>/</b></font> <a href="#constant">constant</a> 
+**action\_body\_compile\_if**{: #action_body_compile_if }
+:	<font color="purple"><b>compile</b></font> <font color="purple"><b>if</b></font>  ( <a href="#constant_expression">constant\_expression</a>  )  <a href="#action_body_compile_if_item">action\_body\_compile\_if\_item</a>  \[ <font color="purple"><b>else</b></font> <a href="#action_body_compile_if_item">action\_body\_compile\_if\_item</a>  ]  
   
-**bin\_range\_size**{: #bin_range_size }
-:	<a href="#explicit_bin_range">explicit\_bin\_range</a> <font color="purple"><b>:</b></font> <a href="#constant">constant</a> 
+**action\_body\_compile\_if\_item**{: #action_body_compile_if_item }
+:	<a href="#action_body_item">action\_body\_item</a>   
+        | <font color="purple"><b>{</b></font>  { <a href="#action_body_item">action\_body\_item</a>  }  <font color="purple"><b>}</b></font> 
   
-**bin\_wildcard**{: #bin_wildcard }
-:	<font color="purple"><b>\[</b></font> <font color="purple"><b>\*</b></font> <font color="purple"><b>]</b></font> 
+**component\_body\_compile\_if**{: #component_body_compile_if }
+:	<font color="purple"><b>compile</b></font> <font color="purple"><b>if</b></font>  ( <a href="#constant_expression">constant\_expression</a>  )  <a href="#component_body_compile_if_item">component\_body\_compile\_if\_item</a>  \[ <font color="purple"><b>else</b></font> <a href="#component_body_compile_if_item">component\_body\_compile\_if\_item</a>  ]  
   
-## B.12 Expression
+**component\_body\_compile\_if\_item**{: #component_body_compile_if_item }
+:	<a href="#component_body_item">component\_body\_item</a>   
+        | <font color="purple"><b>{</b></font>  { <a href="#component_body_item">component\_body\_item</a>  }  <font color="purple"><b>}</b></font> 
+  
+**struct\_body\_compile\_if**{: #struct_body_compile_if }
+:	<font color="purple"><b>compile</b></font> <font color="purple"><b>if</b></font>  ( <a href="#constant_expression">constant\_expression</a>  )  <a href="#struct_body_compile_if_item">struct\_body\_compile\_if\_item</a>  \[ <font color="purple"><b>else</b></font> <a href="#struct_body_compile_if_item">struct\_body\_compile\_if\_item</a>  ]  
+  
+**struct\_body\_compile\_if\_item**{: #struct_body_compile_if_item }
+:	<a href="#struct_body_item">struct\_body\_item</a>   
+        | <font color="purple"><b>{</b></font>  { <a href="#struct_body_item">struct\_body\_item</a>  }  <font color="purple"><b>}</b></font> 
+  
+**compile\_has\_expr**{: #compile_has_expr }
+:	<font color="purple"><b>compile</b></font> <font color="purple"><b>has</b></font> <font color="purple"><b>(</b></font> <a href="#constant_expression">constant\_expression</a> <font color="purple"><b>)</b></font> 
+  
+**compile\_assert\_stmt**{: #compile_assert_stmt }
+:	<font color="purple"><b>compile</b></font> <font color="purple"><b>assert</b></font> <font color="purple"><b>(</b></font> <a href="#constant_expression">constant\_expression</a>  \[ <font color="purple"><b>,</b></font> <a href="#string">string</a>  ]  <font color="purple"><b>)</b></font> <font color="purple"><b>;</b></font> 
+  
+## B.13 Expression
   
 **constant\_expression**{: #constant_expression }
 :	<a href="#expression">expression</a> 
@@ -587,7 +691,13 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <font color="purple"><b>>=</b></font> 
   
 **inside\_expr\_term**{: #inside_expr_term }
-:	<font color="purple"><b>in</b></font>  \[ <a href="#open_range_list">open\_range\_list</a>  ]  
+:	<font color="purple"><b>in</b></font> <font color="purple"><b>\[</b></font> <a href="#open_range_list">open\_range\_list</a> <font color="purple"><b>]</b></font> 
+  
+**open\_range\_list**{: #open_range_list }
+:	<a href="#open_range_value">open\_range\_value</a>  { <font color="purple"><b>,</b></font> <a href="#open_range_value">open\_range\_value</a>  }  
+  
+**open\_range\_value**{: #open_range_value }
+:	<a href="#expression">expression</a>  \[ <font color="purple"><b>..</b></font> <a href="#expression">expression</a>  ]  
   
 **binary\_shift\_expr**{: #binary_shift_expr }
 :	<a href="#binary_add_sub_expr">binary\_add\_sub\_expr</a>  { <a href="#shift_op">shift\_op</a> <a href="#binary_add_sub_expr">binary\_add\_sub\_expr</a>  }  
@@ -619,7 +729,10 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <a href="#paren_expr">paren\_expr</a>   
         | <a href="#string">string</a>   
         | <a href="#variable_ref_path">variable\_ref\_path</a>   
-        | <a href="#method_function_call">method\_function\_call</a> 
+        | <a href="#method_function_symbol_call">method\_function\_symbol\_call</a>   
+        | <a href="#static_ref_path">static\_ref\_path</a>   
+        | <font color="purple"><b>super</b></font>   
+        | <a href="#compile_has_expr">compile\_has\_expr</a> 
   
 **paren\_expr**{: #paren_expr }
 :	<font color="purple"><b>(</b></font> <a href="#expression">expression</a> <font color="purple"><b>)</b></font> 
@@ -630,15 +743,25 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 **variable\_ref**{: #variable_ref }
 :	<a href="#identifier">identifier</a>  \[ <font color="purple"><b>\[</b></font> <a href="#expression">expression</a>  \[ <font color="purple"><b>:</b></font> <a href="#expression">expression</a>  ]  <font color="purple"><b>]</b></font>  ]  
   
-**method\_function\_call**{: #method_function_call }
+**method\_function\_symbol\_call**{: #method_function_symbol_call }
 :	<a href="#method_call">method\_call</a>   
         | <a href="#function_call">function\_call</a> 
   
 **method\_call**{: #method_call }
-:	<a href="#hierarchical_id">hierarchical\_id</a> <a href="#method_parameter_list">method\_parameter\_list</a> 
+:	<a href="#hierarchical_id">hierarchical\_id</a> <a href="#method_parameter_list">method\_parameter\_list</a> <font color="purple"><b>;</b></font> 
   
-**function\_call**{: #function_call }
-:	<a href="#ID">ID</a>  \[ <font color="purple"><b>::</b></font> <a href="#ID">ID</a>  \[ <font color="purple"><b>::</b></font> <a href="#ID">ID</a>  ]   ]  <a href="#method_parameter_list">method\_parameter\_list</a> 
+**function\_symbol\_call**{: #function_symbol_call }
+:	<a href="#function_symbol_id">function\_symbol\_id</a> <a href="#method_parameter_list">method\_parameter\_list</a> <font color="purple"><b>;</b></font> 
+  
+**function\_symbol\_id**{: #function_symbol_id }
+:	<a href="#function_id">function\_id</a>   
+        | <a href="#symbol_identifier">symbol\_identifier</a> 
+  
+**function\_id**{: #function_id }
+:	<a href="#identifier">identifier</a>  { <font color="purple"><b>::</b></font> <a href="#identifier">identifier</a>  }  
+  
+**static\_ref\_path**{: #static_ref_path }
+:	<a href="#identifier">identifier</a> <font color="purple"><b>::</b></font> <a href="#identifier">identifier</a>  { <font color="purple"><b>::</b></font> <a href="#identifier">identifier</a>  }  
   
 **mul\_div\_mod\_op**{: #mul_div_mod_op }
 :	<font color="purple"><b>\*</b></font>   
@@ -657,7 +780,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :	<font color="purple"><b>==</b></font>   
         | <font color="purple"><b>!=</b></font> 
   
-## B.13 Identifiers and literals
+## B.14 Identifiers and literals
   
 **constant**{: #constant }
 :	<a href="#number">number</a>   
@@ -674,7 +797,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :	<a href="#type_identifier">type\_identifier</a> 
   
 **type\_identifier**{: #type_identifier }
-:	<a href="#ID">ID</a>  { <font color="purple"><b>::</b></font> <a href="#ID">ID</a>  }  
+:	 \[ <font color="purple"><b>::</b></font>  ]  <a href="#ID">ID</a>  { <font color="purple"><b>::</b></font> <a href="#ID">ID</a>  }  
   
 **package\_identifier**{: #package_identifier }
 :	<a href="#hierarchical_id">hierarchical\_id</a> 
@@ -694,6 +817,9 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 **component\_action\_identifier**{: #component_action_identifier }
 :	<a href="#identifier">identifier</a> 
   
+**covercross\_identifier**{: #covercross_identifier }
+:	<a href="#identifier">identifier</a> 
+  
 **coverpoint\_identifier**{: #coverpoint_identifier }
 :	<a href="#identifier">identifier</a> 
   
@@ -709,11 +835,29 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 **method\_identifier**{: #method_identifier }
 :	<a href="#identifier">identifier</a> 
   
+**symbol\_identifier**{: #symbol_identifier }
+:	<a href="#identifier">identifier</a> 
+  
 **variable\_identifier**{: #variable_identifier }
 :	<a href="#identifier">identifier</a> 
   
-**exec\_kind\_identifier**{: #exec_kind_identifier }
+**iterator\_identifier**{: #iterator_identifier }
 :	<a href="#identifier">identifier</a> 
+  
+**index\_identifier**{: #index_identifier }
+:	<a href="#identifier">identifier</a> 
+  
+**buffer\_type\_identifier**{: #buffer_type_identifier }
+:	<a href="#type_identifier">type\_identifier</a> 
+  
+**resource\_type\_identifier**{: #resource_type_identifier }
+:	<a href="#type_identifier">type\_identifier</a> 
+  
+**state\_type\_identifier**{: #state_type_identifier }
+:	<a href="#type_identifier">type\_identifier</a> 
+  
+**stream\_type\_identifier**{: #stream_type_identifier }
+:	<a href="#type_identifier">type\_identifier</a> 
   
 **filename\_string**{: #filename_string }
 :	<a href="#DOUBLE_QUOTED_STRING">DOUBLE\_QUOTED\_STRING</a> 
@@ -722,7 +866,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :	<font color="purple"><b>true</b></font>   
         | <font color="purple"><b>false</b></font> 
   
-## B.14 Numbers
+## B.15 Numbers
   
 **number**{: #number }
 :	<a href="#based_hex_number">based\_hex\_number</a>   
@@ -789,7 +933,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
          |  \[ <em>A-F</em> ]    
          | <font color="purple"><b>\_</b></font>  }  
   
-## B.15 Comments
+## B.16 Comments
   
 **SL\_COMMENT**{: #SL_COMMENT }
 :	<font color="purple"><b>//</b></font> <em>{any\_ASCII\_character\_except\_newline}\n</em>
@@ -801,8 +945,26 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :	<a href="#DOUBLE_QUOTED_STRING">DOUBLE\_QUOTED\_STRING</a>   
         | <a href="#TRIPLE_DOUBLE_QUOTED_STRING">TRIPLE\_DOUBLE\_QUOTED\_STRING</a> 
   
+**unescaped\_character**{: #unescaped_character }
+:	<em>Any\_Printable\_ASCII\_Character</em>
+  
+**escaped\_character**{: #escaped_character }
+:	<font color="purple"><b>\</b></font>  ( <font color="purple"><b>'</b></font>   
+         | <font color="purple"><b>"</b></font>   
+         | <font color="purple"><b>?</b></font>   
+         | <font color="purple"><b>'</b></font>   
+         | <font color="purple"><b>a</b></font>   
+         | <font color="purple"><b>b</b></font>   
+         | <font color="purple"><b>f</b></font>   
+         | <font color="purple"><b>n</b></font>   
+         | <font color="purple"><b>r</b></font>   
+         | <font color="purple"><b>t</b></font>   
+         | <font color="purple"><b>v</b></font>   
+         |  \[ <em>0-7</em> ]   \[ <em>0-7</em> ]   \[ <em>0-7</em> ]   )  
+  
 **DOUBLE\_QUOTED\_STRING**{: #DOUBLE_QUOTED_STRING }
-:	<font color="purple"><b>"</b></font>  { <em>\|!\|"</em> }  <font color="purple"><b>"</b></font> 
+:	<font color="purple"><b>"</b></font>  { <a href="#unescaped_character">unescaped\_character</a>   
+         | <a href="#escaped_character">escaped\_character</a>  }  <font color="purple"><b>"</b></font> 
   
 **TRIPLE\_DOUBLE\_QUOTED\_STRING**{: #TRIPLE_DOUBLE_QUOTED_STRING }
 :	<font color="purple"><b>"""</b></font>  { <em>any\_ASCII\_character</em> }  <font color="purple"><b>"""</b></font> 
