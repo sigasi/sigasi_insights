@@ -1,8 +1,10 @@
 ---
 title: "Datatype checks while you type"
-layout: screencast 
+layout: youtube
 pager: false
-date: 2016-01-01
+date: 2018-06-28
 comments: false
-videoid: 05r5pssbak
+videoid: b4BaT5Cb82Q
+tags:
+  - Basic instruction
 ---

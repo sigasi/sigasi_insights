@@ -7,5 +7,7 @@ comments: false
 videoid: au-SZ61lXp0
 tags:
   - Sigasi Studio
+  - Installation
   - Basic instruction
 ---
+Learn how to install Sigasi Studio.

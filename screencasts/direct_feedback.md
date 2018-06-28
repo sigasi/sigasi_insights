@@ -1,8 +1,15 @@
 ---
 title: "Direct Feedback"
-layout: screencast 
+layout: youtube
 pager: false
-date: 2016-01-01
+date: 2018-06-28
 comments: false
-videoid: 5ca938db46
+videoid: osEhjUhw00o
+tags:
+  - Basic instruction
 ---
+Sigasi Studio gives you Direct Feedback on the code you type.
+Direct Feedback highlights code that could result in warnings
+and errors during the stage of compiling.
+This helps you to get your code quicker through the compilation
+phase once you're ready to start simulating.

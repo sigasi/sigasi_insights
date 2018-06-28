@@ -1,8 +1,13 @@
 ---
-title: "Install Eclipse Plugins from the Marketplace"
-layout: screencast 
+title: "Install the Sigasi Studio Eclipse Plugin"
+layout: youtube
 pager: false
-date: 2016-01-01
+date: 2018-06-28
 comments: false
-videoid: 3498c18048
+videoid: oztHrxXfxMo
+tags:
+  - Installation
+  - Sigasi Studio
+  - Basic instruction
 ---
+Learn how to install Sigasi Studio as an Eclipse plugin in an existing Eclipse installation.

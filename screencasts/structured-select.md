@@ -1,10 +1,12 @@
 ---
 title: "Select code, based on its structure"
-layout: screencast 
+layout: youtube
 pager: false
-date: 2016-01-01
+date: 2018-06-28
 comments: false
-videoid: 314d98955e
+videoid: Vm-aliiCwjw
+tags:
+  - Basic instruction
 ---
 Select VHDL based on its syntactic structure. This allows you to cut, copy and move code a lot faster.
 
