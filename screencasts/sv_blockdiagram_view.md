@@ -11,5 +11,5 @@ tags:
   - graphics
 ---
 
-
 The Block Diagrams View is documented [here][/manual/views#block].
+The Graphical Config File is documented [here][/tech/using-graphics-configuration].
