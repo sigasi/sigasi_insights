@@ -1,8 +1,12 @@
 ---
 title: "Hierarchy View"
-layout: screencast 
+layout: youtube
 pager: false
-date: 2016-01-01
+date: 2018-07-02
 comments: false
-videoid: 50bd52752e
+videoid: GuHaAzbNQz4
+tags:
+  - Hierarchy
 ---
+
+The Hierarchy View is documented [here][/manual/views#hierarchy].
