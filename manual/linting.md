@@ -132,7 +132,6 @@ is a form of technological debt that should be avoided.
 
 Sigasi Studio flags some kinds of dead code:
 
-* unused or unnecessary library and use clauses,
 * unused declarations (signals, constants, …)
 * unused ports
 * unreachable statements (see [Dead code](#dead-code))
