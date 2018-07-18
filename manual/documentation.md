@@ -24,6 +24,15 @@ generation flow to your liking. Users without a [xprt] License can also export a
 
 All errors are logged to the console view.
 
+## Customize templates
+
+The templates used for the documentation can be copied and modified in the workspace so that
+template customizations are not overwritten by updates of Sigasi Studio.
+
+* Create a new folder in the workspace: *<workspace\>/.metadata/sigasi-templates*
+* Copy the desired template from *<intstalldir\>/plugins/com.sigasi.hdt.docgen.resources_<version\>/templates* to the *<workspace\>/.metadata/sigasi-templates* folder.
+* Now edit the *<workspace\>/.metadata/sigasi-templates/<template\>.xml* file.
+
 # Comment Association
 
 Comments in HDL code are used to add extra information or documentation to that code. Sigasi Studio uses certain rules to determine which comment belongs to which code. This is important for documentation hovers, refactoring, formatting,...
