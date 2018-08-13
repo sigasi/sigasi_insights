@@ -55,7 +55,7 @@ The availability of code rules depends on the license requirements.
 
 * ST code rules are available for all licenses including [starter]
 * CR code rules require at least a [creator] license.
-* XL code rules are only available with a [xl] license.
+* XL code rules are only available with a [xl] or [xprt] license.
 
 | License | Quick Fix                        | Description                                                                                                             |  ID |
 |---------|----------------------------------|-------------------------------------------------------------------------------------------------------------------------|----:|

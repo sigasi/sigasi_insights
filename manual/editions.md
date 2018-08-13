@@ -24,7 +24,7 @@ Throughout the documentation, features that are only available in this version a
 
 ## Sigasi Studio XPRT {: #xprt}
 
-*Sigasi Studio XPRT* is the most complete version of Sigasi Studio. It unlocks all features of Sigasi Studio Creator and XL, plus the graphical views, documentation generation,...
+*Sigasi Studio XPRT* is the most complete version of Sigasi Studio. It unlocks all features of [creator] and [xl], plus the graphical views, documentation generation, ...
 
 Throughout the documentation, features that are only available in this version are marked as "[xprt_only]".
 
@@ -44,7 +44,7 @@ Throughout the documentation, features that are only available in this version a
 
 ## Sigasi Studio XL Doc {: #xl_doc}
 
-*Sigasi Studio XL Doc* is the old name for Sigasi Studio XPRT.
+*Sigasi Studio XL Doc* is the old name for [xprt].
 
 # Languages
 
