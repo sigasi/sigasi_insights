@@ -79,4 +79,4 @@ The graphical view provides graphics that are:
 ## Summary
 
 To conclude, graphic editing poses several problems, including **scalability and manageability problems**. These problems are addressed when design teams switch to language-based design entry with graphical views. 
-Sigasi is working on this vision, specifically in the [Sigasi Studio XL Doc](http://www.sigasi.com/products) product. We are gaining followers (and customers) among teams who formerly used graphical design entry tools. 
+Sigasi is working on this vision, specifically in the [Sigasi Studio XPRT](http://www.sigasi.com/products) product. We are gaining followers (and customers) among teams who formerly used graphical design entry tools. 
