@@ -28,6 +28,15 @@ Although these preview releases are less rigorously tested than than the officia
 
 [New and noteworthy](https://www.eclipse.org/eclipse/news/4.8/platform.php)
 
+Sigasi Studio is now based on the Eclipse Photon platform.  Many small usability improvements make life a little easier:
+
+* Better [integration of visual elements](https://www.eclipse.org/eclipse/news/4.8/platform.php#windows-modern-directory-dialog) with the native OS
+* [Filtering a resource](https://www.eclipse.org/eclipse/news/4.8/platform.php#open-resource-highlight-matching) in your workspace has become more convenient
+* The default text font on macOS was switched from “Monaco” to “Menlo” which has a bold font face
+
+* Accessiblity support
+* Improved memory usage
+
 ## Graphics and Documentation improvements
 
 * Added option to hide all reassignment nodes
