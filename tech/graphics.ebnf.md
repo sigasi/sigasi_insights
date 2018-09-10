@@ -3,7 +3,7 @@ title: "Sigasi Studio Graphics Configuration Grammar"
 layout: page 
 pager: true
 author: Sigasi
-date: 2017-08-31
+date: 2018-09-10
 comments: true
 ---
 <em>This grammar allows you to filter, group and color your BlockDiagrams and StateMachines in Sigasi Studio.</em>  
@@ -33,10 +33,14 @@ comments: true
 :	<font color="purple"><b>regex</b></font> <a href="#STRING">STRING</a> 
   
 **GraphicsRestriction**{: #GraphicsRestriction }
-:	<a href="#BlockVisibilityRestriction">BlockVisibilityRestriction</a> 
+:	<a href="#BlockVisibilityRestriction">BlockVisibilityRestriction</a>   
+        | <a href="#ReassignmentsConfiguration">ReassignmentsConfiguration</a> 
   
 **BlockVisibilityRestriction**{: #BlockVisibilityRestriction }
 :	<font color="purple"><b>show</b></font> <font color="purple"><b>:</b></font> <a href="#BlockVisibilityRestrictionType">BlockVisibilityRestrictionType</a> 
+  
+**ReassignmentsConfiguration**{: #ReassignmentsConfiguration }
+:	<font color="purple"><b>reassignments</b></font> <font color="purple"><b>hide</b></font> 
   
 **BlockVisibilityRestrictionType**{: #BlockVisibilityRestrictionType }
 :	<font color="purple"><b>instantiations</b></font> 
@@ -51,7 +55,8 @@ comments: true
 **Configuration**{: #Configuration }
 :	<font color="purple"><b>hide</b></font>   
         | <font color="purple"><b>collapse</b></font>   
-        | <font color="purple"><b>color</b></font> <a href="#GraphicsColor">GraphicsColor</a> 
+        | <font color="purple"><b>color</b></font> <a href="#GraphicsColor">GraphicsColor</a>   
+        | <a href="#ReassignmentsConfiguration">ReassignmentsConfiguration</a> 
   
 **GroupDeclaration**{: #GroupDeclaration }
 :	<font color="purple"><b>def</b></font> <a href="#Type">Type</a> <font color="purple"><b>group</b></font> <a href="#ID">ID</a> <font color="purple"><b>(</b></font> <a href="#Identifiers">Identifiers</a> <font color="purple"><b>)</b></font> 
