@@ -14,6 +14,7 @@ content:
     - linting
     - tools
     - documentation
+    - graphics
     - plugins
     - trouble
     - keyshortcuts
