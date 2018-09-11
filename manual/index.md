@@ -15,6 +15,7 @@ content:
     - tools
     - vunit
     - documentation
+    - graphics
     - plugins
     - trouble
     - keyshortcuts
