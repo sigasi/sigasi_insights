@@ -64,9 +64,9 @@ publish:
 	./_publish.sh
 
 NOCAPS:
-	@ ! find . \( -path ./css -o -path _build -o -path _build_offline \) -prune -name '*.png' | grep "[A-Z]"
-	@ ! find . -name '*.jpg'|grep -v _build/ | grep "[A-Z]"
-	@ ! find . -name '*.gif'|grep -v _build/ | grep "[A-Z]"
-	@ ! find . -name '*.md' |grep -v README.md|grep -v LICENSE.md| grep -v _build/ |grep -v _gh-pages | grep "[A-Z]"
+	@ ! find . \( -path ./css -o -path _build -o -path _build_offline \) -prune -name '*.png' | grep "[[:upper:]]"
+	@ ! find . -name '*.jpg'|grep -v _build/ | grep "[[:upper:]]"
+	@ ! find . -name '*.gif'|grep -v _build/ | grep "[[:upper:]]"
+	@ ! find . -name '*.md' |grep -v README.md|grep -v LICENSE.md| grep -v _build/ |grep -v _gh-pages | grep "[[:upper:]]"
 
 .PHONY: help all build serve berve publish urubu
