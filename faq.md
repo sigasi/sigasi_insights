@@ -247,7 +247,7 @@ The **workspace path variables** (set via preferences) are stored in: `<workspac
 
 You can also set this per **project** (in the project properties). In that case the info is stored in the `.project` file.
 
-You can find more info on: [here](https://www.sigasi.com/content/how-avoid-absolute-library-paths-your-sigasi-project-files) and [here](https://help.eclipse.org/oxygen/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Fconcepts%2Fcpathvars.htm)
+You can find more info on: [here](https://www.sigasi.com/content/how-avoid-absolute-library-paths-your-sigasi-project-files) and [here](https://help.eclipse.org/photon/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Fconcepts%2Fcpathvars.htm)
 
 ## Can I use a Dark Theme?
 
@@ -375,7 +375,7 @@ If you see warnings that are not useful for you, you can do one of the following
 ## "Show In -> System Explorer" does not work on Red Hat Linux 6
 
 On preference page **General > Workspace** you can configure the command that is used to open files with the System Explorer. The default Linux command does not work on older linux systems.
-On RedHat 6 linux, you can use the nautilus command: `nautilus "${selected_resource_parent_loc}"` ([More info](https://help.eclipse.org/oxygen/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-9.htm)).
+On RedHat 6 linux, you can use the nautilus command: `nautilus "${selected_resource_parent_loc}"` ([More info](https://help.eclipse.org/photon/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-9.htm)).
 
 ## Sigasi switches my keyboard layout! Did I find a bug?
 

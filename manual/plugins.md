@@ -41,7 +41,7 @@ This plugin is shipped with the standalone version of Sigasi Studio.
 
 Recommended plugin: [Subversive](http://www.eclipse.org/subversive/) ([Installation instructions](https://www.eclipse.org/subversive/installation-instructions.php))
 
-As **update site**, you should use: <http://download.eclipse.org/releases/oxygen/>
+As **update site**, you should use: <http://download.eclipse.org/releases/photon/>
 
 
 ### ClearCase {: #revision-clearcase}
@@ -62,7 +62,7 @@ ClearCase](http://www.ibm.com/developerworks/rational/downloads/07/cc_eclipse3_2
 
 While this is not strictly speaking a version control system, Sigasi Studio has
 a built-in feature that keeps a local history of your files. 
-[Learn more](https://help.eclipse.org/oxygen/topic/org.eclipse.platform.doc.user/tasks/tasks-1f.htm?cp=0_3_9).
+[Learn more](https://help.eclipse.org/photon/topic/org.eclipse.platform.doc.user/tasks/tasks-1f.htm?cp=0_3_9).
 
 ### Other systems
 

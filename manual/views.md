@@ -247,6 +247,6 @@ When you select text in the (System)Verilog editor, the expanded text will be hi
 # Console view
 
 When Sigasi Studio launches external tools (e.g. external compiler, documentation generation,...) the output is logged to the console view.
-This is a generic Eclipse view \[[Documentation](https://help.eclipse.org/oxygen/index.jsp?topic=%2Forg.eclipse.cdt.doc.user%2Freference%2Fcdt_u_console_view.htm)].
+This is a generic Eclipse view \[[Documentation](https://help.eclipse.org/photon/index.jsp?topic=%2Forg.eclipse.cdt.doc.user%2Freference%2Fcdt_u_console_view.htm)].
 
 Different tools can open different consoles. You can switch between different consoles by clicking the ![icon console display](icons/icon_con_disp_console.png)-icon.

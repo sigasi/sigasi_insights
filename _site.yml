@@ -140,7 +140,7 @@ reflinks:
         url: http://vrapper.sourceforge.net/home/
     emacs-keybindings:
         title: Emacs key bindings
-        url: http://help.eclipse.org/oxygen/topic/org.eclipse.platform.doc.user/concepts/accessibility/keyboardshortcuts.htm?cp=0_4_1_33
+        url: http://help.eclipse.org/photon/topic/org.eclipse.platform.doc.user/concepts/accessibility/keyboardshortcuts.htm?cp=0_4_1_33
     ultra-edit-keybindings-plugin:
         title: UltraEdit Key Bindings Plugin
         url: https://marketplace.eclipse.org/content/ultraedit-key-bindings

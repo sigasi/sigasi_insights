@@ -40,7 +40,7 @@ lead to conflicts when you commit your changes to the shared code
 repository.
 
 To deal with this situation elegantly, Sigasi/Eclipse offers the concept
-of [**Path Variables**](https://help.eclipse.org/oxygen/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Fconcepts%2Fcpathvars.htm).
+of [**Path Variables**](https://help.eclipse.org/photon/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Fconcepts%2Fcpathvars.htm).
 Path Variables allow you to specify a location of your file system, as a
 variable. And such a variable can be used to *specify the location of
 **linked resources** relative to these paths*.
