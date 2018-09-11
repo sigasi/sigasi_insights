@@ -1,8 +1,10 @@
 ---
-title: Sigasi Studio VUnit integration
+title: Sigasi Studio VUnit Integration
 layout: page 
 pager: true
 ---
+
+[xprt_only]
 
 [VUnit](https://vunit.github.io/) is an open source **unit testing framework** for VHDL and SystemVerilog. VUnit helps you to *write* tests more easily and *run* them frequently.
 
@@ -20,7 +22,7 @@ To import an existing VUnit project, click **File > Import... > Sigasi > Import 
 
 ## Add VUnit support to an existing Sigasi project
 
-You can also add VUnit support to an existing project: Right click your project and select  **Configure > Add VUnit support**. Next, select an exiting `run.py` script or let Sigasi create an example script.
+You can also add VUnit support to an existing project: Right click your project and select  **Configure > Add VUnit support**. Next, select an existing `run.py` script or let Sigasi create an example script.
 
 ## SystemVerilog
 
@@ -45,8 +47,8 @@ There are multiple ways to run VUnit tests in Sigasi Studio:
 
 # Inspect VUnit Test Results
 
-When you run VUnit tests in Sigasi Studio, the VUnit view is opened. This view presents a convenient way to inspect the test results.
+When you run VUnit tests in Sigasi Studio, the VUnit view is opened. This view presents a convenient way to inspect the test results.  
 [![VUnit SystemVerilog Example](images/vunit_verilog.png "VUnit SystemVerilog Example")](images/vunit_verilog.png)
 
-You can also open the *Console View* to inspect the entire VUnit output.
+You can also open the *Console View* to inspect the entire VUnit output.  
 [![VUnit console view](images/vunit_console.png "VUnit console view")](images/vunit_console.png)

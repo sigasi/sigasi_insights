@@ -4,11 +4,13 @@ layout: page
 pager: true
 ---
 
+[xprt_only]
+
 The BlockDiagram- and StateMachine views are a very useful way to explore and understand HDL designs, but sometimes that just doesn't cut it.
-The diagrams are too complex and crowded to understand a design. For this reason, the diagrams can't always be directly used in documentation. To solve this challenge you can make use of the Graphics Configuration Language.
+The diagrams can be too complex and crowded to understand a design. For this reason, the diagrams can't always be directly used in documentation. To solve this challenge you can make use of the Graphics Configuration Language.
 
 # The Language
-The Graphics Configuration Language is a plain text file containing declarations and configurations, which when interpreted, results in **grouping**, **filtering** and **coloring** in the diagram.
+The Graphics Configuration Language is a plain text file containing declarations and configurations, which when interpreted, result in **grouping**, **filtering** and **coloring** in the diagram.
 You can see it in action in the images below:
 
 This BlockDiagram  
@@ -24,14 +26,14 @@ Turns into:
 A plain text format was chosen over a buttons and menus for several reasons:
 
 * It can easily be managed with your **version control** system because files can easily be compared and merged.
-* It's easy to debug by yourself, unlike proprietary formats or UIs
+* It's easy to debug by yourself, unlike proprietary formats or UIs.
 * We can support you using all of our well-known features such as auto-complete, validations, formatting,...
-* It's lightweight and can be used as the basis for the UI implementation
+* It's lightweight and can be used as the basis for the UI implementation.
 
 ## Getting started
 To get started, choose a design with a BlockDiagram or StateMachine you want to simplify.
 
-Create a new Graphics Configuration file by going to **File>New>Other>Graphics Configuration>Graphics Configuration File**.
+Create a new Graphics Configuration file by going to **File > New > Other > Graphics Configuration > Graphics Configuration File**.
 You can also press the Sigasi button on the top right of the BlockDiagram or StateMachine view.
 
 From there, you can declare groups and configure your diagram, check it in to version control and share it with your colleagues.
@@ -48,7 +50,7 @@ The Graphics Configuration features:
 * Coloring
 * Regex matching
 
-Do note that in the BlockDiagram you can group blocks and wires while in the StateMachine you can only group states.
+Note that in the BlockDiagram you can group blocks and wires while in the StateMachine you can only group states.
 
 Graphics Configuration Editor features:
 
@@ -103,7 +105,7 @@ e.g. if you want to group block2 and block3 you can add either of the following 
 *Grouped*  
 
 The same can be done for wires by using `wire` instead of `block`.
-It is impossible to directly group ports, but grouped ports are created when you group wires into a bus.
+Ports can be grouped by grouping the wires attached to the ports into a bus.
 
 ### Configuration
 The syntax for a configuration block is as follows:  
