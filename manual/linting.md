@@ -309,8 +309,8 @@ Since [/releasenotes/sigasi-3.06] all capitalization issues in a file can be fix
 ## Naming Conventions
 
 On the **Navigation conventions** preference page (**Window \>
-Preferences \> Sigasi \> VHDL \> Naming conventions**) you can configure
-patterns to check correct naming of your VHDL identifiers. Patterns are
+Preferences \> Sigasi \> VHDL/(System)Verilog \> Naming conventions**) you can configure
+patterns to check correct naming of your VHDL and SystemVerilog identifiers. Patterns are
 configured with [Java regex syntax][JavaRegexSyntax].
 
 Only names with a specified pattern are checked. Empty patterns are

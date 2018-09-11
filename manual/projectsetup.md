@@ -57,6 +57,8 @@ Alternatively, you can uncheck the checkbox and choose an arbitrary
 location for your project. This is especially useful if you want to *use
 Sigasi Studio with an existing design*.
 
+You can also select the VHDL version or the version of `.v` files.
+
 After creating a new project, you can add existing files by dragging
 them from your filesystem into the project explorer. New files can be
 added by clicking **File \> New \> VHDL file** or **File \> New \> Verilog file**.

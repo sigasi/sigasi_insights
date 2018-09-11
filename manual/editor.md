@@ -89,6 +89,8 @@ In the hover pop-up, can show different kinds of information:
 * errors or warnings: a message, if the given identifier has an error or warning associated to it
 * binary / decimal conversion: for hexadecimal, octal or binary values, the decimal equivalent
 
+Since [/releasenotes/sigasi-4.01] the hovers also offer extra links that make it easy to navigate to the declaration, find references, ...
+
 ## Auto-complete and Content Assist
 
 Sigasi Studio provides powerful autocompletion capabilities. This means

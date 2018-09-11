@@ -24,6 +24,13 @@ generation flow to your liking. Users without a [xprt] License can also export a
 
 All errors are logged to the console view.
 
+## Graphics
+
+The exported documentation also includes statemachine and block diagrams.
+If you created custom graphics configurations for one or more of your diagrams, these will be used instead of the default diagrams.
+
+If you have multiple graphics configurations for the same diagrams, the alphabetically first one is used.
+
 ## Customize templates
 
 The templates used for the documentation can be copied and modified in the workspace so that
