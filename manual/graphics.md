@@ -64,8 +64,8 @@ Graphics Configuration Editor features:
 
 ## Graphics Configuration for BlockDiagrams
 
-You can express which diagram you want to filter in the first line of the file by writing `diagram fullyQualifiedName`. The fully qualified name in VHDL is always `library.entity.architecture`. In (System)Verilog this is `work.module`.  
-e.g. if you want to filter the diagram for the architecture `RTL` implementing the entity `ent` in the `work` library, you use the following line as the first line: `diagram work.VME64xCore_Top.RTL`.
+You can express which diagram you want to filter in the first line of the file by writing `diagram fullyQualifiedName`. The fully qualified name in VHDL is always `library.entity.architecture`. In SystemVerilog this is `work.module`.  
+E.g. if you want to filter the diagram for the architecture `RTL` implementing the entity `ent` in the `work` library, you use the following line as the first line: `diagram work.VME64xCore_Top.RTL`.
 
 The file is read from bottom to top. You start with the above definition of the diagram, then within that you can hide reassignments, create groups and finally, create configurations for ports, blocks and edges.
 
@@ -89,12 +89,12 @@ By using `reassignments hide` you can draw through the assignment blocks making 
 After hiding the reassignments you can define groups of edges or blocks.
 The syntax for a group is as follows:  
 `def Type group ID (Identifiers)`  
-Where `Type` is `block` or `wire`. `ID` is the new name of the group and `Identifiers` is a comma separated list of existing `ID`s (Graphics Configuration, VHDL or (System)Verilog) or a regex.
+Where `Type` is `block` or `wire`, `ID` is the new name of the group and `Identifiers` is a comma separated list of existing `ID`s (Graphics Configuration, VHDL or SystemVerilog) or a regex.
 
 The syntax for a regex is `regex"regex_pattern"`. This uses [Java regexes](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html), you can also find a cheat sheet [here](http://files.zeroturnaround.com/pdf/zt_regular-expressions-cheat-sheet.pdf).
 You can also check what the regex matches by hovering over the query.
 
-e.g. if you want to group block2 and block3 you can add either of the following lines:  
+E.g. if you want to group block2 and block3 you can add either of the following lines:  
 `group block middle regex"block[23]"`  
 `group block middle (block2, block3)`  
 
@@ -104,7 +104,7 @@ e.g. if you want to group block2 and block3 you can add either of the following 
 ![Grouped](images/grouped.png)  
 *Grouped*  
 
-The same can be done for wires by using `wire` instead of `block`.
+The same can be done for wires by using `wire` instead of `block`.  
 Ports can be grouped by grouping the wires attached to the ports into a bus.
 
 ### Configuration
@@ -116,14 +116,15 @@ The syntax for a `ConfigurationItem` is as follows:
 `hide | collapse | color GraphicsColor | reassignments hide`  
 You can discover which colors are available [here](../tech/graphics.ebnf.html#GraphicsColor) or through the autocomplete.
 
-e.g. We can color a block, called `middle`, green and hide its internals:  
+E.g. we can color a block, called `middle`, green and hide its internals:  
 ![Colored and collapsed group](images/colored_group.png)  
 *Colored and collapsed group*  
 
-Configurations are not cascading (unlike CSS), coloring the `middle` block green does not turn all its internal blocks green as well.
+Configurations are not cascading (unlike CSS).
+Coloring the `middle` block green does not turn all its internal blocks green as well.
 
-Note that the language can not see everything, it can not see blocks, wires or ports that are within another block.  
-e.g. we can't type `block block3 { color red }` as `block3` is part of the block `middle`.
+Note that the language can not see everything: it can not see blocks, wires or ports that are within another block.  
+E.g. we can't type `block block3 { color red }` as `block3` is part of the block `middle`.
 To access a block within a block, we have to nest configurations.
 ![Nested configuration](images/nested_configuration.png)  
 *Nested configuration*  
@@ -141,7 +142,9 @@ You can do so as follows:
 
 ## Graphics Configuration for StateMachines
 
-StateMachines are configured the same as the above BlockDiagrams, except the only `Type` that can be used is `state`.
-The header is also slightly different, the syntax is as follows: `statemachine architecture : state_variable`.
+StateMachines are configured in the same way as the above BlockDiagrams, except the only `Type` that can be used is `state`.
+The header is also slightly different, the syntax is as follows:  
+`statemachine architecture : state_variable`.
+
 For an example you can check out `4_state_machines.vhd` (in our VHDL Tutorial) with [this](../tech/using-graphics-configuration/4_state_machines.statemachine) filter file.
 
