@@ -13,6 +13,7 @@ content:
     - opening
     - linting
     - tools
+    - vunit
     - documentation
     - plugins
     - trouble

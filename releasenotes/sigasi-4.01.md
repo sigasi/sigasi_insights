@@ -11,7 +11,7 @@ Sigasi Studio 4.1 introduces a convenient way to work with **VUnit**, **name con
 
 [VUnit](https://vunit.github.io/) is an open source **unit testing framework** for VHDL and SystemVerilog. VUnit helps you to *write* tests more easily and *run* them frequently.
 
-Sigasi Studio now has *editor support* for VUnit as well as allowing you to *run* and *inspect test results* straight from the IDE.
+Sigasi Studio now has a convenient way to *manage* VUnit projects as well as allowing you to *run* and *inspect test results* straight from the IDE.
 
 TODO add link to video
 
