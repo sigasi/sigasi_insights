@@ -394,18 +394,18 @@ You can disable the formatter for defined regions in your VHDL source files by e
 
 You can configure Sigasi Studio to automatically format your VHDL files when you save your source files via **Preferences > Sigasi > VHDL**, next enable **Enable code format on save**.
 
-## Lightweight editor for large VHDL files
+## Lightweight editor for large VHDL and SystemVerilog files
 
-Sometimes you have to deal with very large VHDL files such as large
-concatenated library files and generated files. Unfortunately the Sigasi Studio
-VHDL editor can not cope with huge VHDL files yet. Large files stress
+Sometimes you have to deal with very large HDL files such as large
+concatenated library files, generated files or netlists. Unfortunately the Sigasi Studio
+VHDL and SystemVerilog editors can not cope with huge files yet. Large files stress
 the interactive compiler too much to give timely feedback.
 
-To allow you to edit large VHDL files the Sigasi Studio IDE contains a
-lightweight VHDL editor that can handle all files without problems. This
+To allow you to edit large HDL files Sigasi Studio contains a
+lightweight VHDL and SystemVerilog editor that can handle all files without problems. This
 editor does not analyze your files a type time. It only offers syntax
 highlighting and the default Eclipse editing features. The lightweight
-VHDL editor will check for errors when you save your file.
+editors will check for errors when you save your file.
 
 The current threshold VHDL file size that is used to switch to the
 lightweight editor is 1 MB.
@@ -415,7 +415,7 @@ this can be done following these steps:
 
 * In the Project Explorer right-click the file and select
  **Open With > Other...**
-* In the dialog select **VHDL Editor**.
+* In the dialog select **VHDL Editor** or **(System)Verilog Editor**.
 * A warning will show offering to open the file in read-only mode.
 Choose **No** if you want to edit the file.
 
