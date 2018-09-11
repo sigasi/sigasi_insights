@@ -20,11 +20,11 @@ To import an existing VUnit project, click **File > Import... > Sigasi > Import 
 
 ## Add VUnit support to an existing Sigasi project
 
-You can also add VUnit support to an existing project: Right click your project and select  **Configure > Add VUnit support**. Next, select and exiting `run.py` script or make Sigasi create an example script.
+You can also add VUnit support to an existing project: Right click your project and select  **Configure > Add VUnit support**. Next, select an exiting `run.py` script or let Sigasi create an example script.
 
 ## SystemVerilog
 
-For SystemVerilog project you need to manually add the VUnit include files to your projects:
+For SystemVerilog projects you need to manually add the VUnit include files to your projects:
 * Right click your project, select **New > Folder > Advanced > Link to alternate location** and add `VUNIT/verilog/include` as location.
 * Use the quick-fix on the failing `` `include "vunit_defines.svh"`` to add the include folder to the include paths.
 
@@ -39,13 +39,13 @@ There are multiple ways to run VUnit tests in Sigasi Studio:
 * Right click one or more HDL files and select **Run VUnit tests** to run *all tests in the selected files*.
 * Right click in the Sigasi editor and select **Run VUnit tests** to run *all tests in the active editor*.
 * Right click in the VUnit test name (the string in the `run` function call) and select **Run VUnit test** to *run this single test only*.
-* Rerun the tests in the VUnit view
+* Rerun the tests in the VUnit view.
 
 [![Run VUnit VHDL tests](images/vunit_run_tests.png "Run VUnit VHDL tests")](images/vunit_run_tests.png)
 
 # Inspect VUnit Test Results
 
-When you run VUnit tests in Sigasi Studio, the VUnit view is opened. This view presents a convenient way to inspect the test results
+When you run VUnit tests in Sigasi Studio, the VUnit view is opened. This view presents a convenient way to inspect the test results.
 [![VUnit SystemVerilog Example](images/vunit_verilog.png "VUnit SystemVerilog Example")](images/vunit_verilog.png)
 
 You can also open the *Console View* to inspect the entire VUnit output.

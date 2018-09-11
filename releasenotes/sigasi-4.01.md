@@ -28,13 +28,13 @@ There are multiple ways to run VUnit tests in Sigasi Studio:
 * Right click one or more HDL files and select **Run VUnit tests** to run *all tests in the selected files*.
 * Right click in the Sigasi editor and select **Run VUnit tests** to run *all tests in the active editor*.
 * Right click in the VUnit test name (the string in the `run` function call) and select **Run VUnit test** to *run this single test only*.
-* Rerun the tests in the VUnit view
+* Rerun the tests in the VUnit view.
 
 [![Run VUnit VHDL tests](/releasenotes/4.1/vunit_run_tests.png "Run VUnit VHDL tests")](/releasenotes/4.1/vunit_run_tests.png)
 
 ## Inspect VUnit Test Results
 
-When you run VUnit tests in Sigasi Studio, the VUnit view is opened. This view presents a convenient way to inspect the test results
+When you run VUnit tests in Sigasi Studio, the VUnit view is opened. This view presents a convenient way to inspect the test results.
 [![VUnit SystemVerilog Example](/releasenotes/4.1/vunit_verilog.png "VUnit SystemVerilog Example")](/releasenotes/4.1/vunit_verilog.png)
 
 You can also open the *Console View* to inspect the entire VUnit output.
@@ -63,7 +63,7 @@ If you open an existing workspace after the update to Sigasi Studio 4.1, you mig
 [![Buses in Block Diagram](/releasenotes/4.1/blockdiagram_buses.png "Buses in Block Diagram")](/releasenotes/4.1/blockdiagram_buses.png) 
 * The block and state machine diagrams are now drawn with inverted colors when a dark theme is selected.
 [![Diagrams in dark theme](/releasenotes/4.1/blockdiagram_dark.png "Diagrams in dark theme")](/releasenotes/4.1/blockdiagram_dark.png)
-* Add VHDL `processes` and `blocks` when generating documentation from your project.
+* VHDL `processes` and `blocks` are now taken into account when generating documentation from your project.
 * If you have a custom graphics configuration for an architecture, module or statemachine, Sigasi Studio will now use this file in the PDF documentation (instead of the default one).
 * The Blockdiagram and Statemachine Export, now exports the custom graphics configurations to SVG too.
 
