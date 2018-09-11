@@ -32,13 +32,13 @@ The SHA1 sum (or hash) is a fingerprint of a file. After you download a file, yo
 ## What are the system requirements?
 
 * Sigasi Studio Standalone is supported on:
-    * Windows: Windows 8 (32 bit and 64 bit) or newer
+    * Windows: Windows 10 (64 bit) or newer
     * Mac OS X: latest version
-    * Linux: RedHat Enterprise Linux RHEL 6 (64 bit) or newer.  
+    * Linux: RedHat Enterprise Linux RHEL 7.5 (64 bit) or newer.  
   We recommend at least **2GB of memory**, and you need **about 300MB** of free disk space.
 
 * Sigasi Studio as Plugin in your own Eclipse installation:
-    * Eclipse 4.4 or higher
+    * Eclipse 4.5 or higher
     * Java JRE 8 or higher  
     * And all requirements from the standalone version
 
