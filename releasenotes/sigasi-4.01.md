@@ -10,13 +10,12 @@ Sigasi Studio 4.1 introduces a convenient way to work with **VUnit**, **name con
 # VUnit
 [xprt_only]
 
-[VUnit](https://vunit.github.io/) is an open source **unit testing framework** for VHDL and SystemVerilog. VUnit helps you to *write* tests more easily and *run* them frequently.
-
-Sigasi Studio now has a convenient way to *manage* VUnit projects as well as allowing you to *run* and *inspect test results* straight from the IDE.
+[VUnit](https://vunit.github.io/) is an open source **unit testing framework** for VHDL and SystemVerilog. 
+Sigasi Studio now has a convenient way to *manage* VUnit projects as well as allowing you to *run* and *inspect test results* straight from the IDE. This helps you to *write* tests more easily and *run* them frequently.
 
 Check [this video][/screencasts/vunit] for an introduction to VUnit in Sigasi Studio
 
-## Edit VUnit Project
+## Manage VUnit Projects
 
 When you import a VUnit project (**File > Import... > Sigasi > Import a VUnit project**) or add VUnit support to an existing project (Right click project, **Configure > Add VUnit support**), Sigasi Studio runs VUnit in the background and automatically adds the correct libraries to your project. It also shows error markers in the VUnit script (`run.py`) if anything goes wrong.  
 [![VUnit project](/releasenotes/4.1/vunit_project.png "VUnit project")](/releasenotes/4.1/vunit_project.png)
@@ -60,32 +59,32 @@ If you open an existing workspace after the update to Sigasi Studio 4.1, you mig
 
 # Graphics and Documentation Improvements
 
-* Added option to hide all reassignment nodes.  
+* Added option to **hide all reassignment nodes**.  
 [![Hide reassignments in block diagram](/releasenotes/4.1/reassignment.png "Hide reassignments in block diagram")](/releasenotes/4.1/reassignment.png)
 * Visual distinction between (single bit) wires and buses.  
 [![Buses in Block Diagram](/releasenotes/4.1/blockdiagram_buses.png "Buses in Block Diagram")](/releasenotes/4.1/blockdiagram_buses.png) 
 * The block and state machine diagrams are now drawn with inverted colors when a dark theme is selected.  
 [![Diagrams in dark theme](/releasenotes/4.1/blockdiagram_dark.png "Diagrams in dark theme")](/releasenotes/4.1/blockdiagram_dark.png)
-* VHDL `processes` and `blocks` are now taken into account when generating documentation from your project.
-* If you have a custom graphics configuration for an architecture, module or statemachine, Sigasi Studio will now use this file in the PDF documentation (instead of the default one).
+* VHDL `processes` and `blocks` are now taken into account when generating **documentation** from your project.
+* If you have a **custom graphics configuration** for an architecture, module or statemachine, Sigasi Studio will now use this file in the PDF **documentation** (instead of the default one).
 * The Blockdiagram and Statemachine Export, now exports the custom graphics configurations to SVG too.
 
 # Other New and Noteworthy Changes
 
-* **Improved hovers**: In addition to the *declaration information* and *associated comments*, the hover (aka tooltip) now also shows a shortcut to [find references][/manual/editor#find-references] and [open declaration][/manual/editor#open-declaration-and-hyperlinks]. Check out [this video][/screencasts/hovers] for more information.  
+* **Improved hovers**: In addition to the *declaration information* and *associated comments*, the hover (or *tooltip*) now also shows a shortcut to [find references][/manual/editor#find-references] and [open declaration][/manual/editor#open-declaration-and-hyperlinks]. Check out [this video][/screencasts/hovers] for more information.  
 [![Improved hovers SystemVerilog](/releasenotes/4.1/hover_systemverilog.png "SystemVerilog hovers")](/releasenotes/4.1/hover_systemverilog.png)  
 [![Improved hovers VHDL](/releasenotes/4.1/hover_vhdl.png "VHDL hovers")](/releasenotes/4.1/hover_vhdl.png)
-* The **New VHDL/SystemVerilog Project** wizard now offers an option to set the VHDL/SystemVerilog version for the new project.  
+* The **New VHDL/SystemVerilog Project** wizard now offers an option to set the **VHDL/SystemVerilog version** for the new project.  
 [![Set version in new project wizard](/releasenotes/4.1/new_project_wizard.png "Set version in new project wizard")](/releasenotes/4.1/new_project_wizard.png)
-* Added a *light-weight editor* for SystemVerilog. This editor can be used to edit large files smoothly.  
+* Added a **light-weight editor for SystemVerilog**. This editor can be used to edit large files smoothly.  
 [![Light weight SystemVerilog editor](/releasenotes/4.1/open_large_file_editor.png "Light weight SystemVerilog editor")](/releasenotes/4.1/open_large_file_editor.png)
 * Added a checkbox in the (maintenance) license expiration warning dialogs to *never show this dialog again*.
 * When you enable one of the **Sigasi Auto Export** options in your project's properties, the files are now created immediately (without touching any project files).
 * Added a **Cancel** button to the *Open Large File* warning dialog for VHDL.
-* Improved display of Net Search results.
-* The *Open Design Unit* dialog now shows the project name too.  
+* Improved display of **Net Search** results.
+* The **Open Design Unit** dialog now shows the project name too.  
 [![Open Design Unit](/releasenotes/4.1/open_design_unit.png "Open Design Unit")](/releasenotes/4.1/open_design_unit.png)
-* Improved text selection when double clicking in SystemVerilog State Machine View.
+* Improved text selection when double clicking in SystemVerilog State Machine View
 * Improved highlighting in SystemVerilog macros.
 * From now on the Sigasi Studio stand-alone version is 64-bit only. On 32-bit systems, the plugin can still be used.
 
