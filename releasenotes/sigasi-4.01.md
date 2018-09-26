@@ -100,3 +100,13 @@ If you open an existing workspace after the update to Sigasi Studio 4.1, you mig
 # How to update?
 
 If you have Sigasi Studio 3 or 4 installed, you can [update][/manual/setup#Software Updates] or [download a fresh install of the latest version][download_latest].
+
+# Sigasi 4.1.1 point release
+
+On September 26th we released Sigasi Studio 4.1.1. This release fixes following reported issues:
+
+* Fixed component instantiations showing up as unresolved in the hierarchy view
+* Fixed false positive on the quickfix of a component when the matching verilog module uses vectors
+* Fixed a formatting issue with signal declarations and assignments
+
+Thanks for all the bug reports and enabling Talkback.
