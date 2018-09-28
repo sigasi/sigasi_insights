@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.2)
 layout: page
 pager: true
-date: 2018-09-12
+date: 2018-09-28
 comments: true
 ---
 
@@ -16,8 +16,14 @@ Although these preview releases are less rigorously tested than than the officia
 
 # Current preview release
 
-We just released [/releasenotes/sigasi-4.01], so there is nothing to mention here yet.
+* \[VHDL] Warn on empty loops
+* \[VHDL] Improve hovers for component instantiations
 
+## Bug fixes
+
+* \[Verilog] specify blocks have an unexpected formatting
+* Fixed error in rename refactoring
+* Fixed error in in SystemVerilog template editor
 
 # Update or install?
 
