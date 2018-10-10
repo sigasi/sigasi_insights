@@ -16,14 +16,19 @@ Although these preview releases are less rigorously tested than than the officia
 
 # Current preview release
 
+* Updated Sigasi Studio Standalone version to [Eclipse 2018-09](https://www.eclipse.org/eclipse/news/4.9/)
+* Updated Xtext to 2.15
 * \[VHDL] Warn on empty loops
 * \[VHDL] Improve hovers for component instantiations
+* Show type information in hovers
 
 ## Bug fixes
 
 * \[Verilog] specify blocks have an unexpected formatting
 * Fixed error in rename refactoring
 * Fixed error in in SystemVerilog template editor
+* Fixed Sigasi Studio freeze when license server disconnects
+* Fixed error with grouped ports in custom block diagram configurations.
 
 # Update or install?
 
