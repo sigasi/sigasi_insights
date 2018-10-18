@@ -1,6 +1,6 @@
 ---
 title: Tool Integration
-layout: page 
+layout: page
 pager: true
 ---
 
@@ -158,7 +158,7 @@ Libraries to the external compiler for compilation. These libraries are
 expected to be pre-compiled. Contact [support@sigasi.com](mailto:support@sigasi.com) if you want to
 add more libraries to this list.
 
-If your project root contains a `modelsim.ini` file , Sigasi Studio will add this
+If your project root contains a `modelsim.ini` file, Sigasi Studio will add this
 file to the `vcom` command with `-modelsimini`. This allows you to
 configure custom settings for Mentor’s `vcom`.
 
