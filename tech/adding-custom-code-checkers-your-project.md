@@ -26,9 +26,9 @@ that the user can fix the brackets.
 ## How to use:
 
 Make sure you have the current version of the Marker Manager (we are using the version 20150430). 
-Download and installation instructions are at: "http://www.markermanager.com":http://www.markermanager.com.
+Download and installation instructions are at: [www.markermanager.com](//www.markermanager.com).
 
-Download the example project from GitHub: "https://github.com/sigasi/eclipse_custom_code_checker":https://github.com/sigasi/eclipse_custom_code_checker
+Download the example project from GitHub: [github.com/sigasi/eclipse_custom_code_checker](//github.com/sigasi/eclipse_custom_code_checker).
 
 If you want to apply a custom code checker to your own project:
 
