@@ -194,11 +194,11 @@ To configure Sigasi Studio as external editor in HDL Designer:
 3. Press the **Setup...** button in the **Editor** section to open the **Editor Command Setup** dialog.
 4. Fill the **Name**, **Command** and **Arguments** sections as shown.  
 ![Editor Command Setup 1](images/hdld002.png "Editor Command Setup new entry")
-5. Clicking the **Add** button adds **Sigasi Studio** to the list of available editors.  
+5. Click the **Add** button to add **Sigasi Studio** to the list of available editors.  
 ![Editor Command Setup 2](images/hdld003.png "Sigasi Studio added to the Editor Command Setup")
-6. Press **OK** to leave the dialog.
+6. Press **OK** to close the dialog.
 7. Press the **Setup** button in the **HDL Viewer** section and repeat this procedure from step 4.  
 ![Editor Command Setup 3](images/hdld004.png "Sigasi Studio added to the Editor Command Setup")
 8. You now can select the **Sigasi** entry in the list box for the **Editor** and **HDL Viewer** sections.  
 ![Main Settings Text 2](images/hdld005.png "Using Sigasi Studio as text Editor")
-9. From now on you can double click on a file or a line in a file - for example by selecting an architecture or an entity - and Sigasi Studio will open the file in the correct location.
+9. From now on you can double click on a file or a line in a file - for example by selecting an architecture or an entity - and Sigasi Studio will open the file at the correct location.
