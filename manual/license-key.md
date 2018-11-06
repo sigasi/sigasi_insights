@@ -228,7 +228,7 @@ If your floating license server does not function properly, try the following st
 * **Firewall** problems:
 	* make sure that the port for the Sigasi FlexLM license daemon is open
 	* you can force the port for the Sigasi license daemon by adding USE_SERVER and DAEMON sigasi port=<port number>to your license key
-* On Linux you might have to install lsb:
+* On Linux you might have to install lsb to avoid `No such file or directory` errors when starting lmgrd or other flexlm tools:
 	* `sudo apt-get install lsb-core`
 	* `zypper in lsb`
 	* `yum install lsb`
