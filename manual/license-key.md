@@ -233,6 +233,7 @@ If your floating license server does not function properly, try the following st
 	* `zypper in lsb`
 	* `yum install lsb`
 	* `yum install redhat-lsb.i686`
+* The `lmgrd` license manager needs to have write access to the `/usr/tmp/` path.
 * You can not have spaces in the daemon path.
 * Some users reported that specifying an arbitrary absolute path for the Sigasi daemon on Windows (e.g. `DAEMON sigasi C:\\sigasi.exe port=27021`) does not work. It only works if the Sigasi daemon is in the `C:\Sigasi` folder.
   Other users have reported that you are *not* allowed to have the directory name being the same as the daemon name. For example: `c:\flexlm\sigasi\sigasi.exe` is invalid, but `c:\flexlm\vhdl_editor\sigasi.exe` works fine.
