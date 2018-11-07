@@ -18,7 +18,6 @@ Although these preview releases are less rigorously tested than than the officia
 
 * \[VHDL] Warn on empty loops
 * \[VHDL] Improve hovers for component instantiations
-* \[VHDL] Warn on empty loops
 * \[Verilog] Warn when using compiler directives as macro names
 * Updated Sigasi Studio Standalone version to [Eclipse 2018-09](https://www.eclipse.org/eclipse/news/4.9/)
 * Updated Xtext to 2.15
