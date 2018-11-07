@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.2)
 layout: page
 pager: true
-date: 2018-10-11
+date: 2018-11-07
 comments: true
 ---
 
@@ -12,23 +12,31 @@ The Sigasi Preview release channel offers more frequent releases than the offici
 
 Although these preview releases are less rigorously tested than than the official releases, they are stable enough for daily use.
 
-*If you run into any problems, please let us know*.
+**If you run into any problems, please let us know**.
 
 # Current preview release
 
-* Updated Sigasi Studio Standalone version to [Eclipse 2018-09](https://www.eclipse.org/eclipse/news/4.9/)
-* Updated Xtext to 2.15
 * \[VHDL] Warn on empty loops
 * \[VHDL] Improve hovers for component instantiations
+* \[VHDL] Warn on empty loops
+* \[Verilog] Warn when using compiler directives as macro names
+* Updated Sigasi Studio Standalone version to [Eclipse 2018-09](https://www.eclipse.org/eclipse/news/4.9/)
+* Updated Xtext to 2.15
 * Show type information in hovers
 
 ## Bug fixes
 
 * \[Verilog] specify blocks have an unexpected formatting
+* \[Verilog] removed empty entries in outline
+* \[Verilog] fixed invalid errors on sequences
 * Fixed error in rename refactoring
 * Fixed error in in SystemVerilog template editor
 * Fixed Sigasi Studio freeze when license server disconnects
-* Fixed error with grouped ports in custom block diagram configurations.
+* Fixed error with grouped ports in custom block diagram configurations
+* Fixed VUnit and GHDL preferences resetting on restart
+* Fixed console view coloring with dark themes
+* Fixed Asian character rendering in PDF export when correct fonts are available
+* Disabled .v extension interpretation for .sv files
 
 # Update or install?
 
