@@ -439,7 +439,7 @@ The code in the **Initial preprocessor definitions** field is preprocessed befor
 ## Verilog version
 
 You can configure the Verilog version via **Window > Preferences > Sigasi > (System)Verilog**
-and select whether \*.v files are treated as **Verilog** or **SystemVerilog**.
+and select whether `*.v` files are treated as **Verilog** or **SystemVerilog**. `*.sv` files are always treated as **SystemVerilog**.
 
 ## Format
 
