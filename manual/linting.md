@@ -112,8 +112,9 @@ The availability of code rules depends on the license requirements.
 | XL      |                                  | Redundant boolean equality check with true                                                                              | 185 |
 | XL      |                                  | Boolean equality check with false                                                                                       | 186 |
 | XL      | ![](icons/warning_lightbulb.png) | [Check for component/entity mismatch](#component-entity)                                                                | 187 |
-| XL      |                                  | [Header comment check](#header-comment)                                                                | 188 |
-| XL      |                                  | [Filename must contain primary unit name](#file-name)                                                                | 189 |
+| XL      |                                  | [Header comment check](#header-comment)                                                                                 | 188 |
+| XL      |                                  | [Filename must contain primary unit name](#file-name)                                                                   | 189 |
+| XL      |                                  | Empty loop  statement                                                                                                   | 190 |
 
 # Detailed explanation of VHDL code rules
 
