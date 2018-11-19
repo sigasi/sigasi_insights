@@ -38,7 +38,7 @@ The SHA1 sum (or hash) is a fingerprint of a file. After you download a file, yo
   We recommend at least **2GB of memory**, and you need **about 300MB** of free disk space.
 
 * Sigasi Studio as Plugin in your own Eclipse installation:
-    * Eclipse 4.5 or higher
+    * Eclipse 4.6 or higher
     * Java JRE 8 or higher  
     * And all requirements from the standalone version
 
