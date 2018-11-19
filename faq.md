@@ -423,8 +423,9 @@ Sigasi uses your system's native browser to display html content.
 When Sigasi's default settings do not work on your Linux system, try the following:
 
 1. Make sure the `webkitgtk` package is installed (`dnf install webkitgtk`)
-2. Replace `-Dorg.eclipse.swt.browser.DefaultType=mozilla` with `-Dorg.eclipse.swt.browser.UseWebKitGTK=true` in your sigasi.ini
-3. On preference page `General > Web Browser`, select **Use internal web browser**
+1. Replace `-Dorg.eclipse.swt.browser.DefaultType=mozilla` with `-Dorg.eclipse.swt.browser.UseWebKitGTK=true` in your sigasi.ini
+1. You might have to remove the line `-Dorg.eclipse.swt.browser.UseWebKitGTK=true` from your sigasi.ini or eclipse.ini file.
+1. On preference page `General > Web Browser`, select **Use internal web browser**
 
 [Complete info on Eclipse website](https://www.eclipse.org/swt/faq.php#browserplatforms)
 
