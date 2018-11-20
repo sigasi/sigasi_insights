@@ -482,6 +482,9 @@ refresh.enabled=false
 version=1
 ```
 
+Or you can go to **Window > Preferences > General > Workspace** and unselect *Refresh using native hooks or polling*.
+This is especially important when your files are on a network drive.
+
 * In the workspace folder remove: `<workspaceSigasi>/.metadata/.plugins/org.eclipse.ui.workbench`
 * If this is not enough, also remove `<workspaceSigasi>/.metadata/.plugins/org.eclipse.ui.ide` and `<workspaceSigasi>/org.eclipse.ui.workbench.texteditor`
 * If this still fails remove `<workspaceSigasi>/.metadata/.plugins/org.eclipse.core.resources`, note that you will have to re-import your projects if remove this folder.
