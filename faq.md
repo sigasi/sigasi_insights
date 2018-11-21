@@ -472,12 +472,12 @@ If you installed Sigasi in an older version of Eclipse (pre Mars), make sure you
 
 ## Sigasi/Eclipse hangs on startup
 
-If Sigasi/Eclipse hangs while the splash screen is shown during startup, you can try this to resolve the issue:
+If Sigasi/Eclipse hangs while the splash screen is shown during startup, you can try the following tips to resolve the issue:
 
 * First try to disable the Workspace preference *refresh using native hooks or polling*. 
 This is especially important when your files are on a network drive.
-Go to **Window > Preferences > General > Workspace** and unselect *Refresh using native hooks or polling*.
-Or you can do this by setting the contents of  `<workspaceSigasi>/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs` to:
+Go to **Window > Preferences > General > Workspace** and unselect *Refresh using native hooks or polling*.  
+Alternatively, you can do this by setting the contents of  `<workspaceSigasi>/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs` to:
 
 ```text
 eclipse.preferences.version=1
