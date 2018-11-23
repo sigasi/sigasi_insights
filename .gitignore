@@ -7,3 +7,4 @@ _build_offline
 linkchecker_result.html
 server.PID
 *.sw?
+_venv

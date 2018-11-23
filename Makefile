@@ -59,6 +59,8 @@ dependencies:
 	#pip install --upgrade urubu 
 	# Work-around until PRs #71 and #73 are merged into https://github.com/jandecaluwe/urubu
 	pip install git+https://github.com/bartbrosens/urubu.git
+	# Work-around for #10
+	pip install --upgrade 'markdown < 3'
 
 publish:
 	./_publish.sh
