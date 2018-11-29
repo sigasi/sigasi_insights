@@ -197,6 +197,7 @@ If your license key does not work, the first things to check are:
 * Is the MAC address correct?
 * Are you on Arch, Debian or Ubuntu Linux?  
   Make sure to install the "net-tools" package
+* On Suse or OpenSuse you might need to install the "net-tools-deprecated" package.
 * Has the license expired?
 * Did you copy the license string exactly as it was sent to you?
 * Did you accidentally try to use a License Token as a license key?
