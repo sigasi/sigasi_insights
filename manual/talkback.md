@@ -1,6 +1,6 @@
 ---
 title: "Sigasi Studio Talkback"
-layout: page 
+layout: page
 pager: true
 ---
 
@@ -39,8 +39,8 @@ Talkback is *always disabled by default*. To enable Talkback, or to disable it l
 
 # What about my Firewall or Proxy?
 
-By default Talkback uses the https protocol to send the information. If your firewall blocks SSL connections you can use the http protocol by selecting the checkbox in **Window > Preferences > Sigasi > Talkback > Send unencrypted"**.
-
+By default Talkback uses the https protocol to send the information.
+If your firewall blocks SSL connections you can use the http protocol: go to **Window > Preferences > Sigasi > Talkback** and select the checkbox "Send unencrypted".
 Your firewall should allow outgoing connections to port 443 for https or port 80 for http.
 
 Talkback does not support Proxies. If Talkback is unable to connect to our server directly because of your firewall or proxy server, you need to purchase a commercial license.
