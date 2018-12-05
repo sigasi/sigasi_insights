@@ -50,15 +50,21 @@ executing this startup file.
 
 # Installation of Sigasi Studio Eclipse Plugin
 
+There are two ways to install the Sigasi Studio Eclipse Plugin:
+
+1. [On-line installation of the Eclipse Plugin](#eclipse-plugin)
+1. [Off-line update site to install the Eclipse Plugin](#offline-update) (only for customers with XL or XPRT licenses)
+
 ## Prerequisites: Eclipse
 
 ![Eclipse Foundation member](images/eclipse_foundationmember.png){: style="float:right"}
 
-* You need to have at least [Eclipse](http://www.eclipse.org) version 4.4, nicknamed *Luna*.
-* If you don't have Eclipse installed yet, the C/C++ flavor would be good place to start. Just** download** ([Windows 64 bit][latest-eclipse-cpp-windows64]/[Linux 64 bit][latest-eclipse-cpp-linux64]/[Other versions][latest-eclipse-cpp]), **unzip** and **start**.
+* You need to have at least [Eclipse](http://www.eclipse.org) version 4.6, nicknamed *Neon*.
+* This Eclipse version and the Sigasi Studio plugin require at least Java 8.
+* If you don't have Eclipse installed yet, the C/C++ flavor would be good place to start. Just **download** ([Windows 64 bit][latest-eclipse-cpp-windows64]/[Linux 64 bit][latest-eclipse-cpp-linux64]/[Other versions][latest-eclipse-cpp]), **unzip** and **start**.
 * We recommend you also increase the heap size for Eclipse ([/faq#how-do-i-increase-the-heap-size-for-eclipse]).
 
-*Note that we do **not** support Eclipse 3 any more.* For more information on system requirements: ([System Requirements][/faq#what-are-the-system-requirements])
+For more information on system requirements: ([System Requirements][/faq#what-are-the-system-requirements])
 
 [latest-eclipse-cpp-windows64]:http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/photon/R/eclipse-cpp-photon-R-win32-x86_64.zip
 [latest-eclipse-cpp-linux64]:http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/photon/R/eclipse-cpp-photon-R-linux-gtk-x86_64.tar.gz
@@ -66,6 +72,7 @@ executing this startup file.
 
 ## Install the Eclipse Plugin {: #eclipse-plugin}
 
+This requires the host where you install the Sigasi Studio Plugin to have access to our download server.
 After starting Eclipse:
 
 1. Click **Help > Install New Software…**
@@ -76,9 +83,9 @@ After starting Eclipse:
 5. Click the **Next** button.
 6. The following steps are pretty self-explaining.
 
-## Installing the offline update site (Sigasi Studio XL)
+## Installing the offline update site ([xl] or [xprt]) {: #offline-update}
 
-Installing the offline update site is very similar to installing from the [main update site][#eclipse-plugin], but *step 2* is replaced with these steps:
+Installing the offline update site is very similar to installing from the [main update site][#eclipse-plugin], where *step 2* is replaced with these steps:
 
 1. Download the offline update site from the link you received from your sales representative.
 2. In the **Install** Wizard, click **Add...**

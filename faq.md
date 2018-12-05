@@ -38,7 +38,7 @@ The SHA1 sum (or hash) is a fingerprint of a file. After you download a file, yo
   We recommend at least **2GB of memory**, and you need **about 300MB** of free disk space.
 
 * Sigasi Studio as Plugin in your own Eclipse installation:
-    * Eclipse 4.6 or higher
+    * Eclipse 4.6 *Neon* or higher
     * Java JRE 8 or higher  
     * And all requirements from the standalone version
 
@@ -372,10 +372,25 @@ If you see warnings that are not useful for you, you can do one of the following
 
 # Troubleshooting
 
-## "Show In -> System Explorer" does not work on Red Hat Linux 6
+## "Show In -> System Explorer" does not work on RedHat Linux 6
 
 On preference page **General > Workspace** you can configure the command that is used to open files with the System Explorer. The default Linux command does not work on older linux systems.
 On RedHat 6 linux, you can use the nautilus command: `nautilus "${selected_resource_parent_loc}"` ([More info](https://help.eclipse.org/photon/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-9.htm)).
+
+## I still need to use RedHat Linux 6. How can I run Sigasi Studio?
+
+Since [Sigasi Studio 4.1][/releasenotes/sigasi-4.01#sigasi-studio-standalone-version-eclipse-photon-48], the stand-alone Sigasi Studio application is built on top of Eclipse Photon (4.8).
+This version of Eclipse has dependencies that can't be met on RedHat Linux 6.
+To still be able to run Sigasi Studio on RedHat Linux 6, follow these steps:
+
+* Install a version of Eclipse < 4.8, e.g. [Eclipse Oxygen (4.7)](https://www.eclipse.org/oxygen/).
+* Eclipse Oxygen and the Sigasi Studio Plugin require Java 8.
+```bash
+yum install java-1.8.0-openjdk
+```
+* Install the Sigasi Studio Plugin by following [these steps][/manual/setup#installation-of-sigasi-studio-eclipse-plugin].
+
+Note that over time Sigasi will probably discontinue support for Eclipse versions before Eclipse Photon. It is recommended to upgrade your OS.
 
 ## Sigasi switches my keyboard layout! Did I find a bug?
 
