@@ -390,8 +390,6 @@ yum install java-1.8.0-openjdk
 ```
 * Install the Sigasi Studio Plugin by following [these steps][/manual/setup#installation-of-sigasi-studio-eclipse-plugin].
 
-Note that over time Sigasi will probably discontinue support for Eclipse versions before Eclipse Photon. It is recommended to upgrade your OS.
-
 ## Sigasi switches my keyboard layout! Did I find a bug?
 
 This sometimes happens on Windows. You have probably triggered a keyboard shortcut that switches your keyboard lay-out.
