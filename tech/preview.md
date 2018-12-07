@@ -16,31 +16,7 @@ Although these preview releases are less rigorously tested than than the officia
 
 # Current preview release
 
-* \[Verilog] Warn when using compiler directives as macro names
-* \[Verilog] Warn for usage of `reg` instead of `logic`
-* \[Verilog] Check for `packed` keyword in packed structs and unions
-* \[Verilog] Check for mix positional and named port connections in instantiations
-* \[VHDL] Warn on empty loops
-* \[VHDL] Improve hovers for component instantiations
-* \[VHDL] Support defaults in fuction generics
-* Updated Sigasi Studio Standalone version to [Eclipse 2018-09](https://www.eclipse.org/eclipse/news/4.9/)
-* Updated Xtext to 2.15
-* Show type information in hovers
-* Better VUnit integration (requires [VUnit version 4.0](https://vunit.github.io/cli.html#json-export))
-
-## Bug fixes
-
-* \[Verilog] specify blocks have an unexpected formatting
-* \[Verilog] removed empty entries in outline
-* \[Verilog] fixed invalid errors on sequences
-* Fixed error in rename refactoring
-* Fixed error in in SystemVerilog template editor
-* Fixed Sigasi Studio freeze when license server disconnects
-* Fixed error with grouped ports in custom block diagram configurations
-* Fixed VUnit and GHDL preferences resetting on restart
-* Fixed console view coloring with dark themes
-* Fixed Asian character rendering in PDF export when correct fonts are available
-* Disabled .v extension interpretation for .sv files
+No documented changes since the [4.2 release][/releasenotes/sigasi-4.02]
 
 # Update or install?
 
