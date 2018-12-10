@@ -43,7 +43,7 @@ Errors/Warnings**.
 
 Specific warnings can be suppressed in your code by adding a `@suppress` comment (`-- @suppress` for VHDL, `// @suppress` for SystemVerilog), on the same line as the warning.
 
-You can limit the suppression to a specific warning by putting a prefix of the warning message between quotes after `@suppress`. Sigasi also recommends by adding a reason why the warning was suppressed by adding an extra comment after `@suppress`:
+You can limit the suppression to a specific warning by putting a prefix of the warning message between quotes after `@suppress`. Sigasi also recommends adding a reason why the warning was suppressed by adding an extra comment after `@suppress`:
 ```
 <line with warning> // @suppress "Warning message prefix" Reason why warning is supppressed
 ```
@@ -61,11 +61,11 @@ To trigger a Quick Fix, click the problem marker or press **Ctrl-1** and select 
 
 # List of (System)Verilog code rules
 
-The table below lists the (System)Verilog code rules that can be checked automatically by Sigasi Studio. These checks require an [xprt] license.
+The table below lists the (System)Verilog code rules that can be checked automatically by Sigasi Studio. These checks require a [xprt] license.
 
 | Quick Fix                        | Description                                                                                                             | ID |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------|---:|
-| !                                | Null loops                                                                                                              |  1 |
+|                                  | Null loops                                                                                                              |  1 |
 |                                  | Naming convention                                                                                                       |  2 |
 | ![](icons/warning_lightbulb.png) | Disallow 'reg' datatype                                                                                                 |  3 |
 |                                  | VHDL keyword as module name                                                                                             |  7 |
@@ -383,6 +383,8 @@ The default way to configure the severity of the Sigasi Studio linting checks is
 You can override these setting by creating a settings file for your projects.
 
 In each project, you can override the coding rules settings. You can override rules for the **entire project**, for **folders** in the project, or for individual **files**.
+
+## Graphical configuration
 
 To configure the severity level, right click the project (or file or folder) in the Project Explorer and select **Properties > VHDL Errors/Warnings**.
 
