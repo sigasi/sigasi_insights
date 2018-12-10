@@ -65,11 +65,10 @@ The table below lists the (System)Verilog code rules that can be checked automat
 
 | Quick Fix                        | Description                                                                                                             | ID |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------|---:|
-| ![](icons/warning_lightbulb.png) | Null loops                                                                                                              |  1 |
+| !                                | Null loops                                                                                                              |  1 |
 |                                  | Naming convention                                                                                                       |  2 |
 | ![](icons/warning_lightbulb.png) | Disallow 'reg' datatype                                                                                                 |  3 |
 |                                  | VHDL keyword as module name                                                                                             |  7 |
-
 
 # List of VHDL code rules
 
@@ -385,11 +384,16 @@ You can override these setting by creating a settings file for your projects.
 
 In each project, you can override the coding rules settings. You can override rules for the **entire project**, for **folders** in the project, or for individual **files**.
 
+To configure the severity level, right click the project (or file or folder) in the Project Explorer and select **Properties > VHDL Errors/Warnings**.
+
+[![Configure linting severity per project](images/linting_severity_per_project.png "Configure linting severity per project")](images/linting_severity_per_project.png)
 Project settings are stored in this settings file:
 
 ```text
     ${project location}/.settings/com.sigasi.hdt.vhdl.linting.prefs
 ```
+
+## Manual configuration
 
 To configure the severity of validations, add a line for each validation:
 

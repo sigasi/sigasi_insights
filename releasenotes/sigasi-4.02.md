@@ -11,7 +11,7 @@ Read below for more new and noteworthy changes and bug fixes.
 
 # More linting and code checks
 
-## New (System)Verilog checks
+New (System)Verilog checks:
 
 * Warn for usage of `reg` instead of `logic` (with QuickFix)  
 [![Warn for usage of `reg` instead of `logic` (with QuickFix)](/releasenotes/4.2/systemverilog_linting_reglogic.png "Warn for usage of `reg` instead of `logic` (with QuickFix)")](/releasenotes/4.2/systemverilog_linting_reglogic.png)
@@ -26,7 +26,10 @@ Read below for more new and noteworthy changes and bug fixes.
 * Warn when using VHDL keywords as identifiers for (System)Verilog declarations  
 [![Warn when using VHDL keywords as identifiers for (System)Verilog declarations](/releasenotes/4.2/systemverilog_linting_vhdl_keywords.png "Warn when using VHDL keywords as identifiers for (System)Verilog declarations")](/releasenotes/4.2/systemverilog_linting_vhdl_keywords.png)
 
-## New VHDL checks
+The severity of the (non-syntax) checks can be configured in **Window > Preferences > Sigasi > (System)Verilog > Errors/warnings**
+[![Configure severity](/releasenotes/4.2/systemverilog_linting_settings.png "Configure severity")](/releasenotes/4.2/systemverilog_linting_settings.png)
+
+New VHDL checks:
 
 * Warn when (System)Verilog keywords are used as VHDL identifiers  
 [![Warn when (System)Verilog keywords are used as VHDL identifiers](/releasenotes/4.2/vhdl_linting_verilog_keyword.png "Warn when (System)Verilog keywords are used as VHDL identifiers")](/releasenotes/4.2/vhdl_linting_verilog_keyword.png)
@@ -37,34 +40,36 @@ Read below for more new and noteworthy changes and bug fixes.
 
 # Suppress warnings
 
-Type time MarkerManager (@suppress)
+In earlier versions of Sigasi Studio you could suppress (also known as *waive*) warnings via the *MarkerManager* plugin. In Sigasi Studio 4.2 we refined this feature and now give type time feedback on suppressed markers. ([documentation][/manual/linting#suppressing-warnings])
+
 [![Suppress warnings](/releasenotes/4.2/suppress_a.png "Suppress warnings")](/releasenotes/4.2/suppress_a.png)
 
+TODO add video.
 
 # Configure linting severity per project \[VHDL]
 
-Support upgrading project specific validation preferences
-Add UI to set project specific Validation settings (errors/warning)
+Sigasi Studio 4.2 presents a new Property Page that makes it easier to configure linting settings per project (or per file or folder).
+Right click a project, folder or file and select **Properties > VHDL Errors/Warnings**. The settings are stored in the `.settings` folder in your project. ([documentation][/manual/linting#project-specific-linting-settings])
 
-[![Text](/releasenotes/4.2/korean_in_documentation.png "Text")](/releasenotes/4.2/korean_in_documentation.png)
-[![Text](/releasenotes/4.2/linting_severity_per_project.png "Text")](/releasenotes/4.2/linting_severity_per_project.png)
 
-[![Text](/releasenotes/4.2/systemverilog_linting_settings.png "Text")](/releasenotes/4.2/systemverilog_linting_settings.png)
-[![Text](/releasenotes/4.2/vhdl_component_port_link_verilog.png "Text")](/releasenotes/4.2/vhdl_component_port_link_verilog.png)
+[![Configure linting severity per project](/releasenotes/4.2/linting_severity_per_project.png "Configure linting severity per project")](/releasenotes/4.2/linting_severity_per_project.png)
 
-[![Text](/releasenotes/4.2/vhdl_hover_show_datatype.png "Text")](/releasenotes/4.2/vhdl_hover_show_datatype.png)
+
 # Other New and Noteworthy Changes
 
-* \[VHDL2008] Support defaults in function generics
+* \[VHDL2008] Support defaults in **function generics**
 * \[Mixed] Add link from (VHDL) component ports to (System)Verilog module ports
+[![Text](/releasenotes/4.2/vhdl_component_port_link_verilog.png "Text")](/releasenotes/4.2/vhdl_component_port_link_verilog.png)
 * Support Chinese, Japanese and Korean characters missing in documentation export (PDF)
+[![Text](/releasenotes/4.2/korean_in_documentation.png "Text")](/releasenotes/4.2/korean_in_documentation.png)
 * Apply dark theme on new Console View
-* \[Verilog] Disabled .v extension interpretation for .sv files
-* Block diagram export should not use dark theme when the darkt theme is enabled
+* \[Verilog] Disabled `.v` extension interpretation for `.sv` files. `.sv` files are always processed as SystemVerilog.
+* Block diagram export should not use dark theme when the dark theme is enabled
 * Updated Sigasi Studio Standalone version to [Eclipse 2018-09](https://www.eclipse.org/eclipse/news/4.9/)
 * Update to Xtext dependency to 2.15
 * Dropped support for Eclipse 4.5
 * \[VHDL] Better hovers for signals: also show type declaration
+[![Text](/releasenotes/4.2/vhdl_hover_show_datatype.png "Text")](/releasenotes/4.2/vhdl_hover_show_datatype.png)
 * \[VHDL] Better hovers for component instantiations
 * Better VUnit integration (requires [VUnit version 4.0](https://vunit.github.io/cli.html#json-export))
 
