@@ -67,7 +67,7 @@ Sigasi Studio offers following links:
 
 * Link to **Declaration**: this has the same behaviour as **Open Declaration** (**F3**)
 * Link to **Matching Entity** \[VHDL]: this links a **component** declaration of an instantiation to the matching entity declaration. This also works for component **generics** and **ports** (**Shift+F3**)
-* Link to **Matching Module** \[MIXED]: this links a **component** declaration of an instantiation to the matching Verilog module declaration. This also works for modules that are instantiated as entity instantiations (`label : entity work.verilogmodule port map (...);`)
+* Link to **Matching Module** \[MIXED]: this links a **component** declaration of an instantiation to the matching Verilog module declaration. This also works for component **generics** and **ports** (**Shift+F3**). Modules that are instantiated as entity instantiations are also suppored (`label : entity work.verilogmodule port map (...);`)
 * Link to **Matching Architecture** for entity declarations \[VHDL]
 * Link to **Matching When Clause** \[VHDL]: in finite state machines (FSMs) you can jump directly to the matching *when* part of your case statement from state transitions (**Shift+F3**)
 * Link to **Open Declaration in Package Body** \[VHDL]: in packages you can jump directly to the matching *declaration* in the package body (**Shift+F3**). This also works in the opposite direction, **Open Declaration in Package Body**

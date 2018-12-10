@@ -37,6 +37,17 @@ Errors/Warnings**.
 
 ![Configuring the severity of Sigasi Studio linting checks](images/problemseveritypreferencepage.png "Configuring the severity of Sigasi Studio linting checks")
 
+[You can also configure the severity level per project][#project-specific-linting-settings]
+
+## Suppressing warnings
+
+Specific warnings can be suppressed in your code by adding a `@suppress` comment (`-- @suppress` for VHDL, `// @suppress` for SystemVerilog), on the same line as the warning.
+
+You can limit the suppression to a specific warning by putting a prefix of the warning message between quotes after `@suppress`. Sigasi also recommends by adding a reason why the warning was suppressed by adding an extra comment after `@suppress`:
+```
+<line with warning> // @suppress "Warning message prefix" Reason why warning is supppressed
+```
+
 ## No Linting for Common Libraries {: #linting-common-libraries}
 
 Common Libraries are considered to be production ready libraries.
