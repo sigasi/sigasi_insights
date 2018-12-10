@@ -66,7 +66,7 @@ Add UI to set project specific Validation settings (errors/warning)
 * Correctly handle comments in sort associations quick fix
 * Fixed incorrect hierarchy for vector constant value
 * Do not check out a Sigasi license when starting Sigasi as Eclipse plugin on a new workspace
-* Unexpected warning for components when ports in the entity are declared on the same line but the components are on separate lines
+* Fixed warning for components when ports in the entity are declared on the same line but the components are on separate lines
 
 # How to update?
 

@@ -48,6 +48,18 @@ Some of the VHDL lint problems can be automatically resolved with *Quick Fixes*.
 These problems have *markers* annotated with a lightbulb icon (like ![](icons/warning\_lightbulb.png)).
 To trigger a Quick Fix, click the problem marker or press **Ctrl-1** and select the Quick Fix.
 
+# List of (System)Verilog code rules
+
+The table below lists the (System)Verilog code rules that can be checked automatically by Sigasi Studio. These checks require an [xprt] license.
+
+| Quick Fix                        | Description                                                                                                             | ID |
+|----------------------------------|-------------------------------------------------------------------------------------------------------------------------|---:|
+| ![](icons/warning_lightbulb.png) | Null loops                                                                                                              |  1 |
+|                                  | Naming convention                                                                                                       |  2 |
+| ![](icons/warning_lightbulb.png) | Disallow 'reg' datatype                                                                                                 |  3 |
+|                                  | VHDL keyword as module name                                                                                             |  7 |
+
+
 # List of VHDL code rules
 
 The table below lists the VHDL code rules that can be checked automatically by Sigasi Studio.
