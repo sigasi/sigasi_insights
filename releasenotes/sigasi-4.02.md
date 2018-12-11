@@ -57,6 +57,7 @@ Right click a project, folder or file and select **Properties > VHDL Errors/Warn
 
 # Other New and Noteworthy Changes
 
+* (System)Verilog build performance enhancements
 * \[VHDL2008] Support defaults in **function generics**
 * \[Mixed] Add link from (VHDL) component ports to (System)Verilog module ports
 [![Text](/releasenotes/4.2/vhdl_component_port_link_verilog.png "Text")](/releasenotes/4.2/vhdl_component_port_link_verilog.png)
