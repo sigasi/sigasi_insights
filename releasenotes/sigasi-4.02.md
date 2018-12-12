@@ -26,7 +26,7 @@ New (System)Verilog checks:
 * Warn when using VHDL keywords as identifiers for (System)Verilog declarations  
 [![Warn when using VHDL keywords as identifiers for (System)Verilog declarations](/releasenotes/4.2/systemverilog_linting_vhdl_keywords.png "Warn when using VHDL keywords as identifiers for (System)Verilog declarations")](/releasenotes/4.2/systemverilog_linting_vhdl_keywords.png)
 
-The severity of the (non-syntax) checks can be configured in **Window > Preferences > Sigasi > (System)Verilog > Errors/warnings**
+The severity of the (non-syntax) checks can be configured in **Window > Preferences > Sigasi > (System)Verilog > Errors/warnings**  
 [![Configure severity](/releasenotes/4.2/systemverilog_linting_settings.png "Configure severity")](/releasenotes/4.2/systemverilog_linting_settings.png)
 
 New VHDL checks:
@@ -44,7 +44,7 @@ In earlier versions of Sigasi Studio you could suppress (also known as *waive*) 
 
 [![Suppress warnings](/releasenotes/4.2/suppress_a.png "Suppress warnings")](/releasenotes/4.2/suppress_a.png)
 
-TODO add video.
+Check [this video][/screencasts/suppress] for an introduction to suppressing warnings in Sigasi Studio.
 
 # Configure linting severity per project \[VHDL]
 
@@ -68,7 +68,6 @@ Right click a project, folder or file and select **Properties > VHDL Errors/Warn
 * Block diagram export should not use dark theme when the dark theme is enabled
 * Updated Sigasi Studio Standalone version to [Eclipse 2018-09](https://www.eclipse.org/eclipse/news/4.9/)
 * Update to Xtext dependency to 2.15
-* Dropped support for Eclipse 4.5
 * \[VHDL] Better hovers for signals: also show type declaration
 [![Text](/releasenotes/4.2/vhdl_hover_show_datatype.png "Text")](/releasenotes/4.2/vhdl_hover_show_datatype.png)
 * \[VHDL] Better hovers for component instantiations
