@@ -4,8 +4,6 @@ layout: page
 pager: true
 ---
 
-[vhdl_only]
-
 In addition to syntax validation, Sigasi Studio also checks your code for
 semantic problems (**Linting**, or **Linter checks**). Some of these
 problems can be automatically resolved with **Quick Fixes**. Both syntax
