@@ -47,6 +47,7 @@ You can limit the suppression to a specific warning by putting a prefix of the w
 ```
 
 Since [/releasenotes/sigasi-4.02] the `@suppress` comment also suppresses Errors.
+Since [/releasenotes/sigasi-4.03] warnings have a quickfix to automatically add the `@suppress` comment with a matching warning message prefix.
 
 ## No Linting for Common Libraries {: #linting-common-libraries}
 
@@ -93,6 +94,8 @@ The availability of code rules depends on the license requirements.
 | ST      | ![](icons/warning_lightbulb.png) | Correct attribute entity class in attribute specifications                                                              |     |
 | ST      | ![](icons/warning_lightbulb.png) | C-style equality and inequality operator (`=` and `/=` vs `==` and `!=`)                                                |     |
 | ST      | ![](icons/warning_lightbulb.png) | VHDL 2008 features in VHDL 93 mode (Learn about [choosing your VHDL version][/manual/config#configure-version])         |     |
+| ST      | ![](icons/warning_lightbulb.png) | Port/Generic lists cannot be terminated with a ','                                                                      |     |
+| ST      | ![](icons/warning_lightbulb.png) | Port/Generic maps cannot be terminated with a ';'                                                                       |     |
 | CR      | ![](icons/warning_lightbulb.png) | [Deprecated IEEE packages](#deprecated-ieee-packages-non-standard-packages)                                             |   8 |
 | CR      | ![](icons/warning_lightbulb.png) | [Non-standard packages](#deprecated-ieee-packages-non-standard-packages)                                                |  37 |
 | CR      | ![](icons/warning_lightbulb.png) | [A process must either have a sensitivity list or contain one or more wait statements](#sensitivity-list)               |  38 |
@@ -384,9 +387,9 @@ You can override these setting by creating a settings file for your projects.
 
 In each project, you can override the coding rules settings. You can override rules for the **entire project**, for **folders** in the project, or for individual **files**.
 
-## Graphical configuration
+## Errors/Warnings property page
 
-To configure the severity level, right click the project (or file or folder) in the Project Explorer and select **Properties > VHDL Errors/Warnings**.
+To configure the severity level, right click the project (or file or folder) in the Project Explorer and select **Properties > VHDL Errors/Warnings** or **Properties > SystemVerilog Errors/Warnings**.
 
 [![Configure linting severity per project](images/linting_severity_per_project.png "Configure linting severity per project")](images/linting_severity_per_project.png)
 
@@ -395,6 +398,10 @@ Project settings are stored in this settings file:
 ```text
     ${project location}/.settings/com.sigasi.hdt.vhdl.linting.prefs
 ```
+
+You can search for a specific rule, by using the search field at the top of the property page.
+
+[![Search for a specific rule](images/linting_severity_per_project_search.png "Search for a specific rule")](images/linting_severity_per_project_search.png)
 
 ## Manual configuration
 

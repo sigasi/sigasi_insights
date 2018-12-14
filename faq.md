@@ -37,7 +37,7 @@ The SHA1 sum (or hash) is a fingerprint of a file. After you download a file, yo
     * Linux: RedHat Enterprise Linux RHEL 7.5 (64 bit) or newer.  
   We recommend at least **2GB of memory**, and you need **about 300MB** of free disk space.
 * Sigasi Studio as Plugin in your own Eclipse installation:
-    * Eclipse 4.6 *Neon* up to Eclipse 2018-09
+    * Eclipse 4.7.3a *Oxygen* or higher
     * Java JRE 8 or higher  
     * And all requirements from the standalone version
 * License servers (FlexNet):
@@ -385,8 +385,12 @@ Since [Sigasi Studio 4.1][/releasenotes/sigasi-4.01#sigasi-studio-standalone-ver
 This version of Eclipse has dependencies that can't be met on RedHat Linux 6.
 To still be able to run Sigasi Studio on RedHat Linux 6, follow these steps:
 
+<<<<<<< HEAD
 * Install [Eclipse Oxygen (4.7)](https://www.eclipse.org/oxygen/). Find your download using the *Packages* link.
 * Eclipse Oxygen requires at least version 2.24.0 of GTK+.
+=======
+* Install [Eclipse Oxygen (4.7.3a)](https://www.eclipse.org/oxygen/).
+>>>>>>> Preparing requirements documentation for upcoming release
 * Eclipse Oxygen and the Sigasi Studio Plugin require Java 8.
 ```bash
 yum install java-1.8.0-openjdk

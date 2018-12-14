@@ -142,6 +142,8 @@ The tool provides help to autocomplete:
 * module instantiations
 * case statements (based on variables/signals with an enumeration type)
 * SystemVerilog preprocessor/macro directives (`` `define``, `` `ifndef``, ...)
+* SystemVerilog include paths (`` `include "``): triggering autocomplete between the double quotes will present a list of files and folders. If you select a folder, trigger autocomplete again to get completions in this folder.
+
 
 ## Other editor features
 
