@@ -48,6 +48,8 @@ As a small example following mechanic task will configure Sigasi to use VHDL 200
 
 ![Workspace Mechanic Update](./images/mechanic_vhdl2008.png)
 
-You can install the plugin from update site http://workspacemechanic.eclipselabs.org.codespot.com/git.update/mechanic
+You can install the plugin from update site http://alfsch.github.io/eclipse-updates/workspacemechanic
+
+More information on Workspace Mechanic can be found on https://marketplace.eclipse.org/content/workspace-mechanic
 
 If you need extra help using Workspace Mechanic in Sigasi, please contact us.
