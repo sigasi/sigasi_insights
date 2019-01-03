@@ -77,20 +77,21 @@ This requires the host where you install the Sigasi Studio Plugin to have access
 After starting Eclipse:
 
 1. Click **Help > Install New Software…**
-2. In the **Work with:** field enter **<http://download.sigasi.com/updates/studio>** and press **enter**.
-3. Check the checkbox next to **Sigasi Studio**
-4. We recommend to install the optional features too.
+1. In the **Work with:** field enter **<http://download.sigasi.com/updates/studio>** and press **enter**.
+1. Check the checkbox next to **Sigasi Studio**
+1. We recommend to install the optional features too.
    ![Install Sigasi Studio plugin](images/setup-install-plugin.png)
-5. Click the **Next** button.
-6. The following steps are pretty self-explaining.
+1. Click the **Next** button.
+1. The following steps are pretty self-explaining.
+1. After the installation you will need to restart Eclipse. Once this is done, go to **Window > Perspective > Open Perspective > Other...** and select the **Sigasi** Perspective. You can then close the **Welcome** View to show the Sigasi Views.
 
 ## Installing the offline update site ([xl] or [xprt]) {: #offline-update}
 
 Installing the offline update site is very similar to installing from the [main update site][#eclipse-plugin], where *step 2* is replaced with these steps:
 
 1. Download the offline update site from the link you received from your sales representative.
-2. In the **Install** Wizard, click **Add...**
-3. Click **Archive...**, browse to the zip file you downloaded, and confirm with **OK**.
+1. In the **Install** Wizard, click **Add...**
+1. Click **Archive...**, browse to the zip file you downloaded, and confirm with **OK**.
    ![Add offline update site archive](images/offline_update_site_add.png)
 
 Next, continue with step 3. in the [general eclipse installation instructions][#eclipse-plugin].
