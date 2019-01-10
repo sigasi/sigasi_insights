@@ -8,6 +8,7 @@ pager: true
 
 Sigasi Studio's license key management system is based on the well known FlexNet (a.k.a. FlexLM) license manager.
 Sigasi Studio supports both *node-locked* and *floating* license keys.
+The Sigasi Studio [edition][/manual/editions] is controlled by the license key.
 
 
 # Node locked licenses

@@ -102,7 +102,7 @@ when installing the offline update site.
 
 The license key can be filled in under **Window > Preferences > Sigasi > License Key**.
 
-More details can be found in [/manual/license-key]
+More details can be found in [/manual/license-key]. The license unlocks the features for your [edition][/manual/editions].
 
 # Configuration
 
