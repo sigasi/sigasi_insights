@@ -1,8 +1,8 @@
 ---
-title: Sigasi Studio Preview (4.2)
+title: Sigasi Studio Preview (4.3)
 layout: page
 pager: true
-date: 2018-11-07
+date: 2019-01-22
 comments: true
 ---
 
@@ -16,7 +16,13 @@ Although these preview releases are less rigorously tested than than the officia
 
 # Current preview release
 
-No documented changes since the [4.2 release][/releasenotes/sigasi-4.02]
+* Eclipse 201812 : Sigasi Studio is now build with [Eclipse 201812 (4.10)](https://www.eclipse.org/eclipse/news/4.10/platform.php). This is also means that Sigasi Studio (preview) can now be installed as plugin in the latest Eclipse version.
+* Stuttering is now disabled by default for (System)Verilog
+* Dark theme support in the preprocessor view
+* Configure linting severity per project for (System)Verilog projects
+
++ Bugfixes
+
 
 # Update or install?
 
