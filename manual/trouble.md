@@ -105,6 +105,10 @@ This sets the maximum heap size to 1000 MB (instead of the standard 1400MB).
 
 **Note:** Do not use `eclipsec.exe`, as this will ignore all of the settings configured in the eclipse.ini file.
 
+# Sigasi Studio shows a startup message about port 4444 already being in use
+
+If you want to run Sigasi Studio on a server with multiple users, the configuration files should be updated according to the descriptions [here][/manual/opening#run-sigasi-studio-with-multiple-users-on-the-same-server].
+
 # I want a clean restart {: #ts-clean}
 
 If you ever suspect that the state of your project is inconsistent in Sigasi Studio, you can do one or all of the following things. Consider these
