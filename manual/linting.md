@@ -46,6 +46,8 @@ You can limit the suppression to a specific warning by putting a prefix of the w
 <line with warning> // @suppress "Warning message prefix" Reason why warning is supppressed
 ```
 
+Since [/releasenotes/sigasi-4.02] the `@suppress` comment also suppresses Errors.
+
 ## No Linting for Common Libraries {: #linting-common-libraries}
 
 Common Libraries are considered to be production ready libraries.
