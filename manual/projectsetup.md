@@ -42,9 +42,15 @@ just drag them from your Windows Explorer (or other file browser) into
 the project. You will have the option to create a link rather than
 copying the files.
 
-**Note:** dragging files works on Windows (using Windows Explorer), on
+**Note 1:** dragging files works on Windows (using Windows Explorer), on
 Mac OS X (using Finder) and on Linux (using Gnome Nautilus). If you use
 KDE, you should install Nautilus.
+
+**Note 2:** to avoid absolute paths in the .project file, *environment variables* can be used.
+Right-click the file or directory in the project explorer and select
+**Properties > Resource > Location > Edit...** to configure the path of the resource.
+To access *environment variables*, you have to prefix the environment variable with `ENV-`.
+For example: to refer to the home directory you can use `ENV-HOME`.
 
 # Creating a new, empty project
 

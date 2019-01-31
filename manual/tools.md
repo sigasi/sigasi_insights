@@ -75,6 +75,9 @@ that these preference pages support [Eclipse
 Variables](https://help.eclipse.org/photon/topic/org.eclipse.platform.doc.user/concepts/concepts-exttools.htm)
 which allow you to more easily share settings in a team.
 
+Environment variables are supported too.
+If you want to use the `$HOME` environment variable, you can call this varible by typing `${env_var:HOME}`.
+
 ![](images/toolchains-settings-rivierapro.png)
 
 ## List of toolchains
