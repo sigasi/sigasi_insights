@@ -1,5 +1,5 @@
 ---
-title: "Smart indent VHDL"
+title: "Smart Indent for VHDL"
 layout: screencast 
 pager: false
 date: 2016-01-01

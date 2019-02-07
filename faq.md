@@ -36,12 +36,10 @@ The SHA1 sum (or hash) is a fingerprint of a file. After you download a file, yo
     * Mac OS X: latest version
     * Linux: RedHat Enterprise Linux RHEL 7.5 (64 bit) or newer.  
   We recommend at least **2GB of memory**, and you need **about 300MB** of free disk space.
-
 * Sigasi Studio as Plugin in your own Eclipse installation:
     * Eclipse 4.6 *Neon* up to Eclipse 2018-09
     * Java JRE 8 or higher  
     * And all requirements from the standalone version
-
 * License servers (FlexNet):
     * RedHat Enterprise Linux 5.2 (32 bit and 64 bit) or newer
     * Windows 7 (32 bit and 64 bit) or newer
@@ -119,6 +117,10 @@ Floating licenses are available at a minimum volume of five licenses. The price 
 If your team is purchasing at least five licenses, you will have the choice between node-locked and floating licenses.
 
 If you currently have five node-locked licenses and you want to upgrade to floating licenses, please [contact-us].
+
+## What are the requirements for the license server?
+
+License server requirements are listed with the [system requirements][#what-are-the-system-requirements].
 
 ## How can I avoid locking up a license when I'm working with Eclipse?
 
