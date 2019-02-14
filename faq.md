@@ -171,13 +171,13 @@ Yes, the Sigasi VHDL Eclipse editor supports all unicode characters, including J
 
 ## What is this MouseFeed pop-up?
 
-Many actions can be accessed using your mouse and using a keyboard shortcut, e.g. copying text can be done either by clicking **Edit > Copy** or by pressing **Ctrl-C**. Of course, pressing a key combination is a lot faster than clicking in a menu.
+Many actions can be accessed using your mouse and using [/manual/keyshortcuts], e.g. copying text can be done either by clicking **Edit > Copy** or by pressing **Ctrl-C**. Of course, pressing a key combination is a lot faster than clicking in a menu.
 
 ![](faq-images/mousefeed.png)
 
-Whenever you use your mouse for something that also has a key binding, the MouseFeed function tells you what this keyboard shortcuts is. This will help you remember keyboard shortcuts for the actions you use most often.
+Whenever you use your mouse for something that also has a key binding, the MouseFeed function tells you what this keyboard shortcut is. This will help you remember keyboard shortcuts for the actions you use most often.
 
-The easiest way to avoid getting these pop ups --and gain a good deal of development speed-- is by using keyboard shortcuts when possible. If you still want to disable MouseFeed, you can go to **Window > Preferences > MouseFeed > Action Invocation** and uncheck the box for **Enable action invocation control**.
+The easiest way to avoid getting these pop ups --and gain a good deal of development speed-- is by using [/manual/keyshortcuts] when possible. If you still want to disable MouseFeed, you can go to **Window > Preferences > MouseFeed > Action Invocation** and uncheck the box for **Enable action invocation control**.
 
 ## How can I insert tabs in Block Selection Mode
 

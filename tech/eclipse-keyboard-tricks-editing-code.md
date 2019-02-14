@@ -27,4 +27,4 @@ So here is a post for everybody moving to Eclipse, and especially <em>VHDL coder
 
 Activate **Block Editing** by pressing **ALT+SHIFT+A**.
 
-If you like these five new shortcuts, you might want to print a copy of the [sigasi-keyboard-shortcuts-cheat-sheet] and put it on the wall next to your computer. Next time, I'll show you some navigation tricks.
+If you like these five new shortcuts, you might want to print a copy of the [/manual/keyshortcuts] and put it on the wall next to your computer. Next time, I'll show you some navigation tricks.
