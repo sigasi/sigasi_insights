@@ -43,7 +43,7 @@ Specific warnings can be suppressed in your code by adding a `@suppress` comment
 
 You can limit the suppression to a specific warning by putting a prefix of the warning message between quotes after `@suppress`. Sigasi also recommends adding a reason why the warning was suppressed by adding an extra comment after `@suppress`:
 ```
-<line with warning> // @suppress "Warning message prefix" Reason why warning is supppressed
+<line with warning> // @suppress "Warning message prefix" Reason why warning is suppressed
 ```
 
 Since [/releasenotes/sigasi-4.02] the `@suppress` comment also suppresses Errors.
