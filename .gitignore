@@ -4,12 +4,10 @@ linkchecker_result.html
 /.vscode/
 .hugo_build.lock
 .firebase/
-
 # Local Netlify folder
 .netlify
 # Emacs backup files
 *~
 **/*.bak
-
 # Mac
 .DS_Store

@@ -14,7 +14,9 @@ bannerad: true
 - **VUnit Flow** is working within your Sigasi installation, supported since [Sigasi 4.1](releasenotes/sigasi-4.01.html)
 - **Gitlab.com** (or self-hosted Gitlab server) with **Gitlab CI** enabled
 
-This tech article uses GHDL within a [Docker Container](https://www.docker.com/). Setting up and using Docker is outside of the scope of this article. But I promise to write one in the near future.
+This tech article uses GHDL within a [Docker Container](https://www.docker.com/) on server side verification. Docker setup and handling is outside of the scope of this article. But I promise to write another one in the near future which explains the Docker workflow.
+
+The Git repositories for demonstrating the content of this article and other Sigasi features can be found under [https://gitlab.com/Elpra/sigasi-demos/vunit-example-ci](https://gitlab.com/Elpra/sigasi-demos/vunit-example-ci).
 
 # Introduction
 
