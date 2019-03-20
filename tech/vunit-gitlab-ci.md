@@ -30,6 +30,10 @@ Since Sigasi 4.1, VUnit projects can be managed pretty user friendly. This is ve
 
 # Getting Started
 
+## Part 1: Let's Setup a CI Environment
+
+## Part 2: If it's broken - fix it!
+
 # Comment
 
 I wrote this article neither as employee of Sigasi nor of VUnit or any other tool mentioned. I'm just a Sigasi user (since 2011) who is happy with this piece of software. Because Continous Integration and Continous Deployment is becoming more and more important, especially in large and safty critical designs, I'm pretty glad that the Sigasi team put in VUnit support in their software. This is why I decided to wrote this tech article which hopefully inspire others to optimize their development process.
