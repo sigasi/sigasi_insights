@@ -385,12 +385,8 @@ Since [Sigasi Studio 4.1][/releasenotes/sigasi-4.01#sigasi-studio-standalone-ver
 This version of Eclipse has dependencies that can't be met on RedHat Linux 6.
 To still be able to run Sigasi Studio on RedHat Linux 6, follow these steps:
 
-<<<<<<< HEAD
-* Install [Eclipse Oxygen (4.7)](https://www.eclipse.org/oxygen/). Find your download using the *Packages* link.
+* Install [Eclipse Oxygen (4.7.3a)](https://www.eclipse.org/oxygen/). Find your download using the *Packages* link.
 * Eclipse Oxygen requires at least version 2.24.0 of GTK+.
-=======
-* Install [Eclipse Oxygen (4.7.3a)](https://www.eclipse.org/oxygen/).
->>>>>>> Preparing requirements documentation for upcoming release
 * Eclipse Oxygen and the Sigasi Studio Plugin require Java 8.
 ```bash
 yum install java-1.8.0-openjdk
