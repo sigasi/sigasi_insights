@@ -255,8 +255,6 @@ You can find more info on: [here](https://www.sigasi.com/content/how-avoid-absol
 
 In **Window > Preferences > General > Appearance**, select **Dark** in the **Theme** field. Restart to apply the settings in all windows.
 
-If you want a *fully black background in the editor*, right click in the editor view and select **Preferences...**, next navigate to **General > Editors > Text Editors**. In the **Appearance color options**, select **Background color** and next click the **Color** button to select your preferred editor background color.
-
 If you encounter problems with button text and colors on RedHat (and CentOS), use a dark OS theme like 'AdwaitaDark'. Sigasi Studio then inherits the dark buttons from the OS theme.
 
 # Warnings and Lint rules
