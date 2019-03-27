@@ -63,3 +63,14 @@ We also reviewed and polished our icons to look nice with a Dark Theme.
 - Fixed opening non-project SystemVerilog files
 - SystemVerilog parse error on `#this.object.member`
 - Respect tabs/spaces setting in Verilog formatting and template autocomplete
+
+# Sigasi 4.3.1 point release
+
+On March 27th we released Sigasi Studio 4.3.1. This release fixes the following reported issues:
+
+* VHDL formatting: formatter removes keywords when both *preserve newlines* and *Uppercase/Lowercase keywords* settings are enabled
+* VHDL formatting: array indexes are not taken into account when aligning concurrent assignments
+* Stricter configuration of installation dependencies to make sure updates also work for updated Sigasi Studio 3.x installations.
+* `@suppress` quickfix in lines with Verilog macro invocations
+
+Thanks for all the bug reports and enabling Talkback.
