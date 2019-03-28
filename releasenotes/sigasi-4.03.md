@@ -64,6 +64,17 @@ We also reviewed and polished our icons to look nice with a Dark Theme.
 - SystemVerilog parse error on `#this.object.member`
 - Respect tabs/spaces setting in Verilog formatting and template autocomplete
 
+# System requirements
+
+* Sigasi Studio Standalone is supported on:
+    * Windows: Windows 10 (64 bit) or newer
+    * Mac OS X: latest version
+    * Linux: RedHat Enterprise Linux RHEL 7.5 (64 bit) or newer.  
+  We recommend at least **2GB of memory**, and you need **about 300MB** of free disk space.
+* Sigasi Studio as Plugin in your own Eclipse installation:
+    * Eclipse 4.7.3a *Oxygen* or higher
+    * Java JRE 8 or higher  
+
 # Sigasi 4.3.1 point release
 
 On March 27th we released Sigasi Studio 4.3.1. This release fixes the following reported issues:
