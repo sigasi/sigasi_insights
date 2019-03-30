@@ -68,12 +68,14 @@ We also reviewed and polished our icons to look nice with a Dark Theme.
 
 * Sigasi Studio Standalone is supported on:
     * Windows: Windows 10 (64 bit) or newer
-    * Mac OS X: latest version
-    * Linux: RedHat Enterprise Linux RHEL 7.5 (64 bit) or newer.  
-  We recommend at least **2GB of memory**, and you need **about 300MB** of free disk space.
+    * macOS 10.14 Mojave
+    * Linux: RedHat Enterprise Linux RHEL 7.5 (64 bit) or newer
+    * More information on supported OSes can be found [on the Eclipse website](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_10.xml#target_environments)
 * Sigasi Studio as Plugin in your own Eclipse installation:
     * Eclipse 4.7.3a *Oxygen* or higher
     * Java JRE 8 or higher  
+
+We recommend at least **2GB of memory**, and you need **about 300MB** of free disk space.
 
 # Sigasi 4.3.1 point release
 
