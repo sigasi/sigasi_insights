@@ -87,7 +87,7 @@ Some other popular revision control systems include:
 ## VI and Emacs
 
 + VI: <http://vrapper.sourceforge.net/home/>
-+ Emacs: <http://marketplace.eclipse.org/content/emacs>
++ Emacs: <http://marketplace.eclipse.org/content/more-emacs>
 
 ## Other languages
 
