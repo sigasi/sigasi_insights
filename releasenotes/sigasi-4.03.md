@@ -86,4 +86,10 @@ On March 27th we released Sigasi Studio 4.3.1. This release fixes the following 
 * Stricter configuration of installation dependencies to make sure updates also work for updated Sigasi Studio 3.x installations.
 * `@suppress` quickfix in lines with Verilog macro invocations
 
+# Sigasi 4.3.2 point release
+
+On April 8th we released Sigasi Studio 4.3.2. This release fixes the following reported issue:
+
+* Sigasi Studio occasionally hangs while opening the License Key Preferences dialog.
+
 Thanks for all the bug reports and enabling Talkback.
