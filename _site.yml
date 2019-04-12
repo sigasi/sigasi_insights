@@ -11,6 +11,7 @@ bootstrap: 3.3.4
 banner: "Insights."
 cname: insights.sigasi.com
 main_url: https://www.sigasi.com
+search_url: https://www.sigasi.com/search
 menuitems:
   - title: Home
     url: https://www.sigasi.com
