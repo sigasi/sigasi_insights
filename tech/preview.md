@@ -16,6 +16,10 @@ Although these preview releases are less rigorously tested than than the officia
 
 # Current preview release
 
+* Update to Xtext 2.17.1
+* Update Eclipse 2019-03 (4.11)
+* Documentation: PDF export: better sizing of diagrams
+
 No documented changes since the [4.3 release][/releasenotes/sigasi-4.03]
 
 # Update or install?
