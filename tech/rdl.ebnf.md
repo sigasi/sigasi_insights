@@ -3,7 +3,7 @@ title: "Register Description Language SystemRDL 2.0"
 layout: page 
 pager: true
 author: Sigasi
-date: 2019-04-17
+date: 2019-04-23
 comments: true
 tags:
   - ebnf
