@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.4)
 layout: page
 pager: true
-date: 2019-04-02
+date: 2019-04-23
 comments: true
 ---
 
@@ -19,8 +19,6 @@ Although these preview releases are less rigorously tested than than the officia
 * Update to Xtext 2.17.1
 * Update Eclipse 2019-03 (4.11)
 * Documentation: PDF export: better sizing of diagrams
-
-No documented changes since the [4.3 release][/releasenotes/sigasi-4.03]
 
 # Update or install?
 
