@@ -5,6 +5,8 @@ pager: true
 author: Sigasi
 date: 2018-06-27
 comments: true
+tags:
+  - ebnf
 ---
 <em>
 Copyright © 2017 - 2018 Accellera. All rights reserved.
