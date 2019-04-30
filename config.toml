@@ -1,0 +1,24 @@
+baseurl         = "https://nirwana.sigasi.com/"
+contentdir      = "content"
+layoutdir       = "layouts"
+publishdir      = "public"
+title           = "Sigasi"
+paginate        = 15
+canonifyurls    = true
+summarylength   = 20
+googleAnalytics = "UA-2852630-4"
+
+enableRobotsTXT = "true"
+DefaultContentLanguage = "en"
+metaDataFormat = "yaml"
+
+[author]
+    name = "Sigasi"
+
+[params]
+  currentVersion = "Sigasi Studio 4.3"
+  currentReleaseNotes = "//insights.sigasi.com/releasenotes/sigasi-4.03.html"
+
+[taxonomies]
+  tag = "tags"
+
