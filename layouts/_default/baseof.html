@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+  {{ if .Params.private }}
+    <meta name="robots" content="noindex, nofollow">
+  {{ else }}
+    <meta name="robots" content="index, follow">
+  {{ end }}
+    <title>{{ block "title" . }}{{ .Page.Title }} - {{ .Site.Title }}{{ end }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/sigasi.min.css"/>
+    {{ template "_internal/google_analytics.html" . }}
+    <link rel="alternate" type="application/rss+xml" href="{{ "/news/index.xml" | absURL }}" title="News feed">
+    <link rel="alternate" type="application/rss+xml" href="{{ "/jobs/index.xml" | absURL }}" title="Jobs feed">
+</head>
+
+<body>
+<div class="uk-container sg-border-bottom uk-visible@m">
+    <nav data-uk-navbar class="sg-navbar-top" id="sigasi-top">
+        <div class="uk-navbar-left">
+            <form action="/search" method="get">
+                <div class="uk-inline">
+                    <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: search"></span>
+                    <input class="uk-input uk-form-small uk-form-width-medium" type="text" placeholder="Search" name="search">
+                </div>
+            </form>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li><a href="//www.sigasi.com/support/">Support</a></li>
+                <li><a href="//www.sigasi.com/jobs/">Jobs</a></li>
+                <li><a href="//www.sigasi.com/news/">News</a></li>
+                <li><a href="//www.sigasi.com/contact/">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="uk-container">
+    {{ partial "main-menu.html" . }}
+</div>
+{{ if .IsHome }}
+<div class="uk-container sg-banner sg-home-banner">
+    <p><span>Insights</span></p>
+</div>
+{{ else }}
+{{ partial "general-banner" . }}
+{{ end }}
+
+
+<!-- Code that all your templates share, like a header -->
+{{ block "main" . }}
+<!-- The part of the page that begins to differ between templates -->
+The main part.
+{{ end }}
+
+{{ block "footer" . }}
+{{ if not .Params.nologos }}
+<div id="footer-widgets" class="footer-widgets uk-container">
+    {{ partial "logos.html" .Site.Data.logos }}
+</div>
+{{ end}}
+
+{{ end }}
+<div  id="copyright" class="uk-container">
+    <footer class="uk-clear-fix">
+        <div class="uk-text-center uk-padding-small">Copyright Sigasi | <a
+                href="https://www.sigasi.com">www.sigasi.com</a></div>
+    </footer>
+</div>
+<a href="#sigasi-top">
+    <div class="uk-position-fixed sg-scroller uk-visible@m" data-uk-scroll data-uk-totop>
+    </div>
+</a>
+
+<div id="cookie_consent" class="section uk-position-bottom uk-position-fixed uk-hidden" style="background: white">
+    <div class="uk-container uk-padding-small">
+        This website uses  <a href="/cookies/">cookies</a>. By continuing to use this
+        site you are giving consent to cookies being used.
+        <a class="uk-button uk-button-default uk-align-right" href="#" data-cli_action="accept" id="close_cookie_consent">Accept &amp; close</a>
+    </div>
+</div>
+<script src="/js/uikit.min.js"></script>
+<script src="/js/uikit-icons.min.js"></script>
+<script src="/js/consent.js"></script>
+</body>
+
+</html>

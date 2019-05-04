@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="uk-container">
+    <article class="uk-margin-top">
+        {{.Content}}
+    </article>
+
+    <ul class="uk-list uk-column-1-2@m uk-margin-medium-bottom">
+        {{ range .Pages }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+
+{{ end }}
+
+{{ define "footer" }}
+<!--no logos-->
+{{ end}}

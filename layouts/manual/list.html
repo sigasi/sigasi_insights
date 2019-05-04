@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="uk-container">
+    Testing:
+    <ul>
+        {{ range where .Pages.ByWeight "Params.overviewlist" "==" nil }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+    </ul>
+
+    Paginator var:
+    {{ $paginator := .Paginate .Pages.ByWeight }}
+    <ul>
+    {{ range $paginator.Pages }}
+    <li>{{ .Title }}</li>
+    {{ end }}
+    </ul>
+
+    <ul>
+    {{ range .Pages.ByWeight }}
+    <li>{{ .Title }}</li>
+    {{ end }}
+    </ul>
+</div>
+{{ end }}
