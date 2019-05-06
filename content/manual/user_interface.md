@@ -1,6 +1,6 @@
 ---
 title: User Interface
-layout: page 
+weight: 4
 pager: true
 ---
 

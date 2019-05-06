@@ -1,6 +1,6 @@
 ---
 title: Linting and Quick Fixes
-layout: page
+weight: 9
 pager: true
 ---
 

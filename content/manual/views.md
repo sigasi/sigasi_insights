@@ -1,6 +1,6 @@
 ---
 title: Views
-layout: page
+weight: 5
 pager: true
 ---
 

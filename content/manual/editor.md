@@ -1,6 +1,6 @@
 ---
 title: Sigasi Studio Editor
-layout: page 
+weight: 6
 pager: true
 ---
 

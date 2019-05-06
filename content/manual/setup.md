@@ -1,8 +1,6 @@
 ---
 title: Setting Up Sigasi Studio
-layout: page 
-overviewlist: true
-weight: 0
+weight: 1
 pager: true
 ---
 

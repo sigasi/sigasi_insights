@@ -1,6 +1,6 @@
 ---
 title: "Documentation Generation"
-layout: page
+weight: 12
 pager: true
 ---
 

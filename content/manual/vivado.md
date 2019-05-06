@@ -1,6 +1,6 @@
 ---
 title: Xilinx Vivado Integration
-layout: page
+skipoverviewlist: true
 pager: true
 ---
 

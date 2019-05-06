@@ -1,6 +1,6 @@
 ---
 title: "Graphics Configuration"
-layout: page
+weight: 13
 pager: true
 ---
 

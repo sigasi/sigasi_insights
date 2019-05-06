@@ -1,6 +1,6 @@
 ---
 title: Setting Up a Project
-layout: page
+weight: 2
 pager: true
 ---
 

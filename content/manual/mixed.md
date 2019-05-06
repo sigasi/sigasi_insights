@@ -1,6 +1,6 @@
 ---
 title: Mixed language projects
-layout: page 
+weight: 7
 pager: true
 ---
 

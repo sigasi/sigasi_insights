@@ -1,6 +1,6 @@
 ---
 title: Opening Files
-layout: page
+weight: 8
 pager: true
 ---
 

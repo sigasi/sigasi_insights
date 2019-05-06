@@ -1,6 +1,6 @@
 ---
 title: Libraries
-layout: page 
+weight: 3
 pager: true
 ---
 

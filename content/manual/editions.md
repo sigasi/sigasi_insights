@@ -1,6 +1,6 @@
 ---
 title: Sigasi Editions and Languages
-layout: page 
+skipoverviewlist: true
 pager: true
 ---
 

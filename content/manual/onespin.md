@@ -1,6 +1,6 @@
 ---
 title: OneSpin Integration
-layout: page 
+skipoverviewlist: true
 pager: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting
-layout: page 
+weight: 15
 pager: true
 ---
 

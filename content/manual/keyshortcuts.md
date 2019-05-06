@@ -1,6 +1,6 @@
 ---
 title: Keyboard Shortcuts
-layout: page 
+weight: 16
 pager: true
 ---
 

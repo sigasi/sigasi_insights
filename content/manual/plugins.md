@@ -1,6 +1,6 @@
 ---
 title: Third party plugins
-layout: page 
+weight: 14
 pager: true
 ---
 
