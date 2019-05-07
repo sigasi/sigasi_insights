@@ -31,18 +31,58 @@ The SHA1 sum (or hash) is a fingerprint of a file. After you download a file, yo
 
 ## What are the system requirements?
 
-* Sigasi Studio Standalone is supported on:
-    * Windows: Windows 10 (64 bit) or newer
-    * Mac OS X: latest version
-    * Linux: RedHat Enterprise Linux RHEL 7.5 (64 bit) or newer.  
-  We recommend at least **2GB of memory**, and you need **about 300MB** of free disk space.
-* Sigasi Studio as Plugin in your own Eclipse installation:
+We recommend at least **2GB of memory**, and you need **about 300MB** of free disk space.
+
+## Does Sigasi Studio run on my OS?
+
+### Windows 10 (64 bit) or newer
+* Sigasi Studio Standalone is supported
+* Sigasi Studio Plugin is supported when using
     * Eclipse 4.7.3a *Oxygen* or higher
-    * Java JRE 8 or higher  
-    * And all requirements from the standalone version
-* License servers (FlexNet):
-    * RedHat Enterprise Linux 5.2 (32 bit and 64 bit) or newer
-    * Windows 7 (32 bit and 64 bit) or newer
+    * Java JRE 8 or higher
+
+### Mac OS X latest version
+* Sigasi Studio Standalone is supported
+* Sigasi Studio Plugin is supported when using
+    * Eclipse 4.7.3a *Oxygen* or higher
+    * Java JRE 8 or higher
+
+### Linux
+
+#### RHEL 7.5 (64 bit) or newer
+* Sigasi Studio Standalone is supported
+* Sigasi Studio Plugin is supported when using
+    * Eclipse 4.7.3a *Oxygen* or higher
+    * Java JRE 8 or higher
+
+#### RHEL 6.x
+* Sigasi Studio Plugin is supported when using
+    * Eclipse 4.7.3a *Oxygen* or higher
+    * Java JRE 8 or higher
+ * Check [these steps][#i-am-using-redhat-linux-6-how-can-i-run-sigasi-studio] for details
+
+#### Other Linux distributions
+    * No known issues as long as Eclipse is running on your OS
+
+## What are the license server requirements?
+The license server (FlexNet) is supported on
+
+* RedHat Enterprise Linux 5.2 (32 bit and 64 bit) or newer
+* Windows 7 (32 bit and 64 bit) or newer
+
+## I am using RedHat Linux 6. How can I run Sigasi Studio?
+
+Since [Sigasi Studio 4.1][/releasenotes/sigasi-4.01#sigasi-studio-standalone-version-eclipse-photon-48], the stand-alone Sigasi Studio application is built on top of Eclipse Photon (4.8).
+This version of Eclipse has dependencies that can't be met on RedHat Linux 6.
+To successfully run Sigasi Studio on RedHat Linux 6, follow these steps:
+
+* Install [Eclipse Oxygen (4.7.3a)](https://www.eclipse.org/oxygen/). Find your download using the *Packages* link.
+* Eclipse Oxygen requires at least version 2.24.0 of GTK+.
+* Eclipse Oxygen and the Sigasi Studio Plugin require Java 8.
+```bash
+yum install java-1.8.0-openjdk
+```
+* Install the Sigasi Studio Plugin by following [these steps][/manual/setup#installation-of-sigasi-studio-eclipse-plugin].
 
 ## How do I increase the heap size for Eclipse?
 
@@ -376,20 +416,6 @@ If you see warnings that are not useful for you, you can do one of the following
 
 On preference page **General > Workspace** you can configure the command that is used to open files with the System Explorer. The default Linux command does not work on older linux systems.
 On RedHat 6 linux, you can use the nautilus command: `nautilus "${selected_resource_parent_loc}"` ([More info](https://help.eclipse.org/photon/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-9.htm)).
-
-## I still need to use RedHat Linux 6. How can I run Sigasi Studio?
-
-Since [Sigasi Studio 4.1][/releasenotes/sigasi-4.01#sigasi-studio-standalone-version-eclipse-photon-48], the stand-alone Sigasi Studio application is built on top of Eclipse Photon (4.8).
-This version of Eclipse has dependencies that can't be met on RedHat Linux 6.
-To still be able to run Sigasi Studio on RedHat Linux 6, follow these steps:
-
-* Install [Eclipse Oxygen (4.7.3a)](https://www.eclipse.org/oxygen/). Find your download using the *Packages* link.
-* Eclipse Oxygen requires at least version 2.24.0 of GTK+.
-* Eclipse Oxygen and the Sigasi Studio Plugin require Java 8.
-```bash
-yum install java-1.8.0-openjdk
-```
-* Install the Sigasi Studio Plugin by following [these steps][/manual/setup#installation-of-sigasi-studio-eclipse-plugin].
 
 ## Sigasi switches my keyboard layout! Did I find a bug?
 
