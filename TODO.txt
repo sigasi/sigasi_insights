@@ -2,6 +2,8 @@
 * dedicated insights nav menu below banner
 * 3 lists on main insights page
 
+sed for shortcodes from _site
+
 
 Note: alternative listing methods:
 

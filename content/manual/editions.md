@@ -16,13 +16,13 @@ Sigasi Studio Starter works without a license key, but requires [/manual/talkbac
 
 Sigasi Studio **Creator** is the go-to design entry tool and code browser for all your HDL projects.
 
-## Sigasi Studio XL {: #xl}
+## Sigasi Studio XL
 
 Sigasi Studio XL is Sigasi's flagship product. A license for Sigasi Studio XL unlocks all features that come with Sigasi Creator.
 
 Throughout the documentation, features that are only available in this version are marked as "[xl_only]".
 
-## Sigasi Studio XPRT {: #xprt}
+## Sigasi Studio XPRT
 
 *Sigasi Studio XPRT* is the most complete version of Sigasi Studio. It unlocks all features of [creator] and [xl], plus the graphical views, documentation generation, ...
 
