@@ -52,25 +52,25 @@ executing this startup file.
 
 There are two ways to install the Sigasi Studio Eclipse Plugin:
 
-1. [On-line installation of the Eclipse Plugin](#eclipse-plugin)
-1. [Off-line update site to install the Eclipse Plugin](#offline-update) (only for customers with XL or XPRT licenses)
+1. [On-line installation of the Eclipse Plugin](#install-the-eclipse-plugin)
+1. [Off-line update site to install the Eclipse Plugin](#installing-the-offline-update-site-xl-or-xprt) (only for customers with XL or XPRT licenses)
 
 ## Prerequisites: Eclipse
 
-![Eclipse Foundation member](images/eclipse_foundationmember.png){: style="float:right"}
+{{< figure src="/img/manual/eclipse_foundationmember.png" alt="Eclipse Foundation member" class="uk-align-right" >}}
 
 * You need to have at least [Eclipse](http://www.eclipse.org) version 4.7.3a, nicknamed *Oxygen*.
 * This Eclipse version and the Sigasi Studio plugin require at least Java 8.
 * If you don't have Eclipse installed yet, the C/C++ flavor would be good place to start. Just **download** ([Windows 64 bit][latest-eclipse-cpp-windows64]/[Linux 64 bit][latest-eclipse-cpp-linux64]/[Other versions][latest-eclipse-cpp]), **unzip** and **start**.
-* We recommend you also increase the heap size for Eclipse ([/faq#how-do-i-increase-the-heap-size-for-eclipse]).
+* We recommend you also [increase the heap size for Eclipse](/faq/#how-do-i-increase-the-heap-size-for-eclipse).
 
-For more information on system requirements: ([System Requirements][/faq#what-are-the-system-requirements])
+For more information on system requirements: [System Requirements](/faq/#what-are-the-system-requirements)
 
 [latest-eclipse-cpp-windows64]:http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/photon/R/eclipse-cpp-photon-R-win32-x86_64.zip
 [latest-eclipse-cpp-linux64]:http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/photon/R/eclipse-cpp-photon-R-linux-gtk-x86_64.tar.gz
 [latest-eclipse-cpp]:https://www.eclipse.org/downloads/packages/release/photon/r/eclipse-ide-cc-developers
 
-## Install the Eclipse Plugin {: #eclipse-plugin}
+## Install the Eclipse Plugin
 
 This requires the host where you install the Sigasi Studio Plugin to have access to our download server.
 After starting Eclipse:
@@ -79,21 +79,23 @@ After starting Eclipse:
 1. In the **Work with:** field enter **<http://download.sigasi.com/updates/studio>** and press **enter**.
 1. Check the checkbox next to **Sigasi Studio**
 1. We recommend to install the optional features too.
-   ![Install Sigasi Studio plugin](images/setup-install-plugin.png)
+{{< figure src="/img/manual/setup-install-plugin.png" alt="Install Sigasi Studio plugin" >}}
 1. Click the **Next** button.
 1. The following steps are pretty self-explaining.
 1. After the installation you will need to restart Eclipse. Once this is done, go to **Window > Perspective > Open Perspective > Other...** and select the **Sigasi** Perspective. You can then close the **Welcome** View to show the Sigasi Views.
 
-## Installing the offline update site ([xl] or [xprt]) {: #offline-update}
+## Installing the offline update site
 
-Installing the offline update site is very similar to installing from the [main update site][#eclipse-plugin], where *step 2* is replaced with these steps:
+This feature is supported for customers with {{% xl %}} or {{% xprt %}} licenses.
+
+Installing the offline update site is very similar to installing from the [main update site](#install-the-eclipse-plugin), where *step 2* is replaced with these steps:
 
 1. Download the offline update site from the link you received from your sales representative.
 1. In the **Install** Wizard, click **Add...**
 1. Click **Archive...**, browse to the zip file you downloaded, and confirm with **OK**.
    ![Add offline update site archive](images/offline_update_site_add.png)
 
-Next, continue with step 3. in the [general eclipse installation instructions][#eclipse-plugin].
+Next, continue with step 3. in the [general eclipse installation instructions](#install-the-eclipse-plugin).
 It is recommended to disable the option *Contact all update sites during install to find required software*
 when installing the offline update site.
 

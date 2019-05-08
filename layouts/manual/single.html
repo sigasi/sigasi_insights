@@ -1,5 +1,21 @@
 {{ define "main" }}
-<div class="uk-container uk-padding">
-{{ .Content }}
-</div>
+<main>
+  <div class="uk-container uk-padding">
+    <div uk-grid>
+      <div class="uk-width-3-4@m">
+        <article>
+          {{ .Content }}
+        </article>
+      </div>
+      <div class="uk-width-1-4@m uk-visible@m">
+        <aside>
+          <div class="uk-card uk-card-default uk-background-muted" data-uk-sticky="offset: 100">
+            {{ .TableOfContents }}
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</main>
 {{ end }}
+
