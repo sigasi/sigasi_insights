@@ -59,10 +59,10 @@ We recommend at least **2GB of memory**, and you need **about 300MB** of free di
 * Sigasi Studio Plugin is supported when using
     * Eclipse 4.7.3a *Oxygen* or higher
     * Java JRE 8 or higher
- * Check [these steps][#i-am-using-redhat-linux-6-how-can-i-run-sigasi-studio] for details
+* Check [these steps][#i-am-using-redhat-linux-6-how-can-i-run-sigasi-studio] for details
 
 #### Other Linux distributions
-    * No known issues as long as Eclipse is running on your OS
+* No known issues as long as Eclipse is running on your OS
 
 ## What are the license server requirements?
 The license server (FlexNet) is supported on
