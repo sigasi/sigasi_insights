@@ -1,0 +1,25 @@
+<nav data-uk-navbar="mode: click">
+    <div class="uk-navbar-left">
+    {{ $s_manual := where .Site.RegularPages.ByWeight "Section" "manual" }}
+    {{ $s_relnotes := where .Site.RegularPages "Section" "releasenotes" }}
+        <ul class="uk-navbar-nav uk-height-1-1 uk-flex">
+            <li>
+                <a href="/manual">Manual<span uk-icon="icon: triangle-down"></span></a>
+                <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        {{ range where $s_manual "Params.skipoverviewlist" "==" nil }}
+                        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </li>
+            <li><a href="/faq">FAQ</a></li>
+            <li>
+                <a href="/releasenotes/">Release Notes<span uk-icon="icon: triangle-down"></span></a>
+            </li>
+            <li><a href="/screencasts">Screencasts</a></li>
+            <li><a href="/tech">Tech Articles</a></li>
+            <li><a href="/opinion">Opinion</a></li>
+        </ul>
+    </div>
+</nav>
