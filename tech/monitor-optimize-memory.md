@@ -39,14 +39,6 @@ Here we can set the **maximum memory usage** using the `-Xmx` option, for exampl
 
 It may also be interesting to add the line `-XX:+UseConcMarkSweepGC`, this option enables a different garbage collector that runs concurrently with the program, it reduces the pause times when a garbage collection is performed.
 
-## Choosing the 32-bit or 64-bit version
-
-If you raise the maximal memory allocation too high on a 32-bit eclipse, it will refuse to start. On Windows systems this limit lies around 1.5 GB, on Linux systems it’s higher.
-
-If you want to use Sigasi HDT in 64-bit mode, you will have to add it as a plugin to a 64-bit version of eclipse. Notice that if you use the 64-bit version, eclipse needs more memory than in 32-bit mode because pointer sizes have doubled.
-
-If you have a 64-bit processor and operating system and you work on a big project it is recommended that you use our product in 64-bit mode. Although it uses a bit more memory, the 64-bit version is substantially faster.
-
 ## Releasing memory back to the operating system
 
 You can configure the Java Virtual Machine to give memory back to the operating system by adding these lines to `sigasi.ini` (standalone version) or `eclipse.ini` (Eclipse plugin):
