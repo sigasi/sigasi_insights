@@ -46,16 +46,16 @@ and how to [/manual/tools#Configure external compiler].
 If an external compiler is enabled, you can also start a simulation from
 Sigasi Studio. You can start a simulation by first selecting your *top level*
 in the [/manual/views#hierarchy] view. Next click the
-**Simulate** button ![](icons/run_exc.gif) in the hierarchy
+**Simulate** button ![](/img/icons/run_exc.gif) in the hierarchy
 view to launch the simulator gui with an elaborated design ready for
 simulation. Sigasi Studio opens a new console for each simulation launch. You
 can terminate a simulation by clicking the **Stop** icon
-![](icons/stop.png).
+![](/img/icons/stop.png).
 
 When you launch a simulation, Sigasi Studio opens a new console in the [Console View][views#console-view]
-You can switch between different consoles by clicking the ![icon console display](icons/icon_con_disp_console.png)-icon.
+You can switch between different consoles by clicking the ![icon console display](/img/icons/icon_con_disp_console.png)-icon.
 
-![](images/launch_simulation_console.png)
+{{< figure src="/img/manual/launch_simulation_console.png" >}}
 
 ## Configure external compiler
 
@@ -68,7 +68,7 @@ your toolchain is installed on a default location. After you press
 **Apply**, you can select your toolchain on the **Sigasi \> Toolchains**
 page.
 
-![](images/toolchains-settings.png)
+{{< figure src="/img/manual/toolchains-settings.png" >}}
 
 For some toolchains you can specify extra command line arguments. Note
 that these preference pages support [Eclipse
@@ -78,7 +78,7 @@ which allow you to more easily share settings in a team.
 Environment variables are supported too.
 If you want to use the `$HOME` environment variable, you can call this varible by typing `${env_var:HOME}`.
 
-![](images/toolchains-settings-rivierapro.png)
+{{< figure src="/img/manual/toolchains-settings-rivierapro.png" >}}
 
 ## List of toolchains
 
@@ -140,7 +140,7 @@ All output from external compilers is logged in Sigasi Studio’s console view
 for your convenience. Paths to your design files are automatically
 converted to hyperlinks to ease naviation.
 
-![](images/vcom-console.png)
+{{< figure src="/img/manual/vcom-console.png" >}}
 
 The table below lists some examples of VHDL errors that are detected in
 Sigasi Studio at type time, at save time and with the external compiler
@@ -168,11 +168,11 @@ configure custom settings for Mentor’s `vcom`.
 # External Tools Configuration
 
 Select **Run \> External tools \> External Tools Configurations** to get
-started, or use the ![](icons/externaltool.png) icon.
+started, or use the ![](/img/icons/externaltool.png) icon.
 
 To create a new configuration, first select
-![](icons/externaltool.png) **Program**, then click
-![](icons/newconfiguration.png) .
+![](/img/icons/externaltool.png) **Program**, then click
+![](/img/icons/newconfiguration.png) .
 
 Enter all necessary information to start your external tool:
 
@@ -186,17 +186,17 @@ You can test your tool configuration with the **Run** button.
 The following example screenshot shows how to set up configuration to
 run a `simulate.sh` script from within Sigasi Studio.
 
-![](images/tutorialconfiguration.png)
+{{< figure src="/img/manual/tutorialconfiguration.png" >}}
 
 The following example screenshot shows how to set up a configuration to
 run `make clean` on a Linux machine.
 
-![](images/makeconfiguration.png)
+{{< figure src="/img/manual/makeconfiguration.png" >}}
 
 To run the external tool just select the configuration from the dropdown
-menu on the ![](icons/externaltool.png)-icon. You can rerun the
+menu on the ![](/img/icons/externaltool.png)-icon. You can rerun the
 last configuration by simply clicking
-![](icons/externaltool.png).
+![](/img/icons/externaltool.png).
 
 ## Creating a Builder
 
@@ -212,10 +212,10 @@ Builders**.
 
 Click **New…** and the builder configuration window will pop up:
 
-![](images/makefiles_buildersoverview.png)
+{{< figure src="/img/manual/makefiles_buildersoverview.png" >}}
 
 You will be asked to select a configuration type:
-select ![](icons/externaltool.png) **Program**.
+select ![](/img/icons/externaltool.png) **Program**.
 
 Next, configure the builder in a configuration window pop up window:
 
@@ -224,24 +224,24 @@ Next, configure the builder in a configuration window pop up window:
 * **Working Directory**: The working directory for your program. For example, click **Browse Workspace…** and select the root folder of your project.
 * **Arguments**: The arguments to your program, e.g.  `--makefile=Makefile.vsim all`.
 
-![](images/makefiles_builderconfigurationmain.png)
+{{< figure src="/img/manual/makefiles_builderconfigurationmain.png" >}}
 
 With the default settings the ModelSim Makefile will only be run during
 a manual build or after a “Clean”. To make sure Sigasi Studio runs `make`
 every time you save a change to a file, click the **Build Options** tab
 and check the **During auto builds** checkbox.
 
-![](images/makefiles_builderconfigurationoptions.png)
+{{< figure src="/img/manual/makefiles_builderconfigurationoptions.png" >}}
 
 After configuration, the new builder will appear in the builder list.
 
-![](images/makefiles_buildersoverview.png)
+{{< figure src="/img/manual/makefiles_buildersoverview.png" >}}
 
 When you close the builder configuration dialog windows, the new builder
 will automatically be run. In our example of a Modelsim Makefile,
 Modelsim’s messages will appear in the console view.
 
-![](images/makefiles_consoleoutput.png)
+{{< figure src="/img/manual/makefiles_consoleoutput.png" >}}
 
 For the specific case of Modelsim, warnings and error messages in the
 console are made clickable. When you click a message, the corresponding
@@ -288,7 +288,7 @@ Quartus II to open them in the Sigasi Studio editor view.
 
 If your Quartus II Project File (**.QPF file**) contains a reference to a
 file that does not exist, Sigasi Studio will show an icon for that file with
-the *broken link* icon ![](icons/brokenlink.png) .
+the *broken link* icon ![](/img/icons/brokenlink.png) .
 
 ## Quartus II Preferences
 
@@ -302,7 +302,7 @@ location by selecting **Window \> Preferences \> Sigasi \> Toolchains**.
 To add a file to your Quartus II project, you can use the default **New
 VHDL file** wizard of Sigasi Studio (**File \> New \> VHDL File**).
 
-![Add a new VHDL file to a Altera Quartus II project in Sigasi Studio](images/quartusnewfile.png "Add a new VHDL file to a Altera Quartus II project in Sigasi Studio")
+{{< figure src="/img/manual/quartusnewfile.png" alt="Add a new VHDL file to a Altera Quartus II project in Sigasi Studio" >}}
 
 Note that Quartus II does not automatically update its UI after you add
 files to your project. In order to update the files list, you should run
@@ -361,7 +361,7 @@ You can also configure Sigasi Studio to **auto-export** this CSV file, every tim
 
 Right click on the project you want to auto-export in the Project Explorer, and select **Properties** and **Sigasi auto export**.
 
-![Auto export CSV file with dependencies](images/auto_export_property_page.png "Auto export CSV file with dependencies")
+{{< figure src="/img/manual/auto_export_property_page.png" alt="Auto export CSV file with dependencies" >}}
 
 If you do not set a fixed top level name (i.e. empty *top level name* in the property page), Sigasi Studio will use the current top level in the [Hierarchy View][views#hierarchy] as input.
 Note that this only works if the top level belongs to the selected project.

@@ -44,14 +44,14 @@ Sigasi Studio offers powerful techniques to explore a file or project, and navig
 
 If you click on an identifier, it is highlighted. In addition, all other occurrences of the identifier that refer to the same object are highlighted. Note that this occurrence highlighting is intelligent: it is not based on the identifier’s string value, but on the object that the identifier refers to.
 
-You can turn occurrence highlighting on or off. Click the "Toggle Mark Occurrences" icon ![Mark Occurrences](icons/mark_occurrences_icon.png "Mark Occurrences") in the toolbar.
+You can turn occurrence highlighting on or off. Click the "Toggle Mark Occurrences" icon ![Mark Occurrences](/img/icons/mark_occurrences_icon.png) in the toolbar.
 
 ### Find References
 
 To look for occurrences of a given identifier in different files, place your cursor on the identifier and right-click. Now select **Search References**.
 
-A search window will appear on the bottom of your workbench, displaying all occurrences of the selected identifier. You can easily navigate through all occurrences by clicking the **Show Next Match** arrow ![](icons/shownextmatch.png)
-and the **Show Previous Match** arrow ![](icons/showpreviousmatch.png) in the search result view. Note that all occurrences are highlighted and marked with a small arrow at the left border of the editor for easy recognition.
+A search window will appear on the bottom of your workbench, displaying all occurrences of the selected identifier. You can easily navigate through all occurrences by clicking the **Show Next Match** arrow ![](/img/icons/shownextmatch.png)
+and the **Show Previous Match** arrow ![](/img/icons/showpreviousmatch.png) in the search result view. Note that all occurrences are highlighted and marked with a small arrow at the left border of the editor for easy recognition.
 
 ### Open Declaration and Hyperlinks
 
@@ -151,11 +151,11 @@ The tool provides help to autocomplete:
 
 If you work with large files, you might want to hide certain pieces of your code. This can be done with code folding. Certain constructs, such as if-statements or process-statements can be folded so that they use a single line in the editor view. You can do this by clicking the little **"+"** symbol next to the statement.
 
-![Code Folding](images/code_folding.png)
+{{< figure src="/img/manual/code_folding.png" alt="Code Folding" >}}
 
 You can also enable/disable code folding and perform other actions by right-clicking in the gutter (the small column to the left of your code) and selecting **Folding**.
 
-![Configure Code Folding](images/configure_folding.png)
+{{< figure src="/img/manual/configure_folding.png" alt="Configure Code Folding" >}}
 
 ### Rename refactoring
 
@@ -177,7 +177,7 @@ allows to select rectangular regions, or to set the cursor over multiple
 lines. Block selection is ideal for selecting vertical regions, for
 example a column of a table or all port names in a port map.
 
-![Block selection](images/block-select.png "Block selection Mode")
+{{< figure src="/img/manual/block-select.png" alt="Block selection" >}}
 
 To toggle between normal and block selection modes use **Alt+Shift+A**
 or press the **Toggle Block Selection** icon in the tool bar.
@@ -234,7 +234,7 @@ When you press **Ctrl+Shift+R** the **Open Resource** dialog opens. In this dial
 
 When you press **Ctrl+Shift+D** the **Open Design Unit** dialog opens. In this dialog you can type a name or pattern to open a specific VHDL or SystemVerilog design unit name.
 
-![Open Design Unit Dialog](images/open-design-unit.png)
+{{< figure src="/img/manual/open-design-unit.png" alt="Open Design Unit Dialog" >}}
 
 Note that [**excluded** design files][libraries#libraries-mapping] do not appear in this list.
 
@@ -270,7 +270,7 @@ course, the actual parameter names need to be reviewed and edited by the
 user. Therefore, the editor will go into template editing mode after the
 autocompletion.
 
-![](images/entity_instantiation.png)
+{{< figure src="/img/manual/entity_instantiation.png" >}}
 
 Instantiating a *component* is similar to instantiating an entity. Note
 that components will only be shown if they are visible in the current
@@ -389,7 +389,7 @@ You can disable the formatter for defined regions in your VHDL source files by e
 * **off** tag: `-- @formatter:off`
 * **on** tag: `-- @formatter:on`
 
-![](images/formatter_off.png)
+{{< figure src="/img/manual/formatter_off.png" >}}
 
 ### Format code on save
 
@@ -432,7 +432,7 @@ described in this chapter.
 Since [/releasenotes/sigasi-3.06] you can configure definitions that are set before other files in the project are processed.
 Right click your project and select **Properties > (System)Verilog Preprocessor**.
 
-![](/releasenotes/3.6/preprocessor_properties.png)
+{{< figure src="/img/releasenotes/3.6/preprocessor_properties.png" >}}
 
 The code in the **Initial preprocessor definitions** field is preprocessed before all other SystemVerilog code in your project. This allows you to, for example, set global defines without an explicit `include` statement.
 
@@ -473,13 +473,13 @@ See also:
 When you hover over a SystemVerilog preprocessor directive (e.g. `include ...`), Sigasi Studio presents you the preprocessed text.
 This hover also shows you, at the bottom, a convenient link to open the [views#Preprocessor View].
 
-![](images/preprocessor-hover.png)
+{{< figure src="/img/manual/preprocessor-hover.png" >}}
 
 In the [views#Preprocessor View], you can preview the expanded version of your preprocessed SystemVerilog source files.
 
 You can configure the include paths of your SystemVerilog projects in the (System)Verilog Preprocessor Property page.
 You can open this page by right clicking your SystemVerilog project and selecting **Properties > (System)Verilog Preprocessor**.
-![](images/preprocessor-property-page.png)
+{{< figure src="/img/manual/preprocessor-property-page.png" >}}
 
 You can specify multiple include paths by separating them with a `;`.
 All paths are relative to the project folder.

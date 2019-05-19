@@ -15,7 +15,7 @@ per project, per folder and per file.
 In the Project Explorer, right click your project, folder or file; select **Properties > VHDL Version**
 or **Properties > (System)Verilog Version** and select the version via the dropdown menu.
 
-![](images/project_verilog_version.png)
+{{< figure src="/img/manual/project_verilog_version.png" >}}
 
 When you change the language version of a file, only that file is affected.
 However, when you change the version of a folder, then everything in that folder will have the new language version.
@@ -62,7 +62,7 @@ You have to restart Sigasi Studio before these changes take effect.
 *Annotations* are colors added on top of your text editor, and to the right of your text editor, in the scroll bar. The image below shows annotations for each occurrence of a certain data type. The color has
 been changed to bright green.
 
-![Annotations in Bright Green](images/annotations-in-green.png "Annotations in Bright Green")
+{{< figure src="/img/manual/annotations-in-green.png" alt="Annotations in Bright Green" >}}
 
 You can change the color of annotations in **Window > Preferences > General > Editors > Text Editors > Annotations**. For the particular case of *occurrence* annotations, you want to modify the color for
 annotation type **Occurrences**. 

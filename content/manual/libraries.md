@@ -28,12 +28,12 @@ SystemVerilog *files* are mapped.
 In the Libraries view you can see a tree of all libraries in your
 projects. You can open each library to see all contained design units.
 
-![](images/librariesview.png)
+{{< figure src="/img/manual/librariesview.png" >}}
 
 In the Project Explorer view each physical file or folder is annotated
 with the library it belongs to, between square brackets:
 
-![](images/librarymappinginitialview.png)
+{{< figure src="/img/manual/librarymappinginitialview.png" >}}
 
 What you see here is the initial library mapping of a demo project (you
 can create such a project by selecting **File \> New \> Other \> Tutorial
@@ -61,7 +61,7 @@ and Project Explorer view.
 
 Select a file or a folder in the Project Explorer and right-click.
 
-![](images/librarymappingcontextmenu.png)
+{{< figure src="/img/manual/librarymappingcontextmenu.png" >}}
 
 You get a `Set Library` context menu, with a number of options:
 
@@ -152,7 +152,7 @@ revert it back to the original state.
 Right-click on the Common Libraries folder of your project in the explorer
 view and apply menu-entry **Set Library > Reset Common Libraries**.
 
-![](images/librarymappingrestorecommonlibraries.png)
+{{< figure src="/img/manual/librarymappingrestorecommonlibraries.png" >}}
 
 # IEEE Vital
 

@@ -18,14 +18,14 @@ Configuring the Vivado installation path in Sigasi Studio is explained in [/manu
 
 # Using Vivado's XSIM as external compiler
 
-![XSIM errors are displayed with markers in the editor and problems view](/releasenotes/3.6/xsim_compilation_error.png)
+{{< figure src="/img/releasenotes/3.6/xsim_compilation_error.png" alt="XSIM errors are displayed with markers in the editor and problems view" >}}
 
 [/manual/tools#configure-external-compiler]
 
 # Launching a simulation with XSIM
 
 [/manual/tools#launch-simulator]
-![Start a simulation by setting a toplevel and clicking the run button](/releasenotes/3.6/xsim_simulation.png)
+{{< figure src="/img/releasenotes/3.6/xsim_simulation.png" alt="Start a simulation by setting a toplevel and clicking the run button" >}}
 
 # Limitations
 

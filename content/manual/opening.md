@@ -98,9 +98,9 @@ To configure Sigasi Studio as default VHDL editor in Windows:
 
 * Find a VHDL file in the File Explorer
 * Right-click and select **Open with > Choose default program…**
-  ![](images/windows_1.png)
+  {{< figure src="/img/manual/windows_1.png" >}}
 * Next click the **Browse** button and select the Sigasi Studio executable (`<path to Sigasi Studio>/sigasi.exe`)
-  ![](images/windows_2.png)
+  {{< figure src="/img/manual/windows_2.png" >}}
 * Next Sigasi Studio will appear in the list of programs
 * Verify that **"Always use the selected program to open this kind of file"** is enabled
 * Confirm with **OK**
@@ -117,7 +117,7 @@ Repeat this procedure for `*.vhd` files and for `*.vhdl` files.
 * Click the **Remember application association for this type of file** so that all other VHDL files will also get opened with Sigasi Studio.
 * Click **OK**
 
-![Sigasi Studio as default editor in KDE](images/kde.png)
+{{< figure src="/img/manual/kde.png" alt="Sigasi Studio as default editor in KDE" >}}
 
 ### Gnome
 
@@ -127,7 +127,7 @@ Repeat this procedure for `*.vhd` files and for `*.vhdl` files.
 * Click the **Remember this appliation for "VHDL document" files** so that all other VHDL files will also get opened with Sigasi Studio.
 * **Click Open**
 
-![Sigasi Studio as default editor in Gnome](images/gnome.png)
+{{< figure src="/img/manual/gnome.png" alt="Sigasi Studio as default editor in Gnome" >}}
 
 ## Mac OS X
 
@@ -142,14 +142,14 @@ Here is how to set this up in Mac OS X:
 
 Repeat this procedure for `*.vhd` files and for `*.vhdl` files.
 
-![Setting the default application for VHDL files](images/default_application_for_mac.png)
+{{< figure src="/img/manual/default_application_for_mac.png" alt="Setting the default application for VHDL files" >}}
 
 ## Altera Quartus II
 
 In Altera Quartus II, open the preferences page in **Tools \> Options \>
 General \> Preferred Text Editor**.
 
-![Configuring Sigasi Studio as default VHDL editor in Altera Quartus](images/sigasieditorquartus.png "Configuring Sigasi Studio as default VHDL editor in Altera Quartus")
+{{< figure src="/img/manual/sigasieditorquartus.png" alt="Configuring Sigasi Studio as default VHDL editor in Altera Quartus" >}}
 
 As command-line options, you should have `%f +%l -p %p`. Optionally you
 could add `-noSplash` to skip the splash dialog.
@@ -165,8 +165,8 @@ You can configure Sigasi Studio to be the preferred editor for Xilinx Vivado.
     `<path to Sigasi Studio>/sigasi.exe [file name] +[line number]`
 5. Click **OK** to close the dialog and **OK** to close the Settings window.
 
-![Configuring Sigasi Studio as default editor in Xilinx Vivado menu](images/vivado_a1.png "Configuring Sigasi Studio as default editor in Xilinx Vivado menu")
-![Configuring Sigasi Studio as default editor in Xilinx Vivado](images/vivado_a2.png "Configuring Sigasi Studio as default editor in Xilinx Vivado")
+{{< figure src="/img/manual/vivado_a1.png" alt="Configuring Sigasi Studio as default editor in Xilinx Vivado menu" >}}
+{{< figure src="/img/manual/vivado_a2.png" alt="Configuring Sigasi Studio as default editor in Xilinx Vivado" >}}
 
 ## Xilinx ISE
 
@@ -178,7 +178,7 @@ To configure Sigasi Studio as default VHDL editor in Xilinx ISE:
    If Sigasi Studio is not on your path, use the absolute path instead. If there are spaces in this
 path, you need to enclose the path in curly braces . For example:`c:\\My\ Applications\sigasi\sigasi.exe $1 +$2`.
 
-![Configuring Sigasi Studio as default VHDL editor in Xilinx ISE](images/xilinxeditor.png "Configuring Sigasi Studio as default VHDL editor in Xilinx ISE")
+{{< figure src="/img/manual/xilinxeditor.png" alt="Configuring Sigasi Studio as default VHDL editor in Xilinx ISE" >}}
 
 If you now open any VHDL file in Xilinx ISE, Sigasi Studio will automatically open the selected file.
 
@@ -190,15 +190,15 @@ To configure Sigasi Studio as external editor in HDL Designer:
 
 1. In HDL Designer, click **Options > Main**
 2. Click the **Text** tab  
-![Main Settings Text 1](images/hdld001.jpg "Open the Options > Main > Text tab")
+{{< figure src="/img/manual/hdld001.jpg" alt="Main Settings Text 1" >}}
 3. Press the **Setup...** button in the **Editor** section to open the **Editor Command Setup** dialog.
 4. Fill the **Name**, **Command** and **Arguments** sections as shown.  
-![Editor Command Setup 1](images/hdld002.png "Editor Command Setup new entry")
+{{< figure src="/img/manual/hdld002.png" alt="Editor Command Setup 1" >}}
 5. Click the **Add** button to add **Sigasi Studio** to the list of available editors.  
-![Editor Command Setup 2](images/hdld003.png "Sigasi Studio added to the Editor Command Setup")
+{{< figure src="/img/manual/hdld003.png" alt="Editor Command Setup 2" >}}
 6. Press **OK** to close the dialog.
 7. Press the **Setup** button in the **HDL Viewer** section and repeat this procedure from step 4.  
-![Editor Command Setup 3](images/hdld004.png "Sigasi Studio added to the Editor Command Setup")
+{{< figure src="/img/manual/hdld004.png" alt="Editor Command Setup 3" >}}
 8. You now can select the **Sigasi** entry in the list box for the **Editor** and **HDL Viewer** sections.  
-![Main Settings Text 2](images/hdld005.png "Using Sigasi Studio as text Editor")
+{{< figure src="/img/manual/hdld005.png" alt="Main Settings Text 2" >}}
 9. From now on you can double click on a file or a line in a file - for example by selecting an architecture or an entity - and Sigasi Studio will open the file at the correct location.

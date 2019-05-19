@@ -8,4 +8,4 @@ In the **standalone version** of Sigasi Studio *both the VHDL and Verilog tutori
 
 The tutorial instructions are embedded as `comments` in the source files, just follow the `TODO` tags.
 
-![Follow the TODO's](tutorial-images/tutorial.png "Follow the TODO's")
+{{< figure src="/img/tutorial/tutorial.png" alt="Follow the TODO's" >}}

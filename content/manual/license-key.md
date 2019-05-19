@@ -136,7 +136,7 @@ $LOCATION/lmgrd -c $LOCATION/sigasi.lic -l $LOCATION/debug.log
 	From: `SERVER your_server_name1 74e50bb0911e`
 	To: `SERVER Maple 74e50bb0911e`
 	
-	**Note**: If you are not sure of the name of the machine you are using click on the **System Settings** tab of lmtools, where it is shown, see below: ![](images/flexnet_windows_1.png)
+	**Note**: If you are not sure of the name of the machine you are using click on the **System Settings** tab of lmtools, where it is shown, see below: {{< figure src="/img/manual/flexnet_windows_1.png" >}}
 
 7. Click on the **Config Services** tab and fill in the following, use the browse button when available:
 	* **Service Name**: Sigasi License Manager
@@ -152,7 +152,7 @@ $LOCATION/lmgrd -c $LOCATION/sigasi.lic -l $LOCATION/debug.log
 
 The license server should now be configured correctly, and looks a bit like this one
 
-![](images/flexnet_windows_2.png)
+{{< figure src="/img/manual/flexnet_windows_2.png" >}}
 
 
 ## Floating License options

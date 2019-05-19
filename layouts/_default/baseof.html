@@ -58,14 +58,6 @@
 The main part.
 {{ end }}
 
-{{ block "footer" . }}
-{{ if not .Params.nologos }}
-<div id="footer-widgets" class="footer-widgets uk-container">
-    {{ partial "logos.html" .Site.Data.logos }}
-</div>
-{{ end}}
-
-{{ end }}
 <div  id="copyright" class="uk-container">
     <footer class="uk-clear-fix">
         <div class="uk-text-center uk-padding-small">Copyright Sigasi | <a

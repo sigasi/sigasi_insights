@@ -10,9 +10,9 @@ Sigasi Studio is built upon the Eclipse platform, which permits to use multiple 
 
 Sigasi Studio provides a **Sigasi** perspective to work with both **VHDL** and **Verilog** files.
 
-![](images/sigasi_perspectives.png)
+{{< figure src="/img/manual/sigasi_perspectives.png" >}}
 
-If you use the standalone version of Sigasi Studio, this perspective is the default. If you use the Eclipse plugin, another perspective may be open instead. You can select the Sigasi perspective by clicking the button ![](icons/perspectivebutton.png) next the perspective icon. A window pops up in which you can select the perspective.
+If you use the standalone version of Sigasi Studio, this perspective is the default. If you use the Eclipse plugin, another perspective may be open instead. You can select the Sigasi perspective by clicking the button ![](/img/icons/perspectivebutton.png) next the perspective icon. A window pops up in which you can select the perspective.
 
 # Quick Access
 

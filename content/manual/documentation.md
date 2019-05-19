@@ -52,7 +52,7 @@ Sigasi Studio associates comments with HDL declarations with following rules:
 * *Empty lines* break comment blocks
 
 The association rules are illustrated in the image below:  
-![comment association rules](/releasenotes/3.8/comment_association.png "comment association rules comment association")
+{{< figure src="/img/releasenotes/3.8/comment_association.png" alt="comment association rules" >}}
 
 The **Formatter** and **[Structural select][/screencasts/structured-select]** respect (and fix) comments according to the association rules.
 
@@ -64,7 +64,7 @@ The **Formatter** and **[Structural select][/screencasts/structured-select]** re
 
 VHDL and SystemVerilog comments are processed with a [Markdown processor](https://en.wikipedia.org/wiki/Markdown). This allows to add markup (e.g. bold, code, paragraphs, hyperlinks,...) to comments. This results in nicer hovers and documentation.
 
-![MarkDown in comments](/releasenotes/3.8/markdown_comments.png "markdown comments")
+{{< figure src="/img/releasenotes/3.8/markdown_comments.png" alt="MarkDown in comments" >}}
 
 In hovers the complete Markdown syntax is supported. For PDF documentation generation following features are supported:
 

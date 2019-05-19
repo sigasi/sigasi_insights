@@ -6,7 +6,7 @@ pager: true
 
 # The user interface is unresponsive {: #ts-unresponsive}
 
-If the user interface of Sigasi Studio is unresponsive, you can interrupt the internal compilation process by pressing the **stop** button in the progress view. To activate the progress view, select **Window > Show View > Other... > General > Progress**, or click the tiny conveyor belt icon ![](icons/progressicon.png), on the right side of the status bar.
+If the user interface of Sigasi Studio is unresponsive, you can interrupt the internal compilation process by pressing the **stop** button in the progress view. To activate the progress view, select **Window > Show View > Other... > General > Progress**, or click the tiny conveyor belt icon ![](/img/icons/progressicon.png), on the right side of the status bar.
 
 # The editor displays old contents of a file {: #ts-refresh-editor}
 
@@ -88,7 +88,7 @@ By default, Sigasi Studio assumes that all VHDL or Verilog files are part of the
 
 To exclude files (or directories) from analysis, consult the [/manual/libraries].
 
-Ignored resources are decorated with a ![](icons/ignoreicon.png) icon in the project explorer view.
+Ignored resources are decorated with a ![](/img/icons/ignoreicon.png) icon in the project explorer view.
 
 # Sigasi Studio startup fails: "Could not create the Java virtual machine"
 

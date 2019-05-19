@@ -19,11 +19,11 @@ in the design.
 
 ## Marker Icons {: #linting-icons}
 
-* ![](icons/info.png) marks an info message.
-* ![](icons/warning_lightbulb.png) marks a warning that can be resolved automatically with a Quick Fix.
-* ![](icons/warning.png) marks a warning that cannot be resolved automatically.
-* ![](icons/error_lightbulb.png) marks an error that can be resolved automatically with a Quick Fix.
-* ![](icons/error.png) marks an error that cannot be resolved automatically.
+* ![](/img/icons/info.png) marks an info message.
+* ![](/img/icons/warning_lightbulb.png) marks a warning that can be resolved automatically with a Quick Fix.
+* ![](/img/icons/warning.png) marks a warning that cannot be resolved automatically.
+* ![](/img/icons/error_lightbulb.png) marks an error that can be resolved automatically with a Quick Fix.
+* ![](/img/icons/error.png) marks an error that cannot be resolved automatically.
 
 ## Configuring the Severity Level {: #linting-severity-level}
 
@@ -33,7 +33,7 @@ of lint is configurable for additional flexibility. The configuration
 interface is available in **Window \> Preferences \> VHDL \>
 Errors/Warnings**.
 
-![Configuring the severity of Sigasi Studio linting checks](images/problemseveritypreferencepage.png "Configuring the severity of Sigasi Studio linting checks")
+{{< figure src="/img/manual/problemseveritypreferencepage.png" alt="Configuring the severity of Sigasi Studio linting checks" >}}
 
 [You can also configure the severity level per project][#project-specific-linting-settings]
 
@@ -57,7 +57,7 @@ Linting is skipped for all files in the Common Libraries folder.
 # Quick Fixes {: #linting-quick-fix}
 
 Some of the VHDL lint problems can be automatically resolved with *Quick Fixes*.
-These problems have *markers* annotated with a lightbulb icon (like ![](icons/warning\_lightbulb.png)).
+These problems have *markers* annotated with a lightbulb icon (like ![](/img/icons/warning\_lightbulb.png)).
 To trigger a Quick Fix, click the problem marker or press **Ctrl-1** and select the Quick Fix.
 
 # List of (System)Verilog code rules
@@ -68,7 +68,7 @@ The table below lists the (System)Verilog code rules that can be checked automat
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------|---:|
 |                                  | Null loops                                                                                                              |  1 |
 |                                  | Naming convention                                                                                                       |  2 |
-| ![](icons/warning_lightbulb.png) | Disallow 'reg' datatype                                                                                                 |  3 |
+| ![](/img/icons/warning_lightbulb.png) | Disallow 'reg' datatype                                                                                                 |  3 |
 |                                  | VHDL keyword as module name                                                                                             |  7 |
 
 # List of VHDL code rules
@@ -82,32 +82,32 @@ The availability of code rules depends on the license requirements.
 
 | License | Quick Fix                        | Description                                                                                                             |  ID |
 |---------|----------------------------------|-------------------------------------------------------------------------------------------------------------------------|----:|
-| ST      | ![](icons/warning_lightbulb.png) | Declaration could not be found                                                                                          |     |
+| ST      | ![](/img/icons/warning_lightbulb.png) | Declaration could not be found                                                                                          |     |
 | ST      |                                  | Duplicate declarations                                                                                                  |     |
-| ST      | ![](icons/warning_lightbulb.png) | Signal/variable assignment operator                                                                                     |     |
-| ST      | ![](icons/warning_lightbulb.png) | Case statement does not cover all choices                                                                               |     |
-| ST      | ![](icons/warning_lightbulb.png) | Missing enumeration literal in case statements                                                                          |     |
+| ST      | ![](/img/icons/warning_lightbulb.png) | Signal/variable assignment operator                                                                                     |     |
+| ST      | ![](/img/icons/warning_lightbulb.png) | Case statement does not cover all choices                                                                               |     |
+| ST      | ![](/img/icons/warning_lightbulb.png) | Missing enumeration literal in case statements                                                                          |     |
 | ST      |                                  | Instantiation statement validation                                                                                      |     |
 | ST      |                                  | Library validation                                                                                                      |     |
 | ST      |                                  | Subprograms in packages (e.g. function body in a package, rather than in the package body)                              |     |
 | ST      |                                  | Missing return statement in function bodies                                                                             |     |
-| ST      | ![](icons/warning_lightbulb.png) | Correct attribute entity class in attribute specifications                                                              |     |
-| ST      | ![](icons/warning_lightbulb.png) | C-style equality and inequality operator (`=` and `/=` vs `==` and `!=`)                                                |     |
-| ST      | ![](icons/warning_lightbulb.png) | VHDL 2008 features in VHDL 93 mode (Learn about [choosing your VHDL version][/manual/config#configure-version])         |     |
-| ST      | ![](icons/warning_lightbulb.png) | Port/Generic lists cannot be terminated with a ','                                                                      |     |
-| ST      | ![](icons/warning_lightbulb.png) | Port/Generic maps cannot be terminated with a ';'                                                                       |     |
-| CR      | ![](icons/warning_lightbulb.png) | [Deprecated IEEE packages](#deprecated-ieee-packages-non-standard-packages)                                             |   8 |
-| CR      | ![](icons/warning_lightbulb.png) | [Non-standard packages](#deprecated-ieee-packages-non-standard-packages)                                                |  37 |
-| CR      | ![](icons/warning_lightbulb.png) | [A process must either have a sensitivity list or contain one or more wait statements](#sensitivity-list)               |  38 |
+| ST      | ![](/img/icons/warning_lightbulb.png) | Correct attribute entity class in attribute specifications                                                              |     |
+| ST      | ![](/img/icons/warning_lightbulb.png) | C-style equality and inequality operator (`=` and `/=` vs `==` and `!=`)                                                |     |
+| ST      | ![](/img/icons/warning_lightbulb.png) | VHDL 2008 features in VHDL 93 mode (Learn about [choosing your VHDL version][/manual/config#configure-version])         |     |
+| ST      | ![](/img/icons/warning_lightbulb.png) | Port/Generic lists cannot be terminated with a ','                                                                      |     |
+| ST      | ![](/img/icons/warning_lightbulb.png) | Port/Generic maps cannot be terminated with a ';'                                                                       |     |
+| CR      | ![](/img/icons/warning_lightbulb.png) | [Deprecated IEEE packages](#deprecated-ieee-packages-non-standard-packages)                                             |   8 |
+| CR      | ![](/img/icons/warning_lightbulb.png) | [Non-standard packages](#deprecated-ieee-packages-non-standard-packages)                                                |  37 |
+| CR      | ![](/img/icons/warning_lightbulb.png) | [A process must either have a sensitivity list or contain one or more wait statements](#sensitivity-list)               |  38 |
 | CR      |                                  | [There has to be a whitespace before physical units](#space-physical-unit)                                              |  47 |
 | CR      |                                  | [Superfluous library clause](#superfluous-library-clause)                                                               |  49 |
-| CR      | ![](icons/warning_lightbulb.png) | Library is not available [Configure Altera, Xilinx, ModelSim and VUnit libraries](#quick-fix-for-third-party-libraries) |  50 |
-| CR      | ![](icons/warning_lightbulb.png) | [Find unused declarations](#dead-code-lint)                                                                             |  55 |
+| CR      | ![](/img/icons/warning_lightbulb.png) | Library is not available [Configure Altera, Xilinx, ModelSim and VUnit libraries](#quick-fix-for-third-party-libraries) |  50 |
+| CR      | ![](/img/icons/warning_lightbulb.png) | [Find unused declarations](#dead-code-lint)                                                                             |  55 |
 | CR      |                                  | Bitstrings may only contain std\_logic metavalues                                                                       |  57 |
 | CR      |                                  | Duplicate, conflicting design unit names                                                                                |  64 |
 | CR      |                                  | [Find unused ports](#dead-code-lint)                                                                                    |  67 |
 | CR      |                                  | [Find unused generics](#dead-code-lint)                                                                                 |  68 |
-| CR      | ![](icons/warning_lightbulb.png) | [Find incomplete sensitivity lists](#sensitivity-list)                                                                  |  72 |
+| CR      | ![](/img/icons/warning_lightbulb.png) | [Find incomplete sensitivity lists](#sensitivity-list)                                                                  |  72 |
 | CR      |                                  | [Find superfluous signals in sensitivity lists](#sensitivity-list)                                                      |  73 |
 | CR      |                                  | Report encrypted files                                                                                                  |  84 |
 | CR      |                                  | [Find duplicate signals in sensitivity lists](#sensitivity-list)                                                        |  85 |
@@ -124,19 +124,19 @@ The availability of code rules depends on the license requirements.
 | XL      |                                  | Detect signals and variables that are never read                                                                        |  89 |
 | XL      |                                  | None or multiple matching entities for component                                                                        |  90 |
 | XL      |                                  | [Check naming conventions](#naming-conventions)                                                                         |  92 |
-| XL      | ![](icons/warning_lightbulb.png) | [Incomplete port map or generic map](#incomplete-port-maps-and-generic-maps)                                            |  94 |
+| XL      | ![](/img/icons/warning_lightbulb.png) | [Incomplete port map or generic map](#incomplete-port-maps-and-generic-maps)                                            |  94 |
 | XL      |                                  | [Vector width in assignments and port maps](#vector-width)                                                              | 144 |
-| XL      | ![](icons/warning_lightbulb.png) | [All references must have the same capitalization as their declaration](#capitalization-of-identifiers)                 | 163 |
-| XL      | ![](icons/warning_lightbulb.png) | [Check for positional associations in instantiations](#positional-association-in-instantiations)                        | 164 |
+| XL      | ![](/img/icons/warning_lightbulb.png) | [All references must have the same capitalization as their declaration](#capitalization-of-identifiers)                 | 163 |
+| XL      | ![](/img/icons/warning_lightbulb.png) | [Check for positional associations in instantiations](#positional-association-in-instantiations)                        | 164 |
 | XL      |                                  | Invalid port associations (incompatible port modes in instantiations)                                                   | 169 |
-| XL      | ![](icons/warning_lightbulb.png) | [Order of generic and port associations](#order-of-associations)                                                        | 177 |
+| XL      | ![](/img/icons/warning_lightbulb.png) | [Order of generic and port associations](#order-of-associations)                                                        | 177 |
 | XL      |                                  | Incorrect component name in configuration                                                                               | 180 |
 | XL      |                                  | Incorrect instantiation statement label in configuration                                                                | 181 |
 | XL      |                                  | Missing or incorrect binding indication                                                                                 | 182 |
 | XL      |                                  | Incorrect name in binding indication                                                                                    | 183 |
 | XL      |                                  | Redundant boolean equality check with true                                                                              | 185 |
 | XL      |                                  | Boolean equality check with false                                                                                       | 186 |
-| XL      | ![](icons/warning_lightbulb.png) | [Check for component/entity mismatch](#component-entity)                                                                | 187 |
+| XL      | ![](/img/icons/warning_lightbulb.png) | [Check for component/entity mismatch](#component-entity)                                                                | 187 |
 | XL      |                                  | [Header comment check](#header-comment)                                                                                 | 188 |
 | XL      |                                  | [Filename must contain primary unit name](#file-name)                                                                   | 189 |
 | XL      |                                  | Empty loop  statement                                                                                                   | 190 |
@@ -201,7 +201,7 @@ Input ports and generics with a default value, as well as output ports
 do not need to be assigned explicitly. However, this is often not
 intended. For that reason, Sigasi Studio can warn you about this.
 
-![](images/warn-incomplete-map.png)
+{{< figure src="/img/manual/warn-incomplete-map.png" >}}
 
 ## Positional Association in Instantiations
 
@@ -216,7 +216,7 @@ If you are using vendor libraries from Altera or Xilinx (ISE or Vivado),
 you do not need to set up these libraries by hand. Sigasi Studio has a Quick Fix
 to do this for you.
 
-![](images/alteraquickfix.png)
+{{< figure src="/img/manual/alteraquickfix.png" >}}
 
 The `library` statement that tries to import a missing library (like
 `altera`) will be have a yellow warning marker next to it. Click this
@@ -285,14 +285,14 @@ anybody would type the use clause, but quite some people start all of
 their files with two extra library clauses. Sigasi Studio flags this as
 warning.
 
-![](images/warn-superfluous-library.png)
+{{< figure src="/img/manual/warn-superfluous-library.png" >}}
 
 ## Dead Code (unreachable code) {: #dead-code}
 
 If the Sigasi Studio analyzer can determine that a condition is always false,
 it will mark the if-statement because it contains dead code.
 
-![](images/unreachable_code.png)
+{{< figure src="/img/manual/unreachable_code.png" >}}
 
 ## Null Range (empty range) {: #null-range}
 
@@ -302,7 +302,7 @@ want: `7 downto 0` is a range of eight. `7 to 0` is an null range.
 We have a lint check that warns about this, even if you use constants
 (or some simple arithmetic).
 
-![](images/nullrange.png)
+{{< figure src="/img/manual/nullrange.png" >}}
 
 ## Space Before the Physical Unit {: #space-physical-unit }
 
@@ -326,11 +326,11 @@ Although VHDL is not case sensitive, it is recommend to always use the same capi
 
 Since [/releasenotes/sigasi-2.31] this can easily be fixed with a Quick Fix.
 
-![](images/captalization_references.png)
+{{< figure src="/img/manual/captalization_references.png" >}}
 
 Since [/releasenotes/sigasi-3.06] all capitalization issues in a file can be fixed in one click.
 
-![](/releasenotes/3.6/capitalization_all.png)
+{{< figure src="/img/releasenotes/3.6/capitalization_all.png" >}}
 
 ## Naming Conventions
 
@@ -349,7 +349,7 @@ you would specify `.*_v` pattern in the **Variable name** field.
 
 Sigasi Studio checks the vector size in assignments (Since [/releasenotes/sigasi-2.28]) and port maps (Since [/releasenotes/sigasi-3.01]). This check works at type-time and takes the (symbolic) value of generics into account.
 
-![](images/linting_vector_width.png)
+{{< figure src="/img/manual/linting_vector_width.png" >}}
 
 Sigasi Studio will not take into account the value assigned to a generic in instantiations. The reasoning begind this is explained in [/tech/generic-port-width].
 
@@ -361,7 +361,7 @@ Sigasi Studio gives a warning when the **order** of generics or ports in a `map`
 
 Sigasi Studio gives a warning if a component declaration is not equal to its matching entity. You can easily fix this by applying the quick fix.
 
-![](images/linting_component_entity.png)
+{{< figure src="/img/manual/linting_component_entity.png" >}}
 
 ## Check header comment {: #header-comment}
 
@@ -369,13 +369,13 @@ Sigasi Studio can check that the **header comment** matches a specified pattern.
 
 The check can be enabled in **Preferences > Sigasi > VHDL > Naming conventions**.  The pattern can be set on the same page.
 
-![Check header comments](/releasenotes/3.8/header_comment.png "Check header comments")
+{{< figure src="/img/releasenotes/3.8/header_comment.png" alt="Check header comments" >}}
 
 ## Check that filename contains primary unit name {:file-name}
 
 Sigasi Studio can check that the filename contains the name of at least one of the design unit names inside that file.  Note that this check is **ignored** by default. You can enable it in the VHDL **Errors/Warnings** preference page (**Style Validation > Filename must contain primary name**).
 
-![Check file name](/releasenotes/3.8/filename_linting.png "Check file name")
+{{< figure src="/img/releasenotes/3.8/filename_linting.png" alt="Check file name" >}}
 
 
 # Project specific Linting settings
@@ -391,7 +391,7 @@ In each project, you can override the coding rules settings. You can override ru
 
 To configure the severity level, right click the project (or file or folder) in the Project Explorer and select **Properties > VHDL Errors/Warnings** or **Properties > SystemVerilog Errors/Warnings**.
 
-[![Configure linting severity per project](images/linting_severity_per_project.png "Configure linting severity per project")](images/linting_severity_per_project.png)
+[{{< figure src="/img/manual/linting_severity_per_project.png" alt="Configure linting severity per project" >}}](images/linting_severity_per_project.png)
 
 Project settings are stored in this settings file:
 
@@ -401,7 +401,7 @@ Project settings are stored in this settings file:
 
 You can search for a specific rule, by using the search field at the top of the property page.
 
-[![Search for a specific rule](images/linting_severity_per_project_search.png "Search for a specific rule")](images/linting_severity_per_project_search.png)
+[{{< figure src="/img/manual/linting_severity_per_project_search.png" alt="Search for a specific rule" >}}](images/linting_severity_per_project_search.png)
 
 ## Manual configuration
 

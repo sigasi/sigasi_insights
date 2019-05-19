@@ -14,14 +14,14 @@ The Graphics Configuration Language is a plain text file containing declarations
 You can see it in action in the images below:
 
 This BlockDiagram  
-![Original BlockDiagram](images/BdOriginal.png)  
+{{< figure src="/img/manual/BdOriginal.png" alt="Original BlockDiagram" >}}  
 Turns into:  
-![Filtered BlockDiagram](images//BdFiltered.png)  
+{{< figure src="/img/manual//BdFiltered.png" alt="Filtered BlockDiagram" >}}  
 
 This StateMachine  
-![Original StateMachine](images/FsmOriginal.png)  
+{{< figure src="/img/manual/FsmOriginal.png" alt="Original StateMachine" >}}  
 Turns into:  
-![Filtered StateMachine](images/FsmFiltered.png)  
+{{< figure src="/img/manual/FsmFiltered.png" alt="Filtered StateMachine" >}}  
 
 A plain text format was chosen over a buttons and menus for several reasons:
 
@@ -73,16 +73,16 @@ The file is read from bottom to top. You start with the above definition of the 
 When using a lot of reassignments or when you're indexing vectors, you can get a *skyscraper* effect in the generated block diagrams.
 By using `reassignments hide` you can draw through the assignment blocks making the diagram a lot simpler.  
 
-![Skyscraper](images/skyscraper.png)  
+{{< figure src="/img/manual/skyscraper.png" alt="Skyscraper" >}}  
 *Skyscraper*
 
-![Hidden reassignments](images/skyscraper_hidden_reassignments.png)  
+{{< figure src="/img/manual/skyscraper_hidden_reassignments.png" alt="Hidden reassignments" >}}  
 *Hidden reassignments*  
   
-![Multiple reassignments](images/multiple_reassignments.png)  
+{{< figure src="/img/manual/multiple_reassignments.png" alt="Multiple reassignments" >}}  
 *Multiple reassignments*  
 
-![Hidden reassignments](images/multiple_reassignments_hidden.png)  
+{{< figure src="/img/manual/multiple_reassignments_hidden.png" alt="Hidden reassignments" >}}  
 *Hidden reassignments*  
 
 ### Grouping
@@ -98,10 +98,10 @@ E.g. if you want to group block2 and block3 you can add either of the following 
 `group block middle regex"block[23]"`  
 `group block middle (block2, block3)`  
 
-![Ungrouped](images/ungrouped.png)  
+{{< figure src="/img/manual/ungrouped.png" alt="Ungrouped" >}}  
 *Ungrouped*
 
-![Grouped](images/grouped.png)  
+{{< figure src="/img/manual/grouped.png" alt="Grouped" >}}  
 *Grouped*  
 
 The same can be done for wires by using `wire` instead of `block`.  
@@ -117,7 +117,7 @@ The syntax for a `ConfigurationItem` is as follows:
 You can discover which colors are available [here](../tech/graphics.ebnf.html#GraphicsColor) or through the autocomplete.
 
 E.g. we can color a block, called `middle`, green and hide its internals:  
-![Colored and collapsed group](images/colored_group.png)  
+{{< figure src="/img/manual/colored_group.png" alt="Colored and collapsed group" >}}  
 *Colored and collapsed group*  
 
 Configurations are not cascading (unlike CSS).
@@ -126,18 +126,18 @@ Coloring the `middle` block green does not turn all its internal blocks green as
 Note that the language can not see everything: it can not see blocks, wires or ports that are within another block.  
 E.g. we can't type `block block3 { color red }` as `block3` is part of the block `middle`.
 To access a block within a block, we have to nest configurations.
-![Nested configuration](images/nested_configuration.png)  
+{{< figure src="/img/manual/nested_configuration.png" alt="Nested configuration" >}}  
 *Nested configuration*  
 
 Another use case would be to hide (unconnected) ports by using `port a { hide }`.
-![Hidden port](images/hidden_port.png)  
+{{< figure src="/img/manual/hidden_port.png" alt="Hidden port" >}}  
 *Hidden port*  
 
 Note that when you hide a block or port, the edges that are connected to them will also be hidden.
 
 It is also possible to hide reassignments in configurations, as you saw in the above *skyscraper* example, the reassignment in the generate block was not hidden.
 You can do so as follows:  
-![Hidden reassignment in generate](images/hidden_reassignments_generate.png)  
+{{< figure src="/img/manual/hidden_reassignments_generate.png" alt="Hidden reassignment in generate" >}}  
 *Hidden reassignment in generate*  
 
 ## Graphics Configuration for StateMachines

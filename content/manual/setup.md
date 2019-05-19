@@ -93,7 +93,7 @@ Installing the offline update site is very similar to installing from the [main 
 1. Download the offline update site from the link you received from your sales representative.
 1. In the **Install** Wizard, click **Add...**
 1. Click **Archive...**, browse to the zip file you downloaded, and confirm with **OK**.
-   ![Add offline update site archive](images/offline_update_site_add.png)
+   {{< figure src="/img/manual/offline_update_site_add.png" alt="Add offline update site archive" >}}
 
 Next, continue with step 3. in the [general eclipse installation instructions](#install-the-eclipse-plugin).
 It is recommended to disable the option *Contact all update sites during install to find required software*
@@ -113,7 +113,7 @@ Sigasi Studio stores its projects on the file system in one or more
 When you start the tool for the first time, it will propose to create a
 workspace for you:
 
-![Choose workspace](images/chooseworkspace2.png)
+{{< figure src="/img/manual/chooseworkspace2.png" alt="Choose workspace" >}}
 
 Although you can work with multiple workspaces, we recommend to use a
 single workspace for all your projects.
@@ -124,14 +124,14 @@ Sigasi Studio has an automated update system. When updates are available, you
 are notified by a pop-up window called **Updates Available** in the
 bottom right corner:
 
-![Update](images/update.png)
+{{< figure src="/img/manual/update.png" alt="Update" >}}
 
 If you want to install the updates, click anywhere in the pop-up window.
 After a few seconds, a new window will appear with further instructions.
 
 The updates can be postponed by closing the pop-up. You can perform the
 updates at any time by clicking the
-![Update icon](icons/updatesavailableicon.png)-icon in the status bar
+![Update icon](/img/icons/updatesavailableicon.png)-icon in the status bar
 at the bottom of the screen.
 
 It is good practice to first create a backup of your installation folder before running an update. This can be done by simply compressing the `eclipse` or the `sigasi` folder in an archive (zip file)
