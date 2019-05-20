@@ -3,7 +3,7 @@
     {{ $s_manual := where .Site.RegularPages.ByWeight "Section" "manual" }}
     {{ $s_relnotes := where .Site.RegularPages "Section" "releasenotes" }}
         <ul class="uk-navbar-nav uk-height-1-1 uk-flex">
-            <li>
+            <li {{ if eq .Section "manual" }} class="uk-active" {{ end }}>
                 <a href="/manual">Manual<span uk-icon="icon: triangle-down"></span></a>
                 <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
                     <ul class="uk-nav uk-navbar-dropdown-nav">
@@ -13,13 +13,19 @@
                     </ul>
                 </div>
             </li>
-            <li><a href="/faq">FAQ</a></li>
-            <li>
+            <li {{ if eq .Params.activemenu "faq" }} class="uk-active" {{ end }}><a href="/faq">FAQ</a></li>
+            <li {{ if eq .Section "releasenotes" }} class="uk-active" {{ end }}>
                 <a href="/releasenotes/">Release Notes<span uk-icon="icon: triangle-down"></span></a>
             </li>
-            <li><a href="/screencasts">Screencasts</a></li>
-            <li><a href="/tech">Tech Articles</a></li>
-            <li><a href="/opinion">Opinion</a></li>
+            <li {{ if eq .Section "screencasts" }} class="uk-active" {{ end }}>
+                <a href="/screencasts">Screencasts</a>
+            </li>
+            <li {{ if eq .Section "tech" }} class="uk-active" {{ end }}>
+                <a href="/tech">Tech Articles</a>
+            </li>
+            <li {{ if eq .Section "opinion" }} class="uk-active" {{ end }}>
+                <a href="/opinion">Opinion</a>
+            </li>
         </ul>
     </div>
 </nav>
