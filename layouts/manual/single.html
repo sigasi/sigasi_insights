@@ -9,8 +9,10 @@
       </div>
       <div class="uk-width-1-4@m uk-visible@m">
         <aside>
-          <div class="uk-card uk-card-default uk-background-muted" data-uk-sticky="offset: 30">
-            {{ .TableOfContents }}
+          <div class="sg-floatparent" data-uk-sticky="offset: 30">
+            <div class="uk-panel-scrollable sg-floatmenu" uk-height-viewport="offset-bottom: 15">
+              {{ .TableOfContents }}
+            </div>
           </div>
         </aside>
       </div>
