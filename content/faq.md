@@ -313,7 +313,7 @@ Depending on your exact coding rule, the Sigasi Linter can flag violations eithe
 Click the little triangle to the upper right-hand side of the problems view and look at the Group By and Sort By menu.
 
 You can also filter which problem markers you will see in the Show menu; for example only errors and warnings for the current project.
-{{< figure src="/img/faq/Problems View" alt="Problems View" >}}
+{{< figure src="/img/faq/organize_problem_markers.png" alt="Problems View" >}}
 
 ## Does the Sigasi Studio's built-in Linter replace my code reviews?
 
