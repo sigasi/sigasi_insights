@@ -142,12 +142,6 @@ reflinks:
     emacs-keybindings:
         title: Emacs key bindings
         url: http://help.eclipse.org/photon/topic/org.eclipse.platform.doc.user/concepts/accessibility/keyboardshortcuts.htm?cp=0_4_1_33
-    ultra-edit-keybindings-plugin:
-        title: UltraEdit Key Bindings Plugin
-        url: https://marketplace.eclipse.org/content/ultraedit-key-bindings
-    sha-util:
-      title: "MD5 & SHA Checksum Utility"
-      url: http://download.cnet.com/MD5-SHA-Checksum-Utility/3000-2092_4-10911445.html
     language-bar:
       title: Language bar keyboard shortcuts
       url: http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/langbar_keystroke_shortcuts.mspx?mfr=true

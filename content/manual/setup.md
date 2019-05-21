@@ -103,7 +103,7 @@ when installing the offline update site.
 
 The license key can be filled in under **Window > Preferences > Sigasi > License Key**.
 
-More details can be found in [/manual/license-key]. The license unlocks the features for your [edition][/manual/editions].
+More details can be found [here](/manual/license-key). The license unlocks the features for your [edition](/manual/editions).
 
 # Configuration
 
@@ -138,7 +138,7 @@ It is good practice to first create a backup of your installation folder before 
 
 ## Sigasi Studio App
 
-If you run Sigasi Studio as a **standalone application**, the automated update system will periodically check for [/manual/setup#software-updates].
+If you run Sigasi Studio as a **standalone application**, the automated update system will periodically check for [software updates](/manual/setup#software-updates).
 
 ## Sigasi Studio Eclipse plugin
 

@@ -25,7 +25,7 @@ After you do this, each time you call `sigasi.exe`, a new copy will be started.
 
 The SHA1 sum (or hash) is a fingerprint of a file. After you download a file, you can check that it is downloaded correctly by calculating its SHA sum. If the SHA sum is correct, you can be sure that the download was correct too. On the Sigasi download page, you find the zip files that contain the actual Sigasi application, and also a small text file with the correct SHA sums .
 
-* On Windows, you can compute the SHA using [sha-util].
+* On Windows, you can compute the SHA using [MD5 & SHA Checksum Utility](http://download.cnet.com/MD5-SHA-Checksum-Utility/3000-2092_4-10911445.html).
 * On Linux, you can use the command line tool sha1sum.
 
 ## What are the system requirements?
@@ -540,7 +540,7 @@ If you use a version control system, you can also revert the `.library_mapping.x
 
 You can add a plugin with the UltraEdit key bindings.
 
-1. Install the [ultra-edit-keybindings-plugin]
+1. Install the [UltraEdit Key Bindings Plugin](https://marketplace.eclipse.org/content/ultraedit-key-bindings).
 2. After installing, you should activate the UltraEdtit keybindings in **Window > Preferences > General > Keys**.
 3. As Scheme, select "UltraEdit".
 
