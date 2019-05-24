@@ -419,7 +419,7 @@ On RedHat 6 linux, you can use the nautilus command: `nautilus "${selected_resou
 ## Sigasi switches my keyboard layout! Did I find a bug?
 
 This sometimes happens on Windows. You have probably triggered a keyboard shortcut that switches your keyboard lay-out.
-Read Microsoft's documentation of the [language-bar].
+Read Microsoft's documentation of the [Language bar keyboard shortcuts](https://answers.microsoft.com/en-us/windows/forum/windows_10-desktop/change-language-bar-hotkeys-in-windows-10/5ad3b017-8d03-4796-82e3-37af8d8a37b4).
 If you only use your local keyboard lay-out and not the standard English lay-out, you might as well diable the language bar.
 
 ## I don't see error icons in the Project Explorer, or I don't see the library names in the Project Explorer
@@ -546,11 +546,11 @@ You can add a plugin with the UltraEdit key bindings.
 
 ## I really like VI / VIM / gVIM. Do you have a VI emulation mode?
 
-If you use Sigasi HDT as a plugin (meaning: not the standalone version), you can add a VI emulator plugin, called [vrapper]. Surely not the same as a genuine VI clone, but it will give you a warm and familiar feeling when you type `:q!`.
+If you use Sigasi HDT as a plugin (meaning: not the standalone version), you can add a VI emulator plugin, called [vrapper](http://vrapper.sourceforge.net/home/). Surely not the same as a genuine VI clone, but it will give you a warm and familiar feeling when you type `:q!`.
 
 ## Do you have an Emacs emulation mode so that I can use the Emacs key bindings? {: #Emacs}
 
-All Eclipse products, including Sigasi HDT, can be configured to support [emacs-keybindings]. While it is not the same as Emacs, you can keep your habit of pressing *CTRL-C* and *CTRL-X* all the time.
+All Eclipse products, including Sigasi HDT, can be configured to support [Emacs key bindings](http://help.eclipse.org/photon/topic/org.eclipse.platform.doc.user/concepts/accessibility/keyboardshortcuts.htm?cp=0_4_1_33). While it is not the same as Emacs, you can keep your habit of pressing *CTRL-C* and *CTRL-X* all the time.
 
 ## Which free VHDL simulator can I use?
 

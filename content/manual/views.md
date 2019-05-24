@@ -88,7 +88,7 @@ Use the **instantiations** filter ![](/img/icons/instantiation.png), to hide eve
 
 You can **launch a simulation** with the ![](/img/icons/run_exc.gif) button, if you first set up an [tools#Launch simulator].
 
-The Hierarchy View also offers an action **Select required files**, which selects all design files that are part of the current hierarchy, in the project explorer. This allows you to easily perform the same action on all files in the hierarchy. E.g. team commands, ... [xl_only]
+The Hierarchy View also offers an action **Select required files**, which selects all design files that are part of the current hierarchy, in the project explorer. This allows you to easily perform the same action on all files in the hierarchy. E.g. team commands, ... {{< xl_only >}}
 
 {{< figure src="/img/manual/select_required_files_in_hierarchy.png" >}}
 
@@ -136,7 +136,7 @@ You can configure extra tags in the Task Tag preference page:
 
 # Block Diagram View {: #block}
 
-[xprt_only]
+{{< xprt_only >}}
 
 The **Block Diagram View** displays a graphical (block diagram) view
 of all architectures, modules and their instantiations in your current VHDL or SystemVerilog editor.
@@ -162,7 +162,7 @@ You can also export **all** *block diagrams of an entire project* at once: Click
 
 # State Machine View {: #fsm}
 
-[xprt_only]
+{{< xprt_only >}}
 
 The **State Machine View** displays a graphical (bubble diagram) view of all state machines in your current VHDL or SystemVerilog editor. This viewer automatically updates while you are editing your code and gives a convenient way to visually inspect and navigate your code, even when your code is still unfinished or broken.
 
@@ -185,7 +185,7 @@ You can watch a screencast at [/screencasts/state_machine_viewer]
 
 # Dependencies View {: #dependencies}
 
-[xl_only]
+{{< xl_only >}}
 
 The **Dependencies View** visualizes the dependencies of your VHDL, SystemVerilog or *mixed language* projects.
 This view shows the relationships between your source files and makes it easy to see *top levels* and important *packages*.
@@ -216,7 +216,7 @@ The **Documentation view** gives you a live preview of the [automatic documentat
 
 # Net Search View {: #netsearch}
 
-[xl_only],[vhdl_only]
+{{< xl_only >}},{{< vhdl_only >}}
 
 With **Net search**, you can you to find *loads* and *drivers* of a net.
 A *net* is defined as a signal or port and all other signals and ports
@@ -237,7 +237,7 @@ double-clicking the search results.
 
 # Preprocessor view
 
-[verilog_only]
+{{< verilog_only >}}
 
 {{< figure src="/img/manual/preprocessor-view.png" >}}
 

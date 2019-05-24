@@ -34,7 +34,7 @@ This makes it a possible to use a VHDL 2008 library in a VHDL 93 design. If you 
 
 
 ## Aldec ALINT elaboration checks
-[xl_only]
+{{< xl_only >}}
 
 Sigasi Studio can run Aldec ALINT elaboration checks. If you select ALINT as external compiler (**Preferences > Sigasi > Toolchains**) and select a top-level in the [Hierarchy View][/manual/views#hierarchy], a new ALINT button ![](3.2/alint_button.png) will be enabled. Clicking this button will run a headless ALINT elaboration check. All ALINT elaboration problems will appear as markers in the problems view and in the associated editors.   
 

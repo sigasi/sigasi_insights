@@ -53,7 +53,7 @@ executing this startup file.
 There are two ways to install the Sigasi Studio Eclipse Plugin:
 
 1. [On-line installation of the Eclipse Plugin](#install-the-eclipse-plugin)
-1. [Off-line update site to install the Eclipse Plugin](#installing-the-offline-update-site-xl-or-xprt) (only for customers with XL or XPRT licenses)
+1. [Off-line update site to install the Eclipse Plugin](#installing-the-offline-update-site) (only for customers with XL or XPRT licenses)
 
 ## Prerequisites: Eclipse
 

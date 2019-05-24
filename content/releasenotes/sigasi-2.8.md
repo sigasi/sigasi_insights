@@ -76,7 +76,7 @@ Other new and noteworthy improvements
 End User License Agreement
 --------------------------
 
-We have updated the [eula] to clarify a few
+We have updated the [eula](/eula) to clarify a few
 points, to make it more clear how the licensing (node-locked and floating licenses) works, and to update the third party open source licenses.
 If you update your Sigasi installation, you will be required to read an accept the new terms. Should you have any questions about the new license agreement, please contact us at <legal@sigasi.com>.
 

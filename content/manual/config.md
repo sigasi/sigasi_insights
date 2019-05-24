@@ -118,7 +118,7 @@ You can set formatting options in the Formatter preference page:
 **Window > Preferences > Sigasi > VHDL > Formatting**
 
 -   **Preserve newlines**: this option configures the formatter to not add or remove newlines in your code
--   **Upper case keywords**: when this option is enabled the formatter will convert all keywords to uppercase. When this option is **not** enabled, uppercase keywords will be converted to lowercase. (Without a [xl] license, keywords are not changed by the formatter).
+-   **Upper case keywords**: when this option is enabled the formatter will convert all keywords to uppercase. When this option is **not** enabled, uppercase keywords will be converted to lowercase. (Without a {{< xl >}} license, keywords are not changed by the formatter).
 -   **Alignment column for trailing comments**: this setting configures the column Sigasi Studio uses to align trailing comments (default is column 40)
 
 # Finding more options

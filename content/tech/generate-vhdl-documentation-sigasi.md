@@ -53,7 +53,7 @@ Sigasi Studio creates a pdf with your project's documentation in multiple steps:
  
 ![](images/sigasi-docgen.png)
 
-If you have a full [xl_doc] license, Sigasi Studio also makes the intermediate DocBook file available. This allows you to fully customize the pdf generation. With a custom DocBook→pdf-flow, you could for example apply your company's colors, add your and logo or append extra sections, etc.
+If you have a full {{< xl_doc >}} license, Sigasi Studio also makes the intermediate DocBook file available. This allows you to fully customize the pdf generation. With a custom DocBook→pdf-flow, you could for example apply your company's colors, add your and logo or append extra sections, etc.
 
 
 ## Future work
@@ -67,4 +67,4 @@ If you have a full [xl_doc] license, Sigasi Studio also makes the intermediate D
 ## Conclusion
 
 We developed an easy but powerful alternative for DoxyGen. It is very easy to get started with, and encourages good practices.
-So I invite you to **try this out yourself**. Even with a [starter] license, you can open the [Documenation Preview View][/manual/views#documentation]. You can also export a pdf. But this pdf will have a watermark, and the diagrams will be missing.
+So I invite you to **try this out yourself**. Even with a {{< starter >}} license, you can open the [Documenation Preview View][/manual/views#documentation]. You can also export a pdf. But this pdf will have a watermark, and the diagrams will be missing.

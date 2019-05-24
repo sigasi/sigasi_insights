@@ -62,7 +62,7 @@ To trigger a Quick Fix, click the problem marker or press **Ctrl-1** and select 
 
 # List of (System)Verilog code rules
 
-The table below lists the (System)Verilog code rules that can be checked automatically by Sigasi Studio. These checks require a [xprt] license.
+The table below lists the (System)Verilog code rules that can be checked automatically by Sigasi Studio. These checks require a {{< xprt >}} license.
 
 | Quick Fix                        | Description                                                                                                             | ID |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------|---:|
@@ -76,9 +76,9 @@ The table below lists the (System)Verilog code rules that can be checked automat
 The table below lists the VHDL code rules that can be checked automatically by Sigasi Studio.
 The availability of code rules depends on the license requirements.
 
-* ST code rules are available for all licenses including [starter]
-* CR code rules require at least a [creator] license.
-* XL code rules are only available with a [xl] or [xprt] license.
+* ST code rules are available for all licenses including {{< starter >}}
+* CR code rules require at least a {{< creator >}} license.
+* XL code rules are only available with a {{< xl >}} or {{< xprt >}} license.
 
 | License | Quick Fix                        | Description                                                                                                             |  ID |
 |---------|----------------------------------|-------------------------------------------------------------------------------------------------------------------------|----:|

@@ -5,13 +5,13 @@ pager: true
 date: 2016-12-06
 comments: true
 ---
-The Sigasi Studio 3.3 release brings many improvements. We added a lot of extra **VHDL syntax checks** and **quick fixes** \[[starter], [creator], [xl]]. We also enhanced the **block diagram view** \[[xl_doc]] and added numerous other noteworthy improvements.
+The Sigasi Studio 3.3 release brings many improvements. We added a lot of extra **VHDL syntax checks** and **quick fixes** \[{{< starter >}}, {{< creator >}}, {{< xl >}}]. We also enhanced the **block diagram view** \[{{< xl_doc >}}] and added numerous other noteworthy improvements.
 
 We are also working vigorously on **SystemVerilog** improvements, but we didn't make the 3.3 release deadline. You can expect improvements in the [preview version][/faq#can-i-use-the-features-of-the-upcoming-release] soon.
 
 ## Improved VHDL analysis: More syntax checks, Linting and Quick Fixes
 
-- New [starter] checks:
+- New {{< starter >}} checks:
     - Flag declarations that are not allowed in the current declarative region (like `variable` declarations in the architecture declarative part).
     ![](3.3/declarative_part.png)
     - Check deferred constant declarations: these are only allowed in a package declaration.
@@ -21,10 +21,10 @@ We are also working vigorously on **SystemVerilog** improvements, but we didn't 
     - Check the signature of subprograms: the declarations in the package and package body have to match.
     - Check protected type bodies: these are not allowed in packages.
 
-- New [creator] checks:
+- New {{< creator >}} checks:
     - Warn when the VHDL version of the project is more recent than the version of the common libraries. This mismatch results in unexpected type problems.
 
-- New [xl] checks:
+- New {{< xl >}} checks:
     - Flag illegal output/input port connections
     - Warn when ports or generics are mapped in a different order than their declaration.
     ![](3.3/association_order.png)

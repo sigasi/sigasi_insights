@@ -84,7 +84,7 @@ Or you can instantiate the entity with the same name, but rewire the port names 
 
 So why is this useful? Well, that's a good question. I haven't seen configurations being used like this in "real life" code. But knowing this will help you realize that components and entities are really completely different things. They are only connected during elaboration (that's when you give the `vsim` command). And they can be connect in very flexible ways. 
 
-I've put the code fragments in a [VETSMOD] project that you can [download here](resources/configurations.tgz). You can play around with it and run it on your favorite simulator. The code reports which architecture you use and which ports are actually connected to what:
+I've put the code fragments in a {{< VETSMOD >}} project that you can [download here](resources/configurations.tgz). You can play around with it and run it on your favorite simulator. The code reports which architecture you use and which ports are actually connected to what:
 
 ```
 # Loading std.standard

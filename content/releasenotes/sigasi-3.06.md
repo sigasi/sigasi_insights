@@ -8,7 +8,7 @@ comments: true
 Sigasi Studio 3.6 introduces powerful methodologies with customizable *Block Diagrams* and *State Machine Diagrams* with *Graphics Configuration* files.
 Read below to find all new and noteworthy changes.
 
-# Graphics Configuration \[[xl_doc]]
+# Graphics Configuration \[{{< xl_doc >}}]
 
 The [BlockDiagram][/manual/views#block] and [StateMachine][/manual/views#fsm] Views are very useful ways to **explore** and **understand** HDL designs. But sometimes this just doesn't cut it. The diagrams are **too complex** and **crowded** to understand a design. They contain too much detail to see the big picture.
 **Sigasi Studio's Graphics Configuration files** are a new solution for this challenge.
@@ -80,7 +80,7 @@ If you open an existing workspace after the update to Sigasi Studio 3.6, you mig
 * Block Diagram: visual distinction between `input` and `inout` ports
 * We added a new quickfix to correct the capitalization of all references in the entire VHDL source file.  
 ![Correct the capitalization of all references in the entire VHDL source file.](/releasenotes/3.6/capitalization_all.png)
-* We simplified the [EULA][/eula]
+* We simplified the [EULA](/eula)
 * New linting check: redundant `= true` or `= false` in boolean expressions
 
 # Bug fixes

@@ -4,7 +4,7 @@ weight: 13
 pager: true
 ---
 
-[xprt_only]
+{{< xprt_only >}}
 
 The BlockDiagram- and StateMachine views are a very useful way to explore and understand HDL designs, but sometimes that just doesn't cut it.
 The diagrams can be too complex and crowded to understand a design. For this reason, the diagrams can't always be directly used in documentation. To solve this challenge you can make use of the Graphics Configuration Language.

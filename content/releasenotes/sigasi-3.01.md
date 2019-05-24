@@ -27,7 +27,7 @@ If the OneSpin toolchain is enabled and if you have set a *top level* (VHDL only
 Running the OneSpin Consistency Checks can be a long process. You can abort it by clicking the stop button in the Progress View.
 
 ## Check vector width in port maps
-[vhdl_only], [xl_only]
+{{< vhdl_only >}} {{< xl_only >}}
 
 Sigasi Studio now also checks the vector width in instantiation port maps:
  

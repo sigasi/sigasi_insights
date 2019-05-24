@@ -4,7 +4,7 @@ weight: 11
 pager: true
 ---
 
-[xprt_only]
+{{< xprt_only >}}
 
 [VUnit](https://vunit.github.io/) is an open source **unit testing framework** for VHDL and SystemVerilog. VUnit helps you to *write* tests more easily and *run* them frequently.
 

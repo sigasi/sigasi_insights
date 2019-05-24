@@ -43,7 +43,7 @@ Package two will not be able to see the thing declared in the use case. Isn't th
 The reason is that the library and use clauses are only visible to the *first* design unit (entity, architecture, package,...). In case you write an entity and its corresponding architecture (or a package and its corresponding package body) the so-called *secondary design unit* (the architecture or package body) **inherits** whatever is used in the *primary design unit* (entity or package). Aha!
 Even if the architecture is in a different file, you don't have to repeat the use clauses.
 
-So finally, here is some [VETSMOD] VHDL code to play with:
+So finally, here is some {{< VETSMOD >}} VHDL code to play with:
 ```vhdl
 comments: true
 bannerad: true

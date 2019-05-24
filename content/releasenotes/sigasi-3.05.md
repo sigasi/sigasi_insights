@@ -55,7 +55,7 @@ If your state machine uses simple `if`-conditions for transitions, the condition
 
 # Other new and noteworthy improvements
 
-* [vhdl_only] **Quickfix all undeclared signals in a port map**. This was the number one feature request for our VHDL editor. You can now declare all signals in a port map (and all constants in a generic map) in a single action  
+* {{< vhdl_only >}} **Quickfix all undeclared signals in a port map**. This was the number one feature request for our VHDL editor. You can now declare all signals in a port map (and all constants in a generic map) in a single action  
 ![Quick fix all signals in port map](3.5/quick-fix-all-signals-in-port-map.png)
 
 * Improved **Libraries View**:
@@ -66,15 +66,15 @@ If your state machine uses simple `if`-conditions for transitions, the condition
 * **Open Design Unit** dialog (**Ctrl+Shift+D**): We added an extra action to quickly open a (VHDL or SystemVerilog) design unit in an editor: hit **Ctrl+Shift+D** (or via **Navigate > Open Design unit...**), and type a pattern that matches the design unit name you're looking for  
 ![Open Design Unit Dialog](3.5/open-design-unit.png)
 
-* [vhdl_only] **Hyperlink from Entity to its architectures**. There has always been an easy way to navigate from an architecture to its entity, by **Ctrl+clicking** (**Open Declaration**) the entity name. You can now also easily navigate in the other direction with **Ctrl+click**. If an entity has multiple architectures, they will all be listed in a drop down menu  
+* {{< vhdl_only >}} **Hyperlink from Entity to its architectures**. There has always been an easy way to navigate from an architecture to its entity, by **Ctrl+clicking** (**Open Declaration**) the entity name. You can now also easily navigate in the other direction with **Ctrl+click**. If an entity has multiple architectures, they will all be listed in a drop down menu  
 ![Open matching architecture](3.5/open-matching-architecture.png)
 
-* [vhdl_only] Better autocomplete for `configurations`
-* [vhdl_only] Offer *"Declare variable"* quickfix for procedure parameters inside processes
-*  \[[xl]] Better validations for `configuration`  
+* {{< vhdl_only >}} Better autocomplete for `configurations`
+* {{< vhdl_only >}} Offer *"Declare variable"* quickfix for procedure parameters inside processes
+*  \[{{< xl >}}] Better validations for `configuration`  
      ![Better validation of configurations](3.5/vhdl_configuration_error.png)
-* \[[xl]] keyword autocomplete now respects the uppercase/lowercase formatting settings
-* \[[xl_doc]] The block diagram view now displays the component name of component instantiations
+* \[{{< xl >}}] keyword autocomplete now respects the uppercase/lowercase formatting settings
+* \[{{< xl_doc >}}] The block diagram view now displays the component name of component instantiations
 * We updated the Eclipse Xtext dependency to `2.12.0`
 
 

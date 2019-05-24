@@ -80,10 +80,10 @@ Verilog support**. You can also remove VHDL or Verilog support from
 Sigasi Studio projects by selecting **Configure \> Remove VHDL support** or
 **Configure \> Remove (System)Verilog support**.
 
-Note that only with a [xl] license, you can have **mixed** VHDL and
+Note that only with a {{< xl >}} license, you can have **mixed** VHDL and
 Verilog support at the same time.
 
-With a [creator] license, a project can contain both VHDL and
+With a {{< creator >}} license, a project can contain both VHDL and
 Verilog files, but only one of the languages will have full support.
 Files in the other language will be treated as [/manual/opening#External Files].
 
