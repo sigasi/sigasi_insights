@@ -3,8 +3,12 @@
         {{ .Content }}
 {{ else }}
 <div class="uk-container uk-padding">
-    {{ .TableOfContents }}
+    <div class="">
+    {{ .TableOfContents | replaceRE "<ul>" "<ul class=\"uk-list\">" | safeHTML }}
+    </div>
+    <div>
     {{ .Content }}
+    </div>
 </div>
 {{ end }}
 {{ end }}

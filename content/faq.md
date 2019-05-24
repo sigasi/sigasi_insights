@@ -5,7 +5,7 @@ activemenu: faq
 
 # Install and Run
 
-## Can I run several copies of Sigasi on my machine
+## Can I run several copies of Sigasi on my machine?
 
 The normal behavior when you start Sigasi is that the tools searches for another running copy and to re-use that copy. Sometimes you may want to run two or more copies of Sigasi at the same time on one computer. In order to do this, you need to modify `configuration\config.ini`. Replace this line:
 

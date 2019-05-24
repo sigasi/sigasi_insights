@@ -11,7 +11,10 @@
         <aside>
           <div class="sg-floatparent" data-uk-sticky="offset: 30">
             <div class="uk-panel-scrollable sg-floatmenu" uk-height-viewport="offset-bottom: 15">
-              {{ .TableOfContents }}
+                <div class="uk-padding-vertical"><a href="#"><strong>{{ .Title }}</strong></a></div>
+                <div class="uk-text-small">
+                {{ .TableOfContents | replaceRE "<ul>" "<ul class=\"uk-list\">" | safeHTML }}
+                </div>
             </div>
           </div>
         </aside>
