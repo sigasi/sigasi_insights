@@ -5,5 +5,5 @@ pager: false
 comments: true
 ---
 
-[todo]
+{{< todo >}}
 

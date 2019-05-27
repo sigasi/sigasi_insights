@@ -122,4 +122,4 @@ You can set formatting options in the Formatter preference page:
 -   **Alignment column for trailing comments**: this setting configures the column Sigasi Studio uses to align trailing comments (default is column 40)
 
 # Finding more options
-[todo]
+{{< todo >}}

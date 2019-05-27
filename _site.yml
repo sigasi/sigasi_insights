@@ -43,9 +43,6 @@ reflinks:
     content_license:
         url: http://creativecommons.org/licenses/by-sa/3.0/
         title: CC-BY-SA License
-    github_insights:
-        url: http://github.com/sigasi/sigasi_insights
-        title: Sigasi Documentation on GitHub
     eclipse-marketplace:
         title: Eclipse Marketplace
         url: http://marketplace.eclipse.org
