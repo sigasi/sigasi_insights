@@ -124,7 +124,7 @@ Sometimes markers remain visible, even after the problem is fixed or when a file
 
 You can delete these stale markers from the Problems View: In the Problems View, select the markers and press **DEL** (or right-click and select **Delete**).
 
-Note that during the next build, the tool may generate new markers. If you want to suppress certain warnings, you can configure the [/manual/config#configure-linting]
+Note that during the next build, the tool may generate new markers. If you want to suppress certain warnings, you can [configure the linting rules](/manual/config#configure-linting).
 
 ## Remove the workspace state
 
