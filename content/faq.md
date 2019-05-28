@@ -102,7 +102,7 @@ This sets the maximum heap size to 2400 MB. If you system has plenty of memory, 
 
 ## How can I update Sigasi?
 
-See [/manual/setup#Software Updates].
+See [the manual](/manual/setup#software-updates).
 
 ## What if I ever want to get back to my old toolflow? Am I locked in?
 

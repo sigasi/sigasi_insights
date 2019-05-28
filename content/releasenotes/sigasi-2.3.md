@@ -170,4 +170,4 @@ Other new and noteworthy improvements
 Download/Update
 ---------------
 
-If you have Sigasi 2 installed, you can [update_sigasi]. You can also [download_latest].
+If you have Sigasi 2 installed, you can {{< update_sigasi >}}. You can also {{< download_latest >}}.

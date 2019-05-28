@@ -116,7 +116,7 @@ You can also enable **warnings for undeclared identifiers** via the **Ctrl-3** k
 
 # How to update?
 
-If you have Sigasi Studio 3 installed, you can [update][/manual/setup#Software Updates] or [download a fresh install of the latest version][download_latest].
+If you have Sigasi Studio 3 installed, you can [update][/manual/setup#Software Updates] or [download a fresh install of the latest version]{{< download_latest >}}.
 
 Good news for our loyal XL-DOC users: **existing and valid XL-DOC 3.x license keys will automatically unlock all Sigasi Studio XPRT 4.0 features.**
 

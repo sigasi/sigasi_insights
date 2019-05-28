@@ -59,4 +59,4 @@ You can now configure Cadence Incisive (NCSim) as [/manual/tools#save-time-compi
 
 ## Download/Update
 
-If you have Sigasi 2 installed, you can [update_sigasi]. You can also [download_latest].
+If you have Sigasi 2 installed, you can {{< update_sigasi >}}. You can also {{< download_latest >}}.

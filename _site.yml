@@ -70,12 +70,6 @@ reflinks:
     xtext_2_8_2:
         url: https://projects.eclipse.org/projects/modeling.tmf.xtext/releases/2.8.2
         title: Xtext 2.8.2
-    update_sigasi:
-        url: "/faq.html#update"
-        title: Update Sigasi
-    download_latest:
-        title: Download the Latest Version of Sigasi
-        url: https://www.sigasi.com/download
     tabs-and-spaces:
         title: Tabs and Spaces
         url: "/manual/config.html#tabs-and-spaces"

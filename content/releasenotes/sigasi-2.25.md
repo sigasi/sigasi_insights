@@ -45,4 +45,4 @@ Sigasi now more strictly checks the use of operators ("+", "*", "-", ...). This 
 
 ## Download/Update
 
-If you have Sigasi 2 installed, you can [update_sigasi]. You can also [download_latest].
+If you have Sigasi 2 installed, you can {{< update_sigasi >}}. You can also {{< download_latest >}}.

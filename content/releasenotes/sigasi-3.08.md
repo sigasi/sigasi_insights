@@ -109,4 +109,4 @@ Use the new icons to enable or disable the features of the Dependencies Viewer:
 
 # How to update?
 
-If you have Sigasi Studio 3 installed, you can [update][/manual/setup#Software Updates] or [download a fresh install of the latest version][download_latest].
+If you have Sigasi Studio 3 installed, you can [update][/manual/setup#Software Updates] or [download a fresh install of the latest version]{{< download_latest >}}.

@@ -26,8 +26,7 @@ All popular version control systems have an Eclipse plugin. This means that our 
 
 ## 4. Update mechanism
 
-Keeping software up to date can be a real pain. Eclipse makes this pretty easy. \[[update_sigasi].
-\]. 
+Keeping software up to date can be a real pain. Eclipse makes this pretty easy. \[{{< update_sigasi >}}\]. 
 
 ## 5. Feature rich editor
 

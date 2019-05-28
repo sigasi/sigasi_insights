@@ -95,4 +95,4 @@ Right click a project, folder or file and select **Properties > VHDL Errors/Warn
 
 # How to update?
 
-If you have Sigasi Studio 4 installed, you can [update][/manual/setup#Software Updates] or [download a fresh install of the latest version][download_latest].
+If you have Sigasi Studio 4 installed, you can [update][/manual/setup#Software Updates] or [download a fresh install of the latest version]{{< download_latest >}}.

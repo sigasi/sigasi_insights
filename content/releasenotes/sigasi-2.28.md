@@ -52,4 +52,4 @@ Sigasi will only complain when it is sure the assignment is wrong. When the expr
 
 ## Download/Update
 
-If you have Sigasi 2 installed, you can [update_sigasi]. You can also [download_latest].
+If you have Sigasi 2 installed, you can {{< update_sigasi >}}. You can also {{< download_latest >}}.

@@ -99,7 +99,7 @@ If you open an existing workspace after the update to Sigasi Studio 4.1, you mig
 
 # How to update?
 
-If you have Sigasi Studio 3 or 4 installed, you can [update][/manual/setup#Software Updates] or [download a fresh install of the latest version][download_latest].
+If you have Sigasi Studio 3 or 4 installed, you can [update][/manual/setup#Software Updates] or [download a fresh install of the latest version]{{< download_latest >}}.
 
 # Sigasi 4.1.1 point release
 
