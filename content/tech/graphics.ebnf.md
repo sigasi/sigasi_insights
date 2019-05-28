@@ -5,76 +5,78 @@ pager: true
 author: Sigasi
 date: 2018-09-10
 comments: true
+tags:
+  - ebnf
 ---
 <em>This grammar allows you to filter, group and color your BlockDiagrams and StateMachines in Sigasi Studio.</em>  
 ## Grammar
   
-**DiagramConfiguration**{: #DiagramConfiguration }
+<a name="DiagramConfiguration"></a>**DiagramConfiguration**
 :	<a href="#Header">Header</a> <font color="purple"><b>{</b></font>  { <a href="#GraphicsRestriction">GraphicsRestriction</a>  }   { <a href="#GraphicsDeclaration">GraphicsDeclaration</a>  }   { <a href="#ConfigurationBlock">ConfigurationBlock</a>  }  <font color="purple"><b>}</b></font> 
   
-**Header**{: #Header }
+<a name="Header"></a>**Header**
 :	<a href="#BlockDiagramHeader">BlockDiagramHeader</a>   
         | <a href="#StateMachineHeader">StateMachineHeader</a> 
   
-**BlockDiagramHeader**{: #BlockDiagramHeader }
+<a name="BlockDiagramHeader"></a>**BlockDiagramHeader**
 :	<font color="purple"><b>diagram</b></font> <a href="#FullyQualifiedName">FullyQualifiedName</a> 
   
-**StateMachineHeader**{: #StateMachineHeader }
+<a name="StateMachineHeader"></a>**StateMachineHeader**
 :	<font color="purple"><b>statemachine</b></font> <a href="#FullyQualifiedName">FullyQualifiedName</a> <font color="purple"><b>:</b></font> <em>hdl\_</em><a href="#ID">ID</a> 
   
-**FullyQualifiedName**{: #FullyQualifiedName }
+<a name="FullyQualifiedName"></a>**FullyQualifiedName**
 :	<a href="#QualifiedNamePart">QualifiedNamePart</a>  { <font color="purple"><b>.</b></font> <a href="#QualifiedNamePart">QualifiedNamePart</a>  }  
   
-**QualifiedNamePart**{: #QualifiedNamePart }
+<a name="QualifiedNamePart"></a>**QualifiedNamePart**
 :	<em>graphics\_</em><a href="#ID">ID</a>   
         | <em>hdl\_</em><a href="#ID">ID</a> 
   
-**Regex**{: #Regex }
+<a name="Regex"></a>**Regex**
 :	<font color="purple"><b>regex</b></font> <a href="#STRING">STRING</a> 
   
-**GraphicsRestriction**{: #GraphicsRestriction }
+<a name="GraphicsRestriction"></a>**GraphicsRestriction**
 :	<a href="#BlockVisibilityRestriction">BlockVisibilityRestriction</a>   
         | <a href="#ReassignmentsConfiguration">ReassignmentsConfiguration</a> 
   
-**BlockVisibilityRestriction**{: #BlockVisibilityRestriction }
+<a name="BlockVisibilityRestriction"></a>**BlockVisibilityRestriction**
 :	<font color="purple"><b>show</b></font> <font color="purple"><b>:</b></font> <a href="#BlockVisibilityRestrictionType">BlockVisibilityRestrictionType</a> 
   
-**ReassignmentsConfiguration**{: #ReassignmentsConfiguration }
+<a name="ReassignmentsConfiguration"></a>**ReassignmentsConfiguration**
 :	<font color="purple"><b>reassignments</b></font> <font color="purple"><b>hide</b></font> 
   
-**BlockVisibilityRestrictionType**{: #BlockVisibilityRestrictionType }
+<a name="BlockVisibilityRestrictionType"></a>**BlockVisibilityRestrictionType**
 :	<font color="purple"><b>instantiations</b></font> 
   
-**GraphicsDeclaration**{: #GraphicsDeclaration }
+<a name="GraphicsDeclaration"></a>**GraphicsDeclaration**
 :	<a href="#GroupDeclaration">GroupDeclaration</a> 
   
-**ConfigurationBlock**{: #ConfigurationBlock }
+<a name="ConfigurationBlock"></a>**ConfigurationBlock**
 :	<a href="#Type">Type</a> <a href="#Identifiers">Identifiers</a> <font color="purple"><b>{</b></font>  { <a href="#Configuration">Configuration</a>   
          | <a href="#ConfigurationBlock">ConfigurationBlock</a>  }  <font color="purple"><b>}</b></font> 
   
-**Configuration**{: #Configuration }
+<a name="Configuration"></a>**Configuration**
 :	<font color="purple"><b>hide</b></font>   
         | <font color="purple"><b>collapse</b></font>   
         | <font color="purple"><b>color</b></font> <a href="#GraphicsColor">GraphicsColor</a>   
         | <a href="#ReassignmentsConfiguration">ReassignmentsConfiguration</a> 
   
-**GroupDeclaration**{: #GroupDeclaration }
+<a name="GroupDeclaration"></a>**GroupDeclaration**
 :	<font color="purple"><b>def</b></font> <a href="#Type">Type</a> <font color="purple"><b>group</b></font> <a href="#ID">ID</a> <font color="purple"><b>(</b></font> <a href="#Identifiers">Identifiers</a> <font color="purple"><b>)</b></font> 
   
-**Identifiers**{: #Identifiers }
+<a name="Identifiers"></a>**Identifiers**
 :	<a href="#Identifier">Identifier</a>  { <font color="purple"><b>,</b></font> <a href="#Identifier">Identifier</a>  }  
   
-**Identifier**{: #Identifier }
+<a name="Identifier"></a>**Identifier**
 :	<a href="#DeclaredIdentifier">DeclaredIdentifier</a>   
         | <a href="#RegexIdentifier">RegexIdentifier</a> 
   
-**DeclaredIdentifier**{: #DeclaredIdentifier }
+<a name="DeclaredIdentifier"></a>**DeclaredIdentifier**
 :	<a href="#FullyQualifiedName">FullyQualifiedName</a> 
   
-**RegexIdentifier**{: #RegexIdentifier }
+<a name="RegexIdentifier"></a>**RegexIdentifier**
 :	<a href="#Regex">Regex</a> 
   
-**GraphicsColor**{: #GraphicsColor }
+<a name="GraphicsColor"></a>**GraphicsColor**
 :	<font color="purple"><b>red</b></font>   
         | <font color="purple"><b>green</b></font>   
         | <font color="purple"><b>blue</b></font>   
@@ -85,23 +87,23 @@ comments: true
         | <font color="purple"><b>gray</b></font>   
         | <font color="purple"><b>white</b></font> 
   
-**Type**{: #Type }
+<a name="Type"></a>**Type**
 :	<font color="purple"><b>block</b></font>   
         | <font color="purple"><b>port</b></font>   
         | <font color="purple"><b>wire</b></font>   
         | <font color="purple"><b>state</b></font> 
   
-**ID**{: #ID }
+<a name="ID"></a>**ID**
 :	 \[ <font color="purple"><b>^</b></font>  ]  <em>a-zA-Z\_</em> { <em>a-zA-Z0-9\_</em> }  
   
-**STRING**{: #STRING }
+<a name="STRING"></a>**STRING**
 :	<a href="#DQ_STRING">DQ\_STRING</a>   
         | <a href="#SQ_STRING">SQ\_STRING</a> 
   
-**DQ\_STRING**{: #DQ_STRING }
+<a name="DQ_STRING"></a>**DQ\_STRING**
 :	<font color="purple"><b>"</b></font>  { <font color="purple"><b>\</b></font> <em>char</em>  
          | <em>not (\ | ")</em> }  <font color="purple"><b>"</b></font> 
   
-**SQ\_STRING**{: #SQ_STRING }
+<a name="SQ_STRING"></a>**SQ\_STRING**
 :	<font color="purple"><b>'</b></font>  { <font color="purple"><b>\</b></font> <em>char</em>  
          | <em>not (\ | ')</em> }  <font color="purple"><b>'</b></font> 
