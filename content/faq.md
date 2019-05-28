@@ -100,7 +100,7 @@ This sets the maximum heap size to 2400 MB. If you system has plenty of memory, 
 
 **Note**: If the settings do not change with the above methods, check if the following environment variables are set: `JAVA_TOOL_OPTIONS` or `_JAVA_OPTIONS`. \[[More info](https://stackoverflow.com/questions/28327620/difference-between-java-options-java-tool-options-and-java-opts)\]
 
-## How can I update Sigasi? {: #update}
+## How can I update Sigasi?
 
 See [/manual/setup#Software Updates].
 

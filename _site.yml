@@ -92,7 +92,3 @@ reflinks:
     views/editor:
         title: Editor View
         url: "/manual/views.html#editor"
-# editions and languages
-    todo:
-        title: "[Not Documented Yet]"
-        url: "/todo_.html"
