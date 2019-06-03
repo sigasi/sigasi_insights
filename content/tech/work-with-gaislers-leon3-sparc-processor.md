@@ -17,7 +17,7 @@ In the very first versions of Sigasi, some people have had trouble loading very 
 
 We have been working on improving the responsiveness of Sigasi HDT, and to demonstrate this, I'd like to show you how you use Sigasi HDT to navigate and edit one of the <em>largest open source hardware projects</em>: Gaisler's Leon3 SPARC processor and its accompanying libraries (commonly known as GRLIB). I've downloaded the GRLIB project, and set it up to work with Sigasi HDT. GRLIB uses a lot of different libraries:
 
-![libraries in GRLIB](images/gr_libraries.png)
+![libraries in GRLIB](/img/tech/gr_libraries.png)
 
 
 ## Still fast
@@ -31,11 +31,11 @@ Taking a look at other people's code is always a good way to learn. This is espe
 
 To look at GRLIB using Sigasi HDT, you can download a <a href="http://www.sigasi.com/try">free trial license</a>. After you've started Sigasi HDT, just click "Point to existing project", and you're set to go.
 
-Download the <a href="resources/grlib-gpl-1.0.20-b3403-b.tgz">GRLIB project</a>. I've packaged release 1.0.20-b3403, with one actual design and the VHDL libraries that it requires.
+Download the <a href="/resources/tech/grlib-gpl-1.0.20-b3403-b.tgz">GRLIB project</a>. I've packaged release 1.0.20-b3403, with one actual design and the VHDL libraries that it requires.
 
 ## What do you think?
 I'd love to hear which publicly available <em>VHDL projects</em> you have inspected and learned from. Was it easy to understand them? Were the files well-structured? Did it include documentation or did you have to dive in <em>head first</em>?
 
 ## Update Grlib 1.5.0-b4164 and Sigasi 3
 
-You can now [download an updated version for 1.5.0-b4164](resources/grlib-gpl-1.5.0-b4164.tgz) with the correct library setup.
+You can now [download an updated version for 1.5.0-b4164](/resources/tech/grlib-gpl-1.5.0-b4164.tgz) with the correct library setup.

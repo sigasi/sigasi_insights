@@ -45,7 +45,7 @@ the file system (Virtual Folder)</strong>. Type the folder name (which
 corresponds to one of your library names) and press
 <strong>Finish</strong>.
 
-![](images/legacy1.png)
+![](/img/tech/legacy1.png)
 
 # Map each virtual folder to a library
 
@@ -54,13 +54,13 @@ each folder. You can see that each folder is still mapped to the work
 library. We now need to change this mapping, so that each folder is
 mapped to the correct library.
 
-![](images/legacy2.png)
+![](/img/tech/legacy2.png)
 
 Open <strong>Project &gt; Properties &gt; Libraries</strong>. Now remove
 the old mapping for the work library, and add a new library mapping for
 each library. Library work maps to project:/work.
 
-![](images/legacy3.png)
+![](/img/tech/legacy3.png)
 
 # Adding the project files
 
@@ -73,7 +73,7 @@ After you drag and drop a file, Eclipse will ask if you want to use a
 relative file path. For legacy projects, you may want to use absolute
 path names. In this case, uncheck the box in the Link Files dialog.
 
-![](images/legacy4.png)
+![](/img/tech/legacy4.png)
 
 You now have a VHDL project that consists entirely of virtual folders
 and virtual files. You can have several projects that share some or all

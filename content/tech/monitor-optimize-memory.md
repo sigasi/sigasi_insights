@@ -20,7 +20,7 @@ Sigasi runs on the Eclipse platform that runs on the Java Virtual Machine. Becau
 
 * Goto **Window > Preferences > General** and enable **Show heap status** and click **OK**.
 * In the status bar of eclipse (bottom of the screen) a new UI element will appear.
-  ![Memory monitor](images/memory_monitor.png)
+  ![Memory monitor](/img/tech/memory_monitor.png)
 * We can see 3 things:
 
    * The amount of used memory by the application (including garbage that has not been collected), in the example 111MB.

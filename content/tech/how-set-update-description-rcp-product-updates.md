@@ -16,7 +16,7 @@ Thanks to Ian Bull on [Eclipse Con Europe](http://www.eclipsecon.org) last week,
 
 So on my way home, I delved into it again and finally solved this issue.
 
-![Product description in update dialog](images/update_dialog.png)
+![Product description in update dialog](/img/tech/update_dialog.png)
 
 Ian told the original plan was to add a field to the Product Configuration Editor, but nobody ever came around to implement it. But the good news is that you can easily set the description via a  [p2 advice file](http://wiki.eclipse.org/Equinox/p2/Customizing_Metadata). This file (`p2.inf`) can be added next to the product definition and is used to tweak p2 operations. Note that if you build with [Maven Tycho](http://www.eclipse.org/tycho), this `p2.inf` needs to be prefixed with the product configuration file name. In our case the product configuration file is `sigasi.product`, so the p2 advice file must be named `sigasi.p2.inf` ([more details](http://wiki.eclipse.org/Tycho/Packaging_Types#eclipse-repository)).
 

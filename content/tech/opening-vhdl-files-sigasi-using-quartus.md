@@ -19,27 +19,27 @@ This page deals with step three of using the Quartus integration plugin for Siga
 
 Step three happens when you open a VHDL file in Quartus, and Sigasi kicks in to show you the file. There are several ways to open an HDL file in Quartus. The most common ways are: you can double-click a file in the Quartus project navigator, or double-click an error in the console log.
 
-![Open a VHDL from Quartus](images/open_file_in_quartus.png)
+![Open a VHDL from Quartus](/img/tech/open_file_in_quartus.png)
 
 Sigasi will now start and find a workspace (the place where all of your Sigasi metadata lives). You can use the default workspace and tell Sigasi to keep using the same workspace from now on.
 
-![Select workspace](images/workspace-1.png) 
+![Select workspace](/img/tech/workspace-1.png) 
 
 ## First time Sigasi sees your Quartus project.
 
 When you double-click a VHDL file, Quartus (as of version 12.1) opens Sigasi and passes three bits of information: (1) the file (2) the line number and (3) the project. The first time you open a file in a given project, Sigasi needs to *import* your project.
 
-![Import Quartus project](images/import_quartus_project.png) 
+![Import Quartus project](/img/tech/import_quartus_project.png) 
 
 Also, the import wizard wants to know where Quatus is installed.
 
-![Quartus installation location](images/quartus_installation_location.png)
+![Quartus installation location](/img/tech/quartus_installation_location.png)
 
 ## The Quartus perspective
 
 Sigasi mirrors the Quartus project, and so these mirrored projects are not regular Sigasi projects. In fact, the look really messy and confusing in the regular Project Explorer. We have created a special "Quartus project view" to look at the mirrored Quartus projects in Sigasi. When you import a Quartus project in Sigasi, the import wizard will ask you if you want to switch to the Quartus perspective. So: yes, you do want to switch to the Quartus perspective.
 
-![Switch to Quartus perspective](images/switch_perspective.png)
+![Switch to Quartus perspective](/img/tech/switch_perspective.png)
 
 ## Known issues:
 

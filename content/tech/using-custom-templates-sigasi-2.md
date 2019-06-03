@@ -32,11 +32,11 @@ template, so that the names are correct by default.
 
 The first step is to open the Templates Preference page: **Window &gt; Preferences &gt; VHDL &gt; Templates** and select the `process` template.
 
-![](images/customtemplate_0.png)
+![](/img/tech/customtemplate_0.png)
 
 Click **Edit...** and you will see the template's code.
 
-![](images/customtemplate_1.png)
+![](/img/tech/customtemplate_1.png)
 
 The syntax is really simple. The template contains *text* and
 *variables*. The *text* is inserted *as is* when the template is
@@ -50,14 +50,14 @@ in the template. Notice that you have to replace all occurrences,
 otherwise Sigasi will regard them as different variables.
 
 
-![](images/customtemplate_2.png)
+![](/img/tech/customtemplate_2.png)
 
 Press **OK** (twice) to confirm the changes.
 
 If you now autocomplete the `process` template, you will see that the
 default names for the clock and reset signals have changed.
 
-![](images/customtemplate_3.png)
+![](/img/tech/customtemplate_3.png)
 
 Feel free to experiment with more customizations to the templates like
 adding default comments or changing white space and indentation.

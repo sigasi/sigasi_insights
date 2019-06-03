@@ -4,18 +4,44 @@
     <div uk-grid>
       <div class="uk-width-3-4@m">
         <article>
+          {{ if .PublishDate }}
+          Posted on {{ .PublishDate.Format "2006-01-02" }}
+          {{ end }}
+
+          {{ if .Params.author }}
+          by {{ .Params.author }}
+          {{ end }}
+
+          {{ $taxo := "tags" }}
+          {{ if .Param $taxo }}<br>Tagged as:{{ end }}
+          {{ range .Param $taxo }}
+            {{ $name := . }}
+            {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+            <a class="uk-button uk-button-default uk-button-small uk-border-rounded" href="{{ .Permalink }}">{{ $name }}</a>
+            {{ end }}
+          {{ end }}
+
+          {{ if .Params.license }}
+          <br>Licensed under {{ .Params.license }}
+          {{ end }}
+          <hr>
           {{ .Content }}
         </article>
       </div>
       <div class="uk-width-1-4@m uk-visible@m">
         <aside>
           <div class="sg-floatparent" data-uk-sticky="offset: 30">
+            {{ if .Params.bannerad }}
+            {{ partial "bannerad" . }}
+            {{ end }}
+            {{ if .Params.pager }}
             <div class="uk-panel-scrollable sg-floatmenu" uk-height-viewport="offset-bottom: 15">
                 <div class="uk-padding-vertical"><a href="#"><strong>{{ .Title }}</strong></a></div>
                 <div class="uk-text-small">
                 {{ .TableOfContents | replaceRE "<ul>" "<ul class=\"uk-list\">" | safeHTML }}
                 </div>
             </div>
+            {{ end }}
           </div>
         </aside>
       </div>

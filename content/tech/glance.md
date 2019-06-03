@@ -25,7 +25,7 @@ But if you are really used to the Notepad++ behaviour, you might also consider t
 * Click **Help > Install new Software...**
 * Enter <http://eclipse-glance.googlecode.com/svn/site/> as update site  
   and select **Glance > Glance core** 
-  ![](images/glance_install.png)
+  ![](/img/tech/glance_install.png)
 * Click **Next >** (twice), accept the license and **Finish**
 * Restart Sigasi
 
@@ -33,6 +33,6 @@ But if you are really used to the Notepad++ behaviour, you might also consider t
 
 To highlight all occurrence of the currently selected identifier, press **Alt+Shift+F**
 
-![](images/glance_usage.png)
+![](/img/tech/glance_usage.png)
 
 You can also show the Glance Search bar permanently in the *status bar* via the preferences: **Window > Preferences > General > Glance Search**

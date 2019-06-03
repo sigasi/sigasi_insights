@@ -21,7 +21,7 @@ The script takes into account parentheses, curly brackets and square brackets: `
 If brackets are not matched correctly, the checker will raise a warning at the correct location so 
 that the user can fix the brackets.
 
-![Custom Code Checking](images/custom_code_checking.png)
+![Custom Code Checking](/img/tech/custom_code_checking.png)
 
 ## How to use:
 

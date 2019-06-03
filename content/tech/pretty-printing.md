@@ -11,4 +11,4 @@ bannerad: true
 
 If you want to print your VHDL code with nice syntax highlighting, you can copy it from the VHDL editor view in Sigasi and paste it to your favorite word processor. (Microsoft Word, OpenOffice, Pages,…). The text will appear as formatted VHDL in your document!
 
-![pretty printing VHDL screenshot](images/pretty-printing.png)
+![pretty printing VHDL screenshot](/img/tech/pretty-printing.png)

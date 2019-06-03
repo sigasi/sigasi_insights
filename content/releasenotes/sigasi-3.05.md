@@ -42,7 +42,7 @@ Sigasi Studio processes the code in a predictable order and keeps track of the p
 
 ## Getting started
 
-Getting started with Sigasi Studio on your own projects is easy. The blog post "[/tech/systemverilog-project-demo]", describes how easy it is.
+Getting started with Sigasi Studio on your own projects is easy. The blog post "[How to setup a SystemVerilog project in Sigasi Studio](/tech/systemverilog-project-demo)", describes how easy it is.
 
 # Improved State Machine Viewer (VHDL)
 

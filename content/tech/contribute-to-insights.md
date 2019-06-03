@@ -14,22 +14,22 @@ The sources of the Sigasi Insights portal are hosted on Github. So if you find a
 Small fixes can be made on the website of GitHub, without installing extra tools.  
 For bigger changes, it is better to build the website on your own machine first, and creating a *pull request* later.
 
-## Fixing a typo, directly on GitHub {: #github}
+## Fixing a typo, directly on GitHub
 
 * Log in into [GitHub](https://github.com)
 * [Fork the Sigasi Insights repository](https://github.com/sigasi/sigasi_insights#fork-destination-box)
 * Browse to the file you want to edit and click the edit button
-  ![](images/insights_github_edit.png)
+  ![](/img/tech/insights_github_edit.png)
 * At the bottom of the screen:
     * Add a commit message
     * Select the *"Create a new branch for this commit and start a pull request" option*.
     * Click the **Commit Changes** button.
-      ![](images/insights_github_patch.png)
+      ![](/img/tech/insights_github_patch.png)
 * Next add a message to your pull request and click **Create pull request**  
-  ![](images/insights_github_patch_1.png)  
+  ![](/img/tech/insights_github_patch_1.png)  
   By sending a pull request, you give all rights of your change to Sigasi ([Copyright info][/LICENSE])
 
-<!--  ![](images/insights_github_patch_2.png) -->
+<!--  ![](/img/tech/insights_github_patch_2.png) -->
 
 ## Bigger changes: clone Insights and preview your changes offline.
 
@@ -45,7 +45,7 @@ If pip is not yet available on your system, follow the [pip installation instruc
 
 ### Clone the sources and create Pull Request
 
-* Clone the Insights repository, as explained in [#github]. 
+* Clone the Insights repository, as explained [here](#fixing-a-typo-directly-on-github). 
 * Add your content (e.g. a guest blog in the `/opinion/` folder). ([Authoring information](https://github.com/sigasi/sigasi_insights/blob/master/README.markdown))  
   Your MarkDown file must have following header:  
 ```

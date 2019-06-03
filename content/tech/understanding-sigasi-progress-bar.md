@@ -23,7 +23,7 @@ Sigasi builds the Model by iterating over all your VHDL files in multiple passes
 
 During the first pass Sigasi parses each file and constructs a *Meta Model*. This Model is queried for globally visible VHDL objects and these are added to the *Global Index*.
 
-![Phase 1 : Building the Global Index](images/phase1-global-index.png)
+![Phase 1 : Building the Global Index](/img/tech/phase1-global-index.png)
 
 ### Second pass: Validation
 
@@ -32,17 +32,17 @@ This pass validates the VHDL syntax and creates problem markers for each problem
 
 The second pass also runs all validation (linting) checks. For example, all port maps are checked for completeness, all case statements are checked, etc. 
 
-![Phase 2 : Validation](images/phase2-validation.png)
+![Phase 2 : Validation](/img/tech/phase2-validation.png)
 
 **Note:** Open editors can be affected by a build. For example, an open editor could use a constant for of package that is not declared yet. So the editor will show an error marker. When the constant declaration is added in a second editor, the marker in the first editor needs to be updated. This will result in following message in the progress view:
 
-![Updating editor state](images/update_editor_state.png)
+![Updating editor state](/img/tech/update_editor_state.png)
 
 ### Third pass
 
 This phase runs a few so called *builder participants*, that extract more information from the Model for different purposes. One example is [/manual/tools#External Compilers].
 
-![Phase 3 : Builder participants](images/builder_participants.png)
+![Phase 3 : Builder participants](/img/tech/builder_participants.png)
 
 ## Conclusion
 

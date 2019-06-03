@@ -22,7 +22,7 @@ You can open a View in several different ways:
 * By right clicking in the **editor** and selecting **Show in > ...**.  
   Some Views also support to open the current selection (e.g. the Block Diagram View). This selects the element in the view that corresponds to the current selection in the editor.
 
-# Project Explorer View {: #explorer}
+# Project Explorer View
 
 This view shows the directory structure of all files in all projects.
 You can use it to navigate to a particular file in your project and
@@ -51,7 +51,7 @@ editing simultaneously. The currently selected file is the active file.
 
 * [/manual/editor]
 
-# Outline view {: #outline}
+# Outline view
 
 The Outline view displays the contents of the active file, in terms of
 the HDL objects that it contains.
@@ -70,7 +70,7 @@ If you enable the **Link with Editor** icon
 element in the outline view, the corresponding code will be selected in
 the editor.
 
-# Hierarchy view {: #hierarchy}
+# Hierarchy view
 
 The Hierarchy view shows the design hierarchy starting at a selected top level object. To choose a top level, open a file and right-click on an `architecture` (or `entity` or `configuration` or `module`). Then click **Set as Top Level**. Alternatively you can click the **Set Top** button in the hierarchy view to open a hierarchy top level selection dialog. You can use the filter field to quickly search for a certain top level.
 
@@ -94,7 +94,7 @@ The Hierarchy View also offers an action **Select required files**, which select
 
 You can also export a CSV-file with all dependencies of the selected element via the context menu: **right click** and select **Export Dependencies to CSV file**.
 
-# Problems view {: #problems}
+# Problems view
 
 The Problems view shows problems (errors and warnings) related to your
 code. These problems were reported either by the internal compiler or by
@@ -106,7 +106,7 @@ The content of this view can be customized via the **View Menu**
 *scope* (workspace, project, selection), *type*, maximum number of
 problems, …
 
-# Libraries view {: #libraries}
+# Libraries view
 
 {{< figure src="/img/manual/libraries-view.png" >}}
 
@@ -114,7 +114,7 @@ The libraries view shows the library mapping of the design units in all
 projects. You can use it to navigate to a particular design unit in your
 project. When you double click on a file, the file opens in the Editor
 view. If you right-click a file, you see the *context menu* which offers
-extra commands for [libraries#libraries-mapping] and for setting the top level.
+extra commands for [setting libraries](/manual/libraries#modifying-the-library-configuration) and for setting the top level.
 
 If you enable the **Link with Editor** button
 ![](/img/icons/linkprojectexplorer.png), the Library view will
@@ -207,7 +207,7 @@ The dependencies View can also be **pinned**. This prevents the diagram from cha
 
 You can **export** this diagram for documentation by clicking the save icon.
 
-# Documentation View {: #documentation}
+# Documentation View
 
 The **Documentation view** gives you a live preview of the [automatic documentation][documentation] Sigasi Studio can generate for your project.
 

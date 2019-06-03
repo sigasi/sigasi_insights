@@ -49,27 +49,27 @@ You will see a list of templates starting with 'pr'. When you
 double-click or select it with the **Up** or **Down** arrow keys and
 press **Enter**, the template will be inserted in your code.
 
-![](images/template_1.png)
+![](/img/tech/template_1.png)
 
 Once the template is inserted, you can see boxes around the process
 label and the clock and reset signal. These boxes indicate template
 variables that can further be edited. You can easily jump between the
 boxes by pressing the **Tab** key.
 
-![](images/template_2.png)
+![](/img/tech/template_2.png)
 
 If you edit the first box, the process label, you will see that the end
 label (all occurrences of the same template variable are highlighted
 with a background color) is updated accordingly.
 
-![](images/template_3.png)
+![](/img/tech/template_3.png)
 
 In my sample `dut` entity the clock signal is called `clock` instead of
 `clk` and reset is called `reset` instead of `rst`. You can easily
 update the inserted code by pressing **Tab** and changing `clk` to
 `clock` and another **Tab** to change `rst` to `reset`.
 
-![](images/template_4.png)
+![](/img/tech/template_4.png)
 
 You can end the template editing session by pressing **Enter**. The
 cursor than automatically jumps to where the small *green vertical
@@ -82,6 +82,6 @@ available templates. To insert one in your code just start typing its
 **name** (not to be confused with its **description**). E.g. to insert
 an array type, start typing `type`, and not `arra`.
 
-![](images/templates_preferences_process.png)
+![](/img/tech/templates_preferences_process.png)
 
 In a next post, [/tech/using-custom-templates-sigasi-2], I explain how to modify these templates to your custom needs.

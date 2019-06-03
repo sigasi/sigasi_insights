@@ -69,7 +69,7 @@ You can easily verify that Everything is working with following procedure:
 <li> If you now press the “Autodetect” button, two devices should be visible: EP3C25 and EP4CE22 (this is the Altera Cyclone 4 FPGA). If you see those it means that everything is OK.
 </ul>
 
-![Altera Programmer BeMicroSDK](images/altera_programmer.png)
+![Altera Programmer BeMicroSDK](/img/tech/altera_programmer.png)
 
 # Run the tutorial
 

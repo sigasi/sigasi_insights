@@ -28,7 +28,7 @@ vlib work
 vcom -work work myfile.vhd
 ```
 
-![WORK is not a VHDL Library](images/work_not_library.png)
+![WORK is not a VHDL Library](/img/tech/work_not_library.png)
 
 That is as crazy as having a street address of <em>John Doe, Ourstreet, MyHomeTown</em>. How will your mail ever get there? And that is exactly the problem with using WORK as a library name. Other libraries cannot refer to you. If another library (say <code>alex</code>) they would refer to <code>work.yourpackage.all</code>, the VHDL analyser would read this as the <code>alex.yourpackage.all</code>.
 

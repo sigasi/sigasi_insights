@@ -84,7 +84,7 @@ project structure.
 *Don't forget to turn the autobuilder back on. **Project &gt; Build
 automatically***
 
-![Setting up GRLIB as a multi-project](images/multi-project.png)
+![Setting up GRLIB as a multi-project](/img/tech/multi-project.png)
 
 Pros and Cons
 -------------
@@ -115,7 +115,7 @@ where I set up the first few
 libraries](/screencasts/organizing-grlib-one-project-library.html) in the open
 source [GRLIB](http://www.gaisler.com/) collection.
 You can also download [a zip file with all the GRLIB libraries (and
-a few of its example designs)](resources/grlib-gpl-1.0.20-b3403-b.tgz).
+a few of its example designs)](/resources/tech/grlib-gpl-1.0.20-b3403-b.tgz).
 Use **File &gt; Import... &gt; General &gt; Existing Projects into
 Workspace**. Then **Select archive file**, **Select All** and click
 **Finish**. Importing and compiling everything will take a few minutes.

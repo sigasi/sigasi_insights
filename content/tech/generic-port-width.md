@@ -15,7 +15,7 @@ bannerad: true
 ## Customer question
 On a regular basis we receive questions from customers about *Incorrect array size* warnings or errors.
 
-![Incorrect array size warning](generic-port-width/warning_message.png "Incorrect array size warning")
+![Incorrect array size warning](/img/tech/generic-port-width/warning_message.png "Incorrect array size warning")
 
 Declarations for `data_out` and `result`:
 ```vhdl

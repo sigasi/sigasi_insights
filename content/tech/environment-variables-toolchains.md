@@ -18,4 +18,4 @@ Now, instead of browsing to the installation directory of your toolchain, fill o
 
 Here is an example for setting the path for Xilinx Vivado, using the environment variable `XILINX_VIVADO`.
 
-![Use environment variables to set up Toolchains](images/env_var.png)
+![Use environment variables to set up Toolchains](/img/tech/env_var.png)

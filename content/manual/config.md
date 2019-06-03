@@ -33,7 +33,7 @@ If you want to update the Common Libraries for an existing project, right-click 
 Since [Sigasi Studio 3.3][/releasenotes/sigasi-3.03], you will get a warning if your Common Libraries do not match the VHDL version of you VHDL file.
 You can use the proposed quick fix to resolve the issue.
 * If you want to compile VHDL 87 code, you should select the “1993” option. There are no checks to warn about constructs that were not supported in 1987, but that were introduced in 1993.
-* Sigasi Studio does not send the [Common Libraries][/manual/libraries#libraries-common] to an external compiler. It is expected that these libraries are pre-compiled.
+* Sigasi Studio does not send the [Common Libraries](/manual/libraries#common-libraries) to an external compiler. It is expected that these libraries are pre-compiled.
 
 
 # Colors and Fonts {: #configure-colors}

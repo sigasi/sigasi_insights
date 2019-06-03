@@ -66,7 +66,7 @@ After the extra files are generated, we want the rest of the build process to us
 * In the <b>Refresh</b> tab, select <b>Refresh resources upon completion</b> and <b>Specific resources</b>. Then press the <b>Specific Resources...</b> button and select all of the files that will be generated (or updated) by your script.
 * Press <b>OK</b> to close the <b>Edit Configuration</b> dialog, and re-order the builders so that your newly created builder is listed before the <b>Xtext Project Builder</b>. Use the <b>Up</b> and <b>Down</b> buttons for this.
 
-![Sort builders](images/sort_builders.png "Sort builders")
+![Sort builders](/img/tech/sort_builders.png "Sort builders")
 
 ## Try it out
 

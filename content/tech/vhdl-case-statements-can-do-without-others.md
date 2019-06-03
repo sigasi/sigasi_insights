@@ -37,9 +37,9 @@ case state is
 end case;
 ```
 
-In my mission to bust VHDL myths, I set up an experiment to demonstrate my case. I typed a [piece of code with](resources/fsm2.vhd) and [without](resources/fsm1.vhd) an `others` part in the VHDL case statement. The synthesis results are identical (as expected). To demonstrate even more clearly, I have created an output pin that would become `'1'` in the case of `others`. After synthesis, this output pin is clearly always `'0'`.
+In my mission to bust VHDL myths, I set up an experiment to demonstrate my case. I typed a [piece of code with](/resources/tech/fsm2.vhd) and [without](/resources/tech/fsm1.vhd) an `others` part in the VHDL case statement. The synthesis results are identical (as expected). To demonstrate even more clearly, I have created an output pin that would become `'1'` in the case of `others`. After synthesis, this output pin is clearly always `'0'`.
 
-![Netlist demonstrates that Others has no effect](images/fsm2.png)
+![Netlist demonstrates that Others has no effect](/img/tech/fsm2.png)
 
 *Conclusion:* if you have *not* covered all possible cases you need `others`. If you *have* covered all cases, leaving out `others` has no effect on the synthesis (or simulation) results. 
 

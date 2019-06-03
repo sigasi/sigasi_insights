@@ -224,7 +224,7 @@ This action is being executed on the saved file, not in the editor. So before us
 
 ## Opening project files
 
-The default way to open files in the VHDL and SystemVerilog editor, is to double click the files in the [Project Explorer][views#explorer]. But there are more methods to open files in your projects.
+The default way to open files in the VHDL and SystemVerilog editor, is to double click the files in the [Project Explorer](/manual/views#project-explorer-view). But there are more methods to open files in your projects.
 
 ### Open Resource
 
@@ -236,7 +236,7 @@ When you press **Ctrl+Shift+D** the **Open Design Unit** dialog opens. In this d
 
 {{< figure src="/img/manual/open-design-unit.png" alt="Open Design Unit Dialog" >}}
 
-Note that [**excluded** design files][libraries#libraries-mapping] do not appear in this list.
+Note that [**excluded** design files](/manual/libraries#modifying-the-library-configuration) do not appear in this list.
 
 # VHDL Specific
 

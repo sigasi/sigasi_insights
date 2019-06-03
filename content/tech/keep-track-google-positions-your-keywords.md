@@ -25,7 +25,7 @@ Of course, the number of trials and sales remain the most important metrics. But
 
 Change the number and hit enter to adjust the averaging period.)
 
-<script type="text/javascript"  src="resources/dygraph-combined.js"></script>
+<script type="text/javascript"  src="/resources/tech/dygraph-combined.js"></script>
 
 <table><tr> 
     <td valign="top"><div id="div-graph"></div></td>
@@ -106,7 +106,7 @@ This is what `cron.sh` does:
 * Next, the data file is converted (`generate.py`) in a html page (`data.html`) which contains the plot and the check-boxes to select the keywords to visualize. For your convenience the dygraph Javascript library is also bundled in the attached sources.
 
 ## Download
-You can [download our scripts here](resources/sigasi-rankcheck.tgz).
+You can [download our scripts here](/resources/tech/sigasi-rankcheck.tgz).
 You might also need to install <a href="http://www.python.org/">Python</a> and <a href="http://pycurl.sourceforge.net/">PycURL</a> (`yum install python-pycurl` on Fedora).
 
 Hendrik.

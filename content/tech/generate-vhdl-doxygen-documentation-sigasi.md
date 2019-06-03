@@ -33,9 +33,9 @@ have encountered so far.
 
 Sigasi/Eclipse offers an easy way to get started and work with Doxygen.
 As a small example I generated
-<a href="resources/doxygen-example/index.html" target="_blank">Doxygen documentation for the tutorial project</a> that is shipped with Sigasi.
+<a href="/resources/tech/doxygen-example/index.html" target="_blank">Doxygen documentation for the tutorial project</a> that is shipped with Sigasi.
 
-[![](images/doxygen_example.png)](resources/doxygen-example/index.html)
+[![](/img/tech/doxygen_example.png)](/resources/tech/doxygen-example/index.html)
 
 # Install Doxygen and the Doxygen Eclipse plugin
 
@@ -75,7 +75,7 @@ Once the plugin is installed, Sigasi has an extra @-button in the
 toolbar (If this button does not show up, click **Window &gt; Reset
 perspective...**).
 
-![](images/doxygen1.png)
+![](/img/tech/doxygen1.png)
 
 Click this button to generate a Doxygen configuration file. You can
 choose any filename you like, but the convention is to use `Doxyfile`.
@@ -83,13 +83,13 @@ If you use this name, Sigasi will open this file with a rich editor.
 Although this editor is mainly targeted to C developers, it is also
 useful for VHDL designers.
 
-![](images/doxygen2.png)
+![](/img/tech/doxygen2.png)
 
 The basic settings, such as the project name,... you can configure in
 the basic tab. But most VHDL settings are only available in the advanced
 tab.
 
-![](images/doxygen3.png)
+![](/img/tech/doxygen3.png)
 
 I made following changes to the default settings:
 
@@ -120,7 +120,7 @@ comments in front of the item that you want to document. The only
 exceptions are ports and generics. You can document these with a
 one-line description on the same line.
 
-You can [download the VHDL source of an example Sigasi here](resources/doxygen-sigasi.zip). For more details consult the [Doxygen manual](http://www.stack.nl/~dimitri/doxygen/manual.html).
+You can [download the VHDL source of an example Sigasi here](/resources/tech/doxygen-sigasi.zip). For more details consult the [Doxygen manual](http://www.stack.nl/~dimitri/doxygen/manual.html).
 
 # Useful links
 
@@ -128,4 +128,4 @@ You can [download the VHDL source of an example Sigasi here](resources/doxygen-s
 -   [Doxygen manual](http://www.doxygen.org/manual.html)
 -   [Eclox](https://anb0s.github.io/eclox/) : a simple doxygen frontend plug-in for eclipse
 -   Update site: <http://anb0s.github.io/eclox>
--   [VHDL sources for the example](resources/doxygen-sigasi.zip)
+-   [VHDL sources for the example](/resources/tech/doxygen-sigasi.zip)

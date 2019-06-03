@@ -17,10 +17,10 @@ bannerad: true
 I ran into an unexpected issue while I was implementing a new launch configuration shortcut for our <a href="http://www.sigasi.com/product">RCP application</a>. The <strong>Run as</strong> menu only appeared the first time the Project Explorer's context menu was shown. (The <strong>Run as</strong> menu item was shown together with the <strong>Debug as</strong> and <strong>Profile as</strong> menu item, even though I did not declare any debug or profile shortcuts.) After it was shown once, it disappeared, regardless whether the action was run or not. Since I spend considerable time debugging this issue, I took the time to blog my solution to this strange behavior.
 
 Run As menu item (first display):
-![Run As menu item (first display)](images/run_as_1.png)
+![Run As menu item (first display)](/img/tech/run_as_1.png)
 
 Run As menu item (second display):
-![Run As menu item (second display)](images/run_as_2.png)
+![Run As menu item (second display)](/img/tech/run_as_2.png)
 
 I initially thought I was misusing the <code lang="java">org.eclipse.debug.ui.launchShortcuts</code> extension point. But after re-reading the extension point description a few times, lots of trial and error experiments, I had to look further.
 

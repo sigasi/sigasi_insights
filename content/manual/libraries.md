@@ -18,10 +18,10 @@ configuration can be examined and modified using the GUI.
 We will also present some use case about how to set up libraries with
 Sigasi Studio to organize your projects.
 
-# Examining the library configuration {: #libraries-examine}
+# Examining the library configuration
 
-You can examine the library configuration in the [/manual/views#libraries]
-and in the [/manual/views#explorer] view. The Libraries view shows how
+You can examine the library configuration in the [Libraries View](/manual/views#libraries-view)
+and in the [Project Explorer](/manual/views#project-explorer-view) view. The Libraries view shows how
 *design units* are mapped. The Project Explorer view show how VHDL or
 SystemVerilog *files* are mapped.
 
@@ -54,7 +54,7 @@ the entire contents of the `STD` folder will be mapped into the library
 performed. If this needed, any individual file can be mapped to a
 separate library.
 
-# Modifying the library configuration {: #libraries-mapping}
+# Modifying the library configuration
 
 The library mapping for project files can be modified in the Libraries
 and Project Explorer view.
@@ -109,7 +109,7 @@ library configuration still exist. If a path no longer exists, is will be
 removed from the configuration file.
 Note that the library configuration file is **case-sensitive**, even on Windows.
 
-# Common Libraries {: #libraries-common}
+# Common Libraries
 
 Each VHDL project has a folder called `Common Libraries`.
 This is where reusable libraries go: either vendor libraries, third party IP
@@ -167,7 +167,7 @@ project dependencies, right click the project (the one that uses the
 shared library) and select **Properties**. Next click **Project
 References** and mark the library project as referenced project.
 
-# Using third party libraries {: #libraries-third-party}
+# Using third party libraries
 
 Many projects use third party libraries. These can be added to the
 project as any other set of VHDL files.
@@ -199,7 +199,7 @@ default. It *excludes* the entities and architectures *from compilation*.
 
 You can easily add selected entities (and architectures) to your project by
 right clicking the corresponding file (`filename = entity name.vhd`) in the
-[Project Explorer][/manual/views#explorer], and selecting
+[Project Explorer](/manual/views#project-explorer-view), and selecting
 **Set Library > xilinxcorelib**.
 
 # Library errors from external compilers

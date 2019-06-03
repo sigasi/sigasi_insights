@@ -11,7 +11,7 @@ The Sigasi documentation generator has following advantages:
 * **No special coding requirements**: the plain comments in your code are extracted for the documentation, no need for special annotations. Sigasi uses the same [code/comment association][#Comment Association] as the hover provider. So to document a `port`, you append a comment to a port declaration. To document an `architecture`, you put the comment just on top of the architecture.
 * **All included**. All documentation processing is done in Sigasi/Eclipse. So you do *not* need to install extra tools.
 * **Fully hyperlinked PDF**. If you export the documentation, you get a fully hyperlinked PDF.
-* **[Live preview][views#documentation]**: you can see what the documentation will look like while you type your code and comments.
+* **[Live preview](/manual/views/#documentation-view)**: you can see what the documentation will look like while you type your code and comments.
 
 # Export Documentation
 

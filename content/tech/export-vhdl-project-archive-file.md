@@ -16,11 +16,11 @@ If you want to mail a Sigasi VHDL project to a colleague (or to support), you ca
 
 Just right-click on your project in the project explorer and select <strong>Export...</strong>
 
-![](images/export_1.png)
+![](/img/tech/export_1.png)
 
 Next select <strong>Archive File</strong>
 
-![](images/export_2.png)
+![](/img/tech/export_2.png)
 
 In the third and last step, you can exclude some files from the archive. Make sure you include the vhdl source files and the <code>.project</code> and <code>.library_mapping.xml</code> files, since these contain the necessary project information. 
 
@@ -28,7 +28,7 @@ In this step you can also select some extra options (e.g. choose between tar and
 
 You also have to specify a name for the archive.
 
-![](images/export_3.png)
+![](/img/tech/export_3.png)
 
 That is it.
 

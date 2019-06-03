@@ -46,15 +46,15 @@ end entity;
 *Note that the `context` clause is VHDL-2008 syntax. So, make sure your project is configured accordingly: Right click project, **Properties > VHDL Version > VHDL-2008**.*
 
 When you enter this VHDL snippet in a VHDL file in a Sigasi Studio project, you will see a warning (*Library "vunit\_lib" is not available*) on the library clause and multiple errors because of references to missing declarations.
-![vunit...](/tech/vunit/before.png)
+![vunit...](/img/tech/vunit/before.png)
 
 To automatically add the VUnit library to your project, click the light bulb icon to trigger the Quick Fix (or press **Ctrl-F1** on the line with the warning).
 
-![vunit...](/tech/vunit/quickfix.png)
+![vunit...](/img/tech/vunit/quickfix.png)
 
 As a result the `vunit_lib` is added to your project (Note that this also adds the `osvvm` library). Under the hood, Sigasi Studio runs a Python script to query VUnit for the correct paths to the VUnit VHDL source files.
 
-![vunit...](/tech/vunit/after.png)
+![vunit...](/img/tech/vunit/after.png)
 
 This also resolves the unresolved references to `test_runner_setup` and `test_runner_cleanup`. You can now easily navigate to their declaration with **F3** ("Open Declaration"). You can also use autocomplete to quickly add other VUnit function calls.
 

@@ -22,7 +22,7 @@ Install the [Hunspell4Eclipse](http://code.google.com/p/hunspell4eclipse) plugin
 3. Select **Hunspell4Eclipse > Hunspell4Eclipse**
 4. Click **Next >** and **Finish**, and restart Sigasi
 
-![Install Hunspell4Eclipse](images/install_spelling.png)
+![Install Hunspell4Eclipse](/img/tech/install_spelling.png)
 
 ## Install Dictionary
 

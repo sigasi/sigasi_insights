@@ -146,5 +146,5 @@ StateMachines are configured in the same way as the above BlockDiagrams, except 
 The header is also slightly different, the syntax is as follows:  
 `statemachine architecture : state_variable`.
 
-For an example you can check out `4_state_machines.vhd` (in our VHDL Tutorial) with [this](../tech/using-graphics-configuration/4_state_machines.statemachine) filter file.
+For an example you can check out `4_state_machines.vhd` (in our VHDL Tutorial) with [this](/resources/tech/using-graphics-configuration/4_state_machines.statemachine) filter file.
 

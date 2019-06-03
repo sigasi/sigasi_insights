@@ -82,6 +82,6 @@ end architecture RTL;
 
 This (contrived) example synthesizes perfectly and efficiently (Altera Quartus 11.1) to the following RTL:
 
-![RTL generated when using physical types](images/rtl_physical_type.png)
+![RTL generated when using physical types](/img/tech/rtl_physical_type.png)
 
 I'm pretty sure that this synthesized RTL view would be identical if you use `integers` or `std_logic_vector` types. I didn't try that, so feel free to prove me wrong.

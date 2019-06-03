@@ -42,7 +42,7 @@ when your code is still unfinished or broken.
 
 [![Block Diagram Graphics Configuration for SystemVerilog](/releasenotes/4.0/sv_graphic_configuration.png "Block Diagram Graphics Configuration for SystemVerilog")](/releasenotes/4.0/sv_graphic_configuration.png)
 
-You can also customize and filter block diagrams by creating a [Graphics Configuration][/tech/using-graphics-configuration].
+You can also customize and filter block diagrams by creating a [Graphics Configuration](/tech/using-graphics-configuration).
 
 # SystemVerilog State Machines
 
@@ -54,17 +54,17 @@ You can open the State Machine View by right clicking in the editor and selectin
 
 You can **double-click nodes** or **transitions** to navigate to the corresponding SystemVerilog code.
 
-You can also customize and filter state machine diagrams by creating a [Graphics Configuration][/tech/using-graphics-configuration].
+You can also customize and filter state machine diagrams by creating a [Graphics Configuration](/tech/using-graphics-configuration).
 
 # SystemVerilog and Mixed Hierarchies in the Hierarchy View
 
-The hierarchy engine in Sigasi Studio was updated to handle SystemVerilog, VHDL and mixed language designs. The [/manual/views#hierarchy] automatically refreshes itself when you save your design files.
+The hierarchy engine in Sigasi Studio was updated to handle SystemVerilog, VHDL and mixed language designs. The [Hierarchy View](/manual/views#hierarchy-view) automatically refreshes itself when you save your design files.
 
 This is a convenient and powerful method to navigate through your design.
 
 [![SystemVerilog and Mixed Hierarchies in the Hierarchy View](/releasenotes/4.0/mixed_hierarchy.png "SystemVerilog and Mixed Hierarchies in the Hierarchy View")](/releasenotes/4.0/mixed_hierarchy.png)
 
-[Hierarchy View documentation][/manual/views#hierarchy]
+[Hierarchy View documentation](/manual/views#hierarchy-view)
 
 # More SystemVerilog improvements
 
@@ -75,7 +75,7 @@ Sigasi Studio 4.0 also contains a lot of improvements to enhance your SystemVeri
 [![Autocomplete for SystemVerilog preprocessor directives](/releasenotes/4.0/autocomplete_verilog_directives.png "Autocomplete for SystemVerilog preprocessor directives")](/releasenotes/4.0/autocomplete_verilog_directives.png)
 - Report **errors** for incorrect SystemVerilog **preprocessor directives**  
 [![Report errors in SystemVerilog preprocessor directives](/releasenotes/4.0/directive_errors.png "Report errors in SystemVerilog preprocessor directives")](/releasenotes/4.0/directive_errors.png)
-- Improved and polished the SystemVerilog **[/manual/views#outline]**
+- Improved and polished the SystemVerilog **[Outline View](/manual/views#outline-view)**
 - Extra autocomplete **templates** for **SystemVerilog assertions**  
 [![Autocomplete templates for SystemVerilog assertions](/releasenotes/4.0/assertion_templates.png "Autocomplete templates for SystemVerilog assertions")](/releasenotes/4.0/assertion_templates.png)
 - A new **wizard** to easily **import existing SystemVerilog projects** (that were created before you were using Sigasi Studio)  

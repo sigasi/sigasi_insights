@@ -52,4 +52,4 @@ with Emacs VHDL mode and etags.
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
 
 Should there be anything technically incorrect in this post, please feel
-free to [send-email].
+free to {{< send-email >}}.

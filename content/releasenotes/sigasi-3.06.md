@@ -23,8 +23,8 @@ The animation below shows different **State Machine** Graphics Configurations ap
 
 ![Configuring State Machines](/releasenotes/3.6/statemachineslider/state_machine.gif)
 
-Please find more details and tips on getting started in "[/tech/using-graphics-configuration]".  
-The syntax of the Graphics Configuration files is explained in "[/tech/graphics.ebnf]".
+Please find more details and tips on getting started [here](/tech/using-graphics-configuration).  
+The syntax of the Graphics Configuration files is explained [here](/tech/graphics.ebnf).
 
 # Improved Dependencies Viewer
 

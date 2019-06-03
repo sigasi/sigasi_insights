@@ -14,7 +14,7 @@ bannerad: true
 
 Ideally, if you make three mistakes in VHDL, you want to see three error markers. Here is a small example.
 
-![Sigasi shows three error markers for these three errors](images/recovering-vhdl-parser-3errors.png)
+![Sigasi shows three error markers for these three errors](/img/tech/recovering-vhdl-parser-3errors.png)
 
 A traditional VHDL compiler gives only one error message. You will have to fix this error and start the compiler again before you can find the next error. This takes extra time and you need all of your time you to work on complex design problems that you are dealing with.
 ```

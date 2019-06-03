@@ -34,7 +34,7 @@ For example, to add **UVM** support to your project, you now only have to:
 2. Add the UVM source folder to your project's include path
 
 Next, Sigasi Studio figures out all relations automatically, allowing you to easily follow declarations, use autocomplete and preview preprocessor macro expansions.
-For more information, you should read the updated [UVM example post][/tech/systemverilog-uvm-demo].
+For more information, you should read the updated [UVM example post](/tech/systemverilog-uvm-demo).
 
 ![UVM ubus project](3.7/uvm_ubus.png)
 

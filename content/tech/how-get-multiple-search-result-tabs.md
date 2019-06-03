@@ -15,7 +15,7 @@ Sigasi HDT (and Eclipse) allow to perform <strong>multiple, simultaneous searche
 
 If you do not want the search view to change and start a new search in a new Search view, you should <em>pin</em> the Search view. You can toggle the <em>pinned</em> state of the Search view in with the <emp>pin</em> button on the right side of the Search view's toolbar.
 
-![Pinned Search View](images/pin_search_view_a.png)
+![Pinned Search View](/img/tech/pin_search_view_a.png)
 
 When you <em>pin</em> the search view, the pinned search view will remain unchanged and subsequent searches will be shown in a second Search view.
 

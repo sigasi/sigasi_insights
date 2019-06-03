@@ -22,7 +22,7 @@ To install the Tcl plugin in Sigasi:
 4. Select the **Dynamic Languages Toolkit – Tcl Development Tools**
 5. Click through the straightforward, subsequent steps
 
-![](images/install_tcl0.png)
+![](/img/tech/install_tcl0.png)
 
 ## Configure
 
@@ -30,17 +30,17 @@ After the Tcl plugin is installed you need to configure at least one Tcl interpr
 
 Select **Window > Preferences > Tcl > Interpreters**. You can add an interpreter manually with the **Add** button or you can try automatic detection with the **Search** button.
 
-![](images/install_tcl_pref.png)
+![](/img/tech/install_tcl_pref.png)
 
 ## Explore
 
 To verify that the interpreter is working, you can open an interactive Tcl console by clicking the **Open console** icon in the toolbar and next selecting the interpreter you want to use.
 
-![](images/install_tcl_console.png)
+![](/img/tech/install_tcl_console.png)
 
 The next thing you should try is opening a Tcl file and play around. You can test *autocomplete, outline, open declaration,…*
 
-![](images/install_tcl_demo.png)
+![](/img/tech/install_tcl_demo.png)
 
 To enable all Tcl support features (e.g. run, debug) you need to create a *Tcl project* (**File > New > Project… > Tcl Project**).
 To convert an existing project to a Tcl project you need to edit the `.project` file.

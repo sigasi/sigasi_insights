@@ -45,7 +45,7 @@ and how to [/manual/tools#Configure external compiler].
 
 If an external compiler is enabled, you can also start a simulation from
 Sigasi Studio. You can start a simulation by first selecting your *top level*
-in the [/manual/views#hierarchy] view. Next click the
+in the [Hierarchy View](/manual/views#hierarchy-view). Next click the
 **Simulate** button ![](/img/icons/run_exc.gif) in the hierarchy
 view to launch the simulator gui with an elaborated design ready for
 simulation. Sigasi Studio opens a new console for each simulation launch. You
@@ -363,7 +363,7 @@ Right click on the project you want to auto-export in the Project Explorer, and 
 
 {{< figure src="/img/manual/auto_export_property_page.png" alt="Auto export CSV file with dependencies" >}}
 
-If you do not set a fixed top level name (i.e. empty *top level name* in the property page), Sigasi Studio will use the current top level in the [Hierarchy View][views#hierarchy] as input.
+If you do not set a fixed top level name (i.e. empty *top level name* in the property page), Sigasi Studio will use the current top level in the [Hierarchy View](/manual/views#hierarchy-view) as input.
 Note that this only works if the top level belongs to the selected project.
 
 This information is stored in `.settings/com.sigasi.hdt.vhdl.ui.prefs` in your project.

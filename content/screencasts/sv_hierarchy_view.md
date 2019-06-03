@@ -11,4 +11,4 @@ tags:
 ---
 
 
-The Hierarchy View is documented [here][/manual/views#hierarchy].
+The Hierarchy View is documented [here](/manual/views#hierarchy-view).

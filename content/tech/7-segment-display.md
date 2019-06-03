@@ -15,8 +15,8 @@ A few weeks ago, a <a href="http://hes.elis.ugent.be/pbertels">friend of mine</a
 
 Of course, he wanted his students to simulate before they synthesize. I thought it would be nice to have a module that can emulate a this a seven-segment display as ASCII-art.
 
-![7-segment display shows "F62"](images/f62.png)
+![7-segment display shows "F62"](/img/tech/f62.png)
 
 I created this module in about an hour and after some more minor modifications, I decided to publish it for everybody to use.
 
-You can <a href="resources/display_sigasi.tgz">download the VHDL source code</a> for this project and use it under the conditions of the <a href="http://www.opensource.org/licenses/bsd-license.php">BSD License</a>. ([contact-us] if you need a different license.)
+You can <a href="/resources/tech/display_sigasi.tgz">download the VHDL source code</a> for this project and use it under the conditions of the <a href="http://www.opensource.org/licenses/bsd-license.php">BSD License</a>. ([contact-us] if you need a different license.)

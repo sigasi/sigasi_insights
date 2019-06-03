@@ -310,7 +310,7 @@ Depending on your exact coding rule, the Sigasi Linter can flag violations eithe
 
 ## How can I organize my errors and warnings (problem markers) in the problems view?
 
-Click the little triangle to the upper right-hand side of the problems view and look at the Group By and Sort By menu.
+Click the little triangle to the upper right-hand side of the [Problems View](/manual/views#problems-view) and look at the Group By and Sort By menu.
 
 You can also filter which problem markers you will see in the Show menu; for example only errors and warnings for the current project.
 {{< figure src="/img/faq/organize_problem_markers.png" alt="Problems View" >}}
@@ -361,7 +361,7 @@ Although the procedure is not very elegant, there is a way to apply multiple Qui
 
 Procedure:
 
-1. Select all problems you want to fix in the problems view
+1. Select all problems you want to fix in the [Problems View](/manual/views#problems-view)
 1. In the context menu, select **Quick Fix**
 1. Make sure you are dealing with identical solutions to the same problem.
    For example: five "declare signal" Quick Fixes
@@ -487,7 +487,7 @@ There can be a number of reasons why Sigasi connects to the internet.
 ## I have error markers in files that are not even mapped to a library?
 
 Sometimes, unmapped files have error markers. This can happen if a compilation did not complete normally.
-You can select these errors from the [/manual/views#problems] View and remove them by pressing **delete**. If you rebuild the project, no new error markers will be generated for the VHDL files that are not mapped to a library.
+You can select these errors from the [Problems View](/manual/views#problems-view) and remove them by pressing **delete**. If you rebuild the project, no new error markers will be generated for the VHDL files that are not mapped to a library.
 
 ## Can I revert to an older version of Sigasi?
 
@@ -530,7 +530,7 @@ version=1
 
 ## How can I undo "Exclude from build"?
 
-If you accidentally [excluded a file from the VHDL or Verilog build][/manual/libraries#libraries-mapping], you can easily undo this by right-clicking the file again and selecting **Set Library**. Next, select the library in which this file needs to compiled.
+If you accidentally [excluded a file from the VHDL or Verilog build](/manual/libraries#modifying-the-library-configuration), you can easily undo this by right-clicking the file again and selecting **Set Library**. Next, select the library in which this file needs to compiled.
 
 If you use a version control system, you can also revert the `.library_mapping.xml` file. Sigasi Studio will automatically pick up changes to this file and update the library information. Note that you can also the *Local history* feature for this (**Team > Show Local History**).
 

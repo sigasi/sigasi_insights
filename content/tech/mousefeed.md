@@ -16,7 +16,7 @@ The users of our standalone VHDL development environment have certainly noticed 
 
 How can you enable this feature if you are using a standard Eclipse distribution? You just have to install the MouseFeed plugin.
 
-![MouseFeed popup for Open Declaration](images/mousefeed.png)
+![MouseFeed popup for Open Declaration](/img/tech/mousefeed.png)
 
 ## Installation
 

@@ -73,7 +73,7 @@ Next, we will **add the directory** with vendor VHDL code.
     uncheck **Create link locations relative to:**.
 4.  confirm with **OK**.
 
-![Drag and drop library folder](images/drag_and_drop.png)
+![Drag and drop library folder](/img/tech/drag_and_drop.png)
 
 Finally, we have to **map** the vendor directory **to the correct
 library name**. Right-click the altera\_mf directory in your Sigasi

@@ -37,7 +37,7 @@ Google also ran into this problem and solved it by developing the Workspace Mech
 
 The mechanic plugin will compare your workspace configuration with the team configuration at regular intervals. If the team configuration has changed, the Workspace Mechanic plugin offers to update the local settings. The developer can choose which updates to apply, or skip, or entirely ignore.
 
-![Workspace Mechanic popup](./images/popup-workspace-mechanic.jpg)
+![Workspace Mechanic popup](/img/tech/popup-workspace-mechanic.jpg)
 
 As a small example following mechanic task will configure Sigasi to use VHDL 2008: 
 
@@ -46,7 +46,7 @@ As a small example following mechanic task will configure Sigasi to use VHDL 200
 	# @task_type RECONCILE
 	/instance/com.sigasi.hdt.vhdl.Vhdl/vhdlVersion=V08
 
-![Workspace Mechanic Update](./images/mechanic_vhdl2008.png)
+![Workspace Mechanic Update](/img/tech/mechanic_vhdl2008.png)
 
 You can install the plugin from update site http://alfsch.github.io/eclipse-updates/workspacemechanic
 

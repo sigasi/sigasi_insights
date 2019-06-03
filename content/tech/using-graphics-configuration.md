@@ -29,14 +29,14 @@ The Graphics Configuration Language is a plain text file containing declarations
 You can see it in action in the images below:
 
 This BlockDiagram  
-![Original BlockDiagram](using-graphics-configuration/BdOriginal.svg)  
+![Original BlockDiagram](/img/tech/using-graphics-configuration/BdOriginal.svg)  
 Turns into:  
-![Filtered BlockDiagram](using-graphics-configuration/BdFiltered.svg)  
+![Filtered BlockDiagram](/img/tech/using-graphics-configuration/BdFiltered.svg)  
 
 This StateMachine  
-![Original StateMachine](using-graphics-configuration/FsmOriginal.svg)  
+![Original StateMachine](/img/tech/using-graphics-configuration/FsmOriginal.svg)  
 Turns into:  
-![Filtered StateMachine](using-graphics-configuration/FsmFiltered.svg)  
+![Filtered StateMachine](/img/tech/using-graphics-configuration/FsmFiltered.svg)  
 
 A plain text format was chosen over a buttons and menus for several reasons:
 
@@ -81,7 +81,7 @@ Graphics Configuration Editor features:
 ### BlockDiagram
 
 To demonstrate the power of the new language we will make use of an existing open-source project, [VME64x core](https://www.ohwr.org/projects/vme64x-core).
-You can clone the [repository](git://ohwr.org/hdl-core-lib/vme64x-core.git) and download the Graphics Configuration file [here](using-graphics-configuration/VME64xCore_Top.blockdiagram).
+You can clone the [repository](git://ohwr.org/hdl-core-lib/vme64x-core.git) and download the Graphics Configuration file [here](/resources/tech/using-graphics-configuration/VME64xCore_Top.blockdiagram).
 
 The diagram we are going to filter down is the one associated with the architecture `RTL` that implements the entity `VME64xCore_Top`.
 We express this on the first line using `diagram work.VME64xCore_Top.RTL`.
@@ -122,7 +122,7 @@ You do this by adding `show : instantiations` between the header and the group d
 
 StateMachines are just like the BlockDiagrams above, except the only `Type` that can be used is `state`.
 The header is also slightly different, the syntax is as follows: `statemachine architecture : state_variable`.
-For an example you can check out `4_state_machines.vhd` (in our VHDL Tutorial) with [this](using-graphics-configuration/4_state_machines.statemachine) filter file.
+For an example you can check out `4_state_machines.vhd` (in our VHDL Tutorial) with [this](/resources/tech/using-graphics-configuration/4_state_machines.statemachine) filter file.
 
 ## Things to remember
 

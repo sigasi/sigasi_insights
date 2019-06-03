@@ -19,19 +19,19 @@ First a small disclaimer: we've read the VHDL Language Reference Manual more tho
 
 That said: a first example shows a file with an entity and its architecture. The VHDL datatype `std_logic` is declared in `ieee.std_logic_1164`, and so a *use clause* at the top of the file makes the datatype visible for later reuse. Above the *use clause*, we need a *library* clause so that the compile would know that the word `ieee` is a library name. It would be reasonable, but incorrect, to assume that the *scope* (the range of places where its effects can be seen) of the use clause is the entire file.
 
-![Scope of use clause is not the entire file](images/f1.png)
+![Scope of use clause is not the entire file](/img/tech/f1.png)
 
 ## First counterexample: the use clause spans multiple files?
 
 As a first counterexample, we show another oft-used construct: an entity and its architecture in two separate files. Here, it seems that the architecture seems to "inherit" the use clauses from its entity! In fact, the VHDL standard says that a "secondary unit" gets the same context as the corresponding "primary unit". So: architectures inherit the use clauses and library clauses from their entities, and a *package body* inherits from its *package* declaration.
 
-![Entity and architecture in two files](images/f2.png)
+![Entity and architecture in two files](/img/tech/f2.png)
 
 ## Second counterexample: the use clause does not span the entire file?
 
 The second counterexamples confirms that an architecture inherits use clauses from their architectures. The architectures that correspond to the entity at the top of the file inherit the context. The final design unit (entity `f3_`) does not know about the use clauses, and so you see an error here.
 
-![Architecture inherits context from Entity](images/f3.png)
+![Architecture inherits context from Entity](/img/tech/f3.png)
 
 ## Special exception
 
@@ -41,7 +41,7 @@ This may seem confusing, and it is.
 
 The historical reason for such strange behavior is that the VHDL and ADA languages were designed for ancient "one-pass" compilers. These compilers processed a file in a single pass, without looking forward and without going back. When the compiler processes a context clause, it does not yet know to which architecture this context clause will belong to. So it does not yet know which entity's context it should load. 
 
-![Inherited use clause is not visible in context clause](images/f4.png)
+![Inherited use clause is not visible in context clause](/img/tech/f4.png)
 
 ## Conclusion
 

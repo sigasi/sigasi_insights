@@ -24,6 +24,6 @@ rm ./bin/Linux64/libz.so.1
 
 This makes ALINT-PRO use your system's default `zlib` library. After this change, ALINT-PRO starts fine. And I have not run into any other issues.
 
-![ALINT-PRO splash screen](images/splash_alint_pro.png)
+![ALINT-PRO splash screen](/img/tech/splash_alint_pro.png)
 
 Hendrik

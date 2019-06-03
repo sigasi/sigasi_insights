@@ -16,7 +16,7 @@ bannerad: true
 Ideally, if you make one mistake in VHDL, you want your compiler to show one error marker. Here is a small example.
 
 For this single mistake, Sigasi flags one error marker:
-![For this single mistake, Sigasi flags one error marker](images/recovering-vhdl-parser.png)
+![For this single mistake, Sigasi flags one error marker](/img/tech/recovering-vhdl-parser.png)
 
 
 A traditional VHDL compiler gives eight (!) errors. You have to read through 14 lines of compiler output and put up with seven irrelevant error messages. This consumes mental energy, and you need all of you mental energy to tackle the complex design problems that you are dealing with.

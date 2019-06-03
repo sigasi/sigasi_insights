@@ -25,7 +25,7 @@ Once OneSpin is selected as external compiler, Sigasi Studio will automatically 
 
 You can also run the OneSpin **Consistency Checks** on your design:
 
-1. Set the toplevel in the [views/#hierarchy] (**Set Top**)
+1. Set the toplevel in the [Hierarchy View](/manual/views#hierarchy-view) (**Set Top**)
 2. Run OneSpin by clicking the **OneSpin** icon in the Hierarchy View
 
 {{< figure src="/img/manual/onespin_run.png" alt="Run OneSpin consistency checks" >}}

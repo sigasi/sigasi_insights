@@ -17,6 +17,6 @@ There are multiple, similar 'actions' in Sigasi:
 3. Sigasi also offers multiple ways to search for text. The one you need is **"Find Text in File"**. You can associate a shortcut for it via **Preferences > General > Keys**.
    **Note** that **F3** is by default associated with **"Open Declaration"**, which is the most used action in Sigasi. So I really recommend to also find a good shortcut for this action.
 
-![](images/find-text-in-file.png)
+![](/img/tech/find-text-in-file.png)
 
 In conclusion: I'd recommend to get used to the first or second option. But if you can't get rid of your current finger memory, you can use option 3.

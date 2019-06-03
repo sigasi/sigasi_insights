@@ -10,12 +10,12 @@ comments: true
 bannerad: true
 ---
 
-<img style="float: right;" src="images/jaco_sigasi_pic.img_assist_custom-150x145.png" alt="Jaco Naude">
+<img style="float: right;" src="/img/tech/jaco_sigasi_pic.img_assist_custom-150x145.png" alt="Jaco Naude">
 <em>Jaco Naude is a firmware and hardware design engineer and has been working for the Experimental Radar Systems group at the CSIR in South Africa for the last 4 years. Before that, he has done technical support at Xilinx on their DSP cores and System Generator for 2 years. Jaco has done a lot of research into ways to make firmware design management, sharing and packaging easier. The result of this effort is a tool called [Scineric Workspace](http://scineric.csir.co.za). Lastly, Jaco is a fan of the Qt C++ framework and the author of an open source Qt library called [Qtilities](http://www.qtilities.org).</em>
 
 The Scineric Workspace logo represents the outline of a hippo, a common animal in South Africa where the product is developed. To understand why a hippo is used, a picture of a hippo underneath water is required first. In the Afrikaans language there is a saying *"die oortjies van die seekoei"* (the ears of the hippo) which is roughly the same as the English expression *"the tip of the iceberg"*. This is because there is big hippo behind those two little ears that you see. This expression is perfect to describe Scineric, mainly because it solves many problems and depending on your background, the things you find useful will differ from someone with a different background. 
 
-![Hippo's ears above the water](images/hippo.img_assist_custom-300x375.jpg)
+![Hippo's ears above the water](/img/tech/hippo.img_assist_custom-300x375.jpg)
 
 Scineric is a product that is difficult to describe in one or two sentences. But if it needs to be done, one possible way to summarize it is:
 

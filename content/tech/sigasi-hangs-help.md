@@ -25,4 +25,4 @@ Sometimes, bugs could cause an application (including Sigasi) to hang, block, fr
 2. In the Applications view: connect to Sigasi by **double clicking** the `org.eclipse.equinox.launcher.Main` item
 3. Open the **Threads** tab
 4. Click the **Thread Dump** button
-5. [send-email] with the output
+5. {{< send-email >}} with the output

@@ -23,11 +23,11 @@ Depending on the object that the identifier represents, the hover pop-up can sho
 
 Hover to see the value of constants, even if that constant is declared as an expression of other constants.
 
-![Hover to calculate constant values](images/hover_calculates_constant_values.png)
+![Hover to calculate constant values](/img/tech/hover_calculates_constant_values.png)
 
 Hover to see the decimal value of binary or hexadecimal values.
 
-![Hover to calculate the decimal value of hexadecimals](images/hover_calculates_hex_value.png)
+![Hover to calculate the decimal value of hexadecimals](/img/tech/hover_calculates_hex_value.png)
 
 If the declaration has comments attached to it, the hover pop-up shows those comments. A comment is considered to belong to a declaration if it is on the preceding line, or if it follows on the same line of the declaration.
 
@@ -35,4 +35,4 @@ If the declaration has comments attached to it, the hover pop-up shows those com
 constant PERIOD : time := 50 ns; -- Half the clock period. The frequency will be 1/(2*PERIOD) = 100 MHz
 ```
 
-![Hover shows comments attached to the declaration](images/hover_shows_comments.png)
+![Hover shows comments attached to the declaration](/img/tech/hover_shows_comments.png)

@@ -15,7 +15,7 @@ bannerad: true
 
 About a month ago, Hendrik invited the Sven Efftinge, the project lead of [Xtext](http://www.eclipse.org/Xtext) to talk at a meeting of the <a href="http://www.peopleware.be/index.php/nieuws/84-belgian-eclipse-user-group-augustus-2010" class="elf-external elf-icon">Belgian Eclipse User Group</a>. While I was in Milan for the FPL conference, Sven inspired the Belgians Eclipse scene.
 
-![](images/xtext.png){: style="float:right"}
+{{< figure src="/img/tech/xtext.png" class="uk-align-right" >}}
 
 We had noticed Xtext two years ago at the <a href="http://www.eclipsecon.org/summiteurope2008/" class="elf-external elf-icon">Eclipse Summit Europe</a>. At that time, it looked like a project with high potential, but it also looked like it was not industry-ready yet. So we waited to see if Xtext would grow rather than base our VHDL plugin on it. Sven's talk showed that indeed, Xtext had grown.
 
@@ -49,5 +49,5 @@ A VHDL editor that would only have the features that Xtext offers, would be far 
 
 Considering all of the above, we have decided to invest some time in evaluating Xtext. We have committed one person-month to building a prototype VHDL/Xtext editor. This prototype should consist basically of a trimmed down VHDL grammar on top of Xtext. This way, we can evaluate performance and we will know where the VHDL language definition is hard to implement in Xtext. After all, the proof of the pudding is in the eating.
 
-If this post sounds critical of Xtext, it is because I am telling myself not to leap to Xtext without proper consideration. But like the rest of our team, I am excited about the potentials. Today we are evaluating if Xtext is usable for the VHDL language. If the answer is yes, we will start making plans for migrating our VHDL editor to Xtext.</p>  </div>
+If this post sounds critical of Xtext, it is because I am telling myself not to leap to Xtext without proper consideration. But like the rest of our team, I am excited about the potentials. Today we are evaluating if Xtext is usable for the VHDL language. If the answer is yes, we will start making plans for migrating our VHDL editor to Xtext.
 

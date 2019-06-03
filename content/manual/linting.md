@@ -351,7 +351,7 @@ Sigasi Studio checks the vector size in assignments (Since [/releasenotes/sigasi
 
 {{< figure src="/img/manual/linting_vector_width.png" >}}
 
-Sigasi Studio will not take into account the value assigned to a generic in instantiations. The reasoning begind this is explained in [/tech/generic-port-width].
+Sigasi Studio will not take into account the value assigned to a generic in instantiations. The reasoning behind this is explained [here](/tech/generic-port-width).
 
 ## Order of associations
 

@@ -31,7 +31,7 @@ In order to avoid such mishaps in the future we need to improve the visibility o
 
 So I present to you [a few classes](https://github.com/mark-christiaens/EMF-Statistics-View) I've slapped together to help you keep an eye on things.  A picture says more than a thousand words:
 
-![](images/emf_stats.png)
+![](/img/tech/emf_stats.png)
 
 [These classes, available at GitHub,](https://github.com/mark-christiaens/EMF-Statistics-View) implement a little "EMF Stats" view that shows statistics for the active (Xtext) editor.  The view shows three things:
 

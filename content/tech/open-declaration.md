@@ -23,11 +23,11 @@ The first way to jump to a declaration is to place your cursor over the identifi
 
 You can jump to a declaration by holding the *Ctrl* key and clicking on the identifier. When you hold the *Ctrl* key and you place your mouse over an identifier, the identifier is colored in blue and underlined.
 
-![Ctrl + click to open declaration](images/ctrl-click.png)
+![Ctrl + click to open declaration](/img/tech/ctrl-click.png)
 
 Sometimes, there is more than one target, for instance in a component instantiation you can jump to the component declaration or to the corresponding entity. In this case, the different options are shown when you press **Ctrl** and place your mouse over the identifier.
 
-![Ctrl + click if there are multiple targets to jump to](images/ctrl-click-multipletargets.png)
+![Ctrl + click if there are multiple targets to jump to](/img/tech/ctrl-click-multipletargets.png)
 
 ## Context menu
 

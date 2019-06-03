@@ -25,7 +25,7 @@ have line numbers enabled, the line number will be colored). If you
 hover your mouse over the colored part, you see what that line looks
 like on the copy on your hard drive.
 
-![](images/quick_diff.png)
+![](/img/tech/quick_diff.png)
 
 Instead of comparing your VHDL code to the version saved on disk, you
 can also compare to the your version control system (I like that
@@ -45,4 +45,4 @@ The local history is especially useful if you have made a lot of edits,
 but have not committed intermediate version to your version control
 system.
 
-![](images/compare.png)
+![](/img/tech/compare.png)

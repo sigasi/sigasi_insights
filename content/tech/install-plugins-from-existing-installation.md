@@ -18,8 +18,8 @@ When you download a fresh install of Sigasi, you need to re-install these extra 
 
 1. Click **Project > Import…**
 2. Select **Install > From Existing Installation**
-   ![Install from Existing Installation](images/install_start.png)
+   ![Install from Existing Installation](/img/tech/install_start.png)
 3. Browse to your previous installation
 4. Select the plugins you want to install
-   ![Select the plugins you want to install](images/install_selection.png)
+   ![Select the plugins you want to install](/img/tech/install_selection.png)
 5. Review, Finish and Restart
