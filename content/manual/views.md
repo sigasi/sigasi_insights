@@ -121,7 +121,7 @@ If you enable the **Link with Editor** button
 be linked to the Editor view. Now, active file in the editor view will
 always be selected in the Library view.
 
-# Tasks View {: #tasks}
+# Tasks View
 
 {{< figure src="/img/manual/tasks-view.png" >}}
 
@@ -134,7 +134,7 @@ nice overview of all task markers in your workspace in the **Task View**
 You can configure extra tags in the Task Tag preference page:
 **Preferences \> Sigasi \> VHDL \> Task Tags**
 
-# Block Diagram View {: #block}
+# Block Diagram View
 
 {{< xprt_only >}}
 
@@ -160,7 +160,7 @@ You can export the block diagram view to an image with the save
 
 You can also export **all** *block diagrams of an entire project* at once: Click **Project > Export... > Sigasi > Block Diagrams export** and select your project. All SVGs will be created in **diagrams/blockdiagrams/** in your project.
 
-# State Machine View {: #fsm}
+# State Machine View
 
 {{< xprt_only >}}
 
@@ -183,7 +183,7 @@ You can also export **all** *state machines of an entire project* at once: Click
 
 You can watch a screencast at [/screencasts/state_machine_viewer]
 
-# Dependencies View {: #dependencies}
+# Dependencies View
 
 {{< xl_only >}}
 
@@ -214,7 +214,7 @@ The **Documentation view** gives you a live preview of the [automatic documentat
 {{< figure src="/img/manual/documentationview.png" >}}
 
 
-# Net Search View {: #netsearch}
+# Net Search View
 
 {{< xl_only >}},{{< vhdl_only >}}
 

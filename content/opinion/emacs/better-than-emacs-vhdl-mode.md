@@ -23,6 +23,6 @@ As a special, non technical criterium:
 * Sigasi is **commercially supported**. If you have a question, we can give you an answer. If you want additional services or features, you can contract us.
 * Sigasi is built on the industry-standard **Eclipse** platform. You can combine Sigasi with numerous high-quality plug-ins for version control, issue tracking, code review and much more.
 
-People migrating from Emacs to Sigasi can use the [Emacs emulator mode](/faq.html#Emacs), which offers the same key bindings as Emacs (for example: `C-x C-c` to save).
+People migrating from Emacs to Sigasi can use the [Emacs emulator mode](/faq#do-you-have-an-emacs-emulation-mode-so-that-i-can-use-the-emacs-key-bindings), which offers the same key bindings as Emacs (for example: `C-x C-c` to save).
 
 ## Blog posts

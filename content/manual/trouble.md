@@ -4,11 +4,11 @@ weight: 15
 pager: true
 ---
 
-# The user interface is unresponsive {: #ts-unresponsive}
+# The user interface is unresponsive
 
 If the user interface of Sigasi Studio is unresponsive, you can interrupt the internal compilation process by pressing the **stop** button in the progress view. To activate the progress view, select **Window > Show View > Other... > General > Progress**, or click the tiny conveyor belt icon ![](/img/icons/progressicon.png), on the right side of the status bar.
 
-# The editor displays old contents of a file {: #ts-refresh-editor}
+# The editor displays old contents of a file
 
 If you edit a file outside of Sigasi Studio with an external editor, Sigasi Studio will normally notice the changes and ask if you want to load the changes. If
 it doesn’t, you can refresh the editor’s content by pressing **F5** or by right-clicking a file or a project in the project explorer and
@@ -27,11 +27,11 @@ For more information on local history, check out [this page](http://help.eclipse
 If you see a large number of errors, you either have very, very buggy code (not so likely) or your project is not configured correctly.
 
 1. Check that all files are mapped to the correct library.
-2. Check that all *stale* files are ignored. (see the section on [trouble#ts-stale-files])
+2. Check that all *stale* files are ignored. (see the section on [unneeded files](#sigasi-studio-analyzes-hdl-files-that-i-do-not-need))
 3. Check that all third party libraries are included.
 4. Make sure that automatic build is enabled.
 
-# Auto Build is not Enabled {: #ts-autobuild}
+# Auto Build is not Enabled
 
 Symptoms:
 
@@ -43,7 +43,7 @@ Cause: Project is not built automatically
 
 Resolution: Enable automatic project builds: **Project > Build Automatically**
 
-# Project does not have VHDL support {: #ts-vhdl-support}
+# Project does not have VHDL support
 
 Symptoms:
 
@@ -56,7 +56,7 @@ Cause: The project does not have VHDL support enabled
 
 Resolution: Enable VHDL support: **right-click the project > Configure > Add VHDL support**
 
-<!--# Project does not have a Library Mapping Information {: #ts-missing-library-mapping-information}-->
+# Project does not have a Library Mapping Information
 
 Symptoms:
 
@@ -69,7 +69,7 @@ Cause: The project does not have a (valid) VHDL library mapping information file
 
 Resolution: Reset the library mapping: **right-click the project > Library Mapping > Reset Library Mapping**
 
-# Project does not have Common Libraries {: #ts-commonlib}
+# Project does not have Common Libraries
 
 Symptoms:
 
@@ -82,7 +82,7 @@ Cause: Common libraries are not configured correctly.
 
 Resolution: Reset the common libraries: **right-click the project > Library Mapping > Reset Library Mapping**
 
-# Sigasi Studio analyzes HDL files that I do not need {: #ts-stale-files}
+# Sigasi Studio analyzes HDL files that I do not need
 
 By default, Sigasi Studio assumes that all VHDL or Verilog files are part of the project. However, some projects may contain multiple files with older or alternative definitions of a VHDL object. We call these *stale* files, because they are no longer used. In such a case you will want Sigasi Studio to ignore certain files.
 
@@ -109,7 +109,7 @@ This sets the maximum heap size to 1000 MB (instead of the standard 1400MB).
 
 If you want to run Sigasi Studio on a server with multiple users, the configuration files should be updated according to the descriptions [here][/manual/opening#run-sigasi-studio-with-multiple-users-on-the-same-server].
 
-# I want a clean restart {: #ts-clean}
+# I want a clean restart
 
 If you ever suspect that the state of your project is inconsistent in Sigasi Studio, you can do one or all of the following things. Consider these
 steps to be advanced usage; you should not need them during normal operation.
@@ -124,7 +124,7 @@ Sometimes markers remain visible, even after the problem is fixed or when a file
 
 You can delete these stale markers from the Problems View: In the Problems View, select the markers and press **DEL** (or right-click and select **Delete**).
 
-Note that during the next build, the tool may generate new markers. If you want to suppress certain warnings, you can [configure the linting rules](/manual/config#configure-linting).
+Note that during the next build, the tool may generate new markers. If you want to suppress certain warnings, you can [configure the linting rules](/manual/config#linting-rules).
 
 ## Remove the workspace state
 

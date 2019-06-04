@@ -73,10 +73,10 @@ reflinks:
 # views
     views/fsm:
         title: State Machine View
-        url: "/manual/views.html#fsm"
+        url: "/manual/views.html#state-machine-view"
     views/block:
         title: Block Diagram View
-        url: "/manual/views.html#block"
+        url: "/manual/views.html#block-diagram-view"
     views/documentation:
         title: Documentation View
         url: "/manual/views.html#documentation"

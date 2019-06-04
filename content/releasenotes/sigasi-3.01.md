@@ -33,7 +33,7 @@ Sigasi Studio now also checks the vector width in instantiation port maps:
  
 ![Check vector width in instantiations](3.01/instantiations_vector_width.png "Check vector width in instantiations")
 
-Just like the [*width check* in instantiations][/manual/linting#vector-width], this check calculates with generic values **symbolically** (and does not work with elaborated generic constants).
+Just like the [*width check* in instantiations](/manual/linting#vector-width-in-assignments-and-port-maps), this check calculates with generic values **symbolically** (and does not work with elaborated generic constants).
 
 ## Verilog improvements
 

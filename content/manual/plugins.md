@@ -32,12 +32,12 @@ Version Control or Source Control systems). Support for revision control
 is based on Eclipse plugins. This section contains a preliminary listing
 of the most popular revision control systems.
 
-### GIT {: #revision-git}
+### GIT
 
 Recommended plugin: [EGit](http://www.eclipse.org/egit/)
 This plugin is shipped with the standalone version of Sigasi Studio.
 
-### Subversion (SVN) {: #revision-svn}
+### Subversion (SVN)
 
 There are 2 alternatives.
 
@@ -54,7 +54,7 @@ To install the [Subclipse](https://marketplace.eclipse.org/content/subclipse) pl
 * Add <https://dl.bintray.com/subclipse/releases/subclipse/latest/> to the same line (as documented on <https://github.com/subclipse/subclipse/wiki>).
 * Then search for subclipse and proceed with the installation. 
 
-### ClearCase {: #revision-clearcase}
+### ClearCase
 
 Recommended plugin:
 [ClearCase](https://sourceforge.net/projects/eclipse-ccase/)
@@ -68,7 +68,7 @@ IBM](http://www.ibm.com/developerworks/rational/downloads/07/cc_eclipse3_2/clear
 [Learn more about
 ClearCase](http://www.ibm.com/developerworks/rational/downloads/07/cc_eclipse3_2/clearcase_plugins.html).
 
-### Local history {: #revision-local}
+### Local history
 
 While this is not strictly speaking a version control system, Sigasi Studio has
 a built-in feature that keeps a local history of your files. 

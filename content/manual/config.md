@@ -4,7 +4,7 @@ weight: 17
 pager: true
 ---
 
-# Choosing your VHDL and Verilog version {: #configure-version}
+# Choosing your VHDL and Verilog version
 
 Sigasi Studio supports VHDL version 1993, 2002 and 2008 and Verilog (2005) and SystemVerilog (2012).
 You can select the default VHDL version to use in: **Window > Preferences > Sigasi > VHDL**.
@@ -36,7 +36,7 @@ You can use the proposed quick fix to resolve the issue.
 * Sigasi Studio does not send the [Common Libraries](/manual/libraries#common-libraries) to an external compiler. It is expected that these libraries are pre-compiled.
 
 
-# Colors and Fonts {: #configure-colors}
+# Colors and Fonts
 
 You can configure the code coloring by selecting **Window > Preferences > Sigasi > VHDL > Syntax Coloring**.
 For each class of semantic and syntactic elements, you can select the font, letter color, background color, style (bold, italic, underline, strike through).
@@ -95,7 +95,7 @@ When you enable Quick Diff, you can see changes in the active editor with the ve
 
 [more info](https://help.eclipse.org/photon/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftasks-cvs-quickdiff.htm)
 
-# Linting rules {: #configure-linting}
+# Linting rules
 
 You can choose the severity of linting rules in: **Window > Preferences > Sigasi > VHDL > Errors/Warnings**.
 Read more information about [linting].

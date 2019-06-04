@@ -4,7 +4,7 @@ weight: 8
 pager: true
 ---
 
-# Opening Files from the Command Line {: #files-command-line}
+# Opening Files from the Command Line
 
 You can call Sigasi Studio from the command line to open files. Just run
 `sigasi yourFile.vhd`. You can also drag and drop files on the Sigasi Studio
@@ -80,7 +80,7 @@ missing declaration are not flagged as errors.
 There are several ways to open VHDL files:
 
 * Drag the files to the editor window.
-* Open the file [from the command line](#files-command-line)
+* Open the file [from the command line](#opening-files-from-the-command-line)
 * Drag the files to the Sigasi Studio icon
 * Click **File \> Open File…**
 

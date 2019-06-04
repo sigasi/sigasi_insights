@@ -10,14 +10,14 @@ problems can be automatically resolved with **Quick Fixes**. Both syntax
 checking and linting happen at type-time: new markers appear *as you are
 typing* your code.
 
-# Linting {: #linting-linting}
+# Linting
 
 VHDL code **Lint** is defined as code that is strictly correct according
 to the language definition, but still suspicious or problematic.
 Sigasi Studio has a built-in VHDL linter, which provides info about code lint
 in the design.
 
-## Marker Icons {: #linting-icons}
+## Marker Icons
 
 * ![](/img/icons/info.png) marks an info message.
 * ![](/img/icons/warning_lightbulb.png) marks a warning that can be resolved automatically with a Quick Fix.
@@ -25,7 +25,7 @@ in the design.
 * ![](/img/icons/error_lightbulb.png) marks an error that can be resolved automatically with a Quick Fix.
 * ![](/img/icons/error.png) marks an error that cannot be resolved automatically.
 
-## Configuring the Severity Level {: #linting-severity-level}
+## Configuring the Severity Level
 
 The Sigasi Studio VHDL linter has reasonable defaults for the severity level of
 reported lint problems. However, the severity level of certain classes
@@ -49,12 +49,12 @@ You can limit the suppression to a specific warning by putting a prefix of the w
 Since [/releasenotes/sigasi-4.02] the `@suppress` comment also suppresses Errors.
 Since [/releasenotes/sigasi-4.03] warnings have a quickfix to automatically add the `@suppress` comment with a matching warning message prefix.
 
-## No Linting for Common Libraries {: #linting-common-libraries}
+## No Linting for Common Libraries
 
 Common Libraries are considered to be production ready libraries.
 Linting is skipped for all files in the Common Libraries folder.
 
-# Quick Fixes {: #linting-quick-fix}
+# Quick Fixes
 
 Some of the VHDL lint problems can be automatically resolved with *Quick Fixes*.
 These problems have *markers* annotated with a lightbulb icon (like ![](/img/icons/warning\_lightbulb.png)).
@@ -82,63 +82,63 @@ The availability of code rules depends on the license requirements.
 
 | License | Quick Fix                        | Description                                                                                                             |  ID |
 |---------|----------------------------------|-------------------------------------------------------------------------------------------------------------------------|----:|
-| ST      | ![](/img/icons/warning_lightbulb.png) | Declaration could not be found                                                                                          |     |
+| ST      | ![](/img/icons/warning_lightbulb.png) | Declaration could not be found                                                                                     |     |
 | ST      |                                  | Duplicate declarations                                                                                                  |     |
-| ST      | ![](/img/icons/warning_lightbulb.png) | Signal/variable assignment operator                                                                                     |     |
-| ST      | ![](/img/icons/warning_lightbulb.png) | Case statement does not cover all choices                                                                               |     |
-| ST      | ![](/img/icons/warning_lightbulb.png) | Missing enumeration literal in case statements                                                                          |     |
+| ST      | ![](/img/icons/warning_lightbulb.png) | Signal/variable assignment operator                                                                                |     |
+| ST      | ![](/img/icons/warning_lightbulb.png) | Case statement does not cover all choices                                                                          |     |
+| ST      | ![](/img/icons/warning_lightbulb.png) | Missing enumeration literal in case statements                                                                     |     |
 | ST      |                                  | Instantiation statement validation                                                                                      |     |
 | ST      |                                  | Library validation                                                                                                      |     |
 | ST      |                                  | Subprograms in packages (e.g. function body in a package, rather than in the package body)                              |     |
 | ST      |                                  | Missing return statement in function bodies                                                                             |     |
-| ST      | ![](/img/icons/warning_lightbulb.png) | Correct attribute entity class in attribute specifications                                                              |     |
-| ST      | ![](/img/icons/warning_lightbulb.png) | C-style equality and inequality operator (`=` and `/=` vs `==` and `!=`)                                                |     |
-| ST      | ![](/img/icons/warning_lightbulb.png) | VHDL 2008 features in VHDL 93 mode (Learn about [choosing your VHDL version][/manual/config#configure-version])         |     |
-| ST      | ![](/img/icons/warning_lightbulb.png) | Port/Generic lists cannot be terminated with a ','                                                                      |     |
-| ST      | ![](/img/icons/warning_lightbulb.png) | Port/Generic maps cannot be terminated with a ';'                                                                       |     |
-| CR      | ![](/img/icons/warning_lightbulb.png) | [Deprecated IEEE packages](#deprecated-ieee-packages-non-standard-packages)                                             |   8 |
-| CR      | ![](/img/icons/warning_lightbulb.png) | [Non-standard packages](#deprecated-ieee-packages-non-standard-packages)                                                |  37 |
-| CR      | ![](/img/icons/warning_lightbulb.png) | [A process must either have a sensitivity list or contain one or more wait statements](#sensitivity-list)               |  38 |
-| CR      |                                  | [There has to be a whitespace before physical units](#space-physical-unit)                                              |  47 |
+| ST      | ![](/img/icons/warning_lightbulb.png) | Correct attribute entity class in attribute specifications                                                         |     |
+| ST      | ![](/img/icons/warning_lightbulb.png) | C-style equality and inequality operator (`=` and `/=` vs `==` and `!=`)                                           |     |
+| ST      | ![](/img/icons/warning_lightbulb.png) | VHDL 2008 features in VHDL 93 mode (Learn about [choosing your VHDL version](/manual/config#choosing-your-vhdl-and-verilog-version))         |     |
+| ST      | ![](/img/icons/warning_lightbulb.png) | Port/Generic lists cannot be terminated with a ','                                                                 |     |
+| ST      | ![](/img/icons/warning_lightbulb.png) | Port/Generic maps cannot be terminated with a ';'                                                                  |     |
+| CR      | ![](/img/icons/warning_lightbulb.png) | [Deprecated IEEE packages](#deprecated-ieee-packages-non-standard-packages)                                        |   8 |
+| CR      | ![](/img/icons/warning_lightbulb.png) | [Non-standard packages](#deprecated-ieee-packages-non-standard-packages)                                           |  37 |
+| CR      | ![](/img/icons/warning_lightbulb.png) | [A process must either have a sensitivity list or contain one or more wait statements](#sensitivity-list)          |  38 |
+| CR      |                                  | [There has to be a whitespace before physical units](#space-before-the-physical-unit)                                   |  47 |
 | CR      |                                  | [Superfluous library clause](#superfluous-library-clause)                                                               |  49 |
 | CR      | ![](/img/icons/warning_lightbulb.png) | Library is not available [Configure Altera, Xilinx, ModelSim and VUnit libraries](#quick-fix-for-third-party-libraries) |  50 |
-| CR      | ![](/img/icons/warning_lightbulb.png) | [Find unused declarations](#dead-code-lint)                                                                             |  55 |
+| CR      | ![](/img/icons/warning_lightbulb.png) | [Find unused declarations](#dead-code-lint)                                                                        |  55 |
 | CR      |                                  | Bitstrings may only contain std\_logic metavalues                                                                       |  57 |
 | CR      |                                  | Duplicate, conflicting design unit names                                                                                |  64 |
 | CR      |                                  | [Find unused ports](#dead-code-lint)                                                                                    |  67 |
 | CR      |                                  | [Find unused generics](#dead-code-lint)                                                                                 |  68 |
-| CR      | ![](/img/icons/warning_lightbulb.png) | [Find incomplete sensitivity lists](#sensitivity-list)                                                                  |  72 |
+| CR      | ![](/img/icons/warning_lightbulb.png) | [Find incomplete sensitivity lists](#sensitivity-list)                                                             |  72 |
 | CR      |                                  | [Find superfluous signals in sensitivity lists](#sensitivity-list)                                                      |  73 |
 | CR      |                                  | Report encrypted files                                                                                                  |  84 |
 | CR      |                                  | [Find duplicate signals in sensitivity lists](#sensitivity-list)                                                        |  85 |
 | CR      |                                  | Incorrect use of keyword all                                                                                            | 184 |
-| XL      |                                  | [Null range: The left argument is strictly larger than the right](#null-range)                                          |   1 |
+| XL      |                                  | [Null range: The left argument is strictly larger than the right](#null-range-empty-range)                              |   1 |
 | XL      |                                  | Case alternative contains redundant choices                                                                             |  12 |
 | XL      |                                  | [Case statement contains all choices explicitly. You can safely remove the redundant 'others'](#redundant-others)       |  13 |
 | XL      |                                  | Infinite loop. Loop is missing a wait                                                                                   |  20 |
-| XL      |                                  | [Null range: The left argument is strictly smaller than the right](#null-range)                                         |  26 |
+| XL      |                                  | [Null range: The left argument is strictly smaller than the right](#null-range-empty-range)                             |  26 |
 | XL      |                                  | Unbound component instantiations                                                                                        |  48 |
-| XL      |                                  | [Find dead states in state machines](#dead-code)                                                                        |  71 |
-| XL      |                                  | [Find dead code (unreachable statements)](#dead-code)                                                                   |  79 |
+| XL      |                                  | [Find dead states in state machines](#dead-code-unreachable-code)                                                       |  71 |
+| XL      |                                  | [Find dead code (unreachable statements)](#dead-code-unreachable-code)                                                  |  79 |
 | XL      |                                  | Detect signals and variables that are never written                                                                     |  88 |
 | XL      |                                  | Detect signals and variables that are never read                                                                        |  89 |
 | XL      |                                  | None or multiple matching entities for component                                                                        |  90 |
 | XL      |                                  | [Check naming conventions](#naming-conventions)                                                                         |  92 |
-| XL      | ![](/img/icons/warning_lightbulb.png) | [Incomplete port map or generic map](#incomplete-port-maps-and-generic-maps)                                            |  94 |
-| XL      |                                  | [Vector width in assignments and port maps](#vector-width)                                                              | 144 |
-| XL      | ![](/img/icons/warning_lightbulb.png) | [All references must have the same capitalization as their declaration](#capitalization-of-identifiers)                 | 163 |
-| XL      | ![](/img/icons/warning_lightbulb.png) | [Check for positional associations in instantiations](#positional-association-in-instantiations)                        | 164 |
+| XL      | ![](/img/icons/warning_lightbulb.png) | [Incomplete port map or generic map](#incomplete-port-maps-and-generic-maps)                                       |  94 |
+| XL      |                                  | [Vector width in assignments and port maps](#vector-width-in-assignments-and-port-maps)                                 | 144 |
+| XL      | ![](/img/icons/warning_lightbulb.png) | [All references must have the same capitalization as their declaration](#capitalization-of-identifiers)            | 163 |
+| XL      | ![](/img/icons/warning_lightbulb.png) | [Check for positional associations in instantiations](#positional-association-in-instantiations)                   | 164 |
 | XL      |                                  | Invalid port associations (incompatible port modes in instantiations)                                                   | 169 |
-| XL      | ![](/img/icons/warning_lightbulb.png) | [Order of generic and port associations](#order-of-associations)                                                        | 177 |
+| XL      | ![](/img/icons/warning_lightbulb.png) | [Order of generic and port associations](#order-of-associations)                                                   | 177 |
 | XL      |                                  | Incorrect component name in configuration                                                                               | 180 |
 | XL      |                                  | Incorrect instantiation statement label in configuration                                                                | 181 |
 | XL      |                                  | Missing or incorrect binding indication                                                                                 | 182 |
 | XL      |                                  | Incorrect name in binding indication                                                                                    | 183 |
 | XL      |                                  | Redundant boolean equality check with true                                                                              | 185 |
 | XL      |                                  | Boolean equality check with false                                                                                       | 186 |
-| XL      | ![](/img/icons/warning_lightbulb.png) | [Check for component/entity mismatch](#component-entity)                                                                | 187 |
-| XL      |                                  | [Header comment check](#header-comment)                                                                                 | 188 |
-| XL      |                                  | [Filename must contain primary unit name](#file-name)                                                                   | 189 |
+| XL      | ![](/img/icons/warning_lightbulb.png) | [Check for component/entity mismatch](#check-for-component-entity-mismatch)                                        | 187 |
+| XL      |                                  | [Header comment check](#check-header-comment)                                                                           | 188 |
+| XL      |                                  | [Filename must contain primary unit name](#check-that-filename-contains-primary-unit-name)                              | 189 |
 | XL      |                                  | Empty loop  statement                                                                                                   | 190 |
 
 # Detailed explanation of VHDL code rules
@@ -268,7 +268,7 @@ Sigasi Studio can warn about problems with your sensitivity list:
 * **Superfluous signals in sensitivity list**
 * **Duplicate signals in sensitivity list**
 
-## Superfluous Library Clause {: superfluous-library-clause }
+## Superfluous Library Clause
 
 The VHDL language reference manual states that:
 
@@ -287,14 +287,14 @@ warning.
 
 {{< figure src="/img/manual/warn-superfluous-library.png" >}}
 
-## Dead Code (unreachable code) {: #dead-code}
+## Dead Code (unreachable code)
 
 If the Sigasi Studio analyzer can determine that a condition is always false,
 it will mark the if-statement because it contains dead code.
 
 {{< figure src="/img/manual/unreachable_code.png" >}}
 
-## Null Range (empty range) {: #null-range}
+## Null Range (empty range)
 
 In VHDL, you can use ranges with `to` and `downto`. But, if you use the
 wrong direction, you get an empty range, which is usually not what you
@@ -304,7 +304,7 @@ We have a lint check that warns about this, even if you use constants
 
 {{< figure src="/img/manual/nullrange.png" >}}
 
-## Space Before the Physical Unit {: #space-physical-unit }
+## Space Before the Physical Unit
 
 If you type a numeric literal with a physical unit, there should be a
 space between the number and the unit.
@@ -345,7 +345,7 @@ omitted.
 **Example:** to enforce a style where all variables have a `_v` suffix,
 you would specify `.*_v` pattern in the **Variable name** field.
 
-## Vector width in assignments and port maps {: #vector-width }
+## Vector width in assignments and port maps
 
 Sigasi Studio checks the vector size in assignments (Since [/releasenotes/sigasi-2.28]) and port maps (Since [/releasenotes/sigasi-3.01]). This check works at type-time and takes the (symbolic) value of generics into account.
 
@@ -357,13 +357,13 @@ Sigasi Studio will not take into account the value assigned to a generic in inst
 
 Sigasi Studio gives a warning when the **order** of generics or ports in a `map` differs from the original generics or ports declaration order.
 
-## Check for component/entity mismatch {: #component-entity }
+## Check for component/entity mismatch
 
 Sigasi Studio gives a warning if a component declaration is not equal to its matching entity. You can easily fix this by applying the quick fix.
 
 {{< figure src="/img/manual/linting_component_entity.png" >}}
 
-## Check header comment {: #header-comment}
+## Check header comment
 
 Sigasi Studio can check that the **header comment** matches a specified pattern. A **header comment** is the comment that starts at the first character of your file (*no leading whitespace*).
 
@@ -371,7 +371,7 @@ The check can be enabled in **Preferences > Sigasi > VHDL > Naming conventions**
 
 {{< figure src="/img/releasenotes/3.8/header_comment.png" alt="Check header comments" >}}
 
-## Check that filename contains primary unit name {:file-name}
+## Check that filename contains primary unit name
 
 Sigasi Studio can check that the filename contains the name of at least one of the design unit names inside that file.  Note that this check is **ignored** by default. You can enable it in the VHDL **Errors/Warnings** preference page (**Style Validation > Filename must contain primary name**).
 

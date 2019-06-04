@@ -11,4 +11,4 @@ tags:
   - block selection
   - column mode selection
 ---
-Use Block Select (aka Column mode) to manipulate your VHDL code (Manual: [/manual/editor#block-select]).
+Use Block Select (aka Column mode) to manipulate your VHDL code ([Manual](/manual/editor#block-selection)).
