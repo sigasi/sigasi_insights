@@ -20,14 +20,14 @@ use unisim.VCOMPONENTS.all;
 ```
 
 If the *unisim* library is not known yet in your Sigasi Studio project, a
-[Quick Fix][/manual/linting#linting-quick-fix] allows to easily configure
+[Quick Fix](/manual/linting#quick-fixes) allows to easily configure
 the *unisim* library for either ISE or Vivado.
 To use this Quick Fix, hover over the declaration of the *unisim* library
 or press *Ctrl+1* to open the pop-up where you can choose the Quick Fix.
 After applying the Quick Fix, the *Common Libraries* of your project will
 contain a *unisim* library and the primitives will be known in Sigasi Studio.
 
-Since [release 3.7][/releasenotes/sigasi-3.07], Sigasi Studio uses an up-to-date
+Since [release 3.7](/releasenotes/sigasi-3.07), Sigasi Studio uses an up-to-date
 Vivado library and no longer points to the legacy ISE compatible version when
 choosing the Vivado variant of the Quick Fix.
 However, there are multiple variants of the *VComponents* (*VCOMP*) library.

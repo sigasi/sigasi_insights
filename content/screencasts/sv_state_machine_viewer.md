@@ -12,4 +12,4 @@ tags:
 ---
 
 
-The State Machine View is documented [here][/manual/views#fsm].
+The State Machine View is documented [here](/manual/views#state-machine-view).

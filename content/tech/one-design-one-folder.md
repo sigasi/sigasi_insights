@@ -84,12 +84,12 @@ Building your project
 ---------------------
 
 Make sure your project is set to build automatically: **Project &gt; Build Automatically**.
-If you have VHDL files in the project folder that are not really a part
-of the folder, you should unmap them from your VHDL libraries. Read more
-about [/faq#junk-files]. Your project should not have any
-errors (red markers). If it does, try to figure out what went wrong: Is
-it a legacy junk file? Is there a bug in your VHDL code? Did you forget
-to add a library?
+If you have VHDL files in the project folder that are not really a part of the folder, you should unmap them from your VHDL libraries.
+Read more about [excluding files](/faq#i-get-lots-of-errors-in-files-that-are-not-even-really-a-part-of-my-project-can-i-hide-them).
+Your project should not have any errors (red markers).
+If it does, try to figure out what went wrong:
+Is it a legacy junk file?
+Is there a bug in your VHDL code? Did you forget to add a library?
 
 Extra tips
 ----------

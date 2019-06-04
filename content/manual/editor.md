@@ -30,13 +30,13 @@ Semantic highlighting means that code gets colored according to their
 *signal*.
 
 Code highlighting is fully configurable. **Color**, **background**,
-**style** and **font** can be customized. Learn more about [configuring colors](/manual/config.html#configure-colors).
+**style** and **font** can be customized. Learn more about [configuring colors](/manual/config#colors-and-fonts).
 
 ## Type-time Syntax error reporting
 
 Sigasi Studio marks VHDL and SystemVerilog syntax errors while you type. It will also report broken SystemVerilog preprocessor code.
 
-## Project exploration and navigation {: #gui-navigate}
+## Project exploration and navigation
 
 Sigasi Studio offers powerful techniques to explore a file or project, and navigate through it. This section covers: hovering, Occurrence Highlighting, Open Declaration and Find References.
 
@@ -166,7 +166,7 @@ If you press **Alt+Shift+R** twice, you can preview the rename before applying i
 
 Double click on the editor tab to make it full screen.
 
-### Block selection {: #block-select}
+### Block selection
 
 **Note:** In other tools, this feature may be known as *column editing*
 or *column select*.
@@ -192,7 +192,7 @@ Structured Select enables you to select VHDL or SystemVerilog code, based on its
 
 ### Show whitespace
 
-### Move and Duplicate lines {: #move-lines}
+### Move and Duplicate lines
 
 You can easily *move* lines up and down by pressing: **Alt+Up** and
 **Alt+Down**.
@@ -208,7 +208,7 @@ See [keyshortcuts]
 
 See [plugins#VI-and-Emacs]
 
-### Remove Trailing Whitespace {: #trailing-whitespace}
+### Remove Trailing Whitespace
 
 The action to remove trailing whitespace is hidden by default. You can access it by pressing **Ctrl+3**, type **RTW** and then select the correct action. Alternatively, you can bind this action to [/manual/keyshortcuts] of your preference.
 This action is being executed on the saved file, not in the editor. So before using this action you have to make sure your file is saved.
@@ -316,7 +316,7 @@ The following stuttering keys are available:
 
 Stuttering can be disabled or enabled in **Window \> Preferences \> VHDL \> Enable Stuttering**.
 
-## Smart Indentation  {: #smartindent-vhdl}
+## Smart Indentation
 
 When you press enter, Sigasi Studio automatically adjusts the indentation of
 current and the new line. Depending on the content of the preceding
@@ -448,7 +448,7 @@ Press **Ctrl+Shift+F** to format your current SystemVerilog file.
 
 The current formatter implementation corrects indentation only.
 
-## Smart Indentation {: #smartindent-verilog}
+## Smart Indentation
 
 When you press enter, Sigasi Studio automatically adjusts the indentation of
 current and the new line. Depending on the content of the preceding

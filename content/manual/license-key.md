@@ -92,7 +92,7 @@ export SIGASI_LM_LICENSE_FILE="27000@myserver1.example.com:27000@myserver2.examp
 
 ## License server setup
 
-### Download the FlexNet daemons {: #download-flexnet-daemons}
+### Download the FlexNet daemons
 
 * Linux:
 	* [Linux 64 bit](http://download.sigasi.com/flexnet/sigasi-flexnet-linux64.zip)
@@ -219,7 +219,7 @@ If your floating license server does not function properly, try the following st
 
 * Start the FlexLM daemon with the `-z` option to see what is going wrong
 * You can check that the FlexNet daemon is running as expected by following these steps:
-    * [Download][#download-flexnet-daemons] the daemon zip file on the client machine
+    * [Download](#download-the-flexnet-daemons) the daemon zip file on the client machine
     * Run
     ```
     lmutil[.exe] lmdiag -c "<port>@<server>" -n

@@ -4,7 +4,7 @@ weight: 2
 pager: true
 ---
 
-# Introduction {: #project-intro}
+# Introduction
 
 Your work with Sigasi Studio typically is organized as a *project*. A project
 is a collection of VHDL and/or SystemVerilog files that belong together. Sigasi Studio

@@ -37,7 +37,7 @@ Sigasi Studio 4.0 introduces **block diagrams** for SystemVerilog modules. You c
 
 [![Block Diagram View for SystemVerilog](/releasenotes/4.0/sv_block_diagram.png "Block Diagram View for SystemVerilog")](/releasenotes/4.0/sv_block_diagram.png)
 
-The [Block Diagram View][/manual/views#block] **automatically updates** when you **save** your code and gives a convenient way to visually inspect and navigate your code, even
+The [Block Diagram View](/manual/views#block-diagram-view) **automatically updates** when you **save** your code and gives a convenient way to visually inspect and navigate your code, even
 when your code is still unfinished or broken.
 
 [![Block Diagram Graphics Configuration for SystemVerilog](/releasenotes/4.0/sv_graphic_configuration.png "Block Diagram Graphics Configuration for SystemVerilog")](/releasenotes/4.0/sv_graphic_configuration.png)
@@ -46,7 +46,7 @@ You can also customize and filter block diagrams by creating a [Graphics Configu
 
 # SystemVerilog State Machines
 
-The [State Machine View][/manual/views#fsm] now also visualizes `enum`-based statemachines in your SystemVerilog code. This view automatically updates while you are editing your code and gives a convenient way to visually inspect and navigate your code, even when your code is still unfinished or broken.
+The [State Machine View](/manual/views#state-machine-view) now also visualizes `enum`-based statemachines in your SystemVerilog code. This view automatically updates while you are editing your code and gives a convenient way to visually inspect and navigate your code, even when your code is still unfinished or broken.
 
 You can open the State Machine View by right clicking in the editor and selecting **Show In > State Machines**.
 

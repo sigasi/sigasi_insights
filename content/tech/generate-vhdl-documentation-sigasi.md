@@ -59,7 +59,7 @@ If you have a full {{< xl_doc >}} license, Sigasi Studio also makes the intermed
 ## Future work
 
 * Although Sigasi Studio already uses templates internally, these templates are not really user-configurable. In a future release we want to make these templates customizable. This way the exact content of the documentation can be easily tweaked.
-* Add [state machine diagrams][/manual/views#fsm] to the documentation
+* Add [state machine diagrams](/manual/views#state-machine-view) to the documentation
 * Add Markup support. The VHDL comments are currently copied verbatim to the output. In a future release, we need to come up with a way to add markup (e.g. paragraphs, bold, italic, lists, ...)
 * Some users reported they actually prefer special comments (e.g. Doxygen's `!--`) to mark documentation. They like to explicitly indicate what text gets into the documentation (and what not). So in a future release, we may add the option to require special comments for documentation.
 * In the current version, we generate documentation for the entire project. Some customers indicated, that they'd prefer to document only the hierarchy of the active toplevel.

@@ -114,7 +114,7 @@ In short: you are **not** locked in at all!
 
 You do not have to change your directory structure, the names of your VHDL files or anything in your project folder. The only thing Sigasi HDT does, is add a few hidden files with project information.
 
-## What is the eclipse.ini file and where can I find it? {: #eclipse-ini}
+## What is the eclipse.ini file and where can I find it?
 
 The file `eclipse.ini` contains information that is passed to the Eclipse platform and to the Java Virtual Machine (JVM).
 
@@ -440,7 +440,7 @@ If you cannot see the problem decorators or library decorators in the Project Ex
     * **Window > Preferences > General > Appearance > Label Decorations > Sigasi Problem Decorator**
     * **Window > Preferences > General > Appearance > Label Decorations > Library Decorator**
 
-## I get lots of errors in files that are not even really a part of my project. Can I hide them? {: #junk-files}
+## I get lots of errors in files that are not even really a part of my project. Can I hide them?
 
 Legacy projects tend to accumulate files that are no longer needed in the projects. These files are still on your disk, or even in your revision control system, but the scripts don't feed them to the simulator or to the synthesis tools any more. These junk files can accumulate over time.
 
@@ -548,7 +548,7 @@ You can add a plugin with the UltraEdit key bindings.
 
 If you use Sigasi HDT as a plugin (meaning: not the standalone version), you can add a VI emulator plugin, called [vrapper](http://vrapper.sourceforge.net/home/). Surely not the same as a genuine VI clone, but it will give you a warm and familiar feeling when you type `:q!`.
 
-## Do you have an Emacs emulation mode so that I can use the Emacs key bindings? {: #Emacs}
+## Do you have an Emacs emulation mode so that I can use the Emacs key bindings?
 
 All Eclipse products, including Sigasi HDT, can be configured to support [Emacs key bindings](http://help.eclipse.org/photon/topic/org.eclipse.platform.doc.user/concepts/accessibility/keyboardshortcuts.htm?cp=0_4_1_33). While it is not the same as Emacs, you can keep your habit of pressing *CTRL-C* and *CTRL-X* all the time.
 

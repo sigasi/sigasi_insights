@@ -26,7 +26,7 @@ Sigasi Studio 3.2 is build on top of the newly released [Eclipse Neon](https://e
 
 ## Configure language version per file/project/workspace
 
-You can configure the language version on a more fine grained level than one version for the entire workpace. You can override the language version per project, folder or file. \[[documentation][/manual/config#configure-version]\]
+You can configure the language version on a more fine grained level than one version for the entire workpace. You can override the language version per project, folder or file. \[[documentation](/manual/config#choosing-your-vhdl-and-verilog-version)\]
 
 ![](3.2/vhdl_version.png)
 
