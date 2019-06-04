@@ -16,6 +16,13 @@
             <li {{ if eq .Params.activemenu "faq" }} class="uk-active" {{ end }}><a href="/faq">FAQ</a></li>
             <li {{ if eq .Section "releasenotes" }} class="uk-active" {{ end }}>
                 <a href="/releasenotes/">Release Notes<span uk-icon="icon: triangle-down"></span></a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        {{ range $s_relnotes }}
+                        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                        {{ end }}
+                    </ul>
+                </div>
             </li>
             <li {{ if eq .Section "screencasts" }} class="uk-active" {{ end }}>
                 <a href="/screencasts">Screencasts</a>
