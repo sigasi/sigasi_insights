@@ -19,7 +19,7 @@ You can export documentation for the **entire project** or a **specific toplevel
 
 The result is saved in the `sigasi-doc` folder in the root of your project.
 
-Since Sigasi Studio 2.27 this export also saves the DocBook source code, if you have a {{< xprt >}} license. This enables you to customize the pdf
+Since Sigasi 2.27 this export also saves the DocBook source code, if you have a {{< xprt >}} license. This enables you to customize the pdf
 generation flow to your liking. Users without a {{< xprt >}} License can also export a pdf, but it will contain a watermark.
 
 All errors are logged to the console view.

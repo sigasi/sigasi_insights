@@ -14,8 +14,8 @@ between them.
 Your first step is to set up a project. There are a number of ways to do
 this. The most common ways are:
 
-* [/manual/projectsetup#Importing a project from the file system]
-* [/manual/projectsetup#Creating a new, empty project]
+* [Importing a project from the file system](#importing-a-project-from-the-file-system)
+* [Creating a new, empty project](#creating-a-new-empty-project)
 
 These two methods and other methods are discussed in detail in the
 following sections.
@@ -85,7 +85,7 @@ Verilog support at the same time.
 
 With a {{< creator >}} license, a project can contain both VHDL and
 Verilog files, but only one of the languages will have full support.
-Files in the other language will be treated as [/manual/opening#External Files].
+Files in the other language will be treated as [External Files](/manual/opening#external-files).
 
 ## Importing a project from an archive
 

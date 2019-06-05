@@ -4,7 +4,7 @@ weight: 4
 pager: true
 ---
 
-# The Sigasi Studio perspectives
+# The Sigasi Studio perspective
 
 Sigasi Studio is built upon the Eclipse platform, which permits to use multiple languages within a single environment. The user interface can be customized for a particular language. In Eclipse terminology, this customized user interface is called a **perspective**. The *icon* and *name* of the current perspective is highlighted in the upper right corner.
 

@@ -156,7 +156,7 @@ view and apply menu-entry **Set Library > Reset Common Libraries**.
 
 # IEEE Vital
 
-See [/tech/how-can-i-use-the-ieee-vital-libraries-with-sigasi-pro]
+See [How can I use the IEEE Vital libraries with Sigasi Pro?](/tech/how-can-i-use-the-ieee-vital-libraries-with-sigasi-pro)
 
 # Shared libraries
 
@@ -187,7 +187,7 @@ On Linux the default installation location for Xilinx is `/opt/Xilinx`
 and `/opt/altera` for Altera.
 
 For many common third party libraries, you can set up the library using
-a [/manual/linting#Quick Fix for third party libraries].
+a [Quick Fix for third party libraries](/manual/linting#quick-fix-for-third-party-libraries).
 
 ## XilinxCoreLib
 
@@ -204,9 +204,9 @@ right clicking the corresponding file (`filename = entity name.vhd`) in the
 
 # Library errors from external compilers
 
-If you are using the [/manual/tools#External Compilers], the external compiler
+If you are using the [External Compilers](/manual/tools#external-compilers), the external compiler
 can also put error markers on library clauses. You can easily verify this by
 checking the prefix of the error message (e.g. `vcom:` for vcom errors).
-Consult the [/manual/tools#Libraries] section of the external compiler
+Consult the [Libraries](/manual/tools#libraries) section of the external compiler
 integration for more information on configuring libraries for your external
 compiler.

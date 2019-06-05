@@ -12,4 +12,4 @@ tags:
   - editor
 ---
 <br/>
-You can find more info in the manual: [/manual/editor#Smartindent Verilog]
+You can find more info in the [manual](/manual/editor#smart-indentation-1).

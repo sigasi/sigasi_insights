@@ -18,15 +18,17 @@ Sigasi Studio **Creator** is the go-to design entry tool and code browser for al
 
 ## Sigasi Studio XL
 
-Sigasi Studio XL is Sigasi's flagship product. A license for Sigasi Studio XL unlocks all features that come with Sigasi Creator.
+Sigasi Studio XL is Sigasi's flagship product. A license for Sigasi Studio XL unlocks all features that come with Sigasi Creator plus many additional features.
 
-Throughout the documentation, features that are only available in this version are marked as "{{< xl_only >}}".
+Throughout the documentation, features that are only available in this version are marked as {{< xl_only >}}.
+
+All {{< xl >}} features are also available in {{< xprt >}}.
 
 ## Sigasi Studio XPRT
 
 *Sigasi Studio XPRT* is the most complete version of Sigasi Studio. It unlocks all features of {{< creator >}} and {{< xl >}}, plus the graphical views, documentation generation, ...
 
-Throughout the documentation, features that are only available in this version are marked as "{{< xprt_only >}}".
+Throughout the documentation, features that are only available in this version are marked as {{< xprt_only >}}.
 
 # Legacy Editions
 

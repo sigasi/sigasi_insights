@@ -35,7 +35,7 @@ Errors/Warnings**.
 
 {{< figure src="/img/manual/problemseveritypreferencepage.png" alt="Configuring the severity of Sigasi Studio linting checks" >}}
 
-[You can also configure the severity level per project][#project-specific-linting-settings]
+[You can also configure the severity level per project.](#project-specific-linting-settings)
 
 ## Suppressing warnings
 
@@ -46,8 +46,8 @@ You can limit the suppression to a specific warning by putting a prefix of the w
 <line with warning> // @suppress "Warning message prefix" Reason why warning is suppressed
 ```
 
-Since [/releasenotes/sigasi-4.02] the `@suppress` comment also suppresses Errors.
-Since [/releasenotes/sigasi-4.03] warnings have a quickfix to automatically add the `@suppress` comment with a matching warning message prefix.
+Since [Sigasi Studio 4.2](/releasenotes/sigasi-4.02) the `@suppress` comment also suppresses Errors.
+Since [Sigasi Studio 4.3](/releasenotes/sigasi-4.03) warnings have a quickfix to automatically add the `@suppress` comment with a matching warning message prefix.
 
 ## No Linting for Common Libraries
 
@@ -160,7 +160,7 @@ Sigasi Studio flags some kinds of dead code:
 
 * unused declarations (signals, constants, …)
 * unused ports
-* unreachable statements (see [Dead code](#dead-code))
+* unreachable statements (see [Dead code](#dead-code-unreachable-code))
 
 For unused declarations, there is also a Quick Fix to help you remove
 unused declarations fast.
@@ -183,7 +183,7 @@ Instead, use the standard `ieee.numeric_std` package.
 The package `ieee.std_logic_misc` has the same problem of not being standardized by IEEE. Contrary to the packages above, there is no consensus on how to replace this package.  
 Sigasi Studio flags this package as **Non-standard package**.
 
-Read more in [/tech/deprecated-ieee-libraries].
+Read more in [Deprecated IEEE Libraries](/tech/deprecated-ieee-libraries).
 
 ## Incomplete Port Maps and Generic Maps
 
@@ -245,7 +245,7 @@ enumerated. If the synthesis tool is set up to generate fault-tolerant
 hardware, the fallback state is the same as the reset state (for most
 synthesis tools). Check the manual of your synthesis tools and run some
 experiments.
-For more information, see [/tech/vhdl-case-statements-can-do-without-others]
+For more information, see [VHDL case statements can do without the "others"](/tech/vhdl-case-statements-can-do-without-others).
 
 ## Sensitivity List
 
@@ -324,11 +324,11 @@ warns about this.
 
 Although VHDL is not case sensitive, it is recommend to always use the same capitalization when referring to the same declaration. Since version 2.30, Sigasi Studio warns when the capitalization of a reference differs from the capitalization of the declaration. Because external libraries can have different code styles, this linting only checks references in the same library as its declaration.
 
-Since [/releasenotes/sigasi-2.31] this can easily be fixed with a Quick Fix.
+Since [Sigasi 2.31](/releasenotes/sigasi-2.31) this can easily be fixed with a Quick Fix.
 
 {{< figure src="/img/manual/captalization_references.png" >}}
 
-Since [/releasenotes/sigasi-3.06] all capitalization issues in a file can be fixed in one click.
+Since [Sigasi Studio 3.6](/releasenotes/sigasi-3.06) all capitalization issues in a file can be fixed in one click.
 
 {{< figure src="/img/releasenotes/3.6/capitalization_all.png" >}}
 
@@ -347,7 +347,7 @@ you would specify `.*_v` pattern in the **Variable name** field.
 
 ## Vector width in assignments and port maps
 
-Sigasi Studio checks the vector size in assignments (Since [/releasenotes/sigasi-2.28]) and port maps (Since [/releasenotes/sigasi-3.01]). This check works at type-time and takes the (symbolic) value of generics into account.
+Sigasi Studio checks the vector size in assignments (Since [Sigasi 2.28](/releasenotes/sigasi-2.28)) and port maps (Since [Sigasi Studio 3.1](/releasenotes/sigasi-3.01)). This check works at type-time and takes the (symbolic) value of generics into account.
 
 {{< figure src="/img/manual/linting_vector_width.png" >}}
 

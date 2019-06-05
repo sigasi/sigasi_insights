@@ -14,7 +14,7 @@ The VHDL and SystemVerilog (or Verilog) editors are optimized to help
 you browse and edit VHDL and SystemVerilog code.
 Most browsing and editing features are similar for both languages.
 
-*Language specific features* are explained in "[#VHDL Specific]" and "[#SystemVerilog Specific]".
+*Language specific features* are explained in "[VHDL Specific](#vhdl-specific)" and "[SystemVerilog Specific](#systemverilog-specific)".
 
 ## Code highlighting (syntax coloring)
 
@@ -84,12 +84,12 @@ mouse pointer over it. After about a second, a popup shows you the name and data
 In the hover pop-up, can show different kinds of information:
 
 * datatype
-* comments: inline documentation written at the declaration ([association rules][documentation#comment-association])
+* comments: inline documentation written at the declaration ([association rules](/manual/documentation#comment-association))
 * value: the value of constants
 * errors or warnings: a message, if the given identifier has an error or warning associated to it
 * binary / decimal conversion: for hexadecimal, octal or binary values, the decimal equivalent
 
-Since [/releasenotes/sigasi-4.01] the hovers also offer extra links that make it easy to navigate to the declaration, find references, ...
+Since [Sigasi Studio 4.1](/releasenotes/sigasi-4.01) the hovers also offer extra links that make it easy to navigate to the declaration, find references, ...
 
 ## Auto-complete and Content Assist
 
@@ -149,7 +149,7 @@ The tool provides help to autocomplete:
 
 ### Code folding
 
-If you work with large files, you might want to hide certain pieces of your code. This can be done with code folding. Certain constructs, such as if-statements or process-statements can be folded so that they use a single line in the editor view. You can do this by clicking the little **"+"** symbol next to the statement.
+If you work with large files, you might want to hide certain pieces of your code. This can be done with code folding. Certain constructs, such as if-statements or process-statements can be folded so that they use a single line in the editor view. You can do this by clicking the little **"-"** symbol next to the statement.
 
 {{< figure src="/img/manual/code_folding.png" alt="Code Folding" >}}
 
@@ -184,13 +184,15 @@ or press the **Toggle Block Selection** icon in the tool bar.
 
 ### Structured selection
 
-Structured Select enables you to select VHDL or SystemVerilog code, based on its *syntactic structure*. (Screencast: "[/screencasts/structured-select]")
+Structured Select enables you to select VHDL or SystemVerilog code, based on its *syntactic structure*. (Screencast: "[Select code, based on its structure](/screencasts/structured-select)")
 
 * **Shift+Alt+Up**, expands the selection to the smallest syntax element that contains the current selection. You can then further expand the selection by invoking the action again.
 * **Shift+Alt+Down**, contracts the current selection to the nested syntax expression that still contains the current cursor position. You can then further contract the selection by invoking the action again.
 * **Shift+Alt+Left**, adds the syntax element left of the current selection to the selection. You can then further expand the selection by invoking the action again. You can also expand the selection in the other direction with **Shift+Alt+Right**
 
 ### Show whitespace
+
+You can turn showing whitespace markers on or off by clicking the "Show Whitespace Characters" icon ![Show Whitespace Characters](/img/icons/show_whitespace_chars.png) in the toolbar.
 
 ### Move and Duplicate lines
 
@@ -202,20 +204,37 @@ selection by pressing: **Ctrl+Alt+Down**.
 
 ### Configure key bindings
 
-See [keyshortcuts]
+See [Keyboard Shortcuts](/manual/keyshortcuts)
 
 ### Emacs/VI emulation mode
 
-See [plugins#VI-and-Emacs]
+See [VI and Emacs](/manual/plugins#vi-and-emacs)
 
 ### Remove Trailing Whitespace
 
-The action to remove trailing whitespace is hidden by default. You can access it by pressing **Ctrl+3**, type **RTW** and then select the correct action. Alternatively, you can bind this action to [/manual/keyshortcuts] of your preference.
+The action to remove trailing whitespace is hidden by default. You can access it by pressing **Ctrl+3**, type **RTW** and then select the correct action. Alternatively, you can bind this action to [Keyboard Shortcuts](/manual/keyshortcuts#customizing-keyboard-shortcuts) of your preference.
 This action is being executed on the saved file, not in the editor. So before using this action you have to make sure your file is saved.
 
 ### Customize color preferences
 
+There are several ways to customize color preferences in Sigasi Studio.
+
+* Choose the Eclipse *Theme* in the **Window \> Preferences \> General \> Appearance** preferences menu.
+  * Edit Eclipse *Colors and Fonts* setting in the **Colors and Fonts** sub-menu.
+* Change color setting for different text editor features in **Window \> Preferences \> General \> Editors \> Text Editors**
+  * Annotation colors can be configured in the **Annotations** sub-menu.
+  * Highlighting colors for differences can be configured in the **Quick Diff** sub-menu.
+* Syntax coloring for (System)Verilog can be changed in the **Window \> Preferences \> Sigasi \> (System)Verilog \> Syntax Coloring** preferences menu.
+* Syntax coloring for VHDL can be changed in the **Window \> Preferences \> Sigasi \> VHDL \> Syntax Coloring** preferences menu.
+
 ### Multiple Screen Support
+
+You can right-click the title tab of any view and select *Detach* to move the view into a separate window that can be dragged to another screen.
+Alternatively, you can drag a view out of the current window to create a new window from it.
+
+Once multiple windows are available, views can be dragged between screens.
+
+Resetting the [Sigasi Studio perspective](/manual/user_interface/#the-sigasi-studio-perspective) will move all views into a single window.
 
 ### Side-by-side Diff
 
@@ -314,7 +333,7 @@ The following stuttering keys are available:
 | **..**    | `=>`         |
 | **::**    | `:=`         |
 
-Stuttering can be disabled or enabled in **Window \> Preferences \> VHDL \> Enable Stuttering**.
+Stuttering can be disabled or enabled throught the **Enable stuttering** option in the **Window \> Preferences \> Sigasi \> VHDL** menu.
 
 ## Smart Indentation
 
@@ -333,9 +352,8 @@ according to your preferences.
 
 See also:
 
-* [tabs-and-spaces]
-* [/screencasts/verilog-smart-indent]
-* [/screencasts/smart_indent_vhdl]
+* [Tabs and Spaces](/manual/config#tabs-and-spaces)
+* Screencast [Smart Indent for VHDL](/screencasts/smart_indent_vhdl)
 
 ## VHDL code formatting
 
@@ -359,7 +377,7 @@ One example is the decision to format a *conditional signal assignment* on one, 
     else (others => 'X');
 ```
 
-** Note about broken code**: If your VHDL source file contains syntactical errors, the formatter can not always figure out an appropriate formatting. For this reason the formatter is programmed to stop applying (whitespace) changes when unsupported syntax errors are encountered.
+**Note about broken code**: If your VHDL source file contains syntactical errors, the formatter can not always figure out an appropriate formatting. For this reason the formatter is programmed to stop applying (whitespace) changes when unsupported syntax errors are encountered.
 
 ### Configuration
 
@@ -429,7 +447,7 @@ described in this chapter.
 
 ## Initial preprocessor definitions for SystemVerilog projects
 
-Since [/releasenotes/sigasi-3.06] you can configure definitions that are set before other files in the project are processed.
+Since [Sigasi Studio 3.6](/releasenotes/sigasi-3.06) you can configure definitions that are set before other files in the project are processed.
 Right click your project and select **Properties > (System)Verilog Preprocessor**.
 
 {{< figure src="/img/releasenotes/3.6/preprocessor_properties.png" >}}
@@ -465,17 +483,17 @@ according to your preferences.
 
 See also:
 
-* [tabs-and-spaces].
-* Screencast : [/screencasts/verilog-smart-indent]
+* [Tabs and Spaces](/manual/config#tabs-and-spaces)
+* Screencast [Smart Indentation for Verilog](/screencasts/verilog-smart-indent)
 
 ## SystemVerilog Preprocessing/Macros
 
 When you hover over a SystemVerilog preprocessor directive (e.g. `include ...`), Sigasi Studio presents you the preprocessed text.
-This hover also shows you, at the bottom, a convenient link to open the [views#Preprocessor View].
+This hover also shows you, at the bottom, a convenient link to open the [Preprocessor View](/manual/views#preprocessor-view).
 
 {{< figure src="/img/manual/preprocessor-hover.png" >}}
 
-In the [views#Preprocessor View], you can preview the expanded version of your preprocessed SystemVerilog source files.
+In the [Preprocessor View](/manual/views#preprocessor-view), you can preview the expanded version of your preprocessed SystemVerilog source files.
 
 You can configure the include paths of your SystemVerilog projects in the (System)Verilog Preprocessor Property page.
 You can open this page by right clicking your SystemVerilog project and selecting **Properties > (System)Verilog Preprocessor**.

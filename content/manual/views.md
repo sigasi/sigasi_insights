@@ -17,7 +17,7 @@ This chapter lists and explains the most important views in Sigasi Studio. Some 
 
 You can open a View in several different ways:
 
-* By typing the view name in the [/manual/user_interface#Quick Access] field
+* By typing the view name in the [Quick Access](/manual/user_interface#quick-access) field
 * Via **Window > Show View**. If the view is not in the visible list, choose **Other...** and select the view in the selection dialog.
 * By right clicking in the **editor** and selecting **Show in > ...**.  
   Some Views also support to open the current selection (e.g. the Block Diagram View). This selects the element in the view that corresponds to the current selection in the editor.
@@ -49,7 +49,7 @@ The Editor view shows the content of files, and allows you to edit
 files. It is a tabbed view so that multiple files can be open for
 editing simultaneously. The currently selected file is the active file.
 
-* [/manual/editor]
+* [Sigasi Studio Editor](/manual/editor)
 
 # Outline view
 
@@ -86,7 +86,7 @@ When you **double-click** an object in the hierarchy, the Editor view is updated
 
 Use the **instantiations** filter ![](/img/icons/instantiation.png), to hide everything except instantiations and structural statements are shown.
 
-You can **launch a simulation** with the ![](/img/icons/run_exc.gif) button, if you first set up an [tools#Launch simulator].
+You can **launch a simulation** with the ![](/img/icons/run_exc.gif) button, if you first set up an [Launch simulator](/manual/tools#launch-simulator).
 
 The Hierarchy View also offers an action **Select required files**, which selects all design files that are part of the current hierarchy, in the project explorer. This allows you to easily perform the same action on all files in the hierarchy. E.g. team commands, ... {{< xl_only >}}
 
@@ -181,7 +181,7 @@ You can export the state machine view to an image with the save ![](/img/icons/s
 
 You can also export **all** *state machines of an entire project* at once: Click **Project > Export... > Sigasi > State Machine Diagrams export** and select your project. All SVGs will be created in **diagrams/statemachines/** in your project.
 
-You can watch a screencast at [/screencasts/state_machine_viewer]
+You can watch a screencast at [State Machine Viewer](/screencasts/state_machine_viewer).
 
 # Dependencies View
 
@@ -209,14 +209,14 @@ You can **export** this diagram for documentation by clicking the save icon.
 
 # Documentation View
 
-The **Documentation view** gives you a live preview of the [automatic documentation][documentation] Sigasi Studio can generate for your project.
+The **Documentation view** gives you a live preview of the [automatic documentation](/manual/documentation) Sigasi Studio can generate for your project.
 
 {{< figure src="/img/manual/documentationview.png" >}}
 
 
 # Net Search View
 
-{{< xl_only >}},{{< vhdl_only >}}
+{{< xl_only >}}- {{< vhdl_only >}}
 
 With **Net search**, you can you to find *loads* and *drivers* of a net.
 A *net* is defined as a signal or port and all other signals and ports

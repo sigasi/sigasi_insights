@@ -26,7 +26,7 @@ Other supported features:
 * **Error reporting** of incorrect entity names, modules, ports, generics and parameters in instantiations in VHDL code.
 * VHDL **renames** are refused if they need changes in (System)Verilog code.
 
-Screencast : [/screencasts/mixed_language_instantiation]
+Screencast : [Mixed languages: instantiating Verilog in VHDL code](/screencasts/mixed_language_instantiation)
 
 # Using two languages in Sigasi Studio
 

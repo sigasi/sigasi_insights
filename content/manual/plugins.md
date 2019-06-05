@@ -92,3 +92,7 @@ Some other popular revision control systems include:
 ## Other languages
 
 * [Eclipse Tcl support in Sigasi Studio](/tech/eclipse_tcl_support_in_sigasi.html)
+
+## Opening to a shell
+
+If you want a quick way to open files and folders from the [Project Explorer](/manual/views#project-explorer-view) in a terminal, [EasyShell](https://marketplace.eclipse.org/content/easyshell) is a useful plugin.
