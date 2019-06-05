@@ -8,21 +8,21 @@ Sigasi Studio supports a number of ways to work with external tools such as
 simulators. Different techniques offer varying degrees of flexibility
 and automation.
 
-Most people will want to set up their [/manual/tools#External Compilers]
+Most people will want to set up their [external compilers](/manual/tools#external-compilers)
 so that Sigasi Studio can use them to compile and start simulations.
 
 Another way to compile your project is to export your project to a CSV (comma separated values) list
 of all the files in your project, in the correct compilation order.
-Learn more about how to [/manual/tools#Export] your project's file list.
+Learn more about how to [export](/manual/tools#export) your project's file list.
 
 The third, and more advanced way of working with compilers or simulators
 is to use the standard Eclipse mechanisms of *builders* and *external
 tools*.
 
-By [/manual/tools#Creating a builder],
+By [creating a builder](#creating-a-builder),
 you can arrange for an external tool to be run automatically when a
 Sigasi Studio project is rebuilt. By default, this happens each time you save a
-file. [/manual/tools#External Tools Configuration]
+file. [External Tools Configuration](#external-tools-configuration)
 allow you to call any program or script from within the Sigasi Studio GUI. You
 have to write and maintain the scripts yourself, but you have complete
 flexibility as to what is in the scripts.
@@ -32,14 +32,14 @@ flexibility as to what is in the scripts.
 If you have a simulator or lint tool installed, you can use this for two
 purposes:
 
-1. [/manual/tools#Save-time Compilation]: Compile and
+1. [Save-time Compilation](#save-time-compilation): Compile and
     check your files each time you save. Any errors or warnings will
     show up in the file, on the line number of the problrem
-2. [/manual/tools#Launch Simulator]: Start the
+2. [Launch Simulator](#launch-simulator): Start the
     simulator in its own window, ready to run a simulation.
 
 Learn about [which external compilers are supported](#list-of-toolchains)
-and how to [/manual/tools#Configure external compiler].
+and how to [Configure external compiler](#configure-external-compiler).
 
 ## Launch simulator
 
@@ -52,7 +52,7 @@ simulation. Sigasi Studio opens a new console for each simulation launch. You
 can terminate a simulation by clicking the **Stop** icon
 ![](/img/icons/stop.png).
 
-When you launch a simulation, Sigasi Studio opens a new console in the [Console View][views#console-view]
+When you launch a simulation, Sigasi Studio opens a new console in the [Console View](/manual/views#console-view)
 You can switch between different consoles by clicking the ![icon console display](/img/icons/icon_con_disp_console.png)-icon.
 
 {{< figure src="/img/manual/launch_simulation_console.png" >}}
@@ -89,28 +89,28 @@ also include synthesis tools.
 
 For each toolchain Sigasi Studio can support any combination of the following:
 
-* [/manual/tools#Save-time compilation]
-* [/manual/tools#Launch Simulator]
-* [/manual/linting#Quick Fix for third party libraries]
-* [/manual/tools#Open a Quartus II Project in Sigasi Studio]
+* [Save-time compilation](#save-time-compilation)
+* [Launch Simulator](#launch-simulator)
+* [Quick Fix for third party libraries](/manual/linting#quick-fix-for-third-party-libraries)
+* [Open a Quartus II Project in Sigasi Studio](#open-a-quartus-ii-project-in-sigasi-studio)
 
 Currently the following external compilers are supported:
 
-| Toolchain               | save-time compilation | start simulation         |
-| ----------------------- | --------------------- | -------------------------|
-| Aldec Riviera-PRO       | true                  | true                     |
-| Aldec Active-HDL        | true                  | false                    |
-| Aldec ALINT             | true                  | (run elaboration checks) |
-| Aldec ALINT-PRO         | true                  | false                    |
-| Altera Quartus II       | false                 | false                    |
-| ModelSim / QuestaSim    | true                  | true                     |
-| Xilinx ISE              | true                  | true                     |
-| [Xilinx Vivado][vivado] | true                  | true                     |
-| Cadence Incisive        | true                  | false                    |
-| [OneSpin]               | true                  | (run elaboration checks) |
-| GHDL                    | true                  | true                     |
+| Toolchain                       | save-time compilation | start simulation         |
+| ------------------------------- | --------------------- | -------------------------|
+| Aldec Riviera-PRO               | true                  | true                     |
+| Aldec Active-HDL                | true                  | false                    |
+| Aldec ALINT                     | true                  | (run elaboration checks) |
+| Aldec ALINT-PRO                 | true                  | false                    |
+| Altera Quartus II               | false                 | false                    |
+| ModelSim / QuestaSim            | true                  | true                     |
+| Xilinx ISE                      | true                  | true                     |
+| [Xilinx Vivado](/manual/vivado) | true                  | true                     |
+| Cadence Incisive                | true                  | false                    |
+| [OneSpin](/manual/onespin)      | true                  | (run elaboration checks) |
+| GHDL                            | true                  | true                     |
 
-For information on where to obtain free HDL simulators, see [this section in our FAQ][/faq#Which free VHDL simulator can I use].
+For information on where to obtain free HDL simulators, see [this section in our FAQ](/faq#which-free-vhdl-simulator-can-i-use).
 
 ## Save-time compilation
 
@@ -263,13 +263,13 @@ Furthermore, if you add or remove files in the Quartus II project, these
 changes are automatically applied in Sigasi Studio.
 
 *Note:* If you want to set up a project independent of Altera Quartus
-II, please read the documentation on [/manual/projectsetup].
+II, please read the documentation on [setting up a project](/manual/projectsetup).
 
 ## Setting the preferred editor
 
 While importing a Quartus Project in Sigasi Studio, you have the
 possibility to configure Sigasi Studio as preferred editor
-in [/manual/opening#Altera Quartus II].
+in [Altera Quartus II](/manual/opening#altera-quartus-ii).
 This offers the ability to open files in Sigasi Studio from within Quartus.
 
 ## Open a Quartus II Project in Sigasi Studio
@@ -312,26 +312,26 @@ a work flow action in Quartus II, like starting a compilation.
 
 ## Setting the preferred editor
 
-To open the Sigasi Studio editor from Xilinx, you first have to configure Sigasi Studio as preferred editor in [/manual/opening#Xilinx Vivado] or [/manual/opening#Xilinx ISE].
+To open the Sigasi Studio editor from Xilinx, you first have to configure Sigasi Studio as preferred editor in [Vivado](/manual/opening#xilinx-vivado) or [ISE](/manual/opening#xilinx-ise).
 
 ## Importing Xilinx Projects in Sigasi Studio
 
-## Vivado
+### Vivado
 
-The process of importing a Xilinx Vivado project is explained in [/tech/generating-sigasi-project-vivado-project]
+The process of importing a Xilinx Vivado project is explained in [Generating a Sigasi project from a Vivado project](/tech/generating-sigasi-project-vivado-project).
 
-## ISE
+### ISE
 
-The process of importing a Xilinx ISE project is explained in [/tech/importing-xilinx-ise-project-sigasi]
+The process of importing a Xilinx ISE project is explained in [Importing a Xilinx ISE project in Sigasi](/tech/importing-xilinx-ise-project-sigasi).
 
 ## Xilinx Preferences
 
-## Vivado
+### Vivado
 
 You can change the Xilinx Vivado installation location by selecting **Window > Preferences > Sigasi > Toolchains > Xilinx Vivado**.
 Sigasi Studio needs this path to find the Xilinx Vivado libraries.
 
-## ISE
+### ISE
 
 You can change the Xilinx ISE installation location by selecting **Window > Preferences > Sigasi > Toolchains > Xilinx ISE**.
 Sigasi Studio needs this path to find the Xilinx Vivado libraries and to run the ISim compiler and simulator.

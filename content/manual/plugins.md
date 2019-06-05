@@ -7,7 +7,7 @@ pager: true
 Since Sigasi Studio is built on Eclipse, you can install third party Eclipse
 plugins.
 
-The best place to start looking for a plugin is the [eclipse-marketplace]. We list some interesting
+The best place to start looking for a plugin is the [Eclipse Marketplace](http://marketplace.eclipse.org). We list some interesting
 plugins here. Since these are third party plugins, there is no official
 support from Sigasi.
 
@@ -50,7 +50,7 @@ As **update site**, you should use: <http://download.eclipse.org/releases/oxygen
 
 To install the [Subclipse](https://marketplace.eclipse.org/content/subclipse) plugin, perform these steps in the **Help > Install New Software...** window:
 
-* Add <https://download.eclipse.org/releases/2018-09/> (or the appropriate link for the Eclipse version the [release][/releasenotes] of Sigasi Studio is build on) to the **Work with:** line.
+* Add <https://download.eclipse.org/releases/2018-09/> (or the appropriate link for the Eclipse version the [release](/releasenotes) of Sigasi Studio is build on) to the **Work with:** line.
 * Add <https://dl.bintray.com/subclipse/releases/subclipse/latest/> to the same line (as documented on <https://github.com/subclipse/subclipse/wiki>).
 * Then search for subclipse and proceed with the installation. 
 

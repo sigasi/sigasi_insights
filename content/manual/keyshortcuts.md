@@ -37,7 +37,7 @@ In this section, we list the most important shortcuts.
 1. Toggle Block Selection (**Shift+Alt+A**)  
    Switch between regular and block selection mode.
 1. Structured Select (**Shift+Alt+Up/Down/Left/Right**)  
-  Select VHDL or Verilog code, based on its *syntactic structure*. ([/manual/editor#Structured selection])  
+  Select VHDL or Verilog code, based on its *syntactic structure*. ([Structured selection](/manual/editor#structured-selection))  
 1. Format (**Shift+Ctrl+F**)  
   Format your current VHDL or SystemVerilog file.  
 1. <a name="quick-access"></a>Quick Access (**Ctrl+3**, <mark>This is the shortcut to use, when you forgot the shortcut you actually need.</mark>)  
@@ -153,4 +153,4 @@ If you are using Mac OS X, most of these keyboard shortcuts use Command instead 
 
 Keyboard shortcuts can be easily customized via **Preferences > General > Keys**.
 
-This preference page also enables you to select the **Emacs** scheme, for more Emacs-like keyboard shortcuts, or (if you have installed the [/tech/ultraedit-key-bindings-eclipse] plugin) the UltraEdit key bindings.
+This preference page also enables you to select the **Emacs** scheme, for more Emacs-like keyboard shortcuts, or (if you have installed the [UltraEdit key bindings for Eclipse](/tech/ultraedit-key-bindings-eclipse) plugin) the UltraEdit key bindings.

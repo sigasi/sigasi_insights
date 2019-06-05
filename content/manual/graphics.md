@@ -38,7 +38,7 @@ You can also press the Sigasi button on the top right of the BlockDiagram or Sta
 
 From there, you can declare groups and configure your diagram, check it in to version control and share it with your colleagues.
 Auto-complete (**Ctrl+Space**) helps you write most of the code while formatting (**Shift+Ctrl+F**) helps you to keep your file clean.
-If you're interested in the language's exact syntax, you can find it [here](../tech/graphics.ebnf.html).
+If you're interested in the language's exact syntax, you can find it [here](/tech/graphics.ebnf).
 
 ## Features
 The Graphics Configuration features:
@@ -73,17 +73,17 @@ The file is read from bottom to top. You start with the above definition of the 
 When using a lot of reassignments or when you're indexing vectors, you can get a *skyscraper* effect in the generated block diagrams.
 By using `reassignments hide` you can draw through the assignment blocks making the diagram a lot simpler.  
 
-{{< figure src="/img/manual/skyscraper.png" alt="Skyscraper" >}}  
 *Skyscraper*
+{{< figure src="/img/manual/skyscraper.png" alt="Skyscraper" >}}  
 
+*Hidden reassignments*  
 {{< figure src="/img/manual/skyscraper_hidden_reassignments.png" alt="Hidden reassignments" >}}  
-*Hidden reassignments*  
   
-{{< figure src="/img/manual/multiple_reassignments.png" alt="Multiple reassignments" >}}  
 *Multiple reassignments*  
+{{< figure src="/img/manual/multiple_reassignments.png" alt="Multiple reassignments" >}}  
 
-{{< figure src="/img/manual/multiple_reassignments_hidden.png" alt="Hidden reassignments" >}}  
 *Hidden reassignments*  
+{{< figure src="/img/manual/multiple_reassignments_hidden.png" alt="Hidden reassignments" >}}  
 
 ### Grouping
 After hiding the reassignments you can define groups of edges or blocks.
@@ -98,11 +98,11 @@ E.g. if you want to group block2 and block3 you can add either of the following 
 `group block middle regex"block[23]"`  
 `group block middle (block2, block3)`  
 
-{{< figure src="/img/manual/ungrouped.png" alt="Ungrouped" >}}  
 *Ungrouped*
+{{< figure src="/img/manual/ungrouped.png" alt="Ungrouped" >}}  
 
-{{< figure src="/img/manual/grouped.png" alt="Grouped" >}}  
 *Grouped*  
+{{< figure src="/img/manual/grouped.png" alt="Grouped" >}}  
 
 The same can be done for wires by using `wire` instead of `block`.  
 Ports can be grouped by grouping the wires attached to the ports into a bus.
@@ -114,11 +114,11 @@ Where `Type` is `block, wire` or `port`.
 
 The syntax for a `ConfigurationItem` is as follows:  
 `hide | collapse | color GraphicsColor | reassignments hide`  
-You can discover which colors are available [here](../tech/graphics.ebnf.html#GraphicsColor) or through the autocomplete.
+You can discover which colors are available [here](/tech/graphics.ebnf#GraphicsColor) or through the autocomplete.
 
 E.g. we can color a block, called `middle`, green and hide its internals:  
-{{< figure src="/img/manual/colored_group.png" alt="Colored and collapsed group" >}}  
 *Colored and collapsed group*  
+{{< figure src="/img/manual/colored_group.png" alt="Colored and collapsed group" >}}  
 
 Configurations are not cascading (unlike CSS).
 Coloring the `middle` block green does not turn all its internal blocks green as well.
@@ -126,19 +126,22 @@ Coloring the `middle` block green does not turn all its internal blocks green as
 Note that the language can not see everything: it can not see blocks, wires or ports that are within another block.  
 E.g. we can't type `block block3 { color red }` as `block3` is part of the block `middle`.
 To access a block within a block, we have to nest configurations.
-{{< figure src="/img/manual/nested_configuration.png" alt="Nested configuration" >}}  
+
 *Nested configuration*  
+{{< figure src="/img/manual/nested_configuration.png" alt="Nested configuration" >}}  
 
 Another use case would be to hide (unconnected) ports by using `port a { hide }`.
-{{< figure src="/img/manual/hidden_port.png" alt="Hidden port" >}}  
+
 *Hidden port*  
+{{< figure src="/img/manual/hidden_port.png" alt="Hidden port" >}}  
 
 Note that when you hide a block or port, the edges that are connected to them will also be hidden.
 
 It is also possible to hide reassignments in configurations, as you saw in the above *skyscraper* example, the reassignment in the generate block was not hidden.
 You can do so as follows:  
-{{< figure src="/img/manual/hidden_reassignments_generate.png" alt="Hidden reassignment in generate" >}}  
+
 *Hidden reassignment in generate*  
+{{< figure src="/img/manual/hidden_reassignments_generate.png" alt="Hidden reassignment in generate" >}}  
 
 ## Graphics Configuration for StateMachines
 

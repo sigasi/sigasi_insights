@@ -8,7 +8,7 @@ The Sigasi Studio documentation generator makes the documentation process easier
 
 The Sigasi documentation generator has following advantages:
 
-* **No special coding requirements**: the plain comments in your code are extracted for the documentation, no need for special annotations. Sigasi uses the same [code/comment association][#Comment Association] as the hover provider. So to document a `port`, you append a comment to a port declaration. To document an `architecture`, you put the comment just on top of the architecture.
+* **No special coding requirements**: the plain comments in your code are extracted for the documentation, no need for special annotations. Sigasi uses the same [comment association](#comment-association) as the hover provider. So to document a `port`, you append a comment to a port declaration. To document an `architecture`, you put the comment just on top of the architecture.
 * **All included**. All documentation processing is done in Sigasi/Eclipse. So you do *not* need to install extra tools.
 * **Fully hyperlinked PDF**. If you export the documentation, you get a fully hyperlinked PDF.
 * **[Live preview](/manual/views/#documentation-view)**: you can see what the documentation will look like while you type your code and comments.
@@ -54,7 +54,7 @@ Sigasi Studio associates comments with HDL declarations with following rules:
 The association rules are illustrated in the image below:  
 {{< figure src="/img/releasenotes/3.8/comment_association.png" alt="comment association rules" >}}
 
-The **Formatter** and **[Structural select][/screencasts/structured-select]** respect (and fix) comments according to the association rules.
+The **Formatter** and **[Structural select](/screencasts/structured-select)** respect (and fix) comments according to the association rules.
 
 ## Special cases
 

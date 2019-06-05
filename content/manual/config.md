@@ -10,7 +10,7 @@ Sigasi Studio supports VHDL version 1993, 2002 and 2008 and Verilog (2005) and S
 You can select the default VHDL version to use in: **Window > Preferences > Sigasi > VHDL**.
 You can set the default Verilog version in: **Window > Preferences > Sigasi > (System)Verilog**.
 
-Since [Sigasi Studio 3.2][/releasenotes/sigasi-3.02], you can also set the language version
+Since [Sigasi Studio 3.2](/releasenotes/sigasi-3.02), you can also set the language version
 per project, per folder and per file.
 In the Project Explorer, right click your project, folder or file; select **Properties > VHDL Version**
 or **Properties > (System)Verilog Version** and select the version via the dropdown menu.
@@ -30,7 +30,7 @@ We recommend you add this file to version control so you can share it with your 
 * **VHDL libaries:** Any new project that you create will have the Common Libraries (`STD` and `IEEE`) that correspond to your selected VHDL version.
 Your *existing project will **not** be modified*.
 If you want to update the Common Libraries for an existing project, right-click the project and select **Library Mapping > Reset Common Libraries**.
-Since [Sigasi Studio 3.3][/releasenotes/sigasi-3.03], you will get a warning if your Common Libraries do not match the VHDL version of you VHDL file.
+Since [Sigasi Studio 3.3](/releasenotes/sigasi-3.03), you will get a warning if your Common Libraries do not match the VHDL version of you VHDL file.
 You can use the proposed quick fix to resolve the issue.
 * If you want to compile VHDL 87 code, you should select the “1993” option. There are no checks to warn about constructs that were not supported in 1987, but that were introduced in 1993.
 * Sigasi Studio does not send the [Common Libraries](/manual/libraries#common-libraries) to an external compiler. It is expected that these libraries are pre-compiled.
@@ -98,15 +98,15 @@ When you enable Quick Diff, you can see changes in the active editor with the ve
 # Linting rules
 
 You can choose the severity of linting rules in: **Window > Preferences > Sigasi > VHDL > Errors/Warnings**.
-Read more information about [linting].
+Read more information about [Linting and Quick Fixes](/manual/linting).
 
 # Language
 
-Eclipse is available in several languages, and you can install the language pack of your choice. Read more in this support article : [/tech/installing-translations-eclipse]
+Eclipse is available in several languages, and you can install the language pack of your choice. Read more in this support article : [Installing translations for Eclipse](/tech/installing-translations-eclipse)
 
 # Keyboard shortcuts
 
-Sigasi Studio comes with a large number of [keyshortcuts] preconfigured. You can configure keyboard shortcuts (key bindings) in **Window > Preferences > General > Keys**. You can modify individual keyboard shortcuts or add new key bindings.
+Sigasi Studio comes with a large number of [Keyboard Shortcuts](/manual/keyshortcuts) preconfigured. You can configure keyboard shortcuts (key bindings) in **Window > Preferences > General > Keys**. You can modify individual keyboard shortcuts or add new key bindings.
 There is also a preconfigured scheme for Emacs-like keyboard shortcuts.
 
 After you have configured your keyboard shortcuts, you can export your settings and share them with your colleagues (or re-import them on another computer):

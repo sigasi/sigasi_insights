@@ -1,6 +1,7 @@
 ---
 title: FAQ
 activemenu: faq
+pager: true
 ---
 
 # Install and Run

@@ -43,9 +43,6 @@ reflinks:
     content_license:
         url: http://creativecommons.org/licenses/by-sa/3.0/
         title: CC-BY-SA License
-    eclipse-marketplace:
-        title: Eclipse Marketplace
-        url: http://marketplace.eclipse.org
     contact-us:
         title: contact us
         url: mailto:sales@sigasi.com

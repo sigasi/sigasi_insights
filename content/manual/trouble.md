@@ -56,7 +56,7 @@ Cause: The project does not have VHDL support enabled
 
 Resolution: Enable VHDL support: **right-click the project > Configure > Add VHDL support**
 
-# Project does not have a Library Mapping Information
+# Project does not have Library Mapping Information
 
 Symptoms:
 
@@ -86,7 +86,7 @@ Resolution: Reset the common libraries: **right-click the project > Library Mapp
 
 By default, Sigasi Studio assumes that all VHDL or Verilog files are part of the project. However, some projects may contain multiple files with older or alternative definitions of a VHDL object. We call these *stale* files, because they are no longer used. In such a case you will want Sigasi Studio to ignore certain files.
 
-To exclude files (or directories) from analysis, consult the [/manual/libraries].
+To exclude files (or directories) from analysis, consult the [Libraries manual page](/manual/libraries).
 
 Ignored resources are decorated with a ![](/img/icons/ignoreicon.png) icon in the project explorer view.
 
@@ -107,7 +107,7 @@ This sets the maximum heap size to 1000 MB (instead of the standard 1400MB).
 
 # Sigasi Studio shows a startup message about port 4444 already being in use
 
-If you want to run Sigasi Studio on a server with multiple users, the configuration files should be updated according to the descriptions [here][/manual/opening#run-sigasi-studio-with-multiple-users-on-the-same-server].
+If you want to run Sigasi Studio on a server with multiple users, the configuration files should be updated according to the descriptions [here](/manual/opening#run-sigasi-studio-with-multiple-users-on-the-same-server).
 
 # I want a clean restart
 
