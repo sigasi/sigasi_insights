@@ -114,7 +114,7 @@ The update procedure is different for the Standalone version and for Sigasi as E
 To update the standalone version to Sigasi Studio 3.0, you need to perform a fresh download and replace your old installation:
 
 0. Backup your current **Sigasi installation folder** and **Sigasi workspace folder**.
-1. **[download_sigasi]** and **Unzip**.
+1. **[Download Sigasi](https://www.sigasi.com/download)** and **Unzip**.
 2. **Start**. Note that during the first start, you will see the info dialog below. Click **OK**
    ![Older Workspace Version Info](3.00/older-workspace-dialog.png)
 3. [Re-install extra plugins][/tech/install-plugins-from-existing-installation]

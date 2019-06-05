@@ -40,7 +40,7 @@ You can now configure Cadence Incisive (NCSim) as [/manual/tools#save-time-compi
 ## Other new and noteworthy improvements
 
 * We no longer include AHDL support
-* Updated the Xtext dependency to [xtext_2_8_2]
+* Updated the Xtext dependency to [Xtext 2.8.2](https://projects.eclipse.org/projects/modeling.tmf.xtext/releases/2.8.2)
 * The Sigasi Premium Desktop formatter now converts keywords to lower case when the *Upper case keywords* formatting option is disabled. (Note that the Sigasi Pro formatter will not change the keyword casing).
 * Expose *BlockConfiguration* context in VHDL autocomplete templates
 * We added a filter to project explorer to filter all non-Verilog files

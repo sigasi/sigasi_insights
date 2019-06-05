@@ -23,6 +23,6 @@ The [`convertCsvFileToLinks.py` script](https://github.com/sigasi/SigasiProjectC
 
 All scripts are open sourced under a [BSD license](https://github.com/sigasi/SigasiProjectCreator/blob/master/LICENSE). So you can freely customize them to your specific needs. Feel free to suggest or contribute improvements.
 
-Of course we can help you write your scripts. [contact-us] for more info.
+Of course we can help you write your scripts. {{< send-email >}} for more info.
 
 **P.S.**: You can also [open files or projects](/manual/opening#opening-files-from-the-command-line) with a script. Simply start Sigasi with parameter `-p <path to your project folder>`

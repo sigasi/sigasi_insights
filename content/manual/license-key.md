@@ -8,7 +8,7 @@ pager: true
 
 Sigasi Studio's license key management system is based on the well known FlexNet (a.k.a. FlexLM) license manager.
 Sigasi Studio supports both *node-locked* and *floating* license keys.
-The Sigasi Studio [edition][/manual/editions] is controlled by the license key.
+The Sigasi Studio [edition](/manual/editions) is controlled by the license key.
 
 
 # Node locked licenses
@@ -139,14 +139,14 @@ $LOCATION/lmgrd -c $LOCATION/sigasi.lic -l $LOCATION/debug.log
 	**Note**: If you are not sure of the name of the machine you are using click on the **System Settings** tab of lmtools, where it is shown, see below: {{< figure src="/img/manual/flexnet_windows_1.png" >}}
 
 7. Click on the **Config Services** tab and fill in the following, use the browse button when available:
-	* **Service Name**: Sigasi License Manager
-	* **Path to lmgrd.exe**: `D:\sigasi\license\lmgrd.exe`
-	* **Path to license file**: `D:\sigasi\license\sigasi.lic`
-	* **Path to the debug log file**: `D:\sigasi\license\debug.log`
-	**Note**: You will probably need to type the "Path to the debug log file", in full as the file will not exist so you cannot browse to it.
+  * **Service Name**: Sigasi License Manager
+  * **Path to lmgrd.exe**: `D:\sigasi\license\lmgrd.exe`
+  * **Path to license file**: `D:\sigasi\license\sigasi.lic`
+  * **Path to the debug log file**: `D:\sigasi\license\debug.log`
+  **Note**: You will probably need to type the "Path to the debug log file", in full as the file will not exist so you cannot browse to it.
 8. Ensure both the following check boxes are checked:
-	* **Use Services**
-	* **Start Server at Power Up**
+  * **Use Services**
+  * **Start Server at Power Up**
 9. Now click the **Save Service** button, and click **yes** on the confirmation dialog.
 10. Switch to the **Start/Stop/Reread** tab and start the server.
 
@@ -196,13 +196,13 @@ If your license key does not work, the first things to check are:
 * Which version of the Sigasi license daemon are you using?  
   **Note:** The Sigasi 2 daemon needs to be updated to run Sigasi 3. Otherwise you will see an `License is not valid (Internal Flexlm Error)` error message in the Sigasi Studio preference page.
 * Is the MAC address correct?
-* Since [/releasenotes/sigasi-4.03], on Linux Sigasi Studio uses the `ip` command to list MAC addresses instead of the now deprecated `ifconfig` command. If you're using a version of Sigasi Studio older than 4.3 on Linux, you might need to install additional packages to obtain the `ifconfig` command.
+* Since [Sigasi Studio 4.3](/releasenotes/sigasi-4.03), on Linux Sigasi Studio uses the `ip` command to list MAC addresses instead of the now deprecated `ifconfig` command. If you're using a version of Sigasi Studio older than 4.3 on Linux, you might need to install additional packages to obtain the `ifconfig` command.
     * On Arch, Debian or Ubuntu Linux, the "net-tools" package is needed.
     * On (Open)Suse the "net-tools-deprecated" package is needed.
 * Has the license expired?
 * Did you copy the license string exactly as it was sent to you?
 * Did you accidentally try to use a License Token as a license key?
-    * A *License Token* is a 24 character string. You can use your license token to [activate_key].
+    * A *License Token* is a 24 character string. You can use your license token to [Activate Your License Key](https://www.sigasi.com/activate-your-license-key).
     * A *License Key*  (or license file) looks like this:
 ```
 INCREMENT com.sigasi.hdt sigasi 2.0 18-nov-2012 uncounted \
@@ -220,10 +220,7 @@ If your floating license server does not function properly, try the following st
 * Start the FlexLM daemon with the `-z` option to see what is going wrong
 * You can check that the FlexNet daemon is running as expected by following these steps:
     * [Download](#download-the-flexnet-daemons) the daemon zip file on the client machine
-    * Run
-    ```
-    lmutil[.exe] lmdiag -c "<port>@<server>" -n
-    ```
+    * Run `lmutil[.exe] lmdiag -c "<port>@<server>" -n`
     * If the server is running correctly, you should see a description of the valid FlexNet features served by you license server. 
 * Make sure the server name in the license key file is correct.
 * Make sure both the Sigasi and FlexNet daemon are the same version (i.e. from the same zip-file from the Sigasi download server). If you need to mix versions, the FlexNet daemon version should be equal to or higher than the Sigasi daemon version.
@@ -240,7 +237,7 @@ If your floating license server does not function properly, try the following st
 * Some users reported that specifying an arbitrary absolute path for the Sigasi daemon on Windows (e.g. `DAEMON sigasi C:\\sigasi.exe port=27021`) does not work. It only works if the Sigasi daemon is in the `C:\Sigasi` folder.
   Other users have reported that you are *not* allowed to have the directory name being the same as the daemon name. For example: `c:\flexlm\sigasi\sigasi.exe` is invalid, but `c:\flexlm\vhdl_editor\sigasi.exe` works fine.
 * Make sure the environment variable is correct: `SIGASI_LM_LICENSE_FILE=<port number>@<servername>`
-* Verify that your server meets the [/faq#what-are-the-system-requirements].  
+* Verify that your server meets the [License Server System Requirements](/faq#what-are-the-license-server-requirements).  
   If you try to run the daemon on an unsupported version of Windows, you will typically see this error message: `CreateProcess error code: 0xc1   File= sigasi.exe`. 
 * You can easily check the status of your license via the License Key preference page : **Preferences > Sigasi > License Key**. At the bottom of this preference page you can see the type and expiration date of your license.
 * If you are accessing your license server through an SSH tunnel, try using `127.0.0.1` instead of `localhost`. 
@@ -250,7 +247,7 @@ If your floating license server does not function properly, try the following st
 9:14:47 (sigasi) UNSUPPORTED: "com.sigasi.hdt.preview" (PORT_AT_HOST_PLUS   ) testuser@testmachine  (License server system does not support this feature. (-18,327:10054 ""))  
 ```
 
-If the steps above do not help, feel free to [contact-us] and send us a **screenshot of the license dialog** with the error message.
+If the steps above do not help, feel free to {{< send-email >}} and send us a **screenshot of the license dialog** with the error message.
 
 
 ## Typical error messages

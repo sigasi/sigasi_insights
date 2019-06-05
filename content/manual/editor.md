@@ -236,6 +236,8 @@ Once multiple windows are available, views can be dragged between screens.
 
 Resetting the [Sigasi Studio perspective](/manual/user_interface/#the-sigasi-studio-perspective) will move all views into a single window.
 
+See also [this FAQ item](/faq/#how-to-use-sigasi-efficiently-on-multiple-monitors-screens-desktops).
+
 ### Side-by-side Diff
 
 * Previous versions (local history or version control)

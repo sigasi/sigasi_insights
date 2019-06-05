@@ -25,7 +25,7 @@
           <br>Licensed under {{ .Params.license }}
           {{ end }}
           <hr>
-          {{ .Content }}
+          {{ .Content | replaceRE "<table>" "<table class=\"uk-table uk-table-small uk-table-striped\">" | safeHTML }}
         </article>
       </div>
       <div class="uk-width-1-4@m uk-visible@m">

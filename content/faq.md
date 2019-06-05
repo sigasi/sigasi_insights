@@ -59,7 +59,7 @@ We recommend at least **2GB of memory**, and you need **about 300MB** of free di
 * Sigasi Studio Plugin is supported when using
     * Eclipse 4.7.3a *Oxygen* or higher
     * Java JRE 8 or higher
-* Check [these steps][#i-am-using-redhat-linux-6-how-can-i-run-sigasi-studio] for details
+* Check [these steps](#i-am-using-redhat-linux-6-how-can-i-run-sigasi-studio) for details
 
 #### Other Linux distributions
 * No known issues as long as Eclipse is running on your OS
@@ -72,17 +72,14 @@ The license server (FlexNet) is supported on
 
 ## I am using RedHat Linux 6. How can I run Sigasi Studio?
 
-Since [Sigasi Studio 4.1][/releasenotes/sigasi-4.01#sigasi-studio-standalone-version-eclipse-photon-48], the stand-alone Sigasi Studio application is built on top of Eclipse Photon (4.8).
+Since [Sigasi Studio 4.1](/releasenotes/sigasi-4.01#sigasi-studio-standalone-version-eclipse-photon-4-8), the stand-alone Sigasi Studio application is built on top of Eclipse Photon (4.8).
 This version of Eclipse has dependencies that can't be met on RedHat Linux 6.
 To successfully run Sigasi Studio on RedHat Linux 6, follow these steps:
 
 * Install [Eclipse Oxygen (4.7.3a)](https://www.eclipse.org/oxygen/). Find your download using the *Packages* link.
 * Eclipse Oxygen requires at least version 2.24.0 of GTK+.
-* Eclipse Oxygen and the Sigasi Studio Plugin require Java 8.
-```bash
-yum install java-1.8.0-openjdk
-```
-* Install the Sigasi Studio Plugin by following [these steps][/manual/setup#installation-of-sigasi-studio-eclipse-plugin].
+* Eclipse Oxygen and the Sigasi Studio Plugin require Java 8: `yum install java-1.8.0-openjdk`
+* Install the Sigasi Studio Plugin by following [these steps](/manual/setup#installation-of-sigasi-studio-eclipse-plugin).
 
 ## How do I increase the heap size for Eclipse?
 
@@ -134,7 +131,7 @@ Here you can **sort** by Plug-in Id by clicking on the title of the "Plug-in Id"
 
 ## Can I use the features of the upcoming release?
 
-Yes! You can find the details on [/tech/preview].
+Yes! You can find the details on [Sigasi Studio Preview](/tech/preview).
 
 ## How do I uninstall Sigasi Studio?
 
@@ -156,11 +153,11 @@ Floating licenses are available at a minimum volume of five licenses. The price 
 
 If your team is purchasing at least five licenses, you will have the choice between node-locked and floating licenses.
 
-If you currently have five node-locked licenses and you want to upgrade to floating licenses, please [contact-us].
+If you currently have five node-locked licenses and you want to upgrade to floating licenses, please {{< contact-us >}}.
 
 ## What are the requirements for the license server?
 
-License server requirements are listed with the [system requirements][#what-are-the-system-requirements].
+License server requirements are listed with the [license server system requirements](#what-are-the-license-server-requirements).
 
 ## How can I avoid locking up a license when I'm working with Eclipse?
 
@@ -211,13 +208,13 @@ Yes, the Sigasi VHDL Eclipse editor supports all unicode characters, including J
 
 ## What is this MouseFeed pop-up?
 
-Many actions can be accessed using your mouse and using [/manual/keyshortcuts], e.g. copying text can be done either by clicking **Edit > Copy** or by pressing **Ctrl-C**. Of course, pressing a key combination is a lot faster than clicking in a menu.
+Many actions can be accessed using your mouse and using [Keyboard Shortcuts](/manual/keyshortcuts), e.g. copying text can be done either by clicking **Edit > Copy** or by pressing **Ctrl-C**. Of course, pressing a key combination is a lot faster than clicking in a menu.
 
 {{< figure src="/img/faq/mousefeed.png" >}}
 
 Whenever you use your mouse for something that also has a key binding, the MouseFeed function tells you what this keyboard shortcut is. This will help you remember keyboard shortcuts for the actions you use most often.
 
-The easiest way to avoid getting these pop ups --and gain a good deal of development speed-- is by using [/manual/keyshortcuts] when possible. If you still want to disable MouseFeed, you can go to **Window > Preferences > MouseFeed > Action Invocation** and uncheck the box for **Enable action invocation control**.
+The easiest way to avoid getting these pop ups --and gain a good deal of development speed-- is by using [Keyboard Shortcuts](/manual/keyshortcuts) when possible. If you still want to disable MouseFeed, you can go to **Window > Preferences > MouseFeed > Action Invocation** and uncheck the box for **Enable action invocation control**.
 
 ## How can I insert tabs in Block Selection Mode
 
@@ -229,7 +226,7 @@ If you still need to insert tabs in Block Selection Mode, you should **copy** a 
 
 ## How to use Sigasi efficiently on multiple monitors/screens/desktops?
 
-Sigasi/Eclipse supports full multiscreen support.
+Sigasi/Eclipse supports full [multiscreen support](/manual/editor#multiple-screen-support).
 
 The easiest method to organize Sigasi over multiple screens is to use one window on each screen.
 You can open a new Window via **Window > New window**
@@ -254,11 +251,11 @@ You can achieve the same effect by toggling the '**Regular Expression**' option 
 
 ## How can I make Sigasi generate spaces instead of TAB's?
 
-See [tabs-and-spaces].
+See [Tabs and Spaces](/manual/config#tabs-and-spaces).
 
 ## How can I change the font size?
 
-See [/manual/config#Font Size].
+See [Font Size](/manual/config#font-size).
 
 ## Sigasi keeps compiling everything while I am trying to configure my VHDL Libraries
 
@@ -289,7 +286,7 @@ The **workspace path variables** (set via preferences) are stored in: `<workspac
 
 You can also set this per **project** (in the project properties). In that case the info is stored in the `.project` file.
 
-You can find more info on: [here](https://www.sigasi.com/content/how-avoid-absolute-library-paths-your-sigasi-project-files) and [here](https://help.eclipse.org/photon/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Fconcepts%2Fcpathvars.htm)
+You can find more info on: [here](/tech/how-avoid-absolute-library-paths-your-sigasi-project-files) and [here](https://help.eclipse.org/photon/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Fconcepts%2Fcpathvars.htm)
 
 ## Can I use a Dark Theme?
 
@@ -352,7 +349,7 @@ As you design, you put your code through a funnel: first Sigasi finds the first 
 
 {{< figure src="/img/faq/funnel_small.png" >}}
 
-If you want to check more errors, enable the [/manual/tools#Save-time Compilation]
+If you want to check more errors, enable the [Save-time Compilation](/manual/tools#save-time-compilation).
 
 ## How to 'Quick Fix' multiple problems at the same time?
 
@@ -393,7 +390,7 @@ Feel free to talk to us about any feature, big or small.
 
 You can enable and disable block editing with **Ctrl+Alt+A** or **Edit > Toggle Block Selection**
 
-Note that in many cases where you are used to using block editing (e.g. [/screencasts/short_entity_component_instantiation]), you may not need it any more, thanks to intelligent code completion (see this blog post: [/opinion/why-cant-hdl-designers-live-without-block-selection-mode]).
+Note that in many cases where you are used to using block editing (e.g. [Entity Component Instantiation](/screencasts/short_entity_component_instantiation)), you may not need it any more, thanks to intelligent code completion (see this blog post: [Why can't HDL designers live without block selection mode?](/opinion/why-cant-hdl-designers-live-without-block-selection-mode)).
 
 ## How to create a component declaration ("Paste As" Emacs)
 
@@ -401,14 +398,14 @@ Some other editors (most notably [Reto Zimmermann's Emacs VHDL Mode](/opinion/em
 
 Sigasi supports the same, but in a different way: using **Autocomplete**. You don't need to go find the original entity declaration, since Sigasi knows where to find it in your project. For example for instantiation: just start typing the **label name**, `:` and the word `entity` and press **Ctrl-Space** to trigger the autocomplete feature.
 
-Check out this screencast: [/screencasts/testbench].
+Check out this screencast: [Create a testbench with autocomplete](/screencasts/testbench).
 
 ## How can I suppress (ignore) warnings?
 
 If you see warnings that are not useful for you, you can do one of the following:
 
 * **Disable rule**: You can either disable the markers of a certain type: Click **Window > Preferences > Sigasi > VHDL > Errors/Warnings**, then select a rule and set the **severity** to **Ignore**
-* **Suppress one marker**: Or you can suppress markers on a given line, using the [/tech/eclipse-marker-manager] plugin.
+* **Suppress one marker**: Or you can suppress markers on a given line, using the [Eclipse Marker Manager](/tech/eclipse-marker-manager) plugin.
 
 # Troubleshooting
 
@@ -434,7 +431,7 @@ If you cannot see the problem decorators or library decorators in the Project Ex
 * The file was not compiled as VHDL/Verilog file. To fix this try:
     * Check that your file is saved
     * Make sure your project is being built: **Project > Build Automatically**
-    * Check that the project has VHDL or Verilog support: Right-click on the project **Configure > Add VHDL Support** [more info][/manual/projectsetup#adding-vhdl-or-verilog-support-to-an-existing-eclipse-project].
+    * Check that the project has VHDL or Verilog support: Right-click on the project **Configure > Add VHDL Support** [more info](/manual/projectsetup#adding-vhdl-or-verilog-support-to-an-existing-eclipse-project).
     * Is the Eclipse builder enabled for your project? You can check this by right-clicking your project in the Project explorer and selecting **Properties > Builders**. The **Xtext Project Builder** must be enabled. If not, exit the property page. Next, right-click on the project **Configure > remove VHDL Support**, and right-click again **Configure > Add VHDL Support**.
 
 * The decorators are disabled. To fix this, enable:
@@ -479,7 +476,7 @@ The log file contains no sensitive information about your organization. On some 
 
 There can be a number of reasons why Sigasi connects to the internet.
 
-* Updates: Each time you start Sigasi, the program checks to see if there are new [/manual/setup#software-updates] from our update website (currently located at <https://download.sigasi.com>). Sigasi downloads the updates in the background and, when done, it asks you if it can install them.
+* Updates: Each time you start Sigasi, the program checks to see if there are new [updates](/manual/setup#software-updates) from our update website (currently located at <https://download.sigasi.com>). Sigasi downloads the updates in the background and, when done, it asks you if it can install them.
 * [Talkback](https://www.sigasi.com/sigasi-talkback)
 * Other Plugins: Obviously, other plugins can also connect to the internet. Some examples are plugins for revision control or issue tracking, or the built-in Eclipse web browser.
 

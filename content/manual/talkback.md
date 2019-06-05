@@ -47,4 +47,4 @@ Talkback does not support Proxies. If Talkback is unable to connect to our serve
 
 # Features like Talkback are against our corporate policy, even if it is disabled. What can I do?
 
-Please [contact-us] so that we can discuss a solution for your company.
+Please {{< send-email >}} so that we can discuss a solution for your company.
