@@ -6,6 +6,21 @@
         <article>
         {{ .Content | replaceRE "<table>" "<table class=\"uk-table uk-table-small uk-table-striped\">" | safeHTML }}
         </article>
+        <nav class="uk-container">
+            <div data-uk-grid>
+                <div class="uk-margin uk-width-1-3@m">
+                    {{ with .NextInSection }}
+                    <a class="uk-button uk-button-default uk-button-link uk-button-large uk-padding-small uk-text-large uk-border-rounded" href="{{ .Permalink }}">{{ .Title }}</a>
+                    {{ end }}
+                </div>
+                <div class="uk-width-expand"></div>
+                <div class="uk-text-right uk-margin uk-width-1-3@m">
+                    {{ with .PrevInSection }}
+                    <a class="uk-button uk-button-default uk-button-link uk-button-large uk-padding-small uk-text-large uk-border-rounded" href="{{ .Permalink }}">{{ .Title }}</a>
+                    {{ end }}
+                </div>
+            </div>
+        </nav>
       </div>
       <div class="uk-width-1-4@m uk-visible@m">
         <aside>
@@ -23,20 +38,5 @@
   </div>
 </main>
 
-<nav class="uk-container">
-    <div data-uk-grid>
-        <div class="uk-margin uk-width-1-3@m">
-            {{ with .NextInSection }}
-            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-            {{ end }}
-        </div>
-        <div class="uk-width-expand"></div>
-        <div class="uk-text-right uk-margin uk-width-1-3@m">
-            {{ with .PrevInSection }}
-            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-            {{ end }}
-        </div>
-    </div>
-</nav>
 {{ end }}
 
