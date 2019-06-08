@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="uk-container uk-padding">
-    <div data-uk-grid>
-        <div class="uk-width-1-2@m">
+    <div class="uk-child-width-1-2@m" data-uk-grid>
+        <div>
             <h3>How may we help you?</h3>
             <p>If you have a question and you can't find the answer on this Sigasi Insights portal, 
             feel free to reach out and send us an email.</p>
@@ -11,7 +11,7 @@
                 <li>Or contact your <a href="//www.sigasi.com/contact">local distributor</a></li>
             </ul>
         </div>
-        <div class="uk-width-1-2@m">
+        <div>
             <h3>About Sigasi Insights</h3>
             <p>The Sigasi Insights portal is your entry point to all knowledge about Sigasi Studio
             and VHDL and SystemVerilog design.
@@ -22,6 +22,41 @@
             and <a href="/tech">Tech Articles</a> with tips and tricks on VHDL, Eclipse,
             Design methodology and other subjects.</p>
         </div>
+    </div>
+    <hr>
+    <div class="uk-child-width-1-3@m" data-uk-grid>
+        <div>
+            <h3>First Start</h3>
+            {{ range .Site.Data.frontpage.firststart }}
+            <span uk-icon="link"></span><a href="{{ .url }}">{{ .title }}</a><br>
+            {{ end }}
+        </div>
+        <div>
+            <h3>Popular Tech Articles</h3>
+            {{ range .Site.Data.frontpage.popular }}
+            <span uk-icon="link"></span><a href="{{ .url }}">{{ .title }}</a><br>
+            {{ end }}
+            <span uk-icon="link"></span><a href="/tech">more...</a><br>
+        </div>
+        <div>
+            <h3>Recent Articles</h3>
+            {{ $s_tech := where .Site.RegularPages.ByDate.Reverse "Section" "tech" }}
+            {{ range first 10 $s_tech }}
+            <span uk-icon="link"></span><a href="{{ .Permalink }}">{{ .Title | truncate 30 }}</a><small> {{ .Date.Format "2006-01-02" }}</small><br>
+            {{ end }}
+        </div>
+    </div>
+    <div class="uk-child-width-1-4@m sg-block-dark uk-padding" data-uk-grid>
+        {{ $s_screencasts := where .Site.RegularPages.ByDate.Reverse "Section" "screencasts" }}
+        {{ range first 4 $s_screencasts }}
+        <div>
+            <center>
+                <iframe src="https://www.youtube.com/embed/{{ .Params.videoid }}?modestbranding=1&rel=0&showinfo=0&autoplay=0" gesture="media" allow="encrypted-media" allowfullscreen="" width="240" height="160" frameborder="0" uk-video>
+                </iframe>
+                <a href="{{ .Permalink }}"><small>{{ .Title | truncate 35}}</small></a>
+            </center>
+        </div>
+        {{ end }}
     </div>
 </div>
 {{ end }}

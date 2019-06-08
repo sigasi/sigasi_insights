@@ -1,0 +1,29 @@
+firststart:
+  - title: Download
+    url: 'http://www.sigasi.com/download'
+  - title: Walk Through the Tutorial
+    url: /tutorial
+  - title: Get a Trial License
+    url: 'http://www.sigasi.com/try-form'
+  - title: Learn the Keyboard Shortcuts
+    url: /manual/keyshortcuts
+
+popular:
+  - title: "Signal Assignments in VHDL:..."
+    url: /tech/signal-assignments-vhdl-withselect-whenelse-and-case
+  - title: To "to" or to "downto"... Ranges in VHDL
+    url: /tech/to-downto-ranges-vhdl
+  - title: Clock edge detection
+    url: /tech/clock-edge-detection
+  - title: Four (and a half) ways to write VHDL...
+    url: /tech/four-and-half-ways-write-vhdl-instantiations
+  - title: VHDL case statements can do without...
+    url: /tech/vhdl-case-statements-can-do-without-others
+  - title: Be careful with VHDL operator precedence
+    url: /tech/be-careful-vhdl-operator-precedence
+  - title: VHDL Assert and Report
+    url: /tech/vhdl-assert-and-report
+  - title: "Advanced VHDL Configurations: Tying..."
+    url: /tech/advanced-vhdl-configurations-tying-component-unrelated-entity
+  - title: '"Use" and "Library" in VHDL'
+    url: /tech/use-and-library-vhdl
