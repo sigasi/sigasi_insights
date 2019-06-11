@@ -14,45 +14,45 @@ Read below for more new and noteworthy changes and bug fixes.
 New (System)Verilog checks:
 
 * Warn for usage of `reg` instead of `logic` (with QuickFix)  
-[![Warn for usage of `reg` instead of `logic` (with QuickFix)](/releasenotes/4.2/systemverilog_linting_reglogic.png "Warn for usage of `reg` instead of `logic` (with QuickFix)")](/releasenotes/4.2/systemverilog_linting_reglogic.png)
+{{< figure src="/img/releasenotes/4.2/systemverilog_linting_reglogic.png" alt="Warn for usage of `reg` instead of `logic` (with QuickFix)" title="Warn for usage of `reg` instead of `logic` (with QuickFix)" link="/img/releasenotes/4.2/systemverilog_linting_reglogic.png" >}}
 * Warn when using compiler directives as macro names  
-[![Warn when using compiler directives as macro names](/releasenotes/4.2/systemverilog_linting_macronames.png "Warn when using compiler directives as macro names")](/releasenotes/4.2/systemverilog_linting_macronames.png)
+{{< figure src="/img/releasenotes/4.2/systemverilog_linting_macronames.png" alt="Warn when using compiler directives as macro names" title="Warn when using compiler directives as macro names" link="/img/releasenotes/4.2/systemverilog_linting_macronames.png" >}}
 * Check for `packed` keyword in packed structs and unions  
-[![Check for `packed` keyword in packed structs and unions](/releasenotes/4.2/systemverilog_linting_packed.png "Check for `packed` keyword in packed structs and unions")](/releasenotes/4.2/systemverilog_linting_packed.png)
+{{< figure src="/img/releasenotes/4.2/systemverilog_linting_packed.png" alt="Check for `packed` keyword in packed structs and unions" title="Check for `packed` keyword in packed structs and unions" link="/img/releasenotes/4.2/systemverilog_linting_packed.png" >}}
 * Check for mixed positional and named port connections in instantiations  
-[![Check for mixed positional and named port connections in instantiations](/releasenotes/4.2/systemverilog_linting_mixedports.png "Check for mixed positional and named port connections in instantiations")](/releasenotes/4.2/systemverilog_linting_mixedports.png)
+{{< figure src="/img/releasenotes/4.2/systemverilog_linting_mixedports.png" alt="Check for mixed positional and named port connections in instantiations" title="Check for mixed positional and named port connections in instantiations" link="/img/releasenotes/4.2/systemverilog_linting_mixedports.png" >}}
 * `reg` keyword is not allowed directly after a `net` type  
-[![`reg` keyword is not allowed directly after a `net` type](/releasenotes/4.2/systemverilog_linting_reg.png "`reg` keyword is not allowed directly after a `net` type")](/releasenotes/4.2/systemverilog_linting_reg.png)
+{{< figure src="/img/releasenotes/4.2/systemverilog_linting_reg.png" alt="`reg` keyword is not allowed directly after a `net` type" title="`reg` keyword is not allowed directly after a `net` type" link="/img/releasenotes/4.2/systemverilog_linting_reg.png" >}}
 * Warn when using VHDL keywords as identifiers for (System)Verilog declarations  
-[![Warn when using VHDL keywords as identifiers for (System)Verilog declarations](/releasenotes/4.2/systemverilog_linting_vhdl_keywords.png "Warn when using VHDL keywords as identifiers for (System)Verilog declarations")](/releasenotes/4.2/systemverilog_linting_vhdl_keywords.png)
+{{< figure src="/img/releasenotes/4.2/systemverilog_linting_vhdl_keywords.png" alt="Warn when using VHDL keywords as identifiers for (System)Verilog declarations" title="Warn when using VHDL keywords as identifiers for (System)Verilog declarations" link="/img/releasenotes/4.2/systemverilog_linting_vhdl_keywords.png" >}}
 
 The severity of the (non-syntax) checks can be configured in **Window > Preferences > Sigasi > (System)Verilog > Errors/warnings**  
-[![Configure severity](/releasenotes/4.2/systemverilog_linting_settings.png "Configure severity")](/releasenotes/4.2/systemverilog_linting_settings.png)
+{{< figure src="/img/releasenotes/4.2/systemverilog_linting_settings.png" alt="Configure severity" title="Configure severity" link="/img/releasenotes/4.2/systemverilog_linting_settings.png" >}}
 
 New VHDL checks:
 
 * Warn when (System)Verilog keywords are used as VHDL identifiers  
-[![Warn when (System)Verilog keywords are used as VHDL identifiers](/releasenotes/4.2/vhdl_linting_verilog_keyword.png "Warn when (System)Verilog keywords are used as VHDL identifiers")](/releasenotes/4.2/vhdl_linting_verilog_keyword.png)
+{{< figure src="/img/releasenotes/4.2/vhdl_linting_verilog_keyword.png" alt="Warn when (System)Verilog keywords are used as VHDL identifiers" title="Warn when (System)Verilog keywords are used as VHDL identifiers" link="/img/releasenotes/4.2/vhdl_linting_verilog_keyword.png" >}}
 * Flag VHDL 87 file declarations as error  
-[![Flag VHDL 87 file declarations as error](/releasenotes/4.2/vhdl_file87.png "Flag VHDL 87 file declarations as error")](/releasenotes/4.2/vhdl_file87.png)
+{{< figure src="/img/releasenotes/4.2/vhdl_file87.png" alt="Flag VHDL 87 file declarations as error" title="Flag VHDL 87 file declarations as error" link="/img/releasenotes/4.2/vhdl_file87.png" >}}
 * Warn on empty loops  
-[![ Warn on empty loops](/releasenotes/4.2/vhdl_empty_loops.png " Warn on empty loops")](/releasenotes/4.2/vhdl_empty_loops.png)
+{{< figure src="/img/releasenotes/4.2/vhdl_empty_loops.png" alt=" Warn on empty loops" title=" Warn on empty loops" link="/img/releasenotes/4.2/vhdl_empty_loops.png" >}}
 
 # Suppress warnings
 
-In earlier versions of Sigasi Studio you could suppress (also known as *waive*) warnings via the *MarkerManager* plugin. In Sigasi Studio 4.2 we refined this feature and now give type time feedback on suppressed markers. ([documentation][/manual/linting#suppressing-warnings])
+In earlier versions of Sigasi Studio you could suppress (also known as *waive*) warnings via the *MarkerManager* plugin. In Sigasi Studio 4.2 we refined this feature and now give type time feedback on suppressed markers. ([documentation](/manual/linting#suppressing-warnings))
 
-[![Suppress warnings](/releasenotes/4.2/suppress_a.png "Suppress warnings")](/releasenotes/4.2/suppress_a.png)
+{{< figure src="/img/releasenotes/4.2/suppress_a.png" alt="Suppress warnings" title="Suppress warnings" link="/img/releasenotes/4.2/suppress_a.png" >}}
 
-Check [this video][/screencasts/suppress] for an introduction to suppressing warnings in Sigasi Studio.
+Check [this video](/screencasts/suppress) for an introduction to suppressing warnings in Sigasi Studio.
 
 # Configure linting severity per project \[VHDL]
 
 Sigasi Studio 4.2 presents a new Property Page that makes it easier to configure linting settings per project (or per file or folder).
-Right click a project, folder or file and select **Properties > VHDL Errors/Warnings**. The settings are stored in the `.settings` folder in your project. ([documentation][/manual/linting#project-specific-linting-settings])
+Right click a project, folder or file and select **Properties > VHDL Errors/Warnings**. The settings are stored in the `.settings` folder in your project. ([documentation](/manual/linting#project-specific-linting-settings))
 
 
-[![Configure linting severity per project](/releasenotes/4.2/linting_severity_per_project.png "Configure linting severity per project")](/releasenotes/4.2/linting_severity_per_project.png)
+{{< figure src="/img/releasenotes/4.2/linting_severity_per_project.png" alt="Configure linting severity per project" title="Configure linting severity per project" link="/img/releasenotes/4.2/linting_severity_per_project.png" >}}
 
 
 # Other New and Noteworthy Changes
@@ -60,16 +60,16 @@ Right click a project, folder or file and select **Properties > VHDL Errors/Warn
 * (System)Verilog build performance enhancements
 * \[VHDL2008] Support defaults in **function generics**
 * \[Mixed] Add link from (VHDL) component ports to (System)Verilog module ports
-[![Text](/releasenotes/4.2/vhdl_component_port_link_verilog.png "Text")](/releasenotes/4.2/vhdl_component_port_link_verilog.png)
+{{< figure src="/img/releasenotes/4.2/vhdl_component_port_link_verilog.png" alt="Text" title="Text" link="/img/releasenotes/4.2/vhdl_component_port_link_verilog.png" >}}
 * Support for Chinese, Japanese and Korean characters in documentation export (PDF)
-[![Text](/releasenotes/4.2/korean_in_documentation.png "Text")](/releasenotes/4.2/korean_in_documentation.png)
+{{< figure src="/img/releasenotes/4.2/korean_in_documentation.png" alt="Text" title="Text" link="/img/releasenotes/4.2/korean_in_documentation.png" >}}
 * Apply dark theme on new Console View
 * \[Verilog] Disabled `.v` extension interpretation for `.sv` files. `.sv` files are always processed as SystemVerilog.
 * Block diagram export should not use dark theme when the dark theme is enabled
 * Updated Sigasi Studio Standalone version to [Eclipse 2018-09](https://www.eclipse.org/eclipse/news/4.9/)
 * Update to Xtext dependency to 2.15
 * \[VHDL] Better hovers for signals: also show type declaration
-[![Text](/releasenotes/4.2/vhdl_hover_show_datatype.png "Text")](/releasenotes/4.2/vhdl_hover_show_datatype.png)
+{{< figure src="/img/releasenotes/4.2/vhdl_hover_show_datatype.png" alt="Text" title="Text" link="/img/releasenotes/4.2/vhdl_hover_show_datatype.png" >}}
 * \[VHDL] Better hovers for component instantiations
 * Better VUnit integration (requires [VUnit version 4.0](https://vunit.github.io/cli.html#json-export))
 
@@ -95,4 +95,4 @@ Right click a project, folder or file and select **Properties > VHDL Errors/Warn
 
 # How to update?
 
-If you have Sigasi Studio 4 installed, you can [update][/manual/setup#Software Updates] or [download a fresh install of the latest version]{{< download_latest >}}.
+If you have Sigasi Studio 4 installed, you can [update](/manual/setup#software-updates) or {{< download_latest >}} for a fresh install.

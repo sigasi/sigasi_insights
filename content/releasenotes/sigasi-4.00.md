@@ -27,20 +27,20 @@ Sigasi Studio XPRT is our newest flagship product and offers all Sigasi Studio f
 
 Good news for our loyal XL-DOC users: **existing and valid XL-DOC 3.x license keys will automatically unlock all Sigasi Studio XPRT 4.0 features.**
 
-[![Sigasi Studio XPRT license](/releasenotes/4.0/xprt.png "Sigasi Studio XPRT license")](/releasenotes/4.0/xprt.png)
+{{< figure src="/img/releasenotes/4.0/xprt.png" alt="Sigasi Studio XPRT license" title="Sigasi Studio XPRT license" link="/img/releasenotes/4.0/xprt.png" >}}
 
-**Update Notes**: We made huge efforts to make the *"3.8→4.0" update* as smooth as always. But in some specific cases, it is possible you'll see an empty editor or a hierarchy view with an error. In that case, follow [these steps][#reset-perspective].
+**Update Notes**: We made huge efforts to make the *"3.8→4.0" update* as smooth as always. But in some specific cases, it is possible you'll see an empty editor or a hierarchy view with an error. In that case, follow [these steps](#reset-perspective).
 
 # Block Diagrams for SystemVerilog modules
 
 Sigasi Studio 4.0 introduces **block diagrams** for SystemVerilog modules. You can open the Block Diagram View by right clicking in a SystemVerilog editor and selecting **Show In > Block Diagram**.  
 
-[![Block Diagram View for SystemVerilog](/releasenotes/4.0/sv_block_diagram.png "Block Diagram View for SystemVerilog")](/releasenotes/4.0/sv_block_diagram.png)
+{{< figure src="/img/releasenotes/4.0/sv_block_diagram.png" alt="Block Diagram View for SystemVerilog" title="Block Diagram View for SystemVerilog" link="/img/releasenotes/4.0/sv_block_diagram.png" >}}
 
 The [Block Diagram View](/manual/views#block-diagram-view) **automatically updates** when you **save** your code and gives a convenient way to visually inspect and navigate your code, even
 when your code is still unfinished or broken.
 
-[![Block Diagram Graphics Configuration for SystemVerilog](/releasenotes/4.0/sv_graphic_configuration.png "Block Diagram Graphics Configuration for SystemVerilog")](/releasenotes/4.0/sv_graphic_configuration.png)
+{{< figure src="/img/releasenotes/4.0/sv_graphic_configuration.png" alt="Block Diagram Graphics Configuration for SystemVerilog" title="Block Diagram Graphics Configuration for SystemVerilog" link="/img/releasenotes/4.0/sv_graphic_configuration.png" >}}
 
 You can also customize and filter block diagrams by creating a [Graphics Configuration](/tech/using-graphics-configuration).
 
@@ -62,7 +62,7 @@ The hierarchy engine in Sigasi Studio was updated to handle SystemVerilog, VHDL 
 
 This is a convenient and powerful method to navigate through your design.
 
-[![SystemVerilog and Mixed Hierarchies in the Hierarchy View](/releasenotes/4.0/mixed_hierarchy.png "SystemVerilog and Mixed Hierarchies in the Hierarchy View")](/releasenotes/4.0/mixed_hierarchy.png)
+{{< figure src="/img/releasenotes/4.0/mixed_hierarchy.png" alt="SystemVerilog and Mixed Hierarchies in the Hierarchy View" title="SystemVerilog and Mixed Hierarchies in the Hierarchy View" link="/img/releasenotes/4.0/mixed_hierarchy.png" >}}
 
 [Hierarchy View documentation](/manual/views#hierarchy-view)
 
@@ -72,34 +72,34 @@ Sigasi Studio 4.0 also contains a lot of improvements to enhance your SystemVeri
 
 - Improved **performance** for SystemVerilog **autocomplete**
 - **Autocomplete** for **preprocessor directives**  
-[![Autocomplete for SystemVerilog preprocessor directives](/releasenotes/4.0/autocomplete_verilog_directives.png "Autocomplete for SystemVerilog preprocessor directives")](/releasenotes/4.0/autocomplete_verilog_directives.png)
+{{< figure src="/img/releasenotes/4.0/autocomplete_verilog_directives.png" alt="Autocomplete for SystemVerilog preprocessor directives" title="Autocomplete for SystemVerilog preprocessor directives" link="/img/releasenotes/4.0/autocomplete_verilog_directives.png" >}}
 - Report **errors** for incorrect SystemVerilog **preprocessor directives**  
-[![Report errors in SystemVerilog preprocessor directives](/releasenotes/4.0/directive_errors.png "Report errors in SystemVerilog preprocessor directives")](/releasenotes/4.0/directive_errors.png)
+{{< figure src="/img/releasenotes/4.0/directive_errors.png" alt="Report errors in SystemVerilog preprocessor directives" title="Report errors in SystemVerilog preprocessor directives" link="/img/releasenotes/4.0/directive_errors.png" >}}
 - Improved and polished the SystemVerilog **[Outline View](/manual/views#outline-view)**
 - Extra autocomplete **templates** for **SystemVerilog assertions**  
-[![Autocomplete templates for SystemVerilog assertions](/releasenotes/4.0/assertion_templates.png "Autocomplete templates for SystemVerilog assertions")](/releasenotes/4.0/assertion_templates.png)
+{{< figure src="/img/releasenotes/4.0/assertion_templates.png" alt="Autocomplete templates for SystemVerilog assertions" title="Autocomplete templates for SystemVerilog assertions" link="/img/releasenotes/4.0/assertion_templates.png" >}}
 - A new **wizard** to easily **import existing SystemVerilog projects** (that were created before you were using Sigasi Studio)  
-[![Import wizard for existing SystemVerilog projects](/releasenotes/4.0/import_existing_systemverilog_project.png "Import wizard for existing SystemVerilog projects")](/releasenotes/4.0/import_existing_systemverilog_project.png)
+{{< figure src="/img/releasenotes/4.0/import_existing_systemverilog_project.png" alt="Import wizard for existing SystemVerilog projects" title="Import wizard for existing SystemVerilog projects" link="/img/releasenotes/4.0/import_existing_systemverilog_project.png" >}}
 - Improved handling of **include files**: Sigasi Studio analyses includes files in the context of their *includer*. This results in better error reporting and autocompletes. This release also improves the **outline** and **formatting** of include files.
-- Improved SystemVerilog [preprocessor view][/manual/views#preprocessor-view]:
+- Improved SystemVerilog [preprocessor view](/manual/views#preprocessor-view):
     * Added an **overview ruler**
     * Show **squiggly lines** for errors
     * Highlight **current** line
     * **Synchronise selection** in both directions: changing the selection in the preprocessor view now updates the selection in the edtior too
     * Improved syntax highlighting
-[![SystemVerilog preprocessor view](/releasenotes/4.0/better_preprocessor_view.png "SystemVerilog preprocessor view")](/releasenotes/4.0/better_preprocessor_view.png)
+{{< figure src="/img/releasenotes/4.0/better_preprocessor_view.png" alt="SystemVerilog preprocessor view" title="SystemVerilog preprocessor view" link="/img/releasenotes/4.0/better_preprocessor_view.png" >}}
 - We also improved SystemVerilog scoping (i.e. linking identifiers with their declaration). This results in a more accurate **Find references**, **Occurrence highlighting** and **Rename refactoring**.  
 You can also enable **warnings for undeclared identifiers** via the **Ctrl-3** keyboard shortcut, and next typing **Toggle SystemVerilog problem markers**  
-[![Warn about unresolved declarations](/releasenotes/4.0/toggle_verilog_markers.png "Warn about unresolved declarations")](/releasenotes/4.0/toggle_verilog_markers.png)
+{{< figure src="/img/releasenotes/4.0/toggle_verilog_markers.png" alt="Warn about unresolved declarations" title="Warn about unresolved declarations" link="/img/releasenotes/4.0/toggle_verilog_markers.png" >}}
 
 # Other news and noteworthy changes
 
 - We updated the Eclipse Xtext dependency to `2.14.0`
 - Legacy Sigasi 2 licenses are not compatible with Sigasi Studio 4.0
-- Documentation: support alignment in tables  [![Alignment in tables](/releasenotes/4.0/alignment_in_tables.png "Alignment in tables")](/releasenotes/4.0/alignment_in_tables.png)
+- Documentation: support alignment in tables  {{< figure src="/img/releasenotes/4.0/alignment_in_tables.png" alt="Alignment in tables" title="Alignment in tables" link="/img/releasenotes/4.0/alignment_in_tables.png" >}}
 - Mixed: Added a hyperlink (**Ctrl**) from VHDL `component` declarations and instantiations to the corresponding `module` declaration in mixed designs.
 - VHDL: The `component` autocomplete in Sigasi Studio does not copy comments because these copied comments can get out of sync and cause confusion. To still easily access the comments of the original `entity`, the hover of `components` now fetches to comments of the entity. This also works for `component` instantiations.  
-[![Entity comments in component (instantiation) hovers](/releasenotes/4.0/component_instantiation_hover.png "Entity comments in component (instantiation) hovers")](/releasenotes/4.0/component_instantiation_hover.png)
+{{< figure src="/img/releasenotes/4.0/component_instantiation_hover.png" alt="Entity comments in component (instantiation) hovers" title="Entity comments in component (instantiation) hovers" link="/img/releasenotes/4.0/component_instantiation_hover.png" >}}
 
 # Bug fixes
 
@@ -116,7 +116,7 @@ You can also enable **warnings for undeclared identifiers** via the **Ctrl-3** k
 
 # How to update?
 
-If you have Sigasi Studio 3 installed, you can [update][/manual/setup#Software Updates] or [download a fresh install of the latest version]{{< download_latest >}}.
+If you have Sigasi Studio 3 installed, you can [update](/manual/setup#software-updates) or {{< download_latest >}} for a fresh install.
 
 Good news for our loyal XL-DOC users: **existing and valid XL-DOC 3.x license keys will automatically unlock all Sigasi Studio XPRT 4.0 features.**
 

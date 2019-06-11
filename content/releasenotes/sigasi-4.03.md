@@ -14,13 +14,13 @@ Read below to find more details.
 
 When you trigger **autocomplete** inside the double quotes of a (System)Verilog **include directive**, Sigasi Studio will offer you include paths matching the current prefix. This makes it a lot easier to get the paths first time right.  
 
-[![Autocomplete for include paths](/releasenotes/4.3/autocomplete_include.png "Autocomplete for include paths")](/releasenotes/4.3/autocomplete_include.png)
+{{< figure src="/img/releasenotes/4.3/autocomplete_include.png" alt="Autocomplete for include paths" title="Autocomplete for include paths" link="/img/releasenotes/4.3/autocomplete_include.png" >}}
 
 # Quick Fix to Suppress Warnings
 
 Warnings now have a **Quick Fix** to automatically add the [`@suppress` comment][/manual/linting#suppressing-warnings]. The Quick Fix automatically adds the warning's message. This makes sure the correct warning is suppressed (even when the code changes). We recommend to also add an explanation with the reason why you suppress the warning.  
 
-[![Suppress warnings with a Quick Fix](/releasenotes/4.3/quickfix_suppress.png "Suppress warnings with a Quick Fix")](/releasenotes/4.3/quickfix_suppress.png)
+{{< figure src="/img/releasenotes/4.3/quickfix_suppress.png" alt="Suppress warnings with a Quick Fix" title="Suppress warnings with a Quick Fix" link="/img/releasenotes/4.3/quickfix_suppress.png" >}}
 
 # Dark theme
 
@@ -29,24 +29,24 @@ We received a lot of feedback asking for better **Dark Theme support** in Sigasi
 
 We also reviewed and polished our icons to look nice with a Dark Theme.  
 
-[![Dark Theme](/releasenotes/4.3/dark_theme.png "Dark Theme")](/releasenotes/4.3/dark_theme.png)
+{{< figure src="/img/releasenotes/4.3/dark_theme.png" alt="Dark Theme" title="Dark Theme" link="/img/releasenotes/4.3/dark_theme.png" >}}
 
 # Other New and Noteworthy Changes
 
 * **Stuttering** (i.e. double tab "`,`" to get "`<=`") is now disabled by default for (System)Verilog.  
   You can still enable it via **Window > Preferences > Sigasi > (System)Verilog**, **Enable stuttering**.
 * \[VHDL] We added a **Quick Fix** to remove trailing colon/semicolon in port and generics lists  
-  [![Quick Fix for trailing (semi)colons in port/generic lists/maps](/releasenotes/4.3/quickfix_trailing_semicolon.png "Quick Fix for trailing (semi)colons in port/generic lists/maps")](/releasenotes/4.3/quickfix_trailing_semicolon.png)
+  {{< figure src="/img/releasenotes/4.3/quickfix_trailing_semicolon.png" alt="Quick Fix for trailing (semi)colons in port/generic lists/maps" title="Quick Fix for trailing (semi)colons in port/generic lists/maps" link="/img/releasenotes/4.3/quickfix_trailing_semicolon.png" >}}
 * Export Dialogs (PDF, CSV, ...) now have a filter field to quickly filter top level names  
- [![Filter top level names in export dialogs](/releasenotes/4.3/export_filter.png "Filter top level names in export dialogs")](/releasenotes/4.3/export_filter.png)
+ {{< figure src="/img/releasenotes/4.3/export_filter.png" alt="Filter top level names in export dialogs" title="Filter top level names in export dialogs" link="/img/releasenotes/4.3/export_filter.png" >}}
 * \[(System)Verilog] Configure linting severity per project
 * Project specific validation preference page (VHDL and SystemVerilog) now have a *filter field*
 * Eclipse 201812 : Sigasi Studio is now build with [Eclipse 201812 (4.10)](https://www.eclipse.org/eclipse/news/4.10/platform.php). This is also means that Sigasi Studio (preview) can now be installed as plugin in the latest Eclipse version.
 * \[VHDL] Warning if concatenation contains unconstrained aggregates  
-[![Concatenate unconstrained aggregates](/releasenotes/4.3/concatenate_unconstrained_aggregate.png "Concatenate unconstrained aggregates")](/releasenotes/4.3/concatenate_unconstrained_aggregate.png)
+{{< figure src="/img/releasenotes/4.3/concatenate_unconstrained_aggregate.png" alt="Concatenate unconstrained aggregates" title="Concatenate unconstrained aggregates" link="/img/releasenotes/4.3/concatenate_unconstrained_aggregate.png" >}}
 * Update to Xtext dependency to 2.16. The Sigasi Plugin now requires at least Eclipse version 4.7.3a, also known as *Eclipse Oxygen*.
 * VUnit UI improvements: Refined stop behavior and improved the icons and progress reporting.  
-[![Improved VUnit View](/releasenotes/4.3/vunit_view.png "Improved VUnit View")](/releasenotes/4.3/vunit_view.png)
+{{< figure src="/img/releasenotes/4.3/vunit_view.png" alt="Improved VUnit View" title="Improved VUnit View" link="/img/releasenotes/4.3/vunit_view.png" >}}
 
 # Bugfixes
 
