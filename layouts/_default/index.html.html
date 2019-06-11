@@ -14,13 +14,14 @@
         <div>
             <h3>About Sigasi Insights</h3>
             <p>The Sigasi Insights portal is your entry point to all knowledge about Sigasi Studio
-            and VHDL and SystemVerilog design.
-            It combines the Sigasi Studio <a href="/manual">Manual</a>, 
-            a list of <a href="/faq">Frequently Asked Questions</a>,
-            a collection of <a href="/screencasts">Screencasts</a>, 
-            <a href="/opinion">Opinion</a> articles by Sigasi staff and guest bloggers, 
-            and <a href="/tech">Tech Articles</a> with tips and tricks on VHDL, Eclipse,
-            Design methodology and other subjects.</p>
+            and VHDL and SystemVerilog design. It combines</p>
+            <ul>
+                <li>the Sigasi Studio <a href="/manual">Manual</a>
+                <li>a list of <a href="/faq">Frequently Asked Questions</a>
+                <li>a collection of <a href="/screencasts">Screencasts</a>
+                <li><a href="/tech">Tech Articles</a> with tips and tricks on VHDL, Eclipse, Design Methodology and other subjects
+                <li><a href="/opinion">Opinion Articles</a> by Sigasi staff and guest bloggers
+            </ul>
         </div>
     </div>
     <hr>
@@ -52,7 +53,7 @@
         <div>
             <center>
                 <iframe src="https://www.youtube.com/embed/{{ .Params.videoid }}?modestbranding=1&rel=0&showinfo=0&autoplay=0" gesture="media" allow="encrypted-media" allowfullscreen="" width="240" height="160" frameborder="0" uk-video>
-                </iframe>
+                </iframe><br>
                 <a href="{{ .Permalink }}"><small>{{ .Title | truncate 35}}</small></a>
             </center>
         </div>

@@ -5,9 +5,9 @@
     </article>
 
     <ul class="uk-list uk-column-1-2@m uk-margin-medium-bottom">
-        {{ range .Pages }}
+        {{ range .Pages.ByTitle }}
         <li>
-            <a href="{{ .Permalink }}">{{ .Title }}</a><small> {{ .Date.Format "2006-01-02" }}</small>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
         </li>
         {{ end }}
     </ul>
