@@ -1,8 +1,8 @@
 ---
-title: Sigasi Studio Preview (4.4)
+title: Sigasi Studio Preview (4.5)
 layout: page
 pager: true
-date: 2019-05-17
+date: 2019-06-20
 comments: true
 ---
 
@@ -16,12 +16,7 @@ Although these preview releases are less rigorously tested than than the officia
 
 # Current preview release
 
-* Update to Xtext 2.17.1
-* Update Eclipse 2019-03 (4.11)
-* Documentation: PDF export: better sizing and fonts of diagrams
-* Handle illegal characters in bit strings
-* Remove horizontal lines from comments (documentation/hovers)
-* Export hierarchy: include architecture when entity instantiations are used
+No documented changes since the [4.4 release][/releasenotes/sigasi-4.04]
 
 # Update or install?
 

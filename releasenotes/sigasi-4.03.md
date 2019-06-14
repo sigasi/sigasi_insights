@@ -44,7 +44,7 @@ We also reviewed and polished our icons to look nice with a Dark Theme.
 * Eclipse 201812 : Sigasi Studio is now build with [Eclipse 201812 (4.10)](https://www.eclipse.org/eclipse/news/4.10/platform.php). This is also means that Sigasi Studio (preview) can now be installed as plugin in the latest Eclipse version.
 * \[VHDL] Warning if concatenation contains unconstrained aggregates  
 [![Concatenate unconstrained aggregates](/releasenotes/4.3/concatenate_unconstrained_aggregate.png "Concatenate unconstrained aggregates")](/releasenotes/4.3/concatenate_unconstrained_aggregate.png)
-* Update to Xtext dependency to 2.16. The Sigasi Plugin now requires at least Eclipse version 4.7.3a, also known as *Eclipse Oxygen*.
+* Update Xtext dependency to 2.16. The Sigasi Plugin now requires at least Eclipse version 4.7.3a, also known as *Eclipse Oxygen*.
 * VUnit UI improvements: Refined stop behavior and improved the icons and progress reporting.  
 [![Improved VUnit View](/releasenotes/4.3/vunit_view.png "Improved VUnit View")](/releasenotes/4.3/vunit_view.png)
 
