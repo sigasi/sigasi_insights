@@ -7,7 +7,7 @@ pager: true
 # Introduction {: #project-intro}
 
 Your work with Sigasi Studio typically is organized as a *project*. A project
-is a collection of VHDL and/or SystemVerilog files that belong together. Sigasi Studio
+is a collection of VHDL and/or (System)Verilog files that belong together. Sigasi Studio
 understands the HDL units defined in the files, and the relationships
 between them.
 
@@ -24,7 +24,7 @@ following sections.
 
 ## 1: Import the project
 
-You can import an existing VHDL or SystemVerilog project from the file system by clicking
+You can import an existing VHDL or (System)Verilog project from the file system by clicking
 **File \> Import… \> Sigasi \> Import a VHDL project** (or **Import a (System)Verilog project**). Browse to the
 root directory of the project, and press **Finish**.
 
@@ -67,7 +67,7 @@ You can also select the VHDL version or the version of `.v` files.
 
 After creating a new project, you can add existing files by dragging
 them from your filesystem into the project explorer. New files can be
-added by clicking **File \> New \> VHDL file** or **File \> New \> Verilog file**.
+added by clicking **File \> New \> VHDL file** or **File \> New \> (System)Verilog file**.
 
 # Other ways to set up a project
 
@@ -76,11 +76,11 @@ added by clicking **File \> New \> VHDL file** or **File \> New \> Verilog file*
 You can also add VHDL or Verilog support to any project in your
 workspace by right-clicking the project in the project explorer and
 selecting **Configure \> Add VHDL support** or **Configure \> Add
-Verilog support**. You can also remove VHDL or Verilog support from
+(System)Verilog support**. You can also remove VHDL or Verilog support from
 Sigasi Studio projects by selecting **Configure \> Remove VHDL support** or
 **Configure \> Remove (System)Verilog support**.
 
-Note that only with a [xl] license, you can have **mixed** VHDL and
+Note that only with an [xl] license, you can have **mixed** VHDL and
 Verilog support at the same time.
 
 With a [creator] license, a project can contain both VHDL and
@@ -98,3 +98,10 @@ else.
 You can import a project from an archive by clicking **File \> Import…
 \> General \> Existing projects into Workspace** and selecting **Select
 archive file**. Browse to your project archive and press **Finish**.
+
+## Using "auto-configure project" for VHDL projects
+When you open the VHDL project importer (**File \> Import \> Sigasi \> Import a VHDL project**), you'll notice a checkbox "Auto-configure project".
+When this checkbox is enabled, Sigasi Studio will automatically create a project configuration for the imported project.
+
+Using information from your code it will try to create a likely library mapping, the mapping can still be [customized to your liking](/manual/libraries.html).
+
