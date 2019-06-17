@@ -10,7 +10,7 @@ pager: true
 
 Sigasi Studio can help you manage VUnit projects and enables you to *run* and *inspect test results* straight from the IDE.
 
-When you import a VUnit project or add VUnit support to an existing project, Sigasi Studio runs VUnit in the background and automatically adds the correct libraries to your project. It also shows error markers in the VUnit script (`run.py`) if anything goes wrong.
+When you import a VUnit project or add VUnit support to an existing project, Sigasi Studio runs VUnit in the background and automatically adds the correct libraries - as specified by the VUnit script - to your project. It also shows error markers in the VUnit script (`run.py`) if anything goes wrong.
 
 [![VUnit project](images/vunit_project.png "VUnit project")](images/vunit_project.png)
 
