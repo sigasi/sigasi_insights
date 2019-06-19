@@ -391,7 +391,7 @@ In each project, you can override the coding rules settings. You can override ru
 
 To configure the severity level, right click the project (or file or folder) in the Project Explorer and select **Properties > VHDL Errors/Warnings** or **Properties > SystemVerilog Errors/Warnings**.
 
-[{{< figure src="/img/manual/linting_severity_per_project.png" alt="Configure linting severity per project" >}}](images/linting_severity_per_project.png)
+{{< figure src="/img/manual/linting_severity_per_project.png" alt="Configure linting severity per project" link="/img/manual/linting_severity_per_project.png" >}}
 
 Project settings are stored in this settings file:
 
@@ -401,7 +401,7 @@ Project settings are stored in this settings file:
 
 You can search for a specific rule, by using the search field at the top of the property page.
 
-[{{< figure src="/img/manual/linting_severity_per_project_search.png" alt="Search for a specific rule" >}}](images/linting_severity_per_project_search.png)
+{{< figure src="/img/manual/linting_severity_per_project_search.png" alt="Search for a specific rule" link="/img/manual/linting_severity_per_project_search.png" >}}
 
 ## Manual configuration
 

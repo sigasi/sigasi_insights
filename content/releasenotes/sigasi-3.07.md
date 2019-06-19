@@ -105,7 +105,7 @@ This way we could vastly reduce the autocomplete latency, especially for larger 
 
 # How to update?
 
-If you have Sigasi Studio 3 installed, you can [update][/manual/setup#Software Updates] or [download a fresh install of the latest version]{{< download_latest >}}.
+If you have Sigasi Studio 3 installed, you can {{< update_sigasi >}} or {{< download_latest >}}.
 
 # Sigasi 3.7.1 point release
 

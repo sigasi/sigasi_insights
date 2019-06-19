@@ -8,7 +8,7 @@ comments: true
 
 The Sigasi Studio 3.1 brings OneSpin integration, Verilog improvements and more.
 
-If you have not yet updated your **Flexnet license daemon** after the Sigasi Studio 3 update, you need to do this before you update to Sigasi Studio 3.1. You can find the download details in "[/manual/license-key#License server setup]".
+If you have not yet updated your **Flexnet license daemon** after the Sigasi Studio 3 update, you need to do this before you update to Sigasi Studio 3.1. You can find the download details in [the manual]({{< ref "manual/license-key#license-server-setup" >}}).
 
 ## OneSpin integration
 
@@ -67,4 +67,4 @@ Just like the [*width check* in instantiations](/manual/linting#vector-width-in-
 
 ## How to update?
 
-If you have Sigasi Studio 3 installed, you can {{< update_sigasi >}} or [download a fresh install of the latest version]{{< download_latest >}}.
+If you have Sigasi Studio 3 installed, you can {{< update_sigasi >}} or {{< download_latest >}}.

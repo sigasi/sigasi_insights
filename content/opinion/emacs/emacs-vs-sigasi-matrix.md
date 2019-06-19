@@ -13,7 +13,7 @@ bannerad: true
 
 
 <table>
-<tr><th>		</th>			<th>	Other editors	</th>			<th>	Emacs <span class="caps">VHDL</span> mode	</th>			<th>	Sigasi Pro	</th>		</tr>
+<tr><th>		</th>			<th>	Other editors	</th>			<th>	Emacs <span class="caps">VHDL</span> mode	</th>			<th>	Sigasi Studio	</th>		</tr>
 <tr><td>	Commercially supported	</td>			<td>	?	</td>			<td>	<span style="color:red;"><strong>&#10008;</strong></span>	</td>			<td>	<span style="color:green;"><strong>&#10003;</strong></span>	</td>		</tr>
 <tr><td>	Syntax highlighting	</td>			<td>	<span style="color:green;"><strong>&#10003;</strong></span>	</td>			<td>	<span style="color:green;"><strong>&#10003;</strong></span>	</td>			<td>	<span style="color:green;"><strong>&#10003;</strong></span>	</td>		</tr>
 <tr><td>	Semantic highlighting	</td>			<td>	<span style="color:red;"><strong>&#10008;</strong></span>	</td>			<td>	<span style="color:red;"><strong>&#10008;</strong></span>	</td>			<td>	<span style="color:green;"><strong>&#10003;</strong></span>	</td>		</tr>

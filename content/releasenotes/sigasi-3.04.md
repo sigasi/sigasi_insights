@@ -80,7 +80,7 @@ See the [Preview Builds][/tech/preview] to track the latest SystemVerilog progre
 
 ## How to update?
 
-If you have Sigasi Studio 3 installed, you can {{< update_sigasi >}} or [download a fresh install of the latest version]{{< download_latest >}}.
+If you have Sigasi Studio 3 installed, you can {{< update_sigasi >}} or {{< download_latest >}}.
 
 ## Sigasi 3.4.1 point release
 

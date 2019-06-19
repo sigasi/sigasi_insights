@@ -6,6 +6,8 @@ author: Hendrik Eeckhaut
 date: 2017-09-14
 comments: true
 bannerad: true
+tags:
+  - VUnit
 ---
 
 Since [version 3.6](/releasenotes/sigasi-3.06), Sigasi Studio has a **Quick Fix** to automatically add the VUnit `vunit_lib` VHDL library to your project.
