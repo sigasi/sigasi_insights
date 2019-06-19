@@ -25,12 +25,12 @@ Sigasi Pro takes the weight off your shoulders on those two fronts. Its differen
 
 VHDL's pedantic syntax checking and data type system were a design decision. The idea was that complaining early would reduce the risk of missiles going bananas in mid air. Remember that VHDL started as project of the US Department of Defense! Junior designers take many write / compile / fix iterations to get to code and senior designers lose precious time proofreading their code before hitting the compile button.
 
-![Write-Inspect-Fix cycle](images/write-inspect-fix.png)
-![Write-Compile-Fix cycle](images/write-compile-fix.png) 
+![Write-Inspect-Fix cycle](/img/opinion/write-inspect-fix.png)
+![Write-Compile-Fix cycle](/img/opinion/write-compile-fix.png) 
 
 Sigasi's solution to writing correct data is to shorten the feedback loop. As soon as an engineer types a few characters, the ultra-fast built-in VHDL parser kicks in. Much like a spell checker in word processos, Sigasi marks errors in the code only seconds after they arise. We call this *type-time* error checking.
 
-![Undeclared signal: error is marked as soon as the assignment is written](images/undeclared_signal_0.png)
+![Undeclared signal: error is marked as soon as the assignment is written](/img/opinion/undeclared_signal_0.png)
 
 The type-time compiler has to be very fast, so it does not perform a full analysis. In order to provide even more feedback about your code, Sigasi uses an external compiler for a full analysis. The external compiler is called as soon as you *save* the file, which is still a lot sooner than with a traditional flow.
 

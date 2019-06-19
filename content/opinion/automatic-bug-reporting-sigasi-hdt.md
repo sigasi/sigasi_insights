@@ -11,7 +11,7 @@ bannerad: true
 
 In the latest release of Sigasi HDT, we introduced a problem reporting tool. This features sends error reports back to our servers so that we can find and squash even more bugs.
 
-![Our Lava Lamps](images/lavalamp.jpg){: align="right"}
+{{< figure alt="Our Lava Lamps" src="/img/opinion/lavalamp.jpg" class="uk-align-right" >}}
 We think software quality is very important. We have a continuous integration test server that runs thousands of tests each time we make the slightest modification in our code. Every time, our parser process processes hundreds of thousands of lines of VHDL code. If anything goes wrong, anything at all, one of our lava lamps gets switched on, for everybody to see. Making defects so clearly visible helps us keep the software in working order all the time.
 
 We wanted to take this one step further. Each time we get a serious problem report, we ask our users to send us a copy of their [log file](/faq/#where-can-i-find-the-log-file). When we inspect these files, we often find issues that are not related to the user's original problem. Still, these issues are important enough to fix. In the controlled environment of a test set-up, we do not simulate all possible conditions, and so we do not trigger every bug in the software. With the new bug reporter, problems that arise on <em>your</em> machine will help improve the quality of Sigasi for <em>everybody</em>.

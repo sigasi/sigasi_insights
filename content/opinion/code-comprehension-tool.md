@@ -17,7 +17,7 @@ A <a href="http://osteele.com/archives/2004/11/ides">recent article</a> about To
 
 So, every engineer should ask himself: am I still working through this code like a caveman? Or am I going to use the right tools for the job? (Screencast [/screencasts/vhdl_code_comprehension])
 
-![Working through Code like a Caveman](images/code_comprehension.png)
+![Working through Code like a Caveman](/img/opinion/code_comprehension.png)
 
 
 

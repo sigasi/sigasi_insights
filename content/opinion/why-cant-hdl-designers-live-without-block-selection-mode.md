@@ -21,8 +21,8 @@ In this blog post I question the need for this feature since there is a more pow
 ## What is block selection mode?
 Block selection is an alternative for standard (paragraph) selection. Standard selection is what everybody knows and it is ideal for selecting lines of text or paragraphs. Block selection mode differs from standard selection mode in that it allows to select rectangular regions.  Block selection is ideal for selecting vertical regions, e.g. a column of a table or all port names in a port map.
 
-![Standard selection](images/regular_selection.png)
-![Block selection](images/block_selection.png)
+![Standard selection](/img/opinion/regular_selection.png)
+![Block selection](/img/opinion/block_selection.png)
 
 ## Why would one use block selection?
 Block selection can speed up certain edits when working with VHDL such as component instantiations and case statements.

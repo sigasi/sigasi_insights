@@ -51,7 +51,7 @@ To encourage the use of VHDL libraries to organize your projects. We now
 clearly mark each VHDL file and folder with the name of the library they
 belong to.
 
-![](images/project_explorer_library_decorator.png)
+![](/img/opinion/emacs/project_explorer_library_decorator.png)
 
 It is unlikely that Emacs users will use VHDL libraries. They are
 limiting themselves and their projects. As

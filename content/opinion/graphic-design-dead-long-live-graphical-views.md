@@ -50,7 +50,7 @@ Graphics serve a purpose as a **means of communication**. They exist to get a po
 
 There are several disadvantages to graphical design entry for VLSI design. 
 
-![Graphic design entry](images/graphic-entry.png)
+![Graphic design entry](/img/opinion/graphic-entry.png)
 
 **Data format**: There is no standard data format for graphical design entry, so all of your data is locked in to your vendor’s tools. 
 
@@ -66,7 +66,7 @@ There are several disadvantages to graphical design entry for VLSI design.
 
 So, what if you want all the benefits of visuals (inspection, navigation, documentation) without the aforementioned disadvantages? You have all of this if you use a graphical view.
 
-![Text based design entry](images/text-entry.png)
+![Text based design entry](/img/opinion/text-entry.png)
 
 The graphical view provides graphics that are:
 

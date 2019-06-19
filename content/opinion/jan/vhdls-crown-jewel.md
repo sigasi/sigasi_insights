@@ -15,7 +15,7 @@ bannerad: true
 
 In this post, I would like to talk about VHDL’s crown jewel: how it preserves determinism in a concurrent language. Here is a figure of how it works:
 
-![](images/deltavhdl_overview.png)
+![](/img/opinion/jan/deltavhdl_overview.png)
 
 What you see is a simplified example of VHDL’s delta cycle algorithm in action. Delta cycles are an HDL concept used to order events that occur in zero physical time. The red circles refer to signal value updates. The blue squares are process evaluations.
 
@@ -23,13 +23,13 @@ A delta cycle starts with a number of signal value updates. A signal value updat
 
 Let us now zoom in on a single delta cycle:
 
-![](images/deltavhdl1.png)
+![](/img/opinion/jan/deltavhdl1.png)
 
 The delta cycle starts with value updates of signals s, t, and u. The signals were assigned to by independent processes in a previous delta cycle. Signal s triggers two processes P and Q, that also use the value of signals t and u.
 
 As signal updates are conceptually concurrent events, the order of the updates is undefined. The same holds for process evaluations. Therefore, another valid possibility is as follows:
 
-![](images/deltavhdl2.png)
+![](/img/opinion/jan/deltavhdl2.png)
 
 It is easy to see that the result at the end of the delta cycle will be the same as before. Processes P and Q always see the same signal values. The point of the delta cycle algorithm is that signal value updates and process evaluations are kept in separate sets. The signal set is always handled completely before the process set. The order within each set is not relevant for the result. In other words, the result is deterministic even though the execution order within each set is not.
 
@@ -37,11 +37,11 @@ It is easy to see that the result at the end of the delta cycle will be the same
 
 Let’s now come back to the subject of the previous post: the case of Verilog.  The two situations above are possible, in addition to many others. For example:
 
-![](images/deltaverilog1.png)
+![](/img/opinion/jan/deltaverilog1.png)
 
 Or even:
 
-![](images/deltaverilog2.png)
+![](/img/opinion/jan/deltaverilog2.png)
 
 What you see is that in Verilog, value update events may validly appear before or after process evaluations. In other words, in terms of event ordering, all bets are off. Well, at least causality is preserved :-). Depending on execution order, the processes will see different values. Therefore, the result is non-deterministic.
 

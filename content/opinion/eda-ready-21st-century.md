@@ -20,7 +20,8 @@ So, if the demand is still there, what has changed and what makes investment in 
 
 <h3>GenYgeeks</h3>
 
-![](images/jump_small.jpg){: style="float:right"}Two things have changed over the since the 20th century: the changing culture and the way economics of EDA are changing.
+{{< figure src="/img/opinion/jump_small.jpg" alt="" class="uk-align-right" >}}
+Two things have changed over the since the 20th century: the changing culture and the way economics of EDA are changing.
 First, the culture has changed. In fact: the cultures of both young people and geeks have changed dramatically in the last ten or twenty years. And this is changing all software related industries, including EDA.
 People have a social life, but an important part of that social life is lived on-line: on blogs, twitter, facebook, youtube. You name it. Young people have very different values from their parents. The generation that has recently hit the markte and that is currently graduating is called Generation Y. GenY-ers are constantly online, texting to friends (and strangers). They live and breathe by the new communication media. Sometimes, this generation is designated as the Digital Natives. Older generation, who have learned how to use computers at a later age, are called Digital Immigrants.
 GenY has the following prototypical traits:
@@ -48,7 +49,8 @@ It was interesting to see Lucio talk about these new things, that are changing t
 
 The second thing that is changing the EDA industry is the way and the size silicon systems are developed. As Gary Smith pointed out on the first day of DAC, the development cost of a single chip is approaching $100M. This cost is so incredibly high that start-ups can no longer afford to build their own chips. VC’s will no longer fund this. The number of ASIC design starts is steadily dropping. I don’t have the exact figures, but it feels like 10.000 EDA sales people are trying to sell million-dollar tools to four or five chip designers. No amount of rock star marketeers is going to expand the EDA industry from 5 billion to 25 billion.
 
-![](images/canoe.img_assist_custom-401x267.jpg){: style="float:left"}What will happen instead was quite graphically predicted by Gary Smith in the following parable:
+{{< figure src="/img/opinion/canoe.img_assist_custom-401x267.jpg" alt="" class="uk-align-right" >}}
+What will happen instead was quite graphically predicted by Gary Smith in the following parable:
 <em>A man in Africa takes his canoe and paddles to a nearby town. He buys an FPGA from a local store and pays five dollars. When he comes home, he spends his evenings in a shack programming the FPGA so that it can control the irrigation system of his land. After he gets his irrigation system to work, all of his neighbors go buy an FPGA and use his design to irrigate their lands as well.</em>
 
 While this story may not be entirely politically correct, it does illustrate a point. There is an ever growing group of people that are not served well (or at all) by traditional EDA vendors. Small businesses and freelancers have a hard time even getting an evaluation license for most EDA tools. The same goes for small design teams that are part of a large not-so-high-tech company.

@@ -14,7 +14,7 @@ bannerad: true
 Yesterday evening I was reading the [latest edition of the Xilinx Xcell journal](http://issuu.com/xcelljournal/docs/xcell_journal_issue_76?viewMode=magazine&mode=embed) and encountered an interesting article about **"How Do I Reset My FPGA"**. This article gives some valuable tips and best practices on how to implement reset structures in FPGAs. The author also gives a VHDL code example on how to infer the reset structure of your choice.
 To my surprise the author --without doubt an **experienced designer**-- made **multiple VHDL errors in a simple code snippet**:
 
-![](images/xcell_reset.png)
+![](/img/opinion/xcell_reset.png)
 
 The author marked a part of the example with red, to make it extra clear that you can give a register an initialization value on FPGAs. But at the same time he puts the `=>` aggregate arrow in the wrong direction (`<=`). This is a typical mistake everyone makes from time to time.
 If the author would have used an intelligent editor (read: Sigasi), he would never have published this incorrect example. He would immediately have noticed his mistake.

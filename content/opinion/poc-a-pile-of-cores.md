@@ -91,7 +91,7 @@ device string is decoded into: vendor, device, generation, family, subtype, spee
 information, PoC can for example implement a vendor specific carry-chain description to speed up an
 algorithm or group computation units to effectively use 6-input LUTs.
 
-![PoC.misc.sync.Bits](images/poc-a-pile-of-cores/sigasistudio.png)
+![PoC.misc.sync.Bits](/img/opinion/poc-a-pile-of-cores/sigasistudio.png)
 
 This screenshot of Sigasi Studio shows our basic 2-FF synchronizer called [`PoC.misc.sync.Bits`][sync_Bits]. It encapsulates a generic 2-FF synchronizer description and instantiates vendor specific variants, if applicable. Currently, PoC has improved implementations for Altera and Xilinx devices.
 
@@ -182,7 +182,7 @@ Using PoC to check the source code with different tool chains can improve its qu
 possible to compare different implementations with generic parameters or to compare implementations
 for different device targets. For example to see the advantages of a newer device generation.
 
-![GHDL simulation](images/poc-a-pile-of-cores/arith_prng_tb.png)
+![GHDL simulation](/img/opinion/poc-a-pile-of-cores/arith_prng_tb.png)
 
 
 This screenshot shows a single testbench run with [GHDL][ghdl] on Windows using PowerShell. The VHDL testbench reports 256 assertions and a simulation runtime of 2.6 us for the configuration of `BITS=8`.  The Python infrastructure assembles an overall report and shows a runtime of 3 seconds.
@@ -194,7 +194,7 @@ One of the major problems of public available IP cores is the absence of quality
 PoC uses continuous integration (CI) provided by Travis-CI to publish the testbench results. A full CI run can also be executed
 by a user on his local machine to validate these results.
 
-![Continuous integration simulation report](images/poc-a-pile-of-cores/all.png)
+![Continuous integration simulation report](/img/opinion/poc-a-pile-of-cores/all.png)
 
 The screenshot shows a local continuous integration run with PoC in quiet mode, executing all configured testbenches at once, which results in a big final report.
 

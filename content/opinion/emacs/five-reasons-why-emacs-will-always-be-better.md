@@ -16,7 +16,7 @@ In the past months, we have made large efforts to [make Emacs obsolete](.). Afte
 
 Of course, you can't win every battle and you probably shouldn't even try. Here are some things at which Emacs will always be better. We're not even going to try.
 
-![Caged Gnu](images/caged_gnu.jpg)
+![Caged Gnu](/img/opinion/emacs/caged_gnu.jpg)
 
 ## 1. Speed and Memory footprint
 

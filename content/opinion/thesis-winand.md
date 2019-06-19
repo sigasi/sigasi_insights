@@ -115,13 +115,13 @@ Finally I would like to thank Lieven, Hendrik and Philippe at Sigasi one last ti
 
 [Sigasi]: https://www.sigasi.com
 [WaveDrom link]: http://wavedrom.com/
-[andGate]: images/thesis-winand/andgate_timed.png
-[test]: images/thesis-winand/timed_and_simulation.png
-[WaveDrom example]: images/thesis-winand/documentation.png   
-[WaveDrom file]: images/thesis-winand/wavedrom.png
-[source file]: images/thesis-winand/source_file.png
-[output file]: images/thesis-winand/result_file.png
-[GUI]: images/thesis-winand/gui.png
-[overview]: images/thesis-winand/overview_color.png
+[andGate]: /img/opinion/thesis-winand/andgate_timed.png
+[test]: /img/opinion/thesis-winand/timed_and_simulation.png
+[WaveDrom example]: /img/opinion/thesis-winand/documentation.png   
+[WaveDrom file]: /img/opinion/thesis-winand/wavedrom.png
+[source file]: /img/opinion/thesis-winand/source_file.png
+[output file]: /img/opinion/thesis-winand/result_file.png
+[GUI]: /img/opinion/thesis-winand/gui.png
+[overview]: /img/opinion/thesis-winand/overview_color.png
 [vunit]: https://www.vunit.github.io/documentation
 [thesis]: https://github.com/WinandS/Thesis

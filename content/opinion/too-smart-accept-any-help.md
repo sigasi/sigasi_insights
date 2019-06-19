@@ -14,7 +14,7 @@ I know I'm not. I take all the help I can get. While I am typing this text, I ha
 
 It's just that my spell checker frees up my mind so that I can think of what to write and not of how to write it. In fact, I'm sure that most educated people, including my high school English teacher (Hi Mr. Johnson!) use spell checkers today. Somebody who knows the English language will benefit from the technology of spell checking and as a result finish writing his text faster with fewer errors. 
 
-![Too smart for new technology?](images/caveman.jpg){: style="float:left"}
+{{< figure alt="Too smart for new technology?" src="/img/opinion/caveman.jpg" class="uk-align-left" >}}
 Same thing goes for other technologies. Humans make mistakes and if they tell you they don't, they are either lying or spending too much time double and triple checking their work. Any mistake that a simple technological tool can catch should be caught by that tool. A human being is too precious for repetitive work.
 
 Some hardware designers claim that the compilation of their code passes at the first time attempt. I see three options: (1) they are stretching the truth, (2) they write <em>very</em> simple VHDL code or (3) they spend too much time proofreading their code before sending it off to a compiler. I know people in category 1 and 3.

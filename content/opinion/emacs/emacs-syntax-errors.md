@@ -52,7 +52,7 @@ performed, much like Emacs does it, only when the user requests them.
 -   You still remember what you were typing two seconds ago, so you can
     fix the error easily.
 
-![Type-time error checking in Sigasi HDT 2.0](images/type_time_error.png)
+![Type-time error checking in Sigasi HDT 2.0](/img/opinion/emacs/type_time_error.png)
 
 Feedback loop and word processors
 ---------------------------------

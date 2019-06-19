@@ -15,7 +15,7 @@ Last week was the first time I heard about <a href="http://www.plunify.com">Plun
 
 I had a short skype call with Kirvy and Harnhua, the Plunify founders. It turns out they only published their website two months ago, but they have been <a href="http://plunify.blogspot.com/">blogging</a> for a while.
 
-![Plunify Workspace](images/plunify.png)
+![Plunify Workspace](/img/opinion/plunify.png)
 
 Their website states you can "Start designing in 5 minutes." That's impressive. Downloading and installing even the simplest software would probably not be feasible in 5 minutes, let alone getting a project set up and actually doing some coding. 
 
