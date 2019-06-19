@@ -2,7 +2,6 @@ help:
 	@echo make build
 	@echo make serve
 	@echo make berve
-	@echo make publish
 	@echo make dependencies
 
 all: build
@@ -62,8 +61,6 @@ dependencies:
 	# Work-around for #10
 	pip install --upgrade 'markdown < 3'
 
-publish:
-	./_publish.sh
 
 NOCAPS:
 	@ ! find . \( -path ./css -o -path _build -o -path _build_offline \) -prune -name '*.png' | grep "[[:upper:]]"
@@ -71,4 +68,4 @@ NOCAPS:
 	@ ! find . -name '*.gif'|grep -v _build/ | grep "[[:upper:]]"
 	@ ! find . -name '*.md' |grep -v README.md|grep -v LICENSE.md| grep -v _build/ |grep -v _gh-pages | grep "[[:upper:]]"
 
-.PHONY: help all build serve berve publish urubu
+.PHONY: help all build serve berve
