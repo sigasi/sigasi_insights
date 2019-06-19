@@ -39,14 +39,16 @@ The Eclipse plugin has the following characteristics:
 # Installation of Sigasi Studio App
 
 To download and install Sigasi Studio as a stand-alone application, follow the
-online [Installation
-Instructions](http://www.sigasi.com/download).
+online [Installation Instructions](http://www.sigasi.com/download).
 
 After downloading, choose or create a folder where you want to install
 the software, and unpack the archive there. The archive contains a
 single top-level folder called `sigasi`. Inside the folder there is an
 application startup file, also called `sigasi`. Start the application by
 executing this startup file.
+
+If you are using RedHat Linux 6 or CentOS 6, you need to follow the Plugin installation
+instructions as explained [here][/faq#i-am-using-redhat-linux-6-how-can-i-run-sigasi-studio].
 
 # Installation of Sigasi Studio Eclipse Plugin
 
