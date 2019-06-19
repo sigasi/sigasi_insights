@@ -48,7 +48,7 @@ application startup file, also called `sigasi`. Start the application by
 executing this startup file.
 
 If you are using RedHat Linux 6 or CentOS 6, you need to follow the Plugin installation
-instructions as explained [here][/faq#i-am-using-redhat-linux-6-how-can-i-run-sigasi-studio].
+instructions as explained [here](/faq#i-am-using-redhat-linux-6-how-can-i-run-sigasi-studio).
 
 # Installation of Sigasi Studio Eclipse Plugin
 
