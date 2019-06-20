@@ -76,7 +76,7 @@ Variables](https://help.eclipse.org/photon/topic/org.eclipse.platform.doc.user/c
 which allow you to more easily share settings in a team.
 
 Environment variables are supported too.
-If you want to use the `$HOME` environment variable, you can call this varible by typing `${env_var:HOME}`.
+If you want to use the `$HOME` environment variable, you can call this variable by typing `${env_var:HOME}`.
 
 {{< figure src="/img/manual/toolchains-settings-rivierapro.png" >}}
 
@@ -197,6 +197,20 @@ To run the external tool just select the configuration from the dropdown
 menu on the ![](/img/icons/externaltool.png)-icon. You can rerun the
 last configuration by simply clicking
 ![](/img/icons/externaltool.png).
+
+## Variables in Arguments
+
+In the arguments field you can use [variables](https://help.eclipse.org/photon/topic/org.eclipse.platform.doc.user/concepts/concepts-exttools.htm), which are automatically expanded when the external tool is run.
+This allows you to do things like adding the currently selected file in the file explorer as an argument for an external tool configuration (`${resource_path}`).
+
+Sigasi Studio adds following variables for VHDL and (System)Verilog projects:
+
+
+| Variable Name           | Description                                                                                                                                     |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| `${library:<argument>}` | Get the library name of `<argument>`. For example, to the get the library of the currently selected resource use `${library:${resource_path}}` |
+| `${vhdl_toplevel}`      | Get the name of the current top level name                                                                                                      |
+
 
 ## Creating a Builder
 

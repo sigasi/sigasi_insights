@@ -244,6 +244,39 @@ double-clicking the search results.
 In the preprocessor view you can preview the expanded text of Verilog macros. This view automatically synchronizes with the active editor. 
 When you select text in the (System)Verilog editor, the expanded text will be highlighted in the Preprocessor view. This also works the other way: when you select text in the Preprocessor view, the corresponding, original source will be selected in the editor.
 
+# Class Hierarchy View
+
+{{< xprt_only >}},{{< verilog_only >}}
+
+![](/img/manual/class-hierarchy-view.png)
+
+The Class Hierarchy view displays more information of the hierarchy of a class. It consists of a hierarchy tree
+and a list of the class members. To open the Class Hierarchy of a class, click the class name, right-click and select **Open Class in Hierarchy** (or press **F4**).
+
+![](/img/manual/class-hierarchy-open.png)
+
+## Class Hierarchy tree
+
+The class hierarchy tree displays either the superclasses, subclasses or both.
+
+|                               | Command                    | Description
+|:-----------------------------:|----------------------------|------------
+![](/img/icons/hierarchy_co.png)     | Class Hierarchy            | Displays all superclasses and subclasses.
+![](/img/icons/super_co.png)         | Superclass Hierarchy       | Displays all superclasses and implemented interface classes.
+![](/img/icons/sub_co.png)           | Subclass Hierarchy         | Displays all subclasses that extend or implement the selected (interface) class.
+![](/img/icons/th_showqualified.png) | Show Qualified Class Names | Shows the qualified name next to each class.
+
+## Member list
+
+The member list shows all members of the class that is currently selected in 
+the class hierarchy tree.
+
+|                                   | Command                | Description
+|:---------------------------------:|------------------------|------------
+![](/img/icons/inher_co.png)             | Show Inherited Members | Shows or hides all members inherited from superclasses.
+![](/img/icons/definingtype_sort_co.png) | Sort By Defining Class | Sorts members by the class in which they are defined.
+![](/img/icons/fields_co.png)            | Hide Fields            | Hides all fields in the members list.
+
 # Console view
 
 When Sigasi Studio launches external tools (e.g. external compiler, documentation generation,...) the output is logged to the console view.

@@ -7,7 +7,7 @@ pager: true
 # Introduction
 
 Your work with Sigasi Studio typically is organized as a *project*. A project
-is a collection of VHDL and/or SystemVerilog files that belong together. Sigasi Studio
+is a collection of VHDL and/or (System)Verilog files that belong together. Sigasi Studio
 understands the HDL units defined in the files, and the relationships
 between them.
 
@@ -24,16 +24,16 @@ following sections.
 
 ## 1: Import the project
 
-You can import an existing VHDL or SystemVerilog project from the file system by clicking
+You can import an existing VHDL or (System)Verilog project from the file system by clicking
 **File \> Import… \> Sigasi \> Import a VHDL project** (or **Import a (System)Verilog project**). Browse to the
 root directory of the project, and press **Finish**.
 
-## 2: Set Libraries
+## 2: Set Libraries (VHDL or Mixed)
 
-If you use other libraries than just work, you can assign different
-libraries to your files and folders. Right-click on a file or folder and
-select **Library Mapping \> New Library…**. Then fill out the correct
-library name.
+Since [Sigasi Studio 4.4]({{< ref "/releasenotes/sigasi-4.04" >}}), Sigasi Studio automatically configures libraries of imported projects, based on project information
+such as `library` and `use` clauses. If you need to customize the library configuration, you can assign different
+libraries to your files and folders. Right-click on a file or folder and select **Library Mapping \> New Library…**.
+Then fill out the correct library name.
 
 ## 3: Add any files that are in other directories
 
@@ -67,7 +67,7 @@ You can also select the VHDL version or the version of `.v` files.
 
 After creating a new project, you can add existing files by dragging
 them from your filesystem into the project explorer. New files can be
-added by clicking **File \> New \> VHDL file** or **File \> New \> Verilog file**.
+added by clicking **File \> New \> VHDL file** or **File \> New \> (System)Verilog file**.
 
 # Other ways to set up a project
 
@@ -76,7 +76,7 @@ added by clicking **File \> New \> VHDL file** or **File \> New \> Verilog file*
 You can also add VHDL or Verilog support to any project in your
 workspace by right-clicking the project in the project explorer and
 selecting **Configure \> Add VHDL support** or **Configure \> Add
-Verilog support**. You can also remove VHDL or Verilog support from
+(System)Verilog support**. You can also remove VHDL or Verilog support from
 Sigasi Studio projects by selecting **Configure \> Remove VHDL support** or
 **Configure \> Remove (System)Verilog support**.
 
@@ -98,3 +98,5 @@ else.
 You can import a project from an archive by clicking **File \> Import…
 \> General \> Existing projects into Workspace** and selecting **Select
 archive file**. Browse to your project archive and press **Finish**.
+
+

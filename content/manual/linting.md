@@ -369,6 +369,9 @@ Sigasi Studio can check that the **header comment** matches a specified pattern.
 
 The check can be enabled in **Preferences > Sigasi > VHDL > Naming conventions**.  The pattern can be set on the same page.
 
+Since [Sigasi Studio 4.4](/releasenotes/sigasi-4.04.html), the raw string of the header comment is checked to allow for maximum compliance checking.
+This means that when a new line is matched, users should use `\r?\n` or the newly introduced `\\R` to make sure the naming conventions work on all platforms.
+
 {{< figure src="/img/releasenotes/3.8/header_comment.png" alt="Check header comments" >}}
 
 ## Check that filename contains primary unit name
@@ -376,7 +379,6 @@ The check can be enabled in **Preferences > Sigasi > VHDL > Naming conventions**
 Sigasi Studio can check that the filename contains the name of at least one of the design unit names inside that file.  Note that this check is **ignored** by default. You can enable it in the VHDL **Errors/Warnings** preference page (**Style Validation > Filename must contain primary name**).
 
 {{< figure src="/img/releasenotes/3.8/filename_linting.png" alt="Check file name" >}}
-
 
 # Project specific Linting settings
 
