@@ -2,3 +2,5 @@
 stages:
   - deploy
 
+netlify:
+  stage: deploy
