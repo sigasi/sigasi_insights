@@ -1,7 +1,10 @@
-stages:
-  - deploy
 
-netlify:
+pages:
   stage: deploy
   script:
-    - "mkdir public"
+    - mkdir .public
+  artifacts:
+    paths:
+      - .public
+  only:
+    - master
