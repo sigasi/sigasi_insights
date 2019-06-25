@@ -5,7 +5,7 @@ You can find the rendered version at <https://insights.sigasi.com>
 
 ## Authoring guide
 
-We are using markdown
+We are using markdown with [Hugo](https://gohugo.io/).
 
 * [MarkDown tutorial](http://markdowntutorial.com/)
 * [New MarkDown tutorial](http://commonmark.org/help/tutorial/index.html)
@@ -14,9 +14,8 @@ We are using markdown
 ### Links
 
 * External link: `[text](http://www.example.com)`
-* Internal link: `[/manual/demo]`
-* Internal link with different text: `[text][/manual/setup]
-* Link with link text: `<http://www.sigasi.com>`
+* Internal link: `[text]({{< ref "/manual/demo" >}})`
+* Link with link text: `<https://www.sigasi.com>`
 
 ### Filenames
 
@@ -24,12 +23,12 @@ We are using markdown
 
 ### Images
 
-* Images are stored in an `images` folder (e.g. `/opinion/images`, `/tech/images/`, ...)
+* Images are stored in an `img` folder (e.g. `/img/opinion/...`, `/img/tech/...`, ...)
 * Image file names must be **lower case**
 
 Tips:
 
-* Images can be aligned by appending `{: style="float:right"}` to the regular `![](images/...)` markdown syntax
+* Images can be aligned by using the `figure` shortcode with `class` argument, e.g. `{{< figure src="/img/xxx" class="uk-align-right" >}}`
 
 ### Code snippets
 
