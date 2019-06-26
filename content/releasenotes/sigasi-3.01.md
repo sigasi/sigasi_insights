@@ -18,11 +18,11 @@ If the (VHDL or Verilog) code still has problems, these problems will appear in 
 
 To enable OneSpin, make sure the `$ONESPINROOT` environment variable is set. Next select **OneSpin** in the **Sigasi > Toolchains** Preference page. \[[Full documentation](/manual/onespin)\].
 
-![OneSpin Save-Time Integration](3.01/onespin_console.png "OneSpin Save-Time Integration")
+![OneSpin Save-Time Integration](/img/releasenotes/3.01/onespin_console.png "OneSpin Save-Time Integration")
 
 If the OneSpin toolchain is enabled and if you have set a *top level* (VHDL only), you can run the **OneSpin Consistency Checks** on your hierarchy. 
 
-![Run OneSpin Consistency Checks](3.01/onespin_consistency_checks.png "Run OneSpin Consistency Checks")
+![Run OneSpin Consistency Checks](/img/releasenotes/3.01/onespin_consistency_checks.png "Run OneSpin Consistency Checks")
 
 Running the OneSpin Consistency Checks can be a long process. You can abort it by clicking the stop button in the Progress View.
 
@@ -31,34 +31,34 @@ Running the OneSpin Consistency Checks can be a long process. You can abort it b
 
 Sigasi Studio now also checks the vector width in instantiation port maps:
  
-![Check vector width in instantiations](3.01/instantiations_vector_width.png "Check vector width in instantiations")
+![Check vector width in instantiations](/img/releasenotes/3.01/instantiations_vector_width.png "Check vector width in instantiations")
 
 Just like the [*width check* in instantiations](/manual/linting#vector-width-in-assignments-and-port-maps), this check calculates with generic values **symbolically** (and does not work with elaborated generic constants).
 
 ## Verilog improvements
 
 * Sigasi 3.1 brings **autocomplete templates** for Module Instantiations in Verilog.  
-![Autocomplete Module Instantiations](3.01/verilog_autocomplete_instantiations.png "Autocomplete Module Instantiations")
+![Autocomplete Module Instantiations](/img/releasenotes/3.01/verilog_autocomplete_instantiations.png "Autocomplete Module Instantiations")
 * The Preprocessor View now also displays error markers. This helps to better understand problems with Verilog macros.  
-![Show errors in the Preprocessor View](3.01/verilog_preprocessor_errors.png "Show errors in the Preprocessor View")
+![Show errors in the Preprocessor View](/img/releasenotes/3.01/verilog_preprocessor_errors.png "Show errors in the Preprocessor View")
 * The hover now shows the value `parameters` and `localparams`  
-![Hover `localparam`s](3.01/verilog_hover_localparam.png "Hover `localparam`s")
+![Hover `localparam`s](/img/releasenotes/3.01/verilog_hover_localparam.png "Hover `localparam`s")
 * In mixed language projects, you can now also navigate from Module instantiations in VHDL code to the corresponding Verilog code when component declarations are used.  
-  ![Open matching Verilog Module in component instantiations](3.01/open_matching_module.png)
+  ![Open matching Verilog Module in component instantiations](/img/releasenotes/3.01/open_matching_module.png)
 
 ## Other new and noteworthy improvements
 
 * Improved License error messages (e.g. *all licenses are in use*)
 * Initial support for **type generics** in **packages** \[VHDL 2008]
 * An autocomplete template for **Finite State Machines**  
-  ![Autcomplete template for Finite State Machines](3.01/fsm_autocomplete.png)
+  ![Autcomplete template for Finite State Machines](/img/releasenotes/3.01/fsm_autocomplete.png)
 * The Xtext framework was updated to version 2.9.2
 
 ## Bug fixes
 
 - ticket 3333 : Unexpected *unwritten* warning when alias for procedure is used
 - ticket 3475 : Skip encrypted VHDL code (```protect begin_protected`` → ```protect end_protected``)
-![Ignore encrypted VHDL](3.01/encrypted_vhdl.png "Ignore encrypted VHDL")
+![Ignore encrypted VHDL](/img/releasenotes/3.01/encrypted_vhdl.png "Ignore encrypted VHDL")
 - ticket 3535 : Unexpected dead code warning
 - ticket 3543 : Unreported errors in vector width check 
 - ticket 3549 : Skip protected regions in Verilog

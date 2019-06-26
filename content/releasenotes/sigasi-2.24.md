@@ -14,18 +14,18 @@ This release also contains a preview of Sigasi's Documentation Generator and oth
 
 In Sigasi 2.24 it is now possible to enable both VHDL and Verilog support to a project. This allows to instantiate Verilog modules in VHDL code and vice versa.    
 
-![Mixed language instantiations](2.24/mixed-language-instantiations.png "Mixed language instantiations")
+![Mixed language instantiations](/img/releasenotes/2.24/mixed-language-instantiations.png "Mixed language instantiations")
 
 ### Improved State machine viewer and block diagram view
 
 * The state machine viewer now shows the state assignment's comment as text label on transitions.
 
-![Transition annotations in state machine view](2.24/fsm-transitions-comment.png "Transition annotations in state machine view")
+![Transition annotations in state machine view](/img/releasenotes/2.24/fsm-transitions-comment.png "Transition annotations in state machine view")
 
 * The block diagram view now allows you to navigate to instantiated architectures
 * The block diagram view's look is updated
 
-![Open entity declaration in block diagram](2.24/block-diagram-view.png "Open entity declaration in block diagram")
+![Open entity declaration in block diagram](/img/releasenotes/2.24/block-diagram-view.png "Open entity declaration in block diagram")
 
 * *Note* that we have also changed the *navigation* behaviour. You now have to *double click* if you want to navigate to the corresponding VHDL code.
 
@@ -33,13 +33,13 @@ In Sigasi 2.24 it is now possible to enable both VHDL and Verilog support to a p
 
 Sigasi Premium users can now configure Sigasi to check naming conventions while you type.
 
-![Check naming conventions in VHDL](2.24/naming-conventions.png "Check naming conventions in VHDL")
+![Check naming conventions in VHDL](/img/releasenotes/2.24/naming-conventions.png "Check naming conventions in VHDL")
 
 ### Formatter options
 
 We added a preference page where you can configure a few formatting options: preserve newlines, upper case keywords, comment column.
 
-![VHDL formatting preferences](2.24/formatting-preferences.png "VHDL formatting preferences")
+![VHDL formatting preferences](/img/releasenotes/2.24/formatting-preferences.png "VHDL formatting preferences")
 
 ## Documentation Generator
 
@@ -51,7 +51,7 @@ Because a prototype is worth a thousand pictures, we have built our first versio
 
 All users can open the documentation view, but only Premium users can export to PDF.
 
-![Live Sigasi documentation preview](2.24/documentation-view.png "Live Sigasi documentation preview")
+![Live Sigasi documentation preview](/img/releasenotes/2.24/documentation-view.png "Live Sigasi documentation preview")
 
 ## Other new and noteworthy improvements
 

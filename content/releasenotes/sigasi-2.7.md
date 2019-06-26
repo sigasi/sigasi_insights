@@ -16,7 +16,7 @@ new view enables you to inspect the value of generics in your hierarchy.
 Because of Sigasi’s recovering VHDL analyzer, this works even if your
 design is still under construction or completely broken.
 
-![Generics View](2.7/generics_view.png "Generics View")
+![Generics View](/img/releasenotes/2.7/generics_view.png "Generics View")
 
 You can open the generics view in the context menu of the hierarchy:
 right click any instantiation and select **Show in Generics View**.

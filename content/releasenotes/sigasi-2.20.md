@@ -11,13 +11,13 @@ Sigasi Pro
 ----------
 
 -   Sensitivity list validation: report incorrect sensitivity lists
-	![Sensitivity list validation](2.20/sensitivitylist.png "Sensitivity list validation")
+	![Sensitivity list validation](/img/releasenotes/2.20/sensitivitylist.png "Sensitivity list validation")
 -   Better validation of attribute specifications. We also added a
     quickfix for the attribute class.
-    ![Attribute validation](2.20/attributeclass.png "Attribute validation")
+    ![Attribute validation](/img/releasenotes/2.20/attributeclass.png "Attribute validation")
 -   Crosslink constants, functions and procedures between package and
     package body. This enables navigation and the rename refactoring.
-    ![Crosslink package and package body](2.20/packagebody.png "Crosslink package and package body")
+    ![Crosslink package and package body](/img/releasenotes/2.20/packagebody.png "Crosslink package and package body")
     
 
 Sigasi Premium
@@ -30,12 +30,12 @@ brings:
     release now takes direct connections inside architectures into
     account\]
 
-![Net Search](2.20/netsearch.png "Net Search")
+![Net Search](/img/releasenotes/2.20/netsearch.png "Net Search")
 
 -   State Machine viewers (updates while you type) \[Update: This release
     now supports multiple FSM in one design file\]
 
-![FSM View: multiple fsms in one file](2.20/fsmmultiplefsms.png "FSM View: multiple fsms in one file")
+![FSM View: multiple fsms in one file](/img/releasenotes/2.20/fsmmultiplefsms.png "FSM View: multiple fsms in one file")
 
 -   Integration with Aldec ALINT linter tool
 

@@ -25,7 +25,7 @@ And if you search for reference to an entity declarations, the matching
 component declarations and instantiations will also show up in the
 search view.
 
-![Rename component port](2.6/componentrename_a.png "Rename component port")
+![Rename component port](/img/releasenotes/2.6/componentrename_a.png "Rename component port")
 
 Improvements to the standalone version
 --------------------------------------
@@ -46,12 +46,12 @@ Other new and noteworthy improvements
 -------------------------------------
 
 -   Usability improvements to the Search View
-    ![Search View](2.6/searchview.png "Search View")
+    ![Search View](/img/releasenotes/2.6/searchview.png "Search View")
 -   Sigasi is now tested and ready for Eclipse Juno (4.2)
 -   Improvements to library mapping performance
 -   Better a error messages and quickfix when the standard libraries are
     missing in a project
-    ![Missing Common Libraries](2.6/ieee-missing.png "Missing Common Libraries")
+    ![Missing Common Libraries](/img/releasenotes/2.6/ieee-missing.png "Missing Common Libraries")
 -   Support component declaration autocomplete, even when the matching
     entity has declaration errors
 -   Avoid confusion between **vcom** and **sigasi** problem markers.

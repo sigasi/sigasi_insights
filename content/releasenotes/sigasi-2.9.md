@@ -43,7 +43,7 @@ your top level in the hierarchy view . Next click the Simulate button in
 the hierarchy view to launch the vsim gui with an elaborated design
 ready for simulation.
 
-![Launch vsim from Sigasi’s Hierarchy View](2.9/vsim_window_a.png "Launch vsim from Sigasi’s Hierarchy View")
+![Launch vsim from Sigasi’s Hierarchy View](/img/releasenotes/2.9/vsim_window_a.png "Launch vsim from Sigasi’s Hierarchy View")
 
 This makes it really easy to start a quick simulation for an arbitrary
 testbench.
@@ -55,22 +55,22 @@ Other new and noteworthy improvements
     replaced with a button that opens a **top level selection dialog**.
     This new dialog allows to type a text search pattern to quickly find
     the top level you are looking for (e.g. `*testbench`)
-    ![New select top level dialog](2.9/settopleveldialog_a.png "New select top level dialog")
+    ![New select top level dialog](/img/releasenotes/2.9/settopleveldialog_a.png "New select top level dialog")
 -   We changed the default color of semantic highlighting for ports.
     This makes it really easy to distinguish between ports and signals
     in your code.
-    ![Different semantic coloring for ports and signals](2.9/port_color_a.png "Different semantic coloring for ports and signals")
+    ![Different semantic coloring for ports and signals](/img/releasenotes/2.9/port_color_a.png "Different semantic coloring for ports and signals")
 -   Better code folding:
     -   protected types
     -   elsif statements
     -   case statement alternatives
-        ![Folding in case statements](2.9/case_folding_a.png "Folding in case statements")
+        ![Folding in case statements](/img/releasenotes/2.9/case_folding_a.png "Folding in case statements")
 -   You can now also trigger autocomplete of a component declaration
     when then are a errors in the matching entity declaration (e.g.
     missing library clauses)
 -   You can now use [Eclipse Variables](http://help.eclipse.org/indigo/topic/org.eclipse.platform.doc.user/concepts/concepts-exttools.htm)
     in the external compiler preference field.
-    ![Eclipse variables in external compiler path](2.9/variables_in_vcom_path_a.png "Eclipse variables in external compiler path")
+    ![Eclipse variables in external compiler path](/img/releasenotes/2.9/variables_in_vcom_path_a.png "Eclipse variables in external compiler path")
 -   Always show “Map folder to library with the same name” action, even
     if that library is already in use.
 -   Improved **formatting of invalid code**.

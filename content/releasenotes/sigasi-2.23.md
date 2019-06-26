@@ -11,7 +11,7 @@ date: 2014-07-29
 
 Sigasi now reports datatype violations while you type (at type-time). You don't have to wait for your simulator to report datatype errors. Whenever you write a wrong datatype, you see an error message within less than a second! Screencast : [/screencasts/datatype-checks-while-you-type]
 
-![Type time type validation](2.23/better-scoping.png "Type time type validation")
+![Type time type validation](/img/releasenotes/2.23/better-scoping.png "Type time type validation")
 
 ## Improved Verilog support
 
@@ -19,27 +19,27 @@ We are accelerating our development of the Verilog version:
 * Open Module Declaration by CTRL+clicking on instantiation
 * Hover on module name to see the inline documentation
 
-![Improved Verilog support in Sigasi 2.23](2.23/verilog-instantiation.png "Improved Verilog support in Sigasi 2.23")
+![Improved Verilog support in Sigasi 2.23](/img/releasenotes/2.23/verilog-instantiation.png "Improved Verilog support in Sigasi 2.23")
 
 ## Other new and noteworthy improvements
 
 * Improved support for *external VHDL files* (i.e. non Sigasi Project VHDL files). We now report all syntax errors.
 * Linting *check for read/write access* of port, signal, generic and constant declarations \[Premium\]
-![Check read/write access for Signals/Ports/Generics/Constants](2.23/signal-never-read.png "Check read/write access for Signals/Ports/Generics/Constants")
+![Check read/write access for Signals/Ports/Generics/Constants](/img/releasenotes/2.23/signal-never-read.png "Check read/write access for Signals/Ports/Generics/Constants")
 * Updated the JAVA Virtual Machine in the stand-alone to version 8. Note that this is not updated with the Sigasi update mechanism; you need a fresh download if you want this improvement.
 * Support for <a href="https://projects.eclipse.org/releases/luna">Eclipe Luna</a>
 * Added *VHDL Project Import Wizard*
-![VHDL project Import Wizard](2.23/import-project.png "VHDL project Import Wizard")
+![VHDL project Import Wizard](/img/releasenotes/2.23/import-project.png "VHDL project Import Wizard")
 * Better *error reporting in unknown instantiations*: only mark the unknown component name as a *single error*
-![Only one error marker in unknown component instantiations](2.23/unknown-instantiation-only-one-error.png "Only one error marker in unknown component instantiations")
+![Only one error marker in unknown component instantiations](/img/releasenotes/2.23/unknown-instantiation-only-one-error.png "Only one error marker in unknown component instantiations")
 * Added *tutorial* project for *Sigasi Premium*
 * Added preference page to *configure Task Tags* in comments (TODO, FIXME)
-![Configurable Task Tags in comments](2.23/task-tags-preferences.png "Configurable Task Tags in comments")
+![Configurable Task Tags in comments](/img/releasenotes/2.23/task-tags-preferences.png "Configurable Task Tags in comments")
 * Added Quickfix for XilinxProcessorIP Libraries in xilinx ISE
 * *Export* Block Diagram and State Machine graphics to PNG images \[Premium\]
-![Export State Machine View to image file](2.23/save-button-state-machine.png "Export State Machine View to image file")
+![Export State Machine View to image file](/img/releasenotes/2.23/save-button-state-machine.png "Export State Machine View to image file")
 * *Dead-code linting* in if statements \[Premium\]
-![Detect dead code blocks in if statements](2.23/dead-code.png "Detect dead code blocks in if statements")
+![Detect dead code blocks in if statements](/img/releasenotes/2.23/dead-code.png "Detect dead code blocks in if statements")
 * Update Xtext dependency to 2.6.1
 
 ## Bugfixes

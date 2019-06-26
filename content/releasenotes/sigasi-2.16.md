@@ -12,14 +12,14 @@ Constants in the Generics view
 
 The [Hierarchy View](/manual/views#hierarchy-view) now also shows the actual values of constants in the selected hierarchy node.
 
-![Constants in the Generics View](2.16/constantsingenericsview.png "Constants in the Generics View")
+![Constants in the Generics View](/img/releasenotes/2.16/constantsingenericsview.png "Constants in the Generics View")
 
 Warn about unused ports/generics
 --------------------------------
 
 Sigasi will now put a warning marker on unused ports and generics of an
 entity.
-![Unused port warning](2.16/unusedport.png "Unused port warning")
+![Unused port warning](/img/releasenotes/2.16/unusedport.png "Unused port warning")
 
 You can change the severity (ignore/info/warning/error) of unused ports
 and generics via **Preferences &gt; Sigasi &gt; VHDL &gt;
@@ -29,7 +29,7 @@ Other new and noteworthy improvements
 -------------------------------------
 
 -   Better declare signal quickfix for vector types
-	![declare signal quickfix](2.16/declarenewvectorsignal.png "declare signal quickfix")
+	![declare signal quickfix](/img/releasenotes/2.16/declarenewvectorsignal.png "declare signal quickfix")
 -   Eclipse Kepler support
 -   Added quickfix for mapping Xilinx’ `unimacro` library
 -   Only show the “Open Declaration” action in the context menu if the

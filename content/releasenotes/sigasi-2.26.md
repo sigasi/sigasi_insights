@@ -13,9 +13,9 @@ The Sigasi 2.26 release brings better *Verilog* and *Mixed language* support, an
 We significantly improved the Verilog and Mixed language support in Sigasi 2.26. 
 
 * All ports and generics/parameters in module instantiations are now linked. This enables *hovers*, *'open declaration'* and *search*.
-![Mixed language instantiations](2.26/mixed-language.png "Mixed language instantiations")
+![Mixed language instantiations](/img/releasenotes/2.26/mixed-language.png "Mixed language instantiations")
 * Better hovers in Verilog
-![Verilog hover](2.26/hover-verilog.png "Verilog hover")
+![Verilog hover](/img/releasenotes/2.26/hover-verilog.png "Verilog hover")
 * Autoindent for Verilog
 
 <p align="center">
@@ -23,14 +23,14 @@ We significantly improved the Verilog and Mixed language support in Sigasi 2.26.
 </p>
 
 * VHDL Autocomplete now offers entity instantiation templates for Verilog modules too
-![Autocomplete Verilog modules in VHDL instantiations](2.26/autocomplete.png "Autocomplete Verilog modules in VHDL instantiations")
+![Autocomplete Verilog modules in VHDL instantiations](/img/releasenotes/2.26/autocomplete.png "Autocomplete Verilog modules in VHDL instantiations")
 
 ## Check for missing optional port and generic association in instantiations 
 \[VHDL; Sigasi Premium Desktop and Premium Doc\]
 
 In instantiations you only have to specify input *ports* without a default value; output ports and input ports with a default value are *optional*. The same is true for *generics* with a default value. This is a common source of design errors and this type of bug is often tricky to spot. Therefore we implemented a new type-time design check to warn about missing optional associations in instantiations.
 
-![Warn about missing optional associations](2.26/missing-optional-actuals.png "Warn about missing optional associations")
+![Warn about missing optional associations](/img/releasenotes/2.26/missing-optional-actuals.png "Warn about missing optional associations")
 
 ## Other new and noteworthy improvements
 

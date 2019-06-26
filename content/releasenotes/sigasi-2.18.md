@@ -33,7 +33,7 @@ you can easily change the file location (or floating license server
 path). You can also edit the contents of your license file via the
 **Edit License File** button.
 
-![New License Preference Page](2.18/licensepreferencepagescreenshot.png "New License Preference Page")
+![New License Preference Page](/img/releasenotes/2.18/licensepreferencepagescreenshot.png "New License Preference Page")
 
 Clicking **Apply** or **OK** will trigger a reload of your license.
 
@@ -47,7 +47,7 @@ Other new and noteworthy improvements
     easier to find your generic (or constant) in a long list. If you
     don’t sort the generics and constants alphabetically, they are
     listed in the order of declaration of the file.
-    ![Sort button in the Generics View](2.18/genericsviewsort.png "Sort button in the Generics View")
+    ![Sort button in the Generics View](/img/releasenotes/2.18/genericsviewsort.png "Sort button in the Generics View")
 -   Show the label of entity instantiations in the ouline view (ticket
     2713)
 

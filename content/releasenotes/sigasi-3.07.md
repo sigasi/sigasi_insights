@@ -14,7 +14,7 @@ Sigasi Studio now warns you if a `component` declaration and its matching `entit
 This is a common annoyance in HDL design that is typically discovered late in the design flow.
 Sigasi Studio now reports mismatches immediately, at **type time**.
 
-![Check component/entity mismatch](3.7/linting_component_entity.png)
+![Check component/entity mismatch](/img/releasenotes/3.7/linting_component_entity.png)
 
 You can easily update a component declaration to match its entity declaration by applying the Quick Fix.
 
@@ -36,14 +36,14 @@ For example, to add **UVM** support to your project, you now only have to:
 Next, Sigasi Studio figures out all relations automatically, allowing you to easily follow declarations, use autocomplete and preview preprocessor macro expansions.
 For more information, you should read the updated [UVM example post](/tech/systemverilog-uvm-demo).
 
-![UVM ubus project](3.7/uvm_ubus.png)
+![UVM ubus project](/img/releasenotes/3.7/uvm_ubus.png)
 
 # Dependencies Viewer (Mixed language)
 
 The *Dependencies Viewer* can now display the dependencies of your entire project.
 This makes it very easy to recognize *top levels* and *orphaned files*.
 
-![Dependencies Viewer for entire project](3.7/dependencies_project.png)
+![Dependencies Viewer for entire project](/img/releasenotes/3.7/dependencies_project.png)
 
 [Have a look at the demo video for this new feature.](/screencasts/dependencies_viewer)
 
@@ -51,7 +51,7 @@ This makes it very easy to recognize *top levels* and *orphaned files*.
 
 Especially for our educational users using Apple MacBooks, we added support for the open-source GHDL simulator.
 
-![GHDL support](3.7/ghdl_support.png)
+![GHDL support](/img/releasenotes/3.7/ghdl_support.png)
 
 Make sure to [download the latest version of ghdl from GitHub](https://github.com/tgingold/ghdl/releases).
 Do not download the outdated version that [http://ghdl.free.fr](http://ghdl.free.fr) links to.
@@ -61,26 +61,26 @@ Do not download the outdated version that [http://ghdl.free.fr](http://ghdl.free
 We did a thorough performance analysis of the SystemVerilog and VHDL autocomplete feature.
 This way we could vastly reduce the autocomplete latency, especially for larger projects.
 
-![Faster autocomplete](3.7/faster_autocomplete.png)
+![Faster autocomplete](/img/releasenotes/3.7/faster_autocomplete.png)
 
 # Other new and noteworthy improvements
 
 * Because some of our users did not realize Sigasi Studio is more powerful when you use it on projects, we made some UI changes to clarify this. When an external file is opened, we now show a warning bar at the top of editor to clearly indicate you are missing out on a lot of features  
-  ![editing an external file](3.7/external_file_banner.png)
+  ![editing an external file](/img/releasenotes/3.7/external_file_banner.png)
 * Add "Export CSV file with dependencies" feature available as action in the hierarchy view  
-  ![export csv in hierarchy view](3.7/csv_hierarchy.png)
+  ![export csv in hierarchy view](/img/releasenotes/3.7/csv_hierarchy.png)
 * You can now open the **Dependencies View** via the "Show in" menu in the editor  
-  ![show in dependencies](3.7/show_in_dependencies.png)
+  ![show in dependencies](/img/releasenotes/3.7/show_in_dependencies.png)
 * The Riviera-Pro toolchain now has `-dbg` as default option
 * \[VHDL] Allow to simulate a `configuration` as toplevel
 * \[VHDL] Improved constant evaluation in hovers  
-  ![constant evaluation in hover](3.7/constant_evaluation_hover.png)
+  ![constant evaluation in hover](/img/releasenotes/3.7/constant_evaluation_hover.png)
 * \[VHDL] Renaming of procedure arguments in package or package body now correctly renames arguments everywhere  
-  ![rename procedure](3.7/rename_procedure_parameter.png)
+  ![rename procedure](/img/releasenotes/3.7/rename_procedure_parameter.png)
 * \[VHDL] Support VHDL 2008 tool directives (`)  
-  ![VHDL 2008 tool directives](3.7/vhdl2008_tool_directive.png)
+  ![VHDL 2008 tool directives](/img/releasenotes/3.7/vhdl2008_tool_directive.png)
 * \[VHDL] Add autocomplete template for formatter tags  
-  ![formatter tags autocomplete](3.7/formatter_tags.png)
+  ![formatter tags autocomplete](/img/releasenotes/3.7/formatter_tags.png)
 * \[VHDL] The Quick Fix for the **Vivado Unisim** library now uses the real Vivado library, and not the legacy ISE compatibility version
 * \[Graphics configuration] You can now also reference labeled assignments
 * The **Sigasi Starter** perspective is no longer the default perspective

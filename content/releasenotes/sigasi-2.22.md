@@ -31,14 +31,14 @@ Quick Fix Incomplete Sensitivity List
 Sigasi 2.22 introduces a quickfix to add missing signals to the
 sensitivity list, so that it complies with synthesizability guidelines.
 
-![Quick Fix Incomplete Sensitivity List](2.22/quickfixsensitivitylist.png "Quick Fix Incomplete Sensitivity List")
+![Quick Fix Incomplete Sensitivity List](/img/releasenotes/2.22/quickfixsensitivitylist.png "Quick Fix Incomplete Sensitivity List")
 
 Other new and noteworthy improvements
 -------------------------------------
 
 -   **Vivado** library quickfixes: Sigas can now automatically add
     Vivado libraries to your project with a library quickfix
-    ![Quick Fix Vivado libraries](2.22/vivadolibrary.png "Quick Fix Vivado libraries")
+    ![Quick Fix Vivado libraries](/img/releasenotes/2.22/vivadolibrary.png "Quick Fix Vivado libraries")
 -   Block Diagram View improvements: the **order of ports** is now
     respected and **open ports** are visualized differently
 -   The CSV-file exporter now also takes *elaboration dependencies* into
@@ -49,19 +49,19 @@ Other new and noteworthy improvements
 -   If you open a VHDL file in a generic Eclipse project, Sigasi always
     ask to add *VHDL support* to the project. In Sigasi 2.22 we added an
     option to this dialog to never ask this again.
-    ![Never ask again to add VHDL support](2.22/vhdlsupport.png "Never ask again to add VHDL support")
+    ![Never ask again to add VHDL support](/img/releasenotes/2.22/vhdlsupport.png "Never ask again to add VHDL support")
 -   **Semantic highlighting for subprograms (Functions/Procedures)**.
     Note that you will not see visual changes with the default settings.
     You can however change the default style via **Preferences \>
     Sigasi \> VHDL \> Syntax Coloring**
-    ![Semantic highlighting for subprograms](2.22/subprogramsemantichighlighting2.png "Semantic highlighting for subprograms")
+    ![Semantic highlighting for subprograms](/img/releasenotes/2.22/subprogramsemantichighlighting2.png "Semantic highlighting for subprograms")
 -   We revised the **Sigasi VHDL Tutorial** and made it easier to use.
     All steps and information is now explained *in* and *with* VHDL
     code. This makes the tutorial more *interactive* and *fun*.
 -   We added a View that visualizes dependencies of the current VHDL
     file \[Premium\]. This view is automatically updated when you save
     your files.
-    ![Visualize dependencies](2.22/dependenciesview.png "Visualize dependencies")
+    ![Visualize dependencies](/img/releasenotes/2.22/dependenciesview.png "Visualize dependencies")
 
 Bugfixes
 --------

@@ -15,7 +15,7 @@ Sigasi now contains a **Libraries View**. In the Libraries view you can
 see a tree of all *projects, libraries and design units*. The Libraries
 View enables you to quickly see how your *design units* are mapped.
 
-![Libraries View](2.12/librariesview.png "Libraries View")
+![Libraries View](/img/releasenotes/2.12/librariesview.png "Libraries View")
 
 The easiest way to enable the Libraries View is via **Window &gt; Reset
 Perspective…** You can find the view in a tab behind the project
@@ -34,7 +34,7 @@ with the **Toolchains** page, so that all external toolchain settings
 can be configured on the same page. The Isim path is automatically
 derived from the Xilinx ISE preference.
 
-![isim](2.12/toolchainspreferencepage.png "isim")
+![isim](/img/releasenotes/2.12/toolchainspreferencepage.png "isim")
 
 Other New and Noteworthy Improvements
 -------------------------------------
@@ -47,7 +47,7 @@ Other New and Noteworthy Improvements
     *asynchronous* and *synchronous* reset.
 -   ticket 2378 : Enable VHDL highlighting in compare view by default
 
-![Japanese](2.12/japanseworkspace.png "Japanese")
+![Japanese](/img/releasenotes/2.12/japanseworkspace.png "Japanese")
 
 Bugfixes
 --------

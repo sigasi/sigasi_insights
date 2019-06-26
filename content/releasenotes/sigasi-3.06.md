@@ -18,11 +18,11 @@ With Graphics Configuration files you can customize the content of the graphical
 
 The animation below shows different **Block Diagram** Graphics Configurations applied to the same VHDL source file.
 
-![Configuring Block Diagrams](/releasenotes/3.6/blockdiagramslider/block_diagram.gif)
+![Configuring Block Diagrams](/img/releasenotes/3.6/blockdiagramslider/block_diagram.gif)
 
 The animation below shows different **State Machine** Graphics Configurations applied to the same VHDL source file.
 
-![Configuring State Machines](/releasenotes/3.6/statemachineslider/state_machine.gif)
+![Configuring State Machines](/img/releasenotes/3.6/statemachineslider/state_machine.gif)
 
 Please find more details and tips on getting started [here](/tech/using-graphics-configuration).  
 The syntax of the Graphics Configuration files is explained [here](/tech/graphics.ebnf).
@@ -30,7 +30,7 @@ The syntax of the Graphics Configuration files is explained [here](/tech/graphic
 # Improved Dependencies Viewer
 
 Sigasi Studio's [dependencies view](/manual/views#dependencies-view) has a new skin. Its visuals are now in line with Block Diagram and Statemachine Views.  
-![Old and New dependencies view](/releasenotes/3.6/dependencies_view.png)
+![Old and New dependencies view](/img/releasenotes/3.6/dependencies_view.png)
 
 # Extra external tools
 
@@ -41,14 +41,14 @@ Sigasi Studio 3.6 enables two extra external tools in your workflow: [ALINT-PRO]
 ALINT-PRO 2017.07 introduced a new command line option that makes ALINT-PRO a powerful extension to Sigasi Studio's type time linting: `elabflatmode`.
 **Flat elaboration mode** is a new processing type in ALINT-PRO designed specially for fast background linting. Design units are being parsed, elaborated, synthesized and linted at block-level, without crossing the boundaries between design units.
 
-![ALINT-PRO in Sigasi Studio](/releasenotes/3.6/alint_pro.png)
+![ALINT-PRO in Sigasi Studio](/img/releasenotes/3.6/alint_pro.png)
 
 ## Xilinx Vivado XSIM
 
 By popular demand, we have also added the Xilinx Vivado simulator as external compiler in Sigasi Studio.
 
-![XSIM errors are displayed with markers in the editor and problems view](/releasenotes/3.6/xsim_compilation_error.png)
-![Start a simulation by setting a toplevel and clicking the run button](/releasenotes/3.6/xsim_simulation.png)
+![XSIM errors are displayed with markers in the editor and problems view](/img/releasenotes/3.6/xsim_compilation_error.png)
+![Start a simulation by setting a toplevel and clicking the run button](/img/releasenotes/3.6/xsim_simulation.png)
 
 [Manual page](/manual/vivado)
 
@@ -57,7 +57,7 @@ By popular demand, we have also added the Xilinx Vivado simulator as external co
 * Improved outline
 * Configure project wide defines:  
 You can configure definitions that are set before other (System)Verilog files in the project are processed.
-![](/releasenotes/3.6/preprocessor_properties.png)  
+![](/img/releasenotes/3.6/preprocessor_properties.png)  
 The code in the **Initial preprocessor definitions** field is preprocessed before all other (System)Verilog code in your project. This allows you to, for example, set global defines without an explicit `include` statement.
 
 * Selection behavior in preprocessor code:  
@@ -68,7 +68,7 @@ Double clicking in preprocessor code now selects individual words instead of the
 Sigasi Studio 3.6 is build on top of the newly released [Eclipse Oxygen](https://eclipse.org/oxygen/) platform. This brings a number of UI and other improvements. You can find all new and noteworthy changes in Eclipse Oxygen on the [Eclipse website](http://www.eclipse.org/eclipse/news/4.7/)
 
 If you open an existing workspace after the update to Sigasi Studio 3.6, you might see a warning about updating your workspace. You can safely confirm the update by clicking **OK**.  
-![Workspace Warning](3.6/workspace_older_version_warning.png)
+![Workspace Warning](/img/releasenotes/3.6/workspace_older_version_warning.png)
 
 # Other new and noteworthy improvements
 
@@ -80,7 +80,7 @@ If you open an existing workspace after the update to Sigasi Studio 3.6, you mig
 * Block Diagram: `buffer` ports are now displayed as output ports
 * Block Diagram: visual distinction between `input` and `inout` ports
 * We added a new quickfix to correct the capitalization of all references in the entire VHDL source file.  
-![Correct the capitalization of all references in the entire VHDL source file.](/releasenotes/3.6/capitalization_all.png)
+![Correct the capitalization of all references in the entire VHDL source file.](/img/releasenotes/3.6/capitalization_all.png)
 * We simplified the [EULA](/eula)
 * New linting check: redundant `= true` or `= false` in boolean expressions
 

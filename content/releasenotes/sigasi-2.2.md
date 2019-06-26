@@ -12,7 +12,7 @@ VHDL-2002 and VHDL-2008 support
 
 This release brings support for VHDL **2002** and **2008** to Sigasi 2: protected types, simplified sensitivity list, condition operators, external names block comments, …
 
-![VHDL 2008](2.2/vhdl2008.png "VHDL 2008")
+![VHDL 2008](/img/releasenotes/2.2/vhdl2008.png "VHDL 2008")
 
 Note that the new VHDL 2008 STD and IEEE libraries are not included yet.
 
@@ -22,21 +22,21 @@ Configurable severity for lintings
 The severity of Sigasi’s type time linting checks are now configurable.
 Go to **Window \> Preferences \> VHDL \> Errors / Warnings**.
 
-![Configurable severity for lintings](2.2/configurablewarnings.png "Configurable severity for lintings")
+![Configurable severity for lintings](/img/releasenotes/2.2/configurablewarnings.png "Configurable severity for lintings")
 
 Other new and noteworthy improvements
 -------------------------------------
 
 -   **Occurrence highlighting** is now enabled by default
 -   Detect **duplicate declarations**
-    ![Detect duplicate declarations](2.2/duplicatedeclaration.png "Detect duplicate declarations")
+    ![Detect duplicate declarations](/img/releasenotes/2.2/duplicatedeclaration.png "Detect duplicate declarations")
 -   Two additional cheat cheats to help you configure **Xilinx** and **Altera libraries** in Sigasi (**Help \> Cheat Sheets… \> Sigasi**)
 -   Better **autocomplete** for instantiations (ticket:1777 and ticket:1850): autocompletes used to work only when you were typing the `entity` keyword. Now, autocomplete also works if you trigger it while you are typing the entity name.
 -   Better **autocomplete** for signal assignments (ticket:1894)
 -   Hover: Show datatype of **record fields** (ticket:1780)
-    ![Hover datatype record fields](2.2/hoverrecordfieldspng.png "Hover datatype record fields")
+    ![Hover datatype record fields](/img/releasenotes/2.2/hoverrecordfieldspng.png "Hover datatype record fields")
 -   **Code folding** for if and loop statements
-	![Code folding for if and loop statements](2.2/fold_if.png "Code folding for if and loop statements")
+	![Code folding for if and loop statements](/img/releasenotes/2.2/fold_if.png "Code folding for if and loop statements")
 
 *Because the internal cache format has changed in this release, your projects will be cleaned automatically after this update.*
 

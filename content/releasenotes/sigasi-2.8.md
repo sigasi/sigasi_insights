@@ -17,7 +17,7 @@ project in batch mode. A typical approach is to use
 line builds. Sigasi can help you by **generating a Makefile** for
 compiling your project with Modelsim.
 
-![ModelSim Makefile](2.8/makefile_a.png "ModelSim Makefile")
+![ModelSim Makefile](/img/releasenotes/2.8/makefile_a.png "ModelSim Makefile")
 
 In some cases you don’t need a Makefile, but you just need a list of
 your VHDL files in the correct compilation order. For these cases we
@@ -51,7 +51,7 @@ Other new and noteworthy improvements
     (`.library_mapping.xml`). This makes this file more version control
     system friendly
 -   The hover over a signal name now displays its initial value
-    ![Hover initial value](2.8/signal_hover.png "Hover initial value")
+    ![Hover initial value](/img/releasenotes/2.8/signal_hover.png "Hover initial value")
 -   Sigasi’s VHDL builder now detects ands skips encrypted VHDL files
     (instead of trying to compile and then throwing errors)
 -   Removed Xilinx and Altera Cheat Sheets. Their content has been

@@ -21,7 +21,7 @@ offered with when clauses for each enumeration literal.
 
 See this in action : [/screencasts/writing_state_machines]
 
-![Context sensitive autocomplete for case statements](2.11/casestatementautocomplete_a.png "Context sensitive autocomplete for case statements")
+![Context sensitive autocomplete for case statements](/img/releasenotes/2.11/casestatementautocomplete_a.png "Context sensitive autocomplete for case statements")
 
 Usability improvements
 ----------------------
@@ -31,7 +31,7 @@ Usability improvements
     default for undeclared signals than changing the name to a similarly
     named signal. So we changed it.
 
-![Quickfix order](2.11/quickfixorder.png "Quickfix order")
+![Quickfix order](/img/releasenotes/2.11/quickfixorder.png "Quickfix order")
 
 -   Extra library mapping action: **Map folders to folder name**. If you
     have a well organized project, every library has its own folder. To
@@ -40,17 +40,17 @@ Usability improvements
     multiple folders. This new action maps each selected folder to a
     library with the same name as the folder.
 
-![Map folders to folder name](2.11/mapfolderstofoldername_a.png "Map folders to folder name")
+![Map folders to folder name](/img/releasenotes/2.11/mapfolderstofoldername_a.png "Map folders to folder name")
 
 -   The top level dialog now show the architecture name
 
-![Set top level selection dialog](2.11/settoplevelarchitecture_.png "Set top level selection dialog")
+![Set top level selection dialog](/img/releasenotes/2.11/settoplevelarchitecture_.png "Set top level selection dialog")
 
 -   If you mistakenly use a signal assignment operator for a variable
     (or vice versa), you can now use the **Fix assignment operator quick
     fix** to swiftly correct your mistake.
 
-![Fix assignment operator quick fix](2.11/assignmentoperatorquickfix_.png "Fix assignment operator quick fix")
+![Fix assignment operator quick fix](/img/releasenotes/2.11/assignmentoperatorquickfix_.png "Fix assignment operator quick fix")
 
 Bugfixes
 --------

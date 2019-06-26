@@ -19,7 +19,7 @@ enumeration literal) in the “when” clause of your state machine without
 first adding it to the state enumeration datatype. A Quick Fix will
 automatically add the new literal to the VHDL enum type.
 
-![Add new enumeration literal quickfix](2.15/addnewenumliteralquickfix.png "Add new enumeration literal quickfix")
+![Add new enumeration literal quickfix](/img/releasenotes/2.15/addnewenumliteralquickfix.png "Add new enumeration literal quickfix")
 
 This also works the other way around. If you add a new enum literal to
 an state type declaration, your case statements will be broken. There
@@ -33,7 +33,7 @@ enables save-time compilation of your Verilog files with *Riviera Pro,
 ModelSim, QuestaSim and Isim*. Just like Sigasi Pro for VHDL, the
 Verilog support is freely available for small projects.
 
-![Verilog save-time compilation](2.15/vlog.png "Verilog save-time compilation")
+![Verilog save-time compilation](/img/releasenotes/2.15/vlog.png "Verilog save-time compilation")
 
 Faster external compilation
 ---------------------------
@@ -76,21 +76,21 @@ the same name. Unlike other Sigasi VHDL linting rules which are
 triggered while you type (type-time lint checks), this rule is invoked
 when you save your file (save-time lint check).
 
-![Check for Duplicate Design Units](2.15/duplicate_design_unit.png "Check for Duplicate Design Units")
+![Check for Duplicate Design Units](/img/releasenotes/2.15/duplicate_design_unit.png "Check for Duplicate Design Units")
 
 Other new and noteworthy improvements
 -------------------------------------
 
 -   Flag a function that doesn’t have a return statement
-    ![Check for function without return statement](2.15/functionwithoutreturn.png "Check for function without return statement")
+    ![Check for function without return statement](/img/releasenotes/2.15/functionwithoutreturn.png "Check for function without return statement")
 -   Better hover for alias of vector slices (ticket 2493)
-    ![Better hover for alias of vector slice](2.15/alias.png "Better hover for alias of vector slice")
+    ![Better hover for alias of vector slice](/img/releasenotes/2.15/alias.png "Better hover for alias of vector slice")
 -   Better hover for functions and procedures
-    ![Better hover for functions and procedures](2.15/function_hover.png "Better hover for functions and procedures")
+    ![Better hover for functions and procedures](/img/releasenotes/2.15/function_hover.png "Better hover for functions and procedures")
 -   Keep a history of toplevels in the set top level dialog
-    ![Better select top level dialog](2.15/settoplevel.png "Better select top level dialog")
+    ![Better select top level dialog](/img/releasenotes/2.15/settoplevel.png "Better select top level dialog")
 -   Autocomplete for attributes
-    ![Autocomplete for attributes](2.15/attributeautocomplete.png "Autocomplete for attributes")
+    ![Autocomplete for attributes](/img/releasenotes/2.15/attributeautocomplete.png "Autocomplete for attributes")
 -   Template field `${filename}` is now replaced by the actual file name when expanding a template
 -   Show protected types in outline view
 -   Files in exported CSV are now sorted by library if possible

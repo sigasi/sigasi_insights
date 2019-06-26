@@ -22,9 +22,9 @@ Other new and noteworthy improvements
 
 -   The [Eclipse git plugin **EGit**](http://www.eclipse.org/egit) is now pre-installed in the standalone version of Sigasi
 -   Autocomplete **templates for Verilog**
-    ![templates for Verilog](2.13/verilogtemplatespreferencepage.png "templates for Verilog")
+    ![templates for Verilog](/img/releasenotes/2.13/verilogtemplatespreferencepage.png "templates for Verilog")
 -   Replaced the memory warning and vsim detection dialogs with *non blocking* pop-ups
-    ![memory warning](2.13/memorywarningpopup.png "memory warning")
+    ![memory warning](/img/releasenotes/2.13/memorywarningpopup.png "memory warning")
 -   Improved autocomplete for case statements: also offer template when
     typing case expression
 -   Standalone version: use `<HOME>/workspaceSigasi` by default
@@ -32,7 +32,7 @@ Other new and noteworthy improvements
     addition to label)
 -   Support multi-line assert statements in the formatter
 -   Better hover for aliases
-    ![Alias Hover](2.13/hoverofalias.png "Alias Hover")
+    ![Alias Hover](/img/releasenotes/2.13/hoverofalias.png "Alias Hover")
 -   Updated Java Runtime Environment in stand-alone version to Java 7 update 17
 -   Added a dynamic variable to run configuration to query the toplevel name :
     `${vhdl_toplevel}`

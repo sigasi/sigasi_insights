@@ -21,26 +21,26 @@ Catching bugs early is cheaper than catching them late. Earlier versions
 of Sigasi detect **most errors** at **type time** but relied on a manual compile step with an external compiler to catch all errors. Sigasi 2.4 can now automate this step and intelligently call an external compiler
 to find **all analysis errors** in your VHDL files as soon as you **save**.
 
-![External compiler](2.4/vcomdemo1.png "External compiler")
+![External compiler](/img/releasenotes/2.4/vcomdemo1.png "External compiler")
 
 At this time, Sigasi supports the vcom/vsim style compilers. These
 compilers are available from [Aldec](http://www.aldec.com) (Active HDL
 and Riviera Pro) or from other vendors.
 
-![External compiler](2.4/vcomdemo3.png "External compiler")
+![External compiler](/img/releasenotes/2.4/vcomdemo3.png "External compiler")
 
 Usability improvements
 ----------------------
 
 -   Signal assignments can now be **filtered** in the **outline**
 -   **Leaf nodes** in **outline** and **hierarchy** no longer have fold/unfold triangles
-    ![Leaf nodes](2.4/outlinefilter_a.png "Leaf nodes")
+    ![Leaf nodes](/img/releasenotes/2.4/outlinefilter_a.png "Leaf nodes")
 -   Improved **hover** for **record** types and subtypes
 -   When you change the **library mapping of a folder**, you now have
     the option to map to a new library with the name of the folder
 -   Deprecated library warnings now have a **quickfix** to show more
     info or to hide this type of warnings
-    ![Quickfix](2.4/deprecatedlibraries.png "Quickfix")
+    ![Quickfix](/img/releasenotes/2.4/deprecatedlibraries.png "Quickfix")
 -   The hierarchy instantiations filter now shows entity instantiations
     inside for-generates
 -   Better support for *unresolved* nodes in the hierarchy:
@@ -48,7 +48,7 @@ Usability improvements
         instantiations filter is enabled in hierarchy view
     -   Double clicking unresolved instantiations moves your cursor to
         the instantiation location\
-        ![Unresolved nodes](2.4/hierarchyuximprovements.png "Unresolved nodes")
+        ![Unresolved nodes](/img/releasenotes/2.4/hierarchyuximprovements.png "Unresolved nodes")
 -   Error marker for “Port map is Incomplete” now underlines <code>port
     map</code> instead of the last port mapping
 -   The declare signal **quickfix** of signals in **port maps** now uses

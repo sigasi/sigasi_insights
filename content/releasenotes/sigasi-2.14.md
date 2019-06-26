@@ -21,14 +21,14 @@ Thanks to this improvement we can offer accurate autocompletes for *use
 clauses*, *records*, *library clauses*, *protected types*, *access
 types*, …
 
-![Autocomplete for use clauses](2.14/autocompleteuseclause.png "Autocomplete for use clauses")
+![Autocomplete for use clauses](/img/releasenotes/2.14/autocompleteuseclause.png "Autocomplete for use clauses")
 
 External files
 --------------
 
 We simplified the way we deal with [opening](/manual/opening#opening-files-from-the-command-line) VHDL files. These are individual files that are not part of a Sigasi project. Before Sigasi 2.14 we openend external files in a special *“External Files”-project*, which was a bit of an awkward workaround. In Sigasi 2.14 we now simply open external files without a project, just like you would expect from a “simple” editor (like Emacs, Vi, Notepad++, Ultraedit,…).
 
-![External file](2.14/external_file.png "External file")
+![External file](/img/releasenotes/2.14/external_file.png "External file")
 
 Other new and noteworthy improvements
 -------------------------------------
@@ -43,7 +43,7 @@ Other new and noteworthy improvements
 -   Autocomplete template for `std_logic_vector` ranges
 -   Evaluate log2 function calls in hovers and hierarchy
 
-![Log2](2.14/log2.png "Log2") 
+![Log2](/img/releasenotes/2.14/log2.png "Log2") 
 
 Bugfixes
 --------

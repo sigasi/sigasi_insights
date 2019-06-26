@@ -12,11 +12,11 @@ The Sigasi 2.29 release brings better *Verilog* parsing, *SystemVerilog* for Syn
 We significantly improved our internal Verilog parser. Our parser is now able to give *type-time syntax errors* for Verilog (2005) code. This gives you instant feedback about Verilog syntax errors. So no more waiting for the compiler to find syntax issues.
 Note that this feature is disabled by default. You can enable/disable it with the **Ctrl-3** keyboard shortcut, and next typing **Toggle Verilog problem markers**.
 
-![Toggle Verilog Markers](2.29/toggle-verilog-markers.png "Toggle Verilog Markers")
+![Toggle Verilog Markers](/img/releasenotes/2.29/toggle-verilog-markers.png "Toggle Verilog Markers")
 
 ## SystemVerilog for synthesis
 
-![SystemVerilog](2.29/systemverilog.png "SystemVerilog")
+![SystemVerilog](/img/releasenotes/2.29/systemverilog.png "SystemVerilog")
 
 We added support for the synthesisable subset of SystemVerilog. This means that Sigasi can now cope with:
 * Packages
@@ -35,7 +35,7 @@ The *New Verilog file* wizard now allows you to create SystemVerilog files too (
 
 You can now configure Cadence Incisive (NCSim) as [/manual/tools#save-time-compilation] for your HDL code. Once configured, Sigasi will automatically run `ncvhdl` and `ncvlog` to compile your code. All issues will get a problem marker in the editor and will appear in the problems view. 
 
-![Cadence Incisive (NCSim) Toolchain Integration](2.29/ncsim-toolchain.png "Cadence Incisive (NCSim) Toolchain Integration")
+![Cadence Incisive (NCSim) Toolchain Integration](/img/releasenotes/2.29/ncsim-toolchain.png "Cadence Incisive (NCSim) Toolchain Integration")
 
 ## Other new and noteworthy improvements
 
@@ -45,7 +45,7 @@ You can now configure Cadence Incisive (NCSim) as [/manual/tools#save-time-compi
 * Expose *BlockConfiguration* context in VHDL autocomplete templates
 * We added a filter to project explorer to filter all non-Verilog files
 
-![Filter non-Verilog files](2.29/verilog-filter.png "Filter non-Verilog files")
+![Filter non-Verilog files](/img/releasenotes/2.29/verilog-filter.png "Filter non-Verilog files")
 
 ## Bugfixes
 

@@ -18,14 +18,14 @@ Therefor we decided to rewrite the VHDL formatting engine in Sigasi Studio 3.4. 
 
 * **Skip formatting** in defined regions  
   The code formatter now detects **off** (`-- @formatter:off`) and **on** (`-- @formatter:on`) tags. This allows you to disable the Sigasi formatter in defined regions in your code.
-  ![](3.4/formatter_off_region.png)
+  ![](/img/releasenotes/3.4/formatter_off_region.png)
 * Optionally **disable vertical alignment**  
   You can now disable vertical alignment in the formatter: **Windows > Preferences > Sigasi > VHDL > Formatting > Use Vertical Alignment**. Note that vertical aligment is enabled by default.
-  ![](3.4/vertical_alignment_a.png)
+  ![](/img/releasenotes/3.4/vertical_alignment_a.png)
 * New action to **correct indentation** only  
   Inside a VHDL editor, you can now correct the indentation only via the context menu **Source > Correct Indentation**, or via **Ctrl+I**. This only changes whitespace at the start of you lines.
   If you select code first, only the code in the selection will be indented.
-  ![](3.4/correct_indentation_a.png)
+  ![](/img/releasenotes/3.4/correct_indentation_a.png)
 
 ## Formatting bug fixes
 
@@ -42,11 +42,11 @@ Therefor we decided to rewrite the VHDL formatting engine in Sigasi Studio 3.4. 
 We further improved the layout, looks and interaction of the Block Diagram View.
 We changed the looks of `assignment` and `assert` statements. We made them smaller to improve the clarity of most diagrams. We also improved *hover* and the *selection behavior*. 
 
-  ![](3.4/blockdiagram_a.png)
+  ![](/img/releasenotes/3.4/blockdiagram_a.png)
 
-We also added a **Pin View** feature. This allows you to 'pin', or lock, the Block Diagram view to the current diagram. If you pin a view (![](3.4/pin_view.png)), the diagram will remain unchanged if you navigate to other VHDL files. Editing your VHDL code will still result in updates of the Block Diagram View.
+We also added a **Pin View** feature. This allows you to 'pin', or lock, the Block Diagram view to the current diagram. If you pin a view (![](/img/releasenotes/3.4/pin_view.png)), the diagram will remain unchanged if you navigate to other VHDL files. Editing your VHDL code will still result in updates of the Block Diagram View.
 
-**Note:** In Sigasi Studio 3.3 we accidentally released a prototype feature. Depending on your license key, you may have noticed ![](3.4/prototype.png) buttons in the Block Diagram view tool bar. These buttons filtered certain blocks and connections from the Block Diagram. In Sigasi 3.4, we have removed these buttons. An improved version of this functionallity will be re-introduced in a later version.
+**Note:** In Sigasi Studio 3.3 we accidentally released a prototype feature. Depending on your license key, you may have noticed ![](/img/releasenotes/3.4/prototype.png) buttons in the Block Diagram view tool bar. These buttons filtered certain blocks and connections from the Block Diagram. In Sigasi 3.4, we have removed these buttons. An improved version of this functionallity will be re-introduced in a later version.
 
 # SystemVerilog
 
@@ -57,12 +57,12 @@ See the [Preview Builds](/tech/preview) to track the latest SystemVerilog progre
 - We now require at least **Java 8** to run Sigasi Studio for both the Stand-alone and the Plugin version. The Plugin version now requires Eclipse 4.4 or newer. [System Requirements](/faq#what-are-the-system-requirements)
 - We updated the Eclipse Xtext dependency to `2.11.0`
 - We improved the message for *"Duplicate design unit"* problems. We now mention the path of conflicting design files
-  ![](3.4/duplicate_design_units_a.png)
+  ![](/img/releasenotes/3.4/duplicate_design_units_a.png)
 - We added three extra **name conventions checks**:
     - Labels of instantiation statements
     - Labels of generate statements
     - Labels of process statements
-    ![](3.4/naming_conventions_a.png)
+    ![](/img/releasenotes/3.4/naming_conventions_a.png)
 
 # Bug fixes
 

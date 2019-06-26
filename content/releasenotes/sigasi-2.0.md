@@ -15,7 +15,7 @@ Other improvements
 -   Structured select (Alt-Shift-Up/Alt-Shift-Down)
     ![Structured select (Alt-Shift-Up/Alt-Shift-Down)](2.0/select.gif "Structured select (Alt-Shift-Up/Alt-Shift-Down)")
 -   Annotate files in project explorer with problems markers
-    ![Problem markers in project explorer](2.0/problemmarkersinexplorer.png "Problem markers in project explorer")
+    ![Problem markers in project explorer](/img/releasenotes/2.0/problemmarkersinexplorer.png "Problem markers in project explorer")
 -   Code folding for packages
 -   Improved feedback when Sigasi Starter edition falls back to Baseline Mode
 -   Avoid clean build after library remapping

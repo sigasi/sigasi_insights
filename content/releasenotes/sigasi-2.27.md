@@ -16,7 +16,7 @@ Improvements on the [Documentation View](/manual/views#documentation-view):
 * Log (DocBook / PDF) documentation errors in the error console
 * Allow export to (watermarked) PDF without a Sigasi Premium Doc license
 * Save intermediate docbook result for custom PDF work flows.
-![Improved documentation generation](2.27/documentation.png "Improved documentation generation")
+![Improved documentation generation](/img/releasenotes/2.27/documentation.png "Improved documentation generation")
 
 ## Other new and noteworthy improvements
 

@@ -13,11 +13,11 @@ We are also working vigorously on **SystemVerilog** improvements, but we didn't 
 
 - New {{< starter >}} checks:
     - Flag declarations that are not allowed in the current declarative region (like `variable` declarations in the architecture declarative part).
-    ![](3.3/declarative_part.png)
+    ![](/img/releasenotes/3.3/declarative_part.png)
     - Check deferred constant declarations: these are only allowed in a package declaration.
-    ![](3.3/deferred_constant.png)
+    ![](/img/releasenotes/3.3/deferred_constant.png)
     - Linting checks for function specifications
-    ![](3.3/function_signature.png)
+    ![](/img/releasenotes/3.3/function_signature.png)
     - Check the signature of subprograms: the declarations in the package and package body have to match.
     - Check protected type bodies: these are not allowed in packages.
 
@@ -27,18 +27,18 @@ We are also working vigorously on **SystemVerilog** improvements, but we didn't 
 - New {{< xl >}} checks:
     - Flag illegal output/input port connections
     - Warn when ports or generics are mapped in a different order than their declaration.
-    ![](3.3/association_order.png)
+    ![](/img/releasenotes/3.3/association_order.png)
 
 - New Quick Fixes
     - Declare constant.  
-    ![](3.3/declare_constant.png)
+    ![](/img/releasenotes/3.3/declare_constant.png)
     - Fix the order or generic maps or port maps (see above).
     - Fix argument names in function specification. 
     - QuickFix to reset common libraries when project contains files with a newer VHDL version (see above).
 
 ## Improved Block Diagram view
 
-![](3.3/block_diagram_a.png)
+![](/img/releasenotes/3.3/block_diagram_a.png)
 
 The **Block Diagram View** was significantly enhanced. 
 The new Block Diagram view can now visualize `generate` statements. The `generate` statements are displaced as container blocks. You can **collapse** or **expand** these blocks via a context menu in the block Diagram.
@@ -54,12 +54,12 @@ In addition we solved some rendering issues with **overlapping labels.**
 
 - Automatically [export the compilation order](/manual/tools#auto-export), based on either the entire project, or based on a top level.
   You can configure this in the Project Properties.
-  ![](3.3/auto_export_property_page.png)
+  ![](/img/releasenotes/3.3/auto_export_property_page.png)
 - Semantic highlighting for labels. The color can be configured via **Window > Preferences > Sigasi > VHDL > Syntax coloring**. Labels are colored gray by default.
 - Option to automatically format VHDL files when they are saved
-  ![](3.3/format_on_save_a.png)
+  ![](/img/releasenotes/3.3/format_on_save_a.png)
 - **Link with editor** toggle button in the Hierarchy View. When this is enabled, the active element in the VHDL editor will be highlighted in the Hierarchy View (if applicable).
-  ![](3.3/link_hierarchy_a.png)
+  ![](/img/releasenotes/3.3/link_hierarchy_a.png)
 - Hyperlinks to open matching declarations in `protected type` bodies.
 - Autocomplete template for `case generate` statements.
 - Components are foldable in the editor.

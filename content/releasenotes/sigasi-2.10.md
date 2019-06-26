@@ -14,7 +14,7 @@ We introduce a new, power navigation feature for **finite state machines** (FSMs
 If you press **Ctrl** and **click** on the **name of a state**. You jump directly to the relevant *when* part of your *case statement*. There is
 a screencast, [/screencasts/navigation], to show how it works.
 
-![Open Matching When Clause (Ctrl-click)](2.10/open_matching_when.png "Open Matching When Clause (Ctrl-click)")
+![Open Matching When Clause (Ctrl-click)](/img/releasenotes/2.10/open_matching_when.png "Open Matching When Clause (Ctrl-click)")
 
 Automatic Hierarchy Refresh
 ---------------------------
@@ -23,7 +23,7 @@ The hierarchy view now automatically refreshes itself when you save your
 design files. You can turn the automatic refresh on and off by toggling
 the refresh button.
 
-![Hierarchy auto refresh](2.10/auto_refresh.png "Hierarchy auto refresh")
+![Hierarchy auto refresh](/img/releasenotes/2.10/auto_refresh.png "Hierarchy auto refresh")
 
 
 Avoiding full rebuilds
@@ -35,7 +35,7 @@ rebuilds: (1) while the user is mapping VHDL [/manual/libraries] or (2) if other
 delete binary files in the project directory. The new version makes an
 extra effort to avoid full rebuilds, saving you time.
 
-![Avoid Clean Builds if possible](2.10/clean_build.png "Avoid Clean Builds if possible")
+![Avoid Clean Builds if possible](/img/releasenotes/2.10/clean_build.png "Avoid Clean Builds if possible")
 
 Other New and Noteworthy Improvements
 -------------------------------------

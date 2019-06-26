@@ -18,7 +18,7 @@ supported yet.\
 This will allow you to use the standard **Fixed Point** (`fixed_pkg`)
 and **Floating Point** `float_pkg` packages from the IEEE library.
 
-![Generic Packages (VHDL 2008)](2.17/genericpackages.png "Generic Packages (VHDL 2008)")
+![Generic Packages (VHDL 2008)](/img/releasenotes/2.17/genericpackages.png "Generic Packages (VHDL 2008)")
 
 Autocompletions for type conversions
 ------------------------------------
@@ -54,11 +54,11 @@ Other new and noteworthy improvements
 -------------------------------------
 
 -   Check for duplicate enumeration literals
-    ![Duplicate enumeration literals](2.17/duplicateenumerationliteral.png "Duplicate enumeration literals")
+    ![Duplicate enumeration literals](/img/releasenotes/2.17/duplicateenumerationliteral.png "Duplicate enumeration literals")
 -   Check for correct use of underscore in VHDL identifiers
-    ![Illegal identifier](2.17/illegal_identifier.png "Illegal identifier")
+    ![Illegal identifier](/img/releasenotes/2.17/illegal_identifier.png "Illegal identifier")
 -   Mark the current library in the library mapper context menu
-	![Current library](2.17/betterlibrarymappingui.png "Current library")
+	![Current library](/img/releasenotes/2.17/betterlibrarymappingui.png "Current library")
 -   Double-clicking in the Generics View opens the corresponding
     generic/constant declaration
 -   Quickfix for unused types

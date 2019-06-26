@@ -23,10 +23,10 @@ There are three ways to navigate to the matching entity:
 2.  **Control-mouse**: hold the **Control** (**Command** on Mac) button
     and move your mouse pointer to the component name. A menu will
     appear that allows you to select the matching entity declaration.
-    ![Hold the control key](2.5/openmatchingentity.png "Hold the control key")
+    ![Hold the control key](/img/releasenotes/2.5/openmatchingentity.png "Hold the control key")
 3.  **Context menu**: Right click the component name and select **Open
     matching entity**
-    ![Open matching entity (context menu)](2.5/openmatchingentitymenu.png "Open matching entity (context menu)")
+    ![Open matching entity (context menu)](/img/releasenotes/2.5/openmatchingentitymenu.png "Open matching entity (context menu)")
 
 This also works for **generics** and **ports** wherever they are used.
 
@@ -40,14 +40,14 @@ It now becomes very easy to add Altera or Xilinx to your projects.
 Simply trigger the quickfix on the library warning marker.
 Sigasi will ask for your Altera or Xilinx installation folder
 automatically add and map the necessary files.
-![Altera Quickfix](2.5/alteraquickfix.png "Altera Quickfix")
+![Altera Quickfix](/img/releasenotes/2.5/alteraquickfix.png "Altera Quickfix")
 
 Note that for the **Xilinx** libraries we only map the packages with the
 component declarations. By default all entity and architecture
 declarations are not mapped (excluded). This significantly reduces the
 time for a clean build. If you use direct entity instantiations, you can
 easily map the entities you need.
-![Xilinx](2.5/xilinxlibraries.png "Xilinx")
+![Xilinx](/img/releasenotes/2.5/xilinxlibraries.png "Xilinx")
 
 You can change the Altera Quartus and Xilinx ISE installation path
 settings at **Window \> Preferences \> VHDL \> Toolchains**.
@@ -59,17 +59,17 @@ Other new and noteworthy improvements
     Edition**: A small image box provides a tip and a link to the
     website. *Click* or *hover* for more information.
 
-![Information Box](2.5/marketingbox.png "Information Box")
+![Information Box](/img/releasenotes/2.5/marketingbox.png "Information Box")
 
 -   **Expand all** nodes action in the hierarchy view
 
-![Expand all](2.5/expandall.png "Expand all")
+![Expand all](/img/releasenotes/2.5/expandall.png "Expand all")
 
 -   **Set as Top Level** action in editor, outline and hierarchy context
     menu: right-click the name of the entity (or architecture, or
     configuration) and select **Set As Top Level**.
 
-![Set As Top Level](2.5/setastopleveleditor.png "Set As Top Level")
+![Set As Top Level](/img/releasenotes/2.5/setastopleveleditor.png "Set As Top Level")
 
 -   **Code folding** inside generate statements
 

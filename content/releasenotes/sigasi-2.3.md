@@ -22,7 +22,7 @@ us to also give you feedback about the **structure** of your design. The
 **Hierarchy View** is the first result of this engine. This view shows
 the VHDL design hierarchy below the selected top level object.
 
-![Hierarchy View](2.3/hierarchyviewconf.png "Hierarchy View")
+![Hierarchy View](/img/releasenotes/2.3/hierarchyviewconf.png "Hierarchy View")
 
 The hierarchy takes **generics** and **configurations** into account
 when computing the design hierarchy and has an interpreter to calculate
@@ -48,7 +48,7 @@ cursor on the unused declaration in the editor and pressing **Ctrl-F1**.
 It is confusing to read a design that contains ‘dead code’. This new
 feature will make it easier to detect and remove it.
 
-![Unused declaration (with QuickFix)](2.3/quickfixunuseddeclaration.png "Unused declaration (with QuickFix)")
+![Unused declaration (with QuickFix)](/img/releasenotes/2.3/quickfixunuseddeclaration.png "Unused declaration (with QuickFix)")
 
 Sigasi command line improvements
 --------------------------------
@@ -60,7 +60,7 @@ the command line, Sigasi will now create it for you.
 This feature makes enables you to configure Sigasi as default editor for
 other EDA tools ([/manual/opening]).
 
-![You can now configure the line number in other tools (e.g. Quartus)](2.3/quartuscommandlineannotated.png "You can now configure the line number in other tools (e.g. Quartus)")
+![You can now configure the line number in other tools (e.g. Quartus)](/img/releasenotes/2.3/quartuscommandlineannotated.png "You can now configure the line number in other tools (e.g. Quartus)")
 
 Other new and noteworthy improvements
 -------------------------------------
@@ -71,7 +71,7 @@ Other new and noteworthy improvements
     keyboard shortcuts for the actions you use most often, is enabled
     again. [/tech/mousefeed]
     (Eclipse plugin users must [install Mousefeed](http://marketplace.eclipse.org/content/mousefeed) themselves.)
-    ![MouseFeed popup](2.3/mousefeed.png "MouseFeed popup")
+    ![MouseFeed popup](/img/releasenotes/2.3/mousefeed.png "MouseFeed popup")
 -   You can now revert your Sigasi installation to earlier versions: In
     **Help \> About \> Installation Details \> Installation History**,
     select the version you want to revert to and click the **Revert**
@@ -112,7 +112,7 @@ changes. Hit tab to switch to the different fields and press enter when
 you are ready. The cursor will then automatically jump to its original
 position, the location where the signal is used. This also works for undeclared variables.
 
-![Quickfix: Declare VHDL Signal](2.3/declare_signal.png "Quickfix: Declare VHDL Signal")
+![Quickfix: Declare VHDL Signal](/img/releasenotes/2.3/declare_signal.png "Quickfix: Declare VHDL Signal")
 
 An undeclared identifier could also be a typo. If the undeclared
 variable closely matches an existing declaration, Sigasi will also offer
@@ -134,7 +134,7 @@ Hierarchy
 
 Thanks to your feedback we further improved the hierarchy view:
 
-![Hierarchy](2.3/hierarchyview_0.png "Hierarchy")
+![Hierarchy](/img/releasenotes/2.3/hierarchyview_0.png "Hierarchy")
 
 -   In the context menu we offer the option to navigate to either the
     (instantiation) statement or to the corresponding instantiated
@@ -155,7 +155,7 @@ Other new and noteworthy improvements
 -   We added the **Find references** action to the **Search** menu for
     your convenience.
 -   We check the correctness of **end clauses**  more strictly
-    ![End clause](2.3/endclause.png "End clause")
+    ![End clause](/img/releasenotes/2.3/endclause.png "End clause")
 
 *After you update, all caches will be cleared. Your initial build will take a longer than usual.*
 

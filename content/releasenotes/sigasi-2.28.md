@@ -14,7 +14,7 @@ The [/manual/tools#external-compilers] integration now supports [/manual/mixed].
 
 The *dependencies view*: and the CSV [/manual/tools#export] feature now also take cross language dependencies into account. 
 
-![Dependencies View](2.28/dependencies.png "Dependencies View")
+![Dependencies View](/img/releasenotes/2.28/dependencies.png "Dependencies View")
 
 ## Check size in array assignments 
 \[VHDL; Sigasi Premium Desktop and Premium Doc\]
@@ -23,7 +23,7 @@ The *dependencies view*: and the CSV [/manual/tools#export] feature now also tak
 
 Because it is so easy to get the size wrong in array assignments —especially when you are working with *generics*—, we developed a new VHDL design check to catch these mistakes as early as possible.  
 
-![Array Size Check](2.28/array-size.png "Array Size Check")
+![Array Size Check](/img/releasenotes/2.28/array-size.png "Array Size Check")
 
 Sigasi will only complain when it is sure the assignment is wrong. When the expressions are too complicated to evaluate at type time, it will gracefully give up.
 
@@ -36,7 +36,7 @@ Sigasi will only complain when it is sure the assignment is wrong. When the expr
 
 ## Other new and noteworthy improvements
 
-![Headless Simulation](2.28/headless-simulation.png "Headless Simulation")
+![Headless Simulation](/img/releasenotes/2.28/headless-simulation.png "Headless Simulation")
 
 * We added an option to run an external simulator without UI, in the Sigasi console
 * We improved the performance of the Sigasi builder

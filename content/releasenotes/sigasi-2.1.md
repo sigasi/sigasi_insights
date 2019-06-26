@@ -16,7 +16,7 @@ Verilog and AHDL features:
 -   syntax highlighting
 -   toggle comment
 
-![Basic Verilog and Ahdl support](2.1/verilogahdl-syntaxhighlighting.png "Basic Verilog and Ahdl support")
+![Basic Verilog and Ahdl support](/img/releasenotes/2.1/verilogahdl-syntaxhighlighting.png "Basic Verilog and Ahdl support")
 
 **Note** that Verilog and Ahdl come as separate plugins. So if you are using the Sigasi Plugin in Eclipse, you have to manually install these new plugins.
 
@@ -27,7 +27,7 @@ We also ported the two most wanted features from Sigasi 1.0: Autocomplete for re
 If you use records, the tool shows you which fields a record has. Just press **CTRL+SPACE** to see the valid record fields.
 Check out this one-minute screencast: [/screencasts/record_autocomplete].
 
-![Autocomplete for records](2.1/record-autocomplete.png "Autocomplete for records")
+![Autocomplete for records](/img/releasenotes/2.1/record-autocomplete.png "Autocomplete for records")
 
 ### **TODO** / **FIXME** tags in comments
 
@@ -84,7 +84,7 @@ Other new and noteworthy improvements
 -   Open *Verilog* and *AHDL* files as *external files*, outside of a regular project.
 -   Show a warning dialog if the workbench is configured with too little memory.
 
-![Anywhere context](2.1/edit_template.png "Anywhere context")
+![Anywhere context](/img/releasenotes/2.1/edit_template.png "Anywhere context")
 
 *Your project will be cleaned automatically after this update. This is necessary because the internal VHDL was changed and the caches must be updated accordingly.*
 

@@ -19,14 +19,14 @@ export to both views.
 We improved the automatic layout of the state machine view. Edges now
 have bend points, which minimize crossing edges and overlapping labels.
 
-![State machine view (Before and after)](2.30/statemachines.png "State machine view (Before and after)")
+![State machine view (Before and after)](/img/releasenotes/2.30/statemachines.png "State machine view (Before and after)")
 
 ### Block Diagram View
 
 Based on user feedback we simplified the layout of the Block Diagram and
 settled for a minimalistic color scheme.
 
-![Updated Block Diagram View](2.30/blockdiagram.png "Updated Block Diagram View")
+![Updated Block Diagram View](/img/releasenotes/2.30/blockdiagram.png "Updated Block Diagram View")
 
 Most views in Sigasi update automatically while you type. However, in
 order to avoid a the distraction of the moving or flickering Block
@@ -47,7 +47,7 @@ It also allows you to do some post-processing of the graphical properties.
 
 Although VHDL is not case sensitive, it is recommend to always use the same capitalization when referring to the same declaration. For this reason Sigasi now warns when the capitalization of a reference differs from the capitalization of the declaration. Because external libraries can have different code styles, Sigasi only flags references in the same library as its declaration.
 
-![Check capitalization](2.30/captalization_references.png "Check capitalization")
+![Check capitalization](/img/releasenotes/2.30/captalization_references.png "Check capitalization")
 
 You can change the severity of this check via **Preferences \> Sigasi \> VHDL \> Errors/Warnings**.
 
@@ -63,13 +63,13 @@ You can change the severity of this check via **Preferences \> Sigasi \> VHDL \>
 -   The **Help \> Sigasi** menu now has an option to release/checkout a Sigasi floating license
 -   All Sigasi **autocomplete templates** now respect **upper case
     keywords** formatting setting 
-    ![Autocomplete templates with upper case keywords](2.30/autocomplete_template.png "Autocomplete templates with upper case keywords")
+    ![Autocomplete templates with upper case keywords](/img/releasenotes/2.30/autocomplete_template.png "Autocomplete templates with upper case keywords")
 -   Extra command line parameters for Linux RCP to avoid crash during hovers on Red Hat Linux
 -   Improved library mapping menu:
-    ![New Library Mapping menu](2.30/librarymapping-restore-common-libraries.png "New Library Mapping menu")
+    ![New Library Mapping menu](/img/releasenotes/2.30/librarymapping-restore-common-libraries.png "New Library Mapping menu")
 -   Ask to add Verilog Support when a Verilog file is opened in a VHDL project (and vice versa)
 -   Added action to the hierarchy view to select all files in the selected hierarchy subtree, in the project explorer \[Premium Desktop\]
-    ![Select all files in selected hierarchy in the Project Explorer](2.30/select-required-files-in-hierarchy.png "Select all files in selected hierarchy in the Project Explorer")
+    ![Select all files in selected hierarchy in the Project Explorer](/img/releasenotes/2.30/select-required-files-in-hierarchy.png "Select all files in selected hierarchy in the Project Explorer")
 -   Updated Xtext dependency to [Xtext
     2.8.4](https://projects.eclipse.org/projects/modeling.tmf.xtext/releases/2.8.4)
 -   Updated [Marker Manager](http://www.markermanager.com)

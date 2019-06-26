@@ -49,7 +49,7 @@ paths** and **Environment variables**. This is a convenient way to avoid
 absolute paths in your project files. The library quick fixes have been
 updated to use these variables. (More info: [/tech/how-avoid-absolute-library-paths-your-sigasi-project-files])
 
-![Path variables for toolchains and environment variables](2.21/pathvariablestoolchain.png "Path variables for toolchains and environment variables")
+![Path variables for toolchains and environment variables](/img/releasenotes/2.21/pathvariablestoolchain.png "Path variables for toolchains and environment variables")
 
 Other new and noteworthy improvements
 -------------------------------------
@@ -58,19 +58,19 @@ Other new and noteworthy improvements
     **incremental build** instead of a clean build. This significantly
     reduces the time you need setup up (big) legacy projects.
 -   **Semantic highlighting** for **attributes**
-    ![Semantic highlighting for attributes](2.21/attributesemantichighlighting.png "Semantic highlighting for attributes")
+    ![Semantic highlighting for attributes](/img/releasenotes/2.21/attributesemantichighlighting.png "Semantic highlighting for attributes")
 -   Add an info maker to **encrypted files**
 -   Warning for **duplicates in the sensitivity list**
-	![Duplicates in the sensitivity list](2.21/duplicate_in_sensitivity_list.png "Duplicates in the sensitivity list")
+	![Duplicates in the sensitivity list](/img/releasenotes/2.21/duplicate_in_sensitivity_list.png "Duplicates in the sensitivity list")
 -   Quickfix for **modelsim\_lib** Modelsim VHDL library
-    ![Quickfix for modelsim_lib](2.21/modelsim_lib_quickfix.png "Quickfix for modelsim_lib")
+    ![Quickfix for modelsim_lib](/img/releasenotes/2.21/modelsim_lib_quickfix.png "Quickfix for modelsim_lib")
 -   Flag errors when declarations are in incorrect order
-	![Declarations are in incorrect order](2.21/orderofdeclarations.png "Declarations are in incorrect order")
+	![Declarations are in incorrect order](/img/releasenotes/2.21/orderofdeclarations.png "Declarations are in incorrect order")
 -   Check that the port and generic maps of instantiations are formally correct
 -   Check that the parameter lists of subprogram invocations is formally correct
 -   Better hover for for loop iterator
 -   Formatter should respect newlines in enum declarations
-    ![Formatter should respect newlines](2.21/formatenums.png "Formatter should respect newlines")
+    ![Formatter should respect newlines](/img/releasenotes/2.21/formatenums.png "Formatter should respect newlines")
 
 
 orderofdeclarations.png

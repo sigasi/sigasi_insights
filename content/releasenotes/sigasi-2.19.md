@@ -16,7 +16,7 @@ in Sigasi 2.19 you can now use a quickfix to automatically add the
 missing **library** and **use clause** for IEEE packages to your VHDL
 design unit.
 
-![Quickfix to add missing use clause for IEEE packages](2.19/ieeelibraryquickfix.png "Quickfix to add missing use clause for IEEE packages")
+![Quickfix to add missing use clause for IEEE packages](/img/releasenotes/2.19/ieeelibraryquickfix.png "Quickfix to add missing use clause for IEEE packages")
 
 See it in action: [/screencasts/add_ieee_quickfix]
 
@@ -27,9 +27,9 @@ We refactored the Sigasi preference pages to configure the external
 compiler integration. You can now easily switch between different
 compilers. We also added the option to add extra command line arguments.
 
-![Easily switch between multiple external compilers](2.19/externaltoolspreferences-8.png "Easily switch between multiple external compilers")
+![Easily switch between multiple external compilers](/img/releasenotes/2.19/externaltoolspreferences-8.png "Easily switch between multiple external compilers")
 
-![Configure extra command line options](2.19/externaltoolspreferences-9-3.png "Configure extra command line options")
+![Configure extra command line options](/img/releasenotes/2.19/externaltoolspreferences-9-3.png "Configure extra command line options")
 
 Other new and noteworthy improvements
 -------------------------------------
@@ -37,7 +37,7 @@ Other new and noteworthy improvements
 -   Verilog `INCLUDE` directives now hyperlink to the referred include
     file
 
-![Link to Verilog include files](2.19/veriloghyperlinks1.png "Link to Verilog include files")
+![Link to Verilog include files](/img/releasenotes/2.19/veriloghyperlinks1.png "Link to Verilog include files")
 
 -   We have updated the bundled Java Runtime Environment to Java 7
     Update 45. Note that this update is only bundled in the stand-alone

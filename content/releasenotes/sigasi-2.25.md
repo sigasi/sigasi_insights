@@ -11,7 +11,7 @@ The Sigasi 2.25 release brings an improved Quartus II integration, a linter rule
 
 This release brings support for Quartus II 14 and simplifies the filenames in Sigasi. If all HDL files in your project have unique names, the importer uses the file name withouth paths. Only if you have duplicate file names, the complete path will be used.
 
-![Altera Quartus II integration](2.25/quartus.png "Altera Quartus II integration")
+![Altera Quartus II integration](/img/releasenotes/2.25/quartus.png "Altera Quartus II integration")
 
 We have also fixed a bug for Quartus II projects that use VHDL libraries (ticket 3049)
 
@@ -19,7 +19,7 @@ We have also fixed a bug for Quartus II projects that use VHDL libraries (ticket
 
 In VHDL ports and generics can have default values. So it is legal to omit these in the port map or generic map in instantiations. Since this is often a source of errors that are difficult to find, we developed a linting check for this.
 
-![Check optional associations in port and generic maps](2.25/portmap-linting.png "Check optional associations in port and generic maps")
+![Check optional associations in port and generic maps](/img/releasenotes/2.25/portmap-linting.png "Check optional associations in port and generic maps")
 
 "Read about this in the user manual":/manual/incomplete-port-maps-and-generic-maps
 
@@ -27,7 +27,7 @@ In VHDL ports and generics can have default values. So it is legal to omit these
 
 Sigasi now more strictly checks the use of operators ("+", "*", "-", ...). This helps you to catch typical typos a lot faster.
 
-![Datatype check for operators](2.25/xor.png "Datatype check for operators")
+![Datatype check for operators](/img/releasenotes/2.25/xor.png "Datatype check for operators")
 
 ## Bugfixes
 
