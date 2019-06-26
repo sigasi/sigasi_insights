@@ -50,7 +50,7 @@ The [State Machine View](/manual/views#state-machine-view) now also visualizes `
 
 You can open the State Machine View by right clicking in the editor and selecting **Show In > State Machines**.
 
-[![State Machine View for SystemVerilog](/releasenotes/4.0/systemverilog_fsm.png)](/releasenotes/4.0/systemverilog_fsm.png)
+{{< figure src="/img/releasenotes/4.0/systemverilog_fsm.png" alt="State Machine View for SystemVerilog" link="/img/releasenotes/4.0/systemverilog_fsm.png" >}}
 
 You can **double-click nodes** or **transitions** to navigate to the corresponding SystemVerilog code.
 
