@@ -14,7 +14,7 @@ comments: true
 bannerad: true
 ---
 
-\[[pdf](resources/whitepaper-Eclipse-2010-03-17.pdf)\]
+\[[pdf](/resources/opinion/whitepaper-Eclipse-2010-03-17.pdf)\]
 
 ## Introduction {: id="introduction" name="introduction" }
 

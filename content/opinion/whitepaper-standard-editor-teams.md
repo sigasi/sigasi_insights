@@ -43,4 +43,4 @@ Programmers should be encouraged to make a small sacrifice in their short term p
 Programmers often see themselves as artists. Artists do not like to be told how to create art.  But they can still be artistic and clever in what they write, but do so with a common tool. Letting each developer write code with whatever editor they want is costing your company money.  A common tool for VHDL programming is Sigasi. It is built on Eclipse, which is the world’s standard.
  
 
-You can [download a PDF version of this article](resources/WhitepaperStandardEditorforTeams.pdf).
+You can [download a PDF version of this article](/resources/opinion/WhitepaperStandardEditorforTeams.pdf).
