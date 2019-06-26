@@ -18,7 +18,7 @@ If you have been developing some serious software, you're probably used to the l
 
 ## 2. Translation for the basic infrastructure is provided
 
-Hardly any EDA software comes in languages other than English. But when you are using Sigasi, most of the text on your screen is provided by Eclipse, not by Sigasi. As a result, you can have 95% of the tool translated, just like that. And maybe we'll provide Japanese translations some day. \[[/tech/installing-translations-eclipse]\]
+Hardly any EDA software comes in languages other than English. But when you are using Sigasi, most of the text on your screen is provided by Eclipse, not by Sigasi. As a result, you can have 95% of the tool translated, just like that. And maybe we'll provide Japanese translations some day. \[[Installing translations for Eclipse](/tech/installing-translations-eclipse)\]
 
 ## 3. Revision systems provided
 
@@ -30,7 +30,7 @@ Keeping software up to date can be a real pain. Eclipse makes this pretty easy. 
 
 ## 5. Feature rich editor
 
-Can we have [key combination](/manual/keyshortcuts.html) for duplicating a line of code? And for moving a line of code up or down? How about [search and replace](https://help.eclipse.org/photon/topic/org.eclipse.jdt.doc.user/reference/views/shared/ref-findreplace.htm?cp=1_4_7_1_0_2), based on regular expressions? And [/screencasts/block_selection_mode]? Did I mention we want [/manual/config#line numbers] and [/screencasts/side_by_side_diff]? And [/faq#does-sigasi-support-multi-byte-characters]?
+Can we have [Keyboard Shortcuts](/manual/keyshortcuts) for duplicating a line of code? And for moving a line of code up or down? How about [search and replace](https://help.eclipse.org/photon/topic/org.eclipse.jdt.doc.user/reference/views/shared/ref-findreplace.htm?cp=1_4_7_1_0_2), based on regular expressions? And [Block Selection for VHDL Code Editing](/screencasts/block_selection_mode)? Did I mention we want [Line numbers](/manual/config#line-numbers) and [Side-by-side diff](/screencasts/side_by_side_diff)? And [multi-byte characters](/faq#does-sigasi-support-multi-byte-characters)?
 
 Yes. You can have all of that and much more. 
 

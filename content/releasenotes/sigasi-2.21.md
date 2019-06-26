@@ -47,7 +47,7 @@ Path variables for toolchains and environment variables
 Sigasi 2.21 introduces **Path Variables** for **toolchain installation
 paths** and **Environment variables**. This is a convenient way to avoid
 absolute paths in your project files. The library quick fixes have been
-updated to use these variables. (More info: [/tech/how-avoid-absolute-library-paths-your-sigasi-project-files])
+updated to use these variables. (More info: [How to avoid absolute (library) paths in your Sigasi Project files](/tech/how-avoid-absolute-library-paths-your-sigasi-project-files))
 
 ![Path variables for toolchains and environment variables](/img/releasenotes/2.21/pathvariablestoolchain.png "Path variables for toolchains and environment variables")
 

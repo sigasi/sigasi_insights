@@ -11,7 +11,7 @@ comments: true
 bannerad: true
 ---
 
-In a previous post ([magic-sigasi-type-time-compiler]), I explained about the different Models (internal representations) that Sigasi builds to provide all the exciting Sigasi features. Today, I will explain the different phases of how these models are build. I also added screenshots of the progress view in the different phases. This should help you understand what is going on.
+In a previous post ([The magic of Sigasi's type-time compiler. Part 1: Models]({{< ref "magic-sigasi-type-time-compiler" >}})), I explained about the different Models (internal representations) that Sigasi builds to provide all the exciting Sigasi features. Today, I will explain the different phases of how these models are build. I also added screenshots of the progress view in the different phases. This should help you understand what is going on.
 
 ## Multiple pass builder
 
@@ -40,7 +40,7 @@ The second pass also runs all validation (linting) checks. For example, all port
 
 ### Third pass
 
-This phase runs a few so called *builder participants*, that extract more information from the Model for different purposes. One example is [/manual/tools#External Compilers].
+This phase runs a few so called *builder participants*, that extract more information from the Model for different purposes. One example is [External Compilers](/manual/tools#external-compilers).
 
 ![Phase 3 : Builder participants](/img/tech/builder_participants.png)
 

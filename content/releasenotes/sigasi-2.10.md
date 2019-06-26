@@ -12,9 +12,9 @@ State Machine Navigation
 
 We introduce a new, power navigation feature for **finite state machines** (FSMs) in VHDL.
 If you press **Ctrl** and **click** on the **name of a state**. You jump directly to the relevant *when* part of your *case statement*. There is
-a screencast, [/screencasts/navigation], to show how it works.
+a screencast, [Navigation](/screencasts/navigation), to show how it works.
 
-![Open Matching When Clause (Ctrl-click)](/img/releasenotes/2.10/open_matching_when.png "Open Matching When Clause (Ctrl-click)")
+{{< figure alt="Open Matching When Clause (Ctrl-click)" src="/img/releasenotes/2.10/open_matching_when.png" title="Open Matching When Clause (Ctrl-click)" >}}
 
 Automatic Hierarchy Refresh
 ---------------------------
@@ -31,7 +31,7 @@ Avoiding full rebuilds
 
 We have added extra intelligence to avoid full rebuilds. In two
 important cases, the older versions of Sigasi triggered unnecessary full
-rebuilds: (1) while the user is mapping VHDL [/manual/libraries] or (2) if other EDA tools write and
+rebuilds: (1) while the user is mapping VHDL [Libraries](/manual/libraries) or (2) if other EDA tools write and
 delete binary files in the project directory. The new version makes an
 extra effort to avoid full rebuilds, saving you time.
 

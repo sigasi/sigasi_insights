@@ -83,4 +83,4 @@ So my conclusion is that autocomplete will pre-empt block selection mode in the 
 
 ## Update
 
-Sigasi does have [/screencasts/block_selection_mode].
+Sigasi does have [Block Selection Mode](/screencasts/block_selection_mode).

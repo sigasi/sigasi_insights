@@ -23,4 +23,4 @@ You can also install from the UI:
 * Uncheck the **"Group items by category"**
 * Select the **"Sigasi Read Only file system"** feature.
 
-(Since [/releasenotes/sigasi-2.25])
+(Since [Sigasi 2.25](/releasenotes/sigasi-2.25))

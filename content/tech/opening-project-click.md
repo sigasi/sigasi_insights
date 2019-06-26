@@ -11,7 +11,7 @@ bannerad: true
 
 Many IDE's have a project descriptor file that you can double click to open that project. If you want your colleagues to open your project, all you need to do is make sure that they have the IDE installed, and ask them to double click the project file descriptor.
 
-Until now, things were not that easy with Sigasi. You needed to set up a workspace and import a project. Not that much work, but still a lot more complex than just double-clicking. Until now, that is, because the latest release ([/releasenotes/sigasi-2.13]) allows you to import an open a project from the command line. We can use this feature to create a clickable script (and thus: an icon in the project directory) that will open the project.
+Until now, things were not that easy with Sigasi. You needed to set up a workspace and import a project. Not that much work, but still a lot more complex than just double-clicking. Until now, that is, because the latest release ([Sigasi 2.13](/releasenotes/sigasi-2.13)) allows you to import an open a project from the command line. We can use this feature to create a clickable script (and thus: an icon in the project directory) that will open the project.
 
 ## How to do it
 

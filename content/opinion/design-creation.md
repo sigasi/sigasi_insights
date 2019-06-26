@@ -34,7 +34,7 @@ Sigasi's solution to writing correct data is to shorten the feedback loop. As so
 
 The type-time compiler has to be very fast, so it does not perform a full analysis. In order to provide even more feedback about your code, Sigasi uses an external compiler for a full analysis. The external compiler is called as soon as you *save* the file, which is still a lot sooner than with a traditional flow.
 
-Watch this video about catching errors at type-time and save-time: [/screencasts/save_time_compilation]
+Watch this video about catching errors at type-time and save-time: [Save-time compilation](/screencasts/save_time_compilation)
 
 ## Dealing with VHDL's verbosity
 

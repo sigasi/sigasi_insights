@@ -26,7 +26,7 @@ Sigasi does not ship these libraries. In order to use the VITAL packages:
 3. Now, map the two files to the IEEE library: select both files in the Project Explorer, right click **Library Mapping > ieee** 
 ![Map files to IEEE library](/img/tech/vital-map-to-ieee.png)
 
-Read more about setting up [/manual/libraries] in Sigasi Pro.
+Read more about setting up [Libraries](/manual/libraries) in Sigasi Pro.
 
 ## Speed
 

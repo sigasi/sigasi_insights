@@ -11,7 +11,7 @@ compiler integration and other improvements and bug fixes.
 External Compiler improvements
 ------------------------------
 
-As discussed in a recent blog post, [/opinion/call-feedback-new-way-compile-sigasieclipse-project-dependencies-external-compiler],
+As discussed in a recent blog post, [Call for feedback: A new way to compile Sigasi/Eclipse project dependencies with an External Compiler](/opinion/call-feedback-new-way-compile-sigasieclipse-project-dependencies-external-compiler),
 we have improved the compilation of **project dependencies** with an
 external compiler. This significantly improves the external
 **compilation time** and improves the accuracy of **incremental

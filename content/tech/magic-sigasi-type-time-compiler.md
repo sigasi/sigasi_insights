@@ -29,4 +29,4 @@ Sigasi loads only the required level of detail. If no files are open, Sigasi onl
 
 Hendrik.
 
-**Update:** Learn more in part 2 of this post: [understanding-sigasi-progress-bar]
+**Update:** Learn more in part 2 of this post: [The magic of Sigasi's type-time compiler. Part 2: Builder]({{< ref "understanding-sigasi-progress-bar" >}})

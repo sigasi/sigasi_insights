@@ -12,7 +12,7 @@ comments: true
 bannerad: true
 ---
 
-In a previous blog post, [using-autocomplete-templates-sigasi-2], I introduced **autocomplete templates** in Sigasi 2
+In a previous blog post, [Using Autocomplete Templates in Sigasi 2]({{< ref "using-autocomplete-templates-sigasi-2" >}}), I introduced **autocomplete templates** in Sigasi 2
 and demonstrated how to use the pre-defined templates. In this post I'll
 explain how to customize these templates and how to create your own.
 Chances are high that the pre-defined templates slightly differ from

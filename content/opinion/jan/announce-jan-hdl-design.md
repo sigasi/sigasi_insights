@@ -14,7 +14,7 @@ I met <a href="http://www.sigasi.com/team">Hendrik and Philippe</a>, Sigasi's fo
 
 I was intrigued. We had a few more meetings, and I decided to join them in their efforts to get the company off the ground. My main motivation: the idea behind Sigasi HDT coincides completely with my own vision on hardware design.
 
-For their PhD work Hendrik and Philippe had been doing both software and hardware development. For software, they used modern methodologies and tools, such as an Eclipse-based Java IDE. They found that sophisticated features such as [/screencasts/short_record_autocompletion] and <a href="/tech/hardware_refactoring.html">automated refactorings</a> improved productivity and code quality significantly.
+For their PhD work Hendrik and Philippe had been doing both software and hardware development. For software, they used modern methodologies and tools, such as an Eclipse-based Java IDE. They found that sophisticated features such as [VHDL Autocompletion](/screencasts/short_record_autocompletion) and <a href="/tech/hardware_refactoring">automated refactorings</a> improved productivity and code quality significantly.
 
 Naturally, they looked for something similar for hardware development. However, to their suprise, they found nothing that came even close. Out of this frustration grew the idea for a tool that would make the most modern software development techniques available to the hardware designer. That was the origin of Sigasi HDT.
 

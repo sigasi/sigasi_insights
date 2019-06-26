@@ -13,7 +13,7 @@ bannerad: true
 ---
 
 
-This page deals with step three of using the Quartus integration plugin for Sigasi. We assume have already set up Sigasi as default editor in [/manual/opening#altera-quartus-ii].
+This page deals with step three of using the Quartus integration plugin for Sigasi. We assume have already set up Sigasi as default editor in [Altera Quartus II](/manual/opening#altera-quartus-ii).
 
 ## How to open an HDL file in Quartus
 

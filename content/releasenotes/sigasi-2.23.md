@@ -9,7 +9,7 @@ date: 2014-07-29
 
 ## Basic datatype checking at type-time for VHDL
 
-Sigasi now reports datatype violations while you type (at type-time). You don't have to wait for your simulator to report datatype errors. Whenever you write a wrong datatype, you see an error message within less than a second! Screencast : [/screencasts/datatype-checks-while-you-type]
+Sigasi now reports datatype violations while you type (at type-time). You don't have to wait for your simulator to report datatype errors. Whenever you write a wrong datatype, you see an error message within less than a second! Screencast : [Datatype checks while you type](/screencasts/datatype-checks-while-you-type)
 
 ![Type time type validation](/img/releasenotes/2.23/better-scoping.png "Type time type validation")
 

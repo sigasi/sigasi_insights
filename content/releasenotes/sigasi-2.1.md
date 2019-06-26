@@ -25,7 +25,7 @@ We also ported the two most wanted features from Sigasi 1.0: Autocomplete for re
 ### Autocomplete for records
 
 If you use records, the tool shows you which fields a record has. Just press **CTRL+SPACE** to see the valid record fields.
-Check out this one-minute screencast: [/screencasts/record_autocomplete].
+Check out this one-minute screencast: [Record Autocomplete](/screencasts/record_autocomplete).
 
 ![Autocomplete for records](/img/releasenotes/2.1/record-autocomplete.png "Autocomplete for records")
 

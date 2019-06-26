@@ -16,7 +16,7 @@ bannerad: true
 
 ## Assertions and Constrained Random
 
-Last week, I went to the <a href="http://www.socverification.be/public/symposium/">closing symposium</a> of the <a href="http://www.socverification.be>SoC Verification</a> project, where I was invited to talk about the [/tech/code-review] process for hardware designers.
+Last week, I went to the <a href="http://www.socverification.be/public/symposium/">closing symposium</a> of the <a href="http://www.socverification.be">SoC Verification</a> project, where I was invited to talk about the [Code Review](/tech/code-review) process for hardware designers.
 
 We heard some interesting technical talks on <strong>constrained random</strong> and coverage driven verification in <a href="http://www.systemc.org">SystemC</a>. SystemC has a set of library classes and methods that allow users to define constraints on the input parameters of a device under test.
 

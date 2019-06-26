@@ -147,4 +147,4 @@ business processes more reliable.
 Coming up
 ---------
 
-Next week we'll discuss: [/tech/how-much-time-spent-writing-documentation-versus-developing-rtl-code]
+Next week we'll discuss: [How much time is spent on writing documentation versus developing RTL code?](/tech/how-much-time-spent-writing-documentation-versus-developing-rtl-code)

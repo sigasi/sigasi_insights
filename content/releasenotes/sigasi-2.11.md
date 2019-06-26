@@ -19,7 +19,7 @@ autocomplete for case statements. If you type `case` and there is a
 variable or signal with an enumeration type in scope, a template is
 offered with when clauses for each enumeration literal.
 
-See this in action : [/screencasts/writing_state_machines]
+See this in action : [Writing State Machines](/screencasts/writing_state_machines)
 
 ![Context sensitive autocomplete for case statements](/img/releasenotes/2.11/casestatementautocomplete_a.png "Context sensitive autocomplete for case statements")
 

@@ -9,7 +9,7 @@ bannerad: true
 ---
 
 
-Since [/releasenotes/sigasi-2.15], Sigasi detects **duplicate (conflicting) design units**. Duplicate design units are a bad idea because the compilation order determines which unit will eventually be used. This can lead to a lot of confusion and frustrating debugging sessions.
+Since [Sigasi 2.15](/releasenotes/sigasi-2.15), Sigasi detects **duplicate (conflicting) design units**. Duplicate design units are a bad idea because the compilation order determines which unit will eventually be used. This can lead to a lot of confusion and frustrating debugging sessions.
 
 It turns out we also made this mistake. In **VHDL 2008 mode**, older versions of Sigasi (pre 2.15) included two versions of `std_logic_textio:` the standard **IEEE** package and a package that was previously distributed by **Synopsys**. Obviously, you only need one version of this package.
 

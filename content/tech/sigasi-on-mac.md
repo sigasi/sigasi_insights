@@ -26,7 +26,7 @@ There are some problems with certificates when you update your Sigasi applicatio
 
 ## Default editor
 
-You can use Sigasi as your default editor for VHDL ([/manual/opening#mac-os-x]).
+You can use Sigasi as your default editor for VHDL ([Mac OS X](/manual/opening#mac-os-x)).
 
 ## Lack of EDA tools
 

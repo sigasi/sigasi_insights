@@ -10,7 +10,7 @@ pager: true
 
 Sigasi Studio Starter is the best, free VHDL and Verilog editor that works on **single files** only, and *not with projects*.
 
-Sigasi Studio Starter works without a license key, but requires [/manual/talkback] and you need to keep your version up to date.
+Sigasi Studio Starter works without a license key, but requires [Talkback](/manual/talkback) and you need to keep your version up to date.
 
 ## Sigasi Studio Creator
 

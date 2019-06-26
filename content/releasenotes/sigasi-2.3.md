@@ -31,7 +31,7 @@ interpreter can not handle all expressions yet. Today, it covers basic
 arithmetic and string operations. This is enough to deal with most,
 common use cases.
 
-"[/screencasts/hierarchy_view]" is a short screencast video that shows the **Hierarchy view** in action.
+"[Hierarchy View](/screencasts/hierarchy_view)" is a short screencast video that shows the **Hierarchy view** in action.
 
 **Note** that if you perform an update, the **hierarchy view** will not open by default. The easiest way to enable it is to click **Window \> Reset Perspective…**.
 
@@ -48,7 +48,7 @@ cursor on the unused declaration in the editor and pressing **Ctrl-F1**.
 It is confusing to read a design that contains ‘dead code’. This new
 feature will make it easier to detect and remove it.
 
-![Unused declaration (with QuickFix)](/img/releasenotes/2.3/quickfixunuseddeclaration.png "Unused declaration (with QuickFix)")
+{{< figure alt="Unused declaration (with QuickFix)" src="/img/releasenotes/2.3/quickfixunuseddeclaration.png" title="Unused declaration (with QuickFix)" >}}
 
 Sigasi command line improvements
 --------------------------------
@@ -58,7 +58,7 @@ when you open files on the command line. If you specify a new file on
 the command line, Sigasi will now create it for you.
 
 This feature makes enables you to configure Sigasi as default editor for
-other EDA tools ([/manual/opening]).
+other EDA tools ([Opening Files](/manual/opening)).
 
 ![You can now configure the line number in other tools (e.g. Quartus)](/img/releasenotes/2.3/quartuscommandlineannotated.png "You can now configure the line number in other tools (e.g. Quartus)")
 
@@ -69,8 +69,8 @@ Other new and noteworthy improvements
 -   We have updated the minimum requirements for the **Sigasi Eclipse Plugin**: you now need at least **Eclipse 3.6** (Helios) and **Java 1.6**.
 -   **Mousefeed**, the keyboard shortcut popups that help you remember
     keyboard shortcuts for the actions you use most often, is enabled
-    again. [/tech/mousefeed]
-    (Eclipse plugin users must [install Mousefeed](http://marketplace.eclipse.org/content/mousefeed) themselves.)
+    again. [Learn keyboard shortcuts with Mousefeed](/tech/mousefeed)
+    (Eclipse plugin users must [install Mousefeed](http://marketplace.eclipse.org/content/mousefeed) themselves.)  
     ![MouseFeed popup](/img/releasenotes/2.3/mousefeed.png "MouseFeed popup")
 -   You can now revert your Sigasi installation to earlier versions: In
     **Help \> About \> Installation Details \> Installation History**,

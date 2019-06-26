@@ -89,7 +89,7 @@ All of this will work just as well with *Xilinx ISim*, or with the *Altera Quart
 
 ## Setting up Sigasi
 
-If you want to let Sigasi work with Aldec RivieraPro or ModelSim, you can set up [/manual/tools#save-time-compilation].
+If you want to let Sigasi work with Aldec RivieraPro or ModelSim, you can set up [Save-time Compilation](/manual/tools#save-time-compilation).
 
 Do you like this script? Do you like you Mac? Do you have a better way of designing hardware with your Mac? Talk to me in the comments section, below!
 

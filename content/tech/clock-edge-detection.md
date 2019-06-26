@@ -59,11 +59,11 @@ If you just check for an event on the clock like this:
 ```vhdl
 if clk'event then --DO NOT use this!
 ```
-you end up with the same problems as in the [#old-style]. Moreover, this is not a valid edge detection according to the IEEE VHDL RTL standard.
+you end up with the same problems as in the [Old style](#old-style). Moreover, this is not a valid edge detection according to the IEEE VHDL RTL standard.
 
 ## Other rules
 
-Here are some more coding rules that are required by IEEE 1076.6-1999, and hence should be considered [imperative]([/tech/coding-conventions#useful)].
+Here are some more coding rules that are required by IEEE 1076.6-1999, and hence should be considered [imperative](/tech/coding-conventions#useful).
 
 No enable conditions in the same if statement. Do not write:
 ```vhdl

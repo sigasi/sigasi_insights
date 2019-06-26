@@ -42,7 +42,7 @@ when your coding style happens to confuse the regexes.
 Any modern VHDL design entry tool should use a proper VHDL analyser (or:
 parser). Only a full analysis of the source code can provide robust
 navigation. I’ve posted a screencast
-about [/screencasts/navigation] a while ago.
+about [Power navigation for VHDL state machines](/screencasts/navigation) a while ago.
 
 ## Demoing Emacs
 Here is a screencast that demonstrates what works and what does not work

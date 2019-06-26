@@ -30,7 +30,7 @@ For these reasons, we developed an alternative, based on Sigasi Studio's interna
 
 The new Sigasi Studio documentation generator has following advantages:
 
-* **No special coding requirements**: the plain comments in your code are extracted for the documentation, no need for special annotations. Sigasi Studio uses the same code/comment association as the hover provider (See "[/manual/documentation#Comment Association]"). So to document a `port`, you append a comment to a port declaration. To document an `architecture`, you put the comment just on top of the architecture.
+* **No special coding requirements**: the plain comments in your code are extracted for the documentation, no need for special annotations. Sigasi Studio uses the same code/comment association as the hover provider (See "[Comment Association](/manual/documentation#comment-association)"). So to document a `port`, you append a comment to a port declaration. To document an `architecture`, you put the comment just on top of the architecture.
 * **All included**. All documentation processing is done in Sigasi Studio/Eclipse. So you do *not* need to install extra tools.
 * **Fully hyperlinked PDF**. If you export the documentation, you get a fully hyperlinked PDF.
 * **Live preview**: you can see what the documentation will look like while you type your code and comments.

@@ -8,7 +8,7 @@ comments: true
 
 The Sigasi Studio 3.0 release brings you a rebranded HDL IDE. This release brings many improvements, especially for SystemVerilog and the Eclipse workbench.
 
-Because this release brings major changes, carefully read the "[#How to update?]" section.
+Because this release brings major changes, carefully read the "[How to update?](#how-to-update)" section.
 
 ## Sigasi Studio 3: Starter, Creator and XL
 
@@ -20,7 +20,7 @@ We optimized Sigasi Studio **Starter** as much as possible to work with **single
   
 Sigasi Studio **Starter** now only works with **single files**, and *not with projects*. So all features in Sigasi Studio Starter, only take information of the current file into account. So there is no longer a *project size threshold*, which tweaked some features as in Sigasi 2.
 
-Sigasi Studio Starter works without a license key, but requires [/manual/talkback] and you need to keep your version up to date.
+Sigasi Studio Starter works without a license key, but requires [Talkback](/manual/talkback) and you need to keep your version up to date.
 
 Sigasi Studio **Creator** is the go-to design entry tool and code browser for all your HDL projects, just like Sigasi Pro was. And Sigasi Studio XL is our flagship product, which can be further extended with addons.
 
@@ -68,7 +68,7 @@ This results in major improvements in how we can offer you (System)Verilog suppo
 
 * We also improved our SystemVerilog analyzer. Sigasi now correctly *links* `packages`, `records`, `structs`, `unions` and `enums`. This improves **Open Declaration** and **Find References**.
 * Notes:
-    * You can switch the [/manual/editor#Verilog version] via **Window > Preferences > Sigasi > Verilog > Verilog version**
+    * You can switch the [Verilog version](/manual/editor#verilog-version) via **Window > Preferences > Sigasi > Verilog > Verilog version**
     * We do no support *the entire SystemVerilog Syntax* yet. So if you see unexpected syntax error markers, {{< send-email >}}.
   
 ### Sigasi XL Doc improvements
@@ -133,7 +133,7 @@ Note that we replaced the **VHDL perspective** in Sigasi 2.31 with a new **Sigas
 
 ### Floating license updates
 
-Because the FlexNet license framework was updated in Sigasi Studio, the Flexnet license **daemon** needs to be updated too. You can find the download details in "[/manual/license-key#License server setup]".
+Because the FlexNet license framework was updated in Sigasi Studio, the Flexnet license **daemon** needs to be updated too. You can find the download details in "[License Server Setup](/manual/license-key#license-server-setup)".
 
 Users with a **node-locked license** do not have to perform extra actions. 
  

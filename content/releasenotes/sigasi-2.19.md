@@ -18,7 +18,7 @@ design unit.
 
 ![Quickfix to add missing use clause for IEEE packages](/img/releasenotes/2.19/ieeelibraryquickfix.png "Quickfix to add missing use clause for IEEE packages")
 
-See it in action: [/screencasts/add_ieee_quickfix]
+See it in action: [Add library and use clause for IEEE with Quick Fix](/screencasts/add_ieee_quickfix)
 
 Configure external compiler/simulator settings in the Sigasi preference pages
 -----------------------------------------------------------------------------

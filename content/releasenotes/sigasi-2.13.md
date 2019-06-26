@@ -15,7 +15,7 @@ Today, Sigasi’s integration with Altera Quartus II graduates from its beta per
 
 Your Sigasi project will automatically listen to changes of the Quartus II project and if you add files in Sigasi, they will be added to your Quartus II project too.
 
-See it in action : [/screencasts/sigasi_pro_integration_with_altera_quartus_ii]
+See it in action : [Sigasi Pro integration with Altera Quartus II](/screencasts/sigasi_pro_integration_with_altera_quartus_ii)
 
 Other new and noteworthy improvements
 -------------------------------------

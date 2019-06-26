@@ -13,6 +13,6 @@ bannerad: true
 
 ## Update 2019-02
 
-Please refer to the manual page on [/manual/keyshortcuts].
+Please refer to the manual page on [Keyboard Shortcuts](/manual/keyshortcuts).
 
 Direct link to a pdf with all [Keyboard Shortcuts](/resources/keyboard-shortcuts.pdf).

@@ -88,7 +88,7 @@ even on the same line in a single file. If your script doesn’t have all
 VHDL scoping rules figured out, it won’t work.
 
 You’ve guessed what I’m about to say next: Sigasi HDT *solves* this
-problem. There’s a **two minute screencast**, [/screencasts/rename_refactoring], that
+problem. There’s a **two minute screencast**, [Rename Refactoring](/screencasts/rename_refactoring), that
 demonstrates our rename refactoring. We can do this because Sigasi HDT
 analyzes the entire VHDL project and tries to find the declaration for
 every name it encounters.

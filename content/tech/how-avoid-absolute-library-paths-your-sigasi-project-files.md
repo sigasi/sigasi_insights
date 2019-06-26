@@ -78,7 +78,7 @@ an unresolved annotation on the modelsim_lib folder.
 
 ![Unavailable Linked Resource](/img/tech/unavailable_linked_resource.png)
 
-They can configure the `modelsim_ase` variable via **Preferences &gt; General &gt; Workspace &gt; Linked Resources**. Alternatively, you can use Workspace Mechanic ([/tech/sharing_preferences]) to automate this task and share Sigasi/Eclipse settings across your entire team.
+They can configure the `modelsim_ase` variable via **Preferences &gt; General &gt; Workspace &gt; Linked Resources**. Alternatively, you can use Workspace Mechanic ([Managing and sharing preferences for teams](/tech/sharing_preferences)) to automate this task and share Sigasi/Eclipse settings across your entire team.
 
 # Sigasi 2.21
 
