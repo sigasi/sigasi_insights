@@ -35,7 +35,7 @@ The new Sigasi Studio documentation generator has following advantages:
 * **Fully hyperlinked PDF**. If you export the documentation, you get a fully hyperlinked PDF.
 * **Live preview**: you can see what the documentation will look like while you type your code and comments.
 
-[![Live preview](/img/tech/sigasi-docgen-preview.png)][/manual/views#documentation-view]
+[![Live preview](/img/tech/sigasi-docgen-preview.png)](/manual/views#documentation-view)
 
 To get an idea of the output, I generated a [pdf](/resources/tech/documentation.pdf) for a [simple example project](/resources/tech/DocumentationExample.zip):
 

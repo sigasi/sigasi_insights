@@ -47,7 +47,7 @@ We further extended our SystemVerilog support:
 - Fixed some corner cases with the Preprocessor
 - Skip encrypted regions in SystemVerilog
 - The external compiler integration now reuses the configured Project's include paths and language version
-- Verilog modules can now be set as toplevel: this enables you to launch an [external simulation][/manual/tools#launch-simulator] from Sigasi Studio
+- Verilog modules can now be set as toplevel: this enables you to launch an [external simulation](/manual/tools#launch-simulator) from Sigasi Studio
 - We add more Verilog autocomplete templates
 - Syntax support for more SystemVerilog expressions
 - Syntax support for SystemVerilog Assertions

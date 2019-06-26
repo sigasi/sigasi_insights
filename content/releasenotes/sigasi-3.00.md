@@ -28,7 +28,7 @@ Sigasi Studio **Creator** is the go-to design entry tool and code browser for al
 
 Valid Sigasi 2 licenses are also valid for Sigasi Studio 3.x. If you have a valid Sigasi Pro license, all Sigasi Pro features continue to work in Sigasi 3.
   
-If you are using a floating license, you need to update your [Flexnet daemon][#floating-license-updates].
+If you are using a floating license, you need to update your [Flexnet daemon](#floating-license-updates).
 
 ## Sigasi Studio improvements
 
@@ -58,7 +58,7 @@ This results in major improvements in how we can offer you (System)Verilog suppo
   ![Verilog Macro syntax error](3.00/macro-errors.png)
 * In Sigasi 3.0 we implemented an convenient way to preview the result of preprocessing the active Verilog file. When you **Hover** a Verilog macro, you will see the **preprocessed** text. At the bottom of the hover you will also see a link to open the **Preprocessor View**.  
   ![Verilog macro hover](3.00/verilog-macro-hover.png)
-* The **Preprocessor (Macro) View** is another way to easily inspect the preprocessed Verilog code. It *automatically synchronizes its position and selection* with the active editor. [documentation][/manual/editor#systemverilog-preprocessingmacros]  
+* The **Preprocessor (Macro) View** is another way to easily inspect the preprocessed Verilog code. It *automatically synchronizes its position and selection* with the active editor. [documentation](/manual/editor#systemverilog-preprocessing-macros)  
   ![Preprocessor View](3.00/verilog-preprocessor-view.png)
 * Verilog **include paths** can now be configured. Right click your Verilog project in the project explorere and select **Properties > Verilog Preprocessor**. Here you can enter a `;`-separated list of include paths (relative to the project folder). 
 * Improved hover for `wire` and `reg`  
@@ -80,16 +80,16 @@ This results in major improvements in how we can offer you (System)Verilog suppo
 
 ### Other new and noteworthy improvements
 
-* We dropped Eclipse 3 support (new [requirements][/faq#what-are-the-system-requirements])
+* We dropped Eclipse 3 support (new [requirements](/faq#what-are-the-system-requirements))
 * The Hierarchy and Generics View are now merged. You can now inspect the values of generics and constants directly in the hierarchy view.  
   ![generics in hierarchy view](3.00/hierarchy-generics.png)
 * Added new, minimalistic perspective for **Sigasi Starter**
 * Added [solarized theme](http://ethanschoonover.com/solarized) for the Sigasi editors (Linux and Mac) 
   ![solarized theme Dark and Light](3.00/solarized-mixed.png)
-* Added new option to **Export hierarchy as CSV**: use current toplevel in Hierarchy View as default value ([documentation][/manual/tools#export])
+* Added new option to **Export hierarchy as CSV**: use current toplevel in Hierarchy View as default value ([documentation](/manual/tools#export))
 * The Mac OS X version now is a real 'App' contained in one, clean `Sigasi.app`
 * The formatter now offers an option to **ignore keyword casing**
-* We updated the Flexnet client. If you use a floating license, you need to [update the daemon too][#floating-license-updates].
+* We updated the Flexnet client. If you use a floating license, you need to [update the daemon too](#floating-license-updates).
 * We added a warning if your Sigasi installation is outdated. If you use Sigasi without a commercial license, an update is required if Sigasi is older than 6 months. 
 * We updated the Xtext dependency to `2.9.0`.
 
@@ -117,11 +117,11 @@ To update the standalone version to Sigasi Studio 3.0, you need to perform a fre
 1. **[Download Sigasi](https://www.sigasi.com/download)** and **Unzip**.
 2. **Start**. Note that during the first start, you will see the info dialog below. Click **OK**
    ![Older Workspace Version Info](3.00/older-workspace-dialog.png)
-3. [Re-install extra plugins][/tech/install-plugins-from-existing-installation]
+3. [Re-install extra plugins](/tech/install-plugins-from-existing-installation)
 
 ### Plugin version
 
-0. Check that your system meets the new [requirements][/faq#what-are-the-system-requirements]
+0. Check that your system meets the new [requirements](/faq#what-are-the-system-requirements)
 1. Add the new update URL via **Window > Preferences > Install/Update > Available update sites**
 2. Click the **Add...** button:
     * Name: `Sigasi`

@@ -16,22 +16,22 @@ Although these preview releases are less rigorously tested than than the officia
 
 # Current preview release
 
-No documented changes since the [4.4 release][/releasenotes/sigasi-4.04]
+No documented changes since the [4.4 release](/releasenotes/sigasi-4.04)
 
 # Update or install?
 
 You can download the Stand-alone version of the latest preview version from:
 
-* <http://download.sigasi.com/preview/latest/com.sigasi.hdt.product-linux.gtk.x86_64.zip>
-* <http://download.sigasi.com/preview/latest/com.sigasi.hdt.product-macosx.cocoa.x86_64.zip>
-* <http://download.sigasi.com/preview/latest/com.sigasi.hdt.product-win32.win32.x86_64.zip>
+* <https://download.sigasi.com/preview/latest/com.sigasi.hdt.product-linux.gtk.x86_64.zip>
+* <https://download.sigasi.com/preview/latest/com.sigasi.hdt.product-macosx.cocoa.x86_64.zip>
+* <https://download.sigasi.com/preview/latest/com.sigasi.hdt.product-win32.win32.x86_64.zip>
 
 You can also update from (configure via Preferences > Install/Update > Available Software Sites > Add...) :
   http://download.sigasi.com/preview/studio/
 
-SHA Sums ([more info][/faq#how-can-i-check-a-sha-sum]) can be checked via <http://download.sigasi.com/preview/latest/sha1.txt>
+SHA Sums ([more info](/faq#how-can-i-check-a-sha-sum)) can be checked via <https://download.sigasi.com/preview/latest/sha1.txt>
 
 # Feedback
 
-We welcome your feedback trough the usual channels or the comments below. Note that comments are cleared after each [official release][/releasenotes].
+We welcome your feedback trough the usual channels or the comments below. Note that comments are cleared after each [official release](/releasenotes).
 

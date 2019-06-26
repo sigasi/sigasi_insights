@@ -1,10 +1,10 @@
 ---
 title: "Why hardware designers should switch to Eclipse"
-layout: page 
+layout: page
 pager: true
 author: Philippe Faes
 date: 2010-03-17
-tags: 
+tags:
   - eclipse
   - IDE
   - VHDL
@@ -16,7 +16,7 @@ bannerad: true
 
 \[[pdf](/resources/opinion/whitepaper-Eclipse-2010-03-17.pdf)\]
 
-## Introduction {: id="introduction" name="introduction" }
+## Introduction
 
 Integrated Development Environments (IDEs) have long been the primary tool for software engineers. Like an airplane cockpit, an IDE is the control center from which the engineer accesses all of the data and tools that he needs. IDEs, and especially Eclipse, have proven to be extensible, open, high quality platforms.
 
@@ -24,7 +24,7 @@ However, until now, IDEs have not been popular in hardware development circles. 
 
 Today, though, Eclipse is finally gaining traction among EDA (electronic design automation) and FPGA companies. Sigasi, has released the first commercial VHDL plugin for Eclipse in 2010. Now, at last, hardware design teams can use Eclipse as a basis for their own customized IDEs, based on the commercial and open-source plugins that they need in their central cockpit for hardware design.
 
-## Cockpit view {: id="cockpit-view" name="cockpit-view}
+## Cockpit view
 
 {{< figure alt="Head-Up Display of a commercial airplane landing" src="/img/opinion/hud.img_assist_custom-300x200.jpg" class="uk-align-right" >}} The cockpit of a fighter jet is a powerful control center. Everything the pilot needs is right there, within the reach of his hands. The pilot can access dozens of subsystems, including navigation, flight management, guns, and missiles, among others, through hundreds of buttons and dozens of displays.
 
@@ -34,7 +34,7 @@ HUDs have been shown not only to improve fighting capabilities, but they also im
 
 A HUD is not a substitute for pilot skills, but it enhances the pilot's capabilities to levels that are <em>unreachable</em> without this technological support.
 
-## Toolkit mess {: id="toolkit-mess" name="toolkit-mess"}
+## Toolkit mess
 
 Like an airplane pilot, any electronics engineer or software engineer needs all the technological support he can get.
 
@@ -45,7 +45,7 @@ Suppose an engineer is checking the log output of a synthesis run. If a warning 
 
 Similarly, a small bug can become extremely costly if is detected late: processing the bug report, compensating your customer, chasing the bug down, fixing it...all add time, which means money. Managers should seriously consider every single tool that can possibly help avoid this mess. They should also look for ways to increase the overall productivity of their engineering teams. Bad decisions, bad tools, and bad processes kill productivity.
 
-## IDE is the cockpit for developers {: id="ide-is-the-cockpit-for-developers" name="ide-is-the-cockpit-for-developers"}
+## IDE is the cockpit for developers
 
 Software engineers, like HDL designers, continuously work with code, documentation, build scripts, and logs. What can they use as their cockpit?
 
@@ -57,7 +57,7 @@ Modern IDEs even have autopilot-like features. They will suggest automated fixes
 
 The IDE's job as prominent tool is not finished until the software engineer is completely satisfied with his code. At that time, other tools, like the automatic test, build and integration systems kick in. These tools do not require the same level of interaction that the IDE provides and they are often executed as scripted batch jobs.
 
-## Eclipse {: id="eclipse" name="eclipse"}
+## Eclipse
 
 Eclipse is an open source IDE with an open and extensible plugin system. It is an open platform that nurtures a thriving community of companies and volunteers who use Eclipse as the foundation for their projects.
 
@@ -65,7 +65,7 @@ Whatever revision control system you use, whatever programming or scripting lang
 
 With the introduction of Eclipse, IDEs are no longer proprietary closed systems. Support is not limited to a monopolist vendor: hundreds of companies and contractors provide support and build custom plugins.
 
-## Eclipse for hardware development {: id="eclipse-for-hardware-development" name="eclipse-for-hardware-development" }
+## Eclipse for hardware development
 
 IDEs are a self-evident choice for software development. Even in EDA-land, Eclipse is omnipresent for embedded software development. The list of official Eclipse Associate and Solution Members includes such companies as Mentor Graphics, Altera, Xilinx, Tensilica, ARM, Ericsson, Freescale Semiconductors, Nec and Intel. Both major FPGA vendors, Xilinx and Altera, use the power of Eclipse as an open platform for the development of their embedded software development tools. So -- why is it not used for hardware design?
 
@@ -77,7 +77,7 @@ Another reason why so few hardware designers use Eclipse today is the scarcity o
 
 More and more, the industries of EDA and electronics are discovering Eclipse and are slowly embracing it.
 
-## Where to from here? {: id="where-to-from-here" name="where-to-from-here" }
+## Where to from here?
 
 As increasingly more EDA tools become available as Eclipse plugins, Eclipse truly becomes the central cockpit for hardware developers, complete with a nice head-up display. Instead of learning to use several different tools with different keyboard shortcuts and GUI conventions, engineers will only have to face a single, smooth learning curve. Eclipse is a future proof platform that allows you to tailor your design environment to your specific needs.
 

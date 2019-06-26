@@ -27,14 +27,14 @@ For bigger changes, it is better to build the website on your own machine first,
       ![](/img/tech/insights_github_patch.png)
 * Next add a message to your pull request and click **Create pull request**  
   ![](/img/tech/insights_github_patch_1.png)  
-  By sending a pull request, you give all rights of your change to Sigasi ([Copyright info][/LICENSE])
+  By sending a pull request, you give all rights of your change to Sigasi ([Copyright info](/license))
 
 <!--  ![](/img/tech/insights_github_patch_2.png) -->
 
 ## Bigger changes: clone Insights and preview your changes offline.
 
 ### Install Python and Urubu
-Sigasi uses [Urubu][/opinion/urubu] as CMS system for the Insights website. Urubu is built with Python, So you need to have Python installed first.
+Sigasi uses [Urubu](/opinion/urubu) as CMS system for the Insights website. Urubu is built with Python, So you need to have Python installed first.
 Next, Urubu can be installed with pip:
 
 ```

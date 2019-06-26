@@ -8,9 +8,9 @@ Copyright (c) Sigasi nv.
 
 As Sigasi customer, user, or partner, you are given a world-wide non-transferable right to do the following:
 
-**Host offline:** You are allowed to copy the "Sigasi Insights Portal" to your local computer or local network for offline browsing. In order to do this, follow the procedure on [/tech/local_hosting].
+**Host offline:** You are allowed to copy the "Sigasi Insights Portal" to your local computer or local network for offline browsing. In order to do this, follow the procedure on [Local Hosting](/tech/local_hosting).
 
-**Contributing:** You are invited to help improve the "Sigasi Insights Portal". In order to do this, follow the procedure to [tech/contribute-to-insights]. Other than for the purpose of contributing improvements back to Sigasi, you are not allowed to create derived works.
+**Contributing:** You are invited to help improve the "Sigasi Insights Portal". In order to do this, follow the procedure to [Contribute to Sigasi insights](/tech/contribute-to-insights). Other than for the purpose of contributing improvements back to Sigasi, you are not allowed to create derived works.
 
 # Guest authors
 

@@ -11,4 +11,4 @@ tags:
 ---
 
 
-The Preprocessor View is documented [here][/manual/views#preprocessor-view].
+The Preprocessor View is documented [here](/manual/views#preprocessor-view).

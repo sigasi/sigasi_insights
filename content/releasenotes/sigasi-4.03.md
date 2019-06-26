@@ -18,7 +18,7 @@ When you trigger **autocomplete** inside the double quotes of a (System)Verilog 
 
 # Quick Fix to Suppress Warnings
 
-Warnings now have a **Quick Fix** to automatically add the [`@suppress` comment][/manual/linting#suppressing-warnings]. The Quick Fix automatically adds the warning's message. This makes sure the correct warning is suppressed (even when the code changes). We recommend to also add an explanation with the reason why you suppress the warning.  
+Warnings now have a **Quick Fix** to automatically add the [`@suppress` comment](/manual/linting#suppressing-warnings). The Quick Fix automatically adds the warning's message. This makes sure the correct warning is suppressed (even when the code changes). We recommend to also add an explanation with the reason why you suppress the warning.  
 
 {{< figure src="/img/releasenotes/4.3/quickfix_suppress.png" alt="Suppress warnings with a Quick Fix" title="Suppress warnings with a Quick Fix" link="/img/releasenotes/4.3/quickfix_suppress.png" >}}
 

@@ -18,7 +18,7 @@ Sigasi Studio now reports mismatches immediately, at **type time**.
 
 You can easily update a component declaration to match its entity declaration by applying the Quick Fix.
 
-[Have a look at the demo video for this new feature.][/screencasts/component_entity_mismatch_check]
+[Have a look at the demo video for this new feature.](/screencasts/component_entity_mismatch_check)
 
 # SystemVerilog improvements
 
@@ -45,7 +45,7 @@ This makes it very easy to recognize *top levels* and *orphaned files*.
 
 ![Dependencies Viewer for entire project](3.7/dependencies_project.png)
 
-[Have a look at the demo video for this new feature.][/screencasts/dependencies_viewer]
+[Have a look at the demo video for this new feature.](/screencasts/dependencies_viewer)
 
 # GHDL support (VHDL)
 

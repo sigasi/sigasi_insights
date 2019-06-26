@@ -62,4 +62,4 @@ file to the *unisim* library to resolve these errors.
 
 What do you think: did we make the right choice on this?
 Or should both old and new primitives be available by default?
-Leave your comments below or contact our [support][/support] department.
+Leave your comments below or contact our [support](https://www.sigasi.com/support/) department.

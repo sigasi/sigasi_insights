@@ -8,7 +8,8 @@ comments: true
 Sigasi Studio 3.6 introduces powerful methodologies with customizable *Block Diagrams* and *State Machine Diagrams* with *Graphics Configuration* files.
 Read below to find all new and noteworthy changes.
 
-# Graphics Configuration \[{{< xl_doc >}}]
+# Graphics Configuration
+[{{< xl_doc >}}]
 
 The [BlockDiagram](/manual/views#block-diagram-view) and [StateMachine](/manual/views#state-machine-view) Views are very useful ways to **explore** and **understand** HDL designs. But sometimes this just doesn't cut it. The diagrams are **too complex** and **crowded** to understand a design. They contain too much detail to see the big picture.
 **Sigasi Studio's Graphics Configuration files** are a new solution for this challenge.
@@ -49,7 +50,7 @@ By popular demand, we have also added the Xilinx Vivado simulator as external co
 ![XSIM errors are displayed with markers in the editor and problems view](/releasenotes/3.6/xsim_compilation_error.png)
 ![Start a simulation by setting a toplevel and clicking the run button](/releasenotes/3.6/xsim_simulation.png)
 
-[Manual page][/manual/vivado]
+[Manual page](/manual/vivado)
 
 # SystemVerilog improvements
 
@@ -74,7 +75,7 @@ If you open an existing workspace after the update to Sigasi Studio 3.6, you mig
 * Better library mapping menu (easier to undo "exclude from build")
 * We updated the bundled Java Runtime Environment (JRE) to 8u144 (Note that this only applies to a fresh download of the stand-alone version. The JRE is not updated via the embedded update mechanism)
 * The CSV file export now uses *relative paths* for linked files too
-* We added a [quickFix for VUnit libraries][/tech/vunit-quickfix]
+* We added a [quickFix for VUnit libraries](/tech/vunit-quickfix)
 ![Quickfix for the VUnit library](/tech/vunit/quickfix.png)
 * Block Diagram: `buffer` ports are now displayed as output ports
 * Block Diagram: visual distinction between `input` and `inout` ports

@@ -16,14 +16,14 @@ Most teams consist of more than one design engineer. The Sigasi Pro platform doe
 
 Features
 
-* [/tech/coding-styles]
-* [/screencasts/custom_linting]
-* [/tech/generate-vhdl-documentation-sigasi]
-* [/manual/plugins#Revision Control Systems]
+* [Coding Styles](/tech/coding-styles)
+* [Custom Linting](/screencasts/custom_linting)
+* [Generate VHDL documentation in Sigasi Studio](/tech/generate-vhdl-documentation-sigasi)
+* [Revision Control Systems](/manual/plugins#revision-control-systems)
 * Code reviews
 * [Issue tracking](http://wiki.eclipse.org/Mylyn)
 * Integration with other programming language development tools, including:
     * Java
     * C/C++
     * Python
-    * [Tcl/Tk][/tech/eclipse_tcl_support_in_sigasi]
+    * [Tcl/Tk](/tech/eclipse_tcl_support_in_sigasi)

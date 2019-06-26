@@ -14,9 +14,9 @@ If you have not yet updated your **Flexnet license daemon** after the Sigasi Stu
 
 The Sigasi/OneSpin integration makes is easy to run basic formal verification checks on your Sigasi projects. Without extra configuration, you can see if your code is ready a formal analysis with OneSpin.
 
-If the (VHDL or Verilog) code still has problems, these problems will appear in the editor as problem markers. This is similar to the existing [Riviera Pro and ModelSim integration][/manual/tools].
+If the (VHDL or Verilog) code still has problems, these problems will appear in the editor as problem markers. This is similar to the existing [Riviera Pro and ModelSim integration](/manual/tools).
 
-To enable OneSpin, make sure the `$ONESPINROOT` environment variable is set. Next select **OneSpin** in the **Sigasi > Toolchains** Preference page. \[[Full documentation][/manual/onespin]\].
+To enable OneSpin, make sure the `$ONESPINROOT` environment variable is set. Next select **OneSpin** in the **Sigasi > Toolchains** Preference page. \[[Full documentation](/manual/onespin)\].
 
 ![OneSpin Save-Time Integration](3.01/onespin_console.png "OneSpin Save-Time Integration")
 
