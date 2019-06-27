@@ -5,7 +5,7 @@ You can find the rendered version at <https://insights.sigasi.com>
 
 ## Authoring guide
 
-We are using markdown with [Hugo](https://gohugo.io/).
+We are using markdown with [Hugo].
 
 * [MarkDown tutorial](http://markdowntutorial.com/)
 * [New MarkDown tutorial](http://commonmark.org/help/tutorial/index.html)
@@ -28,7 +28,8 @@ We are using markdown with [Hugo](https://gohugo.io/).
 
 Tips:
 
-* Images can be aligned by using the `figure` shortcode with `class` argument, e.g. `{{< figure src="/img/xxx" class="uk-align-right" >}}`
+* Images can be aligned by using the `figure` shortcode with `class` argument, e.g. `{{< figure src="/img/xxx" alt="alt text" class="uk-align-right" >}}`
+* When adding a `link` to a figure, it becomes clickable. When the link is an image (e.g. same as the src), a lightbox is used to show the image.
 
 ### Code snippets
 
@@ -38,5 +39,7 @@ Tips:
   ````` ```vhdl `````
 
 ### Testing
-* Make sure [Urubu](https://github.com/jandecaluwe/urubu) is installed (`pip install urubu`)
-* Run `make build` to build the website and `make serve` to serve it on localhost:8000
+* Install [Hugo]
+* Run `hugo server` to start serving pages locally.
+
+[Hugo]: https://gohugo.io/

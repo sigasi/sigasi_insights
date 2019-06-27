@@ -1,9 +1,0 @@
-version: '2'
-services:
-  sigasi_insights:
-    build: .
-    ports:
-     - "8000:8000"
-    volumes:
-     - ..:/sigasi_insights
-    container_name: sigasi_insights
