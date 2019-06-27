@@ -13,7 +13,7 @@ bannerad: true
 
 Did you ever want to suppress warnings in Eclipse? For Java, there is the `@SuppressWarnings` directive, but what to do for other programming languages?
 
-[Sigasi](http://www.sigasi.com) is planning a new Eclipse plugin, called the [Eclipse Marker Manager](http://www.markermanager.com), that helps you deal with Problem Markers (warnings and errors). 
+[Sigasi](https://www.sigasi.com) is planning a new Eclipse plugin, called the [Eclipse Marker Manager](http://www.markermanager.com), that helps you deal with Problem Markers (warnings and errors). 
 
 You can **export your warnings to HTML** and you will be able to suppress warnings in *any* programming language, using directives in comments:
 

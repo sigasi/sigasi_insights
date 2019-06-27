@@ -14,7 +14,7 @@ Except for the added features, **nothing changes for you**: Your **old license k
 Floating license users: you need to **update your FlexLM server** to the latest version (while using the same license key). 
 
 We have defined new editions for Sigasi Studio (**Creator**, **XL** and **XL Doc** instead of the old Pro, Premium and Premium Doc). 
-The [feature matrix](http://www.sigasi.com/products) has changed a little bit, but your old license will unlock all of the 
+The [feature matrix](https://www.sigasi.com/products) has changed a little bit, but your old license will unlock all of the 
 features that you were able to use in Sigasi 2.x, plus the new Sigasi Studio 3 features.
 
 The free Sigasi Studio **Starter** edition has now been optimized to work with minimal set-up.

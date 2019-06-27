@@ -74,4 +74,4 @@ In hovers the complete Markdown syntax is supported. For PDF documentation gener
 * **strong** (`**strong**`)
 * lists
 * tables (with alignment)
-* external links and email addresses (`<http://www.sigasi.com>`, `[Sigasi](http://www.sigasi.com)` and `<sales@sigasi.com>`)
+* external links and email addresses (`<https://www.sigasi.com>`, `[Sigasi](https://www.sigasi.com)` and `<sales@sigasi.com>`)

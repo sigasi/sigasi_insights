@@ -24,7 +24,7 @@ To set the product update description add following lines to your p2 advise file
 
 ```properties
 properties.0.name = org.eclipse.equinox.p2.description
-properties.0.value = Sigasi Standalone version update\nVisit http://www.sigasi.com/sigasi-updates for more information.
+properties.0.value = Sigasi Standalone version update\nVisit https://www.sigasi.com/sigasi-updates for more information.
 ```
 
 That looks a lot better.

@@ -11,7 +11,7 @@ bannerad: true
 ---
 
 
-While I was setting up a new build server for [Sigasi Studio](http://www.sigasi.com/products), I noticed that the full product build script was a lot slower. *A lot slower* in this case is 9+ hours instead of an expected 3.5 hours. This post describes my debug quest and solution.
+While I was setting up a new build server for [Sigasi Studio](https://www.sigasi.com/products), I noticed that the full product build script was a lot slower. *A lot slower* in this case is 9+ hours instead of an expected 3.5 hours. This post describes my debug quest and solution.
 
 I soon discovered the delay was caused by signing the Java Jars. For signing, Maven uses following command:
 ```bash

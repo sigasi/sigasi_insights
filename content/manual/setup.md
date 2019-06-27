@@ -39,7 +39,7 @@ The Eclipse plugin has the following characteristics:
 # Installation of Sigasi Studio App
 
 To download and install Sigasi Studio as a stand-alone application, follow the
-online [Installation Instructions](http://www.sigasi.com/download).
+online [Installation Instructions](https://www.sigasi.com/download).
 
 After downloading, choose or create a folder where you want to install
 the software, and unpack the archive there. The archive contains a
@@ -78,7 +78,7 @@ This requires the host where you install the Sigasi Studio Plugin to have access
 After starting Eclipse:
 
 1. Click **Help > Install New Software…**
-1. In the **Work with:** field enter **<http://download.sigasi.com/updates/studio>** and press **enter**.
+1. In the **Work with:** field enter **<https://download.sigasi.com/updates/studio>** and press **enter**.
 1. Check the checkbox next to **Sigasi Studio**
 1. We recommend to install the optional features too.
 {{< figure src="/img/manual/setup-install-plugin.png" alt="Install Sigasi Studio plugin" >}}

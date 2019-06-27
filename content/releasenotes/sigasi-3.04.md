@@ -85,7 +85,7 @@ If you have Sigasi Studio 3 installed, you can {{< update_sigasi >}} or {{< down
 ## Sigasi 3.4.1 point release
 
 We noticed in the error reports of Sigasi Studio 3.4 Talkback, that we accidentally uploaded small snippets of VHDL code that triggered a bug in the new formatter.
-We [promised we would never do this](http://insights.sigasi.com/manual/talkback.html#what-kind-of-information-is-sent-through-talkback), so we immediately fixed the issue in the Sigasi Studio 3.4.1 release.
+We [promised we would never do this](https://insights.sigasi.com/manual/talkback.html#what-kind-of-information-is-sent-through-talkback), so we immediately fixed the issue in the Sigasi Studio 3.4.1 release.
 
 When was it send? If Talkback was enabled and you hit a bug in the formatter
 What was send? The VHDL source line that triggered the issue, plus some lines before and after the issue.

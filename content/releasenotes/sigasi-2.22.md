@@ -23,7 +23,7 @@ disable it later on, click **Window \> Preferences \> Sigasi \>
 Talkback** and select or deselect the checkbox “Enable Talkback”.
 
 You can find more detailed information about Talkback at
-<http://www.sigasi.com/sigasi-talkback>
+<https://www.sigasi.com/sigasi-talkback>
 
 Quick Fix Incomplete Sensitivity List
 -------------------------------------

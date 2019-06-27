@@ -10,7 +10,7 @@ comments: true
 bannerad: true
 ---
 
-I met <a href="http://www.sigasi.com/team">Hendrik and Philippe</a>, Sigasi's founders, for the first time in early 2008. They explained their plans and showed me a prototype of their IDE for VHDL. That prototype has since evolved into the product you all know and love: <a href="http://www.sigasi.com/product">Sigasi HDT</a>.
+I met <a href="https://www.sigasi.com/team">Hendrik and Philippe</a>, Sigasi's founders, for the first time in early 2008. They explained their plans and showed me a prototype of their IDE for VHDL. That prototype has since evolved into the product you all know and love: <a href="https://www.sigasi.com/product">Sigasi HDT</a>.
 
 I was intrigued. We had a few more meetings, and I decided to join them in their efforts to get the company off the ground. My main motivation: the idea behind Sigasi HDT coincides completely with my own vision on hardware design.
 

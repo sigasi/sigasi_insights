@@ -10,7 +10,7 @@ bannerad: true
 
 
 Since Sigasi's rebranding in January 2016, most content has been separated from the main Sigasi website. We now have a website hosted at
-<http://insights.sigasi.com>. This new Insights site contains the user manual, a collection of technological 
+<https://insights.sigasi.com>. This new Insights site contains the user manual, a collection of technological 
 articles and an opinionated blog, among other sections. 
 
 We decided on using [Urubu](http://urubu.jandecaluwe.com/) as CMS system for the Insights website. Urubu was created by Sigasi co-founder 

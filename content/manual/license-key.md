@@ -95,13 +95,13 @@ export SIGASI_LM_LICENSE_FILE="27000@myserver1.example.com:27000@myserver2.examp
 ### Download the FlexNet daemons
 
 * Linux:
-	* [Linux 64 bit](http://download.sigasi.com/flexnet/sigasi-flexnet-linux64.zip)
-	* [Linux 32 bit](http://download.sigasi.com/flexnet/sigasi-flexnet-linux32.zip)
+	* [Linux 64 bit](https://download.sigasi.com/flexnet/sigasi-flexnet-linux64.zip)
+	* [Linux 32 bit](https://download.sigasi.com/flexnet/sigasi-flexnet-linux32.zip)
 * Windows (Windows 7 or newer):
-	* [Windows 64 bit](http://download.sigasi.com/flexnet/sigasi-flexnet-win64.zip)
-	* [Windows 32 bit](http://download.sigasi.com/flexnet/sigasi-flexnet-win32.zip)
+	* [Windows 64 bit](https://download.sigasi.com/flexnet/sigasi-flexnet-win64.zip)
+	* [Windows 32 bit](https://download.sigasi.com/flexnet/sigasi-flexnet-win32.zip)
 * Solaris (on SPARC) \[Deprecated. The last supported Sigasi Studio version is 3.6]:
-	* [Solaris 64 bit](http://download.sigasi.com/flexnet/sigasi-flexnet-solaris64.zip)
+	* [Solaris 64 bit](https://download.sigasi.com/flexnet/sigasi-flexnet-solaris64.zip)
 
 ### Customize License Server settings
 
@@ -277,7 +277,7 @@ Check the content of the Sigasi License preference page via : **Window > Prefere
   
 > Updating DACL Failed: "Service has been created but failed to update the DACL settings of FlexNet Licensing Service. It will give problem for accessing TS features. Check whether FlexNet Licensing Service is correctly installed or not and delete and create this service again."
 
-  * There seems to be a bug in `lmtools.exe` version 11 on some systems. You can work around this issue by configuring the (latest) Sigasi daemon with an older version of lmtools ([Download here](http://download.sigasi.com/flexnet/lmtools.zip)). 
+  * There seems to be a bug in `lmtools.exe` version 11 on some systems. You can work around this issue by configuring the (latest) Sigasi daemon with an older version of lmtools ([Download here](https://download.sigasi.com/flexnet/lmtools.zip)). 
   
 > (lmgrd) license manager: can't initialize:No SERVER lines in license file.  
 > (lmgrd) License Path: "C:\FlexLM\sigasi\license.dat"  

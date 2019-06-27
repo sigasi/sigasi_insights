@@ -29,7 +29,7 @@ Once Sigasi HDT is started and the project is fully compiled, you move to full s
 ## Try it yourself
 Taking a look at other people's code is always a good way to learn. This is especially true for large industrial projects, like GRLIB, rather than hello-world style toy projects. I'd like to thank Jiri and the people from <a href="http://gaisler.com">Airoflex Gaisler</a> for sharing this project with the world under the GPL license. (Note that you can purchase a commercial license from Airoflex if you need that.)
 
-To look at GRLIB using Sigasi HDT, you can download a <a href="http://www.sigasi.com/try">free trial license</a>. After you've started Sigasi HDT, just click "Point to existing project", and you're set to go.
+To look at GRLIB using Sigasi HDT, you can download a <a href="https://www.sigasi.com/try">free trial license</a>. After you've started Sigasi HDT, just click "Point to existing project", and you're set to go.
 
 Download the <a href="/resources/tech/grlib-gpl-1.0.20-b3403-b.tgz">GRLIB project</a>. I've packaged release 1.0.20-b3403, with one actual design and the VHDL libraries that it requires.
 

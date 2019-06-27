@@ -65,7 +65,7 @@ If Sigasi Studio (>=3.8) is used on a server with multiple users concurrently, t
 openFile
 ```
 
-This way Sigasi Studio uses the default Eclipse behaviour (instead of the [custom sigasi runner](http://insights.sigasi.com/tech/make-eclipse-open-files-command-line.html)): [more info](https://wiki.eclipse.org/Eclipse/OpenFileFeature)
+This way Sigasi Studio uses the default Eclipse behaviour (instead of the [custom sigasi runner](https://insights.sigasi.com/tech/make-eclipse-open-files-command-line.html)): [more info](https://wiki.eclipse.org/Eclipse/OpenFileFeature)
 
 # External Files
 

@@ -13,7 +13,7 @@ bannerad: true
 
 
 <em>In this blog series, guest blogger Smrita talks about the need for
-[documentation for complex RTL designs](http://www.sigasi.com/sigasi-doc). </em>
+[documentation for complex RTL designs](https://www.sigasi.com/sigasi-doc). </em>
 
 In engineering, [technical documentation](http://en.wikipedia.org/wiki/Technical_documentation)
 refers to any type of documentation that describes handling,

@@ -18,7 +18,7 @@ Next you need to **download** and **configure** a **dictionary** for your langua
 Install the [Hunspell4Eclipse](http://code.google.com/p/hunspell4eclipse) plugin:
 
 1. **Help > Install New Software ...**
-2. Enter this update site: <http://download.sigasi.com/updates/hunspell4eclipse> and press **enter**
+2. Enter this update site: <https://download.sigasi.com/updates/hunspell4eclipse> and press **enter**
 3. Select **Hunspell4Eclipse > Hunspell4Eclipse**
 4. Click **Next >** and **Finish**, and restart Sigasi
 
@@ -46,7 +46,7 @@ Next, enter the dictionary file path.
 Hunspell4Eclipse was originally hosted on the Google Code Project Hosting Service.
 Because this service was turned down in early 2016, we cloned the project's code on
 [GitHub](https://github.com/heeckhau/hunspell4eclipse) and made binaries available on
-Sigasi's download server (<http://download.sigasi.com/updates/hunspell4eclipse>).
+Sigasi's download server (<https://download.sigasi.com/updates/hunspell4eclipse>).
 
 ## Update 2018-06
 

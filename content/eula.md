@@ -114,7 +114,7 @@ paid by the User partially or totally.
 
 SIGASI may offer support for installing, maintaining and operating
 the Software, at its own discretion and on a best-effort basis. The User
-thereto can contact SIGASI via the support pages at http://www.sigasi.com.
+thereto can contact SIGASI via the support pages at https://www.sigasi.com.
 
 8. Debug and usage information.
 

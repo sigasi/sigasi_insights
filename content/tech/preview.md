@@ -27,7 +27,7 @@ You can download the Stand-alone version of the latest preview version from:
 * <https://download.sigasi.com/preview/latest/com.sigasi.hdt.product-win32.win32.x86_64.zip>
 
 You can also update from (configure via Preferences > Install/Update > Available Software Sites > Add...) :
-  http://download.sigasi.com/preview/studio/
+  https://download.sigasi.com/preview/studio/
 
 SHA Sums ([more info](/faq#how-can-i-check-a-sha-sum)) can be checked via <https://download.sigasi.com/preview/latest/sha1.txt>
 
