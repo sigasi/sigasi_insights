@@ -1,7 +1,10 @@
 [context.production.environment]
-HUGO_VERSION = "0.55.6"
+  HUGO_VERSION = "0.55.6"
+
+[context.deploy-preview.environment]
+  HUGO_VERSION = "0.55.6"
 
 [context.deploy-preview]
-HUGO_VERSION = "0.55.6"
-command = "hugo version; hugo -b $DEPLOY_PRIME_URL"
-publish = "public/"
+  command = "hugo version; hugo -b $DEPLOY_PRIME_URL"
+  publish = "public/"
+
