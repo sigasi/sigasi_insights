@@ -1,0 +1,35 @@
+{{ define "main" }}
+<div class="uk-container">
+    <article class="uk-margin-top">
+        {{.Content}}
+    </article>
+
+    TODO: make this a list?
+    <div class="uk-child-width-1-3@m" uk-grid>
+        <div>
+            <a href=""><h2>Jan on HDL</h2></a>
+            TODO: list from data with popular Jan article links
+        </div>
+        <div>
+            <a href=""><h2>Emacs</h2></a>
+            TODO: list from data with popular Emacs article links
+        </div>
+        <div>
+            <h2>Popular blog posts</h2>
+            TODO: verification
+            and list with popular posts
+        </div>
+    </div>
+
+    <h2>All Articles</h2>
+
+    <ul class="uk-list uk-column-1-2@m uk-margin-medium-bottom">
+        {{ range .Pages }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title | truncate 50 }}</a><small> {{ .Date.Format "2006-01-02" }}</small>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+
+{{ end }}

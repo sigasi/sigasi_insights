@@ -7,10 +7,10 @@ comments: true
 bannerad: true
 ---
 
-Opinion pieces from Sigasi team and guest bloggers.
+<center>Opinion articles from Sigasi team and guest bloggers.</center>
 
-* [emacs]({{< ref "emacs" >}})
 * [jan]({{< ref "jan" >}})
+* [emacs]({{< ref "emacs" >}})
 * [verification]({{< ref "verification" >}})
 
 ## All Articles

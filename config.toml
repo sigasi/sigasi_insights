@@ -1,4 +1,4 @@
-baseurl         = "https://nirwana.sigasi.com/"
+baseurl         = "https://insights.sigasi.com/"
 contentdir      = "content"
 layoutdir       = "layouts"
 publishdir      = "public"
