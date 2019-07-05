@@ -26,6 +26,10 @@
           {{ end }}
           <hr>
           {{ .Content | replaceRE "<table>" "<table class=\"uk-table uk-table-small uk-table-striped\">" | safeHTML }}
+
+          {{ if .Params.comments }}
+          {{ partial "disqus" . }}
+          {{ end }}
         </article>
       </div>
       <div class="uk-width-1-4@m uk-visible@m">
