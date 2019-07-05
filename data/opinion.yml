@@ -2,43 +2,43 @@
   url: /opinion/jan/
   list:
     - title: Fixing Verilog is easy 
-      url: https://insights.sigasi.com/opinion/jan/fixing-verilog-easy.html
+      url: /opinion/jan/fixing-verilog-easy
     - title: Wasting real time in zero time 
-      url: https://insights.sigasi.com/opinion/jan/wasting-real-time-zero-time.html
+      url: /opinion/jan/wasting-real-time-zero-time
     - title: Pitfalls for circuit girls 
-      url: https://insights.sigasi.com/opinion/jan/pitfalls-for-circuit-girls.html
+      url: /opinion/jan/pitfalls-for-circuit-girls
     - title: Time for reflection 
-      url: https://insights.sigasi.com/opinion/jan/time-reflection.html
+      url: /opinion/jan/time-reflection
     - title: VHDL's crown jewel 
-      url: https://insights.sigasi.com/opinion/jan/vhdls-crown-jewel.html
+      url: /opinion/jan/vhdls-crown-jewel
     - title: more...
-      url: https://insights.sigasi.com/opinion/jan
+      url: /opinion/jan
 - title: Emacs
   url: /opinion/emacs/
   list:
     - title: Emacs vs Sigasi matrix 
-      url: https://insights.sigasi.com/opinion/emacs/emacs-vs-sigasi-matrix.html
+      url: /opinion/emacs/emacs-vs-sigasi-matrix
     - title: Why Emacs VHDL mode is so Grea... 
-      url: https://insights.sigasi.com/opinion/emacs/why-emacs-vhdl-mode-so-great-and-why-we-want-beat-it.html
+      url: /opinion/emacs/why-emacs-vhdl-mode-so-great-and-why-we-want-beat-it
     - title: Five reasons why Emacs will al... 
-      url: https://insights.sigasi.com/opinion/emacs/five-reasons-why-emacs-will-always-be-better.html
+      url: /opinion/emacs/five-reasons-why-emacs-will-always-be-better
     - title: Room for Improvement 
-      url: https://insights.sigasi.com/opinion/emacs/room-improvement.html
+      url: /opinion/emacs/room-improvement
     - title: Sigasi Better than Emacs 
-      url: https://insights.sigasi.com/opinion/emacs/sigasi-better-emacs.html
+      url: /opinion/emacs/sigasi-better-emacs
     - title: more...
-      url: https://insights.sigasi.com/opinion/emacs
+      url: /opinion/emacs
 - title: Popular blog posts
   list:
     - title: HDL Design verification 
-      url: https://insights.sigasi.com/opinion/verification/
+      url: /opinion/verification/
     - title: Testbench generation with Wave... 
-      url: https://insights.sigasi.com/opinion/thesis-winand.html
+      url: /opinion/thesis-winand
     - title: PoC - A Pile of Cores 
-      url: https://insights.sigasi.com/opinion/poc-a-pile-of-cores.html
+      url: /opinion/poc-a-pile-of-cores
     - title: Using Urubu as CMS for our Ins... 
-      url: https://insights.sigasi.com/opinion/urubu.html
+      url: /opinion/urubu
     - title: Graphic Design is dead - long ... 
-      url: https://insights.sigasi.com/opinion/graphic-design-dead-long-live-graphical-views.html
+      url: /opinion/graphic-design-dead-long-live-graphical-views
     - title: "Whitepaper: Standard Editor fo..."
-      url: https://insights.sigasi.com/opinion/whitepaper-standard-editor-teams.html
+      url: /opinion/whitepaper-standard-editor-teams
