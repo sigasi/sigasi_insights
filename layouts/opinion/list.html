@@ -4,6 +4,7 @@
         {{.Content}}
     </article>
 
+    {{ if .Page.InSection .Page.FirstSection }}
     <div class="uk-child-width-1-3@m" data-uk-grid>
         {{ range .Site.Data.opinion }}
         <div>
@@ -22,17 +23,23 @@
         </div>
         {{ end }}
     </div>
+    {{ end }}
 
     <h2>All Articles</h2>
-
     <ul class="uk-list uk-column-1-2@m uk-margin-medium-bottom">
-        {{ range .Pages.ByDate.Reverse }}
-        {{ end }}
-        {{ range (where .Site.Pages "Section" "opinion") }}
+      {{ if .Page.InSection .Page.FirstSection }}
+        {{ range (where .Site.RegularPages "Section" "opinion") }}
         <li>
             <a href="{{ .Permalink }}">{{ .Title | truncate 50 }}</a><small> {{ .Date.Format "2006-01-02" }}</small>
         </li>
         {{ end }}
+      {{ else }}
+        {{ range .Pages.ByDate.Reverse }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title | truncate 50 }}</a><small> {{ .Date.Format "2006-01-02" }}</small>
+        </li>
+        {{ end }}
+      {{ end }}
     </ul>
 </div>
 
