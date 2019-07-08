@@ -10,7 +10,7 @@ comments: true
 bannerad: true
 ---
 
-In my <a href="/opinion/jan/synthesis-was-my-first-love.html">previous blog post</a>, I told you that back in 1990 I got pretty excited about my first experiments with Synopsys Design Compiler.
+In my [previous blog post]({{< ref "synthesis-was-my-first-love" >}}), I told you that back in 1990 I got pretty excited about my first experiments with Synopsys Design Compiler.
 
 To understand my excitement better, let me explain where I was coming from.
 

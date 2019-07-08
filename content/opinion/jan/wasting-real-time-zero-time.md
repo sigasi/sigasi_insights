@@ -28,7 +28,7 @@ Consider what has been accomplished when everything is set and done. Neither the
 
 Now the question: is this a realistic story?
 
-Some Verilog designers will  deny that there is a  problem in practice. On one occasion in a newsgroup discusssion on the subject, one person even [lost his temper](http://groups.google.com/group/comp.lang.verilog/msg/d76df9dd57b8beb7) and started shouting at me.  To explain why I am not very impressed with such denials, consider when nondeterminism is likely to occur. As an extreme example: it will not occur in a gate-level net list. Also, at the relatively low level of synthesizable RTL, it is  easy to define  guidelines that will avoid it. (But note : [pitfalls-for-circuit-girls]) Rather,  nondeterminism becomes more of an issue when you use the full modeling power of the language, including more complex event controls, for high-level modeling and in test benches. Nondeterminism is the killjoy of the fun stuff.
+Some Verilog designers will  deny that there is a  problem in practice. On one occasion in a newsgroup discusssion on the subject, one person even [lost his temper](http://groups.google.com/group/comp.lang.verilog/msg/d76df9dd57b8beb7) and started shouting at me.  To explain why I am not very impressed with such denials, consider when nondeterminism is likely to occur. As an extreme example: it will not occur in a gate-level net list. Also, at the relatively low level of synthesizable RTL, it is  easy to define  guidelines that will avoid it. (But note : [Pitfalls for circuit girls]({{< ref "pitfalls-for-circuit-girls" >}})) Rather,  nondeterminism becomes more of an issue when you use the full modeling power of the language, including more complex event controls, for high-level modeling and in test benches. Nondeterminism is the killjoy of the fun stuff.
 
 There is evidence that some design teams use a low level coding style, such as synthesizable RTL, for everything, including modeling and testbenches. Such a coding style will indeed avoid nondeterminism for a large part. But it is also boring and verbose, and in my opinion it completely misses the point about HDL-based design. If that is the price to pay, it is way too high.
 
@@ -90,7 +90,7 @@ The DUT code calculates some result  and signals when it is ready. (In the bench
 
 To avoid distraction from my main message, I will not immediately explain what the issue is. Instead, I would like to invite you  to look at the code and tell me if you think the problem is obvious. I certainly don’t think so, even though the presented code is a drastic simplification of the original one. If you agree with me,  it means that you may write Verilog code that has similar issues.
 
-(If useful, I will explain the issue later in the comment section. The answer can be inferred from an earlier post, [vhdls-crown-jewel], on the subject.)
+(If useful, I will explain the issue later in the comment section. The answer can be inferred from an earlier post, [VHDL's crown jewel]({{< ref "vhdls-crown-jewel" >}}), on the subject.)
 
 ##  Conclusion
 

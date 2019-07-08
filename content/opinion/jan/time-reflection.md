@@ -12,7 +12,7 @@ bannerad: true
 
 Dear reader,
 
-In my previous post, [vhdls-crown-jewel], I announced further considerations about nondeterminism in Verilog. However, I am getting worried that you may be losing interest. As a visitor of the Sigasi site, you are likely a VHDL design professional, or aspiring to become one. Why should you care about Verilog? Moreover, you are probably a busy person, looking for productivity solutions in your day-to-day work. What is the relevancy of all this pseudo-philosophical talk about nondeterminism? Before continuing, I think I have to give you an indication of where I am heading.
+In my previous post, [VHDL's crown jewel]({{< ref "vhdls-crown-jewel" >}}), I announced further considerations about nondeterminism in Verilog. However, I am getting worried that you may be losing interest. As a visitor of the Sigasi site, you are likely a VHDL design professional, or aspiring to become one. Why should you care about Verilog? Moreover, you are probably a busy person, looking for productivity solutions in your day-to-day work. What is the relevancy of all this pseudo-philosophical talk about nondeterminism? Before continuing, I think I have to give you an indication of where I am heading.
 
 Be assured that I have ambitious goals. I believe that the full potential of HDL-based design has not yet been realized. The main culprit is the low level coding style that many designers use.  To my eyes, synthesizable HDL code often looks like a textual form of technology independent schematic entry.  I would like to help designers to review their coding styles critically and potentially change them to achieve higher quality and productivity.
 
