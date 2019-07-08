@@ -1,6 +1,6 @@
 <figure{{ with .Get "class" }} class="{{ . }}"{{ end }}>
     {{- if .Get "link" -}}
-        <div uk-lightbox>
+    {{ if (not (.Get "target")) }}<div uk-lightbox>{{ end }}
         <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}
          {{- if or (.Get "alt") (.Get "caption") }}
          data-caption="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
@@ -15,7 +15,7 @@
          {{- with .Get "height" }} height="{{ . }}"{{ end -}}
          {{- with .Get "title" }} title="{{ . }}"{{ end -}}
     /> <!-- Closing img tag -->
-    {{- if .Get "link" }}</a></div>{{ end -}}
+    {{- if .Get "link" }}</a>{{ if (not (.Get "target")) }}</div>{{ end }}{{ end -}}
     {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr") -}}
         <figcaption>
             {{- if or (.Get "caption") (.Get "attr") -}}<p>
