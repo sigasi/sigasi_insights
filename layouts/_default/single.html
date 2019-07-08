@@ -28,7 +28,7 @@
           {{ .Content | replaceRE "<table>" "<table class=\"uk-table uk-table-small uk-table-striped\">" | safeHTML }}
 
           {{ if .Params.comments }}
-          {{ partial "disqus" . }}
+          {{ template "_internal/disqus.html" . }}
           {{ end }}
         </article>
       </div>

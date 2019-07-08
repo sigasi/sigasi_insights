@@ -7,6 +7,7 @@ paginate        = 15
 canonifyurls    = true
 summarylength   = 20
 googleAnalytics = "UA-2852630-4"
+disqusShortname = "sigasi"
 
 enableRobotsTXT = "true"
 DefaultContentLanguage = "en"
