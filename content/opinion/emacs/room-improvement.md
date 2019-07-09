@@ -11,7 +11,7 @@ comments: true
 bannerad: true
 ---
 
-It is no secret that Sigasi wants to be [index]. I have posted [several articles](.) about the fundamental differences between Emacs and Sigasi. It usually boils down to the limitations of regular expressions and pattern matching. There are just certain things that require a parser rather than a simple pattern matcher.
+It is no secret that Sigasi wants to be [better than Emacs VHDL mode]({{< ref "better-than-emacs-vhdl-mode" >}}). I have posted [several articles](/opinion/emacs) about the fundamental differences between Emacs and Sigasi. It usually boils down to the limitations of regular expressions and pattern matching. There are just certain things that require a parser rather than a simple pattern matcher.
 
 ## Code Formatter
 

@@ -54,7 +54,7 @@ enough to consider **relevant** and **technical** arguments and to weigh
 these arguments against the effort of switching (and against their
 pride).
 
-In my series of [Sigasi vs. Emacs comparisons](.) I
+In my series of [Sigasi vs. Emacs comparisons](/opinion/emacs/) I
 would like to leave it up to you for this week. Not because I don’t have
 any time to write a new post, but because I want to know what *you*
 think.

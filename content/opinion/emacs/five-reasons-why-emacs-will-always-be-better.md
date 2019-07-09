@@ -12,7 +12,7 @@ bannerad: true
 ---
 
 
-In the past months, we have made large efforts to [make Emacs obsolete](.). After enquiring on some Emacs-friendly newsgroups, I can only conclude that we have indeed offered a better solution than Emacs, in *most* ways. 
+In the past months, we have made large efforts to [make Emacs obsolete](/opinion/emacs). After enquiring on some Emacs-friendly newsgroups, I can only conclude that we have indeed offered a better solution than Emacs, in *most* ways. 
 
 Of course, you can't win every battle and you probably shouldn't even try. Here are some things at which Emacs will always be better. We're not even going to try.
 

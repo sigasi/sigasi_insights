@@ -12,7 +12,7 @@ comments: true
 bannerad: true
 ---
 
-In my series of how Sigasi is [index], this entry
+In my series of how Sigasi is [better than Emacs VHDL mode]({{< ref "better-than-emacs-vhdl-mode" >}}), this entry
 deals with code reuse, more specifically with **renaming**.
 
 Code Reuse
@@ -35,7 +35,7 @@ This kind of *white box reuse*, involves a lot of code inspection and a
 lot of small modifications to the code. It is a tiresome and error prone
 process. You are going to need all the help you can get.
 
-There are some important features for code comprehension and [code navigation](vhdl-emacs-mode-navigation-using-ctags-are-broken.html)
+There are some important features for code comprehension and [code navigation]({{< ref "vhdl-emacs-mode-navigation-using-ctags-are-broken" >}})
 that you will need in order to be efficient at reusing your legacy code.
 Then there is the act of modifying the code. There are three things I
 want to talk about: naming conventions, cleaning up code layout and code
@@ -96,7 +96,7 @@ every name it encounters.
 Not Just a Missing Feature
 --------------------------
 
-As I did in most of my [previous posts on Emacs VHDL](.), I have
+As I did in most of my [previous posts on Emacs VHDL](/opinion/emacs/), I have
 pointed out a *fundamental* limitation in Emacs, not just a missing
 feature. Certain extremely useful operations, like navigation and
 renaming, require a full blown VHDL parser. The Emacs VHDL mode goes a
