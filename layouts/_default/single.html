@@ -37,9 +37,6 @@
       <div class="uk-width-1-4@m uk-visible@m">
         <aside>
           <div class="sg-floatparent" data-uk-sticky="offset: 30">
-            {{ if .Params.bannerad }}
-            {{ partial "bannerad" . }}
-            {{ end }}
             {{ if .Params.pager }}
             <div class="uk-panel-scrollable sg-floatmenu" uk-height-viewport="offset-bottom: 15">
                 <div class="uk-padding-vertical"><a href="#"><strong>{{ .Title }}</strong></a></div>
@@ -47,6 +44,9 @@
                 {{ .TableOfContents | replaceRE "<ul>" "<ul class=\"uk-list\">" | safeHTML }}
                 </div>
             </div>
+            {{ end }}
+            {{ if .Params.bannerad }}
+            {{ partial "bannerad" . }}
             {{ end }}
           </div>
         </aside>
