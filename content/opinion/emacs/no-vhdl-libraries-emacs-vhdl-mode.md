@@ -41,7 +41,7 @@ of this article.
 ## Emacs
 The use of libraries is not supported in Emacs. From the documentation:
 
-> Limitations: Only library units and dependencies within the [current library](/tech/work-not-vhdl-library.html) are considered. Makefiles for designs that span multiple libraries are not (yet) supported.
+> Limitations: Only library units and dependencies within the [current library](/tech/work-not-vhdl-library) are considered. Makefiles for designs that span multiple libraries are not (yet) supported.
 
 ## Sigasi
 Sigasi HDT has supported libraries since the beginning. Since november

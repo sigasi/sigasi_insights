@@ -11,7 +11,7 @@ comments: true
 bannerad: true
 ---
 
-In my series of how Sigasi is [index], I want to talk about code coloring.
+In my series of how Sigasi is [better than Emacs VHDL mode](/opinion/emacs), I want to talk about code coloring.
 
 ## Syntax Highlighting
 

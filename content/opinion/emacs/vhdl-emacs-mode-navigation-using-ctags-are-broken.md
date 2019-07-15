@@ -12,14 +12,14 @@ comments: true
 bannerad: true
 ---
 
-In my series of how Sigasi is [index], we want to demonstrate that *Emacs VHDL mode* is becoming
+In my series of how Sigasi is [better than Emacs VHDL mode](/opinion/emacs), we want to demonstrate that *Emacs VHDL mode* is becoming
 outdated. I do this by comparing relevant and technical features of the
 Emacs VHDL mode and Sigasi.
 
 (I also realize that relevant and technical comparison will not be
 enough to convince those who are deeply infatuated.)
 
-##Today: finding a declaration
+## Today: finding a declaration
 
 Finding a declaration is useful. Anybody who has access to this features
 uses it all day long, every day. People who do not have access to this
