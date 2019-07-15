@@ -1,9 +1,6 @@
 {{ define "main" }}
 <main>
   <div class="uk-container uk-padding">
-    <div uk-grid>
-      <div class="uk-width-3-4@m">
-        <article>
           {{ if .PublishDate }}
           Posted on {{ .PublishDate.Format "2006-01-02" }}
           {{ end }}
@@ -25,6 +22,11 @@
           <br>Licensed under {{ .Params.license }}
           {{ end }}
           <hr>
+  </div>
+  <div class="uk-container">
+    <div uk-grid>
+      <div class="uk-width-3-4@m">
+        <article>
           <center>
           <iframe src="https://www.youtube.com/embed/{{ .Params.videoid }}?modestbranding=1&rel=0&showinfo=0" gesture="media" allow="encrypted-media" allowfullscreen="" width="640" height="360" frameborder="0" uk-video>
           </iframe>

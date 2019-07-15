@@ -1,9 +1,6 @@
 {{ define "main" }}
 <main>
   <div class="uk-container uk-padding">
-    <div uk-grid>
-      <div class="uk-width-3-4@m">
-        <article>
           {{ if .PublishDate }}
           Released on {{ .PublishDate.Format "2006-01-02" }}
           {{ end }}
@@ -25,6 +22,11 @@
           <br>Licensed under {{ .Params.license }}
           {{ end }}
           <hr>
+  </div>
+  <div class="uk-container">
+    <div uk-grid>
+      <div class="uk-width-3-4@m">
+        <article>
           {{ .Content | replaceRE "<table>" "<table class=\"uk-table uk-table-small uk-table-striped\">" | safeHTML }}
         </article>
       </div>

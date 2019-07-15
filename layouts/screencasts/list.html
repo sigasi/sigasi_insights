@@ -4,6 +4,22 @@
         {{.Content}}
     </article>
 
+    <h2>Latests Screencasts</h2>
+    <div class="uk-child-width-1-3@m" data-uk-grid>
+        {{ range first 6 .Pages.ByDate.Reverse }}
+        <div>
+            <center>
+            <iframe src="https://www.youtube.com/embed/{{ .Params.videoid }}?modestbranding=1&rel=0&showinfo=0" gesture="media" allow="encrypted-media" allowfullscreen="" width="300" height="200" frameborder="0" autoplay=0 uk-video>
+            </iframe>
+            <div class="uk-margin-top">
+                <a href="{{.Permalink}}"><h4>{{ .Title }}</h4></a>
+            </div>
+            </center>
+        </div>
+        {{ end }}
+    </div>
+
+    <h2>All Screencasts</h2>
     <ul class="uk-list uk-column-1-2@m uk-margin-medium-bottom">
         {{ range .Pages.ByTitle }}
         <li>
