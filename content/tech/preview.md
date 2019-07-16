@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.5)
 layout: page
 pager: true
-date: 2019-06-20
+date: 2019-07-12
 comments: true
 ---
 
