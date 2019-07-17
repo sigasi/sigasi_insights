@@ -19,7 +19,7 @@
           {{ end }}
 
           {{ if .Params.license }}
-          <br>Licensed under {{ .Params.license }}
+          {{ partial "license" . }}
           {{ end }}
           <hr>
   </div>
