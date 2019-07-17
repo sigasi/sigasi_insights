@@ -12,7 +12,7 @@ bannerad: true
 ---
 
 
-In Sigasi, you can always jump to the declaration of any identifier. This is useful if you want to read how the identifier was defined, or if you want to change the declaration. Note that you can also [code-comprehension-without-clicking-your-mouse-hovering] over an identifier to see the declaration.
+In Sigasi, you can always jump to the declaration of any identifier. This is useful if you want to read how the identifier was defined, or if you want to change the declaration. Note that you can also [hover]({{< ref "code-comprehension-without-clicking-your-mouse-hovering" >}}) over an identifier to see the declaration.
 
 ## Keyboard shortcut: F3
 

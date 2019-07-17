@@ -11,7 +11,7 @@ bannerad: true
 ---
 
 
-There is a lot of debate about which [coding-conventions] are best. We know that many teams have their own coding conventions but often times they are not enforced. Let's see why and how coding guidelines can help you.
+There is a lot of debate about which [Coding conventions]({{< ref "coding-conventions" >}}) are best. We know that many teams have their own coding conventions but often times they are not enforced. Let's see why and how coding guidelines can help you.
 
 ## Why are coding conventions useful?
 
