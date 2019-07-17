@@ -8,6 +8,9 @@
           {{ if .Params.author }}
           by {{ .Params.author }}
           {{ end }}
+          {{ if .Lastmod }}
+          <br>Last modified on {{ .Lastmod.Format "2006-01-02" }}
+          {{ end }}
 
           {{ $taxo := "tags" }}
           {{ if .Param $taxo }}<br>Tagged as:{{ end }}

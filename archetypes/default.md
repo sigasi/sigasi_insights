@@ -2,11 +2,10 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 pager: true
-author: Sigasi
+author: Your Name
+license: CC BY-ND 4.0
 comments: true
 bannerad: true
-license: CC BY-ND 4.0
-draft: true
 ---
 **Insert Lead paragraph here.**
 From the front matter above, remove the entries you don't need.
