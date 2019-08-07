@@ -6,37 +6,36 @@
         <article>
         {{ .Content | replaceRE "<table>" "<table class=\"uk-table uk-table-small uk-table-striped\">" | safeHTML }}
         </article>
-        <nav class="uk-container">
-            <div data-uk-grid>
-                <div class="uk-margin uk-width-1-3@m">
-                    {{ with .NextInSection }}
-                    <a class="uk-button uk-button-default uk-button-link uk-button-large uk-padding-small uk-text-large uk-border-rounded" href="{{ .Permalink }}">{{ .Title }}</a>
-                    {{ end }}
-                </div>
-                <div class="uk-width-expand"></div>
-                <div class="uk-text-right uk-margin uk-width-1-3@m">
-                    {{ with .PrevInSection }}
-                    <a class="uk-button uk-button-default uk-button-link uk-button-large uk-padding-small uk-text-large uk-border-rounded" href="{{ .Permalink }}">{{ .Title }}</a>
-                    {{ end }}
-                </div>
-            </div>
-        </nav>
       </div>
       <div class="uk-width-1-4@m uk-visible@m">
-        <aside>
           <div class="sg-floatparent" data-uk-sticky="offset: 30">
-            <div class="uk-panel-scrollable sg-floatmenu" uk-height-viewport="offset-bottom: 15">
+            <aside class="uk-panel-scrollable sg-floatmenu" uk-height-viewport="offset-bottom: 15">
+                <div class=" uk-background-muted uk-padding-small">
                 <div class="uk-padding-vertical"><a href="#"><strong>{{ .Title }}</strong></a></div>
                 <div class="uk-text-small">
                 {{ .TableOfContents | replaceRE "<ul>" "<ul class=\"uk-list\">" | safeHTML }}
                 </div>
-            </div>
+                </div>
+            </aside>
           </div>
-        </aside>
       </div>
     </div>
   </div>
 </main>
-
+<nav class="uk-container uk-clearfix">
+    <div data-uk-grid>
+        <div class="uk-margin uk-width-1-3@m">
+            {{ with .NextInSection }}
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            {{ end }}
+        </div>
+        <div class="uk-width-expand"></div>
+        <div class="uk-text-right uk-margin uk-width-1-3@m">
+            {{ with .PrevInSection }}
+           <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            {{ end }}
+        </div>
+    </div>
+</nav>
 {{ end }}
 
