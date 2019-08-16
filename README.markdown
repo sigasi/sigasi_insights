@@ -15,7 +15,7 @@ We are using markdown
 
 * External link: `[text](http://www.example.com)`
 * Internal link: `[/manual/demo]`
-* Internal link with different text: `[text][/manual/setup]
+* Internal link with different text: `[text][/manual/setup]`
 * Link with link text: `<http://www.sigasi.com>`
 
 ### Filenames
@@ -40,4 +40,4 @@ Tips:
 
 ### Testing
 * Make sure [Urubu](https://github.com/jandecaluwe/urubu) is installed (`pip install urubu`)
-* Run `make build` to build the website and `make serve` to serve it on localhost:8000
+* Run `make build` to build the website and `make serve` to serve it on localhost:8000. You can also run `make berve` to do both of these action in one command.
