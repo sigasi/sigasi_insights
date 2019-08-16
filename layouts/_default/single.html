@@ -40,18 +40,20 @@
       <div class="uk-width-1-4@m uk-visible@m">
           <div class="sg-floatparent" data-uk-sticky="offset: 30">
             {{ if .Params.pager }}
-            <aside class="sg-floatmenu uk-padding-small" >
-                <div class="uk-panel-scrollable uk-background-muted sg-floatmenu" uk-height-viewport="offset-bottom: 300px">
-                <div class="uk-margin-small-bottom"><a href="#"><strong>{{ .Title }}</strong></a></div>
-                <div class="uk-text-small">
-                {{ .TableOfContents | replaceRE "<ul>" "<ul class=\"uk-list\">" | safeHTML }}
-                </div>
-                </div>
-                {{ end }}
+            <aside class="uk-panel-scrollable sg-floatmenu uk-padding-small" uk-height-viewport="offset-top: true; offset-bottom: 50px">
                 {{ if .Params.bannerad }}
-                {{ partial "bannerad" . }}
+                    {{ partial "bannerad" . }}
                 {{ end }}
+                <div class="uk-background-muted uk-padding-small">
+                    <div class="uk-margin-small-bottom">
+                        <a href="#"><strong>{{ .Title }}</strong></a>
+                    </div>
+                    <div class="uk-text-small">
+                            {{ .TableOfContents | replaceRE "<ul>" "<ul class=\"uk-list\">" | safeHTML }}
+                    </div>
+                </div>
             </aside>
+            {{ end }}
       </div>
     </div>
 
