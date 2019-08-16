@@ -1,3 +1,7 @@
+# Install
+This is a python 2 project.  
+To install the dependencies run `pip install -r requirements.txt`
+
 # Sigasi Documentation source
 
 This repository contains the source of the Sigasi documentation.
