@@ -47,14 +47,14 @@
       <div class="uk-width-1-4@m uk-visible@m">
           <div class="sg-floatparent" data-uk-sticky="offset: 30">
             {{ if .Params.pager }}
-            <aside class="uk-panel-scrollable sg-floatmenu uk-padding-small" uk-height-viewport="offset-top: true; offset-bottom: 155px">
+            <aside class="uk-panel-scrollable sg-floatmenu uk-padding-small" uk-height-viewport="offset-top: true; offset-bottom: 55px">
                 {{ if .Params.bannerad }}
                     {{ partial "bannerad" . }}
                 {{ end }}
                 {{ if .TableOfContents }}
                 <div class="uk-background-muted uk-padding-small">
                     <div class="uk-margin-small-bottom">
-                        <a href="#"><strong>{{ .Title }}</strong></a>
+                        <h5><a href="#">{{ .Title }}</a></h5>
                     </div>
                     <div class="uk-text-small">
                             {{ .TableOfContents | replaceRE "<ul>" "<ul class=\"uk-list\">" | safeHTML }}

@@ -22,3 +22,8 @@ span.sg-dl-marker + dl dd {
     line-height: 180%;
     margin-left: 180px;
 }
+
+#TableOfContents .uk-list>li:nth-child(n+2),
+#TableOfContents .uk-list>li>ul {
+    margin-top: 3px;
+}
