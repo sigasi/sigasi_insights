@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.5)
 layout: page
 pager: true
-date: 2019-07-12
+date: 2019-08-16
 comments: true
 ---
 
@@ -21,14 +21,24 @@ Most important changes since the [4.4 release](/releasenotes/sigasi-4.04):
 * Report error when a package has multiple package bodies
 * Better hover for procedures
 * Add checking on library name
+* Mixed component declaration templates now use integer as default type for generics
 * Net search shows load when net is used in if statement with binary or unary expressions
+* Net search shows loads and drives from concurrent assignments outside of processes
+* Verilog blockdiagrams show wires for module instantiations using named associations
+* Improved outline for concurrent signal assignments in VHDL
 * Verilog comment folding with include files
 * Resolved VHDL Formatting bug in indexed port map
+* Added an icon for `Set Top` in the `Hierarchy View`
 * Add lintings for packed struct/union and untagged unions
 * Error/warning marker for duplicate labels
+* Fixed bug when hovering over protected type
+* Fixed out of memory exceptions for exotic Verilog code
 * Show tabs in hover code
 * VUnit run.py file can be a linked resource
 * Packed unions can only contain members of integral data types
+* Doubled Sigasi Studio's default stacksize
+* Add linting for missing choices in SystemVerilog switch case
+* Documentation can now be exported as HTML
 
 # Update or install?
 
