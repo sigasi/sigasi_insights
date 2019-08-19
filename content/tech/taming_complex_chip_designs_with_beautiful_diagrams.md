@@ -13,7 +13,7 @@ tags:
 comments: true
 bannerad: true
 
-key : grYJ6oHppyAhHh
+slidesharekey : grYJ6oHppyAhHh
 ---
 <div class="container">
   <center>

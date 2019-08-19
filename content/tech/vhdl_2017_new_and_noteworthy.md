@@ -11,7 +11,7 @@ tags:
 comments: true
 bannerad: true
 
-key : aEf7z3Jre2hMj7
+slidesharekey : aEf7z3Jre2hMj7
 ---
 
 Presentation by Lieven Lemiengre at FPGA Kongress 2017 on 2017-07-13.

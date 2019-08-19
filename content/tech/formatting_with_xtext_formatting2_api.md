@@ -12,7 +12,7 @@ tags:
 comments: true
 bannerad: true
 
-key : 4FkvOKdcURXuhh
+slidesharekey : 4FkvOKdcURXuhh
 ---
 
 Presentation by Titouan Vervack at [EclipseCon France 2017](https://www.eclipsecon.org/france2017/) on 2017-06-21.

@@ -30,6 +30,13 @@
     <div uk-grid uk-height-match>
       <div class="uk-width-3-4@m">
         <article>
+          {{ if .Params.slidesharekey }}
+          <center>
+            <iframe src="//www.slideshare.net/slideshow/embed_code/key/{{.Params.slidesharekey}}" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen>
+            </iframe>
+          </center>
+          {{ end }}
+
           {{ .Content | replaceRE "<table>" "<table class=\"uk-table uk-table-small uk-table-striped\">" | safeHTML }}
 
           {{ if .Params.comments }}
