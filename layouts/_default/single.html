@@ -44,6 +44,7 @@
                 {{ if .Params.bannerad }}
                     {{ partial "bannerad" . }}
                 {{ end }}
+                {{ if .TableOfContents }}
                 <div class="uk-background-muted uk-padding-small">
                     <div class="uk-margin-small-bottom">
                         <a href="#"><strong>{{ .Title }}</strong></a>
@@ -52,6 +53,7 @@
                             {{ .TableOfContents | replaceRE "<ul>" "<ul class=\"uk-list\">" | safeHTML }}
                     </div>
                 </div>
+                {{ end }}
             </aside>
             {{ end }}
       </div>
