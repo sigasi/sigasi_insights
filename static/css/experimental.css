@@ -1,0 +1,24 @@
+span.sg-dl-marker {
+    display: none;
+}
+
+span.sg-dl-marker + dl dt {
+    line-height: 180%;
+    float: left;
+    width: 160px;
+    clear: left;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+span.sg-dl-marker + dl dt:hover {
+    overflow: visible;
+    white-space: normal;
+}
+
+span.sg-dl-marker + dl dd {
+    line-height: 180%;
+    margin-left: 180px;
+}
