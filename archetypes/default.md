@@ -1,6 +1,8 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
+publishdate: {{ now.Format "2006-01-02" }}
+lastmod: {{ now.Format "2006-01-02" }}
 pager: true
 author: Your Name
 license: CC BY-ND 4.0

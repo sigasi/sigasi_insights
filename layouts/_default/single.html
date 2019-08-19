@@ -8,7 +8,7 @@
           {{ if .Params.author }}
           by {{ .Params.author }}
           {{ end }}
-          {{ if .Lastmod }}
+          {{ if ne .PublishDate .Lastmod }}
           <br>Last modified on {{ .Lastmod.Format "2006-01-02" }}
           {{ end }}
 
