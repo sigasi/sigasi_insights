@@ -3168,7 +3168,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :	<a href="#identifier">identifier</a> 
   
 <a name="escaped_identifier"></a>**escaped\_identifier**
-:	<font color="purple"><b>\</b></font>  { <em>any\_printable\_ASCII\_character\_except\_white\_space</em> }  <a href="#white_space">white\_space</a> 
+:	<font color="purple"><b>\\</b></font>  { <em>any\_printable\_ASCII\_character\_except\_white\_space</em> }  <a href="#white_space">white\_space</a> 
   
 <a name="formal_identifier"></a>**formal\_identifier**
 :	<a href="#identifier">identifier</a> 

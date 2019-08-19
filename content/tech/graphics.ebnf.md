@@ -101,9 +101,9 @@ tags:
         | <a href="#SQ_STRING">SQ\_STRING</a> 
   
 <a name="DQ_STRING"></a>**DQ\_STRING**
-:	<font color="purple"><b>"</b></font>  { <font color="purple"><b>\</b></font> <em>char</em>  
+:	<font color="purple"><b>"</b></font>  { <font color="purple"><b>\\</b></font> <em>char</em>  
          | <em>not (\ | ")</em> }  <font color="purple"><b>"</b></font> 
   
 <a name="SQ_STRING"></a>**SQ\_STRING**
-:	<font color="purple"><b>'</b></font>  { <font color="purple"><b>\</b></font> <em>char</em>  
+:	<font color="purple"><b>'</b></font>  { <font color="purple"><b>\\</b></font> <em>char</em>  
          | <em>not (\ | ')</em> }  <font color="purple"><b>'</b></font> 

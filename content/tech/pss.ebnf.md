@@ -934,7 +934,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :	<em>Any\_Printable\_ASCII\_Character</em>
   
 <a name="escaped_character"></a>**escaped\_character**
-:	<font color="purple"><b>\</b></font>  ( <font color="purple"><b>'</b></font>   
+:	<font color="purple"><b>\\</b></font>  ( <font color="purple"><b>'</b></font>   
          | <font color="purple"><b>"</b></font>   
          | <font color="purple"><b>?</b></font>   
          | <font color="purple"><b>'</b></font>   
@@ -963,4 +963,4 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
          |  \[ <em>0-9</em> ]   }  
   
 <a name="ESCAPED_ID"></a>**ESCAPED\_ID**
-:	<font color="purple"><b>\</b></font>  { <em>any\_ASCII\_character\_except\_whitespace</em> }  <em>whitespace</em>
+:	<font color="purple"><b>\\</b></font>  { <em>any\_ASCII\_character\_except\_whitespace</em> }  <em>whitespace</em>
