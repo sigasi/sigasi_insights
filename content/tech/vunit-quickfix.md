@@ -48,9 +48,9 @@ entity tb_example is
   generic (runner_cfg : string);
 end entity;
 ```
-*Note that the `context` clause is VHDL-2008 syntax. So, make sure your project is configured accordingly: Right click project, **Properties > VHDL Version > VHDL-2008**.*
+_Note that the `context` clause is VHDL-2008 syntax. So, make sure your project is configured accordingly: Right click project, **Properties > VHDL Version > VHDL-2008**._
 
-When you enter this VHDL snippet in a VHDL file in a Sigasi Studio project, you will see a warning (*Library "vunit\_lib" is not available*) on the library clause and multiple errors because of references to missing declarations.
+When you enter this VHDL snippet in a VHDL file in a Sigasi Studio project, you will see a warning (*Library "vunit\_lib" is not available*) on the library clause and multiple errors because of references to missing declarations.  
 ![vunit...](/img/tech/vunit/before.png)
 
 To automatically add the VUnit library to your project, click the light bulb icon to trigger the Quick Fix (or press **Ctrl-F1** on the line with the warning).

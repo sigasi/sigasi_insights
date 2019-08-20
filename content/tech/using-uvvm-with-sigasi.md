@@ -31,7 +31,7 @@ By default Sigasi Studio maps all files to library *work*. This is not what the 
     * In the Project Explorer, right click the project and select **Properties > VHDL Version**.
     * In the drop-down menu select **VHDL 2008** and press **Apply and Close**.
     * In your project, right click **Common Libraries** and select **Set Library > Reset Common Libraries**.
-* Select all folders in the project, right click and choose **Set Library > Map folders to folder name**.
+* Select all folders in the project, right click and choose **Set Library > Map folders to folder name**.  
 ![Map folders to folder name](/img/tech/using-uvvm-with-sigasi/folder-names.png)
 * Go into the *uvvm_vvc_framework* folder, right click on *src_target_dependent* and select **Exclude from build**.
 * Next, we need to add symbolic links to the *src_target_dependent* folder in all of the *bitvis_vip_* folders. We'll create the symbolic link once and then copy and paste it into the other folders.
