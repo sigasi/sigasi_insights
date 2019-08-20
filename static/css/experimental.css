@@ -1,8 +1,4 @@
-span.sg-dl-marker {
-    display: none;
-}
-
-span.sg-dl-marker + dl dt {
+dl dt {
     line-height: 180%;
     float: left;
     width: 160px;
@@ -13,12 +9,12 @@ span.sg-dl-marker + dl dt {
     white-space: nowrap;
 }
 
-span.sg-dl-marker + dl dt:hover {
+dl dt:hover {
     overflow: visible;
     white-space: normal;
 }
 
-span.sg-dl-marker + dl dd {
+dl dd {
     line-height: 180%;
     margin-left: 180px;
 }
