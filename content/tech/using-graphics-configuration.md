@@ -53,7 +53,7 @@ You can also press the Sigasi button on the top right of the BlockDiagram or Sta
 
 From there on you can declare groups and configure your diagram, check it in to version control and share it with your colleagues.
 Auto-complete (**Ctrl+Space**) helps you write most of the code while formatting (**Shift+Ctrl+F**) helps you to keep your file clean.
-If you're interested in the language's exact syntax, you can find it [here](graphics.ebnf.html).
+If you're interested in the language's exact syntax, you can find it [here](/tech/graphics.ebnf).
 
 ## What can I do
 The Graphics Configuration features:
