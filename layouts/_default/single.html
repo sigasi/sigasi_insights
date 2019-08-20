@@ -2,7 +2,11 @@
 <main>
   <div class="uk-container uk-padding">
           {{ if .PublishDate }}
-          Posted on {{ .PublishDate.Format "2006-01-02" }}
+            {{ if eq .Section "releasenotes" }}
+            Released on {{ .PublishDate.Format "2006-01-02" }}
+            {{ else }}
+            Posted on {{ .PublishDate.Format "2006-01-02" }}
+            {{ end }}
           {{ end }}
 
           {{ if .Params.author }}
