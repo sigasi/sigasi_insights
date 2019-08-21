@@ -4,7 +4,7 @@ layout: page
 ---
 
 All content of this website the "Sigasi Insights Portal" is protected by national and international copyright laws.
-Copyright (c) Sigasi nv.
+[Copyright (c) Sigasi nv](/copyright).
 
 As Sigasi customer, user, or partner, you are given a world-wide non-transferable right to do the following:
 

@@ -7,4 +7,4 @@ pager: false
 Patent protected application: EP 2175387, US 8881074  
 "Sigasi" is a registered trademark of Sigasi nv.  
 
-Use of this software is subject to the software license agreement.
+Use of this software is subject to the [software license agreement](/eula).
