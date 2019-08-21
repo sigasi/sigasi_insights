@@ -23,3 +23,12 @@ dl dd {
 #TableOfContents .uk-list>li>ul {
     margin-top: 3px;
 }
+
+pre {
+    background: #f8f8f8;
+}
+
+blockquote {
+    padding-left: 20px;
+    border-left: 5px solid #eee;
+}
