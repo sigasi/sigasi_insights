@@ -17,8 +17,8 @@
           {{- end -}}
 
           {{- $taxo := "tags" -}}
-          {{- if .Param $taxo }}<br>Tagged as:{{ end -}}
-          {{- range .Param $taxo -}}
+          {{- if .Param $taxo }}<br>Tagged as:{{ end }}
+          {{ range .Param $taxo -}}
             {{- $name := . -}}
             {{- with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) -}}
             <a class="uk-button uk-button-default uk-button-small uk-border-rounded" href="{{ .Permalink }}">{{ $name }}</a>
