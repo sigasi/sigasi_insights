@@ -1,61 +1,67 @@
 {{ define "main" }}
 <main>
   <div class="uk-container uk-padding">
-          {{ if .PublishDate }}
-            {{ if eq .Section "releasenotes" }}
+      {{- if .PublishDate -}}
+            {{- if eq .Section "releasenotes" -}}
             Released on {{ .PublishDate.Format "2006-01-02" }}
-            {{ else }}
+            {{- else -}}
             Posted on {{ .PublishDate.Format "2006-01-02" }}
-            {{ end }}
-          {{ end }}
+            {{- end -}}
+          {{- end -}}
 
-          {{ if .Params.author }}
+          {{- if .Params.author -}}
           by {{ .Params.author }}
-          {{ end }}
-          {{ if ne .PublishDate .Lastmod }}
+          {{- end -}}
+          {{- if ne .PublishDate .Lastmod -}}
           <br>Last modified on {{ .Lastmod.Format "2006-01-02" }}
-          {{ end }}
+          {{- end -}}
 
-          {{ $taxo := "tags" }}
-          {{ if .Param $taxo }}<br>Tagged as:{{ end }}
-          {{ range .Param $taxo }}
-            {{ $name := . }}
-            {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+          {{- $taxo := "tags" -}}
+          {{- if .Param $taxo }}<br>Tagged as:{{ end -}}
+          {{- range .Param $taxo -}}
+            {{- $name := . -}}
+            {{- with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) -}}
             <a class="uk-button uk-button-default uk-button-small uk-border-rounded" href="{{ .Permalink }}">{{ $name }}</a>
-            {{ end }}
-          {{ end }}
+            {{- end -}}
+          {{- end -}}
 
-          {{ if .Params.license }}
-          {{ partial "license" . }}
-          {{ end }}
+          {{- if .Params.license -}}
+          {{- partial "license" . -}}
+          {{- end -}}
+
+          {{- if eq .Params.activemenu "faq" -}}
+          <div class="uk-card uk-card-default uk-card-body uk-width-2-3@m">
+          {{- partial "table-of-contents" . -}}
+          </div>
+          {{- end -}}
           <hr>
   </div>
   <div class="uk-container">
     <div uk-grid uk-height-match>
       <div class="uk-width-3-4@m">
         <article>
-          {{ if .Params.slidesharekey }}
+          {{- if .Params.slidesharekey -}}
           <center>
             <iframe src="//www.slideshare.net/slideshow/embed_code/key/{{.Params.slidesharekey}}" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen>
             </iframe>
           </center>
-          {{ end }}
+          {{- end -}}
 
           {{ .Content | replaceRE "<table>" "<table class=\"uk-table uk-table-small uk-table-striped\">" | safeHTML }}
 
-          {{ if .Params.comments }}
-          {{ template "_internal/disqus.html" . }}
-          {{ end }}
+          {{- if .Params.comments -}}
+          {{- template "_internal/disqus.html" . -}}
+          {{- end -}}
         </article>
       </div>
       <div class="uk-width-1-4@m uk-visible@m">
           <div class="sg-floatparent" data-uk-sticky="offset: 30">
-            {{ if .Params.pager }}
+            {{- if .Params.pager -}}
             <aside class="uk-panel-scrollable sg-floatmenu uk-padding-small" uk-height-viewport="offset-bottom: 155px">
-                {{ if .Params.bannerad }}
+                {{- if .Params.bannerad -}}
                     {{ partial "bannerad" . }}
-                {{ end }}
-                {{ if .TableOfContents }}
+                {{- end -}}
+                {{- if .TableOfContents -}}
                 <div class="uk-background-muted uk-padding-small">
                     <div class="uk-margin-small-bottom">
                         <h5><a href="#">{{ .Title }}</a></h5>
@@ -64,9 +70,9 @@
                             {{ .TableOfContents | replaceRE "<ul>" "<ul class=\"uk-list\">" | safeHTML }}
                     </div>
                 </div>
-                {{ end }}
+                {{- end -}}
             </aside>
-            {{ end }}
+            {{- end -}}
       </div>
     </div>
 

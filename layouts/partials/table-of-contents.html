@@ -1,0 +1,61 @@
+<!-- ignore empty links with + -->
+{{- $headers := findRE "<h[1-3].*?>(.|\n])+?</h[1-3]>" .Content -}}
+<!-- at least one header to link to -->
+{{- $has_headers := ge (len $headers) 1 -}}
+{{- if $has_headers -}}
+<nav id="toc" data-toggle="toc">
+  <ul uk-accordion>
+    {{- range $i, $header := $headers -}}
+    {{- $headerLevel := index (findRE "[1-3]" . 1) 0 -}}
+    {{- $headerLevel := len (seq $headerLevel) -}}
+      {{- $anchorID := ($header | replaceRE "<h[1-3] id=\"(.*)\">(.|\n)+?</h[1-3]>" "$1") -}}
+      {{- $headerText := ($header | plainify | safeHTML) -}}
+      {{- if ne $i 0 -}}
+        {{- $prevHeaderLevel := index (findRE "[1-3]" (index $headers (sub $i 1)) 1) 0 -}}
+        {{- $prevHeaderLevel := len (seq $prevHeaderLevel) -}}
+          {{- if gt $headerLevel $prevHeaderLevel -}}
+            {{- range seq (sub $headerLevel $prevHeaderLevel) -}}
+              <ul class="uk-list">
+            {{end}}
+          {{end}}
+          {{- if lt $headerLevel $prevHeaderLevel -}}
+            {{- if eq $headerLevel 1 -}}
+              </li></ul></div></li>
+            {{- else -}}
+            {{- range seq (sub $prevHeaderLevel $headerLevel) -}}
+              </li></ul></li>
+            {{end}}
+            {{end}}
+          {{end}}
+          {{- if eq $headerLevel $prevHeaderLevel -}}
+            </li>
+          {{end}}
+          {{- if eq $headerLevel 1 -}}
+          <li>
+            <a class="uk-accordion-title" href="#">{{ $headerText }}</a>
+            <div class="uk-accordion-content">
+          {{- else -}}
+          <li>
+            <a href="#{{ $anchorID }}">{{ $headerText }}</a>
+          {{- end -}}
+          {{- if eq $i (sub (len $headers) 1) -}}
+            {{- range seq (sub $prevHeaderLevel $headerLevel) -}}
+              </li></ul></li>
+            {{end}}
+          {{end}}
+      {{else}}
+      <li>
+        <a class="uk-accordion-title" href="#">{{ $headerText }}</a>
+        <div class="uk-accordion-content">
+      {{end}}
+    {{end}}
+
+    {{- $firstHeaderLevel := len (seq (index (findRE "[1-3]" (index $headers 0) 1) 0)) -}}
+    {{- $lastHeaderLevel := len (seq (index (findRE "[1-3]" (index $headers (sub (len $headers) 1)) 1) 0)) -}}
+    {{- range seq (sub $lastHeaderLevel $firstHeaderLevel) -}}
+      </li></ul></li>
+    {{end}}
+
+  </ul>
+</nav>
+{{end}}
