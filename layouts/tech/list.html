@@ -4,7 +4,7 @@
         {{.Content}}
     </article>
 
-    <div class="uk-child-width-1-2@m" data-uk-grid>
+    <div class="uk-child-width-1-2@m uk-padding uk-padding-remove-left uk-padding-remove-bottom" data-uk-grid>
         {{ range .Site.Data.tech }}
         <div>
             {{ if isset . "url" }}
