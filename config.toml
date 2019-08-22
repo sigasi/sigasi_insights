@@ -12,6 +12,8 @@ disqusShortname = "sigasi"
 enableRobotsTXT = "true"
 DefaultContentLanguage = "en"
 metaDataFormat = "yaml"
+pygmentsCodeFences = "true"
+pygmentsUseClasses = "true"
 
 [author]
     name = "Sigasi"
