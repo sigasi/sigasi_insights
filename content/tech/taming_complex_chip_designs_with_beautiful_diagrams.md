@@ -15,9 +15,5 @@ bannerad: true
 
 slidesharekey : grYJ6oHppyAhHh
 ---
-<div class="container">
-  <center>
-    <iframe src="https://www.youtube.com/embed/tBZVyYKgpcU" gesture="media" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen="" width="595" height="485" frameborder="0"></iframe>
-  </center>
-</div>
+{{% youtube tBZVyYKgpcU %}}
 [Presentation](https://www.youtube.com/watch?v=tBZVyYKgpcU) by Titouan Vervack at [EclipseCon Europe 2017](https://www.eclipsecon.org/europe2017/) on 2017-10-24.

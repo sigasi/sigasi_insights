@@ -41,11 +41,11 @@ This list is only the *"oortjies van die seekoei"*.
 
 If you think that it will be difficult to get Scineric going, it won't. We’ve spent a lot of time in order to make it integrate nicely with many different external environments. You are probably using Sigasi because you are reading this blog and if you are, it’s even easier for you than for most other environments. We created a Sigasi Sync plugin which sync's your design between Scineric and Sigasi. Thus, you can continue to develop your designs in Sigasi like you always did, but with a powerful design management environment at hand where you can manage, build and package your designs. This integration is demonstrated below:
 
-<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/axawy0hg8aM" frameborder="0" allowfullscreen></iframe></p>
+{{% youtube axawy0hg8aM %}}
 
 [Scineric Workspace](http://scineric.csir.co.za/) is a research tool where we've taken the first step to making firmware design management and packaging a trivial task. We’ve realized that most people just want things to work, they don’t care how it happens and we’ve created a platform that attempts to do just that.
 There is an evaluation version out, try it and let us know what you think. If you are interested and are wondering how we do it, check out our blog post that describes the [Scineric architecture](http://scineric.csir.co.za/?p=1083).
 
 To finish off, here is an introduction video showing the main parts of Scineric.
 
-<p align="center"><iframe src="https://www.youtube.com/embed/x89IVHw5Lh0" frameborder="0" width="560" height="420"></iframe></p>
+{{% youtube x89IVHw5Lh0 %}}
