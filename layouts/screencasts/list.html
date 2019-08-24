@@ -9,8 +9,7 @@
         {{ range first 6 .Pages.ByDate.Reverse }}
         <div>
             <center>
-            <iframe src="https://www.youtube.com/embed/{{ .Params.videoid }}?modestbranding=1&rel=0&showinfo=0" gesture="media" allow="encrypted-media" allowfullscreen="" width="300" height="200" frameborder="0" autoplay=0 uk-video>
-            </iframe>
+            {{ partial "youtube" . }}
             <div class="uk-margin-top">
                 <a href="{{.Permalink}}"><h4>{{ .Title }}</h4></a>
             </div>
