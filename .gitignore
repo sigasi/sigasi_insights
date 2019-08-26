@@ -1,11 +1,2 @@
-*.pyc
 .DS_Store
-_gh-pages
-_build
-_sigasi_insights_offline.tgz
-_build_offline
 linkchecker_result.html
-server.PID
-*.sw?
-_venv
-public/
