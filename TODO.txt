@@ -1,0 +1,22 @@
+* re-use static from www.sigasi.com
+* dedicated insights nav menu below banner
+* 3 lists on main insights page
+
+sed for shortcodes from _site
+
+
+Note: alternative listing methods:
+
+    Paginator var:
+    {{ $paginator := .Paginate .Pages.ByWeight }}
+    <ul>
+    {{ range $paginator.Pages }}
+    <li>{{ .Title }}</li>
+    {{ end }}
+    </ul>
+
+    <ul>
+    {{ range .Pages.ByWeight }}
+    <li>{{ .Title }}</li>
+    {{ end }}
+    </ul>

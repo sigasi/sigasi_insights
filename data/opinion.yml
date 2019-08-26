@@ -1,0 +1,42 @@
+- title: Jan on HDL
+  url: /opinion/jan/
+  list:
+    - title: Fixing Verilog is easy 
+      url: /opinion/jan/fixing-verilog-easy
+    - title: Wasting real time in zero time 
+      url: /opinion/jan/wasting-real-time-zero-time
+    - title: Pitfalls for circuit girls 
+      url: /opinion/jan/pitfalls-for-circuit-girls
+    - title: Time for reflection 
+      url: /opinion/jan/time-reflection
+    - title: VHDL's crown jewel 
+      url: /opinion/jan/vhdls-crown-jewel
+    - title: more...
+      url: /opinion/jan
+- title: Emacs
+  url: /opinion/emacs/
+  list:
+    - title: Emacs vs Sigasi matrix 
+      url: /opinion/emacs/emacs-vs-sigasi-matrix
+    - title: Why Emacs VHDL mode is so Grea... 
+      url: /opinion/emacs/why-emacs-vhdl-mode-so-great-and-why-we-want-beat-it
+    - title: Five reasons why Emacs will al... 
+      url: /opinion/emacs/five-reasons-why-emacs-will-always-be-better
+    - title: Room for Improvement 
+      url: /opinion/emacs/room-improvement
+    - title: Sigasi Better than Emacs 
+      url: /opinion/emacs/sigasi-better-emacs
+    - title: more...
+      url: /opinion/emacs
+- title: Popular blog posts
+  list:
+    - title: HDL Design verification 
+      url: /opinion/verification/
+    - title: Testbench generation with Wave... 
+      url: /opinion/thesis-winand
+    - title: PoC - A Pile of Cores 
+      url: /opinion/poc-a-pile-of-cores
+    - title: Graphic Design is dead - long ... 
+      url: /opinion/graphic-design-dead-long-live-graphical-views
+    - title: "Whitepaper: Standard Editor fo..."
+      url: /opinion/whitepaper-standard-editor-teams

@@ -1,0 +1,9 @@
+{{ $licenseinfo := dict "CC BY-ND 4.0" "http://creativecommons.org/licenses/by-nd/4.0/" "Sigasi Insights" "/license" }}
+
+{{ $link := index $licenseinfo .Params.license }}
+
+{{ if $link }}
+<br>Licensed under <a href={{ $link }}>{{ .Params.license }}</a> license
+{{ else }}
+<br>Licensed under {{ .Params.license }}
+{{ end }}

@@ -1,6 +1,0 @@
-),
-(
-Comments:
-
-Disqus
-Spot.IM‎

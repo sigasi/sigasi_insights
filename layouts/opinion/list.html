@@ -1,0 +1,46 @@
+{{ define "main" }}
+<div class="uk-container">
+    <article class="uk-margin-top">
+        {{.Content}}
+    </article>
+
+    {{ if .Page.InSection .Page.FirstSection }}
+    <div class="uk-child-width-1-3@m uk-padding uk-padding-remove-left uk-padding-remove-bottom" data-uk-grid>
+        {{ range .Site.Data.opinion }}
+        <div>
+            {{ if isset . "url" }}
+            <a href="{{ .url }}"><h2>{{ .title }}</h2></a>
+            {{ else }}
+            <h2>{{ .title }}</h2>
+            {{ end }}
+            {{ if isset . "list" }}
+            <ul class="uk-list">
+                {{ range .list }}
+                <li><a href="{{ .url }}">{{ .title }}</a></li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+    {{ end }}
+
+    <h2>All Articles</h2>
+    <ul class="uk-list uk-column-1-2@m uk-margin-medium-bottom">
+      {{ if .Page.InSection .Page.FirstSection }}
+        {{ range (where .Site.RegularPages "Section" "opinion") }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title | truncate 50 }}</a><small> {{ .Date.Format "2006-01-02" }}</small>
+        </li>
+        {{ end }}
+      {{ else }}
+        {{ range .Pages.ByDate.Reverse }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title | truncate 50 }}</a><small> {{ .Date.Format "2006-01-02" }}</small>
+        </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+</div>
+
+{{ end }}

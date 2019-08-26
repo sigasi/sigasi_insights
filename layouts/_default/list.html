@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="uk-container">
+    <article class="uk-margin-top">
+        {{.Content}}
+    </article>
+
+    <ul class="uk-list uk-column-1-2@m uk-margin-medium-bottom">
+        {{ range .Pages }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title | truncate 50 }}</a><small> {{ .Date.Format "2006-01-02" }}</small>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+
+{{ end }}

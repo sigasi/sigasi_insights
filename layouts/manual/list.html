@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="uk-container uk-padding">
+    <div class="uk-column-1-2@m">
+        <ul class="uk-list">
+            {{ range where .Pages.ByWeight "Params.skipoverviewlist" "==" nil }}
+            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            {{ end }}
+        </ul>
+    </div>
+</div>
+{{ end }}

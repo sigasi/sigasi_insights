@@ -8,3 +8,4 @@ linkchecker_result.html
 server.PID
 *.sw?
 _venv
+public/

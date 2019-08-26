@@ -1,0 +1,44 @@
+- title: Popular Tech Articles on VHDL
+  list:
+    - title: "Signal Assignments in VHDL: with/select, when/else and case"
+      url: /tech/signal-assignments-vhdl-withselect-whenelse-and-case
+    - title: To "to" or to "downto"... Ranges in VHDL
+      url: /tech/to-downto-ranges-vhdl
+    - title: Clock edge detection
+      url: /tech/clock-edge-detection
+    - title: "Four (and a half) ways to write VHDL instantiation... "
+      url: /tech/four-and-half-ways-write-vhdl-instantiations
+    - title: 'VHDL case statements can do without the "others" '
+      url: /tech/vhdl-case-statements-can-do-without-others
+    - title: Be careful with VHDL operator precedence
+      url: /tech/be-careful-vhdl-operator-precedence
+    - title: "Advanced VHDL Configurations: Tying a component to... "
+      url: /tech/advanced-vhdl-configurations-tying-component-unrelated-entity
+    - title: '"Use" and "Library" in VHDL '
+      url: /tech/use-and-library-vhdl
+    - title: "How to run Xilinx ISim/Fuse from the command line ... "
+      url: /tech/how-run-xilinx-isimfuse-command-line-linux
+    - title: more...
+      url: /tags/vhdl
+- title: Popular Tech Articles on Eclipse
+  list:
+    - title: How to implement "highlight matching brackets" for...
+      url: /tech/how-implement-highlight-matching-brackets-your-custom-editor-eclipse
+    - title: Dynamic menu items in Eclipse
+      url: /tech/dynamic-menu-items-eclipse
+    - title: Installing translations for Eclipse
+      url: /tech/installing-translations-eclipse
+    - title: Eclipse Tcl support in Sigasi
+      url: /tech/eclipse_tcl_support_in_sigasi
+    - title: "Eclipse keyboard tricks: Editing code"
+      url: /tech/eclipse-keyboard-tricks-editing-code
+    - title: How to add a decorator to the splash screen of you...
+      url: /tech/how-add-decorator-splash-screen-your-rcp-application
+    - title: "'Run As' menu item strangely disappearing in the c..."
+      url: /tech/run-menu-item-strangely-disappearing-context-menu
+    - title: Make Eclipse open files from the command line
+      url: /tech/make-eclipse-open-files-command-line
+    - title: How to avoid absolute (library) paths in your Siga...
+      url: /tech/how-avoid-absolute-library-paths-your-sigasi-project-files
+    - title: more...
+      url: /tags/eclipse
