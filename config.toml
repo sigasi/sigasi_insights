@@ -18,10 +18,6 @@ pygmentsUseClasses = "true"
 [author]
     name = "Sigasi"
 
-[params]
-  currentVersion = "Sigasi Studio 4.3"
-  currentReleaseNotes = "//insights.sigasi.com/releasenotes/sigasi-4.03.html"
-
 [taxonomies]
   tag = "tags"
 
