@@ -10,11 +10,3 @@ test:
   except:
   - master
 
-pages:
-  script:
-  - hugo --baseURL=https://sigasi.gitlab.io/
-  artifacts:
-    paths:
-    - public
-  only:
-  - master
