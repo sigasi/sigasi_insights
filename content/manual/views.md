@@ -20,7 +20,7 @@ You can open a View in several different ways:
 * By typing the view name in the [Quick Access](/manual/user_interface#quick-access) field
 * Via **Window > Show View**. If the view is not in the visible list, choose **Other...** and select the view in the selection dialog.
 * By right clicking in the **editor** and selecting **Show in > ...**.  
-  Some Views also support to open the current selection (e.g. the Block Diagram View). This selects the element in the view that corresponds to the current selection in the editor.
+  Some Views also support to open the current selection (e.g. the [Block Diagram View]({{< ref "#block-diagram-view" >}})). This selects the element in the view that corresponds to the current selection in the editor.
 
 # Project Explorer View
 
@@ -140,6 +140,7 @@ You can configure extra tags in the Task Tag preference page:
 
 The **Block Diagram View** displays a graphical (block diagram) view
 of all architectures, modules and their instantiations in your current VHDL or SystemVerilog editor.
+VHDL processes are also shown in the block diagram.
 
 This viewer **automatically updates** when you **save** your code and
 gives a convenient way to visually inspect and navigate your code, even
