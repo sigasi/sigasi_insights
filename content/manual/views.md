@@ -156,6 +156,10 @@ You can also **double click blocks**, **ports** or **wires** to navigate
 to the corresponding HDL code. If you want to *go into* a block, you
 have to **select** it, right click and click **Open Entity Declaration**, **Open Architecture** or **Open Module**.
 
+To find an object in the Block Diagram, you can navigate from your code to the Block Diagram.
+In your code, right-click a signal, port, process or instantiation and select **Show In > Block Diagram** - just like when opening the Block Diagram View the first time.
+If the Block Diagram already is open, the corresponding element is highlighted and the Block Diagram View is centered on it.
+
 You can export the block diagram view to an image with the save
 ![](/img/icons/save.gif) button. Both **SVG** and **PNG** are supported. Choose a the \*.svg filename for SVG export or a \*.png filename for PNG export.
 
