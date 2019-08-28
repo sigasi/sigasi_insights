@@ -16,5 +16,10 @@ E.g. most pages written by Sigasi don't need a separate license section.
 # Introduction
 ## New Cool Post
 ## Another subtitle
-# New main section
 
+# New main section
+Inserting a figure below with tons of options.
+
+{{< figure src="/img/logo_positive.jpg" link="/img/logo_positive.jpg" alt="alt text" caption="caption text" title="title text" height="20" class="uk-align-right" >}}
+
+Because of the `uk-align-right` in the `class above, this text should float to the left of the figure.
