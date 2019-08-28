@@ -5,7 +5,7 @@
   publish = "public/"
 
 [context.production]
-  command = "hugo version; hugo"
+  command = "hugo version; hugo --minify"
 
 [context.deploy-preview]
   command = "hugo version; hugo -b $DEPLOY_PRIME_URL"
