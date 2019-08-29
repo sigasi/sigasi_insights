@@ -67,7 +67,7 @@
                 {{- if .TableOfContents -}}
                 <div class="uk-background-muted uk-padding-small">
                     <div class="uk-margin-small-bottom">
-                        <h5><a href="#">{{ .Title }}</a></h5>
+                        <h5><a href="#top">{{ .Title }}</a></h5>
                     </div>
                     <div class="uk-text-small">
                             {{ .TableOfContents | replaceRE "<ul>" "<ul class=\"uk-list\">" | safeHTML }}
