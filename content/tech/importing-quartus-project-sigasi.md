@@ -35,7 +35,7 @@ You can either [clone the GitHub repository](https://github.com/sigasi/SigasiPro
 quartus_sh -t <path to SigasiProjectCreator>/src/convertQuartusProjectToCsv.tcl <path to qpf or qsf file>
 ```
 
-[This TCL script](https://github.com/sigasi/SigasiProjectCreator/blob/master/src/convertQuartusProjectToCsv.tcl) creates a file `quartus_files.csv` which contains a list of HDL source files and their library information.
+[This TCL script](https://github.com/sigasi/SigasiProjectCreator/blob/master/src/SigasiProjectCreator/convertQuartusProjectToCsv.tcl) creates a file `quartus_files.csv` which contains a list of HDL source files and their library information.
 
 ## 3. Generate the Sigasi Studio project files from the list of source files
 

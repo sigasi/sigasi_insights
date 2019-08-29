@@ -19,7 +19,7 @@ In upcoming blog posts, I will give examples of some existing conventions on how
 
 Read the follow-up posts:
 
-* How to organize source code? [how-organize-source-code-learn-java]
+* How to organize source code? [Learn from Java]({{< ref "how-organize-source-code-learn-java.md" >}})
 
 Coming up:
 
