@@ -36,7 +36,7 @@ indentation on current and next line”**
 setting.<span class="inline inline-center">
 
 <video width="320" height="240" autoplay="autoplay" loop="true">
-<source src="2.21/smart_indent.mp4" type="video/mp4" />
+<source src="/img/releasenotes/2.21/smart_indent.mp4" type="video/mp4" />
 Your browser does not support the video tag.
 </video>
 </span>

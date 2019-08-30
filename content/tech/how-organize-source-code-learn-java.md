@@ -13,7 +13,7 @@ bannerad: true
 ---
 
 
-Since most HDLs do not force you to use a specific directory structure in your projects, each organization is left with the burden to [devise its own conventions](how-do-you-organize-source-code-your-hardware-project.html). This post describes directory and file naming conventions, learned from the <a href=http://java.sun.com id=ytvn title=Java>Java</a> programming language.
+Since most HDLs do not force you to use a specific directory structure in your projects, each organization is left with the burden to [devise its own conventions]({{< ref "how-do-you-organize-source-code-your-hardware-project" >}}). This post describes directory and file naming conventions, learned from the <a href=http://java.sun.com id=ytvn title=Java>Java</a> programming language.
 
 ### Basic structure
 

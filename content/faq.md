@@ -186,7 +186,7 @@ If the project explorer shows the hidden files in from your revision control sys
 
 Select the View Menu (small triangle pointing down) **Customize View > Filters**.
 
-{{< figure src="/img/faq/customize-view.png" >}}
+{{< figure src="/img/faq/customize-view.png" alt="Customizing the view" >}}
 
 Now you can filter out hidden files (`.* resources`) or `All non VHDL Files`.
 
@@ -210,7 +210,7 @@ Yes, the Sigasi VHDL Eclipse editor supports all unicode characters, including J
 
 Many actions can be accessed using your mouse and using [Keyboard Shortcuts](/manual/keyshortcuts), e.g. copying text can be done either by clicking **Edit > Copy** or by pressing **Ctrl-C**. Of course, pressing a key combination is a lot faster than clicking in a menu.
 
-{{< figure src="/img/faq/mousefeed.png" >}}
+{{< figure src="/img/faq/mousefeed.png" alt="MouseFeed pop-up" >}}
 
 Whenever you use your mouse for something that also has a key binding, the MouseFeed function tells you what this keyboard shortcut is. This will help you remember keyboard shortcuts for the actions you use most often.
 
@@ -239,13 +239,13 @@ In some situations you may not want Sigasi's VHDL aware search (**Find Reference
 
 If you want textual search inside one file, you can use **Find** (Ctrl-F). This dialog has an easy "**Whole word**" option.
 
-{{< figure src="/img/faq/find.png" >}}
+{{< figure src="/img/faq/find.png" alt="Find/Replace dialog" >}}
 
 I you want to search for textual matches in the **entire workspace** with the **Search** dialog. This method does not have a 'Whole word' option.
 
 You can achieve the same effect by toggling the '**Regular Expression**' option and by adding a `\b` before and after the text you search. The `\b` stands for "word boundary" in regular expressions.
 
-{{< figure src="/img/faq/search.png" >}}
+{{< figure src="/img/faq/search.png" alt="Search dialog" >}}
 
 # Configure
 
@@ -272,7 +272,7 @@ To change the key binding (keyboard shortcuts) within Eclipse: **Window > Prefer
 
 Most settings can be changed in **Window > Preferences**. In this dialog, you can either browse the menus to the left, or search for an item in the search field in the top left.
 
-{{< figure src="/img/faq/settings1.png" >}}
+{{< figure src="/img/faq/settings1.png" alt="Preferences dialog" >}}
 
 ## Can I control the timing of the hovers/popups in Sigasi?
 
@@ -347,7 +347,7 @@ Sigasi Studio does not attempt to check full correctness of your VHDL and Verilo
 
 As you design, you put your code through a funnel: first Sigasi finds the first 90% of errors in your code, without ever running a simulation. Next you compile with the simulator and you find another bunch of problems. In each successive step of your design flow, you find harder to track errors in your design. Sigasi just helps you get a big number of issues out of the way early on, so that you can concentrate on finding the hard problems down the road.
 
-{{< figure src="/img/faq/funnel_small.png" >}}
+{{< figure src="/img/faq/funnel_small.png" alt="Funnel" >}}
 
 If you want to check more errors, enable the [Save-time Compilation](/manual/tools#save-time-compilation).
 
@@ -365,7 +365,7 @@ Procedure:
    For example: five "declare signal" Quick Fixes
 1. Click **Finish** in the Dialog
 
-{{< figure src="/img/faq/quick_fix_all_code_menu.png" >}}
+{{< figure src="/img/faq/quick_fix_all_code_menu.png" alt="Quick Fix through the Problems View" >}}
 
 # Features
 
@@ -571,7 +571,7 @@ Sigasi does not offer simulators. If you don't have a VHDL simulator yet, we wou
 
 Note that [GHDL on Mac OSX](http://eng-osx.sourceforge.net/GHDL.html) uses Wine, but works without problems.
 
-At this time, Sigasi does not support [Simili](http://www.symphonyeda.com/products.htm).
+At this time, Sigasi does not support [Simili](http://www.symphonyeda.com/).
 We have not had good results with FreeHDL or with Green Mountain VHDL. It seems that these two projects may have been terminated.
 
 ## You need a VHDL editor too

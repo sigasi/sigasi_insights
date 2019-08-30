@@ -32,7 +32,7 @@
           {{end}}
           {{- if eq $headerLevel 1 -}}
           <li>
-            <a class="uk-accordion-title" href="#">{{ $headerText }}</a>
+            <a class="uk-accordion-title">{{ $headerText }}</a>
             <div class="uk-accordion-content">
           {{- else -}}
           <li>
@@ -45,7 +45,7 @@
           {{end}}
       {{else}}
       <li>
-        <a class="uk-accordion-title" href="#">{{ $headerText }}</a>
+        <a class="uk-accordion-title">{{ $headerText }}</a>
         <div class="uk-accordion-content">
       {{end}}
     {{end}}

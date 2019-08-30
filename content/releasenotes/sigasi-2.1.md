@@ -34,7 +34,7 @@ Check out this one-minute screencast: [Record Autocomplete](/screencasts/record_
 Each time you type the word TODO or FIXME in VHDL comments, the tool
 collects these tags and puts them in a separate list. Note that tags are
 only updated at save time.
-![TODO Markers](2.1/todo-markers.jpg "TODO Markers")
+![TODO Markers](/img/releasenotes/2.1/todo-markers.jpg "TODO Markers")
 
 Other improvements
 ------------------

@@ -26,7 +26,7 @@ There are three ways to navigate to the matching entity:
     ![Hold the control key](/img/releasenotes/2.5/openmatchingentity.png "Hold the control key")
 3.  **Context menu**: Right click the component name and select **Open
     matching entity**
-    ![Open matching entity (context menu)](/img/releasenotes/2.5/openmatchingentitymenu.png "Open matching entity (context menu)")
+    ![Open matching entity (context menu)](/img/releasenotes/2.5/openmatchingentitymenu.png "Open matching entity")
 
 This also works for **generics** and **ports** wherever they are used.
 
