@@ -2,3 +2,6 @@
 *.swp
 linkchecker_result.html
 public
+
+# Local Netlify folder
+.netlify
