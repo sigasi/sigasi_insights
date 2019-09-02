@@ -1,1 +1,2 @@
-/tag/*               /tags/:splat
+/tag/*                       /tags/:splat
+/tags/Register%20mapping/    /tags/register-mapping/
