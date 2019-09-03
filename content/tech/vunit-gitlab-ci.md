@@ -1,6 +1,6 @@
 ---
 title: "Using VUnit in a Gitlab CI Verification Environment"
-layout: page 
+layout: page
 pager: true
 author: Tobias Baumann
 date: 2019-03-17
@@ -10,7 +10,7 @@ bannerad: true
 
 # Prerequisites
 
-- **GHDL**, supported since [Sigasi 3.7](releasenotes/sigasi-3.07.html) (this article uses GHDL because it's open, other verification tools supported by Sigasi are working as well)
+- **GHDL**, supported since [Sigasi 3.7](releasenotes/sigasi-3.07.html) (this article uses GHDL because it's open - other verification tools supported by Sigasi are working as well)
 - **VUnit Flow** is working within your Sigasi installation, supported since [Sigasi 4.1](releasenotes/sigasi-4.01.html)
 - **Gitlab.com** (or self-hosted Gitlab server) with **Gitlab CI** enabled
 
