@@ -4,6 +4,7 @@
         {{.Content}}
     </article>
 
+    <div uk-height-match="target: > div > div > h2">
     <div class="uk-child-width-1-2@m uk-padding uk-padding-remove-left uk-padding-remove-bottom" data-uk-grid>
         {{ range .Site.Data.tech }}
         <div>
@@ -21,6 +22,7 @@
             {{ end }}
         </div>
         {{ end }}
+    </div>
     </div>
 
     <h2>All Articles</h2>
