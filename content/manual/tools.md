@@ -156,8 +156,8 @@ integration.
 
 ## Libraries
 
-Libraries are fully supported. But note that Sigasi Studio does not send Common
-Libraries to the external compiler for compilation. These libraries are
+[Libraries]({{< ref "libraries" >}}) are fully supported. But note that Sigasi Studio does not send [Common
+Libraries]({{< ref "libraries#common-libraries" >}}) to the external compiler for compilation. These libraries are
 expected to be pre-compiled. Contact [support@sigasi.com](mailto:support@sigasi.com) if you want to
 add more libraries to this list.
 
