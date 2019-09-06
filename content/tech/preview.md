@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.5)
 layout: page
 pager: true
-date: 2019-08-16
+date: 2019-09-06
 comments: true
 ---
 
@@ -39,6 +39,7 @@ Most important changes since the [4.4 release](/releasenotes/sigasi-4.04):
 * Doubled Sigasi Studio's default stacksize
 * Add linting for missing choices in SystemVerilog switch case
 * Documentation can now be exported as HTML
+* Performance improvements for Verilog and SystemVerilog
 
 # Update or install?
 
