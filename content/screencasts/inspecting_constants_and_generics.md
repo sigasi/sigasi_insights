@@ -1,8 +1,11 @@
 ---
 title: "Inspecting Constants and Generics"
-layout: screencast 
+layout: youtube 
 pager: false
-date: 2016-01-01
+date: 2018-07-02
 comments: false
-videoid: 3u7i9mke6z
+videoid: GuHaAzbNQz4
+tags:
+  - generics
+  - Basic instruction
 ---
