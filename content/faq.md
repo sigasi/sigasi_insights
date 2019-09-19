@@ -31,7 +31,8 @@ The SHA1 sum (or hash) is a fingerprint of a file. After you download a file, yo
 
 ## What are the system requirements?
 
-We recommend at least **2GB of memory**, and you need **about 300MB** of free disk space.
+We recommend at least **4GB of memory** available for Sigasi Studio,
+and you need **about 300MB** of free disk space.
 
 ## Does Sigasi Studio run on my OS?
 
@@ -87,14 +88,14 @@ We recommend to increase the default heap size settings of Eclipse. You can do t
 
 ```text
 -vmargs
--Xmx2400m
+-Xmx3g
 ```
 
-This sets the maximum heap size to 2400 MB. If you system has plenty of memory, you can even choose higher numbers.
+This sets the maximum heap size to 3 GB. If you system has plenty of memory, you can even choose higher numbers.
 
-**Note**: If your `eclipse.ini` already contains these arguments, you should not append these parameters again, but instead modify the existing values. If `-vmargs` is there already, but `-Xmx2400m` is not; you should add `-Xmx2400m` after the existing `-vmargs`.
+**Note**: If your `eclipse.ini` already contains these arguments, you should not append these parameters again, but instead modify the existing values. If `-vmargs` is there already, but `-Xmx3g` is not; you should add `-Xmx3g` after the existing `-vmargs`.
 
-**Note**: If you run the stand alone version of Sigasi Studio, this settings file is called `sigasi.ini` instead of `eclipse.ini`
+**Note**: If you run the stand alone version of Sigasi Studio, this settings file is called `sigasi.ini` instead of `eclipse.ini`.
 
 **Note**: If the settings do not change with the above methods, check if the following environment variables are set: `JAVA_TOOL_OPTIONS` or `_JAVA_OPTIONS`. \[[More info](https://stackoverflow.com/questions/28327620/difference-between-java-options-java-tool-options-and-java-opts)\]
 
@@ -457,14 +458,16 @@ Floating licenses also require a MAC address, but this needs to be the MAC addre
 ## The internal web browser does not work on Linux
 
 Sigasi uses your system's native browser to display html content.
-When Sigasi's default settings do not work on your Linux system, try the following:
+When Sigasi's default settings do not work on your Linux system,
+make sure the `webkitgtk` package is installed (`dnf install webkitgtk`).
+You might have to install the `webkitgtk3` package if you're on GTK3 (`dnf install webkitgtk3`).
 
-1. Make sure the `webkitgtk` package is installed (`dnf install webkitgtk`)
-1. Replace `-Dorg.eclipse.swt.browser.DefaultType=mozilla` with `-Dorg.eclipse.swt.browser.UseWebKitGTK=true` in your sigasi.ini
-1. You might have to remove the line `-Dorg.eclipse.swt.browser.UseWebKitGTK=true` from your sigasi.ini or eclipse.ini file.
-1. On preference page `General > Web Browser`, select **Use internal web browser**
+If you're using an older version of Sigasi Studio, you can try the following:
 
-[Complete info on Eclipse website](https://www.eclipse.org/swt/faq.php#browserplatforms)
+*  Replace `-Dorg.eclipse.swt.browser.DefaultType=mozilla` with `-Dorg.eclipse.swt.browser.UseWebKitGTK=true` in your *sigasi.ini*.
+*  You might have to remove the line `-Dorg.eclipse.swt.browser.UseWebKitGTK=true` from your *sigasi.ini* or *eclipse.ini* file.
+*  Refer to the [complete info on the Eclipse website](https://www.eclipse.org/swt/faq.php#browserplatforms).
+
 
 ## Where can I find the log file?
 

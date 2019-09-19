@@ -3,9 +3,22 @@
 This repository contains the source of the Sigasi documentation.
 You can find the rendered version at <https://insights.sigasi.com>
 
-## Authoring guide
-
 We are using markdown with [Hugo].
+
+## Hugo
+
+* Install: [Hugo]
+* Build `hugo`
+* Test: `hugo server --buildFuture --buildDrafts` to start serving pages locally. The url will be printed in the `hugo` output.
+    * Use the `-F` (or `--buildFuture`) option to show posts with dates in the future.
+    * Use the `-D` (or `--buildDrafts`) option to show posts with draft status.
+* Tools:
+    * Enable shell autocompletion: `sudo hugo gen autocomlete`
+* Create content based on archetypes:
+    * New release notes: `hugo new content/releasenotes/sigasi-4.06.md`
+    * New tech article: `hugo new content/tech/fancy-title.md`
+
+## Markdown authoring
 
 * [MarkDown tutorial](http://markdowntutorial.com/)
 * [New MarkDown tutorial](http://commonmark.org/help/tutorial/index.html)
@@ -52,9 +65,5 @@ Syntax highlighting is configured as follows:
 * In case you want to change the style, different styles are available, check https://xyproto.github.io/splash/docs/all.html
 * More Hugo documentation on highlighting: https://gohugo.io/content-management/syntax-highlighting/
 
-
-### Testing
-* Install [Hugo]
-* Run `hugo server` to start serving pages locally.
 
 [Hugo]: https://gohugo.io/

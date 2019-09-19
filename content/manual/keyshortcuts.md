@@ -144,6 +144,8 @@ In this section, we list the most important shortcuts.
 |                         | Quick Access                      | **Ctrl+3**                          |
 |                         | Quick Switch Editor               | **Ctrl+E**                          |
 |                         | Toggle Full screen                | **Alt+F11**                         |
+|                         | Toggle Horizontal Split Editor    | **Ctrl+_**                          |
+|                         | Toggle Vertical Split Editor      | **Ctrl+{**                          |
 
 # Mac users
 

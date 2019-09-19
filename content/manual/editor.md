@@ -238,6 +238,27 @@ Resetting the [Sigasi Studio perspective](/manual/user_interface/#the-sigasi-stu
 
 See also [this FAQ item](/faq/#how-to-use-sigasi-efficiently-on-multiple-monitors-screens-desktops).
 
+### Split Editor
+
+{{< figure src="/img/manual/editor-menu.png" alt="Editor Menu" class="uk-align-right" >}}
+
+The [Editor View]({{< ref "views#editor-view" >}}) can be *split* or duplicated in
+independent viewports that access the same file buffer.
+There are 3 ways to split the Editor View.
+
+* ![Horizontal Split](/img/icons/split_horizontal.png) **Horizontal Split** shows 2 viewports on top of each other.
+* ![Vertical Split](/img/icons/split_vertical.png) **Vertical Split** shows 2 viewports next to each other.
+*  **Clone** to a new Editor View.
+This new Editor View can be *[detached]({{< ref "#multiple-screen-support" >}})* so that
+the same file buffer can be viewed on multiple displays.
+
+To split the editor view, go to **Window \> Editor** and select the desired action.
+There are [Keyboard Shortcuts]({{< ref "keyshortcuts#top-keyboard-shortcuts" >}})
+to toggle the Horizontal Split (`Ctrl+_`) and the Vertical Split (`Ctrl+{`).
+
+There can only be a single horizontal or vertical split within an Editor View.
+Multiple Editor Views can be cloned and re-arranged to obtain a custom layout with many views on the same file buffer.
+
 ### Side-by-side Diff
 
 * Previous versions (local history or version control)
@@ -391,10 +412,13 @@ Other preferences for code formatting are part of {{< xl >}}. You
 can configure them at **Window > Preferences > Sigasi > VHDL > Formatting**
 Configurable settings currently include:
 
-* Preserve newline characters
-* Vertical alignment
-* Upper case for VHDL keywords
-* Alignment column for trailing comments
+-   **Preserve newlines**: this option configures the formatter to not add or remove newlines in your code.
+-   **Vertical alignment**: this option configures the formatter to vertically align consecutive declarations and statements.
+-   **Lowercase/Uppercase keywords**: when this option is set to `UPPERCASE` the formatter will convert all VHDL keywords to uppercase.
+When this option is set to `lowercase`, the keywords will be converted to lowercase.
+When this option is set to `ignore`, the case of keywords won't be changed by the formatter.
+(Without a {{< xl >}} license, keywords are not changed by the formatter).
+-   **Alignment column for trailing comments**: this setting configures the column Sigasi Studio uses to align trailing comments (default is column 40)
 
 ### Correct indentation only
 
@@ -414,6 +438,14 @@ You can disable the formatter for defined regions in your VHDL source files by e
 ### Format code on save
 
 You can configure Sigasi Studio to automatically format your VHDL files when you save your source files via **Preferences > Sigasi > VHDL**, next enable **Enable code format on save**.
+
+### Format project
+
+{{< xprt_only >}}
+
+Since [Sigasi Studio 4.5]({{< ref "/releasenotes/sigasi-4.05" >}}) you can format (System)Verilog and VHDL files without opening them in the editor. Right click a *project*, *folder* or *file* and select **Source > Format**.
+
+Note that the option is only available for files that are part of the build.
 
 ## Lightweight editor for large VHDL and SystemVerilog files
 

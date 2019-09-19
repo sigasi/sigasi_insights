@@ -114,12 +114,7 @@ To export, go to **File > Export… > General > Preferences**, and select **Key 
 
 # Formatting
 
-You can set formatting options in the Formatter preference page:
-**Window > Preferences > Sigasi > VHDL > Formatting**
-
--   **Preserve newlines**: this option configures the formatter to not add or remove newlines in your code
--   **Upper case keywords**: when this option is enabled the formatter will convert all keywords to uppercase. When this option is **not** enabled, uppercase keywords will be converted to lowercase. (Without a {{< xl >}} license, keywords are not changed by the formatter).
--   **Alignment column for trailing comments**: this setting configures the column Sigasi Studio uses to align trailing comments (default is column 40)
+Formatting options for VHDL are documented in the [VHDL Code Formatting section of the Editor manual]({{< ref "editor#configuration" >}}).
 
 # Finding more options
 {{< todo >}}
