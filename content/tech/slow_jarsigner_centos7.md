@@ -58,4 +58,4 @@ sys     0m0.001s
 ```
 and `/proc/sys/kernel/random/entropy_avail` now shows a value bigger than 3000. At last, issue solved... 
 
-In hindsight this makes perfect sense, but I did not see this one comming. So I spent another few hours on unexpected maintenance... I hope this post can help you save some.
+In hindsight this makes perfect sense, but I did not see this one coming. So I spent another few hours on unexpected maintenance... I hope this post can help you save some.
