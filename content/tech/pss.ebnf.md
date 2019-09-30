@@ -1,6 +1,6 @@
 ---
 title: "Portable Test and Stimulus Standard Version 1.0"
-layout: page 
+layout: page
 pager: true
 author: Sigasi
 date: 2018-06-27
@@ -541,6 +541,9 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 <a name="covergroup_declaration"></a>**covergroup\_declaration**
 :	<font color="purple"><b>coverspec</b></font> <a href="#covergroup_identifier">covergroup\_identifier</a> <font color="purple"><b>(</b></font> <a href="#covergroup_port">covergroup\_port</a>  { <font color="purple"><b>,</b></font> <a href="#covergroup_port">covergroup\_port</a>  }  <font color="purple"><b>)</b></font> <font color="purple"><b>{</b></font>  { <a href="#covergroup_body_item">covergroup\_body\_item</a>  }  <font color="purple"><b>}</b></font>  \[ <font color="purple"><b>;</b></font>  ]  
   
+<a name="covergroup_expression"></a>**covergroup\_expression**
+:	<a href="#expression">expression</a> 
+  
 <a name="covergroup_port"></a>**covergroup\_port**
 :	<a href="#data_type">data\_type</a> <a href="#identifier">identifier</a> 
   
@@ -806,6 +809,9 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :	<a href="#identifier">identifier</a> 
   
 <a name="coverpoint_identifier"></a>**coverpoint\_identifier**
+:	<a href="#identifier">identifier</a> 
+  
+<a name="covergroup_identifier"></a>**covergroup\_identifier**
 :	<a href="#identifier">identifier</a> 
   
 <a name="enum_identifier"></a>**enum\_identifier**

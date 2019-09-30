@@ -1,11 +1,11 @@
 ---
 title: "Property Specification Language (PSL) Grammar"
-layout: page 
+layout: page
 pager: true
 author: Sigasi
 date: 2017-02-02
 comments: true
-tags: 
+tags:
   - PSL
   - ebnf
 ---
@@ -462,28 +462,28 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :	<em>Extended_VHDL_Expression</em> 
   
 <a name="HDL_CLK_EXPR"></a>**HDL\_CLK\_EXPR**
-:	<em>external</em> <em>VHDL\_</em><a href="#expression">expression</a> 
+:	<em>VHDL_expression</em> 
   
 <a name="HDL_UNIT"></a>**HDL\_UNIT**
-:	<em>external</em> <em>VHDL\_</em><a href="#design_unit">design\_unit</a> 
+:	<em>VHDL_design_unit</em> 
   
 <a name="HDL_MOD_NAME"></a>**HDL\_MOD\_NAME**
 :	<em>entity_aspect</em> 
   
 <a name="HDL_DECL"></a>**HDL\_DECL**
-:	<em>external</em> <em>VHDL\_</em><a href="#block_declarative_item">block\_declarative\_item</a> 
+:	<em>VHDL_block_declarative_item</em> 
   
 <a name="HDL_STMT"></a>**HDL\_STMT**
-:	<em>external</em> <em>VHDL\_</em><a href="#concurrent_statement">concurrent\_statement</a> 
+:	<em>VHDL_concurrent_statement</em> 
   
 <a name="HDL_SEQ_STMT"></a>**HDL\_SEQ\_STMT**
-:	<em>external</em> <em>VHDL\_</em><a href="#sequential_statement">sequential\_statement</a> 
+:	<em>VHDL_sequential_statement</em> 
   
 <a name="HDL_RANGE"></a>**HDL\_RANGE**
 :	<em>range_attribute_name</em> 
   
 <a name="HDL_VARIABLE_TYPE"></a>**HDL\_VARIABLE\_TYPE**
-:	<em>external</em> <em>VHDL\_</em><a href="#subtype_indication">subtype\_indication</a> 
+:	<em>VHDL_subtype_indication</em> 
   
 <a name="LEFT_SYM"></a>**LEFT\_SYM**
 :	<font color="purple"><b>(</b></font> 

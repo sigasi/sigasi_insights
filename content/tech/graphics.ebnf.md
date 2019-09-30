@@ -1,11 +1,12 @@
 ---
 title: "Sigasi Studio Graphics Configuration Grammar"
-layout: page 
+layout: page
 pager: true
 author: Sigasi
 date: 2018-09-10
 comments: true
 tags:
+  - graphics
   - ebnf
 ---
 <em>This grammar allows you to filter, group and color your BlockDiagrams and StateMachines in Sigasi Studio.</em>  
