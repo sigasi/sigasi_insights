@@ -97,4 +97,13 @@ The [Split Editor]({{< ref "editor#split-editor" >}}) has been enabled for VHDL 
 We recommend at least **4GB of memory** available for Sigasi Studio,
 and you need **about 300MB** of free disk space.
 
+# Sigasi Studio 4.5.1 point release
+
+On September 30 we released Sigasi Studio 4.5.1. This release fixes the following reported issues:
+
+* The EGit plugin can't be updated in Sigasi Studio stand-alone
+* Avoid a pop-up error dialog when graphics are cancelled
+* VHDL formatting: formatter does not move 'attributes close to signal
+* VUnit integration: VUnit empty script error doesn't dissapear
+
 Thanks for all the bug reports and enabling Talkback.
