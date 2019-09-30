@@ -101,9 +101,9 @@ and you need **about 300MB** of free disk space.
 
 On September 30 we released Sigasi Studio 4.5.1. This release fixes the following reported issues:
 
-* The EGit plugin can't be updated in Sigasi Studio stand-alone
-* Avoid a pop-up error dialog when graphics are cancelled
-* VHDL formatting: formatter does not move 'attributes close to signal
-* VUnit integration: VUnit empty script error doesn't dissapear
+* The EGit plugin can't be updated in Sigasi Studio 4.5.0 stand-alone
+* Avoid a pop-up error dialog when a graphical view is opened for the first time on Linux
+* VHDL formatting: formatter does not remove whitespace before `` `attributes``
+* VUnit integration: VUnit empty script error is not removed when the script is fixed
 
 Thanks for all the bug reports and enabling Talkback.
