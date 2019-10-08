@@ -101,7 +101,7 @@ In order to solve this, you can decrease the default heap size settings. You can
 -Xmx1000m
 ```
 
-This sets the maximum heap size to 1000 MB (instead of the standard 1400MB).
+This sets the maximum heap size to 1000 MB (instead of the standard 3GB).
 
 **Note:** Do not use `eclipsec.exe`, as this will ignore all of the settings configured in the eclipse.ini file.
 
