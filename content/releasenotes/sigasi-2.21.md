@@ -18,11 +18,8 @@ view of all architectures and its instantiations in your current VHDL
 editor. This viewer automatically updates while you are editing your
 code and gives a convenient way to visually inspect and navigate your
 code, even when your code is still unfinished or broken.
-<span class="inline inline-center">
 
-<iframe src="//fast.wistia.net/embed/iframe/pz6zwyq308" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="278">
-</iframe>
-</span>
+{{< wistia pz6zwyq308 >}}
 
 The Block Diagram viewer is automatically installed in the Sigasi standalone version.
 
