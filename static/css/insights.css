@@ -6,3 +6,6 @@ h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
   visibility: hidden; 
   pointer-events: none;
 }
+
+.hanchor { font-size: 100%; visibility: hidden; color:#999;}
+h1:hover a, h2:hover a, h3:hover a, h4:hover a { visibility: visible}

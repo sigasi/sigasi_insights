@@ -50,7 +50,11 @@
           {{ partial "wistia" . }}
           {{ end -}}
 
-          {{ .Content | replaceRE "<table>" "<table class=\"uk-table uk-table-small uk-table-striped\">" | safeHTML }}
+          {{- with .Content -}}
+          <div itemid="articleBody">
+            {{ . | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1} <a href="#${2}" class="hanchor" uk-icon="link"></a> ${3}` | replaceRE "<table>" "<table class=\"uk-table uk-table-small uk-table-striped\">" | safeHTML }}
+          </div>
+          {{- end -}}
 
           {{- if .Params.comments -}}
           {{- template "_internal/disqus.html" . -}}
