@@ -106,4 +106,14 @@ On September 30 we released Sigasi Studio 4.5.1. This release fixes the followin
 * VHDL formatting: formatter does not remove whitespace before `` `attributes``
 * VUnit integration: VUnit empty script error is not removed when the script is fixed
 
+# Sigasi Studio 4.5.2 point release
+
+On October 17 we released Sigasi Studio 4.5.2. This release fixes the following reported issues:
+
+* The Quick Fix to declare all signals in a port map sometimes is very slow
+* The Quick Fix to declare all signals in a port map can hang the user interface
+* The Open Declaration context menu item does not work in VHDL
+* The Occurrence highlighting occasionally does not work
+* Navigating using Ctrl+Click can be very slow
+
 Thanks for all the bug reports and enabling Talkback.
