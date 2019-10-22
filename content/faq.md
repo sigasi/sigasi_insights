@@ -475,6 +475,38 @@ Sigasi logs all internal errors to a log file. You can find this file in: `works
 
 The log file contains no sensitive information about your organization. On some occasions, the Sigasi Team may suggest to send them the log file to debug or improve the product. However, the option to do so or not remains yours.
 
+
+## How do I obtain a stack trace?
+
+To help debugging an issue you're facing, sometimes we ask to send us a *stack trace* of Sigasi Studio while the issue occurs.
+The following methods describe alternatives how to obtain this stack trace.
+
+### Obtaining a stack trace using jstack
+
+If you have a matching JDK version installed on your machine, you can use the `jstack` command from JDK.
+
+1. Find the Process Identifier (PID) of your Sigasi/Eclipse process.
+   * On Windows you can find the PID using the *Task Manager*. The *Details* tab shows the PID of every process.
+   * On Linux running a command like `ps -eo pid,cmd | grep java` can show you the PID.
+1. Run `jstack -l PID` in a command window and save the output to a text file.
+
+### Obtaining a stack trace using the console log
+
+Also without JDK installed on your machine you can obtain stack traces. The method depends on your OS.
+
+* On *Linux*
+  * Start Sigasi Studio from the command line.
+  * In a second terminal, find out the Process Identifier (PID) of the java process started by Sigasi/Eclipse,
+    e.g. using a command like `ps -eo pid,cmd | grep java`.
+  * Type `kill -3 PID` in the second terminal. This will not terminate Sigasi Studio.
+    The stack trace will be printed in the terminal where Sigasi Studio was started.
+  * Copy the stack trace in a text file.
+* On *Windows*
+  * Start Sigasi Studio from the command line with the `-consolelog` argument. A separate console window will open.
+  * With the console window in focus, press <kbd>Ctrl+Break</kbd> to obtain the requested stack trace.
+  * Copy the stack trace from the console window to a text file.
+
+
 ## Why is Sigasi trying to get through my firewall?
 
 There can be a number of reasons why Sigasi connects to the internet.
