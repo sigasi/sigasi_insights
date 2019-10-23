@@ -145,6 +145,19 @@ Common Libraries are skipped. You need to pre-compile them yourself and let
 your compiler know where the compiled libraries are. For ModelSim, you can
 use the "modelsim.ini" file for this.
 
+## Pre-compile Common Libraries
+
+Xilinx and Intel (Altera) have recommendations on how to pre-compile their
+simulation libraries for use with with third party simulators.
+
+* Recommendations for [Xilinx ISE](https://www.xilinx.com/support/documentation/sw_manuals/xilinx11/pp_p_process_compile_hdl_simulation_libraries.htm)
+
+* Recommendations for [Xilinx Vivado](https://www.xilinx.com/support/answers/64083.html)
+
+* [Altera Simulation Libraries](https://www.intel.com/content/www/us/en/programmable/support/support-resources/design-software/max_plus-ii/vdsimlib.html)
+
+* [Example script](https://www.intel.com/content/www/us/en/programmable/support/support-resources/knowledge-base/solutions/rd06182013_21.html) to compile Altera simulation libraries
+
 ## What if I broke my Common Libraries folder?
 
 If you have modified the `Common Libraries` folder, you can always
