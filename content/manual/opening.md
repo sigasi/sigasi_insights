@@ -168,6 +168,29 @@ You can configure Sigasi Studio to be the preferred editor for Xilinx Vivado.
 {{< figure src="/img/manual/vivado_a1.png" alt="Configuring Sigasi Studio as default editor in Xilinx Vivado menu" >}}
 {{< figure src="/img/manual/vivado_a2.png" alt="Configuring Sigasi Studio as default editor in Xilinx Vivado" >}}
 
+### Extra steps for the Sigasi Studio plugin on Windows
+
+If you use the Sigasi Studio Eclipse plugin on Windows, you might need to take some extra steps
+before you can open files from Vivado in Sigasi Studio.
+
+Make sure to close Eclipse before making the changes below.
+
+* In your Eclipse installation
+  1. In `eclipse.ini` remove these 2 lines
+     ```
+     --launcher.defaultAction
+     openFile
+     ```
+   1. In `configuration/config.ini`
+      - replace `osgi.instance.area.default=...` with `osgi.instance.area=@nodefault` - note the removal of the .default suffix
+      - replace `eclipse.application=....` with `eclipse.application=com.sigasi.runner.open`
+
+
+* In Vivado configure the custom editor with the following setting
+   `C:\....\eclipse.exe [file name] +[line number]`
+
+The first time you might need to pick a workspace and enable the *use this as default and do not ask again* option.
+
 ## Xilinx ISE
 
 To configure Sigasi Studio as default VHDL editor in Xilinx ISE:
