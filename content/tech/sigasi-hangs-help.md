@@ -4,6 +4,7 @@ layout: page
 pager: true
 author: Hendrik Eeckhaut
 date: 2011-11-11
+lastmod: 2019-10-25
 tags: 
   - howto
 comments: true
@@ -12,6 +13,12 @@ bannerad: true
 
 
 Sometimes, bugs could cause an application (including Sigasi) to hang, block, freeze and be dead. The user interface freezes and there is nothing you can do to bring the application back to life. If this happens, you can help us out by sending us a thread dump (i,e, the name and stack of every thread in Sigasi). To create such a **thread dump**, follow these steps.
+
+## Update 2019-10
+
+Our FAQ contains an easier approach to [obtain stack traces]({{< ref "faq#how-do-i-obtain-a-stack-trace" >}}).
+
+**The instructions below are now obsolete.**
 
 ## Download and install the Java Development Toolkit (JDK)
 
