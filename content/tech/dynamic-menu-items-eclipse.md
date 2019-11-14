@@ -22,8 +22,8 @@ First you have to add the menu contribution to your `plugin.xml`. I wanted to ad
 <extension point="org.eclipse.ui.menus">
   <menuContribution locationURI="popup:org.eclipse.ui.navigator.ProjectExplorer#PopupMenu?after=additions">
     <dynamic
-              class="com.sigasi.MydynamicMenu"
-              id="com.sigasi.myDynamicMenu">
+              class="com.sigasi.MyDynamicMenu"
+              id="com.sigasi.MyDynamicMenu">
     </dynamic>
   </menuContribution>
 </extension>
