@@ -28,6 +28,7 @@ We are using markdown with [Hugo].
 
 * External link: `[text](http://www.example.com)`
 * Internal link: `[text]({{< ref "/manual/demo" >}})`
+  * title as text: `{{< page "manual/demo" >}}`
 * Link with link text: `<https://www.sigasi.com>`
 
 ### Filenames
