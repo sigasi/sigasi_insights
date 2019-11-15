@@ -56,4 +56,4 @@ While this is not explicitly specified, it would be reasonable to assume that:
 
 If you have reason to doubt these assumptions, please talk to me in the comments section below.
 
-In my next post, [List of known VHDL metacomment pragma's]({{< ref "list-known-vhdl-metacomment-pragmas.md" >}}), I will list as many metacomment formats as I was able to find.
+In my next post, {{< page "tech/list-known-vhdl-metacomment-pragmas" >}}, I will list as many metacomment formats as I was able to find.
