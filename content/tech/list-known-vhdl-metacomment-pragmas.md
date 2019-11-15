@@ -16,16 +16,20 @@ bannerad: true
 ---
 
 
-Following up on a previous post, [vhdl-pragmas], this is an incomplete list of supported VHDL pragmas, organized by vendor.
+Following up on a previous post, {{< page "tech/vhdl-pragmas" >}}, this is an incomplete list of supported VHDL pragmas, organized by vendor.
 
 As an introduction, most pragmas have the following structure:
-`-- trigger directive`
-Where `trigger` is a keyword such as `pragma` or `synthesis`, and the `directive` is a special compiler directive.
+
+```vhdl
+-- trigger directive
+```
+
+where `trigger` is a keyword such as `pragma` or `synthesis`, and the `directive` is a special compiler directive.
 Many tools support several triggers, each with identical meaning.
 
 ## Synopsys
 
-ref: <http://cseweb.ucsd.edu/~tweng/cse143/VHDLReference/11.pdf>
+<http://cseweb.ucsd.edu/~hepeng/cse143-w08/labs/VHDLReference/11.pdf>
 
 Triggers:
 
@@ -33,6 +37,7 @@ Triggers:
 * pragma
 
 Known directives are:
+
 ```vhdl
 -- pragma translate_off
 -- pragma translate_on
@@ -47,17 +52,19 @@ Known directives are:
 
 ## ActiveHDL
 
-ref: <http://support.aldec.com/KnowledgeBase/Article.aspx?aid=000795&show=vsa00429.htm&print=1> 
+<https://www.aldec.com/resources/manuals/Active-HDL/vsa00265.htm> 
 
 No triggers.
 
-Disable compilation (and simulation)
+Disable compilation (and simulation):
+
 ```vhdl
 -- vhdl_comp_on
 -- vhdl_comp_off
 ```
 
-Disable code coverage analysis
+Disable code coverage analysis:
+
 ```vhdl
 -- vhdl_cover_off
 -- vhdl_cover_on
@@ -67,17 +74,19 @@ Disable code coverage analysis
 
 ## Altera
 
-ref: <http://quartushelp.altera.com/current/mergedProjects/hdl/vhdl/vhdl_file_dir.htm> 
+<https://www.intel.com/content/www/us/en/programmable/quartushelp/current/index.htm#hdl/vhdl/vhdl_file_dir.htm> 
 
 Triggers:
-* pragma
-* synopsys
+
 * synthesis
+* synopsys
+* pragma
 * exemplar
 * altera  (not clear if this is supported for all directives, but given as an example trigger for `message_level`)
 
 
 Directives:
+
 ```vhdl
 -- synthesis translate_on
 -- synthesis translate_off
@@ -94,31 +103,35 @@ Note that the last two directives allow the synthesis tool to interpret commente
 
 ## Xilinx
 
-ref: <http://www.xilinx.com/itp/xilinx4/data/docs/cgd/t10.html> 
+<https://www.xilinx.com/support/documentation/sw_manuals/xilinx2019_1/ug901-vivado-synthesis.pdf> 
 
 Triggers:
-* pragma
-* synopsys
+
 * synthesis
+* synopsys
+* pragma
+* xilinx
 
 Directives:
+
 ```vhdl
--- pragma translate_on
--- pragma translate_off</code>
+-- synthesis translate_off
+-- synthesis translate_on
 ```
 
 ## IEEE VHDL
 
-ref: <http://ieeexplore.ieee.org/servlet/opac?punumber=9308>
+<https://ieeexplore.ieee.org/document/1342563>
 
 ```vhdl
 -- RTL_SYNTHESIS OFF
--- RTL_SYNTHESIS ON</code>
+-- RTL_SYNTHESIS ON
 ```
 
 ## Conclusion
 
 While the IEEE standard on synthesizable VHDL code specifies `-- RTL_SYNTHESIS OFF` or `ON` as the only legal metacomment pragmas, this does not correspond to the tool vendors' implementations. From what I gather, your safest bet is:
+
 ```vhdl
 -- pragma translate_off
 -- pragma translate_on
