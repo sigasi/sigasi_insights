@@ -49,10 +49,11 @@ When I said that metacomments are not standardized, I lied. The [VHDL RTL standa
 Since this standard came long after the EDA tool vendors implemented their own metacomments, this standard does not correspond with code that is written today or with the supported pragmas in EDA tools.
 
 While this is not explicitly specified, it would be reasonable to assume that:
+
 * metacomment pragmas are meant to be case insensitive, 
 * that whitespace can be replaced by any valid VHDL whitespace (except end-of-line characters), and 
 * that a metacomment can only occur by itself in a comment (no other text in the same comment line).
 
 If you have reason to doubt these assumptions, please talk to me in the comments section below.
 
-In my next post, [list-known-vhdl-metacomment-pragmas], I will list as many metacomment formats as I was able to find.
+In my next post, [List of known VHDL metacomment pragma's]({{< ref "list-known-vhdl-metacomment-pragmas.md" >}}), I will list as many metacomment formats as I was able to find.

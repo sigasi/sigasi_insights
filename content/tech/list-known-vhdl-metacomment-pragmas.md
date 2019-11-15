@@ -16,11 +16,11 @@ bannerad: true
 ---
 
 
-Following up on a previous post, [vhdl-pragmas], this is an incomplete list of supported VHDL pragmas, organized by vendor.
+Following up on a previous post, [VHDL Pragmas]({{< ref "vhdl-pragmas.md" >}}), this is an incomplete list of supported VHDL pragmas, organized by vendor.
 
 As an introduction, most pragmas have the following structure:
 `-- trigger directive`
-Where `trigger` is a keyword such as `pragma` or `synthesis`, and the `directive` is a special compiler directive.
+where `trigger` is a keyword such as `pragma` or `synthesis`, and the `directive` is a special compiler directive.
 Many tools support several triggers, each with identical meaning.
 
 ## Synopsys
@@ -70,6 +70,7 @@ Disable code coverage analysis
 ref: <http://quartushelp.altera.com/current/mergedProjects/hdl/vhdl/vhdl_file_dir.htm> 
 
 Triggers:
+
 * pragma
 * synopsys
 * synthesis
@@ -97,6 +98,7 @@ Note that the last two directives allow the synthesis tool to interpret commente
 ref: <http://www.xilinx.com/itp/xilinx4/data/docs/cgd/t10.html> 
 
 Triggers:
+
 * pragma
 * synopsys
 * synthesis
@@ -104,7 +106,7 @@ Triggers:
 Directives:
 ```vhdl
 -- pragma translate_on
--- pragma translate_off</code>
+-- pragma translate_off
 ```
 
 ## IEEE VHDL
@@ -113,7 +115,7 @@ ref: <http://ieeexplore.ieee.org/servlet/opac?punumber=9308>
 
 ```vhdl
 -- RTL_SYNTHESIS OFF
--- RTL_SYNTHESIS ON</code>
+-- RTL_SYNTHESIS ON
 ```
 
 ## Conclusion
