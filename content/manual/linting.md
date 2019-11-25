@@ -94,8 +94,8 @@ The availability of code rules depends on the license requirements.
 | ST      | ![](/img/icons/warning_lightbulb.png) | Correct attribute entity class in attribute specifications                                                         |     |
 | ST      | ![](/img/icons/warning_lightbulb.png) | C-style equality and inequality operator (`=` and `/=` vs `==` and `!=`)                                           |     |
 | ST      | ![](/img/icons/warning_lightbulb.png) | VHDL 2008 features in VHDL 93 mode (Learn about [choosing your VHDL version](/manual/config#choosing-your-vhdl-and-verilog-version))         |     |
-| ST      | ![](/img/icons/warning_lightbulb.png) | Port/Generic lists cannot be terminated with a ','                                                                 |     |
-| ST      | ![](/img/icons/warning_lightbulb.png) | Port/Generic maps cannot be terminated with a ';'                                                                  |     |
+| ST      | ![](/img/icons/warning_lightbulb.png) | Port/Generic lists cannot be terminated with a ';'                                                                 |     |
+| ST      | ![](/img/icons/warning_lightbulb.png) | Port/Generic maps cannot be terminated with a ','                                                                  |     |
 | CR      | ![](/img/icons/warning_lightbulb.png) | [Deprecated IEEE packages](#deprecated-ieee-packages-non-standard-packages)                                        |   8 |
 | CR      | ![](/img/icons/warning_lightbulb.png) | [Non-standard packages](#deprecated-ieee-packages-non-standard-packages)                                           |  37 |
 | CR      | ![](/img/icons/warning_lightbulb.png) | [A process must either have a sensitivity list or contain one or more wait statements](#sensitivity-list)          |  38 |

@@ -36,7 +36,7 @@ If you see a large number of errors, you either have very, very buggy code (not 
 Symptoms:
 
 * When you introduce an error in a VHDL or Verilog file and save the file, an error marker shows up in the file, but not in the problems view.
-* Navigation (Find References, Open Declaration) behaves strange when it involves more than one file.
+* Navigation (Find References, Open Declaration) behaves strangely when it involves more than one file.
 * Other features that involve multiple files behave incorrectly: autcomplete, refactoring, ...
 
 Cause: Project is not built automatically

@@ -52,11 +52,11 @@ Anybody who asks for help should be appreciative of the people that are trying t
 
 Best thing is to run your code through your favorite VHDL compiler before posting it.
 
-## 5. Small
+## 4. Small
 
 Always try to post the smallest amount of VHDL code that gets your point across. Quite often, you will find that by reducing your problem to a smaller piece of code, you will be able to figure out the problem yourself. If you are reporting a bug in an EDA tool, bug reports with small code fragments are likely to get fixed sooner. 
 
-## 4. Minimize comments
+## 5. Minimize comments
 
 Q: I have this code and this-and-that is not working right.
 

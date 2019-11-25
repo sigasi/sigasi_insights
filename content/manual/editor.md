@@ -280,6 +280,31 @@ When you press **Ctrl+Shift+D** the **Open Design Unit** dialog opens. In this d
 
 Note that [**excluded** design files](/manual/libraries#modifying-the-library-configuration) do not appear in this list.
 
+## Lightweight editor for large VHDL and SystemVerilog files
+
+Sometimes you have to deal with very large HDL files such as large
+concatenated library files, generated files or netlists. Unfortunately the Sigasi Studio
+VHDL and SystemVerilog editors can not cope with huge files yet. Large files stress
+the interactive compiler too much to give timely feedback.
+
+To allow you to edit large HDL files Sigasi Studio contains a
+lightweight VHDL and SystemVerilog editor that can handle all files without problems. This
+editor does not analyze your files a type time. It only offers syntax
+highlighting and the default Eclipse editing features. The lightweight
+editors will check for errors when you save your file.
+
+The current threshold VHDL file size that is used to switch to the
+lightweight editor is 1 MB.
+
+If you still want to edit large files using the Sigasi Studio VHDL editor,
+this can be done following these steps:
+
+* In the Project Explorer right-click the file and select
+ **Open With > Other...**
+* In the dialog select **VHDL Editor** or **(System)Verilog Editor**.
+* A warning will show offering to open the file in read-only mode.
+Choose **No** if you want to edit the file.
+
 # VHDL Specific
 
 In addition to the powerful features of an Eclipse editor, the VHDL
@@ -446,31 +471,6 @@ You can configure Sigasi Studio to automatically format your VHDL files when you
 Since [Sigasi Studio 4.5]({{< ref "/releasenotes/sigasi-4.05" >}}) you can format (System)Verilog and VHDL files without opening them in the editor. Right click a *project*, *folder* or *file* and select **Source > Format**.
 
 Note that the option is only available for files that are part of the build.
-
-## Lightweight editor for large VHDL and SystemVerilog files
-
-Sometimes you have to deal with very large HDL files such as large
-concatenated library files, generated files or netlists. Unfortunately the Sigasi Studio
-VHDL and SystemVerilog editors can not cope with huge files yet. Large files stress
-the interactive compiler too much to give timely feedback.
-
-To allow you to edit large HDL files Sigasi Studio contains a
-lightweight VHDL and SystemVerilog editor that can handle all files without problems. This
-editor does not analyze your files a type time. It only offers syntax
-highlighting and the default Eclipse editing features. The lightweight
-editors will check for errors when you save your file.
-
-The current threshold VHDL file size that is used to switch to the
-lightweight editor is 1 MB.
-
-If you still want to edit large files using the Sigasi Studio VHDL editor,
-this can be done following these steps:
-
-* In the Project Explorer right-click the file and select
- **Open With > Other...**
-* In the dialog select **VHDL Editor** or **(System)Verilog Editor**.
-* A warning will show offering to open the file in read-only mode.
-Choose **No** if you want to edit the file.
 
 # SystemVerilog Specific
 

@@ -49,23 +49,12 @@ You can add some extra parameters to Sigasi Studio to modify the behavior.
 * `-help` : show simple command line usage information
 * `-data <location>` : specifies the workspace location
 * `-noSplash` : do not show the splash screen at startup
-* `-application org.eclipse.ui.ide.workbench` : to use the default Eclipse workbench launcher instead of the Sigasi Studio workbench launcher
 * `-consoleLog` : log all debug information in the console (in addition to the regular log file)
 * `-refresh` : force refresh of workspace
 * `-showLocation` : show workspace location in title bar
-
-## Run Sigasi Studio with multiple users on the same server
-
-If Sigasi Studio (>=3.8) is used on a server with multiple users concurrently, the following changes need to be made:
-
-* Edit `sigasi/configuration/config.ini` and replace `eclipse.application=com.sigasi.runner.open` with `eclipse.application=org.eclipse.ui.ide.workbench`
-* In `sigasi/sigasi.ini` add following lines between `@noDefault` and `-vmargs`:
-```
---launcher.defaultAction
-openFile
-```
-
-This way Sigasi Studio uses the default Eclipse behaviour (instead of the [custom sigasi runner](https://insights.sigasi.com/tech/make-eclipse-open-files-command-line.html)): [more info](https://wiki.eclipse.org/Eclipse/OpenFileFeature)
+* `-application org.eclipse.ui.ide.workbench` : to use the default Eclipse workbench launcher instead of the Sigasi Studio workbench launcher.
+This avoids conflicts on port 4444 when running Sigasi Studio with multiple users on the same server.
+Refer to the [setup page]({{< ref "setup#running-sigasi-studio-with-multiple-users-on-the-same-server" >}}) for more information.
 
 # External Files
 

@@ -419,7 +419,7 @@ On RedHat 6 linux, you can use the nautilus command: `nautilus "${selected_resou
 
 This sometimes happens on Windows. You have probably triggered a keyboard shortcut that switches your keyboard lay-out.
 Read Microsoft's documentation of the [Language bar keyboard shortcuts](https://answers.microsoft.com/en-us/windows/forum/windows_10-desktop/change-language-bar-hotkeys-in-windows-10/5ad3b017-8d03-4796-82e3-37af8d8a37b4).
-If you only use your local keyboard lay-out and not the standard English lay-out, you might as well diable the language bar.
+If you only use your local keyboard lay-out and not the standard English lay-out, you might as well disable the language bar.
 
 ## I don't see error icons in the Project Explorer, or I don't see the library names in the Project Explorer
 
@@ -559,7 +559,7 @@ version=1
 
 * In the workspace folder remove: `<workspaceSigasi>/.metadata/.plugins/org.eclipse.ui.workbench`
 * If this is not enough, also remove `<workspaceSigasi>/.metadata/.plugins/org.eclipse.ui.ide` and `<workspaceSigasi>/org.eclipse.ui.workbench.texteditor`
-* If this still fails remove `<workspaceSigasi>/.metadata/.plugins/org.eclipse.core.resources`, note that you will have to re-import your projects if remove this folder.
+* If this still fails remove `<workspaceSigasi>/.metadata/.plugins/org.eclipse.core.resources`, note that you will have to re-import your projects if you remove this folder.
 
 ## How can I undo "Exclude from build"?
 

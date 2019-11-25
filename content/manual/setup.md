@@ -50,6 +50,19 @@ executing this startup file.
 If you are using RedHat Linux 6 or CentOS 6, you need to follow the Plugin installation
 instructions as explained [here](/faq#i-am-using-redhat-linux-6-how-can-i-run-sigasi-studio).
 
+## Running Sigasi Studio with multiple users on the same server
+
+Starting with [Sigasi Studio 3.8]({{<ref "releasenotes/sigasi-3.08" >}}), the Sigasi launcher listens on port 4444. To avoid conflicts on this port when Sigasi Studio is used on a server with multiple users concurrently, the following changes need to be made:
+
+* Edit `sigasi/configuration/config.ini` and replace `eclipse.application=com.sigasi.runner.open` with `eclipse.application=org.eclipse.ui.ide.workbench`
+* In `sigasi/sigasi.ini` add following lines between `@noDefault` and `-vmargs`:
+```
+--launcher.defaultAction
+openFile
+```
+
+This way Sigasi Studio uses the default Eclipse behaviour (instead of the [custom sigasi runner](https://insights.sigasi.com/tech/make-eclipse-open-files-command-line.html)): [more info](https://wiki.eclipse.org/Eclipse/OpenFileFeature)
+
 # Installation of Sigasi Studio Eclipse Plugin
 
 There are two ways to install the Sigasi Studio Eclipse Plugin:

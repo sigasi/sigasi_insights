@@ -34,7 +34,7 @@ INCREMENT com.sigasi.hdt sigasi 2.0 18-nov-2012 uncounted \
 
 If you have a floating license key, you need to configure both a license server and Sigasi Studio. 
 
-An example floating license looks like this. Note that the first line starts with `DAEMON`:
+An example floating license looks like this. Note that the first line starts with `SERVER` or `DAEMON`:
 
 ```
 DAEMON sigasi port=27001
@@ -128,11 +128,11 @@ $LOCATION/lmgrd -c $LOCATION/sigasi.lic -l $LOCATION/debug.log
 ### Starting the FlexNet and Sigasi daemon on Windows
 
 1. Download the Sigasi daemon (see above)
-2. Create a folder to hold the license manager software, in this example we will use `D:\Sigsi\license`.
+2. Create a folder to hold the license manager software, in this example we will use `D:\Sigasi\license`.
 3. Unpack the zip file into the license folder  (`D:\Sigasi\license`)
 4. Run the license configuration tool `lmtools.exe` as administrator.
 5. Save the license file supplied for Sigasi Studio to the license folder
-6. Using a text editor edit the license file and replace `your_server_name1` with the name of the machine you are using, for example:
+6. Using a text editor, edit the license file and replace `your_server_name1` with the name of the machine you are using, for example:
 	From: `SERVER your_server_name1 74e50bb0911e`
 	To: `SERVER Maple 74e50bb0911e`
 	
