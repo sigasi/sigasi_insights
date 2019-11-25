@@ -16,8 +16,8 @@ In earlier posts, I have explained that there are basically three ways
 of how to organize your VHDL code within your Sigasi environment. As a
 reminder:
 
-1. [no-organization]
-2. [one-design-one-folder]
+1. {{< page "no-organization" >}}
+2. {{< page "one-design-one-folder" >}}
 3. Aggregation of reusable projects (described in this article)
 
 What is a reusable project?
@@ -34,9 +34,9 @@ are using IP cores.
 Setting it up: STD and IEEE
 ---------------------------
 
-*You can turn off the automatic builder while you are setting up your
+_You can turn off the automatic builder while you are setting up your
 projects: **Project &gt; Build automatically**. This will keep the
-compiler from starting before you have set things up correctly.*
+compiler from starting before you have set things up correctly._
 
 In this blog post, we assume that one project is compiled in one VHDL
 library. You can easily adapt if you have several projects in the same
@@ -81,8 +81,8 @@ You have to make project dependencies *explicit* in Sigasi. This may
 seem like a bit more work, but is also helps you keep a clean and clear
 project structure.
 
-*Don't forget to turn the autobuilder back on. **Project &gt; Build
-automatically***
+_Don't forget to turn the autobuilder back on. **Project &gt; Build
+automatically**_
 
 ![Setting up GRLIB as a multi-project](/img/tech/multi-project.png)
 

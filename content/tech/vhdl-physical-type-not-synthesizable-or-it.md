@@ -51,4 +51,4 @@ So: **the statement that physical types in VHDL do not synthesize is bogus**. I'
 
 Oh, and if you want to weaken the claim to "most synthesizers", I think you should present at least compilation reports for three different synthesizers.
 
-**Edit:** Also read my follow-up post with a [vhdl-physical-type-not-synthesizable-or-it-part-2]
+**Edit:** Also read my follow-up post with a {{< page "vhdl-physical-type-not-synthesizable-or-it-part-2" >}}

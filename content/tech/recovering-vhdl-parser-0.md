@@ -33,6 +33,6 @@ Traditional parser technology deals with the problem of analyzing a sequence of 
 
 ## Traditional VHDL parsers and broken code
 
-Traditional VHDL parsers, based on parser generators like [Lex/Yacc](http://nl.wikipedia.org/wiki/Yacc), do not handle broken code well at all. In some cases a single error will trigger [way too many error messages](/tech/one-mistake-one-error-marker.html). In other cases, traditional [VHDL parsers bail out after a single error](/tech/three-mistakes-three-error-markers.html) and ignore warnings further down in the file.
+Traditional VHDL parsers, based on parser generators like [Lex/Yacc](http://nl.wikipedia.org/wiki/Yacc), do not handle broken code well at all. In some cases a single error will trigger [way too many error messages]({{< ref "one-mistake-one-error-marker" >}}). In other cases, traditional [VHDL parsers bail out after a single error]({{< ref "three-mistakes-three-error-markers" >}}) and ignore warnings further down in the file.
 
 Non-recovering parsers are an artifact of history. All new computer languages are created with modern and better parsers, with better error recovery and more sensible error messages. Sadly, most EDA companies still use parsers technology from three decades ago.

@@ -16,10 +16,10 @@ bannerad: true
 The Sigasi development environment allows a very large flexibility on how to organize VHDL projects. So much in fact, that it can become confusing. Let me outline three *recommended ways* of organizing your VHDL project. 
 
 1. No organization (described in this article)
-2. [one-design-one-folder]
-3. [one-ip-block-project]
+2. {{< page "one-design-one-folder" >}}
+3. {{< page "one-ip-block-project" >}}
 
-(One not-so-recommended way, "[organizing-legacy-projects]", is useful if you are working with legacy projects whose files are scattered over many folders).
+(One not-so-recommended way, {{< page "organizing-legacy-projects" >}}, is useful if you are working with legacy projects whose files are scattered over many folders).
 
 In this post, I'll start with the simplest way of organizing: not organizing at all. In technical terms, we call this *editing external VHDL files*, because the files are outside of any projects.
 

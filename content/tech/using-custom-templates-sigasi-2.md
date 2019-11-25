@@ -78,8 +78,8 @@ where `concurrent statements` are allowed. Other options are `Anywhere`
 (Sometimes you want your template to appear anywhere, e.g. for comment),
 `expressions`, `declative item`, etc.
 
-*Tip: If you select `DesignFile` as context, your template will also
-appear as template option in the **New VHDL File** Wizard.*
+_Tip: If you select `DesignFile` as context, your template will also
+appear as template option in the **New VHDL File** Wizard._
 
 The **Description** is what you will see next to the template name if
 there are multiple possible templates that can be expanded.

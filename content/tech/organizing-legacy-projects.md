@@ -12,10 +12,10 @@ bannerad: true
 ---
 
 
-***Note** This article was originally written for Sigasi 1.0. The
+_**Note** This article was originally written for Sigasi 1.0. The
 general concepts still apply, but you will need to change some details.
 [Let us know](mailto:support@sigasi.com) if you need more help with
-this.*
+this._
 
 This post explains how to import legacy projects into Sigasi HDT. I
 explain a technique that allows any project organization, even the most

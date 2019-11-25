@@ -40,10 +40,10 @@ any syntax mistakes. You can automate this by calling the `process`
 template. Simply **start typing the name of the template**, i.e. type
 `pr`, and press **Ctrl+Space**.
 
-*Make sure your cursor is in the statements part of an architecture
+_Make sure your cursor is in the statements part of an architecture
 (between `begin` and `end`) when you try to add the process. Sigasi's
 template mechanism is **context sensitive**, so you will only be offered
-templates that make sense at your current cursor position.*
+templates that make sense at your current cursor position._
 
 You will see a list of templates starting with 'pr'. When you
 double-click or select it with the **Up** or **Down** arrow keys and

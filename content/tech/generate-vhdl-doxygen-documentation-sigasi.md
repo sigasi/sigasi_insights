@@ -98,9 +98,9 @@ I made following changes to the default settings:
 -   `OPTIMIZE_OUTPUT_VHDL = YES` Configure Doxygen to tailor its output for VHDL
 -   `EXTRACT_ALL = YES` Force Doxygen to create documentation for all your design files, even if the source files contain no special doxygen comments.
 
-*Once you get to know Doxygen, it is easier to configure these settings
+_Once you get to know Doxygen, it is easier to configure these settings
 in a regular text editor. You can do this by right-clicking the
-`Doxyfile` and selecting **Open with &gt; Text Editor**.*
+`Doxyfile` and selecting **Open with &gt; Text Editor**._
 
 ## Run doxygen
 

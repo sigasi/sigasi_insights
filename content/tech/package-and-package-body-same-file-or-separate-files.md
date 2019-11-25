@@ -17,6 +17,7 @@ Some coding guidelines require that a package and its body should be in the same
 ## One File
 
 The case for putting the package and package body in the same file, is *simplicity*. 
+
 * Every package has one package body, and you will know where to find it: at the bottom of the file. 
 * Since both are in the same file, there is less chance of introducing inconsistencies. 
 * If you mail someone the package, they also get the body. 
@@ -31,6 +32,7 @@ One reason to separate interface and implementation (package and body) in two fi
 Another reason to use two files is because this underlines the separation of concerns: one file is the interface, the contract with the user. The other is the implementation, and is really none of the user's business.
 
 The main reasons for using separate files are:
+
 * No false dependencies
 * Possibility to expose only the interface and keep implementation hidden (IP protection)
 * Possible to offer several implementations for the same package
@@ -38,6 +40,6 @@ The main reasons for using separate files are:
 
 ## Conclusion
 
-Looking at these benefits, my conclusion is that both choices would be [coding-conventions#useful]. Any naming conventions for the files are [coding-conventions#arbitrary]. (Remember: *arbitrary* does not mean you should get rid of this convention. It just means that any naming scheme can be as good as the next.)
+Looking at these benefits, my conclusion is that both choices would be [useful]({{< ref "coding-conventions#useful" >}}). Any naming conventions for the files are [arbitrary]({{< ref "coding-conventions#arbitrary" >}}). (Remember: *arbitrary* does not mean you should get rid of this convention. It just means that any naming scheme can be as good as the next.)
 
 Can you think of other practical reasons in favor of either coding style? Which style do you use? Let us know in the comments section below!
