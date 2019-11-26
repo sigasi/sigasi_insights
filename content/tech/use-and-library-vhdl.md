@@ -29,7 +29,7 @@ As a first counterexample, we show another oft-used construct: an entity and its
 
 ## Second counterexample: the use clause does not span the entire file?
 
-The second counterexamples confirms that an architecture inherits use clauses from their architectures. The architectures that correspond to the entity at the top of the file inherit the context. The final design unit (entity `f3_`) does not know about the use clauses, and so you see an error here.
+The second counterexamples confirms that an architecture inherits use clauses from its entity. The architectures that correspond to the entity at the top of the file inherit the context. The final design unit (entity `f3_`) does not know about the use clauses, and so you see an error here.
 
 ![Architecture inherits context from Entity](/img/tech/f3.png)
 

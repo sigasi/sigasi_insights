@@ -15,7 +15,7 @@ comments: true
 bannerad: true
 ---
 
-For some time it has been possible to [integrate Sigasi Studio in Altera Quartus](/manual/tools.html#altera-quartus-ii-integration).
+For some time it has been possible to [integrate Sigasi Studio in Altera Quartus]({{< ref "tools#altera-quartus-ii-integration" >}}).
 Through feedback from our users, we have seen that this approach is good when starting a project or taking off with Sigasi Studio on an existing Altera Quartus project.
 However, as a project grows and when more of the development work happens in Sigasi Studio, keeping the link to the Altera Quartus project often gets in the way.
 Switching to a separate Sigasi Studio project is more flexible. For example, this allows to show the source files in a hierarchical way in the Project Explorer.

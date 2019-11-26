@@ -30,4 +30,4 @@ You can use Sigasi as your default editor for VHDL ([Mac OS X](/manual/opening#m
 
 ## Lack of EDA tools
 
-So you've got your Sigasi application installed on your Mac, but you don't have a simulator or synthesis tool. If all of us go and ask the EDA tool vendors to port their stuff to Mac, one day they might change their minds. For now, there are some tricks to fake it ([tricking-your-mac-believing-it-can-run-modelsim]) until the EDA vendors make it.
+So you've got your Sigasi application installed on your Mac, but you don't have a simulator or synthesis tool. If all of us go and ask the EDA tool vendors to port their stuff to Mac, one day they might change their minds. For now, there are some tricks to fake it ({{< page "tricking-your-mac-believing-it-can-run-modelsim" >}}) until the EDA vendors make it.
