@@ -52,9 +52,10 @@ You can add some extra parameters to Sigasi Studio to modify the behavior.
 * `-consoleLog` : log all debug information in the console (in addition to the regular log file)
 * `-refresh` : force refresh of workspace
 * `-showLocation` : show workspace location in title bar
-* `-application org.eclipse.ui.ide.workbench` : to use the default Eclipse workbench launcher instead of the Sigasi Studio workbench launcher.
+* `-application org.eclipse.ui.ide.workbench` : use the default Eclipse workbench launcher instead of the Sigasi Studio workbench launcher.
 This avoids conflicts on port 4444 when running Sigasi Studio with multiple users on the same server.
 Refer to the [setup page]({{< ref "setup#running-sigasi-studio-with-multiple-users-on-the-same-server" >}}) for more information.
+* `--launcher.openFile <somepath>` : open the *Import Projects* dialog to import a new or existing project into the workspace
 
 # External Files
 
