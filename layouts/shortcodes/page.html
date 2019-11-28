@@ -1,10 +1,9 @@
-
-{{ $ref := .Get 0 }}
-{{ $page := .Site.GetPage "page" $ref }}
-{{ if $page }}
-{{ with $page }}
-<a href="{{ .URL }}">{{ .Title }}</a>
-{{ end }}
-{{ else }}
+{{- $ref := .Get 0 -}}
+{{- $page := .Site.GetPage "page" $ref -}}
+{{- if $page -}}
+{{- with $page -}}
+<a href="{{ .Permalink }}">{{ .Title }}</a>
+{{- end -}}
+{{- else -}}
 <a href="{{ .Site.BaseURL }}{{ $ref }}">{{ $ref }} not found!</a>
-{{ end }}
+{{- end -}}
