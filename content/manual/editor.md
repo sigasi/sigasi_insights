@@ -297,7 +297,7 @@ the interactive compiler too much to give timely feedback.
 
 To allow you to edit large HDL files Sigasi Studio contains a
 lightweight VHDL and SystemVerilog editor that can handle all files without problems. This
-editor does not analyze your files a type time. It only offers syntax
+editor does not analyze your files at type time. It only offers syntax
 highlighting and the default Eclipse editing features. The lightweight
 editors will check for errors when you save your file.
 
