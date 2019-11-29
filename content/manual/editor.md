@@ -95,7 +95,7 @@ Since [Sigasi Studio 4.1](/releasenotes/sigasi-4.01) the hovers also offer extra
 
 Sigasi Studio provides powerful autocompletion capabilities. This means
 that the tool can help you to complete identifiers and constructs as you are working on the code. Like other tools, the tool provides
-autocompletion based on the VHDL language. However, it goes much
+autocompletion based on the HDL language. However, it goes much
 further. It also provides autocompletion based on the design context. It can provide this additional level of intelligence as it knows all
 objects that have been declared in the design.
 
@@ -103,7 +103,25 @@ objects that have been declared in the design.
 
 Autocompletions may come from different sources, as will be discussed in the following sections. However, the user interface to initiate them is always the same. At any point as you are entering code, you can press **Ctrl+Space** and the tool will suggest appropriate autocompletions.
 
-Some autocompletions are templates which require further user input. In such a case, the editor goes into a special *template editing* mode after the autocompletion has been performed. You can use TAB to cycle through the items that have to be modified or completed. When done, you can press ENTER to return to the normal editing mode. The cursor will be placed at an appropriate position to continue working.
+### Based on the design context
+
+Sigasi Studio uses its knowledge of the design to provide intelligent
+autocompletions that can boost productivity tremendously.
+
+The tool knows which objects are appropriate and which identifiers are
+visible at any given point in the code. As you start typing and ask for
+an autocompletion, it will suggest the appropriate identifiers as
+autocompletion candidates.
+
+Sigasi Studio provides help to autocomplete:
+
+* component declarations
+* component instantiations
+* entity instantiations
+* module instantiations
+* case statements (based on variables/signals with an enumeration type)
+* SystemVerilog preprocessor/macro directives (`` `define``, `` `ifndef``, ...)
+* SystemVerilog include paths (`` `include "``): triggering autocomplete between the double quotes will present a list of files and folders. If you select a folder, trigger autocomplete again to get completions in this folder.
 
 ### Based on templates
 
@@ -121,28 +139,18 @@ Sigasi Studio comes preconfigured with templates for all common declarations and
 * package/package body pair
 * and much more
 
-After the autocompletion, the editor will be into templating editing
-mode. You can also configure your own templates.
+Some autocompletions are templates which require further user input.
+In such a case, the editor goes into a special *template editing* mode after the autocompletion has been performed.
+You can use TAB to cycle through the items that have to be modified or completed.
+When done, you can press ENTER to return to the normal editing mode.
+The cursor will be placed at an appropriate position to continue working.
 
-### Based on the design context
+You can also configure your own templates.
+To edit or create templates, go to **Window > Preferences > Sigasi > VHDL or (System)Verilog > Templates**.
+Here you get an overview of existing templates.
+You can create **New...** templates, **Edit...** existing templates or remove templates.
 
-Sigasi Studio uses its knowledge of the design to provide intelligent
-autocompletions that can boost productivity tremendously.
-
-The tool knows which objects are appropriate and which identifiers are
-visible at any given point in the code. As you start typing and ask for
-an autocompletion, it will suggest the appropriate identifiers as
-autocompletion candidates.
-
-The tool provides help to autocomplete:
-
-* component declarations
-* component instantiations
-* entity instantiations
-* module instantiations
-* case statements (based on variables/signals with an enumeration type)
-* SystemVerilog preprocessor/macro directives (`` `define``, `` `ifndef``, ...)
-* SystemVerilog include paths (`` `include "``): triggering autocomplete between the double quotes will present a list of files and folders. If you select a folder, trigger autocomplete again to get completions in this folder.
+Templates can be exported and imported. This is useful for sharing templates with colleagues.
 
 
 ## Other editor features
