@@ -301,7 +301,7 @@ editor does not analyze your files at type time. It only offers syntax
 highlighting and the default Eclipse editing features. The lightweight
 editors will check for errors when you save your file.
 
-The current threshold VHDL file size that is used to switch to the
+The current threshold file size that is used to switch to the
 lightweight editor is 1 MB.
 
 If you still want to edit large files using the Sigasi Studio VHDL editor,
