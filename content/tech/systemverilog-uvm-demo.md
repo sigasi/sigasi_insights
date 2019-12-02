@@ -27,17 +27,17 @@ The procedure consists of 9 simple steps:
 1. Make sure the project has a **`Common Libraries`** folder. If this folder is missing, right click the project and select **New > Folder**. Keep **ubus** as the parent folder and enter **`Common Libraries`** as the Folder name. Optionally you can select this folder to be a **Virtual Folder** under the **Advanced >>** section.
 1. Use your files system explorer (Windows Explorer, Finder, Nautilus) and navigate to the UVM sources (in my case this is `/Users/heeckhau/demo/uvm-1.2/src/`) and *drag and drop* this folder into the **`Common Libraries`** folder[^commonLibraries] of the `ubus` project.  
   Select **Link to file and folders** and **OK**
-  ![Link the UVM sources](/img/tech/systemverilog-uvm-demo/link_uvm_sources.png)
+  {{< figure alt="Link the UVM sources" src="/img/tech/systemverilog-uvm-demo/link_uvm_sources.png" >}}
 1. Add the `uvm` sources to the build: right click on `Common Libraries/src/` and select **Add to build (library work)**  
 1. Add the UVM sources to the include path: right click the project and select **Properties > (System)Verilog Preprocessor**; enter `Common Libraries/src` as *Include path* and confirm with **Apply and Close**.
-  ![Set UVM include path](/img/tech/systemverilog-uvm-demo/uvm_include_path.png)
+  {{< figure alt="Set UVM include path" src="/img/tech/systemverilog-uvm-demo/uvm_include_path.png" >}}
 1. Open `examples/ubus_tb_top.sv` by double clicking the file in the project explorer. Notice the error markers on the `` `include``s.
 1. Click on the error marker in the margin (with the small light bulb) and select **Add sv to include paths**. This automatically adds the `sv` folder to the include paths.
 
 Your Sigasi Studio UVM project is now ready for use. Feel free to experiment with *hovers*, *open declaration (**F3**)*, *find references* and *autocomplete* (**Ctrl+Space**).
 
-![UVM interface example hover](/img/tech/systemverilog-uvm-demo/uvm_hover.png)
-![UVM open declaration](/img/tech/systemverilog-uvm-demo/uvm_open_declaration.png)
+{{< figure alt="UVM interface example hover" src="/img/tech/systemverilog-uvm-demo/uvm_hover.png" >}}
+{{< figure alt="UVM open declaration" src="/img/tech/systemverilog-uvm-demo/uvm_open_declaration.png" >}}
 
 
 Footnotes:

@@ -26,12 +26,12 @@ To demonstrate how easy this is, I will guide you through opening the [SCR1 proj
 If you already have cloned the project on your computer, follow these steps:
 
 1. Select **File > Open Project from File System...**, click **Directory...** and browse to the location of the source files (in my case this is `/Users/heeckhau/git/scr1`).
-![Import project](/img/tech/systemverilog-project-demo/import_wizard.png)
+{{< figure alt="Import project" src="/img/tech/systemverilog-project-demo/import_wizard.png" >}}
 2. Click **Finish**
 3. Open any SystemVerilog source file (e.g. `src/scr1_memory_tb_ahb.sv`) and confirm that you want to add *Sigasi's (System)Verilog support* to the project.
-![Add SystemVerilog support](/img/tech/systemverilog-project-demo/add_verilog_support.png)
+{{< figure alt="Add SystemVerilog support" src="/img/tech/systemverilog-project-demo/add_verilog_support.png" >}}
 4. Click on the error marker (with the light bulb decorator) next to the \`include directive and select *Add 'src/includes' to include paths.*.
-![Use the Quick Fix to configure the include path](/img/tech/systemverilog-project-demo/quickfix_include.png)
+{{< figure alt="Use the Quick Fix to configure the include path" src="/img/tech/systemverilog-project-demo/quickfix_include.png" >}}
 
 ## Clone the project using the Git plugin
 
