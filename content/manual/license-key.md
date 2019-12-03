@@ -94,6 +94,13 @@ export SIGASI_LM_LICENSE_FILE="27000@myserver1.example.com:27000@myserver2.examp
 
 ### Download the FlexNet daemons
 
+#### FlexNet version 11.16.4.0
+
+* [Linux 64 bit](https://download.sigasi.com/flexnet/v11.16.4.0/sigasi-flexnet-linux64.zip)
+* [Windows 64 bit](https://download.sigasi.com/flexnet/v11.16.4.0/sigasi-flexnet-win64.zip) (Windows 7 or newer)
+
+#### FlexNet version 11.13.1.2
+
 * Linux:
 	* [Linux 64 bit](https://download.sigasi.com/flexnet/sigasi-flexnet-linux64.zip)
 	* [Linux 32 bit](https://download.sigasi.com/flexnet/sigasi-flexnet-linux32.zip)
