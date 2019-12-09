@@ -12,6 +12,18 @@ The Sigasi Preview release channel offers more frequent releases than the offici
 
 Although these preview releases are less rigorously tested than than the official releases, they are stable enough for daily use.
 
+**Known issue on Apple computers**
+
+The following error message may pop up on Apple computers:
+```
+Sigasi Studio.app is damaged and can't be opened. You should move it to the Trash
+```
+The workaround is to run this from the command line:
+```
+xattr -d com.apple.quarantine Sigasi\ Studio.app/
+```
+Additional information can be found via <https://bugs.eclipse.org/bugs/show_bug.cgi?id=398450>
+
 **If you run into any problems, please let us know**.
 
 # Current preview release
