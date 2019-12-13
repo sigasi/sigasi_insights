@@ -84,3 +84,8 @@ In hovers the complete Markdown syntax is supported. For documentation generatio
 * lists
 * tables (with alignment)
 * external links and email addresses (`<https://www.sigasi.com>`, `[Sigasi](https://www.sigasi.com)` and `<sales@sigasi.com>`)
+
+{{< page "releasenotes/sigasi-4.06" >}} added support for **Fenced Code blocks** in comments.
+This enables you to add text to the documentation without Markdown rendering.
+To add a comment *verbatim* to the documentation, surround it with with triple back ticks: ```` ```<verbatim comment>``` ````
+{{< figure src="/img/releasenotes/4.6/fenced_code_blocks_comment.png" title="Verbatim comments in the documentation" >}}

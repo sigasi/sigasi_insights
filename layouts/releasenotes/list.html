@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="uk-container">
+    <article class="uk-margin-top">
+        {{.Content}}
+    </article>
+
+    {{ range $index := (seq 4 2) }}
+      <h2 id="sigasi-studio-{{ $index }}">Sigasi Studio {{ $index }}</h2>
+      <ul class="uk-list uk-column-1-2@m uk-margin-medium-bottom">
+      {{ range (where $.Site.RegularPages "Section" "releasenotes") }}
+        {{ if eq $index (int (substr (strings.TrimLeft "Sigasi Studio " .Title) 0 1)) }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title | truncate 50 }}</a><small> {{ .Date.Format "2006-01-02" }}</small>
+        </li>
+        {{ end }}
+      {{ end }}
+      </ul>
+    {{ end }}
+</div>
+{{ end }}

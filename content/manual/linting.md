@@ -62,14 +62,19 @@ To trigger a Quick Fix, click the problem marker or press **Ctrl-1** and select 
 
 # List of (System)Verilog code rules
 
-The table below lists the (System)Verilog code rules that can be checked automatically by Sigasi Studio. These checks require a {{< xprt >}} license.
+The table below lists the (System)Verilog code rules that can be checked automatically by Sigasi Studio.
+The availability of code rules depends on the license requirements.
 
-| Quick Fix                        | Description                                                                                                             | ID |
-|----------------------------------|-------------------------------------------------------------------------------------------------------------------------|---:|
-|                                  | Null loops                                                                                                              |  1 |
-|                                  | Naming convention                                                                                                       |  2 |
-| ![](/img/icons/warning_lightbulb.png) | Disallow 'reg' datatype                                                                                                 |  3 |
-|                                  | VHDL keyword as module name                                                                                             |  7 |
+* ST code rules are available for all licenses including {{< starter >}}
+* XPRT code rules require a {{< xprt >}} license.
+
+| License | Quick Fix                             | Description                                                                                                             | ID |
+|---------|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------|---:|
+| ST      |                                       | File encoding differences between including and included files                                                          |    |
+| XPRT    |                                       | Null loops                                                                                                              |  1 |
+| XPRT    |                                       | [Check Naming Conventions](#naming-conventions)                                                                         |  2 |
+| XPRT    | ![](/img/icons/warning_lightbulb.png) | Disallow 'reg' datatype                                                                                                 |  3 |
+| XPRT    |                                       | VHDL keyword as module name                                                                                             |  7 |
 
 # List of VHDL code rules
 
@@ -80,10 +85,10 @@ The availability of code rules depends on the license requirements.
 * CR code rules require at least a {{< creator >}} license.
 * XL code rules are only available with a {{< xl >}} or {{< xprt >}} license.
 
-| License | Quick Fix                        | Description                                                                                                             |  ID |
-|---------|----------------------------------|-------------------------------------------------------------------------------------------------------------------------|----:|
-| ST      | ![](/img/icons/warning_lightbulb.png) | Declaration could not be found                                                                                     |     |
-| ST      |                                  | Duplicate declarations                                                                                                  |     |
+| License | Quick Fix                             | Description                                                                                                             |  ID |
+|---------|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------|----:|
+| ST      | ![](/img/icons/warning_lightbulb.png) | Declaration could not be found                                                                                          |     |
+| ST      |                                       | Duplicate declarations                                                                                                  |     |
 | ST      | ![](/img/icons/warning_lightbulb.png) | Signal/variable assignment operator                                                                                |     |
 | ST      | ![](/img/icons/warning_lightbulb.png) | Case statement does not cover all choices                                                                          |     |
 | ST      | ![](/img/icons/warning_lightbulb.png) | Missing enumeration literal in case statements                                                                     |     |
@@ -141,7 +146,7 @@ The availability of code rules depends on the license requirements.
 | XL      |                                  | [Filename must contain primary unit name](#check-that-filename-contains-primary-unit-name)                              | 189 |
 | XL      |                                  | Empty loop  statement                                                                                                   | 190 |
 
-# Detailed explanation of VHDL code rules
+# Detailed explanation of code rules
 
 ## Dead Code lint
 

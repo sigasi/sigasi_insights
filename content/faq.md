@@ -459,8 +459,8 @@ Floating licenses also require a MAC address, but this needs to be the MAC addre
 
 Sigasi uses your system's native browser to display html content.
 When Sigasi's default settings do not work on your Linux system,
-make sure the `webkitgtk` package is installed (`dnf install webkitgtk`).
-You might have to install the `webkitgtk3` package if you're on GTK3 (`dnf install webkitgtk3`).
+make sure the `webkitgtk` package is installed (`yum install webkit2gtk`).
+You might have to install the `webkitgtk3` package if you're on GTK3 (`yum install webkit2gtk3`).
 
 If you're using an older version of Sigasi Studio, you can try the following:
 
@@ -537,6 +537,20 @@ Alternatively, you can contact support for an older download location.
 * Black text on black hovers is not readable. See : <http://devshards.blogspot.it/2012/10/how-to-fix-unreadable-eclipse-tooltips.html>
 * Slow and choppy text scrolling: start Sigasi/Eclipse with this extra command line option: `--launcher.GTK_version 2`
 * Hanging with high CPU usage: start Sigasi/Eclipse with this extra command line option: `--launcher.GTK_version 2`
+
+## Damaged app on Apple computers
+
+**Known issue on Apple computers**
+
+The following error message may pop up on Apple computers:
+```
+Sigasi Studio.app is damaged and can't be opened. You should move it to the Trash
+```
+The workaround is to run this from the command line:
+```
+xattr -d com.apple.quarantine Sigasi\ Studio.app/
+```
+Additional information can be found via <https://bugs.eclipse.org/bugs/show_bug.cgi?id=398450>
 
 ## Sigasi plugins not started/visible in Eclipse
 

@@ -1,8 +1,8 @@
 ---
-title: Sigasi Studio Preview (4.6)
+title: Sigasi Studio Preview (4.7)
 layout: page
 pager: true
-date: 2019-09-19
+date: 2019-12-12
 comments: true
 ---
 
@@ -12,23 +12,11 @@ The Sigasi Preview release channel offers more frequent releases than the offici
 
 Although these preview releases are less rigorously tested than than the official releases, they are stable enough for daily use.
 
-**Known issue on Apple computers**
-
-The following error message may pop up on Apple computers:
-```
-Sigasi Studio.app is damaged and can't be opened. You should move it to the Trash
-```
-The workaround is to run this from the command line:
-```
-xattr -d com.apple.quarantine Sigasi\ Studio.app/
-```
-Additional information can be found via <https://bugs.eclipse.org/bugs/show_bug.cgi?id=398450>
-
-**If you run into any problems, please let us know**.
+**If you run into any problems, [please let us know](https://www.sigasi.com/support/)**.
 
 # Current preview release
 
-No documented changes since the [4.5 release]({{< ref "/releasenotes/sigasi-4.05" >}}).
+No documented changes since the [4.6 release]({{< ref "/releasenotes/sigasi-4.06" >}}).
 
 # Update or install?
 
@@ -42,6 +30,8 @@ You can also update from (configure via Preferences > Install/Update > Available
   https://download.sigasi.com/preview/studio/
 
 SHA Sums ([more info](/faq#how-can-i-check-a-sha-sum)) can be checked via <https://download.sigasi.com/preview/latest/sha1.txt>
+
+If you can't open the Sigasi Studio app on an Apple computer, have a look at [this FAQ entry]({{< ref "faq#damaged-app-on-apple-computers" >}})
 
 # Feedback
 

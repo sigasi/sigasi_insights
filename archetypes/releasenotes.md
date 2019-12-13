@@ -1,9 +1,6 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-publishdate: {{ now.Format "2006-01-02" }}
-lastmod: {{ now.Format "2006-01-02" }}
-pager: true
+title: Sigasi Studio 4.N
+date: {{ now.Format "2006-01-02" }}
 comments: true
 ---
 We are proud to present the Sigasi Studio X.Y release: ...

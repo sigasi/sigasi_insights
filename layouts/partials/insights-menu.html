@@ -20,8 +20,12 @@
                 <div class="uk-navbar-dropdown uk-box-shadow-medium ">
                     <ul class="uk-nav uk-navbar-dropdown-nav">
                         {{ range $s_relnotes -}}
+                        {{ if eq (substr (strings.TrimLeft "Sigasi Studio " .Title) 0 1) "4" -}}
                         <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                        {{ end }}
+                        {{ end -}}
+                        {{ end -}}
+                        <li><a href="/releasenotes#sigasi-studio-3">Sigasi Studio 3</a></li>
+                        <li><a href="/releasenotes#sigasi-studio-2">Sigasi Studio 2</a></li>
                     </ul>
                 </div>
             </li>
