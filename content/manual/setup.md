@@ -30,9 +30,9 @@ The stand-alone application has the following characteristics:
 The Eclipse plugin has the following characteristics:
 
 * Recommended if you are using Eclipse already
-* Easily plugged in into your existing Eclipse platform
+* Easily plugged into your existing Eclipse platform
 * Complete freedom to add and configure plugins
-* Over one thousand eclipse plugins choose from
+* Over one thousand other Eclipse plugins to choose from
 * Support for C, C++, Tcl and other languages
 * Support for many version control systems
 
@@ -42,7 +42,7 @@ To download and install Sigasi Studio as a stand-alone application, follow the
 online [Installation Instructions](https://www.sigasi.com/download).
 
 After downloading, choose or create a folder where you want to install
-the software, and unpack the archive there. The archive contains a
+the software and unpack the archive there. The archive contains a
 single top-level folder called `sigasi`. Inside the folder there is an
 application startup file, also called `sigasi`. Start the application by
 executing this startup file.
