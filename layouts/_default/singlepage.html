@@ -1,0 +1,25 @@
+{{ define "main" }}
+<main>
+  {{ $manualpages := where (where .Site.RegularPages "Section" "manual") "Params.skipoverviewlist" "==" nil }}
+  {{ $allmanualpages := where .Site.RegularPages "Section" "manual" }}
+  {{ $hiddenmanualpages := where (where .Site.RegularPages "Section" "manual") "Params.skipoverviewlist" "!=" nil }}
+  <div class="uk-container uk-padding">
+    <nav id="chapters" data-toggle="chapters">
+      <h1>Chapters</h1>
+      <ul class="uk-list">
+      {{ range $manualpages }}
+        <li><a href="#{{ .Title | urlize }}">{{ .Title }}</a></li>
+      {{ end }}
+      </ul>
+    </nav>
+    {{ range $manualpages }}
+      <hr>
+      <h1 id="{{ .Title | urlize }}">{{ .Title }}</h1>
+      {{ .Content }}
+      <a href="#chapters"><br>[Back to top]</a>
+    {{ end }}
+    <hr class="uk-margin-bottom">
+    This single page manual was generated on {{ now.Format "2006-01-02" }}.
+  </div>
+</main>
+{{ end }}

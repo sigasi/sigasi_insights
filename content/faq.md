@@ -140,6 +140,19 @@ To uninstall the standalone Sigasi Studio app, it is sufficient to remove the
 extracted installation folder.
 Optionally, the workspace(s) can be removed from where they were created.
 
+## Can I have an off-line copy of the manual?
+
+Yes, you have several options.
+
+### Local hosting
+You can host the Sigasi Studio documentation locally in your environment.
+Follow the steps from {{< page "tech/local_hosting" >}}.
+
+### PDF
+We have created a single-page version of the [Manual pages]({{< ref "manual" >}}).
+This page is ideal for saving or printing to a PDF.
+Visit and save or print the page {{< page "singlepagemanual" >}}.
+
 # Licensing
 
 ## Same license for Plugin and Standalone
