@@ -484,7 +484,7 @@ If you're using an older version of Sigasi Studio, you can try the following:
 
 ## Where can I find the log file?
 
-Sigasi logs all internal errors to a log file. You can find this file in: `workspaceSigasi/.metadata/.log` This file is also reachable in Sigasi Studio itself via **Help > Sigasi > Open log**
+Sigasi logs all internal errors to a log file. You can find this file in: `workspaceSigasi/.metadata/.log` This file is also reachable in Sigasi Studio itself via **Help > Open log**
 
 The log file contains no sensitive information about your organization. On some occasions, the Sigasi Team may suggest to send them the log file to debug or improve the product. However, the option to do so or not remains yours.
 
