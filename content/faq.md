@@ -470,7 +470,7 @@ Floating licenses also require a MAC address, but this needs to be the MAC addre
 
 ## The internal web browser does not work on Linux
 
-Sigasi uses your system's native browser to display html content.
+Sigasi uses your system's native browser to display graphics and html content.
 When Sigasi's default settings do not work on your Linux system,
 make sure the `webkitgtk` package is installed (`yum install webkit2gtk`).
 You might have to install the `webkitgtk3` package if you're on GTK3 (`yum install webkit2gtk3`).
