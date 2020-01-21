@@ -50,7 +50,7 @@ Although these preview releases are less rigorously tested than than the officia
 * Sensitivity list linting check: Enable signals in clock conditions (`rising_edge(clock) and enable = '1'`) are not required in the sensitivity list.
 * [VHDL] Export CSV file: Packages were missing from the exported CSV if they were only used in the entity, and not in the architecture.
 * UI bug with `` `ifndef`` guard: When there was more than one level of including a file that uses include guarding, the code is incorrectly marked as disabled.
-
+* Fixed highlighting in light weight editors (for huge source files)
 
 # Update or install?
 
