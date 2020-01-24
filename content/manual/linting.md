@@ -452,20 +452,26 @@ Examples:
 
 ## Naming Conventions per project
 
-While [Naming Conventions](#naming-conventions) can be configured
-globally for a workspace, they can also be defined per project.
-The project-specific Naming Conventions are stored in this settings file:
-
+While [Naming Conventions](#naming-conventions) and the [Header Comment check](#check-header-comment) can be configured
+globally for a workspace, they can also be defined per project, per folder or per file.
+The project-specific Naming Conventions and Header Comment are stored in this settings file for VHDL related settings:
 ```text
     ${project location}/.settings/com.sigasi.hdt.vhdl.linting.prefs
 ```
 
-The validation ID for Naming Conventions is *92*.
-Therefore all lines that configure Naming Conventions should start
-with *92* and are of this format:
+For (System)Verilog related settings, this settings file is used:
+```text
+    ${project location}/.settings/com.sigasi.hdt.verilog.linting.prefs
+```
+
+The validation ID for Naming Conventions is *92*. The validation ID for the Header Comment is *188*.
+
+### Syntax for Naming conventions
+
+All lines that configure Naming Conventions should start with *92* and are of this format:
 
 ```text
-    92/params/${identifier}/${lib}=${convention}
+    92/params/${identifier}/${path}=${convention}
 ```
 
 Valid `${identifier}` values are:
@@ -486,22 +492,38 @@ Valid `${identifier}` values are:
     variable_name
 ```
 
-Naming Conventions can be restricted to a specific library using `${lib}`.
+Naming Conventions can be restricted to a specific file or folder using `${path}`.
 Possible values are:
 
 * `<project>` (literally, with brackets!) to set Naming Conventions for the entire project
-* the library name to which the Naming Convention should apply
+* the folder name to which the Naming Convention should apply
+* the full path of the file to which the Naming Convention should apply
 
 The pattern that defines the Naming Convention is set in `${convention}`.
 Patterns are configured with [Java regex syntax][JavaRegexSyntax].
 
 Naming Conventions for a project and setting the severity of the linting checks
-are configured in the same settings file. Examples:
+are configured in the same settings file.
+
+### Syntax for Header Comment
+
+Lines that configure the Header Comment should start with *188* and are of this format:
+
+```text
+    188/params/comment_header/${path}=${convention}
+```
+
+The meaning of `${path}` and `${convention}` is equal to the definitions for Naming Conventions.
+
+### Examples:
 
 ```text
     92/severity/<project>=INFO
     92/params/constant_name/<project>=c_.*
-    92/params/entity_name/my_lib=e_([A-Z_0-9])*
+    92/params/entity_name/my_folder=e_([A-Z_0-9])*
+    188/severity/<project>=WARNING
+    188/params/comment_header//<project>=-- Project specific header comment\r?\n-- Second line
+    188/params/comment_header//my_folder=-- Folder specific header comment
 ```
 
 Errors in the patterns will be reported in the log file: **Help > Open Log**.
