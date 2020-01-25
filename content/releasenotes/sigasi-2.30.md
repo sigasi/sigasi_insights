@@ -19,7 +19,7 @@ export to both views.
 We improved the automatic layout of the state machine view. Edges now
 have bend points, which minimize crossing edges and overlapping labels.
 
-![State machine view (Before and after)](/img/releasenotes/2.30/statemachines.png "State machine view (Before and after)")
+![State machine view (Before and after)](/img/releasenotes/2.30/statemachines.png "State machine view \(Before and after\)")
 
 ### Block Diagram View
 
@@ -38,7 +38,7 @@ you save a your file.
 Both state machines and block diagrams can now be exported to [scalable vector graphics (SVG)](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) This enables you to use high quality images to your (printed) documentation.
 It also allows you to do some post-processing of the graphical properties.
 
-[Example file](/releasenotes/2.30/example.svg)
+[Example file](/img/releasenotes/2.30/example.svg)
 
 
 ## New Rule checks \[VHDL, Premium Desktop\]
