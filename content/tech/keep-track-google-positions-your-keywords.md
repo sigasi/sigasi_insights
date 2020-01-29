@@ -17,7 +17,7 @@ As a small EDA startup that sells its software via Internet, it is of upmost imp
 
 ## But how can we keep track of the result of our SEO efforts?
 
-Of course, the number of trials and sales remain the most important metrics. But I also wanted to easily keep track of the search position of individual keywords. To that purpose I combined some scripts to visualize the position of the keywords we optimize for. I customized the <a href="http://www.geekology.co.za/opinion/2009/02/python-script-to-check-google-rankings-for-domain-and-search-term/">rankcheck script of Willem van Zyl</a> to get the Google search position and combined it with the <a href="http://danvk.org/dygraphs/">dygraph library from Dan Vanderkam</a> to visualize the results. 
+Of course, the number of trials and sales remain the most important metrics. But I also wanted to easily keep track of the search position of individual keywords. To that purpose I combined some scripts to visualize the position of the keywords we optimize for. I customized the <a href="http://www.geekology.co.za/opinion/2009/02/python-script-to-check-google-rankings-for-domain-and-search-term/">rankcheck script of Willem van Zyl</a> to get the Google search position and combined it with the <a href="http://dygraphs.com/">dygraph library from Dan Vanderkam</a> to visualize the results. 
 
 ## Example
 

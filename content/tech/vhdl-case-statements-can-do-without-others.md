@@ -48,7 +48,6 @@ I did not try *all possible settings* on *all possible synthesis tools*. If you 
 ## Update: Precision Synthesis uses "others"
 
 On [StackExchange](http://electronics.stackexchange.com/questions/21317/vhdl-synthesis-optimization-counters-in-statemachines/21318#21318), David Kessner explains that the Precision Synthesis (Mentor Graphics) does in fact use the `others` part to recover from illegal states. 
-Check out [the manual](http://courses.engr.illinois.edu/ece412/references/precision/precisionRTL_style.pdf) on page 210.
 
 One could argue about the desired behavior for synthesis tools: jump to the reset state, or jump to a separately declared `others` state. In any case, this is only useful for very specific designs, like safety critical radiation hardened systems.
 
