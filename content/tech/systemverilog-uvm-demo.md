@@ -4,6 +4,7 @@ layout: page
 pager: true
 author: Hendrik Eeckhaut
 date: 2017-12-06
+lastmod: 2020-01-31
 tags: 
   - Sigasi Studio
   - SystemVerilog
@@ -12,11 +13,11 @@ comments: true
 bannerad: true
 ---
 
-[Setting up a regular SystemVerilog project in Sigasi Studio is easy](/tech/systemverilog-project-demo). As UVM, the [Universal Verification Methodology](https://en.wikipedia.org/wiki/Universal_Verification_Methodology), complicates everything, it also complicates project setup in Sigasi Studio. In this blog post I will demonstrate how to use UVM in a Sigasi project.
+[Setting up a regular SystemVerilog project in Sigasi Studio is easy](/tech/systemverilog-project-demo). While UVM, the [Universal Verification Methodology](https://en.wikipedia.org/wiki/Universal_Verification_Methodology), complicates everything, Sigasi Studio simplifies that set up. In this blog post I will demonstrate how to use UVM in a Sigasi project.
 
 As an example I will show how to open the UBUS project that is shipped with the [reference implementation of UVM](http://www.accellera.org/downloads/standards/uvm) in Sigasi Studio.
 
-The procedure consists of 9 simple steps:
+The procedure consists of 10 simple steps:
 
 1. Download the [reference implementation of UVM](http://www.accellera.org/images/downloads/standards/uvm/uvm-1.2.tar.gz)
 1. Unpack the sources on your disk (e.g. to `/Users/heeckhau/demo/uvm-1.2`)
