@@ -6,7 +6,7 @@ author: Jan Decaluwe
 date: 2011-09-19
 tags: 
   - JanHDL
-  - verilog
+  - Verilog
 comments: true
 bannerad: true
 ---

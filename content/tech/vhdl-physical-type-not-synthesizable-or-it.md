@@ -8,7 +8,7 @@ tags:
   - Altera
   - mythbuster
   - VHDL
-  - VHDL synthesis
+  - synthesis
   - rtl
 comments: true
 bannerad: true

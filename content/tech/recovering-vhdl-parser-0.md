@@ -5,9 +5,9 @@ pager: true
 author: Philippe Faes
 date: 2012-09-21
 tags: 
-  - recovering VHDL parser
-  - VHDL compiler
-  - VHDL Parser
+  - recovering parser
+  - compiler
+  - VHDL
 comments: true
 bannerad: true
 ---

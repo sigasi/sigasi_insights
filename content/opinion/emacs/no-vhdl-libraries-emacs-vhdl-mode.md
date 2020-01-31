@@ -7,7 +7,7 @@ date: 2011-05-26
 tags: 
   - Emacs
   - VHDL
-  - VHDL Libraries
+  - Libraries
 comments: true
 bannerad: true
 ---

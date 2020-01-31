@@ -6,7 +6,7 @@ author: Philippe Faes
 date: 2009-09-30
 tags: 
   - VHDL
-  - VHDL code
+  - code
 comments: true
 bannerad: true
 ---

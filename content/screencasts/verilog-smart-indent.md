@@ -6,7 +6,7 @@ date: 2016-01-15
 comments: false
 videoid: 3y3d6y8r3l
 tags:
-  - verilog
+  - Verilog
   - SystemVerilog
   - indent
   - editor

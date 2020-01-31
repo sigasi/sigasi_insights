@@ -7,7 +7,8 @@ date: 2012-08-25
 tags: 
   - collaboration
   - project management
-  - VHDL IDE
+  - VHDL
+  - IDE
 comments: true
 bannerad: true
 ---

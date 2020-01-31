@@ -6,7 +6,8 @@ author: Philippe Faes
 date: 2012-10-10
 tags: 
   - GHDL
-  - VHDL simulator
+  - VHDL
+  - simulator
 comments: true
 bannerad: true
 ---

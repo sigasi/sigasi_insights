@@ -6,7 +6,7 @@ author: Philippe Faes
 date: 2012-09-12
 tags: 
   - eetimes
-  - VHDL IDE
+  - VHDL
   - IDE
 comments: true
 bannerad: true

@@ -8,7 +8,7 @@ tags:
   - eclipse
   - IDE
   - VHDL
-  - VHDL IDE
+  - IDE
   - whitepaper
 comments: true
 bannerad: true

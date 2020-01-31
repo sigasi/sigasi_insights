@@ -6,7 +6,7 @@ author: Philippe Faes
 date: 2011-07-04
 tags: 
   - VHDL
-  - VHDL syntax
+  - syntax
 comments: true
 bannerad: true
 ---

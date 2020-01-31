@@ -7,7 +7,7 @@ date: 2012-04-09
 tags: 
   - coding guidelines
   - rtl
-  - VHDL synthesis
+  - synthesis
   - VHDL
 comments: true
 bannerad: true
