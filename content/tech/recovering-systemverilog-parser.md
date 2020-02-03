@@ -30,7 +30,7 @@ If you have a tool at your disposal that instantaneously highlights errors, the 
 
 ## Our solution
 
-{{< figure src="/img/tech/recovering-sv.png" link="/img/tech/recovering-sv.png" width="400" class="uk-align-right" >}}
+{{< figure src="/img/tech/recovering-sv-thumb.png" link="/img/tech/recovering-sv.png" width="400" class="uk-align-right" >}}
 
 The recovering parser developed by Sigasi allows to compile your code while it is broken.
 Sigasi Studio is compiling your code in the background at type-time, and you receive immediate feedback on syntax errors while you enter code.
