@@ -18,7 +18,7 @@ The system requirements states that you need Windows, but fortunately I got it w
 
 # Install Altera tools
 
-The Altera Quartus 10.1 installation was slow because of the huge 6GB download but it finished without issues; no [special tricks](http://fpga4u.epfl.ch/wiki/Install_Quartus_II) that were required for earlier versions.
+The Altera Quartus 10.1 installation was slow because of the huge 6GB download but it finished without issues; no [special tricks](http://fpga4u.epfl.ch/wiki/Install_Quartus_II.html) that were required for earlier versions.
 
 If your Linux machine has SE Linux enabled, run:
 ```bash

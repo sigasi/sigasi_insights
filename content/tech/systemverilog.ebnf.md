@@ -15,7 +15,7 @@ The IEEE Standards publication(s) ("Document") is approved by the IEEE Standards
 
 IEEE owns the copyright to this Document in all forms of media. Copyright in the text retrieved, displayed or output from this Document is owned by IEEE and is protected by the copyright laws of the United States and by international treaties. IEEE reserves all rights not expressly granted.  
 
-Get the full Language Reference Manual, free of charge, at <http://standards.ieee.org/getieee/1800/download/1800-2012.pdf>
+Get the full Language Reference Manual, free of charge, at <https://ieeexplore.ieee.org/document/6469140>
 
 Sigasi has created this browsable version of the grammar, hoping that it would be useful to you, but without any warranty whatsoever.
 

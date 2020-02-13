@@ -11,7 +11,7 @@ bannerad: true
 ---
 
 
-By default Xtext generates its [own ecore model](http://www.eclipse.org/Xtext/documentation/1_0_1/xtext.html#model_metamodel) from your grammar.  The [rules](http://www.eclipse.org/Xtext/documentation/1_0_1/xtext.html#metamodelInference) governing this process are not extremely complex but still can interact in surprising ways.  Such interaction for example exists when you include "alternative" grammar rules like:
+By default Xtext generates its [own ecore model](https://wiki.eclipse.org/Ecore) from your grammar.  The rules governing this process are not extremely complex but still can interact in surprising ways.  Such interaction for example exists when you include "alternative" grammar rules like:
 ```
 SuperType: DerivedTypeA | DerivedTypeB;
 ```

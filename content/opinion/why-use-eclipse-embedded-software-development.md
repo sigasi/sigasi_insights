@@ -16,4 +16,3 @@ Eclipse can provide the ideal development environment for tons of different lang
 
 The Seminar will take place on March 30, 2010 in Eindhoven, The Netherlands.
 
-<http://www.dspvalley.com/upload/event/eclipse/index.html>

@@ -23,4 +23,4 @@ We used [Xtend](http://www.eclipse.org/xtend) to generate VHDL-code from the sta
 1. Download [Eclipse for RCP and RAP Developers](http://www.eclipse.org/downloads) (These containt the PDE plugins)
 2. Download Xtend 2.0.1 as an offlline update site from <http://www.eclipse.org/modeling/tmf/downloads/>
 3. Start Eclilpse and install Xtend from the offline update site
-4. Install Yakindu from <http://updates.yakindu.com/indigo/milestones>
+4. Install Yakindu from https://info.itemis.com/state-machine/download-yakindu-statechart-tools
