@@ -26,7 +26,7 @@ Technical documentation helps end users to gain insight about using the product,
 There are many benefits of extracting documentation from software code:
 
 * It provides all the information important to the person using the software.
-* Enhance the clarity of your source code. \[[ref](http://www.ptlogica.com/TwinText/)\]
+* Enhance the clarity of your source code. \[[ref](http://helpmaster.info/hh-authoringtools-twintext.htm)\]
 * Make your code easier to use and maintain.
 * Creating documentation directly from your code gives you a complementary high-level view that helps you and your peers while coding and at maintenance / refactor time. 
 * Extracting the documentation directly from the sources makes it easier to keep the documentation consistent with the source code.

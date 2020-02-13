@@ -30,6 +30,12 @@ We are using markdown with [Hugo].
 * Internal link: `[text]({{< ref "/manual/demo" >}})`
   * title as text: `{{< page "manual/demo" >}}`
 * Link with link text: `<https://www.sigasi.com>`
+* Link with reference:
+```
+   [text][reference]
+   ...
+   [reference]: https://example.com
+```
 
 ### Filenames
 

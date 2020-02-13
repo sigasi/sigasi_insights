@@ -13,7 +13,7 @@ comments: true
 bannerad: true
 ---
 
-Since the release of Eclipse 3.6 it’s been possible [to open files in Eclipse from the command line](http://download.eclipse.org/eclipse/downloads/drops/R-3.6-201006080911/eclipse-news-part1.html#Platform). There are [a](http://aniefer.blogspot.com/2010/05/opening-files-in-eclipse-from-command.html) [few](http://dsdp.eclipse.org/help/latest/index.jsp?topic=/org.eclipse.platform.doc.isv/guide/product_open_file.htm) [blogs](http://wiki.eclipse.org/Eclipse/OpenFileFeature) that explain in great detail how this feature can be implemented.  I however would like to show you the simplest way to make use of this feature in your RCP application.
+Since the release of Eclipse 3.6 it’s been possible [to open files in Eclipse from the command line](http://download.eclipse.org/eclipse/downloads/drops/R-3.6-201006080911/eclipse-news-part1.html#Platform). There are [a few](http://aniefer.blogspot.com/2010/05/opening-files-in-eclipse-from-command.html) [blogs](http://wiki.eclipse.org/Eclipse/OpenFileFeature) that explain in great detail how this feature can be implemented.  I however would like to show you the simplest way to make use of this feature in your RCP application.
 
 My goal is to be able to write `./myapplication the_path_to/afile.txt` on the command line to open a file in my Eclipse application. We can achieve this quickly if the entrypoint of your application extends the `IDEApplication` class. Unfortunately `IDEApplication` is not a part of the public Eclipse API, it’s a class in an internal package. I use it to get things working without having to write pages of code, you can replace it later with your own implementation.
 

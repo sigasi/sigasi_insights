@@ -14,7 +14,7 @@ Somebody asked me why we had build our Sigasi VHDL plugin on top of Eclipse. The
 
 ## 1. Familiar environment for software developers
 
-If you have been developing some serious software, you're probably used to the look and feel of an Integrated Development Environment (IDE). Even the embedded software market is shifting towards Eclipse. Both [Altera](http://www.altera.com/devices/processor/nios2/tools/ni2-development_tools.html) and [Xilinx](http://www.xilinx.com/tools/platform.htm) have an embedded software kit based on Eclipse.
+If you have been developing some serious software, you're probably used to the look and feel of an Integrated Development Environment (IDE). Even the embedded software market is shifting towards Eclipse. Both [Altera](http://www.altera.com/devices/processor/nios2/tools/ni2-development_tools.html) and [Xilinx](https://www.xilinx.com/products/design-tools/software-zone.html) have an embedded software kit based on Eclipse.
 
 ## 2. Translation for the basic infrastructure is provided
 

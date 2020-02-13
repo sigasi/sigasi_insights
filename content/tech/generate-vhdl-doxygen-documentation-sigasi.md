@@ -21,7 +21,7 @@ sync with the design...*
 
 **Doxygen** tries to make the documentation process easier. It extracts
 information from your VHDL source files to generate documentation. If
-you annotate your source files with [special comments](http://www.stack.nl/~dimitri/doxygen/docblocks.html#vhdlblocks),
+you annotate your source files with [special comments][doxyvhdlblocks],
 this documentation can give a nice extra view on your code. A large
 advantage is that there is only a **single source** for both your design
 and your documentation. While this gives no guarantee for the design
@@ -44,8 +44,8 @@ itself on your system.
 
 ## Doxygen
 
-To install Doxygen on your system, visit <http://www.doxygen.org> and
-[download the distribution for your system](http://www.stack.nl/~dimitri/doxygen/download.html#latestsrc) or
+To install Doxygen on your system, visit [The Doxygen website][doxysite] and
+[download the distribution for your system][doxydownload] or
 install it with your favorite package manager. You should also install
 [dot](http://www.graphviz.org/) if you want nice looking graphs.
 
@@ -113,19 +113,24 @@ comments.
 ## Add doxygen comments to your design files
 
 To really document your source with Doxygen you need to add special
-[code comments](http://www.stack.nl/~dimitri/doxygen/docblocks.html#vhdlblocks).
+[code comments][doxyvhdlblocks].
 Instead of regular VHDL comments (`-- ...`), you have to use
 doxygen VHDL comments (`--! ...`). You have to place your
 comments in front of the item that you want to document. The only
 exceptions are ports and generics. You can document these with a
 one-line description on the same line.
 
-You can [download the VHDL source of an example Sigasi here](/resources/tech/doxygen-sigasi.zip). For more details consult the [Doxygen manual](http://www.stack.nl/~dimitri/doxygen/manual.html).
+You can [download the VHDL source of an example Sigasi here](/resources/tech/doxygen-sigasi.zip). For more details consult the [Doxygen manual][doxymanual].
 
 # Useful links
 
--   [Doxygen](http://www.doxygen.org)
--   [Doxygen manual](http://www.doxygen.org/manual.html)
+-   [Doxygen][doxysite]
+-   [Doxygen manual][doxymanual]
 -   [Eclox](https://anb0s.github.io/eclox/) : a simple doxygen frontend plug-in for eclipse
 -   Update site: <http://anb0s.github.io/eclox>
 -   [VHDL sources for the example](/resources/tech/doxygen-sigasi.zip)
+
+[doxysite]: http://www.doxygen.nl/
+[doxymanual]: http://www.doxygen.nl/manual/index.html
+[doxydownload]: http://www.doxygen.nl/download.html
+[doxyvhdlblocks]: http://www.doxygen.nl/manual/docblocks.html#vhdlblocks

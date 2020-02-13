@@ -123,5 +123,5 @@ Finally I would like to thank Lieven, Hendrik and Philippe at Sigasi one last ti
 [output file]: /img/opinion/thesis-winand/result_file.png
 [GUI]: /img/opinion/thesis-winand/gui.png
 [overview]: /img/opinion/thesis-winand/overview_color.png
-[vunit]: https://www.vunit.github.io/documentation
+[vunit]: https://vunit.github.io/documentation
 [thesis]: https://github.com/WinandS/Thesis

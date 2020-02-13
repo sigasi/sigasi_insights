@@ -30,8 +30,7 @@ technical people, who need to know [exactly how the system
 works](http://www.igcseict.info/theory/8/docs/index.html).
 
 In other words, Technical documentation is quite simply the compilation
-of documents which aim to [describe a technical
-product](http://www.tetras.sk/en/stranka/what-is-technical-documentation).
+of documents which aim to describe a technical product.
 Technical documentation is characterised by its systematic and
 structured framework.
 

@@ -23,7 +23,7 @@ But if you are really used to the Notepad++ behaviour, you might also consider t
 ## Install Glance plugin
 
 * Click **Help > Install new Software...**
-* Enter <http://eclipse-glance.googlecode.com/svn/site/> as update site  
+* Enter http://download.eclipse.org/e4/snapshots/org.eclipse.e4.ui as update site  
   and select **Glance > Glance core** 
   ![](/img/tech/glance_install.png)
 * Click **Next >** (twice), accept the license and **Finish**
