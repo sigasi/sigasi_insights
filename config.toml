@@ -21,3 +21,8 @@ pygmentsUseClasses = "true"
 [taxonomies]
   tag = "tags"
 
+[markup]
+  [markup.tableOfContents]
+    endlevel = 2
+    ordered = false
+    startLevel = 1
