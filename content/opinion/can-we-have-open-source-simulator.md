@@ -11,7 +11,7 @@ comments: true
 bannerad: true
 ---
 
-In my previous post, [why-ghdl-currently-not-good-enough], I talked about GHDL, and why it is not good enough as an open source parser and simulator ([lacking-open-source-vhdl-simulator]). In this post, I talk about possible solutions. I see three options today.
+In my previous post, {{< page "why-ghdl-currently-not-good-enough" >}}, I talked about GHDL, and why it is not good enough as an open source parser and simulator ({{< page "lacking-open-source-vhdl-simulator" >}}). In this post, I talk about possible solutions. I see three options today.
 
 GHDL could become really good and perhaps even great. But in order to achieve this, the GHDL community would need to grow. Perhaps a few students would have to spend a <a href="http://code.google.com/soc/">Summer of Code</a> working on GHDL.
 

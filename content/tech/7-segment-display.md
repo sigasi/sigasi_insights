@@ -11,7 +11,7 @@ comments: true
 bannerad: true
 ---
 
-A few weeks ago, a <a href="http://hes.elis.ugent.be/pbertels">friend of mine</a> talked about using a <a href="http://en.wikipedia.org/wiki/Seven-segment_display">seven-segment display</a> in a VHDL lab in <a href="http://www.ugent.be">his university</a>.
+A few weeks ago, a friend of mine talked about using a <a href="http://en.wikipedia.org/wiki/Seven-segment_display">seven-segment display</a> in a VHDL lab in <a href="http://www.ugent.be">his university</a>.
 
 Of course, he wanted his students to simulate before they synthesize. I thought it would be nice to have a module that can emulate a this a seven-segment display as ASCII-art.
 

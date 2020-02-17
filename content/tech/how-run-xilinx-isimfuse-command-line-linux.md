@@ -13,7 +13,7 @@ bannerad: true
 
 
 Xilinx no longer ships
-<a href="http://www.xilinx.com/products/ipcenter/ModelSim.htm">ModelSim</a>
+<a href="https://en.wikipedia.org/wiki/ModelSim">ModelSim</a>
 with ISE but now ships its own HDL simulator that enables functional and
 timing simulations for VHDL, Verilog and mixed VHDL/Verilog designs:
 <a href="http://www.xilinx.com/products/design_tools/logic_design/verification/ise_simulator_faq.htm">ISim</a>.

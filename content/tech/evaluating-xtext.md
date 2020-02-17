@@ -13,7 +13,7 @@ bannerad: true
 
 ## Sven's talk
 
-About a month ago, Hendrik invited the Sven Efftinge, the project lead of [Xtext](http://www.eclipse.org/Xtext) to talk at a meeting of the <a href="http://www.peopleware.be/index.php/nieuws/84-belgian-eclipse-user-group-augustus-2010" class="elf-external elf-icon">Belgian Eclipse User Group</a>. While I was in Milan for the FPL conference, Sven inspired the Belgians Eclipse scene.
+About a month ago, Hendrik invited the Sven Efftinge, the project lead of [Xtext](http://www.eclipse.org/Xtext) to talk at a meeting of the **Belgian Eclipse User Group**. While I was in Milan for the FPL conference, Sven inspired the Belgians Eclipse scene.
 
 {{< figure src="/img/tech/xtext.png" class="uk-align-right" >}}
 

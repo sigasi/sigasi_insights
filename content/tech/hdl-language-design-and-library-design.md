@@ -16,7 +16,7 @@ bannerad: true
 
 ## Assertions and Constrained Random
 
-Last week, I went to the <a href="http://www.socverification.be/public/symposium/">closing symposium</a> of the <a href="http://www.socverification.be">SoC Verification</a> project, where I was invited to talk about the [Code Review](/tech/code-review) process for hardware designers.
+Last week, I went to the closing symposium of the **SoC Verification** project, where I was invited to talk about the [Code Review](/tech/code-review) process for hardware designers.
 
 We heard some interesting technical talks on <strong>constrained random</strong> and coverage driven verification in <a href="http://www.systemc.org">SystemC</a>. SystemC has a set of library classes and methods that allow users to define constraints on the input parameters of a device under test.
 
@@ -53,7 +53,7 @@ As a result of these complex languages, the barrier of entry for new tool vendor
 
 So what would an Ideal World look like? In an ideal world, the <a href="http://en.wikipedia.org/wiki/Lingua_franca">lingua franca</a> of hardware design would be easy to understand for man and for machine. This means: easy to learn, easy to type and easy re-implement. From that language, each may implement their own extensions, preferably as libraries or as preprocessor steps, not requiring any change of the fundamental grammar or compiler. While the accepted linguae francae (VHDL and Verilog) are far to complex to be ideal candidates, there are some good examples of "extensions" to these languages.
 
-A nice example of a library that enhances the functionality of VHDL is the Open Verification Library, mentioned earlier. Another example is the <a href="http://www.easics.com/webtools/freesics">Freesics</a> package, which enhances the I/O capabilities of VHDL.
+A nice example of a library that enhances the functionality of VHDL is the Open Verification Library, mentioned earlier. Another example is the <a href="https://www.easics.com/products/freesics">Freesics</a> package, which enhances the I/O capabilities of VHDL.
 
 Most newly designed hardware description languages do have their own simulator, but they do not have their own synthesizer that generates net lists. As an example, <a href="http://myhdl.org">MyHDL</a>, built on top of the <a href="http://www.python.org">Python</a> core, simulates as a Python script and has a functionality to generate both Verilog and VHDL entities for further processing.
 

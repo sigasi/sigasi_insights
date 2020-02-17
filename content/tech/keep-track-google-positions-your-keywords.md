@@ -97,7 +97,7 @@ I also added check-boxes so that you can easily look at the trend of a custom se
 
 ## How it is done
 
-Every night a server at Sigasi runs the attached cron-script (`cron.sh`) that gets the Google position for the specified keywords and updates the graph. The easiest way to run this script is to use <a href="http://en.wikipedia.org/wiki/Cron">cron</a>. I however re-used our <a href="http://hudson-ci.org/">Hudson</a> installation, because I find it easier to verify the script keeps on running flawlessly.
+Every night a server at Sigasi runs the attached cron-script (`cron.sh`) that gets the Google position for the specified keywords and updates the graph. The easiest way to run this script is to use <a href="http://en.wikipedia.org/wiki/Cron">cron</a>. I however re-used our <a href="https://en.wikipedia.org/wiki/Hudson_(software)">Hudson</a> installation, because I find it easier to verify the script keeps on running flawlessly.
 
 This is what `cron.sh` does:
 
