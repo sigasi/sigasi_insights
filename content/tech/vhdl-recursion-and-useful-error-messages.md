@@ -60,7 +60,7 @@ The simulator has terminated in an unexpected manner.  Please review the ISim lo
 So, let's look at isim.log, then. Oh no, that <em>was</em> isim.log! I expect you'd agree: there is ample room for improvement in the error messages.
 
 ## Call to action
-But according to the <a href="http://www.jongordon.com/thenocomplainingrule.html">No Complaining Rule</a>, only constructive complaints are allowed. So, here is a way for you to help me solve this.
+But according to the <a href="http://jongordon.com/books/no-complaining-rule/">No Complaining Rule</a>, only constructive complaints are allowed. So, here is a way for you to help me solve this.
 
 If you run in to cryptic error messages like this, please <em>report them to your tool vendor</em>. It is your right and your duty towards yourself and your fellow hardware designers. This is the only way the quality of your tools is going to increase. 
 
