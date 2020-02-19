@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.7)
 layout: page
 pager: true
-date: 2020-01-20
+date: 2020-02-19
 comments: true
 ---
 
@@ -44,13 +44,24 @@ Although these preview releases are less rigorously tested than than the officia
 * \[(System)Verilog] Autocomplete for `__LINE__` and `__FILE__`  
 {{< figure src="/img/releasenotes/4.7/autocomplete_line_file.png" title="Autocomplete for `__LINE__` and `__FILE__`" width="600" >}}
 * The Sigasi Studio update mechanism now uses `https` to access the download servers.
+* Improved the caching infrastructure in Sigasi Studio. We also added user configurable settings to tweak the maximum cache size on disk.
+{{< figure src="/img/releasenotes/4.7/build_cache.png" title="More efficient caching of build results" >}}
+* Add a comment before and after an included region in the preprocessed text.  
+{{< figure src="/img/releasenotes/4.7/include_comment.png" title="Add a comment before and after an included region in the preprocessed text" >}}
+* Generate documentation for SystemVerilog classes.  
+{{< figure src="/img/releasenotes/4.7/sv_classes_doc.png" title="Documentation for SystemVerilog classes" >}}
+* If a variable is used only in statements like `report`, we no longer warn for unread variables.
 
 ## Bug fixes
 
 * Sensitivity list linting check: Enable signals in clock conditions (`rising_edge(clock) and enable = '1'`) are not required in the sensitivity list.
 * [VHDL] Export CSV file: Packages were missing from the exported CSV if they were only used in the entity, and not in the architecture.
 * UI bug with `` `ifndef`` guard: When there was more than one level of including a file that uses include guarding, the code is incorrectly marked as disabled.
-* Fixed highlighting in light weight editors (for huge source files)
+* Fixed highlighting in light weight editors (for huge source files).
+* File encoding setting should be case-insensitive.
+* Clicking links in Documentation leads to blank pages on windows.
+* Launching simulation in GHDL fails (with empty argument error message).
+* Opening the Quick Fix dialog from the problems view is slow.
 
 # Update or install?
 
