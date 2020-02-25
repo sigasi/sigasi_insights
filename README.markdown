@@ -9,9 +9,10 @@ We are using markdown with [Hugo].
 
 * Install: [Hugo]
 * Build `hugo`
-* Test: `hugo server --buildFuture --buildDrafts` to start serving pages locally. The url will be printed in the `hugo` output.
+* Test: `hugo server --buildFuture --buildDrafts --navigateToChanged` to start serving pages locally. The url will be printed in the `hugo` output.
     * Use the `-F` (or `--buildFuture`) option to show posts with dates in the future.
     * Use the `-D` (or `--buildDrafts`) option to show posts with draft status.
+    * Use `--navigateToChanged` to navigate to changed content file on live browser reload
 * Tools:
     * Enable shell autocompletion: `sudo hugo gen autocomlete`
 * Create content based on archetypes:

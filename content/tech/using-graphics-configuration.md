@@ -97,6 +97,7 @@ Following this, we configure the leftover blocks, wires and ports as well as the
 The syntax for a configuration block is as follows: `Type Identifiers { ConfigurationItem* }` where `Type` is `block, wire` or `port`.
 
 The syntax for a ConfigurationItem is as follows: `hide | collapse | color GraphicsColor`. You can discover which colors are available [here]({{< ref "graphics.ebnf.md#GraphicsColor" >}}) or through autocomplete.
+
 Note that the language can not see everything, it can not see blocks, wires or ports that are within another block.
 
 To color our new group, `sampling`, green and hide it's internals we can write `block sampling { color green collapse }`.
