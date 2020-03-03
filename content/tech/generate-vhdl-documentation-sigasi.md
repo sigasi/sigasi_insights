@@ -37,23 +37,23 @@ The new Sigasi Studio documentation generator has following advantages:
 
 [![Live preview](/img/tech/sigasi-docgen-preview.png)](/manual/views#documentation-view)
 
-To get an idea of the output, I generated a [pdf](/resources/tech/documentation.pdf) for a [simple example project](/resources/tech/DocumentationExample.zip):
+To get an idea of the output, I generated a [PDF](/resources/tech/documentation.pdf) for a [simple example project](/resources/tech/DocumentationExample.zip):
 
 [![Example output](/img/tech/sigasi-docgen-pdf.png)](/resources/tech/documentation.pdf)
 
 
 ## How does it work?
 
-Sigasi Studio creates a pdf with your project's documentation in multiple steps:
+Sigasi Studio creates a PDF with your project's documentation in multiple steps:
 
 1. Extract all relevant information (content, comments,...) into an intermediate model
 2. Generate all diagrams
 3. Use templates to convert the result of steps 1. and 2. into a DocBook source file. ([DocBook](https://en.wikipedia.org/wiki/DocBook) is a standard for writing technical documentation.)
-4. Convert the DocBook file to a pdf.
+4. Convert the DocBook file to a PDF.
  
 ![](/img/tech/sigasi-docgen.png)
 
-If you have a full {{< xl_doc >}} license, Sigasi Studio also makes the intermediate DocBook file available. This allows you to fully customize the pdf generation. With a custom DocBook→pdf-flow, you could for example apply your company's colors, add your and logo or append extra sections, etc.
+If you have a full {{< xl_doc >}} license, Sigasi Studio also makes the intermediate DocBook file available. This allows you to fully customize the PDF generation. With a custom DocBook→PDF-flow, you could for example apply your company's colors, add your and logo or append extra sections, etc.
 
 
 ## Future work
@@ -67,4 +67,4 @@ If you have a full {{< xl_doc >}} license, Sigasi Studio also makes the intermed
 ## Conclusion
 
 We developed an easy but powerful alternative for DoxyGen. It is very easy to get started with, and encourages good practices.
-So I invite you to **try this out yourself**. Even with a {{< starter >}} license, you can open the [Documenation Preview View](/manual/views#documentation-view). You can also export a pdf. But this pdf will have a watermark, and the diagrams will be missing.
+So I invite you to **try this out yourself**. Even with a {{< starter >}} license, you can open the [Documenation Preview View](/manual/views#documentation-view). You can also export a PDF. But this PDF will have a watermark, and the diagrams will be missing.

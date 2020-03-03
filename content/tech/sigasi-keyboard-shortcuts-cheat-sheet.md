@@ -15,4 +15,4 @@ bannerad: true
 
 Please refer to the manual page on [Keyboard Shortcuts](/manual/keyshortcuts).
 
-Direct link to a pdf with all [Keyboard Shortcuts](/resources/keyboard-shortcuts.pdf).
+Direct link to a PDF with all [Keyboard Shortcuts](/resources/keyboard-shortcuts.pdf).

@@ -19,10 +19,10 @@ You can export documentation for the **entire project** or a **specific toplevel
 
 The result is saved in the `sigasi-doc` folder in the root of your project.
 
-Since [Sigasi 2.27]({{< ref "sigasi-2.27" >}}) this export also saves the DocBook source code, if you have a {{< xprt >}} license. This enables you to customize the pdf
-generation flow to your liking. Users without a {{< xprt >}} License can also export a pdf, but it will contain a watermark.
+Since [Sigasi 2.27]({{< ref "sigasi-2.27" >}}) this export also saves the DocBook source code, if you have a {{< xprt >}} license. This enables you to customize the PDF
+generation flow to your liking. Users without a {{< xprt >}} License can also export a PDF, but it will contain a watermark.
 
-Since [Sigasi Studio 4.5]({{< ref "/releasenotes/sigasi-4.05" >}}) it is possible to export to HTML directly in addition to the pdf export.
+Since [Sigasi Studio 4.5]({{< ref "/releasenotes/sigasi-4.05" >}}) it is possible to export to HTML directly in addition to the PDF export.
 There are 3 options to export the documentation.
 
 *  Create a HTML document with linked diagrams. All Block Diagrams and State Machine Diagrams are in separate files which are linked from within the HTML document.
@@ -40,7 +40,7 @@ If you have multiple graphics configurations for the same diagrams, the alphabet
 
 ## Customize templates
 
-The templates used for the pdf documentation can be copied and modified in the workspace so that
+The templates used for the PDF documentation can be copied and modified in the workspace so that
 template customizations are not overwritten by updates of Sigasi Studio.
 
 * Create a new folder in the workspace: *<workspace\>/.metadata/sigasi-templates*
