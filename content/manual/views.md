@@ -251,7 +251,7 @@ When you select text in the (System)Verilog editor, the expanded text will be hi
 
 # Class Hierarchy View
 
-{{< xprt_only >}},{{< verilog_only >}}
+{{< xprt_only >}},{{< systemverilog_only >}}
 
 ![](/img/manual/class-hierarchy-view.png)
 
