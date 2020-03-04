@@ -46,7 +46,7 @@ Not all improvements made the deadline for this 4.4 release, so stay tuned.
 {{< figure alt="VHDL blocks in Hierarchy View" src="/img/releasenotes/4.4/osvvm_block_hierarchy.png" title="VHDL blocks in Hierarchy View" link="/img/releasenotes/4.4/osvvm_block_hierarchy.png" >}}
 - SystemVerilog Classes are now shown in the outline
 - Enable "**Show in > Block Diagram**" for ports in port maps of instantiations
-- We now pass the VHDL version to GHDL when starting a simulation from the hierarchy view
+- We now pass the VHDL version to GHDL when starting a simulation from the Hierarchy View
 - Updated Xtext dependency to 2.17.1
 - The stand-alone version of Sigasi Studio is now based on Eclipse 2019-03 (4.11) and is shipped with the OpenJDK Java virtual machine. The plugin version works on Eclipse 4.7.3a and newer (unchanged)
 
@@ -66,7 +66,7 @@ Not all improvements made the deadline for this 4.4 release, so stay tuned.
 - \[VHDL] Sensitivity list quickfix is wrong for array of records
 - \[(System)Verilog] Incorrect placement of errors and warnings in preprocessor view for incorrect macro invocations
 - \[VHDL] Missing dependencies when the current *work* library refers to a library name different from *"work"*
-- \[VHDL] Hierarchy view shows unresolved entity instantiation when no architecture specified in a multi-project setup
+- \[VHDL] Hierarchy View shows unresolved entity instantiation when no architecture specified in a multi-project setup
 - \[(System)Verilog] Multiple, non ansi, port declarations should have the same type
 - \[VHDL] Formatting issue in multi-line assignment (with comments)
 - \[Block Diagram] Error when left clicking on a wire (when nothing else is selected)

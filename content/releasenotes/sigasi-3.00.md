@@ -81,8 +81,8 @@ This results in major improvements in how we can offer you (System)Verilog suppo
 ### Other new and noteworthy improvements
 
 * We dropped Eclipse 3 support (new [requirements](/faq#what-are-the-system-requirements))
-* The Hierarchy and Generics View are now merged. You can now inspect the values of generics and constants directly in the hierarchy view.  
-  ![generics in hierarchy view](/img/releasenotes/3.00/hierarchy-generics.png)
+* The Hierarchy and Generics View are now merged. You can now inspect the values of generics and constants directly in the Hierarchy View.  
+  ![generics in Hierarchy View](/img/releasenotes/3.00/hierarchy-generics.png)
 * Added new, minimalistic perspective for **Sigasi Starter**
 * Added [solarized theme](http://ethanschoonover.com/solarized) for the Sigasi editors (Linux and Mac) 
   ![solarized theme Dark and Light](/img/releasenotes/3.00/solarized-mixed.png)
@@ -139,7 +139,7 @@ Users with a **node-locked license** do not have to perform extra actions.
  
 ## Sigasi 3.0.x point releases
 
-* Sigasi 3.0.1: Use current toplevel in hierarchy view as default for CSV hierarchy export
+* Sigasi 3.0.1: Use current toplevel in Hierarchy View as default for CSV hierarchy export
 * Sigasi 3.0.2: Fixed Talback in simulation plugin
 * Sigasi 3.0.3: Re-enabled 'toggle Verilog markers' action
 * Sigasi 3.0.4: Reverted to FlexNet 11.9 and fixed Licensing issues with Sigasi Pro and Premium floating licenses

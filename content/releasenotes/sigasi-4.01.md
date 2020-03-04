@@ -105,7 +105,7 @@ If you have Sigasi Studio 3 or 4 installed, you can [update](/manual/setup#softw
 
 On September 26th we released Sigasi Studio 4.1.1. This release fixes following reported issues:
 
-* Fixed component instantiations showing up as unresolved in the hierarchy view
+* Fixed component instantiations showing up as unresolved in the Hierarchy View
 * Fixed false positive on the quickfix of a component when the matching verilog module uses vectors
 * Fixed a formatting issue with signal declarations and assignments
 

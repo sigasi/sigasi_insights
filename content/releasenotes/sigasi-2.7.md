@@ -11,7 +11,7 @@ Sigasi in Eclipse.
 Generics view
 -------------
 
-We added a generics view as a companion view to the hierarchy view. This
+We added a generics view as a companion view to the Hierarchy View. This
 new view enables you to inspect the value of generics in your hierarchy.
 Because of Sigasi’s recovering VHDL analyzer, this works even if your
 design is still under construction or completely broken.

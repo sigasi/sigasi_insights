@@ -70,15 +70,15 @@ If you enable the **Link with Editor** icon
 element in the outline view, the corresponding code will be selected in
 the editor.
 
-# Hierarchy view
+# Hierarchy View
 
-The Hierarchy view shows the design hierarchy starting at a selected top level object. To choose a top level, open a file and right-click on an `architecture` (or `entity` or `configuration` or `module`). Then click **Set as Top Level**. Alternatively you can click the **Set Top** button in the hierarchy view to open a hierarchy top level selection dialog. You can use the filter field to quickly search for a certain top level.
+The Hierarchy View shows the design hierarchy starting at a selected top level object. To choose a top level, open a file and right-click on an `architecture` (or `entity` or `configuration` or `module`). Then click **Set as Top Level**. Alternatively you can click the **Set Top** button in the Hierarchy View to open a hierarchy top level selection dialog. You can use the filter field to quickly search for a certain top level.
 
-The hierarchy view automatically refreshes itself when you save your design files. If you have a really large design this could slow you down. You can turn the automatic refresh on and off by toggling the **refresh** button ![](/img/icons/refresh.gif).
+The Hierarchy View automatically refreshes itself when you save your design files. If you have a really large design this could slow you down. You can turn the automatic refresh on and off by toggling the **refresh** button ![](/img/icons/refresh.gif).
 
-To highlight the current selection of the HDL editor in the hierarchy view, enable the **Link with Editor** button ![](/img/icons/linkprojectexplorer.png). If the editor selection is part of the evaluated hierarchy tree, the corresponding hierarchy tree node will be selected.
+To highlight the current selection of the HDL editor in the Hierarchy View, enable the **Link with Editor** button ![](/img/icons/linkprojectexplorer.png). If the editor selection is part of the evaluated hierarchy tree, the corresponding hierarchy tree node will be selected.
 
-The hierarchy view also shows the **generic and constants values** of VHDL components in the hierarchy.
+The Hierarchy View also shows the **generic and constants values** of VHDL components in the hierarchy.
 The internal compiler computes the generics and constants, even if they are passed down through the hierarchy, and even if arithmetic operations are used to define new values. If the value cannot be computed for some reason, the
 Hierarchy View will report the value to be *unknown*.
 
@@ -223,7 +223,7 @@ The **Documentation view** gives you a live preview of the [automatic documentat
 
 {{< xl_only >}}- {{< vhdl_only >}}
 
-With **Net search**, you can you to find *loads* and *drivers* of a net.
+With **Net Search**, you can you to find *loads* and *drivers* of a net.
 A *net* is defined as a signal or port and all other signals and ports
 that are directly connected to it. The *loads* are where you read the
 value of the net and the drivers are where you write to this net.
@@ -255,7 +255,7 @@ When you select text in the (System)Verilog editor, the expanded text will be hi
 
 ![](/img/manual/class-hierarchy-view.png)
 
-The Class Hierarchy view displays more information of the hierarchy of a class. It consists of a hierarchy tree
+The Class Hierarchy View displays more information of the hierarchy of a class. It consists of a hierarchy tree
 and a list of the class members. To open the Class Hierarchy of a class, click the class name, right-click and select **Open Class in Hierarchy** (or press **F4**).
 
 ![](/img/manual/class-hierarchy-open.png)

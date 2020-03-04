@@ -39,8 +39,8 @@ Vsim run button
 
 If vcom integration is enabled, you can now also start a **vsim
 simulation** from Sigasi. You can start a simulation by first selecting
-your top level in the hierarchy view . Next click the Simulate button in
-the hierarchy view to launch the vsim gui with an elaborated design
+your top level in the Hierarchy View . Next click the Simulate button in
+the Hierarchy View to launch the vsim gui with an elaborated design
 ready for simulation.
 
 ![Launch vsim from Sigasi’s Hierarchy View](/img/releasenotes/2.9/vsim_window_a.png "Launch vsim from Sigasi’s Hierarchy View")
@@ -51,7 +51,7 @@ testbench.
 Other new and noteworthy improvements
 -------------------------------------
 
--   The *top level selection selection box* in the hierarchy view is
+-   The *top level selection selection box* in the Hierarchy View is
     replaced with a button that opens a **top level selection dialog**.
     This new dialog allows to type a text search pattern to quickly find
     the top level you are looking for (e.g. `*testbench`)

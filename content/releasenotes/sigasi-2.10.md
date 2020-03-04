@@ -19,7 +19,7 @@ a screencast, [Navigation](/screencasts/navigation), to show how it works.
 Automatic Hierarchy Refresh
 ---------------------------
 
-The hierarchy view now automatically refreshes itself when you save your
+The Hierarchy View now automatically refreshes itself when you save your
 design files. You can turn the automatic refresh on and off by toggling
 the refresh button.
 
@@ -62,7 +62,7 @@ Bugfixes
 -   ticket 2343 : Better recovery for incorrectly edited
     `.library_mapping.xml` files
 -   ticket 2344 : Store the toggle state of the instantiations filter in
-    the hierarchy view when Sigasi is restarted.
+    the Hierarchy View when Sigasi is restarted.
 
 Download/Update
 ---------------

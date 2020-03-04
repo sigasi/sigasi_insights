@@ -49,7 +49,7 @@ may want extra large fonts, so that you can use a beamer and your audience can s
 Most fonts, including the font that is used by the editors, can be controlled in the preferences:
 **Window > Preferences**. Fonts are controlled in **General > Appearance >Colors and Fonts**. The font of the editors are in **Basic > Text font**.
 
-Some fonts cannot be controlled in this preference page. These fonts are defined by general system settings, and are used for writing the menu names, the Project Explorer view and the Outline and Hierarchy views. On
+Some fonts cannot be controlled in this preference page. These fonts are defined by general system settings, and are used for writing the menu names, the Project Explorer View and the Outline and Hierarchy Views. On
 Windows, you can change these fonts by changing your font settings in the Windows Control Panel. On Linux, these fonts are controlled by a settings file: `${HOME}/.gtkrc-2.0` . You can change the font by adding
 a line like:
 

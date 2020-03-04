@@ -67,8 +67,8 @@ This way we could vastly reduce the autocomplete latency, especially for larger 
 
 * Because some of our users did not realize Sigasi Studio is more powerful when you use it on projects, we made some UI changes to clarify this. When an external file is opened, we now show a warning bar at the top of editor to clearly indicate you are missing out on a lot of features  
   ![editing an external file](/img/releasenotes/3.7/external_file_banner.png)
-* Add "Export CSV file with dependencies" feature available as action in the hierarchy view  
-  ![export csv in hierarchy view](/img/releasenotes/3.7/csv_hierarchy.png)
+* Add "Export CSV file with dependencies" feature available as action in the Hierarchy View  
+  ![export csv in Hierarchy View](/img/releasenotes/3.7/csv_hierarchy.png)
 * You can now open the **Dependencies View** via the "Show in" menu in the editor  
   ![show in dependencies](/img/releasenotes/3.7/show_in_dependencies.png)
 * The Riviera-Pro toolchain now has `-dbg` as default option

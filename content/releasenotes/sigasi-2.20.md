@@ -26,7 +26,7 @@ Sigasi Premium
 In addition to the Sigasi Pro features this Sigasi Premium release
 brings:
 
--   Net search (find loads and drivers at RTL code level) \[Update: this
+-   Net Search (find loads and drivers at RTL code level) \[Update: this
     release now takes direct connections inside architectures into
     account\]
 

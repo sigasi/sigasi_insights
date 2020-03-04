@@ -28,7 +28,7 @@ Other new and noteworthy improvements
 -   Improved autocomplete for case statements: also offer template when
     typing case expression
 -   Standalone version: use `<HOME>/workspaceSigasi` by default
--   Show name of instantiated item in outline and hierarchy view (in
+-   Show name of instantiated item in outline and Hierarchy View (in
     addition to label)
 -   Support multi-line assert statements in the formatter
 -   Better hover for aliases
@@ -41,7 +41,7 @@ Bugfixes
 --------
 
 -   ticket 1554 : Hover does not work in template mode
--   ticket 2377 : Performance bug in hierarchy view
+-   ticket 2377 : Performance bug in Hierarchy View
 -   ticket 2421 : Problem with modelsim.ini path on Windows
 -   ticket 2451 : Exception in the CSV exporter
 -   ticket 2452 : Uppercase/lowercase issues in Turkisch locale

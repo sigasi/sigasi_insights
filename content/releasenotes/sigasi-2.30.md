@@ -68,7 +68,7 @@ You can change the severity of this check via **Preferences \> Sigasi \> VHDL \>
 -   Improved library mapping menu:
     ![New Library Mapping menu](/img/releasenotes/2.30/librarymapping-restore-common-libraries.png "New Library Mapping menu")
 -   Ask to add Verilog Support when a Verilog file is opened in a VHDL project (and vice versa)
--   Added action to the hierarchy view to select all files in the selected hierarchy subtree, in the project explorer \[Premium Desktop\]
+-   Added action to the Hierarchy View to select all files in the selected hierarchy subtree, in the project explorer \[Premium Desktop\]
     ![Select all files in selected hierarchy in the Project Explorer](/img/releasenotes/2.30/select-required-files-in-hierarchy.png "Select all files in selected hierarchy in the Project Explorer")
 -   Updated Xtext dependency to [Xtext
     2.8.4](https://projects.eclipse.org/projects/modeling.tmf.xtext/releases/2.8.4)

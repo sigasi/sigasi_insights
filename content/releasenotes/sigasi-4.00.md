@@ -29,7 +29,7 @@ Good news for our loyal XL-DOC users: **existing and valid XL-DOC 3.x license ke
 
 {{< figure src="/img/releasenotes/4.0/xprt.png" alt="Sigasi Studio XPRT license" title="Sigasi Studio XPRT license" link="/img/releasenotes/4.0/xprt.png" >}}
 
-**Update Notes**: We made huge efforts to make the *"3.8→4.0" update* as smooth as always. But in some specific cases, it is possible you'll see an empty editor or a hierarchy view with an error. In that case, follow [these steps](#reset-perspective).
+**Update Notes**: We made huge efforts to make the *"3.8→4.0" update* as smooth as always. But in some specific cases, it is possible you'll see an empty editor or a Hierarchy View with an error. In that case, follow [these steps](#reset-perspective).
 
 # Block Diagrams for SystemVerilog modules
 
@@ -122,7 +122,7 @@ Good news for our loyal XL-DOC users: **existing and valid XL-DOC 3.x license ke
 
 ## Reset perspective
 
-If you see an empty editor or a hierarchy view with an error, follow these steps:
+If you see an empty editor or a Hierarchy View with an error, follow these steps:
 
 * Close all editors
 * Make sure you are in the "Sigasi" perspective: **Window > Perspective > Open Perspective > Other... > Sigasi** and **Open**

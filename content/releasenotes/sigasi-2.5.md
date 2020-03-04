@@ -61,7 +61,7 @@ Other new and noteworthy improvements
 
 ![Information Box](/img/releasenotes/2.5/marketingbox.png "Information Box")
 
--   **Expand all** nodes action in the hierarchy view
+-   **Expand all** nodes action in the Hierarchy View
 
 ![Expand all](/img/releasenotes/2.5/expandall.png "Expand all")
 
@@ -77,7 +77,7 @@ Other new and noteworthy improvements
 
 -   ticket 2062 : \[Hierarchy] unresolved instantiation if entity and
     component are declared in a different VHDL library
--   ticket 2094 : \[Hierarchy] hierarchy view gracefully degrades when
+-   ticket 2094 : \[Hierarchy] Hierarchy View gracefully degrades when
     *automatic build* is disabled
 -   ticket 2078 : \[Vcom] Automatically set VHDL mode (–93, –2002, –2008)
     in external compiler

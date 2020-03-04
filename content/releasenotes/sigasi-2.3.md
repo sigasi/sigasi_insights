@@ -31,9 +31,9 @@ interpreter can not handle all expressions yet. Today, it covers basic
 arithmetic and string operations. This is enough to deal with most,
 common use cases.
 
-"[Hierarchy View](/screencasts/hierarchy_view)" is a short screencast video that shows the **Hierarchy view** in action.
+"[Hierarchy View](/screencasts/hierarchy_view)" is a short screencast video that shows the **Hierarchy View** in action.
 
-**Note** that if you perform an update, the **hierarchy view** will not open by default. The easiest way to enable it is to click **Window \> Reset Perspective…**.
+**Note** that if you perform an update, the **Hierarchy View** will not open by default. The easiest way to enable it is to click **Window \> Reset Perspective…**.
 
 Find and remove unused declarations
 -----------------------------------
@@ -98,7 +98,7 @@ Sigasi 2.3.1
 ============
 
 Sigasi 2.3.1 brings a quick-fix for unused declarations. If your code contains undeclared variables or signals, Sigasi can now **automatically declare them for you**.
-We also further improved the **hierarchy view**, added the official **VHDL 2008 libraries** of IEEE and implemented several improvements and bug fixes.
+We also further improved the **Hierarchy View**, added the official **VHDL 2008 libraries** of IEEE and implemented several improvements and bug fixes.
 
 QuickFix: declare signal/variable
 ---------------------------------
@@ -132,14 +132,14 @@ To use the VHDL 2008 libraries in your project, follow this procedure:
 Hierarchy
 ---------
 
-Thanks to your feedback we further improved the hierarchy view:
+Thanks to your feedback we further improved the Hierarchy View:
 
 ![Hierarchy](/img/releasenotes/2.3/hierarchyview_0.png "Hierarchy")
 
 -   In the context menu we offer the option to navigate to either the
     (instantiation) statement or to the corresponding instantiated
     architecture declaration.
--   Hierarchy view shows the instantiation label.
+-   Hierarchy View shows the instantiation label.
 -   Fixed a few issues.
 
 Other new and noteworthy improvements

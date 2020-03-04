@@ -45,7 +45,7 @@ Usability improvements
     inside for-generates
 -   Better support for *unresolved* nodes in the hierarchy:
     -   Unresolved instantiations are now visible when the
-        instantiations filter is enabled in hierarchy view
+        instantiations filter is enabled in Hierarchy View
     -   Double clicking unresolved instantiations moves your cursor to
         the instantiation location\
         ![Unresolved nodes](/img/releasenotes/2.4/hierarchyuximprovements.png "Unresolved nodes")

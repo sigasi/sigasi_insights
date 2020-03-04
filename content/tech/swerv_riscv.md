@@ -50,7 +50,7 @@ No errors left!
 
 Exploring the hierarchy and block diagrams, I notice this core is a low level implementation with lots of bit twiddling. Unfortunately this project contains RTL code only, no test benches. I did spot some SV assertions though.
 
-![hierarchy view](/img/tech/swerv_riscv/hierarchy.png)
+![Hierarchy View](/img/tech/swerv_riscv/hierarchy.png)
 
 ![Block Diagram](/img/tech/swerv_riscv/block_diagram.png)
 

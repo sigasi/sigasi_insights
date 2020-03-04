@@ -45,7 +45,7 @@ Bugfixes
 
 -   ticket 2488 : Opening Eclipse project from the command line uses the
     folder name instead of project name
--   ticket 2489 : Missing generic in hierarchy view (default value)
+-   ticket 2489 : Missing generic in Hierarchy View (default value)
 -   ticket 2619 : Scoping problem with casting in when clause
 -   ticket 2623 : Expect no hyperlinks in whitespace
 -   ticket 2579 : Vertical align breaks down after “others” clause.

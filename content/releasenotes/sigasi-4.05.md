@@ -72,7 +72,7 @@ The [Split Editor]({{< ref "editor#split-editor" >}}) has been enabled for VHDL 
 - \[(System)Verilog] Reevaluate the Preprocessor property page when *Undo* is used.
 - \[VUnit] Support linked resources in `run.py`
 - \[(System)Verilog] No syntax error for anonymous nested sequential blocks
-- \[VHDL] Net search not showing load when net is used in `if` statement with binary or unary expressions
+- \[VHDL] Net Search not showing load when net is used in `if` statement with binary or unary expressions
 - \[VHDL] VHDL Formatting bug in indexed port map
 - \[(System)Verilog] *Out of Memory* bug evaluating invalid preprocessor code
 - \[(System)Verilog] Find references fails on `` `includes ``
