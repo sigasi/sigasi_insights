@@ -3,7 +3,7 @@ title: "Finite State Machine (FSM) encoding in VHDL: binary, one-hot, and others
 layout: page 
 pager: true
 author: Wim Meeus
-date: 2020-03-05
+date: 2020-03-06
 tags: 
   - VHDL
   - syntax
