@@ -4,6 +4,7 @@ layout: page
 pager: true
 author: Hendrik Eeckhaut
 date: 2011-11-11
+lastmod: 2020-03-09
 tags: 
   - performance
   - memory
@@ -37,6 +38,7 @@ If you use the standalone Sigasi Studio build, open the file named `sigasi.ini` 
 
 Here we can set the **maximum memory usage** using the `-Xmx` option, for example if you want to increase the memory usage to `2.5 GB`, you replace the existing entry with `-Xmx2560m`.
 
+**Note: the below setting is no longer available in recent Java versions**  
 It may also be interesting to add the line `-XX:+UseConcMarkSweepGC`, this option enables a different garbage collector that runs concurrently with the program, it reduces the pause times when a garbage collection is performed.
 
 ## Releasing memory back to the operating system
