@@ -156,3 +156,5 @@ If you are using Mac OS X, most of these keyboard shortcuts use Command instead 
 Keyboard shortcuts can be easily customized via **Preferences > General > Keys**.
 
 This preference page also enables you to select the **Emacs** scheme, for more Emacs-like keyboard shortcuts, or (if you have installed the [UltraEdit key bindings for Eclipse](/tech/ultraedit-key-bindings-eclipse) plugin) the UltraEdit key bindings.
+
+If you're looking for Vi or Emacs keybindings, have a look at {{< page "manual/plugins" >}}.
