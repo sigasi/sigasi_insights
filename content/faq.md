@@ -482,6 +482,7 @@ If you're using an older version of Sigasi Studio, you can try the following:
 *  Refer to the [complete info on the Eclipse website](https://www.eclipse.org/swt/faq.php#browserplatforms).
 
 If you use [Wayland](https://wayland.freedesktop.org/) instead of X11, you might need to set the environment variable `WEBKIT_DISABLE_COMPOSITING_MODE=1`.
+Also `GDK_BACKEND=x11` should not be enabled.
 
 
 ## Where can I find the log file?
