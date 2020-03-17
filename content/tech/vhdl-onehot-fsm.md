@@ -46,7 +46,7 @@ signal state: std_logic_vector(3 downto 0);
         state <= "0001";
 ```
 
-With a **vector type**, the designer has *perfect control of the encoding* of the state vector. However, it is **hard to know what each state means**. And, **changes are cumbersome**. If a state needs to be inserted, the encoding of all further states need to be updated wherever used.
+With a **vector type**, the designer has *perfect control over the encoding* of the state vector. However, it is **hard to know what each state means** and **changes are cumbersome**. If a state needs to be inserted, the encoding of all further states need to be updated wherever used.
 
 With an **enumeration type**, the design becomes much **easier to understand and maintain**:
 
@@ -88,7 +88,7 @@ signal state: t_state;
 
 The `enum_encoding` defines the FSM's state encoding style. 
 Support of enumeration encoding styles **differs between RTL synthesis tools**, so have a look at the manual of yours for supported styles.
-Also, some RTL synthesis tools e.g. Xilinx XST and Synopsys Synplify require additional settings for the enum_encoding attribute to take effect.
+Also, some RTL synthesis tools e.g. Xilinx XST and Synopsys Synplify require additional settings for the `enum_encoding` attribute to take effect.
 
 Alternatively, the state encoding style can be defined at the _signal level_ rather than at the type level.
 The `fsm_state` is used for that purpose.
