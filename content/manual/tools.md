@@ -209,7 +209,7 @@ Sigasi Studio adds following variables for VHDL and (System)Verilog projects:
 | Variable Name           | Description                                                                                                                                     |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | `${library:<argument>}` | Get the library name of `<argument>`. For example, to the get the library of the currently selected resource use `${library:${resource_path}}` |
-| `${vhdl_toplevel}`      | Get the name of the current top level name                                                                                                      |
+| `${sigasi_toplevel}`    | Get the name of the current top level name                                                                                                      |
 
 
 ## Creating a Builder
