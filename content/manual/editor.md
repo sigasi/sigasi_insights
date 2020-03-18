@@ -150,6 +150,8 @@ To edit or create templates, go to **Window > Preferences > Sigasi > VHDL or (Sy
 Here you get an overview of existing templates.
 You can create **New...** templates, **Edit...** existing templates or remove templates.
 
+In the template editor, you can type `${` and press <kbd>Ctrl+Space</kbd> to see a list of the available variables.
+
 Templates can be exported and imported. This is useful for sharing templates with colleagues.
 
 
