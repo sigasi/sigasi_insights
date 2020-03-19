@@ -15,7 +15,7 @@ tags:
   - SystemVerilog
 ---
 
-When you auto-complete an instantiation using the Sigasi Studio [Content Assist]({{< ref "editor#auto-complete-and-content-assist" >}}),
+When you auto-complete an instantiation using the Sigasi Studio [Content Assist]({{< ref "/manual/editor#auto-complete-and-content-assist" >}}),
 wire or signal names in the port map get a default value which is equal to the port name.
 In many designs this can be a insufficient.
 You might need to give the wires/signals in the portmap a prefix so they match the actual wire/signal names in the design.

@@ -478,7 +478,7 @@ You can configure Sigasi Studio to automatically format your VHDL files when you
 
 {{< xprt_only >}}
 
-Since [Sigasi Studio 4.5]({{< ref "/releasenotes/sigasi-4.05" >}}) you can format (System)Verilog and VHDL files without opening them in the editor. Right click a *project*, *folder* or *file* and select **Source > Format**.
+Since [Sigasi Studio 4.5]({{< ref "/releasenotes/sigasi-4.05.md" >}}) you can format (System)Verilog and VHDL files without opening them in the editor. Right click a *project*, *folder* or *file* and select **Source > Format**.
 
 Note that the option is only available for files that are part of the build.
 

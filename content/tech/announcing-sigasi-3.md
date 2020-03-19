@@ -24,6 +24,6 @@ Sigasi Studio Starter now works as a file editor, with the added power of naviga
 
 > Floating license users: **update your FlexLM license server daemon**!
 
-Read the [release notes]({{< ref "sigasi-3.00" >}}) and [update instructions]({{< ref "sigasi-3.00#how-to-update" >}})
+Read the [release notes]({{< ref "/releasenotes/sigasi-3.00.md" >}}) and [update instructions]({{< ref "/releasenotes/sigasi-3.00.md#how-to-update" >}})
 
 For any questions, please contact your local distributor or contact Sigasi directly.

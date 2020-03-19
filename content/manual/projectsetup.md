@@ -30,7 +30,7 @@ root directory of the project, and press **Finish**.
 
 ## 2: Set Libraries (VHDL or Mixed)
 
-Since [Sigasi Studio 4.4]({{< ref "/releasenotes/sigasi-4.04" >}}), Sigasi Studio automatically configures libraries of imported projects, based on project information
+Since [Sigasi Studio 4.4]({{< ref "/releasenotes/sigasi-4.04.md" >}}), Sigasi Studio automatically configures libraries of imported projects, based on project information
 such as `library` and `use` clauses. If you need to customize the library configuration, you can assign different
 libraries to your files and folders. Right-click on a file or folder and select **Library Mapping \> New Library…**.
 Then fill out the correct library name.

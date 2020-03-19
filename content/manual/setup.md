@@ -52,7 +52,7 @@ instructions as explained [here](/faq#i-am-using-redhat-linux-6-how-can-i-run-si
 
 ## Running Sigasi Studio with multiple users on the same server
 
-Starting with [Sigasi Studio 3.8]({{<ref "releasenotes/sigasi-3.08" >}}), the Sigasi launcher listens on port 4444. To avoid conflicts on this port when Sigasi Studio is used on a server with multiple users concurrently, the following changes need to be made:
+Starting with [Sigasi Studio 3.8]({{<ref "/releasenotes/sigasi-3.08.md" >}}), the Sigasi launcher listens on port 4444. To avoid conflicts on this port when Sigasi Studio is used on a server with multiple users concurrently, the following changes need to be made:
 
 * Edit `sigasi/configuration/config.ini` and replace `eclipse.application=com.sigasi.runner.open` with `eclipse.application=org.eclipse.ui.ide.workbench`
 * In `sigasi/sigasi.ini` add following lines between `@noDefault` and `-vmargs`:

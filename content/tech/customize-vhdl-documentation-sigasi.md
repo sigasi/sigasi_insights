@@ -13,7 +13,7 @@ bannerad: true
 draft: true
 ---
 
-Since [Sigasi Studio 2.24]({{< ref "/releasenotes/sigasi-2.24" >}}), Sigasi Studio can automatically generate documentation for your VHDL designs. 
+Since [Sigasi Studio 2.24]({{< ref "/releasenotes/sigasi-2.24.md" >}}), Sigasi Studio can automatically generate documentation for your VHDL designs. 
 This documenation system is really flexible and can be fully customized. In this blog post I explain how you can **customize the layout and type of the output document**.
 
 

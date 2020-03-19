@@ -8,7 +8,7 @@ comments: true
 bannerad: true
 ---
 
-Since [Sigasi Studio 4.5]({{< ref "sigasi-4.05" >}}), it is possible to export your documentation in HTML format.
+Since [Sigasi Studio 4.5]({{< ref "/releasenotes/sigasi-4.05.md" >}}), it is possible to export your documentation in HTML format.
 Exporting to HTML has the benefit that HTML is more flexible than PDF, e.g. for importing and further processing your documentation in Word.
 
 After importing the HTML documentation in Word, you might notice some of the included *Block Diagrams* and *FSM Diagrams* can be very large.

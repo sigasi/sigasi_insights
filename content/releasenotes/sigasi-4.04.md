@@ -15,11 +15,11 @@ The VHDL project importer now has an option "**Auto-configure project**" that ma
 
 # Comment handling changes
 
-Since [Sigasi Studio 3.8]({{< ref "/releasenotes/sigasi-3.08" >}}) Sigasi Studio processes all comments with a [Markdown processor](https://en.wikipedia.org/wiki/Markdown). In general this results in nicer hovers and documentation. However, there is one typical use case in (System)Verilog and VHDL code where this resulted in unwanted markup: In Markdown, lines with `=============` are used for titles; In HDL code they are used as a separators. For that reason we decided to strip these lines from the comments before calculating hovers or documentation.
+Since [Sigasi Studio 3.8]({{< ref "/releasenotes/sigasi-3.08.md" >}}) Sigasi Studio processes all comments with a [Markdown processor](https://en.wikipedia.org/wiki/Markdown). In general this results in nicer hovers and documentation. However, there is one typical use case in (System)Verilog and VHDL code where this resulted in unwanted markup: In Markdown, lines with `=============` are used for titles; In HDL code they are used as a separators. For that reason we decided to strip these lines from the comments before calculating hovers or documentation.
 
 {{< figure alt="No titles in comments" src="/img/releasenotes/4.4/comments_with_separators.png" title="No titles in comments" link="/img/releasenotes/4.4/comments_with_separators.png" >}}
 
-We also changed the way we handle comments in the **header comment** naming convention check. In earlier versions of Sigasi we stripped the comment symbol (`--`) and leading whitespace from the text that was checked. Starting with [Sigasi Studio 4.4]({{< ref "/releasenotes/sigasi-4.04" >}}) the raw string of the header comment is checked to allow for very strict compliance checking.
+We also changed the way we handle comments in the **header comment** naming convention check. In earlier versions of Sigasi we stripped the comment symbol (`--`) and leading whitespace from the text that was checked. Starting with [Sigasi Studio 4.4]({{< ref "/releasenotes/sigasi-4.04.md" >}}) the raw string of the header comment is checked to allow for very strict compliance checking.
 Note that this means that when a new line is matched, users should use `\r?\n` or the newly introduced `\\R` to make sure the naming conventions work on all platforms. ([documentation]({{< ref "/manual/linting#check-header-comment" >}})).
 
 # SystemVerilog Class Hierarchy View

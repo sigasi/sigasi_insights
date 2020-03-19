@@ -38,7 +38,7 @@ The **autocomplete** for preprocessor directives also received some extra love. 
 
 {{< figure src="/img/releasenotes/4.6/preprocessor_autocomplete.png" title="Report output ports that are never assigned" >}}
 
-Because file encoding differences between including and included files can lead to unexpected, very difficult to find bugs, we added a [linting check]({{< ref "linting#list-of-system-verilog-code-rules" >}}). When the file encoding differs we now report a warning.
+Because file encoding differences between including and included files can lead to unexpected, very difficult to find bugs, we added a [linting check]({{< ref "/manual/linting.md#list-of-system-verilog-code-rules" >}}). When the file encoding differs we now report a warning.
 
 {{< figure src="/img/releasenotes/4.6/include_encoding_warning.png" title="No more library mapping for include files" >}}
 
