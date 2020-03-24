@@ -389,7 +389,7 @@ The following stuttering keys are available:
 | --------- | ------------ |
 | **,,**    | `<=`         |
 | **..**    | `=>`         |
-| **::**    | `:=`         |
+| **;;**    | `:=`         |
 
 Stuttering can be disabled or enabled throught the **Enable stuttering** option in the **Window \> Preferences \> Sigasi \> VHDL** menu.
 
