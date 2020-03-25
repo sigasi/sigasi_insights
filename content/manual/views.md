@@ -223,7 +223,7 @@ The **Documentation view** gives you a live preview of the [automatic documentat
 
 {{< xl_only >}}- {{< vhdl_only >}}
 
-With **Net Search**, you can you to find *loads* and *drivers* of a net.
+With **Net Search**, you can find *loads* and *drivers* of a net.
 A *net* is defined as a signal or port and all other signals and ports
 that are directly connected to it. The *loads* are where you read the
 value of the net and the drivers are where you write to this net.
