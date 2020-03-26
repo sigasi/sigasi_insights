@@ -142,7 +142,7 @@ The **Block Diagram View** displays a graphical (block diagram) view
 of all architectures, modules and their instantiations in your current VHDL or SystemVerilog editor.
 VHDL processes are also shown in the block diagram.
 
-This viewer **automatically updates** when you **save** your code and
+This viewer **automatically updates** while you are editing your code and
 gives a convenient way to visually inspect and navigate your code, even
 when your code is still unfinished or broken.
 
