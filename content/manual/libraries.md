@@ -119,7 +119,7 @@ The `Common Libraries` folder behaves like any other folder.
 You can delete it, rename it and apply a different library mapping.
 In most cases, however, the default configuration is just what you need.
 
-## How to add files to Common Libraries ?
+## How to add files to Common Libraries?
 
 In any newly created VHDL project, the `Common Libraries` folder
 contains the VHDL files of the `IEEE` and `STD` libraries.
@@ -127,7 +127,7 @@ To add files to the Common Libraries folder, locate a folder with VHDL files
 on your file system using the Project Explorer or the file explorer of your OS
 and drag the folder with VHDL files to the Common Libraries folder.
 
-## How is Common Libraries different from another folder ?
+## How is Common Libraries different from another folder?
 
 * `Common Libraries` is a *virtual* folder. This means that it is not a real
 folder in the project directory and it can only contain references to folders
@@ -147,16 +147,21 @@ use the "modelsim.ini" file for this.
 
 ## Pre-compile Common Libraries
 
-Xilinx and Intel (Altera) have recommendations on how to pre-compile their
-simulation libraries for use with with third party simulators.
+This section links to various recommendations on to pre-compiling the simulation models of external libraries in the `Common Libraries`, depending on the external compiler.
 
+### Xilinx
 * Recommendations for [Xilinx ISE](https://www.xilinx.com/support/documentation/sw_manuals/xilinx11/pp_p_process_compile_hdl_simulation_libraries.htm)
 
 * Recommendations for [Xilinx Vivado](https://www.xilinx.com/support/answers/64083.html)
 
+### Intel (Altera)
 * [Altera Simulation Libraries](https://www.intel.com/content/www/us/en/programmable/support/support-resources/design-software/max_plus-ii/vdsimlib.html)
 
 * [Example script](https://www.intel.com/content/www/us/en/programmable/support/support-resources/knowledge-base/solutions/rd06182013_21.html) to compile Altera simulation libraries
+
+### GHDL
+
+The GHDL manual documents precompilation of Vendor Primitives [here](https://ghdl.readthedocs.io/en/latest/getting/PrecompileVendorPrimitives.html).
 
 ## What if I broke my Common Libraries folder?
 
