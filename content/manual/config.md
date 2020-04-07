@@ -1,6 +1,7 @@
 ---
 title: Configuring Your Design Environment
-weight: 17
+showinmenu: true
+weight: 19
 pager: true
 ---
 

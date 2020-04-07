@@ -1,23 +1,48 @@
 {{ define "main" }}
 <main>
-  {{ $manualpages := where (where .Site.RegularPages "Section" "manual") "Params.skipoverviewlist" "==" nil }}
+  {{ $manualpages := where (where .Site.RegularPages "Section" "manual") "Params.showinmenu" true }}
   {{ $allmanualpages := where .Site.RegularPages "Section" "manual" }}
   {{ $hiddenmanualpages := where (where .Site.RegularPages "Section" "manual") "Params.skipoverviewlist" "!=" nil }}
+  {{ $manualsection := where .Site.Sections ".Section" "manual"  }}
   <div class="uk-container uk-padding">
     <nav id="chapters" data-toggle="chapters">
+
       <h1>Chapters</h1>
       <ul class="uk-list">
       {{ range $manualpages }}
         <li><a href="#{{ .Title | urlize }}">{{ .Title }}</a></li>
       {{ end }}
       </ul>
+      {{ range $manualsection }}
+      {{ range .Sections }}
+      <h1>{{.Name}}</h1>
+      {{ .Content }}
+      <ul class="uk-list">
+          {{ range .Pages }}
+          <li><a href="#{{ .Title | urlize }}">{{ .Title }}</a></li>
+          {{ end }}
+      </ul>
+      {{ end }}
+      {{ end }}
     </nav>
     {{ range $manualpages }}
       <hr>
       <h1 id="{{ .Title | urlize }}">{{ .Title }}</h1>
       {{ .Content }}
-      <a href="#chapters"><br>[Back to top]</a>
+      <a href="#chapters" class="uk-align-right"><br>[Back to top]</a>
     {{ end }}
+
+    {{ range $manualsection }}
+    {{ range .Sections }}
+    {{ range .Pages }}
+      <hr>
+      <h1 id="{{ .Title | urlize }}">{{ .Title }}</h1>
+      {{ .Content }}
+      <a href="#chapters" class="uk-align-right"><br>[Back to top]</a>
+    {{ end }}
+    {{ end }}
+    {{ end }}
+
     <hr class="uk-margin-bottom">
     This single page manual was generated on {{ now.Format "2006-01-02" }}.
   </div>

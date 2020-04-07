@@ -1,6 +1,7 @@
 ---
 title: Tool Integration
-weight: 10
+showinmenu: true
+weight: 12
 pager: true
 ---
 

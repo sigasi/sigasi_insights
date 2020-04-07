@@ -1,0 +1,9 @@
+## Project specific setting of this rule
+
+This rule can be disabled for your project, or its severity can be modified in the [project linting settings](/manual/linting/#project-specific-linting-settings).
+
+Manual configuration in `${project location}/.settings/com.sigasi.hdt.vhdl.linting.prefs`:
+
+{{ range .Params -}}
+`{{ .}}/severity/<project>=IGNORE`  
+{{ end -}}

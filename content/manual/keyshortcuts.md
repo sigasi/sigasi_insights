@@ -1,6 +1,7 @@
 ---
 title: Keyboard Shortcuts
-weight: 16
+showinmenu: true
+weight: 18
 pager: true
 ---
 

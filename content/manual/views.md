@@ -1,5 +1,6 @@
 ---
 title: Views
+showinmenu: true
 weight: 5
 pager: true
 ---

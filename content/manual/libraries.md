@@ -1,5 +1,6 @@
 ---
 title: Libraries
+showinmenu: true
 weight: 3
 pager: true
 ---

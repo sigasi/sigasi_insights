@@ -1,6 +1,7 @@
 ---
 title: Third party plugins
-weight: 14
+showinmenu: true
+weight: 16
 pager: true
 ---
 

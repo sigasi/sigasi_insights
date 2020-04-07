@@ -1,6 +1,7 @@
 ---
 title: License Key Management
-weight: 18
+showinmenu: true
+weight: 20
 pager: true
 ---
 

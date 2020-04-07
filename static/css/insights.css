@@ -11,3 +11,7 @@ h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
 h1:hover a, h2:hover a, h3:hover a, h4:hover a { visibility: visible}
 
 figcaption { text-align: center; }
+
+.goodcode { text-decoration: none; border-bottom: 3px solid #80FF80; background-color: #D0FFD0; }
+.badcode  { text-decoration: none; border-bottom: 3px solid #FF8080; background-color: #FFD0D0; }
+.uglycode { text-decoration: none; border-bottom: 3px solid #FF8040; background-color: #FFD080; }

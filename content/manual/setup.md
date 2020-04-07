@@ -1,5 +1,6 @@
 ---
 title: Setting Up Sigasi Studio
+showinmenu: true
 weight: 1
 pager: true
 ---

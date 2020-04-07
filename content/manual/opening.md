@@ -1,5 +1,6 @@
 ---
 title: Opening Files
+showinmenu: true
 weight: 8
 pager: true
 ---

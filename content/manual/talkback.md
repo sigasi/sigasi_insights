@@ -1,6 +1,7 @@
 ---
 title: "Sigasi Studio Talkback"
-weight: 19
+showinmenu: true
+weight: 21
 pager: true
 ---
 

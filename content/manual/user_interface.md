@@ -1,5 +1,6 @@
 ---
 title: User Interface
+showinmenu: true
 weight: 4
 pager: true
 ---

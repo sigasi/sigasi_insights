@@ -1,6 +1,7 @@
 ---
 title: Troubleshooting
-weight: 15
+showinmenu: true
+weight: 17
 pager: true
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Mixed language projects
+showinmenu: true
 weight: 7
 pager: true
 ---

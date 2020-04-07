@@ -1,6 +1,7 @@
 ---
 title: Sigasi Studio VUnit Integration
-weight: 11
+showinmenu: true
+weight: 13
 pager: true
 ---
 

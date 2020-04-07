@@ -8,7 +8,7 @@
                 <a href="/manual">Manual<span uk-icon="icon: triangle-down"></span></a>
                 <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2 uk-box-shadow-medium">
                     <ul class="uk-nav uk-navbar-dropdown-nav">
-                        {{ range where $s_manual "Params.skipoverviewlist" "==" nil -}}
+                        {{ range where $s_manual "Params.showinmenu" true -}}
                         <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
                         {{ end }}
                     </ul>

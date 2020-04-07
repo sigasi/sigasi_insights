@@ -1,6 +1,7 @@
 ---
 title: "Graphics Configuration"
-weight: 13
+showinmenu: true
+weight: 15
 pager: true
 ---
 

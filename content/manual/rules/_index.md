@@ -1,5 +1,5 @@
 ---
-title: "Linting rules detailed"
+title: "Linting rules"
 ---
 
-Test content
+These chapters contain detailed explanations for the various linting rules.
