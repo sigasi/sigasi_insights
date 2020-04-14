@@ -10,14 +10,14 @@ We are using markdown with [Hugo].
 * Install: [Hugo]
 * Build `hugo`
 * Test: `hugo server --buildFuture --buildDrafts --navigateToChanged` to start serving pages locally. The url will be printed in the `hugo` output.
-    * Use the `-F` (or `--buildFuture`) option to show posts with dates in the future.
-    * Use the `-D` (or `--buildDrafts`) option to show posts with draft status.
-    * Use `--navigateToChanged` to navigate to changed content file on live browser reload
+  * Use the `-F` (or `--buildFuture`) option to show posts with dates in the future.
+  * Use the `-D` (or `--buildDrafts`) option to show posts with draft status.
+  * Use `--navigateToChanged` to navigate to changed content file on live browser reload
 * Tools:
-    * Enable shell autocompletion: `sudo hugo gen autocomlete`
+  * Enable shell autocompletion: `sudo hugo gen autocomlete`
 * Create content based on archetypes:
-    * New release notes: `hugo new content/releasenotes/sigasi-4.06.md`
-    * New tech article: `hugo new content/tech/fancy-title.md`
+  * New release notes: `hugo new content/releasenotes/sigasi-4.06.md`
+  * New tech article: `hugo new content/tech/fancy-title.md`
 
 ## Markdown authoring
 
@@ -32,6 +32,7 @@ We are using markdown with [Hugo].
   * title as text: `{{< page "manual/demo" >}}`
 * Link with link text: `<https://www.sigasi.com>`
 * Link with reference:
+
 ```
    [text][reference]
    ...
@@ -57,6 +58,7 @@ Tips:
 Tips:
 
 * You can specify the language of code blocks by appending the language to the first three back ticks: e.g.
+
 ```vhdl
 entity example is
   port(
@@ -66,12 +68,12 @@ end entity;
 ```
 
 Syntax highlighting is configured as follows:
+
 * Added 2 config settings to config.toml
   * to allow code blocks like above automatically be highlighted: `pygmentsCodeFences = "true"`
   * to use a separate css file: `pygmentsUseClasses = "true"`
 * Included a new css file `syntax.css` in `layouts/_default/baseof.html` which is generated using the command `hugo gen chromastyles --style=monokai > static/css/syntax.css`
-* In case you want to change the style, different styles are available, check https://xyproto.github.io/splash/docs/all.html
-* More Hugo documentation on highlighting: https://gohugo.io/content-management/syntax-highlighting/
-
+* In case you want to change the style, different styles are available, check <https://xyproto.github.io/splash/docs/all.html>
+* More Hugo documentation on highlighting: <https://gohugo.io/content-management/syntax-highlighting/>
 
 [Hugo]: https://gohugo.io/
