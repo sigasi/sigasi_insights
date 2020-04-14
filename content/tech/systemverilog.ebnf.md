@@ -459,8 +459,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :	<a href="#constraint_primary">constraint\_primary</a>  { <font color="purple"><b>,</b></font> <a href="#constraint_primary">constraint\_primary</a>  }  
   
 <a name="constraint_primary"></a>**constraint\_primary**
-:	 \[ <a href="#implicit_class_handle">implicit\_class\_handle</a> <font color="purple"><b>.</b></font>   
-         | <a href="#class_scope">class\_scope</a>  ]  <a href="#hierarchical_identifier">hierarchical\_identifier</a> <a href="#select">select</a> 
+:	 \[ <a href="#implicit_class_handle">implicit\_class\_handle</a> <font color="purple"><b>.</b></font> | <a href="#class_scope">class\_scope</a>  ]  <a href="#hierarchical_identifier">hierarchical\_identifier</a> <a href="#select">select</a> 
   
 <a name="constraint_expression"></a>**constraint\_expression**
 :	 \[ <font color="purple"><b>soft</b></font>  ]  <a href="#expression_or_dist">expression\_or\_dist</a> <font color="purple"><b>;</b></font>   
@@ -595,26 +594,18 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :	<font color="purple"><b>genvar</b></font> <a href="#list_of_genvar_identifiers">list\_of\_genvar\_identifiers</a> <font color="purple"><b>;</b></font> 
   
 <a name="net_declaration"></a>**net\_declaration**[^footnote_12]
-:	<a href="#net_type">net\_type</a>  \[ <a href="#drive_strength">drive\_strength</a>   
-         | <a href="#charge_strength">charge\_strength</a>  ]   \[ <font color="purple"><b>vectored</b></font>   
-         | <font color="purple"><b>scalared</b></font>  ]  <a href="#data_type_or_implicit">data\_type\_or\_implicit</a>  \[ <a href="#delay3">delay3</a>  ]  <a href="#list_of_net_decl_assignments">list\_of\_net\_decl\_assignments</a> <font color="purple"><b>;</b></font>   
+:	<a href="#net_type">net\_type</a>  \[ <a href="#drive_strength">drive\_strength</a> | <a href="#charge_strength">charge\_strength</a>  ]   \[ <font color="purple"><b>vectored</b></font> | <font color="purple"><b>scalared</b></font>  ]  <a href="#data_type_or_implicit">data\_type\_or\_implicit</a>  \[ <a href="#delay3">delay3</a>  ]  <a href="#list_of_net_decl_assignments">list\_of\_net\_decl\_assignments</a> <font color="purple"><b>;</b></font>   
         | <a href="#net_type_identifier">net\_type\_identifier</a>  \[ <a href="#delay_control">delay\_control</a>  ]  <a href="#list_of_net_decl_assignments">list\_of\_net\_decl\_assignments</a> <font color="purple"><b>;</b></font>   
         | <font color="purple"><b>interconnect</b></font> <a href="#implicit_data_type">implicit\_data\_type</a>  \[ <font color="purple"><b>#</b></font> <a href="#delay_value">delay\_value</a>  ]  <a href="#net_identifier">net\_identifier</a>  { <a href="#unpacked_dimension">unpacked\_dimension</a>  }   \[ <font color="purple"><b>,</b></font> <a href="#net_identifier">net\_identifier</a>  { <a href="#unpacked_dimension">unpacked\_dimension</a>  }   ]  <font color="purple"><b>;</b></font> 
   
 <a name="type_declaration"></a>**type\_declaration**
 :	<font color="purple"><b>typedef</b></font> <a href="#data_type">data\_type</a> <a href="#type_identifier">type\_identifier</a>  { <a href="#variable_dimension">variable\_dimension</a>  }  <font color="purple"><b>;</b></font>   
         | <font color="purple"><b>typedef</b></font> <a href="#interface_instance_identifier">interface\_instance\_identifier</a> <a href="#constant_bit_select">constant\_bit\_select</a> <font color="purple"><b>.</b></font> <a href="#type_identifier">type\_identifier</a> <a href="#type_identifier">type\_identifier</a> <font color="purple"><b>;</b></font>   
-        | <font color="purple"><b>typedef</b></font>  \[ <font color="purple"><b>enum</b></font>   
-         | <font color="purple"><b>struct</b></font>   
-         | <font color="purple"><b>union</b></font>   
-         | <font color="purple"><b>class</b></font>   
-         | <font color="purple"><b>interface</b></font> <font color="purple"><b>class</b></font>  ]  <a href="#type_identifier">type\_identifier</a> <font color="purple"><b>;</b></font> 
+        | <font color="purple"><b>typedef</b></font>  \[ <font color="purple"><b>enum</b></font> | <font color="purple"><b>struct</b></font> | <font color="purple"><b>union</b></font> | <font color="purple"><b>class</b></font> | <font color="purple"><b>interface</b></font> <font color="purple"><b>class</b></font>  ]  <a href="#type_identifier">type\_identifier</a> <font color="purple"><b>;</b></font> 
   
 <a name="net_type_declaration"></a>**net\_type\_declaration**
-:	<font color="purple"><b>nettype</b></font> <a href="#data_type">data\_type</a> <a href="#net_type_identifier">net\_type\_identifier</a>  \[ <font color="purple"><b>with</b></font>  \[ <a href="#package_scope">package\_scope</a>   
-          | <a href="#class_scope">class\_scope</a>  ]  <a href="#tf_identifier">tf\_identifier</a>  ]  <font color="purple"><b>;</b></font>   
-        | <font color="purple"><b>nettype</b></font>  \[ <a href="#package_scope">package\_scope</a>   
-         | <a href="#class_scope">class\_scope</a>  ]  <a href="#net_type_identifier">net\_type\_identifier</a> <a href="#net_type_identifier">net\_type\_identifier</a> <font color="purple"><b>;</b></font> 
+:	<font color="purple"><b>nettype</b></font> <a href="#data_type">data\_type</a> <a href="#net_type_identifier">net\_type\_identifier</a>  \[ <font color="purple"><b>with</b></font>  \[ <a href="#package_scope">package\_scope</a> | <a href="#class_scope">class\_scope</a>  ]  <a href="#tf_identifier">tf\_identifier</a>  ]  <font color="purple"><b>;</b></font>   
+        | <font color="purple"><b>nettype</b></font>  \[ <a href="#package_scope">package\_scope</a> | <a href="#class_scope">class\_scope</a>  ]  <a href="#net_type_identifier">net\_type\_identifier</a> <a href="#net_type_identifier">net\_type\_identifier</a> <font color="purple"><b>;</b></font> 
   
 <a name="lifetime"></a>**lifetime**
 :	<font color="purple"><b>static</b></font>   
@@ -640,8 +631,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <font color="purple"><b>string</b></font>   
         | <font color="purple"><b>chandle</b></font>   
         | <font color="purple"><b>virtual</b></font>  \[ <font color="purple"><b>interface</b></font>  ]  <a href="#interface_identifier">interface\_identifier</a>  \[ <a href="#parameter_value_assignment">parameter\_value\_assignment</a>  ]   \[ <font color="purple"><b>.</b></font> <a href="#modport_identifier">modport\_identifier</a>  ]    
-        |  \[ <a href="#class_scope">class\_scope</a>   
-         | <a href="#package_scope">package\_scope</a>  ]  <a href="#type_identifier">type\_identifier</a>  { <a href="#packed_dimension">packed\_dimension</a>  }    
+        |  \[ <a href="#class_scope">class\_scope</a> | <a href="#package_scope">package\_scope</a>  ]  <a href="#type_identifier">type\_identifier</a>  { <a href="#packed_dimension">packed\_dimension</a>  }    
         | <a href="#class_type">class\_type</a>   
         | <font color="purple"><b>event</b></font>   
         | <a href="#ps_covergroup_identifier">ps\_covergroup\_identifier</a>   
@@ -904,10 +894,8 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :	<font color="purple"><b>function</b></font>  \[ <a href="#lifetime">lifetime</a>  ]  <a href="#function_body_declaration">function\_body\_declaration</a> 
   
 <a name="function_body_declaration"></a>**function\_body\_declaration**
-:	<a href="#function_data_type_or_implicit">function\_data\_type\_or\_implicit</a>  \[ <a href="#interface_identifier">interface\_identifier</a> <font color="purple"><b>.</b></font>   
-         | <a href="#class_scope">class\_scope</a>  ]  <a href="#function_identifier">function\_identifier</a> <font color="purple"><b>;</b></font>  { <a href="#tf_item_declaration">tf\_item\_declaration</a>  }   { <a href="#function_statement_or_null">function\_statement\_or\_null</a>  }  <font color="purple"><b>endfunction</b></font>  \[ <font color="purple"><b>:</b></font> <a href="#function_identifier">function\_identifier</a>  ]    
-        | <a href="#function_data_type_or_implicit">function\_data\_type\_or\_implicit</a>  \[ <a href="#interface_identifier">interface\_identifier</a> <font color="purple"><b>.</b></font>   
-         | <a href="#class_scope">class\_scope</a>  ]  <a href="#function_identifier">function\_identifier</a> <font color="purple"><b>(</b></font>  \[ <a href="#tf_port_list">tf\_port\_list</a>  ]  <font color="purple"><b>)</b></font> <font color="purple"><b>;</b></font>  { <a href="#block_item_declaration">block\_item\_declaration</a>  }   { <a href="#function_statement_or_null">function\_statement\_or\_null</a>  }  <font color="purple"><b>endfunction</b></font>  \[ <font color="purple"><b>:</b></font> <a href="#function_identifier">function\_identifier</a>  ]  
+:	<a href="#function_data_type_or_implicit">function\_data\_type\_or\_implicit</a>  \[ <a href="#interface_identifier">interface\_identifier</a> <font color="purple"><b>.</b></font> | <a href="#class_scope">class\_scope</a>  ]  <a href="#function_identifier">function\_identifier</a> <font color="purple"><b>;</b></font>  { <a href="#tf_item_declaration">tf\_item\_declaration</a>  }   { <a href="#function_statement_or_null">function\_statement\_or\_null</a>  }  <font color="purple"><b>endfunction</b></font>  \[ <font color="purple"><b>:</b></font> <a href="#function_identifier">function\_identifier</a>  ]    
+        | <a href="#function_data_type_or_implicit">function\_data\_type\_or\_implicit</a>  \[ <a href="#interface_identifier">interface\_identifier</a> <font color="purple"><b>.</b></font> | <a href="#class_scope">class\_scope</a>  ]  <a href="#function_identifier">function\_identifier</a> <font color="purple"><b>(</b></font>  \[ <a href="#tf_port_list">tf\_port\_list</a>  ]  <font color="purple"><b>)</b></font> <font color="purple"><b>;</b></font>  { <a href="#block_item_declaration">block\_item\_declaration</a>  }   { <a href="#function_statement_or_null">function\_statement\_or\_null</a>  }  <font color="purple"><b>endfunction</b></font>  \[ <font color="purple"><b>:</b></font> <a href="#function_identifier">function\_identifier</a>  ]  
   
 <a name="function_prototype"></a>**function\_prototype**
 :	<font color="purple"><b>function</b></font> <a href="#data_type_or_void">data\_type\_or\_void</a> <a href="#function_identifier">function\_identifier</a>  \[ <font color="purple"><b>(</b></font>  \[ <a href="#tf_port_list">tf\_port\_list</a>  ]  <font color="purple"><b>)</b></font>  ]  
@@ -941,10 +929,8 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :	<font color="purple"><b>task</b></font>  \[ <a href="#lifetime">lifetime</a>  ]  <a href="#task_body_declaration">task\_body\_declaration</a> 
   
 <a name="task_body_declaration"></a>**task\_body\_declaration**
-:	 \[ <a href="#interface_identifier">interface\_identifier</a> <font color="purple"><b>.</b></font>   
-         | <a href="#class_scope">class\_scope</a>  ]  <a href="#task_identifier">task\_identifier</a> <font color="purple"><b>;</b></font>  { <a href="#tf_item_declaration">tf\_item\_declaration</a>  }   { <a href="#statement_or_null">statement\_or\_null</a>  }  <font color="purple"><b>endtask</b></font>  \[ <font color="purple"><b>:</b></font> <a href="#task_identifier">task\_identifier</a>  ]    
-        |  \[ <a href="#interface_identifier">interface\_identifier</a> <font color="purple"><b>.</b></font>   
-         | <a href="#class_scope">class\_scope</a>  ]  <a href="#task_identifier">task\_identifier</a> <font color="purple"><b>(</b></font>  \[ <a href="#tf_port_list">tf\_port\_list</a>  ]  <font color="purple"><b>)</b></font> <font color="purple"><b>;</b></font>  { <a href="#block_item_declaration">block\_item\_declaration</a>  }   { <a href="#statement_or_null">statement\_or\_null</a>  }  <font color="purple"><b>endtask</b></font>  \[ <font color="purple"><b>:</b></font> <a href="#task_identifier">task\_identifier</a>  ]  
+:	 \[ <a href="#interface_identifier">interface\_identifier</a> <font color="purple"><b>.</b></font> | <a href="#class_scope">class\_scope</a>  ]  <a href="#task_identifier">task\_identifier</a> <font color="purple"><b>;</b></font>  { <a href="#tf_item_declaration">tf\_item\_declaration</a>  }   { <a href="#statement_or_null">statement\_or\_null</a>  }  <font color="purple"><b>endtask</b></font>  \[ <font color="purple"><b>:</b></font> <a href="#task_identifier">task\_identifier</a>  ]    
+        |  \[ <a href="#interface_identifier">interface\_identifier</a> <font color="purple"><b>.</b></font> | <a href="#class_scope">class\_scope</a>  ]  <a href="#task_identifier">task\_identifier</a> <font color="purple"><b>(</b></font>  \[ <a href="#tf_port_list">tf\_port\_list</a>  ]  <font color="purple"><b>)</b></font> <font color="purple"><b>;</b></font>  { <a href="#block_item_declaration">block\_item\_declaration</a>  }   { <a href="#statement_or_null">statement\_or\_null</a>  }  <font color="purple"><b>endtask</b></font>  \[ <font color="purple"><b>:</b></font> <a href="#task_identifier">task\_identifier</a>  ]  
   
 <a name="tf_item_declaration"></a>**tf\_item\_declaration**
 :	<a href="#block_item_declaration">block\_item\_declaration</a>   
@@ -1286,8 +1272,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 <a name="hierarchical_btf_identifier"></a>**hierarchical\_btf\_identifier**
 :	<a href="#hierarchical_tf_identifier">hierarchical\_tf\_identifier</a>   
         | <a href="#hierarchical_block_identifier">hierarchical\_block\_identifier</a>   
-        |  \[ <a href="#hierarchical_identifier">hierarchical\_identifier</a> <font color="purple"><b>.</b></font>   
-         | <a href="#class_scope">class\_scope</a>  ]  <a href="#method_identifier">method\_identifier</a> 
+        |  \[ <a href="#hierarchical_identifier">hierarchical\_identifier</a> <font color="purple"><b>.</b></font> | <a href="#class_scope">class\_scope</a>  ]  <a href="#method_identifier">method\_identifier</a> 
   
 <a name="cover_point"></a>**cover\_point**
 :	 \[  \[ <a href="#data_type_or_implicit">data\_type\_or\_implicit</a>  ]  <a href="#cover_point_identifier">cover\_point\_identifier</a> <font color="purple"><b>:</b></font>  ]  <font color="purple"><b>coverpoint</b></font> <a href="#expression">expression</a>  \[ <font color="purple"><b>iff</b></font> <font color="purple"><b>(</b></font> <a href="#expression">expression</a> <font color="purple"><b>)</b></font>  ]  <a href="#bins_or_empty">bins\_or\_empty</a> 
@@ -1776,9 +1761,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 <a name="blocking_assignment"></a>**blocking\_assignment**
 :	<a href="#variable_lvalue">variable\_lvalue</a> <font color="purple"><b>=</b></font> <a href="#delay_or_event_control">delay\_or\_event\_control</a> <a href="#expression">expression</a>   
         | <a href="#nonrange_variable_lvalue">nonrange\_variable\_lvalue</a> <font color="purple"><b>=</b></font> <a href="#dynamic_array_new">dynamic\_array\_new</a>   
-        |  \[ <a href="#implicit_class_handle">implicit\_class\_handle</a> <font color="purple"><b>.</b></font>   
-         | <a href="#class_scope">class\_scope</a>   
-         | <a href="#package_scope">package\_scope</a>  ]  <a href="#hierarchical_variable_identifier">hierarchical\_variable\_identifier</a> <a href="#select">select</a> <font color="purple"><b>!=</b></font> <a href="#class_new">class\_new</a>   
+        |  \[ <a href="#implicit_class_handle">implicit\_class\_handle</a> <font color="purple"><b>.</b></font> | <a href="#class_scope">class\_scope</a> | <a href="#package_scope">package\_scope</a>  ]  <a href="#hierarchical_variable_identifier">hierarchical\_variable\_identifier</a> <a href="#select">select</a> <font color="purple"><b>!=</b></font> <a href="#class_new">class\_new</a>   
         | <a href="#operator_assignment">operator\_assignment</a> 
   
 <a name="operator_assignment"></a>**operator\_assignment**
@@ -2726,8 +2709,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <a href="#specparam_identifier">specparam\_identifier</a>  \[ <font color="purple"><b>\[</b></font> <a href="#constant_range_expression">constant\_range\_expression</a> <font color="purple"><b>]</b></font>  ]    
         | <a href="#genvar_identifier">genvar\_identifier</a> [^footnote_39]   
         | <a href="#formal_port_identifier">formal\_port\_identifier</a> <a href="#constant_select">constant\_select</a>   
-        |  \[ <a href="#package_scope">package\_scope</a>   
-         | <a href="#class_scope">class\_scope</a>  ]  <a href="#enum_identifier">enum\_identifier</a>   
+        |  \[ <a href="#package_scope">package\_scope</a> | <a href="#class_scope">class\_scope</a>  ]  <a href="#enum_identifier">enum\_identifier</a>   
         | <a href="#constant_concatenation">constant\_concatenation</a>  \[ <font color="purple"><b>\[</b></font> <a href="#constant_range_expression">constant\_range\_expression</a> <font color="purple"><b>]</b></font>  ]    
         | <a href="#constant_multiple_concatenation">constant\_multiple\_concatenation</a>  \[ <font color="purple"><b>\[</b></font> <a href="#constant_range_expression">constant\_range\_expression</a> <font color="purple"><b>]</b></font>  ]    
         | <a href="#constant_function_call">constant\_function\_call</a>   
@@ -2747,8 +2729,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
   
 <a name="primary"></a>**primary**
 :	<a href="#primary_literal">primary\_literal</a>   
-        |  \[ <a href="#class_qualifier">class\_qualifier</a>   
-         | <a href="#package_scope">package\_scope</a>  ]  <a href="#hierarchical_identifier">hierarchical\_identifier</a> <a href="#select">select</a>   
+        |  \[ <a href="#class_qualifier">class\_qualifier</a> | <a href="#package_scope">package\_scope</a>  ]  <a href="#hierarchical_identifier">hierarchical\_identifier</a> <a href="#select">select</a>   
         | <a href="#empty_queue">empty\_queue</a>   
         | <a href="#concatenation">concatenation</a>  \[ <font color="purple"><b>\[</b></font> <a href="#range_expression">range\_expression</a> <font color="purple"><b>]</b></font>  ]    
         | <a href="#multiple_concatenation">multiple\_concatenation</a>  \[ <font color="purple"><b>\[</b></font> <a href="#range_expression">range\_expression</a> <font color="purple"><b>]</b></font>  ]    
@@ -2764,8 +2745,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <font color="purple"><b>null</b></font> 
   
 <a name="class_qualifier"></a>**class\_qualifier**
-:	 \[ <font color="purple"><b>local::</b></font> [^footnote_43]  ]   \[ <a href="#implicit_class_handle">implicit\_class\_handle</a> <font color="purple"><b>.</b></font>   
-         | <a href="#class_scope">class\_scope</a>  ]  
+:	 \[ <font color="purple"><b>local::</b></font> [^footnote_43]  ]   \[ <a href="#implicit_class_handle">implicit\_class\_handle</a> <font color="purple"><b>.</b></font> | <a href="#class_scope">class\_scope</a>  ]  
   
 <a name="range_expression"></a>**range\_expression**
 :	<a href="#expression">expression</a>   
@@ -2826,15 +2806,13 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         |  \[ <a href="#assignment_pattern_expression_type">assignment\_pattern\_expression\_type</a>  ]  <a href="#assignment_pattern_net_lvalue">assignment\_pattern\_net\_lvalue</a> 
   
 <a name="variable_lvalue"></a>**variable\_lvalue**
-:	 \[ <a href="#implicit_class_handle">implicit\_class\_handle</a> <font color="purple"><b>.</b></font>   
-         | <a href="#package_scope">package\_scope</a>  ]  <a href="#hierarchical_variable_identifier">hierarchical\_variable\_identifier</a> <a href="#select">select</a> [^footnote_46]   
+:	 \[ <a href="#implicit_class_handle">implicit\_class\_handle</a> <font color="purple"><b>.</b></font> | <a href="#package_scope">package\_scope</a>  ]  <a href="#hierarchical_variable_identifier">hierarchical\_variable\_identifier</a> <a href="#select">select</a> [^footnote_46]   
         | <font color="purple"><b>{</b></font> <a href="#variable_lvalue">variable\_lvalue</a>  { <font color="purple"><b>,</b></font> <a href="#variable_lvalue">variable\_lvalue</a>  }  <font color="purple"><b>}</b></font>   
         |  \[ <a href="#assignment_pattern_expression_type">assignment\_pattern\_expression\_type</a>  ]  <a href="#assignment_pattern_variable_lvalue">assignment\_pattern\_variable\_lvalue</a>   
         | <a href="#streaming_concatenation">streaming\_concatenation</a> [^footnote_47] 
   
 <a name="nonrange_variable_lvalue"></a>**nonrange\_variable\_lvalue**
-:	 \[ <a href="#implicit_class_handle">implicit\_class\_handle</a> <font color="purple"><b>.</b></font>   
-         | <a href="#package_scope">package\_scope</a>  ]  <a href="#hierarchical_variable_identifier">hierarchical\_variable\_identifier</a> <a href="#nonrange_select">nonrange\_select</a> 
+:	 \[ <a href="#implicit_class_handle">implicit\_class\_handle</a> <font color="purple"><b>.</b></font> | <a href="#package_scope">package\_scope</a>  ]  <a href="#hierarchical_variable_identifier">hierarchical\_variable\_identifier</a> <a href="#nonrange_select">nonrange\_select</a> 
   
 ### Operators
   
@@ -2943,8 +2921,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :	<a href="#non_zero_unsigned_number">non\_zero\_unsigned\_number</a> 
   
 <a name="non_zero_unsigned_number"></a>**non\_zero\_unsigned\_number**[^footnote_33]
-:	<a href="#non_zero_decimal_digit">non\_zero\_decimal\_digit</a>  { <font color="purple"><b>\_</b></font>   
-         | <a href="#decimal_digit">decimal\_digit</a>  }  
+:	<a href="#non_zero_decimal_digit">non\_zero\_decimal\_digit</a>  { <font color="purple"><b>\_</b></font> | <a href="#decimal_digit">decimal\_digit</a>  }  
   
 <a name="real_number"></a>**real\_number**[^footnote_33]
 :	<a href="#fixed_point_number">fixed\_point\_number</a>   
@@ -2958,44 +2935,32 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <font color="purple"><b>E</b></font> 
   
 <a name="unsigned_number"></a>**unsigned\_number**[^footnote_33]
-:	<a href="#decimal_digit">decimal\_digit</a>  { <font color="purple"><b>\_</b></font>   
-         | <a href="#decimal_digit">decimal\_digit</a>  }  
+:	<a href="#decimal_digit">decimal\_digit</a>  { <font color="purple"><b>\_</b></font> | <a href="#decimal_digit">decimal\_digit</a>  }  
   
 <a name="binary_value"></a>**binary\_value**[^footnote_33]
-:	<a href="#binary_digit">binary\_digit</a>  { <font color="purple"><b>\_</b></font>   
-         | <a href="#binary_digit">binary\_digit</a>  }  
+:	<a href="#binary_digit">binary\_digit</a>  { <font color="purple"><b>\_</b></font> | <a href="#binary_digit">binary\_digit</a>  }  
   
 <a name="octal_value"></a>**octal\_value**[^footnote_33]
-:	<a href="#octal_digit">octal\_digit</a>  { <font color="purple"><b>\_</b></font>   
-         | <a href="#octal_digit">octal\_digit</a>  }  
+:	<a href="#octal_digit">octal\_digit</a>  { <font color="purple"><b>\_</b></font> | <a href="#octal_digit">octal\_digit</a>  }  
   
 <a name="hex_value"></a>**hex\_value**[^footnote_33]
-:	<a href="#hex_digit">hex\_digit</a>  { <font color="purple"><b>\_</b></font>   
-         | <a href="#hex_digit">hex\_digit</a>  }  
+:	<a href="#hex_digit">hex\_digit</a>  { <font color="purple"><b>\_</b></font> | <a href="#hex_digit">hex\_digit</a>  }  
   
 <a name="decimal_base"></a>**decimal\_base**[^footnote_33]
-:	<font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font>   
-         | <font color="purple"><b>S</b></font>  ]  <font color="purple"><b>d</b></font>   
-        | <font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font>   
-         | <font color="purple"><b>S</b></font>  ]  <font color="purple"><b>D</b></font> 
+:	<font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font> | <font color="purple"><b>S</b></font>  ]  <font color="purple"><b>d</b></font>  
+        | <font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font>| <font color="purple"><b>S</b></font>  ]  <font color="purple"><b>D</b></font> 
   
 <a name="binary_base"></a>**binary\_base**[^footnote_33]
-:	<font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font>   
-         | <font color="purple"><b>S</b></font>  ]  <font color="purple"><b>b</b></font>   
-        | <font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font>   
-         | <font color="purple"><b>S</b></font>  ]  <font color="purple"><b>B</b></font> 
+:	<font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font> | <font color="purple"><b>S</b></font>  ]  <font color="purple"><b>b</b></font>   
+        | <font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font> | <font color="purple"><b>S</b></font>  ]  <font color="purple"><b>B</b></font> 
   
 <a name="octal_base"></a>**octal\_base**[^footnote_33]
-:	<font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font>   
-         | <font color="purple"><b>S</b></font>  ]  <font color="purple"><b>o</b></font>   
-        | <font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font>   
-         | <font color="purple"><b>S</b></font>  ]  <font color="purple"><b>O</b></font> 
+:	<font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font> | <font color="purple"><b>S</b></font>  ]  <font color="purple"><b>o</b></font>   
+        | <font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font> | <font color="purple"><b>S</b></font>  ]  <font color="purple"><b>O</b></font> 
   
 <a name="hex_base"></a>**hex\_base**[^footnote_33]
-:	<font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font>   
-         | <font color="purple"><b>S</b></font>  ]  <font color="purple"><b>h</b></font>   
-        | <font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font>   
-         | <font color="purple"><b>S</b></font>  ]  <font color="purple"><b>H</b></font> 
+:	<font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font> | <font color="purple"><b>S</b></font>  ]  <font color="purple"><b>h</b></font>   
+        | <font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font> | <font color="purple"><b>S</b></font>  ]  <font color="purple"><b>H</b></font> 
   
 <a name="non_zero_decimal_digit"></a>**non\_zero\_decimal\_digit**
 :	<font color="purple"><b>1</b></font>   
@@ -3299,9 +3264,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :	 \[ <a href="#package_scope">package\_scope</a>  ]  <a href="#identifier">identifier</a> 
   
 <a name="ps_or_hierarchical_array_identifier"></a>**ps\_or\_hierarchical\_array\_identifier**
-:	 \[ <a href="#implicit_class_handle">implicit\_class\_handle</a> <font color="purple"><b>.</b></font>   
-         | <a href="#class_scope">class\_scope</a>   
-         | <a href="#package_scope">package\_scope</a>  ]  <a href="#hierarchical_array_identifier">hierarchical\_array\_identifier</a> 
+:	 \[ <a href="#implicit_class_handle">implicit\_class\_handle</a> <font color="purple"><b>.</b></font> | <a href="#class_scope">class\_scope</a> | <a href="#package_scope">package\_scope</a>  ]  <a href="#hierarchical_array_identifier">hierarchical\_array\_identifier</a> 
   
 <a name="ps_or_hierarchical_net_identifier"></a>**ps\_or\_hierarchical\_net\_identifier**
 :	 \[ <a href="#package_scope">package\_scope</a>  ]  <a href="#net_identifier">net\_identifier</a>   
@@ -3320,13 +3283,11 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <a href="#hierarchical_tf_identifier">hierarchical\_tf\_identifier</a> 
   
 <a name="ps_parameter_identifier"></a>**ps\_parameter\_identifier**
-:	 \[ <a href="#package_scope">package\_scope</a>   
-         | <a href="#class_scope">class\_scope</a>  ]  <a href="#parameter_identifier">parameter\_identifier</a>   
+:	 \[ <a href="#package_scope">package\_scope</a> | <a href="#class_scope">class\_scope</a>  ]  <a href="#parameter_identifier">parameter\_identifier</a>   
         |  { <a href="#generate_block_identifier">generate\_block\_identifier</a>  \[ <font color="purple"><b>\[</b></font> <a href="#constant_expression">constant\_expression</a> <font color="purple"><b>]</b></font>  ]  <font color="purple"><b>.</b></font>  }  <a href="#parameter_identifier">parameter\_identifier</a> 
   
 <a name="ps_type_identifier"></a>**ps\_type\_identifier**
-:	 \[ <font color="purple"><b>local::</b></font> [^footnote_43]   
-         | <a href="#package_scope">package\_scope</a>  ]  <a href="#type_identifier">type\_identifier</a> 
+:	 \[ <font color="purple"><b>local::</b></font> [^footnote_43] | <a href="#package_scope">package\_scope</a>  ]  <a href="#type_identifier">type\_identifier</a> 
   
 <a name="sequence_identifier"></a>**sequence\_identifier**
 :	<a href="#identifier">identifier</a> 
