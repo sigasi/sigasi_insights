@@ -1,10 +1,5 @@
-h1::before, h2::before, h3::before, h4::before, h5::before, h6::before { 
-  display: block; 
-  content: " "; 
-  margin-top: -40px; 
-  height: 40px; 
-  visibility: hidden; 
-  pointer-events: none;
+html, body {
+    scroll-padding-top: 42px;
 }
 
 .hanchor { font-size: 100%; visibility: hidden; color:#999;}
