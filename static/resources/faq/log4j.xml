@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration PUBLIC "-//APACHE//DTD LOG4J 1.2//EN"
+	"http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd">
+<log4j:configuration debug="false" xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+	<!-- This appender will write logs up to INFO to the stdout console -->
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+		<param name="Threshold" value="TRACE" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{HH:mm:ss.SSS} %-5p [%-40.40c|%t] %m%n" />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="levelMin" value="TRACE" />
+			<param name="levelMax" value="INFO" />
+		</filter>
+	</appender>
+
+	<!-- This appender will write WARN, ERROR and FATAL logs to the stderr console -->
+	<appender name="CONSOLE_ERR" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.err" />
+		<param name="Threshold" value="WARN" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{HH:mm:ss.SSS} %-5p [%c|%t] %m%n" />
+		</layout>
+	</appender>
+
+	<!-- This appender will write to the Eclipse error log. It will ONLY log WARN, ERROR and FATAL messages. -->
+	<appender name="ECLIPSE" class="com.sigasi.hdt.logging.EclipseLogAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%c %x - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="FILE" class="org.apache.log4j.FileAppender">
+		<param name="file" value="my_sigasi_log.out" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{HH:mm:ss.SSS} %-5p [%-40.40c|%t] %m%n" />
+		</layout>
+	</appender>
+
+	<!-- EclipseLogAppender must not log to the 'eclipse' appender as that would cause a stack overflow! -->
+	<logger name="com.sigasi.hdt.epl.logging.EclipseLogAppender" additivity="false">
+		<level value="WARN" />
+		<appender-ref ref="CONSOLE" />
+		<appender-ref ref="CONSOLE_ERR" />
+	</logger>
+
+	<!-- 
+		Configure logging categories below:
+		* name  = the package you want to include in the logs (including all sub-packages)
+		* level = [ALL, TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF]
+		Log4J manual: http://logging.apache.org/log4j/1.2/manual.html
+	-->
+
+	<logger name="com.sigasi">
+		<level value="DEBUG" />
+	</logger>
+
+	<logger name="org.eclipse">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="org.eclipse.jetty">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="org.eclipse.sprotty">
+		<level value="WARN" />
+	</logger>
+	
+	<logger name="org.ehcache">
+	  	<level value="WARN" />
+	</logger>
+	
+	<!-- Root logger configuration. Don't change this. -->
+	<root>
+		<level value="WARN" />
+		<appender-ref ref="CONSOLE" />
+		<appender-ref ref="CONSOLE_ERR" />
+		<appender-ref ref="ECLIPSE" />
+		<appender-ref ref="FILE" />
+	</root>
+
+</log4j:configuration>

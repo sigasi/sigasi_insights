@@ -492,6 +492,19 @@ Sigasi logs all internal errors to a log file. You can find this file in: `works
 
 The log file contains no sensitive information about your organization. On some occasions, the Sigasi Team may suggest to send them the log file to debug or improve the product. However, the option to do so or not remains yours.
 
+## How do I increase logging?
+
+To help debugging, we sometimes ask to increase the logging level of Sigasi Studio.
+The following method describes how to obtain more logging.
+
+1. In the Sigasi Studio installation, locate the file `./plugins/com.sigasi.hdt.logging_VERSION/log4j.xml`. Take a backup of this file.
+
+1. Replace the `log4j.xml` file with [this file](/resources/faq/log4j.xml) (right-click to save).
+
+1. This new `log4j.xml` file sets the logging level for Sigasi related functionality to _DEBUG_ and saves the log into a file `my_sigasi_log.out` in the installation folder.
+If you wish, the destination can be changed on line 36 of the xml file.
+
+1. After debugging finished, the original `log4j.xml` file should be restored.
 
 ## How do I obtain a stack trace?
 
@@ -547,7 +560,7 @@ You can revert Sigasi to an older version with following procedure:
 2. Select the configuration you want to revert to
 3. **Revert**
 
-Alternatively, you can contact support for an older download location.
+Alternatively, you can [contact support](mailto:support@sigasi.com) for an older download location.
 
 ## Problems on Ubuntu Linux
 
