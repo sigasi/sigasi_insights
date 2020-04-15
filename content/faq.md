@@ -474,6 +474,7 @@ Sigasi uses your system's native browser to display graphics and html content.
 When Sigasi's default settings do not work on your Linux system,
 make sure the `webkitgtk` package is installed (`yum install webkit2gtk`).
 You might have to install the `webkitgtk3` package if you're on GTK3 (`yum install webkit2gtk3`).
+The actual name of the package you have to install can depend on the OS.
 
 If you're using an older version of Sigasi Studio, you can try the following:
 
