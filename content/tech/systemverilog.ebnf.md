@@ -907,8 +907,8 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <font color="purple"><b>export</b></font> <a href="#dpi_spec_string">dpi\_spec\_string</a>  \[ <a href="#c_identifier">c\_identifier</a> <font color="purple"><b>=</b></font> ]  <font color="purple"><b>task</b></font> <a href="#task_identifier">task\_identifier</a> <font color="purple"><b>;</b></font>
   
 <a name="dpi_spec_string"></a>**dpi\_spec\_string**
-:  <font color="purple"><b>"DPI-C"</b></font>  
-        | <font color="purple"><b>"DPI"</b></font>
+:  <font color="purple"><b>"</b></font> <font color="purple"><b>DPI-C</b></font> <font color="purple"><b>"</b></font>  
+        | <font color="purple"><b>"</b></font> <font color="purple"><b>DPI</b></font> <font color="purple"><b>"</b></font>
   
 <a name="dpi_function_import_property"></a>**dpi\_function\_import\_property**
 :  <font color="purple"><b>context</b></font>  
@@ -1211,7 +1211,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <a href="#constant_expression">constant\_expression</a> <font color="purple"><b>:</b></font> <font color="purple"><b>$</b></font>
   
 <a name="expression_or_dist"></a>**expression\_or\_dist**
-:  <a href="#expression">expression</a>  \[ <font color="purple"><b>dist</b></font>  { <a href="#dist_list">dist\_list</a> } ]
+:  <a href="#expression">expression</a>  \[ <font color="purple"><b>dist</b></font> <font color="purple"><b>{</b></font> <a href="#dist_list">dist\_list</a> <font color="purple"><b>}</b></font> ]
   
 <a name="assertion_variable_declaration"></a>**assertion\_variable\_declaration**
 :  <a href="#var_data_type">var\_data\_type</a> <a href="#list_of_variable_decl_assignments">list\_of\_variable\_decl\_assignments</a> <font color="purple"><b>;</b></font>
