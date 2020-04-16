@@ -22,7 +22,6 @@ component declarations. By default all entity and architecture
 declarations are not mapped (excluded). This significantly reduces the
 time for a clean build. If you use direct entity instantiations, you can
 easily map the entities you need.
-
-Se also {{< page "tech/vivado-unisim" >}}.
+See also {{< page "tech/vivado-unisim" >}}.
 
 {{% lintrule 50 %}}
