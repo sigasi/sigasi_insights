@@ -6,7 +6,9 @@ If you are using vendor libraries from Altera or Xilinx (ISE or Vivado),
 you do not need to set up these libraries by hand. Sigasi Studio has a Quick Fix
 to do this for you.
 
-{{< figure src="/img/manual/alteraquickfix.png" >}}
+{{< figure src="/img/manual/quickfix_altera.png" class="uk-align-left" >}}
+{{< figure src="/img/manual/quickfix_xilinx.png"  >}}
+
 
 The `library` statement that tries to import a missing library (like
 `altera`) will be have a yellow warning marker next to it. Click this
