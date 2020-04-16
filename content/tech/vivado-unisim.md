@@ -1,5 +1,5 @@
 ---
-title: "Choose your version of the Vivado UNISIM.VComponents package"
+title: "Choose your version of the Vivado unisim.VCOMPONENTS package"
 layout: page
 pager: true
 author: Bart Brosens
