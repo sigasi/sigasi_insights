@@ -92,7 +92,7 @@ For each toolchain Sigasi Studio can support any combination of the following:
 
 * [Save-time compilation](#save-time-compilation)
 * [Launch Simulator](#launch-simulator)
-* [Quick Fix for third party libraries](/manual/linting#quick-fix-for-third-party-libraries)
+* [Quick Fix for third party libraries](/manual/rules/quick-fix-for-third-party-libraries)
 * [Open a Quartus II Project in Sigasi Studio](#open-a-quartus-ii-project-in-sigasi-studio)
 
 Currently the following external compilers are supported:
