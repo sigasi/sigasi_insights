@@ -94,7 +94,7 @@ Not all improvements made the deadline for this 4.4 release, so stay tuned.
     * More information on supported OSes can be found [on the Eclipse website](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_10.xml#target_environments)
 * Sigasi Studio as Plugin in your own Eclipse installation:
     * Eclipse 4.7.3a *Oxygen* up to Eclipse IDE 2019-03
-    * Java JRE 8 or higher  
+    * Java JRE 8
 
 We recommend at least **2GB of memory**, and you need **about 300MB** of free disk space.
 

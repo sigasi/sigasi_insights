@@ -40,13 +40,13 @@ and you need **about 300MB** of free disk space.
 * Sigasi Studio Standalone is supported
 * Sigasi Studio Plugin is supported when using
     * Eclipse 4.7.3a *Oxygen* or higher
-    * Java JRE 8 or higher
+    * Java JRE 8
 
 ### Mac OS X latest version
 * Sigasi Studio Standalone is supported
 * Sigasi Studio Plugin is supported when using
     * Eclipse 4.7.3a *Oxygen* or higher
-    * Java JRE 8 or higher
+    * Java JRE 8
 
 ### Linux
 
@@ -54,12 +54,12 @@ and you need **about 300MB** of free disk space.
 * Sigasi Studio Standalone is supported
 * Sigasi Studio Plugin is supported when using
     * Eclipse 4.7.3a *Oxygen* or higher
-    * Java JRE 8 or higher
+    * Java JRE 8
 
 #### RHEL 6.x
 * Sigasi Studio Plugin is supported when using
     * Eclipse 4.7.3a *Oxygen* or higher
-    * Java JRE 8 or higher
+    * Java JRE 8
 * Check [these steps](#i-am-using-redhat-linux-6-how-can-i-run-sigasi-studio) for details
 
 #### Other Linux distributions
