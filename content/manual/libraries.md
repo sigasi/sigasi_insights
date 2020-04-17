@@ -140,11 +140,13 @@ will not mark errors or warnings in these files.
 * While you work on your project, you don't want to edit the files in the
 `Common Libraries`, but you need them to compile your project.
 
-* Files in `Common Libraries` are supposed to be pre-compiled. If you tell
+* If you activate an [external compiler]({{< ref "manual/tools#external-compilers" >}}),
+files in `Common Libraries` are supposed to be pre-compiled. If you tell
 Sigasi Studio to compile your project using an external compiler, the
 Common Libraries are skipped. You need to pre-compile them yourself and let
 your compiler know where the compiled libraries are. For ModelSim, you can
-use the "modelsim.ini" file for this.
+use the "modelsim.ini" file for this. If your project root contains a "modelsim.ini"
+file, it will be used instead of the default "modelsim.ini" file.
 
 ## Pre-compile Common Libraries
 
