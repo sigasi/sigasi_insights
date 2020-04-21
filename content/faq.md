@@ -71,6 +71,8 @@ The license server (FlexNet) is supported on
 * RedHat Enterprise Linux 5.2 (32 bit and 64 bit) or newer
 * Windows 7 (32 bit and 64 bit) or newer
 
+The instructions to set up the license server can be found [here]({{< ref "manual/license-key.md#license-server-setup" >}}).
+
 ## I am using RedHat Linux 6. How can I run Sigasi Studio?
 
 Since [Sigasi Studio 4.1](/releasenotes/sigasi-4.01#sigasi-studio-standalone-version-eclipse-photon-4-8), the stand-alone Sigasi Studio application is built on top of Eclipse Photon (4.8).
