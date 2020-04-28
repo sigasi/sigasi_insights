@@ -4,6 +4,7 @@ layout: page
 pager: true
 author: Bart Brosens
 date: 2018-01-15
+lastmod: 2020-04-28
 tags:
   - VHDL
   - VHDL-2008
@@ -12,14 +13,14 @@ comments: true
 bannerad: true
 ---
 
-The `util` package that comes with Modelsim includes an enumerated type `forcetype` that is defined as:
+The `util` package that comes with Modelsim in the `mti_util.vhd` file includes an enumerated type `forcetype` that is defined as:
 ```vhdl
 type forcetype is (default, deposit, drive, freeze);
 ```
 
 In VHDL 2008, *default* is a new keyword.
 This causes problems in VHDL 2008 projects that use the `util` package.
-Still Sigasi Studio allows to use the `modelsim_lib.util` package in VHDL 2008 projects.
+Still, Sigasi Studio allows to use the `modelsim_lib.util` package in VHDL 2008 projects.
 
 Since the code in `modelsim_lib` is VHDL 93 code, `modelsim_lib` should be compiled in VHDL 93 mode.
 You can do so by right-clicking the `modelsim_lib` folder in the *Common Libraries* of your project.
