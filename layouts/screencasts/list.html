@@ -18,6 +18,17 @@
         {{ end }}
     </div>
 
+    <h2>Getting started Screencasts</h2>
+    <ul class="uk-list uk-column-1-2@m uk-margin-medium-bottom">
+        {{ range .Pages }}
+        {{ if in .Params.tags "Basic instruction" }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+        {{ end }}
+    </ul>
+
     <h2>All Screencasts</h2>
     <ul class="uk-list uk-column-1-2@m uk-margin-medium-bottom">
         {{ range .Pages.ByTitle }}
