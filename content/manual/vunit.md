@@ -32,6 +32,8 @@ You should make sure that the `python run.py --version` command only returns the
 
 To import an existing VUnit project, click **File > Import... > Sigasi > Import a VUnit project**. Next, select the VUnit script (`run.py`) and the location for the Sigasi Project.
 
+The VUnit project repository comes with a number of [example projects](https://github.com/VUnit/vunit/tree/master/examples) which can be imported this way. If you first specify the **Python Script Location**, the **Project Location** will be set automatically.
+
 ## Add VUnit support to an existing Sigasi project
 
 You can also add VUnit support to an existing project: Right click your project and select  **Configure > Add VUnit support**. Next, select an existing `run.py` script or let Sigasi create an example script.
