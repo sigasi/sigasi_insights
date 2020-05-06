@@ -26,6 +26,8 @@ If you have installed VUnit in a dedicated location, you should add the VUnit lo
 
 When you're installing VUnit in a virtualenv, make sure to launch Sigasi Studio from within the terminal after activating the virtualenv.
 
+You should make sure that the `python run.py --version` command only returns the VUnit version number. Additional output will prevent Sigasi Studio to parse the VUnit version number correctly and will result in errors.
+
 ## Import VUnit Project
 
 To import an existing VUnit project, click **File > Import... > Sigasi > Import a VUnit project**. Next, select the VUnit script (`run.py`) and the location for the Sigasi Project.
