@@ -62,9 +62,7 @@ Recommended plugin:
 (Update site: <http://eclipse-ccase.sourceforge.net/update/>)
 
 Note that this is the **Open Source ClearCase plugin** hosted on
-SourceForge, not the [**official** ClearCase plugin distributed by
-IBM](http://www.ibm.com/developerworks/rational/downloads/07/cc_eclipse3_2/clearcase_plugins.html)
-.
+SourceForge, not the **official** ClearCase plugin distributed by IBM.
 
 [Learn more about
 ClearCase](http://www.ibm.com/developerworks/rational/downloads/07/cc_eclipse3_2/clearcase_plugins.html).

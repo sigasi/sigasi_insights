@@ -20,7 +20,7 @@ Instead, **`use ieee.numeric_std.all`**.
 
 # Why is that?
 
-*This article was originally published at <http://tams-www.informatik.uni-hamburg.de/vhdl/doc/faq/FAQ1.html#4.11>*
+*This article was originally published at `http://tams-www.informatik.uni-hamburg.de/vhdl/doc/faq/FAQ1.html#4.11`*
 
 The IEEE did not, originally, define a standard set of types and overloaded functions to handle vectors which contained coded numeric values. This meant that individual vendors were free to define their own types and functions.
 Synopsys produced three packages - `std_logic_arith`, `std_logic_signed`, and `std_logic_unsigned`. `std_logic_signed`/`std_logic_unsigned` operated on type `std_logic_vector`, and gave an implicit meaning to the contents of the vector. `std_logic_arith`, however, defined two new types, SIGNED and UNSIGNED, and operated on these types only. Unfortunately, Synopsys decided that these packages should be compiled into library IEEE. Other vendors, including Cadence and Mentor, now produced their own versions of `std_logic_arith`, which were not the same as Synopsys's. They also required their packages to be placed in library IEEE.

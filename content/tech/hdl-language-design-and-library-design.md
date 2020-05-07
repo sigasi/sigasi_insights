@@ -18,7 +18,7 @@ bannerad: true
 
 Last week, I went to the closing symposium of the **SoC Verification** project, where I was invited to talk about the [Code Review](/tech/code-review) process for hardware designers.
 
-We heard some interesting technical talks on <strong>constrained random</strong> and coverage driven verification in <a href="http://www.systemc.org">SystemC</a>. SystemC has a set of library classes and methods that allow users to define constraints on the input parameters of a device under test.
+We heard some interesting technical talks on <strong>constrained random</strong> and coverage driven verification in SystemC. SystemC has a set of library classes and methods that allow users to define constraints on the input parameters of a device under test.
 
 There was also a presentation on various systems for **inline assertions**:
 <ul>

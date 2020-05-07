@@ -43,7 +43,7 @@ Another advantage is the low cost of sales. Our customers can choose to send us 
 
 Web sales only works under certain circumstances. 
 
-First you need good online marketing. We work with a mix of Google Adwords, SEO, blogging, white papers, twitter and press releases. If you haven't already, you should read <a href="http://www.inboundMarketingBook.com">Inbound Marketing</a>.
+First you need good online marketing. We work with a mix of Google Adwords, SEO, blogging, white papers, twitter and press releases. If you haven't already, you should read Inbound Marketing.
 
 Second, you need a price point that is acceptable for online sales, and thus for credit card transactions. Our price is set at 499€ for one person for one year, which can easily be paid using credit cards.
 
