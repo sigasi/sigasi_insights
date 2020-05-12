@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.8)
 layout: page
 pager: true
-date: 2020-04-20
+date: 2020-05-12
 comments: true
 ---
 
@@ -31,8 +31,12 @@ SystemVerilog keywords are no longer highlighted as keywords in Verilog files.
 We improved the outline and added some extra code checks:
 * Warn when a Verilog module has an empty parameter declaration
 * Warn against badly terminated port map of Verilog component (allowed in SystemVerilog)
+* Improved hovers for SystemVerilog declarations
+* Better linking of references to their declaration
 
-We also improved navigation and rename.
+{{< figure src="/img/releasenotes/4.8/system_verilog_outline.png" link="/img/releasenotes/4.8/system_verilog_outline.png" title="Improved SystemVerilog outline: note the result of the expanded UVM macros" width="600" >}}
+
+* We also improved navigation and rename.
 
 ## Other improvements
 
@@ -50,6 +54,10 @@ We also improved navigation and rename.
 * \[Verilog]  Fixed autocompletes at end of Verilog file
 * Fixed outline refresh after undo
 * \[Verilog] StackOverflowException for nested attributed class declaration
+* \[Verilog] Added missing `s_until_with` support in our SystemVerilog parser
+* \[Verilog] Correctly parse `rand` in SystemVerilog checkers
+* Fixed error popup when contents of the Search View get out of date
+* \[VHDL] Fixed Attribute QuickFix for unspecified entity classes
 
 # Update or install?
 
