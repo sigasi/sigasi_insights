@@ -1,59 +1,76 @@
 {{ define "main" }}
 <div class="uk-container">
-    <div class="uk-child-width-1-2@m uk-padding uk-padding-remove-left uk-padding-remove-bottom" data-uk-grid>
-        <div>
-            <h3>How may we help you?</h3>
-            <p>If you have a question and you can't find the answer on this Sigasi Insights portal, 
-            feel free to reach out and send us an email.</p>
-            <ul>
-                <li>For support questions: <a href="mailto:support@sigasi.com">support@sigasi.com</a></li>
-                <li>For sales Enquiries: <a href="mailto:sales@sigasi.com">sales@sigasi.com</a></li>
-                <li>Or contact your <a href="//www.sigasi.com/contact">local distributor</a></li>
-            </ul>
-        </div>
-        <div>
-            <h3>About Sigasi Insights</h3>
-            <p>The Sigasi Insights portal is your entry point to all knowledge about Sigasi Studio
-            and VHDL and SystemVerilog design. It combines</p>
-            <ul>
-                <li>The Sigasi Studio <a href="/manual">Manual</a>
-                <li>A list of <a href="/faq">Frequently Asked Questions</a>
-                <li>A collection of <a href="/screencasts">Screencasts</a>
-                <li><a href="/tech">Tech Articles</a> with tips and tricks on VHDL, Eclipse, Design Methodology and other subjects
-                <li><a href="/opinion">Opinion Articles</a> by Sigasi staff and guest bloggers
-            </ul>
+    <div class="uk-padding uk-padding-remove-bottom">
+        <div class="uk-text-center">
+            <h1>Sigasi Studio Quick Start Guide</h1>
+            <div class="uk-child-width-1-3@m uk-flex-center" data-uk-grid>
+                {{ range $index, $element := .Site.Data.quickstart.items }}
+                <div class="uk-card uk-card-hover uk-card-body uk-padding-remove-bottom">
+                    <h2>Step {{ add $index 1 }} <span class="uk-margin-left" uk-icon="icon: {{ $element.icon }}; ratio: 2"></span></h2>
+                    <h3>{{ $element.title }}</h3>
+                    {{ with $element.content }}
+                    {{ . | markdownify }}
+                    {{ end }}
+                    <a href="{{ $element.action_url }}">{{ $element.action_text }}</a><br>
+                    {{ with .Site.GetPage $element.video_url }}
+                    {{ .Title }}
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
         </div>
     </div>
-    <hr>
-    <div class="uk-child-width-1-3@m uk-padding uk-padding-remove-left uk-padding-remove-top" data-uk-grid>
-        <div>
-            <h3>First Start</h3>
-            {{ range .Site.Data.frontpage.firststart }}
-            <span uk-icon="link"></span><a href="{{ .url }}">{{ .title }}</a><br>
-            {{ end }}
+    <div class="uk-padding uk-padding-remove-left uk-padding-remove-top">
+        <hr>
+        <div class="uk-child-width-1-2@m" data-uk-grid>
+            <div>
+                <h3>Popular Tech Articles</h3>
+                {{ range .Site.Data.frontpage.popular }}
+                <span uk-icon="link"></span><a href="{{ .url }}">{{ .title | truncate 55}}</a><small></small><br>
+                {{ end }}
+                <span uk-icon="link"></span><a href="/tech">more...</a><br>
+            </div>
+            <div>
+                <h3>Recent Articles</h3>
+                {{ $s_tech := where .Site.RegularPages.ByDate.Reverse "Section" "tech" }}
+                {{ range first 10 $s_tech }}
+                <span uk-icon="link"></span><a href="{{ .Permalink }}">{{ .Title | truncate 55 }}</a><small> {{ .Date.Format "2006-01-02" }}</small><br>
+                {{ end }}
+            </div>
         </div>
-        <div>
-            <h3>Popular Tech Articles</h3>
-            {{ range .Site.Data.frontpage.popular }}
-            <span uk-icon="link"></span><a href="{{ .url }}">{{ .title }}</a><br>
-            {{ end }}
-            <span uk-icon="link"></span><a href="/tech">more...</a><br>
-        </div>
-        <div>
-            <h3>Recent Articles</h3>
-            {{ $s_tech := where .Site.RegularPages.ByDate.Reverse "Section" "tech" }}
-            {{ range first 10 $s_tech }}
-            <span uk-icon="link"></span><a href="{{ .Permalink }}">{{ .Title | truncate 30 }}</a><small> {{ .Date.Format "2006-01-02" }}</small><br>
-            {{ end }}
+        <hr>
+        <div class="uk-child-width-1-2@m" data-uk-grid>
+            <div>
+                <h3>How may we help you?</h3>
+                <p>If you have a question and you can't find the answer on this Sigasi Insights portal, 
+                feel free to reach out and send us an email.</p>
+                <ul class="uk-list">
+                    <li>For support questions: <a href="mailto:support@sigasi.com">support@sigasi.com</a></li>
+                    <li>For sales Enquiries: <a href="mailto:sales@sigasi.com">sales@sigasi.com</a></li>
+                    <li>Or contact your <a href="//www.sigasi.com/contact/#our-distributors">local distributor</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>About Sigasi Insights</h3>
+                <p>The Sigasi Insights portal is your entry point to all knowledge about Sigasi Studio
+                and VHDL and SystemVerilog design. It combines</p>
+                <ul class="uk-list">
+                    <li>The Sigasi Studio <a href="/manual">Manual</a>
+                    <li>A list of <a href="/faq">Frequently Asked Questions</a>
+                    <li>A collection of <a href="/screencasts">Screencasts</a>
+                    <li><a href="/tech">Tech Articles</a> with tips and tricks on various subjects
+                    <li><a href="/opinion">Opinion Articles</a> by Sigasi staff and guest bloggers
+                </ul>
+            </div>
         </div>
     </div>
-    <div class="uk-child-width-1-4@m sg-block-dark uk-padding" data-uk-grid>
+    <div class="uk-child-width-1-4@m sg-block-dark uk-padding uk-padding-remove-left" data-uk-grid>
         {{ $s_screencasts := where .Site.RegularPages.ByDate.Reverse "Section" "screencasts" }}
         {{ range first 4 $s_screencasts }}
         <div>
             {{ partial "youtube" . }}
             <center>
-                <a href="{{ .Permalink }}"><small>{{ .Title | truncate 35}}</small></a>
+                <a href="{{ .Permalink }}"><small>{{ .Title | truncate 40}}</small></a>
             </center>
         </div>
         {{ end }}
