@@ -69,7 +69,7 @@ is a line comment. Your next problem will be supporting multi-line
 comments. The point is: VHDL Emacs does not do all of this for you;
 you’re on your own. If you are a really nice guy you might read this,
 script a new elisp command and send it to
-[Reto](http://www.iis.ee.ethz.ch/~zimmi/emacs/vhdl-mode.html) to be
+[Reto](https://guest.iis.ee.ethz.ch/~zimmi/emacs/vhdl-mode.html) to be
 incorporated in the next update of the Emacs VHDL mode. Let’s see if
 your new improvement would solve the next problem.
 
