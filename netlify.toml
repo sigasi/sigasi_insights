@@ -11,6 +11,9 @@
   for = "/*"
   [headers.values]
     cache-control = "public, max-age=600, must-revalidate"
+    referrer-policy = "strict-origin-when-cross-origin"
+    x-frame-options = "DENY"
 
 [context.deploy-preview]
   command = "hugo version; hugo --buildFuture --buildDrafts --baseURL $DEPLOY_PRIME_URL"
+
