@@ -11,13 +11,13 @@ The table below lists the (System)Verilog code rules that can be checked automat
 The availability of code rules depends on the license requirements.
 
 * ST code rules are available for all licenses including {{< starter >}}
-* XPRT code rules require a {{< xprt >}} license.
+* XL code rules require a {{< xl >}} license.
 
 | License | Quick Fix                             | Description                                                                                                             | ID |
 |---------|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------|---:|
 | ST      |                                       | File encoding differences between including and included files                                                          |    |
-| XPRT    |                                       | Null loops                                                                                                              |  1 |
-| XPRT    |                                       | [Check Naming Conventions]({{< ref "rules/naming-conventions" >}})                                                                         |  2 |
-| XPRT    | ![](/img/icons/warning_lightbulb.png) | Disallow 'reg' datatype                                                                                                 |  3 |
-| XPRT    |                                       | VHDL keyword as module name                                                                                             |  7 |
+| XL      |                                       | Null loops                                                                                                              |  1 |
+| XL      |                                       | [Check Naming Conventions]({{< ref "rules/naming-conventions" >}})                                                      |  2 |
+| XL      | ![](/img/icons/warning_lightbulb.png) | Disallow 'reg' datatype                                                                                                 |  3 |
+| XL      |                                       | VHDL keyword as module name                                                                                             |  7 |
 
