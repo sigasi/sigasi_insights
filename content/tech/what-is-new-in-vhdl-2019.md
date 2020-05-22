@@ -1,10 +1,13 @@
-VHDL 2018: New and Noteworthy
-L. Lemiengre and H. Eeckhaut
-Sigasi
-Kerkstraat 108
-9050 Gent-Brugge Belgium
+---
+title: "What is new in VHDL 2019?"
+date: 2020-05-18
+author: L. Lemiengre and H. Eeckhaut
+pager: true
+comments: true
+bannerad: true
+---
 
-Abstract - VHDL 2018 improves many aspects of the popular hardware design language.
+VHDL 2019 improves many aspects of the popular hardware design language.
 The most important improvement is the ability to bundle ports in an interface. This feature greatly reduces the
 verbosity of instantiations while improving the maintainability and clarity of the code.
 The language was simplified where possible, restrictions were removed and various inconsistencies were resolved.
@@ -21,7 +24,7 @@ APIs and language features aimed at verification library designers.
 
 II. REVIVING THE VHDL STANDARD
 Before we dive into the new features, it is interesting to take a step back and examine if it still makes sense to evolve
-this thirty plus year old VHDL standard. Is VHDL still relevant in 2018? This is a question that the members of the
+this thirty plus year old VHDL standard. Is VHDL still relevant in 2019? This is a question that the members of the
 VHDL working group had to answer.
 In recent years, VHDL was pushed into the background as other languages have gotten more attention. It is rare to
 see VHDL-related talks at conferences. Some EDA companies [1] and some thought leaders [2] have even declared
@@ -68,7 +71,7 @@ working group is aware of them.
 We believe that separating the language and the IEEE library is, on the whole, beneficial for VHDL. If a proposal
 is made to change the core language, we first evaluate if it is possible to implement it as a library. For example: an
 important subject for hardware design languages is verification. The working group has made the explicit choice not
-to include verification features into VHDL 2018. Instead, the group decided verification should be implemented as a
+to include verification features into VHDL 2019. Instead, the group decided verification should be implemented as a
 library.
 Verification methodologies are evolving quickly. It is hard to justify adding constrained random generation into the
 core language when this methodology may someday be replaced with for example formal methods or something yet
@@ -87,8 +90,8 @@ changes to the core language as possible, we significantly improve VHDL’s capa
 library development. The focus was on improving the core language. In a future revision we may focus on
 standardizing more IEEE libraries.
 
-III. REALIZING VHDL 2018
-The work on VHDL 2018 started in 2014 by conducting a survey. To focus the standardization effort, people active
+III. REALIZING VHDL 2019
+The work on VHDL 2019 started in 2014 by conducting a survey. To focus the standardization effort, people active
 on the VHDL mailing list were asked to rank a set of proposals. The results were very clear: interfaces were the most
 requested feature. At that point there were many different proposals to achieve this functionality. It took more than
 two years to reach a consensus about this feature.
@@ -258,12 +261,12 @@ from a function.
 
 procedure p(signal b : view streaming_slave; ...);
 function f(signal b : view streaming_slave; ...) return ...;
-The ability to cleanly express interfaces is the most visible improvement in VHDL 2018. It drastically improves the
+The ability to cleanly express interfaces is the most visible improvement in VHDL 2019. It drastically improves the
 readability and maintainability of VHDL designs. As shown in the examples, the provided features are very flexible
 and allow the designer to model any interface.
 
 B. Enhanced generic types
-VHDL 2018 improves generic types and subprograms. In VHDL 2008 generic types were introduced, these
+VHDL 2019 improves generic types and subprograms. In VHDL 2008 generic types were introduced, these
 generic types can be bound to any type. In addition to the generic type, a number of generic operations can be
 provided with the type. For example:
 
@@ -286,7 +289,7 @@ output <= maximum(input) when rising_edge(clk);
 end
 The operations passed with the generic type describe the capabilities of this type. Implicitly the “=” and “/=”
 operators are also passed in the generic list, for every generic type.
-In VHDL 2018 we decided to make generic types easier to use by allowing the designer to constrain the type to a
+In VHDL 2019 we decided to make generic types easier to use by allowing the designer to constrain the type to a
 type class. The implicit declarations of that type class are then automatically available.
 
 entity max is
@@ -307,7 +310,7 @@ end;
 Now we have constrained “element_t” and “index_t” to be scalar types. Which means that all implicit declarations
 like “=”, “>=”, to_string, … and all attributes defined for scalars are available for these types. The subprogram
 “maximum” is implicitly defined for scalar types so it is no longer necessary to pass the subprogram explicitly. We
-have also constrained “array_t” to be an array type. Aside from scalar and array, VHDL 2018 defines seven more
+have also constrained “array_t” to be an array type. Aside from scalar and array, VHDL 2019 defines seven more
 generic types, each with their own implicit operations such as maximum, to_string and “=”. In conclusion, we have
 gained type-safety by constraining the generic types, and the solution is less verbose because many implicit operations
 don't have to be passed explicitly.
@@ -341,7 +344,7 @@ input : in type array_t is array(type is <>) of type is <>;
 output : out input’subtype’element
 );
 end;
-VHDL 2018 allows incomplete formal types to be used on the port declaration, we have used this to declare the
+VHDL 2019 allows incomplete formal types to be used on the port declaration, we have used this to declare the
 port “input”. For consistency, port lists are now analyzed in order, just like generic lists have been since 2008. This
 means that you can refer to a previously defined port to declare a port, this is how the type of port “output” is declared.
 The result is that the declaration of the entity “max” is less verbose but also that the instantiation of “max” is less
@@ -379,7 +382,7 @@ types can be parameterized with generic types, in this example “generic_list�
 
 Many restrictions on where and how protected types can be used had to be lifted. Garbage collection has been added
 such that the designer does not have to manually delete these dynamic data structures after use. These data structures
-are not a part of the 2018 standard. We will let verification libraries experiment with them first.
+are not a part of the 2019 standard. We will let verification libraries experiment with them first.
 In conclusion, the improvements that were made to generic types make them more type-safe and reduces their
 verbosity. They also enable new kinds of libraries.
 
@@ -465,7 +468,7 @@ Objects now have direct access to the attributes of their type. This simplifies 
 Example: obtaining the string value of an object
 report o’subtype’image(o); -- VHDL 2008
 report o’image
--- VHDL 2018
+-- VHDL 2019
 All attributes were reviewed and many inconsistencies were resolved. For example, the “image” attribute is now
 available for records and arrays.
 
@@ -585,10 +588,10 @@ Two additions were made to provide better debug information to the users of veri
 The API provides functions to retrieve the file name, file path and line in the current VHDL file. Another set of
 subprograms and types can be used to retrieve and inspect call path, also called stack traces.
 IV. CONCLUSION
-In this paper we covered the most important features of VHDL 2018. There are big improvements to both RTL and
+In this paper we covered the most important features of VHDL 2019. There are big improvements to both RTL and
 verification. We did so by adding interfaces, improving generic types, streamlining the language and by increasing
 support and available tools for verification library designers.
-The result will breathe new life into the VHDL community. The revision will be balloted and released in 2018. The
+The result will breathe new life into the VHDL community. The revision will be balloted and released in 2019. The
 finished proposals are publicly available on the VHDL working group wiki [10].
 ACKNOWLEDGEMENTS
 This language revision was the result of continuous feedback from many experienced hardware designers and library
@@ -596,7 +599,7 @@ builders who participate in the working group. The working group’s resources a
 was done by voluntary contributors. We had to reject many proposals, often because we did not have the time to fully
 explore them. But focusing on the smallest features that could have the biggest impact has been a successful strategy.
 We would like to thank all members of the VHDL working group, in particular the chair: Jim Lewis and vice chairs:
-Patrick Lehmann and Rob Gaddi. Without their relentless commitment VHDL 2018 would never have seen the light
+Patrick Lehmann and Rob Gaddi. Without their relentless commitment VHDL 2019 would never have seen the light
 of day.
 REFERENCES
 [1]Michael Santarini, "Synopsys executive predicts end of VHDL" https://www.eetimes.com/document.asp?doc_id=1216860, 4/11/2003
