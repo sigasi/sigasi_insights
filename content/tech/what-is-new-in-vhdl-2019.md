@@ -28,6 +28,7 @@ strong typing, early bug detection and clear language semantics remain the key f
 
 # I. INTRODUCTION
 
+{{< figure alt="Lieven at DVcon 2018" src="/img/tech/lieven_DVcon2018.jpg" class="uk-align-right" width="300px" caption="Lieven at DVcon 2018" >}}
 We start by motivating why VHDL is still relevant today and how the language can evolve to remain relevant.
 
 Next, we look at the two biggest features of the new revision: Interfaces and enhanced generics dramatically change
