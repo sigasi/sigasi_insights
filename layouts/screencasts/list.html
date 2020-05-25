@@ -4,7 +4,7 @@
         {{.Content}}
     </article>
 
-    <h2>Latests Screencasts</h2>
+    <h2 class="uk-padding uk-padding-remove-left uk-padding-remove-bottom">Latests Screencasts</h2>
     <div class="uk-child-width-1-3@m uk-padding uk-padding-remove-left uk-padding-remove-bottom" data-uk-grid>
         {{ range first 6 .Pages.ByDate.Reverse }}
         <div>
@@ -29,7 +29,7 @@
         {{ end }}
     </ul>
 
-    <h2>All Screencasts</h2>
+    <h2>All Screencasts <a href="/screencasts/index.xml" uk-icon="icon: rss"></a></h2>
     <ul class="uk-list uk-column-1-2@m uk-margin-medium-bottom">
         {{ range .Pages.ByTitle }}
         <li>

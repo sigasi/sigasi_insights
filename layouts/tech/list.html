@@ -25,7 +25,7 @@
     </div>
     </div>
 
-    <h2>All Articles</h2>
+    <h2>All Articles <a href="/tech/index.xml" uk-icon="icon: rss"></a></h2>
     <ul class="uk-list uk-column-1-2@m uk-margin-medium-bottom">
       {{ if .Page.InSection .Page.FirstSection }}
         {{ range (where .Site.RegularPages "Section" "tech") }}
