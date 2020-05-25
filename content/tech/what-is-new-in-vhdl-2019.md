@@ -5,13 +5,9 @@ author: Bart Brosens
 pager: true
 comments: true
 bannerad: true
-markup:
-  tableOfContents:
-    endlevel: 3
 ---
 
 This article is the first in a series of articles that are taken from the talk **VHDL 2018: New and Noteworthy** that was given by our colleague Lieven Lemiengre at DVCON 2018.
-This article serves as an introduction.
 
 The new VHDL standard was approved and published in 2019.
 The references to 2018 from the talk have been replaced by 2019 in these articles. 
@@ -26,7 +22,8 @@ New APIs, enhanced protected and generic types enable designers to build the nex
 To achieve these improvements, the VHDL working group continues to build on the existing strengths of VHDL:
 strong typing, early bug detection and clear language semantics remain the key features of VHDL.
 
-# I. INTRODUCTION
+# 1 Introduction
+This article serves as an introduction.
 
 {{< figure alt="Lieven at DVcon 2018" src="/img/tech/lieven_DVcon2018.jpg" class="uk-align-right" width="300px" caption="Lieven at DVcon 2018" >}}
 We start by motivating why VHDL is still relevant today and how the language can evolve to remain relevant.
@@ -36,7 +33,7 @@ the way VHDL is used. Improving type safety and readability while reducing verbo
 Next, we take a look at a number of small features and APIs that improve the usability of the language.  
 Finally, we take a look at a new set of APIs and language features aimed at verification library designers.
 
-# II. REVIVING THE VHDL STANDARD
+# 2 Reviving the VHDL standard
 
 Before we dive into the new features, it is interesting to take a step back and examine if it still makes sense to evolve
 this thirty plus year old VHDL standard. Is VHDL still relevant in 2019? This is a question that the members of the
@@ -108,7 +105,7 @@ changes to the core language as possible, we significantly improve VHDL’s capa
 library development. The focus was on improving the core language. In a future revision we may focus on
 standardizing more IEEE libraries.
 
-# III. REALIZING VHDL 2019
+# 3 Realizing VHDL 2019
 The work on VHDL 2019 started in 2014 by conducting a survey. To focus the standardization effort, people active
 on the VHDL mailing list were asked to rank a set of proposals. The results were very clear: interfaces were the most
 requested feature. At that point there were many different proposals to achieve this functionality. It took more than
@@ -123,7 +120,7 @@ implement, but they can have tremendous value to the user.
 generation of VHDL verification libraries. It is unlikely that VHDL designers will use these features, they are added
 specifically for library designers.
 
-## A. Interfaces
+## A Interfaces
 Interfaces are a central element in hardware design. There are many standardized interfaces like I²C, AXI or VGA
 and every design also has internally designed interfaces to connect various parts of a system. Unfortunately, these
 interfaces are cumbersome to model using VHDL. Typically, they are not explicitly defined. Instead their description
@@ -297,7 +294,7 @@ The ability to cleanly express interfaces is the most visible improvement in VHD
 readability and maintainability of VHDL designs. As shown in the examples, the provided features are very flexible
 and allow the designer to model any interface.
 
-## B. Enhanced generic types
+## B Enhanced generic types
 VHDL 2019 improves generic types and subprograms. In VHDL 2008 generic types were introduced, these
 generic types can be bound to any type. In addition to the generic type, a number of generic operations can be
 provided with the type. For example:
@@ -424,11 +421,11 @@ are not a part of the 2019 standard. We will let verification libraries experime
 In conclusion, the improvements that were made to generic types make them more type-safe and reduces their
 verbosity. They also enable new kinds of libraries.
 
-## B. Usability
+## C Usability
 Aside from improving some of the core constructs of VHDL it is also important to pay attention to the small, daily
 frustrations of design.
 
-### B.1 Conditional Expressions
+### C.1 Conditional Expressions
 
 Users have often missed a ternary operator in VHDL. For this version we have expanded the places where the
 “when-else” construct can be used:
@@ -447,7 +444,7 @@ return when condition; -- only return when the condition is true
 return a when condition else b;
 ```
 
-### B.2 Conditional analysis
+### C.2 Conditional analysis
 A preprocessor was added to perform conditional compilation. The preprocessor has access to six predefined
 variables:
 VHDL_VERSION,
@@ -473,7 +470,7 @@ if env.tool_type = "SIMULATION" then ... endif;
 This allows designers to work around tool issues that can not be solved within the VHDL language. Libraries can
 now target multiple VHDL versions or multiple toolchains, offering features depending on the environment.
 
-### B.3 Sequential declaration regions
+### C.3 Sequential declaration regions
 **FIXME** This part was removed from the standard. Only simple sequential blocks are allowed.
 
 Allowing designers to declare constants and variables inside sequential regions was a frequently requested feature.
@@ -484,17 +481,16 @@ In this example we show an if statement inside a for statement
 ```vhdl
 p : process is
 begin
-for i in some_vector’range then
-
-constant element : integer := some_vector(i);
-begin
-if element > CONST then
-variable result : integer;
-begin
-some_procedure(element, result);
-report result’image;
-end if;
-end for;
+  for i in some_vector’range then
+    constant element : integer := some_vector(i);
+  begin
+    if element > CONST then
+      variable result : integer;
+    begin
+      some_procedure(element, result);
+      report result’image;
+    end if;
+  end for;
 end process p;
 ```
 
@@ -505,20 +501,20 @@ confusion: Variables declared in a sequential declarative part will always be co
 
 ```vhdl
 p : process is
-variable combinatorial_or_register : unsigned(8 downto 0);
+  variable combinatorial_or_register : unsigned(8 downto 0);
 begin
-if rising_edge(clk) then
-variable only_combinatorial : unsigned;
-begin
-...
-end for;
+  if rising_edge(clk) then
+    variable only_combinatorial : unsigned;
+  begin
+    ...
+  end for;
 end process p;
 ```
 
-### B.4 Bigger integer
+### C.4 Bigger integer
 The minimum size of integer has been increased from 32-bit to 64-bit.
 
-### B.5 Improved attributes
+### C.5 Improved attributes
 Objects now have direct access to the attributes of their type. This simplifies the use of many attributes.
 
 Example: obtaining the string value of an object
@@ -530,7 +526,7 @@ report o’image             -- VHDL 2019
 All attributes were reviewed and many inconsistencies were resolved. For example, the “image” attribute is now
 available for records and arrays.
 
-### B.6 Attributes for PSL
+### C.6 Attributes for PSL
 PSL support was updated to the latest version (IEEE 1850-2010). In addition, it's now possible to interact with PSL
 directives. There are two ways to do this.
 
@@ -540,10 +536,10 @@ the PSL directive and the “event” attribute to detect that the PSL directive
 Through new subprograms in the std.env package, the verification library can check if any PSL asserts have failed,
 check that all PSL objects were covered, reset the state of PSL objects and more.
 
-### B.7 New and improved APIs
+## D New and improved APIs
 Several APIs to interact with the operating system were updated or added.
 
-### B.7.1 File API
+### D.1 File API
 Four features were added to the std.textio API:
 
 * Files can now be opened in “read_write_mode”
@@ -551,13 +547,13 @@ Four features were added to the std.textio API:
 * You can determine and modify the size of a file using the subprograms “file_size” and “file_truncate”
 * Random file access was added using the subprograms “file_position”, “file_seek” and “file_rewind”
 
-### B.7.2 File system API
+### D.2 File system API
 In the package std.env several subprograms were added to interact with the file system.
 
 * Directories can be explored using the “dir_open” subprogram and the “directory” data type
 * Files and directories can be created and deleted
 
-### B.7.3 Date & time API
+### D.3 Date & time API
 The date and time API was added to the std.env package. It has the following features:
 
 * The ability to query the time since EPOCH as a real
@@ -579,10 +575,11 @@ type time_record is record
 end record time_record;
 ```
 
-### B.7.4 Environment variables
+### D.4 Environment variables
 A minimal API to query environment variables was added to std.env.
-### B.8 APIs for library builders
-#### B.8.1 Introspection
+
+## E APIs for library builders
+### E.1 Introspection
 The introspection API allows users to inspect arbitrary data types. This feature is oriented towards verification
 libraries and not intended for RTL.
 
@@ -598,19 +595,19 @@ The introspection API is based on the mirror-based reflection research by Gilad 
 approach that has been used in many other languages<sup> [8](#ref8) [9](#ref9)</sup>. In this initial release it is not possible to create or modify
 values, in a future revision this functionality could be added.
 
-#### B.8.2 Asserts
+### E.2 Asserts
 This API is similar to the new PSL API. You can check how many asserts have failed, modify the failure messages,
 clear assertion results and much more.
 
 This API is vital for verification libraries. The subprograms were added to the package std.env.
 
-#### B.8.3 Call path
+### E.3 Call path
 Two additions were made to provide better debug information to the users of verification libraries.
 
 The API provides functions to retrieve the file name, file path and line in the current VHDL file. Another set of
 subprograms and types can be used to retrieve and inspect call path, also called stack traces.
 
-# IV. CONCLUSION
+# 4 Conclusion
 In this paper we covered the most important features of VHDL 2019. There are big improvements to both RTL and
 verification. We did so by adding interfaces, improving generic types, streamlining the language and by increasing
 support and available tools for verification library designers.
@@ -618,7 +615,7 @@ support and available tools for verification library designers.
 The result will breathe new life into the VHDL community. The revision will be balloted and released in 2019. The
 finished proposals are publicly available on the VHDL working group wiki<sup> [10](#ref10)</sup>.
 
-# ACKNOWLEDGEMENTS
+# Acknowledgements
 This language revision was the result of continuous feedback from many experienced hardware designers and library
 builders who participate in the working group. The working group’s resources are limited, as such, most of the work
 was done by voluntary contributors. We had to reject many proposals, often because we did not have the time to fully
@@ -628,7 +625,7 @@ We would like to thank all members of the VHDL working group, in particular the 
 Patrick Lehmann and Rob Gaddi. Without their relentless commitment VHDL 2019 would never have seen the light
 of day.
 
-# REFERENCES
+# References
 
 <a name="ref1"></a>[1] [Michael Santarini, "Synopsys executive predicts end of VHDL"](https://www.eetimes.com/document.asp?doc_id=1216860), 4/11/2003  
 <a name="ref2"></a>[2] [John Cooley, "VHDL, the new Latin"](https://www.eetimes.com/document.asp?doc_id=1216865), 4/7/2003  
