@@ -91,7 +91,7 @@ Some other popular revision control systems include:
 
 ## Remote collaboration
 
-* You can use the [Saros](https://marketplace.eclipse.org/content/saros-distributed-collaborative-editing-and-pair-programming) plugin to remotely collaborate on the same project with multiple people. You'll see edits from collaborators in your own editor as they happen.
+* You can use the [Saros](https://marketplace.eclipse.org/content/saros-distributed-collaborative-editing-and-pair-programming) plugin to remotely collaborate on the same project with multiple people. You'll see edits from collaborators in your own editor as they happen. To install the Saros plugin in Sigasi Studio, use https://www.saros-project.org/update-site/eclipse as update site.
 
 ## Opening to a shell
 
