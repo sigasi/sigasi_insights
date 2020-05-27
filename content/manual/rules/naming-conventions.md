@@ -2,7 +2,7 @@
 title: Naming Conventions
 ---
 
-On the **Navigation conventions** preference page (**Window \>
+On the **Naming conventions** preference page (**Window \>
 Preferences \> Sigasi \> VHDL/(System)Verilog \> Naming conventions**) you can configure
 patterns to check correct naming of your VHDL and SystemVerilog identifiers. Patterns are
 configured with [Java regex syntax](https://docs.oracle.com/javase/8/docs/api/index.html?java/util/regex/Pattern.html).
