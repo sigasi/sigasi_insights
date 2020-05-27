@@ -471,25 +471,28 @@ This allows designers to work around tool issues that can not be solved within t
 now target multiple VHDL versions or multiple toolchains, offering features depending on the environment.
 
 ### C.3 Sequential declaration regions
-**FIXME** This part was removed from the standard. Only simple sequential blocks are allowed.
-
 Allowing designers to declare constants and variables inside sequential regions was a frequently requested feature.
-Initially, we only added a simple sequential block statement but after some experimentation, we found that adding
-sequential declaration regions to if statements and loop statements is more useful in practice.
-In this example we show an if statement inside a for statement
+For this a sequential block statement was added.
+In the following example we show an if statement inside a for statement.
+Each have blocks inside to allow for declarations.
+The block labels are optional.
 
 ```vhdl
 p : process is
 begin
   for i in some_vector’range then
-    constant element : integer := some_vector(i);
-  begin
-    if element > CONST then
-      variable result : integer;
+    b1 : block
+      constant element : integer := some_vector(i);
     begin
-      some_procedure(element, result);
-      report result’image;
-    end if;
+      if element > CONST then
+        b2 : block
+          variable result : integer;
+        begin
+          some_procedure(element, result);
+          report result’image;
+        end block b2;
+      end if;
+    end block b1;
   end for;
 end process p;
 ```
@@ -504,10 +507,12 @@ p : process is
   variable combinatorial_or_register : unsigned(8 downto 0);
 begin
   if rising_edge(clk) then
-    variable only_combinatorial : unsigned;
-  begin
-    ...
-  end for;
+    b : block
+      variable only_combinatorial : unsigned;
+    begin
+      ...
+    end block b;
+  end if;
 end process p;
 ```
 
