@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.8)
 layout: page
 pager: true
-date: 2020-05-12
+date: 2020-05-28
 comments: true
 ---
 
@@ -41,6 +41,7 @@ We improved the outline and added some extra code checks:
 ## Other improvements
 
 * \[VHDL] We replaced the shorthand with longhand command line options of GHDL
+* \[VHDL] Improved outcomplete for ports in enties
 * We updated Eclipse in the standalone version to Eclipse 2020-03
 * We updated the Xtext dependency to 2.21.0
 
@@ -58,6 +59,15 @@ We improved the outline and added some extra code checks:
 * \[Verilog] Correctly parse `rand` in SystemVerilog checkers
 * Fixed error popup when contents of the Search View get out of date
 * \[VHDL] Fixed Attribute QuickFix for unspecified entity classes
+* Task (`TODO`, `FIXME`) markers are now removed when a file is unmapped
+* Added missing whitespace in documentation when comments span multiple lines
+* \[Verilog] Fixed name of virtual classes in documentation
+* Update open editors when library mapping changes
+* Update graphical diagrams when the theme changes
+* Fixed issue with invisble hierarchical edges in block diagram
+* \[VHDL] Fixed launching simulation in Modelsim/Riviera Pro, when an entity is set as toplevel
+* \[Verilog] Added support for empty default arguments in preprocessor macros
+
 
 # Update or install?
 
