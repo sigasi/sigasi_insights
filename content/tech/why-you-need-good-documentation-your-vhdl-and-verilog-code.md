@@ -124,7 +124,7 @@ as follows:
     stable reference platform, than person based information, which has
     a tendency to vary more depending on who is delivering the
     information when. The [variations in the information consumers
-    interpretation](http://mikisseth.blogspot.in/2009/06/cost-and-benefits-of-documentation.html)
+    interpretation](https://mikisseth.blogspot.com/2009/06/cost-and-benefits-of-documentation.html)
     of the information provided is of course another matter.
 
 Technical documentation is beneficial for the organization too. It
