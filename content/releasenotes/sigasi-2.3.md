@@ -43,7 +43,7 @@ variables. We also implemented a **Quickfix** which can automatically
 resolve the warning by removing the unused declaration. To trigger a
 quickfix, click the problem marker (annotated with a lightbulb icon) and
 select the quickfix. You can also trigger the quickfix by putting your
-cursor on the unused declaration in the editor and pressing **Ctrl-F1**.
+cursor on the unused declaration in the editor and pressing **Ctrl+F1**.
 
 It is confusing to read a design that contains ‘dead code’. This new
 feature will make it easier to detect and remove it.

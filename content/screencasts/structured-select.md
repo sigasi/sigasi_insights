@@ -11,7 +11,7 @@ tags:
 Select VHDL based on its syntactic structure. This allows you to cut, copy and move code a lot faster.
 
 Note that the default shortcut is different on Mac and Windows.
-Mac uses **Ctrl-Shift**. Windows and Linux use **Alt-Shift**.
+Mac uses **Ctrl+Shift**. Windows and Linux use **Alt+Shift**.
 
 You can modify this in the Keys preference page (**Preferences > General > Keys**) if you want.
 The command names are:

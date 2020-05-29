@@ -224,7 +224,7 @@ Yes, the Sigasi VHDL Eclipse editor supports all unicode characters, including J
 
 ## What is this MouseFeed pop-up?
 
-Many actions can be accessed using your mouse and using [Keyboard Shortcuts](/manual/keyshortcuts), e.g. copying text can be done either by clicking **Edit > Copy** or by pressing **Ctrl-C**. Of course, pressing a key combination is a lot faster than clicking in a menu.
+Many actions can be accessed using your mouse and using [Keyboard Shortcuts](/manual/keyshortcuts), e.g. copying text can be done either by clicking **Edit > Copy** or by pressing **Ctrl+C**. Of course, pressing a key combination is a lot faster than clicking in a menu.
 
 {{< figure src="/img/faq/mousefeed.png" alt="MouseFeed pop-up" >}}
 
@@ -253,7 +253,7 @@ Once have configured the windows and the views inside the windows, you can save 
 
 In some situations you may not want Sigasi's VHDL aware search (**Find References**), but you want an old-fashioned textual search instead.
 
-If you want textual search inside one file, you can use **Find** (Ctrl-F). This dialog has an easy "**Whole word**" option.
+If you want textual search inside one file, you can use **Find** (Ctrl+F). This dialog has an easy "**Whole word**" option.
 
 {{< figure src="/img/faq/find.png" alt="Find/Replace dialog" >}}
 
@@ -412,7 +412,7 @@ Note that in many cases where you are used to using block editing (e.g. [Entity 
 
 Some other editors (most notably [Reto Zimmermann's Emacs VHDL Mode](/opinion/emacs)) have the concept of **"port translation"**. You first copy the source code of an entity declaration, and then you can paste it as an instantiation or as a component declaration.
 
-Sigasi supports the same, but in a different way: using **Autocomplete**. You don't need to go find the original entity declaration, since Sigasi knows where to find it in your project. For example for instantiation: just start typing the **label name**, `:` and the word `entity` and press **Ctrl-Space** to trigger the autocomplete feature.
+Sigasi supports the same, but in a different way: using **Autocomplete**. You don't need to go find the original entity declaration, since Sigasi knows where to find it in your project. For example for instantiation: just start typing the **label name**, `:` and the word `entity` and press **Ctrl+Space** to trigger the autocomplete feature.
 
 Check out this screencast: [Create a testbench with autocomplete](/screencasts/testbench).
 

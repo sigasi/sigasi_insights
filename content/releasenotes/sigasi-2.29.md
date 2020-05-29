@@ -10,7 +10,7 @@ The Sigasi 2.29 release brings better *Verilog* parsing, *SystemVerilog* for Syn
 ## Better Verilog support
 
 We significantly improved our internal Verilog parser. Our parser is now able to give *type-time syntax errors* for Verilog (2005) code. This gives you instant feedback about Verilog syntax errors. So no more waiting for the compiler to find syntax issues.
-Note that this feature is disabled by default. You can enable/disable it with the **Ctrl-3** keyboard shortcut, and next typing **Toggle Verilog problem markers**.
+Note that this feature is disabled by default. You can enable/disable it with the **Ctrl+3** keyboard shortcut, and next typing **Toggle Verilog problem markers**.
 
 ![Toggle Verilog Markers](/img/releasenotes/2.29/toggle-verilog-markers.png "Toggle Verilog Markers")
 

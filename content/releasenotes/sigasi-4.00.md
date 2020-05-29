@@ -89,7 +89,7 @@ Sigasi Studio 4.0 also contains a lot of improvements to enhance your SystemVeri
     * Improved syntax highlighting
 {{< figure src="/img/releasenotes/4.0/better_preprocessor_view.png" alt="SystemVerilog preprocessor view" title="SystemVerilog preprocessor view" link="/img/releasenotes/4.0/better_preprocessor_view.png" >}}
 - We also improved SystemVerilog scoping (i.e. linking identifiers with their declaration). This results in a more accurate **Find references**, **Occurrence highlighting** and **Rename refactoring**.  
-You can also enable **warnings for undeclared identifiers** via the **Ctrl-3** keyboard shortcut, and next typing **Toggle SystemVerilog problem markers**  
+You can also enable **warnings for undeclared identifiers** via the **Ctrl+3** keyboard shortcut, and next typing **Toggle SystemVerilog problem markers**  
 {{< figure src="/img/releasenotes/4.0/toggle_verilog_markers.png" alt="Warn about unresolved declarations" title="Warn about unresolved declarations" link="/img/releasenotes/4.0/toggle_verilog_markers.png" >}}
 
 # Other news and noteworthy changes

@@ -59,7 +59,7 @@ Linting is skipped for all files in the Common Libraries folder.
 
 Some of the VHDL lint problems can be automatically resolved with *Quick Fixes*.
 These problems have *markers* annotated with a lightbulb icon (like ![](/img/icons/warning\_lightbulb.png)).
-To trigger a Quick Fix, click the problem marker or press **Ctrl-1** and select the Quick Fix.
+To trigger a Quick Fix, click the problem marker or press **Ctrl+1** and select the Quick Fix.
 
 # Language specific code rules
 

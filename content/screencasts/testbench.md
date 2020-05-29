@@ -6,7 +6,7 @@ date: 2016-01-01
 comments: false
 videoid: 36865dbffa
 ---
-Writing a testbench skeleton is easy with Sigasi's autocomplete feature. Just keep pressing **Ctrl-Space**.
+Writing a testbench skeleton is easy with Sigasi's autocomplete feature. Just keep pressing **Ctrl+Space**.
 There are powerful autocomplete templates for:
 
 * VHDL entity / architecture skeleton

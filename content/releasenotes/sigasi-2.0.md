@@ -12,8 +12,8 @@ For the Sigasi Pro release we worked hard on handling **large VHDL projects**. W
 Other improvements
 ------------------
 
--   Structured select (Alt-Shift-Up/Alt-Shift-Down)  
-    ![Structured select (Alt-Shift-Up/Alt-Shift-Down)](/img/releasenotes/2.0/select.gif "Structured select with Alt-Shift-Up/Alt-Shift-Down")
+-   Structured select (Alt+Shift+Up/Alt+Shift+Down)  
+    ![Structured select (Alt+Shift+Up/Alt+Shift+Down)](/img/releasenotes/2.0/select.gif "Structured select with Alt+Shift+Up/Alt+Shift+Down")
 -   Annotate files in project explorer with problems markers  
     ![Problem markers in project explorer](/img/releasenotes/2.0/problemmarkersinexplorer.png "Problem markers in project explorer")
 -   Code folding for packages

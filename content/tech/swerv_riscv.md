@@ -21,7 +21,7 @@ Opening `swerv_wrapper.sv`, the first error I see is a missing include file. Whe
 
 ![Fixing include files](/img/tech/swerv_riscv/quickfix_include.png)
 
-I notice there are still a lot of errors because of undefined macro identifiers. With a quick textual search (**Ctrl-H**), I learn that these are not defined in any of the include files. *I should have read the [README](https://github.com/westerndigitalcorporation/swerv_eh1/blob/11065d5bb7e8b7aa20cf7d8cb22b767b153f513c/README.md) file first.* There are some files that need to be generated:
+I notice there are still a lot of errors because of undefined macro identifiers. With a quick textual search (**Ctrl+H**), I learn that these are not defined in any of the include files. *I should have read the [README](https://github.com/westerndigitalcorporation/swerv_eh1/blob/11065d5bb7e8b7aa20cf7d8cb22b767b153f513c/README.md) file first.* There are some files that need to be generated:
 
 ```bash
 cd swerv_eh1
