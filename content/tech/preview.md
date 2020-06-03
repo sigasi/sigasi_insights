@@ -84,6 +84,20 @@ SHA sums ([more info](/faq#how-can-i-check-a-sha-sum)) can be checked via <https
 
 If you can't open the Sigasi Studio app on an Apple computer, have a look at [this FAQ entry]({{< ref "faq#damaged-app-on-apple-computers" >}}).
 
+# System requirements
+
+* Sigasi Studio Standalone is supported on:
+    * Windows: Windows 10 (64 bit) or newer
+    * macOS 10.14 Mojave
+    * Linux: RedHat Enterprise Linux RHEL 7.5 (64 bit) or newer
+    * More information on supported OSes can be found [on the Eclipse website](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_10.xml#target_environments)
+* Sigasi Studio as Plugin in your own Eclipse installation:
+    * Eclipse 4.7.3a *Oxygen* up to Eclipse IDE 2020-03
+    * Java JRE 8
+
+We recommend at least **4GB of memory** available for Sigasi Studio,
+and you need **about 300MB** of free disk space.
+
 # Feedback
 
 We welcome your feedback through the usual channels or the comments below. Note that comments are cleared after each [official release](/releasenotes).
