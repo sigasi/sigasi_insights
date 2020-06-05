@@ -1,14 +1,16 @@
 ---
-title: "What is new in VHDL 2019? part 3"
-date: 2020-06-11
+title: "VHDL 2019: Enhanced generic types"
+date: 2020-06-16
 author: Bart Brosens
 pager: true
 comments: true
 bannerad: true
 ---
 
+This is the third article in our series about VHDL 2019.
+In this article the enhanced generic types are discussed.
 
-## B Enhanced generic types
+# Enhanced generic types
 VHDL 2019 improves generic types and subprograms. In VHDL 2008 generic types were introduced, these
 generic types can be bound to any type. In addition to the generic type, a number of generic operations can be
 provided with the type. For example:

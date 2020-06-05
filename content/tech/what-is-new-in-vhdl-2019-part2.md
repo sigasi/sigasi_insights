@@ -1,15 +1,17 @@
 ---
-title: "What is new in VHDL 2019? part 2"
-date: 2020-06-09
+title: "VHDL 2019: Interfaces"
+date: 2020-06-11
 author: Bart Brosens
 pager: true
 comments: true
 bannerad: true
 ---
 
+This is the second article in our series about VHDL 2019.
+In this article we look at how the new ability to cleanly express interfaces.
 
+# VHDL Interfaces
 
-## A Interfaces
 Interfaces are a central element in hardware design. There are many standardized interfaces like I²C, AXI or VGA
 and every design also has internally designed interfaces to connect various parts of a system. Unfortunately, these
 interfaces are cumbersome to model using VHDL. Typically, they are not explicitly defined. Instead their description
@@ -27,7 +29,7 @@ language level support for interfaces is needed.
 Over the years designers have developed workarounds to model interfaces in VHDL. One solution is to model the
 interface as a record. But different elements of a record cannot have different port directions. There are two solutions
 to this problem: model this record as “inout” or split the record into multiple records, one for each port direction. The
-latter method is often called the Gaisler method<sup> [6](#ref6)</sup>.
+latter method is often called the Gaisler method<sup id="bref3"> [3](#ref3)</sup>.
 
 Modelling an interface as an “inout” record has the advantage that the interface is defined in one place and it can
 easily be passed around. You can nest interfaces by nesting records and you can make an array of interfaces. This
@@ -185,4 +187,4 @@ and allow the designer to model any interface.
 
 # References
 
-<a name="ref6"></a>[6] [J. Gaisler, "A structured VHDL design method"](http://www.gaisler.com/doc/vhdl2proc.pdf)  
+<a name="ref3"></a>[<a href="#bref3">3</a>] [J. Gaisler, "A structured VHDL design method"](http://www.gaisler.com/doc/vhdl2proc.pdf)  

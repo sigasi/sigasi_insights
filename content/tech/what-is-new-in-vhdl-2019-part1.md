@@ -1,20 +1,27 @@
 ---
 title: "What is new in VHDL 2019?"
-date: 2020-06-05
+date: 2020-06-09
 author: Bart Brosens
 pager: true
 comments: true
 bannerad: true
 ---
 
-This article is the first in a series of articles that are taken from the talk **VHDL 2018: New and Noteworthy** that was given by our colleague Lieven Lemiengre at DVCON 2018.
+# Introduction
+
+This article is the first in a series of articles that are taken from the talk **VHDL 2018: New and Noteworthy** ([slides]).
+This talk was given by our colleague [Lieven Lemiengre](https://www.sigasi.com/about/#lieven-lemiengre) at DVCON 2018.
 The new VHDL standard was approved and published in 2019.
-The references to 2018 from the talk have been replaced by 2019 in this series of articles. 
+Therefore all references to 2018 from the talk have been replaced by 2019 in this series of articles. 
 
-This article introduces the most important changes in the VHDL standard.
-It also motivates why the VHDL standard was updated.
+In this first article, we start by motivating why VHDL is still relevant today and how the language can evolve to remain relevant.
 
-Future articles will give more details about the most importand changes.
+Next, we'll look at the two biggest features of the new revision: Interfaces and enhanced generics dramatically change
+the way VHDL is used. They improve type safety and readability while reducing verbosity.
+The second article will discuss Interfaces and the third article will discuss the enhanced generic types.
+
+In the fourth article we'll take a look at a number of small features and APIs that improve the usability of the language.  
+We also take a look at a new set of APIs and language features aimed at verification library designers.
 
 # Abstract
 
@@ -26,24 +33,16 @@ New APIs, enhanced protected and generic types enable designers to build the nex
 To achieve these improvements, the VHDL working group continues to build on the existing strengths of VHDL:
 strong typing, early bug detection and clear language semantics remain the key features of VHDL.
 
-# 1 Introduction
-
-{{< figure alt="Lieven at DVcon 2018" src="/img/tech/lieven_DVcon2018.jpg" class="uk-align-right" width="300px" caption="Lieven at DVcon 2018" >}}
-We start by motivating why VHDL is still relevant today and how the language can evolve to remain relevant.
-
-Next, we look at the two biggest features of the new revision: Interfaces and enhanced generics dramatically change
-the way VHDL is used. Improving type safety and readability while reducing verbosity.  
-Next, we take a look at a number of small features and APIs that improve the usability of the language.  
-Finally, we take a look at a new set of APIs and language features aimed at verification library designers.
-
-# 2 Reviving the VHDL standard
+# Reviving the VHDL standard
 
 Before we dive into the new features, it is interesting to take a step back and examine if it still makes sense to evolve
 this thirty plus year old VHDL standard. Is VHDL still relevant in 2019? This is a question that the members of the
 VHDL working group had to answer.
 
+{{< figure alt="Lieven at DVcon 2018" src="/img/tech/lieven_DVcon2018.jpg" class="uk-align-right" width="300px" caption="Lieven at DVcon 2018" >}}
+
 In recent years, VHDL was pushed into the background as other languages have gotten more attention. It is rare to
-see VHDL-related talks at conferences. Some EDA companies<sup> [1](#ref1)</sup> and some thought leaders<sup> [2](#ref2)</sup> have even declared
+see VHDL-related talks at conferences. Some EDA companies<sup id="bref1"> [1](#ref1)</sup> and some thought leaders<sup id="bref2"> [2](#ref2)</sup> have even declared
 the language dead. The previous release, VHDL 2008, is still not completely supported by simulators, and synthesis
 support is rare. But despite the negative press and neglect by some tool vendors, VHDL is still a very popular language.
 So, why did it not disappear?
@@ -97,7 +96,7 @@ methodology should differ accordingly. In some cases simple unit testing may suf
 constrained random or formal may be required. Supporting all known verification methodologies with specialized
 syntax in the core language would make the language specification too big and complicated. This would mean it is
 harder to implement and would significantly increase the chance for bugs and inconsistencies. There already are
-several open source verification libraries developed for VHDL 2008. VUnit<sup> [3](#ref3)</sup>, OSVVM<sup> [4](#ref4)</sup> and UVVM<sup> [5](#ref5)</sup> have
+several open source verification libraries developed for VHDL 2008. [VUnit], [OSVVM] and [UVVM] have
 proven that a library-based approach to verification with VHDL is a good approach.
 
 Instead of adding language level features to support verification in VHDL we chose to identify what these
@@ -108,7 +107,7 @@ changes to the core language as possible, we significantly improve VHDL’s capa
 library development. The focus was on improving the core language. In a future revision we may focus on
 standardizing more IEEE libraries.
 
-# 3 Realizing VHDL 2019
+# Realizing VHDL 2019
 
 The work on VHDL 2019 started in 2014 by conducting a survey. To focus the standardization effort, people active
 on the VHDL mailing list were asked to rank a set of proposals. The results were very clear: interfaces were the most
@@ -126,8 +125,10 @@ specifically for library designers.
 
 # References
 
-<a name="ref1"></a>[1] [Michael Santarini, "Synopsys executive predicts end of VHDL"](https://www.eetimes.com/document.asp?doc_id=1216860), 4/11/2003  
-<a name="ref2"></a>[2] [John Cooley, "VHDL, the new Latin"](https://www.eetimes.com/document.asp?doc_id=1216865), 4/7/2003  
-<a name="ref3"></a>[3] [VUnit](https://vunit.github.io)  
-<a name="ref4"></a>[4] [OSVVM](https://osvvm.org)  
-<a name="ref5"></a>[5] [UVVM](https://bitvis.no/dev-tools/uvvm)  
+<a name="ref1"></a>[<a href="#bref1">1</a>] [Michael Santarini, "Synopsys executive predicts end of VHDL"](https://www.eetimes.com/document.asp?doc_id=1216860), 4/11/2003  
+<a name="ref2"></a>[<a href="#bref2">2</a>] [John Cooley, "VHDL, the new Latin"](https://www.eetimes.com/document.asp?doc_id=1216865), 4/7/2003  
+
+[slides]: https://www.slideshare.net/LievenLemiengre/vhdl-2017-new-and-noteworthy
+[VUnit]: https://vunit.github.io
+[OSVVM]: https://osvvm.org
+[UVVM]: https://bitvis.no/dev-tools/uvvm
