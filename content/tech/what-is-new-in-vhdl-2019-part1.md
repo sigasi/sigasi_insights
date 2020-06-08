@@ -1,5 +1,5 @@
 ---
-title: "What is new in VHDL 2019?"
+title: "What's new in VHDL 2019?"
 date: 2020-06-09
 author: Bart Brosens
 pager: true
@@ -11,16 +11,16 @@ bannerad: true
 
 This article is the first in a series of articles that are taken from the talk **VHDL 2018: New and Noteworthy** ([slides]).
 This talk was given by our colleague [Lieven Lemiengre](https://www.sigasi.com/about/#lieven-lemiengre) at DVCON 2018.
-The new VHDL standard was approved and published in 2019.
-Therefore all references to 2018 from the talk have been replaced by 2019 in this series of articles. 
+Since the new VHDL standard was approved and published in 2019,
+all references to 2018 from the talk have been replaced by 2019 in this series of articles.
 
 In this first article, we start by motivating why VHDL is still relevant today and how the language can evolve to remain relevant.
 
-Next, we'll look at the two biggest features of the new revision: Interfaces and enhanced generics dramatically change
+Next, we'll look at the two biggest features of the new revision: Interfaces and enhanced generic types dramatically change
 the way VHDL is used. They improve type safety and readability while reducing verbosity.
 The second article will discuss Interfaces and the third article will discuss the enhanced generic types.
 
-In the fourth article we'll take a look at a number of small features and APIs that improve the usability of the language.  
+In the fourth article we'll take a look at a number of small features and APIs that improve the usability of the language.
 We also take a look at a new set of APIs and language features aimed at verification library designers.
 
 # Abstract
@@ -126,7 +126,7 @@ specifically for library designers.
 # References
 
 <a name="ref1"></a>[<a href="#bref1">1</a>] [Michael Santarini, "Synopsys executive predicts end of VHDL"](https://www.eetimes.com/document.asp?doc_id=1216860), 4/11/2003  
-<a name="ref2"></a>[<a href="#bref2">2</a>] [John Cooley, "VHDL, the new Latin"](https://www.eetimes.com/document.asp?doc_id=1216865), 4/7/2003  
+<a name="ref2"></a>[<a href="#bref2">2</a>] [John Cooley, "VHDL, the new Latin"](https://www.eetimes.com/document.asp?doc_id=1216865), 4/7/2003
 
 [slides]: https://www.slideshare.net/LievenLemiengre/vhdl-2017-new-and-noteworthy
 [VUnit]: https://vunit.github.io
