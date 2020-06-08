@@ -21,12 +21,12 @@ slave AXI interface could be prefixed with “slave_axi_0_”.
 This approach has many drawbacks. Since there is no centralized definition and the solution relies on naming
 conventions, it can be hard to identify the interface in complex entities. It is also hard to document an interface without
 a central definition. The interface is not only repeated for every entity that uses it, but also in every instantiation. All
-this duplicated code makes it very cumbersome to maintain the code. If you need to change the type or name of an
-element of the interface, this requires edits in many files, even in architectures that just pass the interface to an
+this duplicated code is very cumbersome to maintain. E.g., changing the type or name of an
+element of the interface requires edits in many files, even in architectures that just pass the interface to an
 instantiation. This situation is unacceptable for a language that highly values strong typing and early bug detection,
 language level support for interfaces is needed.
 
-Over the years designers have developed workarounds to model interfaces in VHDL. One solution is to model the
+Over the years, designers have developed workarounds to model interfaces in VHDL. One solution is to model the
 interface as a record. But different elements of a record cannot have different port directions. There are two solutions
 to this problem: model this record as “inout” or split the record into multiple records, one for each port direction. The
 latter method is often called the Gaisler method<sup id="bref3"> [3](#ref3)</sup>.
@@ -120,7 +120,7 @@ type streaming_bus is record
   ack   : std_logic;
 end record;
 ```
-“streaming_bus” is now unconstrained, this feature has been allowed since VHDL 2008. Our mode view definitions
+“streaming_bus” is now unconstrained, this feature has been introduced in VHDL 2008. Our mode view definitions
 do not have to change. We can change the definition of the “source” entity to make the size of the bus explicit as a
 generic parameter.
 
@@ -129,12 +129,12 @@ entity source is
   generic(size : natural);
   port(
     clk, rst : in std_logic;
-    output   : view streaming_master of streaming_bus(data(size downto 0))
+    output   : view streaming_master of streaming_bus(data(size-1 downto 0))
   );
 end;
 ```
 
-Using constraint records subtypes and explicitly defining the subtype we reuse the mode view for multiple subtypes
+Using constrained records subtypes and explicitly defining the subtype we reuse the mode view for multiple subtypes
 of the same record.
 
 It is also possible to nest interfaces, e.g. you can combine the “input” and “output” interfaces of the “processor”
@@ -183,7 +183,7 @@ function f(signal b : view streaming_slave; ...) return ...;
 
 The ability to cleanly express interfaces is the most visible improvement in VHDL 2019. It drastically improves the
 readability and maintainability of VHDL designs. As shown in the examples, the provided features are very flexible
-and allow the designer to model any interface.
+and enable the designer to model any interface.
 
 # References
 

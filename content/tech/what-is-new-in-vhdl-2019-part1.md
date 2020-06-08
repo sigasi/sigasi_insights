@@ -68,7 +68,7 @@ IEEE libraries look like data types which were built into the language.
 
 This might look like a contrived way to make a hardware description language, but it has many advantages. First of
 all, the grammar only has to cover the core language, which results in a much smaller language. The semantics of a
-smaller language is easier to specify and simple specifications have less corner cases. The core language is also easier
+smaller language are easier to specify and simple specifications have fewer corner cases. The core language is also easier
 to implement, which lowers the chance of variation between implementations. Since the IEEE libraries are specified
 in the VHDL language itself, their provided implementation is their specification. This means that their behavior does
 not have to be described in the LRM and it eliminates variations in implementation. Another benefit is that the
@@ -80,11 +80,11 @@ There are also drawbacks to this approach. Many designers perceive VHDL as a ver
 software language than other hardware description languages. The type system feels very inflexible and types often
 have to be explicitly converted. This approach makes some features hard to add because the core language is oblivious
 of clocks and resets. Simulation performance can also be an issue, specialized built-in types would give the simulator
-more room to optimize. The source of these issues and their solutions are not in the scope of this paper, but the VHDL
+more room to optimize. The source of these issues and their solutions are not in the scope of this series of articles, but the VHDL
 working group is aware of them.
 
-We believe that separating the language and the IEEE library is, on the whole, beneficial for VHDL. If a proposal
-is made to change the core language, we first evaluate if it is possible to implement it as a library. For example: an
+The working group believes that separating the language and the IEEE library is, on the whole, beneficial for VHDL. If a proposal
+is made to change the core language, it's evaluated first if it is possible to implement it as a library. For example: an
 important subject for hardware design languages is verification. The working group has made the explicit choice not
 to include verification features into VHDL 2019. Instead, the group decided verification should be implemented as a
 library.
@@ -99,15 +99,15 @@ harder to implement and would significantly increase the chance for bugs and inc
 several open source verification libraries developed for VHDL 2008. [VUnit], [OSVVM] and [UVVM] have
 proven that a library-based approach to verification with VHDL is a good approach.
 
-Instead of adding language level features to support verification in VHDL we chose to identify what these
+Instead of adding language level features to support verification in VHDL the working group chose to identify what these
 library authors were missing in the current language.
 
-For all of the reasons above, we considered it worthwhile to create a new VHDL revision. With as little
-changes to the core language as possible, we significantly improve VHDL’s capabilities for design and
-library development. The focus was on improving the core language. In a future revision we may focus on
+For all of the reasons above, the working group considered it worthwhile to create a new VHDL revision. With as little
+changes to the core language as possible, VHDL’s capabilities for design and
+library development are significantly improved. The focus was on improving the core language. In a future revision the working group may focus on
 standardizing more IEEE libraries.
 
-# Realizing VHDL 2019
+# Defining VHDL 2019
 
 The work on VHDL 2019 started in 2014 by conducting a survey. To focus the standardization effort, people active
 on the VHDL mailing list were asked to rank a set of proposals. The results were very clear: interfaces were the most
