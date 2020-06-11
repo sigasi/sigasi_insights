@@ -18,7 +18,7 @@ In this first article, we start by motivating why VHDL is still relevant today a
 
 Next, we'll look at the two biggest features of the new revision: Interfaces and enhanced generic types dramatically change
 the way VHDL is used. They improve type safety and readability while reducing verbosity.
-The second article will discuss Interfaces and the third article will discuss the enhanced generic types.
+The [second article]({{< ref "/tech/what-is-new-in-vhdl-2019-part2.md" >}}) will discuss Interfaces and the third article will discuss the enhanced generic types.
 
 In the fourth article we'll take a look at a number of small features and APIs that improve the usability of the language.
 We also take a look at a new set of APIs and language features aimed at verification library designers.
