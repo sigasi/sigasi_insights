@@ -16,9 +16,9 @@ all references to 2018 from the talk have been replaced by 2019 in this series o
 
 In this first article, we start by motivating why VHDL is still relevant today and how the language can evolve to remain relevant.
 
-Next, we'll look at the two biggest features of the new revision: Interfaces and enhanced generic types dramatically change
+Next, we'll look at the two biggest features of the new revision: interfaces and enhanced generic types dramatically change
 the way VHDL is used. They improve type safety and readability while reducing verbosity.
-The [second article]({{< ref "/tech/what-is-new-in-vhdl-2019-part2.md" >}}) will discuss Interfaces and the third article will discuss the enhanced generic types.
+The [second article]({{< ref "/tech/what-is-new-in-vhdl-2019-part2.md" >}}) will discuss interfaces and the third article will discuss the enhanced generic types.
 
 In the fourth article we'll take a look at a number of small features and APIs that improve the usability of the language.
 We also take a look at a new set of APIs and language features aimed at verification library designers.
@@ -31,7 +31,7 @@ verbosity of instantiations while improving the maintainability and clarity of t
 The language was simplified where possible, restrictions were removed and various inconsistencies were resolved.
 New APIs, enhanced protected and generic types enable designers to build the next generation of verification libraries.
 To achieve these improvements, the VHDL working group continues to build on the existing strengths of VHDL:
-strong typing, early bug detection and clear language semantics remain the key features of VHDL.
+strong typing, early bug detection and clear language semantics.
 
 # Reviving the VHDL standard
 
@@ -97,7 +97,7 @@ constrained random or formal may be required. Supporting all known verification 
 syntax in the core language would make the language specification too big and complicated. This would mean it is
 harder to implement and would significantly increase the chance for bugs and inconsistencies. There already are
 several open source verification libraries developed for VHDL 2008. [VUnit], [OSVVM] and [UVVM] have
-proven that a library-based approach to verification with VHDL is a good approach.
+proven that a library-based approach to verification with VHDL is a solid choice.
 
 Instead of adding language level features to support verification in VHDL the working group chose to identify what these
 library authors were missing in the current language.
