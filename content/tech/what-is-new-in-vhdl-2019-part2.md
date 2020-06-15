@@ -1,6 +1,7 @@
 ---
 title: "VHDL 2019: Interfaces"
 date: 2020-06-11
+lastmod: 2020-06-15
 author: Bart Brosens
 pager: true
 comments: true
@@ -38,9 +39,9 @@ approach however, has one big drawback: the compiler can no longer check the por
 almost never used. The Gaisler method is often used. Unfortunately, it cannot handle nested interfaces and it still relies
 on some naming conventions.
 
-When we examined how interfaces could be implemented, many approaches were discussed. You can make
+When the VHDL working group examined how interfaces could be implemented, many approaches were discussed. You can make
 directions part of the subtype, create a new kind of record or define a new container with different object kinds like
-constants and signals. We ended up choosing the simplest solution, which we coined “mode views”. A mode view
+constants and signals. The simplest solution was chosen, called “mode views”. A mode view
 defines port directions for elements of a record. You can look at it as a user-defined mode for records, instead of
 writing `in` or `out` you refer to the "mode view".
 
@@ -71,8 +72,8 @@ in a single line. Alternatively, you can also explicitly define `streaming_slave
 
 ```vhdl
 view streaming_slave of streaming_bus is
-  valid, data : out;
-  ack         : in;
+  valid, data : in;
+  ack         : out;
 end view;
 ```
 
