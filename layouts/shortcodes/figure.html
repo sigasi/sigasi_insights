@@ -16,7 +16,7 @@
          {{- with .Get "title" }} title="{{ . }}"{{ end -}}
     /> <!-- Closing img tag -->
     {{- if .Get "link" }}</a>{{ if (not (.Get "target")) }}</div>{{ end }}{{ end -}}
-    {{- if or ((.Get "caption") (.Get "attr")) -}}
+    {{- if or (.Get "caption") (.Get "attr") -}}
         <figcaption>
             {{- if or (.Get "caption") (.Get "attr") -}}<p>
                 {{- .Get "caption" | markdownify -}}

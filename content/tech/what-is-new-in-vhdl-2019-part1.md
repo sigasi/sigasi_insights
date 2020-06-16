@@ -18,7 +18,8 @@ In this first article, we start by motivating why VHDL is still relevant today a
 
 Next, we'll look at the two biggest features of the new revision: interfaces and enhanced generic types dramatically change
 the way VHDL is used. They improve type safety and readability while reducing verbosity.
-The [second article]({{< ref "/tech/what-is-new-in-vhdl-2019-part2.md" >}}) will discuss interfaces and the third article will discuss the enhanced generic types.
+The [second article]({{< ref "/tech/what-is-new-in-vhdl-2019-part2.md" >}}) will discuss interfaces and
+the [third article]({{< ref "/tech/what-is-new-in-vhdl-2019-part3.md" >}}) will discuss the enhanced generic types.
 
 In the fourth article we'll take a look at a number of small features and APIs that improve the usability of the language.
 We also take a look at a new set of APIs and language features aimed at verification library designers.
@@ -39,7 +40,7 @@ Before we dive into the new features, it is interesting to take a step back and 
 this thirty plus year old VHDL standard. Is VHDL still relevant in 2019? This is a question that the members of the
 VHDL working group had to answer.
 
-{{< figure alt="Lieven at DVcon 2018" src="/img/tech/lieven_DVcon2018.jpg" class="uk-align-right" width="300px" caption="Lieven at DVcon 2018" >}}
+{{< figure alt="Lieven at DVCON 2018" src="/img/tech/lieven_DVcon2018.jpg" class="uk-align-right" width="300px" caption="Lieven at DVCON 2018" >}}
 
 In recent years, VHDL was pushed into the background as other languages have gotten more attention. It is rare to
 see VHDL-related talks at conferences. Some EDA companies<sup id="bref1"> [1](#ref1)</sup> and some thought leaders<sup id="bref2"> [2](#ref2)</sup> have even declared
@@ -122,6 +123,8 @@ implement, but they can have tremendous value to the user.
 * The second group are features aimed at library designers. These can be complicated but they enable the next
 generation of VHDL verification libraries. It is unlikely that VHDL designers will use these features, they are added
 specifically for library designers.
+
+Read on for [part 2]({{< ref "/tech/what-is-new-in-vhdl-2019-part2.md" >}}).
 
 # References
 

@@ -10,7 +10,7 @@ bannerad: true
 
 This is the second article in our series about VHDL 2019.
 In this article we look at the new ability to cleanly express interfaces.
-You can read the previous part [here]({{< ref "/tech/what-is-new-in-vhdl-2019-part1.md" >}}).
+You can read the first part [here]({{< ref "/tech/what-is-new-in-vhdl-2019-part1.md" >}}).
 
 # VHDL Interfaces
 
@@ -186,6 +186,8 @@ function  f(signal b : view streaming_slave; ...) return ...;
 The ability to cleanly express interfaces is the most visible improvement in VHDL 2019. It drastically improves the
 readability and maintainability of VHDL designs. As shown in the examples, the provided features are very flexible
 and enable the designer to model any interface.
+
+Read on for [part 3]({{< ref "/tech/what-is-new-in-vhdl-2019-part3.md" >}}).
 
 # References
 
