@@ -138,3 +138,5 @@ are not a part of the 2019 standard. Rather they serve as experimentation for ve
 In conclusion, the improvements that were made to generic types make them more type-safe and reduces their
 verbosity. They also enable new kinds of libraries.
 
+Read on for [part 4]({{< ref "/tech/what-is-new-in-vhdl-2019-part4.md" >}}).
+

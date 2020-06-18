@@ -21,7 +21,7 @@ the way VHDL is used. They improve type safety and readability while reducing ve
 The [second article]({{< ref "/tech/what-is-new-in-vhdl-2019-part2.md" >}}) will discuss interfaces and
 the [third article]({{< ref "/tech/what-is-new-in-vhdl-2019-part3.md" >}}) will discuss the enhanced generic types.
 
-In the fourth article we'll take a look at a number of small features and APIs that improve the usability of the language.
+In the [fourth article]({{< ref "/tech/what-is-new-in-vhdl-2019-part4.md" >}}) we'll take a look at a number of small features and APIs that improve the usability of the language.
 We also take a look at a new set of APIs and language features aimed at verification library designers.
 
 # Abstract
