@@ -1,6 +1,6 @@
 ---
 title: "Smart Indentation for Verilog"
-layout: screencast 
+layout: screencast
 pager: false
 date: 2016-01-15
 comments: false
@@ -11,5 +11,5 @@ tags:
   - indent
   - editor
 ---
-<br/>
-You can find more info in the [manual](/manual/editor#smart-indentation-1).
+
+You can find more info in the [manual]({{< ref "/manual/editor.md#smart-indentation-1" >}}).
