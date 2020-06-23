@@ -135,7 +135,7 @@ directives. There are two ways to do this.
 Designers can interact with PSL directives using two attributes. The `signal` attribute is used to read the value of
 the PSL directive and the `event` attribute to detect that the PSL directive has completed in this simulation cycle.
 
-Through new subprograms in the `std.env package`, the verification library can check if any PSL asserts have failed,
+Through new subprograms in the `std.env` package, the verification library can check if any PSL asserts have failed,
 check that all PSL objects were covered, reset the state of PSL objects and more.
 
 # New and improved APIs
@@ -246,7 +246,7 @@ The finished proposals are publicly available on the VHDL working group wiki<sup
 The IEEE and STD packages have been open sourced and are publicly available on https://opensource.ieee.org/vasg/Packages.
 
 # Acknowledgements
-This series of articles was based on [Lieven's](https://www.sigasi.com/about/#lieven-lemiengre) paper at DVCON 2018.
+This series of articles was based on [Lieven](https://www.sigasi.com/about/#lieven-lemiengre)'s paper at DVCON 2018.
 
 # References
 
