@@ -1,5 +1,5 @@
 ---
-title: "Use a Word macro to Scale Diagrams in html documentation"
+title: "Use a Word macro to Scale Diagrams in HTML documentation"
 date: 2020-02-20
 lastmod: 2020-02-20
 pager: true

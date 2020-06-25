@@ -1,8 +1,8 @@
 ---
-title: Sigasi Studio Preview (4.8)
+title: Sigasi Studio Preview (4.9)
 layout: page
 pager: true
-date: 2020-05-28
+date: 2020-06-25
 comments: true
 ---
 
@@ -16,57 +16,7 @@ Although these preview releases are less rigorously tested than the official rel
 
 # Current preview release
 
-We continue our efforts to make the Sigasi editor as fast as possible. This Preview brings another set of speed improvements.
-
-## Documentation
-
-We removed the DocBook Documentation (to PDF) flow from Sigasi Studio. Since release [Sigasi Studio 4.5]({{< ref "/releasenotes/sigasi-4.05.md" >}}) it is replaced with a HTML export. This approach is much faster and simpler. In addition, it can more easily be [imported into Word](/tech/scale-diagrams-in-word).
-
-Please let us know if you are missing any features in the HTML flow: <support@sigasi.com>
-
-## Verilog improvements
-
-SystemVerilog keywords are no longer highlighted as keywords in Verilog files.
-
-We improved the outline and added some extra code checks:
-* Warn when a Verilog module has an empty parameter declaration
-* Warn against badly terminated port map of Verilog component (allowed in SystemVerilog)
-* Improved hovers for SystemVerilog declarations
-* Better linking of references to their declaration
-
-{{< figure src="/img/releasenotes/4.8/system_verilog_outline.png" link="/img/releasenotes/4.8/system_verilog_outline.png" title="Improved SystemVerilog outline: note the result of the expanded UVM macros" width="600" >}}
-
-* We also improved navigation and rename.
-
-## Other improvements
-
-* \[VHDL] We replaced the shorthand with longhand command line options of GHDL
-* \[VHDL] Improved outcomplete for ports in enties
-* We updated Eclipse in the standalone version to Eclipse 2020-03
-* We updated the Xtext dependency to 2.21.0
-
-## Bug fixes
-
-* \[Verilog] Fixed Libraries View cross linking for Verilog interfaces
-* \[Verilog] Fixed name of Verilog superclass in documentation view
-* \[VHDL] Add use clause quickfix after library clause
-* \[Verilog] Fixed hovering for Verilog module instances
-* Show in action breaks editor focus
-* \[Verilog]  Fixed autocompletes at end of Verilog file
-* Fixed outline refresh after undo
-* \[Verilog] StackOverflowException for nested attributed class declaration
-* \[Verilog] Added missing `s_until_with` support in our SystemVerilog parser
-* \[Verilog] Correctly parse `rand` in SystemVerilog checkers
-* Fixed error popup when contents of the Search View get out of date
-* \[VHDL] Fixed Attribute QuickFix for unspecified entity classes
-* Task (`TODO`, `FIXME`) markers are now removed when a file is unmapped
-* Added missing whitespace in documentation when comments span multiple lines
-* \[Verilog] Fixed name of virtual classes in documentation
-* Update open editors when library mapping changes
-* Update graphical diagrams when the theme changes
-* Fixed issue with invisble hierarchical edges in block diagram
-* \[VHDL] Fixed launching simulation in Modelsim/Riviera Pro, when an entity is set as toplevel
-* \[Verilog] Added support for empty default arguments in preprocessor macros
+No documented changes since the [4.8 release]({{< ref "/releasenotes/sigasi-4.08.md" >}}).
 
 
 # Update or install?
@@ -80,15 +30,15 @@ You can download the Stand-alone version of the latest preview from:
 You can also update from (configure via Preferences > Install/Update > Available Software Sites > Add...) :
   https://download.sigasi.com/preview/studio/
 
-SHA sums ([more info](/faq#how-can-i-check-a-sha-sum)) can be checked via <https://download.sigasi.com/preview/latest/sha1.txt>.
+SHA sums ([more info]({{< ref "/faq.md#how-can-i-check-a-sha-sum" >}})) can be checked via <https://download.sigasi.com/preview/latest/sha1.txt>.
 
-If you can't open the Sigasi Studio app on an Apple computer, have a look at [this FAQ entry]({{< ref "faq#damaged-app-on-apple-computers" >}}).
+If you can't open the Sigasi Studio app on an Apple computer, have a look at [this FAQ entry]({{< ref "faq.md#damaged-app-on-apple-computers" >}}).
 
 # System requirements
 
 * Sigasi Studio Standalone is supported on:
     * Windows: Windows 10 (64 bit) or newer
-    * macOS 10.14 Mojave
+    * macOS 10.15 Catilina
     * Linux: RedHat Enterprise Linux RHEL 7.5 (64 bit) or newer
     * More information on supported OSes can be found [on the Eclipse website](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_10.xml#target_environments)
 * Sigasi Studio as Plugin in your own Eclipse installation:

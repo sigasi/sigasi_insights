@@ -16,37 +16,26 @@ The Sigasi documentation generator has following advantages:
 
 # Export Documentation
 
-You can export documentation for the **entire project** or a **specific toplevel** by clicking the save icon on top of the Documentation View or via the **Export…** menu.
+You can export documentation for the **entire project** or a **specific toplevel** by clicking the save icon on top of the [Documentation View]({{< ref "/manual/views.md#documentation-view" >}}) or via the **Export…** menu.
 
 The result is saved in the `sigasi-doc` folder in the root of your project.
 
-Since [Sigasi 2.27]({{< ref "sigasi-2.27.md" >}}) this export also saves the DocBook source code, if you have a {{< xprt >}} license. This enables you to customize the PDF
-generation flow to your liking. Users without a {{< xprt >}} License can also export a PDF, but it will contain a watermark.
-
-Since [Sigasi Studio 4.5]({{< ref "/releasenotes/sigasi-4.05.md" >}}) it is possible to export to HTML directly in addition to the PDF export.
-There are 3 options to export the documentation.
+[Sigasi Studio 4.5]({{< ref "/releasenotes/sigasi-4.05.md" >}}) introduced exporting the documentation to HTML.
+There are 2 options when exporting the documentation.
 
 *  Create a HTML document with linked diagrams. All Block Diagrams and State Machine Diagrams are in separate files which are linked from within the HTML document.
 *  Create a HTML document with embedded diagrams. The Block Diagrams and State Machine Diagrams are embedded in the HTML document. The documentation is in a single file.
-*  Create a PDF document.
 
 All errors are logged to the console view.
 
+The exported HTML documentation can be further processed, as explained in {{< page "scale-diagrams-in-word.md" >}}.
+
 ## Graphics
 
-The exported documentation also includes statemachine and block diagrams.
+The exported documentation includes statemachine and block diagrams.
 If you created custom graphics configurations for one or more of your diagrams, these will be used instead of the default diagrams.
 
 If you have multiple graphics configurations for the same diagrams, the alphabetically first one is used.
-
-## Customize templates
-
-The templates used for the PDF documentation can be copied and modified in the workspace so that
-template customizations are not overwritten by updates of Sigasi Studio.
-
-* Create a new folder in the workspace: *<workspace\>/.metadata/sigasi-templates*
-* Copy the desired template from *<intstalldir\>/plugins/com.sigasi.hdt.docgen.resources_<version\>/templates* to the *<workspace\>/.metadata/sigasi-templates* folder.
-* Now edit the *<workspace\>/.metadata/sigasi-templates/<template\>.xml* file.
 
 # Comment Association
 
@@ -86,7 +75,7 @@ In hovers the complete Markdown syntax is supported. For documentation generatio
 * tables (with alignment)
 * external links and email addresses (`<https://www.sigasi.com>`, `[Sigasi](https://www.sigasi.com)` and `<sales@sigasi.com>`)
 
-{{< page "releasenotes/sigasi-4.06" >}} added support for **Fenced Code blocks** in comments.
+{{< page "releasenotes/sigasi-4.06.md" >}} added support for **Fenced Code blocks** in comments.
 This enables you to add text to the documentation without Markdown rendering.
 To add a comment *verbatim* to the documentation, surround it with with triple back ticks: ```` ```<verbatim comment>``` ````
 {{< figure src="/img/releasenotes/4.6/fenced_code_blocks_comment.png" title="Verbatim comments in the documentation" >}}

@@ -1,5 +1,5 @@
 [build.environment]
-  HUGO_VERSION = "0.67.1"
+  HUGO_VERSION = "0.72.0"
 
 [build]
   publish = "public/"
@@ -11,9 +11,9 @@
   for = "/*"
   [headers.values]
     cache-control = "public, max-age=600, must-revalidate"
-    Content-Security-Policy-reportOnly = "default-src 'none'; form-action 'none'; frame-ancestors 'none'; report-uri https://sigasi.report-uri.com/r/d/csp/wizard"
     referrer-policy = "strict-origin-when-cross-origin"
     x-frame-options = "DENY"
+    Content-Security-Policy-reportOnly = "default-src 'none'; form-action 'none'; frame-ancestors 'none'; report-uri https://sigasi.report-uri.com/r/d/csp/wizard"
 
 [context.deploy-preview]
   command = "hugo version; hugo --buildFuture --buildDrafts --baseURL $DEPLOY_PRIME_URL"

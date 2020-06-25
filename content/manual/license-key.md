@@ -191,7 +191,7 @@ The XPRT license is checked out automatically in the following cases:
 
 * When you open the Block Diagram view
 * When you open the State Machine view
-* When you try to export PDF documentation
+* When you try to export documentation
 * When you click **Help > Sigasi > Floating License > Check out Sigasi Studio XPRT license**
 
 The XPRT license is released via: **Help > Sigasi > Floating license > Release Sigasi Studio XPRT Floating Licenses**.

@@ -113,7 +113,7 @@ In short: you are **not** locked in at all!
 
 ## How does Sigasi change my existing project?
 
-You do not have to change your directory structure, the names of your VHDL files or anything in your project folder. The only thing Sigasi HDT does, is add a few hidden files with project information.
+You do not have to change your directory structure, the names of your VHDL files or anything in your project folder. The only thing Sigasi Studio does, is add a few hidden files with project information.
 
 ## What is the eclipse.ini file and where can I find it?
 
@@ -164,12 +164,7 @@ If you have floating licenses, each running instance of the Sigasi application o
 
 ## Do you sell floating licenses?
 
-We offer floating licenses, based on the well known FlexNet (a.k.a. FlexLM) license manager.
-Floating licenses are available at a minimum volume of five licenses. The price is the same as for node-locked licenses.
-
-If your team is purchasing at least five licenses, you will have the choice between node-locked and floating licenses.
-
-If you currently have five node-locked licenses and you want to upgrade to floating licenses, please {{< contact-us >}}.
+We [offer floating licenses](https://www.sigasi.com/try-buy/), based on the well known FlexNet (a.k.a. FlexLM) license manager.
 
 ## What are the requirements for the license server?
 
@@ -498,15 +493,20 @@ The log file contains no sensitive information about your organization. On some 
 
 To help debugging, we sometimes ask to increase the logging level of Sigasi Studio.
 The following method describes how to obtain more logging.
+Do this before launching Sigasi Studio.
 
-1. In the Sigasi Studio installation, locate the file `./plugins/com.sigasi.hdt.logging_VERSION/log4j.xml`. Take a backup of this file.
+1. In the Sigasi Studio installation, locate the file `./plugins/com.sigasi.hdt.logging_VERSION/log4j.xml`. Rename this file so you can restore it later. Be careful to select the folder with the correct `VERSION` string.
 
-1. Replace the `log4j.xml` file with [this file](/resources/faq/log4j.xml) (right-click to save).
+1. In the same directory, rename the `log4j_debug.xml` file to `log4j.xml`.
 
-1. This new `log4j.xml` file sets the logging level for Sigasi related functionality to _DEBUG_ and saves the log into a file `my_sigasi_log.out` in the installation folder.
-If you wish, the destination can be changed on line 36 of the xml file.
+1. This new `log4j.xml` file sets the logging level for Sigasi related functionality to _TRACE_ and saves the log into a file `sigasi_debug.log` within the installation folder.
+If you wish, the destination can be changed in the line `<param name="file" value="sigasi_debug.log" />`.
 
-1. After debugging finished, the original `log4j.xml` file should be restored.
+1. Start Sigasi Studio and reproduce the issue you're facing.
+
+1. Close Sigasi Studio and send the log file to support. It makes sense to compress the log file since it can get big.
+
+1. After debugging finished, the original `log4j.xml` file should be restored. The tracing log level can negatively impact performance and will eat up your disk space.
 
 ## How do I obtain a stack trace?
 
@@ -607,11 +607,26 @@ version=1
 * If this is not enough, also remove `<workspaceSigasi>/.metadata/.plugins/org.eclipse.ui.ide` and `<workspaceSigasi>/org.eclipse.ui.workbench.texteditor`
 * If this still fails remove `<workspaceSigasi>/.metadata/.plugins/org.eclipse.core.resources`, note that you will have to re-import your projects if you remove this folder.
 
+## Slow startup on Windows 10
+
+If you experience long start-up delays on Windows 10, excluding the installation folder from the Microsoft Defender Antivirus scan might improve the start-up time.
+This is not specific for Sigasi Studio but affects all [Eclipse installations](https://bugs.eclipse.org/bugs/show_bug.cgi?id=548443).
+
+Instructions on excluding the installation folder are available in [this Microsoft support article](https://support.microsoft.com/en-us/help/4028485/windows-10-add-an-exclusion-to-windows-security).
+
 ## How can I undo "Exclude from build"?
 
 If you accidentally [excluded a file from the VHDL or Verilog build](/manual/libraries#modifying-the-library-configuration), you can easily undo this by right-clicking the file again and selecting **Set Library**. Next, select the library in which this file needs to compiled.
 
-If you use a version control system, you can also revert the `.library_mapping.xml` file. Sigasi Studio will automatically pick up changes to this file and update the library information. Note that you can also the *Local history* feature for this (**Team > Show Local History**).
+If you use a version control system, you can also revert the `.library_mapping.xml` file. Sigasi Studio will automatically pick up changes to this file and update the library information. Note that you can also use the *Local history* feature for this (**Team > Show Local History**).
+
+## A graphical view has too many nodes for rendering
+
+To improve performance, the [Dependencies View], [Block Diagram View] and [State Machines View] will limit the number of nodes they display. If the number of nodes needed to display a graphic is higher than the limit, the following error message will be shown.
+
+> Diagram contains too many nodes for real-time rendering. See advanced preferences to increase this limit.
+
+You can increase the limit by going to **Window > Preferences > Sigasi > Advanced** and increase the Maximum number of nodes. Allowing more nodes to be displayed might result in slow or unresponsive diagrams.
 
 # Other tools
 
@@ -625,11 +640,14 @@ You can add a plugin with the UltraEdit key bindings.
 
 ## I really like VI / VIM / gVIM. Do you have a VI emulation mode?
 
-If you use Sigasi HDT as a plugin (meaning: not the standalone version), you can add a VI emulator plugin, called [vrapper](http://vrapper.sourceforge.net/home/). Surely not the same as a genuine VI clone, but it will give you a warm and familiar feeling when you type `:q!`.
+Yes, you can add a VI emulator plugin, called [vrapper](http://vrapper.sourceforge.net/home/). Surely not the same as a genuine VI clone, but it will give you a warm and familiar feeling when you type `:q!`.
+More information on installing plugins is available in [our manual]({{< ref "/manual/plugins.md#vi-and-emacs" >}}).
 
 ## Do you have an Emacs emulation mode so that I can use the Emacs key bindings?
 
-All Eclipse products, including Sigasi HDT, can be configured to support [Emacs key bindings](http://help.eclipse.org/photon/topic/org.eclipse.platform.doc.user/concepts/accessibility/keyboardshortcuts.htm?cp=0_4_1_33). While it is not the same as Emacs, you can keep your habit of pressing *CTRL-C* and *CTRL-X* all the time.
+All Eclipse products, including Sigasi Studio, can be configured to support [Emacs key bindings](http://help.eclipse.org/photon/topic/org.eclipse.platform.doc.user/concepts/accessibility/keyboardshortcuts.htm?cp=0_4_1_33). While it is not the same as Emacs, you can keep your habit of pressing *CTRL-C* and *CTRL-X* all the time.
+
+You also can use the [More Emacs](https://marketplace.eclipse.org/content/more-emacs) plugin as explained in [our manual]({{< ref "/manual/plugins.md#vi-and-emacs" >}}).
 
 ## Which free VHDL simulator can I use?
 
@@ -658,3 +676,7 @@ We have not had good results with FreeHDL or with Green Mountain VHDL. It seems 
 ## You need a VHDL editor too
 
 After you choose your simulator, you need a VHDL editor too. Sigasi has a [free starter edition](https://www.sigasi.com/sigasi-starter-edition) of its popular VHDL development environment.
+
+[Dependencies View]: {{< ref "/manual/views.md#dependencies-view" >}}
+[Block Diagram View]: {{< ref "/manual/views.md#block-diagram-view" >}}
+[State Machines View]: {{< ref "/manual/views.md#state-machine-view" >}}

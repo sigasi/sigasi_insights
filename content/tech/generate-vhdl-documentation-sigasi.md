@@ -4,6 +4,7 @@ layout: page
 pager: true
 author: Hendrik Eeckhaut
 date: 2016-05-19
+lastmod: 2020-06-25
 tags: 
   - documentation
   - VHDL
@@ -24,7 +25,7 @@ But although I like the base idea of Doxygen, it has some annoying disadvantages
 * The output can be confusing: *"Inheritance diagram"*? *"The output for this **class** was generated ..."*? This terminology makes sense for C++ projects, but not for HDLs.
 * **Long feedback loop**: the documentation for the entire projects needs to generated before you can inspect the result.
 
-## Sigasi Studio documentation Generator
+# Sigasi Studio documentation Generator
 
 For these reasons, we developed an alternative, based on Sigasi Studio's internal VHDL analyzer. We stuck with the base idea, but followed a different approach to overcome the disadvantages.
 
@@ -32,31 +33,24 @@ The new Sigasi Studio documentation generator has following advantages:
 
 * **No special coding requirements**: the plain comments in your code are extracted for the documentation, no need for special annotations. Sigasi Studio uses the same code/comment association as the hover provider (See "[Comment Association](/manual/documentation#comment-association)"). So to document a `port`, you append a comment to a port declaration. To document an `architecture`, you put the comment just on top of the architecture.
 * **All included**. All documentation processing is done in Sigasi Studio/Eclipse. So you do *not* need to install extra tools.
-* **Fully hyperlinked PDF**. If you export the documentation, you get a fully hyperlinked PDF.
+* **Fully hyperlinked**. If you export the documentation, you get a fully hyperlinked HTML document.
 * **Live preview**: you can see what the documentation will look like while you type your code and comments.
 
-[![Live preview](/img/tech/sigasi-docgen-preview.png)](/manual/views#documentation-view)
+[![Live preview](/img/manual/documentationview.png)]({{< ref "/manual/views.md#documentation-view" >}})
 
-To get an idea of the output, I generated a [PDF](/resources/tech/documentation.pdf) for a [simple example project](/resources/tech/DocumentationExample.zip):
+# How does it work?
 
-[![Example output](/img/tech/sigasi-docgen-pdf.png)](/resources/tech/documentation.pdf)
+Sigasi Studio creates the HTML document with your project's documentation in multiple steps:
 
-
-## How does it work?
-
-Sigasi Studio creates a PDF with your project's documentation in multiple steps:
-
-1. Extract all relevant information (content, comments,...) into an intermediate model
-2. Generate all diagrams
-3. Use templates to convert the result of steps 1. and 2. into a DocBook source file. ([DocBook](https://en.wikipedia.org/wiki/DocBook) is a standard for writing technical documentation.)
-4. Convert the DocBook file to a PDF.
+1. Extract all relevant information (content, comments,...) from your project
+1. Generate all diagrams
+1. Generate a HTML document
+1. The diagrams can optionally be embedded in the generated document
  
-![](/img/tech/sigasi-docgen.png)
-
-If you have a full {{< xl_doc >}} license, Sigasi Studio also makes the intermediate DocBook file available. This allows you to fully customize the PDF generation. With a custom DocBook→PDF-flow, you could for example apply your company's colors, add your and logo or append extra sections, etc.
+The generated HTML document can be customized further, e.g. by applying a Word macro as explained in {{< page "scale-diagrams-in-word.md" >}}.
 
 
-## Future work
+# Future work
 
 * Although Sigasi Studio already uses templates internally, these templates are not really user-configurable. In a future release we want to make these templates customizable. This way the exact content of the documentation can be easily tweaked.
 * Add [state machine diagrams](/manual/views#state-machine-view) to the documentation
@@ -64,7 +58,10 @@ If you have a full {{< xl_doc >}} license, Sigasi Studio also makes the intermed
 * Some users reported they actually prefer special comments (e.g. Doxygen's `!--`) to mark documentation. They like to explicitly indicate what text gets into the documentation (and what not). So in a future release, we may add the option to require special comments for documentation.
 * In the current version, we generate documentation for the entire project. Some customers indicated, that they'd prefer to document only the hierarchy of the active toplevel.
 
-## Conclusion
+# Conclusion
 
 We developed an easy but powerful alternative for DoxyGen. It is very easy to get started with, and encourages good practices.
-So I invite you to **try this out yourself**. Even with a {{< starter >}} license, you can open the [Documenation Preview View](/manual/views#documentation-view). You can also export a PDF. But this PDF will have a watermark, and the diagrams will be missing.
+So I invite you to **try this out yourself**. Even with a {{< starter >}} license, you can open the [Documenation Preview View](/manual/views#documentation-view).
+
+# Update 2020-06-25
+This article was revised for the [4.8 release]({{< ref "/releasenotes/sigasi-4.08.md" >}}) where the deprecated PDF generation was removed.

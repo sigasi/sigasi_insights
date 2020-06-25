@@ -9,7 +9,7 @@ We are proud to present the Sigasi Studio X.Y release: ...
 # Other New and Noteworthy Changes
 
 
-# Bugfixes
+# Bug fixes
 
 
 
@@ -23,7 +23,7 @@ We are proud to present the Sigasi Studio X.Y release: ...
     * Linux: RedHat Enterprise Linux RHEL 7.5 (64 bit) or newer
     * More information on supported OSes can be found [on the Eclipse website](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_10.xml#target_environments)
 * Sigasi Studio as Plugin in your own Eclipse installation:
-    * Eclipse 4.7.3a *Oxygen* up to Eclipse IDE 2019-03
+    * Eclipse 4.7.3a *Oxygen* up to Eclipse IDE 2020-03
     * Java JRE 8 or higher
 
 We recommend at least **4GB of memory** available for Sigasi Studio,
