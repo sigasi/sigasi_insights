@@ -111,7 +111,10 @@ Currently the following external compilers are supported:
 | [OneSpin](/manual/onespin)      | true                  | (run elaboration checks) |
 | GHDL                            | true                  | true                     |
 
-For information on where to obtain free HDL simulators, see [this section in our FAQ](/faq#which-free-vhdl-simulator-can-i-use).
+### Notes
+
+* For information on where to obtain free HDL simulators, see [this section in our FAQ](/faq#which-free-vhdl-simulator-can-i-use).
+* GHDL does not support project dependencies.
 
 ## Save-time compilation
 
