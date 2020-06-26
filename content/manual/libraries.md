@@ -197,9 +197,10 @@ A number of popular third party libraries are the following:
 
 Vendor   | Library           | Install dir example
 -------- | ----------------- | ----------------------------------------------------
-Xilinx   | `unisim`          | `C:\Xilinx\Vivado\2017.4\data\vhdl\src\unisims`
+Xilinx   | `unisim`          | `C:\Xilinx\Vivado\2020.1\data\vhdl\src\unisims`
+Xilinx   | `unimacro`        | `C:\Xilinx\Vivado\2020.1\data\vhdl\src\unimacro`
 Xilinx   | `XilinxCoreLib`   | `C:\Xilinx\14.4\ISE_DS\ISE\vhdl\src\XilinxCoreLib`
-Xilinx   | `xpm`             | `C:\Xilinx\Vivado\2017.4\data\ip\xpm`
+Xilinx   | `xpm`             | `C:\Xilinx\Vivado\2020.1\data\ip\xpm`
 Altera   | `altera_mf`       | `C:\altera\17.0\quartus\libraries\vhdl`
 Mentor   | `modelsim_lib`    | `${ModelSimPath}\vhdl_src\modelsim_lib`
 Aldec    | `aldec`           | `C:\Aldec\Riviera-PRO-2015.02\vlib\aldec\`
