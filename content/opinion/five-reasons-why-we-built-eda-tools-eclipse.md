@@ -22,7 +22,7 @@ Hardly any EDA software comes in languages other than English. But when you are 
 
 ## 3. Revision systems provided
 
-All popular version control systems have an Eclipse plugin. This means that our customers can use their favorite [SCM](http://en.wikipedia.org/wiki/Source_Code_Management) with Sigasi, without any additional engineering effort on our part. We prefer building new stuff. Not rehashing yet another GUI interface for [Subversion](http://subversion.tigris.org)
+All popular version control systems have an Eclipse plugin. This means that our customers can use their favorite [SCM](http://en.wikipedia.org/wiki/Source_Code_Management) with Sigasi, without any additional engineering effort on our part. We prefer building new stuff. Not rehashing yet another GUI interface for [Subversion](https://subversion.apache.org)
 
 ## 4. Update mechanism
 
