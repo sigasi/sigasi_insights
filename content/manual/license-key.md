@@ -95,6 +95,10 @@ export SIGASI_LM_LICENSE_FILE="27000@myserver1.example.com:27000@myserver2.examp
 
 ### Download the FlexNet daemons
 
+The version of the FlexNet daemons must be equal or higher than the FlexLM version of Sigasi Studio. The required version can be found in Sigasi Studio: **Window > Preferences > Sigasi > License Key** and look for the `FLEXLM_VERSION` line.
+
+{{< figure src="/img/manual/flexlmversion.png" alt="Check FlexLM version in Sigasi Studio" link="/img/manual/flexlmversion.png" >}}
+
 #### FlexNet version 11.16.4.0
 
 * [Linux 64 bit](https://download.sigasi.com/flexnet/v11.16.4.0/sigasi-flexnet-linux64.zip)

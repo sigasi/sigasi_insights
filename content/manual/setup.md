@@ -71,6 +71,11 @@ There are two ways to install the Sigasi Studio Eclipse Plugin:
 1. [On-line installation of the Eclipse Plugin](#install-the-eclipse-plugin)
 1. [Off-line update site to install the Eclipse Plugin](#installing-the-offline-update-site) (only for customers with XL or XPRT licenses)
 
+## Prerequisites: Java runtime
+* The Sigasi Studio plugin requires Java 8 (or "1.8"). It will not run with either lower or higher versions.
+* You can check your Java version with `java -version`
+* Java can be downloaded from several sources, a.o. [AdoptOpenJDK](https://adoptopenjdk.net/).
+
 ## Prerequisites: Eclipse
 
 {{< figure src="/img/manual/eclipse_foundationmember.png" alt="Eclipse Foundation member" class="uk-align-right" >}}
