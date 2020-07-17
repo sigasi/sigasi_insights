@@ -470,8 +470,15 @@ Floating licenses also require a MAC address, but this needs to be the MAC addre
 Sigasi uses your system's native browser to display graphics and html content.
 When Sigasi's default settings do not work on your Linux system,
 make sure the `webkitgtk` package is installed (`yum install webkit2gtk`).
-You might have to install the `webkitgtk3` package if you're on GTK3 (`yum install webkit2gtk3`).
-The actual name of the package you have to install can depend on the OS.
+The actual name of the package you have to install can depend on the OS. E.g.,
+
+* You might have to install the `webkitgtk3` package if you're on GTK3 (a.o. RedHat/CentOS 8: `yum install webkit2gtk3`).
+* On RedHat/CentOS 7, you'll want to install webkitgtk4 (`yum install webkitgtk4`).
+* On Ubuntu 18.04, libwebkit2gtk-4 is needed (`apt install libwebkit2gtk-4.0-37`).
+
+Note that certain environment variables like `LD_LIBRARY_PATH` and `LD_PRELOAD` in your environment may break Sigasi Studio. If Sigasi Studio fails to open the editor, state machine and block diagrams, or the documentation view, check that these variables are either undefined or empty. If they are not, try to start Sigasi Studio from the command line as follows:
+
+`LD_LIBRARY_PATH="" LD_PRELOAD="" /path/to/sigasi`
 
 If you're using an older version of Sigasi Studio, you can try the following:
 
