@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.9)
 layout: page
 pager: true
-date: 2020-06-25
+date: 2020-07-24
 comments: true
 ---
 
@@ -16,7 +16,17 @@ Although these preview releases are less rigorously tested than the official rel
 
 # Current preview release
 
-No documented changes since the [4.8 release]({{< ref "/releasenotes/sigasi-4.08.md" >}}).
+Changes since the [4.8 release]({{< ref "/releasenotes/sigasi-4.08.md" >}}):
+
+* Memory improvements and better caching
+* We updated Eclipse in the standalone version to Eclipse 2020-06
+* Updated the Xtext dependency to 2.22.0
+* Better editor message when browser can not be loaded
+* More Verilog linting checks:
+    - Detect Verilog case statements where default item is not the last in the list
+    - Detect duplicate default branches in Verilog case statements
+    - Report function/task arguments, where direction is not explicitly declared
+* Improved layouting in graphical views
 
 
 # Update or install?
