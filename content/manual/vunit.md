@@ -26,6 +26,9 @@ If you have installed VUnit in a dedicated location, you should add the VUnit lo
 
 When you're installing VUnit in a virtualenv, make sure to launch Sigasi Studio from within the terminal after activating the virtualenv.
 
+If you installed VUnit from the _Microsoft Store_, you might get an error message when trying to select the Python executable.
+To use Python outside of Windows Store apps, Python needs to be installed using an installer from https://www.python.org/downloads/windows/.
+
 You should make sure that the `python run.py --version` command only returns the VUnit version number. Additional output will prevent Sigasi Studio to parse the VUnit version number correctly and will result in errors.
 
 ## Import VUnit Project
