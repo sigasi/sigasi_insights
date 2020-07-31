@@ -1,5 +1,5 @@
 [build.environment]
-  HUGO_VERSION = "0.72.0"
+  HUGO_VERSION = "0.74.3"
 
 [build]
   publish = "public/"

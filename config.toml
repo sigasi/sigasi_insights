@@ -1,8 +1,11 @@
 baseurl         = "https://insights.sigasi.com/"
+title           = "Sigasi"
+
 contentdir      = "content"
 layoutdir       = "layouts"
 publishdir      = "public"
-title           = "Sigasi"
+assetdir        = "assets"
+
 paginate        = 15
 canonifyurls    = true
 summarylength   = 20

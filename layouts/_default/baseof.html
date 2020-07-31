@@ -13,9 +13,10 @@
   {{ end }}
     <title>{{ block "title" . }}{{ .Page.Title }} - {{ .Site.Title }}{{ end }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/sigasi.min.css"/>
-    <link rel="stylesheet" href="/css/insights.css"/>
-    <link rel="stylesheet" href="/css/syntax.css"/>
+    {{ $sass := resources.Get "sass/sigasi.scss" }}
+    {{ $options := (dict "targetPath" "css/sigasi.min.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+    {{ $style := $sass | resources.ToCSS $options }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}"/>
     <link rel="alternate" type="application/rss+xml" href="{{ "/tech/index.xml" | absURL }}" title="Technical blog posts feed">
     <link rel="alternate" type="application/rss+xml" href="{{ "/screencasts/index.xml" | absURL }}" title="Screencasts feed">
     <link rel="alternate" type="application/rss+xml" href="{{ "/releasenotes/index.xml" | absURL }}" title="Releasenotes feed">

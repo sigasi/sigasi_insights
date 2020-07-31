@@ -1,0 +1,542 @@
+// 1. Your custom variables and variable overwrites.
+$sg-blue: #323286;
+$sg-red: #ed1c24;
+$sg-red-alt: #e91d29; // almost indistinguishable from sg-red - used as hover background and for header gradient
+$sg-orange: #f47920;
+$sg-purple: #1a134c;
+$sg-dark-purple: #262262;
+$sg-light-purple: #532f87;
+$sg-muted-grey: #e0e0e0;
+$sg-distributor-grey: #898989;
+$sg-copyright-color: #e4e4e4;
+$sg-footer-grey: #333;
+$sg-primary-button-background: $sg-dark-purple;
+$sg-primary-button-hover-background: $sg-light-purple;
+$sg-secondary-button-background: $sg-red;
+$sg-secondary-button-hover-background: $sg-red-alt;
+$sg-danger-button-background: $sg-orange;
+$sg-danger-button-hover-background: #f97e25;
+$sg-header-image: url(/img/header.png);
+$global-color: #414042;
+$global-link-color: $sg-orange;
+$global-link-color-hover: $sg-purple;
+$base-link-hover-color: $sg-purple;
+$base-link-hover-text-decoration: none !default;
+$card-default-hover-background: #fafafa !default;
+$navbar-nav-item-color: $global-link-color-hover !default;
+$navbar-nav-item-hover-color: $global-link-color !default;
+$navbar-nav-item-height: 36px;
+$navbar-nav-item-active-color: white;
+$base-em-color: $global-color;
+$global-font-family: Lato;
+$base-heading-color: $sg-dark-purple;
+$base-body-background: #eeedf3;
+$base-heading-margin-top: 20px;
+$sg-border-color: #e3e3e3;
+$sg-pagination-border: #dadada;
+$container-max-width: 1160px;
+$container-padding-horizontal: 20px;
+$button-primary-background: $sg-primary-button-background !default;
+$button-primary-hover-background: $sg-primary-button-hover-background !default;
+$button-secondary-background: $sg-secondary-button-background !default;
+$button-secondary-hover-background: $sg-secondary-button-hover-background !default;
+$button-danger-background: $sg-danger-button-background !default;
+$button-danger-hover-background: $sg-danger-button-hover-background !default;
+$button-text-transform: none !default;
+$navbar-dropdown-margin: 0px;
+$navbar-dropdown-width: 150px !default;
+$nav-item-padding-vertical: 2px;
+
+// 2. Import default variables and available mixins.
+@import "../uikit/src/scss/variables-theme.scss";
+@import "../uikit/src/scss/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+@mixin hook-navbar-nav-item() {
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  transition: 0.1s ease-in-out;
+  transition-property: color, background-color;
+}
+
+@mixin hook-navbar-nav-item-active() {
+  background: $sg-primary-button-background;
+}
+
+@mixin hook-container-misc() {
+  .uk-container {
+    background: white;
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+  }
+}
+
+@mixin hook-base-h1 {
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+@mixin hook-base-h3 {
+  color: $sg-red;
+}
+
+@mixin hook-grid-misc {
+  .uk-grid {
+    margin-right: (-$grid-gutter-horizontal);
+  }
+
+  @media (min-width: 1200px) {
+    .uk-grid {
+      margin-right: (-$grid-gutter-horizontal-l);
+    }
+  }
+}
+
+@mixin hook-card-misc {
+  .uk-card.uk-grid-margin {
+    margin-top: 0;
+  }
+}
+
+@mixin hook-panel-scrollable {
+  border: none;
+}
+
+@mixin hook-navbar-dropdown {
+  padding: 15px;
+}
+
+// 4. Import UIkit.
+@import "../uikit/src/scss/uikit-theme.scss";
+
+.sg-navbar-top {
+  height: 36px;
+}
+
+.sg-navbar-logo {
+  height: 110px;
+
+  img {
+    height: 50px;
+  }
+}
+
+.sg-border-bottom {
+  border-bottom: 1px solid $sg-border-color;
+}
+
+.uk-container.sg-banner {
+  background-color: $base-heading-color;
+  background-image: $sg-header-image;
+  background-repeat: repeat-y;
+  background-position: right top;
+  background-size: cover;
+  color: #fff;
+  height: 194px;
+
+  p:first-child {
+    margin-top: 65px;
+    margin-bottom: 10px;
+
+    span {
+      font-size: 50px;
+      font-weight: 600;
+    }
+  }
+
+  p span::after {
+    content: ".";
+    color: orange;
+    font-weight: bold;
+
+    :last-child {
+      content: none;
+    }
+  }
+
+  p:first-child span.sg-no-dot::after {
+    content: none;
+  }
+
+  p.sg-subtitle {
+    font-size: 22px;
+  }
+
+  @media (max-width: $breakpoint-small-max) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    p:first-child {
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      span {
+        font-size: 35px;
+      }
+    }
+
+    p:last-child {
+      font-size: 14px;
+    }
+  }
+
+  &.sg-general-banner {
+    p:first-child {
+      margin-top: 40px;
+    }
+
+    line-height: 1.3;
+  }
+
+  &.sg-home-banner {
+    background-color: $sg-light-purple;
+    background-image: $sg-header-image;
+    background-image: $sg-header-image, linear-gradient(90deg, $sg-light-purple 0%, $sg-red-alt 100%);
+  }
+}
+
+
+#cookie_consent {
+  border-top: 1px solid #e3e3e3;
+
+  .uk-container {
+    border-left: none;
+    border-right: none;
+  }
+}
+
+h1 {
+  line-height: 40px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html, body {
+  line-height: 26px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+header .logo {
+  height: 50px;
+}
+
+.sg-block-dark {
+  background: $sg-muted-grey;
+}
+
+.uk-card-default {
+  background: none;
+  color: #666;
+  box-shadow: none;
+}
+
+.footer-widgets {
+  background: $sg-dark-purple;
+}
+
+
+#copyright {
+  background: $sg-footer-grey;
+  font-size: 11px;
+  color: $sg-copyright-color;
+
+  a {
+    color: $sg-copyright-color;
+
+    &:hover {
+      text-decoration: none;
+      color: $global-link-color-hover;
+    }
+  }
+;
+}
+
+.sg-testimonials {
+
+  h3 {
+    color: $sg-red;
+    font-size: 31px;
+    text-transform: uppercase;
+  }
+
+  .quote {
+    color: $sg-purple;
+    font-size: 30px;
+    line-height: 40px;
+    font-style: italic;
+  }
+
+  .quoted {
+    color: $global-color;
+    font-size: 25px;
+  }
+}
+
+.sg-sdk {
+
+  h3 {
+    color: $sg-red;
+    font-size: 31px;
+  }
+
+  .quote {
+    color: $sg-purple;
+    font-size: 20px;
+    line-height: 25px;
+    font-style: italic;
+  }
+
+  .quoted {
+    color: $global-color;
+    font-size: 20px;
+
+    a {
+        color: $sg-orange;
+    }
+  }
+}
+
+.sg-mac-border {
+  border: 5px solid white;
+  overflow: hidden;
+
+  img {
+    position: relative;
+    top: 30px;
+    left: -50px;
+    border-radius: 25px;
+    border: 15px solid black;
+    box-shadow: 0 0 0 3px $sg-muted-grey;
+  }
+}
+
+.sg-product-overview {
+  div {
+    color: $sg-dark-purple;
+    min-height: 195px;
+  }
+
+  h2 {
+    text-align: center;
+    line-height: 2rem;
+    margin: 0;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+.sg-starter-check {
+  color: $sg-orange;
+  @media (max-width: $breakpoint-small-max) {
+    &::after {
+      content: " SIGASI STUDIO STARTER"
+    }
+  }
+}
+
+.sg-creator-check {
+  color: #cc2128;
+  @media (max-width: $breakpoint-small-max) {
+    &::after {
+      content: " SIGASI STUDIO CREATOR"
+    }
+  }
+}
+
+.sg-xl-check {
+  color: $sg-red;
+  @media (max-width: $breakpoint-small-max) {
+    &::after {
+      content: " SIGASI STUDIO XL"
+    }
+  }
+}
+
+.sg-xprt-check {
+  color: $sg-light-purple;
+  @media (max-width: $breakpoint-small-max) {
+    &::after {
+      content: " SIGASI STUDIO XPRT"
+    }
+  }
+}
+
+.sg-top-left-icon {
+  top: 0;
+  left: 0;
+}
+
+.uk-pagination li {
+  border: 1px solid $sg-pagination-border;
+  padding: 5px;
+  min-width: 20px;
+  text-align: center;
+  margin-left: -1px;
+}
+
+.uk-pagination a {
+  padding-left: 0px;
+}
+
+.sg-scroller {
+  border: 1px solid #999;
+  border-radius: 4px;
+  color: #999;
+  display: block;
+  font-size: 24px;
+  line-height: 36px;
+  padding-bottom: 4px;
+  width: 42px;
+  margin: 0 auto;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+}
+
+.sg-primary-icon {
+  color: $sg-red;
+}
+
+h2.sg-red {
+  color: $sg-red
+}
+
+.sg-orange {
+  color: $sg-orange
+}
+
+a.sg-distributor-icon {
+  color: $sg-distributor-grey;
+
+  &:hover {
+    color: $sg-distributor-grey;
+  }
+}
+
+.sg-youtube-container {
+  position: relative;
+  padding-top: 56.25%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.sg-map-container {
+  div {
+    padding-top: 50%;
+
+    div {
+      display: none;
+      background: rgba(244, 121, 32, .9);
+      height: 100%;
+      width: 100%;
+    }
+
+    &:hover {
+      div {
+        display: initial;
+      }
+    }
+  }
+}
+
+.sg-floatparent {
+  overflow: hidden;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.sg-floatmenu::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.sg-floatmenu {
+  resize: none;
+}
+
+a.sg-campaign {
+  display: block;
+  background-color: $sg-dark-purple;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0px;
+  line-height: 1.1em;
+}
+
+a.sg-insight-pager {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+
+  &:hover {
+    background-color: #ddd;
+  }
+
+  &.sg-left::before {
+    content: "← ";
+  }
+
+  &.sg-right::after {
+    content: " →";
+  }
+}
+
+// 5. Specific for insights site
+// Horizontal description lists
+dl dt {
+    line-height: 180%;
+    float: left;
+    width: 250px;
+    clear: left;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+dl dt:hover {
+    overflow: visible;
+    white-space: normal;
+}
+
+dl dd {
+    line-height: 180%;
+    margin-left: 270px;
+}
+
+#TableOfContents .uk-list>li:nth-child(n+2),
+#TableOfContents .uk-list>li>ul {
+    margin-top: 3px;
+}
+
+pre {
+    background: #f8f8f8;
+}
+
+blockquote {
+    padding-left: 20px;
+    border-left: 5px solid #eee;
+}
+
+// 6. import fonts
+@import "fonts.scss";
+@import "insights.scss";
+@import "syntax.scss";
