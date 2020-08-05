@@ -74,7 +74,7 @@
                         <h5><a href="#sigasi-top">{{ .Title }}</a></h5>
                     </div>
                     <div class="uk-text-small">
-                            {{ .TableOfContents | replaceRE "<ul>" "<ul class=\"uk-list\">" | safeHTML }}
+                            {{ .TableOfContents | replaceRE "<ul>" "<ul class=\"uk-nav\">" | safeHTML }}
                     </div>
                 </div>
                 {{- end -}}

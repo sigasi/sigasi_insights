@@ -218,6 +218,7 @@ html, body {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 header .logo {
@@ -522,9 +523,11 @@ dl dd {
     margin-left: 270px;
 }
 
-#TableOfContents .uk-list>li:nth-child(n+2),
-#TableOfContents .uk-list>li>ul {
-    margin-top: 3px;
+#TableOfContents {
+    margin-left: -9px;
+}
+#TableOfContents .uk-nav>li {
+    margin-left: 9px;
 }
 
 pre {
