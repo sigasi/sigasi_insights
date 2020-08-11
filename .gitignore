@@ -4,3 +4,5 @@ resources/
 
 # Local Netlify folder
 .netlify
+# Emacs backup files
+*~
