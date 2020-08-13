@@ -95,7 +95,7 @@ A source file has to hold a lot more information than a standard WaveDrom file. 
 Note that this file can still be processed with WaveDrom to generate the documenation. The resulting documentation image will be exactly the same with both files.
 
 ### Running the tool
-When the tool is run, it combines information from the design file and the source file to generate a testbench. This testbench is then run using the [vUnit][vunit] framework, which logs important information. The output of this process is then used to build a comparison file that will compare the behavior of the design to the expected behavior. This file is called the result file.
+When the tool is run, it combines information from the design file and the source file to generate a testbench. This testbench is then run using the [VUnit][vunit] framework, which logs important information. The output of this process is then used to build a comparison file that will compare the behavior of the design to the expected behavior. This file is called the result file.
 
 ### Output files
 A result file is very similar to the source file. It is also a waveJSON formatted file that can be processed by WaveDrom. It will show the discrepancies between expected output and simulated output.
@@ -123,5 +123,5 @@ Finally I would like to thank Lieven, Hendrik and Philippe at Sigasi one last ti
 [output file]: /img/opinion/thesis-winand/result_file.png
 [GUI]: /img/opinion/thesis-winand/gui.png
 [overview]: /img/opinion/thesis-winand/overview_color.png
-[vunit]: https://vunit.github.io/documentation
+[vunit]: https://vunit.github.io
 [thesis]: https://github.com/WinandS/Thesis

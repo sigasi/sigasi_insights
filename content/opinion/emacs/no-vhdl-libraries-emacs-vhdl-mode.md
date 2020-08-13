@@ -28,9 +28,8 @@ There is a
 debate</a> about whether or not to use libraries in VHDL code.
 Especially sub-prime synthesis tools are known not to support VHDL
 libraries. A quick survey showed that today, most tools support
-libraries. Notorious exception is
-<a href="http://quartushelp.altera.com/9.1/mergedProjects/hdl/vhdl/vhdl_pro_libraries.htm">Quartus,
-which does not support libraries for entities</a>.
+libraries. Notorious exception is Quartus,
+which does not support libraries for entities.
 
 In the this blog post, I’m assuming that the benefits of VHDL libraries
 are established. If you disagree and you, nor your colleagues, nor your

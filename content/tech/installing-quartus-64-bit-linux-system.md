@@ -17,8 +17,6 @@ When you try to install Altera Quartus on a 64-bit Linux system (like Fedora or 
 yum install libXext.i686 freetype.i686 fontconfig.i686 linpng.i686 libSM.i6866
 ```
 
-More info about running Quartus in 64-bit mode: <http://quartushelp.altera.com/11.1/mergedProjects/global/install/install_pro_64bit.htm>
-
 If you are having troubles with SELinux, run:
 ```bash
 sh altera_installer.external.sh --confirm
