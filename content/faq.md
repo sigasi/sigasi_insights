@@ -175,6 +175,10 @@ License server requirements are listed with the [license server system requireme
 If you are using Eclipse for both VHDL and C development, you probably don't want to lock up a floating Sigasi VHDL license while you are working on C.
 In order to use Eclipse without locking up a Sigasi license, you should close the VHDL perspective, close all VHDL projects and restart Eclipse.
 
+## My new license contains a start date in the future. When can I start using it?
+
+If you're renewing your license, the new license file can contain a _start_ date in the future. As long as the _start_ date is part of the *VENDOR_STRING*, it will not be enforced and you can start using your new license file immediately.
+
 # Getting Started
 
 ## What is a Workspace?
