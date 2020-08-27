@@ -100,4 +100,14 @@ You can import a project from an archive by clicking **File \> Import…
 \> General \> Existing projects into Workspace** and selecting **Select
 archive file**. Browse to your project archive and press **Finish**.
 
+## Programatically creating a project
+
+The Sigasi Studio `.project` and `.library_mapping.xml` files can be created using code from our
+publicly available [Sigasi Project Creator] project.
+
+The project offers Python classes that make it easy to generate a Sigasi Project from your own project
+specifications.
+For more information and examples, check out the [Sigasi Project Creator] project on GitHub.
+
+[Sigasi Project Creator]: https://github.com/sigasi/SigasiProjectCreator
 
