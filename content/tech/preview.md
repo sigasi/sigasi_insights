@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.9)
 layout: page
 pager: true
-date: 2020-08-28
+date: 2020-09-04
 comments: true
 ---
 
@@ -24,12 +24,15 @@ Changes since the [4.8 release]({{< ref "/releasenotes/sigasi-4.08.md" >}}):
 * Updated the Xtext dependency to 2.22.0
 * Embed Chromium browser in Sigasi Studio installation
 * Better editor message when browser can not be loaded
+* Removed the Sigasi Solarized themes
 * More Verilog linting checks:
     - Detect Verilog case statements where default item is not the last in the list
     - Detect duplicate default branches in Verilog case statements
     - Report function/task arguments, where direction is not explicitly declared
     - Report parameters that do not have a default value
     - Report mixed positional and named port/parameter/argument associations
+    - Check initialization of subprogram arguments ports and registers
+    - Check for correct use of port connections in module instantiations
     - Check assignment patterns
     - Style: flag long code lines and tab characters
     - Style: check header comment
