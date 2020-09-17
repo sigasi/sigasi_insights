@@ -20,6 +20,7 @@ in the design.
 
 ## Marker Icons
 
+* ![](/img/icons/info_lightbulb.png) marks an info message that can be resolved automatically with a Quick Fix.
 * ![](/img/icons/info.png) marks an info message.
 * ![](/img/icons/warning_lightbulb.png) marks a warning that can be resolved automatically with a Quick Fix.
 * ![](/img/icons/warning.png) marks a warning that cannot be resolved automatically.

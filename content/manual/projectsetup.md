@@ -26,7 +26,7 @@ following sections.
 ## 1: Import the project
 
 You can import an existing VHDL or (System)Verilog project from the file system by clicking
-**File \> Import… \> Sigasi \> Import a VHDL project** (or **Import a (System)Verilog project**). Browse to the
+**File \> Import… \> Sigasi \> Import a VHDL project** or **Import a (System)Verilog project**. Browse to the
 root directory of the project, and press **Finish**.
 
 ## 2: Set Libraries (VHDL or Mixed)
@@ -35,6 +35,8 @@ Since [Sigasi Studio 4.4]({{< ref "/releasenotes/sigasi-4.04.md" >}}), Sigasi St
 such as `library` and `use` clauses. If you need to customize the library configuration, you can assign different
 libraries to your files and folders. Right-click on a file or folder and select **Library Mapping \> New Library…**.
 Then fill out the correct library name.
+
+[The following chapter]({{< ref "/manual/libraries.md" >}}) gives more information on using libraries.
 
 ## 3: Add any files that are in other directories
 
@@ -81,12 +83,8 @@ selecting **Configure \> Add VHDL support** or **Configure \> Add
 Sigasi Studio projects by selecting **Configure \> Remove VHDL support** or
 **Configure \> Remove (System)Verilog support**.
 
-Note that only with a {{< xl >}} license, you can have **mixed** VHDL and
+Note that with a {{< xl >}} or a {{< xprt >}} license, you can have **mixed** VHDL and
 Verilog support at the same time.
-
-With a {{< creator >}} license, a project can contain both VHDL and
-Verilog files, but only one of the languages will have full support.
-Files in the other language will be treated as [External Files](/manual/opening#external-files).
 
 ## Importing a project from an archive
 

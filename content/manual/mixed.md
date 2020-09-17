@@ -5,8 +5,6 @@ weight: 7
 pager: true
 ---
 
-{{< xl_only >}}
-
 You can create mixed language projects by adding both **VHDL** and
 **Verilog** or **SystemVerilog** support to your project: right click
 your project and select **Configure \> Add VHDL support** and

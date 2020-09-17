@@ -24,11 +24,12 @@ Sigasi uses the information transmitted by Talkback for marketing and product pl
 
 # What kind of information is sent through Talkback?
 
-Talkback transmits meta-information about your project, operating system, Java Virtual Machine, tool usage, and incident reports (stack traces) that occur due to software errors. Talkback **never transmits any HDL code**. All transmissions are through an industry standard SSL secure connection, unless you choose to use plain text transmissions.
+Talkback transmits meta-information about your project, operating system, Java Virtual Machine, tool usage, and incident reports (stack traces) that occur due to software errors.
+Talkback **never transmits any HDL code**. All transmissions are through an industry standard SSL secure connection.
 
 In the Talkback transmissions, we identify your Sigasi/Eclipse workspace using a generated identifier (a standard Java universal unique identifier [UUID](http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html)).
 
-Talkback stores all the information it transmits in a log file, so that you can inspect it. The information is human-readable, in JSON (JavaScript Object Notation) format.
+Talkback stores all the information it transmits in a local log file, so that you can inspect it. The information is human-readable, in JSON (JavaScript Object Notation) format.
 
 You can access the Talkback log to verify by clicking **Window > Preferences > Sigasi > Talkback > Talkback log**.
 
@@ -40,9 +41,9 @@ Talkback is *always disabled by default*. To enable Talkback, or to disable it l
 
 # What about my Firewall or Proxy?
 
-By default Talkback uses the https protocol to send the information.
-If your firewall blocks SSL connections you can use the http protocol: go to **Window > Preferences > Sigasi > Talkback** and select the checkbox "Send unencrypted".
-Your firewall should allow outgoing connections to port 443 for https or port 80 for http.
+Talkback uses the https protocol to send the information.
+If your firewall blocks SSL connections Talkback will not be able to send diagnostics.
+Your firewall should allow outgoing connections to https://talkback-sigasi.sigasi.com/.
 
 Talkback does not support Proxies. If Talkback is unable to connect to our server directly because of your firewall or proxy server, you need to purchase a commercial license.
 

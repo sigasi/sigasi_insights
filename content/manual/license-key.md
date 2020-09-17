@@ -184,21 +184,24 @@ If you have configured an environment variable with the location of a FlexNet li
 
 ### Mix of Creator and XL licenses
 
-If your license server serves both Sigasi Studio **Creator** and **XL** licenses, you can configure Sigasi Studio to only checkout Sigasi Studio **Creator** licenses (and **not** XL licenses) by enabling the "**Do not try to checkout floating Sigasi Studio XL licenses**" option on **Window > Preferences > Sigasi > License Key > Floating Options**
+If your license server serves both the legacy {{< creator >}} and {{< xl >}} or {{< xprt >}} licenses, you can configure Sigasi Studio to only checkout Sigasi Studio **Creator** licenses (and **not** XL licenses) by enabling the "**Do not try to checkout floating Sigasi Studio XL licenses**" option on **Window > Preferences > Sigasi > License Key > Floating Options**
 
 ### Checking out and releasing the XPRT license
 
-If you have licenses for Sigasi Studio XPRT, this is actually licensed as a Sigasi Studio XL Flexnet feature and an 
-XPRT Flexnet feature. The XL license is checked out as described above.
+If you have a license for {{< xprt >}}, this is actually licensed as a `com.sigasi.hdt.xl` FlexNet feature
+combined with a `com.sigasi.hdt.xl.doc` FlexNet feature.
+The XL license is checked out as described above.
 
 The XPRT license is checked out automatically in the following cases:
 
 * When you open the Block Diagram view
 * When you open the State Machine view
-* When you try to export documentation
+* When you open the Class Hierarchy view
+* When you open the VUnit view
+* When you export documentation
 * When you click **Help > Sigasi > Floating License > Check out Sigasi Studio XPRT license**
 
-The XPRT license is released via: **Help > Sigasi > Floating license > Release Sigasi Studio XPRT Floating Licenses**.
+The XPRT license can be released via: **Help > Sigasi > Floating license > Release Sigasi Studio XPRT Floating Licenses**.
 
 
 # Troubleshooting

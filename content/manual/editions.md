@@ -12,21 +12,15 @@ Sigasi Studio Starter is the best, free VHDL and Verilog editor that works on **
 
 Sigasi Studio Starter works without a license key, but requires [Talkback](/manual/talkback) and you need to keep your version up to date.
 
-## Sigasi Studio Creator
-
-Sigasi Studio **Creator** is the go-to design entry tool and code browser for all your HDL projects.
-
 ## Sigasi Studio XL
 
-Sigasi Studio XL is Sigasi's flagship product. A license for Sigasi Studio XL unlocks all features that come with Sigasi Creator plus many additional features.
-
-Throughout the documentation, features that are only available in this version are marked as {{< xl_only >}}.
+Sigasi Studio XL is Sigasi's flagship product. A license for Sigasi Studio XL unlocks all features of our go-to design entry and code browsing tool.
 
 All {{< xl >}} features are also available in {{< xprt >}}.
 
 ## Sigasi Studio XPRT
 
-*Sigasi Studio XPRT* is the most complete version of Sigasi Studio. It unlocks all features of {{< creator >}} and {{< xl >}}, plus the graphical views, documentation generation, ...
+*Sigasi Studio XPRT* is the most complete version of Sigasi Studio. It unlocks all features of {{< xl >}}, plus the graphical views, documentation generation, ...
 
 Throughout the documentation, features that are only available in this version are marked as {{< xprt_only >}}.
 
@@ -43,6 +37,11 @@ Throughout the documentation, features that are only available in this version a
 ## Sigasi Premium with Documentation add-on
 
 *Sigasi Premium Doc* was the {{< xl_doc >}} edition of Sigasi 2.x
+
+## Sigasi Studio Creator
+
+*Sigasi Studio Creator* was the basic version of Sigasi Studio 3.x and 4.x.
+It has been retired in favor of {{< xl >}}.
 
 ## Sigasi Studio XL Doc
 

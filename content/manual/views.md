@@ -89,7 +89,7 @@ Use the **instantiations** filter ![](/img/icons/instantiation.png), to hide eve
 
 You can **launch a simulation** with the ![](/img/icons/run_exc.gif) button, if you first set up an [Launch simulator](/manual/tools#launch-simulator).
 
-The Hierarchy View also offers an action **Select required files**, which selects all design files that are part of the current hierarchy, in the project explorer. This allows you to easily perform the same action on all files in the hierarchy. E.g. team commands, ... {{< xl_only >}}
+The Hierarchy View also offers an action **Select required files**, which selects all design files that are part of the current hierarchy, in the project explorer. This allows you to easily perform the same action on all files in the hierarchy. E.g. team commands, ...
 
 {{< figure src="/img/manual/select_required_files_in_hierarchy.png" >}}
 
@@ -191,8 +191,6 @@ You can watch a screencast at [State Machine Viewer](/screencasts/state_machine_
 
 # Dependencies View
 
-{{< xl_only >}}
-
 The **Dependencies View** visualizes the dependencies of your VHDL, SystemVerilog or *mixed language* projects.
 This view shows the relationships between your source files and makes it easy to see *top levels* and important *packages*.
 The Dependencies View also makes it easy to detect *orphaned files*.
@@ -222,7 +220,7 @@ The **Documentation view** gives you a live preview of the [automatic documentat
 
 # Net Search View
 
-{{< xl_only >}}- {{< vhdl_only >}}
+{{< vhdl_only >}}
 
 With **Net Search**, you can find *loads* and *drivers* of a net.
 A *net* is defined as a signal or port and all other signals and ports
@@ -240,6 +238,21 @@ while before the results appear.
 
 From the **Net Search** view, you can navigate to the VHDL code by
 double-clicking the search results.
+
+# VUnit View
+
+{{< xprt_only >}}
+
+{{< figure src="/img/manual/vunit_view.png" >}}
+
+The VUnit View allows to get a quick overview of your VUnit test runs and to monitor ongoing test runs.
+
+With the icons on top of the View you can
+
+* Filter the output to show failures only
+* Rerun a test
+* Stop ongoing VUnit test runs
+* View the test run history
 
 # Preprocessor view
 
@@ -283,9 +296,19 @@ the class hierarchy tree.
 ![](/img/icons/definingtype_sort_co.png) | Sort By Defining Class | Sorts members by the class in which they are defined.
 ![](/img/icons/fields_co.png)            | Hide Fields            | Hides all fields in the members list.
 
-# Console view
+# Console View
 
 When Sigasi Studio launches external tools (e.g. external compiler, documentation generation,...) the output is logged to the console view.
-This is a generic Eclipse view \[[Documentation](https://help.eclipse.org/photon/index.jsp?topic=%2Forg.eclipse.cdt.doc.user%2Freference%2Fcdt_u_console_view.htm)].
+This is a [generic Eclipse view](https://help.eclipse.org/photon/index.jsp?topic=%2Forg.eclipse.cdt.doc.user%2Freference%2Fcdt_u_console_view.htm).
 
 Different tools can open different consoles. You can switch between different consoles by clicking the ![icon console display](/img/icons/icon_con_disp_console.png)-icon.
+
+# Minimap View
+
+The Minimap View can be opened via **Window > Show View > Other...** and selecting **General > Minimap**.
+This is a [generic Eclipse view](https://www.eclipse.org/eclipse/news/4.9/platform.php#minimap).
+
+This view is another way to help navigating through large files.
+It shows an overview of the entire active editor in a dedicated pane.
+The part that is visible in the editor is highlighted.
+The highlighted part of the Minimap View can be clicked and dragged to scroll through the Editor View.
