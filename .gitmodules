@@ -1,3 +1,3 @@
-[submodule "assets/uikit"]
-	path = assets/uikit
-	url = https://github.com/uikit/uikit.git
+[submodule "themes/sigasi_theme"]
+	path = themes/sigasi_theme
+	url = https://github.com/sigasi/sigasi_theme.git

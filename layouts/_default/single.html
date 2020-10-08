@@ -37,8 +37,10 @@
           <hr>
   </div>
   <div class="uk-container">
+    {{- if .Params.pager -}}
     <div uk-grid uk-height-match>
       <div class="uk-width-3-4@m">
+    {{- end -}}
         <article>
           {{- if .Params.slidesharekey }}
           {{ partial "slideshare" . }}
@@ -60,10 +62,10 @@
           {{- template "_internal/disqus.html" . -}}
           {{- end -}}
         </article>
+    {{- if .Params.pager -}}
       </div>
       <div class="uk-width-1-4@m uk-visible@m">
           <div class="sg-floatparent" data-uk-sticky="offset: 30">
-            {{- if .Params.pager -}}
             <aside class="uk-panel-scrollable sg-floatmenu uk-padding-small" uk-height-viewport="offset-bottom: 155px">
                 {{- if .Params.bannerad -}}
                     {{ partial "bannerad" . }}
@@ -79,11 +81,10 @@
                 </div>
                 {{- end -}}
             </aside>
-            {{- end -}}
+          </div>
       </div>
     </div>
-
-  </div>
+    {{- end -}}
   </div>
 </main>
 

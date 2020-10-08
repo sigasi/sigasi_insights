@@ -1,0 +1,7 @@
+feeds:
+    - url: /tech/index.xml
+      title: "Technical blog posts feed"
+    - url: /screencasts/index.xml
+      title: "Screencasts feed"
+    - url: /releasenotes/index.xml
+      title: "Releasenotes feed"

@@ -1,6 +1,7 @@
 baseurl         = "https://insights.sigasi.com/"
 title           = "Sigasi"
 
+theme           = "sigasi_theme"
 contentdir      = "content"
 layoutdir       = "layouts"
 publishdir      = "public"
@@ -20,6 +21,10 @@ pygmentsUseClasses = "true"
 
 [author]
     name = "Sigasi"
+
+[params]
+  description         = "Your hardware design made faster, easier and more efficient"
+  googleTagManagerID  = "GTM-NBF8HKQ"
 
 [taxonomies]
   tag = "tags"

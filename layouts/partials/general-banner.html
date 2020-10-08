@@ -1,3 +1,12 @@
+{{ if .IsHome }}
+<div class="uk-container sg-banner sg-home-banner">
+    <p><span>Insights</span></p>
+</div>
+{{ else }}
 <header class="uk-container sg-banner sg-general-banner">
     <p title="{{ .Title }}"><span>{{ .Title }}</span></p>
 </header>
+{{ end }}
+<div class="uk-container">
+    {{ partial "insights-menu.html" . }}
+</div>

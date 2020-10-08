@@ -3,9 +3,20 @@
 This repository contains the source of the Sigasi documentation.
 You can find the rendered version at <https://insights.sigasi.com>
 
-We are using markdown with [Hugo].
+## Building locally
+
+To work locally with this project, you'll have to follow the steps below:
+
+1. Fork, clone or download this project
+1. Make sure to initialize the git submodules: `git submodule update --init --recursive`
+1. Install Hugo
+1. Preview your project: `hugo server`
+1. Add content
+1. Generate the website: `hugo` (optional)
 
 ## Hugo
+
+We are using markdown with [Hugo].
 
 * Install: [Hugo]
 * Build `hugo`
