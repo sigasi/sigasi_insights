@@ -74,7 +74,7 @@ Disable code coverage analysis:
 
 ## Altera
 
-<https://www.intel.com/content/www/us/en/programmable/quartushelp/current/index.htm#hdl/vhdl/vhdl_file_dir.htm> 
+[Altera documentation](https://www.intel.com/content/www/us/en/programmable/quartushelp/current/index.htm#hdl/vhdl/vhdl_file_dir.htm) 
 
 Triggers:
 
