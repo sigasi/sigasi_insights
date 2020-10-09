@@ -41,7 +41,7 @@ Sigasi Insights uses [Hugo](https://gohugo.io/) which is a static site generator
 ## Clone the sources and create Pull Request
 
 * Clone the Insights repository, as explained [here](#fixing-a-typo-directly-on-github). 
-* Add your content (e.g. a guest blog in the `/opinion/` folder). ([Authoring information](https://github.com/sigasi/sigasi_insights/blob/master/README.markdown))  
+* Add your content (e.g. a guest blog in the `/opinion/` folder). ([Authoring information](https://github.com/sigasi/sigasi_insights/blob/master/README.md))  
   With Hugo, you can easly create a new content page by typing `hugo new opinion/my-contribution.md`.  
   Your MarkDown file must have following header, most of which will be generated for you by the `hugo new` command.  
 ```
