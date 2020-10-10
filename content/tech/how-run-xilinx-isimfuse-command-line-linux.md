@@ -45,7 +45,7 @@ This tool needs a few parameters:
 
 The <strong>project file</strong> is a file (ending with `.prj`) with an
 entry for each file, plus its library.
-For the <a href="http://www.opencores.org">Dirac OpenCores project</a>
+For the <a href="https://opencores.org/">Dirac OpenCores project</a>
 that ships with Sigasi HDT, this is (`Dirac.prj`):
 
 ```bash
