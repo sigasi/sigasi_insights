@@ -22,6 +22,8 @@ When you import a VUnit project or add VUnit support to an existing project, Sig
 Sigasi Studio needs to know where VUnit is installed. If you installed VUnit using `pip install vunit_hdl` and Python is in your path, then Sigasi Studio should find your VUnit installation.
 To verify whether Sigasi Studio can find your VUnit installation, go to **Window > Preferences > Sigasi > Toolchains > VUnit** and check the read-only **VUnit installation path** field.
 
+If your Python installation is not in the path, you can configure it here in the **Python executable location** field.
+
 If you have installed VUnit in a dedicated location, you should add the VUnit location to the $PYTHONPATH and make sure the $PYTHONPATH variable is visible to Sigasi Studio.
 
 When you're installing VUnit in a virtualenv, make sure to launch Sigasi Studio from within the terminal after activating the virtualenv.
