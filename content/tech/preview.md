@@ -38,7 +38,7 @@ If you can't open the Sigasi Studio app on an Apple computer, have a look at [th
 * Sigasi Studio Standalone is supported on:
     * Windows: Windows 10 (64 bit) or newer
     * macOS 10.15 Catilina
-    * Linux: RedHat Enterprise Linux RHEL 7.5 (64 bit) or newer
+    * Linux: RedHat Enterprise Linux RHEL 7.7 (64 bit) or newer
         * Sigasi Studio depends on `libXss.so` which can be obtained by installing `libXScrnSaver`
     * More information on supported OSes can be found [on the Eclipse website](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_10.xml#target_environments)
 * Sigasi Studio as Plugin in your own Eclipse installation:

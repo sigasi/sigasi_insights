@@ -50,7 +50,7 @@ and you need **about 300MB** of free disk space.
 
 ### Linux
 
-#### RHEL 7.5 (64 bit) or newer
+#### RHEL 7.7 (64 bit) or newer
 * Sigasi Studio Standalone is supported
 * Sigasi Studio Plugin is supported when using
     * Eclipse 4.7.3a *Oxygen* or higher
