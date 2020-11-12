@@ -18,7 +18,7 @@ Unlike most Eclipse distributions Sigasi Studio is shipped without the *Eclipse 
 Hence, you have to use the old mechanism for installing new plugins, and add the plugin update site. 
 
 * Adding the update site
-    * First, find the *update site* for the plugin you want to install. For example: for the Mercurial plugin, the update site is <http://eclipse-ccase.sourceforge.net/update/>
+    * First, find the *update site* for the plugin you want to install. For example: for the Mercurial plugin, the update site is <https://foss.heptapod.net/mercurial/mercurialeclipse-updatesite/-/raw/branch/default/p2>
     * Click **Help > Install New Software** Now click **Add** and fill out the update site. Press **OK** to confirm.
 * Installing
     * Still in the *Install* dialog, search for the plugin you want to install. You can browse the list of available plugins or use the filter text above the list of plugins.
@@ -76,7 +76,7 @@ Some other popular revision control systems include:
 
 1.  CVS [learn more](http://www.eclipse.org/eclipse/platform-cvs/).
 2.  Mercurial (Hg) [learn
-    more](http://marketplace.eclipse.org/content/mercurialeclipse-was-hgeclipse).
+    more](https://foss.heptapod.net/mercurial/mercurialeclipse/-/wikis/home).
 3.  Perforce [learn
     more](http://www.perforce.com/product/components/eclipse_plugin).
 
