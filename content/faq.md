@@ -463,10 +463,22 @@ The recommended approach is to remove these junk files. If you are using a revis
 
 Sigasi node-locked licenses are locked to the unique MAC address (NIC address) of your computer's network interface. An example of a MAC address is: `00:1c:42:00:00:09`.
 
-Since Sigasi 2.24, you can find your MAC address in the license dialog of Sigasi Studio: click **Help > Sigasi > Configure License...** and look for the line **Local MAC addresses:**
+You can find your MAC address in the license dialog of Sigasi Studio: click **Help > Sigasi > Configure License...** and look for the line **Local MAC addresses:**
+
+A computer can have a long list of MAC addresses, both from physical and virtual network adapters.
+We recommend to use a MAC address belonging to a physical network adapter since some types of virtual network adapters tend to change their MAC addresses occasionally. 
+
+You can find out to which interface a MAC address belongs depending on your OS.
+
+* Windows: in a command prompt type `ipconfig /all` to get a detailed list of interfaces.
+On Windows 10 you need to avoid choosing the Wifi adapter MAC address when the _random hardware addresses_ privacy feature is [enabled](https://support.microsoft.com/en-us/windows/how-to-use-random-hardware-addresses-ac58de34-35fc-31ff-c650-823fc48eb1bc).
+Your Sigasi license will become invalid once the Wifi MAC address changes.
+* Linux: in a terminal type `/sbini/ip addr` to obtain a detailed list.
+* Mac OS: go to **System Preferences... > Network** then select the desired physical interface and select **Advanced... > Hardware**.
+Alternatively you can type `ifconfig` in a terminal.
+
 
 Floating licenses also require a MAC address, but this needs to be the MAC address of the license server. Ask your system administrator.
-
 
 
 ## The internal web browser does not work on Linux
