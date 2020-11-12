@@ -30,7 +30,7 @@ Install the [Hunspell4Eclipse](http://code.google.com/p/hunspell4eclipse) plugin
 The Hunspell plugin does not include any bundled dictionaries. You need to install dictionaries separately.
 
 You can download good dictionaries from the OpenOffice.org project, which also uses the Hunspell engine.
-There is a list of available dictionaries at <http://extensions.services.openoffice.org/>.
+There is a list of available dictionaries at <https://extensions.openoffice.org/>.
 
 The file you downloaded will have an `.oxt` extension. If you rename this extension to `.zip`, you can unzip it.
 You need the `.dic` and `.aff` files for your language (e.g. `en_US.aff` and `en_US.dic` for **American English**).

@@ -107,6 +107,6 @@ This is what `cron.sh` does:
 
 ## Download
 You can [download our scripts here](/resources/tech/sigasi-rankcheck.tgz).
-You might also need to install <a href="http://www.python.org/">Python</a> and <a href="http://pycurl.sourceforge.net/">PycURL</a> (`yum install python-pycurl` on Fedora).
+You might also need to install <a href="http://www.python.org/">Python</a> and <a href="http://pycurl.io/">PycURL</a> (`yum install python-pycurl` on Fedora).
 
 Hendrik.

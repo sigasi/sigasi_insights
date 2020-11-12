@@ -15,7 +15,7 @@ Two weeks ago, we started a survey among our student users, about social media n
 
 But first, we randomly picked a winner from the participants. Shafqat from the <a href="http://www.kth.se">Royal Institute of Technology, Sweden</a> will receive a BeMicro SDK development board, with an Altera Cyclone IV FPGA. Congrats, Shafqat and have fun!
 
-So, on to the survey results. As usual, we don't claim any relevance whatsoever. To quote <a href="http://slashdot.org/pollBooth.pl">Slashdot</a>: 
+So, on to the survey results. As usual, we don't claim any relevance whatsoever. To quote <a href="https://slashdot.org/pollBooth.pl">Slashdot</a>: 
 
 > This whole thing is wildly inaccurate. \[...\] If you're using these numbers to do anything important, you're insane.</em>" 
 
