@@ -505,6 +505,8 @@ If you're using an older version of Sigasi Studio, you can try the following:
 If you use [Wayland](https://wayland.freedesktop.org/) instead of X11, you might need to set the environment variable `WEBKIT_DISABLE_COMPOSITING_MODE=1`.
 Also `GDK_BACKEND=x11` should not be enabled.
 
+If you're using a remote desktop client based on [NoMachine](https://www.nomachine.com/) and have difficulties with the graphics, the previous settings can also help.
+
 
 ## Where can I find the log file?
 
