@@ -17,4 +17,4 @@ Now that Sigasi can export a list of the VHDL files in a project, you can write 
 
 To use this script, you first need to export the CSV file list: right-click on your project and select **Export > Sigasi > CSV File**. Now put the python script in the project directory and run it. You can change the parameters in the python script if you like.
 
-This script might not suit your exact needs, but it should be a good starting point. If you create your own script for a different EDA tool, it would be great if you can share this script with us. Check out [the project that I have created on GitHub](https://github.com/philippefaes/sigasi-csv-build).
+This script might not suit your exact needs, but it should be a good starting point. If you create your own script for a different EDA tool, it would be great if you can share this script with us. Check out [the project that I have created on GitHub](https://github.com/sigasi/sigasi-csv-build).

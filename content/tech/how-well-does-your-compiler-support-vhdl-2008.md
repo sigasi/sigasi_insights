@@ -23,4 +23,4 @@ Also, the script only tests a limited set of VHDL-2008 features. If you want to 
 
 ## Source code on GitHub
 
-I'm releasing this under a BSD license, and you can download the [source code from GitHub](https://github.com/philippefaes/vhdl2008-tester). Please use, abuse, adapt and send me your patches (or [pull requests](https://help.github.com/articles/using-pull-requests)).
+I'm releasing this under a BSD license, and you can download the [source code from GitHub](https://github.com/sigasi/vhdl2008-tester). Please use, abuse, adapt and send me your patches (or [pull requests](https://help.github.com/articles/using-pull-requests)).
