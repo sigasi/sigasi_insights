@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.10)
 layout: page
 pager: true
-date: 2020-09-17
+date: 2020-11-23
 comments: true
 ---
 
@@ -16,7 +16,18 @@ Although these preview releases are less rigorously tested than the official rel
 
 # Current preview release
 
-No documented changes since the [4.9 release]({{< ref "/releasenotes/sigasi-4.09.md" >}}).
+Changes since the [4.9 release]({{< ref "/releasenotes/sigasi-4.09.md" >}})
+
+## New
+* Automatic update of Java 14 Runtime Environment (JRE)
+* Various speed improvements
+* More accurate SystemVerilog parsing, linking and linting
+
+## Other
+* Removed legacy diagram viewer
+* Removed light weight editor
+* We updated Eclipse in the standalone version to Eclipse [2020-09](https://www.eclipse.org/eclipseide/2020-09/noteworthy/)
+* Various bug fixes
 
 # Update or install?
 
