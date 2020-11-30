@@ -19,9 +19,17 @@ Although these preview releases are less rigorously tested than the official rel
 Changes since the [4.9 release]({{< ref "/releasenotes/sigasi-4.09.md" >}})
 
 ## New
+* Sigasi Studio can now run on Java 14
+* Update Eclipse RCP to Eclipse 2020-09
+* The included Java Runtime Environment (JRE) in the stand alone version of Sigasi Studio was updated to Java 14
 * Automatic update of Java 14 Runtime Environment (JRE)
 * Various speed improvements
-* More accurate SystemVerilog parsing, linking and linting
+   * The editor is now fast for big files too. The lightweight editor was removed.
+   * Faster SystemVerilog preprocessing
+   * Faster and more accurate SystemVerilog parsing
+* SystemVerilog improvements
+   * Improved SystemVerilog and UVM code navigation
+   * More lintings
 
 ## Other
 * Removed legacy diagram viewer
