@@ -11,12 +11,12 @@ bannerad: true
 ---
 
 Software with good documentation is far more valuable than software without. 
-Software that needs to be reliable will be subject to a code review. Good documentation makes the review go more smoothly, and makes it more likely that the review will accomplish its intended purpose. \[[ref](http://www.av8n.com/computer/htm/good-software.htm)\]
+Software that needs to be reliable will be subject to a code review. Good documentation makes the review go more smoothly, and makes it more likely that the review will accomplish its intended purpose.
 Good software documentation, whether a specifications document for programmers and testers, a technical document for internal users, or software manuals and help files for end users, helps the person working with the software understand its features and functions. 
 
 * Documentation helps at software development
 * Documentation keeps software-quality at high levels
-* Documentation makes it easy to transfer projects \[[ref](http://www.av8n.com/computer/htm/good-software.htm)\]
+* Documentation makes it easy to transfer projects
 
 The more technical documentation is developed within the program's source code to begin with, the easier it will be to update and maintain along with the code, as well as to document various versions of the original application. \[[ref](http://www.wikihow.com/Write-Software-Documentation)\]
 Technical documentation helps end users to gain insight about using the product, developers to communicate the design with the team, and sales team to promote and improve sales of the product. 
