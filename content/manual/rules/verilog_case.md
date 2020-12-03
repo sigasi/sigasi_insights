@@ -2,7 +2,7 @@
 title: Verilog case statements
 ---
 
-Sigasi Studio has a number of checks on Verilog case statements. 
+Sigasi Studio has a number of checks on Verilog case statements.
 
 ## Case statement does not cover all cases
 
@@ -70,6 +70,26 @@ module goodcode(input clk);
     end
 endmodule</pre>
 
+This rule also applies to `generate case` statements, e.g.
+
+<pre>module bad_example#(parameter WIDTH=8);
+
+    generate
+    case (WIDTH)
+        <span class="uglycode">default:  // The `default` clause must be at the end</span>
+        <span class="uglycode">    begin</span> // others - carry look-ahead adder
+        <span class="uglycode">        adder_cla #(WIDTH) x3(co, sum, a, b, ci);</span>
+        <span class="uglycode">    end</span>
+        1: begin // 1-bit adder implementation
+            adder_1bit x1(co, sum, a, b, ci);
+        end
+        // other cases
+    endcase
+    endgenerate
+
+endmodule
+</pre>
+
 ## Case statement can only have one default clause
 
 A case statement can only have one `default` clause (rule 16). An error is flagged if more than one `default` clause is present.
@@ -102,6 +122,30 @@ module goodcode(input clk);
         endcase
     end
 endmodule</pre>
+
+This rule also applies to `generate case` statements, e.g.
+
+<pre>module bad_example#(parameter WIDTH=8);
+
+    generate
+    case (WIDTH)
+        <span class="badcode">default:  // Error: two `default` clauses</span>
+        <span class="badcode">    begin</span> // others - carry look-ahead adder
+        <span class="badcode">        adder_cla #(WIDTH) x3(co, sum, a, b, ci);</span>
+        <span class="badcode">    end</span>
+        1: begin // 1-bit adder implementation
+            adder_1bit x1(co, sum, a, b, ci);
+        end
+        // other cases
+        <span class="badcode">default:  // Error: two `default` clauses</span>
+        <span class="badcode">    begin</span> // others - carry look-ahead adder
+        <span class="badcode">        adder_cla #(WIDTH) x3(co, sum, a, b, ci);</span>
+        <span class="badcode">    end</span>
+    endcase
+    endgenerate
+
+endmodule
+</pre>
 
 ## Default clause missing from case statement
 
