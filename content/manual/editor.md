@@ -445,7 +445,7 @@ Preferences \> General \> Editors \> Text Editors \> Insert Spaces for
 Tabs.**
 
 Other preferences for code formatting are part of {{< xl >}}. You
-can configure them at **Window > Preferences > Sigasi > VHDL > Formatting**
+can configure them at **Window > Preferences > Sigasi > VHDL > Formatting**.
 Configurable settings currently include:
 
 -   **Preserve newlines**: this option configures the formatter to not add or remove newlines in your code.
