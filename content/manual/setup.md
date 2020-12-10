@@ -76,7 +76,7 @@ There are two ways to install the Sigasi Studio Eclipse Plugin:
 1. [Off-line update site to install the Eclipse Plugin](#installing-the-offline-update-site) (only for customers with XL or XPRT licenses)
 
 ## Prerequisites: Java runtime
-* The Sigasi Studio plugin requires Java 8 (or "1.8"). It will not run with either lower or higher versions.
+* The Sigasi Studio plugin requires Java 11 or higher.
 * You can check your Java version with `java -version`
 * Java can be downloaded from several sources, a.o. [AdoptOpenJDK](https://adoptopenjdk.net/).
 
@@ -84,8 +84,8 @@ There are two ways to install the Sigasi Studio Eclipse Plugin:
 
 {{< figure src="/img/manual/eclipse_foundationmember.png" alt="Eclipse Foundation member" class="uk-align-right" >}}
 
-* You need to have at least [Eclipse](http://www.eclipse.org) version 4.7.3a, nicknamed *Oxygen*.
-* This Eclipse version and the Sigasi Studio plugin require Java 8.
+* You need to have at least [Eclipse](http://www.eclipse.org) version 4.8, nicknamed *Photon*.
+* This Eclipse version and the Sigasi Studio plugin require Java 11.
 * If you don't have Eclipse installed yet, the Java flavor would be good place to start. Just **download** ([Windows 64 bit][latest-eclipse-java-windows64]/[Linux 64 bit][latest-eclipse-java-linux64]/[Other versions][latest-eclipse-java]), **unzip** and **start**.
 * Note that Sigasi Studio is not compatible with the newest C/C++ flavor of Eclipse. If you want Sigasi Studio in the C/C++ flavor of Eclipse, please install version 2020-03 instead ([Windows 64 bit][latest-eclipse-cpp-windows64]/[Linux 64 bit][latest-eclipse-cpp-linux64]/[Other versions][latest-eclipse-cpp])
 * We recommend you also [increase the heap size for Eclipse](/faq/#how-do-i-increase-the-heap-size-for-eclipse).

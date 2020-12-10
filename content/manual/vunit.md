@@ -43,6 +43,17 @@ The VUnit project repository comes with a number of [example projects](https://g
 
 You can also add VUnit support to an existing project: Right click your project and select  **Configure > Add VUnit support**. Next, select an existing `run.py` script or let Sigasi create an example script.
 
+## VUnit project configuration and troubleshooting
+
+The VUnit integration in Sigasi Studio gives useful feedback in the **VUnit Console View**.
+To open this view, first open a console (**Window > Show View > Other... > General > Console**) and in the Console View toolbar click the triangle (<span uk-icon="triangle-down"></span>) next to the **Open Console** icon.
+Select **VUnit Console** to open the VUnit Console View.
+
+The library configuration in `run.py` should reflect the library configuration in the Sigasi Studio project.
+Currently both configurations are not kept in sync automatically.
+
+Path separators in the `run.py` file need a `/` also on Windows.
+
 ## SystemVerilog
 
 For SystemVerilog projects you need to manually add the VUnit include files to your projects:
@@ -50,6 +61,14 @@ For SystemVerilog projects you need to manually add the VUnit include files to y
 * Use the quick-fix on the failing `` `include "vunit_defines.svh"`` to add the include folder to the include paths.
 
 {{< figure src="/img/manual/vunit_verilog_include.png" alt="Add verilog include path" link="/img/manual/vunit_verilog_include.png" >}}
+
+## Configure options for finding and running tests.
+
+In **Window > Preferences > Sigasi > Toolchains > VUnit** you can add different options for finding and running tests.
+* The `Options for finding tests` will be passed to `run.py` when generating the json file that lists the VUnit tests.
+* The `Options for running tests` will be passed to `run.py` when running the VUnit tests.
+
+{{< figure src="/img/manual/vunit_preferences.png" alt="VUnit preferences dialog" link="/img/manual/vunit_preferences.png" >}}
 
 
 # Run VUnit Tests

@@ -39,28 +39,22 @@ and you need **about 300MB** of free disk space.
 ### Windows 10 (64 bit) or newer
 * Sigasi Studio Standalone is supported
 * Sigasi Studio Plugin is supported when using
-    * Eclipse 4.7.3a *Oxygen* or higher
-    * Java JRE 8
+    * Eclipse 4.8 *Photon* up to Eclipse IDE 2020-09
+    * Java JRE 11
 
-### Mac OS X latest version
+### Mac OS X 10.15 Catilina
 * Sigasi Studio Standalone is supported
 * Sigasi Studio Plugin is supported when using
-    * Eclipse 4.7.3a *Oxygen* or higher
-    * Java JRE 8
+    * Eclipse 4.8 *Photon* up to Eclipse IDE 2020-09
+    * Java JRE 11
 
 ### Linux
 
-#### RHEL 7.7 (64 bit) or newer
+### RHEL 7.7 (64 bit) or newer
 * Sigasi Studio Standalone is supported
 * Sigasi Studio Plugin is supported when using
-    * Eclipse 4.7.3a *Oxygen* or higher
-    * Java JRE 8
-
-#### RHEL 6.x
-* Sigasi Studio Plugin is supported when using
-    * Eclipse 4.7.3a *Oxygen* or higher
-    * Java JRE 8
-* Check [these steps](#i-am-using-redhat-linux-6-how-can-i-run-sigasi-studio) for details
+    * Eclipse 4.8 *Photon* up to Eclipse IDE 2020-09
+    * Java JRE 11
 
 #### Other Linux distributions
 * No known issues as long as Eclipse is running on your OS
@@ -135,6 +129,13 @@ Here you can **sort** by Plug-in Id by clicking on the title of the "Plug-in Id"
 ## Can I use the features of the upcoming release?
 
 Yes! You can find the details on [Sigasi Studio Preview](/tech/preview).
+
+## Confirmation dialog when exiting Sigasi Studio
+
+From {{< page "sigasi-4.10.md" >}} on, Sigasi Studio no longer asks for confirmation when closing.
+If you prefer still to have the confirmation on exit dialog, this can be configured as follows.
+* Go to the **Window > Preferences > General > Startup and Shutdown** preferences page
+* Enable the **Confirm exit when closing last window** option
 
 ## How do I uninstall Sigasi Studio?
 
@@ -480,8 +481,15 @@ Alternatively you can type `ifconfig` in a terminal.
 
 Floating licenses also require a MAC address, but this needs to be the MAC address of the license server. Ask your system administrator.
 
-
 ## The internal web browser does not work on Linux
+Sometimes the graphics or editor views do not show on Linux.
+Here is how this issue can be resolved.
+
+### Sigasi Studio 4.10 and higher
+The {{< page "sigasi-4.10.md" >}} improves displaying of graphics by including its own Chromium plugin.
+The Chromium plugin depends on `libXss.so` which can be obtained by installing `libXScrnSaver`.
+
+### Sigasi Studio 4.9 and older
 
 Sigasi uses your system's native browser to display graphics and html content.
 When Sigasi's default settings do not work on your Linux system,

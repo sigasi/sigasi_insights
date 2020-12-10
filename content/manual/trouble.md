@@ -15,6 +15,10 @@ If you edit a file outside of Sigasi Studio with an external editor, Sigasi Stud
 it doesn’t, you can refresh the editor’s content by pressing **F5** or by right-clicking a file or a project in the project explorer and
 selecting **Refresh**.
 
+# No content in the editor and only a cross in the editor tab
+
+If you see **empty views** in Sigasi Studio on Linux: make sure `libXss` or `libXscrnSaver` is installed.
+
 # How much local history will be stored?
 
 Sigasi Studio stores the history of your file so that you can compare your current version with the version you saved an hour ago.

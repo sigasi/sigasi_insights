@@ -1,8 +1,8 @@
 ---
-title: Sigasi Studio Preview (4.10)
+title: Sigasi Studio Preview (4.11)
 layout: page
 pager: true
-date: 2020-11-23
+date: 2020-12-10
 comments: true
 ---
 
@@ -16,26 +16,7 @@ Although these preview releases are less rigorously tested than the official rel
 
 # Current preview release
 
-Changes since the [4.9 release]({{< ref "/releasenotes/sigasi-4.09.md" >}})
-
-## New
-* Sigasi Studio can now run on Java 14
-* Update Eclipse RCP to Eclipse 2020-09
-* The included Java Runtime Environment (JRE) in the stand alone version of Sigasi Studio was updated to Java 14
-* Automatic update of Java 14 Runtime Environment (JRE)
-* Various speed improvements
-   * The editor is now fast for big files too. The lightweight editor was removed.
-   * Faster SystemVerilog preprocessing
-   * Faster and more accurate SystemVerilog parsing
-* SystemVerilog improvements
-   * Improved SystemVerilog and UVM code navigation
-   * More lintings
-
-## Other
-* Removed legacy diagram viewer
-* Removed light weight editor
-* We updated Eclipse in the standalone version to Eclipse [2020-09](https://www.eclipse.org/eclipseide/2020-09/noteworthy/)
-* Various bug fixes
+No documented changes since the [4.10 release]({{< ref "/releasenotes/sigasi-4.10.md" >}}).
 
 # Update or install?
 
@@ -61,8 +42,8 @@ If you can't open the Sigasi Studio app on an Apple computer, have a look at [th
         * Sigasi Studio depends on `libXss.so` which can be obtained by installing `libXScrnSaver`
     * More information on supported OSes can be found [on the Eclipse website](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_10.xml#target_environments)
 * Sigasi Studio as Plugin in your own Eclipse installation:
-    * Eclipse 4.7.3a *Oxygen* up to Eclipse IDE 2020-06
-    * Java JRE 8, 11 or 14
+    * Eclipse 4.8 *Photon* up to Eclipse IDE 2020-09
+    * Java JRE 11 or higher
 
 We recommend at least **4GB of memory** available for Sigasi Studio,
 and you need **about 300MB** of free disk space.
