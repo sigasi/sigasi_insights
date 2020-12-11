@@ -62,10 +62,10 @@ Next enter `<portnumber>@<servername>` in the **License key path**. For example:
 27000@myserver.example.com
 ```
 
-If you have redundant license servers, enter each of the license servers separated by "&".
+If you have redundant license servers, enter each of the license servers separated using ":" on Linux and using ";" on Windows.
 For example:
 ```
-27000@myserver1.example.com&27000@myserver2.example.com&27000@myserver3.example.com
+27000@myserver1.example.com:27000@myserver2.example.com:27000@myserver3.example.com
 ```
 
 If you leave the **License key path** empty, Sigasi Studio will try to use an environment variable
