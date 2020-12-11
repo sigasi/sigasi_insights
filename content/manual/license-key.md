@@ -62,11 +62,14 @@ Next enter `<portnumber>@<servername>` in the **License key path**. For example:
 27000@myserver.example.com
 ```
 
-If you have redundant license servers, enter each of the license servers separated using ":" on Linux and using ";" on Windows.
+If you have redundant license servers, enter each of the license servers separated using ",".
+It is recommended to specify the primary server first in the list.
 For example:
 ```
-27000@myserver1.example.com:27000@myserver2.example.com:27000@myserver3.example.com
+27000@myserver1.example.com,27000@myserver2.example.com,27000@myserver3.example.com
 ```
+
+If you have multiple, non-redundant license servers, the servers should be separated using ":" on Linux and using ";" on Windows.
 
 If you leave the **License key path** empty, Sigasi Studio will try to use an environment variable
 to find the license server.
@@ -77,18 +80,19 @@ You can also set your license server via an environment variable instead of conf
 Both `SIGASI_LM_LICENSE_FILE` and `LM_LICENSE_FILE` are supported.
 When `SIGASI_LM_LICENSE_FILE` is set, `LM_LICENSE_FILE` is ignored.
 
-Note that if you want to use an environment variable, you can not enter a path in the License Key preference page. The value on this page has priority over environment variables. 
+Note that if you want to use an environment variable, you can not enter a path in the License Key preference page.
+The value on the License Key preference page has priority over environment variables.
 
 Linux Example:
-```
+```sh
 export SIGASI_LM_LICENSE_FILE=27000@myserver.example.com
 ```
 
-For redundant license servers, the servers should be separated using ":" on Linux and using ";" on Windows.
-
-Linux Example:
-```
-export SIGASI_LM_LICENSE_FILE="27000@myserver1.example.com:27000@myserver2.example.com:27000@myserver3.example.com"
+For redundant license servers, the servers should be separated using ",".
+It is recommended to specify the primary server first in the list.
+Example:
+```sh
+export SIGASI_LM_LICENSE_FILE="27000@myserver1.example.com,27000@myserver2.example.com,27000@myserver3.example.com"
 ```
 
 ## License server setup
