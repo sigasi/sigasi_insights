@@ -57,6 +57,7 @@ You can add some extra parameters to Sigasi Studio to modify the behavior.
 This avoids conflicts on port 4444 when running Sigasi Studio with multiple users on the same server.
 Refer to the [setup page]({{< ref "setup#running-sigasi-studio-with-multiple-users-on-the-same-server" >}}) for more information.
 * `--launcher.openFile <somepath>` : open the *Import Projects* dialog to import a new or existing project into the workspace
+* `-Dcom.sigasi.hdt.disableAutomaticTutorial` : suppress the creation of the *tutorial projects* in empty workspaces.
 
 # External Files
 
