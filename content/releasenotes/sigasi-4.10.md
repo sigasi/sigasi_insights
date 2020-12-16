@@ -7,6 +7,8 @@ pager: true
 The Sigasi Studio 4.10 release continues to improve speed and latency, especially for big files.
 The **VHDL** interpreter can now handle **multidimensional arrays and records** and we implemented many **Verilog** and **SystemVerilog** improvements. We also have a welcome surprise for our Mac OS X users.
 
+Users of the Sigasi Studio Eclipse Plugin should make sure they have **Java JRE 11** or higher before upgrading.
+
 Read on for more details and other improvements.
 
 # Speed improvements
