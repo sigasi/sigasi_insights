@@ -3,6 +3,7 @@ title: "Eclipse Tcl support in Sigasi"
 layout: page 
 pager: true
 date: 2014-06-04
+lastmod: 2020-12-16
 tags: 
   - eclipse
   - howto
@@ -17,7 +18,7 @@ bannerad: true
 To install the Tcl plugin in Sigasi:
 
 1. Click **Help > Install New Software…**
-2. Enter `http://download.eclipse.org/releases/photon` as update site in the **Work with:** field
+2. Enter the Eclipse update site that matches the Sigasi Studio release as update site in the **Work with:** field. For {{< page "sigasi-4.10.md" >}} this is the update site for [Eclipse 2020-09](https://www.eclipse.org/eclipseide/2020-09/noteworthy/): `https://download.eclipse.org/releases/2020-09/`.
 3. When the index of the update is downloaded (this can take a while) enter **tcl** in the *type filter* text box
 4. Select the **Dynamic Languages Toolkit – Tcl Development Tools**
 5. Click through the straightforward, subsequent steps
