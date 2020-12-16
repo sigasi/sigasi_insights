@@ -131,11 +131,23 @@ You can delete these stale markers from the Problems View: In the Problems View,
 
 Note that during the next build, the tool may generate new markers. If you want to suppress certain warnings, you can [configure the linting rules](/manual/config#linting-rules).
 
+## Remove the cache
+
+For faster performance Sigasi Studio is using a cache.
+Sometimes the cache can get corrupted which might cause internal errors.
+The cache is located in your workspace.
+By default, Sigasi Studio’s workspace is located in `${HOME}/workspaceSigasi`.
+
+To remove the cache, stop Sigasi Studio and delete the folder `workspaceSigasi/.metadata/.plugins/com.sigasi.hdt.shared.ui/resource.cache/sigasiBuildCache`.
+
 ## Remove the workspace state
 
-Much of your configuration and cached data is stored in your workspace. By default, Sigasi Studio’s workspace is located in `${HOME}/workspaceSigasi`.
-A lot of this data is stored in the hidden `.metadata` directory. Sometimes, a part of your metadata can become corrupt. It can help to
-remove the `.metadata` directory (take a backup first!). This clears all of your workspace state.
+Much of your configuration and cached data is stored in your workspace.
+By default, Sigasi Studio’s workspace is located in `${HOME}/workspaceSigasi`.
+A lot of this data is stored in the hidden `.metadata` directory.
+Sometimes, a part of your metadata can become corrupt.
+It can help to remove the `.metadata` directory (take a backup first!).
+This clears all of your workspace state.
 
 * You will need to enter your license code again.
 * You will need to import your projects again. **Import > General > Existing Projects into Workspace**
