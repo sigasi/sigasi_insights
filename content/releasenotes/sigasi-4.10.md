@@ -97,4 +97,10 @@ This allows you to search for `library.entity(architecture)` or `library.entity.
 We recommend at least **4GB of memory** available for Sigasi Studio,
 and you need **about 300MB** of free disk space.
 
+# Sigasi Studio 4.10.1 point release
+
+On December 17 we released Sigasi Studio 4.10.1. This release fixes the following reported issues:
+
+* Suppress warning Quick Fix sometimes puts the `@suppress` comment on the wrong line
+
 Thanks for all the bug reports and enabling Talkback.
