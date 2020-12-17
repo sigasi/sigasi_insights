@@ -8,6 +8,7 @@ tags:
   - rtl
 comments: true
 bannerad: true
+draft: true
 ---
 
 I found a very promising blog on the future of design by Synopsys fellow Michael Keating (the author of the Reuse Methodology Manual for System-On-A-Chip Designs): <http://synopsysoc.org/futureofdesign/>
