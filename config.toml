@@ -63,7 +63,7 @@ pygmentsUseClasses = "true"
     weight = 40
   [[menu.main]]
     identifier = "company"
-    name = "Company"
+    name = "About us"
     url = "https://sigasi.com/about/"
     weight = 50
 
