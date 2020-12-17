@@ -1,3 +1,3 @@
 ---
-title: Sigasi Insights
+title: "Insights"
 ---

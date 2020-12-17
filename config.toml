@@ -4,8 +4,8 @@ title           = "Sigasi"
 theme           = "sigasi_theme"
 contentdir      = "content"
 layoutdir       = "layouts"
-publishdir      = "public"
 assetdir        = "assets"
+publishdir      = "public"
 
 paginate        = 15
 canonifyurls    = true
@@ -39,3 +39,101 @@ pygmentsUseClasses = "true"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[menu]
+  [[menu.main]]
+    identifier = "products"
+    name = "Products"
+    url = "https://sigasi.com/products/"
+    weight = 10
+  [[menu.main]]
+    identifier = "trybuy"
+    name = "Try & Buy"
+    url = "https://sigasi.com/try-buy/"
+    weight = 20
+  [[menu.main]]
+    identifier = "insights"
+    name = "Insights"
+    url = "//insights.sigasi.com"
+    weight = 30
+  [[menu.main]]
+    identifier = "sdk"
+    name = "Sigasi SDK"
+    url = "https://sigasi.com/sdk/"
+    weight = 40
+  [[menu.main]]
+    identifier = "company"
+    name = "Company"
+    url = "https://sigasi.com/about/"
+    weight = 50
+
+  [[menu.main]]
+    parent = "trybuy"
+    identifier = "download"
+    name = "Download"
+    url = "https://sigasi.com/download/"
+    weight = 10
+  [[menu.main]]
+    parent = "trybuy"
+    identifier = "license"
+    name = "Get your license"
+    url = "https://sigasi.com/try-form/"
+    weight = 20
+  [[menu.main]]
+    parent = "trybuy"
+    identifier = "buy"
+    name = "Buy"
+    url = "https://sigasi.com/buy/"
+    weight = 30
+
+  [[menu.main]]
+    parent = "insights"
+    name = "Manual"
+    url = "//insights.sigasi.com/manual/"
+    weight = 10
+  [[menu.main]]
+    parent = "insights"
+    name = "FAQ"
+    url = "//insights.sigasi.com/faq/"
+    weight = 20
+  [[menu.main]]
+    parent = "insights"
+    name = "Release Notes"
+    url = "//insights.sigasi.com/releasenotes/"
+    weight = 30
+  [[menu.main]]
+    parent = "insights"
+    name = "Screencasts"
+    url = "//insights.sigasi.com/screencasts/"
+    weight = 40
+  [[menu.main]]
+    parent = "insights"
+    name = "Tech Articles"
+    url = "//insights.sigasi.com/tech/"
+    weight = 50
+  [[menu.main]]
+    parent = "insights"
+    name = "Opinion"
+    url = "//insights.sigasi.com/opinion/"
+    weight = 60
+  
+  [[menu.main]]
+    parent = "company"
+    name = "Support"
+    url = "https://sigasi.com/support/"
+    weight = 10
+  [[menu.main]]
+    parent = "company"
+    name = "Jobs"
+    url = "https://sigasi.com/jobs/"
+    weight = 20
+  [[menu.main]]
+    parent = "company"
+    name = "News"
+    url = "https://sigasi.com/news/"
+    weight = 30
+  [[menu.main]]
+    parent = "company"
+    name = "Contact"
+    url = "https://sigasi.com/contact/"
+    weight = 40

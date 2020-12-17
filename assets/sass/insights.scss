@@ -1,6 +1,18 @@
+$sg-dark-purple: #262262;
+$sg-orange: #f47920;
+
+
 html, body {
     scroll-padding-top: 42px;
 }
+
+a {
+    color: $sg-dark-purple;
+}
+a:hover {
+    color: $sg-orange;
+}
+
 
 .hanchor { font-size: 100%; visibility: hidden; color:#999;}
 h1:hover a, h2:hover a, h3:hover a, h4:hover a { visibility: visible}
@@ -10,3 +22,5 @@ figcaption { text-align: center; }
 .goodcode { text-decoration: none; border-bottom: 3px solid #80FF80; background-color: #D0FFD0; }
 .badcode  { text-decoration: none; border-bottom: 3px solid #FF8080; background-color: #FFD0D0; }
 .uglycode { text-decoration: none; border-bottom: 3px solid #FF8040; background-color: #FFD080; }
+
+@import "syntax.scss";
