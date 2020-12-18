@@ -103,4 +103,9 @@ On December 17 we released Sigasi Studio 4.10.1. This release fixes the followin
 
 * Suppress warning Quick Fix sometimes puts the `@suppress` comment on the wrong line
 
+# Sigasi Studio 4.10.2 point release
+
+On December 18 we released Sigasi Studio 4.10.2.
+This release fixes a regression with the external toolchain feature that was introduced in 4.10.1.
+
 Thanks for all the bug reports and enabling Talkback.
