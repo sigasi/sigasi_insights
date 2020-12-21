@@ -153,7 +153,7 @@ begin
 end process p_state;
 ```
 
-A [discussion exists](vhdl-case-statements-can-do-without-others)
+A [discussion exists]({{< ref "vhdl-case-statements-can-do-without-others.md" >}})
 whether an **`others` or `default` clause is recommended if all possible
 cases have been enumerated** in the case statement. We believe that it
 should be up to the designer to make that decision, taking the
