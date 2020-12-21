@@ -23,7 +23,7 @@ Don't you think that Mainstream Journalists should have disclaimers like this wh
 
 ![Popular Social Networks (size indicates importance)](/img/opinion/social_meda.png)
 
-That said, the winner is... [Facebook](http://on.fb.me/sigasi). What else is new? 80% of the participating students are on Facebook. About half uses <a href="http://www.LinkedIn.com">LinkedIn</a>, and less than 30% is on <a href="http://www.twitter.com/sigasi">Twitter</a>. In the <a href="http://en.wikipedia.org/wiki/Long_Tail">long tail</a>, there is one site that I was not aware of: <a href="http://www.studivz.net/">StudiVZ</a>, which claims to be Germany's biggest social network. Since we have many users and customers in Germany, it shouldn't be a surprise that StudiVZ shows up in our polls. 
+That said, the winner is... [Facebook](http://on.fb.me/sigasi). What else is new? 80% of the participating students are on Facebook. About half uses <a href="http://www.LinkedIn.com">LinkedIn</a>, and less than 30% is on <a href="https://twitter.com/sigasi">Twitter</a>. In the <a href="http://en.wikipedia.org/wiki/Long_Tail">long tail</a>, there is one site that I was not aware of: <a href="http://www.studivz.net/">StudiVZ</a>, which claims to be Germany's biggest social network. Since we have many users and customers in Germany, it shouldn't be a surprise that StudiVZ shows up in our polls. 
 
 Social bookmarking is a lot less popular than social networking. Even the most popular social bookmarking site, <a href="http://www.StumbleUpon.com">StumbleUpon</a>, got less than a quarter of the votes. Ten percent go to Delicious and <a href="http://www.digg.com">Digg</a> each.
 

@@ -23,7 +23,7 @@ We need an open source, high quality VHDL simulator. It will enable more people 
 
 I don't expect a lot of cheers from the companies that sell their own simulators. But if the EDA sector as a whole wants to remain healthy, it needs to allow new innovators in the market. Having a freely available parser and simulator for the cornerstone hardware description languages would be a good start.
 
-Let me know what you think, in the comments or on <a href="http://www.twitter.com/sigasi">Twitter</a>.
+Let me know what you think, in the comments or on <a href="https://twitter.com/sigasi">Twitter</a>.
 
 -- 
 Philippe

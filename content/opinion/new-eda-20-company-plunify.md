@@ -19,7 +19,7 @@ I had a short skype call with Kirvy and Harnhua, the Plunify founders. It turns 
 
 Their website states you can "Start designing in 5 minutes." That's impressive. Downloading and installing even the simplest software would probably not be feasible in 5 minutes, let alone getting a project set up and actually doing some coding. 
 
-I've signed up and it does feel very nice. (Except for the <a href="http://twitter.com/trondd/status/21646730081">lack of a good editor</a>, of course ;-)
+I've signed up and it does feel very nice. (Except for the <a href="https://twitter.com/trondd/status/21646730081">lack of a good editor</a>, of course ;-)
 
 The Plunify baseline is: <em>Because you should spend time on your design, not on your design tools.</em> I'm sure that sounds familiar to many hardware designers. It is also an important characteristic of <a href="/tag/eda2.0/">EDA 2.0</a> companies that they want to radically improve the user experience.
 

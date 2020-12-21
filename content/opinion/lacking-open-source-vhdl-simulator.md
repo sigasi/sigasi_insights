@@ -24,7 +24,7 @@ If there is to be more innovation in EDA, we need a freely available parser and 
 
 In my next post, I will talk about a popular, but not quite good enough VHDL simulator. 
 
-Let me know what you think in the comments, or on <a href="http://www.twitter.com/sigasi">Twitter</a>.
+Let me know what you think in the comments, or on <a href="https://twitter.com/sigasi">Twitter</a>.
 
 -- 
 Philippe
