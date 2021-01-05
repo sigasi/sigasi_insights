@@ -500,10 +500,6 @@ The actual name of the package you have to install can depend on the OS. E.g.,
 * On RedHat/CentOS 7, you'll want to install webkitgtk4 (`yum install webkitgtk4`).
 * On Ubuntu 18.04, libwebkit2gtk-4 is needed (`apt install libwebkit2gtk-4.0-37`).
 
-Note that certain environment variables like `LD_LIBRARY_PATH` and `LD_PRELOAD` in your environment may break Sigasi Studio. If Sigasi Studio fails to open the editor, state machine and block diagrams, or the documentation view, check that these variables are either undefined or empty. If they are not, try to start Sigasi Studio from the command line as follows:
-
-`LD_LIBRARY_PATH="" LD_PRELOAD="" /path/to/sigasi`
-
 If you're using an older version of Sigasi Studio, you can try the following:
 
 *  Replace `-Dorg.eclipse.swt.browser.DefaultType=mozilla` with `-Dorg.eclipse.swt.browser.UseWebKitGTK=true` in your *sigasi.ini*.
@@ -515,6 +511,16 @@ Also `GDK_BACKEND=x11` should not be enabled.
 
 If you're using a remote desktop client based on [NoMachine](https://www.nomachine.com/) and have difficulties with the graphics, the previous settings can also help.
 
+## LD_LIBRARY_PATH or LD_PRELOAD issues
+
+Note that certain environment variables like `LD_LIBRARY_PATH` and `LD_PRELOAD` in your environment may break Sigasi Studio.
+
+The initialisation scripts of some third-party tools set these variables to incompatible values.
+When this is detected by Sigasi Studio, the log file contains `The LD_LIBRARY_PATH has been set to: ...  Note that this may cause side-effects`.
+
+If Sigasi Studio fails to open the editor, state machine and block diagrams, or the documentation view, check that these variables are either undefined or empty. If they are not, try to start Sigasi Studio from the command line as follows:
+
+`LD_LIBRARY_PATH="" LD_PRELOAD="" /path/to/sigasi`
 
 ## Where can I find the log file?
 
