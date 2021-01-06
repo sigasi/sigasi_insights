@@ -1,0 +1,43 @@
+<div class="uk-card uk-background-default" style="z-index: 980;" uk-sticky="bottom: #insights-menu">
+    <div class="sg-border-bottom uk-visible@m">
+        <div class="uk-container">
+            <nav data-uk-navbar class="sg-navbar-top" id="sigasi-top">
+                <div class="uk-navbar-left">
+                    <form action="https://www.sigasi.com/search" method="get">
+                        <div class="uk-inline">
+                            <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: search"></span>
+                            <input class="uk-input uk-form-small uk-form-width-medium" type="text" placeholder="Search" name="search">
+                        </div>
+                    </form>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        {{ $currentPage := . }}
+                        {{ range .Site.Menus.main }}
+                        {{ if .HasChildren }}
+                        <li {{ if or ($currentPage.HasMenuCurrent "main" .) (eq $currentPage.Params.activemenu .KeyName) }}class="uk-active"{{ end }}>
+                            <a class="uk-flex-middle uk-height-1-1" href="{{ .URL }}" uk-icon="icon: triangle-down">
+                                {{ .Name }}
+                            </a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    {{ range .Children }}
+                                    <li>
+                                        <a href="{{ .URL }}">{{ .Name }}</a>
+                                    </li>
+                                    {{ end }}
+                                </ul>
+                            </div>
+                        </li>
+                        {{ else }}
+                        <li {{ if eq $currentPage.Params.activemenu .KeyName }}class="uk-active"{{ end }}>
+                            <a href="{{ .URL }}">{{ .Name }}</a>
+                        </li>
+                        {{ end }}
+                        {{ end }}
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
