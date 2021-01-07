@@ -25,7 +25,6 @@ pygmentsUseClasses = "true"
 [params]
   description         = "Your hardware design made faster, easier and more efficient"
   googleTagManagerID  = "GTM-NBF8HKQ"
-  SalesIQWidgetcode   = "5df853a5ff3c39fa2d3148044cbe7e0830b3fc3af7c22cb4b665b0d215a270af"
 
 [taxonomies]
   tag = "tags"
