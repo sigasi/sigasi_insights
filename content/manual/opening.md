@@ -160,6 +160,19 @@ You can configure Sigasi Studio to be the preferred editor for Xilinx Vivado.
 {{< figure src="/img/manual/vivado_a1.png" alt="Configuring Sigasi Studio as default editor in Xilinx Vivado menu" >}}
 {{< figure src="/img/manual/vivado_a2.png" alt="Configuring Sigasi Studio as default editor in Xilinx Vivado" >}}
 
+### Extra steps on Linux
+
+If your log file contains warnings about `LD_LIBRARY_PATH` being set to an incompatible value or if you get an error telling the JVM terminated, you can correct this by making sure `LD_LIBRARY_PATH` and (optionally) `LD_PRELOAD` are empty when launching Sigasi Studio.
+Do this by e.g. creating a script to launch Sigasi Studio and call that script from within the Vivado Text Editor settings.
+
+```sh
+#!/usr/bin/env bash
+
+SIGASILOCATION="/path/to/sigasi"
+
+LD_LIBRARY_PATH="" LD_PRELOAD="" "$SIGASILOCATION/sigasi" "$@"
+```
+
 ### Extra steps for the Sigasi Studio plugin on Windows
 
 If you use the Sigasi Studio Eclipse plugin on Windows, you might need to take some extra steps
