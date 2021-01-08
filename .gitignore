@@ -1,6 +1,6 @@
 linkchecker_result.html
 public/
-resources/
+/resources/
 
 # Local Netlify folder
 .netlify

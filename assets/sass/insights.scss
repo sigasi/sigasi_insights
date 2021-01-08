@@ -1,5 +1,6 @@
 $sg-dark-purple: #262262;
 $sg-orange: #f47920;
+$sg-red: #ed1c24;
 
 
 html, body {
@@ -13,6 +14,12 @@ a:hover {
     color: $sg-orange;
 }
 
+p > a {
+    color: $sg-orange;
+}
+p > a:hover {
+    color: $sg-red;
+}
 
 .hanchor { font-size: 100%; visibility: hidden; color:#999;}
 h1:hover a, h2:hover a, h3:hover a, h4:hover a { visibility: visible}
