@@ -21,13 +21,13 @@ Although these preview releases are less rigorously tested than the official rel
 * Xtext and EMF were updated to 2.24
 * Eclipse was updated to 2020-12
 * Orbit was updated to 2020-12
-* Updated Chromium to 76.0.9
+* Chromium was Updated to 76.0.9
 
 ## Improvements
 
 * The *Report Encrypted Regions* validation no longer shows squiggly lines
 * Improved error reporting for documentation export. Especially when exported resources already exist and can't be overwritten
-* Ensured consistent punctiation in our messages
+* Ensured consistent punctuation in our messages
 * Split of simulation arguments to a separate field in the toolchain preferences for GHDL
 
 {{< figure src="/img/releasenotes/preview/GhdlSplitArguments.png" title="Ghdl split simulation arguments" width="500">}}
@@ -65,9 +65,9 @@ Although these preview releases are less rigorously tested than the official rel
 * Removed context menu for the documentation view
 * Removed beep when opening the documentation view
 * Fixed running of all VUnit tests in a project
-* **[VHDL]** Structured select no longer selects word
+* **[VHDL]** Fixed structured selection no longer selecting single words
 * **[VHDL]** Fixed corruption of VHDL outline, blockdiagram and hovers in unmapped files
-* **[VHDL]** We now show the correct value when hovering over bitstringliteral
+* **[VHDL]** We now show the correct value when hovering over bitstring literals
 * **[Verilog]** Fixed linking support for randsequence in broken code
 * **[Verilog]** Fixed outline rendering for nested types
 * **[Verilog]** Fixed false positive in 4-state net type validation
