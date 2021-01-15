@@ -20,7 +20,6 @@ Although these preview releases are less rigorously tested than the official rel
 
 * Xtext and EMF were updated to 2.24
 * Eclipse was updated to 2020-12
-* Orbit was updated to 2020-12
 * Chromium was Updated to 76.0.9
 
 ## Improvements
@@ -89,11 +88,11 @@ SHA sums ([more info]({{< ref "/faq.md#how-can-i-check-a-sha-sum" >}})) can be c
 
 * Sigasi Studio standalone is supported on:
     * Windows: Windows 10 (64 bit) or newer
-    * macOS 10.15 Catilina
+    * macOS 10.15 Catalina or newer
     * Linux: RedHat Enterprise Linux RHEL 7.7 (64 bit) or newer
         * Sigasi Studio depends on `libXss.so` which can be obtained by installing `libXScrnSaver`
     * More information on supported OSes can be found [on the Eclipse website](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_10.xml#target_environments)
-* Sigasi Studio as Plugin in your own Eclipse installation:
+* Sigasi Studio as plugin in your own Eclipse installation:
     * Eclipse 4.8 *Photon* up to and including Eclipse IDE 2020-12
     * Java JRE 11 or higher
 
@@ -103,4 +102,3 @@ and you need **about 300MB** of free disk space.
 # Feedback
 
 We welcome your feedback through the usual channels or the comments below. Note that comments are cleared after each [official release](/releasenotes).
-
