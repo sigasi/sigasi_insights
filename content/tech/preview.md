@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.11)
 layout: page
 pager: true
-date: 2021-01-15
+date: 2021-01-18
 comments: true
 ---
 
@@ -35,6 +35,9 @@ Although these preview releases are less rigorously tested than the official rel
 * **[VHDL]** Allow multiple capitalization differences at once to be fixed from the problems view
 * **[VHDL]** Improved auto indentation for procedures
 * **[VHDL]** Improved alignment during formatting of procedure arguments
+* **[VHDL]** Added a new validation to detect index out of range and incorrect size for arrays
+{{< figure src="/img/releasenotes/preview/IndexOutOfRangeAndIncorrectArraySize.png" title="Index out of range and incorrect array size.png" width="500">}}
+
 * **[Verilog]** Fixed preprocessing when an **include** directive is directly followed by more tokens
 * **[Verilog]** It is now possible to format on save
 
