@@ -18,7 +18,7 @@ A few weeks ago, one of my colleagues at Sigasi (a VI user himself)
 stated that anybody who is not using Emacs for their VHDL work will
 either be *too stubborn or too stupid* to switch to Sigasi. (Note: this
 was a personal opinion and **not** the official company position). He
-had been using VI ([gvim](http://www.vim.org) actually) for all of his
+had been using VI ([gvim](https://www.vim.org/) actually) for all of his
 VHDL work years ago. As he learned more out about the great features of
 the Emacs VHDL mode, he concluded that he himself had probably been too
 stubborn to switch. Other text editors (VI, Notepad++, UltraEdit,
