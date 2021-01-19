@@ -18,6 +18,7 @@ Although these preview releases are less rigorously tested than the official rel
 
 ## Version bumps
 
+* JustJ was updated to 15.0.1
 * Xtext and EMF were updated to 2.24
 * Eclipse was updated to 2020-12
 * Chromium was Updated to 76.0.9
