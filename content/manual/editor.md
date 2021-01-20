@@ -15,7 +15,7 @@ The VHDL and SystemVerilog (or Verilog) editors are optimized to help
 you browse and edit VHDL and SystemVerilog code.
 Most browsing and editing features are similar for both languages.
 
-*Language specific features* are explained in "[VHDL Specific](#vhdl-specific)" and "[SystemVerilog Specific](#systemverilog-specific)".
+*Language specific features* are explained in "[VHDL Specific](#vhdl-specific)" and "[Verilog and SystemVerilog Specific](#verilog-and-systemverilog-specific)".
 
 ## Code highlighting (syntax coloring)
 
@@ -155,6 +155,11 @@ In the template editor, you can type `${` and press <kbd>Ctrl+Space</kbd> to see
 
 Templates can be exported and imported. This is useful for sharing templates with colleagues.
 
+## Code formatting
+
+Automated consistent code formatting makes code more readable and helps developers understand code, whether working on their own code or when cooperating with colleagues.
+
+Read more about [VHDL code formatting](#vhdl-code-formatting) and [Verilog and SystemVerilog code formatting](#verilog-and-systemverilog-code-formatting).
 
 ## Other editor features
 
@@ -458,9 +463,9 @@ Since [Sigasi Studio 4.5]({{< ref "/releasenotes/sigasi-4.05.md" >}}) you can fo
 
 Note that the option is only available for files that are part of the build.
 
-# SystemVerilog Specific
+# Verilog and SystemVerilog Specific
 
-In addition to the powerful features of an Eclipse editor, the SystemVerilog
+In addition to the powerful features of an Eclipse editor, the Verilog and SystemVerilog
 editor that comes with Sigasi Studio supports a number of advanced editing
 features which are specifically useful for SystemVerilog editing. These are
 described in this chapter.
@@ -480,9 +485,9 @@ The code in the **Initial preprocessor definitions** field is preprocessed befor
 You can configure the Verilog version via **Window > Preferences > Sigasi > (System)Verilog**
 and select whether `*.v` files are treated as **Verilog** or **SystemVerilog**. `*.sv` files are always treated as **SystemVerilog**.
 
-## Format
+## Verilog and SystemVerilog code formatting
 
-Press **Ctrl+Shift+F** to format your current SystemVerilog file.
+Press **Ctrl+Shift+F** to format your current Verilog or SystemVerilog file.
 
 The current formatter implementation corrects indentation only.
 
