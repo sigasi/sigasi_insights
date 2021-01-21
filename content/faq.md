@@ -36,13 +36,16 @@ and you need **about 300MB** of free disk space.
 
 ## Does Sigasi Studio run on my OS?
 
-### Windows 10 (64 bit) or newer
+### Windows
+* Supported on Windows 10 (64 bit) or newer
 * Sigasi Studio Standalone is supported
 * Sigasi Studio Plugin is supported when using
     * Eclipse 4.8 *Photon* up to Eclipse IDE 2020-09
     * Java JRE 11
 
-### Mac OS X 10.15 Catilina
+### MacOS
+* Supported on 10.15 Catilina and 11 Big Sur
+* Sigasi Studio does run on Apple M1 using Rosetta
 * Sigasi Studio Standalone is supported
 * Sigasi Studio Plugin is supported when using
     * Eclipse 4.8 *Photon* up to Eclipse IDE 2020-09
@@ -114,7 +117,7 @@ You do not have to change your directory structure, the names of your VHDL files
 The file `eclipse.ini` contains information that is passed to the Eclipse platform and to the Java Virtual Machine (JVM).
 
 If you are using an Eclipse distribution on Windows or Linux, the file is located in your eclipse directory.
-On Mac OS X distributions, the file is usually in `Eclipse.app/Contents/MacOS/eclipse.ini`.
+On MacOS distributions, the file is usually in `Eclipse.app/Contents/MacOS/eclipse.ini`.
 
 For the Sigasi standalone product, the file called `sigasi.ini`
 More information about this file can be found at <http://wiki.eclipse.org/Eclipse.ini>
@@ -707,7 +710,7 @@ Sigasi does not offer simulators. If you don't have a VHDL simulator yet, we wou
 [ghdl_download]: https://github.com/tgingold/ghdl/releases
 [GHDL_site]: http://ghdl.free.fr
 
-Note that [GHDL on Mac OSX](http://eng-osx.sourceforge.net/GHDL.html) uses Wine, but works without problems.
+Note that [GHDL on MacOS](http://eng-osx.sourceforge.net/GHDL.html) uses Wine, but works without problems.
 
 At this time, Sigasi does not support [Simili](http://www.symphonyeda.com/).
 We have not had good results with FreeHDL or with Green Mountain VHDL. It seems that these two projects may have been terminated.
