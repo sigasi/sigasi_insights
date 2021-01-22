@@ -72,14 +72,19 @@ The instructions to set up the license server can be found [here]({{< ref "manua
 
 ## I am using RedHat Linux 6. How can I run Sigasi Studio?
 
-Since [Sigasi Studio 4.1](/releasenotes/sigasi-4.01#sigasi-studio-standalone-version-eclipse-photon-4-8), the stand-alone Sigasi Studio application is built on top of Eclipse Photon (4.8).
-This version of Eclipse has dependencies that can't be met on RedHat Linux 6.
+Since [Sigasi Studio 4.1](/releasenotes/sigasi-4.01#sigasi-studio-standalone-version-eclipse-photon-4-8),
+the stand-alone Sigasi Studio application is built on top of Eclipse versions 4.8 (Photon) and higher, which have dependencies that can't be met on RedHat Linux 6.
+To successfully run Sigasi Studio 4.1 and newer on RedHat Linux 6, the Sigasi Studio Plugin should be installed in Eclipse 4.7 as explained below.
+
+Since [Sigasi Studio 4.10]({{< ref "/releasenotes/sigasi-4.10.md">}}), Eclipse 4.7 is no longer supported by the Sigasi Studio Plugin.
+Therefore the most recent version of Sigasi Studio that can be used on RedHat Linux 6 is Sigasi Studio 4.9.
+
 To successfully run Sigasi Studio on RedHat Linux 6, follow these steps:
 
-* Install [Eclipse Oxygen (4.7.3a)](https://www.eclipse.org/oxygen/). Find your download using the *Packages* link.
+* Install [Eclipse Oxygen (4.7.3a)](https://www.eclipse.org/oxygen/). Find your download using the *Packages* link on the Oxygen page.
 * Eclipse Oxygen requires at least version 2.24.0 of GTK+.
 * Eclipse Oxygen and the Sigasi Studio Plugin require Java 8: `yum install java-1.8.0-openjdk`
-* Install the Sigasi Studio Plugin by following [these steps](/manual/setup#installation-of-sigasi-studio-eclipse-plugin).
+* Install the Sigasi Studio Plugin by following [these steps](/manual/setup#install-the-eclipse-plugin) where you replace the link of the **Work with:** field from the second step with **<https://download.sigasi.com/updates/4.9.0/update-site>** in order to install the final version for RedHat 6.
 
 ## How do I increase the heap size for Eclipse?
 
