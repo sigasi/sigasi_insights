@@ -81,7 +81,7 @@ Therefore the most recent version of Sigasi Studio that can be used on RedHat Li
 
 To successfully run Sigasi Studio on RedHat Linux 6, follow these steps:
 
-* Install [Eclipse Oxygen (4.7.3a)](https://www.eclipse.org/oxygen/). Find your download using the *Packages* link on the Oxygen page.
+* Install [Eclipse Oxygen (4.7.3a)](https://www.eclipse.org/oxygen/). Find your download using the *Packages* link on the Oxygen page. We recommend to use the *Eclipse IDE for C/C++ Developers* package.
 * Eclipse Oxygen requires at least version 2.24.0 of GTK+.
 * Eclipse Oxygen and the Sigasi Studio Plugin require Java 8: `yum install java-1.8.0-openjdk`
 * Install the Sigasi Studio Plugin by following [these steps](/manual/setup#install-the-eclipse-plugin) where you replace the link of the **Work with:** field from the second step with **<https://download.sigasi.com/updates/4.9.0/update-site>** in order to install the final version for RedHat 6.
