@@ -1,6 +1,7 @@
 ---
 title: Sigasi Studio 4.10
 date: 2020-12-10
+lastmod: 2021-01-29
 comments: true
 pager: true
 ---
@@ -107,5 +108,12 @@ On December 17 we released Sigasi Studio 4.10.1. This release fixes the followin
 
 On December 18 we released Sigasi Studio 4.10.2.
 This release fixes a regression with the external toolchain feature that was introduced in 4.10.1.
+
+# Sigasi Studio 4.10.3 point release
+
+On Januari 29 we released Sigasi Studio 4.10.3. This release fixes the following reported issues:
+
+* High memory usage when using parameterized classes in SystemVerilog
+* A bug where Sigasi Studio would always try to connect to port 4444 on multiuser systems
 
 Thanks for all the bug reports and enabling Talkback.

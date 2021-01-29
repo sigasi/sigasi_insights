@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.11)
 layout: page
 pager: true
-date: 2021-01-18
+date: 2021-01-29
 comments: true
 ---
 
@@ -56,11 +56,13 @@ Although these preview releases are less rigorously tested than the official rel
 
 * **[Verilog]** Added a new validation to detect 2-value type nets
 * **[Verilog]** Added a new validation to detect multiple statement written on the same line
+* **[Verilog]** Greatly improved memory usage when using parameterized classes
 
 {{< figure src="/img/releasenotes/preview/MultipleSvStatementsSameLine.png" title="Check multiple statements on the same line" width="500">}}
 
 ## Bugfixes
 
+* Fixed a bug where Sigasi Studio would always try to connect to port 4444 on multiuser systems
 * Fixed rare hover errors in unsaved editors
 * Improved GraphicsConfiguration hovers
 * Fixed dissapearing edges on hover in nested states in statemachines
@@ -68,12 +70,21 @@ Although these preview releases are less rigorously tested than the official rel
 * Removed context menu for the documentation view
 * Removed beep when opening the documentation view
 * Fixed running of all VUnit tests in a project
+* Fixed broken editor when file for the editor was removed while Sigasi Studio was not running
 * **[VHDL]** Fixed structured selection no longer selecting single words
 * **[VHDL]** Fixed corruption of VHDL outline, blockdiagram and hovers in unmapped files
+* **[VHDL]** Fixed a rare issue when formatting aggregates with named associations
 * **[VHDL]** We now show the correct value when hovering over bitstring literals
+* **[VHDL]** Added an autocomplete template for procedure prototypes
 * **[Verilog]** Fixed linking support for randsequence in broken code
 * **[Verilog]** Fixed outline rendering for nested types
 * **[Verilog]** Fixed false positive in 4-state net type validation
+* **[Verilog]** Fixed false positive warning for default type arguments when class was declared as forward typedef before
+* **[Verilog]** Fixed false positive error for property operators
+* **[Verilog]** Fixed false positive error for multiclock SVA properties
+* **[Verilog]** Fixed false positive error for SVA property operators with `always` as an operand
+* **[Verilog]** Fixed false positive error for `first_match` in sequences
+* **[Verilog]** Fixed false positive error for ternary conditions with pattern expressions
 
 # Update or install?
 
