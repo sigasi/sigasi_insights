@@ -120,19 +120,29 @@ The `Common Libraries` folder behaves like any other folder.
 You can delete it, rename it and apply a different library mapping.
 In most cases, however, the default configuration is just what you need.
 
+If your project doesn't have a `Common Libraries` folder, you can just create
+it by right-clicking the project in the Project Explorer and selecting
+the **New > Folder** dialog.
+
 ## How to add files to Common Libraries?
 
 In any newly created VHDL project, the `Common Libraries` folder
 contains the VHDL files of the `IEEE` and `STD` libraries.
+
 To add files to the Common Libraries folder, locate a folder with VHDL files
 on your file system using the Project Explorer or the file explorer of your OS
 and drag the folder with VHDL files to the Common Libraries folder.
 
+Alternatively, you can right-click the `Common Libraries` folder and select the
+**New > Folder** dialog where you can use the **Advanced >>** settings to create
+a **Linked Folder** pointing to the actual folder location that contains the
+files you wish to add to the `Common Libraries`.
+
 ## How is Common Libraries different from another folder?
 
-* `Common Libraries` is a *virtual* folder. This means that it is not a real
-folder in the project directory and it can only contain references to folders
-on your file system.
+* `Common Libraries` by default is a *virtual* folder. This means that it is not
+a real folder in the project directory and it can only contain references to
+folders on your file system.
 
 * Files in `Common Libraries` are supposed to be error free. Sigasi Studio
 will not mark errors or warnings in these files.
