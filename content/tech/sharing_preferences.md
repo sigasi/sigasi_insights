@@ -7,6 +7,7 @@ comments: true
 bannerad: true
 ---
 
+**Note:** a [new article]({{< ref "sharing_preferences_oomph" >}}) with updated information on this topic is available [here]({{< ref "sharing_preferences_oomph" >}}).
 
 A common problem in larger teams is how to share Sigasi preferences (configuration) in design teams. There are always some options that need to be set for Sigasi to work well, for example: the simulator path, license key, custom autocomplete templates,VHDL version.
 
@@ -20,7 +21,7 @@ Eclipse offers an import/export mechanism to share preferences in Eclipse Prefer
 
 If you distribute a customized version of Sigasi internally, you can also set default preferences by making following changes in the Sigasi ZIP file.
 
-1. Create a `plugin_customization.ini` file with the customized settings. E.g. following lines will hide linenumbers, use spaces for tabs and use uppercase VHDL keywords:
+1. Create a `plugin_customization.ini` file with the customized settings. E.g. following lines will hide line numbers, use spaces for tabs and use uppercase VHDL keywords:
 
         com.sigasi.hdt.vhdl.Vhdl/formatting.upperCaseKeywords=true
         org.eclipse.ui.editors/lineNumberRuler=false
@@ -32,6 +33,8 @@ If you distribute a customized version of Sigasi internally, you can also set de
             plugin_customization.ini
 
 ## Option 2: Fully automated with Workspace Mechanic
+
+**Note:** since we've documented a **more flexible way to work with [Oomph]({{< ref "/manual/custom-setup" >}})**, we no longer recommend using Workspace Mechanic.
 
 Google also ran into this problem and solved it by developing the Workspace Mechanic plugin for Eclipse. This plugin, which also works fine in Sigasi, allows to automate the maintenance of Eclipse environments.
 

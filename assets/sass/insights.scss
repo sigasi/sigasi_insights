@@ -14,10 +14,10 @@ a:hover {
     color: $sg-orange;
 }
 
-p > a {
+p > a, p > strong > a, p > em > a {
     color: $sg-orange;
 }
-p > a:hover {
+p > a:hover, p > strong > a:hover, p > em > a:hover {
     color: $sg-red;
 }
 

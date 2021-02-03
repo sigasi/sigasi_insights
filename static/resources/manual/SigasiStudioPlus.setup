@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<setup:Product
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
+    xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
+    name="sigasi.studio.plus.product"
+    label="Sigasi Studio Product Plus">
+  <annotation
+      source="http://www.eclipse.org/oomph/setup/BrandingInfo">
+    <detail
+        key="folderName">
+      <value>eclipse</value>
+    </detail>
+    <detail
+        key="folderName.macosx">
+      <value>Eclipse</value>
+    </detail>
+  </annotation>
+  <setupTask
+      xsi:type="setup:EclipseIniTask"
+      option="-Xmx"
+      value="3G"
+      vm="true"/>
+  <setupTask
+      xsi:type="setup:EclipseIniTask"
+      option="-perspective"
+      value="com.sigasi.hdt.shared.sigasi.perspective"/>
+  <version name="2020-12"
+      label="2020-12"
+      requiredJavaVersion="1.8">
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="${scope.product.label} (${scope.product.version.label})">
+      <requirement
+          name="org.eclipse.platform.ide"/>
+      <requirement
+          name="org.eclipse.platform.feature.group"/>
+      <requirement
+          name="org.eclipse.rcp.feature.group"/>
+      <requirement
+          name="com.sigasi.hdt.vhdl.feature.feature.group"/>
+      <requirement
+          name="com.sigasi.hdt.verilog.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.egit.feature.group"/>
+      <requirement
+          name="org.eclipse.oomph.setup.feature.group"/>
+      <repository
+          url="http://download.eclipse.org/releases/2020-12"/>
+      <repository
+          url="https://download.sigasi.com/updates/studio"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="Custom preferences">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.ui/defaultPerspectiveId"
+          value="com.sigasi.hdt.shared.sigasi.perspective"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.oomph.setup.ui/enable.preference.recorder"
+          value="false"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.ui.editors/printMargin"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.ui.editors/printMarginColumn"
+          value="120"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/com.sigasi.hdt.vhdl.Vhdl/formatting.upperCaseKeywords"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.ui.editors/spacesForTabs"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/com.sigasi.hdt.vhdl.Vhdl/validate.37"
+          value="ERROR"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/com.sigasi.hdt.vhdl.Vhdl/validate.8"
+          value="ERROR"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/com.sigasi.hdt.verilog.ui/com.sigasi.hdt.verilog.Verilog.templates"
+          value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?>&lt;templates>&lt;template autoinsert=&quot;true&quot; context=&quot;com.sigasi.hdt.verilog.Verilog.Anywhere&quot; deleted=&quot;false&quot; description=&quot;author&quot; enabled=&quot;true&quot; name=&quot;author&quot;>// $${author} $${date}&lt;/template>&lt;/templates>"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/com.sigasi.hdt.verilog.Verilog/validate.7"
+          value="warning"/>
+    </setupTask>
+    <description>Oomph demo Product for 2020-12.</description>
+  </version>
+  <description>Sigasi Studio setup plus workspace preferences</description>
+</setup:Product>

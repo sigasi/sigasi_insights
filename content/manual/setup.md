@@ -37,6 +37,19 @@ The Eclipse plugin has the following characteristics:
 * Support for C, C++, Tcl and other languages
 * Support for many version control systems
 
+## Sigasi Studio custom installation
+
+* Recommended for (larger) teams
+* Automates the setup of Eclipse, the Sigasi Studio plugin and your project
+* Ensure that team members have a uniform setup
+* Quickly set up Eclipse with Sigasi Studio
+* Configure team preferences during setup
+* Check out a project from version control at setup time
+* Optionally add support for other programming languages
+
+The custom installation is documented in a [separate section](/manual/custom-setup).
+
+
 # Installation of Sigasi Studio App
 
 To download and install Sigasi Studio as a stand-alone application, follow the

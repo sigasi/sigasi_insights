@@ -6,3 +6,4 @@ public/
 .netlify
 # Emacs backup files
 *~
+**/*.bak
