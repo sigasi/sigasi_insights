@@ -44,6 +44,19 @@ You can apply filters to choose which files are shown. Select the icon
 will be hidden in the view. For example, you can filter out all non-VHDL
 or non-Verilog files.
 
+The **Project Explorer** view provides _Label Decorations_ which can be controlled
+in **Window > Preferences > General > Appearance > Label Decorations**.
+Label decorators are a visual guide on the state of projects, folders and files.
+Decorators can depend on various plugins.
+The following descriptions apply to Sigasi specific decorators.
+
+* Open HDL projects have a bridge-like overlay ![](/img/icons/project.png) in the top right corner.
+* File icons with a 'V' in them are VHDL or SystemVerilog source files.
+* Folder icons with an overlay in the lower right corner are virtual folders (white square) or linked folders (square with arrow).
+* Other overlays in the lower right corner are probably from the Git plugin. They indicate tracked files/folders (yellow cylinder) and non-tracked files/folders (question mark). Changed files are noted with a `>` mark next to the icon.
+* Overlays in the lower left corner are generally indicating status from Sigasi Studio: errors in files/folders are indicated with a red square and white cross ![](/img/icons/error.png) while files/folders with warnings are marked with a yellow triangle with black exclamation mark ![](/img/icons/warning.png) .
+* If you exclude a file from build in Sigasi studio, the icon will be overlayed with a red *forbidden entry* icon  ![](/img/icons/ignoreicon.png) in the upper left corner.
+
 # Editor View
 
 The Editor view shows the content of files, and allows you to edit
