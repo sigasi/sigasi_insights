@@ -90,3 +90,46 @@ When you run VUnit tests in Sigasi Studio, the VUnit view is opened. This view p
 
 You can also open the *Console View* to inspect the entire VUnit output.  
 {{< figure src="/img/manual/vunit_console.png" alt="VUnit console view" link="/img/manual/vunit_console.png" >}}
+
+# Handling specific common libraries
+
+In Sigasi Studio, *[Common Libraries]({{< ref "libraries.md#common-libraries" >}})* may be present in a project. Some
+of these are standardized and available in all tools, e.g. IEEE VHDL
+libraries, or the VUnit library in case of a VUnit project. Your
+project may also require vendor or company specific common
+libraries. External simulators, including the simulator which runs
+your VUnit tests, require a particular setup to find your library.
+
+If, for instance, Modelsim is used, then:
+* common libraries need to be pre-compiled,
+* a customized `modelsim.ini` with a reference to the pre-compiled libraries is required, and
+* VUnit needs to be aware of the customized `modelsim.ini`.
+
+The latter is achieved by setting an environment variable
+`VUNIT_MODELSIM_INI` which points at the customized
+`modelsim.ini`. One could set this variable from the shell (Linux) or
+user variables (Windows), but that is inconvenient as all projects
+will use the same `modelsim.ini`. A better solution is to set
+`VUNIT_MODELSIM_INI` in the `run.py` script, *before* calling
+`VUnit.from_argv()`.
+
+```python
+# This is run.py
+# code omitted
+os.environ['VUNIT_MODELSIM_INI'] = '/path/to/custom/modelsim.ini'
+vu = VUnit.from_argv()
+# code omitted
+```
+
+Note that VUnit may still produce warnings that the library is
+missing, as shown below. These warnings are harmless. They show up
+because only Sigasi Studio and the simulator are aware of the library,
+while VUnit is not. 
+
+```
+WARNING - C:\Users\Wim Meeus\workspaceSigasi\VUnit-demo\design\design_top.vhd: failed to find library 'vucommon'
+```
+Alternatively, one could define the library and its
+contents in the `run.py` script. In that case, VUnit will be aware of
+the library and the warnings won't show, but compile times will be
+longer - which is exactly what *common* libraries are meant to avoid.
