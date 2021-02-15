@@ -5,7 +5,7 @@
   publish = "public/"
 
 [context.production]
-  command = "hugo version; hugo --minify"
+  command = "git submodule update --init --recursive; hugo version; hugo --minify"
 
 [[headers]]
   for = "/*"
@@ -15,5 +15,5 @@
     x-frame-options = "DENY"
 
 [context.deploy-preview]
-  command = "hugo version; hugo --buildFuture --buildDrafts --baseURL $DEPLOY_PRIME_URL"
+  command = "git submodule update --init --recursive; hugo version; hugo --buildFuture --buildDrafts --baseURL $DEPLOY_PRIME_URL"
 
