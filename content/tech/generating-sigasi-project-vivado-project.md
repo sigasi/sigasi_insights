@@ -50,6 +50,8 @@ You can switch to synthesis by replacing `USED_IN_SIMULATION` with `USED_IN_SYNT
 ```
 This script generates the `.project` and `.library_mapping.xml` files that define the Sigasi project.
 
+Note that you might need to update the `PYTHONPATH` as explained in the [README file](https://github.com/sigasi/SigasiProjectCreator/blob/master/README.md).
+
 # Notes
 
 When you make changes to your Vivado project, you need to re-run this script.
