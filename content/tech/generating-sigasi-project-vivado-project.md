@@ -43,7 +43,7 @@ This TCL scripts creates a file `vivado_files.csv` which contains a list of VHDL
 When you inspect the source of [this TCL script](https://github.com/sigasi/SigasiProjectCreator/blob/master/src/SigasiProjectCreator/convertVivadoProjectToCsv.tcl), you will see that we filter for *Simulation* source files only.
 You can switch to synthesis by replacing `USED_IN_SIMULATION` with `USED_IN_SYNTHESIS`.
 
-### 2. Generate the Sigasi project files from the csv-files
+## 2. Generate the Sigasi project files from the csv-files
 
 ```
 ~/git/SigasiProjectCreator/src/SigasiProjectCreator/convertCsvFileToTree.py project_1 vivado_files.csv
