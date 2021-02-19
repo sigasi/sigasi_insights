@@ -30,7 +30,7 @@ This CSV-file can be converted to a Sigasi project with the existing [convertCsv
 
 # How to generate a Sigasi project from a Vivado project?
 
-## 1. Extract a list of source files from your Vivado project with TCL:
+## 1. Extract a list of source files from your Vivado project with TCL
 
 The following command assumes you're in a Command Window / Terminal and `vivado` is in your path.
 You can also run the script in the TCL console of a Vivado GUI session if you *source* the script there.
@@ -43,7 +43,7 @@ This TCL scripts creates a file `vivado_files.csv` which contains a list of VHDL
 When you inspect the source of [this TCL script](https://github.com/sigasi/SigasiProjectCreator/blob/master/src/SigasiProjectCreator/convertVivadoProjectToCsv.tcl), you will see that we filter for *Simulation* source files only.
 You can switch to synthesis by replacing `USED_IN_SIMULATION` with `USED_IN_SYNTHESIS`.
 
-## 2. Generate the Sigasi project files from the csv-files
+## 2. Generate the Sigasi project files from the CSV file
 
 ```
 ~/git/SigasiProjectCreator/src/SigasiProjectCreator/convertCsvFileToTree.py project_1 vivado_files.csv
