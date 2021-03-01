@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.11)
 layout: page
 pager: true
-date: 2021-01-29
+date: 2021-03-01
 comments: true
 ---
 
@@ -16,18 +16,87 @@ Although these preview releases are less rigorously tested than the official rel
 
 # Current preview release
 
-## Version bumps
+## VHDL 2019
 
-* JustJ was updated to 15.0.1
-* Xtext and EMF were updated to 2.24
-* Eclipse was updated to 2020-12
-* Chromium was Updated to 76.0.9
+This release introduces VHDL 2019 into Sigasi Studio. To make use of the improved language features and APIs you need
+to set your VHDL project (or a single file) to VHDL 2019.  
+**Right-click the project (or file)>Properties>VHDL Version> VHDL 2019**.
+
+To install the correct `std` and `ieee` libraries in your `Common Libraries` folder, you will also have to do the following:  
+**Right-click the project>Set Library>Reset Library Mapping**
+
+The following VHDL 2019 changes are being supported:
+
+* 2019's common libraries have been added, thus all the new APIs are available
+* The ending `component` in a component declaration is no longer required
+  ```vhdl
+    component test
+    end; -- No more need for "component" here
+  ```
+* An optional semicolon terminating interface lists is now allowed
+  ```vhdl
+    function my_function(x : in string;) return bit; -- ";" after "string"
+  ```
+* Allow `inout` and `out` for parameters of impure functions:
+  ```vhdl
+    impure function dir_open(dir : out integer; path : in string) -- "out" is now allowed
+    return integer is
+    begin
+      return 0;
+    end;
+  ```
+* Empty records are now allowed
+  ```vhdl
+    type VhdlRecord is record
+      -- No longer required to have anything in the record
+    end record
+  ```
+* Qualified expressions' operand is now optional
+  ```vhdl
+    -- Value of "abc" is an empty value of the type std_logic
+    constant abc : std_logic := std_logic'();
+  ```
+* Functions now know the type of the receiver of the return value
+  ```vhdl
+    function ConvertToSlv(constant i: in integer) return TResult of std_logic_vector is
+      variable result: TResult;
+    begin
+      -- Can now access attributes of the receiver of this return value
+      result := std_logic_vector(to_signed(i, result'length));
+      return result;
+    end function;
+
+    -- Now we can do the following
+    x <= to_unsigned(i);
+
+    -- Instead of
+    x <= to_unsigned(i, x'length);
+  ```
+* Expanded the allowed ways of using the power expression (`**`)
+  ```vhdl
+    constant minus : integer := -2;
+    constant abc : integer := -2 ** abs minus; -- was not allowed in VHDL 2008
+  ```
+* Allow `when`-`else` and `unaffected` expressions in return statements
+  ```vhdl
+    function maybeReturnOne(returnOne : boolean)
+        return bit is
+    begin
+        return '1' when returnOne else '0';
+        -- The same result could be achieved using the following two lines.
+        -- When the "unaffected" expression is hit, the return statement does not return.
+        -- The code beneath it just keeps running as if nothing happened
+        -- return '1' when returnOne else unaffected;
+        -- return '0';
+    end function;
+  ```
 
 ## Improvements
 
 * The *Report Encrypted Regions* validation no longer shows squiggly lines
 * Improved error reporting for documentation export. Especially when exported resources already exist and can't be overwritten
 * Ensured consistent punctuation in our messages
+* Improved monitoring and cancelability of external compilers
 * Split of simulation arguments to a separate field in the toolchain preferences for GHDL
 
 {{< figure src="/img/releasenotes/preview/GhdlSplitArguments.png" title="Ghdl split simulation arguments" width="500">}}
@@ -38,6 +107,10 @@ Although these preview releases are less rigorously tested than the official rel
 * **[VHDL]** Improved alignment during formatting of procedure arguments
 * **[VHDL]** Added a new validation to detect index out of range and incorrect size for arrays
 {{< figure src="/img/releasenotes/preview/IndexOutOfRangeAndIncorrectArraySize.png" title="Index out of range and incorrect array size.png" width="500">}}
+
+* **[VHDL]** Block statements are now shown in block diagrams
+
+{{< figure src="/img/releasenotes/preview/VHDLBlockstatementsInBlockDiagram.png" title="Block statements in Block diagram view" width="500" >}}
 
 * **[Verilog]** Fixed preprocessing when an **include** directive is directly followed by more tokens
 * **[Verilog]** It is now possible to format on save
@@ -60,22 +133,33 @@ Although these preview releases are less rigorously tested than the official rel
 
 {{< figure src="/img/releasenotes/preview/MultipleSvStatementsSameLine.png" title="Check multiple statements on the same line" width="500">}}
 
+* **[Verilog]** Verilog generate blocks are now shown in block diagrams
+
+{{< figure src="/img/releasenotes/preview/SvGenerateBlocksInBlockDiagram.png" title="SV generate blocks in Block diagram view" width="500" >}}
+
+* **[Mixed]** Direct instantiations of Verilog modules in VHDL code is now shown in block diagrams
+
+{{< figure src="/img/releasenotes/preview/DirectInstantiationOfModuleInVHDL.png" title="Direct instantiation of a module in VHDL shown in Block diagram view" width="500" >}}
+
 ## Bugfixes
 
-* Fixed a bug where Sigasi Studio would always try to connect to port 4444 on multiuser systems
+* Fixed a bug where Sigasi Studio would always try to connect to port 4444 on multi-user systems
 * Fixed rare hover errors in unsaved editors
 * Improved GraphicsConfiguration hovers
-* Fixed dissapearing edges on hover in nested states in statemachines
+* Fixed disappearing edges on hover in nested states in statemachines
 * Aligned case-sensitivity of GraphicsConfiguration to VHDL and Verilog
 * Removed context menu for the documentation view
 * Removed beep when opening the documentation view
 * Fixed running of all VUnit tests in a project
 * Fixed broken editor when file for the editor was removed while Sigasi Studio was not running
+* Renaming a graphics configuration file while it's open in an editor now works as intended
 * **[VHDL]** Fixed structured selection no longer selecting single words
 * **[VHDL]** Fixed corruption of VHDL outline, blockdiagram and hovers in unmapped files
 * **[VHDL]** Fixed a rare issue when formatting aggregates with named associations
 * **[VHDL]** We now show the correct value when hovering over bitstring literals
 * **[VHDL]** Added an autocomplete template for procedure prototypes
+* **[VHDL]** Now allow (micro)seconds without a space between the numeral and the unit for time literals
+* **[Verilog]** Fixed missing edges from/to aggregate assignments in block diagrams
 * **[Verilog]** Fixed linking support for randsequence in broken code
 * **[Verilog]** Fixed outline rendering for nested types
 * **[Verilog]** Fixed false positive in 4-state net type validation
@@ -85,6 +169,14 @@ Although these preview releases are less rigorously tested than the official rel
 * **[Verilog]** Fixed false positive error for SVA property operators with `always` as an operand
 * **[Verilog]** Fixed false positive error for `first_match` in sequences
 * **[Verilog]** Fixed false positive error for ternary conditions with pattern expressions
+* **[Verilog]** Fixed missing edges from/to always block in block diagrams
+
+## Version bumps
+
+* JustJ was updated to 15.0.1
+* Xtext and EMF were updated to 2.24
+* Eclipse was updated to 2020-12
+* Chromium was Updated to 76.0.10
 
 # Update or install?
 
