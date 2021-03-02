@@ -178,6 +178,10 @@ The following VHDL 2019 changes are being supported:
 * Eclipse was updated to 2020-12
 * Chromium was Updated to 76.0.10
 
+* Sigasi Studio is now bundled with a **Java 15 runtime environment**. We also improved the way we bundle the JRE in Sigasi Studio. It is now bundled as an updatable feature. So from now on, the JRE is automatically updated with Sigasi Studio.  
+**Note that you may run into the error dialog below, when you restart Sigasi Studio after the update** because the JRE has changed. If you close the dialog, and restart Sigasi Studio manually, everything should work as expected.
+{{< figure src="/img/releasenotes/4.10/jre_update_error.png" title="Expected error after update. Restart will solve the issue" width="200">}}
+
 # Update or install?
 
 You can download the stand-alone version of the latest preview from:
