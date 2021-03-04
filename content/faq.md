@@ -564,6 +564,9 @@ The following methods describe alternatives how to obtain this stack trace.
 
 If you have a matching JDK version installed on your machine, you can use the `jstack` command from JDK.
 
+The Sigasi Studio standalone app comes with a bundled JRE which also contains the `jstack` command.
+This command can be found in the Sigasi installation in `plugins/org.eclipse.justj.openjdk.hotspot.jre.full.<os_version>/jre/bin`.
+
 1. Find the Process Identifier (PID) of your Sigasi/Eclipse process.
    * On Windows you can find the PID using the *Task Manager*. The *Details* tab shows the PID of every process.
    * On Linux running a command like `ps -eo pid,cmd | grep java` can show you the PID.
