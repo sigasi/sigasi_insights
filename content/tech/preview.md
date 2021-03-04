@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.11)
 layout: page
 pager: true
-date: 2021-03-01
+date: 2021-03-04
 comments: true
 ---
 
@@ -153,12 +153,14 @@ The following VHDL 2019 changes are being supported:
 * Fixed running of all VUnit tests in a project
 * Fixed broken editor when file for the editor was removed while Sigasi Studio was not running
 * Renaming a graphics configuration file while it's open in an editor now works as intended
+* Fixed an error when quickly pressing the buttons in Block Diagram view toolbar
 * **[VHDL]** Fixed structured selection no longer selecting single words
 * **[VHDL]** Fixed corruption of VHDL outline, blockdiagram and hovers in unmapped files
 * **[VHDL]** Fixed a rare issue when formatting aggregates with named associations
 * **[VHDL]** We now show the correct value when hovering over bitstring literals
 * **[VHDL]** Added an autocomplete template for procedure prototypes
 * **[VHDL]** Now allow (micro)seconds without a space between the numeral and the unit for time literals
+* **[VHDL]** Made sure declarations made in a block statement can be used within the block statement
 * **[Verilog]** Fixed missing edges from/to aggregate assignments in block diagrams
 * **[Verilog]** Fixed linking support for randsequence in broken code
 * **[Verilog]** Fixed outline rendering for nested types
@@ -170,13 +172,14 @@ The following VHDL 2019 changes are being supported:
 * **[Verilog]** Fixed false positive error for `first_match` in sequences
 * **[Verilog]** Fixed false positive error for ternary conditions with pattern expressions
 * **[Verilog]** Fixed missing edges from/to always block in block diagrams
+* **[Verilog]** Fixed missing autocomplete for include files
 
 ## Version bumps
 
-* JustJ was updated to 15.0.1
+* JustJ was updated to 15.0.2
 * Xtext and EMF were updated to 2.24
 * Eclipse was updated to 2020-12
-* Chromium was Updated to 76.0.10
+* Chromium was Updated to 76.0.11
 * Sigasi Studio is now bundled with a **Java 15 runtime environment**. We also improved the way we bundle the JRE in Sigasi Studio. It is now bundled as an updatable feature. So from now on, the JRE is automatically updated with Sigasi Studio.  
 **Note that you may run into the error dialog below, when you restart Sigasi Studio after the update** because the JRE has changed. If you close the dialog, and restart Sigasi Studio manually, everything should work as expected.
 {{< figure src="/img/releasenotes/4.10/jre_update_error.png" title="Expected error after update. Restart will solve the issue" width="200">}}
