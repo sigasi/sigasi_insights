@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.11)
 layout: page
 pager: true
-date: 2021-03-04
+date: 2021-03-08
 comments: true
 ---
 
@@ -90,6 +90,21 @@ The following VHDL 2019 changes are being supported:
         -- return '0';
     end function;
   ```
+* Added support for the sequential block statement
+  ```vhdl
+    architecture RTL of ent is
+    begin
+        proc : process is
+        begin
+          -- Block statements were not allowed here before
+          blk : block is
+            constant message : string := "Hello world";
+          begin
+            assertStat : assert true report message severity error;
+          end block blk;
+        end process;
+    end architecture RTL;
+  ```
 
 ## Improvements
 
@@ -112,7 +127,6 @@ The following VHDL 2019 changes are being supported:
 
 {{< figure src="/img/releasenotes/preview/VHDLBlockstatementsInBlockDiagram.png" title="Block statements in Block diagram view" width="500" >}}
 
-* **[Verilog]** Fixed preprocessing when an **include** directive is directly followed by more tokens
 * **[Verilog]** It is now possible to format on save
 
 {{< figure src="/img/releasenotes/preview/SvFormatOnSave.png" title="SystemVerilog format on save" width="500">}}
@@ -137,6 +151,8 @@ The following VHDL 2019 changes are being supported:
 
 {{< figure src="/img/releasenotes/preview/SvGenerateBlocksInBlockDiagram.png" title="SV generate blocks in Block diagram view" width="500" >}}
 
+* **[Verilog]** Support conditional operator (ternary operator) in transitions of state
+* **[Verilog]** Improved checking of duplicate, unresolved, too many or missing formals in instantiation
 * **[Mixed]** Direct instantiations of Verilog modules in VHDL code is now shown in block diagrams
 
 {{< figure src="/img/releasenotes/preview/DirectInstantiationOfModuleInVHDL.png" title="Direct instantiation of a module in VHDL shown in Block diagram view" width="500" >}}
@@ -154,6 +170,7 @@ The following VHDL 2019 changes are being supported:
 * Fixed broken editor when file for the editor was removed while Sigasi Studio was not running
 * Renaming a graphics configuration file while it's open in an editor now works as intended
 * Fixed an error when quickly pressing the buttons in Block Diagram view toolbar
+* Fixed graphics not using all available space when scaling is enabled in the OS
 * **[VHDL]** Fixed structured selection no longer selecting single words
 * **[VHDL]** Fixed corruption of VHDL outline, blockdiagram and hovers in unmapped files
 * **[VHDL]** Fixed a rare issue when formatting aggregates with named associations
@@ -161,6 +178,7 @@ The following VHDL 2019 changes are being supported:
 * **[VHDL]** Added an autocomplete template for procedure prototypes
 * **[VHDL]** Now allow (micro)seconds without a space between the numeral and the unit for time literals
 * **[VHDL]** Made sure declarations made in a block statement can be used within the block statement
+* **[VHDL]** Ironed out many interpreter inconsistencies
 * **[Verilog]** Fixed missing edges from/to aggregate assignments in block diagrams
 * **[Verilog]** Fixed linking support for randsequence in broken code
 * **[Verilog]** Fixed outline rendering for nested types
@@ -173,13 +191,14 @@ The following VHDL 2019 changes are being supported:
 * **[Verilog]** Fixed false positive error for ternary conditions with pattern expressions
 * **[Verilog]** Fixed missing edges from/to always block in block diagrams
 * **[Verilog]** Fixed missing autocomplete for include files
+* **[Verilog]** Fixed preprocessing when an **include** directive is directly followed by more tokens
 
 ## Version bumps
 
 * JustJ was updated to 15.0.2
 * Xtext and EMF were updated to 2.24
 * Eclipse was updated to 2020-12
-* Chromium was Updated to 76.0.11
+* Chromium was Updated to 76.0.12
 * Sigasi Studio is now bundled with a **Java 15 runtime environment**. We also improved the way we bundle the JRE in Sigasi Studio. It is now bundled as an updatable feature. So from now on, the JRE is automatically updated with Sigasi Studio.  
 **Note that you may run into the error dialog below, when you restart Sigasi Studio after the update** because the JRE has changed. If you close the dialog, and restart Sigasi Studio manually, everything should work as expected.
 {{< figure src="/img/releasenotes/4.10/jre_update_error.png" title="Expected error after update. Restart will solve the issue" width="200">}}
