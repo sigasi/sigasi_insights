@@ -203,6 +203,8 @@ The following VHDL 2019 changes are being supported:
 **Note that you may run into the error dialog below, when you restart Sigasi Studio after the update** because the JRE has changed. If you close the dialog, and restart Sigasi Studio manually, everything should work as expected.
 {{< figure src="/img/releasenotes/4.10/jre_update_error.png" title="Expected error after update. Restart will solve the issue" width="200">}}
 
+We also plan to remove the legacy ALINT implementation in Sigasi Studio in the next release (4.12). We assume everybody has updated to the newer ALINT-PRO by now.
+
 # Update or install?
 
 You can download the stand-alone version of the latest preview from:
