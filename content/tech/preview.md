@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.11)
 layout: page
 pager: true
-date: 2021-03-08
+date: 2021-03-11
 comments: true
 ---
 
@@ -188,7 +188,6 @@ The following VHDL 2019 changes are being supported:
 * **[Verilog]** Fixed false positive error for multiclock SVA properties
 * **[Verilog]** Fixed false positive error for SVA property operators with `always` as an operand
 * **[Verilog]** Fixed false positive error for `first_match` in sequences
-* **[Verilog]** Fixed false positive error for ternary conditions with pattern expressions
 * **[Verilog]** Fixed missing edges from/to always block in block diagrams
 * **[Verilog]** Fixed missing autocomplete for include files
 * **[Verilog]** Fixed preprocessing when an **include** directive is directly followed by more tokens
