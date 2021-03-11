@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.11)
 layout: page
 pager: true
-date: 2021-03-11
+date: 2021-03-12
 comments: true
 ---
 
@@ -58,7 +58,7 @@ The following VHDL 2019 changes are being supported:
   ```
 * Functions now know the type of the receiver of the return value
   ```vhdl
-    function ConvertToSlv(constant i: in integer) return TResult of std_logic_vector is
+    function convert_to_slv(constant i: in integer) return TResult of std_logic_vector is
       variable result: TResult;
     begin
       -- Can now access attributes of the receiver of this return value
@@ -67,10 +67,10 @@ The following VHDL 2019 changes are being supported:
     end function;
 
     -- Now we can do the following
-    x <= to_unsigned(i);
+    x <= convert_to_slv(i);
 
     -- Instead of
-    x <= to_unsigned(i, x'length);
+    x <= convert_to_slv(i, x'length);
   ```
 * Expanded the allowed ways of using the power expression (`**`)
   ```vhdl
@@ -116,6 +116,7 @@ The following VHDL 2019 changes are being supported:
 
 {{< figure src="/img/releasenotes/preview/GhdlSplitArguments.png" title="Ghdl split simulation arguments" width="500">}}
 
+* Improved memory consumption for specific kinds of project setups
 * **[VHDL]** Default values for generics are now part of the autocompleted component declaration
 * **[VHDL]** Allow multiple capitalization differences at once to be fixed from the problems view
 * **[VHDL]** Improved auto indentation for procedures
@@ -127,6 +128,7 @@ The following VHDL 2019 changes are being supported:
 
 {{< figure src="/img/releasenotes/preview/VHDLBlockstatementsInBlockDiagram.png" title="Block statements in Block diagram view" width="500" >}}
 
+* **[VHDL]** Added a quick fix to set the Common Libraries to VHDL 2019 when a file or project uses VHDL 2019
 * **[Verilog]** It is now possible to format on save
 
 {{< figure src="/img/releasenotes/preview/SvFormatOnSave.png" title="SystemVerilog format on save" width="500">}}
@@ -171,6 +173,10 @@ The following VHDL 2019 changes are being supported:
 * Renaming a graphics configuration file while it's open in an editor now works as intended
 * Fixed an error when quickly pressing the buttons in Block Diagram view toolbar
 * Fixed graphics not using all available space when scaling is enabled in the OS
+* Made [suppressing of tutorial project creation]({{< ref "../manual/opening/#other-command-line-options" >}}) work again
+* Allow Sigasi Studio to be used as external editor in Vivado on Linux again
+* Made the `Set Top` button in the Hierarchy View work again when external files are open
+* Fixed a rare case in which the cursor jumped to the start of the file after formatting
 * **[VHDL]** Fixed structured selection no longer selecting single words
 * **[VHDL]** Fixed corruption of VHDL outline, blockdiagram and hovers in unmapped files
 * **[VHDL]** Fixed a rare issue when formatting aggregates with named associations
@@ -179,6 +185,7 @@ The following VHDL 2019 changes are being supported:
 * **[VHDL]** Now allow (micro)seconds without a space between the numeral and the unit for time literals
 * **[VHDL]** Made sure declarations made in a block statement can be used within the block statement
 * **[VHDL]** Ironed out many interpreter inconsistencies
+* **[Verilog]** We no longer show errors in the problems view for files that are excluded from build and are not included anywhere
 * **[Verilog]** Fixed missing edges from/to aggregate assignments in block diagrams
 * **[Verilog]** Fixed linking support for randsequence in broken code
 * **[Verilog]** Fixed outline rendering for nested types
@@ -191,6 +198,7 @@ The following VHDL 2019 changes are being supported:
 * **[Verilog]** Fixed missing edges from/to always block in block diagrams
 * **[Verilog]** Fixed missing autocomplete for include files
 * **[Verilog]** Fixed preprocessing when an **include** directive is directly followed by more tokens
+* **[Verilog]** Fixed false positive errors and warnings in include files that are excluded from build but are included in files that are in the build
 
 ## Version bumps
 
