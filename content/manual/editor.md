@@ -453,7 +453,7 @@ You can disable the formatter for defined regions in your VHDL source files by e
 
 ### Format code on save
 
-You can configure Sigasi Studio to automatically format your VHDL files when you save your source files via **Preferences > Sigasi > VHDL**, next enable **Enable code format on save**.
+You can configure Sigasi Studio to automatically format your VHDL files when you save your source files via **Window > Preferences > Sigasi > VHDL**, next enable **Enable code format on save**.
 
 ### Format project
 
@@ -490,6 +490,8 @@ and select whether `*.v` files are treated as **Verilog** or **SystemVerilog**. 
 Press **Ctrl+Shift+F** to format your current Verilog or SystemVerilog file.
 
 The current formatter implementation corrects indentation only.
+
+You can configure Sigasi Studio to automatically format your (System)Verilog files when you save them. Go to **Window > Preferences > Sigasi > (System)Verilog**, then enable **Enable code format on save**.
 
 ## Smart Indentation
 

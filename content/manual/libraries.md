@@ -95,6 +95,15 @@ not a part of the project and will not include that resource in a
 project build. This is typically useful when you have stale copies of
 HDL files or folders lying around that you want simply to be ignored.
 
+# (System)Verilog include files
+
+(System)Verilog include files are always excluded from the build. Any
+file that is included in another design file gets excluded from the
+build, even if it has an extension that would normally identify it as
+a design file, e.g. `.v` or `.sv`.  It often doesn't make sense to
+compile include files by themselves. Instead, include files are
+compiled in the context of the file in which they are included.
+
 # Configuration file
 
 All library configuration information is stored in the `.library_mapping.xml`
@@ -184,6 +193,25 @@ Right-click on the Common Libraries folder of your project in the explorer
 view and apply menu-entry **Set Library > Reset Common Libraries**.
 
 {{< figure src="/img/manual/librarymappingrestorecommonlibraries.png" >}}
+
+# Resetting the library mapping
+
+Sigasi Studio contains two functions to reset all or part of the library mapping.
+
+* **Reset Common Libraries** updates the common VHDL libraries to the
+    version ('93, '2002, '2008, '2019) required by your
+    project. User-defined common libraries remain untouched.  To
+    access this function, right-click the `Common Libraries` folder
+    inside your project in the Project Explorer and select **Set
+    Library > Reset Common Libraries**.
+
+* **Reset Library Mapping** resets the entire library mapping of your
+    project. After resetting the library mapping, *Common Libraries*
+    are reset as above, and all design files are mapped to library
+    `work`. Note that this action cannot be undone, so only use it
+    when you want to rebuild the library mapping from *scratch*. To
+    access this function, right-click your project in the Project
+    Explorer and select **Set Library > Reset Library Mapping**.
 
 # IEEE Vital
 

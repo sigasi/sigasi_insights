@@ -29,6 +29,8 @@ ST code rules are available for all licenses including {{< starter >}}.
 |                                       | [Duplicate formal item within the instantiated unit]({{< ref "rules/verilog_associations/#duplicate-port-and-parameter-connections" >}})                       | 37 |
 |                                       | [Excessive number of actuals in ordered notation]({{< ref "rules/verilog_associations/#excessive-number-of-actuals-in-ordered-notation" >}})                   | 39 |
 |                                       | Timing controls are not allowed in functions                                                                                                                   | 46 |
+|                                       | Net data types must be 4-state                                                                                                                                 | 50 |
+|                                       | Net data types integral                                                                                                                                        | 51 |
 
 <!--|                                       | A verilog `net` type keyword cannot be followed directly by the `reg` keyword                                                                                  |  4 |-->
 
@@ -48,7 +50,7 @@ XL code rules require a {{< xl >}} or {{< xprt >}} license.
 |                           | [Case statement has multiple default clauses, but only one default clause is allowed]({{< ref "rules/verilog_case/#case-statement-can-only-have-one-default-clause" >}}) | 16 |
 |                           | [File name does not match design unit]({{< ref "rules/verilog_style/#file-name-does-not-match-design-unit" >}})                                                | 17 |
 |                           | [File contains multiple design units]({{< ref "rules/verilog_style/#file-contains-multiple-design-unit" >}})                                                   | 18 |
-|                           | [Parameters must have a default value]({{< ref "rules/verilog_parameters" >}})                                                                                 | 19 |
+|                           | [Parameters must have a default value]({{< ref "rules/verilog_parameters/#parameters-without-a-default-value" >}})                                             | 19 |
 |                           | [Verilog code line too long]({{< ref "rules/verilog_style/#verilog-code-line-too-long" >}})                                                                    | 20 |
 |                           | [Tabs are not allowed]({{< ref "rules/verilog_style/#tabs-are-not-allowed" >}})                                                                                | 21 |
 |                           | [File header comment does not match required pattern]({{< ref "rules/verilog_style/#file-header-comment-does-not-match-required-pattern" >}})                  | 22 |
@@ -66,3 +68,5 @@ XL code rules require a {{< xl >}} or {{< xprt >}} license.
 |                           | [Non-blocking assignments are not allowed in functions]({{< ref "rules/verilog_function/#non-blocking-assignments-are-not-allowed-in-functions" >}})           | 41 |
 |                           | [Consecutive underscores in unit / port identifier]({{< ref "rules/verilog_identifiers/#underscores-in-identifier-names" >}})                                  | 42 |
 |                           | [Underscores at end of unit / port identifier]({{< ref "rules/verilog_identifiers/#underscores-in-identifier-names" >}})                                       | 43 |
+|                           | [Multiple statements per line]({{< ref "rules/verilog_style/#multiple-statements-per-line" >}})                                                                | 47 |
+|                           | [Missing bit width for parameters wider than 32 bits]({{< ref "rules/verilog_parameters/#parameters-wider-than-32-bits" >}})                                   | 48 |

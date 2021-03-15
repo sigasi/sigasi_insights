@@ -109,7 +109,7 @@ Currently the following external compilers are supported:
 | [Xilinx Vivado](/manual/vivado) | true                  | true                     |
 | Cadence Incisive                | true                  | false                    |
 | [OneSpin](/manual/onespin)      | true                  | (run elaboration checks) |
-| GHDL                            | true                  | true                     |
+| [GHDL](/manual/ghdl)            | true                  | true                     |
 
 ### Notes
 
@@ -207,13 +207,16 @@ last configuration by simply clicking
 In the arguments field you can use [variables](https://help.eclipse.org/photon/topic/org.eclipse.platform.doc.user/concepts/concepts-exttools.htm), which are automatically expanded when the external tool is run.
 This allows you to do things like adding the currently selected file in the file explorer as an argument for an external tool configuration (`${resource_path}`).
 
-Sigasi Studio adds following variables for VHDL and (System)Verilog projects:
+Sigasi Studio adds following variables and parameters for VHDL and (System)Verilog projects:
 
 
-| Variable Name           | Description                                                                                                                                     |
-|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `${library:<argument>}` | Get the library name of `<argument>`. For example, to the get the library of the currently selected resource use `${library:${resource_path}}` |
-| `${sigasi_toplevel}`    | Get the name of the current top level name                                                                                                      |
+| Variable Name                     | Description                                                   |
+| ---                               | ---                                                           |
+| `${library:<argument>}`           | Get the library name of `<argument>`. For example, to the get the library of the currently selected resource use `${library:${resource_path}}` |
+| `${sigasi_toplevel}`              | Get the name of the current top level: `library.name`         |
+| `${sigasi_toplevel:short}`        | Get the name of the current top level without library: `name` |
+| `${sigasi_toplevel:project_path}` | Get the path of the current top level's project root          |
+
 
 
 ## Creating a Builder

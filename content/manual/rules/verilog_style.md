@@ -39,5 +39,29 @@ header comment matches a pattern (rule 22). By default, the pattern is empty whi
 The pattern can be configured through **Window > Preferences > Sigasi > (System)Verilog > Naming conventions > File header* and uses
 the [Java regex syntax](https://docs.oracle.com/javase/8/docs/api/index.html?java/util/regex/Pattern.html).
 
+## Multiple statements per line
 
-{{% lintrule sv 17 18 20 21 22 %}}
+For readability, each statement should be on a separate line. Sigasi
+Studio will flag a warning if a line of code contains multiple
+statements (rule 47).
+
+<pre>module rule47;
+    reg A, B, C, D, K, M;
+    reg EN;
+
+    <span class="uglycode">assign A = B & C, D = K & M;</span>    // multiple statements in one line: less readable
+
+    <span class="goodcode">assign A = B & C;</span>               // one statement per line: more readable
+    <span class="goodcode">assign D = K & M;</span>
+
+    always@(*)
+        if(EN==1'b1) begin
+            <span class="uglycode">A = B & C; D = K & M;</span>   // multiple statements in one line: less readable
+
+            <span class="goodcode">A = B & C;</span>              // one statement per line: more readable
+            <span class="goodcode">D = K & M;</span>
+        end
+		
+endmodule</pre>
+
+{{% lintrule sv 17 18 20 21 22 47 %}}

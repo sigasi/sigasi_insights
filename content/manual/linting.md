@@ -31,13 +31,15 @@ in the design.
 
 The Sigasi Studio VHDL linter has reasonable defaults for the severity level of
 reported lint problems. However, the severity level of certain classes
-of lint is configurable for additional flexibility. The configuration
-interface is available in **Window \> Preferences \> VHDL \>
-Errors/Warnings**.
+of linting rules is configurable for additional flexibility. The configuration
+interface to configure severities for the entire workspace is available through:
 
-{{< figure src="/img/manual/problemseveritypreferencepage.png" alt="Configuring the severity of Sigasi Studio linting checks" >}}
+* For (System)Verilog rules: **Window > Preferences > Sigasi > (System)Verilog > Errors/Warnings**
+* For VHDL rules: **Window > Preferences > Sigasi > VHDL > Errors/Warnings**
 
-[You can also configure the severity level per project.](#project-specific-linting-settings)
+{{< figure src="/img/manual/problemseveritypreferencepage.png" alt="Configuring the severity of Sigasi Studio linting checks" link="/img/manual/problemseveritypreferencepage.png" >}}
+
+You can also [configure the severity level per project](#project-specific-linting-settings).
 
 ## Suppressing warnings
 
@@ -73,9 +75,10 @@ The currently available linting rules are described in detail on the following p
 
 ## Severity of Linting checks
 
-The default way to configure the severity of the Sigasi Studio linting checks is to set their severity in the **Errors/Warnings** preference page.
-You can override these setting by creating a settings file for your projects.
+Sigasi Studio offers 2 ways of configuring the severity of linting checks.
 
+* For the entire workspace, through the **Window > Preferences** dialog as [described above](#configuring-the-severity-level).
+* You can override these setting by creating a settings file for your projects.  
 In each project, you can override the coding rules settings. You can override rules for the **entire project**, for **folders** in the project, or for individual **files**.
 
 ## Errors/Warnings property page
@@ -83,6 +86,13 @@ In each project, you can override the coding rules settings. You can override ru
 To configure the severity level, right click the project (or file or folder) in the Project Explorer and select **Properties > VHDL Errors/Warnings** or **Properties > SystemVerilog Errors/Warnings**.
 
 {{< figure src="/img/manual/linting_severity_per_project.png" alt="Configure linting severity per project" link="/img/manual/linting_severity_per_project.png" >}}
+
+On the top of the dialog, select *Enable project specific settings* to activate the severity level on a project base.
+Enabling this setting will override any settings specified at the workspace level.
+For each of the available ID's, you can choose from a drop-down list or you can set all severities at once using the drop-down list on top.
+
+Note that choosing the *default* setting does _not_ inherit from the workspace settings.
+It will apply the Sigasi built-in default for a linting rule.
 
 Project settings are stored in this settings file:
 

@@ -17,7 +17,7 @@ You can see it in action in the images below:
 This BlockDiagram  
 {{< figure src="/img/manual/BdOriginal.png" alt="Original BlockDiagram" >}}  
 Turns into:  
-{{< figure src="/img/manual//BdFiltered.png" alt="Filtered BlockDiagram" >}}  
+{{< figure src="/img/manual/BdFiltered.png" alt="Filtered BlockDiagram" >}}  
 
 This StateMachine  
 {{< figure src="/img/manual/FsmOriginal.png" alt="Original StateMachine" >}}  
@@ -150,5 +150,6 @@ StateMachines are configured in the same way as the above BlockDiagrams, except 
 The header is also slightly different, the syntax is as follows:  
 `statemachine architecture : state_variable`.
 
-For an example you can check out `4_state_machines.vhd` (in our VHDL Tutorial) with [this](/resources/tech/using-graphics-configuration/4_state_machines.statemachine) filter file.
+For an example you can check out `step_3_state_machines.vhd` (in our VHDL Tutorial) with [this](/resources/tech/using-graphics-configuration/step_3_state_machines.statemachine) filter file.
 
+{{< figure src="/img/manual/statemachine_configured.png" alt="Example of a state machine diagram configuration" link="/img/manual/statemachine_configured.png" >}}

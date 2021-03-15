@@ -122,8 +122,8 @@ You do this by adding `show : instantiations` between the header and the group d
 ### StateMachine
 
 StateMachines are just like the BlockDiagrams above, except the only `Type` that can be used is `state`.
-The header is also slightly different, the syntax is as follows: `statemachine architecture : state_variable`.
-For an example you can check out `4_state_machines.vhd` (in our VHDL Tutorial) with [this](/resources/tech/using-graphics-configuration/4_state_machines.statemachine) filter file.
+The header is also slightly different, the syntax is as follows: `statemachine architecture : ^state_variable`.
+For an example you can check out `step_3_state_machines.vhd` (in our VHDL Tutorial) with [this](/resources/tech/using-graphics-configuration/step_3_state_machines.statemachine) filter file.
 
 ## Things to remember
 

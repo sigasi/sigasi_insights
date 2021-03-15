@@ -80,4 +80,9 @@ XL code rules require a {{< xl >}} or {{< xprt >}} license.
 |                           | [Filename must contain primary unit name]({{< ref "check-that-filename-contains-primary-unit-name" >}})                              | 189 |
 |                           | [Empty loop statement]({{< ref "loops" >}})                                                                                          | 190 |
 |                           | [Entity name is a Verilog or SystemVerilog keyword]({{< ref "verilog-keywords" >}})                                                  | 192 |
+|                           | [Instantiation mismatch]({{< ref "vhdl_entity_instance" >}})                                                                         | 198 |
+|                           | Circular compilation dependency                                                                                                      | 203 |
+|                           | [Type declaration not allowed in expression]({{< ref "vhdl_type_expr" >}})                                                           | 209 |
+|                           | [Index out of range]({{< ref "vhdl_array_range" >}})                                                                                 | 210 |
+|                           | [Slice has wrong direction]({{< ref "vhdl_array_range" >}})                                                                          | 211 |
 

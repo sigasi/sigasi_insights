@@ -70,7 +70,8 @@ You can also select the VHDL version or the version of `.v` files.
 
 After creating a new project, you can add existing files by dragging
 them from your filesystem into the project explorer. New files can be
-added by clicking **File \> New \> VHDL file** or **File \> New \> (System)Verilog file**.
+added by clicking **File \> New \> VHDL file**, **File \> New \> Verilog file**
+or **File \> New \> SystemVerilog file**.
 
 # Other ways to set up a project
 

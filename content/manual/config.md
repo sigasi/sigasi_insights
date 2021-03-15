@@ -7,7 +7,7 @@ pager: true
 
 # Choosing your VHDL and Verilog version
 
-Sigasi Studio supports VHDL version 1993, 2002 and 2008 and Verilog (2005) and SystemVerilog (2012).
+Sigasi Studio supports VHDL version 1993, 2002, 2008 and 2019 and Verilog (2005) and SystemVerilog (2012).
 You can select the default VHDL version to use in: **Window > Preferences > Sigasi > VHDL**.
 You can set the default Verilog version in: **Window > Preferences > Sigasi > (System)Verilog**.
 
