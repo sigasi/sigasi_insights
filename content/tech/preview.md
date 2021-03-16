@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.11)
 layout: page
 pager: true
-date: 2021-03-12
+date: 2021-03-16
 comments: true
 ---
 
@@ -117,6 +117,10 @@ The following VHDL 2019 changes are being supported:
 {{< figure src="/img/releasenotes/preview/GhdlSplitArguments.png" title="Ghdl split simulation arguments" width="500">}}
 
 * Improved memory consumption for specific kinds of project setups
+* We now show a dialog when resetting the library mapping to make sure users do not accidentally override their Common Libraries
+
+{{< figure src="/img/releasenotes/preview/ResetLibraryMappingDialog.png" title="Reset library mapping dialog" width="500">}}
+
 * **[VHDL]** Default values for generics are now part of the autocompleted component declaration
 * **[VHDL]** Allow multiple capitalization differences at once to be fixed from the problems view
 * **[VHDL]** Improved auto indentation for procedures
@@ -155,6 +159,10 @@ The following VHDL 2019 changes are being supported:
 
 * **[Verilog]** Support conditional operator (ternary operator) in transitions of state
 * **[Verilog]** Improved checking of duplicate, unresolved, too many or missing formals in instantiation
+* **[Verilog]** Block diagrams now show edges for many more constructs
+
+{{< figure src="/img/releasenotes/preview/MoreEdgesInSvBlockDiagram.png" title="More edges in SV block diagram" width="500" >}}
+
 * **[Mixed]** Direct instantiations of Verilog modules in VHDL code is now shown in block diagrams
 
 {{< figure src="/img/releasenotes/preview/DirectInstantiationOfModuleInVHDL.png" title="Direct instantiation of a module in VHDL shown in Block diagram view" width="500" >}}
