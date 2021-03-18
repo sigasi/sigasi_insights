@@ -2,23 +2,15 @@ $sg-dark-purple: #262262;
 $sg-orange: #f47920;
 $sg-red: #ed1c24;
 
-
 html, body {
     scroll-padding-top: 42px;
 }
 
-a {
+.sg-front a {
     color: $sg-dark-purple;
 }
-a:hover {
+.sg-front a:hover {
     color: $sg-orange;
-}
-
-p > a, p > strong > a, p > em > a {
-    color: $sg-orange;
-}
-p > a:hover, p > strong > a:hover, p > em > a:hover {
-    color: $sg-red;
 }
 
 .hanchor { font-size: 100%; visibility: hidden; color:#999;}
