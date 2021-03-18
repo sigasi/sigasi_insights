@@ -106,20 +106,20 @@ In addition we also added support for:
 
 # Other New and Noteworthy Changes
 
-* Improved monitoring and canceling of external compilers. 
+* Improved monitoring and canceling of external compilers
 * We now show a warning dialog when you select **Set Library > Reset library mapping** to make sure users do not accidentally reset their library mappings (Note that this is recoverable by opening the `.library_mapping.xml` file and reverting it to an earlier version)
 {{< figure src="/img/releasenotes/4.11/ResetLibraryMappingDialog.png" title="Reset library mapping dialog" width="500">}}
-* The *Report Encrypted Regions* check no longer underlines whole regions with red squiggly lines. It now shows just one marker instead.
+* The *Report Encrypted Regions* check no longer underlines whole regions with red squiggly lines. It now shows just one marker instead
 * Improved error reporting for documentation export when the exported resources already exist and can't be overwritten
 * Improved punctuation in our messages
 * Split of simulation arguments to a separate field in the [toolchain preferences for GHDL]({{< ref "/manual/ghdl.md" >}})
 {{< figure src="/img/releasenotes/4.11/GhdlSplitArguments.png" title="Ghdl split simulation arguments" width="500">}}
-* We updated Eclipse in the standalone Sigasi Studio to **[Eclipse 2020-12](https://www.eclipse.org/eclipse/news/4.18/platform.php)**.
+* We updated Eclipse in the standalone Sigasi Studio to **[Eclipse 2020-12](https://www.eclipse.org/eclipse/news/4.18/platform.php)**
 * Improved hovers in [Graphics Configuration files](https://insights.sigasi.com/manual/graphics/) hovers
 * Updated the Xtext dependency to 2.24.0
 * Chromium was Updated to 76.0.12
 * Sigasi Studio is now bundled with a **Java 15 runtime environment**. We also improved the way we bundle the JRE in Sigasi Studio. It is now bundled as an updatable feature. So from now on, the JRE is automatically updated with Sigasi Studio.  
-**Note that you may run into the error dialog below, when you restart Sigasi Studio after the update** because the JRE has changed. If you close the dialog, and restart Sigasi Studio manually, everything should work as expected.
+**Note that you may run into the error dialog below, when you restart Sigasi Studio after the update** because the JRE has changed. If you close the dialog, and restart Sigasi Studio manually, everything should work as expected
 {{< figure src="/img/releasenotes/4.10/jre_update_error.png" link="/img/releasenotes/4.10/jre_update_error.png" title="Expected error after update. Restart will solve the issue" width="200">}}
 
 ## ALINT Deprecation warning
