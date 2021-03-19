@@ -1,35 +1,42 @@
 items:
   - title: Download and install
     icon: download
-    content: <ul class="uk-list">
-      <li><a href="https://www.sigasi.com/download/">Download Sigasi Studio</a></li>
-      <li><a href="/screencasts/download_install/">Installation screencast</a></li>
-      <li><a href="/manual/setup/">Installation manual</a></li>
-      </ul>
+    content:
+      - title: Download Sigasi Studio
+        url: https://www.sigasi.com/download/
+      - title: Installation screencast
+        url: /screencasts/download_install/
+      - title: Installation manual
+        url: /manual/setup/
   - title: Configure your license
     icon: settings
-    content: <ul class="uk-list">
-      <li><a href="https://www.sigasi.com/try-form/">Get your license</a></li>
-      <li><a href="/screencasts/license-configuration/">License configuration screencast</a></li>
-      <li><a href="https://insights.sigasi.com/manual/license-key/">License configuration manual</a></li>
-      </ul>
-    url: https://www.sigasi.com/try-form/
+    content:
+      - title: Get your license
+        url: https://www.sigasi.com/try-form/
+      - title: License configuration screencast
+        url: /screencasts/license-configuration
+      - title: License configuration manual
+        url: https://insights.sigasi.com/manual/license-key/
   - title: Work on the tutorial projects
     icon: file-text
-    content: <ul class="uk-list">
-      <li><a href="/tutorial/">Where to find the tutorials</a></li>
-      <li><a href="/manual/keyshortcuts/">Learn the keyboard shortcuts</a></li>
-      </ul>
+    content:
+      - title: Where to find the tutorials
+        url: /tutorial/
+      - title: Learn the keyboard shortcuts
+        url: /manual/keyshortcuts/
   - title: Additional demo projects
     icon: github-alt
-    content: <ul class="uk-list">
-      <li><a href="https://github.com/sigasi/sigasi_demos">GitHub repository with demo projects</a></li>
-      <li><a href="/screencasts/demo-projects/">Demo projects screencast</a></li>
-      </ul>
+    content:
+      - title: GitHub demo projects repository
+        url: https://github.com/sigasi/sigasi_demos
+      - title: Demo projects screencast
+        url: /screencasts/demo-projects/
   - title: Further steps
     icon: bookmark
-    content: <ul class="uk-list">
-      <li><a href="/manual/">Explore the Sigasi Studio manual</a></li>
-      <li><a href="/screencasts/">Explore more screencasts</a></li>
-      <li><a href="/tech/">Read tech articles</a></li>
-      </ul>
+    content:
+      - title: Explore the Sigasi Studio manual
+        url: /manual/
+      - title: Explore more screencasts
+        url: /screencasts/
+      - title: Read tech articles
+        url: /tech/

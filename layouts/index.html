@@ -8,19 +8,17 @@
                 <div class="uk-card uk-card-hover uk-card-body uk-padding-remove-bottom">
                     <h2>Step {{ add $index 1 }} <span class="uk-margin-left" uk-icon="icon: {{ $element.icon }}; ratio: 2"></span></h2>
                     <h3>{{ $element.title }}</h3>
-                    {{ with $element.content }}
-                    {{ . | markdownify }}
+                    <ul class="uk-list">
+                    {{ range $element.content }}
+                    <li><span uk-icon="link"></span><a href="{{ .url }}">{{ .title }}</a></li>
                     {{ end }}
-                    <a href="{{ $element.action_url }}">{{ $element.action_text }}</a><br>
-                    {{ with .Site.GetPage $element.video_url }}
-                    {{ .Title }}
-                    {{ end }}
+                    </ul>
                 </div>
                 {{ end }}
             </div>
         </div>
     </div>
-    <div class="uk-padding uk-padding-remove-left uk-padding-remove-top">
+    <div class="uk-padding uk-padding-remove-left">
         <hr>
         <div class="uk-child-width-1-2@m" data-uk-grid>
             <div>
