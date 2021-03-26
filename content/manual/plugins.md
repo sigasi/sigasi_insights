@@ -87,7 +87,9 @@ Some other popular revision control systems include:
 
 ## Other languages
 
-* [Eclipse Tcl support in Sigasi Studio](/tech/eclipse_tcl_support_in_sigasi.html)
+* Tcl: see the [Eclipse Tcl support in Sigasi Studio]({{< ref "/tech/eclipse_tcl_support_in_sigasi.md" >}}) tech article.
+* Python: You can add support for Python to Sigasi Studio by installing the [PyDev](https://marketplace.eclipse.org/content/pydev-python-ide-eclipse) Eclipse plugin.
+Use <https://www.pydev.org/updates> as update site.
 
 ## Remote collaboration
 
