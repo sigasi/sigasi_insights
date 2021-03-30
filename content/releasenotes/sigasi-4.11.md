@@ -1,6 +1,7 @@
 ---
 title: Sigasi Studio 4.11
 date: 2021-03-18
+lastmod: 2021-03-30
 comments: true
 pager: true
 ---
@@ -179,3 +180,16 @@ We plan to remove the legacy ALINT implementation in Sigasi Studio in the next r
 
 We recommend at least **4GB of memory** available for Sigasi Studio,
 and you need **about 300MB** of free disk space.
+
+# Sigasi Studio 4.11.1 point release
+
+On March 30 we released Sigasi Studio 4.11.1. This release fixes the following reported issues:
+
+* Allow correct updates/installation of Sigasi Studio Eclipse Plugin in recent Eclipse installations
+* [VHDL] Fixed formatting for specific types of port map and aggregate combinations
+* [VHDL] Allow formatting of files using encrypted regions
+* [VHDL] Attached a QF to set the project to VHDL 2019 to all VHDL 2019 related errors
+* [Verilog] Improved highlighting of `localparam`s in the dark theme
+* [Verilog] Fixed a rare issue where hovers weren't being shown
+
+Thanks for all the bug reports and enabling Talkback.
