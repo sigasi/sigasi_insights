@@ -185,11 +185,11 @@ and you need **about 300MB** of free disk space.
 
 On March 30 we released Sigasi Studio 4.11.1. This release fixes the following reported issues:
 
-* Allow correct updates/installation of Sigasi Studio Eclipse Plugin in recent Eclipse installations
+* Allow correct updates/installation of Sigasi Studio Eclipse Plugin in recent Eclipse installations (in particular [Eclipse 2021-03](https://www.eclipse.org/eclipse/news/4.19/platform.php) )
 * [VHDL] Fixed formatting for specific types of port map and aggregate combinations
-* [VHDL] Allow formatting of files using encrypted regions
-* [VHDL] Attached a QF to set the project to VHDL 2019 to all VHDL 2019 related errors
-* [Verilog] Improved highlighting of `localparam`s in the dark theme
-* [Verilog] Fixed a rare issue where hovers weren't being shown
+* [VHDL] Allow formatting of files that contain encrypted regions
+* [VHDL] Enabled the VHDL 2019 Quick Fix for all VHDL 2019 related errors
+* [Verilog] Improved highlighting of `localparam`s in dark themes
+* [Verilog] Fixed a rare issue where hovers were not being shown
 
 Thanks for all the bug reports and enabling Talkback.
