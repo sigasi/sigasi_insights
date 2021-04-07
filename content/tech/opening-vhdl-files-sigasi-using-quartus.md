@@ -43,7 +43,7 @@ Sigasi mirrors the Quartus project, and so these mirrored projects are not regul
 
 ## Known issues:
 
-This is still a **beta** release, so we have some things that are not great yet. Please "let us know":/forums/support-forum what you like and what we should improve.
+This is still a **beta** release, so we have some things that are not great yet. Please [let us know](mailto:support@sigasi.com) what you like and what we should improve.
 
 * When you open a file in Quartus, the Sigasi window may not snap to the foreground and get the focus. Most operating systems don't allow windows to jump to the foreground as part of their malware protection. We're trying to figure out a way around this.
 * When you create a new file in Quartus (**File > New... > VHDL File**), Sigasi opens with a new file named @Vhdl1.vhd@, but the file is not added to the project.
