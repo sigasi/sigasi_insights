@@ -12,7 +12,7 @@ bannerad: true
 ---
 
 <img style="float:right" src="/img/tech/epub.png" />
-In November last year, I attended a very interesting session of [Torkild Resheim about creating e-books in Eclipse](https://www.slideshare.net/torkildr/eclipsecon-europe-2011-build-your-epubs-with-eclipse) at EclipseCon Europe in Nuremburg. Torkild demonstrated a [new plugin](https://bugs.eclipse.org/bugs/show_bug.cgi?id=332122)  he developed that converts wiki markup files into e-books. I intended to try this as soon as I got home from the conference. But I did not get to it until now.
+In November last year, I attended a very interesting session of Torkild Resheim about creating e-books in Eclipse at EclipseCon Europe in Nuremburg. Torkild demonstrated a [new plugin](https://bugs.eclipse.org/bugs/show_bug.cgi?id=332122)  he developed that converts wiki markup files into e-books. I intended to try this as soon as I got home from the conference. But I did not get to it until now.
 
 The e-book plugin is a new extension to the wikitext component of the [Mylyn Docs project](http://www.eclipse.org/projects/project.php?id=mylyn.docs). It is not officially released yet, but here are some easy steps on how to create an e-book with Eclipse today:
 
