@@ -116,7 +116,7 @@ In addition we also added support for:
 * Split of simulation arguments to a separate field in the [toolchain preferences for GHDL]({{< ref "/manual/ghdl.md" >}})
 {{< figure src="/img/releasenotes/4.11/GhdlSplitArguments.png" title="Ghdl split simulation arguments" width="500">}}
 * We updated Eclipse in the standalone Sigasi Studio to **[Eclipse 2020-12](https://www.eclipse.org/eclipse/news/4.18/platform.php)**
-* Improved hovers in [Graphics Configuration files](https://insights.sigasi.com/manual/graphics/) hovers
+* Improved hovers in [Graphics Configuration files]({{< ref "manual/graphics.md" >}}) hovers
 * Updated the Xtext dependency to 2.24.0
 * Chromium was Updated to 76.0.12
 * Sigasi Studio is now bundled with a **Java 15 runtime environment**. We also improved the way we bundle the JRE in Sigasi Studio. It is now bundled as an updatable feature. So from now on, the JRE is automatically updated with Sigasi Studio.  
@@ -186,10 +186,10 @@ and you need **about 300MB** of free disk space.
 On March 30 we released Sigasi Studio 4.11.1. This release fixes the following reported issues:
 
 * Allow correct updates/installation of Sigasi Studio Eclipse Plugin in recent Eclipse installations (in particular [Eclipse 2021-03](https://www.eclipse.org/eclipse/news/4.19/platform.php) )
-* [VHDL] Fixed formatting for specific types of port map and aggregate combinations
-* [VHDL] Allow formatting of files that contain encrypted regions
-* [VHDL] Enabled the VHDL 2019 Quick Fix for all VHDL 2019 related errors
-* [Verilog] Improved highlighting of `localparam`s in dark themes
-* [Verilog] Fixed a rare issue where hovers were not being shown
+* **[VHDL]** Fixed formatting for specific types of port map and aggregate combinations
+* **[VHDL]** Allow formatting of files that contain encrypted regions
+* **[VHDL]** Enabled the VHDL 2019 Quick Fix for all VHDL 2019 related errors
+* **[Verilog]** Improved highlighting of `localparam`s in dark themes
+* **[Verilog]** Fixed a rare issue where hovers were not being shown
 
 Thanks for all the bug reports and enabling Talkback.

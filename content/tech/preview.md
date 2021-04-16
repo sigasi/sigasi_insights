@@ -2,11 +2,11 @@
 title: Sigasi Studio Preview (4.12)
 layout: page
 pager: true
-date: 2021-03-18
+date: 2021-04-15
 comments: true
 ---
 
-For those users who want to get early access to the features and bugfixes of upcoming Sigasi Studio releases, we have set up an extra release channel, called "*Sigasi Preview*".
+For those users who want to get early access to the features and bugfixes of upcoming Sigasi Studio releases, we have set up an extra release channel, called "_Sigasi Preview_".
 
 The Sigasi Preview release channel offers more frequent releases than the official releases. This page gives an introduction to the most important changes.
 
@@ -16,32 +16,85 @@ Although these preview releases are less rigorously tested than the official rel
 
 # Current preview release
 
-No documented changes since the [4.11 release]({{< ref "/releasenotes/sigasi-4.11.md" >}}).
+# Improvements
+
+- **[VUnit]** Added a checkbox to direct the output from VUnit to a `vunit_out` folder in the project root
+  {{< figure src="/img/releasenotes/4.12/VUnitOutputCheckbox.png" title="Checkbox for setting VUnit output to the project root" width="500">}}
+- Improved support for opening HDL files with arbitrary file extensions  
+  (**File > Open With > Other... > VHDL/Verilog editor**)
+  {{< figure src="/img/releasenotes/4.12/ArbitraryExtensionHdlCode.png" title="HDL support for code in files with arbitrary file extensions" width="500">}}
+- **[VHDL]** Mark unterminated string literals as errors
+  {{< figure src="/img/releasenotes/4.12/UnterminatedStringLiteralError.png" title="Error for unterminated VHDL string literals" width="500">}}
+- **[VHDL]** Added support for VHDL 2019 private variable declaration and aliases in protected declarations
+  ```vhdl
+  type SharedCounter is protected
+      function increment(i : integer) return integer;
+      private variable v : integer := 0;
+      alias aliasName is increment;
+      alias aliasName2 is aliasName;
+  end protected SharedCounter;
+  ```
+- **[Verilog]** Added navigation to constructor formal arguments
+- **[Verilog]** Added a warning for empty parameters in Verilog modules and instantiations
+  {{< figure src="/img/releasenotes/4.12/EmptyParametersWarning.png" title="Warnings for empty parameters" width="500">}}
+
+# Bug fixes
+
+- Fixed highlight flickering
+- Made sure that state machine diagrams shown competely
+- Improved spelling and punctuation for toolchain preferences
+- Improved error messages in the [Graphics Configurations]({{< ref "manual/graphics.md" >}})
+- Improved linking to HDL design units in [Graphics Configurations]({{< ref "manual/graphics.md" >}}) when the casing is different between the two worlds
+- **[VHDL]** Fixed name shadowing with enum literals
+- **[VHDL]** Fixed false positive error for empty generic package types
+- **[VHDL]** The `Add missing choices` Quick Fix for switch-case statements can now add more than 5 items
+- **[VHDL]** Fixed highlighting for bit literals as first argument in qualified expressions e.g. `std_logic'('0')`
+- **[VHDL]** Don't add extra newlines during the `Sort associations` Quick Fix when non-platform newlines are being used
+- **[VHDL]** Fixed linking of packages importing other packages
+- **[VHDL]** Fixed false positive error for missing `"+"`-operator
+- **[VHDL]** Fixed linking for record types in port maps
+- **[VHDL]** Fixed formatting alignment for port declarations that were forcefully split up by single-line comments
+- **[VHDL]** Fixed formatting for else statements that only contain comments
+- **[VHDL]** Fixed flickering linking errors with VHDL 2019 code
+- **[VHDL]** Fixed false positive error for package instances within packages
+- **[Verilog]** Fixed Verilog outline for packages with include directives
+- **[Verilog]** Fixed false positive error for split port declarations in [User Defined Primitives](https://www.chipverify.com/verilog/verilog-udp)
+- **[Verilog]** Fixed missing error marker after removing an included file
+- **[Verilog]** Fixed highlighting of `.h` files
+- **[Verilog]** Fixed some confusion about which Quick Fix to apply for problems in the **Problems View**
+- **[Verilog]** Fixed hyperlinks to classes in exported documentation
+
+# Updates
+
+- Updated ELK to 0.7.1
+- Updated Chromium to 76.0.15
+- Updated to Xtext 2.25
+- Updated to **[Eclipse 2021-03](https://www.eclipse.org/eclipse/news/4.19/platform.php)**
 
 # Update or install?
 
 You can download the stand-alone version of the latest preview from:
 
-* <https://download.sigasi.com/preview/latest/com.sigasi.hdt.product-linux.gtk.x86_64.zip>
-* <https://download.sigasi.com/preview/latest/com.sigasi.hdt.product-macosx.cocoa.x86_64.zip>
-* <https://download.sigasi.com/preview/latest/com.sigasi.hdt.product-win32.win32.x86_64.zip>
+- <https://download.sigasi.com/preview/latest/com.sigasi.hdt.product-linux.gtk.x86_64.zip>
+- <https://download.sigasi.com/preview/latest/com.sigasi.hdt.product-macosx.cocoa.x86_64.zip>
+- <https://download.sigasi.com/preview/latest/com.sigasi.hdt.product-win32.win32.x86_64.zip>
 
 You can also update from (configure via Preferences > Install/Update > Available Software Sites > Add...) :
-  https://download.sigasi.com/preview/studio/
+https://download.sigasi.com/preview/studio/
 
 SHA sums ([more info]({{< ref "/faq.md#how-can-i-check-a-sha-sum" >}})) can be checked via <https://download.sigasi.com/preview/latest/sha1.txt>.
 
 # System requirements
 
-* Sigasi Studio standalone is supported on:
-    * Windows: Windows 10 (64 bit) or newer
-    * macOS 10.15 Catalina or newer
-    * Linux: RedHat Enterprise Linux RHEL 7.7 (64 bit) or newer
-        * Sigasi Studio depends on `libXss.so` which can be obtained by installing `libXScrnSaver`
-    * More information on supported OSes can be found [on the Eclipse website](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_18.xml#target_environments)
-* Sigasi Studio as plugin in your own Eclipse installation:
-    * Eclipse 4.8 *Photon* up to and including Eclipse IDE 2020-12
-    * Java JRE 11 or higher
+- Sigasi Studio standalone is supported on:
+  - Windows: Windows 10 (64 bit) or newer
+  - macOS 10.15 Catalina or newer
+  - Linux: RedHat Enterprise Linux RHEL 7.7 (64 bit) or newer
+    - Sigasi Studio depends on `libXss.so` which can be obtained by installing `libXScrnSaver`
+  - More information on supported OSes can be found [on the Eclipse website](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_18.xml#target_environments)
+- Sigasi Studio as plugin in your own Eclipse installation:
+  - Eclipse 4.8 _Photon_ up to and including Eclipse IDE 2021-03
+  - Java JRE 11 or higher
 
 We recommend at least **4GB of memory** available for Sigasi Studio,
 and you need **about 300MB** of free disk space.
