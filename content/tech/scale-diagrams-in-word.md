@@ -6,6 +6,8 @@ pager: true
 author: Bart Brosens
 comments: true
 bannerad: true
+tags:
+  - documentation
 ---
 
 Since [Sigasi Studio 4.5]({{< ref "/releasenotes/sigasi-4.05.md" >}}), it is possible to export your documentation in HTML format.
