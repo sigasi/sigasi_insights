@@ -53,7 +53,7 @@ and you need **about 300MB** of free disk space.
 
 ### Linux
 
-### RHEL 7.7 (64 bit) or newer
+#### RHEL 7.7 (64 bit) or newer
 * Sigasi Studio Standalone is supported
 * Sigasi Studio Plugin is supported when using
     * Eclipse 4.8 *Photon* up to Eclipse IDE 2020-09
@@ -61,6 +61,12 @@ and you need **about 300MB** of free disk space.
 
 #### Other Linux distributions
 * No known issues as long as Eclipse is running on your OS
+
+#### Which GTK version do I need?
+Sigasi Studio itself has no specific dependency on GTK. Eclipse does require a minimum version of GTK.
+The GTK version requirements of Eclipse can be found [here](https://www.eclipse.org/swt/faq.php#gtkstartup).
+
+
 
 ## What are the license server requirements?
 The license server (FlexNet) is supported on
@@ -494,7 +500,7 @@ Sometimes the graphics or editor views do not show on Linux.
 Here is how this issue can be resolved.
 
 ### Sigasi Studio 4.10 and higher
-The {{< page "sigasi-4.10.md" >}} improves displaying of graphics by including its own Chromium plugin.
+{{< page "sigasi-4.10.md" >}} improves displaying of graphics by including its own Chromium plugin.
 The Chromium plugin depends on `libXss.so` which can be obtained by installing `libXScrnSaver`.
 
 ### Sigasi Studio 4.9 and older
@@ -614,17 +620,11 @@ You can revert Sigasi to an older version with following procedure:
 
 Alternatively, you can [contact support](mailto:support@sigasi.com) for an older download location.
 
-## Problems on Ubuntu Linux
-
-* Black text on black hovers is not readable. See : <http://devshards.blogspot.it/2012/10/how-to-fix-unreadable-eclipse-tooltips.html>
-* Slow and choppy text scrolling: start Sigasi/Eclipse with this extra command line option: `--launcher.GTK_version 2`
-* Hanging with high CPU usage: start Sigasi/Eclipse with this extra command line option: `--launcher.GTK_version 2`
-
 ## Damaged app on Apple computers
 
 **Known issue on Apple computers**
 
-The following error message may pop up on Apple computers:
+The following error message may pop up on Apple computers when using Sigasi Studio [older than 4.10]({{< ref "releasenotes/sigasi-4.10.md#other-new-and-noteworthy-changes" >}}):
 ```
 Sigasi Studio.app is damaged and can't be opened. You should move it to the Trash
 ```
