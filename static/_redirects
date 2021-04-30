@@ -1,4 +1,12 @@
+# https://docs.netlify.com/routing/redirects/
 /tag/*                                 /tags/:splat
+
+# content based on 'Top resources not found' from Netlify analytics page
+
+/index.php                                                                           /
+/tech/sigasi-announces-free-educational-licenses                                     https://www.sigasi.com/try-form-edu/
+/tech/press-release-sigasi-integrates-aldec-simulator-accelerate-feedback-cycle      /tags/aldec/
+/tech/new-eda-20-company-plunify                                                     /opinion/new-eda-20-company-plunify/
 
 # Older tag links with spaces should be redirected
 /tags/Basic%20instruction/             /tags/basic-instruction/
