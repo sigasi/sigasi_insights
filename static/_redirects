@@ -8,6 +8,13 @@
 /tech/press-release-sigasi-integrates-aldec-simulator-accelerate-feedback-cycle      /tags/aldec/
 /tech/new-eda-20-company-plunify                                                     /opinion/new-eda-20-company-plunify/
 
+# fix redirect errors reported through main website
+/screencast/sigasi-pro-integration-quartus-ii      /screencasts/sigasi_pro_integration_with_altera_quartus_ii/
+/xilinx                                            /tags/xilinx/
+/emacs                                             /tags/emacs/
+/taxonomy/*                                        /tags/
+/vhdl-2008                                         /tags/vhdl-2008/
+
 # Older tag links with spaces should be redirected
 /tags/Basic%20instruction/             /tags/basic-instruction/
 /tags/best%20practices/                /tags/best-practices/
