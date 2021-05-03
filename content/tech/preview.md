@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.12)
 layout: page
 pager: true
-date: 2021-04-16
+date: 2021-05-03
 comments: true
 ---
 
@@ -18,6 +18,16 @@ Although these preview releases are less rigorously tested than the official rel
 
 # Improvements
 
+- Normalized punctuation in error messages
+- Made sure the `Value` doesn't overflow in the documentation export and view
+- Made sure to only show relevant design units in the documentation export dialog
+- Made sure to schedule a recovery build on startup when Sigasi Studio was force killed
+- Removed visual clutter from the graphical views when they are selected
+- Added the possibility of using a `sigasi-doc.css` in the root of the project to customize the documentation export
+  {{< figure src="/img/releasenotes/4.12/SigasiDocCss.png" title="Custom css for documentation export" width="500">}}
+- Added a separate column (`Description`) for code comments in the documentation view
+  {{< figure src="/img/releasenotes/4.12/DocumentationCommentColumn.png" title="Column for code comments in documentation view" width="500">}}
+- Added option to hide state machine conditions when exporting statemachines or documentation through `labels hide` in the [Graphics Configurations]({{< ref "manual/graphics.md" >}})
 - **[VUnit]** Added a checkbox to direct the output from VUnit to a `vunit_out` folder in the project root
   {{< figure src="/img/releasenotes/4.12/VUnitOutputCheckbox.png" title="Checkbox for setting VUnit output to the project root" width="500">}}
 - Improved support for opening HDL files with arbitrary file extensions  
@@ -41,10 +51,11 @@ Although these preview releases are less rigorously tested than the official rel
 # Bug fixes
 
 - Fixed highlight flickering
-- Made sure that state machine diagrams shown competely
+- Made sure that state machine diagrams show completely
 - Improved spelling and punctuation for toolchain preferences
 - Improved error messages in the [Graphics Configurations]({{< ref "manual/graphics.md" >}})
 - Improved linking to HDL design units in [Graphics Configurations]({{< ref "manual/graphics.md" >}}) when the casing is different between the two worlds
+- Fixed errors when selecting ports and edges in block diagrams
 - **[VHDL]** Fixed name shadowing with enum literals
 - **[VHDL]** Fixed false positive error for empty generic package types
 - **[VHDL]** The `Add missing choices` Quick Fix for switch-case statements can now add more than 5 items
@@ -67,7 +78,7 @@ Although these preview releases are less rigorously tested than the official rel
 # Updates
 
 - Updated ELK to 0.7.1
-- Updated Chromium to 76.0.15
+- Updated Chromium to 76.0.16
 - Updated to Xtext 2.25
 - Updated to **[Eclipse 2021-03](https://www.eclipse.org/eclipse/news/4.19/platform.php)**
 
