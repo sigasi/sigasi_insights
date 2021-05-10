@@ -51,9 +51,10 @@ As **update site**, you should use: <http://download.eclipse.org/releases/oxygen
 
 To install the [Subclipse](https://marketplace.eclipse.org/content/subclipse) plugin, perform these steps in the **Help > Install New Software...** window:
 
-* Add <https://download.eclipse.org/releases/2020-09/> (or the appropriate link for the Eclipse version the [release](/releasenotes) of Sigasi Studio is build on) to the **Work with:** line.
-* Add <https://dl.bintray.com/subclipse/releases/subclipse/latest/> to the same line (as documented on <https://github.com/subclipse/subclipse/wiki>).
-* Then search for subclipse and proceed with the installation. 
+* Add <https://subclipse.github.io/updates/> to the **Work with:** line. This will provide the latest version of Subclipse.
+* Then search for _Subclipse_ and proceed with the installation.
+
+To install older versions of Subclipse of if you need more information on Subclipse, you can refer to the documentation on <https://github.com/subclipse/subclipse/wiki>.
 
 ### ClearCase
 
