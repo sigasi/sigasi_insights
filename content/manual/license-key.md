@@ -186,10 +186,6 @@ To get the license back (to check the license out), open the license dialog **He
 
 If you have configured an environment variable with the location of a FlexNet license server, you can instruct Sigasi Studio **not** to check out a license by setting the Sigasi Studio License key to `none`.
 
-### Mix of Creator and XL licenses
-
-If your license server serves both the legacy {{< creator >}} and {{< xl >}} or {{< xprt >}} licenses, you can configure Sigasi Studio to only checkout Sigasi Studio **Creator** licenses (and **not** XL licenses) by enabling the "**Do not try to checkout floating Sigasi Studio XL licenses**" option on **Window > Preferences > Sigasi > License Key > Floating Options**
-
 ### Checking out and releasing the XPRT license
 
 If you have a license for {{< xprt >}}, this is actually licensed as a `com.sigasi.hdt.xl` FlexNet feature
