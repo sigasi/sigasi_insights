@@ -463,7 +463,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 <a name="constraint_expression"></a>**constraint\_expression**
 :  \[ <font color="purple"><b>soft</b></font> ]  <a href="#expression_or_dist">expression\_or\_dist</a> <font color="purple"><b>;</b></font>  
         | <a href="#uniqueness_constraint">uniqueness\_constraint</a> <font color="purple"><b>;</b></font>  
-        | <a href="#expression">expression</a> <font color="purple"><b>-></b></font> <a href="#constraint_set">constraint\_set</a>  
+        | <a href="#expression">expression</a> <font color="purple"><b>-&gt;</b></font> <a href="#constraint_set">constraint\_set</a>  
         | <font color="purple"><b>if</b></font> <font color="purple"><b>(</b></font> <a href="#expression">expression</a> <font color="purple"><b>)</b></font> <a href="#constraint_set">constraint\_set</a>  \[ <font color="purple"><b>else</b></font> <a href="#constraint_set">constraint\_set</a> ]  
         | <font color="purple"><b>foreach</b></font> <font color="purple"><b>(</b></font> <a href="#ps_or_hierarchical_array_identifier">ps\_or\_hierarchical\_array\_identifier</a>  \[ <a href="#loop_variables">loop\_variables</a> ]  <font color="purple"><b>)</b></font> <a href="#constraint_set">constraint\_set</a>  
         | <font color="purple"><b>disable</b></font> <font color="purple"><b>soft</b></font> <a href="#constraint_primary">constraint\_primary</a> <font color="purple"><b>;</b></font>
@@ -907,8 +907,8 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <font color="purple"><b>export</b></font> <a href="#dpi_spec_string">dpi\_spec\_string</a>  \[ <a href="#c_identifier">c\_identifier</a> <font color="purple"><b>=</b></font> ]  <font color="purple"><b>task</b></font> <a href="#task_identifier">task\_identifier</a> <font color="purple"><b>;</b></font>
   
 <a name="dpi_spec_string"></a>**dpi\_spec\_string**
-:  <font color="purple"><b>"</b></font> <font color="purple"><b>DPI-C</b></font> <font color="purple"><b>"</b></font>  
-        | <font color="purple"><b>"</b></font> <font color="purple"><b>DPI</b></font> <font color="purple"><b>"</b></font>
+:  <font color="purple"><b>&quot;</b></font> <font color="purple"><b>DPI-C</b></font> <font color="purple"><b>&quot;</b></font>  
+        | <font color="purple"><b>&quot;</b></font> <font color="purple"><b>DPI</b></font> <font color="purple"><b>&quot;</b></font>
   
 <a name="dpi_function_import_property"></a>**dpi\_function\_import\_property**
 :  <font color="purple"><b>context</b></font>  
@@ -975,10 +975,10 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <font color="purple"><b>%</b></font>  
         | <font color="purple"><b>==</b></font>  
         | <font color="purple"><b>!=</b></font>  
-        | <font color="purple"><b><</b></font>  
-        | <font color="purple"><b><=</b></font>  
-        | <font color="purple"><b>></b></font>  
-        | <font color="purple"><b>>=</b></font>  
+        | <font color="purple"><b>&lt;</b></font>  
+        | <font color="purple"><b>&lt;=</b></font>  
+        | <font color="purple"><b>&gt;</b></font>  
+        | <font color="purple"><b>&gt;=</b></font>  
         | <font color="purple"><b>=</b></font>
   
 <a name="overload_proto_formals"></a>**overload\_proto\_formals**
@@ -1092,8 +1092,8 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <font color="purple"><b>not</b></font> <a href="#property_expr">property\_expr</a>  
         | <a href="#property_expr">property\_expr</a> <font color="purple"><b>or</b></font> <a href="#property_expr">property\_expr</a>  
         | <a href="#property_expr">property\_expr</a> <font color="purple"><b>and</b></font> <a href="#property_expr">property\_expr</a>  
-        | <a href="#sequence_expr">sequence\_expr</a> <font color="purple"><b>|-></b></font> <a href="#property_expr">property\_expr</a>  
-        | <a href="#sequence_expr">sequence\_expr</a> <font color="purple"><b>|=></b></font> <a href="#property_expr">property\_expr</a>  
+        | <a href="#sequence_expr">sequence\_expr</a> <font color="purple"><b>|-&gt;</b></font> <a href="#property_expr">property\_expr</a>  
+        | <a href="#sequence_expr">sequence\_expr</a> <font color="purple"><b>|=&gt;</b></font> <a href="#property_expr">property\_expr</a>  
         | <font color="purple"><b>if</b></font> <font color="purple"><b>(</b></font> <a href="#expression_or_dist">expression\_or\_dist</a> <font color="purple"><b>)</b></font> <a href="#property_expr">property\_expr</a>  \[ <font color="purple"><b>else</b></font> <a href="#property_expr">property\_expr</a> ]  
         | <font color="purple"><b>case</b></font> <font color="purple"><b>(</b></font> <a href="#expression_or_dist">expression\_or\_dist</a> <font color="purple"><b>)</b></font> <a href="#property_case_item">property\_case\_item</a>  { <a href="#property_case_item">property\_case\_item</a> }  <font color="purple"><b>endcase</b></font>  
         | <a href="#sequence_expr">sequence\_expr</a> <font color="purple"><b>#-#</b></font> <a href="#property_expr">property\_expr</a>  
@@ -1200,7 +1200,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :  <font color="purple"><b>\[=</b></font> <a href="#const_or_range_expression">const\_or\_range\_expression</a> <font color="purple"><b>]</b></font>
   
 <a name="goto_repetition"></a>**goto\_repetition**
-:  <font color="purple"><b>\[-></b></font> <a href="#const_or_range_expression">const\_or\_range\_expression</a> <font color="purple"><b>]</b></font>
+:  <font color="purple"><b>\[-&gt;</b></font> <a href="#const_or_range_expression">const\_or\_range\_expression</a> <font color="purple"><b>]</b></font>
   
 <a name="const_or_range_expression"></a>**const\_or\_range\_expression**
 :  <a href="#constant_expression">constant\_expression</a>  
@@ -1299,12 +1299,12 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :  <font color="purple"><b>(</b></font> <a href="#trans_set">trans\_set</a> <font color="purple"><b>)</b></font>  { <font color="purple"><b>,</b></font> <font color="purple"><b>(</b></font> <a href="#trans_set">trans\_set</a> <font color="purple"><b>)</b></font> }
   
 <a name="trans_set"></a>**trans\_set**
-:  <a href="#trans_range_list">trans\_range\_list</a>  { <font color="purple"><b>=></b></font> <a href="#trans_range_list">trans\_range\_list</a> }
+:  <a href="#trans_range_list">trans\_range\_list</a>  { <font color="purple"><b>=&gt;</b></font> <a href="#trans_range_list">trans\_range\_list</a> }
   
 <a name="trans_range_list"></a>**trans\_range\_list**
 :  <a href="#trans_item">trans\_item</a>  
         | <a href="#trans_item">trans\_item</a> <font color="purple"><b>\[\*</b></font> <a href="#repeat_range">repeat\_range</a> <font color="purple"><b>]</b></font>  
-        | <a href="#trans_item">trans\_item</a> <font color="purple"><b>\[-></b></font> <a href="#repeat_range">repeat\_range</a> <font color="purple"><b>]</b></font>  
+        | <a href="#trans_item">trans\_item</a> <font color="purple"><b>\[-&gt;</b></font> <a href="#repeat_range">repeat\_range</a> <font color="purple"><b>]</b></font>  
         | <a href="#trans_item">trans\_item</a> <font color="purple"><b>\[=</b></font> <a href="#repeat_range">repeat\_range</a> <font color="purple"><b>]</b></font>
   
 <a name="trans_item"></a>**trans\_item**
@@ -1342,7 +1342,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 <a name="select_expression"></a>**select\_expression**[^footnote_24]
 :  <a href="#select_condition">select\_condition</a>  
         | <font color="purple"><b>!</b></font> <a href="#select_condition">select\_condition</a>  
-        | <a href="#select_expression">select\_expression</a> <font color="purple"><b>&&</b></font> <a href="#select_expression">select\_expression</a>  
+        | <a href="#select_expression">select\_expression</a> <font color="purple"><b>&amp;&amp;</b></font> <a href="#select_expression">select\_expression</a>  
         | <a href="#select_expression">select\_expression</a> <font color="purple"><b>||</b></font> <a href="#select_expression">select\_expression</a>  
         | <font color="purple"><b>(</b></font> <a href="#select_expression">select\_expression</a> <font color="purple"><b>)</b></font>  
         | <a href="#select_expression">select\_expression</a> <font color="purple"><b>with</b></font> <font color="purple"><b>(</b></font> <a href="#with_covergroup_expression">with\_covergroup\_expression</a> <font color="purple"><b>)</b></font>  \[ <font color="purple"><b>matches</b></font> <a href="#integer_covergroup_expression">integer\_covergroup\_expression</a> ]  
@@ -1652,14 +1652,14 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :  <font color="purple"><b>initial</b></font> <a href="#output_port_identifier">output\_port\_identifier</a> <font color="purple"><b>=</b></font> <a href="#init_val">init\_val</a> <font color="purple"><b>;</b></font>
   
 <a name="init_val"></a>**init\_val**
-:  <font color="purple"><b>1'b0</b></font>  
-        | <font color="purple"><b>1'b1</b></font>  
-        | <font color="purple"><b>1'bx</b></font>  
-        | <font color="purple"><b>1'bX</b></font>  
-        | <font color="purple"><b>1'B0</b></font>  
-        | <font color="purple"><b>1'B1</b></font>  
-        | <font color="purple"><b>1'Bx</b></font>  
-        | <font color="purple"><b>1'BX</b></font>  
+:  <font color="purple"><b>1&#39;b0</b></font>  
+        | <font color="purple"><b>1&#39;b1</b></font>  
+        | <font color="purple"><b>1&#39;bx</b></font>  
+        | <font color="purple"><b>1&#39;bX</b></font>  
+        | <font color="purple"><b>1&#39;B0</b></font>  
+        | <font color="purple"><b>1&#39;B1</b></font>  
+        | <font color="purple"><b>1&#39;Bx</b></font>  
+        | <font color="purple"><b>1&#39;BX</b></font>  
         | <font color="purple"><b>1</b></font>  
         | <font color="purple"><b>0</b></font>
   
@@ -1774,16 +1774,16 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <font color="purple"><b>\*=</b></font>  
         | <font color="purple"><b>/=</b></font>  
         | <font color="purple"><b>%=</b></font>  
-        | <font color="purple"><b>&=</b></font>  
+        | <font color="purple"><b>&amp;=</b></font>  
         | <font color="purple"><b>|=</b></font>  
         | <font color="purple"><b>^=</b></font>  
-        | <font color="purple"><b><<=</b></font>  
-        | <font color="purple"><b>>>=</b></font>  
-        | <font color="purple"><b><<<=</b></font>  
-        | <font color="purple"><b>>>>=</b></font>
+        | <font color="purple"><b>&lt;&lt;=</b></font>  
+        | <font color="purple"><b>&gt;&gt;=</b></font>  
+        | <font color="purple"><b>&lt;&lt;&lt;=</b></font>  
+        | <font color="purple"><b>&gt;&gt;&gt;=</b></font>
   
 <a name="nonblocking_assignment"></a>**nonblocking\_assignment**
-:  <a href="#variable_lvalue">variable\_lvalue</a> <font color="purple"><b><=</b></font>  \[ <a href="#delay_or_event_control">delay\_or\_event\_control</a> ]  <a href="#expression">expression</a>
+:  <a href="#variable_lvalue">variable\_lvalue</a> <font color="purple"><b>&lt;=</b></font>  \[ <a href="#delay_or_event_control">delay\_or\_event\_control</a> ]  <a href="#expression">expression</a>
   
 <a name="procedural_continuous_assignment"></a>**procedural\_continuous\_assignment**
 :  <font color="purple"><b>assign</b></font> <a href="#variable_assignment">variable\_assignment</a>  
@@ -1898,8 +1898,8 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <font color="purple"><b>wait\_order</b></font> <font color="purple"><b>(</b></font> <a href="#hierarchical_identifier">hierarchical\_identifier</a>  { <font color="purple"><b>,</b></font> <a href="#hierarchical_identifier">hierarchical\_identifier</a> }  <font color="purple"><b>)</b></font> <a href="#action_block">action\_block</a>
   
 <a name="event_trigger"></a>**event\_trigger**
-:  <font color="purple"><b>-></b></font> <a href="#hierarchical_event_identifier">hierarchical\_event\_identifier</a> <font color="purple"><b>;</b></font>  
-        | <font color="purple"><b>->></b></font>  \[ <a href="#delay_or_event_control">delay\_or\_event\_control</a> ]  <a href="#hierarchical_event_identifier">hierarchical\_event\_identifier</a> <font color="purple"><b>;</b></font>
+:  <font color="purple"><b>-&gt;</b></font> <a href="#hierarchical_event_identifier">hierarchical\_event\_identifier</a> <font color="purple"><b>;</b></font>  
+        | <font color="purple"><b>-&gt;&gt;</b></font>  \[ <a href="#delay_or_event_control">delay\_or\_event\_control</a> ]  <a href="#hierarchical_event_identifier">hierarchical\_event\_identifier</a> <font color="purple"><b>;</b></font>
   
 <a name="disable_statement"></a>**disable\_statement**
 :  <font color="purple"><b>disable</b></font> <a href="#hierarchical_task_identifier">hierarchical\_task\_identifier</a> <font color="purple"><b>;</b></font>  
@@ -1917,7 +1917,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <font color="purple"><b>priority</b></font>
   
 <a name="cond_predicate"></a>**cond\_predicate**
-:  <a href="#expression_or_cond_pattern">expression\_or\_cond\_pattern</a>  { <font color="purple"><b>&&&</b></font> <a href="#expression_or_cond_pattern">expression\_or\_cond\_pattern</a> }
+:  <a href="#expression_or_cond_pattern">expression\_or\_cond\_pattern</a>  { <font color="purple"><b>&amp;&amp;&amp;</b></font> <a href="#expression_or_cond_pattern">expression\_or\_cond\_pattern</a> }
   
 <a name="expression_or_cond_pattern"></a>**expression\_or\_cond\_pattern**
 :  <a href="#expression">expression</a>  
@@ -1946,7 +1946,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <font color="purple"><b>default</b></font>  \[ <font color="purple"><b>:</b></font> ]  <a href="#statement_or_null">statement\_or\_null</a>
   
 <a name="case_pattern_item"></a>**case\_pattern\_item**
-:  <a href="#pattern">pattern</a>  \[ <font color="purple"><b>&&&</b></font> <a href="#expression">expression</a> ]  <font color="purple"><b>:</b></font> <a href="#statement_or_null">statement\_or\_null</a>  
+:  <a href="#pattern">pattern</a>  \[ <font color="purple"><b>&amp;&amp;&amp;</b></font> <a href="#expression">expression</a> ]  <font color="purple"><b>:</b></font> <a href="#statement_or_null">statement\_or\_null</a>  
         | <font color="purple"><b>default</b></font>  \[ <font color="purple"><b>:</b></font> ]  <a href="#statement_or_null">statement\_or\_null</a>
   
 <a name="case_inside_item"></a>**case\_inside\_item**
@@ -1975,14 +1975,14 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <font color="purple"><b>.\*</b></font>  
         | <a href="#constant_expression">constant\_expression</a>  
         | <font color="purple"><b>tagged</b></font> <a href="#member_identifier">member\_identifier</a>  \[ <a href="#pattern">pattern</a> ]  
-        | <font color="purple"><b>'{</b></font> <a href="#pattern">pattern</a>  { <font color="purple"><b>,</b></font> <a href="#pattern">pattern</a> }  <font color="purple"><b>}</b></font>  
-        | <font color="purple"><b>'{</b></font> <a href="#member_identifier">member\_identifier</a> <font color="purple"><b>:</b></font> <a href="#pattern">pattern</a>  { <font color="purple"><b>,</b></font> <a href="#member_identifier">member\_identifier</a> <font color="purple"><b>:</b></font> <a href="#pattern">pattern</a> }  <font color="purple"><b>}</b></font>
+        | <font color="purple"><b>&#39;{</b></font> <a href="#pattern">pattern</a>  { <font color="purple"><b>,</b></font> <a href="#pattern">pattern</a> }  <font color="purple"><b>}</b></font>  
+        | <font color="purple"><b>&#39;{</b></font> <a href="#member_identifier">member\_identifier</a> <font color="purple"><b>:</b></font> <a href="#pattern">pattern</a>  { <font color="purple"><b>,</b></font> <a href="#member_identifier">member\_identifier</a> <font color="purple"><b>:</b></font> <a href="#pattern">pattern</a> }  <font color="purple"><b>}</b></font>
   
 <a name="assignment_pattern"></a>**assignment\_pattern**
-:  <font color="purple"><b>'{</b></font> <a href="#expression">expression</a>  { <font color="purple"><b>,</b></font> <a href="#expression">expression</a> }  <font color="purple"><b>}</b></font>  
-        | <font color="purple"><b>'{</b></font> <a href="#structure_pattern_key">structure\_pattern\_key</a> <font color="purple"><b>:</b></font> <a href="#expression">expression</a>  { <font color="purple"><b>,</b></font> <a href="#structure_pattern_key">structure\_pattern\_key</a> <font color="purple"><b>:</b></font> <a href="#expression">expression</a> }  <font color="purple"><b>}</b></font>  
-        | <font color="purple"><b>'{</b></font> <a href="#array_pattern_key">array\_pattern\_key</a> <font color="purple"><b>:</b></font> <a href="#expression">expression</a>  { <font color="purple"><b>,</b></font> <a href="#array_pattern_key">array\_pattern\_key</a> <font color="purple"><b>:</b></font> <a href="#expression">expression</a> }  <font color="purple"><b>}</b></font>  
-        | <font color="purple"><b>'{</b></font> <a href="#constant_expression">constant\_expression</a> <font color="purple"><b>{</b></font> <a href="#expression">expression</a>  { <font color="purple"><b>,</b></font> <a href="#expression">expression</a> }  <font color="purple"><b>}</b></font> <font color="purple"><b>}</b></font>
+:  <font color="purple"><b>&#39;{</b></font> <a href="#expression">expression</a>  { <font color="purple"><b>,</b></font> <a href="#expression">expression</a> }  <font color="purple"><b>}</b></font>  
+        | <font color="purple"><b>&#39;{</b></font> <a href="#structure_pattern_key">structure\_pattern\_key</a> <font color="purple"><b>:</b></font> <a href="#expression">expression</a>  { <font color="purple"><b>,</b></font> <a href="#structure_pattern_key">structure\_pattern\_key</a> <font color="purple"><b>:</b></font> <a href="#expression">expression</a> }  <font color="purple"><b>}</b></font>  
+        | <font color="purple"><b>&#39;{</b></font> <a href="#array_pattern_key">array\_pattern\_key</a> <font color="purple"><b>:</b></font> <a href="#expression">expression</a>  { <font color="purple"><b>,</b></font> <a href="#array_pattern_key">array\_pattern\_key</a> <font color="purple"><b>:</b></font> <a href="#expression">expression</a> }  <font color="purple"><b>}</b></font>  
+        | <font color="purple"><b>&#39;{</b></font> <a href="#constant_expression">constant\_expression</a> <font color="purple"><b>{</b></font> <a href="#expression">expression</a>  { <font color="purple"><b>,</b></font> <a href="#expression">expression</a> }  <font color="purple"><b>}</b></font> <font color="purple"><b>}</b></font>
   
 <a name="structure_pattern_key"></a>**structure\_pattern\_key**
 :  <a href="#member_identifier">member\_identifier</a>  
@@ -2009,10 +2009,10 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :  <a href="#assignment_pattern_expression">assignment\_pattern\_expression</a>
   
 <a name="assignment_pattern_net_lvalue"></a>**assignment\_pattern\_net\_lvalue**
-:  <font color="purple"><b>'{</b></font> <a href="#net_lvalue">net\_lvalue</a>  { <font color="purple"><b>,</b></font> <a href="#net_lvalue">net\_lvalue</a> }  <font color="purple"><b>}</b></font>
+:  <font color="purple"><b>&#39;{</b></font> <a href="#net_lvalue">net\_lvalue</a>  { <font color="purple"><b>,</b></font> <a href="#net_lvalue">net\_lvalue</a> }  <font color="purple"><b>}</b></font>
   
 <a name="assignment_pattern_variable_lvalue"></a>**assignment\_pattern\_variable\_lvalue**
-:  <font color="purple"><b>'{</b></font> <a href="#variable_lvalue">variable\_lvalue</a>  { <font color="purple"><b>,</b></font> <a href="#variable_lvalue">variable\_lvalue</a> }  <font color="purple"><b>}</b></font>
+:  <font color="purple"><b>&#39;{</b></font> <a href="#variable_lvalue">variable\_lvalue</a>  { <font color="purple"><b>,</b></font> <a href="#variable_lvalue">variable\_lvalue</a> }  <font color="purple"><b>}</b></font>
   
 ### Looping statements
   
@@ -2046,7 +2046,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
   
 <a name="subroutine_call_statement"></a>**subroutine\_call\_statement**
 :  <a href="#subroutine_call">subroutine\_call</a> <font color="purple"><b>;</b></font>  
-        | <font color="purple"><b>void</b></font> <font color="purple"><b>'</b></font> <font color="purple"><b>(</b></font> <a href="#function_subroutine_call">function\_subroutine\_call</a> <font color="purple"><b>)</b></font> <font color="purple"><b>;</b></font>
+        | <font color="purple"><b>void</b></font> <font color="purple"><b>&#39;</b></font> <font color="purple"><b>(</b></font> <a href="#function_subroutine_call">function\_subroutine\_call</a> <font color="purple"><b>)</b></font> <font color="purple"><b>;</b></font>
   
 ### Assertion statements
   
@@ -2134,7 +2134,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <a href="#delay_control">delay\_control</a>
   
 <a name="clocking_drive"></a>**clocking\_drive**
-:  <a href="#clockvar_expression">clockvar\_expression</a> <font color="purple"><b><=</b></font>  \[ <a href="#cycle_delay">cycle\_delay</a> ]  <a href="#expression">expression</a>
+:  <a href="#clockvar_expression">clockvar\_expression</a> <font color="purple"><b>&lt;=</b></font>  \[ <a href="#cycle_delay">cycle\_delay</a> ]  <a href="#expression">expression</a>
   
 <a name="cycle_delay"></a>**cycle\_delay**
 :  <font color="purple"><b>##</b></font> <a href="#integral_number">integral\_number</a>  
@@ -2226,10 +2226,10 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <a href="#full_path_description">full\_path\_description</a> <font color="purple"><b>=</b></font> <a href="#path_delay_value">path\_delay\_value</a>
   
 <a name="parallel_path_description"></a>**parallel\_path\_description**
-:  <font color="purple"><b>(</b></font> <a href="#specify_input_terminal_descriptor">specify\_input\_terminal\_descriptor</a>  \[ <a href="#polarity_operator">polarity\_operator</a> ]  <font color="purple"><b>=></b></font> <a href="#specify_output_terminal_descriptor">specify\_output\_terminal\_descriptor</a> <font color="purple"><b>)</b></font>
+:  <font color="purple"><b>(</b></font> <a href="#specify_input_terminal_descriptor">specify\_input\_terminal\_descriptor</a>  \[ <a href="#polarity_operator">polarity\_operator</a> ]  <font color="purple"><b>=&gt;</b></font> <a href="#specify_output_terminal_descriptor">specify\_output\_terminal\_descriptor</a> <font color="purple"><b>)</b></font>
   
 <a name="full_path_description"></a>**full\_path\_description**
-:  <font color="purple"><b>(</b></font> <a href="#list_of_path_inputs">list\_of\_path\_inputs</a>  \[ <a href="#polarity_operator">polarity\_operator</a> ]  <font color="purple"><b>\*></b></font> <a href="#list_of_path_outputs">list\_of\_path\_outputs</a> <font color="purple"><b>)</b></font>
+:  <font color="purple"><b>(</b></font> <a href="#list_of_path_inputs">list\_of\_path\_inputs</a>  \[ <a href="#polarity_operator">polarity\_operator</a> ]  <font color="purple"><b>\*&gt;</b></font> <a href="#list_of_path_outputs">list\_of\_path\_outputs</a> <font color="purple"><b>)</b></font>
   
 <a name="list_of_path_inputs"></a>**list\_of\_path\_inputs**
 :  <a href="#specify_input_terminal_descriptor">specify\_input\_terminal\_descriptor</a>  { <font color="purple"><b>,</b></font> <a href="#specify_input_terminal_descriptor">specify\_input\_terminal\_descriptor</a> }
@@ -2324,10 +2324,10 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <a href="#full_edge_sensitive_path_description">full\_edge\_sensitive\_path\_description</a> <font color="purple"><b>=</b></font> <a href="#path_delay_value">path\_delay\_value</a>
   
 <a name="parallel_edge_sensitive_path_description"></a>**parallel\_edge\_sensitive\_path\_description**
-:  <font color="purple"><b>(</b></font>  \[ <a href="#edge_identifier">edge\_identifier</a> ]  <a href="#specify_input_terminal_descriptor">specify\_input\_terminal\_descriptor</a>  \[ <a href="#polarity_operator">polarity\_operator</a> ]  <font color="purple"><b>=></b></font> <font color="purple"><b>(</b></font> <a href="#specify_output_terminal_descriptor">specify\_output\_terminal\_descriptor</a>  \[ <a href="#polarity_operator">polarity\_operator</a> ]  <font color="purple"><b>:</b></font> <a href="#data_source_expression">data\_source\_expression</a> <font color="purple"><b>)</b></font> <font color="purple"><b>)</b></font>
+:  <font color="purple"><b>(</b></font>  \[ <a href="#edge_identifier">edge\_identifier</a> ]  <a href="#specify_input_terminal_descriptor">specify\_input\_terminal\_descriptor</a>  \[ <a href="#polarity_operator">polarity\_operator</a> ]  <font color="purple"><b>=&gt;</b></font> <font color="purple"><b>(</b></font> <a href="#specify_output_terminal_descriptor">specify\_output\_terminal\_descriptor</a>  \[ <a href="#polarity_operator">polarity\_operator</a> ]  <font color="purple"><b>:</b></font> <a href="#data_source_expression">data\_source\_expression</a> <font color="purple"><b>)</b></font> <font color="purple"><b>)</b></font>
   
 <a name="full_edge_sensitive_path_description"></a>**full\_edge\_sensitive\_path\_description**
-:  <font color="purple"><b>(</b></font>  \[ <a href="#edge_identifier">edge\_identifier</a> ]  <a href="#list_of_path_inputs">list\_of\_path\_inputs</a>  \[ <a href="#polarity_operator">polarity\_operator</a> ]  <font color="purple"><b>\*></b></font> <font color="purple"><b>(</b></font> <a href="#list_of_path_outputs">list\_of\_path\_outputs</a>  \[ <a href="#polarity_operator">polarity\_operator</a> ]  <font color="purple"><b>:</b></font> <a href="#data_source_expression">data\_source\_expression</a> <font color="purple"><b>)</b></font> <font color="purple"><b>)</b></font>
+:  <font color="purple"><b>(</b></font>  \[ <a href="#edge_identifier">edge\_identifier</a> ]  <a href="#list_of_path_inputs">list\_of\_path\_inputs</a>  \[ <a href="#polarity_operator">polarity\_operator</a> ]  <font color="purple"><b>\*&gt;</b></font> <font color="purple"><b>(</b></font> <a href="#list_of_path_outputs">list\_of\_path\_outputs</a>  \[ <a href="#polarity_operator">polarity\_operator</a> ]  <font color="purple"><b>:</b></font> <a href="#data_source_expression">data\_source\_expression</a> <font color="purple"><b>)</b></font> <font color="purple"><b>)</b></font>
   
 <a name="data_source_expression"></a>**data\_source\_expression**
 :  <a href="#expression">expression</a>
@@ -2449,10 +2449,10 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 #### System timing check event definitions
   
 <a name="timing_check_event"></a>**timing\_check\_event**
-:  \[ <a href="#timing_check_event_control">timing\_check\_event\_control</a> ]  <a href="#specify_terminal_descriptor">specify\_terminal\_descriptor</a>  \[ <font color="purple"><b>&&&</b></font> <a href="#timing_check_condition">timing\_check\_condition</a> ]
+:  \[ <a href="#timing_check_event_control">timing\_check\_event\_control</a> ]  <a href="#specify_terminal_descriptor">specify\_terminal\_descriptor</a>  \[ <font color="purple"><b>&amp;&amp;&amp;</b></font> <a href="#timing_check_condition">timing\_check\_condition</a> ]
   
 <a name="controlled_timing_check_event"></a>**controlled\_timing\_check\_event**
-:  <a href="#timing_check_event_control">timing\_check\_event\_control</a> <a href="#specify_terminal_descriptor">specify\_terminal\_descriptor</a>  \[ <font color="purple"><b>&&&</b></font> <a href="#timing_check_condition">timing\_check\_condition</a> ]
+:  <a href="#timing_check_event_control">timing\_check\_event\_control</a> <a href="#specify_terminal_descriptor">specify\_terminal\_descriptor</a>  \[ <font color="purple"><b>&amp;&amp;&amp;</b></font> <a href="#timing_check_condition">timing\_check\_condition</a> ]
   
 <a name="timing_check_event_control"></a>**timing\_check\_event\_control**
 :  <font color="purple"><b>posedge</b></font>  
@@ -2496,14 +2496,14 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <a href="#expression">expression</a> <font color="purple"><b>!==</b></font> <a href="#scalar_constant">scalar\_constant</a>
   
 <a name="scalar_constant"></a>**scalar\_constant**
-:  <font color="purple"><b>1'b0</b></font>  
-        | <font color="purple"><b>1'b1</b></font>  
-        | <font color="purple"><b>1'B0</b></font>  
-        | <font color="purple"><b>1'B1</b></font>  
-        | <font color="purple"><b>'b0</b></font>  
-        | <font color="purple"><b>'b1</b></font>  
-        | <font color="purple"><b>'B0</b></font>  
-        | <font color="purple"><b>'B1</b></font>  
+:  <font color="purple"><b>1&#39;b0</b></font>  
+        | <font color="purple"><b>1&#39;b1</b></font>  
+        | <font color="purple"><b>1&#39;B0</b></font>  
+        | <font color="purple"><b>1&#39;B1</b></font>  
+        | <font color="purple"><b>&#39;b0</b></font>  
+        | <font color="purple"><b>&#39;b1</b></font>  
+        | <font color="purple"><b>&#39;B0</b></font>  
+        | <font color="purple"><b>&#39;B1</b></font>  
         | <font color="purple"><b>1</b></font>  
         | <font color="purple"><b>0</b></font>
   
@@ -2533,8 +2533,8 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :  <font color="purple"><b>{</b></font> <a href="#stream_operator">stream\_operator</a>  \[ <a href="#slice_size">slice\_size</a> ]  <a href="#stream_concatenation">stream\_concatenation</a> <font color="purple"><b>}</b></font>
   
 <a name="stream_operator"></a>**stream\_operator**
-:  <font color="purple"><b>>></b></font>  
-        | <font color="purple"><b><<</b></font>
+:  <font color="purple"><b>&gt;&gt;</b></font>  
+        | <font color="purple"><b>&lt;&lt;</b></font>
   
 <a name="slice_size"></a>**slice\_size**
 :  <a href="#simple_type">simple\_type</a>  
@@ -2789,13 +2789,13 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :  \[ { <font color="purple"><b>.</b></font> <a href="#member_identifier">member\_identifier</a> <a href="#constant_bit_select">constant\_bit\_select</a> }  <font color="purple"><b>.</b></font> <a href="#member_identifier">member\_identifier</a> ]  <a href="#constant_bit_select">constant\_bit\_select</a>  \[ <font color="purple"><b>\[</b></font> <a href="#constant_part_select_range">constant\_part\_select\_range</a> <font color="purple"><b>]</b></font> ]
   
 <a name="constant_cast"></a>**constant\_cast**
-:  <a href="#casting_type">casting\_type</a> <font color="purple"><b>'</b></font> <font color="purple"><b>(</b></font> <a href="#constant_expression">constant\_expression</a> <font color="purple"><b>)</b></font>
+:  <a href="#casting_type">casting\_type</a> <font color="purple"><b>&#39;</b></font> <font color="purple"><b>(</b></font> <a href="#constant_expression">constant\_expression</a> <font color="purple"><b>)</b></font>
   
 <a name="constant_let_expression"></a>**constant\_let\_expression**
 :  <a href="#let_expression">let\_expression</a> [^footnote_45]
   
 <a name="cast"></a>**cast**
-:  <a href="#casting_type">casting\_type</a> <font color="purple"><b>'</b></font> <font color="purple"><b>(</b></font> <a href="#expression">expression</a> <font color="purple"><b>)</b></font>
+:  <a href="#casting_type">casting\_type</a> <font color="purple"><b>&#39;</b></font> <font color="purple"><b>(</b></font> <a href="#expression">expression</a> <font color="purple"><b>)</b></font>
   
 ### Expression left-side values
   
@@ -2820,8 +2820,8 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <font color="purple"><b>-</b></font>  
         | <font color="purple"><b>!</b></font>  
         | <font color="purple"><b>~</b></font>  
-        | <font color="purple"><b>&</b></font>  
-        | <font color="purple"><b>~&</b></font>  
+        | <font color="purple"><b>&amp;</b></font>  
+        | <font color="purple"><b>~&amp;</b></font>  
         | <font color="purple"><b>|</b></font>  
         | <font color="purple"><b>~|</b></font>  
         | <font color="purple"><b>^</b></font>  
@@ -2840,24 +2840,24 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <font color="purple"><b>!==</b></font>  
         | <font color="purple"><b>==?</b></font>  
         | <font color="purple"><b>!=?</b></font>  
-        | <font color="purple"><b>&&</b></font>  
+        | <font color="purple"><b>&amp;&amp;</b></font>  
         | <font color="purple"><b>||</b></font>  
         | <font color="purple"><b>\*\*</b></font>  
-        | <font color="purple"><b><</b></font>  
-        | <font color="purple"><b><=</b></font>  
-        | <font color="purple"><b>></b></font>  
-        | <font color="purple"><b>>=</b></font>  
-        | <font color="purple"><b>&</b></font>  
+        | <font color="purple"><b>&lt;</b></font>  
+        | <font color="purple"><b>&lt;=</b></font>  
+        | <font color="purple"><b>&gt;</b></font>  
+        | <font color="purple"><b>&gt;=</b></font>  
+        | <font color="purple"><b>&amp;</b></font>  
         | <font color="purple"><b>|</b></font>  
         | <font color="purple"><b>^</b></font>  
         | <font color="purple"><b>^~</b></font>  
         | <font color="purple"><b>~^</b></font>  
-        | <font color="purple"><b>>></b></font>  
-        | <font color="purple"><b><<</b></font>  
-        | <font color="purple"><b>>>></b></font>  
-        | <font color="purple"><b><<<</b></font>  
-        | <font color="purple"><b>-></b></font>  
-        | <font color="purple"><b><-></b></font>
+        | <font color="purple"><b>&gt;&gt;</b></font>  
+        | <font color="purple"><b>&lt;&lt;</b></font>  
+        | <font color="purple"><b>&gt;&gt;&gt;</b></font>  
+        | <font color="purple"><b>&lt;&lt;&lt;</b></font>  
+        | <font color="purple"><b>-&gt;</b></font>  
+        | <font color="purple"><b>&lt;-&gt;</b></font>
   
 <a name="inc_or_dec_operator"></a>**inc\_or\_dec\_operator**
 :  <font color="purple"><b>++</b></font>  
@@ -2866,8 +2866,8 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 <a name="unary_module_path_operator"></a>**unary\_module\_path\_operator**
 :  <font color="purple"><b>!</b></font>  
         | <font color="purple"><b>~</b></font>  
-        | <font color="purple"><b>&</b></font>  
-        | <font color="purple"><b>~&</b></font>  
+        | <font color="purple"><b>&amp;</b></font>  
+        | <font color="purple"><b>~&amp;</b></font>  
         | <font color="purple"><b>|</b></font>  
         | <font color="purple"><b>~|</b></font>  
         | <font color="purple"><b>^</b></font>  
@@ -2877,9 +2877,9 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 <a name="binary_module_path_operator"></a>**binary\_module\_path\_operator**
 :  <font color="purple"><b>==</b></font>  
         | <font color="purple"><b>!=</b></font>  
-        | <font color="purple"><b>&&</b></font>  
+        | <font color="purple"><b>&amp;&amp;</b></font>  
         | <font color="purple"><b>||</b></font>  
-        | <font color="purple"><b>&</b></font>  
+        | <font color="purple"><b>&amp;</b></font>  
         | <font color="purple"><b>|</b></font>  
         | <font color="purple"><b>^</b></font>  
         | <font color="purple"><b>^~</b></font>  
@@ -2946,20 +2946,20 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :  <a href="#hex_digit">hex\_digit</a>  { <font color="purple"><b>\_</b></font> | <a href="#hex_digit">hex\_digit</a> }
   
 <a name="decimal_base"></a>**decimal\_base**[^footnote_33]
-:  <font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font> | <font color="purple"><b>S</b></font> ]  <font color="purple"><b>d</b></font>  
-        | <font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font> | <font color="purple"><b>S</b></font> ]  <font color="purple"><b>D</b></font>
+:  <font color="purple"><b>&#39;</b></font>  \[ <font color="purple"><b>s</b></font> | <font color="purple"><b>S</b></font> ]  <font color="purple"><b>d</b></font>  
+        | <font color="purple"><b>&#39;</b></font>  \[ <font color="purple"><b>s</b></font> | <font color="purple"><b>S</b></font> ]  <font color="purple"><b>D</b></font>
   
 <a name="binary_base"></a>**binary\_base**[^footnote_33]
-:  <font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font> | <font color="purple"><b>S</b></font> ]  <font color="purple"><b>b</b></font>  
-        | <font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font> | <font color="purple"><b>S</b></font> ]  <font color="purple"><b>B</b></font>
+:  <font color="purple"><b>&#39;</b></font>  \[ <font color="purple"><b>s</b></font> | <font color="purple"><b>S</b></font> ]  <font color="purple"><b>b</b></font>  
+        | <font color="purple"><b>&#39;</b></font>  \[ <font color="purple"><b>s</b></font> | <font color="purple"><b>S</b></font> ]  <font color="purple"><b>B</b></font>
   
 <a name="octal_base"></a>**octal\_base**[^footnote_33]
-:  <font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font> | <font color="purple"><b>S</b></font> ]  <font color="purple"><b>o</b></font>  
-        | <font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font> | <font color="purple"><b>S</b></font> ]  <font color="purple"><b>O</b></font>
+:  <font color="purple"><b>&#39;</b></font>  \[ <font color="purple"><b>s</b></font> | <font color="purple"><b>S</b></font> ]  <font color="purple"><b>o</b></font>  
+        | <font color="purple"><b>&#39;</b></font>  \[ <font color="purple"><b>s</b></font> | <font color="purple"><b>S</b></font> ]  <font color="purple"><b>O</b></font>
   
 <a name="hex_base"></a>**hex\_base**[^footnote_33]
-:  <font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font> | <font color="purple"><b>S</b></font> ]  <font color="purple"><b>h</b></font>  
-        | <font color="purple"><b>'</b></font>  \[ <font color="purple"><b>s</b></font> | <font color="purple"><b>S</b></font> ]  <font color="purple"><b>H</b></font>
+:  <font color="purple"><b>&#39;</b></font>  \[ <font color="purple"><b>s</b></font> | <font color="purple"><b>S</b></font> ]  <font color="purple"><b>h</b></font>  
+        | <font color="purple"><b>&#39;</b></font>  \[ <font color="purple"><b>s</b></font> | <font color="purple"><b>S</b></font> ]  <font color="purple"><b>H</b></font>
   
 <a name="non_zero_decimal_digit"></a>**non\_zero\_decimal\_digit**
 :  <font color="purple"><b>1</b></font>  
@@ -3038,14 +3038,14 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <font color="purple"><b>?</b></font>
   
 <a name="unbased_unsized_literal"></a>**unbased\_unsized\_literal**
-:  <font color="purple"><b>'0</b></font>  
-        | <font color="purple"><b>'1</b></font>  
-        | <font color="purple"><b>'</b></font> <a href="#z_or_x">z\_or\_x</a> [^footnote_48]
+:  <font color="purple"><b>&#39;0</b></font>  
+        | <font color="purple"><b>&#39;1</b></font>  
+        | <font color="purple"><b>&#39;</b></font> <a href="#z_or_x">z\_or\_x</a> [^footnote_48]
   
 ### Strings
   
 <a name="string_literal"></a>**string\_literal**
-:  <font color="purple"><b>"</b></font>  { <em>Any\_ASCII\_Characters</em> }  <font color="purple"><b>"</b></font>
+:  <font color="purple"><b>&quot;</b></font>  { <em>Any\_ASCII\_Characters</em> }  <font color="purple"><b>&quot;</b></font>
   
 ## General
   

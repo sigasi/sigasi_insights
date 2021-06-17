@@ -237,7 +237,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <a href="#explicit_encode_assignment">explicit\_encode\_assignment</a>
   
 <a name="post_encode_assignment"></a>**post\_encode\_assignment**
-:  <a href="#instance_ref">instance\_ref</a> <font color="purple"><b>-></b></font> <font color="purple"><b>encode</b></font> <font color="purple"><b>=</b></font> <a href="#id">id</a>
+:  <a href="#instance_ref">instance\_ref</a> <font color="purple"><b>-&gt;</b></font> <font color="purple"><b>encode</b></font> <font color="purple"><b>=</b></font> <a href="#id">id</a>
   
 <a name="post_prop_assignment"></a>**post\_prop\_assignment**
 :  <a href="#prop_ref">prop\_ref</a>  \[ <font color="purple"><b>=</b></font> <a href="#prop_assignment_rhs">prop\_assignment\_rhs</a> ]  <font color="purple"><b>;</b></font>  
@@ -269,7 +269,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 ## B.9 Struct literal
   
 <a name="struct_literal"></a>**struct\_literal**
-:  <a href="#id">id</a> <font color="purple"><b>'</b></font> <font color="purple"><b>{</b></font> <a href="#struct_literal_body">struct\_literal\_body</a> <font color="purple"><b>}</b></font>
+:  <a href="#id">id</a> <font color="purple"><b>&#39;</b></font> <font color="purple"><b>{</b></font> <a href="#struct_literal_body">struct\_literal\_body</a> <font color="purple"><b>}</b></font>
   
 <a name="struct_literal_body"></a>**struct\_literal\_body**
 :  \[ <a href="#struct_literal_elem">struct\_literal\_elem</a>  { <font color="purple"><b>,</b></font> <a href="#struct_literal_elem">struct\_literal\_elem</a> } ]
@@ -280,7 +280,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 ## B.10 Array literal
   
 <a name="array_literal"></a>**array\_literal**
-:  <font color="purple"><b>'</b></font> <font color="purple"><b>{</b></font> <a href="#array_literal_body">array\_literal\_body</a> <font color="purple"><b>}</b></font>
+:  <font color="purple"><b>&#39;</b></font> <font color="purple"><b>{</b></font> <a href="#array_literal_body">array\_literal\_body</a> <font color="purple"><b>}</b></font>
   
 <a name="array_literal_body"></a>**array\_literal\_body**
 :  <a href="#constant_expression">constant\_expression</a>  { <font color="purple"><b>,</b></font> <a href="#constant_expression">constant\_expression</a> }
@@ -291,12 +291,12 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :  <a href="#instance_ref_element">instance\_ref\_element</a>  { <font color="purple"><b>.</b></font> <a href="#instance_ref_element">instance\_ref\_element</a> }
   
 <a name="prop_ref"></a>**prop\_ref**
-:  <a href="#instance_ref">instance\_ref</a> <font color="purple"><b>-></b></font> <a href="#prop_keyword">prop\_keyword</a>  
-        | <a href="#instance_ref">instance\_ref</a> <font color="purple"><b>-></b></font> <a href="#id">id</a>
+:  <a href="#instance_ref">instance\_ref</a> <font color="purple"><b>-&gt;</b></font> <a href="#prop_keyword">prop\_keyword</a>  
+        | <a href="#instance_ref">instance\_ref</a> <font color="purple"><b>-&gt;</b></font> <a href="#id">id</a>
   
 <a name="instance_or_prop_ref"></a>**instance\_or\_prop\_ref**
-:  <a href="#instance_ref">instance\_ref</a> <font color="purple"><b>-></b></font> <a href="#prop_keyword">prop\_keyword</a>  
-        | <a href="#instance_ref">instance\_ref</a> <font color="purple"><b>-></b></font> <a href="#id">id</a>  
+:  <a href="#instance_ref">instance\_ref</a> <font color="purple"><b>-&gt;</b></font> <a href="#prop_keyword">prop\_keyword</a>  
+        | <a href="#instance_ref">instance\_ref</a> <font color="purple"><b>-&gt;</b></font> <a href="#id">id</a>  
         | <a href="#instance_ref">instance\_ref</a>
   
 <a name="instance_ref_element"></a>**instance\_ref\_element**
@@ -431,17 +431,17 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <font color="purple"><b>this</b></font>
   
 <a name="binary_operator"></a>**binary\_operator**
-:  <font color="purple"><b>&&</b></font>  
+:  <font color="purple"><b>&amp;&amp;</b></font>  
         | <font color="purple"><b>||</b></font>  
-        | <font color="purple"><b><</b></font>  
-        | <font color="purple"><b>></b></font>  
-        | <font color="purple"><b><=</b></font>  
-        | <font color="purple"><b>>=</b></font>  
+        | <font color="purple"><b>&lt;</b></font>  
+        | <font color="purple"><b>&gt;</b></font>  
+        | <font color="purple"><b>&lt;=</b></font>  
+        | <font color="purple"><b>&gt;=</b></font>  
         | <font color="purple"><b>==</b></font>  
         | <font color="purple"><b>!=</b></font>  
-        | <font color="purple"><b>>></b></font>  
-        | <font color="purple"><b><<</b></font>  
-        | <font color="purple"><b>&</b></font>  
+        | <font color="purple"><b>&gt;&gt;</b></font>  
+        | <font color="purple"><b>&lt;&lt;</b></font>  
+        | <font color="purple"><b>&amp;</b></font>  
         | <font color="purple"><b>|</b></font>  
         | <font color="purple"><b>^</b></font>  
         | <font color="purple"><b>~^</b></font>  
@@ -458,8 +458,8 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <font color="purple"><b>+</b></font>  
         | <font color="purple"><b>-</b></font>  
         | <font color="purple"><b>~</b></font>  
-        | <font color="purple"><b>&</b></font>  
-        | <font color="purple"><b>~&</b></font>  
+        | <font color="purple"><b>&amp;</b></font>  
+        | <font color="purple"><b>~&amp;</b></font>  
         | <font color="purple"><b>|</b></font>  
         | <font color="purple"><b>~|</b></font>  
         | <font color="purple"><b>^</b></font>  
@@ -467,7 +467,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <font color="purple"><b>^~</b></font>
   
 <a name="constant_cast"></a>**constant\_cast**
-:  <a href="#casting_type">casting\_type</a> <font color="purple"><b>'</b></font> <font color="purple"><b>(</b></font> <a href="#constant_expression">constant\_expression</a> <font color="purple"><b>)</b></font>
+:  <a href="#casting_type">casting\_type</a> <font color="purple"><b>&#39;</b></font> <font color="purple"><b>(</b></font> <a href="#constant_expression">constant\_expression</a> <font color="purple"><b>)</b></font>
   
 <a name="casting_type"></a>**casting\_type**
 :  <a href="#simple_type">simple\_type</a>  

@@ -32,9 +32,9 @@ We are using markdown with [Hugo].
 
 ## Markdown authoring
 
-* [MarkDown tutorial](http://markdowntutorial.com/)
-* [New MarkDown tutorial](http://commonmark.org/help/tutorial/index.html)
-* [MarkDown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+* [Markdown tutorial](http://markdowntutorial.com/)
+* [New Markdown tutorial](http://commonmark.org/help/tutorial/index.html)
+* [Markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ### Links
 
@@ -44,7 +44,7 @@ We are using markdown with [Hugo].
 * Link with link text: `<https://www.sigasi.com>`
 * Link with reference:
 
-```
+```md
    [text][reference]
    ...
    [reference]: https://example.com

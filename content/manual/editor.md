@@ -159,7 +159,25 @@ Templates can be exported and imported. This is useful for sharing templates wit
 
 Automated consistent code formatting makes code more readable and helps developers understand code, whether working on their own code or when cooperating with colleagues.
 
-Read more about [VHDL code formatting](#vhdl-code-formatting) and [Verilog and SystemVerilog code formatting](#verilog-and-systemverilog-code-formatting).
+Read more about specifics on [VHDL code formatting](#vhdl-code-formatting) and [Verilog and SystemVerilog code formatting](#verilog-and-systemverilog-code-formatting).
+
+### Format code on save
+
+You can configure Sigasi Studio to automatically format your (System)Verilog and VHDL files when you save your source files via **Window > Preferences > Sigasi > [VHDL | (System)Verilog]**, next check **Enable code format on save**.
+
+### Format files without opening them
+
+{{< xprt_only >}}
+
+You can format (System)Verilog and VHDL files without opening them in the editor.
+
+* You can format an _entire project_. Right click the project in the [Project Explorer]({{< ref "manual/views.md#project-explorer-view" >}}) and select **Source > Format**.
+Note that only files that are part of the build will be formatted.
+
+* You can format a selection of files. Select multiple _files_ and/or _folders_ in the [Project Explorer]({{< ref "manual/views.md#project-explorer-view" >}}) and select **Source > Format**.
+Any selected file, part of the build or not, will be formatted.
+Any combination of resources can be formatted this way: multpile projects at a time, a project and a folder, ...
+
 
 ## Other editor features
 
@@ -451,18 +469,6 @@ You can disable the formatter for defined regions in your VHDL source files by e
 
 {{< figure src="/img/manual/formatter_off.png" >}}
 
-### Format code on save
-
-You can configure Sigasi Studio to automatically format your VHDL files when you save your source files via **Window > Preferences > Sigasi > VHDL**, next enable **Enable code format on save**.
-
-### Format project
-
-{{< xprt_only >}}
-
-Since [Sigasi Studio 4.5]({{< ref "/releasenotes/sigasi-4.05.md" >}}) you can format (System)Verilog and VHDL files without opening them in the editor. Right click a *project*, *folder* or *file* and select **Source > Format**.
-
-Note that the option is only available for files that are part of the build.
-
 # Verilog and SystemVerilog Specific
 
 In addition to the powerful features of an Eclipse editor, the Verilog and SystemVerilog
@@ -490,8 +496,6 @@ and select whether `*.v` files are treated as **Verilog** or **SystemVerilog**. 
 Press **Ctrl+Shift+F** to format your current Verilog or SystemVerilog file.
 
 The current formatter implementation corrects indentation only.
-
-You can configure Sigasi Studio to automatically format your (System)Verilog files when you save them. Go to **Window > Preferences > Sigasi > (System)Verilog**, then enable **Enable code format on save**.
 
 ## Smart Indentation
 

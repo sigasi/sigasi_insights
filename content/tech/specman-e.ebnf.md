@@ -3,7 +3,7 @@ title: "Specman-e BNF Grammar"
 layout: page
 pager: true
 author: Sigasi
-date: TODO
+date: 2004-03-19
 comments: true
 tags:
   - ebnf
@@ -220,7 +220,7 @@ tags:
         | <a href="#id">id</a> <font color="purple"><b>.</b></font> <a href="#id">id</a>
   
 <a name="hdl_path"></a>**hdl\_path**
-:  <font color="purple"><b>'</b></font> <em>hdl\_pathname</em><font color="purple"><b>'</b></font>
+:  <font color="purple"><b>&#39;</b></font> <em>hdl\_pathname</em><font color="purple"><b>&#39;</b></font>
   
 <a name="simulator_statement"></a>**simulator\_statement**
 :  <a href="#simulator_member">simulator\_member</a>  
@@ -235,7 +235,7 @@ tags:
         | <font color="purple"><b>verilog code</b></font> <a href="#expr">expr</a>  
         | <font color="purple"><b>vhdl code</b></font> <font color="purple"><b>{</b></font> <a href="#verilog_command_list">verilog\_command\_list</a> <a href="#last_semi_opt">last\_semi\_opt</a> <font color="purple"><b>}</b></font>  
         | <font color="purple"><b>vhdl procedure</b></font> <a href="#hdl_path">hdl\_path</a> <a href="#options_opt">options\_opt</a>  
-        | <font color="purple"><b>vhdl function</b></font> <font color="purple"><b>'</b></font> <a href="#id">id</a> <font color="purple"><b>'</b></font> <a href="#options_opt">options\_opt</a>  
+        | <font color="purple"><b>vhdl function</b></font> <font color="purple"><b>&#39;</b></font> <a href="#id">id</a> <font color="purple"><b>&#39;</b></font> <a href="#options_opt">options\_opt</a>  
         | <font color="purple"><b>vhdl driver</b></font> <a href="#hdl_path">hdl\_path</a> <a href="#options_opt">options\_opt</a>  
         | <font color="purple"><b>vhdl object</b></font> <a href="#hdl_path">hdl\_path</a>
   
@@ -394,7 +394,7 @@ tags:
         | <font color="purple"><b>assert</b></font> <a href="#expr">expr</a> <a href="#else_error_opt">else\_error\_opt</a>
   
 <a name="name_opt"></a>**name\_opt**
-:  \[ <font color="purple"><b><</b></font> <a href="#id">id</a> <font color="purple"><b>></b></font> ]
+:  \[ <font color="purple"><b>&lt;</b></font> <a href="#id">id</a> <font color="purple"><b>&gt;</b></font> ]
   
 <a name="that_opt"></a>**that\_opt**
 :  \[ <font color="purple"><b>that</b></font> ]
@@ -438,15 +438,15 @@ tags:
         | <font color="purple"><b>-=</b></font>  
         | <font color="purple"><b>\*=</b></font>  
         | <font color="purple"><b>/=</b></font> <font color="purple"><b>%=</b></font>  
-        | <font color="purple"><b><<=</b></font>  
-        | <font color="purple"><b>>>=</b></font>  
-        | <font color="purple"><b>&=</b></font>  
+        | <font color="purple"><b>&lt;&lt;=</b></font>  
+        | <font color="purple"><b>&gt;&gt;=</b></font>  
+        | <font color="purple"><b>&amp;=</b></font>  
         | <font color="purple"><b>^=</b></font>  
         | <font color="purple"><b>l=</b></font>  
         | <font color="purple"><b>and=</b></font>  
         | <font color="purple"><b> or=</b></font>  
-        | <font color="purple"><b><=</b></font>  
-        | <font color="purple"><b>&&=</b></font>  
+        | <font color="purple"><b>&lt;=</b></font>  
+        | <font color="purple"><b>&amp;&amp;=</b></font>  
         | <font color="purple"><b>||=</b></font>
   
 <a name="gen_action"></a>**gen\_action**
@@ -583,8 +583,8 @@ tags:
         | <a href="#transitions">transitions</a> <font color="purple"><b>;</b></font> <a href="#transition">transition</a>
   
 <a name="transition"></a>**transition**
-:  <a href="#id">id</a> <font color="purple"><b>=></b></font> <a href="#id">id</a> <a href="#action_block">action\_block</a>  
-        | <font color="purple"><b>\*</b></font> <font color="purple"><b>=></b></font> <a href="#id">id</a> <a href="#action_block">action\_block</a>  
+:  <a href="#id">id</a> <font color="purple"><b>=&gt;</b></font> <a href="#id">id</a> <a href="#action_block">action\_block</a>  
+        | <font color="purple"><b>\*</b></font> <font color="purple"><b>=&gt;</b></font> <a href="#id">id</a> <a href="#action_block">action\_block</a>  
         | <a href="#id">id</a> <a href="#action_block">action\_block</a>
   
 <a name="event"></a>**event**
@@ -598,7 +598,7 @@ tags:
   
 <a name="temporal_inclusive_expression"></a>**temporal\_inclusive\_expression**
 :  <a href="#temporal_or_expression">temporal\_or\_expression</a>  
-        | <a href="#temporal_inclusive_expression">temporal\_inclusive\_expression</a> <font color="purple"><b>=></b></font> <a href="#temporal_or_expression">temporal\_or\_expression</a>
+        | <a href="#temporal_inclusive_expression">temporal\_inclusive\_expression</a> <font color="purple"><b>=&gt;</b></font> <a href="#temporal_or_expression">temporal\_or\_expression</a>
   
 <a name="temporal_or_expression"></a>**temporal\_or\_expression**
 :  <a href="#temporal_and_expression">temporal\_and\_expression</a>  
@@ -702,9 +702,9 @@ tags:
   
 <a name="struct_qualifier"></a>**struct\_qualifier**
 :  <a href="#id">id</a>  
-        | <a href="#id">id</a> <font color="purple"><b>'</b></font> <a href="#id">id</a>  
-        | <em>FALSE</em><font color="purple"><b>'</b></font> <a href="#id">id</a>  
-        | <em>TRUE</em><font color="purple"><b>'</b></font> <a href="#id">id</a>
+        | <a href="#id">id</a> <font color="purple"><b>&#39;</b></font> <a href="#id">id</a>  
+        | <em>FALSE</em><font color="purple"><b>&#39;</b></font> <a href="#id">id</a>  
+        | <em>TRUE</em><font color="purple"><b>&#39;</b></font> <a href="#id">id</a>
   
 <a name="list_type"></a>**list\_type**
 :  <font color="purple"><b>list of</b></font> <a href="#type">type</a>  
@@ -785,9 +785,9 @@ tags:
         | <a href="#when_field_access_pair">when\_field\_access\_pair</a>
   
 <a name="when_field_access_pair"></a>**when\_field\_access\_pair**
-:  <em>FALSE</em><font color="purple"><b>'</b></font> <a href="#id">id</a>  
-        | <em>TRUE</em><font color="purple"><b>'</b></font> <a href="#id">id</a>  
-        | <a href="#when_field_access">when\_field\_access</a> <font color="purple"><b>'</b></font> <a href="#id">id</a>
+:  <em>FALSE</em><font color="purple"><b>&#39;</b></font> <a href="#id">id</a>  
+        | <em>TRUE</em><font color="purple"><b>&#39;</b></font> <a href="#id">id</a>  
+        | <a href="#when_field_access">when\_field\_access</a> <font color="purple"><b>&#39;</b></font> <a href="#id">id</a>
   
 <a name="bit_extract"></a>**bit\_extract**
 :  <a href="#primitive_expr">primitive\_expr</a> <font color="purple"><b>\[</b></font> <a href="#expr_opt">expr\_opt</a> <font color="purple"><b>:</b></font> <a href="#expr_opt">expr\_opt</a> <a href="#slice_opt">slice\_opt</a> <font color="purple"><b>]</b></font>
@@ -867,12 +867,12 @@ tags:
         | <a href="#literal">literal</a> <a href="#time_unit">time\_unit</a>  
         | <a href="#constraint_for_each_expr">constraint\_for\_each\_expr</a>  
         | <a href="#text_expansion_exp">text\_expansion\_exp</a>  
-        | <font color="purple"><b><<</b></font> <em>STRING\_LITERAL</em>
+        | <font color="purple"><b>&lt;&lt;</b></font> <em>STRING\_LITERAL</em>
   
 <a name="unary_operator"></a>**unary\_operator**
 :  <font color="purple"><b>not</b></font>  
         | <font color="purple"><b>|</b></font>  
-        | <font color="purple"><b>&</b></font>  
+        | <font color="purple"><b>&amp;</b></font>  
         | <font color="purple"><b>^</b></font>  
         | <font color="purple"><b>nor</b></font>  
         | <font color="purple"><b>nand</b></font>  
@@ -892,7 +892,7 @@ tags:
   
 <a name="boolean_imp_expression"></a>**boolean\_imp\_expression**
 :  <a href="#logical_OR_expression">logical\_OR\_expression</a>  
-        | <a href="#boolean_imp_expression">boolean\_imp\_expression</a> <font color="purple"><b>=></b></font> <a href="#logical_OR_expression">logical\_OR\_expression</a>
+        | <a href="#boolean_imp_expression">boolean\_imp\_expression</a> <font color="purple"><b>=&gt;</b></font> <a href="#logical_OR_expression">logical\_OR\_expression</a>
   
 <a name="logical_OR_expression"></a>**logical\_OR\_expression**
 :  <a href="#logical_AND_expression">logical\_AND\_expression</a>  
@@ -908,7 +908,7 @@ tags:
   
 <a name="booland_operator"></a>**booland\_operator**
 :  <font color="purple"><b>and</b></font>  
-        | <font color="purple"><b>&&</b></font>
+        | <font color="purple"><b>&amp;&amp;</b></font>
   
 <a name="inclusive_OR_expression"></a>**inclusive\_OR\_expression**
 :  <a href="#exclusive_OR_expression">exclusive\_OR\_expression</a>  
@@ -924,7 +924,7 @@ tags:
   
 <a name="AND_expression"></a>**AND\_expression**
 :  <a href="#in_expression">in\_expression</a>  
-        | <a href="#AND_expression">AND\_expression</a> <font color="purple"><b>&</b></font> <a href="#in_expression">in\_expression</a>
+        | <a href="#AND_expression">AND\_expression</a> <font color="purple"><b>&amp;</b></font> <a href="#in_expression">in\_expression</a>
   
 <a name="in_expression"></a>**in\_expression**
 :  <a href="#match_expression">match\_expression</a>  
@@ -976,10 +976,10 @@ tags:
         | <font color="purple"><b>soft</b></font> <a href="#shift_expression">shift\_expression</a>
   
 <a name="eq_operator"></a>**eq\_operator**
-:  <font color="purple"><b><=</b></font>  
-        | <font color="purple"><b>>=:</b></font>  
-        | <font color="purple"><b><</b></font>  
-        | <font color="purple"><b>></b></font>
+:  <font color="purple"><b>&lt;=</b></font>  
+        | <font color="purple"><b>&gt;=:</b></font>  
+        | <font color="purple"><b>&lt;</b></font>  
+        | <font color="purple"><b>&gt;</b></font>
   
 <a name="shift_expression"></a>**shift\_expression**
 :  <a href="#additive_expression">additive\_expression</a>  
@@ -987,7 +987,7 @@ tags:
         | <font color="purple"><b>gen</b></font> <font color="purple"><b>(</b></font> <a href="#gen_item_list">gen\_item\_list</a> <font color="purple"><b>)</b></font> <font color="purple"><b>before</b></font> <font color="purple"><b>(</b></font> <a href="#gen_item_list">gen\_item\_list</a> <font color="purple"><b>)</b></font>
   
 <a name="shift_operator"></a>**shift\_operator**
-:  <font color="purple"><b><<</b></font>
+:  <font color="purple"><b>&lt;&lt;</b></font>
   
 <a name="additive_expression"></a>**additive\_expression**
 :  <a href="#multiplicative_expression">multiplicative\_expression</a>  
@@ -1029,7 +1029,7 @@ tags:
 <a name="gen_item_list"></a>**gen\_item\_list**
 :  <a href="#gen_item">gen\_item</a>  
         | <a href="#gen_item_list">gen\_item\_list</a> <font color="purple"><b>,</b></font> <a href="#gen_item">gen\_item</a>  
-        | <font color="purple"><b>>></b></font>  
+        | <font color="purple"><b>&gt;&gt;</b></font>  
         | <font color="purple"><b>+</b></font>
   
 <a name="gen_item"></a>**gen\_item**

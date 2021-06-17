@@ -18,13 +18,24 @@ The Sigasi documentation generator has following advantages:
 
 You can export documentation for the **entire project** or a **specific toplevel** by clicking the save icon on top of the [Documentation View]({{< ref "/manual/views.md#documentation-view" >}}) or via the **Export…** menu.
 
-The result is saved in the `sigasi-doc` folder in the root of your project.
+* When you select the **entire project**, the design elements will be listed in alphabetical order.
+* When you select a **specific toplevel**, design elements will be ordered in a breadth-first order from the top down.
+
+The resulting HTML file is saved in the `sigasi-doc` folder in the root of your project.
+The generated Block and State Machine Diagrams are saved in subfolders of the `sigasi-doc` folder.
 
 [Sigasi Studio 4.5]({{< ref "/releasenotes/sigasi-4.05.md" >}}) introduced exporting the documentation to HTML.
 There are 2 options when exporting the documentation.
 
-*  Create a HTML document with linked diagrams. All Block Diagrams and State Machine Diagrams are in separate files which are linked from within the HTML document.
-*  Create a HTML document with embedded diagrams. The Block Diagrams and State Machine Diagrams are embedded in the HTML document. The documentation is in a single file.
+*  **Linked resources**  
+   Create an HTML document with linked resources.
+   All Block Diagrams and State Machine Diagrams are in separate files which are linked from within the HTML document.
+   The custom [CSS file]({{< ref "#custom-css" >}}), if present in the project root, will be referenced from the HTML document.
+
+*  **Embedded resources**  
+   Create a HTML document with embedded resources. The documentation is in a single file.
+   The Block Diagrams and State Machine Diagrams are embedded in the HTML document.
+   The CSS from the custom [CSS file]({{< ref "#custom-css" >}}), if present in the project root, will be included in the HTML `<head>`.
 
 All errors are logged to the console view.
 
@@ -32,10 +43,56 @@ The exported HTML documentation can be further processed, as explained in {{< pa
 
 ## Graphics
 
-The exported documentation includes statemachine and block diagrams.
+The exported documentation includes State Machine and Block Diagrams.
 If you created custom graphics configurations for one or more of your diagrams, these will be used instead of the default diagrams.
 
 If you have multiple graphics configurations for the same diagrams, the alphabetically first one is used.
+
+## Custom CSS
+
+If the root of your project contains a `sigasi-doc.css` file, this file will be used to style the generated HTML documentation.
+
+For example, you can give the background and titles different colors. You can also change the font for the entire document or parts of it.
+
+```CSS
+body {
+   background-color: Azure;
+   font-family: sans-serif;
+}
+
+h1 { color: Tomato; }
+h2 { color: Orange; }
+h3 { color: Gold; }
+h4 { color: Aquamarine; }
+h5 { color: BlueViolet; }
+```
+
+Entire sections for entities, architectures and modules can be given different background colors.
+Likewise the list of processes can get a different background color.
+
+```CSS
+.entity, .module { background-color: AliceBlue; }
+.architecture    { background-color: Cornsilk; }
+.processes       { background-color: WhiteSmoke; }
+```
+
+Tables can be made striped.
+Within sections, you can specify different colors for the striped table.
+
+```CSS
+tr:nth-child(even) { background-color: Lavender; }
+.entity table tr:nth-child(even) { background-color: FloralWhite; }
+```
+
+It's also possible to hide parts from view.
+
+``` CSS
+#revision { display: none; }
+```
+
+The difference in documentation with the CSS settings described above is shown in the screenshots below.
+
+{{< figure src="/img/manual/document_compare_css.png" link="/img/manual/document_compare_css.png" alt="Comparing generated documentation with and without custom CSS" >}}
 
 # Comment Association
 
@@ -59,11 +116,11 @@ The **Formatter** and **[Structural select](/screencasts/structured-select)** re
 
 * VHDL **components** and **component instantiations**: If a `component` (or one of its ports or generics) does not have comment itself, Sigasi Studio will use the comment of the corresponding `entity`. This also works for component instantiations.
 
-# Comment markup with MarkDown
+# Comment markup with Markdown
 
 VHDL and SystemVerilog comments are processed with a [Markdown processor](https://en.wikipedia.org/wiki/Markdown). This allows to add markup (e.g. bold, code, paragraphs, hyperlinks,...) to comments. This results in nicer hovers and documentation.
 
-{{< figure src="/img/releasenotes/3.8/markdown_comments.png" alt="MarkDown in comments" >}}
+{{< figure src="/img/releasenotes/3.8/markdown_comments.png" alt="Markdown in comments" >}}
 
 In hovers the complete Markdown syntax is supported. For documentation generation following features are supported:
 

@@ -505,6 +505,9 @@ Here is how this issue can be resolved.
 {{< page "sigasi-4.10.md" >}} improves displaying of graphics by including its own Chromium plugin.
 The Chromium plugin depends on `libXss.so` which can be obtained by installing `libXScrnSaver`.
 
+The Chromium plugin will be extracted in a `.swt` folder in the user's home directory.
+Since {{< page "sigasi-4.12.md" >}}, the location can be configured by adding `-Dswt.chromium.path=/home/user/blub` to the `sigasi.ini` file.
+
 ### Sigasi Studio 4.9 and older
 
 Sigasi uses your system's native browser to display graphics and html content.

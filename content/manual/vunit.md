@@ -67,6 +67,7 @@ For SystemVerilog projects you need to manually add the VUnit include files to y
 In **Window > Preferences > Sigasi > Toolchains > VUnit** you can add different options for finding and running tests.
 * The `Options for finding tests` will be passed to `run.py` when generating the json file that lists the VUnit tests.
 * The `Options for running tests` will be passed to `run.py` when running the VUnit tests.
+* Select the `Set VUnit output to project root` to have the VUnit output stored in the project root instead of in the temp location from where VUnit is called.
 
 {{< figure src="/img/manual/vunit_preferences.png" alt="VUnit preferences dialog" link="/img/manual/vunit_preferences.png" >}}
 

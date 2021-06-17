@@ -172,10 +172,10 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :  <font color="purple"><b>=</b></font>  
         | <font color="purple"><b>+=</b></font>  
         | <font color="purple"><b>-=</b></font>  
-        | <font color="purple"><b><<=</b></font>  
-        | <font color="purple"><b>>>=</b></font>  
+        | <font color="purple"><b>&lt;&lt;=</b></font>  
+        | <font color="purple"><b>&gt;&gt;=</b></font>  
         | <font color="purple"><b>|=</b></font>  
-        | <font color="purple"><b>&=</b></font>
+        | <font color="purple"><b>&amp;=</b></font>
   
 <a name="target_code_exec_block"></a>**target\_code\_exec\_block**
 :  <font color="purple"><b>exec</b></font> <a href="#exec_kind_identifier">exec\_kind\_identifier</a> <a href="#language_identifier">language\_identifier</a> <font color="purple"><b>=</b></font> <a href="#string">string</a> <font color="purple"><b>;</b></font>
@@ -510,7 +510,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <a href="#expression">expression</a> <font color="purple"><b>;</b></font>
   
 <a name="implicand_constraint_item"></a>**implicand\_constraint\_item**
-:  <font color="purple"><b>-></b></font> <a href="#constraint_set">constraint\_set</a>
+:  <font color="purple"><b>-&gt;</b></font> <a href="#constraint_set">constraint\_set</a>
   
 <a name="constraint_set"></a>**constraint\_set**
 :  <a href="#constraint_body_item">constraint\_body\_item</a>  
@@ -657,7 +657,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :  <a href="#logical_and_expr">logical\_and\_expr</a>  { <font color="purple"><b>||</b></font> <a href="#logical_and_expr">logical\_and\_expr</a> }
   
 <a name="logical_and_expr"></a>**logical\_and\_expr**
-:  <a href="#binary_or_expr">binary\_or\_expr</a>  { <font color="purple"><b>&&</b></font> <a href="#binary_or_expr">binary\_or\_expr</a> }
+:  <a href="#binary_or_expr">binary\_or\_expr</a>  { <font color="purple"><b>&amp;&amp;</b></font> <a href="#binary_or_expr">binary\_or\_expr</a> }
   
 <a name="binary_or_expr"></a>**binary\_or\_expr**
 :  <a href="#binary_xor_expr">binary\_xor\_expr</a>  { <font color="purple"><b>|</b></font> <a href="#binary_xor_expr">binary\_xor\_expr</a> }
@@ -666,7 +666,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :  <a href="#binary_and_expr">binary\_and\_expr</a>  { <font color="purple"><b>^</b></font> <a href="#binary_and_expr">binary\_and\_expr</a> }
   
 <a name="binary_and_expr"></a>**binary\_and\_expr**
-:  <a href="#logical_equality_expr">logical\_equality\_expr</a>  { <font color="purple"><b>&</b></font> <a href="#logical_equality_expr">logical\_equality\_expr</a> }
+:  <a href="#logical_equality_expr">logical\_equality\_expr</a>  { <font color="purple"><b>&amp;</b></font> <a href="#logical_equality_expr">logical\_equality\_expr</a> }
   
 <a name="logical_equality_expr"></a>**logical\_equality\_expr**
 :  <a href="#logical_inequality_expr">logical\_inequality\_expr</a>  { <a href="#eq_neq_op">eq\_neq\_op</a> <a href="#logical_inequality_expr">logical\_inequality\_expr</a> }
@@ -682,10 +682,10 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :  <a href="#logical_inequality_op">logical\_inequality\_op</a> <a href="#binary_shift_expr">binary\_shift\_expr</a>
   
 <a name="logical_inequality_op"></a>**logical\_inequality\_op**
-:  <font color="purple"><b><</b></font>  
-        | <font color="purple"><b><=</b></font>  
-        | <font color="purple"><b>></b></font>  
-        | <font color="purple"><b>>=</b></font>
+:  <font color="purple"><b>&lt;</b></font>  
+        | <font color="purple"><b>&lt;=</b></font>  
+        | <font color="purple"><b>&gt;</b></font>  
+        | <font color="purple"><b>&gt;=</b></font>
   
 <a name="inside_expr_term"></a>**inside\_expr\_term**
 :  <font color="purple"><b>in</b></font> <font color="purple"><b>\[</b></font> <a href="#open_range_list">open\_range\_list</a> <font color="purple"><b>]</b></font>
@@ -716,7 +716,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <font color="purple"><b>-</b></font>  
         | <font color="purple"><b>!</b></font>  
         | <font color="purple"><b>~</b></font>  
-        | <font color="purple"><b>&</b></font>  
+        | <font color="purple"><b>&amp;</b></font>  
         | <font color="purple"><b>|</b></font>  
         | <font color="purple"><b>^</b></font>
   
@@ -756,8 +756,8 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <font color="purple"><b>-</b></font>
   
 <a name="shift_op"></a>**shift\_op**
-:  <font color="purple"><b><<</b></font>  
-        | <font color="purple"><b>>></b></font>
+:  <font color="purple"><b>&lt;&lt;</b></font>  
+        | <font color="purple"><b>&gt;&gt;</b></font>
   
 <a name="eq_neq_op"></a>**eq\_neq\_op**
 :  <font color="purple"><b>==</b></font>  
@@ -870,7 +870,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :  \[ <em>1-9</em> ]   { \[ <em>0-9</em> ] | <font color="purple"><b>\_</b></font> }
   
 <a name="BASED_HEX_LITERAL"></a>**BASED\_HEX\_LITERAL**
-:  <font color="purple"><b>'</b></font>  \[ <em>s|S</em> ]  <em>h|H</em> \[ <em>0-9</em> ]  
+:  <font color="purple"><b>&#39;</b></font>  \[ <em>s|S</em> ]  <em>h|H</em> \[ <em>0-9</em> ]  
         | \[ <em>a-f</em> ]  
         | \[ <em>A-F</em> ]   { \[ <em>0-9</em> ] | \[ <em>a-f</em> ] | \[ <em>A-F</em> ] | <font color="purple"><b>\_</b></font> }
   
@@ -884,13 +884,13 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :  \[ <a href="#DEC_LITERAL">DEC\_LITERAL</a> ]  <a href="#BASED_BIN_LITERAL">BASED\_BIN\_LITERAL</a>
   
 <a name="BASED_BIN_LITERAL"></a>**BASED\_BIN\_LITERAL**
-:  <font color="purple"><b>'</b></font>  \[ <em>s|S</em> ]  <em>b|B</em> \[ <em>0-1</em> ]   { \[ <em>0-1</em> ] | <font color="purple"><b>\_</b></font> }
+:  <font color="purple"><b>&#39;</b></font>  \[ <em>s|S</em> ]  <em>b|B</em> \[ <em>0-1</em> ]   { \[ <em>0-1</em> ] | <font color="purple"><b>\_</b></font> }
   
 <a name="based_oct_number"></a>**based\_oct\_number**
 :  \[ <a href="#DEC_LITERAL">DEC\_LITERAL</a> ]  <a href="#BASED_OCT_LITERAL">BASED\_OCT\_LITERAL</a>
   
 <a name="BASED_OCT_LITERAL"></a>**BASED\_OCT\_LITERAL**
-:  <font color="purple"><b>'</b></font>  \[ <em>s|S</em> ]  <em>o|O</em> \[ <em>0-7</em> ]   { \[ <em>0-7</em> ] | <font color="purple"><b>\_</b></font> }
+:  <font color="purple"><b>&#39;</b></font>  \[ <em>s|S</em> ]  <em>o|O</em> \[ <em>0-7</em> ]   { \[ <em>0-7</em> ] | <font color="purple"><b>\_</b></font> }
   
 <a name="dec_number"></a>**dec\_number**
 :  <a href="#DEC_LITERAL">DEC\_LITERAL</a>
@@ -925,13 +925,13 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :  <em>Any\_Printable\_ASCII\_Character</em>
   
 <a name="escaped_character"></a>**escaped\_character**
-:  <font color="purple"><b>\\</b></font>  ( <font color="purple"><b>'</b></font> | <font color="purple"><b>"</b></font> | <font color="purple"><b>?</b></font> | <font color="purple"><b>'</b></font> | <font color="purple"><b>a</b></font> | <font color="purple"><b>b</b></font> | <font color="purple"><b>f</b></font> | <font color="purple"><b>n</b></font> | <font color="purple"><b>r</b></font> | <font color="purple"><b>t</b></font> | <font color="purple"><b>v</b></font> | \[ <em>0-7</em> ]   \[ <em>0-7</em> ]   \[ <em>0-7</em> ] )
+:  <font color="purple"><b>\\</b></font>  ( <font color="purple"><b>&#39;</b></font> | <font color="purple"><b>&quot;</b></font> | <font color="purple"><b>?</b></font> | <font color="purple"><b>&#39;</b></font> | <font color="purple"><b>a</b></font> | <font color="purple"><b>b</b></font> | <font color="purple"><b>f</b></font> | <font color="purple"><b>n</b></font> | <font color="purple"><b>r</b></font> | <font color="purple"><b>t</b></font> | <font color="purple"><b>v</b></font> | \[ <em>0-7</em> ]   \[ <em>0-7</em> ]   \[ <em>0-7</em> ] )
   
 <a name="DOUBLE_QUOTED_STRING"></a>**DOUBLE\_QUOTED\_STRING**
-:  <font color="purple"><b>"</b></font>  { <a href="#unescaped_character">unescaped\_character</a> | <a href="#escaped_character">escaped\_character</a> }  <font color="purple"><b>"</b></font>
+:  <font color="purple"><b>&quot;</b></font>  { <a href="#unescaped_character">unescaped\_character</a> | <a href="#escaped_character">escaped\_character</a> }  <font color="purple"><b>&quot;</b></font>
   
 <a name="TRIPLE_DOUBLE_QUOTED_STRING"></a>**TRIPLE\_DOUBLE\_QUOTED\_STRING**
-:  <font color="purple"><b>"""</b></font>  { <em>any\_ASCII\_character</em> }  <font color="purple"><b>"""</b></font>
+:  <font color="purple"><b>&quot;&quot;&quot;</b></font>  { <em>any\_ASCII\_character</em> }  <font color="purple"><b>&quot;&quot;&quot;</b></font>
   
 <a name="ID"></a>**ID**
 :  \[ <em>a-z</em> ]  

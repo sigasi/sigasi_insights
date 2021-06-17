@@ -35,10 +35,16 @@ XL code rules require a {{< xl >}} or {{< xprt >}} license.
 
 |                           | Description                                                                                                                          |  ID |
 |---------------------------|--------------------------------------------------------------------------------------------------------------------------------------|----:|
+|                           | [Null range: The left argument is strictly larger than the right]({{< ref "null-range-empty-range" >}})                              |   1 |
 | {{< warning_lightbulb >}} | [Deprecated IEEE packages]({{< ref "deprecated-ieee-packages-non-standard-packages" >}})                                             |   8 |
+|                           | Case alternative contains redundant choices                                                                                          |  12 |
+|                           | [Case statement contains all choices explicitly. You can safely remove the redundant 'others']({{< ref "redundant-others" >}})       |  13 |
+|                           | [Infinite loop. Loop is missing a wait]({{< ref "loops" >}})                                                                         |  20 |
+|                           | [Null range: The left argument is strictly smaller than the right]({{< ref "null-range-empty-range" >}})                             |  26 |
 | {{< warning_lightbulb >}} | [Non-standard packages]({{< ref "deprecated-ieee-packages-non-standard-packages" >}})                                                |  37 |
 | {{< warning_lightbulb >}} | [A process must either have a sensitivity list or contain one or more wait statements]({{< ref "sensitivity-list" >}})               |  38 |
 |                           | [There has to be a whitespace before physical units]({{< ref "space-before-the-physical-unit" >}})                                   |  47 |
+|                           | Unbound component instantiations                                                                                                     |  48 |
 |                           | [Superfluous library clause]({{< ref "superfluous-library-clause" >}})                                                               |  49 |
 | {{< warning_lightbulb >}} | Library is not available [Configure Altera, Xilinx, ModelSim and VUnit libraries]({{< ref "quick-fix-for-third-party-libraries" >}}) |  50 |
 | {{< warning_lightbulb >}} | [Find unused declarations]({{< ref "dead-code-lint" >}})                                                                             |  55 |
@@ -46,19 +52,12 @@ XL code rules require a {{< xl >}} or {{< xprt >}} license.
 |                           | Duplicate, conflicting design unit names                                                                                             |  64 |
 |                           | [Find unused ports]({{< ref "dead-code-lint" >}})                                                                                    |  67 |
 |                           | [Find unused generics]({{< ref "dead-code-lint" >}})                                                                                 |  68 |
+|                           | [Find dead states in state machines]({{< ref "dead-code-lint" >}})                                                                   |  71 |
 | {{< warning_lightbulb >}} | [Find incomplete sensitivity lists]({{< ref "sensitivity-list" >}})                                                                  |  72 |
 |                           | [Find superfluous signals in sensitivity lists]({{< ref "sensitivity-list" >}})                                                      |  73 |
+|                           | [Find dead code (unreachable statements)]({{< ref "dead-code-lint" >}})                                                              |  79 |
 |                           | Report encrypted files                                                                                                               |  84 |
 |                           | [Find duplicate signals in sensitivity lists]({{< ref "sensitivity-list" >}})                                                        |  85 |
-|                           | Incorrect use of keyword all                                                                                                         | 184 |
-|                           | [Null range: The left argument is strictly larger than the right]({{< ref "null-range-empty-range" >}})                              |   1 |
-|                           | Case alternative contains redundant choices                                                                                          |  12 |
-|                           | [Case statement contains all choices explicitly. You can safely remove the redundant 'others']({{< ref "redundant-others" >}})       |  13 |
-|                           | [Infinite loop. Loop is missing a wait]({{< ref "loops" >}})                                                                         |  20 |
-|                           | [Null range: The left argument is strictly smaller than the right]({{< ref "null-range-empty-range" >}})                             |  26 |
-|                           | Unbound component instantiations                                                                                                     |  48 |
-|                           | [Find dead states in state machines]({{< ref "dead-code-lint" >}})                                                                   |  71 |
-|                           | [Find dead code (unreachable statements)]({{< ref "dead-code-lint" >}})                                                              |  79 |
 |                           | Detect signals and variables that are never written                                                                                  |  88 |
 |                           | Detect signals and variables that are never read                                                                                     |  89 |
 |                           | None or multiple matching entities for component                                                                                     |  90 |
@@ -73,6 +72,7 @@ XL code rules require a {{< xl >}} or {{< xprt >}} license.
 |                           | Incorrect instantiation statement label in configuration                                                                             | 181 |
 |                           | Missing or incorrect binding indication                                                                                              | 182 |
 |                           | Incorrect name in binding indication                                                                                                 | 183 |
+|                           | Incorrect use of keyword all                                                                                                         | 184 |
 |                           | [Redundant boolean equality check with true]({{< ref "boolean-test" >}})                                                             | 185 |
 |                           | [Boolean equality check with false]({{< ref "boolean-test" >}})                                                                      | 186 |
 | {{< warning_lightbulb >}} | [Check for component/entity mismatch]({{< ref "check-for-component-entity-mismatch" >}})                                             | 187 |
@@ -85,4 +85,4 @@ XL code rules require a {{< xl >}} or {{< xprt >}} license.
 |                           | [Type declaration not allowed in expression]({{< ref "vhdl_type_expr" >}})                                                           | 209 |
 |                           | [Index out of range]({{< ref "vhdl_array_range" >}})                                                                                 | 210 |
 |                           | [Slice has wrong direction]({{< ref "vhdl_array_range" >}})                                                                          | 211 |
-
+|                           | Unterminated string literal                                                                                                          | 215 |

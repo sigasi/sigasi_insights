@@ -3,7 +3,7 @@ title: "Sigasi Studio Graphics Configuration Grammar"
 layout: page
 pager: true
 author: Sigasi
-date: 2018-09-10
+date: 2021-06-04
 comments: true
 tags:
   - graphics
@@ -37,13 +37,17 @@ tags:
   
 <a name="GraphicsRestriction"></a>**GraphicsRestriction**
 :  <a href="#BlockVisibilityRestriction">BlockVisibilityRestriction</a>  
-        | <a href="#ReassignmentsConfiguration">ReassignmentsConfiguration</a>
+        | <a href="#ReassignmentsConfiguration">ReassignmentsConfiguration</a>  
+        | <a href="#LabelsConfiguration">LabelsConfiguration</a>
   
 <a name="BlockVisibilityRestriction"></a>**BlockVisibilityRestriction**
 :  <font color="purple"><b>show</b></font> <font color="purple"><b>:</b></font> <a href="#BlockVisibilityRestrictionType">BlockVisibilityRestrictionType</a>
   
 <a name="ReassignmentsConfiguration"></a>**ReassignmentsConfiguration**
 :  <font color="purple"><b>reassignments</b></font> <font color="purple"><b>hide</b></font>
+  
+<a name="LabelsConfiguration"></a>**LabelsConfiguration**
+:  <font color="purple"><b>labels</b></font> <font color="purple"><b>hide</b></font>
   
 <a name="BlockVisibilityRestrictionType"></a>**BlockVisibilityRestrictionType**
 :  <font color="purple"><b>instantiations</b></font>
@@ -101,7 +105,7 @@ tags:
         | <a href="#SQ_STRING">SQ\_STRING</a>
   
 <a name="DQ_STRING"></a>**DQ\_STRING**
-:  <font color="purple"><b>"</b></font>  { <font color="purple"><b>\\</b></font> <em>char</em> | <em>not (\ | ")</em> }  <font color="purple"><b>"</b></font>
+:  <font color="purple"><b>&quot;</b></font>  { <font color="purple"><b>\\</b></font> <em>char</em> | <em>not (\ | ")</em> }  <font color="purple"><b>&quot;</b></font>
   
 <a name="SQ_STRING"></a>**SQ\_STRING**
-:  <font color="purple"><b>'</b></font>  { <font color="purple"><b>\\</b></font> <em>char</em> | <em>not (\ | ')</em> }  <font color="purple"><b>'</b></font>
+:  <font color="purple"><b>&#39;</b></font>  { <font color="purple"><b>\\</b></font> <em>char</em> | <em>not (\ | ')</em> }  <font color="purple"><b>&#39;</b></font>

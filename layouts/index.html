@@ -30,7 +30,7 @@
             </div>
             <div>
                 <h3>Recent Articles</h3>
-                {{ $s_tech := where .Site.RegularPages.ByDate.Reverse "Section" "tech" }}
+                {{ $s_tech := where .Site.RegularPages.ByLastmod.Reverse "Section" "tech" }}
                 {{ range first 10 $s_tech }}
                 <span uk-icon="link"></span><a href="{{ .Permalink }}">{{ .Title | truncate 55 }}</a><small> {{ .Date.Format "2006-01-02" }}</small><br>
                 {{ end }}
@@ -63,7 +63,7 @@
         </div>
     </div>
     <div class="uk-child-width-1-4@m uk-padding uk-padding-remove-left" data-uk-grid>
-        {{ $s_screencasts := where .Site.RegularPages.ByDate.Reverse "Section" "screencasts" }}
+        {{ $s_screencasts := where .Site.RegularPages.ByLastmod.Reverse "Section" "screencasts" }}
         {{ range first 4 $s_screencasts }}
         <div>
             {{ partial "youtube" . }}

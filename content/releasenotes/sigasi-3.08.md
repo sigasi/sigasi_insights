@@ -15,7 +15,7 @@ Read below to find more new and noteworthy changes.
 
 VHDL and SystemVerilog comments are now processed with a [Markdown processor](https://en.wikipedia.org/wiki/Markdown). This allows to add markup (e.g. bold, code, paragraphs, hyperlinks,...) to comments. This results in nicer hovers and documentation.
 
-{{< figure src="/img/releasenotes/3.8/markdown_comments.png" alt="MarkDown in comments" title="markdown comments" link="/img/releasenotes/3.8/markdown_comments.png" >}}
+{{< figure src="/img/releasenotes/3.8/markdown_comments.png" alt="Markdown in comments" title="markdown comments" link="/img/releasenotes/3.8/markdown_comments.png" >}}
 
 In hovers the complete Markdown syntax is supported. For PDF documentation generation following features are supported:
 

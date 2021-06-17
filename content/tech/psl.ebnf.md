@@ -234,8 +234,8 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <a href="#NOT_OP">NOT\_OP</a> <a href="#FL_Property">FL\_Property</a>  
         | <a href="#FL_Property">FL\_Property</a> <a href="#AND_OP">AND\_OP</a> <a href="#FL_Property">FL\_Property</a>  
         | <a href="#FL_Property">FL\_Property</a> <a href="#OR_OP">OR\_OP</a> <a href="#FL_Property">FL\_Property</a> <em>':'</em>  
-        | <a href="#FL_Property">FL\_Property</a> <font color="purple"><b>-></b></font> <a href="#FL_Property">FL\_Property</a>  
-        | <a href="#FL_Property">FL\_Property</a> <font color="purple"><b><-></b></font> <a href="#FL_Property">FL\_Property</a> <em>: Primitive LTL Operators  :</em>  
+        | <a href="#FL_Property">FL\_Property</a> <font color="purple"><b>-&gt;</b></font> <a href="#FL_Property">FL\_Property</a>  
+        | <a href="#FL_Property">FL\_Property</a> <font color="purple"><b>&lt;-&gt;</b></font> <a href="#FL_Property">FL\_Property</a> <em>: Primitive LTL Operators  :</em>  
         | <font color="purple"><b>X</b></font> <a href="#FL_Property">FL\_Property</a>  
         | <font color="purple"><b>X!</b></font> <a href="#FL_Property">FL\_Property</a>  
         | <font color="purple"><b>F</b></font> <a href="#FL_Property">FL\_Property</a>  
@@ -272,8 +272,8 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <font color="purple"><b>next\_event\_e!</b></font> <font color="purple"><b>(</b></font> <a href="#Boolean">Boolean</a> <font color="purple"><b>)</b></font>  \[ <em>finite\_positive\_</em><a href="#Range">Range</a> ]  <font color="purple"><b>(</b></font> <a href="#FL_Property">FL\_Property</a> <font color="purple"><b>)</b></font>  
         | <font color="purple"><b>next\_event\_e</b></font> <font color="purple"><b>(</b></font> <a href="#Boolean">Boolean</a> <font color="purple"><b>)</b></font>  \[ <em>finite\_positive\_</em><a href="#Range">Range</a> ]  <font color="purple"><b>(</b></font> <a href="#FL_Property">FL\_Property</a> <font color="purple"><b>)</b></font> <em>: Operators on SEREs  :</em>  
         | { <a href="#Sequence">Sequence</a> }  <font color="purple"><b>(</b></font> <a href="#FL_Property">FL\_Property</a> <font color="purple"><b>)</b></font>  
-        | <a href="#Sequence">Sequence</a> <font color="purple"><b>|-></b></font> <a href="#FL_Property">FL\_Property</a>  
-        | <a href="#Sequence">Sequence</a> <font color="purple"><b>|=></b></font> <a href="#FL_Property">FL\_Property</a>
+        | <a href="#Sequence">Sequence</a> <font color="purple"><b>|-&gt;</b></font> <a href="#FL_Property">FL\_Property</a>  
+        | <a href="#Sequence">Sequence</a> <font color="purple"><b>|=&gt;</b></font> <a href="#FL_Property">FL\_Property</a>
   
 ### A.4.5 Sequential Extended Regular Expressions (SEREs)
   
@@ -290,8 +290,8 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <a href="#Braced_SERE">Braced\_SERE</a>  
         | <a href="#Clocked_SERE">Clocked\_SERE</a>  
         | <a href="#Compound_SERE">Compound\_SERE</a> <font color="purple"><b>|</b></font> <a href="#Compound_SERE">Compound\_SERE</a>  
-        | <a href="#Compound_SERE">Compound\_SERE</a> <font color="purple"><b>&</b></font> <a href="#Compound_SERE">Compound\_SERE</a>  
-        | <a href="#Compound_SERE">Compound\_SERE</a> <font color="purple"><b>&&</b></font> <a href="#Compound_SERE">Compound\_SERE</a>  
+        | <a href="#Compound_SERE">Compound\_SERE</a> <font color="purple"><b>&amp;</b></font> <a href="#Compound_SERE">Compound\_SERE</a>  
+        | <a href="#Compound_SERE">Compound\_SERE</a> <font color="purple"><b>&amp;&amp;</b></font> <a href="#Compound_SERE">Compound\_SERE</a>  
         | <a href="#Compound_SERE">Compound\_SERE</a> <font color="purple"><b>within</b></font> <a href="#Compound_SERE">Compound\_SERE</a>  
         | <a href="#Parameterized_SERE">Parameterized\_SERE</a>
   
@@ -314,8 +314,8 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <a href="#OR_OP">OR\_OP</a>
   
 <a name="And_Or_SERE_Op"></a>**And\_Or\_SERE\_Op**
-:  <font color="purple"><b>&&</b></font>  
-        | <font color="purple"><b>&</b></font>  
+:  <font color="purple"><b>&amp;&amp;</b></font>  
+        | <font color="purple"><b>&amp;</b></font>  
         | <font color="purple"><b>|</b></font>
   
 ### A.4.7 Sequences
@@ -335,7 +335,7 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <a href="#Sequence">Sequence</a> <font color="purple"><b>\[+]</b></font>  
         | <font color="purple"><b>\[+]</b></font>  
         | <a href="#Boolean">Boolean</a> <font color="purple"><b>\[=</b></font> <a href="#Count">Count</a> <font color="purple"><b>]</b></font>  
-        | <a href="#Boolean">Boolean</a> <font color="purple"><b>\[-></b></font>  \[ <em>positive\_</em><a href="#Count">Count</a> ]  <font color="purple"><b>]</b></font>  
+        | <a href="#Boolean">Boolean</a> <font color="purple"><b>\[-&gt;</b></font>  \[ <em>positive\_</em><a href="#Count">Count</a> ]  <font color="purple"><b>]</b></font>  
         | <a href="#Boolean">Boolean</a> <a href="#Proc_Block">Proc\_Block</a>  
         | <a href="#Sequence">Sequence</a> <a href="#Proc_Block">Proc\_Block</a>
   
@@ -394,8 +394,8 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
 :  <a href="#HDL_EXPR">HDL\_EXPR</a>
   
 <a name="PSL_Expression"></a>**PSL\_Expression**
-:  <a href="#Boolean">Boolean</a> <font color="purple"><b>-></b></font> <a href="#Boolean">Boolean</a>  
-        | <a href="#Boolean">Boolean</a> <font color="purple"><b><-></b></font> <a href="#Boolean">Boolean</a>
+:  <a href="#Boolean">Boolean</a> <font color="purple"><b>-&gt;</b></font> <a href="#Boolean">Boolean</a>  
+        | <a href="#Boolean">Boolean</a> <font color="purple"><b>&lt;-&gt;</b></font> <a href="#Boolean">Boolean</a>
   
 <a name="Built_In_Function_Call"></a>**Built\_In\_Function\_Call**
 :  <font color="purple"><b>prev</b></font> <font color="purple"><b>(</b></font> <a href="#Any_Type">Any\_Type</a>  \[ <font color="purple"><b>,</b></font> <a href="#Number">Number</a> ]  <font color="purple"><b>)</b></font>  
@@ -423,8 +423,8 @@ Sigasi has created this browsable version of the grammar, hoping that it would b
         | <a href="#NOT_OP">NOT\_OP</a> <a href="#OBE_Property">OBE\_Property</a>  
         | <a href="#OBE_Property">OBE\_Property</a> <a href="#AND_OP">AND\_OP</a> <a href="#OBE_Property">OBE\_Property</a>  
         | <a href="#OBE_Property">OBE\_Property</a> <a href="#OR_OP">OR\_OP</a> <a href="#OBE_Property">OBE\_Property</a>  
-        | <a href="#OBE_Property">OBE\_Property</a> <font color="purple"><b>-></b></font> <a href="#OBE_Property">OBE\_Property</a>  
-        | <a href="#OBE_Property">OBE\_Property</a> <font color="purple"><b><-></b></font> <a href="#OBE_Property">OBE\_Property</a> <em>: Universal Operators :</em>  
+        | <a href="#OBE_Property">OBE\_Property</a> <font color="purple"><b>-&gt;</b></font> <a href="#OBE_Property">OBE\_Property</a>  
+        | <a href="#OBE_Property">OBE\_Property</a> <font color="purple"><b>&lt;-&gt;</b></font> <a href="#OBE_Property">OBE\_Property</a> <em>: Universal Operators :</em>  
         | <font color="purple"><b>AX</b></font> <a href="#OBE_Property">OBE\_Property</a>  
         | <font color="purple"><b>AG</b></font> <a href="#OBE_Property">OBE\_Property</a>  
         | <font color="purple"><b>AF</b></font> <a href="#OBE_Property">OBE\_Property</a>  

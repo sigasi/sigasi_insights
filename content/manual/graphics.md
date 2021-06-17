@@ -15,14 +15,14 @@ The Graphics Configuration Language is a plain text file containing declarations
 You can see it in action in the images below:
 
 This BlockDiagram  
-{{< figure src="/img/manual/BdOriginal.png" alt="Original BlockDiagram" >}}  
+{{< figure src="/img/manual/BdOriginal.png" link="/img/manual/BdOriginal.png" alt="Original BlockDiagram" width="400" >}}  
 Turns into:  
-{{< figure src="/img/manual/BdFiltered.png" alt="Filtered BlockDiagram" >}}  
+{{< figure src="/img/manual/BdFiltered.png" link="/img/manual/BdFiltered.png" alt="Filtered BlockDiagram" >}}  
 
 This StateMachine  
-{{< figure src="/img/manual/FsmOriginal.png" alt="Original StateMachine" >}}  
+{{< figure src="/img/manual/FsmOriginal.png" link="/img/manual/FsmOriginal.png" alt="Original StateMachine" width="250" >}}  
 Turns into:  
-{{< figure src="/img/manual/FsmFiltered.png" alt="Filtered StateMachine" >}}  
+{{< figure src="/img/manual/FsmFiltered.png" link="/img/manual/FsmFiltered.png" alt="Filtered StateMachine" width="250" >}}  
 
 A plain text format was chosen over a buttons and menus for several reasons:
 
@@ -31,7 +31,7 @@ A plain text format was chosen over a buttons and menus for several reasons:
 * We can support you using all of our well-known features such as auto-complete, validations, formatting,...
 * It's lightweight and can be used as the basis for the UI implementation.
 
-## Getting started
+# Getting started
 To get started, choose a design with a BlockDiagram or StateMachine you want to simplify.
 
 Create a new Graphics Configuration file by going to **File > New > Other > Graphics Configuration > Graphics Configuration File**.
@@ -41,7 +41,7 @@ From there, you can declare groups and configure your diagram, check it in to ve
 Auto-complete (**Ctrl+Space**) helps you write most of the code while formatting (**Shift+Ctrl+F**) helps you to keep your file clean.
 If you're interested in the language's exact syntax, you can find it [here](/tech/graphics.ebnf).
 
-## Features
+# Features
 The Graphics Configuration features:
 
 * Grouping
@@ -153,3 +153,7 @@ The header is also slightly different, the syntax is as follows:
 For an example you can check out `step_3_state_machines.vhd` (in our VHDL Tutorial) with [this](/resources/tech/using-graphics-configuration/step_3_state_machines.statemachine) filter file.
 
 {{< figure src="/img/manual/statemachine_configured.png" alt="Example of a state machine diagram configuration" link="/img/manual/statemachine_configured.png" >}}
+
+### Hiding labels
+
+State transition conditions can be hidden using `labels hide`.

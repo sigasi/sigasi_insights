@@ -32,5 +32,30 @@ be wider than 32 bits, its width must be specified.
 
 <span class="goodcode">parameter [35:0] q = 'h764321098</span>;</pre>
 
+## Empty parameter not allowed
 
-{{% lintrule sv 19 48 %}}
+The Verilog standard doesn't allow empty parameters.
+
+<pre>
+module dut # (parameter WIDTH = 42<span class="badcode">, </span>) (input clk); endmodule; // dangling comma is not allowed
+
+module dut # (parameter WIDTH = 42<span class="goodcode"> </span>) (input clk); endmodule;
+</pre>
+
+## Empty parameter overrides not allowed
+
+The Verilog standard doesn't allow empty parameter overrides.
+
+<pre>
+module test;
+    sub#(8, 16<span class="badcode">, </span>) inst(); // dangling comma is not allowed
+endmodule
+
+
+module test;
+    sub#(8, 16<span class="goodcode"> </span>) inst();
+endmodule
+</pre>
+
+
+{{% lintrule sv 19 48 53 54 %}}
