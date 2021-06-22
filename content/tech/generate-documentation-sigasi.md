@@ -268,6 +268,6 @@ If you've read the article to this point, you must be convinced that
 good documentation is essential in HDL design.  We have also presented
 some good documentation practices.  Sigasi Studio can help you with
 documentation. It is very easy to get started, so I invite you to
-**try this out yourself**. Even with a {{< starter >}} license, you
-can open the [Documentation Preview
-View](/manual/views#documentation-view).
+[**try this out yourself**](https://www.sigasi.com/try-form/).
+Even with a {{< starter >}} license, you can open the
+[Documentation Preview View](/manual/views#documentation-view).
