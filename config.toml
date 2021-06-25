@@ -136,3 +136,37 @@ pygmentsUseClasses = "true"
     name = "Contact"
     url = "https://sigasi.com/contact/"
     weight = 40
+
+
+  [[menu.mobile]]
+    url = "https://www.sigasi.com/"
+    name = "Sigasi"
+    weight = 1
+  [[menu.mobile]]
+    url = "/"
+    name = "Insights"
+    weight = 2
+  [[menu.mobile]]
+    url = "/manual/"
+    name = "Manual"
+    weight = 3
+  [[menu.mobile]]
+    url = "/faq/"
+    name = "FAQ"
+    weight = 4
+  [[menu.mobile]]
+    url = "/releasenotes/"
+    name = "Release Notes"
+    weight = 5
+  [[menu.mobile]]
+    url = "/screencasts/"
+    name = "Screencasts"
+    weight = 6
+  [[menu.mobile]]
+    url = "/tech/"
+    name = "Tech Articles"
+    weight = 7
+  [[menu.mobile]]
+    url = "/opinion/"
+    name = "Opinion"
+    weight = 8
