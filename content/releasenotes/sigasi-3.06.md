@@ -34,7 +34,7 @@ Sigasi Studio's [dependencies view](/manual/views#dependencies-view) has a new s
 
 # Extra external tools
 
-Sigasi Studio 3.6 enables two extra external tools in your workflow: [ALINT-PRO](https://www.aldec.com/en/products/functional_verification/alint-pro) and [Xilinx Vivado XSIM](https://www.xilinx.com/products/design-tools/vivado/simulator.html)
+Sigasi Studio 3.6 enables two extra external tools in your workflow: [ALINT-PRO](https://www.aldec.com/en/products/functional_verification/alint-pro) and [Xilinx Vivado XSIM](https://www.xilinx.com/products/design-tools/vivado/verification.html)
 
 ## ALINT-PRO
 
