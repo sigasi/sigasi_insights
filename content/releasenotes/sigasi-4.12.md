@@ -1,6 +1,7 @@
 ---
 title: Sigasi Studio 4.12
 date: 2021-06-17
+lastmod: 2021-06-28
 comments: true
 pager: true
 ---
@@ -157,5 +158,13 @@ We assume everybody has updated to the newer ALINT-PRO by now.
   - Java JRE 11 or higher
 
 We recommend at least **4GB of memory** available for Sigasi Studio, and you need **about 300MB** of free disk space.
+
+# Sigasi Studio 4.12.1 point release
+
+On July 28 we released Sigasi Studio 4.12.1. This release fixes the following reported issues:
+
+- **[Verilog]** Fixed high memory usage for class templates (specifically with UVM)
+- **[Verilog]** Made sure hover keeps working after hovering over the whitespace following a macro invocation
+- Several other small improvements and bugfixes
 
 Thanks for all the [bug reports](mailto:support@sigasi.com) and enabling [Talkback]({{< ref "manual/talkback.md" >}}).

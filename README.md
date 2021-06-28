@@ -25,7 +25,7 @@ We are using markdown with [Hugo].
   * Use the `-D` (or `--buildDrafts`) option to show posts with draft status.
   * Use `--navigateToChanged` to navigate to changed content file on live browser reload
 * Tools:
-  * Enable shell autocompletion: `sudo hugo gen autocomlete`
+  * Enable shell autocompletion: `sudo hugo gen autocomplete`
 * Create content based on archetypes:
   * New release notes: `hugo new content/releasenotes/sigasi-4.06.md`
   * New tech article: `hugo new content/tech/fancy-title.md`

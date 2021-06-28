@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.13)
 layout: page
 pager: true
-date: 2021-06-17
+date: 2021-06-28
 comments: true
 ---
 
@@ -16,7 +16,39 @@ Although these preview releases are less rigorously tested than the official rel
 
 # Current preview release
 
-No documented changes since the {{< page "releasenotes/sigasi-4.12.md" >}} release.
+Since the {{< page "releasenotes/sigasi-4.12.md" >}} release, the following changes have been made.
+
+# Improvements
+
+* Improved toolchains' handling of special characters in paths
+* Brought ALINT's icon size in line with other icons
+* Truncated overly long linting messages such that possible quickfixes are always visible
+* Renamed the `XL Tutorial` to `XPRT Tutorial` as it demonstrates XPRT features
+* We now by default configure an `https` instead of an `http` update site
+* Removed `-XVerify` from the the default `sigasi.ini`
+* Renamed `Altera Quartus II` to `Intel Quartus II`
+  {{< figure src="/img/releasenotes/4.13/IntelQuartus.png" title="Intel Quartus II preference page" width="500">}}
+* **[VHDL]** Added folding for record types, generics and ports
+  {{< figure src="/img/releasenotes/4.13/RecordFolding.png" title="Folding of record types" width="500">}}
+  {{< figure src="/img/releasenotes/4.13/GenericPortFolding.png" title="Folding of generics and ports" width="500">}}
+* **[VHDL]** Added formatting for signature filter path element
+* **[Verilog]** Added support for `.vp` and `.svp` extensions
+* **[Verilog]** Improved when the `Open Class Hierarchy` context menu is available
+* **[Verilog]** Added the keybind (F4) for `Open Class Hierarchy` in the context menu
+* **[Verilog]** Added shortcut for `Open Class Hierarchy` when hovering over classes
+  {{< figure src="/img/releasenotes/4.13/ClassHierarchyInHover.png" title="Open Class Hierarchy in hover" width="500">}}
+
+# Bug fixes
+
+* Fixed resource leak in autocompletes
+* Made sure color customization in the [Graphics Configurations]({{< ref "manual/graphics.md" >}}) does not affect labels
+* Made sure FSM headers are not overflown by their text
+* **[VHDL]** Made sure the `Sort associations` quickfix can always be applied when it's shown
+* **[VHDL]** Made sure to always show VHDL versions in chronological order where applicable
+* **[VHDL]** Fixed an error on hover when using negative exponents
+* **[Verilog]** Fixed formatting for files containing incomplete macro invocations (a lonely backtick)
+* **[Verilog]** Fixed false positive error when using tagged unions inside ternary conditional expressions
+* **[Verilog]** Made sure the [Preprocessor View]({{< ref "manual/views.md#preprocessor-view" >}}) also works when opening previous versions of a file through version control
 
 # Update or install?
 
