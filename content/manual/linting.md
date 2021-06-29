@@ -117,7 +117,8 @@ Where `${validation id}` can be
 * the number of the validation ID (e.g. 140)
 * `all` to specify all validation ids in one rule
 
-Validation ID numbers are listed in the [List of VHDL code rules](#list-of-vhdl-code-rules)
+Validation ID numbers are listed in the [list of VHDL code rules]({{< ref "/manual/linting-vhdl.md" >}}),
+the [list of (System)Verilog code rules]({{< ref "/manual/linting-verilog.md" >}})
 and can also be found in the **Project Properties** under **VHDL Errors/Warnings**.
 
 Where `${path}` can be:
@@ -146,7 +147,7 @@ Examples:
 
 ## Naming Conventions per project
 
-While [Naming Conventions](#naming-conventions) and the [Header Comment check](#check-header-comment) can be configured
+While [Naming Conventions]({{< ref "/manual/rules/naming-conventions.md" >}}) and the Header Comment check [[(System)Verilog]({{< ref "/manual/rules/verilog_style.md#file-header-comment-does-not-match-required-pattern" >}}) | [VHDL]({{< ref "/manual/rules/check-header-comment.md" >}})] can be configured
 globally for a workspace, they can also be defined per project, per folder or per file.
 The project-specific Naming Conventions and Header Comment are stored in this settings file for VHDL related settings:
 ```text
