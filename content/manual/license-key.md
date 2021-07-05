@@ -283,10 +283,6 @@ Check the content of the Sigasi License preference page via : **Window > Prefere
   * Is a valid *license key path* configured (or are valid environment variables used)?
   * Is the user trying to use a Sigasi Studio 3 license in Sigasi 2.x?
 
-> No Such Feature Exists
-
-  * If you have an XL (doc) license, make sure you did **not enable** the **Do not try to checkout floating Sigasi Studio XL licenses** option on **Preferences > Sigasi > License Key > Options**.
-
 > Invalid license key (inconsistent authentication code)
 
 * Did you correct the server name to the actual server name in the (floating) license key file?
