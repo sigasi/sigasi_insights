@@ -1,13 +1,23 @@
+{{/* check if the file specified as src="" in shortcode is an asset */}}
+{{ $asrc := resources.GetMatch (.Get "src") }}
+{{ $awidth := .Get "width"}}
+{{ $scratch := newScratch }}
+
+{{ with $asrc }}
+{{ $resizedw := (print $awidth "x") }}
+{{ $scratch.Set "resized" ($asrc.Resize $resizedw) }}
+{{ end }}
+
 <figure{{ with .Get "class" }} class="{{ . }}"{{ end }}>
     {{- if .Get "link" -}}
     {{ if (not (.Get "target")) }}<div uk-lightbox>{{ end }}
-        <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}
+        <a href="{{ with $asrc }}{{ $asrc.RelPermalink }}{{ else }}{{ .Get "link" }}{{ end }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}
          {{- if or (.Get "alt") (.Get "caption") }}
          data-caption="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify | plainify }}{{ end }}"
          {{- end -}}
             >
     {{- end }}
-    <img src="{{ .Get "src" }}"
+    <img src="{{ with $asrc }}{{ ($scratch.Get "resized").RelPermalink }}{{ else }}{{ .Get "src" }}{{ end }}"
          {{- if or (.Get "alt") (.Get "caption") }}
          alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify | plainify }}{{ end }}"
          {{- end -}}

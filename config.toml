@@ -112,8 +112,8 @@ pygmentsUseClasses = "true"
     weight = 50
   [[menu.main]]
     parent = "insights"
-    name = "Opinion"
-    url = "//insights.sigasi.com/opinion/"
+    name = "VS Code"
+    url = "//insights.sigasi.com/vscode/"
     weight = 60
   
   [[menu.main]]
