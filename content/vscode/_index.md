@@ -26,7 +26,7 @@ The extension requires a sufficiently recent version of VS Code `1.x`.
 
 # Installation
 
-The extension can be installed from the [VS Code marketplace](https://marketplace.visualstudio.com/vscode).
+The extension can be installed from the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=Sigasi.sigasi-vscode).
 
 # Access settings
 
