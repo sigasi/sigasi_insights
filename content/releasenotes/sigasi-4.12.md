@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 4.12
 date: 2021-06-17
-lastmod: 2021-06-28
+lastmod: 2021-07-07
 comments: true
 pager: true
 ---
@@ -161,10 +161,18 @@ We recommend at least **4GB of memory** available for Sigasi Studio, and you nee
 
 # Sigasi Studio 4.12.1 point release
 
-On July 28 we released Sigasi Studio 4.12.1. This release fixes the following reported issues:
+On June 28 we released Sigasi Studio 4.12.1. This release fixes the following reported issues:
 
 - **[Verilog]** Fixed high memory usage for class templates (specifically with UVM)
 - **[Verilog]** Made sure hover keeps working after hovering over the whitespace following a macro invocation
 - Several other small improvements and bugfixes
+
+# Sigasi Studio 4.12.2 point release
+
+On July 7 we released Sigasi Studio 4.12.2.
+
+We've identified an issue with the 4.12.1 update.
+Not all intended fixes were applied in the binaries that were released.
+Therefore we're creating a new point release that does contain all intended fixes.
 
 Thanks for all the [bug reports](mailto:support@sigasi.com) and enabling [Talkback]({{< ref "manual/talkback.md" >}}).
