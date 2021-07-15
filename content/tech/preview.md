@@ -58,8 +58,8 @@ You can download the stand-alone version of the latest preview from:
 - <https://download.sigasi.com/preview/latest/com.sigasi.hdt.product-macosx.cocoa.x86_64.zip>
 - <https://download.sigasi.com/preview/latest/com.sigasi.hdt.product-win32.win32.x86_64.zip>
 
-You can also update from (configure via Preferences > Install/Update > Available Software Sites > Add...) :
-https://download.sigasi.com/preview/studio/
+You can also update automatically when setting **Preferences > Install/Update > Available Software Sites > Add...** :
+`https://download.sigasi.com/preview/studio/`
 
 SHA sums ([more info]({{< ref "/faq.md#how-can-i-check-a-sha-sum" >}})) can be checked via <https://download.sigasi.com/preview/latest/sha1.txt>.
 

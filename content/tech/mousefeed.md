@@ -21,7 +21,7 @@ How can you enable this feature if you are using a standard Eclipse distribution
 ## Installation
 
 * Click **Help > Install New Software...**
-* Enter <https://download.sigasi.com/updates/mousefeed> in the **Work with** field and press **Enter**
+* Enter `https://download.sigasi.com/updates/mousefeed` in the **Work with** field and press **Enter**
 * Some plugins should appear
 * Select **MouseFeed**
 * Click **Next** (2 times), accept the license and click **Finish**.

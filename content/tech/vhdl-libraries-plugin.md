@@ -19,7 +19,7 @@ You can install support for these libraries without installing all Sigasi plugin
 
 You can also install from the UI:
 
-* Update site <https://download.sigasi.com/updates/eclipse-hdt2>
+* Update site `https://download.sigasi.com/updates/eclipse-hdt2`
 * Uncheck the **"Group items by category"**
 * Select the **"Sigasi Read Only file system"** feature.
 

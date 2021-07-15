@@ -92,7 +92,7 @@ To successfully run Sigasi Studio on RedHat Linux 6, follow these steps:
 * Install [Eclipse Oxygen (4.7.3a)](https://www.eclipse.org/oxygen/). Find your download using the *Packages* link on the Oxygen page. We recommend to use the *Eclipse IDE for C/C++ Developers* package.
 * Eclipse Oxygen requires at least version 2.24.0 of GTK+.
 * Eclipse Oxygen and the Sigasi Studio Plugin require Java 8: `yum install java-1.8.0-openjdk`
-* Install the Sigasi Studio Plugin by following [these steps](/manual/setup#install-the-eclipse-plugin) where you replace the link of the **Work with:** field from the second step with **<https://download.sigasi.com/updates/4.9.0/update-site>** in order to install the final version for RedHat 6.
+* Install the Sigasi Studio Plugin by following [these steps](/manual/setup#install-the-eclipse-plugin) where you replace the link of the **Work with:** field from the second step with **`https://download.sigasi.com/updates/4.9.0/update-site`** in order to install the final version for RedHat 6.
 
 ## How do I increase the heap size for Eclipse?
 
@@ -604,7 +604,7 @@ Also without JDK installed on your machine you can obtain stack traces. The meth
 
 There can be a number of reasons why Sigasi connects to the internet.
 
-* Updates: Each time you start Sigasi, the program checks to see if there are new [updates](/manual/setup#software-updates) from our update website (currently located at <https://download.sigasi.com>). Sigasi downloads the updates in the background and, when done, it asks you if it can install them.
+* Updates: Each time you start Sigasi, the program checks to see if there are new [updates](/manual/setup#software-updates) from our update website (currently located at `https://download.sigasi.com`). Sigasi downloads the updates in the background and, when done, it asks you if it can install them.
 * [Talkback](https://www.sigasi.com/sigasi-talkback)
 * Other Plugins: Obviously, other plugins can also connect to the internet. Some examples are plugins for revision control or issue tracking, or the built-in Eclipse web browser.
 
