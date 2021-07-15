@@ -476,14 +476,30 @@ editor that comes with Sigasi Studio supports a number of advanced editing
 features which are specifically useful for SystemVerilog editing. These are
 described in this chapter.
 
-## Initial preprocessor definitions for SystemVerilog projects
+## Include paths and initial preprocessor definitions
 
-Since [Sigasi Studio 3.6](/releasenotes/sigasi-3.06) you can configure definitions that are set before other files in the project are processed.
-Right click your project and select **Properties > (System)Verilog Preprocessor**.
+The fastest way to add an include path is to run the Quick Fix on \``include` errors in the editor.
+You can configure the include paths of your SystemVerilog projects in the **(System)Verilog Preprocessor** property page.
+Right click your project and select **Properties > (System)Verilog Preprocessor**.  
+Here you can `Add` and `Remove` include paths using the buttons on the right.
+You can also move the order of the include paths using the `Up` and `Down` buttons.
+The `Import...` and `Export...` buttons can be used to transfer a `;`-separated list of include paths from and to the clipboard.
 
-{{< figure src="/img/releasenotes/3.6/preprocessor_properties.png" >}}
+In the **Initial preprocessor definitions** field, you can configure definitions that are set before other files in the project are processed.
+This allows you to, for example, set global defines without an explicit `include` statement.
 
-The code in the **Initial preprocessor definitions** field is preprocessed before all other SystemVerilog code in your project. This allows you to, for example, set global defines without an explicit `include` statement.
+{{< figure src="/img/manual/preprocessor-property-page.png" >}}
+
+When you hover over a SystemVerilog preprocessor directive (e.g. `include ...`), Sigasi Studio presents you the preprocessed text.
+This hover also shows you, at the bottom, a convenient link to open the [Preprocessor View](/manual/views#preprocessor-view).
+
+**Ctrl+Click** on *\`defines* (or **F3**) will lead you to the corresponding declaration.
+Autocomplete will also offer you a list of all visible *\`defines*.
+
+In the [Preprocessor View](/manual/views#preprocessor-view), you can preview the expanded version of your preprocessed SystemVerilog source files.
+
+{{< figure src="/img/manual/preprocessor-hover.png" link="/img/manual/preprocessor-hover.png" width="400" >}}
+
 
 
 ## Verilog version
@@ -516,27 +532,3 @@ See also:
 
 * [Tabs and Spaces](/manual/config#tabs-and-spaces)
 * Screencast [Smart Indentation for Verilog](/screencasts/verilog-smart-indent)
-
-## SystemVerilog Preprocessing/Macros
-
-When you hover over a SystemVerilog preprocessor directive (e.g. `include ...`), Sigasi Studio presents you the preprocessed text.
-This hover also shows you, at the bottom, a convenient link to open the [Preprocessor View](/manual/views#preprocessor-view).
-
-{{< figure src="/img/manual/preprocessor-hover.png" >}}
-
-In the [Preprocessor View](/manual/views#preprocessor-view), you can preview the expanded version of your preprocessed SystemVerilog source files.
-
-You can configure the include paths of your SystemVerilog projects in the (System)Verilog Preprocessor Property page.
-You can open this page by right clicking your SystemVerilog project and selecting **Properties > (System)Verilog Preprocessor**.
-{{< figure src="/img/manual/preprocessor-property-page.png" >}}
-
-You can specify multiple include paths by separating them with a `;`.
-All paths are relative to the project folder.
-You can add the main project folder as include path by entering `.`.
-
-You can also add an include path by running the Quick Fix on \``include` errors.
-
-On the (System)Verilog Preprocessor Property page you can also declare **Initial preprocessor definitions**.
-
-**Ctrl+Click** on *\`defines* (or **F3**) will lead you to the corresponding declaration.
-Autocomplete will also offer you a list of all visible *\`defines*.
