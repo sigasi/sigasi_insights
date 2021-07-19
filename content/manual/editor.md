@@ -483,7 +483,7 @@ You can configure the include paths of your SystemVerilog projects in the **(Sys
 Right click your project and select **Properties > (System)Verilog Preprocessor**.  
 Here you can `Add` and `Remove` include paths using the buttons on the right.
 You can also move the order of the include paths using the `Up` and `Down` buttons.
-The `Import...` and `Export...` buttons can be used to transfer a `;`-separated list of include paths from and to the clipboard.
+The `Import...` and `Export...` buttons can be used to transfer a semicolon-separated (`;`) list of include paths from and to the clipboard.
 
 In the **Initial preprocessor definitions** field, you can configure definitions that are set before other files in the project are processed.
 This allows you to, for example, set global defines without an explicit `include` statement.
@@ -498,7 +498,7 @@ Autocomplete will also offer you a list of all visible *\`defines*.
 
 In the [Preprocessor View](/manual/views#preprocessor-view), you can preview the expanded version of your preprocessed SystemVerilog source files.
 
-{{< figure src="/img/manual/preprocessor-hover.png" link="/img/manual/preprocessor-hover.png" width="400" >}}
+{{< figure src="/img/manual/preprocessor-hover.png" link="/img/manual/preprocessor-hover.png" width="600" >}}
 
 
 
