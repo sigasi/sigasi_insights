@@ -3,6 +3,8 @@ title: Setting Up a Project
 showinmenu: true
 weight: 2
 pager: true
+aliases:
+  - /manual/mixed/
 ---
 
 # Introduction
@@ -18,8 +20,28 @@ this. The most common ways are:
 * [Importing a project from the file system](#importing-a-project-from-the-file-system)
 * [Creating a new, empty project](#creating-a-new-empty-project)
 
-These two methods and other methods are discussed in detail in the
-following sections.
+## Mixed language projects
+
+Note that while you initially need to choose between a **VHDL** and a **(System)Verilog** project, any  Sigasi Studio project can be a mixed language project.
+If you wish to create a mixed language project, we recommend to import or create a **VHDL** project and then add the **(System)Verilog** support to this project.
+
+To create a mixed language project, right click your project and select **Configure \> Add VHDL support** or **Configure \> Add (System)Verilog support** as needed.
+
+### Features
+
+In projects you can **navigate** from instantiation statements to the matching entity or module.
+This also works in mixed language projects.
+You can navigate from VHDL entity instantiations in (System)Verilog code and (System)Verilog module instantiations in VHDL code.
+You can also open the declaration of ports and generics/parameters in mixed instantiations.
+
+Other supported features:
+
+* **Find references** for entity names, modules, ports, generics and parameters.
+* **Autocomplete** (System)Verilog module instantiations in VHDL code and VHDL entity instantiations in (System)Verilog code.
+* **Error reporting** of incorrect entity names, modules, ports, generics and parameters in instantiations.
+* **renames** of signals and ports.
+
+Screencast : [Mixed languages: instantiating Verilog in VHDL code](/screencasts/mixed_language_instantiation)
 
 # Importing a project from the file system
 
@@ -109,4 +131,3 @@ specifications.
 For more information and examples, check out the [Sigasi Project Creator] project on GitHub.
 
 [Sigasi Project Creator]: https://github.com/sigasi/SigasiProjectCreator
-
