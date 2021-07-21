@@ -573,8 +573,6 @@ The following methods describe alternatives how to obtain this stack trace.
 
 ### Obtaining a stack trace using jstack
 
-If you have a matching JDK version installed on your machine, you can use the `jstack` command from JDK.
-
 The Sigasi Studio standalone app comes with a bundled JRE which also contains the `jstack` command.
 This command can be found in the Sigasi installation in `plugins/org.eclipse.justj.openjdk.hotspot.jre.full.<os_version>/jre/bin`.
 
@@ -582,6 +580,8 @@ This command can be found in the Sigasi installation in `plugins/org.eclipse.jus
    * On Windows you can find the PID using the *Task Manager*. The *Details* tab shows the PID of every process.
    * On Linux running a command like `ps -eo pid,cmd | grep java` can show you the PID.
 1. Run `jstack -l PID` in a command window and save the output to a text file.
+
+If you are using the Sigasi Studio plugin and have a matching JDK version installed on your machine, you can use the `jstack` command from JDK.
 
 ### Obtaining a stack trace using the console log
 
@@ -627,7 +627,7 @@ Alternatively, you can [contact support](mailto:support@sigasi.com) for an older
 
 ## Damaged app on Apple computers
 
-**Known issue on Apple computers**
+**Known issue on Apple computers with Sigasi Studio 4.9 and older**
 
 The following error message may pop up on Apple computers when using Sigasi Studio [older than 4.10]({{< ref "releasenotes/sigasi-4.10.md#other-new-and-noteworthy-changes" >}}):
 ```

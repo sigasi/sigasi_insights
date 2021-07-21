@@ -36,7 +36,7 @@ The settings for the Sigasi extension can be reached trough:
 
 * Open the _command palette_ using **Ctrl+Shift+P**
 * Start typing and select **Preferences: Open Settings (UI)**
-* In **Search settings** type `Sigasi`.
+* In **Search settings** type `Sigasi`
 * First, configure the **Path To License**. This can be a local node locked license file or a floating license server (e.g. `27000@myserver.example.com`).
 
 Alternatively, the Sigasi extension settings can be accessed through the Manage icon (<span uk-icon="cog"></span>) in the extensions overview.
