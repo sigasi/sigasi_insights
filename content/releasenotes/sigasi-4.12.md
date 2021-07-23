@@ -175,4 +175,9 @@ We've identified an issue with the 4.12.1 update.
 Not all intended fixes were applied in the binaries that were released.
 Therefore we're creating a new point release that does contain all intended fixes.
 
+# Sigasi Studio 4.12.3 point release
+
+On July 23 we released Sigasi Studio 4.12.3.
+This release fixes a crash that occured when using the Verilog `type()` operator.
+
 Thanks for all the [bug reports](mailto:support@sigasi.com) and enabling [Talkback]({{< ref "manual/talkback.md" >}}).
