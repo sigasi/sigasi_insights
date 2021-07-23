@@ -66,7 +66,7 @@ The following VHDL 2019 features are now supported in addition to the features s
   end protected SharedCounter;
   ```
 
-- Added support for VHDL 2019 generic protected type declarations **TODO screenshot here**
+- Added support for VHDL 2019 generic protected type declarations
   {{< figure src="/img/releasenotes/4.12/GenericProtectedTypeDeclaration.png" title="Generic protected type declaration in VHDL 2019" width="900">}}
 
 - Allow [`conditional_or_unaffected_expression`]({{< ref "/tech/vhdl2017.ebnf.md#conditional_or_unaffected_expression" >}}) where needed
