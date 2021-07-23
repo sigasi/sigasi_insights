@@ -70,5 +70,6 @@ XL code rules require a {{< xl >}} or {{< xprt >}} license.
 |                           | [Underscores at end of unit / port identifier]({{< ref "rules/verilog_identifiers/#underscores-in-identifier-names" >}})                                       | 43 |
 |                           | [Multiple statements per line]({{< ref "rules/verilog_style/#multiple-statements-per-line" >}})                                                                | 47 |
 |                           | [Missing bit width for parameters wider than 32 bits]({{< ref "rules/verilog_parameters/#parameters-wider-than-32-bits" >}})                                   | 48 |
+|                           | [Trailing comma is not recommended]({{< ref "rules/verilog_style/#trailing-comma-is-not-recommended" >}})                                                      | 52 |
 |                           | [Empty parameter not allowed]({{< ref "rules/verilog_parameters/#empty-parameter-overrides-not-allowed" >}})                                                   | 53 |
 |                           | [Empty parameter overrides not allowed]({{< ref "rules/verilog_parameters/#project-specific-setting-of-these-rules" >}})                                       | 54 |

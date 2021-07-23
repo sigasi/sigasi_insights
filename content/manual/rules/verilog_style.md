@@ -64,4 +64,15 @@ statements (rule 47).
 		
 endmodule</pre>
 
-{{% lintrule sv 17 18 20 21 22 47 %}}
+## Trailing comma is not recommended
+
+Sigasi Studio will flag a warning if a parameter list has a trailing comma (rule 52).
+Most EDA tools will treat a trailing comma as a syntax error.
+
+<pre>module ugly #(WIDTH = 16<span class="uglycode"> , </span>) (
+    // ...
+
+module nice #<span class="goodcode">(WIDTH = 16)</span> (
+    // ...</pre>
+
+{{% lintrule sv 17 18 20 21 22 47 52 %}}
