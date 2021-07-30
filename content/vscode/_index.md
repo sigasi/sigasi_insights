@@ -95,8 +95,9 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
 ## OutOfMemoryError: Java heap space
 
 If the Java heap space goes out of memory you will see a `java.lang.OutOfMemoryError: Java heap space` in the log.
+
 To avoid this, go to the settings (**Ctrl+Shift+P > Preferences: Open Settings (UI) > Sigasi**).
-From version `0.1.1` on, you can set the **Sigasi > Server: Arguments**. Increase the value for `Xmx` to more than the default `3g`.
+You can set the **Sigasi > Server: Arguments**. Increase the value for `Xmx` to more than the default `3g`.
 
 The heap space setting is identical to the one [used in Sigasi Studio]({{< ref "faq.md#how-do-i-increase-the-heap-size-for-eclipse" >}}).
 
