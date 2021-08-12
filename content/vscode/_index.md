@@ -128,6 +128,13 @@ The server logs are in `~/.config/Code/logs/[datetime]/exthost1/output_logging_[
 
 The `Sigasi: Debug` setting is meant for internal use only.
 
+## Semantic Coloring
+The Sigasi extension supports semantic coloring, however, some VS Code themes might not support it yet.
+* Theme that supports it:  
+{{< figure src="/img/faq/supported_semantic_coloring.png" alt="Find/Replace dialog" >}}
+* Theme that does not support it:  
+{{< figure src="/img/faq/unsupported_semantic_coloring.png" alt="Find/Replace dialog" >}}
+
 ## User defined code snippets
 
 VS Code supports user defined code snippets as explained [here](https://code.visualstudio.com/docs/editor/userdefinedsnippets). To add snippets yourself, follow the steps below.
