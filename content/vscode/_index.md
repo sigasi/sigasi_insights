@@ -124,10 +124,6 @@ The server logs are in `~/.config/Code/logs/[datetime]/exthost1/output_logging_[
 
 **Note**: these logs contain file names from your project so only send them to us if you're allowed to do so.
 
-## Setting Sigasi: Debug
-
-The `Sigasi: Debug` setting is meant for internal use only.
-
 ## Semantic Coloring
 The Sigasi extension supports semantic coloring, however, some VS Code themes might not support it yet.
 * Theme that supports it:  
