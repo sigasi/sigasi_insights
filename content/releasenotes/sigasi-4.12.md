@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 4.12
 date: 2021-06-17
-lastmod: 2021-07-07
+lastmod: 2021-08-27
 comments: true
 pager: true
 ---
@@ -179,5 +179,10 @@ Therefore we're creating a new point release that does contain all intended fixe
 
 On July 23 we released Sigasi Studio 4.12.3.
 This release fixes a crash that occured when using the Verilog `type()` operator.
+
+# Sigasi Studio 4.12.4 point release
+
+On August 27 we released Sigasi Studio 4.12.4.
+This release greatly improves the outline's memory usage, making Sigasi more efficient.
 
 Thanks for all the [bug reports](mailto:support@sigasi.com) and enabling [Talkback]({{< ref "manual/talkback.md" >}}).
