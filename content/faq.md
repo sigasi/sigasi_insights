@@ -490,7 +490,7 @@ You can find out to which interface a MAC address belongs depending on your OS.
 * Windows: in a command prompt type `ipconfig /all` to get a detailed list of interfaces.
 On Windows 10 you need to avoid choosing the Wifi adapter MAC address when the _random hardware addresses_ privacy feature is [enabled](https://support.microsoft.com/en-us/windows/how-to-use-random-hardware-addresses-ac58de34-35fc-31ff-c650-823fc48eb1bc).
 Your Sigasi license will become invalid once the Wifi MAC address changes.
-* Linux: in a terminal type `/sbini/ip addr` to obtain a detailed list.
+* Linux: in a terminal type `/sbin/ip addr` or `ifconfig` to obtain a detailed list. The interface for wired ethernet is usually `eth0`.
 * Mac OS: go to **System Preferences... > Network** then select the desired physical interface and select **Advanced... > Hardware**.
 Alternatively you can type `ifconfig` in a terminal.
 
