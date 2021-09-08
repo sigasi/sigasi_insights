@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.13)
 layout: page
 pager: true
-date: 2021-08-18
+date: 2021-09-13
 comments: true
 ---
 
@@ -40,11 +40,18 @@ Since the {{< page "releasenotes/sigasi-4.12.md" >}} release, the following chan
 * When a multi-line region is selected and `"` is pressed, the selected region will be transformed into a multi-line string
 * Improved auto deindentation
 * Made sure that generated files do not contain characters that are illegal for the given filesystem or OS
+* Exporting documentation for design units that have multiple state machines will now export all the state machines instead of only the first
+  {{< figure src="/img/releasenotes/4.13/MultipleFsm.png" title="Multiple state machines in a design unit" width="250">}}
+* Added support for network devices that contain an `@` symbol
+* The dependencies diagram is now included in [Documentation Generation]({{< ref "manual/documentation.md" >}})
+  {{< figure src="/img/releasenotes/4.13/ProjectFilesOverviewDocgen.png" title="Project files overview in generated documentation" width="800">}}
+* Added the possiblity to create memory and performance snapshots which can be analysed by Sigasi to debug users' troubling experiences
 * **[VHDL]** Added folding for record types, generics and ports
   {{< figure src="/img/releasenotes/4.13/RecordFolding.png" title="Folding of record types" width="500">}}
   {{< figure src="/img/releasenotes/4.13/GenericPortFolding.png" title="Folding of generics and ports" width="500">}}
 * **[VHDL]** Added formatting for signature filter path element
 * **[VHDL]** Added package bodies to the [Dependencies View]({{< ref "manual/views.md#dependencies-view" >}})
+* **[VHDL]** Improved formatting for assertion statements
 * **[Verilog]** Added support for `.vp` and `.svp` extensions
 * **[Verilog]** Improved when the `Open Class Hierarchy` context menu is available
 * **[Verilog]** Added the keybind (F4) for `Open Class Hierarchy` in the context menu
@@ -54,8 +61,17 @@ Since the {{< page "releasenotes/sigasi-4.12.md" >}} release, the following chan
 * **[Verilog]** Improved the information in the hover of VHDL entity instantiations in Verilog
 * **[Verilog]** Improved covergroup's `sample` method support
 * **[Verilog]** Named `always` blocks are now shown in the [Outline View]({{< ref "manual/views.md#outline-view" >}}) and [Hierarchy View]({{< ref "manual/views.md#hierarchy-view" >}})
-  {{< figure src="/img/releasenotes/4.13/AlwaysBlockHierarchyOutline.png" title="Named always blocks in hierarchy and outline view" width="500">}}
+  {{< figure src="/img/releasenotes/4.13/AlwaysBlockHierarchyOutline.png" title="Named always blocks in hierarchy and outline view" width="600">}}
 * **[Verilog]** Lexicographically sorted classes in [Documentation Generation]({{< ref "manual/documentation.md" >}})'s table of contents
+* **[Verilog]** Improved preprocessor performance
+* **[Verilog]** Added `always` blocks to [Documentation Generation]({{< ref "manual/documentation.md" >}})
+  {{< figure src="/img/releasenotes/4.13/AlwaysBlocksDocgen.png" title="Named always blocks in documentation generation" width="600">}}
+* **[Verilog]** Added support for config declarations
+  {{< figure src="/img/releasenotes/4.13/ConfigDeclarationSupport.png" title="Support for the SV config declaration construct" width="500">}}
+* **[Verilog]** Added navigation support for tagged unions expressions
+* **[Verilog]** Added navigation support for `foreach` loop variables that are multidimensional arrays
+* **[Verilog]** Added navigation support for match patterns
+* **[Verilog]** Added navigation support for disable statements
 * **[VUnit]** Added total time to test suites in the [VUnit View]({{< ref "manual/views.md#vunit-view" >}})
   {{< figure src="/img/releasenotes/4.13/VUnitSuiteDuration.png" title="Total duration of VUnit suites" width="500">}}
 * **[VUnit]** The VUnit tests that are being run, are now already shown in the [VUnit View]({{< ref "manual/views.md#vunit-view" >}}) before they've finished
@@ -64,13 +80,17 @@ Since the {{< page "releasenotes/sigasi-4.12.md" >}} release, the following chan
 
 * Fixed resource leak in autocompletes
 * Made sure color customization in the [Graphics Configurations]({{< ref "manual/graphics.md" >}}) does not affect labels
-* Made sure FSM headers are not overflown by their text
+* Made sure state machine headers are not overflown by their text
 * Made sure that user defined auto-complete templates with `Anywhere` context show up without a prefix
+* Fixed rare case in which pressing the graphical views' `pin` button wouldn't work
+* Made sure we don't leak resources in the [Hierarchy View]({{< ref "manual/views.md#hierarchy-view" >}})
+* Removed duplicate entry in our logging configuration
 * **[VHDL]** Made sure the `Sort associations` quickfix can always be applied when it's shown
 * **[VHDL]** Made sure to always show VHDL versions in chronological order where applicable
 * **[VHDL]** Fixed an error on hover when using negative exponents
 * **[VHDL]** Fixed false positive error on decorators for overloaded entity tags
 * **[VHDL]** Fixed formatting for procedures with generics
+* **[VHDL]** Fixed trobule with documentation generation when `buffer` or `linkage` ports are used
 * **[VHDL]** Extended identifiers that have the same name as a keyword are now colored as identifiers, no longer as keywords
 * **[Verilog]** Fixed formatting for files containing incomplete macro invocations (a lonely backtick)
 * **[Verilog]** Fixed false positive error when using tagged unions inside ternary conditional expressions
