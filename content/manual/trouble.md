@@ -7,7 +7,22 @@ pager: true
 
 # The user interface is unresponsive
 
-If the user interface of Sigasi Studio is unresponsive, you can interrupt the internal compilation process by pressing the **stop** button in the progress view. To activate the progress view, select **Window > Show View > Other... > General > Progress**, or click the tiny conveyor belt icon ![](/img/icons/progressicon.png), on the right side of the status bar.
+If the user interface of Sigasi Studio is unresponsive, you can interrupt the internal compilation process by pressing the **stop** button in the progress view. To activate the progress view, select **Window > Show View > Other... > General > Progress**, or click the tiny conveyor belt icon ![Conveyor belt icon](/img/icons/progressicon.png), on the right side of the status bar.
+
+# Create performance and memory snapshots
+
+Sigasi Studio has a built-in profiler. By default this profiler is not active.
+On some occasions we'll ask you to provide an anonymized performance snapshot from the profiler.
+To obtain this snapshot, follow the steps below.
+
+* Activate the profile using **Help > Sigasi > Performance > Start Async Sampling** {{< figure src="/img/releasenotes/4.13/performance.png" link="/img/releasenotes/4.13/performance.png" title="Record performance and memory snapshots inside Sigasi Studio" width="500" >}}
+* Perform the _laggy_ operations in Sigasi Studio
+* Stop the profiler using **Help > Sigasi > Performance > Stop Profiling**
+
+The snapshot you've obtained needs to be obfuscated to anonymize it and it needs to be uploaded.
+For this a **snapshot_uploader** script is provided in the Sigasi Studio installation folder.  
+You can and should first use the `--dry-run` option of the snapshot_uploader to verify the obfuscation.
+You will receive a token and additional instructions from [support](https://www.sigasi.com/support/) that you need in order to upload the obfuscated snapthot for investigation.
 
 # The editor displays old contents of a file
 

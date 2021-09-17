@@ -20,6 +20,7 @@ The extension requires a sufficiently recent version of VS Code `1.x`.
 ## Java Runtime
 
 * The extension comes without Java Runtime. Make sure you have at least **JRE** 11 installed.
+* The Java runtime must be 64-bit.
 * You can check your Java version with `java -version`
 * Java can be downloaded from several sources, a.o. [AdoptOpenJDK](https://adoptopenjdk.net/).
 * Make sure the java executable is available in the user’s `PATH` variable.

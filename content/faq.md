@@ -58,7 +58,7 @@ The `libXScrnSaver` package needs to be installed on your OS.
 #### RHEL 7.7 (64 bit) or newer
 * Sigasi Studio Standalone is supported
 * Sigasi Studio Plugin is supported when using
-    * Eclipse 4.8 *Photon* up to Eclipse IDE 2021-03
+    * Eclipse 4.8 *Photon* up to Eclipse IDE 2021-06
     * Java JRE 11 or higher
 
 #### Other Linux distributions
@@ -67,8 +67,6 @@ The `libXScrnSaver` package needs to be installed on your OS.
 #### Which GTK version do I need?
 Sigasi Studio itself has no specific dependency on GTK. Eclipse does require a minimum version of GTK.
 The GTK version requirements of Eclipse can be found [here](https://www.eclipse.org/swt/faq.php#gtkstartup).
-
-
 
 ## What are the license server requirements?
 The license server (FlexNet) is supported on
@@ -506,7 +504,9 @@ Here is how this issue can be resolved.
 The Chromium plugin depends on `libXss.so` which can be obtained by installing `libXScrnSaver`.
 
 The Chromium plugin will be extracted in a `.swt` folder in the user's home directory.
-Since {{< page "sigasi-4.12.md" >}}, the location can be configured by adding `-Dswt.chromium.path=/home/user/blub` to the `sigasi.ini` file.
+
+* Since {{< page "sigasi-4.12.md" >}}, the location can be configured by adding `-Dswt.chromium.path=/home/user/blub` to the `sigasi.ini` file.
+* Since {{< page "sigasi-4.13.md" >}}, the location can be configured by adding `-Dchromium.path=/home/user/blub` to the `sigasi.ini` file.
 
 ### Sigasi Studio 4.9 and older
 

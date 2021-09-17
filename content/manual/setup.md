@@ -70,6 +70,7 @@ Starting with [Sigasi Studio 3.8]({{<ref "/releasenotes/sigasi-3.08.md" >}}), th
 
 * Edit `sigasi/configuration/config.ini` and replace `eclipse.application=com.sigasi.runner.open` with `eclipse.application=org.eclipse.ui.ide.workbench`
 * In `sigasi/sigasi.ini` add following lines between `@noDefault` and `-vmargs`:
+
 ```
 --launcher.defaultAction
 openFile
@@ -86,9 +87,10 @@ This is not possible when using the default Eclipse runner.
 There are two ways to install the Sigasi Studio Eclipse Plugin:
 
 1. [On-line installation of the Eclipse Plugin](#install-the-eclipse-plugin)
-1. [Off-line update site to install the Eclipse Plugin](#installing-the-offline-update-site) (only for customers with XL or XPRT licenses)
+1. [Off-line update site to install the Eclipse Plugin](#installing-the-offline-update-site)
 
 ## Prerequisites: Java runtime
+
 * The Sigasi Studio plugin requires Java 11 or higher.
 * You can check your Java version with `java -version`
 * Java can be downloaded from several sources, a.o. [AdoptOpenJDK](https://adoptopenjdk.net/).
@@ -128,11 +130,9 @@ After starting Eclipse:
 
 ## Installing the offline update site
 
-This feature is supported for customers with {{% xl %}} or {{% xprt %}} licenses.
-
 Installing the offline update site is very similar to installing from the [main update site](#install-the-eclipse-plugin), where *step 2* is replaced with these steps:
 
-1. Download the offline update site from the link you received from your sales representative.
+1. Download the offline update site
 1. In the **Install** Wizard, click **Add...**
 1. Click **Archive...**, browse to the zip file you downloaded, and confirm with **OK**.
    {{< figure src="/img/manual/offline_update_site_add.png" alt="Add offline update site archive" >}}

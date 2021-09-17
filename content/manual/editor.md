@@ -224,6 +224,15 @@ Structured Select enables you to select VHDL or SystemVerilog code, based on its
 * **Shift+Alt+Down**, contracts the current selection to the nested syntax expression that still contains the current cursor position. You can then further contract the selection by invoking the action again.
 * **Shift+Alt+Left**, adds the syntax element left of the current selection to the selection. You can then further expand the selection by invoking the action again. You can also expand the selection in the other direction with **Shift+Alt+Right**
 
+### Add parentheses or create a string
+
+When you select a region and press **`(`** or **`[`**, the selected region is enclosed with the *matching closing parentheses*, `)` or `]`.
+{{< figure src="/img/releasenotes/4.13/parentheses.gif" title="Easier to put parentheses">}}
+
+When you select some text and press **`"`**, the selected text will be transformed into a **string**.
+This works for both **regular** and **multi-line strings**.
+{{< figure src="/img/releasenotes/4.13/strings.gif" title="Easier to make strings">}}
+
 ### Show whitespace
 
 You can turn showing whitespace markers on or off by clicking the "Show Whitespace Characters" icon ![Show Whitespace Characters](/img/icons/show_whitespace_chars.png) in the toolbar.

@@ -43,7 +43,7 @@ The exported HTML documentation can be further processed, as explained in {{< pa
 
 ## Graphics
 
-The exported documentation includes State Machine and Block Diagrams.
+The exported documentation includes the Dependency Diagram, State Machine and Block Diagrams.
 If you created custom graphics configurations for one or more of your diagrams, these will be used instead of the default diagrams.
 
 If you have multiple graphics configurations for the same diagrams, the alphabetically first one is used.
