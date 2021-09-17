@@ -24,7 +24,7 @@ Our FAQ contains an easier approach to [obtain stack traces]({{< ref "faq#how-do
 
 *Note that you can skip this step if you already have a recent JDK (> JDK 1.6 update 7) on your system.*
 
-[Download and install the latest JDK version](https://java.com/en/download/help/download_options.xml)
+[Download and install the latest JDK version](https://java.com/en/download/help/download_options.html)
 
 ## Create a thread dump with VisualVM
 
