@@ -253,7 +253,7 @@ document.
 
 Since {{< page "/releasenotes/sigasi-4.12.md" >}} you can customize the CSS
 used in the exported HTML documentation.
-All you need to do is add a `sigasi-doc.css` file in the root of your project.
+All you need to do is add a `sigasi-doc.css` ([example](/resources/tech/sigasi-doc.css)) file in the root of your project.
 The CSS from this file will be inserted after the styling that 's added by default.
 The specifications can be found in our
 [manual]({{< ref "/manual/documentation.md#custom-css" >}}).

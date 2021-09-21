@@ -1,0 +1,19 @@
+body {
+   background-color: Azure;
+   font-family: sans-serif;
+}
+
+h1 { color: Tomato; }
+h2 { color: Orange; }
+h3 { color: Gold; }
+h4 { color: Aquamarine; }
+h5 { color: BlueViolet; }
+
+.entity, .module { background-color: AliceBlue; }
+.architecture    { background-color: Cornsilk; }
+.processes       { background-color: WhiteSmoke; }
+
+tr:nth-child(even) { background-color: Lavender; }
+.entity table tr:nth-child(even) { background-color: FloralWhite; }
+
+#revision { display: none; }
