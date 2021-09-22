@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 4.13
 date: 2021-09-17
-lastmod: 2021-09-17
+lastmod: 2021-09-22
 comments: true
 pager: true
 ---
@@ -100,6 +100,7 @@ We also improved the order in which classes are added to the [documentation]({{<
 * **[Verilog]** Fixed incorrect warning for attributed port connections
 * **[Verilog]** Fixed incorrect warning for targets of disable statements
 * **[Verilog]** Fixed export of symbols in packages
+* **[VUnit]** Fixed automatic library mapping based on `run.py` contents
 
 \+ A lot of other issues we could fix thanks to your [Talkback]({{< ref "manual/talkback.md" >}}) reports
 
