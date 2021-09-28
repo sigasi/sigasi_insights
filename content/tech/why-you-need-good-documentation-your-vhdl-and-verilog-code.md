@@ -73,11 +73,10 @@ example, the purpose of a document can be to help the audience install
 the product, use the product, or administer the product.
 The main focus lies in the step-by-step process to deliver the
 technically complex information in a clear, concise, simple, consistent
-and usable manner. This helps [inform the target audience about the
-technology](http://www.hcltech.com/blogs/engineering-and-rd-services/technical-documentation-benefits-and-significance)
-in the most appropriate format.
+and usable manner. This helps inform the target audience about the
+technology in the most appropriate format.
 
-We have [all been frustrated at times](http://www.hcltech.com/blogs/engineering-and-rd-services/technical-documentation-benefits-and-significance)
+We have all been frustrated at times
 when we are not able to understand the features of a product, or when
 the user interface layout is not explained well enough. One problem with
 unorganized information is it can’t be found, so there is a lot wasted

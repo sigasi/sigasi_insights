@@ -183,7 +183,7 @@ This section links to various recommendations on to pre-compiling the simulation
 
 ### GHDL
 
-The GHDL manual documents precompilation of Vendor Primitives [here](https://ghdl.readthedocs.io/en/latest/getting/PrecompileVendorPrimitives.html).
+The GHDL manual documents precompilation of Vendor Primitives [here](https://ghdl.github.io/ghdl/getting.html#precompile-vendor-primitives).
 
 ## What if I broke my Common Libraries folder?
 

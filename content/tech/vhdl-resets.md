@@ -32,7 +32,7 @@ Advantages and disadvantages of **asynchronous resets** include:
 In general, **synchronous resets are recommended** unless the particular circuit requires an asynchronous reset.
 The choice may **depend on the technology** used, e.g. some FPGA blocks may only support a synchronous reset.
 One place where **asynchronous** resets may be required is for **inout and output pins** of a chip, so these can be brought to a safe value before a clock is running.
-A more in-depth discussion of synchronous vs. asynchronous resets is presented in [this](https://www.researchgate.net/publication/250897003_Synchronous_Resets_Asynchronous_Resets_I_am_so_confused_How_will_I_ever_know_which_to_use) and [this](https://forums.xilinx.com/t5/Blog-Archive/Demystifying-Resets-Synchronous-Asynchronous-other-Design/td-p/882252) article.
+A more in-depth discussion of synchronous vs. asynchronous resets is presented in [this](https://www.researchgate.net/publication/250897003_Synchronous_Resets_Asynchronous_Resets_I_am_so_confused_How_will_I_ever_know_which_to_use), [this](https://support.xilinx.com/s/feed/0D52E00006hpikKSAQ) and [this](https://support.xilinx.com/s/feed/0D52E00006hpiy3SAA) article.
 
 
 ## Asynchronous and synchronous reset
