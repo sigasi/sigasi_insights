@@ -218,7 +218,11 @@ or press the **Toggle Block Selection** icon in the tool bar.
 
 ### Structured selection
 
-Structured Select enables you to select VHDL or SystemVerilog code, based on its *syntactic structure*. (Screencast: "[Select code, based on its structure](/screencasts/structured-select)")
+Structured Select enables you to select VHDL or SystemVerilog code, based on its *syntactic structure*.
+
+{{< figure src="/img/manual/structured-select-dark.gif" link="/img/manual/structured-select-dark.gif" title="Structured select in action" class="uk-align-right" >}}
+
+Screencast: [Select code, based on its structure](/screencasts/structured-select)
 
 * **Shift+Alt+Up**, expands the selection to the smallest syntax element that contains the current selection. You can then further expand the selection by invoking the action again.
 * **Shift+Alt+Down**, contracts the current selection to the nested syntax expression that still contains the current cursor position. You can then further contract the selection by invoking the action again.
