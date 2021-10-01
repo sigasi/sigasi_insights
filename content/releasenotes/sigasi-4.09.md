@@ -158,7 +158,7 @@ Instructions on excluding the installation folder are available in [this Microso
     * More information on supported OSes can be found [on the Eclipse website](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_10.xml#target_environments)
 * Sigasi Studio as Plugin in your own Eclipse installation:
     * Eclipse 4.7.3a *Oxygen* up to Eclipse IDE 2020-06
-    * Java JRE 8, 11 or 14
+    * Java JRE 8, 11
 
 We recommend at least **4GB of memory** available for Sigasi Studio,
 and you need **about 300MB** of free disk space.

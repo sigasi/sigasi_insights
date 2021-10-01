@@ -22,7 +22,7 @@ The extension requires a sufficiently recent version of VS Code `1.x`.
 * The extension comes without Java Runtime. Make sure you have at least **JRE** 11 installed.
 * The Java runtime must be 64-bit.
 * You can check your Java version with `java -version`
-* Java can be downloaded from several sources, a.o. [AdoptOpenJDK](https://adoptopenjdk.net/) and choose the _HotSpot_ JVM for _OpenJDK 11_.
+* Java can be downloaded from several sources, a.o. [Adoptium](https://adoptium.net/releases.html?variant=openjdk11&jvmVariant=hotspot) and choose the _OpenJDK 11 x64 JRE_ for your OS.
 * Make sure the java executable is available in the user’s `PATH` variable.
 
 # Installation
@@ -126,7 +126,9 @@ The server logs are in `~/.config/Code/logs/[datetime]/exthost1/output_logging_[
 **Note**: these logs contain file names from your project so only send them to us if you're allowed to do so.
 
 ## Semantic Coloring
+
 The Sigasi extension supports semantic coloring, however, some VS Code themes might not support it yet.
+
 * Theme that supports it:  
 {{< figure src="/img/faq/supported_semantic_coloring.png" alt="Find/Replace dialog" >}}
 * Theme that does not support it:  

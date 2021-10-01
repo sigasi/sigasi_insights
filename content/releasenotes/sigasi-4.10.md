@@ -8,7 +8,7 @@ pager: true
 The Sigasi Studio 4.10 release continues to improve speed and latency, especially for big files.
 The **VHDL** interpreter can now handle **multidimensional arrays and records** and we implemented many **Verilog** and **SystemVerilog** improvements. We also have a welcome surprise for our Mac OS X users.
 
-Users of the Sigasi Studio Eclipse Plugin should make sure they have **Java JRE 11** or higher before upgrading.
+Users of the Sigasi Studio Eclipse Plugin should make sure they have **Java JRE 11** before upgrading.
 
 Read on for more details and other improvements.
 
@@ -93,7 +93,7 @@ This allows you to search for `library.entity(architecture)` or `library.entity.
     * More information on supported OSes can be found [on the Eclipse website](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_10.xml#target_environments)
 * Sigasi Studio as Plugin in your own Eclipse installation:
     * Eclipse 4.8 *Photon* up to Eclipse IDE 2020-09
-    * Java JRE 11 or higher
+    * Java JRE 11
 
 We recommend at least **4GB of memory** available for Sigasi Studio,
 and you need **about 300MB** of free disk space.

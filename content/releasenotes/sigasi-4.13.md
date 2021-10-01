@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 4.13
 date: 2021-09-17
-lastmod: 2021-09-22
+lastmod: 2021-10-01
 comments: true
 pager: true
 ---
@@ -114,8 +114,23 @@ We also improved the order in which classes are added to the [documentation]({{<
     + More information on supported OSes can be found [on the Eclipse website](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_10.xml#target_environments)
 + Sigasi Studio as Plugin in your own Eclipse installation:
   + Eclipse 4.8 *Photon* up to Eclipse IDE 2021-06
-  + Java JRE 11 or higher
+  + Java JRE 11
 
 We recommend at least **4GB of memory** available for Sigasi Studio, and you need **about 300MB** of free disk space.
+
+# Sigasi Studio 4.13.1 point release
+
+On October 1 we released Sigasi Studio 4.13.1.
+This release fixes the following reported issues:
+
+* Netsearch often does not work
+* Using the rename dialog does not work
+* The [Hierarchy View]({{< ref "manual/views.md#hierarchy-view" >}}) doesn't show up for certain entities
+* Fixed `Check Matching Components` for components of incomplete Verilog modules
+* **[VHDL]** No hovers for declarations with an incomplete conditional initializer
+* **[VHDL]** False positive errors on scientific exponent notation
+* **[VHDL]** Dead state machine states are not being reported when an enum has duplicate literals
+* **[Verilog]** The `Show Inherited Members` in the [Class Hierarchy View]({{< ref "manual/views.md#class-hierarchy-view" >}}) doesn't work
+* **[Verilog]** Support for `config` constructs is incomplete
 
 Thanks for all the [bug reports](mailto:support@sigasi.com) and enabling [Talkback]({{< ref "manual/talkback.md" >}}).

@@ -27,7 +27,7 @@ We are proud to present the Sigasi Studio X.Y release: ...
     + More information on supported OSes can be found [on the Eclipse website](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_10.xml#target_environments)
 + Sigasi Studio as Plugin in your own Eclipse installation:
   + Eclipse 4.8 *Photon* up to Eclipse IDE 2021-06
-  + Java JRE 11 or higher
+  + Java JRE 11
 
 We recommend at least **4GB of memory** available for Sigasi Studio, and you need **about 300MB** of free disk space.
 

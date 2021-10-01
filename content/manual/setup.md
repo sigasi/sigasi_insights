@@ -49,7 +49,6 @@ The Eclipse plugin has the following characteristics:
 
 The custom installation is documented in a [separate section](/manual/custom-setup).
 
-
 # Installation of Sigasi Studio App
 
 To download and install Sigasi Studio as a stand-alone application, follow the
@@ -91,9 +90,9 @@ There are two ways to install the Sigasi Studio Eclipse Plugin:
 
 ## Prerequisites: Java runtime
 
-* The Sigasi Studio plugin requires Java 11 or higher.
+* The Sigasi Studio plugin requires Java 11.
 * You can check your Java version with `java -version`
-* Java can be downloaded from several sources, a.o. [AdoptOpenJDK](https://adoptopenjdk.net/).
+* Java can be downloaded from several sources, a.o. [Adoptium](https://adoptium.net/releases.html?variant=openjdk11&jvmVariant=hotspot).
 
 ## Prerequisites: Eclipse
 
