@@ -40,21 +40,16 @@ This plugin is shipped with the standalone version of Sigasi Studio.
 
 ### Subversion (SVN)
 
-There are 2 alternatives.
+For Subversion we recommende the [Subclipse](https://marketplace.eclipse.org/content/subclipse) plugin.
 
-#### Subversive
-
-The [Subversive](http://www.eclipse.org/subversive/) plugin ([Installation instructions](https://www.eclipse.org/subversive/installation-instructions.php)) is only available up to Eclipse oxygen.
-As **update site**, you should use: <http://download.eclipse.org/releases/oxygen/>.
-
-#### Subclipse
-
-To install the [Subclipse](https://marketplace.eclipse.org/content/subclipse) plugin, perform these steps in the **Help > Install New Software...** window:
+To install this plugin, perform these steps in the **Help > Install New Software...** window:
 
 * Add <https://subclipse.github.io/updates/> to the **Work with:** line. This will provide the latest version of Subclipse.
 * Then search for _Subclipse_ and proceed with the installation.
 
 To install older versions of Subclipse of if you need more information on Subclipse, you can refer to the documentation on <https://github.com/subclipse/subclipse/wiki>.
+
+Note that we no longer recommend the [Subversive](http://www.eclipse.org/subversive/) plugin since it is only available up to Eclipse oxygen.
 
 ### ClearCase
 
