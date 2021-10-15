@@ -596,7 +596,13 @@ Also without JDK installed on your machine you can obtain stack traces. The meth
   * Copy the stack trace in a text file.
 * On *Windows*
   * Start Sigasi Studio from the command line with the `-consolelog` argument. A separate console window will open.
-  * With the console window in focus, press <kbd>Ctrl+Break</kbd> to obtain the requested stack trace. Note: on smaller keyboards there might be no <kbd>Break</kbd> key. Alternative key combinations are listed in [this Wikipedia article](https://en.wikipedia.org/wiki/Break_key#Keyboards_without_Break_key).
+  * With the console window in focus, press <kbd>Ctrl+Break</kbd> to obtain the requested stack trace.
+    * On smaller keyboards there might be no <kbd>Break</kbd> key. Alternative key combinations are listed in [this Wikipedia article](https://en.wikipedia.org/wiki/Break_key#Keyboards_without_Break_key).
+    * When <kbd>Ctrl+Break</kbd> has no effect, make sure you're using `java.exe` by appending it to the path in the first line of the `sigasi.ini` file to get something like the following.
+       ```
+       -vm
+       plugins/org.eclipse.justj.openjdk.hotspot.jre.full.<version>/jre/bin/java.exe
+       ```
   * Copy the stack trace from the console window to a text file.
 
 
