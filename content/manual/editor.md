@@ -161,6 +161,16 @@ Automated consistent code formatting makes code more readable and helps develope
 
 Read more about specifics on [VHDL code formatting](#vhdl-code-formatting) and [Verilog and SystemVerilog code formatting](#verilog-and-systemverilog-code-formatting).
 
+### Configuration
+
+You can set preferences for Tabs or spaces under **Window > Preferences > General > Editors > Text Editors**.
+
+{{< figure src="/img/manual/configure_spaces.png" alt="Configure Spaces or Tabs" >}}
+
+Here you can set the tab width in spaces and configure to _Insert Spaces for Tabs_.
+Whenever a tab is pressed, the corresponding number of spaces will be inserted instead.
+You can also opt to _Remove multiple spaces on backspace/delete_ so that removing leading spaces follows the indentation levels.
+
 ### Format code on save
 
 You can configure Sigasi Studio to automatically format your (System)Verilog and VHDL files when you save your source files via **Window > Preferences > Sigasi > [VHDL | (System)Verilog]**, next check **Enable code format on save**.
@@ -451,21 +461,19 @@ One example is the decision to format a *conditional signal assignment* on one, 
 
 ### Configuration
 
-You can set your preferences for Tabs or spaces under **Window \>
-Preferences \> General \> Editors \> Text Editors \> Insert Spaces for
-Tabs.**
+You can set your [preferences for Tabs or spaces under]({{< ref "#configuration" >}})
+**Window > Preferences > General > Editors > Text Editors**.
 
-Other preferences for code formatting are part of {{< xl >}}. You
-can configure them at **Window > Preferences > Sigasi > VHDL > Formatting**.
+VHDL specific code formatting can be configured at **Window > Preferences > Sigasi > VHDL > Formatting**.
 Configurable settings currently include:
 
--   **Preserve newlines**: this option configures the formatter to not add or remove newlines in your code.
--   **Vertical alignment**: this option configures the formatter to vertically align consecutive declarations and statements.
--   **Lowercase/Uppercase keywords**: when this option is set to `UPPERCASE` the formatter will convert all VHDL keywords to uppercase.
+* **Preserve newlines**: this option configures the formatter to not add or remove newlines in your code.
+* **Vertical alignment**: this option configures the formatter to vertically align consecutive declarations and statements.
+* **Lowercase/Uppercase keywords**: when this option is set to `UPPERCASE` the formatter will convert all VHDL keywords to uppercase.
 When this option is set to `lowercase`, the keywords will be converted to lowercase.
 When this option is set to `ignore`, the case of keywords won't be changed by the formatter.
 (Without a {{< xl >}} license, keywords are not changed by the formatter).
--   **Alignment column for trailing comments**: this setting configures the column Sigasi Studio uses to align trailing comments (default is column 40)
+* **Alignment column for trailing comments**: this setting configures the column Sigasi Studio uses to align trailing comments (default is column 40)
 
 ### Correct indentation only
 
