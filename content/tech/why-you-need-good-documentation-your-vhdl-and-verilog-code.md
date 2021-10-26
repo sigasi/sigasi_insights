@@ -136,7 +136,7 @@ reduce customer support costs. Also, technical documentation provides
 good product knowledge to the customer that increases chances of finding
 greater functionality in the product, and enables customers to avoid
 errors, thanks to accurate and [clearly-written
-procedures](http://www.hcltech.com/blogs/engineering-and-rd-services/technical-documentation-benefits-and-significance).
+procedures](https://whatfix.com/blog/technical-documentation/).
 
 Hence, good technical documentation is very essential. It can provide a
 better understanding of the product and prevent customer errors, making
