@@ -87,6 +87,23 @@ If you enable the **Link with Editor** icon
 element in the Outline View, the corresponding code will be selected in
 the editor.
 
+## Quick outline view
+
+You can also press **Ctrl+O** to open the _quick outline_.
+
+{{< figure src="/img/manual/quick_outline.png" >}}
+
+This is just the outline view in a popup, but it also allows you to filter the shown elements.  
+This way, the quick outline can be used as a _semantic_ **Ctrl+F**, making it very easy to find a declaration in your open editor.
+
+{{< figure src="/img/manual/quick_outline_filter.png" >}}
+
+{{< verilog_only >}}
+
+Pressing **Ctrl+O** again, when the quick outline is open, will also show the inherited members between the members of the current file.
+
+{{< figure src="/img/manual/quick_outline_with_inherited_members.png" >}}
+
 # Hierarchy View
 
 The Hierarchy View shows the design hierarchy starting at a selected top level object. To choose a top level, open a file and right-click on an `architecture` (or `entity` or `configuration` or `module`). Then click **Set as Top Level**. Alternatively you can click the **Set Top** button in the Hierarchy View to open a hierarchy top level selection dialog. You can use the filter field to quickly search for a certain top level.
