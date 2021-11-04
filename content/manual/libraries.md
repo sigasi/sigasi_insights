@@ -185,6 +185,10 @@ This section links to various recommendations on to pre-compiling the simulation
 
 The GHDL manual documents precompilation of Vendor Primitives [here](https://ghdl.github.io/ghdl/getting.html#precompile-vendor-primitives).
 
+### Riviera-PRO
+
+If you're using Riviera-PRO, Aldec has an article on [Compiling Xilinx Vivado Simulation Libraries for Riviera-PRO](https://www.aldec.com/en/support/resources/documentation/articles/1710).
+
 ## What if I broke my Common Libraries folder?
 
 If you have modified the `Common Libraries` folder, you can always
