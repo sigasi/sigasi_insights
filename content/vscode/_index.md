@@ -79,9 +79,14 @@ If errors are present you're advised to copy them and include them in your email
 
 ## External libraries
 
-Any (external) libraries should be accessible within the folder of the opened project.
+Any (external) libraries and files that are not within the folder of the opened project can be added using the _Project View_.
+In the Project View, right click any file or folder to select the **Add External File** or **Add External Folder** option to add files and folders from outside the project location.
+The configuration of the external files and folders will be kept in a file `external_libraries.json` in the project root.
+
+External files and folders can be added anywhere in the project.
 If you add a large folder (e.g. the `unisim` primitives), make sure to exclude the folder (**Right click > Set to library > Exclude from build**) from being build and only include the required files.
-Or just put the library files in a folder called `Common Libraries`. Then they will only be indexed and not analyzed for errors.
+Or just put the library files in a folder called `Common Libraries`.
+Then they will only be indexed and not analyzed for errors.
 
 ## SLF4J errors
 
@@ -130,9 +135,9 @@ The server logs are in `~/.config/Code/logs/[datetime]/exthost1/output_logging_[
 The Sigasi extension supports semantic coloring, however, some VS Code themes might not support it yet.
 
 * Theme that supports it:  
-{{< figure src="/img/faq/supported_semantic_coloring.png" alt="Find/Replace dialog" >}}
+{{< figure src="/img/faq/supported_semantic_coloring.png" link="/img/faq/supported_semantic_coloring.png" alt="Find/Replace dialog" width="600" >}}
 * Theme that does not support it:  
-{{< figure src="/img/faq/unsupported_semantic_coloring.png" alt="Find/Replace dialog" >}}
+{{< figure src="/img/faq/unsupported_semantic_coloring.png" link="/img/faq/unsupported_semantic_coloring.png" alt="Find/Replace dialog" width="600" >}}
 
 ## User defined code snippets
 
