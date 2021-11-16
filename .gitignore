@@ -7,3 +7,6 @@ public/
 # Emacs backup files
 *~
 **/*.bak
+
+# Mac
+.DS_Store

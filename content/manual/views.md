@@ -146,10 +146,20 @@ It is common practice to add **TODO** and **FIXME** comments in your
 code. Sigasi Studio automatically scans your comments for TODO and FIXME tags
 and clearly highlights these comments with **Task Tags**. You can get a
 nice overview of all task markers in your workspace in the **Task View**
-(**Windows \> Show View \> Tasks**).
+(**Window \> Show View \> Tasks**).
 
 You can configure extra tags in the Task Tag preference page:
 **Preferences \> Sigasi \> VHDL \> Task Tags**
+
+# Bookmarks View
+
+{{< figure src="/img/manual/bookmarks-view.png" >}}
+
+You can easily add bookmarks by right clicking the line number where you want to add a bookmark.
+You can get an overview of all bookmarks in the **Bookmarks View**
+(**Window > Show View > Others...**).
+
+The **Bookmarks View** can be used to delete bookmarks or navigate to the editor and other views.
 
 # Block Diagram View
 
