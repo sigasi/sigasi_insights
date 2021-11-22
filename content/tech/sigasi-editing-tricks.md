@@ -64,7 +64,7 @@ We are all aware of the fact that since humanity moved from typewriters to PCs, 
 
 For some use cases though there is no need to press the arrow keys of the keyboard or grab the mouse. Sigasi Studio offers a very efficient way to select a consistent region of source code : **Structured selection**. This gesture will expand the current selection to the next enclosing, consistent syntactic region.
 
-{{< figure src="/img/tech/editing/selection.gif" alt="Expand and restore selection in Sigasi Studio" class="uk-align-center" >}}
+{{< video src="/img/tech/editing/selection.mp4" alt="Expand and restore selection in Sigasi Studio" class="uk-align-center" >}}
 
 By pressing **Ctrl+Shift+Up** / **^+⇧+↑** the selection will grow to the next enclosing element, which may be a single word, the next block or a complete entity, architecture, module or package. If the selection was made too big by accident, we can shrink it again by using the arrow down key instead of arrow up.
 
