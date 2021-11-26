@@ -667,6 +667,7 @@ version=1
 * In the workspace folder remove: `<workspaceSigasi>/.metadata/.plugins/org.eclipse.ui.workbench`
 * If this is not enough, also remove `<workspaceSigasi>/.metadata/.plugins/org.eclipse.ui.ide` and `<workspaceSigasi>/org.eclipse.ui.workbench.texteditor`
 * If this still fails remove `<workspaceSigasi>/.metadata/.plugins/org.eclipse.core.resources`, note that you will have to re-import your projects if you remove this folder.
+* If you've been working with one or more detached editors (i.e. editor windows outside of the Sigasi IDE window): stop the hanging application, remove `<workspaceSigasi>/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi` and restart. Sigasi Studio will start up without any open editors.
 
 ## Slow startup on Windows 10
 
