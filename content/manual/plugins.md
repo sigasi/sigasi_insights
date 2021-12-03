@@ -55,7 +55,7 @@ Note that we no longer recommend the [Subversive](https://www.eclipse.org/subver
 
 Recommended plugin:
 [ClearCase](https://sourceforge.net/projects/eclipse-ccase/)
-(Update site: <https://eclipse-ccase.sourceforge.net/update/>)
+(Update site: <http://eclipse-ccase.sourceforge.net/update/>)
 
 Note that this is the **Open Source ClearCase plugin** hosted on
 SourceForge, not the **official** [ClearCase plugin distributed by IBM](https://www.ibm.com/support/pages/node/306535).
@@ -78,7 +78,7 @@ Some other popular revision control systems include:
 
 ## VI and Emacs
 
-* VI: <https://vrapper.sourceforge.net/home/>
+* VI: <http://vrapper.sourceforge.net/home/>
 * Emacs: <https://marketplace.eclipse.org/content/more-emacs>
 
 ## Other languages
