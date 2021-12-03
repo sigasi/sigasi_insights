@@ -1,8 +1,8 @@
 ---
 title: "How to configure VUnit using the Sigasi VS Code extension"
 layout: page 
-publishdate: 2021-12-3
-lastmod: 2021-12-3
+publishdate: 2021-12-03
+lastmod: 2021-12-03
 pager: false
 author: David Medina
 tags: 
@@ -15,7 +15,8 @@ bannerad: true
 Here at Sigasi, we are immensely devoted to the culture of testing. We believe in the power of test driven development and think it's a great tool that can integrate with hardware design.  
 In the past we've made efforts to integrate [VUnit](https://vunit.github.io/) into Sigasi Studio and now with our VS Code extension, we want to give to our users the ability to work with their HDL projects and use VUnit in their workflow as well.  
 
-Setting up:  
+Setting up:
+
 * Install the Sigasi extension from the VS Code marketplace
 {{< figure src="/img/tech/setup-vunit-vscode-extension/installingExtension.gif" title="Quick fix multiple capitalization issues at once" width="900" >}}
 * Once that's done, just open your HDL project and open a VHDL or (System)Verilog file.
