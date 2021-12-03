@@ -152,13 +152,12 @@ files you wish to add to the `Common Libraries`.
 * `Common Libraries` by default is a *virtual* folder. This means that it is not
 a real folder in the project directory and it can only contain references to
 folders on your file system.
-
 * Files in `Common Libraries` are supposed to be error free. Sigasi Studio
 will not mark errors or warnings in these files.
-
+  * Next to these, a few other libraries' errors and warnings are never marked, regardless of their location.
+    These libraries are: `std`, `ieee`, `altera_mf`, `altera`, `XilinxCoreLib`, `unisim`, `mentor`, `lpm`, `simprim`, `std_developerskit`, `unimacro`, and `modelsim_lib`.
 * While you work on your project, you don't want to edit the files in the
 `Common Libraries`, but you need them to compile your project.
-
 * If you activate an [external compiler]({{< ref "manual/tools#external-compilers" >}}),
 files in `Common Libraries` are supposed to be pre-compiled. If you tell
 Sigasi Studio to compile your project using an external compiler, the
@@ -172,11 +171,13 @@ file, it will be used instead of the default "modelsim.ini" file.
 This section links to various recommendations on to pre-compiling the simulation models of external libraries in the `Common Libraries`, depending on the external compiler.
 
 ### Xilinx
+
 * Recommendations for [Xilinx ISE](https://www.xilinx.com/support/documentation/sw_manuals/xilinx11/pp_p_process_compile_hdl_simulation_libraries.htm)
 
 * Recommendations for [Xilinx Vivado](https://www.xilinx.com/support/answers/64083.html)
 
 ### Intel (Altera)
+
 * [Altera Simulation Libraries](https://www.intel.com/content/www/us/en/programmable/support/support-resources/design-software/max_plus-ii/vdsimlib.html)
 
 * [Example script](https://www.intel.com/content/www/us/en/programmable/support/support-resources/knowledge-base/solutions/rd06182013_21.html) to compile Altera simulation libraries
