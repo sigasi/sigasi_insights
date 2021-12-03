@@ -34,12 +34,12 @@ extra commands.
 You can customize the behavior of the **Project Explorer** View in ways
 that can be particularly handy for large projects. For example, if you
 click the **Link with Editor** icon
-![](/img/icons/linkprojectexplorer.png) , the Project Explorer
+![Link with Editor](/img/icons/linkprojectexplorer.png) , the Project Explorer
 will be linked to the Editor view. Now, the active file in the editor
 view will always be selected in the Project Explorer.
 
 You can apply filters to choose which files are shown. Select the icon
-**View Menu** ![](/img/icons/viewmenuicon.png) and then
+**View Menu** ![View Menu icon](/img/icons/viewmenuicon.png) and then
 **Customize view**. You can then select a filter whose matching files
 will be hidden in the view. For example, you can filter out all non-VHDL
 or non-Verilog files.
@@ -53,12 +53,12 @@ The following descriptions apply to Sigasi specific decorators.
 * Sigasi Studio adds text decorators to the right to indicate which library a project, file or folder is mapped in. The [library name]({{< ref "libraries.md#examining-the-library-configuration" >}}) is denoted in square brackets.
 * If a project is in a different folder than the workspace, this is denoted within round brackets.
 * Other text decorators to the right of a project are probably from the [Git plugin]({{< ref "plugins.md#git" >}}). The repository name and branch are denoted with square brackets.
-* Open HDL projects have a bridge-like overlay ![](/img/icons/project.png) in the top right corner of the project icon.
+* Open HDL projects have a bridge-like overlay ![bridge-like overlay icon](/img/icons/project.png) in the top right corner of the project icon.
 * File icons with a 'V' in them are VHDL or SystemVerilog source files.
 * Folder icons with an overlay in the lower right corner are virtual folders (white square) or linked folders (square with arrow).
 * Other overlays in the lower right corner are probably from the Git plugin. They indicate tracked files/folders (yellow cylinder) and non-tracked files/folders (question mark). Changed files are noted with a `>` mark next to the icon.
-* Overlays in the lower left corner are generally indicating status from Sigasi Studio: errors in files/folders are indicated with a red square and white cross ![](/img/icons/error.png) while files/folders with warnings are marked with a yellow triangle with black exclamation mark ![](/img/icons/warning.png) .
-* If you exclude a file from build in Sigasi studio, the icon will be overlayed with a red *forbidden entry* icon  ![](/img/icons/ignoreicon.png) in the upper left corner.
+* Overlays in the lower left corner are generally indicating status from Sigasi Studio: errors in files/folders are indicated with a red square and white cross ![red square and white cross icon](/img/icons/error.png) while files/folders with warnings are marked with a yellow triangle with black exclamation mark ![yellow triangle with black exclamation mark icon](/img/icons/warning.png) .
+* If you exclude a file from build in Sigasi studio, the icon will be overlayed with a red *forbidden entry* icon  ![forbidden icon](/img/icons/ignoreicon.png) in the upper left corner.
 
 # Editor View
 
@@ -74,16 +74,16 @@ The Outline View displays the contents of the active file, in terms of
 the HDL objects that it contains.
 
 You can sort the elements in the outline alphabetically, by enabling the
-**sort** button ![](/img/icons/alphab\_sort\_co.gif).
+**sort** button ![sort icon](/img/icons/alphab\_sort\_co.gif).
 
 You can also filter all concurrent signal assignments from the outline
 by enabling the **Hide Signal Assignments** button
-![](/img/icons/signal_assignments_filter.png).
+![hide signal assignments](/img/icons/signal_assignments_filter.png).
 Double-click in the Outline View to navigate to the corresponding
 location in the editor.
 
 If you enable the **Link with Editor** icon
-![](/img/icons/linkprojectexplorer.png) and you click an
+![Link with Editor](/img/icons/linkprojectexplorer.png) and you click an
 element in the Outline View, the corresponding code will be selected in
 the editor.
 
@@ -108,9 +108,9 @@ Pressing **Ctrl+O** again, when the quick outline is open, will also show the in
 
 The Hierarchy View shows the design hierarchy starting at a selected top level object. To choose a top level, open a file and right-click on an `architecture` (or `entity` or `configuration` or `module`). Then click **Set as Top Level**. Alternatively you can click the **Set Top** button in the Hierarchy View to open a hierarchy top level selection dialog. You can use the filter field to quickly search for a certain top level.
 
-The Hierarchy View automatically refreshes itself when you save your design files. If you have a really large design this could slow you down. You can turn the automatic refresh on and off by toggling the **refresh** button ![](/img/icons/refresh.gif).
+The Hierarchy View automatically refreshes itself when you save your design files. If you have a really large design this could slow you down. You can turn the automatic refresh on and off by toggling the **refresh** button ![refresh icon](/img/icons/refresh.gif).
 
-To highlight the current selection of the HDL editor in the Hierarchy View, enable the **Link with Editor** button ![](/img/icons/linkprojectexplorer.png). If the editor selection is part of the evaluated hierarchy tree, the corresponding hierarchy tree node will be selected.
+To highlight the current selection of the HDL editor in the Hierarchy View, enable the **Link with Editor** button ![Link with Editor](/img/icons/linkprojectexplorer.png). If the editor selection is part of the evaluated hierarchy tree, the corresponding hierarchy tree node will be selected.
 
 The Hierarchy View also shows the **generic and constants values** of VHDL components in the hierarchy.
 The internal compiler computes the generics and constants, even if they are passed down through the hierarchy, and even if arithmetic operations are used to define new values. If the value cannot be computed for some reason, the
@@ -118,9 +118,9 @@ Hierarchy View will report the value to be *unknown*.
 
 When you **double-click** an object in the hierarchy, the Editor view is updated accordingly, possibly by displaying the contents of a different file.
 
-Use the **instantiations** filter ![](/img/icons/instantiation.png), to hide everything except instantiations and structural statements are shown.
+Use the **instantiations** filter ![instantiations filter icon](/img/icons/instantiation.png), to hide everything except instantiations and structural statements are shown.
 
-You can **launch a simulation** with the ![](/img/icons/run_exc.gif) button, if you first set up an [Launch simulator](/manual/tools#launch-simulator).
+You can **launch a simulation** with the ![launch icon](/img/icons/run_exc.gif) button, if you first set up an [Launch simulator](/manual/tools#launch-simulator).
 
 The Hierarchy View also offers an action **Select required files**, which selects all design files that are part of the current hierarchy, in the project explorer. This allows you to easily perform the same action on all files in the hierarchy. E.g. team commands, ...
 
@@ -136,7 +136,7 @@ an external compiler tool.
 You can navigate to the source of the problem by double clicking on a
 given problem. Problems can be sorted by clicking the column headers.
 The content of this view can be customized via the **View Menu**
-![](/img/icons/viewmenuicon.png) . Possible customizations are
+![View Menu icon](/img/icons/viewmenuicon.png) . Possible customizations are
 *scope* (workspace, project, selection), *type*, maximum number of
 problems, …
 
@@ -151,7 +151,7 @@ view. If you right-click a file, you see the *context menu* which offers
 extra commands for [setting libraries](/manual/libraries#modifying-the-library-configuration) and for setting the top level.
 
 If you enable the **Link with Editor** button
-![](/img/icons/linkprojectexplorer.png), the Library View will
+![Link with Editor](/img/icons/linkprojectexplorer.png), the Library View will
 be linked to the Editor View. Now, active file in the Editor View will
 always be selected in the Library View.
 
@@ -205,7 +205,7 @@ In your code, right-click a signal, port, process or instantiation and select **
 If the Block Diagram already is open, the corresponding element is highlighted and the Block Diagram View is centered on it.
 
 You can export the Block Diagram View to an image with the save
-![](/img/icons/save.gif) button. Both **SVG** and **PNG** are supported. Choose a the \*.svg filename for SVG export or a \*.png filename for PNG export.
+![Save icon](/img/icons/save.gif) button. Both **SVG** and **PNG** are supported. Choose a the \*.svg filename for SVG export or a \*.png filename for PNG export.
 
 You can also export **all** *block diagrams of an entire project* at once: Click **Project > Export... > Sigasi > Block Diagrams export** and select your project. All SVGs will be created in **diagrams/blockdiagrams/** in your project.
 
@@ -223,10 +223,10 @@ If you have documented your state transitions (i.e. the assignments), the commen
 
 You can also **double-click nodes** or **transitions** to navigate to the corresponding HDL code.
 
-With the ![](/img/icons/font.png) button, you can toggle the display of edge labels. These labels show the code comments of the transition statements.
+With the ![font icon](/img/icons/font.png) button, you can toggle the display of edge labels. These labels show the code comments of the transition statements.
 You also have to option to **Zoom In**, **Zoom Out** or **Zoom to Fit**.
 
-You can export state machines to an image with the save ![](/img/icons/save.gif) button. Both **SVG** and **PNG** are supported. Choose a the \*.svg filename for SVG export or a \*.png filename for PNG export.
+You can export state machines to an image with the save ![save icon](/img/icons/save.gif) button. Both **SVG** and **PNG** are supported. Choose a the \*.svg filename for SVG export or a \*.png filename for PNG export.
 
 You can also export **all** *state machines of an entire project* at once: Click **Project > Export... > Sigasi > State Machine Diagrams export** and select your project. All SVGs will be created in **diagrams/statemachines/** in your project.
 
@@ -244,9 +244,9 @@ The view is *automatically updated* each time you save your files.
 
 The Dependencies View has following options:
 
-* ![](/img/releasenotes/3.8/icon_project.png) show dependencies of entire projct. Uncheck to focus on the dependencies of the active editor only.
-* ![](/img/releasenotes/3.8/icon_libraries.png) Group design files per library
-* ![](/img/releasenotes/3.8/icon_units.png) Show design units inside design files. The design units are prefixed with an abbreviation of their kind (**a**rchitecture, **m**odule, **p**ackage, ..." >}}
+* ![open folder icon](/img/releasenotes/3.8/icon_project.png) show dependencies of entire projct. Uncheck to focus on the dependencies of the active editor only.
+* ![library icon](/img/releasenotes/3.8/icon_libraries.png) Group design files per library
+* ![units icon](/img/releasenotes/3.8/icon_units.png) Show design units inside design files. The design units are prefixed with an abbreviation of their kind (**a**rchitecture, **m**odule, **p**ackage, ..." >}}
 
 The Dependencies View can help you **navigate** too. Double click a file name in the diagram to open the corresponding editor.
 
@@ -259,7 +259,6 @@ You can **export** this diagram for documentation by clicking the save icon.
 The **Documentation View** gives you a live preview of the [automatic documentation](/manual/documentation) Sigasi Studio can generate for your project.
 
 {{< figure src="/img/manual/documentationview.png" >}}
-
 
 # Net Search View
 
@@ -297,47 +296,48 @@ With the icons on top of the view you can
 * Stop ongoing VUnit test runs
 * View the test run history
 
+More information is available in the [VUnit manual page]({{< ref "/manual/vunit.md" >}}).
+
 # Preprocessor View
 
 {{< verilog_only >}}
 
 {{< figure src="/img/manual/preprocessor-view.png" >}}
 
-In the Preprocessor View you can preview the expanded text of Verilog macros. This view automatically synchronizes with the active editor. 
+In the Preprocessor View you can preview the expanded text of Verilog macros. This view automatically synchronizes with the active editor.
 When you select text in the (System)Verilog editor, the expanded text will be highlighted in the Preprocessor View. This also works the other way: when you select text in the Preprocessor View, the corresponding, original source will be selected in the editor.
 
 # Class Hierarchy View
 
 {{< xprt_only >}},{{< systemverilog_only >}}
 
-![](/img/manual/class-hierarchy-view.png)
+![Class Hierarchy View](/img/manual/class-hierarchy-view.png)
 
 The Class Hierarchy View displays more information of the hierarchy of a class. It consists of a hierarchy tree
 and a list of the class members. To open the Class Hierarchy of a class, click the class name, right-click and select **Open Class in Hierarchy** (or press **F4**).
 
-![](/img/manual/class-hierarchy-open.png)
+![Open class in Hierarchy](/img/manual/class-hierarchy-open.png)
 
 ## Class Hierarchy tree
 
 The class hierarchy tree displays either the superclasses, subclasses or both.
 
-|                               | Command                    | Description
-|:-----------------------------:|----------------------------|------------
-![](/img/icons/hierarchy_co.png)     | Class Hierarchy            | Displays all superclasses and subclasses.
-![](/img/icons/super_co.png)         | Superclass Hierarchy       | Displays all superclasses and implemented interface classes.
-![](/img/icons/sub_co.png)           | Subclass Hierarchy         | Displays all subclasses that extend or implement the selected (interface) class.
-![](/img/icons/th_showqualified.png) | Show Qualified Class Names | Shows the qualified name next to each class.
+|                                                        | Command                    | Description
+|:------------------------------------------------------:|----------------------------|------------
+![hierarchy icon](/img/icons/hierarchy_co.png)           | Class Hierarchy            | Displays all superclasses and subclasses.
+![superclass icon](/img/icons/super_co.png)              | Superclass Hierarchy       | Displays all superclasses and implemented interface classes.
+![subclass icon](/img/icons/sub_co.png)                  | Subclass Hierarchy         | Displays all subclasses that extend or implement the selected (interface) class.
+![qualified class icon](/img/icons/th_showqualified.png) | Show Qualified Class Names | Shows the qualified name next to each class.
 
 ## Member list
 
-The member list shows all members of the class that is currently selected in 
-the class hierarchy tree.
+The member list shows all members of the class that is currently selected in the class hierarchy tree.
 
-|                                   | Command                | Description
-|:---------------------------------:|------------------------|------------
-![](/img/icons/inher_co.png)             | Show Inherited Members | Shows or hides all members inherited from superclasses.
-![](/img/icons/definingtype_sort_co.png) | Sort By Defining Class | Sorts members by the class in which they are defined.
-![](/img/icons/fields_co.png)            | Hide Fields            | Hides all fields in the members list.
+|                                                  | Command                | Description
+|:------------------------------------------------:|------------------------|------------
+![inherited members icon](/img/icons/inher_co.png) | Show Inherited Members | Shows or hides all members inherited from superclasses.
+![sort icon](/img/icons/definingtype_sort_co.png)  | Sort By Defining Class | Sorts members by the class in which they are defined.
+![hide icon](/img/icons/fields_co.png)             |  Hide Fields           | Hides all fields in the members list.
 
 # Console View
 

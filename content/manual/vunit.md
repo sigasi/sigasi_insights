@@ -19,6 +19,8 @@ When you import a VUnit project or add VUnit support to an existing project, Sig
 
 ## Prerequisites
 
+VUnit version `4.5.0` or higher is required.
+
 Sigasi Studio needs to know where VUnit is installed. If you installed VUnit using `pip install vunit_hdl` and Python is in your path, then Sigasi Studio should find your VUnit installation.
 To verify whether Sigasi Studio can find your VUnit installation, go to **Window > Preferences > Sigasi > Toolchains > VUnit** and check the read-only **VUnit installation path** field.
 
@@ -29,7 +31,7 @@ If you have installed VUnit in a dedicated location, you should add the VUnit lo
 When you're installing VUnit in a virtualenv, make sure to launch Sigasi Studio from within the terminal after activating the virtualenv.
 
 If you installed VUnit from the _Microsoft Store_, you might get an error message when trying to select the Python executable.
-To use Python outside of Windows Store apps, Python needs to be installed using an installer from https://www.python.org/downloads/windows/.
+To use Python outside of Windows Store apps, Python needs to be installed using an installer from <https://www.python.org/downloads/windows/>.
 
 You should make sure that the `python run.py --version` command only returns the VUnit version number. Additional output will prevent Sigasi Studio to parse the VUnit version number correctly and will result in errors.
 
@@ -57,20 +59,21 @@ Path separators in the `run.py` file need a `/` also on Windows.
 ## SystemVerilog
 
 For SystemVerilog projects you need to manually add the VUnit include files to your projects:
+
 * Right click your project, select **New > Folder > Advanced > Link to alternate location** and add `VUNIT/verilog/include` as location.
 * Use the quick-fix on the failing `` `include "vunit_defines.svh"`` to add the include folder to the include paths.
 
 {{< figure src="/img/manual/vunit_verilog_include.png" alt="Add verilog include path" link="/img/manual/vunit_verilog_include.png" >}}
 
-## Configure options for finding and running tests.
+## Configure options for finding and running tests
 
 In **Window > Preferences > Sigasi > Toolchains > VUnit** you can add different options for finding and running tests.
+
 * The `Options for finding tests` will be passed to `run.py` when generating the json file that lists the VUnit tests.
 * The `Options for running tests` will be passed to `run.py` when running the VUnit tests.
 * Select the `Set VUnit output to project root` to have the VUnit output stored in the project root instead of in the temp location from where VUnit is called.
 
 {{< figure src="/img/manual/vunit_preferences.png" alt="VUnit preferences dialog" link="/img/manual/vunit_preferences.png" >}}
-
 
 # Run VUnit Tests
 
@@ -102,6 +105,7 @@ libraries. External simulators, including the simulator which runs
 your VUnit tests, require a particular setup to find your library.
 
 If, for instance, Modelsim is used, then:
+
 * common libraries need to be pre-compiled,
 * a customized `modelsim.ini` with a reference to the pre-compiled libraries is required, and
 * VUnit needs to be aware of the customized `modelsim.ini`.
@@ -125,11 +129,12 @@ vu = VUnit.from_argv()
 Note that VUnit may still produce warnings that the library is
 missing, as shown below. These warnings are harmless. They show up
 because only Sigasi Studio and the simulator are aware of the library,
-while VUnit is not. 
+while VUnit is not.
 
-```
+``` sh
 WARNING - C:\Users\Wim Meeus\workspaceSigasi\VUnit-demo\design\design_top.vhd: failed to find library 'vucommon'
 ```
+
 Alternatively, one could define the library and its
 contents in the `run.py` script. In that case, VUnit will be aware of
 the library and the warnings won't show, but compile times will be
