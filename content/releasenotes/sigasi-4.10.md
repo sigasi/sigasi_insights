@@ -67,7 +67,7 @@ This allows you to search for `library.entity(architecture)` or `library.entity.
 * Added extra entry to the **VUnit** preferences to add options for finding VUnit tests  
 {{< figure src="/img/releasenotes/4.10/vunit_preferences.png" title="VUnit preferences: options for finding tests" width="500">}}
 * We removed the legacy graphics views from Sigasi Studio. The ~~`-Dcom.sigasi.legacy.graphics`~~ workaround is no longer supported.
-* Sigasi Studio now has an option to suppress the creation of *tutorial projects* in empty workspaces. Add `-Dcom.sigasi.hdt.disableAutomaticTutorial` to `sigasi.ini` or the command line.
+* Sigasi Studio now has an option to suppress the creation of *tutorial projects* in empty workspaces. Add `-Dcom.sigasi.hdt.disableAutomaticTutorial` to `sigasi.ini` or the command line. **Note**: this feature works more reliably in {{< page "/releasenotes/sigasi-4.11.md" >}}.
 
 # Bug fixes
 
