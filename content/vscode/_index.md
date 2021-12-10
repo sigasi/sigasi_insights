@@ -15,7 +15,7 @@ Please contact [support+vscode@sigasi.com](mailto:support+vscode@sigasi.com) wit
 
 ## VS Code version
 
-The extension requires a sufficiently recent version of VS Code `1.x`.
+The extension requires VS Code `1.61.0` or higher.
 
 ## Java Runtime
 
