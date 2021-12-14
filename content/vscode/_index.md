@@ -19,11 +19,16 @@ The extension requires VS Code `1.61.0` or higher.
 
 ## Java Runtime
 
-* The extension comes without Java Runtime. Make sure you have at least **JRE** 11 installed.
-* The Java runtime must be 64-bit.
+Since version `0.3.6` of this extension, the path to use the Java Runtime (JRE) can optionally be configured in the [settings](#access-settings).
+If the setting is empty, the extension will download a **JRE** and extract it in the local `.vscode` folder.
+
+If you wish to provide the JRE:
+
+* The extension requires a Java Runtime.
+* The Java runtime must be a 64-bit. Make sure to use at least **JRE 11**.
 * You can check your Java version with `java -version`
 * Java can be downloaded from several sources, a.o. [Adoptium](https://adoptium.net/releases.html?variant=openjdk11&jvmVariant=hotspot) and choose the _OpenJDK 11 x64 JRE_ for your OS.
-* Make sure the java executable is available in the user’s `PATH` variable.
+* Make sure the java executable is available in the `PATH` variable.
 
 # Installation
 
@@ -39,6 +44,7 @@ The settings for the Sigasi extension can be reached trough:
 * Start typing and select **Preferences: Open Settings (UI)**
 * In **Search settings** type `Sigasi`
 * First, configure the **Path To License**. This can be a local node locked license file or a floating license server (e.g. `27000@myserver.example.com`).
+* Optionally, configure the JRE location in **Sigasi > Java: Path**. Make sure to add the `java` executable name in the path.
 
 Alternatively, the Sigasi extension settings can be accessed through the Manage icon (<span uk-icon="cog"></span>) in the extensions overview.
 
@@ -50,6 +56,11 @@ The extension will start once a VHDL file or SV file is opened.
 
 Note that the project settings and library mappings you might be used to are handled differently in the Sigasi extension. E.g. the library mappings are kept in a `library_mapping.json` file in the project folder.
 Library mappings are _not visualized_ in the file Explorer side pane.
+
+## Workspace
+
+The extension currently supports a single project per workspace.
+To open multiple HDL projects, open each project in a separate VS Code window.
 
 ## Tutorial
 
