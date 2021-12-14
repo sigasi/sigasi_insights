@@ -135,11 +135,13 @@ We've added navigation for
 * **[Verilog]** Removed false positive errors for `class` extensions with incorrect syntax
 * **[Verilog]** Added missing type error when assigning a byte array, on which a built-in method is called, to a `string`
 * **[Verilog]** Fixed highlighting of non-ANSI parameters in classes
+* **[Verilog]** Fixed rare error in hover and outline of `let` declarations
 * **[VUnit]** Fixed initialization issues with VUnit projects
 * **[VUnit]** Sigasi now only shows `Run VUnit tests` in HDL editors for projects configured for VUnit
 * **[Vivado]** Fixed compilation issues when editing an architecture whose entity is defined in a separate file
 * **[Documentation]** Fixed documentation export for some incomplete designs
 * **[Graphics]** Fixed `open` port visualization in block diagrams
+* **[Graphics]** Fixed error message when hovering over elements in graphical views
 
 # Update or install?
 
