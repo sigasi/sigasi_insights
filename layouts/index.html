@@ -32,7 +32,7 @@
                 <h3>Recent Articles</h3>
                 {{ $s_tech := where .Site.RegularPages.ByLastmod.Reverse "Section" "tech" }}
                 {{ range first 10 $s_tech }}
-                <span uk-icon="link"></span><a href="{{ .Permalink }}">{{ .Title | truncate 55 }}</a><small> {{ .Date.Format "2006-01-02" }}</small><br>
+                <span uk-icon="link"></span><a href="{{ .Permalink }}">{{ .Title | truncate 55 }}</a><small> {{ .Lastmod.Format "2006-01-02" }}</small><br>
                 {{ end }}
             </div>
         </div>
