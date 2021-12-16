@@ -32,43 +32,49 @@ The SHA1 sum (or hash) is a fingerprint of a file. After you download a file, yo
 ## What are the system requirements?
 
 We recommend at least **4GB of memory** available for Sigasi Studio,
-and you need **about 300MB** of free disk space.
+and you need **about 1GB** of free disk space.
 
 ## Does Sigasi Studio run on my OS?
 
 ### Windows
+
 * Supported on Windows 10 (64 bit) or newer
 * Sigasi Studio Standalone is supported
 * Sigasi Studio Plugin is supported when using
-    * Eclipse 4.8 *Photon* up to Eclipse IDE 2021-03
-    * Java JRE 11
+  * Eclipse 4.8 *Photon* up to Eclipse IDE 2021-03
+  * Java JRE 11
 
 ### MacOS
-* Supported on 10.15 Catilina and 11 Big Sur
+
+* Supported on 11.6 Big Sur
 * Sigasi Studio does run on Apple M1 using Rosetta
 * Sigasi Studio Standalone is supported
 * Sigasi Studio Plugin is supported when using
-    * Eclipse 4.8 *Photon* up to Eclipse IDE 2021-03
-    * Java JRE 11
+  * Eclipse 4.8 *Photon* up to Eclipse IDE 2021-03
+  * Java JRE 11
 
 ### Linux
 
 The `libXScrnSaver` package needs to be installed on your OS.
 
 #### RHEL 7.7 (64 bit) or newer
+
 * Sigasi Studio Standalone is supported
 * Sigasi Studio Plugin is supported when using
-    * Eclipse 4.8 *Photon* up to Eclipse IDE 2021-06
-    * Java JRE 11
+  * Eclipse 4.8 *Photon* up to Eclipse IDE 2021-06
+  * Java JRE 11
 
 #### Other Linux distributions
+
 * No known issues as long as Eclipse is running on your OS
 
 #### Which GTK version do I need?
+
 Sigasi Studio itself has no specific dependency on GTK. Eclipse does require a minimum version of GTK.
 The GTK version requirements of Eclipse can be found [here](https://www.eclipse.org/swt/faq.php#gtkstartup).
 
 ## What are the license server requirements?
+
 The license server (FlexNet) is supported on
 
 * RedHat Enterprise Linux 5.2 (32 bit and 64 bit) or newer

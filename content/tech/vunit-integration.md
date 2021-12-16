@@ -4,13 +4,14 @@ layout: page
 pager: true
 author: Wim Meeus
 date: 2021-01-12
+lastmod: 2021-12-16
 comments: true
 bannerad: true
 tags:
   - VUnit
 ---
 
-[VUnit](https://vunit.github.io) is an open source **unit testing framework for VHDL/SystemVerilog** that helps to write, and automatically run, tests. 
+[VUnit](https://vunit.github.io) is an open source **unit testing framework for VHDL/SystemVerilog** that helps to write, and automatically run, tests.
 The VUnit project was started by [Lars Asplund](https://github.com/LarsAsplund) from *Synective Labs* and [Olof Kraigher](https://github.com/kraigher). The source code is hosted at [GitHub](https://github.com/VUnit/vunit).
 VUnit automatically **scans your projects for unit tests** (aka test benches), **runs them** with your favorite simulator and **reports the results**.
 This automation helps to run tests frequently and iterate faster.
@@ -258,6 +259,9 @@ a list with files to exclude from a file, and not add those files to
 the library. 
 
 ## Read VUnit configuration from Sigasi Studio project files
+
+**Update**: Since {{< page "sigasi-4.14.md" >}}, Sigasi studio uses the information from `run.py` to automatically maintain the library mapping.
+The approach described below in this section is no longer appropriate.
 
 Oftentimes, information about design files, libraries, excludes
 etc. is available in other design tools, e.g. Sigasi Studio. With some

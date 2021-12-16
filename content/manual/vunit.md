@@ -13,6 +13,8 @@ Sigasi Studio can help you manage VUnit projects and enables you to *run* and *i
 
 When you import a VUnit project or add VUnit support to an existing project, Sigasi Studio runs VUnit in the background and automatically adds the correct libraries - as specified by the VUnit script - to your project. It also shows error markers in the VUnit script (`run.py`) if anything goes wrong.
 
+Since {{< page "sigasi-4.14.md" >}}, the library mapping of the project is automatically updated based on the contents of the VUnit `run.py` script.
+
 {{< figure src="/img/manual/vunit_project.png" alt="VUnit project" link="/img/manual/vunit_project.png" >}}
 
 # VUnit project setup in Sigasi Studio
@@ -51,10 +53,10 @@ The VUnit integration in Sigasi Studio gives useful feedback in the **VUnit Cons
 To open this view, first open a console (**Window > Show View > Other... > General > Console**) and in the Console View toolbar click the triangle (<span uk-icon="triangle-down"></span>) next to the **Open Console** icon.
 Select **VUnit Console** to open the VUnit Console View.
 
-The library configuration in `run.py` should reflect the library configuration in the Sigasi Studio project.
-Currently both configurations are not kept in sync automatically.
+Since {{< page "sigasi-4.14.md" >}}, the library configuration from `run.py` is used to configure the library configuration in the Sigasi Studio project.
+In older versions of Sigasi Studio, both configurations needed to be kept in sync manually.
 
-Path separators in the `run.py` file need a `/` also on Windows.
+Path separators in the `run.py` file need a `/`, also on Windows.
 
 ## SystemVerilog
 
