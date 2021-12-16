@@ -27,12 +27,12 @@ The generated Block and State Machine Diagrams are saved in subfolders of the `s
 [Sigasi Studio 4.5]({{< ref "/releasenotes/sigasi-4.05.md" >}}) introduced exporting the documentation to HTML.
 There are 2 options when exporting the documentation.
 
-*  **Linked resources**  
+* **Linked resources**  
    Create an HTML document with linked resources.
    All Block Diagrams and State Machine Diagrams are in separate files which are linked from within the HTML document.
    The custom [CSS file]({{< ref "#custom-css" >}}), if present in the project root, will be referenced from the HTML document.
 
-*  **Embedded resources**  
+* **Embedded resources**  
    Create a HTML document with embedded resources. The documentation is in a single file.
    The Block Diagrams and State Machine Diagrams are embedded in the HTML document.
    The CSS from the custom [CSS file]({{< ref "#custom-css" >}}), if present in the project root, will be included in the HTML `<head>`.
@@ -51,6 +51,7 @@ If you have multiple graphics configurations for the same diagrams, the alphabet
 ## Custom CSS
 
 If the root of your project contains a `sigasi-doc.css` file, this file will be used to style the generated HTML documentation.
+Note that only the generated HTML will be affected and not the [Documentation View]({{< ref "/manual/views.md#documentation-view" >}}).
 
 For example, you can give the background and titles different colors. You can also change the font for the entire document or parts of it.
 
