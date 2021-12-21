@@ -40,7 +40,7 @@ This plugin is shipped with the standalone version of Sigasi Studio.
 
 ### Subversion (SVN)
 
-For Subversion we recommende the [Subclipse](https://marketplace.eclipse.org/content/subclipse) plugin.
+For Subversion we recommend the [Subclipse](https://marketplace.eclipse.org/content/subclipse) plugin.
 
 To install this plugin, perform these steps in the **Help > Install New Software...** window:
 
