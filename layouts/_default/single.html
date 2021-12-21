@@ -58,6 +58,8 @@
           </div>
           {{- end -}}
 
+          {{ partial "related" . }}
+
           {{- if .Params.comments -}}
           {{- template "_internal/disqus.html" . -}}
           {{- end -}}

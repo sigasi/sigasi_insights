@@ -1,0 +1,9 @@
+{{ $related := .Site.RegularPages.Related . | first 5 }}
+{{ with $related }}
+<h2 id="see-also">See also <a href="#see-also" class="hanchor uk-icon" uk-icon="link"></a></h2>
+<ul>
+	{{ range . }}
+	<li><a href="{{ .RelPermalink }}">{{ .Title }}</a> ({{ .Type | replaceRE "tech" "blog post" | replaceRE "screencasts" "screencast"}})</li>
+	{{ end }}
+</ul>
+{{ end }}
