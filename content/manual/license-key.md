@@ -111,24 +111,25 @@ The version of the FlexNet daemons must be equal or higher than the FlexLM versi
 #### FlexNet version 11.13.1.2
 
 * Linux:
-	* [Linux 64 bit](https://download.sigasi.com/flexnet/sigasi-flexnet-linux64.zip)
-	* [Linux 32 bit](https://download.sigasi.com/flexnet/sigasi-flexnet-linux32.zip)
+  * [Linux 64 bit](https://download.sigasi.com/flexnet/sigasi-flexnet-linux64.zip)
+  * [Linux 32 bit](https://download.sigasi.com/flexnet/sigasi-flexnet-linux32.zip)
 * Windows (Windows 7 or newer):
-	* [Windows 64 bit](https://download.sigasi.com/flexnet/sigasi-flexnet-win64.zip)
-	* [Windows 32 bit](https://download.sigasi.com/flexnet/sigasi-flexnet-win32.zip)
+  * [Windows 64 bit](https://download.sigasi.com/flexnet/sigasi-flexnet-win64.zip)
+  * [Windows 32 bit](https://download.sigasi.com/flexnet/sigasi-flexnet-win32.zip)
 * Solaris (on SPARC) \[Deprecated. The last supported Sigasi Studio version is 3.6]:
-	* [Solaris 64 bit](https://download.sigasi.com/flexnet/sigasi-flexnet-solaris64.zip)
+  * [Solaris 64 bit](https://download.sigasi.com/flexnet/sigasi-flexnet-solaris64.zip)
 
 ### Customize License Server settings
 
-You can change the port of the FlexNet and Sigasi daemon by changing the port numbers in the license key. By default ports `27000` and `27001` are used.
+By default, Sigasi license files use ports `27000` and `27001` on your license server.
+If these ports are already in use on the server, you can change the port numbers in the license file.
 
-The port of the Sigasi daemon is set on the `DAEMON` line. For example: `DAEMON sigasi port=27001`, forces the Sigasi daemon to use port 27001. 
+* The port of the Sigasi daemon is set on the `DAEMON` line. For example: `DAEMON sigasi port=27001`, forces the Sigasi daemon to use port 27001.
 
-The port of the FlexNet daemon is set on the `SERVER` line For example: `SERVER your_server_name1 BD41FCF5DE27 27000`, forces FlexNet to use port 27000.
+* The port of the FlexNet daemon is set on the `SERVER` line For example: `SERVER your_server_name1 BD41FCF5DE27 27000`, forces FlexNet to use port 27000. This is the port clients need to use to check out a license.
 
-You can change the ports and servername without breaking the signature.
-	
+You can change the port numbers and _your_server_name1_ without breaking the signature.
+If you have a firewall, remember to open these ports for access.
 
 ### Starting the FlexNet and Sigasi daemon on Linux
 
