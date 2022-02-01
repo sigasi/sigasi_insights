@@ -364,7 +364,7 @@ You can use your own simple scripts to manipulate such list and run any EDA tool
 
 To export a comma separated value (CSV) list of files in your project, right-click your project and select **Export...**.
 In the **Sigasi** category, select **CSV File**. Then select the project you want to export.
-As a result, you get a file named `compilation_order.csv`, which lists the VHDL files in your project in a valid compile order.
+As a result, you get a file named `compilation_order.csv`, which lists the HDL files in your project in a valid compile order.
 
 Example (for the tutorial project):
 
@@ -380,11 +380,11 @@ This file will use relative paths, except when the file is on a different drive 
 
 You can also configure Sigasi Studio to **auto-export** this CSV file, every time the dependencies change.
 
-Right click on the project you want to auto-export in the Project Explorer, and select **Properties** and **Sigasi auto export**.
+Right click on the project you want to auto-export in the Project Explorer, and select **Properties** and **Sigasi Auto Export**.
 
 {{< figure src="/img/manual/auto_export_property_page.png" alt="Auto export CSV file with dependencies" >}}
 
 If you do not set a fixed top level name (i.e. empty *top level name* in the property page), Sigasi Studio will use the current top level in the [Hierarchy View](/manual/views#hierarchy-view) as input.
 Note that this only works if the top level belongs to the selected project.
 
-This information is stored in `.settings/com.sigasi.hdt.vhdl.ui.prefs` in your project.
+This information is stored in `.settings/com.sigasi.hdt.shared.ui.prefs` in your project.

@@ -437,7 +437,7 @@ See also:
 
 ## VHDL code formatting
 
-Press **Ctrl+Shift+f** to format your current VHDL file.
+Press **Ctrl+Shift+F** to format your current VHDL file.
 
 This includes:
 
