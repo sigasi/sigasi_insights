@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 4.14
 date: 2021-12-16
-lastmod: 2021-12-16
+lastmod: 2022-02-01
 comments: true
 pager: true
 ---
@@ -158,5 +158,14 @@ In this release we've improved the fixing of mismatches between the Common Libra
 
 We recommend at least **4GB of memory** available for Sigasi Studio,
 and you need **about 1GB** of free disk space.
+
+# Sigasi Studio 4.14.1 point release
+
+On February 1 we released Sigasi Studio 4.14.1.
+This release fixes the following reported issues:
+
+* Project specific validations not working when there are spaces in the path
+* Added Java 17 support to our [profiling features]({{< ref "manual/trouble.md#create-performance-and-memory-snapshots" >}})
+* **[Verilog]** [Class Hierarchy View]({{< ref "manual/views.md#class-hierarchy-view" >}}) not working when opening it from a class instance instead of the class' identifier
 
 Thanks for all the [bug reports](mailto:support@sigasi.com) and enabling [Talkback]({{< ref "manual/talkback.md" >}}).
