@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 4.14
 date: 2021-12-16
-lastmod: 2022-02-01
+lastmod: 2022-02-08
 comments: true
 pager: true
 ---
@@ -167,5 +167,12 @@ This release fixes the following reported issues:
 * Project specific validations not working when there are spaces in the path
 * Added Java 17 support to our [profiling features]({{< ref "manual/trouble.md#create-performance-and-memory-snapshots" >}})
 * **[Verilog]** [Class Hierarchy View]({{< ref "manual/views.md#class-hierarchy-view" >}}) not working when opening it from a class instance instead of the class' identifier
+
+# Sigasi Studio 4.14.2 point release
+
+On February 8 we released Sigasi Studio 4.14.2.
+This release fixes the following reported issues:
+
+* Language versions not working when there are spaces in the path
 
 Thanks for all the [bug reports](mailto:support@sigasi.com) and enabling [Talkback]({{< ref "manual/talkback.md" >}}).
