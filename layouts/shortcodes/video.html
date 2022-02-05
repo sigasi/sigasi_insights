@@ -1,6 +1,8 @@
-{{ $videosrc := .Get "src" }}
-<video {{ with .Get "width" }}width="{{ . }}"{{ end }} loop=true autoplay=true muted=true><source src="{{ $videosrc }}" type="video/mp4" >
-    {{ with .Get "title" }}{{ . }}<br>{{ end }}
-    {{ with .Get "alt" }}{{ . }}<br>{{ end }}
+<video {{ with .Get "width" }}width="{{ . }}"{{ end }}
+       loop=true autoplay=true muted=true
+       {{ with .Get "title" }}title="{{ . }}"{{ end }}
+       {{ with .Get "alt" }}alt="{{ . }}"{{ end }}>
+       {{ with .Get "webm" }}<source src="{{ . }}" type="video/webm">{{ end }}
+       {{ with .Get "src" }}<source src="{{ . }}" type="video/mp4">{{ end }}
     Your browser does not support the video tag
 </video>
