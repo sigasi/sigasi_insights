@@ -1,0 +1,6 @@
+{{ $asrc := resources.GetMatch (.Get "src") }}
+{{ $awidth := .Get "width"}}
+
+{{ with $asrc }}
+<img src="{{ $asrc.RelPermalink }}" {{ with $awidth }}width="{{ $awidth }}"{{ end }}>
+{{ end }}

@@ -1,0 +1,8 @@
+{{ $related := $.Site.RegularPages.RelatedTo ( keyVals "tags" (.Get "tag")) }}
+{{ with $related }}
+<ul>
+    {{ range . }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> ({{ .Type | replaceRE "tech" "blog post" | replaceRE "screencasts" "screencast"}})</li>
+    {{ end }}
+</ul>
+{{ end }}

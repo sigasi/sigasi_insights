@@ -3,6 +3,7 @@
     <div class="uk-navbar-left uk-visible@m">
     {{ $s_manual := where .Site.RegularPages.ByWeight "Section" "manual" }}
     {{ $s_relnotes := where .Site.RegularPages "Section" "releasenotes" }}
+    {{ $s_vscode := where .Site.RegularPages "Section" "vscode" }}
         <ul class="uk-navbar-nav uk-height-1-1 uk-flex">
             <li {{ if eq .RelPermalink "/" }}class="uk-active" {{ end }}><a href="/">Insights</a></li>
             <li {{ if eq .Section "manual" }} class="uk-active" {{ end }}>
@@ -37,9 +38,17 @@
                 <a href="/tech">Tech Articles</a>
             </li>
             <li {{ if eq .Section "vscode" }} class="uk-active" {{ end }}>
-                <a href="/vscode">VS Code (Beta)</a>
+                <a href="/vscode">VS Code (Beta)<span uk-icon="icon: triangle-down"></span></a>
+                <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2 uk-box-shadow-medium ">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        {{ range $s_vscode }}
+                        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                        {{ end -}}
+                    </ul>
+                </div>
             </li>
         </ul>
+
     </div>
 </nav>
 </div>
