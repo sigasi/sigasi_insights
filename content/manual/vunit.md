@@ -141,3 +141,15 @@ Alternatively, one could define the library and its
 contents in the `run.py` script. In that case, VUnit will be aware of
 the library and the warnings won't show, but compile times will be
 longer - which is exactly what *common* libraries are meant to avoid.
+
+# Using an external compiler in a VUnit project
+
+If you want to configure an **external compiler** in a VUnit project
+(e.g. for additional syntax checking), you need to ensure that the
+compiler has the VUnit library. Otherwise, the compiler will flag all
+VUnit constructs in your HDL code as errors.
+
+How to compile and enable the VUnit library for an external compiler
+is explained in the [libraries section]({{< ref
+"libraries.md#external-compiler-in-a-vunit-project" >}}) of this
+manual.

@@ -190,6 +190,46 @@ The GHDL manual documents precompilation of Vendor Primitives [here](https://ghd
 
 If you're using Riviera-PRO, Aldec has an article on [Compiling Xilinx Vivado Simulation Libraries for Riviera-PRO](https://www.aldec.com/en/support/resources/documentation/articles/1710).
 
+### VUnit
+
+#### Running VUnit tests
+
+You don't need to pre-compile **VUnit libraries** for **running**
+VUnit tests. The VUnit framework compiles its own library when needed.
+If you're using libraries like **OSVVM**, you need to call
+`add_osvvm()` in `run.py` to tell VUnit to also compile the OSVVM
+library.
+
+Further documentation on using VUnit in Sigasi Studio is available
+[here]({{< ref "vunit.md" >}}).
+
+#### External compiler in a VUnit project
+
+If you want to configure an **external compiler** in a VUnit project
+(e.g. for additional syntax checking), you need to ensure that the
+compiler has the VUnit library. Otherwise, the compiler will flag all
+VUnit constructs in your HDL code as errors.
+
+[This script](/resources/manual/compile_vunit_modelsim.sh)
+demonstrates how to compile and enable the VUnit library for Modelsim
+and Questa.  Run this script in the folder where you want to install
+the compiled VUnit library.  This should be outside your project
+folder.  The script takes the path of your VUnit installation as a
+parameter. Once the compilation is finished, go to your project
+folder and run these commands:
+
+```sh
+vmap -c  # only if your project folder doesn't contain modelsim.ini already
+vmap <folder_where_the_script_ran>/vunit_lib vunit_lib
+```
+
+Note that the OSVVM library is shipped with Modelsim, so you won't
+need to compile it yourself.
+
+For other external compilers, a similar approach is needed. Customers
+who need help with that are welcome to [contact
+support](mailto:support@sigasi.com).
+
 ## What if I broke my Common Libraries folder?
 
 If you have modified the `Common Libraries` folder, you can always
