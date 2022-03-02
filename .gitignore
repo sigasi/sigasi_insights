@@ -1,7 +1,8 @@
 linkchecker_result.html
 public/
 /resources/
-.vscode
+/.vscode/
+.hugo_build.lock
 
 # Local Netlify folder
 .netlify
