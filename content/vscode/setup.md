@@ -49,3 +49,36 @@ The settings for the Sigasi extension can be reached trough:
 * Optionally, configure the JRE location in **Sigasi > Java: Path**. Make sure to add the `java` executable name in the path.
 
 Alternatively, the Sigasi extension settings can be accessed through the Manage icon (<span uk-icon="cog"></span>) in the extensions overview.
+
+## Features
+
+The following features need setup before they are active.
+
+### Verilog formatting
+
+For Verilog code, it is possible to configure an external formatter, _[Verible]_.
+To enable and configure the formatter, open the settings and search for `Sigasi › Verilog › Formatting`.
+Here you have the choice between using the Sigasi formatter or the Verible formatter by setting the `Formatter Tool`.
+
+When choosing `verible`, arguments for Verible can be set in `Verible: Format Arguments`.
+
+When using `verible`, by default the Verible formatter that comes with the extension will be used.
+It's also possible to use an external executable by configuring its installation path in the `Verible: Installation Path` setting and enabling the `Verible: Use External` option.
+
+### Talkback
+
+You can help improving the Sigasi extension for VS Code by enabling the automatic submission of usage statistics and error stack traces.
+More information about this feature is available in the [Talkback manual page]({{< ref "manual/talkback.md" >}}).
+
+To enable talkback in the VS Code extension, open the settings and enable the `Sigasi: Enable Talkback` option.
+
+The messages sent to Sigasi can also be logged locally. Then you can view these messages using the **Sigasi: Open talkback log** command.
+In order to log the messages locally, a [data storage]({{< ref "#configurable-data-storage" >}}) needs to be configured.
+
+### Configurable data storage
+
+You can specify a directory to be used by the Sigasi Language Server to write the cache and talkback logs to.
+Open the settings and search for `Sigasi › Server: Data Location`.
+The directory needs to exist already.
+
+[Verible]: https://github.com/chipsalliance/verible

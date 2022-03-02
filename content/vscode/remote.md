@@ -26,3 +26,9 @@ Your code is kept on the server, there is no need to have a copy on the laptop. 
 * Check your Sigasi license setting. From the Command Palette (**Ctrl+Shift+P**), select **Preferences: Open Settings (UI)**, and look for **Sigasi: Path To License**. With remote development, this is the license path _on the server_.
 * Note that the Sigasi VS Code extension with default settings will attempt to download a compatible Java runtime (JRE). If you want to use a JRE already installed on the server, look for **Sigasi > Java: Path** in the settings and enter he path to your `java` (11 or higher) executable. This is useful e.g. if the server doesn't have internet access.
 * Now open a VHDL, Verilog or SystemVerilog file on the remote server.
+
+## Remote development license needs
+
+* When using the Sigasi extension in combination with the Remote SSH extension, the Sigasi license should be available on the remote host.
+* If you're also using the sigasi extension locally, the license settings might be different for local and remote development. In that case, make sure to use the proper settings, depending on whether you're developing locally or remote.
+* The settings from the `User` level will act as the default and can be overridden for each remote by setting the `Remote [<remote name>]`.

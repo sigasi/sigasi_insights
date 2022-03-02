@@ -70,6 +70,16 @@ A command is available to capture a heap dump from within the _Command Palette_:
 On some occasions, we might ask you to share a profile of the extension.
 To do so, you can use the command **Sigasi: Start profiling**.
 
+### Performance monitoring
+
+On some occasions, we might ask you to share a performance trace.
+
+To start the performance trace capture, use the command **Sigasi: Start performance logging**.
+
+After going through the activities on which to check performance, use the command **Sigasi: Stop performance logging**.
+This will open a file browser allowing to save a `Trace-YYYY-MM-DD-HH-MM-SS.json` file.
+This file contains the performance log and should be sent to our support.
+
 ## Semantic Coloring
 
 The Sigasi extension supports semantic coloring, however, some VS Code themes might not support it yet.
