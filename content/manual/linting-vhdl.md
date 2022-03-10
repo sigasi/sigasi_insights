@@ -68,7 +68,7 @@ XL code rules require a {{< xl >}} or {{< xprt >}} license.
 | {{< warning_lightbulb >}} | [All references must have the same capitalization as their declaration]({{< ref "capitalization-of-identifiers" >}})                 | 163 |
 | {{< warning_lightbulb >}} | [Check for positional associations in instantiations]({{< ref "positional-association-in-instantiations" >}})                        | 164 |
 |                           | Invalid port associations (incompatible port modes in instantiations)                                                                | 169 |
-|                           | [VHDL version mismatch]({{< ref "rules/vhdl_version" >}})                                                                            | 170 |
+| {{< warning_lightbulb >}} | [VHDL version mismatch]({{< ref "rules/vhdl_version" >}})                                                                            | 170 |
 | {{< warning_lightbulb >}} | [Order of generic and port associations]({{< ref "order-of-associations" >}})                                                        | 177 |
 |                           | Incorrect component name in configuration                                                                                            | 180 |
 |                           | Incorrect instantiation statement label in configuration                                                                             | 181 |

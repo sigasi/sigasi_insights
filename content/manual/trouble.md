@@ -22,7 +22,7 @@ To obtain this snapshot, follow the steps below.
 The snapshot you've obtained needs to be obfuscated to anonymize it and it needs to be uploaded.
 For this a **snapshot_uploader** script is provided in the Sigasi Studio installation folder.  
 You can and should first use the `--dry-run` option of the snapshot_uploader to verify the obfuscation.
-You will receive a token and additional instructions from [support](https://www.sigasi.com/support/) that you need in order to upload the obfuscated snapthot for investigation.
+You will receive a token and additional instructions from [support](https://www.sigasi.com/support/) that you need in order to upload the obfuscated snapshot for investigation.
 
 # The editor displays old contents of a file
 

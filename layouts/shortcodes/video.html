@@ -1,5 +1,5 @@
 <video {{ with .Get "width" }}width="{{ . }}"{{ end }}
-       loop=true autoplay=true muted=true
+       loop=true autoplay=true muted=true playsinline
        {{ with .Get "title" }}title="{{ . }}"{{ end }}
        {{ with .Get "alt" }}alt="{{ . }}"{{ end }}>
        {{ with .Get "webm" }}<source src="{{ . }}" type="video/webm">{{ end }}
