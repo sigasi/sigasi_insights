@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.15)
 layout: page
 pager: true
-date: 2022-03-10
+date: 2022-03-14
 comments: true
 ---
 
@@ -36,6 +36,7 @@ In this release we've added support for VHDL 2019 instantiated protected types. 
 
 # New and Noteworthy Changes
 
+* Greatly enhanced File Search (**Ctrl+H**) speed
 * The [Quick Outline]({{< ref "manual/views.md#quick-outline-view" >}}) initial expansion has been adjusted such that modules, entities, and classes are immediately expanded. This gives a better overview of the design at a first glance
 * Improved the consistency of our ordering, grouping, casing, and punctuation in the preferences and `New...` dialogs
 * The performance of instantiation autocompletes has been _greatly_ improved
@@ -75,6 +76,7 @@ In this release we've added support for VHDL 2019 instantiated protected types. 
 * **[Verilog]** Non-active preprocessor code is now deemphasized instead of emphasized in the dark theme
 * **[Verilog]** [Block diagrams]({{< ref "manual/views.md#block-diagram-view" >}}) now show more connections, especially towards `always` blocks
 * **[Verilog]** Improved preprocessor recovery for unbalanced parenthesis in preprocessor directives
+* **[Verilog]** Added an autocomplete template for `always` with a posedge `clk`
 * **[Graphics]** Exported graphics now default to `.png` when no extension was explicitly mentioned
 * **[VUnit]** Added support for custom preprocessors
 
@@ -99,7 +101,8 @@ In this release we've added support for VHDL 2019 instantiated protected types. 
 * Prevent excessive vmap calls to external compiler when using the same pre-compiled library in multiple open projects
 * When instantiating a Verilog module in VHDL, we now correctly detect undefined VHDL signals in the instantiation
 * Fixed PNGs - exported from the graphical views - being cut off for very large designs on low resolution displays
-* Fixed the classpath for [`snapshot_uploader.bat`]({{< ref "manual/trouble.md#create-performance-and-memory-snapshots" >}})
+* Fixed the classpath for [snapshot_uploader.bat]({{< ref "manual/trouble.md#create-performance-and-memory-snapshots" >}})
+* Made sure that [projects opened through the command line]({{< ref "manual/opening.md" >}}) always open
 * **[VHDL]** Made sure that the `Add missing association` Quick Fix can always be applied
 * **[VHDL]** Fixed formatting failure with unbalanced multiline comments
 * **[VHDL]** Fixed rare cases in which the formatter would not apply any formatting
@@ -129,6 +132,8 @@ end package name;
 * **[Verilog]** A performance regression in the preprocessor that slipped into [4.14]({{< ref "releasenotes/sigasi-4.14.md" >}}) has been alleviated
 * **[VUnit]** Added missing text in `Browse` button in project importer
 * A lot of other issues we could fix thanks to your talkback reports
+* **[VUnit]** `/` is now always used as path separator to save the VUnit location, making it interchangeable between platforms
+* **[VUnit]** Made sure the `Browse...` button in the `Add VUnit support` dialog allows you to browse
 
 # Update or install?
 
