@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.15)
 layout: page
 pager: true
-date: 2022-03-14
+date: 2022-03-16
 comments: true
 ---
 
@@ -50,7 +50,7 @@ In this release we've added support for VHDL 2019 instantiated protected types. 
 * Improved responsiveness when enabling or disabling [Talkback]({{< ref "manual/talkback.md" >}})
 * The `Verilog Version` and `Verilog Errors/Warnings` pages are now hidden in the VHDL file properties. The same was done for the corresponding VHDL pages in Verilog file properties
 * When exporting documentation, the initially selected element is now centered in the dialog
-* The link to [Sigasi's website](https://sigasi.com) in the exported markers document now uses HTTPS instead of HTTP
+* The link to [Sigasi&rsquo;s website](https://sigasi.com) in the exported markers document now uses HTTPS instead of HTTP
 * The [Hierarchy]({{< ref "manual/views.md#hierarchy-view" >}}), [VUnit]({{< ref "manual/views.md#vunit-view" >}}), [Net Search]({{< ref "manual/views.md#net-search-view" >}}) and [Libraries View]({{< ref "manual/views.md#libraries-view" >}}) now honor the single-click navigation preference (`Preferences > General > Open mode`)
 * We've added the option to disable smart caret positioning in identifiers, both in VHDL and (System)Verilog. Smart caret allows you to easily jump between words in identifiers, no matter if you use camelCase or snake_case, by using **Ctrl+Left arrow** and **Ctrl+Right arrow**  
 {{< figure src="/img/releasenotes/4.15/SmartCaret.gif" link="/img/releasenotes/4.15/SmartCaret.gif" title="Smart Caret in Verilog">}}  
