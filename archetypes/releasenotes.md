@@ -30,6 +30,6 @@ We are proud to present the Sigasi Studio X.Y release: ...
   * Java JRE 11 or 17
 
 We recommend at least **4GB of memory** available for Sigasi Studio,
-and you need **about 300MB** of free disk space.
+and you need **about 1GB** of free disk space.
 
 Thanks for all the [bug reports](mailto:support@sigasi.com) and enabling [Talkback]({{< ref "manual/talkback.md" >}}).
