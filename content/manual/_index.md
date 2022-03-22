@@ -1,5 +1,5 @@
 ---
-title: "Manual"
+title: "Sigasi Studio Manual"
 ---
 
-Chapters of the Sigasi Studio manual.
+Below is an overview of all chapters of the Sigasi Studio manual.

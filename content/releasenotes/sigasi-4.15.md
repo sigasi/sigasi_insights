@@ -139,7 +139,7 @@ end package name;
 
 * Sigasi Studio standalone is supported on:
   * Windows: Windows 10 (64 bit) or newer
-  * macOS 10.15 Catalina or newer
+  * macOS 11.6 Big Sur or newer
   * Linux: RedHat Enterprise Linux RHEL 7.7 (64 bit) or newer
     * Sigasi Studio depends on `libXss.so` which can be obtained by installing `libXScrnSaver`
     * More information on supported OSes can be found [on the Eclipse website](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_18.xml#target_environments)
