@@ -100,18 +100,14 @@ There are two ways to install the Sigasi Studio Eclipse Plugin:
 
 * You need to have at least [Eclipse](http://www.eclipse.org) version 4.8, nicknamed *Photon*.
 * This Eclipse version and the Sigasi Studio plugin require Java 11.
-* If you don't have Eclipse installed yet, the Java flavor would be good place to start. Just **download** ([Windows 64 bit][latest-eclipse-java-windows64]/[Linux 64 bit][latest-eclipse-java-linux64]/[Other versions][latest-eclipse-java]), **unzip** and **start**.
-* Note that Sigasi Studio is not compatible with the newest C/C++ flavor of Eclipse. If you want Sigasi Studio in the C/C++ flavor of Eclipse, please install version 2020-03 instead ([Windows 64 bit][latest-eclipse-cpp-windows64]/[Linux 64 bit][latest-eclipse-cpp-linux64]/[Other versions][latest-eclipse-cpp])
+* If you don't have Eclipse installed yet, the C/C++ flavor would be good place to start. Just **download** ([Windows 64 bit][latest-eclipse-cpp-windows64]/[Linux 64 bit][latest-eclipse-cpp-linux64]/[Other versions][latest-eclipse-cpp]), **unzip** and **start**.
 * We recommend you also [increase the heap size for Eclipse](/faq/#how-do-i-increase-the-heap-size-for-eclipse).
 
 For more information on system requirements: [System Requirements](/faq/#what-are-the-system-requirements)
 
-[latest-eclipse-java-windows64]:https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2020-06/R/eclipse-java-2020-06-R-win32-x86_64.zip
-[latest-eclipse-java-linux64]:https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2020-06/R/eclipse-java-2020-06-R-linux-gtk-x86_64.tar.gz
-[latest-eclipse-java]:https://www.eclipse.org/downloads/packages/release/2020-06/r/eclipse-ide-java-developers
-[latest-eclipse-cpp-windows64]:https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2020-03/R/eclipse-cpp-2020-03-R-incubation-win32-x86_64.zip
-[latest-eclipse-cpp-linux64]:https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2020-03/R/eclipse-cpp-2020-03-R-incubation-linux-gtk-x86_64.tar.gz
-[latest-eclipse-cpp]:https://www.eclipse.org/downloads/packages/release/2020-03/r/eclipse-ide-cc-developers-includes-incubating-components
+[latest-eclipse-cpp-windows64]:https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2021-12/R/eclipse-cpp-2021-12-R-win32-x86_64.zip
+[latest-eclipse-cpp-linux64]:https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2021-12/R/eclipse-cpp-2021-12-R-linux-gtk-x86_64.tar.gz
+[latest-eclipse-cpp]:https://www.eclipse.org/downloads/packages/release/2021-12/r/eclipse-ide-cc-developers
 
 ## Install the Eclipse Plugin
 
@@ -121,7 +117,7 @@ After starting Eclipse:
 1. Click **Help > Install New Software…**
 1. In the **Work with:** field enter **`https://download.sigasi.com/updates/studio`** and press **enter**.
 1. Check the checkbox next to **Sigasi Studio**
-1. We recommend to install the optional features too.
+1. Since [Sigasi Studio 4.15](/releasenotes/sigasi-4.15), installing Sigasi Studio optional features is no longer recommended.
 {{< figure src="/img/manual/setup-install-plugin.png" alt="Install Sigasi Studio plugin" >}}
 1. Click the **Next** button.
 1. The following steps are pretty self-explaining.
