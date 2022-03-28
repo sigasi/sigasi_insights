@@ -13,10 +13,14 @@ typing* your code.
 
 # Linting
 
-VHDL code **Lint** is defined as code that is strictly correct according
-to the language definition, but still suspicious or problematic.
-Sigasi Studio has a built-in VHDL linter, which provides info about code lint
+VHDL code **Lint** is defined as **code that is strictly correct** according
+to the language definition, but still **suspicious or problematic**.
+Sigasi Studio has a built-in linter, which provides info about code lint
 in the design.
+
+In addition to code linting, Sigasi Studio can also check that file
+headers and symbol names (entities, signals, varibles...) follow
+certain patterns.  This is discussed under [naming conventions](#naming-conventions).
 
 ## Marker Icons
 
@@ -57,6 +61,37 @@ Since [Sigasi Studio 4.3](/releasenotes/sigasi-4.03) warnings have a quickfix to
 
 Common Libraries are considered to be production ready libraries.
 Linting is skipped for all files in the Common Libraries folder.
+
+## Naming conventions
+
+Sigasi Studio can check whether all sorts of names in the design -
+entities, instances, modules, signals, variables... - follow
+particular patterns.  This may help designers to follow their
+company's or team's coding rules. For example, coding rules may
+prescribe that signal names must have a `s_` prefix, that generics
+names must be written in capitals, or that variable names must use
+CamelCase. Empty rules (which is the default) means that the
+particular rule is not checked.
+
+In addition, Sigasi Studio can also check for file header comments,
+e.g. whether a copyright notice or disclaimer have been included.
+
+**Workspace wide naming conventions settings** are accessed via  
+**Window > Preferences > Sigasi > Verilog/SystemVerilog > Naming Conventions**  
+**Window > Preferences > Sigasi > VHDL > Naming Conventions**
+
+At the top, you can set the severity of naming convention and file
+header comment non-conformities. Below, you can enter the validation
+patterns. Patterns use the Java regular expressions
+syntax. Information on Java regular expressions is available through
+the link above the severity settings. Note that names are not
+validated if the corresponding validation pattern is empty.
+
+{{< figure src="/img/manual/preferences_naming_conventions.png" alt="Configuring naming conventions" >}}
+
+You can also **configure naming conventions per project**, or even per
+file or folder. Documentation on how to do that is
+[here](#naming-conventions-per-project).
 
 # Quick Fixes
 
@@ -146,9 +181,18 @@ Examples:
 ```
 
 ## Naming Conventions per project
+While [Naming Conventions and the Header Comment check can be configured
+globally for a workspace]({{< ref "#naming-conventions" >}}), they can also be defined per project, per folder or per file.
 
-While [Naming Conventions]({{< ref "/manual/rules/naming-conventions.md" >}}) and the Header Comment check [[(System)Verilog]({{< ref "/manual/rules/verilog_style.md#file-header-comment-does-not-match-required-pattern" >}}) | [VHDL]({{< ref "/manual/rules/check-header-comment.md" >}})] can be configured
-globally for a workspace, they can also be defined per project, per folder or per file.
+If you only want to change the severity of naming convention and/or
+file header checks for an entire project, you can change them through
+the dialog in Sigasi Studio:  
+**Project > Properties > Verilog Errors/Warnings** (look for ID 92 and 188)  
+**Project > Properties > VHDL Errors/Warnings** (look for ID 2 and 22)
+
+Other project specific naming convention and/or file header check
+settings can be configured in the configuration files.
+
 The project-specific Naming Conventions and Header Comment are stored in this settings file for VHDL related settings:
 ```text
     ${project location}/.settings/com.sigasi.hdt.vhdl.linting.prefs

@@ -38,6 +38,7 @@ Many conding standards require presense of header comment in every file, matchin
 header comment matches a pattern (rule 22). By default, the pattern is empty which turns this check off.
 The pattern can be configured through **Window > Preferences > Sigasi > (System)Verilog > Naming conventions > File header* and uses
 the [Java regex syntax](https://docs.oracle.com/javase/8/docs/api/index.html?java/util/regex/Pattern.html).
+More information on file header comment checking is available [here](/manual/linting/#naming-conventions).
 
 ## Multiple statements per line
 
