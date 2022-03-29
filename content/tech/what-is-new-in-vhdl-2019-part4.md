@@ -47,14 +47,14 @@ variables:
 ```vhdl
 `if TOOL_VENDOR = "SIGASI" then
   attribute dont_touch of sig1 : signal is "true";
-`endif
+`end if
 ```
 
 These predefined variables are also available as regular VHDL constants on the package `std.env`, making them
 usable in regular expressions as follows:
 
 ```vhdl
-if env.tool_type = "SIMULATION" then ... endif;
+if env.tool_type = "SIMULATION" then ... end if;
 ```
 
 This allows designers to work around tool issues that can not be solved within the VHDL language. Libraries can
