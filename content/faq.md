@@ -242,15 +242,18 @@ Related terms include:
 
 Yes, the Sigasi VHDL Eclipse editor supports all unicode characters, including Japanese characters. Note that the VHDL language does not allow any non-ASCII characters as identifiers, so you cannot use multi-byte characters in signal names.
 
-## What is this MouseFeed pop-up?
+## What is this pop-up with key bindings?
 
 Many actions can be accessed using your mouse and using [Keyboard Shortcuts](/manual/keyshortcuts), e.g. copying text can be done either by clicking **Edit > Copy** or by pressing **Ctrl+C**. Of course, pressing a key combination is a lot faster than clicking in a menu.
 
-{{< figure src="/img/faq/mousefeed.png" alt="MouseFeed pop-up" >}}
+{{< figure src="/img/faq/keybinding-popup.png"  link="/img/faq/keybinding-popup.png" alt="Key binding pop-up" >}}
 
-Whenever you use your mouse for something that also has a key binding, the MouseFeed function tells you what this keyboard shortcut is. This will help you remember keyboard shortcuts for the actions you use most often.
+Whenever you use your mouse for something that also has a key binding, this function tells you what the keyboard shortcut is. This will help you remember keyboard shortcuts for the actions you use most often.
 
-The easiest way to avoid getting these pop ups --and gain a good deal of development speed-- is by using [Keyboard Shortcuts](/manual/keyshortcuts) when possible. If you still want to disable MouseFeed, you can go to **Window > Preferences > MouseFeed > Action Invocation** and uncheck the box for **Enable action invocation control**.
+The easiest way to avoid getting these pop ups --and gain a good deal of development speed-- is by using [Keyboard Shortcuts](/manual/keyshortcuts) when possible.
+If you still want to disable this feature, you can go to **Window > Preferences > General > Keys** and below **Show key binding when command is invoked**, uncheck the box for **Through mouse click**.
+
+{{< figure src="/img/faq/keybinding-config.png"  link="/img/faq/keybinding-config.png" alt="Key binding pop-up configuration" >}}
 
 ## How can I insert tabs in Block Selection Mode
 
