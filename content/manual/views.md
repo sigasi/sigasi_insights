@@ -230,7 +230,7 @@ You can export state machines to an image with the save ![save icon](/img/icons/
 
 You can also export **all** *state machines of an entire project* at once: Click **Project > Export... > Sigasi > State Machine Diagrams export** and select your project. All SVGs will be created in **diagrams/statemachines/** in your project.
 
-You can watch a screencast at [State Machine Viewer](/screencasts/state_machine_viewer).
+Check out our [State Machine Viewer](/screencasts/state_machine_viewer) screencast for a demonstration.
 
 # Dependencies View
 

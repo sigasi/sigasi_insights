@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.16)
 layout: page
 pager: true
-date: 2022-03-17
+date: 2022-04-04
 comments: true
 ---
 
@@ -16,7 +16,56 @@ Although these preview releases are less rigorously tested than the official rel
 
 # Current preview release
 
-No documented changes since the {{< page "releasenotes/sigasi-4.15.md" >}} release.
+# New and Noteworthy Changes
+
+* The automatic autocomplete after typing `.` or `` ` `` can now be disabled in `Preferences > VHDL` or `Preferences > Verilog/SystemVerilog`  
+{{< figure src="/img/releasenotes/4.16/AutocompleteAfterDot.png" link="/img/releasenotes/4.16/AutocompleteAfterDot.png" title="Toggle automatic autocomplete after character">}}  
+* Formatting has been enabled for files that use keywords of a higher language version
+* **Ctrl + hover** has been enabled for the last character of identifiers
+* Improved resilience to changes in the project for the [Find References View]({{< ref "manual/editor.md#find-references" >}})
+* Improved responsiveness for the Find References View
+* Removed `?` button from views in which they were redundant
+* Navigating from the [Outline View]({{< ref "manual/views.md#outline-view" >}}) or the [Hierarchy View]({{< ref "manual/views.md#hierarchy-view" >}}) to the editor now selects more relevant constructs
+* A warning is now issued on the `.library_mapping.xml` when it references non-existent files. A Quick Fix to remove the offending mapping has been also been added.
+* Errors reported by external toolchains that do not contain a location are now propagated to Sigasi Studio as errors on the project  
+{{< figure src="/img/releasenotes/4.16/LocationlessErrors.png" link="/img/releasenotes/4.16/LocationlessErrors.png" title="Toolchain's errors without location are linked to project">}}  
+* The documentation view now reacts better to all kinds of changes to the project, assuring it never misses a refresh
+* `Show In > Dependencies` tries harder to select the right element, preventing disturbing **beep** sounds
+* Colors changed through `Preferences > Sigasi > VHDL or Verilog/SystemVerilog> Syntax Coloring` are now immediately applied
+* The [State Machine View]({{< ref "manual/views.md#state-machine-view" >}}) icon to show edge labels (![show labels icon](/img/releasenotes/4.16/font.png)) has been replaced by an icon to hide comments (![hide comments icon](/img/releasenotes/4.16/hide_comments.png)) and an icon to hide the conditions (![hide conditions icon](/img/releasenotes/4.16/hide_conditions.png)). The [Graphics Configuration]({{< ref "manual/graphics.md" >}}) now also offers the ability to show only comments or conditions separately through `labels comment` or `labels condition`.
+* **[VHDL]** Attributes now have an icon and are marked as attributes in the autocomplete pop-up window
+* **[VHDL]** `open` in ranges is now taken into account for validations
+* **[Verilog]** Greatly decreased memory usage and increased performance when using many include files
+* **[Verilog]** All macro invocations are now highlighted
+* **[Verilog]** Added support for `edge` in timing checks
+* **[Verilog]** Added support for assignment patterns in initial blocks
+
+```verilog
+initial begin
+    '{c} = s;
+end
+```
+
+* **[Verilog]** Removed `localparameter`s from the `Parameters` table in [Documentation]({{< ref "manual/documentation.md" >}}) as these are not externally modifiable
+* **[Verilog]** Added linking support for `let` declarations in `clocking` blocks
+* **[Verilog]** Using invalid constructs - such as `modules` or `interfaces` - in `packages` will now generate an error
+* **[Verilog]** Pressing `enter` at the end of many constructs (`package`, `class`, `interface`, ...) will now trigger [Smart Indent]({{< ref "manual/editor.md#smart-indentation-1" >}}) to unindent the ending line
+
+# Updates
+
+No updates have been added yet.
+
+# Bug fixes
+
+* Fixed a hang when typing at a very specific speed with the autocomplete window open
+* **[VHDL]** Fixed missing autocompletes for attributes
+* **[VHDL]** Fixed linking for array types that use `open` in their ranges
+* **[VHDL]** Fixed formatting for `else` clauses that have a trailing single line comment
+* **[VHDL]** Only present Quick Fix suggestion for subprogram invocations without matching subprogram when the Quick Fix can improve the situation
+* **[Verilog]** Fixed false positive errors for blank ports in modules
+* **[Verilog]** ``` `ifdef```, ``` `else```, ``` `endif``` directives are now correctly greyed out in disabled preprocessor branches
+* **[Verilog]** The right file encoding is now passed to Verible
+* **[Verilog]** [Block Diagram]({{< ref "manual/views.md#block-diagram-view" >}}) generation will no longer fail for net declarations without a name
 
 # Update or install?
 
