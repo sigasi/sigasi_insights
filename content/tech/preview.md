@@ -29,10 +29,11 @@ Although these preview releases are less rigorously tested than the official rel
 * A warning is now issued on the `.library_mapping.xml` when it references non-existent files. A Quick Fix to remove the offending mapping has been also been added.
 * Errors reported by external toolchains that do not contain a location are now propagated to Sigasi Studio as errors on the project  
 {{< figure src="/img/releasenotes/4.16/LocationlessErrors.png" link="/img/releasenotes/4.16/LocationlessErrors.png" title="Toolchain's errors without location are linked to project">}}  
-* The documentation view now reacts better to all kinds of changes to the project, assuring it never misses a refresh
+* The [Documentation View]({{< ref "manual/views.md#documentation-view" >}}) now reacts better to all kinds of changes to the project, assuring it never misses a refresh
 * `Show In > Dependencies` tries harder to select the right element, preventing disturbing **beep** sounds
 * Colors changed through `Preferences > Sigasi > VHDL or Verilog/SystemVerilog> Syntax Coloring` are now immediately applied
 * The [State Machine View]({{< ref "manual/views.md#state-machine-view" >}}) icon to show edge labels (![show labels icon](/img/releasenotes/4.16/font.png)) has been replaced by an icon to hide comments (![hide comments icon](/img/releasenotes/4.16/hide_comments.png)) and an icon to hide the conditions (![hide conditions icon](/img/releasenotes/4.16/hide_conditions.png)). The [Graphics Configuration]({{< ref "manual/graphics.md" >}}) now also offers the ability to show only comments or conditions separately through `labels comment` or `labels condition`.
+* All of our tree views (Hierarchy View, [Open Design Unit]({{< ref "manual/views.md#open-design-unit-view" >}}), Export diagrams, ...) now use consistent capitalization and coloring
 * **[VHDL]** Attributes now have an icon and are marked as attributes in the autocomplete pop-up window
 * **[VHDL]** `open` in ranges is now taken into account for validations
 * **[Verilog]** Greatly decreased memory usage and increased performance when using many include files

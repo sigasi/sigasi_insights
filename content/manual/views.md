@@ -68,7 +68,7 @@ editing simultaneously. The currently selected file is the active file.
 
 * [Sigasi Studio Editor](/manual/editor)
 
-# Outline view
+# Outline View
 
 The Outline View displays the contents of the active file, in terms of
 the HDL objects that it contains.
@@ -87,7 +87,7 @@ If you enable the **Link with Editor** icon
 element in the Outline View, the corresponding code will be selected in
 the editor.
 
-## Quick outline view
+## Quick Outline View
 
 You can also press **Ctrl+O** to open the _quick outline_.
 
@@ -318,7 +318,7 @@ and a list of the class members. To open the Class Hierarchy of a class, click t
 
 ![Open class in Hierarchy](/img/manual/class-hierarchy-open.png)
 
-## Class Hierarchy tree
+## Class Hierarchy Tree
 
 The class hierarchy tree displays either the superclasses, subclasses or both.
 
@@ -329,7 +329,7 @@ The class hierarchy tree displays either the superclasses, subclasses or both.
 ![subclass icon](/img/icons/sub_co.png)                  | Subclass Hierarchy         | Displays all subclasses that extend or implement the selected (interface) class.
 ![qualified class icon](/img/icons/th_showqualified.png) | Show Qualified Class Names | Shows the qualified name next to each class.
 
-## Member list
+## Member List
 
 The member list shows all members of the class that is currently selected in the class hierarchy tree.
 
