@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 4.15
 date: 2022-03-17
-lastmod: 2022-03-17
+lastmod: 2022-04-12
 comments: true
 pager: true
 ---
@@ -151,3 +151,11 @@ We recommend at least **4GB of memory** available for Sigasi Studio,
 and you need **about 1GB** of free disk space.
 
 Thanks for all the [bug reports](mailto:support@sigasi.com) and enabling [Talkback]({{< ref "manual/talkback.md" >}}).
+
+# Sigasi Studio 4.15.1 point release
+
+On April 12 we released Sigasi Studio 4.15.1.
+This release fixes the following reported issues:
+
+* Hang when typing at a very specific speed with the autocomplete window open
+* **[VHDL]** Missing autocompletes for attributes

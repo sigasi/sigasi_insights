@@ -58,8 +58,6 @@ No updates have been added yet.
 
 # Bug fixes
 
-* Fixed a hang when typing at a very specific speed with the autocomplete window open
-* **[VHDL]** Fixed missing autocompletes for attributes
 * **[VHDL]** Fixed linking for array types that use `open` in their ranges
 * **[VHDL]** Fixed formatting for `else` clauses that have a trailing single line comment
 * **[VHDL]** Only present Quick Fix suggestion for subprogram invocations without matching subprogram when the Quick Fix can improve the situation
