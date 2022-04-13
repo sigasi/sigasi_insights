@@ -22,4 +22,11 @@ figcaption { text-align: center; }
 .badcode  { text-decoration: none; border-bottom: 3px solid #FF8080; background-color: #FFD0D0; }
 .uglycode { text-decoration: none; border-bottom: 3px solid #FF8040; background-color: #FFD080; }
 
+.no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 @import "syntax.scss";
