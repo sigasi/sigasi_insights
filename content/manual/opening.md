@@ -211,7 +211,7 @@ path, you need to enclose the path in curly braces . For example:`c:\\My\ Applic
 
 If you now open any VHDL file in Xilinx ISE, Sigasi Studio will automatically open the selected file.
 
-You can find more info on configuring Xilinx ISE to work with external editors in the [Xilinx documentation](http://www.xilinx.com/support/documentation/sw_manuals/xilinx12_2/pn_db_editor_options.htm).
+You can find more info on configuring Xilinx ISE to work with external editors in the Xilinx documentation.
 
 ## HDL Designer
 
