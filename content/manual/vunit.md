@@ -32,7 +32,7 @@ If you have installed VUnit in a dedicated location, you should add the VUnit lo
 
 When you're installing VUnit in a virtualenv, make sure to launch Sigasi Studio from within the terminal after activating the virtualenv.
 
-If you installed VUnit from the _Microsoft Store_, you might get an error message when trying to select the Python executable.
+If you installed VUnit from the *Microsoft Store*, you might get an error message when trying to select the Python executable.
 To use Python outside of Windows Store apps, Python needs to be installed using an installer from <https://www.python.org/downloads/windows/>.
 
 You should make sure that the `python run.py --version` command only returns the VUnit version number. Additional output will prevent Sigasi Studio to parse the VUnit version number correctly and will result in errors.
@@ -54,7 +54,9 @@ To open this view, first open a console (**Window > Show View > Other... > Gener
 Select **VUnit Console** to open the VUnit Console View.
 
 Since {{< page "sigasi-4.14.md" >}}, the library configuration from `run.py` is used to configure the library configuration in the Sigasi Studio project.
-In older versions of Sigasi Studio, both configurations needed to be kept in sync manually.
+
+Note that this automatic configuration does not work with linked folders.
+You need to manually assign linked folders or any files/folders in them to a library.
 
 Path separators in the `run.py` file need a `/`, also on Windows.
 
