@@ -12,6 +12,7 @@ tags:
   - systemverilog
   - ide
   - sdk
+  - lsp
 comments: true 
 bannerad: true 
 --- 
