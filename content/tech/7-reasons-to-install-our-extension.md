@@ -28,14 +28,14 @@ When it comes to workflow, everyone has their own preferences. Everyone uses the
 
 ### 3. Continuous updates & bug fixes
 
-Our team is constantly working to improve the quality of our extension by delivering a steady flow of updates and bug fixes. We want to give to our users the best set of features and blend them in a VS Code way. Something missing? Send us an [email](mailto:support+vscode@sigasi.com) and we will be happy to talk about it.
+Our team is constantly working to improve the quality of our extension by delivering a steady flow of updates and bug fixes. We want to give to our users the best set of features and blend them together in a VS Code way. Something missing? Send us an [email](mailto:support+vscode@sigasi.com) and we will be happy to talk about it.
 
 ### 4. The best from both worlds: Sigasi and VS Code ♡♡♡♡♡
 
 All the power of Sigasi Studio combined with the portability and snappiness of the VS Code editor. And you don't have to worry about performance, our Sigasi Language Server runs in a different process, meaning it will not slow down your editing.
 {{< figure src="/img/tech/trySigasiMeme.jpg" width="500" >}}  
 
-### 5. A support team that's ready to assists you with anything you need
+### 5. A support team that's ready to assist you with anything you need
 
 We want to offer our customers the best user experience they can get and if something doesn't go as expected we want to be there to help you.  
 During our beta program, we have been diligently paying attention to all the feedback and questions from our community, making sure we can assist them with everything we can and they can smoothly use our extension.  
