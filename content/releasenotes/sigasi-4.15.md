@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 4.15
 date: 2022-03-17
-lastmod: 2022-04-12
+lastmod: 2022-05-17
 comments: true
 pager: true
 ---
@@ -159,3 +159,12 @@ This release fixes the following reported issues:
 
 * Hang when typing at a very specific speed with the autocomplete window open
 * **[VHDL]** Missing autocompletes for attributes
+
+# Sigasi Studio 4.15.2 point release
+
+On May 13 we released Sigasi Studio 4.15.2.
+This release fixes the following reported issues:
+
+* **[VHDL]** Missing autocomplete options before context declaration
+* **[VHDL]** `Open Matching Declaration` context menu item and keyboard shortcut not working
+* **[VHDL]** 2-process `std_logic_vector` state machines not being detected by `State Machines` view
