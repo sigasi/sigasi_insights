@@ -51,8 +51,8 @@ You can turn occurrence highlighting on or off. Click the "Toggle Mark Occurrenc
 
 To look for occurrences of a given identifier in different files, place your cursor on the identifier and right-click. Now select **Search References**.
 
-A search window will appear on the bottom of your workbench, displaying all occurrences of the selected identifier. You can easily navigate through all occurrences by clicking the **Show Next Match** arrow ![](/img/icons/shownextmatch.png)
-and the **Show Previous Match** arrow ![](/img/icons/showpreviousmatch.png) in the search result view. Note that all occurrences are highlighted and marked with a small arrow at the left border of the editor for easy recognition.
+A search window will appear on the bottom of your workbench, displaying all occurrences of the selected identifier. You can easily navigate through all occurrences by clicking the **Show Next Match** arrow ![arrow_down](/img/icons/shownextmatch.png)
+and the **Show Previous Match** arrow ![arrow_up](/img/icons/showpreviousmatch.png) in the search result view. Note that all occurrences are highlighted and marked with a small arrow at the left border of the editor for easy recognition.
 
 ### Open Declaration and Hyperlinks
 
@@ -188,7 +188,6 @@ Note that only files that are part of the build will be formatted.
 Any selected file, part of the build or not, will be formatted.
 Any combination of resources can be formatted this way: multpile projects at a time, a project and a folder, ...
 
-
 ## Other editor features
 
 ### Code folding
@@ -200,6 +199,15 @@ If you work with large files, you might want to hide certain pieces of your code
 You can also enable/disable code folding and perform other actions by right-clicking in the gutter (the small column to the left of your code) and selecting **Folding**.
 
 {{< figure src="/img/manual/configure_folding.png" alt="Configure Code Folding" >}}
+
+### Smart Caret positioning
+
+Smart caret positioning allows you to easily jump between words within identifiers, no matter whether you use *camelCase* or *snake_case*, by using **Ctrl+Left arrow** and **Ctrl+Right arrow**.
+
+{{< page "/releasenotes/sigasi-4.15.md" >}} added the option to disable smart caret positioning in identifiers, both in VHDL and (System)Verilog.
+To change the setting, go to **Window > Preferences > Verilog/SystemVerilog** or **Window > Preferences > VHDL** where you can alter the selection of **Smart caret positioning in identifiers**.
+
+{{< figure src="/img/releasenotes/4.15/SmartCaret.gif" link="/img/releasenotes/4.15/SmartCaret.gif" title="Smart Caret in Verilog">}}
 
 ### Rename refactoring
 

@@ -2,7 +2,7 @@
 title: "Sigasi Studio Editing Tricks"
 layout: page 
 publishdate: 2021-11-16
-lastmod: 2021-11-16
+lastmod: 2022-05-18
 pager: true
 author: Sebastian Zarnekow
 tags: 
@@ -85,6 +85,8 @@ Rather than working on the granularities of rectangles, we mostly work on the gr
 
 * **Go to next word** and **Go to previous word** will move the cursor quickly to the end or the beginning of the current word. The keyboard shortcuts for that gesture are **Ctrl+Right / Left** / **⌥+→/←**. They can be combined with the **Shift** / **⇧** key to create a text selection or enlarge an existing selection.
 * **Delete next word** and **Delete previous word** are self-explanatory and bound to the shortcuts **Ctrl+Del / Backspace** / **⌥+⌦/⌫**.
+
+**Update**: {{< page "/releasenotes/sigasi-4.15.md" >}} added the option to [disable this feature]({{< ref "/manual/editor.md#smart-caret-positioning" >}}).
 
 ## 8. Line dancing
 
