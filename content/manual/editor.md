@@ -584,9 +584,9 @@ In the Verible configuration page, configurations are grouped in the following t
 If you want to undo your changes, you can use the **Restore Defaults** button, either per tab or for the entire dialog.
 After applying your configuration changes, press the **OK** button.
 
-{{< figure src="/img/releasenotes/4.15/VeribleConfiguration.png" link="/img/releasenotes/4.15/VeribleConfiguration.png" title="Verible configuration">}}  
+{{< figure src="/img/releasenotes/4.15/VeribleConfiguration.png" link="/img/releasenotes/4.15/VeribleConfiguration.png" title="Verible configuration">}}
 
 To see this in action, you can have a look at [our screencast]({{< ref "/screencasts/choose_your_verilog_formatter.md" >}}).  
-The [Verible] website contains more information.
+The [Verible] website and [README](https://github.com/chipsalliance/verible/blob/master/verilog/tools/formatter/README.md) contain more information.
 
 [Verible]: https://github.com/chipsalliance/verible/tree/master/verilog/tools/formatter
