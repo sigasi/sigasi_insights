@@ -162,7 +162,7 @@ This release fixes the following reported issues:
 
 # Sigasi Studio 4.15.2 point release
 
-On May 13 we released Sigasi Studio 4.15.2.
+On May 17 we released Sigasi Studio 4.15.2.
 This release fixes the following reported issues:
 
 * **[VHDL]** Missing autocomplete options before context declaration
