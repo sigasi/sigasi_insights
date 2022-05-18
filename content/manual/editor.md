@@ -147,7 +147,7 @@ When done, you can press ENTER to return to the normal editing mode.
 The cursor will be placed at an appropriate position to continue working.
 
 You can also configure your own templates.
-To edit or create templates, go to **Window > Preferences > Sigasi > VHDL or (System)Verilog > Templates**.
+To edit or create templates, go to **Window > Preferences > Sigasi > VHDL or Verilog/SystemVerilog > Templates**.
 Here you get an overview of existing templates.
 You can create **New...** templates, **Edit...** existing templates or remove templates.
 
@@ -161,19 +161,19 @@ Automated consistent code formatting makes code more readable and helps develope
 
 Read more about specifics on [VHDL code formatting](#vhdl-code-formatting) and [Verilog and SystemVerilog code formatting](#verilog-and-systemverilog-code-formatting).
 
-### Configuration
+### Formatting Configuration
 
 You can set preferences for Tabs or spaces under **Window > Preferences > General > Editors > Text Editors**.
 
 {{< figure src="/img/manual/configure_spaces.png" alt="Configure Spaces or Tabs" >}}
 
-Here you can set the tab width in spaces and configure to _Insert Spaces for Tabs_.
+Here you can set the tab width in spaces and configure to *Insert Spaces for Tabs*.
 Whenever a tab is pressed, the corresponding number of spaces will be inserted instead.
-You can also opt to _Remove multiple spaces on backspace/delete_ so that removing leading spaces follows the indentation levels.
+You can also opt to *Remove multiple spaces on backspace/delete* so that removing leading spaces follows the indentation levels.
 
 ### Format code on save
 
-You can configure Sigasi Studio to automatically format your (System)Verilog and VHDL files when you save your source files via **Window > Preferences > Sigasi > [VHDL | (System)Verilog]**, next check **Enable code format on save**.
+You can configure Sigasi Studio to automatically format your (System)Verilog and VHDL files when you save your source files via **Window > Preferences > Sigasi > [VHDL | Verilog/SystemVerilog]**, next check **Enable code format on save**.
 
 ### Format files without opening them
 
@@ -181,10 +181,10 @@ You can configure Sigasi Studio to automatically format your (System)Verilog and
 
 You can format (System)Verilog and VHDL files without opening them in the editor.
 
-* You can format an _entire project_. Right click the project in the [Project Explorer]({{< ref "manual/views.md#project-explorer-view" >}}) and select **Source > Format**.
+* You can format an *entire project*. Right click the project in the [Project Explorer]({{< ref "manual/views.md#project-explorer-view" >}}) and select **Source > Format**.
 Note that only files that are part of the build will be formatted.
 
-* You can format a selection of files. Select multiple _files_ and/or _folders_ in the [Project Explorer]({{< ref "manual/views.md#project-explorer-view" >}}) and select **Source > Format**.
+* You can format a selection of files. Select multiple *files* and/or *folders* in the [Project Explorer]({{< ref "manual/views.md#project-explorer-view" >}}) and select **Source > Format**.
 Any selected file, part of the build or not, will be formatted.
 Any combination of resources can be formatted this way: multpile projects at a time, a project and a folder, ...
 
@@ -289,7 +289,7 @@ There are several ways to customize color preferences in Sigasi Studio.
 * Change color setting for different text editor features in **Window \> Preferences \> General \> Editors \> Text Editors**
   * Annotation colors can be configured in the **Annotations** sub-menu.
   * Highlighting colors for differences can be configured in the **Quick Diff** sub-menu.
-* Syntax coloring for (System)Verilog can be changed in the **Window \> Preferences \> Sigasi \> (System)Verilog \> Syntax Coloring** preferences menu.
+* Syntax coloring for Verilog/SystemVerilog can be changed in the **Window \> Preferences \> Sigasi \> Verilog/SystemVerilog \> Syntax Coloring** preferences menu.
 * Syntax coloring for VHDL can be changed in the **Window \> Preferences \> Sigasi \> VHDL \> Syntax Coloring** preferences menu.
 
 ### Multiple Screen Support
@@ -313,7 +313,7 @@ There are 3 ways to split the Editor View.
 
 * ![Horizontal Split](/img/icons/split_horizontal.png) **Horizontal Split** shows 2 viewports on top of each other.
 * ![Vertical Split](/img/icons/split_vertical.png) **Vertical Split** shows 2 viewports next to each other.
-*  **Clone** to a new Editor View.
+* **Clone** to a new Editor View.
 This new Editor View can be *[detached]({{< ref "#multiple-screen-support" >}})* so that
 the same file buffer can be viewed on multiple displays.
 
@@ -508,8 +508,8 @@ described in this chapter.
 ## Include paths and initial preprocessor definitions
 
 The fastest way to add an include path is to run the Quick Fix on \``include` errors in the editor.
-You can configure the include paths of your SystemVerilog projects in the **(System)Verilog Preprocessor** property page.
-Right click your project and select **Properties > (System)Verilog Preprocessor**.  
+You can configure the include paths of your SystemVerilog projects in the **Verilog Preprocessor** property page.
+Right click your project and select **Properties > Verilog Preprocessor**.  
 Here you can `Add` and `Remove` include paths using the buttons on the right.
 You can also move the order of the include paths using the `Up` and `Down` buttons.
 The `Import...` and `Export...` buttons can be used to transfer a semicolon-separated (`;`) list of include paths from and to the clipboard.
@@ -529,18 +529,10 @@ In the [Preprocessor View](/manual/views#preprocessor-view), you can preview the
 
 {{< figure src="/img/manual/preprocessor-hover.png" link="/img/manual/preprocessor-hover.png" width="600" >}}
 
-
-
 ## Verilog version
 
-You can configure the Verilog version via **Window > Preferences > Sigasi > (System)Verilog**
+You can configure the Verilog version via **Window > Preferences > Sigasi > Verilog/SystemVerilog**
 and select whether `*.v` files are treated as **Verilog** or **SystemVerilog**. `*.sv` files are always treated as **SystemVerilog**.
-
-## Verilog and SystemVerilog code formatting
-
-Press **Ctrl+Shift+F** to format your current Verilog or SystemVerilog file.
-
-The current formatter implementation corrects indentation only.
 
 ## Smart Indentation
 
@@ -551,7 +543,7 @@ level. E.g. an extra indent after a `module` and remove an indent for
 the matching `endmodule`.
 
 You can enable/disable this feature via **Window \> Preferences \>
-Sigasi \> (System)Verilog** by toggling the **“Enter adjusts indentation on
+Sigasi \> Verilog/SystemVerilog** by toggling the **“Enter adjusts indentation on
 current and next line”** setting.
 
 **Tabs vs. spaces:** This features inserts tabs characters or spaces,
@@ -561,3 +553,40 @@ See also:
 
 * [Tabs and Spaces](/manual/config#tabs-and-spaces)
 * Screencast [Smart Indentation for Verilog](/screencasts/verilog-smart-indent)
+
+## Verilog and SystemVerilog code formatting
+
+Press **Ctrl+Shift+F** to format your current Verilog or SystemVerilog file.
+
+The default formatter implementation corrects indentation only.
+
+Since {{< page "/releasenotes/sigasi-4.15.md" >}}, Sigasi ships with [Verible] built-in. Verible is an ambitious (System)Verilog formatter that is agnostic to macro invocations and includes and therefore produces a consistent formatting result also in heavily preprocessed code.
+
+You can enable the Verible formatter for your installation by going to **Window > Preferences > Sigasi > Verilog/SystemVerilog > Formatting**.
+Under **Select formatter**, you can choose between the default *Sigasi* formatter which corrects indentation and using the *Verible* formatter.
+
+{{< figure src="/img/releasenotes/4.15/ChooseFormatter.png" link="/img/releasenotes/4.15/ChooseFormatter.png" title="Choose between Sigasi or Verible formatter">}}  
+
+Sigasi ships with a recent Verible version by default.
+If you'd rather run your own Verible installation, this can be achieved in **Window > Preferences > Sigasi > Verilog/SystemVerilog > Formatting > Verible**.
+To select your own Verible binary instead of the one that comes with Sigasi, select the *Use external Verible formatter instead of bundled one:* option and configure the *Verible installation path:* option.
+
+This page also allows you to customize the Verible formatting rules, both for the built-in and the external Verible binaries, by pressing the **Edit...** button.
+For maximal compatibility, you need to make sure the Eclipse setting to *[Insert spaces for tabs]({{< ref "/manual/config.md#tabs-and-spaces" >}})* is enabled and that the *Displayed tab width* is matching the Verible configuration.
+
+In the Verible configuration page, configurations are grouped in the following tabs.
+
+* Indents and Wrapping
+* Ports and Parameters
+* Types
+* Statements and Expressions
+
+If you want to undo your changes, you can use the **Restore Defaults** button, either per tab or for the entire dialog.
+After applying your configuration changes, press the **OK** button.
+
+{{< figure src="/img/releasenotes/4.15/VeribleConfiguration.png" link="/img/releasenotes/4.15/VeribleConfiguration.png" title="Verible configuration">}}  
+
+To see this in action, you can have a look at [our screencast]({{< ref "/screencasts/choose_your_verilog_formatter.md" >}}).  
+The [Verible] website contains more information.
+
+[Verible]: https://github.com/chipsalliance/verible/tree/master/verilog/tools/formatter
