@@ -70,13 +70,13 @@ Starting with [Sigasi Studio 3.8]({{<ref "/releasenotes/sigasi-3.08.md" >}}), th
 * Edit `sigasi/configuration/config.ini` and replace `eclipse.application=com.sigasi.runner.open` with `eclipse.application=org.eclipse.ui.ide.workbench`
 * In `sigasi/sigasi.ini` add following lines between `@noDefault` and `-vmargs`:
 
-```
+``` sh
 --launcher.defaultAction
 openFile
 ```
 
 This way Sigasi Studio uses the default Eclipse behaviour instead of the [custom Sigasi runner](https://insights.sigasi.com/tech/make-eclipse-open-files-command-line.html).
-More information on the Eclipse _OpenFileFeature_ can be found [here](https://wiki.eclipse.org/Eclipse/OpenFileFeature).
+More information on the Eclipse *OpenFileFeature* can be found [here](https://wiki.eclipse.org/Eclipse/OpenFileFeature).
 
 The Sigasi runner allows to open projects using the `-p` option.
 This is not possible when using the default Eclipse runner.
@@ -173,11 +173,11 @@ at the bottom of the screen.
 
 It is good practice to first create a backup of your installation folder before running an update. This can be done by simply compressing the `eclipse` or the `sigasi` folder in an archive (zip file)
 
-## Sigasi Studio App
+## Update Sigasi Studio App
 
 If you run Sigasi Studio as a **standalone application**, the automated update system will periodically check for [software updates](/manual/setup#software-updates).
 
-## Sigasi Studio Eclipse plugin
+## Update Sigasi Studio Eclipse plugin
 
 If you run Sigasi Studio as an **Eclipse plugin**, you may need to check for updates manually, by clicking **Help > Check for Updates**.
 
@@ -185,5 +185,9 @@ You can enable automatic updates by opening this preference page : **Install/Upd
 
 ## Firewalls and Proxies
 
-If the updates are not automatically fetched from the Sigasi Studio update server you are probably behind a firewall or proxy server. You can configure Sigasi Studio’s proxy settings in **Window > Preferences > General > Network connections**. If you can not add a firewall exception for our update site, the fall back solution is to download the complete application from our website. You can completely replace your old installation; all settings are stored in your workspace (the default is
-`workspaceSigasi` in your home directory).
+If the updates are not automatically fetched from the Sigasi Studio update server you are probably behind a firewall or proxy server. You can configure Sigasi Studio’s proxy settings in **Window > Preferences > General > Network connections**.
+Make sure to set the **Active Provider** to *Manual* and configure the appropriate **Proxy entries**.
+Whether you need to configure the entries for *HTTP* or *HTTPS* depends on the **Locations** configured in the **Available Software Sites** settings.
+
+If you can not add a firewall exception for our update site, the fallback solution is to download the complete application from our website.
+You can completely replace your old installation; all settings are stored in your workspace (the default is `workspaceSigasi` in your home directory).
