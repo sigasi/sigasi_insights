@@ -18,9 +18,9 @@ You will need to have a Java Runtime (JRE) installed in order to run Sigasi CLI.
 In order to use Sigasi CLI you will need a license. The license can be configured by either:
 
 - A license file in your home directory, named `.sigasi.lic`
-- Using an enviroment variable:
-    - `SIGASI_LM_LICENSE_FILE`
-    - `LM_LICENSE_FILE`
+- Using an environment variable:
+  - `SIGASI_LM_LICENSE_FILE`
+  - `LM_LICENSE_FILE`
 
 For more information about licenses, please refer to our [manual](/manual/license-key).
 
@@ -54,8 +54,7 @@ Commands:
 
 ## Logging
 
-To get more output by adding any of the following flags.
-
+To turn on verbose output, use any of the following flags.
 
 | option            | description              |
 | ----------------- | ------------------------ |
@@ -88,16 +87,16 @@ Output Formats:
 
 ## Output formats
 
-| format          | description                    |
-| --------------- | ------------------------------ |
-| *default*       | colored, suitable for terminal |
-| `--plain`       | colorless                      |
-| `--json`        | JSON format, more detailed     |
+| format          | description                                                           |
+| --------------- | --------------------------------------------------------------------- |
+| *default*       | colored, suitable for terminal                                        |
+| `--plain`       | colorless                                                             |
+| `--json`        | JSON format, more detailed                                            |
 | `--warnings-ng` | XML format for [Warnings NG](https://plugins.jenkins.io/warnings-ng/) |
 
 ### Plain
 
-By default the verify command will ouput a single line of information for each issue found.
+By default, the verify command will output a single line of information for each issue found.
 This includes the path, line and column where the issue is located, the severity and a message.
 If you want to use this format but without coloring, you can use the `--plain` flag.
 
@@ -141,7 +140,7 @@ If you want more detailed information for each issue you can use the JSON output
 
 ### Warnings NG
 
-Additionally issues can be formatted in an XML format suitable for the Jenkins plugin [Warnings NG](https://plugins.jenkins.io/warnings-ng/) by using the `--warnings-ng` flag.
+Additionally, issues can be formatted in an XML format suitable for the Jenkins plugin [Warnings NG](https://plugins.jenkins.io/warnings-ng/) by using the `--warnings-ng` flag.
 This allows for output to be fed to the plugin, which will visualize the issues for each Jenkins run.
 To do this, add the following to your `Jenkinsfile`:
 
@@ -156,14 +155,14 @@ sh "${sigasiCli} verify --warnings-ng --out sigasi-issues.xml ."
 
 // Add this to your 'post' step
 recordIssues(
-    enabledForFailure: true, aggregatingResults: true, 
+    enabledForFailure: true, aggregatingResults: true,
     recordIssues tool: issues(pattern: 'sigasi-issues.xml', analysisModelId: 'sigasi')
 )
 ```
 
 ## Output to file
 
-To save the output to a file you can use one of the output options (`--out` or `-o`), or redirect the output using `>`.
+To save the output to a file you can use one of the output options (`--out` or `-o`) or, on linux, redirect the output using `>`.
 
 <pre>
 <span class="no-select">$ </span>sigasi-cli verify -o markers.txt .
@@ -187,9 +186,9 @@ If you do want to include suppressed issues in the output, add the `--include-su
 Sigasi CLI should always finish with a `0` exit code.
 If this is not the case, refer to the following table.
 
-| Code | Description |
-| ---- | ------------- |
-| `0`  | Successful execution. |
-| `1`  | Unhandled exception occurred. |
-| `2`  | Invalid command line arguments / options. |
+| Code | Description                                              |
+| ---- | -------------------------------------------------------- |
+| `0`  | Successful execution.                                    |
+| `1`  | Unhandled exception occurred.                            |
+| `2`  | Invalid command line arguments / options.                |
 | `7`  | License problem. Make sure a valid license is available. |
