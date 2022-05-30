@@ -3,7 +3,7 @@ title: "Sigasi's Software Development Kit Part 2"
 layout: page  
 pager: true 
 author: Mark Christiaens
-date: 2022-06-01
+date: 2022-05-30
 tags:  
   - sigasi-studio 
   - vs-code
@@ -17,7 +17,7 @@ comments: true
 bannerad: true 
 --- 
 
-In the [previous installment of this blog](https://insights.sigasi.com/tech/sigasi_sdk_1/), we talked about why you would want to integrate [Sigasi's SDK](https://www.sigasi.com/sdk/) into your own product portfolio.  To summarize our arguments:
+In the [previous installment of this blog]({{< ref "/tech/sigasi_sdk_1.md">}}), we talked about why you would want to integrate [Sigasi's SDK](https://www.sigasi.com/sdk/) into your own product portfolio.  To summarize our arguments:
 
 * The SDK allows you to offer an editing experience in your own product line that is similar to a full blown IDE.
 * Developing such capabilities from scratch would be prohibitively expensive.
@@ -42,7 +42,7 @@ Until the arrival of VS Code, the UI of most code editors was designed around a 
 
 By default, all this event processing happens on the main thread.  This architecture simplifies things.  There is little need to consider threading issues (locks, races ...) between all the widgets that are affected by randomly appearing events.  Only when processing an event or updating a UI element would take excessive amounts of time, would the developer offload the processing to additional threads.  These additional threads would churn through more complex code.  Once concluded, the result of the background thread would be wrapped up into another event to be processed by the main thread.
 
-As mentioned in [Part 1](https://insights.sigasi.com/tech/sigasi_sdk_1/), the SDK is built on top of the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/) (LSP).  The LSP does things differently.  Instead of having one, monolithic application, the application is split into a front-end and a back-end.  The front-end (as epitomized by the Visual Studio Code) is only responsible for interacting with the end-user through a UI.  The back-end is a separate (operating system) process that does the heavy lifting of analyzing a project and provides feedback to the front-end.
+As mentioned in [Part 1]({{< ref "/tech/sigasi_sdk_1.md">}}), the SDK is built on top of the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/) (LSP).  The LSP does things differently.  Instead of having one, monolithic application, the application is split into a front-end and a back-end.  The front-end (as epitomized by the Visual Studio Code) is only responsible for interacting with the end-user through a UI.  The back-end is a separate (operating system) process that does the heavy lifting of analyzing a project and provides feedback to the front-end.
 
 The communication between the front-end and the back-end occurs over a socket connection and, what is more, is fully _asynchronous_.  For example, when an end-user edits code, the front-end will send `didChange` messages to the back-end:
 
@@ -110,7 +110,7 @@ In the case you are starting from scratch and you do not yet have your own proje
 
 This is probably the most rewarding part of the whole exercise: exposing new features. Most likely, the reason for integrating Sigasi's SDK is because you want to offer more features!  
 
-In [part 1](https://insights.sigasi.com/tech/sigasi_sdk_1/) we listed all the goodness that the SDK unlocks.  A lot of these features fit easily into an existing editor.  For example, navigation is just a question of asking the back-end where an identifier is defined and upon response opening the corresponding target file at the correct cursor position.  
+In [part 1]({{< ref "/tech/sigasi_sdk_1.md">}}) we listed all the goodness that the SDK unlocks.  A lot of these features fit easily into an existing editor.  For example, navigation is just a question of asking the back-end where an identifier is defined and upon response opening the corresponding target file at the correct cursor position.  
 
 However, some features require a bit of UI work to expose them to the end-user.  Some non-trivial ones that come to mind are:
 
