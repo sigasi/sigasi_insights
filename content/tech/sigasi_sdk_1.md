@@ -69,4 +69,6 @@ Thanks to this LSP approach, Sigasi can now provide an SDK that does the heavy l
 | Preprocessor view         | Show the entire SystemVerilog file after expansion by the preprocessor.                                                                                                                       |
 | Quickfix                  | Suggest and apply fixes for problems that were detected.                                                                                                                                      |
 
-Despite this vastly reduced barrier to entry, integrating Sigasi LS into a product still requires some effort.  In the next installments of this blog, we'll zoom in on the consequences of moving to a client/server architecture and we'll explain how to communicate your product layout to the LS.  
+Despite this vastly reduced barrier to entry, integrating Sigasi LS into a product still requires some effort.  In the next installments of this blog, we'll zoom in on the consequences of moving to a client/server architecture and we'll explain how to communicate your product layout to the LS.
+
+Continue to [part 2]({{< ref "tech/sigasi_sdk_2.md">}}) of the series on our SDK.
