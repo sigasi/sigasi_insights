@@ -15,6 +15,8 @@ Sigasi Studio provides a **Sigasi** perspective to work with both **VHDL** and *
 
 If you use the standalone version of Sigasi Studio, this perspective is the default. If you use the Eclipse plugin, another perspective may be open instead. You can select the Sigasi perspective by clicking the button ![](/img/icons/perspectivebutton.png) next the perspective icon. A window pops up in which you can select the perspective.
 
+You can right-click the perspective button to customize toolbar contents, to reset the perspective to its default layout or to save your own, customized perspective.
+
 # Quick Access
 
 The Sigasi Studio toolbar contains a widget called **Quick Access**. This widget allows you to quickly find open editors, available perspectives, views, preferences, wizards, commands, etc. Simply start typing the name of the item you wish to invoke.
