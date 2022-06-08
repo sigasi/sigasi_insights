@@ -61,7 +61,7 @@ While support for VHDL-2019 is being improved, this page lists the VHDL-2019 fea
   end protected SharedCounter;
   ```
 
-* Added support for VHDL 2019 generic protected type declarations **TODO screenshot here**
+* Added support for VHDL 2019 generic protected type declarations
   {{< figure src="/img/releasenotes/4.12/GenericProtectedTypeDeclaration.png" title="Generic protected type declaration in VHDL 2019" width="900">}}
 * Allow [`conditional_or_unaffected_expression`]({{< ref "/tech/vhdl2017.ebnf.md#conditional_or_unaffected_expression" >}}) where needed
 
@@ -72,6 +72,8 @@ While support for VHDL-2019 is being improved, this page lists the VHDL-2019 fea
     v := '0' when isAnswer(42) else unaffected;
   end process;
   ```
+* Added support for VHDL 2019 Conditional Analysis
+  {{< figure src="/img/releasenotes/4.16/Vhdl2019ToolDirectives.png" link="/img/releasenotes/4.16/Vhdl2019ToolDirectives.png" title="VHDL 2019 Tool Directives in Sigasi Studio">}}
 
 # Enable VHDL-2019
 
