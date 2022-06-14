@@ -1,0 +1,68 @@
+image: klakegg/hugo:0.93.0-ext-alpine-ci
+
+stages:
+  - prebuild
+  - deploy
+
+pre-branch-build:
+  stage: prebuild
+  image: andreysenov/firebase-tools:latest
+  except:
+    refs:
+      - master
+  script:
+    - node ./prebuild.mjs
+  # the above script generates a build.env env file
+  # the below artifact converts this build.env file to usable environment variables in CI
+  artifacts:
+    reports:
+      dotenv: build.env
+
+deploy-prod:
+  stage: deploy
+  tags:
+    - sting
+  script: 
+    - git submodule update --init --recursive
+    - hugo --minify
+    - npm i -g firebase-tools
+    - firebase deploy -m "$CI_COMMIT_TITLE" --token $FIREBASE_TOKEN
+  only:
+    refs:
+      - master
+  environment:
+    name: production
+    url: https://insights.sigasi.com
+
+deploy-branch:
+  stage: deploy
+  tags:
+    - sting
+  script: 
+    - git submodule update --init --recursive
+    - hugo --buildFuture --baseURL $MY_DEPLOYED_URL
+    - npm i -g firebase-tools
+    - echo $CI_COMMIT_TITLE
+    - firebase hosting:channel:deploy $CI_COMMIT_REF_SLUG --token $FIREBASE_TOKEN
+  except:
+    refs:
+      - master
+  needs:
+    - job: pre-branch-build
+      artifacts: true
+  environment:
+    name: review/$CI_COMMIT_REF_NAME
+    url: $MY_DEPLOYED_URL
+
+# stop_branch:
+#   stage: deploy
+#   image: andreysenov/firebase-tools:latest
+#   rules:
+#     - if: '$CI_COMMIT_BRANCH != "master"'
+#       when: manual
+#     - when: never
+#   script:
+#     - firebase hosting:channel:delete -f $CI_COMMIT_REF_SLUG
+#   environment:
+#     name: review/$CI_COMMIT_REF_NAME
+#     action: stop
