@@ -7,6 +7,8 @@ stages:
 pre-branch-build:
   stage: prebuild
   image: andreysenov/firebase-tools:latest
+  tags:
+    - hugo
   except:
     refs:
       - master
@@ -21,7 +23,7 @@ pre-branch-build:
 deploy-prod:
   stage: deploy
   tags:
-    - sting
+    - hugo
   script: 
     - git submodule update --init --recursive
     - hugo --minify
@@ -37,7 +39,7 @@ deploy-prod:
 deploy-branch:
   stage: deploy
   tags:
-    - sting
+    - hugo
   script: 
     - git submodule update --init --recursive
     - hugo --buildFuture --baseURL $MY_DEPLOYED_URL
@@ -57,6 +59,8 @@ deploy-branch:
 # stop_branch:
 #   stage: deploy
 #   image: andreysenov/firebase-tools:latest
+#   tags:
+#     - hugo
 #   rules:
 #     - if: '$CI_COMMIT_BRANCH != "master"'
 #       when: manual
