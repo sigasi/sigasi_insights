@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.16)
 layout: page
 pager: true
-date: 2022-06-10
+date: 2022-06-15
 comments: true
 ---
 
@@ -27,23 +27,11 @@ One of the new anticipated features it brings is tool directives - a simplified 
 It allows to conditionally enable code based on tool type, debug mode, or really any other custom variable.  
 Sigasi brings full syntax, autocomplete, hover,... support for this new feature.
 
-```vhdl
-library ieee;
-use ieee.std_logic_1164.all;
-use ieee.numeric_std_unsigned.all;
+You can edit the defined tool directives by right-clicking your project and then going to `Properties > VHDL Conditional Variables`.
 
-entity sub is
-    port(
-        a, b         : in  std_logic_vector(31 downto 0);
-        en, rst, clk : in  std_logic;
-        o            : out std_logic_vector(31 downto 0);
-        `if TOOL_TYPE="SYNTHESIS" and DEBUG="1" then
-        `warning "Additional dbg port is added"
-        dbg : out std_logic;
-        `end if
-    );
-end entity sub;
-```
+{{< figure src="/img/releasenotes/4.16/VhdlToolDirectivesPreferences.png" link="/img/releasenotes/4.16/VhdlToolDirectivesPreferences.png" title="VHDL 2019 Tool Directives Preferences">}}
+
+{{< figure src="/img/releasenotes/4.16/Vhdl2019ToolDirectives.png" link="/img/releasenotes/4.16/Vhdl2019ToolDirectives.png" title="VHDL 2019 Tool Directives in Sigasi Studio">}}
 
 ## Signed Windows binaries
 
@@ -135,6 +123,9 @@ end
 ## Updates
 
 * Eclipse has been updated to 2022-03
+* [JustJ](https://www.eclipse.org/justj/) (the JRE shipped with Sigasi Studio) has been updated to 17.0.3  
+  **Note that you may run into the error dialog below, when you restart Sigasi Studio after the update** because the JRE has changed. If you close the dialog, and restart Sigasi Studio manually, everything should work as expected.
+{{< figure src="/img/releasenotes/4.14/jre_update_error.png" link="/img/releasenotes/4.14/jre_update_error.png" title="Expected error after update. Restart will solve the issue." width="300">}}
 
 ## Bug fixes
 
