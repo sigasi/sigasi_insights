@@ -75,7 +75,7 @@ Starting with [Sigasi Studio 3.8]({{<ref "/releasenotes/sigasi-3.08.md" >}}), th
 openFile
 ```
 
-This way Sigasi Studio uses the default Eclipse behaviour instead of the [custom Sigasi runner](https://insights.sigasi.com/tech/make-eclipse-open-files-command-line.html).
+This way Sigasi Studio uses the default Eclipse behaviour instead of the [custom Sigasi runner]({{< ref "/tech/make-eclipse-open-files-command-line.md" >}}).
 More information on the Eclipse *OpenFileFeature* can be found [here](https://wiki.eclipse.org/Eclipse/OpenFileFeature).
 
 The Sigasi runner allows to open projects using the `-p` option.

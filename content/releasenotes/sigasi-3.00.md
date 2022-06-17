@@ -34,7 +34,7 @@ If you are using a floating license, you need to update your [Flexnet daemon](#f
 
 ### Updated to Eclipse 4
 
-* The toolbar now contains a global search field **[Quick Access](/manual/keyshortcuts.html#quick-access)**. With Quick Access you can quickly find open editors, available perspectives, views, preferences, wizards, commands, etc. Simply start typing the name of the item you wish to invoke.
+* The toolbar now contains a global search field **[Quick Access]({{< ref "/manual/keyshortcuts.md#quick-access" >}})**. With Quick Access you can quickly find open editors, available perspectives, views, preferences, wizards, commands, etc. Simply start typing the name of the item you wish to invoke.
   ![Quick Access](/img/releasenotes/3.00/global-search-bar.png)
 * You can now select a **dark theme** in Sigasi: **Window > Preferences > General > appearance > Theme** 
 * **Lightweight refresh on access** option. When this option is enabled, out-of-sync files will be automatically refreshed when you open an editor.  

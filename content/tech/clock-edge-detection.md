@@ -29,7 +29,7 @@ This coding style is accepted by the *IEEE Standard for VHDL Register Transfer L
 Another argument against the old style edge detection is that it does not clearly express the intent of the VHDL designer. Checking for an *event* makes sense in the domain of discrete event simulators, but is utter nonsense both in the (more low-level) domain physical electronics and in the (more high-level) domain of interacting state machines. Code is more readable when you use the `rising_edge` and `falling_edge` functions for edge detection.
 
 In VHDL 87, this was the only way to detect edges. VHDL 93 has introduced the `rising_edge` and `falling_edge` functions for edge detection.
-For more than twenty years, the *old style* edge detection has been [outdated](/tech/coding-conventions.html#adverse).
+For more than twenty years, the *old style* edge detection has been [outdated]({{< ref "/tech/coding-conventions.md#adverse" >}}).
 
 ## Rising\_edge and Falling\_edge
 
@@ -49,7 +49,7 @@ FUNCTION rising_edge(SIGNAL s : std_ulogic) RETURN BOOLEAN IS
 
 ## Rising or falling?
 
-If you use a single edge, by convention, you should use the *rising edge*. This is [arbitrary](/tech/coding-conventions.html#arbitrary), but universally accepted. If you make a different choice, people will be surprised and confused.
+If you use a single edge, by convention, you should use the *rising edge*. This is [arbitrary]({{< ref "/tech/coding-conventions.md#arbitrary" >}}), but universally accepted. If you make a different choice, people will be surprised and confused.
 Of course, if you have a design with two clock edges, you also need the falling edge. If your process uses both edges (to instantiate *dual edge triggered* flip-flops), you should write:
 ```vhdl
 if rising_edge(clk) or falling_edge(clk) then
