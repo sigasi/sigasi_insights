@@ -516,6 +516,7 @@ The Chromium plugin will be extracted in a `.swt` folder in the user's home dire
 
 * Since {{< page "sigasi-4.12.md" >}}, the location can be configured by adding `-Dswt.chromium.path=/home/user/blub` to the `sigasi.ini` file.
 * Since {{< page "sigasi-4.13.md" >}}, the location can be configured by adding `-Dchromium.path=/home/user/blub` to the `sigasi.ini` file.
+* Since {{< page "sigasi-4.16.md" >}}, a warning is given when there are missing Chromium dependencies.
 
 ### Sigasi Studio 4.9 and older
 

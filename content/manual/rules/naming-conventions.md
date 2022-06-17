@@ -5,7 +5,7 @@ title: Naming Conventions
 On the [**Naming conventions**](/manual/linting/#naming-conventions) preference page (**Window \>
 Preferences \> Sigasi \> VHDL|Verilog/SystemVerilog \> Naming conventions**) you can configure
 patterns to check correct naming of your VHDL and SystemVerilog identifiers. Patterns are
-configured with [Java regex syntax](https://docs.oracle.com/javase/8/docs/api/index.html?java/util/regex/Pattern.html).
+configured with [regex syntax](https://sigasi.com/app/regex).
 
 The above defines the Naming Conventions for the entire workspace.
 To specify Naming Conventions for a project instead of for the entire workspace, have a look at [Naming Conventions per project]({{< ref "/manual/linting.md#naming-conventions-per-project" >}}).

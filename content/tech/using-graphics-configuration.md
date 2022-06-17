@@ -21,7 +21,7 @@ Today we present a solution for this challenge.
 
 In this blog I will tell you about Sigasi Studio's new Graphics Configuration Language.
 This is a novel way to easily limit the amount of information in your diagrams and highlight important aspects.
-It improves the auto-genernated diagrams and makes them suitable for documentation and design exploration.
+It improves the auto-generated diagrams and makes them suitable for documentation and design exploration.
 This way your diagrams stay in sync with your code, unlike comments and externally associated diagrams.
 
 ## What is it
@@ -90,7 +90,7 @@ The file is then read from bottom to top. First you define all the groups, then 
 We start by grouping all of the blocks that end in `nputSample`, and then creating a bunch of busses.
 The syntax for a group is as follows `def Type group ID (Identifiers)` where `Type` is `block` or `wire`.
 `ID` is the new name of the group and `Identifiers` is a comma separated list of existing `ID`s (Graphics Configuration or VHDL) or a regex.
-The syntax for a regex is `regex"regex_pattern"`. This uses [Java regexes](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html), you can also find a cheat sheet [here](http://files.zeroturnaround.com/pdf/zt_regular-expressions-cheat-sheet.pdf).
+The syntax for a regex is `regex"regex_pattern"`. This uses [Java regexes](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/Pattern.html), you can also find a cheat sheet [here](http://files.zeroturnaround.com/pdf/zt_regular-expressions-cheat-sheet.pdf).
 You can also check what the regex matches by hovering over the query.
 
 Following this, we configure the leftover blocks, wires and ports as well as the block groups and buses we just created.

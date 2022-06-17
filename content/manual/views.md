@@ -223,7 +223,8 @@ If you have documented your state transitions (i.e. the assignments), the commen
 
 You can also **double-click nodes** or **transitions** to navigate to the corresponding HDL code.
 
-With the ![font icon](/img/icons/font.png) button, you can toggle the display of edge labels. These labels show the code comments of the transition statements.
+With the ![hide comments icon](/img/icons/hide_comments.png) button, you can toggle the display of comments on edge labels.  
+With the ![hide conditions icon](/img/icons/hide_conditions.png) button, you can toggle the display of comments on edge labels.  These labels show the code comments of the transition statements.  
 You also have to option to **Zoom In**, **Zoom Out** or **Zoom to Fit**.
 
 You can export state machines to an image with the save ![save icon](/img/icons/save.gif) button. Both **SVG** and **PNG** are supported. Choose a the \*.svg filename for SVG export or a \*.png filename for PNG export.

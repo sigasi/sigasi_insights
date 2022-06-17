@@ -5,12 +5,18 @@ weight: 15
 pager: true
 ---
 
+<div class="uk-alert-danger" uk-alert>
+    <a class="uk-alert-close" uk-close></a>
+    This feature has been <b>deprecated</b> since <a href={{< ref "/releasenotes/sigasi-4.16.md#deprecated-graphics-configuration" >}}>Sigasi Studio 4.16</a>. A new and improved solution will be introduced soon.
+</div>
+
 {{< xprt_only >}}
 
 The BlockDiagram- and StateMachine views are a very useful way to explore and understand HDL designs, but sometimes that just doesn't cut it.
 The diagrams can be too complex and crowded to understand a design. For this reason, the diagrams can't always be directly used in documentation. To solve this challenge you can make use of the Graphics Configuration Language.
 
 # The Language
+
 The Graphics Configuration Language is a plain text file containing declarations and configurations, which when interpreted, result in **grouping**, **filtering** and **coloring** in the diagram.
 You can see it in action in the images below:
 
@@ -32,6 +38,7 @@ A plain text format was chosen over a buttons and menus for several reasons:
 * It's lightweight and can be used as the basis for the UI implementation.
 
 # Getting started
+
 To get started, choose a design with a BlockDiagram or StateMachine you want to simplify.
 
 Create a new Graphics Configuration file by going to **File > New > Other > Graphics Configuration > Graphics Configuration File**.
@@ -42,6 +49,7 @@ Auto-complete (**Ctrl+Space**) helps you write most of the code while formatting
 If you're interested in the language's exact syntax, you can find it [here](/tech/graphics.ebnf).
 
 # Features
+
 The Graphics Configuration features:
 
 * Grouping
@@ -71,6 +79,7 @@ E.g. if you want to filter the diagram for the architecture `RTL` implementing t
 The file is read from bottom to top. You start with the above definition of the diagram, then within that you can hide reassignments, create groups and finally, create configurations for ports, blocks and edges.
 
 ### Hiding reassignments
+
 When using a lot of reassignments or when you're indexing vectors, you can get a *skyscraper* effect in the generated block diagrams.
 By using `reassignments hide` you can draw through the assignment blocks making the diagram a lot simpler.  
 
@@ -87,12 +96,13 @@ By using `reassignments hide` you can draw through the assignment blocks making 
 {{< figure src="/img/manual/multiple_reassignments_hidden.png" alt="Hidden reassignments" >}}  
 
 ### Grouping
+
 After hiding the reassignments you can define groups of edges or blocks.
 The syntax for a group is as follows:  
 `def Type group ID (Identifiers)`  
 Where `Type` is `block` or `wire`, `ID` is the new name of the group and `Identifiers` is a comma separated list of existing `ID`s (Graphics Configuration, VHDL or SystemVerilog) or a regex.
 
-The syntax for a regex is `regex"regex_pattern"`. This uses [Java regexes](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html), you can also find a cheat sheet [here](http://files.zeroturnaround.com/pdf/zt_regular-expressions-cheat-sheet.pdf).
+The syntax for a regex is `regex"regex_pattern"`. This uses [Java regexes](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/Pattern.html), you can also find a cheat sheet [here](http://files.zeroturnaround.com/pdf/zt_regular-expressions-cheat-sheet.pdf).
 You can also check what the regex matches by hovering over the query.
 
 E.g. if you want to group block2 and block3 you can add either of the following lines:  
@@ -109,6 +119,7 @@ The same can be done for wires by using `wire` instead of `block`.
 Ports can be grouped by grouping the wires attached to the ports into a bus.
 
 ### Configuration
+
 The syntax for a configuration block is as follows:  
 `Type Identifiers { ConfigurationItem* }`  
 Where `Type` is `block, wire` or `port`.
@@ -156,4 +167,5 @@ For an example you can check out `step_3_state_machines.vhd` (in our VHDL Tutori
 
 ### Hiding labels
 
-State transition conditions can be hidden using `labels hide`.
+Labels on state transitions can be hidden using `labels hide`.  
+You can also use `labels comment` or `labels condition` to only show comment or condition labels on the state transitions.

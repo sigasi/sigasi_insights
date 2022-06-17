@@ -1,21 +1,26 @@
 ---
-title: "Sigasi CLI"
+title: "Veresta"
 layout: single
 pager: true
+aliases:
+  - /sigasi_cli/
+  - /cli/
 ---
+
+Sigasi Veresta is the Command Line Interface (CLI) that brings the Sigasi technology to your CI/CD environment.
 
 # Requirements
 
-### Java Runtime
+## Java Runtime
 
-You will need to have a Java Runtime (JRE) installed in order to run Sigasi CLI.
+You will need to have a Java Runtime (JRE) installed in order to run Sigasi Veresta.
 
 - The Java runtime must be 64-bit. Make sure to use at least **JRE 11**
 - You can check your Java version with `java -version`
 
-### License
+## License
 
-In order to use Sigasi CLI you will need a license. The license can be configured by either:
+In order to use Sigasi Veresta you will need a license. The license can be configured by either:
 
 - A license file in your home directory, named `.sigasi.lic`
 - Using an environment variable:
@@ -26,7 +31,7 @@ For more information about licenses, please refer to our [manual](/manual/licens
 
 # Installation
 
-To install Sigasi CLI, obtain a build ZIP and extract it.
+To install Sigasi Veresta, obtain a build ZIP and extract it.
 Then use either `sigasi-cli` (Linux / Mac) or `sigasi-cli.bat` (Windows).
 
 # Usage
@@ -145,12 +150,12 @@ This allows for output to be fed to the plugin, which will visualize the issues 
 To do this, add the following to your `Jenkinsfile`:
 
 ```groovy
-// Specify the path of your Sigasi CLI installation
-final String sigasiCli = "/opt/sigasi-cli/sigasi-cli"
+// Specify the path of your Sigasi Veresta installation
+final String SigasiVeresta = "/opt/sigasi-cli/sigasi-cli"
 // ...
 
 // Add the following somewhere in your build step
-sh "${sigasiCli} verify --warnings-ng --out sigasi-issues.xml ."
+sh "${SigasiVeresta} verify --warnings-ng --out sigasi-issues.xml ."
 // ...
 
 // Add this to your 'post' step
@@ -183,7 +188,7 @@ If you do want to include suppressed issues in the output, add the `--include-su
 
 # Exit codes
 
-Sigasi CLI should always finish with a `0` exit code.
+Sigasi Veresta should always finish with a `0` exit code.
 If this is not the case, refer to the following table.
 
 | Code | Description                                              |

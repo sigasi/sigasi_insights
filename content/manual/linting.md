@@ -19,7 +19,7 @@ Sigasi Studio has a built-in linter, which provides info about code lint
 in the design.
 
 In addition to code linting, Sigasi Studio can also check that file
-headers and symbol names (entities, signals, varibles...) follow
+headers and symbol names (entities, signals, variables...) follow
 certain patterns.  This is discussed under [naming conventions](#naming-conventions).
 
 ## Marker Icons
@@ -239,7 +239,7 @@ Possible values are:
 * the full path of the file to which the Naming Convention should apply
 
 The pattern that defines the Naming Convention is set in `${convention}`.
-Patterns are configured with [Java regex syntax][JavaRegexSyntax].
+Patterns are configured with [regex syntax][RegexSyntax].
 
 Naming Conventions for a project and setting the severity of the linting checks
 are configured in the same settings file.
@@ -265,9 +265,9 @@ The meaning of `${path}` and `${convention}` is equal to the definitions for Nam
     188/params/comment_header//my_folder=-- Folder specific header comment
 ```
 
-Note that to use `\R` in the configurarion file the `\` needs to be escaped.
+Note that to use `\R` in the configuration file the `\` needs to be escaped.
 So you'll need to put `\\R` in the configuration file.
 
 Errors in the patterns will be reported in the log file: **Help > Open Log**.
 
-[JavaRegexSyntax]: http://www.vogella.com/tutorials/JavaRegularExpressions/article.html
+[RegexSyntax]: https://sigasi.com/app/regex

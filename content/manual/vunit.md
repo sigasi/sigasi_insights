@@ -30,7 +30,7 @@ If your Python installation is not in the path, you can configure it here in the
 
 If you have installed VUnit in a dedicated location, you should add the VUnit location to the $PYTHONPATH and make sure the $PYTHONPATH variable is visible to Sigasi Studio.
 
-When you're installing VUnit in a virtualenv, make sure to launch Sigasi Studio from within the terminal after activating the virtualenv.
+When you're installing VUnit in a `virtualenv`, make sure to launch Sigasi Studio from within the terminal after activating the `virtualenv`.
 
 If you installed VUnit from the *Microsoft Store*, you might get an error message when trying to select the Python executable.
 To use Python outside of Windows Store apps, Python needs to be installed using an installer from <https://www.python.org/downloads/windows/>.
@@ -45,8 +45,9 @@ The VUnit project repository comes with a number of [example projects](https://g
 
 ## Add VUnit support to an existing Sigasi project
 
-You can also add VUnit support to an existing project: Right click your project and select  **Configure > Add VUnit support**. Next, select an existing `run.py` script or let Sigasi create an example script.
+You can also add VUnit support to an existing project: Right-click your project and select  **Configure > Add VUnit support**. Next, select an existing `run.py` script or let Sigasi create an example script.
 
+{{< figure src="/img/manual/AddVUnitSupportWizard.png" alt="VUnit project" link="/img/manual/AddVUnitSupportWizard.png" >}}
 ## VUnit project configuration and troubleshooting
 
 The VUnit integration in Sigasi Studio gives useful feedback in the **VUnit Console View**.
@@ -108,7 +109,7 @@ project may also require vendor or company specific common
 libraries. External simulators, including the simulator which runs
 your VUnit tests, require a particular setup to find your library.
 
-If, for instance, Modelsim is used, then:
+If, for instance, ModelSim is used, then:
 
 * common libraries need to be pre-compiled,
 * a customized `modelsim.ini` with a reference to the pre-compiled libraries is required, and
@@ -135,7 +136,7 @@ missing, as shown below. These warnings are harmless. They show up
 because only Sigasi Studio and the simulator are aware of the library,
 while VUnit is not.
 
-``` sh
+```txt
 WARNING - C:\Users\Wim Meeus\workspaceSigasi\VUnit-demo\design\design_top.vhd: failed to find library 'vucommon'
 ```
 
