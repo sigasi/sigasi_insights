@@ -2,8 +2,8 @@
 title: Naming Conventions
 ---
 
-On the [**Naming conventions**](/manual/linting/#naming-conventions) preference page (**Window \>
-Preferences \> Sigasi \> VHDL|Verilog/SystemVerilog \> Naming conventions**) you can configure
+On the [**Naming Conventions**](/manual/linting/#naming-conventions) preference page (**Window \>
+Preferences \> Sigasi \> VHDL|Verilog/SystemVerilog \> Naming Conventions**) you can configure
 patterns to check correct naming of your VHDL and SystemVerilog identifiers. Patterns are
 configured with [regex syntax](https://sigasi.com/app/regex).
 
