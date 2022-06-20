@@ -37,7 +37,7 @@ Declarations of signals, data types, constants or other things that are never us
 
 ### Superfluous "others" in case statements
 
-In a state machine with enumerated states you usually cover all states explicitly in a *case* statement. If you do this, there is [very little reason to add a `when others` clause](/tech/vhdl-case-statements-can-do-without-others.html).
+In a state machine with enumerated states you usually cover all states explicitly in a *case* statement. If you do this, there is [very little reason to add a `when others` clause]({{< ref "vhdl-case-statements-can-do-without-others.md" >}}).
 The only reason for writing `when others` is your synthesis tool uses this information for recovering from an illegal state *and* you need this recovery for some reason. Ask yourself these questions: Does my design need to recover from an illegal state (usually military, safety-critical or radiation sensitive application)? Does my synthesis tool use the "others" clause for recovering? (Some do, some don't – read the documentation and/or inspect the synthesis results!). If you find yourself in a situation where you want to use a `when others` clause, make sure that there is recovery code there.
 
 ### Assertions

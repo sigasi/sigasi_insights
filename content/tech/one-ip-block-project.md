@@ -69,7 +69,7 @@ steps:
     **right-click on the project &gt; Library Mapping &gt;
     New Library...**
 4.  If the project contains any
-    [*stale*](/faq.html#i-get-lots-of-errors-in-files-that-are-not-even-really-a-part-of-my-project-can-i-hide-them) VHDL files,
+    *[stale]({{< ref "/faq.md#i-get-lots-of-errors-in-files-that-are-not-even-really-a-part-of-my-project-can-i-hide-them" >}})* VHDL files,
     unmap them. **Right-click &gt; Library Mapping &gt; Unmap**
 5.  Compile the project (since the automatic builder is turned off):
     **Project &gt; Clean &gt; Clean all projects** and **Project &gt;
@@ -112,7 +112,7 @@ Real life: GRLIB
 
 To show you an example of how to get started, I have created [a video
 where I set up the first few
-libraries](/screencasts/organizing-grlib-one-project-library.html) in the open
+libraries]({{< ref "/screencasts/organizing-grlib-one-project-library.md" >}}) in the open
 source [GRLIB](http://www.gaisler.com/) collection.
 You can also download [a zip file with all the GRLIB libraries (and
 a few of its example designs)](/resources/tech/grlib-gpl-1.0.20-b3403-b.tgz).

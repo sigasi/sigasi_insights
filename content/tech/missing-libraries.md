@@ -11,7 +11,7 @@ bannerad: true
 ---
 
 
-When you import a new project in Sigasi, you often get a lot of problem markers because of missing VHDL libraries. By default all project files are mapped to "library [**work**](/tech/work-not-vhdl-library.html)". VHDL libraries are defined outside of your VHDL files. So Sigasi can not configure your libraries automatically. We have some good ideas for heuristics to guess the correct library mapping. But for now, you have to configure the library mapping yourself.
+When you import a new project in Sigasi, you often get a lot of problem markers because of missing VHDL libraries. By default all project files are mapped to "library [**work**]({{< ref "/tech/work-not-vhdl-library.md" >}})". VHDL libraries are defined outside of your VHDL files. So Sigasi can not configure your libraries automatically. We have some good ideas for heuristics to guess the correct library mapping. But for now, you have to configure the library mapping yourself.
 
 ![Auch, 75753 errors in GRlib](/img/tech/1_gaisler_work_problems.png)
 
