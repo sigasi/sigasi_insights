@@ -498,6 +498,23 @@ You can disable the formatter for defined regions in your VHDL source files by e
 
 {{< figure src="/img/manual/formatter_off.png" >}}
 
+## VHDL 2019 tool directives
+
+{{< page "/releasenotes/sigasi-4.16.md" >}} introduced VHDL 2019 tool
+directives, which are a simplified version of the preprocessor found in
+SystemVerilog or the C family of languages.
+
+Tool directives allow to conditionally enable code based on tool type,
+debug mode, or really any other custom variable.
+
+You can edit the defined tool directives by right-clicking your project and then going to `Properties > VHDL Conditional Variables`.
+
+{{< figure src="/img/releasenotes/4.16/VhdlToolDirectivesPreferences.png" link="/img/releasenotes/4.16/VhdlToolDirectivesPreferences.png" title="VHDL 2019 Tool Directives Preferences">}}
+
+{{< figure src="/img/releasenotes/4.16/Vhdl2019ToolDirectives.png" link="/img/releasenotes/4.16/Vhdl2019ToolDirectives.png" title="VHDL 2019 Tool Directives in Sigasi Studio">}}
+
+Check out [the video]({{< ref "/screencasts/vhdl_2019_conditional_analysis.md" >}}) to see directives in action.
+
 # Verilog and SystemVerilog Specific
 
 In addition to the powerful features of an Eclipse editor, the Verilog and SystemVerilog

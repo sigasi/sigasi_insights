@@ -32,7 +32,7 @@ You can edit the defined tool directives by right-clicking your project and then
 
 {{< figure src="/img/releasenotes/4.16/Vhdl2019ToolDirectives.png" link="/img/releasenotes/4.16/Vhdl2019ToolDirectives.png" title="VHDL 2019 Tool Directives in Sigasi Studio">}}
 
-Checkout [the video]({{< ref "/screencasts/vhdl_2019_conditional_analysis.md" >}}) to see directives in action.
+Check out [the video]({{< ref "/screencasts/vhdl_2019_conditional_analysis.md" >}}) to see directives in action.
 
 # Signed Windows binaries
 

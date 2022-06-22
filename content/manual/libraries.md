@@ -119,6 +119,14 @@ library configuration still exist. If a path no longer exists, is will be
 removed from the configuration file.
 Note that the library configuration file is **case-sensitive**, even on Windows.
 
+## Library configuration warnings and Quick Fix
+
+If the library mapping file contains invalid entries, there will be a warning on the `.library_mapping.xml` file.
+This warning will show in the Project Explorer, in the editor and in the Problems View.
+
+An associated Quick Fix is available through the [Problems View]({{< ref "/manual/views.md#problems-view" >}}).
+When invoked, it will remove all invalid entries from the `.library_mapping.xml` file.
+
 # Common Libraries
 
 Each VHDL project has a folder called `Common Libraries`.
