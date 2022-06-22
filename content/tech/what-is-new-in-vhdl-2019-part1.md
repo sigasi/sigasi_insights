@@ -134,4 +134,4 @@ Read on for [part 2]({{< ref "/tech/what-is-new-in-vhdl-2019-part2.md" >}}).
 [slides]: https://www.slideshare.net/LievenLemiengre/vhdl-2017-new-and-noteworthy
 [VUnit]: https://vunit.github.io
 [OSVVM]: https://osvvm.org
-[UVVM]: https://bitvis.no/dev-tools/uvvm
+[UVVM]: https://github.com/UVVM/UVVM
