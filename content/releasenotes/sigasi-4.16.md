@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 4.16
 date: 2022-06-17
-lastmod: 2022-06-17
+lastmod: 2022-07-14
 comments: true
 pager: true
 ---
@@ -151,10 +151,22 @@ end
     * Sigasi Studio depends on `libXss.so` which can be obtained by installing `libXScrnSaver`
     * More information on supported OSes can be found [on the Eclipse website](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_18.xml#target_environments)
 * Sigasi Studio as plugin in your own Eclipse installation:
-  * Eclipse 4.8 _Photon_ up to and including Eclipse IDE 2022-03
+  * Eclipse 4.8 _Photon_ up to and including Eclipse 2022-03
   * Java JRE 11 or 17
 
 We recommend at least **4GB of memory** available for Sigasi Studio,
 and you need **about 1GB** of free disk space.
 
 Thanks for all the [bug reports](mailto:support@sigasi.com) and enabling [Talkback]({{< ref "manual/talkback.md" >}}).
+
+
+# Sigasi Studio 4.16.1 point release
+
+On July 14 we released Sigasi Studio 4.16.1.
+This release fixes the following reported issues:
+
+* Fixed custom templates not showing up in preferences
+* Fixed content assist not working for vector range declarations
+* Fixed content assist ignoring default values for ports
+* Fixed incompatibility with Eclipse 2022-06
+* Added new template variable `${filename_ext}` that inserts the filename with its extension
