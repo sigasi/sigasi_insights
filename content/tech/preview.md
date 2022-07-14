@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.17)
 layout: page
 pager: true
-date: 2022-06-27
+date: 2022-07-14
 comments: true
 ---
 
@@ -18,13 +18,22 @@ Although these preview releases are less rigorously tested than the official rel
 
 The changes since the {{< page "releasenotes/sigasi-4.16.md" >}} release are documented below
 
+# Documentation improvements
+
+This release brings a slew of small documentation generation improvements.
+
+* Processes now show their associated comments
+* TOC items now have an `li` prefix to make it easier to hide these entries e.g. when hiding block diagrams through the following CSS, the TOC entries are also hidden `div[id$=".blockDiagram"] { display: none; }`
+* The content of extended identifiers is now sanitized (i.e. `\<html>\`) before inserting them into HTML
+* Correctly use `td` instead of `th` where necessary
+* **[VHDL]** Added protected type instantiations
+
 ## New and Noteworthy Changes
 
-* Removed outdated documentation in Eclipse's help pages
-* You can now use the `${filename_ext}` variable in your custom autocomplete templates. It inserts the filename with its extension
+* Removed outdated documentation from Eclipse's help pages
 * It's now possible to disable the [automatic wrapping in quotes or parenthesis of selected code]({{< ref "/manual/editor.md#add-parentheses-or-create-a-string" >}})  
-  {{< figure src="/img/releasenotes/4.17/EncloseWithParenthesesoption.png" link="/img/releasenotes/4.17/EncloseWithParenthesesoption.png" title="Toggle quote enclosing">}}
-* **[VHDL]** Component instantiation autocompletes now insert default values for ports
+  {{< figure src="/img/releasenotes/4.17/EncloseWithParenthesisOption.png" link="/img/releasenotes/4.17/EncloseWithParenthesisOption.png" title="Toggle quote enclosing">}}
+* **[VUnit]** `Run VUnit tests` now only shows up when there are VUnit tests in the selected file
 * **[VHDL]** Added an autocomplete template for `(others => '0')`
 * **[VHDL]** Added support for aliasing to enums
 * **[VHDL]** Added a warning when assigning a string to an aggregate (`(s1, s2, s3) <= "abc";`)
@@ -38,7 +47,6 @@ The changes since the {{< page "releasenotes/sigasi-4.16.md" >}} release are doc
 
 ## Bug fixes
 
-* Fixed slew of errors when using Sigasi Studio in Eclipse 2022-06
 * Added icons to the `Set Top Level` dialog
 * Fixed error dialog when pressing `Delete` right before applying an autocomplete
 * Fixed rare racy [CSV compile-order export]({{< ref "manual/tools.md#export" >}})
@@ -48,9 +56,11 @@ The changes since the {{< page "releasenotes/sigasi-4.16.md" >}} release are doc
 * Made sure all Sigasi features work flawlessly after opening a recently closed project
 * Normalized the content of different type of design unit instantiations
 * Leafs in the Hierarchy View are no longer expandable
+* The filter for [Open design unit]({{< ref "/manual/editor.md#open-design-unit" >}}) (`Ctrl+Shift+D`) now correctly interprets `*` and `?` and always searches for substrings instead of exact matches
 * **[VUnit]** Made sure that executed tests always show up in the [VUnit View]({{< ref "manual/views.md#vunit-view" >}})
 * **[VUnit]** The history of the VUnit View is now sorted chronologically descending
 * **[VUnit]** Added a checkbox in the history view to identify the current results
+* **[VHDL]** Fixed rare case where hovers didn't show
 * **[VHDL]** Fixed false-positive [Unused declaration]({{< ref "manual/rules/dead-code-lint.md" >}}) for records when only elements of the record are used
 * **[VHDL]** VHDL keywords used in tool directives are no longer highlighted
 * **[VHDL]** Fixed recognition of generic package instantiations
