@@ -42,59 +42,54 @@ What you can do is enable or disable analysis of portions of the design code bas
 -- pragma translate_on
 ```
 
-```vhdl
-`if TOOL_TYPE /= "SYNTHESIS" then
-  signal valid : std_ulogic := '0';
-`end if
-```
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vhdl" data-lang="vhdl"><span class="line"><span class="cl"><span class="kn">`if</span> <span class="n">TOOL_TYPE</span> <span class="o">/=</span> <span class="s">"SYNTHESIS"</span> <span class="kn">then</span>
+</span></span><span class="line"><span class="cl">  <span class="k">signal</span> <span class="n">valid</span> <span class="o">:</span> <span class="kt">std_ulogic</span> <span class="o">:=</span> <span class="sc">'0'</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">`end</span> <span class="kn">if</span>
+</span></span></code></pre></div>
 
 The second code snippet is an example of a conditional `` `if `` directive: here we check the tool type, and if it's not a synthesis tool we declare a `valid` signal.
 Code in disabled `` `if `` directive branches is completely omitted during the compilation process, so it does not have to contain compilable code:
 
-```vhdl
-`if DUMMY = "" xor DUMMY = "" then
-  You can use conditional directives for multiline comments,
-  however that would definitely be an abuse
-`end
-```
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vhdl" data-lang="vhdl"><span class="line"><span class="cl"><span class="kn">`if</span> <span class="n">DUMMY</span> <span class="o">=</span> <span class="s">""</span> <span class="k">xor</span> <span class="n">DUMMY</span> <span class="o">=</span> <span class="s">""</span> <span class="kn">then</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">You can use conditional directives for multiline comments,</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">however that would definitely be an abuse</span>
+</span></span><span class="line"><span class="cl"><span class="kn">`end</span>
+</span></span></code></pre></div>
 
 The syntax for the conditional directives is similar to VHDL's `if` statement syntax. However, conditional directives being tool directives in their nature, can be used anywhere throughout design code, e.g:
 
-```vhdl
-`if LIB = "some" then
-library some;
-use some.all;
-`elsif lib = "other" then
-library other;
-use other.all;
-`else
-library general;
-use general.all;
-`end if
-```
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vhdl" data-lang="vhdl"><span class="line"><span class="cl"><span class="kn">`if</span> <span class="n">LIB</span> <span class="o">=</span> <span class="s">"some"</span> <span class="kn">then</span>
+</span></span><span class="line"><span class="cl"><span class="k">library</span> <span class="nn">some</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">use</span> <span class="nn">some.</span><span class="k">all</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">`elsif</span> <span class="n">lib</span> <span class="o">=</span> <span class="s">"other"</span> <span class="kn">then</span>
+</span></span><span class="line"><span class="cl"><span class="k">library</span> <span class="nn">other</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">use</span> <span class="nn">other.</span><span class="k">all</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">`else</span>
+</span></span><span class="line"><span class="cl"><span class="k">library</span> <span class="nn">general</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">use</span> <span class="nn">general.</span><span class="k">all</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">`end</span> <span class="kn">if</span>
+</span></span></code></pre></div>
 
 Conditions that can be used in conditional directives are limited to comparing conditional identifiers with constant, literal values. You may combine such comparisons in complex expressions:
 
-```vhdl
-`if (BOARD = "MAIN" and REV >= "1.2") or DEBUG /= "" then
-    ...
-`end
-```
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vhdl" data-lang="vhdl"><span class="line"><span class="cl"><span class="kn">`if</span> <span class="p">(</span><span class="n">BOARD</span> <span class="o">=</span> <span class="s">"MAIN"</span> <span class="k">and</span> <span class="n">REV</span> <span class="o">&gt;=</span> <span class="s">"1.2"</span><span class="p">)</span> <span class="k">or</span> <span class="n">DEBUG</span> <span class="o">/=</span> <span class="s">""</span> <span class="kn">then</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">...</span>
+</span></span><span class="line"><span class="cl"><span class="kn">`end</span>
+</span></span></code></pre></div>
 
 It is also possible to write nested conditional directives. If the upper-level directive condition is not satisfied, nested directives will be disabled similar to other VHDL code:
 
-```vhdl
-`if TOOL_TYPE = "SIMULATION" then
-  -- Using a simulator
-  `if VHDL_VERSION >= "2008" then
-    -- Newer VHDL version simulation code
-  `else
-    -- Older VHDL version simulation code
-  `end if
-`else
-  -- Not a simulator
-`end if
-```
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vhdl" data-lang="vhdl"><span class="line"><span class="cl"><span class="kn">`if</span> <span class="n">TOOL_TYPE</span> <span class="o">=</span> <span class="s">"SIMULATION"</span> <span class="kn">then</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">-- Using a simulator</span>
+</span></span><span class="line"><span class="cl">  <span class="kn">`if</span> <span class="n">VHDL_VERSION</span> <span class="o">&gt;=</span> <span class="s">"2008"</span> <span class="kn">then</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">-- Newer VHDL version simulation code</span>
+</span></span><span class="line"><span class="cl">  <span class="kn">`else</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">-- Older VHDL version simulation code</span>
+</span></span><span class="line"><span class="cl">  <span class="kn">`end</span> <span class="kn">if</span>
+</span></span><span class="line"><span class="cl"><span class="kn">`else</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">-- Not a simulator</span>
+</span></span><span class="line"><span class="cl"><span class="kn">`end</span> <span class="kn">if</span>
+</span></span></code></pre></div>
 
 All conditional identifiers have string values. Comparison follows general VHDL rules. Conditional identifiers are not case sensitive while their values are.
 And if an identifier is not defined, its value is considered to be an empty string `""` (e.g. in the previous example we are checking whether the `DEBUG` identifier is defined).
@@ -139,13 +134,12 @@ Note that because of these differences, it may be harder to organize different s
 Other than `` `if `` conditional directives there are also `` `warning `` and `` `error `` directives that can produce compilation warnings or errors.
 They can be used to indicate what conditional branch is active or stop compilation if a specific combination of conditional values is not supported:
 
-```vhdl
-`if RST_TYPE = "async" then
-  `warning "Reset type is set to async. Beware of asynchronous reset crossings"
-`elsif RST_TYPE /= "sync" then
-  `error "Unsupported reset type. Please set RST_TYPE to either `sync` or `async`"
-`end if
-```
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vhdl" data-lang="vhdl"><span class="line"><span class="cl"><span class="kn">`if</span> <span class="n">RST_TYPE</span> <span class="o">=</span> <span class="s">"async"</span> <span class="kn">then</span>
+</span></span><span class="line"><span class="cl">  <span class="kn">`warning</span> <span class="s">"Reset type is set to async. Beware of asynchronous reset crossings"</span>
+</span></span><span class="line"><span class="cl"><span class="kn">`elsif</span> <span class="n">RST_TYPE</span> <span class="o">/=</span> <span class="s">"sync"</span> <span class="kn">then</span>
+</span></span><span class="line"><span class="cl">  <span class="kn">`error</span> <span class="s">"Unsupported reset type. Please set RST_TYPE to either `sync` or `async`"</span>
+</span></span><span class="line"><span class="cl"><span class="kn">`end</span> <span class="kn">if</span>
+</span></span></code></pre></div>
 
 The only parameter in these directives is a message string literal, you can not concatenate any conditional identifier values.
 
@@ -154,39 +148,38 @@ The only parameter in these directives is a message string literal, you can not 
 Predefined conditional identifier values are also available as regular VHDL constants in the `std.env` package, making them usable in usual VHDL expressions. 
 For example, you can check if your simulator supports Conditional Analysis and what values predefined conditional identifiers have, by running the following code:
 
-```vhdl
-use std.env.all;
-
-entity check is
-end entity;
-
-architecture behavioral of check is
-`if VHDL_VERSION = "" then
-  constant VHDL_VERSION : string := "n/a";
-  constant TOOL_TYPE    : string := "n/a";
-  constant TOOL_VENDOR  : string := "n/a";
-  constant TOOL_NAME    : string := "n/a";
-  constant TOOL_EDITION : string := "n/a";
-  constant TOOL_VERSION : string := "n/a";
-`end if
-begin
-  status : process
-  begin
-    report "Tool " &
-`if VHDL_VERSION = "" then
-    "DOES NOT " &
-`end if
-    "have support of VHDL 2019 Conditional Analysis:" & LF & 
-    "VHDL VERSION = " & VHDL_VERSION & LF &
-    "TOOL TYPE    = " & TOOL_TYPE & LF &
-    "TOOL VENDOR  = " & TOOL_VENDOR & LF &
-    "TOOL NAME    = " & TOOL_NAME & LF &
-    "TOOL EDITION = " & TOOL_EDITION & LF &
-    "TOOL VERSION = " & TOOL_VERSION;
-    wait;
-  end process;
-end architecture;
-```
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vhdl" data-lang="vhdl"><span class="line"><span class="cl"><span class="k">use</span> <span class="nn">std.env.</span><span class="k">all</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">entity</span> <span class="nc">check</span> <span class="k">is</span>
+</span></span><span class="line"><span class="cl"><span class="k">end</span> <span class="k">entity</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">architecture</span> <span class="nc">behavioral</span> <span class="k">of</span> <span class="nc">check</span> <span class="k">is</span>
+</span></span><span class="line"><span class="cl"><span class="kn">`if</span> <span class="n">VHDL_VERSION</span> <span class="o">=</span> <span class="s">""</span> <span class="kn">then</span>
+</span></span><span class="line"><span class="cl">  <span class="k">constant</span> <span class="n">VHDL_VERSION</span> <span class="o">:</span> <span class="kt">string</span> <span class="o">:=</span> <span class="s">"n/a"</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">constant</span> <span class="n">TOOL_TYPE</span>    <span class="o">:</span> <span class="kt">string</span> <span class="o">:=</span> <span class="s">"n/a"</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">constant</span> <span class="n">TOOL_VENDOR</span>  <span class="o">:</span> <span class="kt">string</span> <span class="o">:=</span> <span class="s">"n/a"</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">constant</span> <span class="n">TOOL_NAME</span>    <span class="o">:</span> <span class="kt">string</span> <span class="o">:=</span> <span class="s">"n/a"</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">constant</span> <span class="n">TOOL_EDITION</span> <span class="o">:</span> <span class="kt">string</span> <span class="o">:=</span> <span class="s">"n/a"</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">constant</span> <span class="n">TOOL_VERSION</span> <span class="o">:</span> <span class="kt">string</span> <span class="o">:=</span> <span class="s">"n/a"</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">`end</span> <span class="kn">if</span>
+</span></span><span class="line"><span class="cl"><span class="k">begin</span>
+</span></span><span class="line"><span class="cl">  <span class="n">status</span> <span class="o">:</span> <span class="k">process</span>
+</span></span><span class="line"><span class="cl">  <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">    <span class="n">report</span> <span class="s">"Tool "</span> <span class="o">&amp;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">`if</span> <span class="n">VHDL_VERSION</span> <span class="o">=</span> <span class="s">""</span> <span class="kn">then</span>
+</span></span><span class="line"><span class="cl">    <span class="s">"DOES NOT "</span> <span class="o">&amp;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">`end</span> <span class="kn">if</span>
+</span></span><span class="line"><span class="cl">    <span class="s">"have support of VHDL 2019 Conditional Analysis:"</span> <span class="o">&amp;</span> <span class="n">LF</span> <span class="o">&amp;</span> 
+</span></span><span class="line"><span class="cl">    <span class="s">"VHDL VERSION = "</span> <span class="o">&amp;</span> <span class="n">VHDL_VERSION</span> <span class="o">&amp;</span> <span class="n">LF</span> <span class="o">&amp;</span>
+</span></span><span class="line"><span class="cl">    <span class="s">"TOOL TYPE    = "</span> <span class="o">&amp;</span> <span class="n">TOOL_TYPE</span> <span class="o">&amp;</span> <span class="n">LF</span> <span class="o">&amp;</span>
+</span></span><span class="line"><span class="cl">    <span class="s">"TOOL VENDOR  = "</span> <span class="o">&amp;</span> <span class="n">TOOL_VENDOR</span> <span class="o">&amp;</span> <span class="n">LF</span> <span class="o">&amp;</span>
+</span></span><span class="line"><span class="cl">    <span class="s">"TOOL NAME    = "</span> <span class="o">&amp;</span> <span class="n">TOOL_NAME</span> <span class="o">&amp;</span> <span class="n">LF</span> <span class="o">&amp;</span>
+</span></span><span class="line"><span class="cl">    <span class="s">"TOOL EDITION = "</span> <span class="o">&amp;</span> <span class="n">TOOL_EDITION</span> <span class="o">&amp;</span> <span class="n">LF</span> <span class="o">&amp;</span>
+</span></span><span class="line"><span class="cl">    <span class="s">"TOOL VERSION = "</span> <span class="o">&amp;</span> <span class="n">TOOL_VERSION</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">wait</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">end</span> <span class="k">process</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">end</span> <span class="k">architecture</span><span class="p">;</span>
+</span></span></code></pre></div>
 
 **NOTE:** In this example, if simulator supports Conditional Analysis, it will use variables from `std.env` package, otherwise it should ignore unsupported directives and use dummy constants. Proper message is constructed in a similar manner.
 
