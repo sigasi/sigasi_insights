@@ -50,14 +50,14 @@ You can also use this flag for each command to get usage information for those c
 Usage: <b>sigasi-cli</b> [<span style="color:#C4A000">-hV</span>] [<span style="color:#C4A000">-v</span> | <span style="color:#C4A000">--debug</span>] [COMMAND]
   <span style="color:#C4A000">-h</span>, <span style="color:#C4A000">--help</span>      Show this help message and exit.
   <span style="color:#C4A000">-V</span>, <span style="color:#C4A000">--version</span>   Print version information and exit.
-Logging:
-<span style="color:#C4A000"> </span>     <span style="color:#C4A000">--debug</span>     Output debug information to the console.
+Logging Options:
 <span style="color:#C4A000"> </span> <span style="color:#C4A000">-v</span>, <span style="color:#C4A000">--verbose</span>   Output more to the console.
+<span style="color:#C4A000"> </span>     <span style="color:#C4A000">--debug</span>     Output debug information to the console.
 Commands:
   <b>verify</b>  Validate the project.
 </pre>
 
-## Logging
+## Logging Options
 
 To turn on verbose output, use any of the following flags.
 
@@ -73,24 +73,29 @@ Issues can be reported in different formats such as **plain**, **JSON** or **XML
 
 <pre>
 <span class="no-select">$ </span>sigasi-cli verify --help
-Usage: <b>sigasi-cli verify</b> [<span style="color:#C4A000">-hV</span>] [<span style="color:#C4A000">--include-suppressed</span>] [<span style="color:#C4A000">-o</span>=<i>FILE</i>] [<span style="color:#C4A000">-v</span> | <span style="color:#C4A000">--debug</span>]
-                         [<span style="color:#C4A000">--json</span> | <span style="color:#C4A000">--warnings-ng</span> | <span style="color:#C4A000">--plain</span>] [<span style="color:#C4A000">PROJECT</span>...]
+Usage: <b>sigasi-cli verify</b> [OPTIONS] [<span style="color:#C4A000">PROJECT</span>...]
 Validate the project.
       [<span style="color:#C4A000">PROJECT</span>...]           One or more project folders.
   <span style="color:#C4A000">-h</span>, <span style="color:#C4A000">--help</span>                 Show this help message and exit.
-      <span style="color:#C4A000">--include-suppressed</span>   Include suppressed issues in output.
-  <span style="color:#C4A000">-o</span>, <span style="color:#C4A000">--out</span>=<i>FILE</i>             File to write the output to.
   <span style="color:#C4A000">-V</span>, <span style="color:#C4A000">--version</span>              Print version information and exit.
-Logging:
-<span style="color:#C4A000"> </span>     <span style="color:#C4A000">--debug</span>                Output debug information to the console.
+Logging Options:
 <span style="color:#C4A000"> </span> <span style="color:#C4A000">-v</span>, <span style="color:#C4A000">--verbose</span>              Output more to the console.
-Output Formats:
-<span style="color:#C4A000"> </span>     <span style="color:#C4A000">--json</span>                 Output in JSON format.
+<span style="color:#C4A000"> </span>     <span style="color:#C4A000">--debug</span>                Output debug information to the console.
+Output Options:
+  <span style="color:#C4A000">-o</span>, <span style="color:#C4A000">--out</span>=<i>FILE</i>             File to write the output to.
 <span style="color:#C4A000"> </span>     <span style="color:#C4A000">--plain</span>                Output in plain format.
+<span style="color:#C4A000"> </span>     <span style="color:#C4A000">--json</span>                 Output in JSON format.
 <span style="color:#C4A000"> </span>     <span style="color:#C4A000">--warnings-ng</span>          Output in Warnings NG XML format.
+Execution Options:
+<span style="color:#C4A000"> </span>     <span style="color:#C4A000">--fail-on-error</span>        Fail on any error marker.
+<span style="color:#C4A000"> </span>     <span style="color:#C4A000">--fail-on-warning</span>      Fail on any warning or error marker.
+<span style="color:#C4A000"> </span>     <span style="color:#C4A000">--fail-on-info</span>         Fail on any info, warning or error marker.
+      <span style="color:#C4A000">--include-suppressed</span>   Include suppressed issues in output.
 </pre>
 
-## Output formats
+## Output Options
+
+### Output formats
 
 | format          | description                                                           |
 | --------------- | --------------------------------------------------------------------- |
@@ -99,7 +104,7 @@ Output Formats:
 | `--json`        | JSON format, more detailed                                            |
 | `--warnings-ng` | XML format for [Warnings NG](https://plugins.jenkins.io/warnings-ng/) |
 
-### Plain
+#### Plain
 
 By default, the verify command will output a single line of information for each issue found.
 This includes the path, line and column where the issue is located, the severity and a message.
@@ -117,7 +122,7 @@ If you want to use this format but without coloring, you can use the `--plain` f
 ...
 </pre>
 
-### JSON
+#### JSON
 
 If you want more detailed information for each issue you can use the JSON output format by using the `--json` flag.
 
@@ -143,7 +148,7 @@ If you want more detailed information for each issue you can use the JSON output
     ...
 ```
 
-### Warnings NG
+#### Warnings NG
 
 Additionally, issues can be formatted in an XML format suitable for the Jenkins plugin [Warnings NG](https://plugins.jenkins.io/warnings-ng/) by using the `--warnings-ng` flag.
 This allows for output to be fed to the plugin, which will visualize the issues for each Jenkins run.
@@ -165,9 +170,9 @@ recordIssues(
 )
 ```
 
-## Output to file
+### Output to file
 
-To save the output to a file you can use one of the output options (`--out` or `-o`) or, on linux, redirect the output using `>`.
+To save the output to a file you can use one of the output options (`--out` or `-o`) or, on Linux, redirect the output using `>`.
 
 <pre>
 <span class="no-select">$ </span>sigasi-cli verify -o markers.txt .
@@ -175,7 +180,22 @@ To save the output to a file you can use one of the output options (`--out` or `
 <span class="no-select">$ </span>sigasi-cli verify . > markers.txt
 </pre>
 
-## Suppressed issues
+## Execution Options
+
+### Failure thresholds
+
+To easily check if any issues of a certain severity were found in the project (without having to parse the output), you can use one of the following options:
+
+| Option | Threshold |
+| --- | --- |
+| `--fail-on-error` | Any error markers |
+| `--fail-on-warning` | Any error or warning markers |
+| `--fail-on-info` | Any error, warning or info markers |
+
+If any issue was found that matches the threshold, an exit code of `16` will be returned once finished.
+The project is still validated in it's entirety, regardless of wether the threshold was reached.
+
+### Suppressed issues
 
 Suppressed issues are filtered from the output by default, as we consider these issues *'resolved'*.
 If you do want to include suppressed issues in the output, add the `--include-suppressed` option:
@@ -197,3 +217,4 @@ If this is not the case, refer to the following table.
 | `1`  | Unhandled exception occurred.                            |
 | `2`  | Invalid command line arguments / options.                |
 | `7`  | License problem. Make sure a valid license is available. |
+| `16` | Verification severity threshold reached. |
