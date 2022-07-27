@@ -1,4 +1,4 @@
-image: klakegg/hugo:0.93.0-ext-alpine-ci
+image: gitlab.sigasi.com:4567/dev/sigasi_insights:latest
 
 stages:
   - prebuild
@@ -6,7 +6,6 @@ stages:
 
 pre-branch-build:
   stage: prebuild
-  image: andreysenov/firebase-tools:latest
   tags:
     - hugo
   except:
@@ -27,7 +26,6 @@ deploy-prod:
   script: 
     - git submodule update --init --recursive
     - hugo --minify
-    - npm i -g firebase-tools
     - firebase deploy -m "$CI_COMMIT_TITLE" --token $FIREBASE_TOKEN
   only:
     refs:
@@ -43,7 +41,6 @@ deploy-branch:
   script: 
     - git submodule update --init --recursive
     - hugo --buildFuture --baseURL $MY_DEPLOYED_URL
-    - npm i -g firebase-tools
     - echo $CI_COMMIT_TITLE
     - firebase hosting:channel:deploy $CI_COMMIT_REF_SLUG --token $FIREBASE_TOKEN
   except:
@@ -58,7 +55,6 @@ deploy-branch:
 
 # stop_branch:
 #   stage: deploy
-#   image: andreysenov/firebase-tools:latest
 #   tags:
 #     - hugo
 #   rules:
