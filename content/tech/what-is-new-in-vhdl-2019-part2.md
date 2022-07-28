@@ -4,6 +4,9 @@ date: 2020-06-11
 lastmod: 2020-06-15
 author: Bart Brosens
 pager: true
+tags:
+  - VHDL
+  - VHDL-2019
 comments: true
 bannerad: true
 ---
@@ -122,6 +125,7 @@ type streaming_bus is record
   ack   : std_logic;
 end record;
 ```
+
 `streaming_bus` is now unconstrained, this feature has been introduced in VHDL 2008. Our mode view definitions
 do not have to change. We can change the definition of the `source` entity to make the size of the bus explicit as a
 generic parameter.

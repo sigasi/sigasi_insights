@@ -3,6 +3,9 @@ title: "What's new in VHDL 2019?"
 date: 2020-06-09
 author: Bart Brosens
 pager: true
+tags:
+  - VHDL
+  - VHDL-2019
 comments: true
 bannerad: true
 ---
@@ -58,6 +61,7 @@ group is to evolve the language whilst keeping these advantages.
 To explain how VHDL achieves these advantages we need to look at how the language is built. From a language
 engineering point of view, VHDL is an interesting language. The core language, based on Ada, does not have any
 concepts related to hardware design. Instead, the core language only defines three things:
+
 * Primitive and aggregate types
 * Some predefined operations on these types
 * A well-defined simulation model

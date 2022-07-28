@@ -3,6 +3,9 @@ title: "VHDL 2019: Enhanced generic types"
 date: 2020-06-16
 author: Bart Brosens
 pager: true
+tags:
+  - VHDL
+  - VHDL-2019
 comments: true
 bannerad: true
 ---
@@ -12,6 +15,7 @@ In this article the enhanced generic types are discussed.
 You can read the second part [here]({{< ref "/tech/what-is-new-in-vhdl-2019-part2.md" >}}).
 
 # Enhanced generic types
+
 VHDL 2019 improves generic types and subprograms. In VHDL 2008 generic types were introduced, these
 generic types can be bound to any type. In addition to the generic type, a number of generic operations can be
 provided with the type. For example:
@@ -139,4 +143,3 @@ In conclusion, the improvements that were made to generic types make them more t
 verbosity. They also enable new kinds of libraries.
 
 Read on for [part 4]({{< ref "/tech/what-is-new-in-vhdl-2019-part4.md" >}}).
-

@@ -3,7 +3,7 @@ title: "VHDL 2019: Conditional Analysis"
 layout: page
 pager: true
 author: Pavel Parchenko
-date: 2022-07-25
+date: 2022-07-28
 tags:
   - VHDL
   - VHDL-2019
@@ -20,7 +20,7 @@ So portability is basically a question of how to organize these specific code pi
 
 Prior to VHDL 2019, you could use VHDL language features such as generics, generate statements, configurations. But besides the fact that these options work only in limited contexts, using them also requires all code to be compilable with all target tools.
 
-In order to solve compilation problems, one may try to split their design in such a way as to have parts that differ in separate design units and files and maintain compilation lists for each configuration. This is also an option, but a pretty tedious one. 
+In order to solve compilation problems, one may try to split their design in such a way as to have parts that differ in separate design units and files and maintain compilation lists for each configuration. This is also an option, but a pretty tedious one.
 If it's only about having simulation specific code, `pragma translate_off/on` comments may do the trick, however, they are of no help in other cases.
 Nevertheless, such comments may be considered as a primitive version of full-fledged preprocessors that are available in some other languages. Going further in this direction, you may find some external preprocessor implementations for VHDL which bring greater level of customizability but also bring a hassle when trying to integrate them into your workflow.
 
@@ -97,7 +97,8 @@ But let's move on and discuss conditional identifiers.
 
 # Conditional identifiers
 
-There's a bunch of identifiers that are provided by a tool: 
+There's a bunch of identifiers that are provided by a tool:
+
 - `TOOL_TYPE`
 - `TOOL_VENDOR`
 - `TOOL_NAME`
@@ -108,6 +109,7 @@ There's a bunch of identifiers that are provided by a tool:
 Identifiers starting with `TOOL_` can be used to determine what tool is used to analyze VHDL code. In addition, `VHDL_VERSION` stores the VHDL version that was used to analyze the file (possible values are `"1987"`, `"1993"`, `"2000"`, `"2002"`, `"2008"` or `"2019"`). It may look strange that `VHDL_VERSION` can have values of standards prior to VHDL 2019, but tools that support VHDL 2019 may actually make Conditional Analysis available when compiling files using previous standards too (consult your tool documentation to confirm this).
 
 Values of `TOOL_TYPE` can be either `"SIMULATION"`, `"SYNTHESIS"` or `"FORMAL"`. As for `TOOL_VERSION`, it's safe to use ordering operators (`<`, `>=`, ...) to check the version, as newer versions should always be greater than previous ones. Other predefined identifier values are effectively at the discretion of the tool vendor. Here are some examples of what these values can be:
+
 ```
 TOOL_TYPE    = "SIMULATION"
 TOOL_VENDOR  = "Aldec"
@@ -145,7 +147,7 @@ The only parameter in these directives is a message string literal, you can not 
 
 # Standard package
 
-Predefined conditional identifier values are also available as regular VHDL constants in the `std.env` package, making them usable in usual VHDL expressions. 
+Predefined conditional identifier values are also available as regular VHDL constants in the `std.env` package, making them usable in usual VHDL expressions.
 For example, you can check if your simulator supports Conditional Analysis and what values predefined conditional identifiers have, by running the following code:
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vhdl" data-lang="vhdl"><span class="line"><span class="cl"><span class="k">use</span> <span class="nn">std.env.</span><span class="k">all</span><span class="p">;</span>
@@ -168,7 +170,7 @@ For example, you can check if your simulator supports Conditional Analysis and w
 </span></span><span class="line"><span class="cl"><span class="kn">`if</span> <span class="n">VHDL_VERSION</span> <span class="o">=</span> <span class="s">""</span> <span class="kn">then</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">"NO " &amp;</span>
 </span></span><span class="line"><span class="cl"><span class="kn">`end</span> <span class="kn">if</span>
-</span></span><span class="line"><span class="cl">    <span class="s">"support for VHDL 2019 Conditional Analysis:"</span> <span class="o">&amp;</span> <span class="n">LF</span> <span class="o">&amp;</span> 
+</span></span><span class="line"><span class="cl">    <span class="s">"support for VHDL 2019 Conditional Analysis:"</span> <span class="o">&amp;</span> <span class="n">LF</span> <span class="o">&amp;</span>
 </span></span><span class="line"><span class="cl">    <span class="s">"VHDL VERSION = "</span> <span class="o">&amp;</span> <span class="n">VHDL_VERSION</span> <span class="o">&amp;</span> <span class="n">LF</span> <span class="o">&amp;</span>
 </span></span><span class="line"><span class="cl">    <span class="s">"TOOL TYPE    = "</span> <span class="o">&amp;</span> <span class="n">TOOL_TYPE</span> <span class="o">&amp;</span> <span class="n">LF</span> <span class="o">&amp;</span>
 </span></span><span class="line"><span class="cl">    <span class="s">"TOOL VENDOR  = "</span> <span class="o">&amp;</span> <span class="n">TOOL_VENDOR</span> <span class="o">&amp;</span> <span class="n">LF</span> <span class="o">&amp;</span>
