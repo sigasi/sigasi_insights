@@ -3,7 +3,7 @@ title: "VHDL 2019: Conditional Analysis"
 layout: page
 pager: true
 author: Pavel Parchenko
-date: 2022-07-28
+date: 2022-08-02
 tags:
   - VHDL
   - VHDL-2019
