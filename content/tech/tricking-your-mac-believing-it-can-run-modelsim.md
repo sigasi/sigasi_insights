@@ -26,7 +26,7 @@ You will need the following info:
 * your user name on that server
 * the install path of ModelSim on the server
 
-You also need to set up an [SSH key](http://www.eng.cam.ac.uk/help/jpmg/ssh/authorized_keys_howto.html) so that you can log on to the server without typing your password.
+You also need to set up an [SSH key](https://www.ssh.com/academy/ssh/key) so that you can log on to the server without typing your password.
 
 Next, we will create a fake ModelSim installation dir on the Mac. This directory will contain one script, `remote_modelsim.sh` and several symlinks to this script.
 
