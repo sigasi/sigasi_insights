@@ -1,8 +1,8 @@
 ---
 title: "Record Autocomplete"
-layout: screencast 
+layout: youtube 
 pager: false
 date: 2016-01-01
 comments: false
-videoid: cfca85334c
+videoid: xVYSDFXA-GU
 ---

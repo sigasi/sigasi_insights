@@ -1,8 +1,8 @@
 ---
 title: "Wizard for New VHDL Files"
-layout: screencast 
+layout: youtube 
 pager: false
 date: 2016-01-01
 comments: false
-videoid: 880771d405
+videoid: hiC97KF3Ofg
 ---

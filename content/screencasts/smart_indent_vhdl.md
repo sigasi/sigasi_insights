@@ -1,10 +1,10 @@
 ---
 title: "Smart Indent for VHDL"
-layout: screencast
+layout: youtube
 pager: false
 date: 2016-01-01
 comments: false
-videoid: asr4pf7p8e
+videoid: XEZFe7XImfE
 video: mute
 tags:
   - VHDL

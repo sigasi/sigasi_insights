@@ -1,8 +1,8 @@
 ---
 title: "Mixed Languages: Verilog and VHDL"
-layout: screencast 
+layout: youtube 
 pager: false
 date: 2016-01-01
 comments: false
-videoid: zxgn5q9sz0
+videoid: jfCzYXLlR8o
 ---

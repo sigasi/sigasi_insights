@@ -1,8 +1,8 @@
 ---
 title: "Sigasi Pro integration with Altera Quartus II"
-layout: screencast 
+layout: youtube 
 pager: false
 date: 2016-01-01
 comments: false
-videoid: ugefe6fkhm
+videoid: 31ynqCOmkJ0
 ---

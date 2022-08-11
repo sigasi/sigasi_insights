@@ -1,8 +1,8 @@
 ---
 title: "VHDL Code Comprehension"
-layout: screencast 
+layout: youtube 
 pager: false
 date: 2016-01-01
 comments: false
-videoid: b8c8886911
+videoid: 4vqtmXPpe0w
 ---

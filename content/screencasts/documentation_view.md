@@ -1,8 +1,8 @@
 ---
 title: "Documentation View"
-layout: screencast 
+layout: youtube 
 pager: false
 date: 2016-01-01
 comments: false
-videoid: w5j5rutbu2
+videoid: uhRJPv6GiOU
 ---

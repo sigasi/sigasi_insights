@@ -1,8 +1,8 @@
 ---
 title: "Sigasi as companion tool for Quartus II"
-layout: screencast 
+layout: youtube 
 pager: false
 date: 2016-01-01
 comments: false
-videoid: na5z420wn7
+videoid: tf3qGE-wA60
 ---

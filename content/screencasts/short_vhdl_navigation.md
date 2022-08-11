@@ -1,8 +1,8 @@
 ---
 title: "VHDL Navigation"
-layout: screencast 
+layout: youtube 
 pager: false
 date: 2016-01-01
 comments: false
-videoid: 416feed60a
+videoid: 8BVrH8HU5vA
 ---

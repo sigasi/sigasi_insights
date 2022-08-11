@@ -1,8 +1,8 @@
 ---
 title: "State Machine Viewer"
-layout: screencast 
+layout: youtube 
 pager: false
 date: 2016-01-01
 comments: false
-videoid: tji7o0vwyt
+videoid: Vov1HtEkHWI
 ---

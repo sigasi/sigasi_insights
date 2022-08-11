@@ -1,8 +1,8 @@
 ---
 title: "Integration with Xilinx ISim HDL Simulator"
-layout: screencast 
+layout: youtube
 pager: false
 date: 2016-01-01
 comments: false
-videoid: ywnjk97nv6
+videoid: PNG2GgHggxU
 ---

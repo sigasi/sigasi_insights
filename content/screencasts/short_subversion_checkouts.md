@@ -1,8 +1,8 @@
 ---
 title: "Subversion Checkouts"
-layout: screencast 
+layout: youtube 
 pager: false
 date: 2016-01-01
 comments: false
-videoid: 52d17b1b42
+videoid: E9fd_qiG7s0
 ---

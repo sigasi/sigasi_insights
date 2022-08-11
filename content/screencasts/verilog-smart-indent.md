@@ -1,10 +1,10 @@
 ---
 title: "Smart Indentation for Verilog"
-layout: screencast
+layout: youtube
 pager: false
 date: 2016-01-15
 comments: false
-videoid: 3y3d6y8r3l
+videoid: C9Xg_AhdhKU
 tags:
   - Verilog
   - SystemVerilog

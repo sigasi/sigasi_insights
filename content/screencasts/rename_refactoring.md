@@ -1,8 +1,8 @@
 ---
 title: "Rename Refactoring"
-layout: screencast 
+layout: youtube 
 pager: false
 date: 2016-01-01
 comments: false
-videoid: f3510ad24c
+videoid: IrLHVQKf8h8
 ---

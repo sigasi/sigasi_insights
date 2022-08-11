@@ -1,9 +1,8 @@
 ---
 title: Custom Linting
-layout: screencast 
+layout: youtube 
 pager: false
 date: 2016-01-01
 comments: false
-videoid: q326w5nthd
+videoid: m48fcufcZeM
 ---
-

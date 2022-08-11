@@ -1,10 +1,10 @@
 ---
 title: "Sigasi Studio 3.2 Demonstration"
-layout: screencast 
+layout: youtube 
 pager: false
 date: 2016-09-22
 comments: false
-videoid: h2edhxpjkr
+videoid: OP8_mGiMZHA
 video: mute
 autoplay: true
 tags: 

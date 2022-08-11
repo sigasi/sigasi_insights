@@ -1,10 +1,10 @@
 ---
 title: "Create template for (others => 'X')"
-layout: screencast 
+layout: youtube 
 pager: false
 date: 2016-01-01
 tags:
   - templates
 comments: false
-videoid: igcin45lg3
+videoid: zbTZ46wXViA
 ---

@@ -1,8 +1,8 @@
 ---
 title: "See the values of constants in VHDL"
-layout: screencast 
+layout: youtube 
 pager: false
 date: 2016-01-01
 comments: false
-videoid: 027420032a
+videoid: XZAaGsM6LxU
 ---

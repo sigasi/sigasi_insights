@@ -1,8 +1,8 @@
 ---
 title: "Organizing views and windows"
-layout: screencast 
+layout: youtube 
 pager: false
 date: 2016-01-01
 comments: false
-videoid: kc61dsmssv
+videoid: 27p8CT3IG_Y
 ---

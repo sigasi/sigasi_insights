@@ -1,9 +1,9 @@
 ---
 title: "VHDL Autocompletion"
-layout: screencast 
+layout: youtube 
 pager: false
 date: 2016-01-01
 comments: false
-videoid: b3ed9db563
+videoid: zUUmpxKH8xs
 ---
 VHDL autocompletes: packages, signals, records, ...

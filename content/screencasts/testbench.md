@@ -1,10 +1,10 @@
 ---
 title: "Create a testbench with autocomplete"
-layout: screencast 
+layout: youtube 
 pager: false
 date: 2016-01-01
 comments: false
-videoid: 36865dbffa
+videoid: C7FcmsEPtag
 ---
 Writing a testbench skeleton is easy with Sigasi's autocomplete feature. Just keep pressing **Ctrl+Space**.
 There are powerful autocomplete templates for:

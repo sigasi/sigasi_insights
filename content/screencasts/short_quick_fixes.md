@@ -1,8 +1,8 @@
 ---
 title: "Quick Fixes"
-layout: screencast 
+layout: youtube 
 pager: false
 date: 2016-01-01
 comments: false
-videoid: 5d5168ee0f
+videoid: nH_bFtM1kY0
 ---

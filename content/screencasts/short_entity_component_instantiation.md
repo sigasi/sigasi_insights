@@ -1,8 +1,8 @@
 ---
 title: "Entity Component Instantiation"
-layout: screencast 
+layout: youtube 
 pager: false
 date: 2016-01-01
 comments: false
-videoid: 7ac3e153ec
+videoid: kJFD4nvzBx4
 ---

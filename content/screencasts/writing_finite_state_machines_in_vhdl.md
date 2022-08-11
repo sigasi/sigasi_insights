@@ -1,8 +1,8 @@
 ---
 title: "Writing Finite State Machines in VHDL"
-layout: screencast 
+layout: youtube 
 pager: false
 date: 2016-01-01
 comments: false
-videoid: 4ps97awpit
+videoid: I6TELR0nwqM
 ---
