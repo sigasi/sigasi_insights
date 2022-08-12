@@ -27,10 +27,7 @@ deploy-prod:
     - git submodule update --init --recursive
     - hugo --minify
     - firebase deploy -m "$CI_COMMIT_TITLE" --token $FIREBASE_TOKEN
-    - 'curl -X POST "https://ohdear.app/api/checks/45757/request-run" \
-        -H "Authorization: Bearer $OHDEAR_TOKEN" \
-        -H "Accept: application/json" \
-        -H "Content-Type: application/json"'
+    - 'curl -X POST "https://ohdear.app/api/checks/45757/request-run" -H "Authorization: Bearer $OHDEAR_TOKEN" -H "Accept: application/json" -H "Content-Type: application/json"'
   only:
     refs:
       - master
