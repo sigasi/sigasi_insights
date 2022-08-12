@@ -12,7 +12,7 @@ State Machine Navigation
 
 We introduce a new, power navigation feature for **finite state machines** (FSMs) in VHDL.
 If you press **Ctrl** and **click** on the **name of a state**. You jump directly to the relevant *when* part of your *case statement*. There is
-a screencast, [Navigation](/screencasts/navigation), to show how it works.
+a screencast, [Navigation]({{< ref "/screencasts/navigate-fsm.md" >}}), to show how it works.
 
 {{< figure alt="Open Matching When Clause (Ctrl+click)" src="/img/releasenotes/2.10/open_matching_when.png" title="Open Matching When Clause (Ctrl+click)" >}}
 
