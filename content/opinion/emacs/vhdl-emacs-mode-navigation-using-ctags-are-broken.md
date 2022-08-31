@@ -48,7 +48,7 @@ about [Power navigation for VHDL state machines](/screencasts/navigation) a whil
 Here is a screencast that demonstrates what works and what does not work
 with Emacs VHDL mode and etags.
 
-{{< wistia 2d21ae215a >}}
+{{< youtube 4aVYiYn2Ytg >}}
 
 Should there be anything technically incorrect in this post, please feel
 free to {{< send-email >}}.

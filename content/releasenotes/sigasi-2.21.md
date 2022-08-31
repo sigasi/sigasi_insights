@@ -19,8 +19,7 @@ editor. This viewer automatically updates while you are editing your
 code and gives a convenient way to visually inspect and navigate your
 code, even when your code is still unfinished or broken.
 
-{{< wistia pz6zwyq308 >}}
-
+{{< youtube _rMHFouMUL8 >}}
 The Block Diagram viewer is automatically installed in the Sigasi standalone version.
 
 Smart Indent

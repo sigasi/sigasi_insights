@@ -17,4 +17,4 @@ Instead, it is a lot easier if you just define a template for your copyright hea
 
 You can create your own templates by going to the preferences <strong>Window > Preferences</strong> and then <strong>Sigasi (VHDL) > Templates</strong>. Click <strong>New...</strong> and fill in the template dialog. You can also insert variables such as ${year} or ${user}, which expand to the current year and the user name, respectively.
 
-{{< wistia bf4524a04d >}}
+{{< youtube F-ntUVx5HYM >}}

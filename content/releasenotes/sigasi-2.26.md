@@ -18,7 +18,7 @@ We significantly improved the Verilog and Mixed language support in Sigasi 2.26.
 ![Verilog hover](/img/releasenotes/2.26/hover-verilog.png "Verilog hover")
 * Autoindent for Verilog
 
-{{< wistia 3y3d6y8r3l >}}
+{{< youtube T_LRBzw4TSA >}}
 
 * VHDL Autocomplete now offers entity instantiation templates for Verilog modules too
 ![Autocomplete Verilog modules in VHDL instantiations](/img/releasenotes/2.26/autocomplete.png "Autocomplete Verilog modules in VHDL instantiations")

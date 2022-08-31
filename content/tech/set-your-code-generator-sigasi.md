@@ -18,7 +18,7 @@ This article deals with integrating such a script in the Sigasi Pro development 
 
 But first: this video shows you what it looks like in real life. As soon as I change the generator script (and save), the generated code is updated.
 
-{{< wistia gi58zr86jk >}}
+{{< youtube dgJJEqh7zv4 >}}
 
 We assume that you have the project, and a script that generates VHDL code (or C header files, or any other source code).
 
