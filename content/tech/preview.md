@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.17)
 layout: page
 pager: true
-date: 2022-07-14
+date: 2022-09-02
 comments: true
 ---
 
@@ -16,23 +16,75 @@ Although these preview releases are less rigorously tested than the official rel
 
 # Current preview release
 
-The changes since the {{< page "releasenotes/sigasi-4.16.md" >}} release are documented below
+The changes since the {{< page "releasenotes/sigasi-4.16.md" >}} release are documented below.
 
-# Documentation improvements
+In this Sigasi Studio release, we focus around the topic of Documentation Generation.
 
-This release brings a slew of small documentation generation improvements.
+As always, there are many other improvements that enhance speed and usability to offer you a better experience, read on to discover them all.
+
+Also note, that we're deprecating the [Graphics Configuration]({{< ref "manual/graphics.md" >}}).
+We'll introduce a **new and improved solution** in a following release.
+If this feature is vital to you **[please let us know](https://www.sigasi.com/support/)**.  
+
+## Documentation improvements
+
+### Documentation pagination
+
+When your design grows, the generated documentation might become a bit unwieldy. To combat this issue, it's now possible to enable pagination by checking `Split pages by element count`.
+
+{{< figure src="/img/releasenotes/4.17/SplitPages.png" link="/img/releasenotes/4.17/SplitPages.png" title="Enable HTML pagination">}}
+
+The summary information about the design appears on the first page and fans out to subsequent pages that will contain the documentation about individual design elements.
+
+{{< figure src="/img/releasenotes/4.17/SplitPageHtml.png" link="/img/releasenotes/4.17/SplitPageHtml.png" title="Paginated HTML">}}
+
+### Introducing: problems
+
+We've added two new sections: one for an _introduction_ and one for _problems_.
+
+#### Introduction
+
+Adding an introduction to your design - in the form of a `sigasi-doc.md` file in the root directory of your project - will automatically include it in the exported documentation as an introductory chapter.  
+As usual with our documentation, this is a [MarkDown]({{< ref "/manual/documentation.md#comment-markup-with-markdown" >}}) file. This allows you to easily annotate the text.
+
+{{< figure src="/img/releasenotes/4.17/IntroductionText.png" link="/img/releasenotes/4.17/IntroductionText.png" title="Introduction section">}}
+
+#### Problems
+
+Problems in Sigasi Studio are [always within reach]({{< ref "/manual/views.md#problems-view" >}}), but when generating documentation this overview is lost.  
+To keep track of and document these problems you can now include them by checking the `Include problem information`.  
+Of course you can choose whether you want to show only the errors and warnings or the infos as well. You can optionally include [suppressed warnings]({{< ref "/manual/linting.md#suppressing-warnings" >}}) as well.
+
+{{< figure src="/img/releasenotes/4.17/EnableProblemsSection.png" link="/img/releasenotes/4.17/EnableProblemsSection.png" title="Enable problems section">}}
+
+{{< figure src="/img/releasenotes/4.17/ProblemsDocumentation.png" link="/img/releasenotes/4.17/ProblemsDocumentation.png" title="Problems section">}}
+
+### Small refinements
 
 * Processes now show their associated comments
 * TOC items now have an `li` prefix to make it easier to hide these entries e.g. when hiding block diagrams through the following CSS, the TOC entries are also hidden `div[id$=".blockDiagram"] { display: none; }`
 * The content of extended identifiers is now sanitized (i.e. `\<html>\`) before inserting them into HTML
 * Correctly use `td` instead of `th` where necessary
+* The default value for uninitialized generics is now shown as _Unspecified_
+* The documentation export is now faster since it runs with a higher priority
+* Documentation generation now waits for running builds to finish. This ensures that the exported document is complete and correct
+* The `Project files overview` diagram now correctly shows either the exported top level, or the entire project
+* Design units are now generated in a stable order
+* Unnamed, undocumented `process` statements, `initial`, `always`, and `final` blocks are now grouped together  
+  {{< figure src="/img/releasenotes/4.17/GroupedProcesses.png" link="/img/releasenotes/4.17/GroupedProcesses.png" title="Grouped processes">}}  
+* **[Verilog]** Added `initial`, `always`, and `final` blocks
+* **[Verilog]** Improved documentation for vector types
 * **[VHDL]** Added protected type instantiations
+* **[VHDL]** Subprograms are now shown independent of where they're defined
+
+Learn more about Documentation Generation in [the manual]({{< ref "/manual/documentation.md" >}}).
 
 ## New and Noteworthy Changes
 
 * Removed outdated documentation from Eclipse's help pages
 * It's now possible to disable the [automatic wrapping in quotes or parenthesis of selected code]({{< ref "/manual/editor.md#add-parentheses-or-create-a-string" >}})  
   {{< figure src="/img/releasenotes/4.17/EncloseWithParenthesisOption.png" link="/img/releasenotes/4.17/EncloseWithParenthesisOption.png" title="Toggle quote enclosing">}}
+* Fixed various typos and UI/UX inconsistencies
 * **[VUnit]** `Run VUnit tests` now only shows up when there are VUnit tests in the selected file
 * **[VHDL]** Added an autocomplete template for `(others => '0')`
 * **[VHDL]** Added support for aliasing to enums
@@ -71,6 +123,7 @@ This release brings a slew of small documentation generation improvements.
 * **[Verilog]** Fixed empty [Class Hierarchy View]({{< ref "manual/views.md#class-hierarchy-view" >}}) when one of the classes in the hierarchy has no name
 * **[Verilog]** Fixed highlighting of numbers
 * **[Verilog]** Improved error marker range for incorrect preprocessor directives
+* **[Verilog]** Fixed rare case where the [Preprocessor View]({{< ref "manual/views.md#preprocessor-view" >}}), shows incorrect contents when no editors are open
 
 # Update or install?
 
