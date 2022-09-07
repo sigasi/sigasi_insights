@@ -83,7 +83,7 @@ Syntax highlighting is configured as follows:
 * Added 2 config settings to config.toml
   * to allow code blocks like above automatically be highlighted: `pygmentsCodeFences = "true"`
   * to use a separate css file: `pygmentsUseClasses = "true"`
-* Included a new css file `syntax.css` in `layouts/_default/baseof.html` which is generated using the command `hugo gen chromastyles --style=monokai > static/css/syntax.css`
+* Included a new css file `syntax.css` in `layouts/_default/baseof.html` which is generated using the command `hugo gen chromastyles --style=monokailight > assets/sass/syntax.css`
 * In case you want to change the style, different styles are available, check <https://xyproto.github.io/splash/docs/all.html>
 * More Hugo documentation on highlighting: <https://gohugo.io/content-management/syntax-highlighting/>
 
