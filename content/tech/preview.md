@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (4.17)
 layout: page
 pager: true
-date: 2022-09-02
+date: 2022-09-13
 comments: true
 ---
 
@@ -96,6 +96,13 @@ Learn more about Documentation Generation in [the manual]({{< ref "/manual/docum
 * **[Verilog]** Added the instantiation autocomplete in more contexts
 * **[Verilog]** Added the `Anywhere` context for custom autocomplete templates
 * **[Verilog]** Added an error when invoking a macro with arguments but no name (``` `(x)```)
+* **[Verilog]** Improved support for macro concatenations used as a macro argument
+
+## Updates
+
+* [JustJ](https://www.eclipse.org/justj/) (the JRE shipped with Sigasi Studio) has been updated to 17.0.4  
+  **Note that you may run into the error dialog below, when you restart Sigasi Studio after the update** because the JRE has changed. If you close the dialog, and restart Sigasi Studio manually, everything should work as expected.
+{{< figure src="/img/releasenotes/4.14/jre_update_error.png" link="/img/releasenotes/4.14/jre_update_error.png" title="Expected error after update. Restart will solve the issue." width="300">}}
 
 ## Bug fixes
 
@@ -120,6 +127,7 @@ Learn more about Documentation Generation in [the manual]({{< ref "/manual/docum
 * **[VHDL]** Fixed empty Hierarchy View when a formal is added twice in an instantiation
 * **[Verilog]** Instantiation autocomplete for design units using extended identifiers (`\ext$ended"` or `\My!dentifier\`) now works correctly
 * **[Verilog]** Removed enclosing instantiation for instantiation autocomplete
+* **[Verilog]** Fixed crash in documentation export when empty ports were present
 * **[Verilog]** Fixed empty [Class Hierarchy View]({{< ref "manual/views.md#class-hierarchy-view" >}}) when one of the classes in the hierarchy has no name
 * **[Verilog]** Fixed highlighting of numbers
 * **[Verilog]** Improved error marker range for incorrect preprocessor directives
