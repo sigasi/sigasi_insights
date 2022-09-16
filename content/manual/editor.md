@@ -255,6 +255,9 @@ When you select some text and press **`"`**, the selected text will be transform
 This works for both **regular** and **multi-line strings**.
 {{< figure src="/img/releasenotes/4.13/strings.gif" title="Easier to make strings">}}
 
+This behavior can be disabled by unchecking `Enclose selected region when typing parentheses or quotes` in **Window \> Preferences \> Sigasi \> VHDL**.  
+{{< figure src="/img/releasenotes/4.17/EncloseWithParenthesisOption.png" title="Disable parentheses enclosing">}}
+
 ### Show whitespace
 
 You can turn showing whitespace markers on or off by clicking the "Show Whitespace Characters" icon ![Show Whitespace Characters](/img/icons/show_whitespace_chars.png) in the toolbar.

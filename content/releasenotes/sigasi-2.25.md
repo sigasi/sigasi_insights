@@ -34,7 +34,7 @@ Sigasi now more strictly checks the use of operators ("+", "*", "-", ...). This 
 * the minimal and maximal compatible version of the Xtext dependency is now explicitly set (Currently Xtext 2.7.2)
 * ticket 2979 : Zoom buttons in FSM view are broken
 * ticket 2984 : Scoping error with records in blocks
-* ticket 2990 : Quick Fix for enum literals fails when case expression is between parenthesis
+* ticket 2990 : Quick Fix for enum literals fails when case expression is between parentheses
 * ticket 3021 : Formatter adds unexpected whitespace when 'respect newlines' is enabled
 * ticket 3024 : Scoping bug for 'not' on boolean array
 * ticket 3027 : Scoping issue with aggregates in VHDL 2008

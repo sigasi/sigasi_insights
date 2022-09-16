@@ -23,7 +23,7 @@ This 10-line snippet even contains even a **second error**: On line 5, a `std_lo
 
 A careful reader might have spotted **even more errors**. ``others => `0'`` is not valid VHDL. In VHDL you must use regular single quotes (`'`). You can not use the back tick. But this error is probably a mistake from a VHDL-illiterate typesetter. I added it anyhow, because quite a few VHDL-newbies [run into this issue](http://stackoverflow.com/questions/6549276/vhdl-errors-in-flipflop-d-code).
 
-\[*And while I'm ranting, I would also suggest to use `rising_edge(clk)` instead of `clk'event and clk='1'`. There is also no need for the parenthesis around the `IF`-conditions in VHDL.*\]
+\[*And while I'm ranting, I would also suggest to use `rising_edge(clk)` instead of `clk'event and clk='1'`. There is also no need for the parentheses around the `IF`-conditions in VHDL.*\]
 
 The fact that an experienced VHDL designer makes so many mistakes in a small (but globally published) VHDL snippet only proves that typing VHDL first-time-right is difficult. So you need fast feedback if you do not want to waste time. I do not know any VHDL designer that would never get into this situation: You fix the (you think) last small bug in your design. Start the simulation script. Go for a drink (because the simulation takes 10 minutes) and come back to see the simulation never even started because you typed a semicolon at the end of your port map... 10 minutes lost!  Fortunately, today, intelligent editors can help us avoid this waste.
 

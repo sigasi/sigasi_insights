@@ -61,7 +61,7 @@ All users can open the documentation view, but only Premium users can export to 
 
 ## Bugfixes
 
-* ticket 2948 : Case statement validation should not give invalid errors on choices in parenthesis
+* ticket 2948 : Case statement validation should not give invalid errors on choices in parentheses
 * ticket 2884 : Support multiple FSMs with the same name (records, different processes, ...)
 * ticket 2954 : Fixed UI freezes
 * ticket 2956 : Filter fixed libraries in CSV export is when they are referenced in another project

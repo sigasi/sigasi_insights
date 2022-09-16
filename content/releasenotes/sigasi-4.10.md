@@ -38,7 +38,7 @@ Following dialogs are now a thing of the past:
 {{< figure src="/img/releasenotes/4.10/record_autocomplete.png" title="Better autocomplete for records" width="500">}}
 * Extra check: Type names are not allowed as primaries  
 {{< figure src="/img/releasenotes/4.10/vhdl_type_error.png" title="Flag error when type is used as primary" width="500">}}
-* Support architecture parenthesis notation in the Open Design Unit Dialog.  
+* Support architecture parentheses notation in the Open Design Unit Dialog.  
 This allows you to search for `library.entity(architecture)` or `library.entity.architecture`.
 
 # Verilog and SystemVerilog improvements

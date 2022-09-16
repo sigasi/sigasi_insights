@@ -176,7 +176,7 @@ end view;
 ```
 
 In this case the view mode is applied to an array with `streaming_bus` as array element. The definition has to be
-surrounded with parenthesis because the view mode is applied to an array and not a record. This syntax is similar to
+surrounded with parentheses because the view mode is applied to an array and not a record. This syntax is similar to
 how resolution functions are applied to array types.
 
 Finally, it is also possible to pass an interface to a procedure or a function. It is not possible to return an interface

@@ -90,7 +90,7 @@ Bugfixes
 -   ticket 2816 : Circular dependency detection is wrong for deeper
     hierarchies
 -   ticket 2821 : Unexpected Quickfix for undeclared signal between
-    parenthesis
+    parentheses
 
 Download/Update
 ---------------

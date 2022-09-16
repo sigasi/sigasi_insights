@@ -94,7 +94,7 @@ Instead of using a compare editor, you can enable **quick diff** support and see
 
 When you enable Quick Diff, you can see changes in the active editor with the version on disk (or the latest version in version control), by hovering the annotations in the gutter.
 
-[more info](https://help.eclipse.org/photon/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftasks-cvs-quickdiff.htm)
+[More info](https://help.eclipse.org/photon/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftasks-cvs-quickdiff.htm)
 
 # Linting rules
 

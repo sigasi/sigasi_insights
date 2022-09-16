@@ -68,7 +68,7 @@ We recorded a [new screencast]({{< ref "editing_broken_code" >}}) on the improve
 - The Riviera Pro tool chain now uses the `-sv2k9` flag when compiling SystemVerilog files.
 - Signal declaration Quick Fix: Better support for records in port maps
 - The default stack size was increased to `4 MB` (for analyzing deeply nested statements)
-- Improved the editor's behavior when typing the closing quote in a string. It has now the same behavior as typing the closing parenthesis in a parenthesis pair.
+- Improved the editor's behavior when typing the closing quote in a string. It has now the same behavior as typing the closing parenthesis in a parentheses pair.
 - We updated upstream Sigasi Studio dependencies:
     - Xtext/Xtend to 2.19.0
     - Eclipse platform to [Eclipse 2019-09](https://www.eclipse.org/eclipseide/2019-09/noteworthy/)

@@ -25,19 +25,48 @@ The resulting HTML file is saved in the `sigasi-doc` folder in the root of your 
 The generated Block and State Machine Diagrams are saved in subfolders of the `sigasi-doc` folder.
 
 [Sigasi Studio 4.5]({{< ref "/releasenotes/sigasi-4.05.md" >}}) introduced exporting the documentation to HTML.
-There are 2 options when exporting the documentation.
+You have to choose between **Linked resources** and **Embedded resources** when exporting the documentation.
 
 * **Linked resources**  
-   Create an HTML document with linked resources.
+   Creates an HTML document with linked resources.
    All Block Diagrams and State Machine Diagrams are in separate files which are linked from within the HTML document.
    The custom [CSS file]({{< ref "#custom-css" >}}), if present in the project root, will be referenced from the HTML document.
 
 * **Embedded resources**  
-   Create a HTML document with embedded resources. The documentation is in a single file.
+   Creates an HTML document with embedded resources. The documentation is in a single file.
    The Block Diagrams and State Machine Diagrams are embedded in the HTML document.
    The CSS from the custom [CSS file]({{< ref "#custom-css" >}}), if present in the project root, will be included in the HTML `<head>`.
 
-All errors are logged to the console view.
+
+Any errors are logged to the console view.
+
+## Customization
+
+[Sigasi Studio 4.17]({{< ref "/releasenotes/sigasi-4.17.md" >}}) introduced pagination and the introduction and problems section.
+
+{{< figure src="/img/releasenotes/4.17/SplitPages.png" alt="Pagination and problems configuration" >}}
+
+### Pagination
+
+Enabling the `Split pages by elements count` will paginate the output documentation. This is useful for very big designs that produce documentation 100's of MBs large.
+
+The summary information about the design appears on the first page and fans out to subsequent pages that will contain the documentation about individual design elements.
+
+{{< figure src="/img/releasenotes/4.17/SplitPageHtml.png" alt="Paginated documentation" >}}
+
+### Problems section
+
+Enabling `Include problem information` will add a `Problems` section containing all the project's **Errors**, **Errors and warnings**, or **Errors, warnings, and infos**. On top of that, the suppressed problems can also be shown.
+
+{{< figure src="/img/releasenotes/4.17/ProblemsDocumentation.png" alt="Problems reported in the HTML documentation" >}}
+
+### Introduction section
+If a `sigasi-doc.md` file is present in the root directory of your project, Sigasi will automatically include it in the exported documentation as an introductory chapter.  
+As usual with our documentation, this is a [MarkDown]({{< ref "/manual/documentation.md#comment-markup-with-markdown" >}}) file. This allows you to easily annotate the text.
+
+{{< figure src="/img/releasenotes/4.17/IntroductionText.png" link="/img/releasenotes/4.17/IntroductionText.png" title="Introduction section">}}
+
+## Further customization
 
 The exported HTML documentation can be further processed, as explained in {{< page "scale-diagrams-in-word.md" >}}.
 

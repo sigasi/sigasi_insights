@@ -305,7 +305,7 @@ More information is available in the [VUnit manual page]({{< ref "/manual/vunit.
 
 {{< figure src="/img/manual/preprocessor-view.png" >}}
 
-In the Preprocessor View you can preview the expanded text of Verilog macros. This view automatically synchronizes with the active editor.
+In the Preprocessor View, you can preview the expanded text of Verilog macros. This view automatically synchronizes with the active editor.
 When you select text in the (System)Verilog editor, the expanded text will be highlighted in the Preprocessor View. This also works the other way: when you select text in the Preprocessor View, the corresponding, original source will be selected in the editor.
 
 # Class Hierarchy View

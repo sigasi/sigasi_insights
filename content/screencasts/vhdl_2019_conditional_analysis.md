@@ -42,7 +42,7 @@ As always Sigasi Studio provides type-time syntax error reporting.
 Conditional Directives are not an exception.
 When you start typing an additional condition `or DEBUG = "2"` on line 10,
 you can immediately see that it's not allowed to mix different binary operators.
-You need to explicitly specify precedence by using parenthesis.
+You need to explicitly specify precedence by using parentheses.
 
 Our VS Code extension has all these features too.
 

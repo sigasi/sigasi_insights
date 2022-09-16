@@ -114,9 +114,9 @@ Furthermore, the project preferences in Sigasi Studio are useful to ensure that 
 
 ## 10. (Surround selection with parentheses)
 
-The last gem in our portfolio for today is again related to selections. Sometimes we want to surround a piece of code with a pair of quptes, parentheses, braces or brackets. Instead of going to the position for the opening parenthesis, inserting it and subsequently navigating to the closing position to fix the other end, we can make our lives a little easier.
+The last gem in our portfolio for today is again related to selections. Sometimes we want to surround a piece of code with a pair of quotes, parentheses, braces or brackets. Instead of going to the position for the opening parenthesis, inserting it and subsequently navigating to the closing position to fix the other end, we can make our lives a little easier.
 
-When we have selected a piece of code and type an opening parentheses, Sigasi Studio will surround the current selection with the respective parentheses pair.
+When we have selected a piece of code and type an opening parenthesis, Sigasi Studio will surround the current selection with the respective parentheses pair.
 
 ## The end
 

@@ -12,9 +12,9 @@ If you want to start the tutorial from scratch or if you use the **plugin**, you
 The tutorial projects which are opened by default in a new workspace are called *Verilog Tutorial* and *VHDL Tutoral*.
 
 * The *VHDL Tutorial* focuses on {{< xl >}} features using a sample VHDL project. Also the concept of VHDL libraries is explained in this tutorial project.
-
 * The *Verilog Tutorial* uses Verilog and SystemVerilog and covers both {{< xl >}} and {{< xprt >}} features.
-In addition to typical HDL-related subjects, you will learn to graphically navigate projects, use the preprocessor, browse class hierarchies, customize the graphics features, export documentation and much more.  
+
+In addition to typical HDL-related subjects, you will learn to graphically navigate projects, use the preprocessor, browse class hierarchies, customize the graphics features, export documentation, and much more.  
 In addition, this tutorial also shows how to set up mixed language project by adding VHDL support to the project.
 
 You can start the tutorial projects without a license.

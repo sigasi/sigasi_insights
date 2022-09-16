@@ -74,7 +74,7 @@ In this release we've added support for VHDL 2019 instantiated protected types. 
 {{< figure src="/img/releasenotes/4.15/HierarchyViewVerilogInstantiation.png" link="/img/releasenotes/4.15/HierarchyViewVerilogInstantiation.png" title="Verilog module instantiations in the Hierarchy View">}}  
 * **[Verilog]** Non-active preprocessor code is now deemphasized instead of emphasized in the dark theme
 * **[Verilog]** [Block diagrams]({{< ref "manual/views.md#block-diagram-view" >}}) now show more connections, especially towards `always` blocks
-* **[Verilog]** Improved preprocessor recovery for unbalanced parenthesis in preprocessor directives
+* **[Verilog]** Improved preprocessor recovery for unbalanced parentheses in preprocessor directives
 * **[Graphics]** Exported graphics now default to `.png` when no extension was explicitly mentioned
 * **[VUnit]** Added support for custom preprocessors
 

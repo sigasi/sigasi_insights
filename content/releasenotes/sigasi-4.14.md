@@ -129,7 +129,7 @@ In this release we've improved the fixing of mismatches between the Common Libra
 * **[VHDL]** Removed false positive errors in Sigasi Studio Starter
 * **[VHDL]** Removed false positive errors for incomplete port and generic declarations
 * **[VHDL]** Fixed missing validations when an invalid `return` expression is used
-* **[VHDL]** Fixed regressions in auto indentation near lines ending with parenthesis
+* **[VHDL]** Fixed regressions in auto indentation near lines ending with parentheses
 * **[Verilog]** Fixed a rare missing autocomplete for hierarchical references
 * **[Verilog]** Fixed the symbol for `part select` in the outline
 * **[Verilog]** Removed false positive errors for `class` extensions with incorrect syntax

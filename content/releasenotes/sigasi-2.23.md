@@ -45,7 +45,7 @@ We are accelerating our development of the Verilog version:
 ## Bugfixes
 
 * ticket 2883 : Vmap should never make changes in wrong modelsim.ini file
-* ticket 2893 : Case statement analysis should not fail on if expression inside parenthesis
+* ticket 2893 : Case statement analysis should not fail on if expression inside parentheses
 * ticket 2798 : Scoping bug in record field in result of overloaded function call
 * ticket 2848 : scoping problem in when/else assignment
 * ticket 2921 : Loading a FlexNet license should never block the UI
