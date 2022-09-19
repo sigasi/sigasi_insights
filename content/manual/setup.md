@@ -70,9 +70,20 @@ Starting with [Sigasi Studio 3.8]({{<ref "/releasenotes/sigasi-3.08.md" >}}), th
 * Edit `sigasi/configuration/config.ini` and replace `eclipse.application=com.sigasi.runner.open` with `eclipse.application=org.eclipse.ui.ide.workbench`
 * In `sigasi/sigasi.ini` add following lines between `@noDefault` and `-vmargs`:
 
-``` sh
+```sh
 --launcher.defaultAction
 openFile
+```
+
+* If there are other arguments between `@noDefault` and `-vmargs`, append to these.
+
+```sh
+@noDefault
+-vm
+plugins/org.eclipse.justj.openjdk.hotspot.jre.full.<version>/jre/bin
+--launcher.defaultAction
+openFile
+-vmargs
 ```
 
 This way Sigasi Studio uses the default Eclipse behaviour instead of the [custom Sigasi runner]({{< ref "/tech/make-eclipse-open-files-command-line.md" >}}).
