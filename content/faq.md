@@ -742,7 +742,6 @@ Sigasi does not offer simulators. If you don't have a VHDL simulator yet, we wou
 
 Note that [GHDL on MacOS](http://eng-osx.sourceforge.net/GHDL.html) uses Wine, but works without problems.
 
-At this time, Sigasi does not support [Simili](http://www.symphonyeda.com/).
 We have not had good results with FreeHDL or with Green Mountain VHDL. It seems that these two projects may have been terminated.
 
 ## You need a VHDL editor too
