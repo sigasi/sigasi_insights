@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 4.17
 date: 2022-09-16
-lastmod: 2022-09-16
+lastmod: 2022-10-17
 comments: true
 pager: true
 ---
@@ -136,3 +136,14 @@ We recommend at least **4GB of memory** available for Sigasi Studio,
 and you need **about 1GB** of free disk space.
 
 Thanks for all the [bug reports](mailto:support@sigasi.com) and enabling [Talkback]({{< ref "manual/talkback.md" >}}).
+
+
+# Sigasi Studio 4.17.1 point release
+
+On October 17 we released Sigasi Studio 4.17.1.
+This release fixes the following reported issues:
+
+* Graphical views not working in certain Eclipse flavors (e.g. JDT)
+* Cannot import Quartus projects when certain Quartus vendor libraries are missing
+* Cannot install the Sigasi Studio Plugin in Eclipse 2022-09 because of a dependency conflict
+* Autocomplete template does not work when the template contains a plain dollar sign
