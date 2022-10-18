@@ -77,26 +77,34 @@ The GTK version requirements of Eclipse can be found [here](https://www.eclipse.
 
 The license server (FlexNet) is supported on
 
-* RedHat Enterprise Linux 5.2 (32 bit and 64 bit) or newer
+* Red Hat Enterprise Linux 5.2 (32 bit and 64 bit) or newer
 * Windows 7 (32 bit and 64 bit) or newer
 
 The instructions to set up the license server can be found [here]({{< ref "manual/license-key.md#license-server-setup" >}}).
 
-## I am using RedHat Linux 6. How can I run Sigasi Studio?
+## I am using Red Hat Enterprise Linux 7. How can I run Sigasi Studio?
+
+The latest [officially supported Eclipse](https://access.redhat.com/documentation/en-us/red_hat_developer_tools/1/html-single/using_eclipse_4.19/index) version on Red Hat Enterprise Linux 7 is Eclipse 2021-03 (4.19).
+[Sigasi Studio 4.12](/releasenotes/sigasi-4.12) is the first version that supports installation in Eclipse 2021-12. All Sigasi Studio versions since then support Eclipse 2021-03 as a minimum version.
+
+To successfully run Sigasi Studio on Red Hat Enterprise Linux 7, one should thus install the most recently available Sigasi Studio into the Eclipse 2021-03 shipped with the Red Hat Developer Tools on Red Hat Enterprise Linux 7.
+
+
+## I am using Red Hat Enterprise Linux 6. How can I run Sigasi Studio?
 
 Since [Sigasi Studio 4.1](/releasenotes/sigasi-4.01#sigasi-studio-standalone-version-eclipse-photon-4-8),
-the stand-alone Sigasi Studio application is built on top of Eclipse versions 4.8 (Photon) and higher, which have dependencies that can't be met on RedHat Linux 6.
-To successfully run Sigasi Studio 4.1 and newer on RedHat Linux 6, the Sigasi Studio Plugin should be installed in Eclipse 4.7 as explained below.
+the stand-alone Sigasi Studio application is built on top of Eclipse versions 4.8 (Photon) and higher, which have dependencies that cannot be met on Red Hat Enterprise Linux 6.
+To successfully run Sigasi Studio 4.1 and newer on Red Hat Enterprise Linux 6, the Sigasi Studio Plugin should be installed in Eclipse 4.7 as explained below.
 
 Since [Sigasi Studio 4.10]({{< ref "/releasenotes/sigasi-4.10.md">}}), Eclipse 4.7 is no longer supported by the Sigasi Studio Plugin.
-Therefore the most recent version of Sigasi Studio that can be used on RedHat Linux 6 is Sigasi Studio 4.9.
+Therefore the most recent version of Sigasi Studio that can be used on Red Hat Enterprise Linux 6 is Sigasi Studio 4.9.
 
-To successfully run Sigasi Studio on RedHat Linux 6, follow these steps:
+To successfully run Sigasi Studio on Red Hat Enterprise Linux 6, follow these steps:
 
 * Install [Eclipse Oxygen (4.7.3a)](https://www.eclipse.org/oxygen/). Find your download using the *Packages* link on the Oxygen page. We recommend to use the *Eclipse IDE for C/C++ Developers* package.
 * Eclipse Oxygen requires at least version 2.24.0 of GTK+.
 * Eclipse Oxygen and the Sigasi Studio Plugin require Java 8: `yum install java-1.8.0-openjdk`
-* Install the Sigasi Studio Plugin by following [these steps](/manual/setup#install-the-eclipse-plugin) where you replace the link of the **Work with:** field from the second step with **`https://download.sigasi.com/updates/4.9.0/update-site`** in order to install the final version for RedHat 6.
+* Install the Sigasi Studio Plugin by following [these steps](/manual/setup#install-the-eclipse-plugin) where you replace the link of the **Work with:** field from the second step with **`https://download.sigasi.com/updates/4.9.0/update-site`** in order to install the final version for Red Hat Enterprise Linux 6.
 
 ## How do I increase the heap size for Eclipse?
 
