@@ -41,7 +41,7 @@ and you need **about 1GB** of free disk space.
 * Supported on Windows 10 (64 bit) or newer
 * Sigasi Studio Standalone is supported
 * Sigasi Studio Plugin is supported when using
-  * Eclipse 4.8 *Photon* up to Eclipse IDE 2021-03
+  * Eclipse IDE 2021-03 up to and including Eclipse IDE 2022-03
   * Java JRE 11
 
 ### MacOS
@@ -50,7 +50,7 @@ and you need **about 1GB** of free disk space.
 * Sigasi Studio does run on Apple M1 using Rosetta
 * Sigasi Studio Standalone is supported
 * Sigasi Studio Plugin is supported when using
-  * Eclipse 4.8 *Photon* up to Eclipse IDE 2021-03
+  * Eclipse IDE 2021-03 up to and including Eclipse IDE 2022-03
   * Java JRE 11
 
 ### Linux
@@ -61,7 +61,7 @@ The `libXScrnSaver` package needs to be installed on your OS.
 
 * Sigasi Studio Standalone is supported
 * Sigasi Studio Plugin is supported when using
-  * Eclipse 4.8 *Photon* up to Eclipse IDE 2021-06
+  * Eclipse IDE 2021-03 up to and including Eclipse IDE 2022-03
   * Java JRE 11
 
 #### Other Linux distributions
