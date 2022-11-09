@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 4.17
 date: 2022-09-16
-lastmod: 2022-10-17
+lastmod: 2022-11-09
 comments: true
 pager: true
 ---
@@ -137,7 +137,6 @@ and you need **about 1GB** of free disk space.
 
 Thanks for all the [bug reports](mailto:support@sigasi.com) and enabling [Talkback]({{< ref "manual/talkback.md" >}}).
 
-
 # Sigasi Studio 4.17.1 point release
 
 On October 17 we released Sigasi Studio 4.17.1.
@@ -147,3 +146,12 @@ This release fixes the following reported issues:
 * Cannot import Quartus projects when certain Quartus vendor libraries are missing
 * Cannot install the Sigasi Studio Plugin in Eclipse 2022-09 because of a dependency conflict
 * Autocomplete template does not work when the template contains a plain dollar sign
+
+# Sigasi Studio 4.17.2 point release
+
+On November 9 we released Sigasi Studio 4.17.2.
+
+This release improves the Sigasi Launcher for seamless use on multi-user systems.
+It's no longer needed to [switch to the Eclipse Launcher]({{< ref "/manual/setup.md#running-sigasi-studio-with-multiple-users-on-the-same-server" >}}) or make any other additional configuration to make sure files can be opened from the command line into an existing session when working with multiple users on the same server.  
+This also means it's no longer necessary to [open firewall port 4444]({{< ref "/manual/opening.md#opening-files-from-the-command-line" >}}).
+The updated Launcher will choose a random free port.

@@ -33,7 +33,9 @@ EDA tools.
 Sigasi Studio opens and listens to a port (4444 by default). This is necessary
 for the communication between the running Sigasi Studio instance and the
 command line executable. Configure your firewall to allow Sigasi Studio access
-for opening this port.
+for opening this port.  
+**Update** Since [Sigasi Studio 4.17.2]({{< ref "/releasenotes/sigasi-4.17.md#sigasi-studio-4172-point-release" >}}), the listener no longer listens to port 4444.
+A random free port will be used, one per user on multi-user systems.
 
 ## Eclipse Plugin
 
