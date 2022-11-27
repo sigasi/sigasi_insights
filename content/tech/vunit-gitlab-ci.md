@@ -3,7 +3,7 @@ title: "Using VUnit in a Gitlab CI Verification Environment"
 layout: page
 pager: true
 author: Tobias Baumann
-date: 2019-03-17
+date: 2022-11-27
 comments: true
 bannerad: true
 ---
@@ -29,6 +29,10 @@ One framework for running these tests automatically is [VUnit](https://vunit.git
 Since Sigasi 4.1, VUnit projects can be managed pretty user friendly. This is very important, because on the one hand, users do verification when it is easy to use and setup. And on the other hand, the local verification runs the same way as in the CI process on the server side. This prevents wasting debug time by using different verification environments. The operation part of your DevOps team will be pretty thankful for that.
 
 # Getting Started
+
+## Part 1: Intoduction to the Example Project
+
+A simple demonstraton project can be found at [Sigasi public repository on gitlab.com](https://gitlab.com/sigasi/public/vunit-ci).
 
 ## Part 1: Let's Setup a CI Environment
 
