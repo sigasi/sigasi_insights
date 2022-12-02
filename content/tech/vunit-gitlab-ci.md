@@ -98,7 +98,7 @@ You successfully fixed your design, which is now ready to merge and deploy. Cong
 
 In daily business, your design will propably be much more complex and even the related tests. Gitlab provides a wide varity of useful features to optimize your development process. Even deployment processes on real world hardware targets can be implemented, but this is a topic for a much larger tech article. See this article as a starting point for your modern DevOps process, to reach a maximum amount of design reliability by minimize the development time and costs.
 
-# Comment
+# About the Author
 
 Thank you for reading this article. My name is Tobias Baumann and I'm a self-employed FPGA Developer and DevOps enthusiast. If you have any questions, don't hesitate to get in contact with me (simply google for "tobias baumann fpga" - you can't miss me ;-)).
 
