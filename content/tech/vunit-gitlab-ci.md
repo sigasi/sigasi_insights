@@ -26,7 +26,7 @@ A demonstration project can be found at [Sigasi public repository on gitlab.com]
 
 To run the testbench, a public Docker image with GHDL and VUnit, procided by the GHDL maintainers, is used. This makes the project ready to start, you can simply fork it into your Gitlab account and play around.
 
-# Part 2: Prerequisites
+## Part 2: Prerequisites
 
 - **GHDL**, supported since [Sigasi 3.7](releasenotes/sigasi-3.07.html) (this article uses GHDL because it's open - other verification tools supported by Sigasi are working as well)
 - **VUnit Flow** is working within your Sigasi installation, supported since [Sigasi 4.1](releasenotes/sigasi-4.01.html)
