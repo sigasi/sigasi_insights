@@ -3,12 +3,30 @@ title: "Using VUnit in a Gitlab CI Verification Environment"
 layout: page
 pager: true
 author: Tobias Baumann
-date: 2022-11-27
+date: 2022-12-02
 comments: true
 bannerad: true
 ---
 
-# Prerequisites
+# Introduction
+
+Continuous Integration (CI) and continuous Deployment (CD) are getting more and more important in todays development processes, especially when working agile/lean by using DevOps principles. It helps to find errors earlier, makes designs more reliable and in the end it takes pressure from the FPGA developers who have too often too long days and nights to meet deadlines.
+
+In a CI process, unit tests run after every commit to ensure that changes doesn't break the functionality of existing code. In the past, employees were needed to carry out tests by hand. Today, these tests are automatically carried out on a server and a test protocol is generated. Ideally, commits are avoided for deployment if tests are failing.
+
+One framework for running these tests automatically is [VUnit](https://vunit.github.io/), which is open and actively under development with regular bugfixes and new feature implementations. The establishment and use of VUnit is assumed to be known and is outside the scope of this article.
+
+Since version 4.1, Sigasi had a user friendly way to manage VUnit projects. This is very important, because on the one hand, users do verification when it is easy to use and set up. And on the other hand, the local verification runs the same way as in the CI process on the server side. This prevents wasting debug time by using different verification environments. The operation part of your DevOps team will be pretty thankful for that.
+
+# Getting Started
+
+## Part 1: Intoduction to the Example Project
+
+A demonstration project can be found at [Sigasi public repository on gitlab.com](https://gitlab.com/sigasi/public/vunit-ci). The repository contains an VHDL design of a 74161 4-bit counter, a self-checking VUnit testbench and a Gitlab CI configuration.
+
+To run the testbench, a public Docker image with GHDL and VUnit, procided by the GHDL maintainers, is used. This makes the project ready to start, you can simply fork it into your Gitlab account and play around.
+
+# Part 2: Prerequisites
 
 - **GHDL**, supported since [Sigasi 3.7](releasenotes/sigasi-3.07.html) (this article uses GHDL because it's open - other verification tools supported by Sigasi are working as well)
 - **VUnit Flow** is working within your Sigasi installation, supported since [Sigasi 4.1](releasenotes/sigasi-4.01.html)
@@ -18,40 +36,22 @@ This tech article uses GHDL within a [Docker Container](https://www.docker.com/)
 
 The Git repositories for demonstrating the content of this article and other Sigasi features can be found under [https://gitlab.com/Elpra/sigasi-demos/vunit-example-ci](https://gitlab.com/Elpra/sigasi-demos/vunit-example-ci).
 
-# Introduction
+## Part 3: Let's Setup a local Development Environment
 
-Continous Integration (CI) and Continous Deployment (CD) are getting more and more important in todays development processes, especially when working agile/lean by using DevOps principles. It helps to find errors earlier, makes designs more reliable and in the end it takes pressure from the FPGA developers who have too often too long days in playing fire brigade.
-
-In a CI process, unit tests run after every commit to ensure that changes doesn't break functionality of existing code. In the past, employees were needed to carry out tests by hand. Today, these tests are automatically carried out on a server and a test protocol is generated. Ideally, commits are avoided for deployment if tests are failing.
-
-One framework for running these tests automatically is [VUnit](https://vunit.github.io/), which is open and actively under development with regular bugfixes and nw feature implementations. The establishment and use of VUnit is assumed to be known and is outside the scope of this article.
-
-Since Sigasi 4.1, VUnit projects can be managed pretty user friendly. This is very important, because on the one hand, users do verification when it is easy to use and setup. And on the other hand, the local verification runs the same way as in the CI process on the server side. This prevents wasting debug time by using different verification environments. The operation part of your DevOps team will be pretty thankful for that.
-
-# Getting Started
-
-## Part 1: Intoduction to the Example Project
-
-A demonstration project can be found at [Sigasi public repository on gitlab.com](https://gitlab.com/sigasi/public/vunit-ci). The repository contains an VHDL design for a 74161 4-bit counter, a self-checking VUnit testbench and a Gitlab CI configuration.
-
-To run the testbench, a public Docker image with GHDL and VUnit, procided by the GHDL maintainers, is used. This makes the project ready to start, you can simply fork it into your Gitlab account and play around.
-
-## Part 1: Let's Setup a local Development Environment
-
-As starting point, you can fork the example project into your Gitlab.com account and import it in Sigasi. The project is ready to go with the Sigasi VUnit Integration. If you are not familiar with the Sigasi VUnit integration, you should have a look into the [
+As a starting point, you can fork the example project into your Gitlab.com account and import it in Sigasi. The project is ready to go with the Sigasi VUnit Integration. If you are not familiar with the Sigasi VUnit integration, you should have a look into the [
 VUnit projects in Sigasi Studio](https://insights.sigasi.com/tech/vunit-integration) tech article.
 
 After running the VUnit tests in Sigasi, you will see six executed tests in the VUnit tree, whereby one is failing (which is intended at the moment).
 
 {{< figure src="/img/tech/vunit-gitlab-ci/vunit-view.png" alt="VUnit View showing six executed tests including one failing." class="uk-align-center" >}}
 
-Let's see how a simple development process could look like, to fix this failing test. In DevOps language, we call this `looking for green builds`. You will see in a few moments, what this will mean. ;-)
+In the next parts, we will learn how a simple development process could look like, to enforce developers to identify failing tests and fix them before releasing their changes into the target branch. In DevOps language, we call this `looking for green builds`. You will see in a few moments what this will mean. ;-)
 
-## Part 2: Let's Setup a remote CI Environment
+## Part 4: Let's Setup a remote CI Environment
 
-Now you have run your project with VUnit locally and you have forked it into your own Gitlab.com repository, it is time to get the Ci pipeline running. The CI pipeline in Gitlab can either be triggered manually, time scheduled or, what we prefer here, on every commit pushed to server.
+Now you have run your project with VUnit locally and you have forked it into your own Gitlab.com repository, it is time to get the CI pipeline running. The CI pipeline in Gitlab can either be triggered manually, time scheduled or, what we prefer here, on every commit pushed to server.
 
-To run initially the CI pipeline immediately after forking, you can go to the `CI/CD` menue and click on the `Run pipeline` button. Keep settings as they are and click on `Run pipeline`. While waiting for the execution, let's have a look into the Gitlab CI configuration file `.gitlab-ci.yml`. All the Gitlab CI configuration are within this file and the main advantage compared to e.g. Jenkins is, that this flow puts your CI process in parallel to your code also under version management. This unifies software version and configuration management in one single process and ensures that you reproducible builds.
+To run the CI pipeline immediately after forking, you can go to the `CI/CD` menue and click on the `Run pipeline` button. Keep settings as they are and click on `Run pipeline`. While waiting for the execution, let's have a look into the Gitlab CI configuration file `.gitlab-ci.yml`. All the Gitlab CI configuration are within this file and the main advantage compared to e.g. Jenkins is, that this flow puts your CI process in parallel to your code also under version management. This unifies software version and configuration management in one single process and ensures that you reproducible builds.
 
 The Gitlab CI definition is `YAML` file. It's syntax is very detailed explained in the official [Gitlab documentation](https://docs.gitlab.com/ee/ci/yaml/).
 
@@ -79,7 +79,7 @@ VUnit produces its outputs by default in the `vunit_out` folder. We can tell thi
 
 After reading this section, your trigered pipeline should be finished executing. And due we have a failed test, we have a `red build` like expected. Now we can focus on getting a `green build`.
 
-## Part 2: If it's broken - fix it!
+## Part 5: If it's broken - fix it!
 
 Within a good development process, only green builds can be merged into the target branch. This is what Gitlab manages for us. Therefore we have to fix something.
 
@@ -92,7 +92,7 @@ The current demonstration have implemented an intentionally failure test. See `t
             end if;
 ```
 
-Simply remove these both lines and verify locally in Sigasi that all tests are running now successfully. When the VUnit View shows zero errors, commit the changes and push them into your remote target. The Gitlab CI pipeline should trigger now and produce a green build.
+Simply remove these two lines and verify locally in Sigasi that all tests are running now successfully. When the VUnit View shows zero errors, commit the changes and push them into your remote target. The Gitlab CI pipeline should trigger now and produce a green build.
 
 You successfully fixed your design, which is now ready to merge and deploy. Congratulations, to your first green CI build!
 
@@ -100,4 +100,6 @@ In daily business, your design will propably be much more complex and even the r
 
 # Comment
 
-I wrote this article neither as employee of Sigasi nor of VUnit and Gitlab or any other tool mentioned. I'm just a Sigasi user (since 2011) who is happy with this piece of software. Because `Continous Integration` and `Continous Deployment` is becoming more and more important, especially in large and safty critical designs, I'm pretty glad that the Sigasi team put in VUnit support in their software. This is why I decided to wrote this tech article which hopefully inspire others to optimize their development processes.
+Thank you for reading this article. My name is Tobias Baumann and I'm a self-employed FPGA Developer and DevOps enthusiast. If you have any questions, don't hesitate to get in contact with me (simply google for "tobias baumann fpga" - you can't miss me ;-)).
+
+I wrote this article neither as employee of Sigasi nor of VUnit, Gitlab or any other tool mentioned. I'm just a Sigasi user (since 2011) who is happy with this piece of software. Because `Continuous Integration` and `Continuous Deployment` is becoming more and more important, especially in large and safety critical designs, I'm pretty glad that the Sigasi team put in VUnit support in their software. This is why I decided to wrote this tech article which hopefully inspire others to optimize their development processes.
