@@ -45,7 +45,7 @@ After running the VUnit tests in Sigasi, you will see six executed tests in the 
 
 {{< figure src="/img/tech/vunit-gitlab-ci/vunit-view.png" alt="VUnit View showing six executed tests including one failing." class="uk-align-center" >}}
 
-In the next parts, we will learn how a simple development process could look like, to enforce developers to identify failing tests and fix them before releasing their changes into the target branch. In DevOps language, we call this `looking for green builds`. You will see in a few moments what this will mean. ;-)
+In the next parts, we will learn what a simple development process could look like, to enforce developers to identify failing tests and fix them before releasing their changes into the target branch. In DevOps language, we call this `looking for green builds`. You will see in a few moments what this will mean. ;-)
 
 ## Part 4: Let's Setup a remote CI Environment
 
