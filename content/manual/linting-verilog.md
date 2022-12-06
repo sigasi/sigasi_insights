@@ -68,8 +68,10 @@ XL code rules require a {{< xl >}} or {{< xprt >}} license.
 |                           | [Non-blocking assignments are not allowed in functions]({{< ref "rules/verilog_function/#non-blocking-assignments-are-not-allowed-in-functions" >}})           | 41 |
 |                           | [Consecutive underscores in unit / port identifier]({{< ref "rules/verilog_identifiers/#underscores-in-identifier-names" >}})                                  | 42 |
 |                           | [Underscores at end of unit / port identifier]({{< ref "rules/verilog_identifiers/#underscores-in-identifier-names" >}})                                       | 43 |
+|                           | [Report encrypted regions]({{< ref "rules/verilog_style/#report-encrypted-regions" >}})                                                                        | 44 |
 |                           | [Multiple statements per line]({{< ref "rules/verilog_style/#multiple-statements-per-line" >}})                                                                | 47 |
 |                           | [Missing bit width for parameters wider than 32 bits]({{< ref "rules/verilog_parameters/#parameters-wider-than-32-bits" >}})                                   | 48 |
 |                           | [Trailing comma is not recommended]({{< ref "rules/verilog_style/#trailing-comma-is-not-recommended" >}})                                                      | 52 |
 |                           | [Empty parameter not allowed]({{< ref "rules/verilog_parameters/#empty-parameter-overrides-not-allowed" >}})                                                   | 53 |
 |                           | [Empty parameter overrides not allowed]({{< ref "rules/verilog_parameters/#project-specific-setting-of-these-rules" >}})                                       | 54 |
+|                           | [Regular expressions (RE2/J) compatibility check]({{< ref "rules/verilog_style/#regular-expressions-compatibility" >}})                                         | 58 |

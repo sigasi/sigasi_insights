@@ -34,11 +34,20 @@ the workspace or project linting settings (rule 21).
 
 ## File header comment does not match required pattern
 
-Many conding standards require presense of header comment in every file, matching a certain format. Sigasi Studio can check whether the file
+Many coding standards require the presence of a header comment in every file, matching a certain format. Sigasi Studio can check whether the file
 header comment matches a pattern (rule 22). By default, the pattern is empty which turns this check off.
-The pattern can be configured through **Window > Preferences > Sigasi > (System)Verilog > Naming conventions > File header* and uses
+The pattern can be configured through **Window > Preferences > Sigasi > (System)Verilog > Naming conventions > File header** and uses
 the [regex syntax](https://sigasi.com/app/regex).
 More information on file header comment checking is available [here](/manual/linting/#naming-conventions).
+
+## Report encrypted regions
+
+Starting with Verilog 2005, regions of Verilog and SystemVerilog files
+may be encrypted to protect intellectual property.  Sigasi obviously
+won't check the content of these regions.  Optionally, Sigasi can flag
+the presence of encrypted regions in your code (rule 44). This rule is
+off by default (i.e. set to `IGNORE`) but can be enabled (as info,
+warning, or error) as required.
 
 ## Multiple statements per line
 
@@ -76,4 +85,14 @@ Most EDA tools will treat a trailing comma as a syntax error.
 module nice #<span class="goodcode">(WIDTH = 16)</span> (
     // ...</pre>
 
-{{% lintrule sv 17 18 20 21 22 47 52 %}}
+## Regular expressions compatibility
+
+[Naming conventions](/manual/linting/#naming-conventions) in Sigasi
+use [*RE2/J* regular expressions](https://www.sigasi.com/app/regex).
+RE2/J expressions mitigate potential performance problems that are
+caused by some shapes of regular expressions using the regular Java
+regular expression engine.  Sigasi will warn if a naming convention
+rule contains a regular expression which is incompatible with RE2/J
+(rule 58).
+
+{{% lintrule sv 17 18 20 21 22 44 47 52 58 %}}

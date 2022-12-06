@@ -43,7 +43,7 @@ Windows SmartScreen, Mac OS, and malware detection software will no longer raise
 
 # New and improved regex engine
 
-Regular expressions are used in many parts of Sigasi Studio. The most visible feature using it is the [Naming Conventions]({{< ref "manual/rules/naming-conventions.md" >}}), where you can fill in their own expressions to be used in validations.
+Regular expressions are used in many parts of Sigasi Studio. The most visible feature using it is the [Naming Conventions]({{< ref "manual/rules/naming-conventions.md" >}}), where you can fill in your own expressions to be used in validations.
 Next to writing syntax errors however, a regex can easily incur a large, exponential performance hit.
 A small change to a regex can cause a high amount of backtracking, skyrocketing its execution time.
 
