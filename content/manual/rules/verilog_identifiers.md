@@ -1,5 +1,5 @@
 ---
-title: Verilog identifiers
+title: Verilog identifiers and data types
 ---
 
 ## VHDL keywords as module name
@@ -31,5 +31,25 @@ endmodule
 module <span class="goodcode">goodcode</span>(input <span class="goodcode">clk</span>);
 endmodule</pre>
 
+## Non-packed member in packed struct or union
 
-{{% lintrule sv 7 42 43 %}}
+Packed structures and unions can only contain members of packed data types and integer data types (rule 59).
+
+<pre>class AClass; endclass
+
+typedef struct packed { <span class="goodcode">int a;</span>    } intstruct;
+typedef struct packed { <span class="badcode">real a;</span>   } realstruct;
+typedef struct packed { <span class="badcode">AClass a;</span> } classstruct;</pre>
+
+
+## Illegal type in untagged union
+
+Dynamic types and chandle types can not be used in untagged unions (rule 60).
+
+<pre>class AClass; endclass
+
+typedef union { <span class="goodcode">int a;</span>    } intunion;
+typedef union { <span class="badcode">string a;</span> } stringunion;
+typedef union { <span class="badcode">AClass a;</span> } classunion;</pre>
+
+{{% lintrule sv 7 42 43 59 60 %}}

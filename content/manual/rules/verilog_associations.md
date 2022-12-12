@@ -162,4 +162,39 @@ endmodule</pre>
 
 Note that if there are too few positional parameter or port connections, an error for [missing connections]({{< ref "#missing-actuals-for-formals-that-have-no-default-value" >}}) will be flagged.
 
-{{% lintrule sv 24 26 36 38 %}}
+## Named connections are not allowed with blank ports
+
+If an instantiated module contains a *null port*, the instantiation must use port association by order and not by name (rule 56).
+
+<pre>module sub(
+	input clk,
+	,             // this is a *null port*
+	input rst
+);
+endmodule
+
+module badtop;
+    sub sub_instance(
+        <span class="badcode">.clk(clk)</span>,
+        <span class="badcode">.rst(rst)</span>
+    );
+endmodule
+
+module goodtop1;
+    sub sub_instance(
+        <span class="goodcode">,clk</span>
+        <span class="goodcode">,</span>
+        <span class="goodcode">rst</span>
+    );
+endmodule
+
+module goodtop2;
+    sub sub_instance(
+        <span class="goodcode">clk,</span>
+        <span class="goodcode">foo,</span>
+        <span class="goodcode">rst</span>
+    );
+endmodule</pre>
+
+
+{{% lintrule sv 24 26 36 38 56 %}}

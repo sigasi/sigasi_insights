@@ -31,6 +31,8 @@ ST code rules are available for all licenses including {{< starter >}}.
 |                                       | Timing controls are not allowed in functions                                                                                                                   | 46 |
 |                                       | Net data types must be 4-state                                                                                                                                 | 50 |
 |                                       | Net data types integral                                                                                                                                        | 51 |
+|                                       | Invalid package item                                                                                                                                           | 55 |
+|                                       | Unexpected preprocessor directive inside design elements                                                                                                       | 57 |
 
 <!--|                                       | A verilog `net` type keyword cannot be followed directly by the `reg` keyword                                                                                  |  4 |-->
 
@@ -72,6 +74,9 @@ XL code rules require a {{< xl >}} or {{< xprt >}} license.
 |                           | [Multiple statements per line]({{< ref "rules/verilog_style/#multiple-statements-per-line" >}})                                                                | 47 |
 |                           | [Missing bit width for parameters wider than 32 bits]({{< ref "rules/verilog_parameters/#parameters-wider-than-32-bits" >}})                                   | 48 |
 |                           | [Trailing comma is not recommended]({{< ref "rules/verilog_style/#trailing-comma-is-not-recommended" >}})                                                      | 52 |
-|                           | [Empty parameter not allowed]({{< ref "rules/verilog_parameters/#empty-parameter-overrides-not-allowed" >}})                                                   | 53 |
-|                           | [Empty parameter overrides not allowed]({{< ref "rules/verilog_parameters/#project-specific-setting-of-these-rules" >}})                                       | 54 |
-|                           | [Regular expressions (RE2/J) compatibility check]({{< ref "rules/verilog_style/#regular-expressions-compatibility" >}})                                         | 58 |
+|                           | [Empty parameter not allowed]({{< ref "rules/verilog_parameters/#empty-parameter-not-allowed" >}})                                                             | 53 |
+|                           | [Empty parameter overrides not allowed]({{< ref "rules/verilog_parameters/#empty-parameter-overrides-not-allowed" >}})                                         | 54 |
+|                           | [Named connections are not allowed with blank ports]({{< ref "rules/verilog_parameters/#project-specific-setting-of-these-rules" >}})                          | 56 |
+|                           | [Regular expressions (RE2/J) compatibility check]({{< ref "rules/verilog_style/#regular-expressions-compatibility" >}})                                        | 58 |
+|                           | [Non-packed member in packed structure]({{< ref "rules/verilog_identifiers/#non-packed-member-in-packed-structure" >}})                                        | 59 |
+|                           | [Illegal type in untagged union]({{< ref "rules/verilog_identifiers/#illegal-type-in-untagged-union" >}})                                                      | 60 |
