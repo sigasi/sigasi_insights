@@ -33,6 +33,8 @@ ST code rules are available for all licenses including {{< starter >}}.
 |                                       | Net data types integral                                                                                                                                        | 51 |
 |                                       | Invalid package item                                                                                                                                           | 55 |
 |                                       | Unexpected preprocessor directive inside design elements                                                                                                       | 57 |
+|                                       | [Non-packed member in packed structure]({{< ref "rules/verilog_identifiers/#non-packed-member-in-packed-structure" >}})                                        | 59 |
+|                                       | [Illegal type in untagged union]({{< ref "rules/verilog_identifiers/#illegal-type-in-untagged-union" >}})                                                      | 60 |
 
 <!--|                                       | A verilog `net` type keyword cannot be followed directly by the `reg` keyword                                                                                  |  4 |-->
 
@@ -78,5 +80,3 @@ XL code rules require a {{< xl >}} or {{< xprt >}} license.
 |                           | [Empty parameter overrides not allowed]({{< ref "rules/verilog_parameters/#empty-parameter-overrides-not-allowed" >}})                                         | 54 |
 |                           | [Named connections are not allowed with blank ports]({{< ref "rules/verilog_parameters/#project-specific-setting-of-these-rules" >}})                          | 56 |
 |                           | [Regular expressions (RE2/J) compatibility check]({{< ref "rules/verilog_style/#regular-expressions-compatibility" >}})                                        | 58 |
-|                           | [Non-packed member in packed structure]({{< ref "rules/verilog_identifiers/#non-packed-member-in-packed-structure" >}})                                        | 59 |
-|                           | [Illegal type in untagged union]({{< ref "rules/verilog_identifiers/#illegal-type-in-untagged-union" >}})                                                      | 60 |
