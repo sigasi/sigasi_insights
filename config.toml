@@ -177,7 +177,3 @@ pygmentsUseClasses = "true"
     url = "/tech/"
     name = "Tech Articles"
     weight = 7
-  [[menu.mobile]]
-    url = "/opinion/"
-    name = "Opinion"
-    weight = 8
