@@ -11,13 +11,6 @@ Sigasi Veresta is the Command Line Interface (CLI) that brings the Sigasi techno
 
 # Requirements
 
-## Java Runtime
-
-You will need to have a Java Runtime (JRE) installed in order to run Sigasi Veresta.
-
-- The Java runtime must be 64-bit. Make sure to use at least **JRE 11**
-- You can check your Java version with `java -version`
-
 ## License
 
 In order to use Sigasi Veresta you will need a license. The license can be configured by either:
@@ -29,15 +22,16 @@ In order to use Sigasi Veresta you will need a license. The license can be confi
 
 For more information about licenses, please refer to our [manual](/manual/license-key).
 
+If the license is not available, Veresta will start polling the license server at regular intervals until the license can be obtained.
 # Installation
 
-To install Sigasi Veresta, obtain a build ZIP and extract it.
-Then use either `sigasi-cli` (Linux / Mac) or `sigasi-cli.bat` (Windows).
+To install Sigasi Veresta, obtain a build ZIP for your operating system and extract it.
+Then use either `veresta` (Linux) or `veresta.bat` (Windows).
 
 # Usage
 
 ```
-sigasi-cli [COMMAND] [ARGUMENTS]
+veresta [COMMAND] [ARGUMENTS]
 ```
 
 ## Help
@@ -46,8 +40,8 @@ You can get usage information by adding the `--help` or `-h` flag.
 You can also use this flag for each command to get usage information for those commands specifically.
 
 <pre>
-<span class="no-select">$ </span>sigasi-cli --help
-Usage: <b>sigasi-cli</b> [<span style="color:#C4A000">-hV</span>] [<span style="color:#C4A000">-v</span> | <span style="color:#C4A000">--debug</span>] [COMMAND]
+<span class="no-select">$ </span>veresta --help
+Usage: <b>veresta</b> [<span style="color:#C4A000">-hV</span>] [<span style="color:#C4A000">-v</span> | <span style="color:#C4A000">--debug</span>] [COMMAND]
   <span style="color:#C4A000">-h</span>, <span style="color:#C4A000">--help</span>      Show this help message and exit.
   <span style="color:#C4A000">-V</span>, <span style="color:#C4A000">--version</span>   Print version information and exit.
 Logging Options:
@@ -69,11 +63,11 @@ To turn on verbose output, use any of the following flags.
 # Verify
 
 The `verify` command allows you to check an entire Sigasi project for issues.
-Issues can be reported in different formats such as **plain**, **JSON** or **XML**.
+Issues can be reported in different formats such as **plain text**, **JSON** or **XML**.
 
 <pre>
-<span class="no-select">$ </span>sigasi-cli verify --help
-Usage: <b>sigasi-cli verify</b> [OPTIONS] [<span style="color:#C4A000">PROJECT</span>...]
+<span class="no-select">$ </span>veresta verify --help
+Usage: <b>veresta verify</b> [OPTIONS] [<span style="color:#C4A000">PROJECT</span>...]
 Validate the project.
       [<span style="color:#C4A000">PROJECT</span>...]           One or more project folders.
   <span style="color:#C4A000">-h</span>, <span style="color:#C4A000">--help</span>                 Show this help message and exit.
@@ -81,10 +75,13 @@ Validate the project.
 Logging Options:
 <span style="color:#C4A000"> </span> <span style="color:#C4A000">-v</span>, <span style="color:#C4A000">--verbose</span>              Output more to the console.
 <span style="color:#C4A000"> </span>     <span style="color:#C4A000">--debug</span>                Output debug information to the console.
+Project Options:
+  <span style="color:#C4A000">-P</span>, <span style="color:#C4A000">--path</span>=<i>&lt;key=value&gt;</i>     Custom path variables.
 Output Options:
   <span style="color:#C4A000">-o</span>, <span style="color:#C4A000">--out</span>=<i>FILE</i>             File to write the output to.
 <span style="color:#C4A000"> </span>     <span style="color:#C4A000">--plain</span>                Output in plain format.
 <span style="color:#C4A000"> </span>     <span style="color:#C4A000">--json</span>                 Output in JSON format.
+<span style="color:#C4A000"> </span>     <span style="color:#C4A000">--sonarqube</span>            Output in SonarQube format.
 <span style="color:#C4A000"> </span>     <span style="color:#C4A000">--warnings-ng</span>          Output in Warnings NG XML format.
 Execution Options:
 <span style="color:#C4A000"> </span>     <span style="color:#C4A000">--fail-on-error</span>        Fail on any error marker.
@@ -92,6 +89,30 @@ Execution Options:
 <span style="color:#C4A000"> </span>     <span style="color:#C4A000">--fail-on-info</span>         Fail on any info, warning or error marker.
       <span style="color:#C4A000">--include-suppressed</span>   Include suppressed issues in output.
 </pre>
+
+## Project Options
+
+Sigasi projects sometimes use environment variables to point at
+external files and folders, e.g. at the location of your VUnit
+installation. These variables are set in the IDE, but Veresta is not aware
+of these variables by default. Also, the environment in which you run
+Veresta (e.g. your CI server) may be different from the environment in
+which you run Sigasi Studio. For example, VUnit may be installed in a
+different location in each environment.
+
+Using `-P` or `--path`, you can specify the value of the different
+PATH variables in your `.project` file. For example, if your
+`.project` file contains a linked folder like this:
+<pre>&lt;link&gt;
+        &lt;name&gt;Common Libraries/vunit_include&lt;/name&gt;
+        &lt;type&gt;2&lt;/type&gt;
+        &lt;locationURI&gt;<SPAN STYLE="font-weight:bold">VUNIT</SPAN>/verilog/include&lt;/locationURI&gt;
+&lt;/link&gt;</pre>
+You can set the `VUNIT` variable to the path of your VUnit installation:
+<pre><span class="no-select">$ </span>veresta verify <b>--path=VUNIT=/path/to/vunit/installation</b> [FURTHER OPTIONS]</pre>
+
+You can use `-P` or `--path` multiple times to specify the value of
+multiple PATH variables.
 
 ## Output Options
 
@@ -102,11 +123,12 @@ Execution Options:
 | *default*       | colored, suitable for terminal                                        |
 | `--plain`       | colorless                                                             |
 | `--json`        | JSON format, more detailed                                            |
+| `--sonarqube`   | JSON format for [SonarQube](https://www.sonarqube.org/)               |
 | `--warnings-ng` | XML format for [Warnings NG](https://plugins.jenkins.io/warnings-ng/) |
 
 #### Plain
 
-By default, the verify command will output a single line of information for each issue found.
+By default, the `verify` command will output a single line of information for each issue found.
 This includes the path, line and column where the issue is located, the severity and a message.
 If you want to use this format but without coloring, you can use the `--plain` flag.
 
@@ -139,14 +161,17 @@ If you want more detailed information for each issue you can use the JSON output
       "column": 17,
       "columnEnd": 37,
       "severity": "WARNING",
-      "code": "144",
+      "code": "com.sigasi.hdt.vhdl.Vhdl.144",
       "codeDescription": "Array assignment validation",
-      "category": "Range validation",
-      "languageQualifier": "com.sigasi.hdt.vhdl.Vhdl"
-    },
-
-    ...
+      "category": "Range validation"
+    }
+  ]
+}
 ```
+
+#### SonarQube
+
+To import issues into [SonarQube](https://www.sonarqube.org/), use the `--sonarqube` flag to output issues in a format that can be interpreted by SonarQube. First output the issues into a file, then pass them to SonarQube by adding the `sonar.externalIssuesReportPaths` parameter. More info can be found [here](https://docs.sonarqube.org/latest/analysis/generic-issue/).
 
 #### Warnings NG
 
@@ -156,11 +181,11 @@ To do this, add the following to your `Jenkinsfile`:
 
 ```groovy
 // Specify the path of your Sigasi Veresta installation
-final String SigasiVeresta = "/opt/sigasi-cli/sigasi-cli"
+final String veresta = "/opt/sigasi-veresta/veresta"
 // ...
 
 // Add the following somewhere in your build step
-sh "${SigasiVeresta} verify --warnings-ng --out sigasi-issues.xml ."
+sh "${veresta} verify --warnings-ng --out sigasi-issues.xml ."
 // ...
 
 // Add this to your 'post' step
@@ -175,9 +200,9 @@ recordIssues(
 To save the output to a file you can use one of the output options (`--out` or `-o`) or, on Linux, redirect the output using `>`.
 
 <pre>
-<span class="no-select">$ </span>sigasi-cli verify -o markers.txt .
-<span class="no-select">$ </span>sigasi-cli verify --out=markers.txt .
-<span class="no-select">$ </span>sigasi-cli verify . > markers.txt
+<span class="no-select">$ </span>veresta verify -o markers.txt .
+<span class="no-select">$ </span>veresta verify --out=markers.txt .
+<span class="no-select">$ </span>veresta verify . > markers.txt
 </pre>
 
 ## Execution Options
@@ -201,10 +226,10 @@ Suppressed issues are filtered from the output by default, as we consider these 
 If you do want to include suppressed issues in the output, add the `--include-suppressed` option:
 
 <pre>
-<span class="no-select">$ </span>sigasi-cli verify --include-suppressed .
+<span class="no-select">$ </span>veresta verify --include-suppressed .
 </pre>
 
-*Note that this option is ignored when using the `--warnings-ng` format.*
+*Note that this option is ignored when using the `--sonarqube` or `--warnings-ng` format.*
 
 # Exit codes
 
@@ -217,4 +242,4 @@ If this is not the case, refer to the following table.
 | `1`  | Unhandled exception occurred.                            |
 | `2`  | Invalid command line arguments / options.                |
 | `7`  | License problem. Make sure a valid license is available. |
-| `16` | Verification severity threshold reached. |
+| `16` | Verification severity threshold reached.                 |
