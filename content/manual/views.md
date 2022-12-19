@@ -12,22 +12,22 @@ highlighted.
 {{< figure src="/img/manual/sigasiviewsannotated.png" >}}
 
 The views provide alternative ways to access the information in a
-project. They permit efficient navigation, inspection and editing.
+project. They permit efficient navigation, inspection, and editing.
 
-This chapter lists and explains the most important views in Sigasi Studio. Some views are not covered here, more specifically some views that are either inherited from Eclipse, or views that are provided by third-party plugins. Please refer to the Eclipse documentation or to the specific plugin documentation for further information on those views.
+This chapter lists and explains the most important views of Sigasi Studio. Some views are not covered here, more specifically some views that are either inherited from Eclipse, or views that are provided by third-party plugins. Please refer to the Eclipse documentation or the specific plugin documentation for further information on those views.
 
 You can open a view in several different ways:
 
 * By typing the view name in the [Quick Access](/manual/user_interface#quick-access) field
 * Via **Window > Show View**. If the view is not in the visible list, choose **Other...** and select the view in the selection dialog.
-* By right clicking in the **editor** and selecting **Show in > ...**.  
-  Some views also support to open the current selection (e.g. the [Block Diagram View]({{< ref "#block-diagram-view" >}})). This selects the element in the view that corresponds to the current selection in the editor.
+By right-clicking in the **editor** and selecting **Show in > ...**.
+  Some views also support opening the current selection (e.g. the [Block Diagram View]({{< ref "#block-diagram-view" >}})). This selects the element in the view that corresponds to the current selection in the editor.
 
 # Project Explorer View
 
 This view shows the directory structure of all files in all projects.
 You can use it to navigate to a particular file in your project and
-select it. When you double click on a file, the file opens in the Editor
+select it. When you double-click on a file, the file opens in the Editor
 view. If you right-click a file, you see the *context menu* which offers
 extra commands.
 
@@ -44,13 +44,13 @@ You can apply filters to choose which files are shown. Select the icon
 will be hidden in the view. For example, you can filter out all non-VHDL
 or non-Verilog files.
 
-The **Project Explorer** View provides textual and graphical _Label Decorations_ which can be controlled
+The **Project Explorer** View provides textual and graphical *Label Decorations* which can be controlled
 in **Window > Preferences > General > Appearance > Label Decorations**.
-Label decorators are a visual guide on the state of projects, folders and files.
+Label decorators are a visual guide on the state of projects, folders, and files.
 Decorators can depend on various plugins.
-The following descriptions apply to Sigasi specific decorators.
+The following descriptions apply to Sigasi-specific decorators.
 
-* Sigasi Studio adds text decorators to the right to indicate which library a project, file or folder is mapped in. The [library name]({{< ref "libraries.md#examining-the-library-configuration" >}}) is denoted in square brackets.
+* Sigasi Studio adds text decorators to the right to indicate which library a project, file, or folder is mapped in. The [library name]({{< ref "libraries.md#examining-the-library-configuration" >}}) is denoted in square brackets.
 * If a project is in a different folder than the workspace, this is denoted within round brackets.
 * Other text decorators to the right of a project are probably from the [Git plugin]({{< ref "plugins.md#git" >}}). The repository name and branch are denoted with square brackets.
 * Open HDL projects have a bridge-like overlay ![bridge-like overlay icon](/img/icons/project.png) in the top right corner of the project icon.
@@ -62,8 +62,8 @@ The following descriptions apply to Sigasi specific decorators.
 
 # Editor View
 
-The Editor View shows the content of files, and allows you to edit
-files. It is a tabbed view so that multiple files can be open for
+The Editor View shows the content of files and allows you to edit
+files. It is a tabbed view so that multiple files can be opened for
 editing simultaneously. The currently selected file is the active file.
 
 * [Sigasi Studio Editor](/manual/editor)
@@ -89,12 +89,12 @@ the editor.
 
 ## Quick Outline View
 
-You can also press **Ctrl+O** to open the _quick outline_.
+You can also press **Ctrl+O** to open the *quick outline*.
 
 {{< figure src="/img/manual/quick_outline.png" >}}
 
-This is just the outline view in a popup, but it also allows you to filter the shown elements.  
-This way, the quick outline can be used as a _semantic_ **Ctrl+F**, making it very easy to find a declaration in your open editor.
+This is just the outline view in a popup, but it also allows you to filter the shown elements.
+This way, the quick outline can be used as a *semantic* **Ctrl+F**, making it very easy to find a declaration in your open editor.
 
 {{< figure src="/img/manual/quick_outline_filter.png" >}}
 
@@ -106,7 +106,7 @@ Pressing **Ctrl+O** again, when the quick outline is open, will also show the in
 
 # Hierarchy View
 
-The Hierarchy View shows the design hierarchy starting at a selected top level object. To choose a top level, open a file and right-click on an `architecture` (or `entity` or `configuration` or `module`). Then click **Set as Top Level**. Alternatively you can click the **Set Top** button in the Hierarchy View to open a hierarchy top level selection dialog. You can use the filter field to quickly search for a certain top level.
+The Hierarchy View shows the design hierarchy starting at a selected top level object. To choose a top level, open a file and right-click on an `architecture` (or `entity` or `configuration` or `module`). Then click **Set as Top Level**. Alternatively, you can click the **Set Top** button in the Hierarchy View to open a hierarchy top level selection dialog. You can use the filter field to quickly search for a certain top level.
 
 The Hierarchy View automatically refreshes itself when you save your design files. If you have a really large design this could slow you down. You can turn the automatic refresh on and off by toggling the **refresh** button ![refresh icon](/img/icons/refresh.gif).
 
@@ -118,22 +118,22 @@ Hierarchy View will report the value to be *unknown*.
 
 When you **double-click** an object in the hierarchy, the Editor view is updated accordingly, possibly by displaying the contents of a different file.
 
-Use the **instantiations** filter ![instantiations filter icon](/img/icons/instantiation.png), to hide everything except instantiations and structural statements are shown.
+Use the **instantiations** filter ![instantiations filter icon](/img/icons/instantiation.png) to hide everything except instantiations and structural statements.
 
-You can **launch a simulation** with the ![launch icon](/img/icons/run_exc.gif) button, if you first set up an [Launch simulator](/manual/tools#launch-simulator).
+You can **launch a simulation** with the ![launch icon](/img/icons/run_exc.gif) button if you first set up a [Launch simulator](/manual/tools#launch-simulator).
 
 The Hierarchy View also offers an action **Select required files**, which selects all design files that are part of the current hierarchy, in the project explorer. This allows you to easily perform the same action on all files in the hierarchy. E.g. team commands, ...
 
 {{< figure src="/img/manual/select_required_files_in_hierarchy.png" >}}
 
-You can also export a CSV-file with all dependencies of the selected element via the context menu: **right click** and select **Export Dependencies to CSV file**.
+You can also export a CSV file with all dependencies of the selected element via the context menu: **right-click** and select **Export Dependencies to CSV file**.
 
 # Problems View
 
 The Problems View shows problems (errors and warnings) related to your
 code. These problems were reported either by the internal compiler or by
 an external compiler tool.
-You can navigate to the source of the problem by double clicking on a
+You can navigate to the source of the problem by double-clicking on a
 given problem. Problems can be sorted by clicking the column headers.
 The content of this view can be customized via the **View Menu**
 ![View Menu icon](/img/icons/viewmenuicon.png) . Possible customizations are
@@ -146,13 +146,13 @@ problems, …
 
 The Libraries View shows the library mapping of the design units in all
 projects. You can use it to navigate to a particular design unit in your
-project. When you double click on a file, the file opens in the Editor
+project. When you double-click on a file, the file opens in the Editor
 view. If you right-click a file, you see the *context menu* which offers
 extra commands for [setting libraries](/manual/libraries#modifying-the-library-configuration) and for setting the top level.
 
 If you enable the **Link with Editor** button
 ![Link with Editor](/img/icons/linkprojectexplorer.png), the Library View will
-be linked to the Editor View. Now, active file in the Editor View will
+be linked to the Editor View. Now, the active file in the Editor View will
 always be selected in the Library View.
 
 # Tasks View
@@ -172,7 +172,7 @@ You can configure extra tags in the Task Tag preference page:
 
 {{< figure src="/img/manual/bookmarks-view.png" >}}
 
-You can easily add bookmarks by right clicking the line number where you want to add a bookmark.
+You can easily add bookmarks by right-clicking the line number where you want to add a bookmark.
 You can get an overview of all bookmarks in the **Bookmarks View**
 (**Window > Show View > Others...**).
 
@@ -183,7 +183,7 @@ The **Bookmarks View** can be used to delete bookmarks or navigate to the editor
 {{< xprt_only >}}
 
 The **Block Diagram View** displays a graphical (block diagram) view
-of all architectures, modules and their instantiations in your current VHDL or SystemVerilog editor.
+of all architectures, modules, and their instantiations in your current VHDL or SystemVerilog editor.
 VHDL processes are also shown in the block diagram.
 
 This viewer **automatically updates** while you are editing your code and
@@ -192,20 +192,20 @@ when your code is still unfinished or broken.
 
 {{< figure src="/img/manual/block_diagram.png" >}}
 
-You can open the Block Diagram View by right clicking in the editor and
-selecting **Show In \> Block Diagram**. Alternatively you can open the
+You can open the Block Diagram View by right-clicking in the editor and
+selecting **Show In \> Block Diagram**. Alternatively, you can open the
 view via **Window \> Show View \> Other… \> Sigasi \> Block Diagram**.
 
-You can also **double click blocks**, **ports** or **wires** to navigate
+You can also double-click **blocks**, **ports**, or **wires** to navigate
 to the corresponding HDL code. If you want to *go into* a block, you
-have to **select** it, right click and click **Open Entity Declaration**, **Open Architecture** or **Open Module**.
+have to **select** it, right-click and click **Open Entity Declaration**, **Open Architecture**, or **Open Module**.
 
 To find an object in the Block Diagram, you can navigate from your code to the Block Diagram.
-In your code, right-click a signal, port, process or instantiation and select **Show In > Block Diagram** - just like when opening the Block Diagram View the first time.
+In your code, right-click a signal, port, process, or instantiation and select **Show In > Block Diagram** - just like when opening the Block Diagram View the first time.
 If the Block Diagram already is open, the corresponding element is highlighted and the Block Diagram View is centered on it.
 
 You can export the Block Diagram View to an image with the save
-![Save icon](/img/icons/save.gif) button. Both **SVG** and **PNG** are supported. Choose a the \*.svg filename for SVG export or a \*.png filename for PNG export.
+![Save icon](/img/icons/save.gif) button. Both **SVG** and **PNG** are supported. Choose a \*.svg filename for SVG export or a \*.png filename for PNG export.
 
 You can also export **all** *block diagrams of an entire project* at once: Click **Project > Export... > Sigasi > Block Diagrams export** and select your project. All SVGs will be created in **diagrams/blockdiagrams/** in your project.
 
@@ -217,17 +217,17 @@ The **State Machine View** displays a graphical (bubble diagram) view of all sta
 
 {{< figure src="/img/manual/statemachineviewer.png" >}}
 
-You can open the State Machine View by right clicking in the editor and selecting **Show In > State Machines**. Alternatively you can open the view via **Window \> Show View \> Other… \> Sigasi \> State Machines**.
+You can open the State Machine View by right-clicking in the editor and selecting **Show In > State Machines**. Alternatively, you can open the view via **Window \> Show View \> Other… \> Sigasi \> State Machines**.
 
 If you have documented your state transitions (i.e. the assignments), the comments will be added as text to the transitions in the view.
 
 You can also **double-click nodes** or **transitions** to navigate to the corresponding HDL code.
 
 With the ![hide comments icon](/img/icons/hide_comments.png) button, you can toggle the display of comments on edge labels.  
-With the ![hide conditions icon](/img/icons/hide_conditions.png) button, you can toggle the display of comments on edge labels.  These labels show the code comments of the transition statements.  
-You also have to option to **Zoom In**, **Zoom Out** or **Zoom to Fit**.
+With the ![hide conditions icon](/img/icons/hide_conditions.png) button, you can toggle the display of comments on edge labels. These labels show the code comments of the transition statements.  
+You also have to option to **Zoom In**, **Zoom Out**, or **Zoom to Fit**.
 
-You can export state machines to an image with the save ![save icon](/img/icons/save.gif) button. Both **SVG** and **PNG** are supported. Choose a the \*.svg filename for SVG export or a \*.png filename for PNG export.
+You can export state machines to an image with the save ![save icon](/img/icons/save.gif) button. Both **SVG** and **PNG** are supported. Choose a \*.svg filename for SVG export or a \*.png filename for PNG export.
 
 You can also export **all** *state machines of an entire project* at once: Click **Project > Export... > Sigasi > State Machine Diagrams export** and select your project. All SVGs will be created in **diagrams/statemachines/** in your project.
 
@@ -235,7 +235,7 @@ Check out our [State Machine Viewer](/screencasts/state_machine_viewer) screenca
 
 # Dependencies View
 
-The **Dependencies View** visualizes the dependencies of your VHDL, SystemVerilog or *mixed language* projects.
+The **Dependencies View** visualizes the dependencies of your VHDL, SystemVerilog, or *mixed language* projects.
 This view shows the relationships between your source files and makes it easy to see *top levels* and important *packages*.
 The Dependencies View also makes it easy to detect *orphaned files*.
 
@@ -243,13 +243,13 @@ The view is *automatically updated* each time you save your files.
 
 {{< figure src="/img/releasenotes/3.8/dependencies_project_libraries_units.png" alt="Dependencies View for a complete project with libraries and design units" >}}
 
-The Dependencies View has following options:
+The Dependencies View has the following options:
 
-* ![open folder icon](/img/releasenotes/3.8/icon_project.png) show dependencies of entire projct. Uncheck to focus on the dependencies of the active editor only.
+* ![open folder icon](/img/releasenotes/3.8/icon_project.png) show dependencies of the entire project. Uncheck to focus on the dependencies of the active editor only.
 * ![library icon](/img/releasenotes/3.8/icon_libraries.png) Group design files per library
 * ![units icon](/img/releasenotes/3.8/icon_units.png) Show design units inside design files. The design units are prefixed with an abbreviation of their kind (**a**rchitecture, **m**odule, **p**ackage, ..." >}}
 
-The Dependencies View can help you **navigate** too. Double click a file name in the diagram to open the corresponding editor.
+The Dependencies View can help you **navigate** too. Double-click a file name in the diagram to open the corresponding editor.
 
 The Dependencies View can also be **pinned**. This prevents the diagram from changing when you switch editors.
 
@@ -288,16 +288,16 @@ double-clicking the search results.
 
 {{< figure src="/img/manual/vunit_view.png" >}}
 
-The VUnit View allows to get a quick overview of your VUnit test runs and to monitor ongoing test runs.
+The VUnit View allows you to get a quick overview of your VUnit test runs and to monitor ongoing test runs.
 
-With the icons on top of the view you can
+With the icons on top of the view, you can
 
 * Filter the output to show failures only
 * Rerun a test
 * Stop ongoing VUnit test runs
 * View the test run history
 
-More information is available in the [VUnit manual page]({{< ref "/manual/vunit.md" >}}).
+More information is available on the [VUnit manual page]({{< ref "/manual/vunit.md" >}}).
 
 # Preprocessor View
 
@@ -314,14 +314,14 @@ When you select text in the (System)Verilog editor, the expanded text will be hi
 
 ![Class Hierarchy View](/img/manual/class-hierarchy-view.png)
 
-The Class Hierarchy View displays more information of the hierarchy of a class. It consists of a hierarchy tree
+The Class Hierarchy View displays more information about the hierarchy of a class. It consists of a hierarchy tree
 and a list of the class members. To open the Class Hierarchy of a class, click the class name, right-click and select **Open Class in Hierarchy** (or press **F4**).
 
 ![Open class in Hierarchy](/img/manual/class-hierarchy-open.png)
 
 ## Class Hierarchy Tree
 
-The class hierarchy tree displays either the superclasses, subclasses or both.
+The class hierarchy tree displays either the superclasses, subclasses, or both.
 
 |                                                        | Command                    | Description
 |:------------------------------------------------------:|----------------------------|------------
@@ -352,7 +352,7 @@ Different tools can open different consoles. You can switch between different co
 The Minimap View can be opened via **Window > Show View > Other...** and selecting **General > Minimap**.
 This is a [generic Eclipse view](https://www.eclipse.org/eclipse/news/4.9/platform.php#minimap).
 
-This view is another way to help navigating through large files.
+This view is another way to help navigation through large files.
 It shows an overview of the entire active editor in a dedicated pane.
 The part that is visible in the editor is highlighted.
 The highlighted part of the Minimap View can be clicked and dragged to scroll through the Editor View.
