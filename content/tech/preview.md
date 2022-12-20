@@ -74,7 +74,7 @@ Amongst others, we've also improved the following:
 
 # Deprecations
 
-* Support for Mac has been dropped. As a workaround, the [Sigasi plugin](https://marketplace.eclipse.org/content/sigasi-studio) can still be installed in Eclipse on Mac.
+* Support for Mac has been dropped. As a workaround, the [Sigasi plugin]({{< ref "/manual/setup.md#installation-of-sigasi-studio-eclipse-plugin" >}}) can still be installed in Eclipse on Mac.
 * After careful consideration, the OneSpin integration has been dropped. Sigasi aims to provide results at type time, this is a fundamental incompatibility compared to OneSpin's processing time.
 * **[Verilog]** Rename has been disabled as it was not providing useful results.
 
