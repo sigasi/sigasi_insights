@@ -23,7 +23,7 @@ pygmentsUseClasses = "true"
     name = "Sigasi"
 
 [params]
-  description         = "Your hardware design made faster, easier and more efficient"
+  description         = "Design. Verify. Keep Moving."
   googleTagManagerID  = "GTM-NBF8HKQ"
 
 [taxonomies]
