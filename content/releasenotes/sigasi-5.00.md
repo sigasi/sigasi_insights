@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 5.0
-date: 2023-01-05
-lastmod: 2023-01-05
+date: 2023-01-06
+lastmod: 2023-01-06
 comments: true
 pager: true
 ---
