@@ -108,8 +108,9 @@ Currently the following external compilers are supported:
 | Xilinx ISE                      | true                  | true                     |
 | [Xilinx Vivado](/manual/vivado) | true                  | true                     |
 | Cadence Incisive                | true                  | false                    |
-| [OneSpin](/manual/onespin)      | true                  | (run elaboration checks) |
 | [GHDL](/manual/ghdl)            | true                  | true                     |
+
+Note: [OneSpin](/manual/onespin) was supported in Sigasi Studio from version 3.1 to 4.17 and provided save-time compilation and running of elaboration checks.
 
 ### Notes
 

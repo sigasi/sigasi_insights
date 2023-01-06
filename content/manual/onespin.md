@@ -4,7 +4,12 @@ skipoverviewlist: true
 pager: true
 ---
 
-Since Sigasi Studio 3.1
+Available in Sigasi Studio from version 3.1 to 4.17.2.
+
+**OneSpin integration is no longer available in Sigasi Studio 5.0 and
+above.** If you require OneSpin integration, you can keep using
+{{< page "/releasenotes/sigasi-4.17.md" >}}. Please also get in touch with [Sigasi
+support](https://www.sigasi.com/support/) to discuss your needs.
 
 # OneSpin Setup
 
