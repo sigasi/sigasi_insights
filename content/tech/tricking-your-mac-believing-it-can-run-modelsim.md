@@ -4,7 +4,6 @@ layout: page
 pager: true
 author: Philippe Faes
 date: 2011-07-28
-lastmod: 2023-01-06
 tags: 
   - modelsim
   - Mac

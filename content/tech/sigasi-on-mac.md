@@ -4,7 +4,6 @@ layout: page
 pager: true
 author: Hendrik Eeckhaut
 date: 2013-01-01
-lastmod: 2023-01-06
 comments: true
 tags:
   - Mac
