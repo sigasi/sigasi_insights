@@ -7,21 +7,18 @@ pager: true
 ---
 We are proud to present the Sigasi Studio X.Y release: ...
 
-
-# Other New and Noteworthy Changes
-
-
-# Bug fixes
+# Further New and Noteworthy Changes
 
 
+# Bug Fixes
 
-* A lot of other issues we could fix thanks to your Talkback reports
+Thank you for all the [bug reports](mailto:support@sigasi.com) and for enabling [Talkback]({{< ref "manual/talkback.md" >}}). All your reports have helped us fix many issues that would otherwise go unnoticed.
 
-# System requirements
+# System Requirements
 
 * Sigasi Studio standalone is supported on:
-  * Windows: Windows 10 (64-bit) or newer
-  * Linux: RedHat Enterprise Linux RHEL 7.7 (64-bit) or newer (including RHEL 8)
+  * Windows: Windows 10 or Windows 11 64-bit
+  * Linux: RedHat Enterprise Linux RHEL 7.7 64-bit or newer, including RHEL 8
     * Sigasi Studio depends on `libXss.so` which can be obtained by installing `libXScrnSaver`
     * More information on supported OSes can be found [on the Eclipse website](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_18.xml#target_environments)
 * Sigasi Studio as a plugin in your Eclipse installation:
@@ -31,4 +28,3 @@ We are proud to present the Sigasi Studio X.Y release: ...
 We recommend at least **4GB of memory** available for Sigasi Studio,
 and you need **about 1GB** of free disk space.
 
-Thanks for all the [bug reports](mailto:support@sigasi.com) and for enabling [Talkback]({{< ref "manual/talkback.md" >}}).

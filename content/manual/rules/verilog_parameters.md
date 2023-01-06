@@ -22,15 +22,14 @@ module goodcode;
 	    $display(P);
 endmodule</pre>
 
-## Parameters wider than 32 bits
+## Parameters width mismatch
 
-Sigasi Studio flags an error if a parameter is declared with a default
-value which is wider than 32 bits (rule 48). If a parameter needs to
-be wider than 32 bits, its width must be specified.
+Sigasi Studio flags an error if a parameter with a defined width is declared gets
+assigned a value of a different width.
 
-<pre><span class="badcode">parameter        p = 'h764321098</span>;   // default value is 36 bits wide, width must be specified
+<pre><span class="badcode">parameter int         p = 'h764321098</span>;   // Number of bits set a04a (35) wider than the expected bit width (32)
 
-<span class="goodcode">parameter [35:0] q = 'h764321098</span>;</pre>
+<span class="goodcode">parameter signed [36] q = 'h764321098;</pre>
 
 ## Empty parameter not allowed
 
@@ -51,11 +50,9 @@ module test;
     sub#(8, 16<span class="badcode">, </span>) inst(); // dangling comma is not allowed
 endmodule
 
-
 module test;
     sub#(8, 16<span class="goodcode"> </span>) inst();
 endmodule
 </pre>
-
 
 {{% lintrule sv 19 48 53 54 %}}

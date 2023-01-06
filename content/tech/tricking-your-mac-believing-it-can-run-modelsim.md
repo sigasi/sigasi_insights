@@ -4,6 +4,7 @@ layout: page
 pager: true
 author: Philippe Faes
 date: 2011-07-28
+lastmod: 2023-01-06
 tags: 
   - modelsim
   - Mac
@@ -11,6 +12,7 @@ comments: true
 bannerad: true
 ---
 
+[Update] **Please note that from version 5.0 onwards, [Sigasi Studio is no longer supported on MacOS](/faq/#macos).**
 
 **Disclaimer 1:** This is in no way a crack; we're not messing with ModelSim! You'll need a legal copy and a valid license, which you can get from your Mentor Graphics sales rep, or (a limited version, free of charge) from the [Altera website](http://www.altera.com/products/software/quartus-ii/web-edition/qts-we-index.html).
 

@@ -53,101 +53,93 @@ pygmentsUseClasses = "true"
 [menu]
   [[menu.main]]
     identifier = "products"
-    name = "Products"
-    url = "https://sigasi.com/products/"
+    name = "Our Solutions"
+    url = "https://www.sigasi.com/products/"
     weight = 10
   [[menu.main]]
     identifier = "trybuy"
     name = "Try & Buy"
-    url = "https://sigasi.com/try-buy/"
+    url = "https://www.sigasi.com/try-buy/"
     weight = 20
   [[menu.main]]
     identifier = "insights"
     name = "Insights"
-    url = "//insights.sigasi.com"
+    url = "/"
     weight = 30
   [[menu.main]]
+      parent = "products"
+    identifier = "SiStE"
+    name = "Sigasi Studio Eclipse"
+    url = "https://www.sigasi.com/products/"
+    weight = 10
+  [[menu.main]]
+    parent = "products"
+    identifier = "SiStVSC"
+    name = "VS Code Extension"
+    url = "https://www.sigasi.com/vscode/"
+    weight = 20
+  [[menu.main]]
+    parent = "products"
+    identifier = "Veresta"
+    name = "Veresta"
+    url = "https://www.sigasi.com/veresta/"
+    weight = 30
+  [[menu.main]]
+    parent = "products"
     identifier = "sdk"
     name = "Sigasi SDK"
-    url = "https://sigasi.com/sdk/"
+    url = "https://www.sigasi.com/sdk/"
     weight = 40
-  [[menu.main]]
-    identifier = "company"
-    name = "About us"
-    url = "https://sigasi.com/about/"
-    weight = 50
 
   [[menu.main]]
     parent = "trybuy"
     identifier = "download"
     name = "Download"
-    url = "https://sigasi.com/download/"
+    url = "https://www.sigasi.com/download/"
     weight = 10
   [[menu.main]]
     parent = "trybuy"
     identifier = "license"
-    name = "Get your license"
-    url = "https://sigasi.com/try-form/"
+    name = "Get Your License"
+    url = "https://www.sigasi.com/try-form/"
     weight = 20
   [[menu.main]]
     parent = "trybuy"
     identifier = "buy"
     name = "Buy"
-    url = "https://sigasi.com/buy/"
+    url = "https://www.sigasi.com/buy/"
     weight = 30
 
   [[menu.main]]
     parent = "insights"
     name = "Manual"
-    url = "//insights.sigasi.com/manual/"
+    url = "/manual/"
     weight = 10
   [[menu.main]]
     parent = "insights"
     name = "FAQ"
-    url = "//insights.sigasi.com/faq/"
+    url = "/faq/"
     weight = 20
   [[menu.main]]
     parent = "insights"
     name = "Release Notes"
-    url = "//insights.sigasi.com/releasenotes/"
+    url = "/releasenotes/"
     weight = 30
   [[menu.main]]
     parent = "insights"
     name = "Screencasts"
-    url = "//insights.sigasi.com/screencasts/"
+    url = "/screencasts/"
     weight = 40
   [[menu.main]]
     parent = "insights"
     name = "Tech Articles"
-    url = "//insights.sigasi.com/tech/"
+    url = "/tech/"
     weight = 50
   [[menu.main]]
     parent = "insights"
     name = "VS Code"
-    url = "//insights.sigasi.com/vscode/"
+    url = "/vscode/"
     weight = 60
-  
-  [[menu.main]]
-    parent = "company"
-    name = "Support"
-    url = "https://sigasi.com/support/"
-    weight = 10
-  [[menu.main]]
-    parent = "company"
-    name = "Jobs"
-    url = "https://sigasi.com/jobs/"
-    weight = 20
-  [[menu.main]]
-    parent = "company"
-    name = "News"
-    url = "https://sigasi.com/news/"
-    weight = 30
-  [[menu.main]]
-    parent = "company"
-    name = "Contact"
-    url = "https://sigasi.com/contact/"
-    weight = 40
-
 
   [[menu.mobile]]
     url = "https://www.sigasi.com/"
@@ -177,3 +169,36 @@ pygmentsUseClasses = "true"
     url = "/tech/"
     name = "Tech Articles"
     weight = 7
+  [[menu.mobile]]
+    url = "/vscode/"
+    name = "VS Code"
+    weight = 8
+  [[menu.mobile]]
+    url = "/veresta/"
+    name = "Veresta"
+    weight = 9
+
+  [[menu.footer]]
+    name = "Mission Statement"
+    url = "https://www.sigasi.com/mission-statement/"
+    weight = 10
+  [[menu.footer]]
+    name = "News"
+    url = "https://www.sigasi.com/news/"
+    weight = 15
+  [[menu.footer]]
+    name = "Jobs"
+    url = "https://www.sigasi.com/jobs/"
+    weight = 20
+  [[menu.footer]]
+    name = "Who's Who"
+    url = "https://www.sigasi.com/about/"
+    weight = 30
+  [[menu.footer]]
+    name = "Contact"
+    url = "https://www.sigasi.com/contact/"
+    weight = 40
+  [[menu.footer]]
+    name = "Support"
+    url = "https://www.sigasi.com/support/"
+    weight = 90

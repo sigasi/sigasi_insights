@@ -4,10 +4,13 @@ layout: page
 pager: true
 author: Hendrik Eeckhaut
 date: 2013-01-01
+lastmod: 2023-01-06
 comments: true
 tags:
   - Mac
 ---
+
+[Update] **Please note that from version 5.0 onwards, [Sigasi Studio is no longer supported on MacOS](/faq/#macos).**
 
 Unlike most EDA tools, Sigasi also has a version that runs on the **Mac OS X platform**. Here are some things that you should know before using the Mac version.
 
@@ -17,7 +20,7 @@ The **"Preference"** and **"About Sigasi"** menu items are under the **"Sigasi"*
 
 ## Key bindings
 
-Most of the key bindings are different on a Mac. **CTRL-S** becomes **⌘-S** and so on. All of our documentation lists the Windows / Linux default key bindings. Sometimes it is easy enough to guess the key binding on Mac, but sometimes you have to look it up – or change it to fit your needs. 
+Most of the key bindings are different on a Mac. **CTRL-S** becomes **⌘-S** and so on. All of our documentation lists the Windows / Linux default key bindings. Sometimes it is easy enough to guess the key binding on Mac, but sometimes you have to look it up – or change it to fit your needs.
 Configure your key bindings at: **Sigasi > Preferences > General > Keys**
 
 ## Updating

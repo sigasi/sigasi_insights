@@ -1,11 +1,11 @@
 ---
 title: "The benefits of early detection"
 date: 2022-09-23
-lastmod: 2022-09-23
+lastmod: 2023-01-06
 pager: false
 comments: false
 layout: youtube
-videoid: -UvcpL6glF8
+videoid: v77XR90SO_U
 tags:
   - Sigasi Studio
   - documentation

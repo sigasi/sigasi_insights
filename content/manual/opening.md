@@ -124,11 +124,13 @@ Repeat this procedure for `*.vhd` files and for `*.vhdl` files.
 
 {{< figure src="/img/manual/gnome.png" alt="Sigasi Studio as default editor in Gnome" >}}
 
-## Mac OS X
+## MacOS
+
+Please note that from version 5.0 onwards, [Sigasi Studio is no longer supported on MacOS](/faq/#macos).
 
 When I double-click a VHDL file, I want it to open with my favorite VHDL editor. Sigasi Studio, obviously.
 
-Here is how to set this up in Mac OS X:
+Here is how to set this up in MacOS:
 
 * Find a VHDL file in the Finder
 * Right-click and select **Get Info**

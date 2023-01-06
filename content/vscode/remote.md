@@ -1,5 +1,5 @@
 ---
-title: "Remote development"
+title: "Remote Development"
 showinmenu: true
 weight: 5
 pager: true

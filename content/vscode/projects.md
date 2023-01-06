@@ -1,5 +1,5 @@
 ---
-title: "Setting up a project"
+title: "Setting up a Project"
 showinmenu: true
 weight: 3
 pager: true

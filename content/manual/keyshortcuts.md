@@ -148,9 +148,11 @@ In this section, we list the most important shortcuts.
 |                         | Toggle Horizontal Split Editor    | **Ctrl+_**                          |
 |                         | Toggle Vertical Split Editor      | **Ctrl+{**                          |
 
-# Mac users
+# MacOS users
 
-If you are using Mac OS X, most of these keyboard shortcuts use Command instead of Ctrl. To inspect the exact list of keyboard shortcuts, go to **Preferences > General > Keys**.
+Please note that from version 5.0 onwards, [Sigasi Studio is no longer supported on MacOS](/faq/#macos).
+
+If you are using MacOS, most of these keyboard shortcuts use Command instead of Ctrl. To inspect the exact list of keyboard shortcuts, go to **Preferences > General > Keys**.
 
 # Customizing keyboard shortcuts
 

@@ -4,6 +4,7 @@ layout: page
 pager: true
 author: Hendrik Eeckhaut
 date: 2014-04-29
+lastmod: 2023-01-06
 comments: true
 bannerad: true
 ---
@@ -18,6 +19,7 @@ Until now, things were not that easy with Sigasi. You needed to set up a workspa
 First, make sure that the executable `sigasi.exe` is on your path.
 
 Now, create a file named `sigasiproject.bat` in your Sigasi project:
+
 ```batch
 sigasi.exe -p %~dp0
 ```
@@ -28,15 +30,18 @@ Note that *importing* does not mean that your project is copied to the workspace
 
 ![Sigasi Project Launcher](/img/tech/sigasi_project_launcher.png)
 
-## Linux and Mac OS X
+## Linux and MacOS
 
 Linux and Mac users will have no trouble translating this to their own platform. I know you guys are smart. Think along the lines of:
+
 ```bash
 sigasi -p `pwd`
 ```
 
+[Update] Please note that from version 5.0 onwards, [Sigasi Studio is no longer supported on MacOS](/faq/#macos).
+
 ## Limitations: not officially supported
 
-This is not an officially supported feature. I'm writing this information "as-is", hoping that it is helpful. 
+This is not an officially supported feature. I'm writing this information "as-is", hoping that it is helpful.
 
 Things might get complicated if you open two projects with the same name. After you are done with a project, it is best to "delete" the project from your workspace, without deleting it from your file system. That way, you can open a new project with the same name.

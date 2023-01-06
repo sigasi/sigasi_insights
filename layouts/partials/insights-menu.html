@@ -22,10 +22,11 @@
                 <div class="uk-navbar-dropdown uk-box-shadow-medium ">
                     <ul class="uk-nav uk-navbar-dropdown-nav">
                         {{ range $s_relnotes -}}
-                        {{ if eq (substr (strings.TrimLeft "Sigasi Studio " .Title) 0 1) "4" -}}
+                        {{ if eq (substr (strings.TrimLeft "Sigasi Studio " .Title) 0 1) "5" -}}
                         <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
                         {{ end -}}
                         {{ end -}}
+                        <li><a href="/releasenotes#sigasi-studio-4">Sigasi Studio 4</a></li>
                         <li><a href="/releasenotes#sigasi-studio-3">Sigasi Studio 3</a></li>
                         <li><a href="/releasenotes#sigasi-studio-2">Sigasi Studio 2</a></li>
                     </ul>
@@ -38,7 +39,7 @@
                 <a href="/tech">Tech Articles</a>
             </li>
             <li {{ if eq .Section "vscode" }} class="uk-active" {{ end }}>
-                <a href="/vscode">VS Code (Beta)<span uk-icon="icon: triangle-down"></span></a>
+                <a href="/vscode">VS Code<span uk-icon="icon: triangle-down"></span></a>
                 <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2 uk-box-shadow-medium ">
                     <ul class="uk-nav uk-navbar-dropdown-nav">
                         {{ range $s_vscode }}
@@ -48,7 +49,7 @@
                 </div>
             </li>
             <li {{ if eq .Section "veresta" }} class="uk-active" {{ end }}>
-                <a href="/veresta">Veresta (Beta)</a>
+                <a href="/veresta">Veresta</a>
             </li>
         </ul>
 

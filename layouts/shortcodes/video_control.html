@@ -1,0 +1,9 @@
+<video {{ with .Get "width" }}width="{{ . }}"{{ end }}
+       muted=true playsinline controls
+       {{ with .Get "thumb" }}poster="{{ . }}"{{ end }}
+       {{ with .Get "title" }}title="{{ . }}"{{ end }}
+       {{ with .Get "alt" }}alt="{{ . }}"{{ end }}>
+       {{ with .Get "webm" }}<source src="{{ . }}" type="video/webm">{{ end }}
+       {{ with .Get "src" }}<source src="{{ . }}" type="video/mp4">{{ end }}
+    Your browser does not support the video tag
+</video>

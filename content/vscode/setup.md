@@ -1,5 +1,5 @@
 ---
-title: "Extension setup"
+title: "Extension Setup"
 showinmenu: true
 weight: 1
 pager: true

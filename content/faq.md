@@ -38,31 +38,22 @@ and you need **about 1GB** of free disk space.
 
 ### Windows
 
-* Supported on Windows 10 (64 bit) or newer
+* Supported on Windows 10 or Windows 11 64-bit
 * Sigasi Studio Standalone is supported
 * Sigasi Studio Plugin is supported when using
   * Eclipse IDE 2021-03 up to and including Eclipse IDE 2022-03
-  * Java JRE 11
-
-### MacOS
-
-* Supported on 11.6 Big Sur
-* Sigasi Studio does run on Apple M1 using Rosetta
-* Sigasi Studio Standalone is supported
-* Sigasi Studio Plugin is supported when using
-  * Eclipse IDE 2021-03 up to and including Eclipse IDE 2022-03
-  * Java JRE 11
+  * Java JRE 11 or 17
 
 ### Linux
 
 The `libXScrnSaver` package needs to be installed on your OS.
 
-#### RHEL 7.7 (64 bit) or newer
+#### RHEL 7.7 64-bit or newer, including RHEL 8
 
 * Sigasi Studio Standalone is supported
 * Sigasi Studio Plugin is supported when using
   * Eclipse IDE 2021-03 up to and including Eclipse IDE 2022-03
-  * Java JRE 11
+  * Java JRE 11 or 17
 
 #### Other Linux distributions
 
@@ -73,12 +64,28 @@ The `libXScrnSaver` package needs to be installed on your OS.
 Sigasi Studio itself has no specific dependency on GTK. Eclipse does require a minimum version of GTK.
 The GTK version requirements of Eclipse can be found [here](https://www.eclipse.org/swt/faq.php#gtkstartup).
 
+### MacOS
+
+From version 5.0 onwards, Sigasi Studio is no longer supported on
+MacOS. However, the [Sigasi
+plugin](https://marketplace.eclipse.org/content/sigasi-studio) can
+still be installed on an Eclipse on Mac.
+
+Mac users can also keep using {{< page "/releasenotes/sigasi-4.17.md" >}} with the following system requirements:
+
+* Supported on 11.6 Big Sur
+* Sigasi Studio does run on Apple M1 using Rosetta
+* Sigasi Studio Standalone is supported
+* Sigasi Studio Plugin is supported when using
+  * Eclipse IDE 2021-03 up to and including Eclipse IDE 2022-03
+  * Java JRE 11 or 17
+
 ## What are the license server requirements?
 
 The license server (FlexNet) is supported on
 
-* Red Hat Enterprise Linux 5.2 (32 bit and 64 bit) or newer
-* Windows 7 (32 bit and 64 bit) or newer
+* Red Hat Enterprise Linux 5.2 (32-bit and 64-bit) or newer
+* Windows 7 (32-bit and 64-bit) or newer
 
 The instructions to set up the license server can be found [here]({{< ref "manual/license-key.md#license-server-setup" >}}).
 
@@ -651,6 +658,8 @@ Alternatively, you can [contact support](mailto:support@sigasi.com) for an older
 
 ## Damaged app on Apple computers
 
+Please note that from version 5.0 onwards, [Sigasi Studio is no longer supported on MacOS](#macos).
+
 **Known issue on Apple computers with Sigasi Studio 4.9 and older**
 
 The following error message may pop up on Apple computers when using Sigasi Studio [older than 4.10]({{< ref "releasenotes/sigasi-4.10.md#other-new-and-noteworthy-changes" >}}):
@@ -733,13 +742,13 @@ You also can use the [More Emacs](https://marketplace.eclipse.org/content/more-e
 
 Sigasi does not offer simulators. If you don't have a VHDL simulator yet, we would recommend the following simulators. You can download them free of charge.
 
-| Simulator                         | Comment            | Download from                                 | Windows | Linux | Mac OSX |
-| --------------------------------- | ------------------ | --------------------------------------------- | ------- | ----- | ------- |
-| Aldec Lattice Edition             | Only Lattice FPGAs | [Lattice Download page][latic_download]       | Yes     | No    | No      |
-| Aldec Active-HDL, Student Edition | Students only      | [Aldec Download page][aldec_download]         | Yes     | No    | No      |
-| ModelSim Altera Starter Edition   | Only Altera FPGAs  | [Altera Quartus Web Edition][altera_download] | Yes     | Yes   | No      |
-| ISim                              | Only Xilinx FPGAs  | [Xilinx Webpack][xilinx_download]             | Yes     | Yes   | No      |
-| [GHDL][GHDL_site]                 | Open source        | [GHDL download page][ghdl_download]           | Yes     | Yes   | Yes     |
+| Simulator                         | Comment            | Download from                                 | Windows | Linux | MacOS |
+| --------------------------------- | ------------------ | --------------------------------------------- | ------- | ----- | ----- |
+| Aldec Lattice Edition             | Only Lattice FPGAs | [Lattice Download page][latic_download]       | Yes     | No    | No    |
+| Aldec Active-HDL, Student Edition | Students only      | [Aldec Download page][aldec_download]         | Yes     | No    | No    |
+| ModelSim Altera Starter Edition   | Only Altera FPGAs  | [Altera Quartus Web Edition][altera_download] | Yes     | Yes   | No    |
+| ISim                              | Only Xilinx FPGAs  | [Xilinx Webpack][xilinx_download]             | Yes     | Yes   | No    |
+| [GHDL][GHDL_site]                 | Open source        | [GHDL download page][ghdl_download]           | Yes     | Yes   | Yes   |
 
 [latic_download]: http://www.latticesemi.com/en/Products/DesignSoftwareAndIP/FPGAandLDS/LatticeDiamond.aspx
 [aldec_download]: https://www.aldec.com/en/downloads

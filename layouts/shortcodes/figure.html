@@ -8,7 +8,7 @@
 {{ $scratch.Set "resized" ($asrc.Resize $resizedw) }}
 {{ end }}
 
-<figure{{ with .Get "class" }} class="{{ . }}"{{ end }}>
+<figure>
     {{- if .Get "link" -}}
     {{ if (not (.Get "target")) }}<div uk-lightbox>{{ end }}
         <a href="{{ with $asrc }}{{ $asrc.RelPermalink }}{{ else }}{{ .Get "link" }}{{ end }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}
@@ -24,6 +24,7 @@
          {{- with .Get "width" }} width="{{ . }}"{{ end -}}
          {{- with .Get "height" }} height="{{ . }}"{{ end -}}
          {{- with .Get "title" }} title="{{ . }}"{{ end -}}
+         {{- with .Get "class" }} class="{{ . }}"{{ end -}}
     /> <!-- Closing img tag -->
     {{- if .Get "link" }}</a>{{ if (not (.Get "target")) }}</div>{{ end }}{{ end -}}
     {{- if or (.Get "caption") (.Get "attr") -}}
