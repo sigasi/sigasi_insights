@@ -75,7 +75,7 @@ Mac users can also keep using {{< page "/releasenotes/sigasi-4.17.md" >}} with t
 
 * Supported on 11.6 Big Sur
 * Sigasi Studio does run on Apple M1 using Rosetta
-* Sigasi Studio Standalone is supported
+* Sigasi Studio Standalone is supported and can be downloaded [here](https://download.sigasi.com/updates/4.17.2/com.sigasi.hdt.product-macosx.cocoa.x86_64.zip)
 * Sigasi Studio Plugin is supported when using
   * Eclipse IDE 2021-03 up to and including Eclipse IDE 2022-03
   * Java JRE 11 or 17
