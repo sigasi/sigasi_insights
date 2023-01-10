@@ -5,10 +5,10 @@ weight: 10
 pager: true
 ---
 
-## Debug log
+## Debug Log
 
 To check whether the Sigasi extension started successfully, you should navigate to Sigasi's _output view_.
-This can be done through the _Command Palette_ (**Ctrl+Shift+P**) and select **Sigasi: Open log**.
+This can be done through the _Command Palette_ (**Ctrl+Shift+P**) and select **Sigasi: Open Log**.
 Note that this option is only available once an HDL file was opened.
 
 The output for Sigasi should say `Language client connected from ...`
@@ -16,7 +16,7 @@ The output for Sigasi should say `Language client connected from ...`
 The logs in the Sigasi output view contain possible errors from client and server.
 If errors are present you're advised to copy them and include them in your email to [support+vscode@sigasi.com](mailto:support+vscode@sigasi.com).
 
-### SLF4J errors
+### SLF4J Errors
 
 The following error messages in the _Output View_ can be safely ignored.
 
@@ -37,16 +37,7 @@ The heap space setting is identical to the one [used in Sigasi Studio]({{< ref "
 
 ## Troubleshooting
 
-### Project configuration
-
-On some occasions, we might ask for you to share the project configuration.
-This configuration can be obtained through the _Command Palette_ (**Ctrl+Shift+P**) where you run the command **Sigasi: Get the current project description** and select the project you're working on.
-
-This generates two JSON files `project.server.json` and `project.client.json` that contain information sent to the server.
-
-**Note**: these JSON files contain file names from your project so only send them to us if you're allowed to do so.
-
-### Server logs
+### Server Logs
 
 On some occasions we might ask you to share the server logs.
 
@@ -60,36 +51,16 @@ The server logs are in `~/.config/Code/logs/[datetime]/exthost1/output_logging_[
 
 **Note**: these logs contain file names from your project so only send them to us if you're allowed to do so.
 
-### Heap dump
-
-For debugging purposes, a heap dump might be useful.
-A command is available to capture a heap dump from within the _Command Palette_: **Sigasi: capture heap dump**.
-
-### Profiling
-
-On some occasions, we might ask you to share a profile of the extension.
-To do so, you can use the command **Sigasi: Start profiling**.
-
-### Performance monitoring
-
-On some occasions, we might ask you to share a performance trace.
-
-To start the performance trace capture, use the command **Sigasi: Start performance logging**.
-
-After going through the activities on which to check performance, use the command **Sigasi: Stop performance logging**.
-This will open a file browser allowing to save a `Trace-YYYY-MM-DD-HH-MM-SS.json` file.
-This file contains the performance log and should be sent to our support.
-
 ## Semantic Coloring
 
 The Sigasi extension supports semantic coloring, however, some VS Code themes might not support it yet.
 
-* In a theme that supports semantic coloring, you'll see that e.g. `port`, `signal` and `type` names have a color that is different from the language keywords.  
+* In a theme that supports semantic coloring, you'll see that e.g. `port`, `signal`, and `type` names have a color that is different from the language keywords.  
 {{< figure src="/img/faq/supported_semantic_coloring.png" link="/img/faq/supported_semantic_coloring.png" alt="Find/Replace dialog" width="600" >}}
-* In a theme that does not support semantic coloring, names like those of a `port`, `signal` or `type` will have the default text color.
+* In a theme that does not support semantic coloring, names like those of a `port`, `signal`, or `type` will have the default text color.
 {{< figure src="/img/faq/unsupported_semantic_coloring.png" link="/img/faq/unsupported_semantic_coloring.png" alt="Find/Replace dialog" width="600" >}}
 
-## User defined code snippets
+## User Defined Code Snippets
 
 VS Code supports user defined code snippets as explained [here](https://code.visualstudio.com/docs/editor/userdefinedsnippets). To add snippets yourself, follow the steps below.
 
@@ -99,7 +70,7 @@ The Sigasi extension currently contains only two snippets: one for `entity` and 
 * Select **Preferences: Configure User Snippets**
 * Type **vhdl** or **systemverilog** to open the corresponding _JSON_ file where you can add your snippet like the examples below.
 
-### VHDL snippet example
+### VHDL Snippet Example
 
 ``` json
 {
@@ -116,7 +87,7 @@ The Sigasi extension currently contains only two snippets: one for `entity` and 
 }
 ```
 
-### SystemVerilog snippet example
+### SystemVerilog Snippet Example
 
 ```json
 {
