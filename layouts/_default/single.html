@@ -64,6 +64,9 @@
           {{- template "_internal/disqus.html" . -}}
           {{- end -}}
         </article>
+        {{ if .Section }}
+        {{ partial "previous-next" . }}
+        {{ end }}
     {{- if .Params.pager -}}
       </div>
       <div class="uk-width-1-4@m uk-visible@m">
@@ -90,7 +93,4 @@
   </div>
 </main>
 
-{{ if .Section }}
-{{ partial "previous-next" . }}
-{{ end }}
 {{ end }}
