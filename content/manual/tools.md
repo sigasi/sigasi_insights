@@ -101,7 +101,6 @@ Currently the following external compilers are supported:
 | ------------------------------- | --------------------- | -------------------------|
 | Aldec Riviera-PRO               | true                  | true                     |
 | Aldec Active-HDL                | true                  | false                    |
-| Aldec ALINT                     | true                  | (run elaboration checks) |
 | Aldec ALINT-PRO                 | true                  | false                    |
 | Altera Quartus II               | false                 | false                    |
 | ModelSim / QuestaSim            | true                  | true                     |
