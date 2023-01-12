@@ -9,13 +9,14 @@ pager: true
 
 The extension will start once a `.project` file is detected in the root of the open folder.
 
-The project settings and library mappings are now compatible with Sigasi Studio on Eclipse. See the {{< page "/manual/projectsetup.md" >}} manual page for all details.
+The project settings and library mappings are now compatible with {{< siste >}}. See the {{< page "/manual/projectsetup.md" >}} manual page for all details.
 
 For project configuration, open the **[Project View]({{< ref "vscode/views.md#project-view" >}})**.
 
 ## Library configuration
 
-To change library mappings, you can use the right-click menu and select **Set to Library** to change library mappings.
+To change library mappings, you can use the right-click menu and select **Set Library**.
+Then you can select an existing library or choose **New Library...** to type a new library name.
 
 ## Workspace
 

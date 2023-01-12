@@ -8,9 +8,9 @@ pager: true
 
 ## Sigasi Studio Starter
 
-Sigasi Studio Starter is the best, free VHDL and Verilog editor that works on **single files** only, and *not with projects*.
+Sigasi Studio Starter is the best, free VHDL, Verilog, and SystemVerilog editor that works on **single files** only, and *not with projects*.
 
-Sigasi Studio Starter works without a license key, but requires [Talkback](/manual/talkback) and you need to keep your version up to date.
+Sigasi Studio Starter works without a license key but requires [Talkback](/manual/talkback) and you need to keep your version up to date.
 
 ## Sigasi Studio XL
 
@@ -49,7 +49,7 @@ It has been retired in favor of {{< xl >}}.
 
 # Languages
 
-Sigasi Studio supports VHDL, Verilog and SystemVerilog.
+Sigasi Studio supports VHDL, Verilog, and SystemVerilog.
 Whenever SystemVerilog is used in this manual, Verilog is implied.
 
 ## VHDL
@@ -63,3 +63,15 @@ Whenever SystemVerilog is used in this manual, Verilog is implied.
 ## SystemVerilog
 
 <https://en.wikipedia.org/wiki/SystemVerilog>
+
+# Platforms
+
+Sigasi Studio is available on multiple platforms.
+
+## SiStE
+
+Sigasi Studio on [Eclipse](https://eclipseide.org/)
+
+## SiStVSC
+
+Sigasi Studio on [Visual Studio Code](https://code.visualstudio.com/)

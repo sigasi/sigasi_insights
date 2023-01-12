@@ -8,14 +8,17 @@ This page explains how to install and configure the VS Code extension.
 
 ## Requirements
 
-### VS Code version
+### VS Code Version
 
 The extension requires VS Code `1.71.0` or higher.
 
 ### Java Runtime
 
 The path to use the Java Runtime (JRE) can optionally be configured in the [settings](#settings).
-If the setting is empty, the extension will download a **JRE** and extract it in the local `.vscode` folder.
+If the setting is empty, the extension will download a **JRE** and extract it in the user's home folder.
+
+* Linux: `~/.config/Code/User/globalStorage/sigasi.sigasi-vscode`
+* Windows: `%AppData%\Code\User\globalStorage\sigasi.sigasi-vscode`
 
 If you wish to provide the JRE:
 
@@ -24,7 +27,7 @@ If you wish to provide the JRE:
 * You can check your Java version with `java -version`
 * Java can be downloaded from several sources, a.o. [Adoptium](https://adoptium.net/releases.html?variant=openjdk11&jvmVariant=hotspot)
 * Choose the _OpenJDK 11 x64 JRE_ for your OS
-* Make sure the `java` executable is available in the `PATH`
+* Make sure the `java` executable is available in the `PATH` environment variable
 
 ## Installation
 
@@ -44,22 +47,32 @@ The settings for the Sigasi extension can be reached trough:
 
 * Open the _Command Palette_ using **Ctrl+Shift+P**
 * Start typing and select **Preferences: Open Settings (UI)**
-* In **Search settings** type `Sigasi`
-* First, configure the **Path To License**. This can be a local node locked license file or a floating license server (e.g. `27000@myserver.example.com`). The setting for the license path is similar as in [Sigasi Studio on Eclipse]({{< ref "/manual/license-key.md" >}}).
-* Optionally, configure the JRE location in **Sigasi > Java: Path**. Make sure to add the `java` executable name in the path.
+* In the _Search_ field on top, type **Sigasi**.
+* First, configure the **Path To License**. This can be a local node-locked license file or a floating license server (e.g. `27000@myserver.example.com`). The setting for the license path is similar to the one in [Sigasi Studio on Eclipse]({{< ref "/manual/license-key.md" >}}).
+* Optionally, configure the JRE location in **Sigasi > Java: Path**. Make sure to add the `java` executable name in the configured value.
 
 Alternatively, the Sigasi extension settings can be accessed through the Manage icon (<span uk-icon="cog"></span>) in the extensions overview.
 
-## Features
+## Talkback
 
-The following features need setup before they are active.
+You can help improve the Sigasi extension for VS Code by enabling the automatic submission of usage statistics and error stack traces.
+More information about this feature is available on the [Talkback manual page]({{< ref "/manual/talkback.md" >}}).
 
-### Configurable data storage
+This feature is disabled by default.
+To enable talkback in the VS Code extension, open the settings and enable the `Sigasi: Enable Talkback` option.
 
-You can specify a directory to be used by the Sigasi Language Server to write the cache to.
+The messages sent to Sigasi can also be logged locally. Then you can view these messages using the **Sigasi: Open Talkback Log** command.
+In order to log the messages locally, a [data storage]({{< ref "#on-disk-caching" >}}) needs to be configured.
+
+## On Disk Caching
+
+You can specify a directory to be used by the Sigasi Language Server to write the cache and talkback logs to.
 Open the settings and search for `Sigasi › Server > Caching: Data Location`.
 The directory needs to exist already.
-
-The cache will speed up the plugin by preserving state from an earlier moment.
-
 Choose a local folder for optimal performance.
+
+Once you've configured this directory, the setting `Sigasi > Server > Caching: Enable On Disk Caching` can be enabled.
+
+The cache will speed up the plugin by preserving the state from an earlier moment.
+This will speed up the build _significantly_.
+Be careful though: opening the same project in another VS Code window at the same time will corrupt the cache causing a myriad of issues.
