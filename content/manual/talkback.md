@@ -25,7 +25,7 @@ Sigasi uses the information transmitted by Talkback for marketing and product pl
 
 # What kind of information is sent through Talkback?
 
-Talkback transmits meta-information about your project, operating system, Java Virtual Machine, tool usage, and incident reports (stack traces) that occur due to software errors.
+Talkback transmits meta-information about your project, operating system, Java Virtual Machine, tool usage, build performance, system statistics, license type, and incident reports (stack traces) that occur due to software errors.
 Talkback **never transmits any HDL code**. All transmissions are through an industry standard SSL secure connection.
 
 In the Talkback transmissions, we identify your Sigasi/Eclipse workspace using a generated identifier (a standard Java universal unique identifier [UUID](http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html)).
