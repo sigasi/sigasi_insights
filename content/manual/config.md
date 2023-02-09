@@ -36,7 +36,6 @@ You can use the proposed quick fix to resolve the issue.
 * If you want to compile VHDL 87 code, you should select the “1993” option. There are no checks to warn about constructs that were not supported in 1987, but that were introduced in 1993.
 * Sigasi Studio does not send the [Common Libraries](/manual/libraries#common-libraries) to an external compiler. It is expected that these libraries are pre-compiled.
 
-
 # Colors and Fonts
 
 You can configure the code coloring by selecting **Window > Preferences > Sigasi > VHDL > Syntax Coloring**.
@@ -65,9 +64,10 @@ been changed to bright green.
 
 {{< figure src="/img/manual/annotations-in-green.png" alt="Annotations in Bright Green" >}}
 
-You can change the color of annotations in **Window > Preferences > General > Editors > Text Editors > Annotations**. For the particular case of *occurrence* annotations, you want to modify the color for
-annotation type **Occurrences**. 
-If more than one **Occurrences** type is displayed, you need the `org.eclipse.xtext.ui.editor.defaultOccurrenceAnnotation`. The others may refer to occurrences for Java or other plug-ins.
+You can change the color of annotations in **Window > Preferences > General > Editors > Text Editors > Annotations**.
+For the particular case of *occurrence* annotations, you want to modify the color for annotation type **Occurrences**.
+If more than one **Occurrences** type is displayed, you need the `org.eclipse.xtext.ui.editor.defaultOccurrenceAnnotation`.
+The others may refer to occurrences for Java or other plug-ins.
 
 # Tabs and Spaces
 
@@ -77,10 +77,10 @@ If you want to use spaces instead of tabs, you can set your indentation preferen
 
 The *Gutter* is the small area to the left of the editor view. It is used for displaying extra information about your code.
 
--   Line numbers: What line is this?
--   Quick Diff: Did this file change?
--   Folding: hiding pieces of code from view
--   Markers: error markers, warnings and bookmarks.
+* Line numbers: What line is this?
+* Quick Diff: Did this file change?
+* Folding: hiding pieces of code from view
+* Markers: error markers, warnings and bookmarks.
 
 There is not much to configure about markers, but the other categories can be turned on or off.
 
@@ -94,7 +94,7 @@ Instead of using a compare editor, you can enable **quick diff** support and see
 
 When you enable Quick Diff, you can see changes in the active editor with the version on disk (or the latest version in version control), by hovering the annotations in the gutter.
 
-[More info](https://help.eclipse.org/photon/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftasks-cvs-quickdiff.htm)
+[More info](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-35.htm&cp%3D0_4_1_32)
 
 # Linting rules
 
@@ -118,4 +118,5 @@ To export, go to **File > Export… > General > Preferences**, and select **Key 
 Formatting options for VHDL are documented in the [VHDL Code Formatting section of the Editor manual]({{< ref "editor#configuration" >}}).
 
 # Finding more options
+
 {{< todo >}}
