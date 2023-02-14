@@ -117,14 +117,14 @@ end
     {{< figure src="/img/releasenotes/4.16/NestedExpansion.png" link="/img/releasenotes/4.16/NestedExpansion.png" title="Validation of infinitely nested expansions">}}
   * allowed locations of preprocessor directives
     {{< figure src="/img/releasenotes/4.16/PreprocessorDirectiveLocationValidation.png" link="/img/releasenotes/4.16/PreprocessorDirectiveLocationValidation.png" title="Validation of allowed locations for preprocessor directives">}}  
-  * spaces between the backtick and the preprocess directive's name  
+  * spaces between the backtick and the preprocessor directive's name  
     {{< figure src="/img/releasenotes/4.16/SpaceInPreprocessorDirective.png" link="/img/releasenotes/4.16/SpaceInPreprocessorDirective.png" title="Space after backtick of preprocessing directive">}}
 
 # Updates
 
 * Eclipse has been updated to 2022-03
 * [JustJ](https://www.eclipse.org/justj/) (the JRE shipped with Sigasi Studio) has been updated to 17.0.3  
-  **Note that you may run into the error dialog below, when you restart Sigasi Studio after the update** because the JRE has changed. If you close the dialog, and restart Sigasi Studio manually, everything should work as expected.
+  **Note that you may run into the error dialog below when you restart Sigasi Studio after the update** because the JRE has changed. If you close the dialog, and restart Sigasi Studio manually, everything should work as expected.
 {{< figure src="/img/releasenotes/4.14/jre_update_error.png" link="/img/releasenotes/4.14/jre_update_error.png" title="Expected error after update. Restart will solve the issue." width="300">}}
 
 # Bug fixes
