@@ -20,22 +20,15 @@
     </div>
     <div class="uk-padding uk-padding-remove-left">
         <hr>
-        <div class="uk-child-width-1-2@m" data-uk-grid>
-            <div>
-                <h3>Popular Tech Articles</h3>
-                {{ range .Site.Data.frontpage.popular }}
-                <span uk-icon="link"></span><a href="{{ .url }}">{{ .title | truncate 55}}</a><small></small><br>
-                {{ end }}
-                <span uk-icon="link"></span><a href="/tech">more...</a><br>
-            </div>
-            <div>
-                <h3>Recent Articles</h3>
-                {{ $s_tech := where .Site.RegularPages.ByLastmod.Reverse "Section" "tech" }}
-                {{ range first 10 $s_tech }}
+        <h3>Recent Articles</h3>
+        <ul class="uk-list uk-column-1-2@m">
+            {{ $s_tech := where .Site.RegularPages.ByLastmod.Reverse "Section" "tech" }}
+            {{ range first 10 $s_tech }}
+            <li>
                 <span uk-icon="link"></span><a href="{{ .Permalink }}">{{ .Title | truncate 55 }}</a><small> {{ .Lastmod.Format "2006-01-02" }}</small><br>
-                {{ end }}
-            </div>
-        </div>
+            </li>
+            {{ end }}
+        </ul>
         <hr>
         <div class="uk-child-width-1-2@m" data-uk-grid>
             <div>
