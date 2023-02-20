@@ -4,13 +4,13 @@ showinmenu: true
 weight: 1
 pager: true
 ---
-This page explains how to install and configure the VS Code extension.
+This page explains how to install and configure the Sigasi Studio extension for VS Code.
 
 ## Requirements
 
 ### VS Code Version
 
-The extension requires VS Code `1.71.0` or higher.
+The extension requires _VS Code_ or _VS Codium_ version `1.71.0` or higher.
 
 ### Java Runtime
 
@@ -31,9 +31,10 @@ If you wish to provide the JRE:
 
 ## Installation
 
-The extension can be installed from the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=Sigasi.sigasi-vscode).
+The extension can be installed from the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=Sigasi.sigasi-vscode)
+or from the [Open VSX Registry](https://open-vsx.org/extension/Sigasi/sigasi-vscode).
 
-To install the extension in VS Code, open the _Extensions_ pane using **Ctrl+Shift+X**.
+To install the extension, open the _Extensions_ pane using **Ctrl+Shift+X**.
 In the _Search_ field on top, type **Sigasi**.
 Click the _Sigasi_ extension and click **Install**.
 
