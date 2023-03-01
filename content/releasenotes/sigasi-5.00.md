@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 5.0
 date: 2023-01-06
-lastmod: 2023-01-06
+lastmod: 2023-02-27
 comments: true
 pager: true
 ---
@@ -223,3 +223,13 @@ This release contains the following bug fixes and improvements:
 * Applying an autocomplete only moves the viewport if the cursor is not yet within it
 * Autocomplete proposals ignore `_` in the prefix. This results in better ordering for snake_case identifiers i.e. `my_clk` will be one of the top proposals when using the prefix `mycl`
 * Fixed an issue where **Window > Preferences > Sigasi > Advanced** could only be opened once per session
+
+# Sigasi Studio 5.0.2 point release
+
+On March 1, we released Sigasi Studio 5.0.2.
+This release contains solutions for the following reported bugs:
+
+* Error dialog is shown when opening Sigasi Studio
+* Caching error for specific files
+* Hover and autocomplete block the editor and take a long time to pop up
+* Templates are not the top suggestion during autocomplete
