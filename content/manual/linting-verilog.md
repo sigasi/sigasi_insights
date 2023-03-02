@@ -43,7 +43,7 @@ XL code rules require a {{< xl >}} or {{< xprt >}} license.
 
 |                           | Description                                                                                                                                                    | ID |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|---:|
-|                           | Null loops                                                                                                                                                     |  1 |
+|                           | [Empty loops and conditional branches]({{< ref "rules/verilog_style/#empty-loops-and-conditional-branches" >}})                                                |  1 |
 |                           | [Check Naming Conventions]({{< ref "rules/naming-conventions" >}})                                                                                             |  2 |
 | {{< warning_lightbulb >}} | [Disallow `reg` datatype]({{< ref "rules/verilog_reg" >}})                                                                                                     |  3 |
 |                           | [The module name is a keyword in VHDL and may cause problems in mixed language projects]({{< ref "rules/verilog_identifiers/#vhdl-keywords-as-module-name" >}})|  7 |

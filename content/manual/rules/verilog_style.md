@@ -4,6 +4,18 @@ title: Verilog coding style
 
 Sigasi Studio has a number of checks on Verilog coding style.
 
+## Empty loops and conditional branches
+
+While occasionally intended, this construction is confusing, and often
+the result of a typo. Sigasi will flag a warning if an empty block is
+found (rule 1). In RTL code for synthesis, empty conditional branches
+in sequential code can cause unwanted latches generation. There may
+be a couple of reasons why an empty block is present in your code:
+
+* It is an unintentional omission, and should be fixed to prevent an unexpected behavior.
+* Some functionality is not yet, or never will be, supported. In this case a $fatal (or similar) system task should be called.
+* It is intentionally blank. In this case a comment should explain the reason.
+
 ## File name does not match design unit
 
 It is recommended that the base name of the filename is the same as the name of the design unit (e.g. module) in the file (rule 17). Sigasi Studio flags a warning if that is not the case.
@@ -95,4 +107,4 @@ regular expression engine.  Sigasi will warn if a naming convention
 rule contains a regular expression which is incompatible with RE2/J
 (rule 58).
 
-{{% lintrule sv 17 18 20 21 22 44 47 52 58 %}}
+{{% lintrule sv 1 17 18 20 21 22 44 47 52 58 %}}
