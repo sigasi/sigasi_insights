@@ -30,6 +30,7 @@ ST code rules are available for all licenses including {{< starter >}}.
 | {{< warning_lightbulb >}} | Port/Generic lists cannot be terminated with a ';'                                                                                   |     |
 | {{< warning_lightbulb >}} | Port/Generic maps cannot be terminated with a ','                                                                                    |     |
 |                           | Loop variables cannot be assigned                                                                                                    |     |
+|                           | Declaration not found                                                                                                                |     |
 
 ## XL code rules
 XL code rules require a {{< xl >}} or {{< xprt >}} license.

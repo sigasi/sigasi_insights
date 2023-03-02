@@ -35,6 +35,17 @@ ST code rules are available for all licenses including {{< starter >}}.
 |                                       | Unexpected preprocessor directive inside design elements                                                                                                       | 57 |
 |                                       | [Non-packed member in packed structure]({{< ref "rules/verilog_identifiers/#non-packed-member-in-packed-structure" >}})                                        | 59 |
 |                                       | [Illegal type in untagged union]({{< ref "rules/verilog_identifiers/#illegal-type-in-untagged-union" >}})                                                      | 60 |
+|                                       | Declaration not found                                                                                                                                          | 71 |
+|                                       | Ambiguous design unit reference                                                                                                                                | 72 |
+|                                       | Attempted implicit declaration with default nettype none                                                                                                       | 73 |
+|                                       | Invalid enumeration element range format                                                                                                                       | 74 |
+|                                       | Range of enumeration element is too large                                                                                                                      | 75 |
+|                                       | Invalid construct                                                                                                                                              | 76 |
+|                                       | Invalid randomize argument                                                                                                                                     | 77 |
+|                                       | Not a value expression                                                                                                                                         | 78 |
+|                                       | Type not assignment compatible                                                                                                                                 | 79 |
+|                                       | Constraint class scope missing                                                                                                                                 | 80 |
+|                                       | Constraint class with packed dimensions                                                                                                                        | 81 |
 
 <!--|                                       | A verilog `net` type keyword cannot be followed directly by the `reg` keyword                                                                                  |  4 |-->
 
