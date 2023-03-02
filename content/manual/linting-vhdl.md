@@ -29,6 +29,7 @@ ST code rules are available for all licenses including {{< starter >}}.
 | {{< warning_lightbulb >}} | VHDL 2008 features in VHDL 93 mode (Learn about [choosing your VHDL version](/manual/config#choosing-your-vhdl-and-verilog-version)) |     |
 | {{< warning_lightbulb >}} | Port/Generic lists cannot be terminated with a ';'                                                                                   |     |
 | {{< warning_lightbulb >}} | Port/Generic maps cannot be terminated with a ','                                                                                    |     |
+|                           | Loop variables cannot be assigned                                                                                                    |     |
 
 ## XL code rules
 XL code rules require a {{< xl >}} or {{< xprt >}} license.
@@ -88,3 +89,4 @@ XL code rules require a {{< xl >}} or {{< xprt >}} license.
 |                           | [Index out of range]({{< ref "vhdl_array_range" >}})                                                                                 | 210 |
 |                           | [Slice has wrong direction]({{< ref "vhdl_array_range" >}})                                                                          | 211 |
 |                           | Unterminated string literal                                                                                                          | 215 |
+|                           | [Extended identifier with whitespace may cause problems]({{< ref "vhdl_style#extended-identifier-contains-whitespace" >}})           | 228 |
