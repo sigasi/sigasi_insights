@@ -80,3 +80,5 @@ XL code rules require a {{< xl >}} or {{< xprt >}} license.
 |                           | [Empty parameter overrides not allowed]({{< ref "rules/verilog_parameters/#empty-parameter-overrides-not-allowed" >}})                                         | 54 |
 |                           | [Named connections are not allowed with blank ports]({{< ref "rules/verilog_parameters/#project-specific-setting-of-these-rules" >}})                          | 56 |
 |                           | [Regular expressions (RE2/J) compatibility check]({{< ref "rules/verilog_style/#regular-expressions-compatibility" >}})                                        | 58 |
+|                           | [Local parameter has to be initialized]({{< ref "rules/verilog_parameters/#local-parameter-has-to-be-initialized" >}})                                         | 69 |
+|                           | [Local parameter cannot be overwritten]({{< ref "rules/verilog_parameters/#local-parameter-cannot-be-overwritten" >}})                                         | 70 |

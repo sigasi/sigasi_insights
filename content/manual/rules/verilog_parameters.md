@@ -33,7 +33,7 @@ assigned a value of a different width.
 
 ## Empty parameter not allowed
 
-The Verilog standard doesn't allow empty parameters.
+The Verilog standard doesn't allow empty parameters (rule 53).
 
 <pre>
 module dut # (parameter WIDTH = 42<span class="badcode">, </span>) (input clk); endmodule; // dangling comma is not allowed
@@ -43,7 +43,7 @@ module dut # (parameter WIDTH = 42<span class="goodcode"> </span>) (input clk); 
 
 ## Empty parameter overrides not allowed
 
-The Verilog standard doesn't allow empty parameter overrides.
+The Verilog standard doesn't allow empty parameter overrides (rule 54).
 
 <pre>
 module test;
@@ -55,4 +55,29 @@ module test;
 endmodule
 </pre>
 
-{{% lintrule sv 19 48 53 54 %}}
+## Local parameter has to be initialized
+
+The Verilog standard requires that local parameters are initialized (rule 69).
+
+<pre>
+<span class="badcode">localparam p;</span>             // initialization missing
+
+<span class="goodcode">localparam p = 1;</span>
+</pre>
+
+## Local parameter cannot be overwritten
+
+The Verilog standard does not allow that local parameters are overwritten (rule 70).
+
+<pre>
+module name(
+    input clk,
+    input rst
+);
+    localparam int test = 42;
+
+    <span class="badcode">defparam test = 0;</span>    // overwrite not allowed
+endmodule : name
+</pre>
+
+{{% lintrule sv 19 48 53 54 69 70 %}}
