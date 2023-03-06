@@ -22,3 +22,18 @@ Then you can select an existing library or choose **New Library...** to type a n
 
 The extension currently supports a single project per workspace.
 To open multiple HDL projects, open each project in a separate VS Code window.
+
+## Environment variables
+
+Sigasi Studio supports environment variables in its project
+configuration, e.g. `VUNIT` to point at your VUnit installation, or
+`PROJECT_LOC` with the PATH of your project. You can also add your own
+environment variables.
+
+You can configure these variables as follows:
+* Press **Ctrl+Shift+P** to open the Command Palette
+* Select **Preferences: Open Settings (UI)**
+* In the Setting tab, navigate to **Extensions > Sigasi > General > Custom Project Variables**
+* Add environment variables and their values as required
+
+{{< figure src="/img/vscode/VSCodeCustomVars.png" link="/img/vscode/VSCodeCustomVars.png" alt="VS Code: custom project variables" class="uk-align-center" >}}
