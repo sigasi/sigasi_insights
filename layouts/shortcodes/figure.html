@@ -4,7 +4,7 @@
 {{ $scratch := newScratch }}
 
 {{ with $asrc }}
-{{ $resizedw := (print $awidth "x") }}
+{{ $resizedw := (print $awidth "x webp q100") }}
 {{ $scratch.Set "resized" ($asrc.Resize $resizedw) }}
 {{ end }}
 
