@@ -19,7 +19,7 @@ endmodule
 
 module badtop;
     logic clk, arst, en, a, b;
-    sub sub_inst(<span class="badcode">clk, arst, en, a, b</span>); // 5 ordered associations: difficult to read and maintain
+    sub sub_inst(<span class="uglycode">clk, arst, en, a, b</span>); // 5 ordered associations: difficult to read and maintain
 endmodule
 
 module goodtop;
