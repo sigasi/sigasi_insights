@@ -7,6 +7,7 @@ date: 2011-01-07
 lastmod: 2020-07-31
 tags: 
   - Altera
+  - Intel
   - BeMicro
   - FPGA
 comments: true

@@ -233,7 +233,7 @@ You can revert to older revisions of these files while Sigasi is running. Sigasi
 
 ## How can I hide files from the Project Explorer?
 
-If the project explorer shows the hidden files in from your revision control system (.hg or .svn directory), or there are too many files from Altera Quartus or Xilinx ISE that clutter the project explorer, you can hide those files from view:
+If the project explorer shows the hidden files in from your revision control system (.hg or .svn directory), or there are too many files from Intel Quartus or Xilinx ISE that clutter the project explorer, you can hide those files from view:
 
 Select the View Menu (small triangle pointing down) **Customize View > Filters**.
 
@@ -746,13 +746,13 @@ Sigasi does not offer simulators. If you don't have a VHDL simulator yet, we wou
 | --------------------------------- | ------------------ | --------------------------------------------- | ------- | ----- | ----- |
 | Aldec Lattice Edition             | Only Lattice FPGAs | [Lattice Download page][latic_download]       | Yes     | No    | No    |
 | Aldec Active-HDL, Student Edition | Students only      | [Aldec Download page][aldec_download]         | Yes     | No    | No    |
-| ModelSim Altera Starter Edition   | Only Altera FPGAs  | [Altera Quartus Web Edition][altera_download] | Yes     | Yes   | No    |
+| ModelSim-Intel FPGA Edition       | Only Intel FPGAs   | [Intel Quartus Web Edition][intel_download]   | Yes     | Yes   | No    |
 | ISim                              | Only Xilinx FPGAs  | [Xilinx Webpack][xilinx_download]             | Yes     | Yes   | No    |
 | [GHDL][GHDL_site]                 | Open source        | [GHDL download page][ghdl_download]           | Yes     | Yes   | Yes   |
 
 [latic_download]: http://www.latticesemi.com/en/Products/DesignSoftwareAndIP/FPGAandLDS/LatticeDiamond.aspx
 [aldec_download]: https://www.aldec.com/en/downloads
-[altera_download]: https://www.altera.com/products/design-software/model---simulation/modelsim-altera-software.html
+[intel_download]: https://www.intel.com/content/www/us/en/software/programmable/quartus-prime/questa-edition.html
 [xilinx_download]: https://www.xilinx.com/products/design-tools/ise-design-suite/ise-webpack.html
 [ghdl_download]: https://github.com/tgingold/ghdl/releases
 [GHDL_site]: http://ghdl.free.fr

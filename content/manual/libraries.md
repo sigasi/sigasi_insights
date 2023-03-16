@@ -184,11 +184,11 @@ This section links to various recommendations on to pre-compiling the simulation
 
 * Recommendations for [Xilinx Vivado](https://www.xilinx.com/support/answers/64083.html)
 
-### Intel (Altera)
+### Intel (formerly Altera)
 
-* [Altera Simulation Libraries](https://www.intel.com/content/www/us/en/programmable/support/support-resources/design-software/max_plus-ii/vdsimlib.html)
+* [Intel Simulation Libraries](https://www.intel.com/content/www/us/en/programmable/support/support-resources/design-software/max_plus-ii/vdsimlib.html)
 
-* [Example script](https://www.intel.com/content/www/us/en/programmable/support/support-resources/knowledge-base/solutions/rd06182013_21.html) to compile Altera simulation libraries
+* [Example script](https://www.intel.com/content/www/us/en/programmable/support/support-resources/knowledge-base/solutions/rd06182013_21.html) to compile Intel simulation libraries
 
 ### GHDL
 
@@ -292,12 +292,11 @@ Xilinx   | `unisim`          | `C:\Xilinx\Vivado\2020.1\data\vhdl\src\unisims`
 Xilinx   | `unimacro`        | `C:\Xilinx\Vivado\2020.1\data\vhdl\src\unimacro`
 Xilinx   | `XilinxCoreLib`   | `C:\Xilinx\14.4\ISE_DS\ISE\vhdl\src\XilinxCoreLib`
 Xilinx   | `xpm`             | `C:\Xilinx\Vivado\2020.1\data\ip\xpm`
-Altera   | `altera_mf`       | `C:\altera\17.0\quartus\libraries\vhdl`
+Intel    | `altera_mf`       | `C:\Intel\17.0\quartus\libraries\vhdl`
 Mentor   | `modelsim_lib`    | `${ModelSimPath}\vhdl_src\modelsim_lib`
 Aldec    | `aldec`           | `C:\Aldec\Riviera-PRO-2015.02\vlib\aldec\`
 
-On Linux the default installation location for Xilinx is `/opt/Xilinx`
-and `/opt/altera` for Altera.
+On Linux the default installation location for Xilinx is `/opt/Xilinx`.
 
 For many common third party libraries, you can set up the library using
 a [Quick Fix for third party libraries](/manual/rules/quick-fix-for-third-party-libraries).

@@ -10,6 +10,7 @@ tags:
   - Python
   - Sigasi Studio
   - Altera
+  - Intel
   - Quartus
 comments: true
 bannerad: true

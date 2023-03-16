@@ -1,5 +1,5 @@
 ---
-title: "Sigasi Pro integration with Altera Quartus II"
+title: "Sigasi Studio integration with Intel Quartus"
 layout: youtube 
 pager: false
 date: 2016-01-01

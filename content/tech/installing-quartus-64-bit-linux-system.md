@@ -5,6 +5,7 @@ pager: true
 author: Philippe Faes
 date: 2012-06-23
 tags: 
+  - Intel
   - Quartus
 comments: true
 bannerad: true

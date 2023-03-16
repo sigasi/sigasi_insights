@@ -141,12 +141,12 @@ Repeat this procedure for `*.vhd` files and for `*.vhdl` files.
 
 {{< figure src="/img/manual/default_application_for_mac.png" alt="Setting the default application for VHDL files" >}}
 
-## Altera Quartus II
+## Intel Quartus
 
-In Altera Quartus II, open the preferences page in **Tools \> Options \>
+In Intel Quartus, open the preferences page in **Tools \> Options \>
 General \> Preferred Text Editor**.
 
-{{< figure src="/img/manual/sigasieditorquartus.png" alt="Configuring Sigasi Studio as default VHDL editor in Altera Quartus" >}}
+{{< figure src="/img/manual/sigasieditorquartus.png" alt="Configuring Sigasi Studio as default VHDL editor in Intel Quartus" >}}
 
 As command-line options, you should have `%f +%l -p %p`. Optionally you
 could add `-noSplash` to skip the splash dialog.

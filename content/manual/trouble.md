@@ -184,16 +184,16 @@ This clears all of your workspace state.
 * You will need to enter your license code again.
 * You will need to import your projects again. **Import > General > Existing Projects into Workspace**
 
-# Keep getting reports about an "Incompatible version of Quartus II"
+# Keep getting reports about an "Incompatible version of Quartus"
 
-If you are using the integration with Altera Quartus II. Some people keep getting a dialog box that says:
+If you are using the integration with Intel Quartus. Some people keep getting a dialog box that says something like:
 
-> Incompatible version of Quartus II
+> Incompatible version of Quartus
 >  
-> Project interface was created with an older, incompatible version of Quartus II.
-> Is it OK to upgrade the project to match the installed version of Quartus II?
+> Project interface was created with an older, incompatible version of Quartus.
+> Is it OK to upgrade the project to match the installed version of Quartus?
 
-Obviously, you should upgrade the project. If this message keeps popping up, you may want to check that Sigasi Studio is using the correct version of Quartus II, in the Sigasi Studio application: **Window > Preferences > Sigasi > Toolchains > Altera Quartus II**.
+Obviously, you should upgrade the project. If this message keeps popping up, you may want to check that Sigasi Studio is using the correct version of Quartus, in the Sigasi Studio application: **Window > Preferences > Sigasi > Toolchains > Intel Quartus**.
 
 # Contact support
 

@@ -93,7 +93,7 @@ For each toolchain Sigasi Studio can support any combination of the following:
 * [Save-time compilation](#save-time-compilation)
 * [Launch Simulator](#launch-simulator)
 * [Quick Fix for third party libraries](/manual/rules/quick-fix-for-third-party-libraries)
-* [Open a Quartus II Project in Sigasi Studio](#open-a-quartus-ii-project-in-sigasi-studio)
+* [Open a Quartus Project in Sigasi Studio](#open-a-quartus-project-in-sigasi-studio)
 
 Currently the following external compilers are supported:
 
@@ -102,7 +102,7 @@ Currently the following external compilers are supported:
 | Aldec Riviera-PRO               | true                  | true                     |
 | Aldec Active-HDL                | true                  | false                    |
 | Aldec ALINT-PRO                 | true                  | false                    |
-| Altera Quartus II               | false                 | false                    |
+| Intel Quartus                   | false                 | false                    |
 | ModelSim / QuestaSim            | true                  | true                     |
 | Xilinx ISE                      | true                  | true                     |
 | [Xilinx Vivado](/manual/vivado) | true                  | true                     |
@@ -271,63 +271,63 @@ location will automatically be opened in the Editor view.
 You can add as many extra builders as you want. This can be useful for
 additional linting tools or code generators.
 
-# Altera Quartus II integration
+# Intel Quartus integration
 
-If you are using Altera Quartus II 12.1 , you can use Sigasi Studio as
+If you are using Intel Quartus 12.1 or higher, you can use Sigasi Studio as
 preferred HDL editor.
 
-If you use the Sigasi Studio/ Altera Quartus II integration, you can
-easily open VHDL files by double clicking on them in Quartus II. Sigasi
-Studio will be aware of the entire Quartus II project, so that you can
+If you use the Sigasi Studio/ Intel Quartus integration, you can
+easily open VHDL files by double clicking on them in Quartus. Sigasi
+Studio will be aware of the entire Quartus project, so that you can
 perform project-wide searches and navigation actions in Sigasi Studio.
-Furthermore, if you add or remove files in the Quartus II project, these
+Furthermore, if you add or remove files in the Quartus project, these
 changes are automatically applied in Sigasi Studio.
 
-*Note:* If you want to set up a project independent of Altera Quartus
-II, please read the documentation on [setting up a project](/manual/projectsetup).
+*Note:* If you want to set up a project independent of Intel Quartus,
+ please read the documentation on [setting up a project](/manual/projectsetup).
 
 ## Setting the preferred editor
 
 While importing a Quartus Project in Sigasi Studio, you have the
 possibility to configure Sigasi Studio as preferred editor
-in [Altera Quartus II](/manual/opening#altera-quartus-ii).
+in [Intel Quartus](/manual/opening#intel-quartus).
 This offers the ability to open files in Sigasi Studio from within Quartus.
 
-## Open a Quartus II Project in Sigasi Studio
+## Open a Quartus Project in Sigasi Studio
 
 After you have configured Sigasi Studio to be the preferred editor in
-Quartus II, you can open files by double clicking on them in Quartus II.
+Quartus, you can open files by double clicking on them in Quartus.
 
-Sigasi Studio will import entire Quartus II project and your file will open
-in the Sigasi Studio editor view. If you make changes to your Quartus II
+Sigasi Studio will import entire Quartus project and your file will open
+in the Sigasi Studio editor view. If you make changes to your Quartus
 project (like adding or removing files), these changes are reflected in
 Sigasi Studio as well.
 
 The first time you import your project, it may take a few minutes. After
 that, you can leave Sigasi Studio open and double-click other files in
-Quartus II to open them in the Sigasi Studio editor view.
+Quartus to open them in the Sigasi Studio editor view.
 
-If your Quartus II Project File (**.QPF file**) contains a reference to a
+If your Quartus Project File (**.QPF file**) contains a reference to a
 file that does not exist, Sigasi Studio will show an icon for that file with
 the *broken link* icon ![](/img/icons/brokenlink.png) .
 
-## Quartus II Preferences
+## Quartus Preferences
 
-The first time you import a Quartus II project, Sigasi Studio will ask for the
-Quartus II installation location. Sigasi Studio needs this path to find the
-Quartus II libraries. You can change the Quartus II installation
+The first time you import a Quartus project, Sigasi Studio will ask for the
+Quartus installation location. Sigasi Studio needs this path to find the
+Quartus libraries. You can change the Quartus installation
 location by selecting **Window \> Preferences \> Sigasi \> Toolchains**.
 
-## Add files to your Quartus II project in Sigasi Studio
+## Add files to your Quartus project in Sigasi Studio
 
-To add a file to your Quartus II project, you can use the default **New
+To add a file to your Quartus project, you can use the default **New
 VHDL file** wizard of Sigasi Studio (**File \> New \> VHDL File**).
 
-{{< figure src="/img/manual/quartusnewfile.png" alt="Add a new VHDL file to a Altera Quartus II project in Sigasi Studio" >}}
+{{< figure src="/img/manual/quartusnewfile.png" alt="Add a new VHDL file to a Intel Quartus project in Sigasi Studio" >}}
 
-Note that Quartus II does not automatically update its UI after you add
+Note that Quartus does not automatically update its UI after you add
 files to your project. In order to update the files list, you should run
-a work flow action in Quartus II, like starting a compilation.
+a work flow action in Quartus, like starting a compilation.
 
 # Xilinx integration
 

@@ -6,6 +6,7 @@ author: Philippe Faes
 date: 2012-10-11
 tags: 
   - Altera
+  - Intel
   - mythbuster
   - VHDL
   - synthesis

@@ -7,6 +7,7 @@ date: 2011-04-28
 tags: 
   - Aldec
   - Altera
+  - Intel
   - pragma
   - Synopsys
   - VHDL
@@ -72,9 +73,9 @@ Disable code coverage analysis:
 -- coverage on
 ```
 
-## Altera
+## Intel Quartus
 
-[Altera documentation](https://www.intel.com/content/www/us/en/programmable/quartushelp/current/index.htm#hdl/vhdl/vhdl_file_dir.htm) 
+[Intel documentation](https://www.intel.com/content/www/us/en/programmable/quartushelp/current/index.htm#hdl/vhdl/vhdl_file_dir.htm)
 
 Triggers:
 

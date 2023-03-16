@@ -26,7 +26,7 @@ design are in one folder on your hard drive. In addition to your own
 files, there might be some third party libraries that you need for your
 project, like the `XilinxCoreLib` or `Altera_MF` files.
 
-Let's assume your file list looks something like this. You have a bunch of files in `c:\my_home\project_dir` and you are using the `altera_mf` library files that come with Altera Quartus.
+Let's assume your file list looks something like this. You have a bunch of files in `c:\my_home\project_dir` and you are using the `altera_mf` library files that come with Intel Quartus.
 
 ```
 +C:

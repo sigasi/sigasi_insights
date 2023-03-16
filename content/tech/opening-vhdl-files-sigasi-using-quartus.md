@@ -7,13 +7,14 @@ date: 2012-12-19
 tags: 
   - Quartus
   - Altera
+  - Intel
   - VHDL editor
 comments: true
 bannerad: true
 ---
 
 
-This page deals with step three of using the Quartus integration plugin for Sigasi. We assume have already set up Sigasi as default editor in [Altera Quartus II](/manual/opening#altera-quartus-ii).
+This page deals with step three of using the Quartus integration plugin for Sigasi. We assume have already set up Sigasi as default editor in [Intel Quartus](/manual/opening#intel-quartus).
 
 ## How to open an HDL file in Quartus
 
