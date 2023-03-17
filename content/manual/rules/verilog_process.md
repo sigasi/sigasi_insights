@@ -17,7 +17,7 @@ A good way to correct this description is to place the timing control statement 
     always
     begin
         data_out <= data_in;
-        <span class="uglycode">@(posedge clk);</span> // Timing control not at the top of 'always'
+        <span class="warning">@(posedge clk);</span> // Timing control not at the top of 'always'
     end
 endmodule
 

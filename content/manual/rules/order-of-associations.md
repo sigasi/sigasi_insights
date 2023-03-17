@@ -17,8 +17,8 @@ begin
    assert iterations <= MAX_COUNT;
 
    i_comp_1: my_comp port map( -- associations should be kept in the same order as the declaration
-      <span class="badcode">rst  => rst,</span>
-      <span class="badcode">clk  => clk,</span>
+      <span class="error">rst  => rst,</span>
+      <span class="error">clk  => clk,</span>
       inp  => data_in(0), 
       outp => open
    );

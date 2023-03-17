@@ -19,7 +19,7 @@ clauses.
 
 It is good practice **not to include use clauses for libraries STD and WORK**. Sigasi Studio flags as warning if they appear.
 
-<pre>library IEEE<span class="badcode">, STD, WORK</span>;</pre>
+<pre>library IEEE<span class="error">, STD, WORK</span>;</pre>
 
 {{< figure src="/img/manual/warn-superfluous-library.png" >}}
 

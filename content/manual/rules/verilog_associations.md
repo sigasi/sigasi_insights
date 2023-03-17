@@ -19,7 +19,7 @@ endmodule
 
 module badtop;
     logic clk, arst, en, a, b;
-    sub sub_inst(<span class="uglycode">clk, arst, en, a, b</span>); // 5 ordered associations: difficult to read and maintain
+    sub sub_inst(<span class="warning">clk, arst, en, a, b</span>); // 5 ordered associations: difficult to read and maintain
 endmodule
 
 module goodtop;
@@ -50,12 +50,12 @@ endmodule
 
 module badtop;
     // Syntax error: mix of named (`PARAM_1`) and positional (`3`) association
-    sub#(<span class="badcode">.PARAM_1(2), 3</span>) sub_inst();
+    sub#(<span class="error">.PARAM_1(2), 3</span>) sub_inst();
 endmodule
 
 module ok_top;
     // All associations are positional: OK but harder to understand and maintain
-    sub#(<span class="uglycode">2, 3</span>) sub_inst();
+    sub#(<span class="warning">2, 3</span>) sub_inst();
 endmodule
 
 module goodtop;
@@ -76,10 +76,10 @@ endmodule
 module badtop;
     logic aa, bb, cc;
     // parameter `HEIGHT` and ports `a`, `b`, `c` do not exists in module `sub`
-    sub#(.<span class="badcode">HEIGHT</span>(4)) sub_inst(
-        .<span class="badcode">a</span>(aa),
-        .<span class="badcode">b</span>(bb),
-        .<span class="badcode">c</span>(cc)
+    sub#(.<span class="error">HEIGHT</span>(4)) sub_inst(
+        .<span class="error">a</span>(aa),
+        .<span class="error">b</span>(bb),
+        .<span class="error">c</span>(cc)
     );
 endmodule
 
@@ -102,9 +102,9 @@ endmodule
 module badtop;
     logic a, b, c;
     // parameter `WIDTH` and port `i1` are connected twice
-    sub#(.<span class="badcode">WIDTH</span>(4), .<span class="badcode">WIDTH</span>(6)) sub_inst(
-        .<span class="badcode">i1</span>(a),
-        .<span class="badcode">i1</span>(b),
+    sub#(.<span class="error">WIDTH</span>(4), .<span class="error">WIDTH</span>(6)) sub_inst(
+        .<span class="error">i1</span>(a),
+        .<span class="error">i1</span>(b),
         .o1(c)
     );
 endmodule
@@ -130,7 +130,7 @@ endmodule
 module badtop;
     logic[7:0] x;
     // parameter `LHS` and port `i2` don't have a default value so they must be connected
-    sub <span class="badcode">sub_inst(.o1(x))</span>;
+    sub <span class="error">sub_inst(.o1(x))</span>;
 endmodule
 
 module goodtop;
@@ -152,7 +152,7 @@ endmodule
 module badtop;
     logic a, b, c, d;
     // Expecting 1 parameter connection and 3 port connections instead of 2 and 4
-    sub#(4<span class="badcode">, 6</span>) sub_inst(a, b, c<span class="badcode">, d</span>);
+    sub#(4<span class="error">, 6</span>) sub_inst(a, b, c<span class="error">, d</span>);
 endmodule
 
 module goodtop;
@@ -175,8 +175,8 @@ endmodule
 
 module badtop;
     sub sub_instance(
-        <span class="badcode">.clk(clk)</span>,
-        <span class="badcode">.rst(rst)</span>
+        <span class="error">.clk(clk)</span>,
+        <span class="error">.rst(rst)</span>
     );
 endmodule
 

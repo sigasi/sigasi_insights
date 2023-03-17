@@ -7,9 +7,9 @@ Different vendors have shipped different versions, with incompatible
 implementation. These packages should not be used and are flagged as
 **Deprecated IEEE packages**.
 
-<pre>use ieee.<span class="badcode">std_logic_arith</span>.all
-use ieee.<span class="badcode">std_logic_signed</span>.all
-use ieee.<span class="badcode">std_logic_unsigned</span>.all</pre>
+<pre>use ieee.<span class="error">std_logic_arith</span>.all
+use ieee.<span class="error">std_logic_signed</span>.all
+use ieee.<span class="error">std_logic_unsigned</span>.all</pre>
 
 Instead, use the standard `ieee.numeric_std` package.
 

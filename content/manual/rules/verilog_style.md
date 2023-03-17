@@ -71,14 +71,14 @@ statements (rule 47).
     reg A, B, C, D, K, M;
     reg EN;
 
-    <span class="uglycode">assign A = B & C, D = K & M;</span>    // multiple statements in one line: less readable
+    <span class="warning">assign A = B & C, D = K & M;</span>    // multiple statements in one line: less readable
 
     <span class="goodcode">assign A = B & C;</span>               // one statement per line: more readable
     <span class="goodcode">assign D = K & M;</span>
 
     always@(*)
         if(EN==1'b1) begin
-            <span class="uglycode">A = B & C; D = K & M;</span>   // multiple statements in one line: less readable
+            <span class="warning">A = B & C; D = K & M;</span>   // multiple statements in one line: less readable
 
             <span class="goodcode">A = B & C;</span>              // one statement per line: more readable
             <span class="goodcode">D = K & M;</span>
@@ -91,7 +91,7 @@ endmodule</pre>
 Sigasi Studio will flag a warning if a parameter list has a trailing comma (rule 52).
 Most EDA tools will treat a trailing comma as a syntax error.
 
-<pre>module ugly #(WIDTH = 16<span class="uglycode"> , </span>) (
+<pre>module ugly #(WIDTH = 16<span class="warning"> , </span>) (
     // ...
 
 module nice #<span class="goodcode">(WIDTH = 16)</span> (

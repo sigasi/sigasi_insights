@@ -13,7 +13,7 @@ cause problems in Verilog and SystemVerilog as they use whitespace to
 mark the end of an extended identifier.
 
 <pre>
-signal <span class="uglycode">\foo bar\</span> : std_logic  -- identifier with spaces: not recommended!
+signal <span class="warning">\foo bar\</span> : std_logic  -- identifier with spaces: not recommended!
 </pre>
 
 {{% lintrule 228 %}}

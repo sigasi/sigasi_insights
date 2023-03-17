@@ -16,10 +16,10 @@ By default Sigasi Studio warns when positional associations are used. You can ch
 
 begin
    i_comp_1: my_comp port map( -- positional associations not recommended
-      <span class="badcode">clk,</span>
-      <span class="badcode">rst,</span>
-      <span class="badcode">data_in(0),</span>
-      <span class="badcode">open</span>
+      <span class="error">clk,</span>
+      <span class="error">rst,</span>
+      <span class="error">data_in(0),</span>
+      <span class="error">open</span>
    );
 
    i_comp_2: my_comp port map( -- named associations recommended

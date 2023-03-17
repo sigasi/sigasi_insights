@@ -6,11 +6,11 @@ Although the `input` direction is taken by default, it is preferable to explicit
 
 <pre>module bad_example;
 
-	function int my_func(<span class="badcode">int a, b</span>);          // bad: direction of a and b omitted
+	function int my_func(<span class="error">int a, b</span>);          // bad: direction of a and b omitted
 		return a+b;
 	endfunction
 	
-	task my_task(<span class="badcode">int a, b</span>);                 // bad: direction of a and b omitted
+	task my_task(<span class="error">int a, b</span>);                 // bad: direction of a and b omitted
 	begin
 		$display(a);
 		$display(b);

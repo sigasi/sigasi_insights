@@ -94,33 +94,33 @@ module top (
     output int rslt1, rslt2, rslt3, rslt4
 );
 
-demo demo_instance1 (  <span class="badcode">// Too many actual ports: there are 5 actuals for 4 formals</span>
+demo demo_instance1 (  <span class="error">// Too many actual ports: there are 5 actuals for 4 formals</span>
     clk,
     rst,
-    <span class="badcode">topdata</span>,
-    <span class="badcode">topdata</span>,           <span class="badcode">// Unintended duplication?</span>
+    <span class="error">topdata</span>,
+    <span class="error">topdata</span>,           <span class="error">// Unintended duplication?</span>
     rslt1
 );
 
 demo demo_instance2 (
     .clk(clk),
     .rst(rst),
-    <span class="badcode">.data</span>(topdata+1),
-    <span class="badcode">.data</span>(topdata+2),   <span class="badcode">// Duplicate formal port `data` used in the instantiation statement</span>
+    <span class="error">.data</span>(topdata+1),
+    <span class="error">.data</span>(topdata+2),   <span class="error">// Duplicate formal port `data` used in the instantiation statement</span>
     .rslt(rslt2)
 );
 
-demo demo_instance3 (   <span class="badcode">// Missing actual for formal port `rslt`</span>
+demo demo_instance3 (   <span class="error">// Missing actual for formal port `rslt`</span>
     .clk(clk),
     .rst(rst),
-    .data(topdata)      <span class="badcode">// Where is the value for `rslt`?</span>
+    .data(topdata)      <span class="error">// Where is the value for `rslt`?</span>
 );
 
 demo demo_instance4 (
     .clk(clk),
     .rst(rst),
     .data(topdata),
-    <span class="badcode">.foo</span>(rslt3),        <span class="badcode">// Formal port `foo` not found in the instantiated unit</span>
+    <span class="error">.foo</span>(rslt3),        <span class="error">// Formal port `foo` not found in the instantiated unit</span>
     .rslt(rslt4)
 );
 endmodule

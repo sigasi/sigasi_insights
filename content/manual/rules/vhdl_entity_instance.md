@@ -14,7 +14,7 @@ Note that when instantiating a *component*, the keyword `entity` and the library
         );
     end component foo;
 begin
-    <span class="badcode">foo_inst_bad : work.foo</span>              -- instance of entity foo requires keyword "entity"
+    <span class="error">foo_inst_bad : work.foo</span>              -- instance of entity foo requires keyword "entity"
         port map(
             clk => clk,
             rst => rst

@@ -10,7 +10,7 @@ if <span class="goodcode">valid</span> then
    -- ...
 end if;
 
-if <span class="badcode">valid = true</span> then
+if <span class="error">valid = true</span> then
    -- ...
 end if;
 
@@ -18,11 +18,11 @@ if <span class="goodcode">not valid</span> then
    -- ...
 end if;
 
-if <span class="badcode">valid = false</span> then
+if <span class="error">valid = false</span> then
    -- ...
 end if;
 
-if <span class="badcode">valid /= true</span> then
+if <span class="error">valid /= true</span> then
    -- ...
 end if;
 </pre>

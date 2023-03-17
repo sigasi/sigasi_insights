@@ -9,7 +9,7 @@ Sigasi Studio flags an error if a type is used in an expression.
 begin
     p : process is
     begin
-        case <span class="badcode">t_foo</span> is   -- a type cannot be used in an expression e.g. a case expression
+        case <span class="error">t_foo</span> is   -- a type cannot be used in an expression e.g. a case expression
             when one =>
         end case;
     end process p;

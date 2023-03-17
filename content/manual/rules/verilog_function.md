@@ -14,7 +14,7 @@ A good fix to correct the problem is to replace non-blocking assignments (`<=`) 
 	function plus_one;
 		input integer a;
 		begin
-			plus_one <span class="badcode"><=</span> a + 1;  // Incorrect: non-blocking assignment
+			plus_one <span class="error"><=</span> a + 1;  // Incorrect: non-blocking assignment
 		end
 	endfunction
 endmodule
@@ -33,7 +33,7 @@ endmodule</pre>
 SystemVerilog function prototypes (`pure virtual` functions) should have a return type. Sigasi Studio flags a warning for function prototypes without return type (rule 10).
 
 <pre>virtual class badclass;
-    <span class="uglycode">pure virtual function myfunc</span>(input bit[31:0] data);           // return type missing
+    <span class="warning">pure virtual function myfunc</span>(input bit[31:0] data);           // return type missing
 endclass
 
 virtual class goodclass;

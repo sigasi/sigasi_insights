@@ -80,7 +80,7 @@ As it turned out, there was a problem with the SystemVerilog
 testbenches themselves: a SystemVerilog package was included in both
 testbenches, rather than being compiled by itself.
 
-<pre><span class="badcode">`include "simpleadder_pkg.sv"</span>
+<pre><span class="error">`include "simpleadder_pkg.sv"</span>
 `include "simpleadder_if.sv"
 `include "vunit_defines.svh"
 `include "uvm_macros.svh"

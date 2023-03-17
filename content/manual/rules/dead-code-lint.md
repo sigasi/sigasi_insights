@@ -23,14 +23,14 @@ it will mark the if-statement because it contains dead code.
 
 <pre>if true then
     v := v + 1;
-<span class="badcode">else</span>
-    <span class="badcode">v := v - 1;</span>
+<span class="error">else</span>
+    <span class="error">v := v - 1;</span>
 end if;
 </pre>
 
 * dead states in a state machine: a state is considered dead if it has no outgoing transitions (rule 71)
 
-<pre>type t_state is (IDLE, <span class="badcode">START</span>, RUN, DONE);
+<pre>type t_state is (IDLE, <span class="error">START</span>, RUN, DONE);
 signal state: t_state;
 -- [some code omitted]
   case state is

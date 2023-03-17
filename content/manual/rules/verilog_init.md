@@ -14,8 +14,8 @@ By default, Sigasi Studio flags a warning for register initialization at the poi
 it may be desirable to turn the warning off, whereas for ASIC projects one may want to raise the severity to *error*.
 
 
-<pre>module fpga_only(input clk, input rst, input ii, <span class="uglycode">output logic oo = 1'b0</span>);
-    <span class="uglycode">logic sig = 1'b0</span>;
+<pre>module fpga_only(input clk, input rst, input ii, <span class="warning">output logic oo = 1'b0</span>);
+    <span class="warning">logic sig = 1'b0</span>;
 
     // ...
 endmodule</pre>

@@ -14,7 +14,7 @@ clause (rule 8). This rule is checked for `enum` types only, not for scalar or v
     t_state state;
 
     always @(posedge clk) begin
-        case (state)                      // <span class="badcode">Error: case `INIT` is missing</span>
+        case (state)                      // <span class="error">Error: case `INIT` is missing</span>
             IDLE    : state = START;
             START   : state = READY;
             READY   : state = IDLE ;
@@ -50,7 +50,7 @@ The `default` clause should be at the end, after all other options (rule 15). Si
         case (state)
             IDLE    : state = START;
             START   : state = READY;
-            <span class="uglycode">default : state = IDLE</span> ;      // The `default` clause must be at the end
+            <span class="warning">default : state = IDLE</span> ;      // The `default` clause must be at the end
             READY   : state = IDLE ;
         endcase
     end
@@ -76,10 +76,10 @@ This rule also applies to `generate case` statements, e.g.
 
     generate
     case (WIDTH)
-        <span class="uglycode">default:  // The `default` clause must be at the end</span>
-        <span class="uglycode">    begin</span> // others - carry look-ahead adder
-        <span class="uglycode">        adder_cla #(WIDTH) x3(co, sum, a, b, ci);</span>
-        <span class="uglycode">    end</span>
+        <span class="warning">default:  // The `default` clause must be at the end</span>
+        <span class="warning">    begin</span> // others - carry look-ahead adder
+        <span class="warning">        adder_cla #(WIDTH) x3(co, sum, a, b, ci);</span>
+        <span class="warning">    end</span>
         1: begin // 1-bit adder implementation
             adder_1bit x1(co, sum, a, b, ci);
         end
@@ -103,8 +103,8 @@ A case statement can only have one `default` clause (rule 16). An error is flagg
             IDLE    : state = START;
             START   : state = READY;
             READY   : state = IDLE ;
-            <span class="badcode">default : state = IDLE</span> ;      // Error: two `default` clauses
-            <span class="badcode">default : state = START</span>;
+            <span class="error">default : state = IDLE</span> ;      // Error: two `default` clauses
+            <span class="error">default : state = START</span>;
         endcase
     end
 endmodule
@@ -129,18 +129,18 @@ This rule also applies to `generate case` statements, e.g.
 
     generate
     case (WIDTH)
-        <span class="badcode">default:  // Error: two `default` clauses</span>
-        <span class="badcode">    begin</span> // others - carry look-ahead adder
-        <span class="badcode">        adder_cla #(WIDTH) x3(co, sum, a, b, ci);</span>
-        <span class="badcode">    end</span>
+        <span class="error">default:  // Error: two `default` clauses</span>
+        <span class="error">    begin</span> // others - carry look-ahead adder
+        <span class="error">        adder_cla #(WIDTH) x3(co, sum, a, b, ci);</span>
+        <span class="error">    end</span>
         1: begin // 1-bit adder implementation
             adder_1bit x1(co, sum, a, b, ci);
         end
         // other cases
-        <span class="badcode">default:  // Error: two `default` clauses</span>
-        <span class="badcode">    begin</span> // others - carry look-ahead adder
-        <span class="badcode">        adder_cla #(WIDTH) x3(co, sum, a, b, ci);</span>
-        <span class="badcode">    end</span>
+        <span class="error">default:  // Error: two `default` clauses</span>
+        <span class="error">    begin</span> // others - carry look-ahead adder
+        <span class="error">        adder_cla #(WIDTH) x3(co, sum, a, b, ci);</span>
+        <span class="error">    end</span>
     endcase
     endgenerate
 
@@ -161,7 +161,7 @@ Sigasi Studio flags a warning for case statements without a `default` clause (ru
             IDLE    : state = START;
             START   : state = READY;
             READY   : state = IDLE ;
-            <span class="uglycode">// no default branch</span>
+            <span class="warning">// no default branch</span>
         endcase
     end
 endmodule

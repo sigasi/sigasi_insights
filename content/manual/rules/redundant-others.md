@@ -14,7 +14,7 @@ the redundant `others`.**
   when "01" => -- code
   when "10" => -- code
   when "11" => -- code
-  when <span class="uglycode">others</span> => -- never reached: all cases are covered
+  when <span class="warning">others</span> => -- never reached: all cases are covered
 end case;
 </pre>
 

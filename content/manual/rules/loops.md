@@ -8,7 +8,7 @@ Sigasi Studio can check for a number of loop related problems:
 
 <pre>process
 begin
-<span class="badcode">   loop
+<span class="error">   loop
       -- statements go here
    end loop;</span>
 end process;
@@ -24,7 +24,7 @@ end process;</pre>
 * Empty loop statement (rule 190): the loop body doesn't contain any statements
 
 <pre>for loopvar in </span> loop
-<span class="badcode">   -- nothing going on here...</span>
+<span class="error">   -- nothing going on here...</span>
 end loop;</pre>
 
 * `for` loops that won't execute due to a loop variable with a null range will be flagged with the [Null range linting rule]({{< ref "null-range-empty-range" >}}).

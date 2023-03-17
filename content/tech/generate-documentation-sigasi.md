@@ -116,7 +116,7 @@ help you optimize your documentation effort.
   names, for example, will help a lot. What do you think of these
   examples?
 
-<pre>    <span class="badcode">tc = tk - 273</span>;  -- er, what?
+<pre>    <span class="error">tc = tk - 273</span>;  -- er, what?
 
     <span class="goodcode">temperature_celcius = temperature_kelvin - kelvin_celcius_offset</span>;</pre>
 
@@ -126,7 +126,7 @@ help you optimize your documentation effort.
   where they aren't needed is a double win: you don't need to write
   the comments and you don't need to keep them up to date.
 
-<pre>    <span class="badcode">-- convert kelvin to celcius by subtracting the offset between the two</span>
+<pre>    <span class="error">-- convert kelvin to celcius by subtracting the offset between the two</span>
     temperature_celcius := temperature_kelvin - kelvin_celcius_offset;</pre>
 
 * **Document the why** rather than the what.  This is where comments
