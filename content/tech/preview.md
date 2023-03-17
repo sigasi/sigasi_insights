@@ -2,8 +2,8 @@
 title: Sigasi Studio Preview (5.1)
 layout: page
 pager: true
-date: 2023-01-06
-lastmod: 2023-01-06
+date: 2023-03-17
+lastmod: 2023-03-17
 comments: true
 ---
 
@@ -17,7 +17,7 @@ Although these preview releases are less rigorously tested than the official rel
 
 # Current Preview Release
 
-No documented changes since the {{< page "releasenotes/sigasi-5.00.md" >}} release.
+No documented changes since the {{< page "releasenotes/sigasi-5.01.md" >}} release.
 
 # Update or Install
 
@@ -39,7 +39,7 @@ SHA sums ([more info]({{< ref "/faq.md#how-can-i-check-a-sha-sum" >}})) can be c
     * Sigasi Studio depends on `libXss.so` which can be obtained by installing `libXScrnSaver`
   * More information on supported OSes can be found [on the Eclipse website](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_18.xml#target_environments)
 * Sigasi Studio as a plugin in your Eclipse installation:
-  * Eclipse IDE 2021-03 up to and including Eclipse IDE 2022-03
+  * Eclipse IDE 2021-03 up to and including Eclipse IDE 2022-12
   * Java JRE 11 or 17
 
 We recommend at least **4GB of memory** available for Sigasi Studio,

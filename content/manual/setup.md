@@ -5,7 +5,7 @@ weight: 1
 pager: true
 ---
 
-# Distribution and flavours
+# Distribution and Flavors
 
 Sigasi Studio is distributed online. It is available in two versions: as a
 stand-alone application or as a plugin inside a standard Eclipse
@@ -22,11 +22,11 @@ The stand-alone application has the following characteristics:
 * Recommended if you are not using Eclipse yet
 * Installation is trivial: just unzip!
 * Everything is included in a single download
-* Well balanced set of features
+* Well-balanced set of features
 * Optimized for VHDL and Verilog development
 * Complete freedom to add and configure plugins
 
-## Sigasi Studio Eclipse plugin
+## Sigasi Studio Eclipse Plugin
 
 The Eclipse plugin has the following characteristics:
 
@@ -34,13 +34,13 @@ The Eclipse plugin has the following characteristics:
 * Easily plugged into your existing Eclipse platform
 * Complete freedom to add and configure plugins
 * Over one thousand other Eclipse plugins to choose from
-* Support for C, C++, Tcl and other languages
+* Support for C, C++, Tcl, and other languages
 * Support for many version control systems
 
-## Sigasi Studio custom installation
+## Sigasi Studio Custom Installation
 
 * Recommended for (larger) teams
-* Automates the setup of Eclipse, the Sigasi Studio plugin and your project
+* Automates the setup of Eclipse, the Sigasi Studio plugin, and your project
 * Ensure that team members have a uniform setup
 * Quickly set up Eclipse with Sigasi Studio
 * Configure team preferences during setup
@@ -56,7 +56,7 @@ online [Installation Instructions](https://www.sigasi.com/download).
 
 After downloading, choose or create a folder where you want to install
 the software and unpack the archive there. The archive contains a
-single top-level folder called `sigasi`. Inside the folder there is an
+single top-level folder called `sigasi`. Inside the folder, there is an
 application startup file, also called `sigasi`. Start the application by
 executing this startup file.
 
@@ -89,10 +89,10 @@ openFile
 -vmargs
 ```
 
-This way Sigasi Studio uses the default Eclipse behaviour instead of the [custom Sigasi runner]({{< ref "/tech/make-eclipse-open-files-command-line.md" >}}).
+This way Sigasi Studio uses the default Eclipse behavior instead of the [custom Sigasi runner]({{< ref "/tech/make-eclipse-open-files-command-line.md" >}}).
 More information on the Eclipse *OpenFileFeature* can be found [here](https://wiki.eclipse.org/Eclipse/OpenFileFeature).
 
-The Sigasi runner allows to open projects using the `-p` option.
+The Sigasi runner allows you to open projects using the `-p` option.
 This is not possible when using the default Eclipse runner.
 
 # Installation of Sigasi Studio Eclipse Plugin
@@ -102,7 +102,7 @@ There are two ways to install the Sigasi Studio Eclipse Plugin:
 1. [On-line installation of the Eclipse Plugin](#install-the-eclipse-plugin)
 1. [Off-line update site to install the Eclipse Plugin](#installing-the-offline-update-site)
 
-## Prerequisites: Java runtime
+## Prerequisites: Java Runtime
 
 * The Sigasi Studio plugin requires Java 11.
 * You can check your Java version with `java -version`
@@ -114,7 +114,7 @@ There are two ways to install the Sigasi Studio Eclipse Plugin:
 
 * You need to have at least [Eclipse](http://www.eclipse.org) version 4.8, nicknamed *Photon*.
 * This Eclipse version and the Sigasi Studio plugin require Java 11.
-* If you don't have Eclipse installed yet, the C/C++ flavor would be good place to start. Just **download** ([Windows 64 bit][latest-eclipse-cpp-windows64]/[Linux 64 bit][latest-eclipse-cpp-linux64]/[Other versions][latest-eclipse-cpp]), **unzip** and **start**.
+* If you don't have Eclipse installed yet, the C/C++ flavor would be a good place to start. Just **download** ([Windows 64 bit][latest-eclipse-cpp-windows64]/[Linux 64 bit][latest-eclipse-cpp-linux64]/[Other versions][latest-eclipse-cpp]), **unzip**, and **start**.
 * We recommend you also [increase the heap size for Eclipse](/faq/#how-do-i-increase-the-heap-size-for-eclipse).
 
 For more information on system requirements: [System Requirements](/faq/#what-are-the-system-requirements)
@@ -135,9 +135,9 @@ After starting Eclipse:
 {{< figure src="/img/manual/setup-install-plugin.png" alt="Install Sigasi Studio plugin" >}}
 1. Click the **Next** button.
 1. The following steps are pretty self-explaining.
-1. After the installation you will need to restart Eclipse. Once this is done, go to **Window > Perspective > Open Perspective > Other...** and select the **Sigasi** Perspective. You can then close the **Welcome** View to show the Sigasi Views.
+1. After the installation, you will need to restart Eclipse. Once this is done, go to **Window > Perspective > Open Perspective > Other...** and select the **Sigasi** Perspective. You can then close the **Welcome** View to show the Sigasi Views.
 
-## Installing the offline update site
+## Installing the Offline Update Site
 
 Installing the offline update site is very similar to installing from the [main update site](#install-the-eclipse-plugin), where *step 2* is replaced with these steps:
 
@@ -149,6 +149,18 @@ Installing the offline update site is very similar to installing from the [main 
 Next, continue with step 3. in the [general eclipse installation instructions](#install-the-eclipse-plugin).
 It is recommended to disable the option *Contact all update sites during install to find required software*
 when installing the offline update site.
+
+## GPG Certificate Validation
+
+Eclipse 4.26 (2022-12) added GPG certificate checking capabilities. When you install new _plugins_, you will be prompted to trust any not-yet-trusted GPG keys or unsigned artifacts. Because Sigasi artifacts are correctly signed using GPG, you can expect to see the following screen the first time you install or update Sigasi in an Eclipse >= 4.26.
+
+{{< figure src="/img/releasenotes/5.1/GPGDuringInstallation.png" link="/img/releasenotes/5.1/GPGDuringInstallation.png" title="GPG Trust Prompt" class="uk-align-center" width=550 >}}
+
+Previously trusted keys can be inspected by going to **Window > Preferences > Install/Update > Trust**.
+
+{{< figure src="/img/releasenotes/5.1/TrustPreferences.png" link="/img/releasenotes/5.1/TrustPreferences.png" title="GPG Trust Preferences" class="uk-align-center" width=750 >}}
+
+You can refer to [this page]({{< ref "GPG.md" >}}) for all information regarding GPG at Sigasi.
 
 # Licensing
 
@@ -166,16 +178,16 @@ workspace for you:
 
 {{< figure src="/img/manual/chooseworkspace2.png" alt="Choose workspace" >}}
 
-Although you can work with multiple workspaces, we recommend to use a
+Although you can work with multiple workspaces, we recommend using a
 single workspace for all your projects.
 
-# Software updates
+# Software Updates
 
 Sigasi Studio has an automated update system. When updates are available, you
 are notified by a pop-up window called **Updates Available** in the
 bottom right corner:
 
-{{< figure src="/img/manual/update.png" alt="Update" >}}
+{{< figure src="/img/manual/update.png" alt="Updates Available" >}}
 
 If you want to install the updates, click anywhere in the pop-up window.
 After a few seconds, a new window will appear with further instructions.
@@ -195,7 +207,7 @@ If you run Sigasi Studio as a **standalone application**, the automated update s
 
 If you run Sigasi Studio as an **Eclipse plugin**, you may need to check for updates manually, by clicking **Help > Check for Updates**.
 
-You can enable automatic updates by opening this preference page : **Install/Update > Automatic Updates**. Next enable **Automatically find new updates and notify me**. Feel free to modify any of the available options.
+You can enable automatic updates by opening this preference page: **Install/Update > Automatic Updates**. Next, enable **Automatically find new updates and notify me**. Feel free to modify any of the available options.
 
 ## Firewalls and Proxies
 

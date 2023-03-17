@@ -2,7 +2,7 @@
 title: Sensitivity List
 ---
 
-VHDL requires a **sensitivity list** for each process (or wait statements in the process body).
+VHDL requires a **sensitivity list** for each process or `wait` statements in the process body.
 
 Sigasi Studio can warn about problems with your sensitivity list:
 
@@ -31,16 +31,18 @@ asynchronously in the process**. For a _combinatorial process_, all
 signals read by the process should be in the sensitivity list. For a
 _synchronous or clocked process_, only the clock signal and an
 asynchronous reset signal (if present) should be in the sensitivity
-list.  If that is not the case, your simulation results may be
-different from your synthesis results. <!--TODO needs rephrasing-->
-Most synthesis tools ignore the sensitivity list. In traditional
-workflows, only the synthesis warnings will give you a hint that your
-sensitivity list is incomplete. This report will be available only
-hours or even days after you have finished typing your code. Flagging
-this problem earlier saves time and lets you catch the problem early.
+list.  In synthesizable code, an incomplete sensitivity list will
+likely cause a synthesis-simulation mismatch.  Even in test benches and
+purely behavioral code, an incomplete sensitivity list is often
+unintended and may lead to an unexpected simulation result.  Most
+synthesis tools ignore the sensitivity list. In traditional workflows,
+only the synthesis warnings will give you a hint that your sensitivity
+list is incomplete. This report will be available only hours or even
+days after you have finished typing your code. Flagging this problem
+early can save a lot of time.
 
 Since VHDL-2008, you can write `process (all)` to make sure you have
-all necessary signals in the sensitivity list.
+all the necessary signals in the sensitivity list.
 
 <pre>process(<span class="goodcode">a, b</span>)
 begin

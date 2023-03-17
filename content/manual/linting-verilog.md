@@ -5,9 +5,9 @@ weight: 10
 pager: true
 ---
 
-# List of (System)Verilog code rules
+# List of Verilog and SystemVerilog code rules
 
-The table below lists the (System)Verilog code rules that can be checked automatically by Sigasi Studio.
+The table below lists the Verilog and SystemVerilog code rules that can be checked automatically by Sigasi Studio.
 The availability of code rules depends on the license requirements.
 
 ## ST code rules
@@ -35,8 +35,8 @@ ST code rules are available for all licenses including {{< starter >}}.
 |                                       | Unexpected preprocessor directive inside design elements                                                                                                       | 57 |
 |                                       | [Non-packed member in packed structure]({{< ref "rules/verilog_identifiers/#non-packed-member-in-packed-structure" >}})                                        | 59 |
 |                                       | [Illegal type in untagged union]({{< ref "rules/verilog_identifiers/#illegal-type-in-untagged-union" >}})                                                      | 60 |
+|                                       | [Illegal class member access]({{< ref "rules/verilog_class_item_visibility" >}})                                                                               | 61 |
 |                                       | Declaration not found                                                                                                                                          | 71 |
-|                                       | Ambiguous design unit reference                                                                                                                                | 72 |
 |                                       | Attempted implicit declaration with default nettype none                                                                                                       | 73 |
 |                                       | Invalid enumeration element range format                                                                                                                       | 74 |
 |                                       | Range of enumeration element is too large                                                                                                                      | 75 |
@@ -46,8 +46,8 @@ ST code rules are available for all licenses including {{< starter >}}.
 |                                       | Type not assignment compatible                                                                                                                                 | 79 |
 |                                       | Constraint class scope missing                                                                                                                                 | 80 |
 |                                       | Constraint class with packed dimensions                                                                                                                        | 81 |
-
-<!--|                                       | A verilog `net` type keyword cannot be followed directly by the `reg` keyword                                                                                  |  4 |-->
+|                                       | [Ambiguous reference]({{< ref "rules/verilog_ambiguous_reference" >}})                                                                                         | 93 |
+|                                       | [Duplicate declaration]({{< ref "rules/verilog_duplicate_declaration" >}})                                                                                     | 95 |
 
 ## XL code rules
 XL code rules require a {{< xl >}} or {{< xprt >}} license.
@@ -55,7 +55,7 @@ XL code rules require a {{< xl >}} or {{< xprt >}} license.
 |                           | Description                                                                                                                                                    | ID |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|---:|
 |                           | [Empty loops and conditional branches]({{< ref "rules/verilog_style/#empty-loops-and-conditional-branches" >}})                                                |  1 |
-|                           | [Check Naming Conventions]({{< ref "rules/naming-conventions" >}})                                                                                             |  2 |
+|                           | [Check naming conventions]({{< ref "rules/naming-conventions" >}})                                                                                             |  2 |
 | {{< warning_lightbulb >}} | [Disallow `reg` datatype]({{< ref "rules/verilog_reg" >}})                                                                                                     |  3 |
 |                           | [The module name is a keyword in VHDL and may cause problems in mixed language projects]({{< ref "rules/verilog_identifiers/#vhdl-keywords-as-module-name" >}})|  7 |
 |                           | [Case statement does not cover all cases]({{< ref "rules/verilog_case/#case-statement-does-not-cover-all-cases" >}})                                           |  8 |
@@ -91,5 +91,15 @@ XL code rules require a {{< xl >}} or {{< xprt >}} license.
 |                           | [Empty parameter overrides not allowed]({{< ref "rules/verilog_parameters/#empty-parameter-overrides-not-allowed" >}})                                         | 54 |
 |                           | [Named connections are not allowed with blank ports]({{< ref "rules/verilog_parameters/#project-specific-setting-of-these-rules" >}})                          | 56 |
 |                           | [Regular expressions (RE2/J) compatibility check]({{< ref "rules/verilog_style/#regular-expressions-compatibility" >}})                                        | 58 |
+|                           | [Overridden method signature mismatch]({{< ref "rules/verilog_overridden_method_signature_mismatch" >}})                                                       | 62-68 |
 |                           | [Local parameter has to be initialized]({{< ref "rules/verilog_parameters/#local-parameter-has-to-be-initialized" >}})                                         | 69 |
 |                           | [Local parameter cannot be overwritten]({{< ref "rules/verilog_parameters/#local-parameter-cannot-be-overwritten" >}})                                         | 70 |
+|                           | [Out-of-bound method signature mismatch]({{< ref "rules/verilog_out_of_bound_method_declarations/" >}})                                                        | 82-92 |
+
+## Deprecated code rules
+
+Deprecated code rules were used by Sigasi Studio at some point, but they've been removed or superseded in the most recent version.
+
+| Description                                                                         | Reason                                                                   | ID |
+|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|---:|
+| A Verilog `net` type keyword cannot be followed directly by the `reg` keyword       |  Superseded by a syntax error                                            |  4 |

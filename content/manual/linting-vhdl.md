@@ -11,10 +11,11 @@ The table below lists the VHDL code rules that can be checked automatically by S
 The availability of code rules depends on the license requirements.
 
 ## ST code rules
+
 ST code rules are available for all licenses including {{< starter >}}.
 
 |                           | Description                                                                                                                          |  ID |
-|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------|----:|
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | --: |
 | {{< warning_lightbulb >}} | Declaration could not be found                                                                                                       |     |
 |                           | Duplicate declarations                                                                                                               |     |
 | {{< warning_lightbulb >}} | Signal/variable assignment operator                                                                                                  |     |
@@ -33,10 +34,11 @@ ST code rules are available for all licenses including {{< starter >}}.
 |                           | Declaration not found                                                                                                                |     |
 
 ## XL code rules
+
 XL code rules require a {{< xl >}} or {{< xprt >}} license.
 
 |                           | Description                                                                                                                          |  ID |
-|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------|----:|
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | --: |
 |                           | [Null range: The left argument is strictly larger than the right]({{< ref "null-range-empty-range" >}})                              |   1 |
 | {{< warning_lightbulb >}} | [Deprecated IEEE packages]({{< ref "deprecated-ieee-packages-non-standard-packages" >}})                                             |   8 |
 |                           | Case alternative contains redundant choices                                                                                          |  12 |
@@ -50,7 +52,7 @@ XL code rules require a {{< xl >}} or {{< xprt >}} license.
 |                           | [Superfluous library clause]({{< ref "superfluous-library-clause" >}})                                                               |  49 |
 | {{< warning_lightbulb >}} | Library is not available [Configure Altera, Xilinx, ModelSim and VUnit libraries]({{< ref "quick-fix-for-third-party-libraries" >}}) |  50 |
 | {{< warning_lightbulb >}} | [Find unused declarations]({{< ref "dead-code-lint" >}})                                                                             |  55 |
-|                           | Bitstrings may only contain std\_logic metavalues                                                                                    |  57 |
+|                           | Bitstrings may only contain std_logic metavalues                                                                                     |  57 |
 |                           | Duplicate, conflicting design unit names                                                                                             |  64 |
 |                           | Missing return statement in function body                                                                                            |  66 |
 |                           | [Find unused ports]({{< ref "dead-code-lint" >}})                                                                                    |  67 |
@@ -91,3 +93,34 @@ XL code rules require a {{< xl >}} or {{< xprt >}} license.
 |                           | [Slice has wrong direction]({{< ref "vhdl_array_range" >}})                                                                          | 211 |
 |                           | Unterminated string literal                                                                                                          | 215 |
 |                           | [Extended identifier with whitespace may cause problems]({{< ref "vhdl_style#extended-identifier-contains-whitespace" >}})           | 228 |
+
+## Deprecated code rules
+
+Deprecated code rules were used by Sigasi Studio at some point, but they've been removed or superseded in the most recent version.
+
+| Description                                                |                    Reason | ID  |
+| ---------------------------------------------------------- | ------------------------: | --- |
+| Invalid generic list                                       |         Superseded by 202 | 24  |
+| Invalid generic map                                        |         Superseded by 202 | 25  |
+| Duplicate architecture for entity                          |          Superseded by 64 | 31  |
+| Port map lists cannot be terminated with a `,`             |         Superseded by 202 | 45  |
+| Port lists cannot be terminated with a `,`                 |         Superseded by 202 | 46  |
+| Signal declarations are not allowed in a process statement |         Superseded by 176 | 56  |
+| End clause validation                                      |          Superseded by 51 | 59  |
+| Duplicate entity for library                               |          Superseded by 64 | 60  |
+| Duplicate package for library                              |          Superseded by 64 | 61  |
+| Duplicate configuration for library                        |          Superseded by 64 | 62  |
+| Invalid use clause                                         | Removed as it was invalid | 63  |
+| Duplicate design unit in IEEE                              | Removed as it was invalid | 65  |
+| Find unregistered output ports                             | Removed as it was invalid | 75  |
+| Undefined identifier                                       |  Superseded by the linker | 87  |
+
+<!-- Deprecated Thales code rules -->
+<!-- | Find unsynchronized use of top level input ports                                  | No longer needed by Thales | 78  | -->
+<!-- | Check that secondary units are specified in the the same file as its primary unit | No longer needed by Thales | 101 | -->
+<!-- | Subprogram signal parameters of type out are not allowed                          | No longer needed by Thales | 110 | -->
+<!-- | Naming convention violation busses                                                | No longer needed by Thales | 116 | -->
+<!-- | If-Then-Alignment                                                                 | No longer needed by Thales | 166 | -->
+
+<!-- Deprecated ZAT code rules -->
+<!-- | Instantiation validation: assign all ports                                        |           Superseded by 94 | 154 | -->

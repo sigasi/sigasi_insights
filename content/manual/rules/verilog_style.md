@@ -9,12 +9,12 @@ Sigasi Studio has a number of checks on Verilog coding style.
 While occasionally intended, this construction is confusing, and often
 the result of a typo. Sigasi will flag a warning if an empty block is
 found (rule 1). In RTL code for synthesis, empty conditional branches
-in sequential code can cause unwanted latches generation. There may
+in sequential code can cause unwanted latch generation. There may
 be a couple of reasons why an empty block is present in your code:
 
-* It is an unintentional omission, and should be fixed to prevent an unexpected behavior.
-* Some functionality is not yet, or never will be, supported. In this case a $fatal (or similar) system task should be called.
-* It is intentionally blank. In this case a comment should explain the reason.
+* It is an unintentional omission and should be fixed to prevent unexpected behavior.
+* Some functionality is not yet, or never will be, supported. In this case, a `$fatal` (or similar) system task should be called.
+* It is intentionally blank. In this case, a comment should clarify the reason why.
 
 ## File name does not match design unit
 
@@ -40,14 +40,14 @@ than a certain length. The maximum length is set to 120 characters by default, b
 
 ## Tabs are not allowed
 
-While this may potentially be controversial, TABs are forbidden in majority of coding standards in the HDL domain with the motivation
+While this may potentially be controversial, TABs are forbidden in the majority of coding standards in the HDL domain with the motivation
 of code not looking the same regardless of the editor/settings used. This check is off by default but it can be enabled in
 the workspace or project linting settings (rule 21).
 
 ## File header comment does not match required pattern
 
 Many coding standards require the presence of a header comment in every file, matching a certain format. Sigasi Studio can check whether the file
-header comment matches a pattern (rule 22). By default, the pattern is empty which turns this check off.
+header comment matches a pattern (rule 22). By default, the pattern is empty which disables this check.
 The pattern can be configured through **Window > Preferences > Sigasi > (System)Verilog > Naming conventions > File header** and uses
 the [regex syntax](https://sigasi.com/app/regex).
 More information on file header comment checking is available [here](/manual/linting/#naming-conventions).
@@ -104,7 +104,7 @@ use [*RE2/J* regular expressions](https://www.sigasi.com/app/regex).
 RE2/J expressions mitigate potential performance problems that are
 caused by some shapes of regular expressions using the regular Java
 regular expression engine.  Sigasi will warn if a naming convention
-rule contains a regular expression which is incompatible with RE2/J
+rule contains a regular expression that is incompatible with RE2/J
 (rule 58).
 
 {{% lintrule sv 1 17 18 20 21 22 44 47 52 58 %}}

@@ -1,21 +1,20 @@
 ---
-title: Third party plugins
+title: Third Party Plugins
 showinmenu: true
 weight: 16
 pager: true
 ---
 
-Since Sigasi Studio is built on Eclipse, you can install third party Eclipse
-plugins.
+Since Sigasi Studio is built on Eclipse, you can install third-party Eclipse plugins.
 
 The best place to start looking for a plugin is the [Eclipse Marketplace](https://marketplace.eclipse.org). We list some interesting
-plugins here. Since these are third party plugins, there is no official
+plugins here. Since these are third-party plugins, there is no official
 support from Sigasi.
 
-## Installing plugins
+## Installing Plugins
 
-Unlike most Eclipse distributions Sigasi Studio is shipped without the *Eclipse Marketplace* plugin, and without the standard Eclipse update sites.
-Hence, you have to use the old mechanism for installing new plugins, and add the plugin update site.
+Unlike most Eclipse distributions Sigasi Studio is shipped without the *Eclipse Marketplace* plugin and the standard Eclipse update sites.
+Hence, you have to add a plugin update site to install new plugins.
 
 * Adding the update site
   * First, find the *update site* for the plugin you want to install. For example: for the Mercurial plugin, the update site is <https://foss.heptapod.net/mercurial/mercurialeclipse-updatesite/-/raw/branch/default/p2>
@@ -28,7 +27,7 @@ Hence, you have to use the old mechanism for installing new plugins, and add the
 ## Revision Control Systems
 
 Sigasi Studio supports a wide range of [Revision Control
-Systems](https://en.wikipedia.org/wiki/Revision_control) (also know as
+Systems](https://en.wikipedia.org/wiki/Revision_control) (also known as
 Version Control or Source Control systems). Support for revision control
 is based on Eclipse plugins. This section contains a preliminary listing
 of the most popular revision control systems.
@@ -47,7 +46,7 @@ To install this plugin, perform these steps in the **Help > Install New Software
 * Add <https://subclipse.github.io/updates/> to the **Work with:** line. This will provide the latest version of Subclipse.
 * Then search for _Subclipse_ and proceed with the installation.
 
-To install older versions of Subclipse of if you need more information on Subclipse, you can refer to the documentation on <https://github.com/subclipse/subclipse/wiki>.
+To install older versions of Subclipse or if you need more information on Subclipse, you can refer to the documentation on <https://github.com/subclipse/subclipse/wiki>.
 
 Note that we no longer recommend the [Subversive](https://www.eclipse.org/subversive/) plugin since it is only available up to Eclipse oxygen.
 
@@ -60,13 +59,13 @@ Recommended plugin:
 Note that this is the **Open Source ClearCase plugin** hosted on
 SourceForge, not the **official** [ClearCase plugin distributed by IBM](https://www.ibm.com/support/pages/node/306535).
 
-### Local history
+### Local History
 
 While this is not strictly speaking a version control system, Sigasi Studio has
 a built-in feature that keeps a local history of your files.
 [Learn more](https://help.eclipse.org/photon/topic/org.eclipse.platform.doc.user/tasks/tasks-1f.htm?cp=0_3_9).
 
-### Other systems
+### Other Systems
 
 Some other popular revision control systems include:
 
@@ -81,16 +80,16 @@ Some other popular revision control systems include:
 * VI: <http://vrapper.sourceforge.net/home/>
 * Emacs: <https://marketplace.eclipse.org/content/more-emacs>
 
-## Other languages
+## Other Languages
 
 * Tcl: see the [Eclipse Tcl support in Sigasi Studio]({{< ref "/tech/eclipse_tcl_support_in_sigasi.md" >}}) tech article.
 * Python: You can add support for Python to Sigasi Studio by installing the [PyDev](https://marketplace.eclipse.org/content/pydev-python-ide-eclipse) Eclipse plugin.
 Use <https://www.pydev.org/updates> as update site.
 
-## Remote collaboration
+## Remote Collaboration
 
 * You can use the [Saros](https://marketplace.eclipse.org/content/saros-distributed-collaborative-editing-and-pair-programming) plugin to remotely collaborate on the same project with multiple people. You'll see edits from collaborators in your own editor as they happen. To install the Saros plugin in Sigasi Studio, use <https://www.saros-project.org/update-site/eclipse> as update site.
 
-## Opening to a shell
+## Opening to a Shell
 
 * If you want a quick way to open files and folders from the [Project Explorer](/manual/views#project-explorer-view) in a terminal, [EasyShell](https://marketplace.eclipse.org/content/easyshell) is a useful plugin.

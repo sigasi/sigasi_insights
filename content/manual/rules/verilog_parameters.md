@@ -80,4 +80,4 @@ module name(
 endmodule : name
 </pre>
 
-{{% lintrule sv 19 48 53 54 69 70 %}}
+{{% lintrule sv 19 48 53 54 %}}
