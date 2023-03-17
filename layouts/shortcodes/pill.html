@@ -1,0 +1,16 @@
+{{ $scratch := newScratch }}
+{{ $text := .Get "text" }}
+
+{{ with .Get "color" }}
+{{ $scratch.Set "bgcolor" . }}
+{{ else }}
+  {{ if eq $text "VHDL" }}
+  {{ $scratch.Set "bgcolor" "#f47920" }}
+  {{ else if eq $text "Verilog" }}
+  {{ $scratch.Set "bgcolor" "#323286" }}
+  {{ else }}
+  {{ $scratch.Set "bgcolor" "black" }}
+  {{ end }}
+{{ end }}
+
+<span style="font-weight: bold; color: white; background-color: {{ $scratch.Get "bgcolor" }}; padding: 2px 7px; border-radius: 15px; margin-right: 0.2em">{{ $text }}</span> 
