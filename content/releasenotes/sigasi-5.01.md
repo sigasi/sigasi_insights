@@ -209,16 +209,16 @@ Besides performance, we also worked towards reduced memory consumption of Sigasi
 
 To keep you in _the flow_, we introduced rich and accurate labels and hovers in {{< page "releasenotes/sigasi-5.00.md" >}}. Context switches to look up small details are unnecessary as you are presented with many details at a glance through our information-rich hovers and views. In this release, we have refined our existing labels, added more information, and fixed a few incorrect labels across the board - be it in [hovers]({{< ref "manual/editor.md#hover" >}}), the [Outline View]({{< ref "manual/views.md#outline-view" >}}), or the [Hierarchy View]({{< ref "manual/views.md#hierarchy-view" >}}) - in VHDL, Verilog, or SystemVerilog.
 
-* {{< pvhd >}} Improved labels in the Hierarchy View to show the configured name if a design unit binding indication is used, e.g., `for all : test use entity work.low(RTL);`
-* {{< pvhd >}} The Hierarchy View now shows the `generate` body label
-* {{< psv >}} Added hovers for built-in functions
-* {{< psv >}} Added type information to `genvar` labels
-* {{< psv >}} Added `pure` and `virtual` information to `interface class`'s function labels
-* {{< psv >}} Improved the labels within a `randsequence`
-* {{< psv >}} Improved the labels of named assertions
-* {{< psv >}} Improved the labels of (un)packed arrays
-* {{< psv >}} Improved the labels of anonymous types
-* {{< psv >}} Fixed the label of references to ports of concatenated packed arrays, e.g., `a` in `module m(.a({b, c}))`
+* {{< pill text="VHDL" >}} Improved labels in the Hierarchy View to show the configured name if a design unit binding indication is used, e.g., `for all : test use entity work.low(RTL);`
+* {{< pill text="VHDL" >}} The Hierarchy View now shows the `generate` body label
+* {{< pill text="Verilog" >}} Added hovers for built-in functions
+* {{< pill text="Verilog" >}} Added type information to `genvar` labels
+* {{< pill text="Verilog" >}} Added `pure` and `virtual` information to `interface class`'s function labels
+* {{< pill text="Verilog" >}} Improved the labels within a `randsequence`
+* {{< pill text="Verilog" >}} Improved the labels of named assertions
+* {{< pill text="Verilog" >}} Improved the labels of (un)packed arrays
+* {{< pill text="Verilog" >}} Improved the labels of anonymous types
+* {{< pill text="Verilog" >}} Fixed the label of references to ports of concatenated packed arrays, e.g., `a` in `module m(.a({b, c}))`
 
 # GPG Signing
 
@@ -236,14 +236,14 @@ You can refer to [this page]({{< ref "GPG.md" >}}) for all information regarding
 
 * The upper limit for the amount of autocomplete proposals has been increased. In practice, this means that important proposals will always be included.
 * [Generated documentation]({{< ref "manual/documentation.md" >}}) now shows an empty cell instead of `unspecified` when no default is specified
-* {{< pvhd >}} Added a linting rule to check that the characters in a string literal are legal  
+* {{< pill text="VHDL" >}} Added a linting rule to check that the characters in a string literal are legal  
 {{< figure src="/img/releasenotes/5.1/IllegalStringLiteralCharacters.png" link="/img/releasenotes/5.1/IllegalStringLiteralCharacters.png" title="Illegal characters in string literal as initializer" class="uk-align-center" width=550 >}}  
-* {{< pvhd >}} Added a linting rule to check whether spaces are used in extended identifiers referable from Verilog and SystemVerilog as these cannot be referenced in those languages  
+* {{< pill text="VHDL" >}} Added a linting rule to check whether spaces are used in extended identifiers referable from Verilog and SystemVerilog as these cannot be referenced in those languages  
 {{< figure src="/img/releasenotes/5.1/ExtendedIdentifiersWithSpaces.png" link="/img/releasenotes/5.1/ExtendedIdentifiersWithSpaces.png" title="Unsupported extended identifiers" class="uk-align-center" width=550 >}}  
-* {{< pvhd >}} Added formatting for `force` and `release` assignments
-* {{< psv >}} Improved preprocessing performance
-* {{< psv >}} Added navigation to identifiers in `showcancelled`, `noshowcancelled`, `pulsestyle_onevent`, `pulsestyle_ondetect`
-* {{< psv >}} Added an error when a `genvar` is referenced outside the loop's body
+* {{< pill text="VHDL" >}} Added formatting for `force` and `release` assignments
+* {{< pill text="Verilog" >}} Improved preprocessing performance
+* {{< pill text="Verilog" >}} Added navigation to identifiers in `showcancelled`, `noshowcancelled`, `pulsestyle_onevent`, `pulsestyle_ondetect`
+* {{< pill text="Verilog" >}} Added an error when a `genvar` is referenced outside the loop's body
 
 # Quality of Life
 
@@ -260,10 +260,10 @@ You can refer to [this page]({{< ref "GPG.md" >}}) for all information regarding
 * Removed hovers that are empty for whatever reason
 * Removed syntax highlighting of keywords in extended identifiers, e.g., `\extended id\` or `\extended$id `
 * Removed [Suppress Warning]({{< ref "manual/linting.md#suppressing-warnings" >}}) Quick Fix when the problem is already suppressed
-* {{< pvhd >}} Improved wording in many of our error messages
-* {{< pvhd >}} Fixed extra whitespace in the [Add sensitivity list]({{< ref "manual/rules/sensitivity-list.md" >}}) Quick Fix
-* {{< psv >}} Holding **Ctrl** while autocompleting a macro parameter now only replaces the parameter under the cursor instead of the rest of the line
-* {{< psv >}} The variable being declared is no longer shown as autocomplete proposal when you are initializing it
+* {{< pill text="VHDL" >}} Improved wording in many of our error messages
+* {{< pill text="VHDL" >}} Fixed extra whitespace in the [Add sensitivity list]({{< ref "manual/rules/sensitivity-list.md" >}}) Quick Fix
+* {{< pill text="Verilog" >}} Holding **Ctrl** while autocompleting a macro parameter now only replaces the parameter under the cursor instead of the rest of the line
+* {{< pill text="Verilog" >}} The variable being declared is no longer shown as autocomplete proposal when you are initializing it
 
 # Bug Fixes
 
@@ -276,26 +276,26 @@ You can refer to [this page]({{< ref "GPG.md" >}}) for all information regarding
 * Fixed empty autocomplete when it is called very early during startup
 * Fixed an occasional hang during navigation
 * Fixed occasional incorrect navigation on **Ctrl+Click**
-* {{< pvhd >}} The `Increase VHDL version` Quick Fix will now only update the file if the project already has the correct version
-* {{< pvhd >}} Added linting when assigning `"-"` to a vector
-* {{< pvhd >}} Added support for the standard library's `read` function to VHDL 2008 and 2019
-* {{< pvhd >}} Fixed false positive warning when using `unsigned'()` as the default value for a `constant`
-* {{< pvhd >}} Fixed indentation of comments during formatting when they are placed after instantiations
-* {{< pvhd >}} Fixed false positive `variable is never written` when using non-shared protected type variables
-* {{< psv >}} Include directives that start with a `/` now correctly resolve relative to the project root
-* {{< psv >}} All inherited members in the [Class Hierarchy View]({{< ref "manual/views.md#class-hierarchy-view" >}}) are now colored consistently
-* {{< psv >}} Added instance names to the Hierarchy View
-* {{< psv >}} Added navigation from implicit port connections (e.g., `.clk`) to both the port/net and the actual
-* {{< psv >}} Fixed highlighting for multiline string literals
-* {{< psv >}} Fixed positioning of errors with unusual define directives
-* {{< psv >}} Fixed links to parent classes in generated documentation
-* {{< psv >}} Fixed empty Class Hierarchy View when opening it on a class that has a `task` and `function` with the same name
-* {{< psv >}} Fixed type inference for real literals
-* {{< psv >}} Fixed highlighting of parameters in multi declarations, e.g., `parameter WIDTH, SIZE`
-* {{< psv >}} Fixed navigation of functions when a target is available in the enclosing class and the parent class
-* {{< psv >}} Removed false positive override annotation in the Class Hierarchy View
-* {{< psv >}} Removed duplicate `Open Declaration` links when a file is included multiple times
-* {{< psv >}} Removed empty blocks in the Block Diagram for empty `for` loops
+* {{< pill text="VHDL" >}} The `Increase VHDL version` Quick Fix will now only update the file if the project already has the correct version
+* {{< pill text="VHDL" >}} Added linting when assigning `"-"` to a vector
+* {{< pill text="VHDL" >}} Added support for the standard library's `read` function to VHDL 2008 and 2019
+* {{< pill text="VHDL" >}} Fixed false positive warning when using `unsigned'()` as the default value for a `constant`
+* {{< pill text="VHDL" >}} Fixed indentation of comments during formatting when they are placed after instantiations
+* {{< pill text="VHDL" >}} Fixed false positive `variable is never written` when using non-shared protected type variables
+* {{< pill text="Verilog" >}} Include directives that start with a `/` now correctly resolve relative to the project root
+* {{< pill text="Verilog" >}} All inherited members in the [Class Hierarchy View]({{< ref "manual/views.md#class-hierarchy-view" >}}) are now colored consistently
+* {{< pill text="Verilog" >}} Added instance names to the Hierarchy View
+* {{< pill text="Verilog" >}} Added navigation from implicit port connections (e.g., `.clk`) to both the port/net and the actual
+* {{< pill text="Verilog" >}} Fixed highlighting for multiline string literals
+* {{< pill text="Verilog" >}} Fixed positioning of errors with unusual define directives
+* {{< pill text="Verilog" >}} Fixed links to parent classes in generated documentation
+* {{< pill text="Verilog" >}} Fixed empty Class Hierarchy View when opening it on a class that has a `task` and `function` with the same name
+* {{< pill text="Verilog" >}} Fixed type inference for real literals
+* {{< pill text="Verilog" >}} Fixed highlighting of parameters in multi declarations, e.g., `parameter WIDTH, SIZE`
+* {{< pill text="Verilog" >}} Fixed navigation of functions when a target is available in the enclosing class and the parent class
+* {{< pill text="Verilog" >}} Removed false positive override annotation in the Class Hierarchy View
+* {{< pill text="Verilog" >}} Removed duplicate `Open Declaration` links when a file is included multiple times
+* {{< pill text="Verilog" >}} Removed empty blocks in the Block Diagram for empty `for` loops
 
 Thank you for all the [bug reports](mailto:support@sigasi.com) and for enabling [Talkback]({{< ref "manual/talkback.md" >}}). All your reports have helped us fix many issues that would otherwise go unnoticed.
 
