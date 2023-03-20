@@ -65,9 +65,9 @@ The Verilog standard requires that local parameters are initialized (rule 69).
 <span class="goodcode">localparam p = 1;</span>
 </pre>
 
-## Local parameter cannot be overwritten
+## Local parameter cannot be overridden
 
-The Verilog standard does not allow that local parameters are overwritten (rule 70).
+The Verilog standard does not allow that local parameters are overridden (rule 70).
 
 <pre>
 module name(
@@ -76,7 +76,7 @@ module name(
 );
     localparam int test = 42;
 
-    <span class="error">defparam test = 0;</span>    // overwrite not allowed
+    <span class="error">defparam test = 0;</span>    // override not allowed
 endmodule : name
 </pre>
 

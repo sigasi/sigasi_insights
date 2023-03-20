@@ -93,7 +93,7 @@ XL code rules require a {{< xl >}} or {{< xprt >}} license.
 |                           | [Regular expressions (RE2/J) compatibility check]({{< ref "rules/verilog_style/#regular-expressions-compatibility" >}})                                        | 58 |
 |                           | [Overridden method signature mismatch]({{< ref "rules/verilog_overridden_method_signature_mismatch" >}})                                                       | 62-68 |
 |                           | [Local parameter has to be initialized]({{< ref "rules/verilog_parameters/#local-parameter-has-to-be-initialized" >}})                                         | 69 |
-|                           | [Local parameter cannot be overwritten]({{< ref "rules/verilog_parameters/#local-parameter-cannot-be-overwritten" >}})                                         | 70 |
+|                           | [Local parameter cannot be overridden]({{< ref "rules/verilog_parameters/#local-parameter-cannot-be-overridden" >}})                                         | 70 |
 |                           | [Out-of-bound method signature mismatch]({{< ref "rules/verilog_out_of_bound_method_declarations/" >}})                                                        | 82-92 |
 
 ## Deprecated code rules
