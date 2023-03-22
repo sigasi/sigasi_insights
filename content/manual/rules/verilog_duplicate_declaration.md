@@ -1,5 +1,5 @@
 ---
-title: Verilog duplicate declaration
+title: Verilog Duplicate Declaration
 ---
 
 In Verilog, you are not allowed to declare the same identifier multiple times within the same scope. All duplicate declarations will be marked as errors.

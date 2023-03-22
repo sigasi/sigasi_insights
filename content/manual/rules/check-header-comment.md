@@ -1,9 +1,9 @@
 ---
-title: Check header comment
+title: Check Header Comment
 ---
 
 
-Sigasi Studio can check that the **header comment** matches a specified pattern. A **header comment** is the comment that starts at the first character of your file (*no leading whitespace*).
+Sigasi Studio can check that the **header comment** matches a specified pattern. A **header comment** is a comment that starts at the first character of your file (*no leading whitespace*).
 
 The check can be enabled in **Preferences > Sigasi > VHDL > Naming conventions**.  The pattern can be set on the same page.
 More information on file header comment checking is available [here](/manual/linting/#naming-conventions).

@@ -1,8 +1,8 @@
 ---
-title: Verilog coding style
+title: Verilog Coding Style
 ---
 
-Sigasi Studio has a number of checks on Verilog coding style.
+Sigasi Studio has a number of checks on Verilog and SystemVerilog coding style.
 
 ## Empty loops and conditional branches
 
@@ -20,13 +20,13 @@ be a couple of reasons why an empty block is present in your code:
 
 It is recommended that the base name of the filename is the same as the name of the design unit (e.g. module) in the file (rule 17). Sigasi Studio flags a warning if that is not the case.
 
-E.g. `module my_module` should be in a file `my_module.v` or `my_module.sv` .
+E.g. `module my_module` should be in a file named `my_module.v` or `my_module.sv` .
 
 In a file with multiple design units (which is not recommended), this rule is not active.
 
 ## File contains multiple design unit
 
-It is recommended that a (System)Verilog file contains only one design unit (rule 18). Sigasi Studio flags a warning if that is not the case.
+It is recommended that a Verilog file contains only one design unit (rule 18). Sigasi Studio flags a warning if that is not the case.
 
 ## Verilog code line too long
 
@@ -107,4 +107,6 @@ regular expression engine.  Sigasi will warn if a naming convention
 rule contains a regular expression that is incompatible with RE2/J
 (rule 58).
 
-{{% lintrule sv 1 17 18 20 21 22 44 47 52 58 %}}
+{{% lintrule sv 1 17 18 20 21 22 44 52 %}}
+
+<!-- 47 and 58 not configurable in preferences, only in file -->

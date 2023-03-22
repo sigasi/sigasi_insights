@@ -1,11 +1,11 @@
 ---
-title: Verilog functions
+title: Verilog Functions
 ---
 
 ## Non-blocking assignments are not allowed in functions
 
 A non-blocking assignment (`<=`) is not allowed in a (System)Verilog function.
-While syntactically correct, it will generally not lead to the desired behaviour, and will likely cause synthesis-simulation mismatch.
+While syntactically correct, it will generally not lead to the desired behavior, and will likely cause synthesis-simulation mismatch.
 Sigasi Studio flags an error if a blocking assignment is used in a function (rule 41).
 
 A good fix to correct the problem is to replace non-blocking assignments (`<=`) with blocking assignments (`=`)
@@ -42,4 +42,6 @@ endclass
 </pre>
 
 
-{{% lintrule sv 10 41 %}}
+{{% lintrule sv 10 %}}
+
+<!-- 41 not configurable in preferences, only in file >

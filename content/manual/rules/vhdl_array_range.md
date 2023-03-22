@@ -1,8 +1,8 @@
 ---
-title: Linting rules for arrays
+title: Linting Rules for Arrays
 ---
 
-Sigasi Studio can check for a number of array / vector index related problems:
+Sigasi Studio can check for a number of array / vector index-related problems:
 
 * Index out of range (rule 210).
 
@@ -10,7 +10,7 @@ Sigasi Studio can check for a number of array / vector index related problems:
     signal foo: bit_vector(7 downto 0);
     signal bar, baz: bit;
 begin
-    bar <= <span class="error">foo(8)</span>;   -- 8 is out of range 7 downto 0
+    bar <= <span class="warning">foo(8)</span>;   -- 8 is out of range "7 downto 0"
     baz <= <span class="goodcode">foo(7)</span>;
 end architecture RTL;
 </pre>
@@ -24,7 +24,7 @@ Slice ranges must use the same direction as the vector.
     signal foo: bit_vector(7 downto 0);
     signal bar, baz: bit_vector(0 to 7);
 begin
-    bar <= <span class="error">foo(0 to 7)</span>;   -- foo has a downto range
+    bar <= <span class="warning">foo(0 to 7)</span>;   -- foo has a downto range
     baz <= <span class="goodcode">foo</span>;
 end architecture RTL;</pre>
 

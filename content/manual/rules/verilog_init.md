@@ -1,5 +1,5 @@
 ---
-title: Verilog checks on initialization
+title: Verilog Checks on Initialization
 ---
 
 Initializing registers at the point of declaration may be tricky. If your (System)Verilog code is not going
@@ -8,7 +8,7 @@ into account, so depending on your FPGA project, initializing registers when the
 a viable (or even preferred) option. 
 
 ASIC synthesis tools however will ignore initialization as in the first example, which may lead to a mismatch between
-synthesis and simulation. In such case, initialization should be done using resets, as in the second example.
+synthesis and simulation. In such a case, initialization should be done using resets, as in the second example.
 
 By default, Sigasi Studio flags a warning for register initialization at the point of the declaration. For FPGA projects
 it may be desirable to turn the warning off, whereas for ASIC projects one may want to raise the severity to *error*.

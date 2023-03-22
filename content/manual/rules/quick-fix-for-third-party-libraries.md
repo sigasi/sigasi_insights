@@ -1,5 +1,5 @@
 ---
-title: Quick Fix for Third Party Libraries
+title: Quick Fix for Third-Party Libraries
 ---
 
 If you are using vendor libraries from Intel or Xilinx (ISE or Vivado),
@@ -11,14 +11,14 @@ The missing library will be added to the [Common Libraries]({{< ref "manual/libr
 {{< figure src="/img/manual/quickfix_xilinx.png"  >}}
 
 The `library` statement that tries to import a missing library (like
-`altera`) will be have a yellow warning marker next to it. Click this
-marker and select **Configure library altera**. If the path to your
+`altera`) will have a yellow warning marker next to it. Click this
+marker and select **Configure library altera (Altera)**. If the path to your
 Intel Quartus (or Xilinx ISE) installation is not yet set, Sigasi Studio will
 ask to set the path now. You can always change these paths in **Window
 \> Preferences \> Sigasi \> Toolchains**.
 
 Note that for the Xilinx libraries we only map the packages with the
-component declarations. By default all entity and architecture
+component declarations. By default, all entity and architecture
 declarations are not mapped (excluded). This significantly reduces the
 time for a clean build. If you use direct entity instantiations, you can
 easily map the entities you need.

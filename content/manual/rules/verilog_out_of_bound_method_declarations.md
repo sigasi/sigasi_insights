@@ -1,5 +1,5 @@
 ---
-title: Verilog out-of-bound method declarations
+title: Verilog Out-of-bound Method Declarations
 ---
 
 An out-of-block method declaration signature should match its prototype declaration's signature.
@@ -50,3 +50,5 @@ function int C::<span class="goodcode">good(input int a, output string b)</span>
 endfunction</pre>
 
 {{% lintrule sv 90 91 %}}
+
+<!-- 82-90 not configurable in preferences, only in file -->

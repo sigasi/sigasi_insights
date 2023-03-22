@@ -1,5 +1,5 @@
 ---
-title: Check for component/entity mismatch
+title: Check for Component/Entity Mismatch
 ---
 
 

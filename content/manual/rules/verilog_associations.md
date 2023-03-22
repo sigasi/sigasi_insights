@@ -1,12 +1,12 @@
 ---
-title: Verilog port and parameter associations
+title: Verilog Port and Parameter Associations
 ---
 
 Sigasi Studio has several checks on Verilog port and parameter associations.
 
 ## Named parameter and port connections have to be used for all instances with many parameters / ports
 
-A long list of positional parameter or port connections is difficult to read and maintain. Therefor, Sigasi Studio warns if a
+A long list of positional parameters or port connections is difficult to read and maintain. Therefore, Sigasi Studio warns if a
 list of positional connections is longer than 3 items (rules 24 and 26). If the number of associations is larger than 3, named connections should be used.
 
 <pre>module sub(input clk, arst, enable, data, output reg data_out);
@@ -65,7 +65,7 @@ endmodule</pre>
 
 ## Unresolved formal names
 
-Sigasi Studio flags an error for named port and parameter connections if the instantiated module doesn't have ports with these names (rule 36).
+Sigasi Studio flags an error for named port and parameter connections if the instantiated module doesn't have ports with these names.
 
 <pre>module sub(i1, i2, o1);
     parameter WIDTH = 8;
@@ -130,7 +130,7 @@ endmodule
 module badtop;
     logic[7:0] x;
     // parameter `LHS` and port `i2` don't have a default value so they must be connected
-    sub <span class="error">sub_inst(.o1(x))</span>;
+    sub <span class="warning">sub_inst(.o1(x))</span>;
 endmodule
 
 module goodtop;
@@ -144,7 +144,7 @@ endmodule</pre>
 
 ## Excessive number of actuals in ordered notation
 
-Sigasi Studio flags an error if the number of positional parameter or port connections is larger than the number of parameters or ports of the instantiated module (rule 39).
+Sigasi Studio flags an error if the number of positional parameters or port connections is larger than the number of parameters or ports of the instantiated module (rule 39).
 
 <pre>module sub#(WIDTH=8) (input[WIDTH-1:0] i1=1'b0, i2, output[WIDTH-1:0] o1);
 endmodule
@@ -160,7 +160,7 @@ module goodtop;
     sub#(<span class="goodcode">4</span>) sub_inst(<span class="goodcode">a, b, c</span>);
 endmodule</pre>
 
-Note that if there are too few positional parameter or port connections, an error for [missing connections]({{< ref "#missing-actuals-for-formals-that-have-no-default-value" >}}) will be flagged.
+Note that if there are too few positional parameters or port connections, an error for [missing connections]({{< ref "#missing-actuals-for-formals-that-have-no-default-value" >}}) will be flagged.
 
 ## Named connections are not allowed with blank ports
 
@@ -175,8 +175,8 @@ endmodule
 
 module badtop;
     sub sub_instance(
-        <span class="error">.clk(clk)</span>,
-        <span class="error">.rst(rst)</span>
+        <span class="warning">.clk(clk)</span>,
+        <span class="warning">.rst(rst)</span>
     );
 endmodule
 
@@ -197,4 +197,7 @@ module goodtop2;
 endmodule</pre>
 
 
-{{% lintrule sv 24 26 36 38 56 %}}
+{{% lintrule sv 24 26 %}}
+
+<!-- 25, 37, and 39 not configurable -->
+<!-- 38 and 56 not configurable in preferences, only in file -->

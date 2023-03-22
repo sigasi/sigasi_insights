@@ -1,5 +1,5 @@
 ---
-title: Testing equality of booleans to true or false
+title: Testing Equality of Booleans to true or false
 ---
 
 When using booleans, it is unnecessary to test whether they're equal to `true` (rule 185) or `false` (rule 186). Simply testing the boolean results in cleaner code.
@@ -10,7 +10,7 @@ if <span class="goodcode">valid</span> then
    -- ...
 end if;
 
-if <span class="error">valid = true</span> then
+if <span class="warning">valid = true</span> then
    -- ...
 end if;
 
@@ -18,11 +18,11 @@ if <span class="goodcode">not valid</span> then
    -- ...
 end if;
 
-if <span class="error">valid = false</span> then
+if <span class="info">valid = false</span> then
    -- ...
 end if;
 
-if <span class="error">valid /= true</span> then
+if <span class="info">valid /= true</span> then
    -- ...
 end if;
 </pre>

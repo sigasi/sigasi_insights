@@ -1,5 +1,5 @@
 ---
-title: Vector width in assignments and port maps
+title: Vector Width in Assignments and Port Maps
 ---
 
 Sigasi Studio checks the vector size in assignments and port maps. This check works at type-time and takes the (symbolic) value of generics into account.

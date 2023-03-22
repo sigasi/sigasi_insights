@@ -1,5 +1,5 @@
 ---
-title: Linting rules types in expressions
+title: Types in Expressions
 ---
 
 Sigasi Studio flags an error if a type is used in an expression.
@@ -29,4 +29,4 @@ begin
 end architecture RTL;
 </pre>
 
-{{% lintrule 219 %}}
+<!-- Not configurable -->

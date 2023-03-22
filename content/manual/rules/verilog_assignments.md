@@ -1,12 +1,12 @@
 ---
-title: Verilog assignment patterns
+title: Verilog Assignment Patterns
 ---
 
 Sigasi Studio has several checks on Verilog assignment patterns.
 
 ## Default member must be last
 
-Concrete assignments must preceed more general assignments, otherwise some of those assignments might be ignored (rule 28).
+Concrete assignments must precede more general assignments. Otherwise, some of those assignments might be ignored (rule 28).
 In particular:
 
 * for arrays, `default` must be at the end of the list
@@ -47,7 +47,7 @@ endmodule</pre>
 Sigasi Studio flags an error when expressions have multiple default assignments (rule 29). In particular:
 
 * arrays cannot have multiple default assignments
-* structures cannot have multiple default assignments or multple type-default assignments
+* structures cannot have multiple default assignments or multiple type-default assignments
 
 <pre>module badcode;
     int a[3:0] = '{<span class="error">default: 1</span>, 0: 2, <span class="error">default: 3</span>};        // multiple default assignments
@@ -129,3 +129,5 @@ endmodule</pre>
 
 
 {{% lintrule sv 28 30 31 32 %}}
+
+<!-- 29 not configurable -->

@@ -1,5 +1,5 @@
 ---
-title: Linting rules for instances
+title: Linting Rules for Instances
 ---
 
 Sigasi Studio flags an error if the `entity` keyword is omitted in the instantiation of an *entity*.
@@ -34,4 +34,4 @@ begin
 end architecture RTL;
 </pre> 
 
-{{% lintrule 198 %}}
+<!-- Not configurable in preferences, only in file -->

@@ -9,19 +9,19 @@ Sigasi Studio can warn about problems with your sensitivity list:
 * **Presence of either a sensitivity list or one or more wait statements in a process** (rule 38)
 
 * **Incomplete sensitivity list** (rule 72) (there is Quick Fix for this)
-<pre>process(a<span class="error">  </span>)
+<pre>process(a<span class="warning">  </span>)
 begin
        c <= a and b;
 end process;</pre>
 
 * **Superfluous signals in sensitivity list** (rule 73)
-<pre>process(a, b<span class="error">, c</span>)
+<pre>process(a, b<span class="warning">, c</span>)
 begin
        c <= a and b;
 end process;</pre>
 
 * **Duplicate signals in sensitivity list** (rule 85)
-<pre>process(a, b<span class="error">, b</span>)
+<pre>process(a, b<span class="warning">, b</span>)
 begin
        c <= a and b;
 end process;</pre>

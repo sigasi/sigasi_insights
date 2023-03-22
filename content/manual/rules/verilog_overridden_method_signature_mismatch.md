@@ -1,11 +1,11 @@
 ---
-title: Verilog overridden method signatures
+title: Verilog Overridden Method Signatures
 ---
 
 A virtual method signature should match the overridden method signature in the superclass.
 Sigasi Studio flags an error if the signatures have a:
 - different subroutine form (`task` or `function`)
-- different return type , if it's a function
+- different return type, if it's a function
 - different arity or any argument with a:
   - different name
   - different direction
@@ -46,3 +46,5 @@ class B implements A;
 endclass</pre>
 
 {{% lintrule sv 67 %}}
+
+<!-- 62, 63, 64, 65, 66, and 68 not configurable in preferences, only in file -->

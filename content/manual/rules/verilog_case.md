@@ -1,5 +1,5 @@
 ---
-title: Verilog case statements
+title: Verilog Case Statements
 ---
 
 Sigasi Studio has a number of checks on Verilog case statements.
@@ -14,7 +14,7 @@ clause (rule 8). This rule is checked for `enum` types only, not for scalar or v
     t_state state;
 
     always @(posedge clk) begin
-        case (state)                      // <span class="error">Error: case `INIT` is missing</span>
+        case (state)                      // <span class="warning">Error: case `INIT` is missing</span>
             IDLE    : state = START;
             START   : state = READY;
             READY   : state = IDLE ;
@@ -40,7 +40,7 @@ Note that Sigasi Studio also warns for [case statements without a default clause
 
 ## Default clause has to be the last item in a case statement
 
-The `default` clause should be at the end, after all other options (rule 15). Sigasi Studio flags a warning if that is not the case.
+The `default` clause should be at the end after all the other options (rule 15). Sigasi Studio flags a warning if that is not the case.
 
 <pre>module badcode(input clk);
     typedef enum {INIT, IDLE, START, READY} t_state;
@@ -92,7 +92,7 @@ endmodule
 
 ## Case statement can only have one default clause
 
-A case statement can only have one `default` clause (rule 16). An error is flagged if more than one `default` clause is present.
+A case statement can only have one `default` clause (rule 16). A warning is flagged if more than one `default` clause is present.
 
 <pre>module badcode(input clk);
     typedef enum {INIT, IDLE, START, READY} t_state;
@@ -103,8 +103,8 @@ A case statement can only have one `default` clause (rule 16). An error is flagg
             IDLE    : state = START;
             START   : state = READY;
             READY   : state = IDLE ;
-            <span class="error">default : state = IDLE</span> ;      // Error: two `default` clauses
-            <span class="error">default : state = START</span>;
+            <span class="warning">default : state = IDLE</span> ;      // Error: two `default` clauses
+            <span class="warning">default : state = START</span>;
         endcase
     end
 endmodule
@@ -129,18 +129,18 @@ This rule also applies to `generate case` statements, e.g.
 
     generate
     case (WIDTH)
-        <span class="error">default:  // Error: two `default` clauses</span>
-        <span class="error">    begin</span> // others - carry look-ahead adder
-        <span class="error">        adder_cla #(WIDTH) x3(co, sum, a, b, ci);</span>
-        <span class="error">    end</span>
+        <span class="warning">default:  // Error: two `default` clauses</span>
+        <span class="warning">    begin</span> // others - carry look-ahead adder
+        <span class="warning">        adder_cla #(WIDTH) x3(co, sum, a, b, ci);</span>
+        <span class="warning">    end</span>
         1: begin // 1-bit adder implementation
             adder_1bit x1(co, sum, a, b, ci);
         end
         // other cases
-        <span class="error">default:  // Error: two `default` clauses</span>
-        <span class="error">    begin</span> // others - carry look-ahead adder
-        <span class="error">        adder_cla #(WIDTH) x3(co, sum, a, b, ci);</span>
-        <span class="error">    end</span>
+        <span class="warning">default:  // Error: two `default` clauses</span>
+        <span class="warning">    begin</span> // others - carry look-ahead adder
+        <span class="warning">        adder_cla #(WIDTH) x3(co, sum, a, b, ci);</span>
+        <span class="warning">    end</span>
     endcase
     endgenerate
 
@@ -149,7 +149,7 @@ endmodule
 
 ## Default clause missing from case statement
 
-Sigasi Studio flags a warning for case statements without a `default` clause (rule 40). While a case statement without a `default` branch is syntactically correct, many guidelines recommend to attach default branch, even if the case statement is completely defined. This ensures no latch would be inferred during synthesis, if case is incomplete (sometimes difficult to judge, esp with casex/casez semantics or larger widths).
+Sigasi Studio flags a warning for case statements without a `default` clause (rule 40). While a case statement without a `default` branch is syntactically correct, many guidelines recommend attaching a default branch, even if the case statement is completely defined. This ensures no latch would be inferred during synthesis if the case is incomplete (sometimes difficult to judge, esp with casex/casez semantics or larger widths).
 
 <pre>module rather_ok_code(input clk);
     typedef enum {INIT, IDLE, START, READY} t_state;
