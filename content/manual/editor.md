@@ -30,8 +30,18 @@ Semantic highlighting means that code gets colored according to their
 *meaning*. For example a *constant* is shown in another color than a
 *signal*.
 
-Code highlighting is fully configurable. **Color**, **background**,
-**style** and **font** can be customized. Learn more about [configuring colors](/manual/config#colors-and-fonts).
+Code highlighting is fully configurable for a number of
+[VHDL](#code-highlighting) and [Verilog and
+SystemVerilog](#code-highlighting-1) syntax and semantic elements.
+Also **Color**, **background**, **style** and **font** can be
+customized. Learn more about [configuring
+colors](/manual/config#colors-and-fonts).
+
+Rather than configuring every color yourself, you might want to have a
+look at the supported *Light* and *Dark* themes.  To switch between
+themes, go to **Window > Preferences > General > Appearance** where
+you can choose a theme.  While it is possible to install additional
+themes, only the *Light* and *Dark* themes are supported by Sigasi.
 
 ## Type-time Syntax error reporting
 
@@ -154,6 +164,10 @@ You can create **New...** templates, **Edit...** existing templates or remove te
 In the template editor, you can type `${` and press <kbd>Ctrl+Space</kbd> to see a list of the available variables.
 
 Templates can be exported and imported. This is useful for sharing templates with colleagues.
+
+### VHDL specific
+
+A number of [VHDL specific autocompletes](#vhdl-specific-autocompletes) are available in Sigasi Studio.
 
 ## Code formatting
 
@@ -524,6 +538,13 @@ In addition to the powerful features of an Eclipse editor, the Verilog and Syste
 editor that comes with Sigasi Studio supports a number of advanced editing
 features which are specifically useful for SystemVerilog editing. These are
 described in this chapter.
+
+## Code highlighting
+
+Highlighting Classes for Verilog and SystemVerilog:
+
+* *Syntax*  :  Comment, Keyword, Number, String, Task tag, Operator
+* *Semantic* :  Assignment, Class, Covergroup, Macro, Enum, Function, Localparam, Module, Net/Wire, Parameter, Port, Type
 
 ## Include paths and initial preprocessor definitions
 
