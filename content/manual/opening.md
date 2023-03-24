@@ -151,19 +151,19 @@ General \> Preferred Text Editor**.
 As command-line options, you should have `%f +%l -p %p`. Optionally you
 could add `-noSplash` to skip the splash dialog.
 
-## Xilinx Vivado
+## AMD/Xilinx Vivado
 
-You can configure Sigasi Studio to be the preferred editor for Xilinx Vivado.
+You can configure Sigasi Studio to be the preferred editor for AMD/Xilinx Vivado.
 
-1. In Xilinx Vivado, click **Tools > Settings...**
+1. In AMD/Xilinx Vivado, click **Tools > Settings...**
 2. Open the **Tool Settings > Text Editor** tab
 3. Locate the **Current Editor** drop down menu and instead of '**Vivado Text Editor** (default)' select '**Custom Editor...**'
 4. If needed click the **...** button and in the pop-up dialog enter:
     `<path to Sigasi Studio>/sigasi.exe [file name] +[line number]`
 5. Click **OK** to close the dialog and **OK** to close the Settings window.
 
-{{< figure src="/img/manual/vivado_a1.png" alt="Configuring Sigasi Studio as default editor in Xilinx Vivado menu" >}}
-{{< figure src="/img/manual/vivado_a2.png" alt="Configuring Sigasi Studio as default editor in Xilinx Vivado" >}}
+{{< figure src="/img/manual/vivado_a1.png" alt="Configuring Sigasi Studio as default editor in AMD/Xilinx Vivado menu" >}}
+{{< figure src="/img/manual/vivado_a2.png" alt="Configuring Sigasi Studio as default editor in AMD/Xilinx Vivado" >}}
 
 ### Extra steps on Linux
 
@@ -201,21 +201,21 @@ Make sure to close Eclipse before making the changes below.
 
 The first time you might need to pick a workspace and enable the *use this as default and do not ask again* option.
 
-## Xilinx ISE
+## AMD/Xilinx ISE
 
-To configure Sigasi Studio as default VHDL editor in Xilinx ISE:
+To configure Sigasi Studio as default VHDL editor in AMD/Xilinx ISE:
 
-1. In Xilinx ISE, Click **Edit \> Preferences** and **ISE General \> Editors**
+1. In AMD/Xilinx ISE, Click **Edit \> Preferences** and **ISE General \> Editors**
 2. Select **Custom** instead of **ISE Text Editor**
 3. If Sigasi Studio is on your path enter `sigasi.exe $1 +$2` (Windows) or `sigasi $1 +$2` (Linux).
    If Sigasi Studio is not on your path, use the absolute path instead. If there are spaces in this
 path, you need to enclose the path in curly braces . For example:`c:\\My\ Applications\sigasi\sigasi.exe $1 +$2`.
 
-{{< figure src="/img/manual/xilinxeditor.png" alt="Configuring Sigasi Studio as default VHDL editor in Xilinx ISE" >}}
+{{< figure src="/img/manual/xilinxeditor.png" alt="Configuring Sigasi Studio as default VHDL editor in AMD/Xilinx ISE" >}}
 
-If you now open any VHDL file in Xilinx ISE, Sigasi Studio will automatically open the selected file.
+If you now open any VHDL file in AMD/Xilinx ISE, Sigasi Studio will automatically open the selected file.
 
-You can find more info on configuring Xilinx ISE to work with external editors in the Xilinx documentation.
+You can find more info on configuring AMD/Xilinx ISE to work with external editors in the AMD/Xilinx documentation.
 
 ## HDL Designer
 

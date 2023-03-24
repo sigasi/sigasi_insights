@@ -97,17 +97,17 @@ For each toolchain Sigasi Studio can support any combination of the following:
 
 Currently the following external compilers are supported:
 
-| Toolchain                       | save-time compilation | start simulation         |
-| ------------------------------- | --------------------- | -------------------------|
-| Aldec Riviera-PRO               | true                  | true                     |
-| Aldec Active-HDL                | true                  | false                    |
-| Aldec ALINT-PRO                 | true                  | false                    |
-| Intel Quartus                   | false                 | false                    |
-| ModelSim / QuestaSim            | true                  | true                     |
-| Xilinx ISE                      | true                  | true                     |
-| [Xilinx Vivado](/manual/vivado) | true                  | true                     |
-| Cadence Incisive                | true                  | false                    |
-| [GHDL](/manual/ghdl)            | true                  | true                     |
+| Toolchain                           | save-time compilation | start simulation         |
+| ----------------------------------- | --------------------- | -------------------------|
+| Aldec Riviera-PRO                   | true                  | true                     |
+| Aldec Active-HDL                    | true                  | false                    |
+| Aldec ALINT-PRO                     | true                  | false                    |
+| Intel Quartus                       | false                 | false                    |
+| ModelSim / QuestaSim                | true                  | true                     |
+| AMD/Xilinx ISE                      | true                  | true                     |
+| [AMD/Xilinx Vivado](/manual/vivado) | true                  | true                     |
+| Cadence Incisive                    | true                  | false                    |
+| [GHDL](/manual/ghdl)                | true                  | true                     |
 
 Note: [OneSpin](/manual/onespin) was supported in Sigasi Studio from version 3.1 to 4.17 and provided save-time compilation and running of elaboration checks.
 
@@ -121,7 +121,7 @@ Note: [OneSpin](/manual/onespin) was supported in Sigasi Studio from version 3.1
 Sigasi Studio can use an external VHDL or Verilog compiler for additional code validation. At this time, Sigasi Studio supports:
 
 * `vcom` / `vlog` / `vsim` style compilers. These compilers include Aldec Riviera-PRO and from Mentor Graphics ModelSim and QuestaSim.
-* `isim` compiler from Xilinx.
+* `isim` compiler from AMD/Xilinx.
 * `ncsim` compiler from Cadence Incisive.
 
 Catching bugs earlier is cheaper than catching them late. Traditionally,
@@ -329,33 +329,33 @@ Note that Quartus does not automatically update its UI after you add
 files to your project. In order to update the files list, you should run
 a work flow action in Quartus, like starting a compilation.
 
-# Xilinx integration
+# AMD/Xilinx integration
 
 ## Setting the preferred editor
 
-To open the Sigasi Studio editor from Xilinx, you first have to configure Sigasi Studio as preferred editor in [Vivado](/manual/opening#xilinx-vivado) or [ISE](/manual/opening#xilinx-ise).
+To open the Sigasi Studio editor from AMD/Xilinx, you first have to configure Sigasi Studio as preferred editor in [Vivado](/manual/opening#xilinx-vivado) or [ISE](/manual/opening#xilinx-ise).
 
-## Importing Xilinx Projects in Sigasi Studio
-
-### Vivado
-
-The process of importing a Xilinx Vivado project is explained in [Generating a Sigasi project from a Vivado project](/tech/generating-sigasi-project-vivado-project).
-
-### ISE
-
-The process of importing a Xilinx ISE project is explained in [Importing a Xilinx ISE project in Sigasi](/tech/importing-xilinx-ise-project-sigasi).
-
-## Xilinx Preferences
+## Importing AMD/Xilinx Projects in Sigasi Studio
 
 ### Vivado
 
-You can change the Xilinx Vivado installation location by selecting **Window > Preferences > Sigasi > Toolchains > Xilinx Vivado**.
-Sigasi Studio needs this path to find the Xilinx Vivado libraries.
+The process of importing a AMD/Xilinx Vivado project is explained in [Generating a Sigasi project from a Vivado project](/tech/generating-sigasi-project-vivado-project).
 
 ### ISE
 
-You can change the Xilinx ISE installation location by selecting **Window > Preferences > Sigasi > Toolchains > Xilinx ISE**.
-Sigasi Studio needs this path to find the Xilinx Vivado libraries and to run the ISim compiler and simulator.
+The process of importing a AMD/Xilinx ISE project is explained in [Importing a AMD/Xilinx ISE project in Sigasi](/tech/importing-xilinx-ise-project-sigasi).
+
+## AMD/Xilinx Preferences
+
+### Vivado
+
+You can change the AMD/Xilinx Vivado installation location by selecting **Window > Preferences > Sigasi > Toolchains > Xilinx Vivado**.
+Sigasi Studio needs this path to find the AMD/Xilinx Vivado libraries.
+
+### ISE
+
+You can change the AMD/Xilinx ISE installation location by selecting **Window > Preferences > Sigasi > Toolchains > Xilinx ISE**.
+Sigasi Studio needs this path to find the AMD/Xilinx ISE libraries and to run the ISim compiler and simulator.
 
 # Export
 

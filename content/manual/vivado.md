@@ -1,10 +1,10 @@
 ---
-title: Xilinx Vivado Integration
+title: AMD/Xilinx Vivado Integration
 skipoverviewlist: true
 pager: true
 ---
 
-Sigasi Studio is often used in combination with Xilinx Vivado Design Suite and offers many features to improve this workflow:
+Sigasi Studio is often used in combination with the AMD/Xilinx Vivado Design Suite and offers many features to improve this workflow:
 
 * [Configure Sigasi Studio as default editor in Vivado](/manual/opening#xilinx-vivado)
 * [Automatically generate a Sigasi Studio project from an existing Vivado project](/tech/generating-sigasi-project-vivado-project)

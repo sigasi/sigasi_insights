@@ -178,11 +178,11 @@ file, it will be used instead of the default "modelsim.ini" file.
 
 This section links to various recommendations on to pre-compiling the simulation models of external libraries in the `Common Libraries`, depending on the external compiler.
 
-### Xilinx
+### AMD/Xilinx
 
-* Recommendations for [Xilinx ISE](https://www.xilinx.com/support/documentation/sw_manuals/xilinx11/pp_p_process_compile_hdl_simulation_libraries.htm)
+* Recommendations for [AMD/Xilinx ISE](https://www.xilinx.com/support/documentation/sw_manuals/xilinx11/pp_p_process_compile_hdl_simulation_libraries.htm)
 
-* Recommendations for [Xilinx Vivado](https://www.xilinx.com/support/answers/64083.html)
+* Recommendations for [AMD/Xilinx Vivado](https://www.xilinx.com/support/answers/64083.html)
 
 ### Intel (formerly Altera)
 
@@ -286,17 +286,17 @@ project as any other set of VHDL files.
 
 A number of popular third party libraries are the following:
 
-Vendor   | Library           | Install dir example
--------- | ----------------- | ----------------------------------------------------
-Xilinx   | `unisim`          | `C:\Xilinx\Vivado\2020.1\data\vhdl\src\unisims`
-Xilinx   | `unimacro`        | `C:\Xilinx\Vivado\2020.1\data\vhdl\src\unimacro`
-Xilinx   | `XilinxCoreLib`   | `C:\Xilinx\14.4\ISE_DS\ISE\vhdl\src\XilinxCoreLib`
-Xilinx   | `xpm`             | `C:\Xilinx\Vivado\2020.1\data\ip\xpm`
-Intel    | `altera_mf`       | `C:\Intel\17.0\quartus\libraries\vhdl`
-Mentor   | `modelsim_lib`    | `${ModelSimPath}\vhdl_src\modelsim_lib`
-Aldec    | `aldec`           | `C:\Aldec\Riviera-PRO-2015.02\vlib\aldec\`
+Vendor       | Library           | Install dir example
+------------ | ----------------- | ----------------------------------------------------
+AMD/Xilinx   | `unisim`          | `C:\Xilinx\Vivado\2020.1\data\vhdl\src\unisims`
+AMD/Xilinx   | `unimacro`        | `C:\Xilinx\Vivado\2020.1\data\vhdl\src\unimacro`
+AMD/Xilinx   | `XilinxCoreLib`   | `C:\Xilinx\14.4\ISE_DS\ISE\vhdl\src\XilinxCoreLib`
+AMD/Xilinx   | `xpm`             | `C:\Xilinx\Vivado\2020.1\data\ip\xpm`
+Intel        | `altera_mf`       | `C:\Intel\17.0\quartus\libraries\vhdl`
+Mentor       | `modelsim_lib`    | `${ModelSimPath}\vhdl_src\modelsim_lib`
+Aldec        | `aldec`           | `C:\Aldec\Riviera-PRO-2015.02\vlib\aldec\`
 
-On Linux the default installation location for Xilinx is `/opt/Xilinx`.
+On Linux the default installation location for AMD/Xilinx software is `/opt/Xilinx`.
 
 For many common third party libraries, you can set up the library using
 a [Quick Fix for third party libraries](/manual/rules/quick-fix-for-third-party-libraries).
