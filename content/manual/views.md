@@ -343,7 +343,7 @@ The member list shows all members of the class that is currently selected in the
 # Console View
 
 When Sigasi Studio launches external tools (e.g. external compiler, documentation generation,...) the output is logged to the Console View.
-This is a [generic Eclipse view](https://help.eclipse.org/photon/index.jsp?topic=%2Forg.eclipse.cdt.doc.user%2Freference%2Fcdt_u_console_view.htm).
+This is a [generic Eclipse view](https://help.eclipse.org/latest/index.jsp?topic=/org.eclipse.cdt.doc.user/reference/cdt_u_console_view.htm).
 
 Different tools can open different consoles. You can switch between different consoles by clicking the ![icon console display](/img/icons/icon_con_disp_console.png)-icon.
 

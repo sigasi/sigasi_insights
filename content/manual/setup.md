@@ -112,8 +112,8 @@ There are two ways to install the Sigasi Studio Eclipse Plugin:
 
 {{< figure src="/img/manual/eclipse_foundationmember.png" alt="Eclipse Foundation member" class="uk-align-right" >}}
 
-* You need to have at least [Eclipse](http://www.eclipse.org) version 4.8, nicknamed *Photon*.
-* This Eclipse version and the Sigasi Studio plugin require Java 11.
+* You need to have at least [Eclipse](http://www.eclipse.org) version 2021-03 (4.19).
+* This Eclipse version and the Sigasi Studio plugin require Java 11 or 17.
 * If you don't have Eclipse installed yet, the C/C++ flavor would be a good place to start. Just **download** ([Windows 64 bit][latest-eclipse-cpp-windows64]/[Linux 64 bit][latest-eclipse-cpp-linux64]/[Other versions][latest-eclipse-cpp]), **unzip**, and **start**.
 * We recommend you also [increase the heap size for Eclipse](/faq/#how-do-i-increase-the-heap-size-for-eclipse).
 

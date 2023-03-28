@@ -73,7 +73,7 @@ page.
 
 For some toolchains you can specify extra command line arguments. Note
 that these preference pages support [Eclipse
-Variables](https://help.eclipse.org/photon/topic/org.eclipse.platform.doc.user/concepts/concepts-exttools.htm)
+Variables](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Fconcepts%2Fconcepts-exttools.htm)
 which allow you to more easily share settings in a team.
 
 Environment variables are supported too.
@@ -204,7 +204,7 @@ last configuration by simply clicking
 
 ## Variables in Arguments
 
-In the arguments field you can use [variables](https://help.eclipse.org/photon/topic/org.eclipse.platform.doc.user/concepts/concepts-exttools.htm), which are automatically expanded when the external tool is run.
+In the arguments field you can use [variables](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Fconcepts%2Fconcepts-exttools.htm), which are automatically expanded when the external tool is run.
 This allows you to do things like adding the currently selected file in the file explorer as an argument for an external tool configuration (`${resource_path}`).
 
 Sigasi Studio adds following variables and parameters for VHDL and (System)Verilog projects:

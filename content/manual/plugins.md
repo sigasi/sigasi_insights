@@ -63,7 +63,7 @@ SourceForge, not the **official** [ClearCase plugin distributed by IBM](https://
 
 While this is not strictly speaking a version control system, Sigasi Studio has
 a built-in feature that keeps a local history of your files.
-[Learn more](https://help.eclipse.org/photon/topic/org.eclipse.platform.doc.user/tasks/tasks-1f.htm?cp=0_3_9).
+[Learn more](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftasks-1f.htm&cp%3D0_3_9).
 
 ### Other Systems
 

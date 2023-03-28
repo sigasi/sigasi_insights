@@ -52,7 +52,7 @@ We have made a short introduction video on [Naming Conventions](/screencasts/nam
 
 # Sigasi Studio Standalone Version : Eclipse Photon (4.8)
 
-Sigasi Studio 4.1 is build on top of the newly released [Eclipse Photon](https://eclipse.org/photon/) platform. This brings a number of UI and other improvements such as improved memory usage. You can find all new and noteworthy changes in Eclipse Photon on the [Eclipse website](http://www.eclipse.org/eclipse/news/4.8/).
+Sigasi Studio 4.1 is built on top of the newly released [Eclipse Photon](https://eclipse.org/photon/) platform. This brings a number of UI and other improvements such as improved memory usage. You can find all new and noteworthy changes in Eclipse Photon on the [Eclipse website](http://www.eclipse.org/eclipse/news/4.8/).
 
 If you open an existing workspace after the update to Sigasi Studio 4.1, you might see a warning about updating your workspace. You can safely confirm the update by clicking **Continue**.  
 {{< figure src="/img/releasenotes/4.1/older_workspace_version.png" alt="Workspace update warning" title="Workspace update warning" link="/img/releasenotes/4.1/older_workspace_version.png" >}}  

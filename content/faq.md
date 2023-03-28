@@ -340,7 +340,7 @@ The **workspace path variables** (set via preferences) are stored in: `<workspac
 
 You can also set this per **project** (in the project properties). In that case the info is stored in the `.project` file.
 
-You can find more info on: [here](/tech/how-avoid-absolute-library-paths-your-sigasi-project-files) and [here](https://help.eclipse.org/photon/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Fconcepts%2Fcpathvars.htm)
+You can find more info on: [here](/tech/how-avoid-absolute-library-paths-your-sigasi-project-files) and [here](https://help.eclipse.org/latest/index.jsp?topic=/org.eclipse.platform.doc.user/concepts/cpathvars.htm)
 
 ## Can I use a Dark Theme?
 
@@ -466,7 +466,7 @@ If you see warnings that are not useful for you, you can do one of the following
 ## "Show In -> System Explorer" does not work on RedHat Linux 6
 
 On preference page **General > Workspace** you can configure the command that is used to open files with the System Explorer. The default Linux command does not work on older linux systems.
-On RedHat 6 linux, you can use the nautilus command: `nautilus "${selected_resource_parent_loc}"` ([More info](https://help.eclipse.org/photon/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-9.htm)).
+On RedHat 6 linux, you can use the nautilus command: `nautilus "${selected_resource_parent_loc}"` ([More info](https://help.eclipse.org/latest/index.jsp?topic=/org.eclipse.platform.doc.user/reference/ref-9.htm)).
 
 ## Sigasi switches my keyboard layout! Did I find a bug?
 
@@ -734,7 +734,7 @@ More information on installing plugins is available in [our manual]({{< ref "/ma
 
 ## Do you have an Emacs emulation mode so that I can use the Emacs key bindings?
 
-All Eclipse products, including Sigasi Studio, can be configured to support [Emacs key bindings](http://help.eclipse.org/photon/topic/org.eclipse.platform.doc.user/concepts/accessibility/keyboardshortcuts.htm?cp=0_4_1_33). While it is not the same as Emacs, you can keep your habit of pressing *CTRL-C* and *CTRL-X* all the time.
+All Eclipse products, including Sigasi Studio, can be configured to support [Emacs key bindings](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Fconcepts%2Faccessibility%2Fkeyboardshortcuts.htm&cp%3D0_4_1_33). While it is not the same as Emacs, you can keep your habit of pressing *CTRL-C* and *CTRL-X* all the time.
 
 You also can use the [More Emacs](https://marketplace.eclipse.org/content/more-emacs) plugin as explained in [our manual]({{< ref "/manual/plugins.md#vi-and-emacs" >}}).
 
