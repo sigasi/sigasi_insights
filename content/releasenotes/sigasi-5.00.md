@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 5.0
 date: 2023-01-06
-lastmod: 2023-02-27
+lastmod: 2023-03-28
 comments: true
 pager: true
 ---
@@ -10,6 +10,8 @@ pager: true
 
 We proudly present the all-new **Sigasi Studio 5**.
 In this release, we introduce the **unique Sigasi analysis engine for Verilog and SystemVerilog**, improved **autocomplete**, and faster **documentation generation**.
+
+Note that [Veresta](https://www.sigasi.com/veresta/) and our [VS Code extension](https://marketplace.visualstudio.com/items?itemName=Sigasi.sigasi-vscode) benefit from all of the changes not explicitly marked as {{< pill text="Eclipse" >}}.
 
 # Next Level Verilog and SystemVerilog Support
 
@@ -50,7 +52,7 @@ Sigasi 5 has a vastly improved understanding of the designs in your project. Bas
   </li>
 </ol>
 
-Even the most complex design hierarchies are understood and validated instantaneously.  Sigasi 5 analyzes the regular instantiations, the module tree, and bind directives. No matter how complex or deep your design is, the hierarchy information is immediately available at your fingertips. You can follow your hierarchical references, navigate to the referenced instances and structures, and immediately get an accurate understanding of your design. No matter how many top-level units your project contains. Everything is discovered, analyzed, and checked.
+Even the most complex design hierarchies are understood and validated instantaneously. Sigasi 5 analyzes the regular instantiations, the module tree, and bind directives. No matter how complex or deep your design is, the hierarchy information is immediately available at your fingertips. You can follow your hierarchical references, navigate to the referenced instances and structures, and immediately get an accurate understanding of your design. No matter how many top-level units your project contains. Everything is discovered, analyzed, and checked.
 
 {{< figure src="/img/releasenotes/5.0/hierarchical.png" link="/img/releasenotes/5.0/hierarchical.png" title="Hierarchical accessibility" width="450" >}}
 
@@ -92,7 +94,7 @@ Sigasi 5 has sophisticated support for SV `interface`s and `modport`s. Error che
 
 {{< figure src="/img/releasenotes/5.0/interfaces with numbers.png" link="/img/releasenotes/5.0/interfaces with numbers.png" title="Deep analysis of generic interfaces" width="350" >}}
 
-The example illustrates the superb support for interfaces in Sigasi 5. The interface declaration <span style="color:#f37825">➊</span> defines two ports `gnt` and `ack`.  The `top` module <span style="color:#f37825">➋</span> uses a generic, untyped interface port. Upon instantiation <span style="color:#f37825">➌</span> of the module, Sigasi 5 understands that `ack` and `gnt` <span style="color:#f37825">➍</span> are accessible on `a` in the module body, but `data` is not. All Sigasi features work accordingly, e.g. navigation, autocomplete, and highlighting.
+The example illustrates the superb support for interfaces in Sigasi 5. The interface declaration <span style="color:#f37825">➊</span> defines two ports `gnt` and `ack`. The `top` module <span style="color:#f37825">➋</span> uses a generic, untyped interface port. Upon instantiation <span style="color:#f37825">➌</span> of the module, Sigasi 5 understands that `ack` and `gnt` <span style="color:#f37825">➍</span> are accessible on `a` in the module body, but `data` is not. All Sigasi features work accordingly, e.g. navigation, autocomplete, and highlighting.
 
 ### Complex Enum Declarations
 
@@ -124,7 +126,7 @@ Finally, autocomplete now conveniently works inside macro parameters.
 
 # Documentation Improvements
 
-For this release, in addition to some smaller refinements, the focus is on faster documentation export.
+The focus in this release, in addition to some smaller refinements, is on faster documentation export in {{< pill text="Eclipse" >}}.
 
 ## Documentation Performance
 
@@ -146,51 +148,51 @@ The number of threads that should be used for diagram generation can be configur
 # Removals
 
 * Support for Mac has been dropped
-* OneSpin integration has been dropped
-* **[Verilog]** Renaming of identifiers has been disabled pending a rework of the rename functionality on top of the new Verilog analysis engine
-* **[Verilog]** The [rename design unit to match filename quickfix]({{< ref "manual/rules/verilog_style.md#file-name-does-not-match-design-unit" >}}) was disabled for the same reason
+* {{< pill text="Eclipse" >}} OneSpin integration has been dropped
+* {{< pill text="Verilog" >}} Renaming identifiers has been disabled pending a rework of the rename functionality on top of the new Verilog analysis engine
+* {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} The [rename design unit to match filename quickfix]({{< ref "manual/rules/verilog_style.md#file-name-does-not-match-design-unit" >}}) was disabled for the same reason
 
 # Talkback Changes
 
-* Talkback now automatically offers to enable itself for educational users
-* Pressing the `without features` link on the welcome page when you have no (valid) license opens a dialog offering to enable talkback
 * Talkback notes which license a user uses
-* Talkback no longer notes the command line arguments used to start Eclipse
+* {{< pill text="Eclipse" >}} Talkback now automatically offers to enable itself for educational users
+* {{< pill text="Eclipse" >}} Pressing the `without features` link on the welcome page when you have no (valid) license opens a dialog offering to enable talkback
+* {{< pill text="Eclipse" >}} Talkback no longer notes the command line arguments used to start Eclipse
 
 # Further New and Noteworthy Changes
 
 * Introduced a new theme with all-new Sigasi logos and artwork
-* Made icons in our import and export wizards consistent
-* Improved consistency & typography between Sigasi views, wizards, and dialogs
-* The Verilog tutorial is now available through **Help > Sigasi > Start Verilog Tutorial**
 * Our tutorials have been updated to reflect the new 5.0 functionality
-* **[Verilog]** Navigation has been improved to feel snappier. It now immediately opens the relevant region
-* **[Verilog]** Added support for include-directives using absolute paths e.g. ``` `include "/libraries/includes/my_include_file.svh"```.  These include paths will be resolved starting from the root of your Sigasi project and ignore the include search paths that were configured.
-* **[Verilog]** Changed default severity of the [Disallow reg datatype]({{< ref "manual/rules/verilog_reg.md" >}}) linting from `WARNING` to `INFO`
-* **[Verilog]** Library names are no longer shown as part of the name of design units in the [Libraries View]({{< ref "manual/views.md#libraries-view" >}})
-* **[Verilog]** Assigns to interfaces are now also shown in the [Block Diagram]({{< ref "manual/views.md#block-diagram-view" >}})
-* **[Verilog]** Sigasi now also checks that untagged unions do not use dynamic types or `chandle`s
-* **[VHDL]** [Sigasi Auto Export]({{< ref "manual/tools.md#auto-export" >}}) nor restricts top levels to those present in the given project
-* **[VHDL]** Component instantiations now insert default values and no longer add a redundant space before the semicolon
-* **[VHDL]** A warning is shown when assigning identifiers using string literals that include underscores, as this is only possible in bit string literals
+* {{< pill text="Eclipse" >}} Made icons in our import and export wizards consistent
+* {{< pill text="Eclipse" >}} Improved consistency & typography between Sigasi views, wizards, and dialogs
+* {{< pill text="Eclipse" >}} The Verilog tutorial is now available at **Help > Sigasi > Start Verilog Tutorial**
+* {{< pill text="Verilog" >}} Navigation has been improved to feel snappier. It now immediately opens the relevant region
+* {{< pill text="Verilog" >}} Added support for include-directives using absolute paths e.g. ``` `include "/libraries/includes/my_include_file.svh"```. These include paths will be resolved starting from the root of your Sigasi project and ignore the include search paths that were configured.
+* {{< pill text="Verilog" >}} Changed default severity of the [Disallow reg datatype]({{< ref "manual/rules/verilog_reg.md" >}}) linting from `WARNING` to `INFO`
+* {{< pill text="Verilog" >}} Sigasi now also checks that untagged unions do not use dynamic types or `chandle`s
+* {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} Assigns to interfaces are now also shown in the [Block Diagram]({{< ref "manual/views.md#block-diagram-view" >}})
+* {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} Library names are no longer shown as part of the name of design units in the [Libraries View]({{< ref "manual/views.md#libraries-view" >}})
+* {{< pill text="VHDL" >}} Component instantiations now insert default values and no longer add a redundant space before the semicolon
+* {{< pill text="VHDL" >}} {{< pill text="Eclipse" >}} [Sigasi Auto Export]({{< ref "manual/tools.md#auto-export" >}}) now restricts top levels to those present in the given project
+* {{< pill text="VHDL" >}} A warning is shown when assigning identifiers using string literals that include underscores, as this is only possible in bit string literals
 
-{{< figure src="/img/releasenotes/5.0/ErrorOnUnderscoreInString.png" link="/img/releasenotes/5.0/ErrorOnUnderscoreInString.png" title="Underscores are illegal in string literals"  width="550" >}}
+{{< figure src="/img/releasenotes/5.0/ErrorOnUnderscoreInString.png" link="/img/releasenotes/5.0/ErrorOnUnderscoreInString.png" title="Underscores are illegal in string literals" width="550" >}}
 
 # Updates
 
-* Updated to Chromium 88 for rendering graphics and the [Documentation View]({{< ref "manual/views.md#documentation-view" >}}). This improves the performance and stability of these views
+* {{< pill text="Eclipse" >}} Updated to Chromium 88 for rendering graphics and the [Documentation View]({{< ref "manual/views.md#documentation-view" >}}). This improves the performance and stability of these views
 
 # Bug Fixes
 
-* Fixed alphabetical sorting in the [Hierarchy View]({{< ref "manual/views.md#hierarchy-view" >}})
 * [Open Design Unit]({{< ref "manual/editor.md#open-design-unit" >}}) now always has icons for all items
-* VHDL preference page options are now properly aligned
-* **[VUnit]** Missing python installations are now correctly reported to the user
-* **[Verilog]** Preprocessor property page buttons are now more responsive
-* **[VHDL]** Fixed VHDL 2019 conditional variable processing in singular, non-project files
-* **[VHDL]** Fixed a rare formatting case where it did not apply to parts of the code
-* **[VHDL]** The quickfix for the [component/entity mismatch]({{< ref "manual/rules/check-for-component-entity-mismatch.md" >}}) now shows up when the entity contains empty ports
-* **[VHDL]** Range checks now work in VHDL 2019
+* {{< pill text="Eclipse" >}} Fixed alphabetical sorting in the [Hierarchy View]({{< ref "manual/views.md#hierarchy-view" >}})
+* {{< pill text="Eclipse" >}} VHDL preference page options are now properly aligned
+* {{< pill text="Eclipse" >}} Missing python installations are now correctly reported to the user
+* {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} Preprocessor property page buttons are now more responsive
+* {{< pill text="VHDL" >}} Fixed VHDL 2019 conditional variable processing in singular, non-project files
+* {{< pill text="VHDL" >}} Fixed a rare formatting case where it did not apply to parts of the code
+* {{< pill text="VHDL" >}} Range checks now work in VHDL 2019
+* {{< pill text="VHDL" >}} {{< pill text="Eclipse" >}} The quickfix for the [component/entity mismatch]({{< ref "manual/rules/check-for-component-entity-mismatch.md" >}}) now shows up when the entity contains empty ports
 
 Thank you for all the [bug reports](mailto:support@sigasi.com) and for enabling [Talkback]({{< ref "manual/talkback.md" >}}). All your reports have helped us fix many issues that would otherwise go unnoticed.
 
@@ -208,7 +210,7 @@ Thank you for all the [bug reports](mailto:support@sigasi.com) and for enabling 
 We recommend at least **4GB of memory** available for Sigasi Studio,
 and you need **about 1GB** of free disk space.
 
-**NOTE:** you may run into the warning dialog below when installing Sigasi Studio in your **own Eclipse 2022-12 or above** installation because this Eclipse version introduces GPG signing.
+**NOTE:** you may run into the warning dialog below when installing Sigasi Studio in your **own {{< pill text="Eclipse 2022-12" >}} or above** installation because this Eclipse version introduces GPG signing.
 {{< figure src="/img/releasenotes/5.0/GPGSigningWarning.png" link="/img/releasenotes/5.0/GPGSigningWarning.png" title="Expected GPG signing warning in Eclipse 2022-12 and above." >}}
 
 # Sigasi Studio 5.0.1 point release
@@ -216,20 +218,20 @@ and you need **about 1GB** of free disk space.
 On February 14, we released Sigasi Studio 5.0.1.
 This release contains the following bug fixes and improvements:
 
-* Sigasi Studio is installable as plugin in your own Eclipse installation given these prerequisites
+* Autocomplete proposals ignore `_` in the prefix. This results in better ordering for snake_case identifiers i.e. `my_clk` will be one of the top proposals when using the prefix `mycl`
+* {{< pill text="Eclipse" >}} Sigasi Studio is installable as plugin in your own Eclipse installation given these prerequisites
   * Eclipse IDE 2021-03 up to and including Eclipse IDE 2022-12
   * Java JRE 11 or 17
-* Hover windows correctly resize to fit their full content
-* Applying an autocomplete only moves the viewport if the cursor is not yet within it
-* Autocomplete proposals ignore `_` in the prefix. This results in better ordering for snake_case identifiers i.e. `my_clk` will be one of the top proposals when using the prefix `mycl`
-* Fixed an issue where **Window > Preferences > Sigasi > Advanced** could only be opened once per session
+* {{< pill text="Eclipse" >}} Hover windows correctly resize to fit their full content
+* {{< pill text="Eclipse" >}} Applying an autocomplete only moves the viewport if the cursor is not yet within it
+* {{< pill text="Eclipse" >}} Fixed an issue where **Window > Preferences > Sigasi > Advanced** could only be opened once per session
 
 # Sigasi Studio 5.0.2 point release
 
 On March 1, we released Sigasi Studio 5.0.2.
 This release contains solutions for the following reported bugs:
 
-* Error dialog is shown when opening Sigasi Studio
-* Caching error for specific files
-* Hover and autocomplete block the editor and take a long time to pop up
 * Templates are not the top suggestion during autocomplete
+* {{< pill text="Eclipse" >}} Error dialog is shown when opening Sigasi Studio
+* {{< pill text="Eclipse" >}} Caching error for specific files
+* {{< pill text="Eclipse" >}} Hover and autocomplete block the editor and take a long time to pop up

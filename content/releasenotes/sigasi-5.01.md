@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 5.1
 date: 2023-03-17
-lastmod: 2023-03-17
+lastmod: 2023-03-28
 comments: true
 pager: true
 ---
@@ -42,6 +42,8 @@ pager: true
 {{< figure src="/img/releasenotes/5.1/NewLintingRules.png" link="/img/releasenotes/5.1/NewLintingRules.png" title="A host of new linting rules" class="uk-align-center" width=550 >}}
 
 The Sigasi Studio 5.1 release focuses on **productivity** and **verification** for Verilog and SystemVerilog. Building on the new foundations laid in the {{< page "releasenotes/sigasi-5.00.md" >}} release, we added a **type checker**, many **new linting rules**, improved our **performance and memory usage**, and further refined our **information-rich hovers and views**. These improvements increase the designer's efficiency and liberate them from many intricacies of Verilog and SystemVerilog.
+
+As per usual, [Veresta](https://www.sigasi.com/veresta/) and our [VS Code extension](https://marketplace.visualstudio.com/items?itemName=Sigasi.sigasi-vscode) benefit from all of the changes not explicitly marked as {{< pill text="Eclipse" >}}.
 
 # New Verilog and SystemVerilog Linting Rules
 
@@ -222,7 +224,7 @@ To keep you in _the flow_, we introduced rich and accurate labels and hovers in 
 
 # GPG Signing
 
-Eclipse 4.26 (2022-12) added GPG certificate checking capabilities. When you install new _plugins_, you will be prompted to trust any not-yet-trusted GPG keys or unsigned artifacts. Because Sigasi artifacts are correctly signed using GPG, you can expect to see the following screen the first time you install or update Sigasi in an Eclipse >= 4.26.
+{{< pill text="Eclipse 4.26 (2022-12)" >}} added GPG certificate checking capabilities. When you install new _plugins_, you will be prompted to trust any not-yet-trusted GPG keys or unsigned artifacts. Because Sigasi artifacts are correctly signed using GPG, you can expect to see the following screen the first time you install or update Sigasi in an Eclipse >= 4.26.
 
 {{< figure src="/img/releasenotes/5.1/GPGDuringInstallation.png" link="/img/releasenotes/5.1/GPGDuringInstallation.png" title="GPG Trust Prompt" class="uk-align-center" width=550 >}}
 
@@ -234,8 +236,8 @@ You can refer to [this page]({{< ref "GPG.md" >}}) for all information regarding
 
 # Further New and Noteworthy Changes
 
-* The upper limit for the amount of autocomplete proposals has been increased. In practice, this means that important proposals will always be included.
-* [Generated documentation]({{< ref "manual/documentation.md" >}}) now shows an empty cell instead of `unspecified` when no default is specified
+* {{< pill text="Eclipse" >}} The upper limit for the amount of autocomplete proposals has been increased. In practice, this means that important proposals will always be included.
+* {{< pill text="Eclipse" >}}  [Generated documentation]({{< ref "manual/documentation.md" >}}) now shows an empty cell instead of `unspecified` when no default is specified
 * {{< pill text="VHDL" >}} Added a linting rule to check that the characters in a string literal are legal  
 {{< figure src="/img/releasenotes/5.1/IllegalStringLiteralCharacters.png" link="/img/releasenotes/5.1/IllegalStringLiteralCharacters.png" title="Illegal characters in string literal as initializer" class="uk-align-center" width=550 >}}  
 * {{< pill text="VHDL" >}} Added a linting rule to check whether spaces are used in extended identifiers referable from Verilog and SystemVerilog as these cannot be referenced in those languages  
@@ -247,55 +249,55 @@ You can refer to [this page]({{< ref "GPG.md" >}}) for all information regarding
 
 # Quality of Life
 
-* The [Problems View]({{< ref "manual/views.md#problems-view" >}}) `Sort by Location` now sorts by line number
-* The VUnit installation path is now updated when you set your `python` path, even if there are no VUnit projects open
-* The descriptions of the options in the Documentation Generation Wizard no longer change when you enable or disable them
-* Added a description to the Export Marker wizard
-* Added missing keybind for [Quick Outline]({{< ref "manual/views.md#quick-outline-view" >}})
-* Added queueing for diagram exports. If an export is already in the works, it will not be canceled.
-* Improved caret positioning after formatting such that it jumps around only when strictly necessary
-* Improved icons for `typedef` and `nettype` in the Outline View
-* Improved priorities for keywords in autocomplete. Relevant keywords are now listed higher.
-* Fixed autocomplete proposals to highlight the matching prefix characters in bold
-* Removed hovers that are empty for whatever reason
+* Improved priorities for keywords in autocomplete. Relevant keywords are now listed higher up.
 * Removed syntax highlighting of keywords in extended identifiers, e.g., `\extended id\` or `\extended$id `
-* Removed [Suppress Warning]({{< ref "manual/linting.md#suppressing-warnings" >}}) Quick Fix when the problem is already suppressed
+* {{< pill text="Eclipse" >}} The [Problems View]({{< ref "manual/views.md#problems-view" >}}) `Sort by Location` now sorts by line number
+* {{< pill text="Eclipse" >}} The VUnit installation path is now updated when you set your `python` path, even if there are no VUnit projects open
+* {{< pill text="Eclipse" >}} The descriptions of the options in the Documentation Generation Wizard no longer change when you enable or disable them
+* {{< pill text="Eclipse" >}} Added a description to the Export Marker wizard
+* {{< pill text="Eclipse" >}} Added missing keybind for [Quick Outline]({{< ref "manual/views.md#quick-outline-view" >}})
+* {{< pill text="Eclipse" >}} Added queueing for diagram exports. If an export is already in the works, it will not be canceled.
+* {{< pill text="Eclipse" >}} Improved caret positioning after formatting such that it jumps around only when strictly necessary
+* {{< pill text="Eclipse" >}} Improved icons for `typedef` and `nettype` in the Outline View
+* {{< pill text="Eclipse" >}} Fixed autocomplete proposals to highlight the matching prefix characters in bold
+* {{< pill text="Eclipse" >}} Removed hovers that are empty for whatever reason
+* {{< pill text="Eclipse" >}} Removed [Suppress Warning]({{< ref "manual/linting.md#suppressing-warnings" >}}) Quick Fix when the problem is already suppressed
 * {{< pill text="VHDL" >}} Improved wording in many of our error messages
-* {{< pill text="VHDL" >}} Fixed extra whitespace in the [Add sensitivity list]({{< ref "manual/rules/sensitivity-list.md" >}}) Quick Fix
-* {{< pill text="Verilog" >}} Holding **Ctrl** while autocompleting a macro parameter now only replaces the parameter under the cursor instead of the rest of the line
+* {{< pill text="VHDL" >}} {{< pill text="Eclipse" >}} Fixed extra whitespace in the [Add sensitivity list]({{< ref "manual/rules/sensitivity-list.md" >}}) Quick Fix
 * {{< pill text="Verilog" >}} The variable being declared is no longer shown as autocomplete proposal when you are initializing it
+* {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} Holding **Ctrl** while autocompleting a macro parameter now only replaces the parameter under the cursor instead of the rest of the line
 
 # Bug Fixes
 
 * The include directive autocomplete now shows proposals for files that need encoding, e.g., when they contain a space or non-ASCII characters
-* Fixed the [Capture Heap Dump]({{< ref "manual/trouble.md#memory-snapshot" >}}) command
-* Fixed a deadlock when closing a tab while the autocomplete window is open
-* Fixed backspace inadvertently deleting multiple whitespace characters
-* Fixed mac-style newlines (`\r`) breaking the Documentation Export
-* Fixed unintended character substitution in the CSV Marker Export
-* Fixed empty autocomplete when it is called very early during startup
-* Fixed an occasional hang during navigation
-* Fixed occasional incorrect navigation on **Ctrl+Click**
-* {{< pill text="VHDL" >}} The `Increase VHDL version` Quick Fix will now only update the file if the project already has the correct version
+* {{< pill text="Eclipse" >}} Fixed the [Capture Heap Dump]({{< ref "manual/trouble.md#memory-snapshot" >}}) command
+* {{< pill text="Eclipse" >}} Fixed a deadlock when closing a tab while the autocomplete window is open
+* {{< pill text="Eclipse" >}} Fixed backspace inadvertently deleting multiple whitespace characters
+* {{< pill text="Eclipse" >}} Fixed mac-style newlines (`\r`) breaking the Documentation Export
+* {{< pill text="Eclipse" >}} Fixed unintended character substitution in the CSV Marker Export
+* {{< pill text="Eclipse" >}} Fixed empty autocomplete when it is called very early during startup
+* {{< pill text="Eclipse" >}} Fixed an occasional hang during navigation
+* {{< pill text="Eclipse" >}} Fixed occasional incorrect navigation on **Ctrl+Click**
 * {{< pill text="VHDL" >}} Added linting when assigning `"-"` to a vector
 * {{< pill text="VHDL" >}} Added support for the standard library's `read` function to VHDL 2008 and 2019
 * {{< pill text="VHDL" >}} Fixed false positive warning when using `unsigned'()` as the default value for a `constant`
 * {{< pill text="VHDL" >}} Fixed indentation of comments during formatting when they are placed after instantiations
 * {{< pill text="VHDL" >}} Fixed false positive `variable is never written` when using non-shared protected type variables
+* {{< pill text="VHDL" >}} {{< pill text="Eclipse" >}} The `Increase VHDL version` Quick Fix will now only update the file if the project already has the correct version
 * {{< pill text="Verilog" >}} Include directives that start with a `/` now correctly resolve relative to the project root
-* {{< pill text="Verilog" >}} All inherited members in the [Class Hierarchy View]({{< ref "manual/views.md#class-hierarchy-view" >}}) are now colored consistently
 * {{< pill text="Verilog" >}} Added instance names to the Hierarchy View
 * {{< pill text="Verilog" >}} Added navigation from implicit port connections (e.g., `.clk`) to both the port/net and the actual
 * {{< pill text="Verilog" >}} Fixed highlighting for multiline string literals
 * {{< pill text="Verilog" >}} Fixed positioning of errors with unusual define directives
-* {{< pill text="Verilog" >}} Fixed links to parent classes in generated documentation
-* {{< pill text="Verilog" >}} Fixed empty Class Hierarchy View when opening it on a class that has a `task` and `function` with the same name
 * {{< pill text="Verilog" >}} Fixed type inference for real literals
 * {{< pill text="Verilog" >}} Fixed highlighting of parameters in multi declarations, e.g., `parameter WIDTH, SIZE`
 * {{< pill text="Verilog" >}} Fixed navigation of functions when a target is available in the enclosing class and the parent class
 * {{< pill text="Verilog" >}} Removed false positive override annotation in the Class Hierarchy View
 * {{< pill text="Verilog" >}} Removed duplicate `Open Declaration` links when a file is included multiple times
-* {{< pill text="Verilog" >}} Removed empty blocks in the Block Diagram for empty `for` loops
+* {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} All inherited members in the [Class Hierarchy View]({{< ref "manual/views.md#class-hierarchy-view" >}}) are now colored consistently
+* {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} Fixed links to parent classes in generated documentation
+* {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} Fixed empty Class Hierarchy View when opening it on a class that has a `task` and `function` with the same name
+* {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} Removed empty blocks in the Block Diagram for empty `for` loops
 
 Thank you for all the [bug reports](mailto:support@sigasi.com) and for enabling [Talkback]({{< ref "manual/talkback.md" >}}). All your reports have helped us fix many issues that would otherwise go unnoticed.
 
