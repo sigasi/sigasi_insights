@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 5.0
 date: 2023-01-06
-lastmod: 2023-03-28
+lastmod: 2023-03-30
 comments: true
 pager: true
 ---
@@ -213,7 +213,7 @@ and you need **about 1GB** of free disk space.
 **NOTE:** you may run into the warning dialog below when installing Sigasi Studio in your **own {{< pill text="Eclipse 2022-12" >}} or above** installation because this Eclipse version introduces GPG signing.
 {{< figure src="/img/releasenotes/5.0/GPGSigningWarning.png" link="/img/releasenotes/5.0/GPGSigningWarning.png" title="Expected GPG signing warning in Eclipse 2022-12 and above." >}}
 
-# Sigasi Studio 5.0.1 point release
+# Sigasi Studio 5.0.1 Point Release
 
 On February 14, we released Sigasi Studio 5.0.1.
 This release contains the following bug fixes and improvements:
@@ -226,7 +226,7 @@ This release contains the following bug fixes and improvements:
 * {{< pill text="Eclipse" >}} Applying an autocomplete only moves the viewport if the cursor is not yet within it
 * {{< pill text="Eclipse" >}} Fixed an issue where **Window > Preferences > Sigasi > Advanced** could only be opened once per session
 
-# Sigasi Studio 5.0.2 point release
+# Sigasi Studio 5.0.2 Point Release
 
 On March 1, we released Sigasi Studio 5.0.2.
 This release contains solutions for the following reported bugs:

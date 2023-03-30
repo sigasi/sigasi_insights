@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 5.1
 date: 2023-03-17
-lastmod: 2023-03-28
+lastmod: 2023-03-30
 comments: true
 pager: true
 ---
@@ -314,3 +314,11 @@ Thank you for all the [bug reports](mailto:support@sigasi.com) and for enabling 
 
 We recommend at least **4GB of memory** available for Sigasi Studio,
 and you need **about 1GB** of free disk space.
+
+# Sigasi Studio 5.1.1 Point Release
+
+On March 30, we released Sigasi Studio 5.1.1
+This release contains the following bug fixes:
+
+* {{< pill text="Eclipse" >}} Fixed an issue with Talkback where the version was not being sent
+* {{< pill text="Eclipse" >}} Fixed an issue where hovers would not show on some versions of Windows
