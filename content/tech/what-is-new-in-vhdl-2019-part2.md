@@ -61,7 +61,7 @@ package interfaces is
     ack         : in;
   end view;
   
-  alias streaming_slave is streaming_master’converse;
+  alias streaming_slave is streaming_master'converse;
 end;
 ```
 

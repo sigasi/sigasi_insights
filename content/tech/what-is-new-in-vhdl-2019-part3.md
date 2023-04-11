@@ -80,7 +80,7 @@ entity max is
   port (
     clk    : in  std_logic;
     input  : in  array_t;
-    output : out array_t’element
+    output : out array_t'element
   );
 end;
 ```
@@ -92,7 +92,7 @@ entity max is
   port (
     clk    : in std_logic;
     input  : in type array_t is array(type is <>) of type is <>;
-    output : out input’subtype’element
+    output : out input'subtype'element
   );
 end;
 ```

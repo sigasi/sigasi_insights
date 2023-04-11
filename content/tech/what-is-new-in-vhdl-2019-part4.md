@@ -79,7 +79,7 @@ The block labels are optional.
 ```vhdl
 p : process is
 begin
-  for i in some_vector’range then
+  for i in some_vector'range then
     b1 : block
       constant element : integer := some_vector(i);
     begin
@@ -88,7 +88,7 @@ begin
           variable result : integer;
         begin
           some_procedure(element, result);
-          report result’image;
+          report result'image;
         end block b2;
       end if;
     end block b1;
@@ -133,8 +133,8 @@ Objects now have direct access to the attributes of their type. This simplifies 
 Example: obtaining the string value of an object
 
 ```vhdl
-report o’subtype’image(o); -- VHDL 2008
-report o’image             -- VHDL 2019
+report o'subtype'image(o); -- VHDL 2008
+report o'image             -- VHDL 2019
 ```
 
 All attributes were reviewed and many inconsistencies were resolved. For example, the `image` attribute is now
