@@ -1,5 +1,5 @@
 ---
-title: Sigasi Studio Preview (5.1)
+title: Sigasi Studio Preview (5.2)
 layout: page
 pager: true
 date: 2023-03-17
