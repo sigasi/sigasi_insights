@@ -21,7 +21,7 @@ SystemVerilog and VHDL.
 We do that by giving you instant feedback on your code.
 Microsoft developed the VSCode editor and Sigasi
 implemented a language server with support for
-Verilog, SystemVerilog and VHDL.
+Verilog, SystemVerilog, and VHDL.
 
 When you make a syntax error, for example when
 you have an extra semicolon trailing a define, you
@@ -29,7 +29,7 @@ are notified immediately. So it is a lot easier to spot
 and fix these issues.
 In VHDL this works exactly the same way. Note
 that we not only detect syntax problems but also
-analyse, or lint, your code for more complex
+analyze, or lint, your code for more complex
 problems, while you type
 Sigasi also helps you with autocompletes. Sigasi
 understands the context and offers smart
@@ -42,7 +42,7 @@ highlighting, etc.
 Sigasi also added some extra views for working
 with HDL code. To quickly navigate, check the
 outline or minimap. And definitely check the
-“problems view” for a quick overview of all
+`Problems View` for a quick overview of all
 remaining issues in your project.
 
 With the Sigasi language server in VS Code you can
@@ -59,8 +59,8 @@ Notice that it also shows you the code comments.
 Isn’t that a nice incentive to better document your
 code?
 Navigation also works in the opposite direction
-through the language aware search features. Right
-click, select “find all references” and you’ll get a nice
+through the language-aware search features. Right-click,
+select “Find All References” and you’ll get a nice
 list of all places where this identifier is used.
 
 This demo would be too long if we demo all

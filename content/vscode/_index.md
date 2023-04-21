@@ -4,7 +4,7 @@ layout: single
 pager: true
 ---
 
-The Sigasi extension for [Visual Studio Code] brings the Sigasi analysis engine and much of its productivity technology to VS Code.
+The [Sigasi extension](https://marketplace.visualstudio.com/items?itemName=Sigasi.sigasi-vscode) for [Visual Studio Code] brings the Sigasi analysis engine and much of its productivity technology to VS Code.
 
 You can use your existing Sigasi Studio license or get a free trial license from <https://www.sigasi.com/try/>.
 
