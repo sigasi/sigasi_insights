@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 5.1
 date: 2023-03-17
-lastmod: 2023-03-30
+lastmod: 2023-05-10
 comments: true
 pager: true
 ---
@@ -301,6 +301,10 @@ You can refer to [this page]({{< ref "GPG.md" >}}) for all information regarding
 
 Thank you for all the [bug reports](mailto:support@sigasi.com) and for enabling [Talkback]({{< ref "manual/talkback.md" >}}). All your reports have helped us fix many issues that would otherwise go unnoticed.
 
+# Updates
+
+* {{< pill text="Eclipse" >}} Downgraded to Chromium 80 for rendering graphics and the [Documentation View]({{< ref "manual/views.md#documentation-view" >}}). This increases the stability of these views
+
 # System Requirements
 
 * Sigasi Studio standalone is supported on:
@@ -322,3 +326,11 @@ This release contains the following bug fixes:
 
 * {{< pill text="Eclipse" >}} Fixed an issue with Talkback where the version was not being sent
 * {{< pill text="Eclipse" >}} Fixed an issue where hovers would not show on some versions of Windows
+
+# Sigasi Studio 5.1.2 Point Release
+
+On May 10, we released Sigasi Studio 5.1.2
+This release contains the following changes and bug fixes:
+
+* {{< pill text="Verilog" >}} Allow `modport`s to be applied on module instantiation actuals that are arrays of interfaces
+* {{< pill text="Eclipse" >}} Upgraded Chromium to 95 from 80, maintaining the stability of 80 but improving its performance
