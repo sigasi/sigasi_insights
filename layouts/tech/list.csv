@@ -1,0 +1,7 @@
+{{- $content := where .Site.RegularPages.ByLastmod.Reverse "Section" "tech" -}}
+{{- $header := "Date,Title,URL" -}}
+
+{{- printf "%s\n" $header -}}
+{{- range $content -}}
+{{- printf "%q,%q,%q\n" (.Date.Format "2006-01-02") .Title .Permalink -}}
+{{- end -}}

@@ -5,6 +5,9 @@ order: date
 reverse: true
 comments: true
 bannerad: true
+outputs:
+  - html
+  - csv
 ---
 
 Welcome to the Sigasi tech article collection!
