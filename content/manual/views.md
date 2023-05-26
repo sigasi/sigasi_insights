@@ -178,7 +178,9 @@ You can get an overview of all bookmarks in the **Bookmarks View**
 
 The **Bookmarks View** can be used to delete bookmarks or navigate to the editor and other views.
 
-# Block Diagram View
+# Graphical Views
+
+## Block Diagram View
 
 {{< xprt_only >}}
 
@@ -209,7 +211,7 @@ You can export the Block Diagram View to an image with the save
 
 You can also export **all** *block diagrams of an entire project* at once: Click **Project > Export... > Sigasi > Block Diagrams export** and select your project. All SVGs will be created in **diagrams/blockdiagrams/** in your project.
 
-# State Machine View
+## State Machine View
 
 {{< xprt_only >}}
 
@@ -233,7 +235,7 @@ You can also export **all** *state machines of an entire project* at once: Click
 
 Check out our [State Machine Viewer](/screencasts/state_machine_viewer) screencast for a demonstration.
 
-# Dependencies View
+## Dependencies View
 
 The **Dependencies View** visualizes the dependencies of your VHDL, SystemVerilog, or *mixed language* projects.
 This view shows the relationships between your source files and makes it easy to see *top levels* and important *packages*.
@@ -255,7 +257,7 @@ The Dependencies View can also be **pinned**. This prevents the diagram from cha
 
 You can **export** this diagram for documentation by clicking the save icon.
 
-# Documentation View
+## Documentation View
 
 The **Documentation View** gives you a live preview of the [automatic documentation](/manual/documentation) Sigasi Studio can generate for your project.
 

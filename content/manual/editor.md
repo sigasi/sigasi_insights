@@ -5,9 +5,9 @@ weight: 6
 pager: true
 ---
 
-The Editor shows the content of files, and allows you to edit
-files. It is a tabbed view so that multiple files can be open for
-editing simultaneously. The currently selected file is the active file.
+The Editor shows the content of files and allows you to edit
+files. It is a tabbed view such that multiple files can be opened simultaneously.
+The currently selected file is the active file.
 
 # VHDL and SystemVerilog Editor
 
@@ -15,25 +15,24 @@ The VHDL and SystemVerilog (or Verilog) editors are optimized to help
 you browse and edit VHDL and SystemVerilog code.
 Most browsing and editing features are similar for both languages.
 
-*Language specific features* are explained in "[VHDL Specific](#vhdl-specific)" and "[Verilog and SystemVerilog Specific](#verilog-and-systemverilog-specific)".
+*Language-specific features* are explained in "[VHDL Specific](#vhdl-specific)" and "[Verilog and SystemVerilog Specific](#verilog-and-systemverilog-specific)".
 
 ## Code highlighting (syntax coloring)
 
-As all editors, Sigasi Studio colors your code to make the structure more
+Sigasi Studio colors your code to make the structure more
 clear. Unlike other tools, Sigasi Studio offers coloring based on the
 **meaning** of a word, rather than just the syntax.
 
 Sigasi Studio supports both **syntax highlighting** and **semantic
 highlighting**. Syntax highlighting colors pieces of code according to
 the lexical class the code belongs to, such as a *keyword* or *string*.
-Semantic highlighting means that code gets colored according to their
-*meaning*. For example a *constant* is shown in another color than a
-*signal*.
+Semantic highlighting colors code according to its *meaning*.
+For example, a *constant* is shown in another color than a *signal*.
 
 Code highlighting is fully configurable for a number of
 [VHDL](#code-highlighting) and [Verilog and
 SystemVerilog](#code-highlighting-1) syntax and semantic elements.
-Also **Color**, **background**, **style** and **font** can be
+Also, **Color**, **background**, **style**, and **font** can be
 customized. Learn more about [configuring
 colors](/manual/config#colors-and-fonts).
 
@@ -49,7 +48,7 @@ Sigasi Studio marks VHDL and SystemVerilog syntax errors while you type. It will
 
 ## Project exploration and navigation
 
-Sigasi Studio offers powerful techniques to explore a file or project, and navigate through it. This section covers: hovering, Occurrence Highlighting, Open Declaration and Find References.
+Sigasi Studio offers powerful techniques to explore a file or project and navigate through it. This section covers: hovering, Occurrence Highlighting, Open Declaration, and Find References.
 
 ### Occurrence Highlighting
 
@@ -68,15 +67,15 @@ and the **Show Previous Match** arrow ![arrow_up](/img/icons/showpreviousmatch.p
 
 **Open Declaration** You can easily navigate to the declaration of any
 port, signal, entity, etc. Place the cursor on the identifier,
-right-click and select **Open Declaration**. The editor immediately
+right-click, and select **Open Declaration**. The editor immediately
 switches to the line that declares the object. Since this operation is
 so commonly used, it is assigned to the shortcut key **F3**.
 
 **Hyperlinks** You can also navigate your code like a web browser by
 clicking hyperlinks. If you press and hold the **Ctrl** key, hyperlinks will appear in your editor. If you click the link (while holding the **Ctrl** key), you will navigate to the target of the link.
-Sigasi Studio offers following links:
+Sigasi Studio offers the following links:
 
-* Link to **Declaration**: this has the same behaviour as **Open Declaration** (**F3**)
+* Link to **Declaration**: this has the same behavior as **Open Declaration** (**F3**)
 * Link to **Matching Entity** \[VHDL]: this links a **component** declaration of an instantiation to the matching entity declaration. This also works for component **generics** and **ports** (**Shift+F3**)
 * Link to **Matching Module** \[MIXED]: this links a **component** declaration of an instantiation to the matching Verilog module declaration. This also works for component **generics** and **ports** (**Shift+F3**). Modules that are instantiated as entity instantiations are also supported (`label : entity work.verilogmodule port map (...);`)
 * Link to **Matching Architecture** for entity declarations \[VHDL]
@@ -89,18 +88,18 @@ Sigasi Studio offers following links:
 
 ## Hover
 
-To learn more about the declaration of a given identifier, hold your
-mouse pointer over it. After about a second, a popup shows you the name and datatype of the signal. This technique is called hovering.
+To learn more about the declaration of a given identifier, hold your mouse pointer over it.
+After a short time, a popup shows you the name and datatype of the signal. This technique is called hovering.
 
-In the hover pop-up, can show different kinds of information:
+The hover pop-up can show different kinds of information:
 
 * datatype
 * comments: inline documentation written at the declaration ([association rules](/manual/documentation#comment-association))
 * value: the value of constants
-* errors or warnings: a message, if the given identifier has an error or warning associated to it
-* binary / decimal conversion: for hexadecimal, octal or binary values, the decimal equivalent
+* errors or warnings: a message, if the given identifier has an error or warning associated with it
+* binary/decimal conversion: for hexadecimal, octal, or binary values, the decimal equivalent
 
-Since [Sigasi Studio 4.1](/releasenotes/sigasi-4.01) the hovers also offer extra links that make it easy to navigate to the declaration, find references, ...
+Since [Sigasi Studio 4.1](/releasenotes/sigasi-4.01) the hovers also offer extra links that make it easy to navigate to the declaration, find references ...
 
 ## Auto-complete and Content Assist
 
@@ -112,16 +111,16 @@ objects that have been declared in the design.
 
 ### Autocompletion interface
 
-Autocompletions may come from different sources, as will be discussed in the following sections. However, the user interface to initiate them is always the same. At any point as you are entering code, you can press **Ctrl+Space** and the tool will suggest appropriate autocompletions.
+Autocompletion may come from different sources, as will be discussed in the following sections. However, the user interface to initiate them is always the same. At any point as you are entering code, you can press **Ctrl+Space** and the tool will suggest appropriate autocompletion.
 
 ### Based on the design context
 
 Sigasi Studio uses its knowledge of the design to provide intelligent
-autocompletions that can boost productivity tremendously.
+autocompletion that boosts your productivity tremendously.
 
 The tool knows which objects are appropriate and which identifiers are
 visible at any given point in the code. As you start typing and ask for
-an autocompletion, it will suggest the appropriate identifiers as
+autocompletion, it will suggest the appropriate identifiers as
 autocompletion candidates.
 
 Sigasi Studio provides help to autocomplete:
@@ -150,7 +149,7 @@ Sigasi Studio comes preconfigured with templates for all common declarations and
 * package/package body pair
 * and much more
 
-Some autocompletions are templates which require further user input.
+Some autocompletions are templates that require further user input.
 In such a case, the editor goes into a special *template editing* mode after the autocompletion has been performed.
 You can use TAB to cycle through the items that have to be modified or completed.
 When done, you can press ENTER to return to the normal editing mode.
@@ -159,7 +158,7 @@ The cursor will be placed at an appropriate position to continue working.
 You can also configure your own templates.
 To edit or create templates, go to **Window > Preferences > Sigasi > VHDL or Verilog/SystemVerilog > Templates**.
 Here you get an overview of existing templates.
-You can create **New...** templates, **Edit...** existing templates or remove templates.
+You can create **New...** templates, **Edit...** existing templates, or remove templates.
 
 In the template editor, you can type `${` and press <kbd>Ctrl+Space</kbd> to see a list of the available variables.
 
@@ -167,7 +166,7 @@ Templates can be exported and imported. This is useful for sharing templates wit
 
 ### VHDL specific
 
-A number of [VHDL specific autocompletes](#vhdl-specific-autocompletes) are available in Sigasi Studio.
+A number of [VHDL-specific autocompletes](#vhdl-specific-autocompletes) are available in Sigasi Studio.
 
 ## Code formatting
 
@@ -195,12 +194,12 @@ You can configure Sigasi Studio to automatically format your (System)Verilog and
 
 You can format (System)Verilog and VHDL files without opening them in the editor.
 
-* You can format an *entire project*. Right click the project in the [Project Explorer]({{< ref "manual/views.md#project-explorer-view" >}}) and select **Source > Format**.
+* You can format an *entire project*. Right-click the project in the [Project Explorer]({{< ref "manual/views.md#project-explorer-view" >}}) and select **Source > Format**.
 Note that only files that are part of the build will be formatted.
 
 * You can format a selection of files. Select multiple *files* and/or *folders* in the [Project Explorer]({{< ref "manual/views.md#project-explorer-view" >}}) and select **Source > Format**.
 Any selected file, part of the build or not, will be formatted.
-Any combination of resources can be formatted this way: multpile projects at a time, a project and a folder, ...
+Any combination of resources can be formatted this way: multiple projects at a time, a project and a folder ...
 
 ## Other editor features
 
@@ -225,28 +224,28 @@ To change the setting, go to **Window > Preferences > Verilog/SystemVerilog** or
 
 ### Rename refactoring
 
-Right click on any identifier (VHDL or SystemVerilog) and select **Refactor > Rename element** (**Alt+Shift+R**) to change the name of the declaration and all its references.
+Right-click on any identifier (VHDL or SystemVerilog) and select **Refactor > Rename element** (**Alt+Shift+R**) to change the name of the declaration and all its references.
 If you press **Alt+Shift+R** twice, you can preview the rename before applying it.
 
-### Full screen view
+### Full-screen view
 
-Double click on the editor tab to make it full screen.
+Double-click on the editor tab to make it full-screen. You can also use **Ctrl+M** to achieve the same.
 
 ### Block selection
 
 **Note:** In other tools, this feature may be known as *column editing*
 or *column select*.
 
-Block selection is an alternative for standard (paragraph) selection.
+Block selection is an alternative to standard (paragraph) selection.
 Block selection mode differs from standard selection mode in that it
 allows to select rectangular regions, or to set the cursor over multiple
 lines. Block selection is ideal for selecting vertical regions, for
-example a column of a table or all port names in a port map.
+example, a column of a table or all port names in a port map.
 
 {{< figure src="/img/manual/block-select.png" alt="Block selection" >}}
 
 To toggle between normal and block selection modes use **Alt+Shift+A**
-or press the **Toggle Block Selection** icon in the tool bar.
+or press the **Toggle Block Selection** icon in the toolbar.
 
 ### Structured selection
 
@@ -274,7 +273,7 @@ This behavior can be disabled by unchecking `Enclose selected region when typing
 
 ### Show whitespace
 
-You can turn showing whitespace markers on or off by clicking the "Show Whitespace Characters" icon ![Show Whitespace Characters](/img/icons/show_whitespace_chars.png) in the toolbar.
+You can turn show or hide whitespace markers by clicking the `Show Whitespace Characters` icon ![Show Whitespace Characters](/img/icons/show_whitespace_chars.png) in the toolbar.
 
 ### Move and Duplicate lines
 
@@ -294,8 +293,8 @@ See [VI and Emacs](/manual/plugins#vi-and-emacs)
 
 ### Remove Trailing Whitespace
 
-The action to remove trailing whitespace is hidden by default. You can access it by pressing **Ctrl+3**, type **RTW** and then select the correct action. Alternatively, you can bind this action to [Keyboard Shortcuts](/manual/keyshortcuts#customizing-keyboard-shortcuts) of your preference.
-This action is being executed on the saved file, not in the editor. So before using this action you have to make sure your file is saved.
+The action to remove trailing whitespace is hidden by default. You can access it by pressing **Ctrl+3**, typing **RTW**, and then selecting the correct action. Alternatively, you can bind this action to [Keyboard Shortcuts](/manual/keyshortcuts#customizing-keyboard-shortcuts) of your preference.
+This action is being executed on the saved file, not in the editor. So before using this action, you have to make sure your file is saved.
 
 ### Customize color preferences
 
@@ -348,15 +347,15 @@ Multiple Editor Views can be cloned and re-arranged to obtain a custom layout wi
 
 ## Opening project files
 
-The default way to open files in the VHDL and SystemVerilog editor, is to double click the files in the [Project Explorer](/manual/views#project-explorer-view). But there are more methods to open files in your projects.
+The default way to open files in the VHDL and SystemVerilog editor is to double-click the files in the [Project Explorer](/manual/views#project-explorer-view). But there are more methods to open files in your projects.
 
 ### Open Resource
 
-When you press **Ctrl+Shift+R** the **Open Resource** dialog opens. In this dialog you can type a name or pattern to open a specific file name.
+When you press **Ctrl+Shift+R** the **Open Resource** dialog opens. In this dialog, you can type a name or pattern to open a specific file name.
 
 ### Open Design Unit
 
-When you press **Ctrl+Shift+D** the **Open Design Unit** dialog opens. In this dialog you can type a name or pattern to open a specific VHDL or SystemVerilog design unit name.
+When you press **Ctrl+Shift+D** the **Open Design Unit** dialog opens. In this dialog, you can type a name or pattern to open a specific VHDL or SystemVerilog design unit name.
 
 {{< figure src="/img/manual/open-design-unit.png" alt="Open Design Unit Dialog" >}}
 
@@ -380,7 +379,7 @@ Highlighting Classes for VHDL:
 
 ### Instantiating an entity
 
-**Note:** In other tools this feature may be know as *paste as
+**Note:** In other tools, this feature may be known as *paste as
 instantiation* or *port translation*.
 
 Sigasi Studio knows all entities in the design and their interfaces, and
@@ -402,7 +401,7 @@ scope.
 
 ### Declaring a component
 
-**Note:** In other tools this feature may be know as *paste as
+**Note:** In other tools, this feature may be known as *paste as
 component* or *port translation*.
 
 If you want to use instantiation based on a component (as opposed to
@@ -427,7 +426,7 @@ Stuttering is an editing technique popularized by Emacs, that lets you
 type certain things really fast. Stuttering means that you tap a certain
 key twice and it expands to something more complex. For example, press
 the period key **.** twice, and the editor will expand it to a right
-arrow `=>`. Stuttering works like double clicking: if you type keys
+arrow `=>`. Stuttering works like double-clicking: if you type keys
 **slowly**, the stuttering mechanism will not be triggered.
 
 The following stuttering keys are available:
@@ -438,14 +437,14 @@ The following stuttering keys are available:
 | **..**    | `=>`         |
 | **;;**    | `:=`         |
 
-Stuttering can be disabled or enabled throught the **Enable stuttering** option in the **Window \> Preferences \> Sigasi \> VHDL** menu.
+Stuttering can be disabled or enabled through the **Enable stuttering** option in the **Window \> Preferences \> Sigasi \> VHDL** menu.
 
 ## Smart Indentation
 
 When you press enter, Sigasi Studio automatically adjusts the indentation of
-current and the new line. Depending on the content of the preceding
+the current and the new line. Depending on the content of the preceding
 line, Sigasi Studio will automatically increase or decrease the indentation
-level. E.g. an extra indent after and `if`-statement and remove an
+level. E.g. an extra indent after an `if`-statement and removal of an
 indent for the matching `else`-clause.
 
 You can enable/disable this feature via **Window \> Preferences \>
@@ -470,9 +469,9 @@ This includes:
 * vertical alignment of certain symbols like “<=”
 * wrapping lines that are too long
 
-### Context based
+### Context-based
 
-Sigasi Studio's formatter is context based and tries to respect the style of the author. So depending on the original source style, the formatter might make different choices.
+Sigasi Studio's formatter is context-based and tries to respect the author's style. So depending on the original source style, the formatter might make different choices.
 
 One example is the decision to format a *conditional signal assignment* on one, or multiple lines. Sigasi Studio makes this decision based on the position of the first `else` keyword. If you put the `else` keyword on the first line, the formatter will put everything on one line. If you put the `else` keyword on a new line, the formatter will use multiple lines for the assignment.
 
@@ -482,14 +481,14 @@ One example is the decision to format a *conditional signal assignment* on one, 
     else (others => 'X');
 ```
 
-**Note about broken code**: If your VHDL source file contains syntactical errors, the formatter can not always figure out an appropriate formatting. For this reason the formatter is programmed to stop applying (whitespace) changes when unsupported syntax errors are encountered.
+**Note about broken code**: If your VHDL source file contains syntactical errors, the formatter can not always figure out appropriate formatting. For this reason, the formatter is programmed to stop applying (whitespace) changes when unsupported syntax errors are encountered.
 
 ### Configuration
 
 You can set your [preferences for Tabs or spaces under]({{< ref "#configuration" >}})
 **Window > Preferences > General > Editors > Text Editors**.
 
-VHDL specific code formatting can be configured at **Window > Preferences > Sigasi > VHDL > Formatting**.
+VHDL-specific code formatting can be configured at **Window > Preferences > Sigasi > VHDL > Formatting**.
 Configurable settings currently include:
 
 * **Preserve newlines**: this option configures the formatter to not add or remove newlines in your code.
@@ -502,13 +501,13 @@ When this option is set to `ignore`, the case of keywords won't be changed by th
 
 ### Correct indentation only
 
-Sigasi Studio can also correct the indentation of your code without making any other changes.  Inside a VHDL editor, open the context menu and click **Source > Correct Indentation**, or hit **Ctrl+I**. This only changes whitespace at the start of you lines.
+Sigasi Studio can also correct the indentation of your code without making any other changes.  Inside a VHDL editor, open the context menu and click **Source > Correct Indentation**, or hit **Ctrl+I**. This only changes whitespace at the start of your lines.
 
 If you select code first, only the code in the selection will be indented.
 
 ### Disable formatting in defined regions
 
-You can disable the formatter for defined regions in your VHDL source files by enclosing them by **off** and **on** tags:
+You can disable the formatter for defined regions in your VHDL source files by enclosing them with **off** and **on** tags:
 
 * **off** tag: `-- @formatter:off`
 * **on** tag: `-- @formatter:on`
@@ -550,7 +549,7 @@ Highlighting Classes for Verilog and SystemVerilog:
 
 The fastest way to add an include path is to run the Quick Fix on \``include` errors in the editor.
 You can configure the include paths of your SystemVerilog projects in the **Verilog Preprocessor** property page.
-Right click your project and select **Properties > Verilog Preprocessor**.  
+Right-click your project and select **Properties > Verilog Preprocessor**.  
 Here you can `Add` and `Remove` include paths using the buttons on the right.
 You can also move the order of the include paths using the `Up` and `Down` buttons.
 The `Import...` and `Export...` buttons can be used to transfer a semicolon-separated (`;`) list of include paths from and to the clipboard.
@@ -560,8 +559,8 @@ This allows you to, for example, set global defines without an explicit `include
 
 {{< figure src="/img/manual/preprocessor-property-page.png" >}}
 
-When you hover over a SystemVerilog preprocessor directive (e.g. `include ...`), Sigasi Studio presents you the preprocessed text.
-This hover also shows you, at the bottom, a convenient link to open the [Preprocessor View](/manual/views#preprocessor-view).
+When you hover over a SystemVerilog preprocessor directive (e.g. `include ...`), Sigasi Studio shows the preprocessed text.
+You can find a convenient link to open the [Preprocessor View](/manual/views#preprocessor-view) at the bottom of this hover.
 
 **Ctrl+Click** on *\`defines* (or **F3**) will lead you to the corresponding declaration.
 Autocomplete will also offer you a list of all visible *\`defines*.
@@ -578,9 +577,9 @@ and select whether `*.v` files are treated as **Verilog** or **SystemVerilog**. 
 ## Smart Indentation
 
 When you press enter, Sigasi Studio automatically adjusts the indentation of
-current and the new line. Depending on the content of the preceding
+the current and the new line. Depending on the content of the preceding
 line, Sigasi Studio will automatically increase or decrease the indentation
-level. E.g. an extra indent after a `module` and remove an indent for
+level. E.g. an extra indent after a `module` and the removal of an indent for
 the matching `endmodule`.
 
 You can enable/disable this feature via **Window \> Preferences \>
@@ -601,10 +600,10 @@ Press **Ctrl+Shift+F** to format your current Verilog or SystemVerilog file.
 
 The default formatter implementation corrects indentation only.
 
-Since {{< page "/releasenotes/sigasi-4.15.md" >}}, Sigasi ships with [Verible] built-in. Verible is an ambitious (System)Verilog formatter that is agnostic to macro invocations and includes and therefore produces a consistent formatting result also in heavily preprocessed code.
+Since {{< page "/releasenotes/sigasi-4.15.md" >}}, Sigasi ships with [Verible] built-in. Verible is an ambitious SystemVerilog formatter that is agnostic to macro invocations and includes and therefore produces a consistent formatting result even in heavily preprocessed code.
 
 You can enable the Verible formatter for your installation by going to **Window > Preferences > Sigasi > Verilog/SystemVerilog > Formatting**.
-Under **Select formatter**, you can choose between the default *Sigasi* formatter which corrects indentation and using the *Verible* formatter.
+Under **Select formatter**, you can choose between the default *Sigasi* formatter which corrects indentation, and using the *Verible* formatter.
 
 {{< figure src="/img/releasenotes/4.15/ChooseFormatter.png" link="/img/releasenotes/4.15/ChooseFormatter.png" title="Choose between Sigasi or Verible formatter">}}  
 
