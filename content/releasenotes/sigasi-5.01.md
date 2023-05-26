@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 5.1
 date: 2023-03-17
-lastmod: 2023-05-10
+lastmod: 2023-05-22
 comments: true
 pager: true
 ---
@@ -303,7 +303,7 @@ Thank you for all the [bug reports](mailto:support@sigasi.com) and for enabling 
 
 # Updates
 
-* {{< pill text="Eclipse" >}} Downgraded to Chromium 80 for rendering graphics and the [Documentation View]({{< ref "manual/views.md#documentation-view" >}}). This increases the stability of these views
+* {{< pill text="Eclipse" >}} Updated to Chromium 95 for rendering graphics and the [Documentation View]({{< ref "manual/views.md#documentation-view" >}}). This increases the stability and performance of these views
 
 # System Requirements
 
@@ -334,3 +334,13 @@ This release contains the following changes and bug fixes:
 
 * {{< pill text="Verilog" >}} Allow `modport`s to be applied on module instantiation actuals that are arrays of interfaces
 * {{< pill text="Eclipse" >}} Upgraded Chromium to 95 from 80, maintaining the stability of 80 but improving its performance
+
+# Sigasi Studio 5.1.3 Point Release
+
+On May 22, we released Sigasi Studio 5.1.3
+This release contains the following changes and bug fixes:
+
+* Missing build after changing the library of a file or folder
+* Improved autocomplete responsiveness for its first invocation
+* {{< pill text="Eclipse" >}} Upgraded to a Chromium 95 that supports Red Hat Enterprise Linux 7
+* {{< pill text="Verilog" >}} Fixed a performance regression in autocomplete
