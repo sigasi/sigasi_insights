@@ -14,12 +14,12 @@ When you want to open Sigasi projects in an Eclipse that does not have the Sigas
 You can install support for these libraries without installing all Sigasi plugins from the command line with following command:
 
 ```bash
-./eclipse -clean -purgeHistory -application org.eclipse.equinox.p2.director -noSplash -repository https://download.sigasi.com/updates/eclipse-hdt2 -installIUs com.sigasi.hdt.readonlyfilesystem.feature.feature.group
+./eclipse -clean -purgeHistory -application org.eclipse.equinox.p2.director -noSplash -repository https://download.sigasi.com/sigasi-studio/updates/eclipse-hdt2 -installIUs com.sigasi.hdt.readonlyfilesystem.feature.feature.group
 ```
 
 You can also install from the UI:
 
-* Update site `https://download.sigasi.com/updates/eclipse-hdt2`
+* Update site `https://download.sigasi.com/sigasi-studio/updates/eclipse-hdt2`
 * Uncheck the **"Group items by category"**
 * Select the **"Sigasi Read Only file system"** feature.
 

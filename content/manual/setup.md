@@ -129,7 +129,7 @@ This requires the host where you install the Sigasi Studio Plugin to have access
 After starting Eclipse:
 
 1. Click **Help > Install New Software…**
-1. In the **Work with:** field enter **`https://download.sigasi.com/updates/studio`** and press **enter**.
+1. In the **Work with:** field enter **`https://download.sigasi.com/sigasi-studio/updates/studio`** and press **enter**.
 1. Check the checkbox next to **Sigasi Studio**
 1. Since [Sigasi Studio 4.15](/releasenotes/sigasi-4.15), installing Sigasi Studio optional features is no longer recommended.
 {{< figure src="/img/manual/setup-install-plugin.png" alt="Install Sigasi Studio plugin" >}}

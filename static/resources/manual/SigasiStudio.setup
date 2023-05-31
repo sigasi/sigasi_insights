@@ -50,7 +50,7 @@
       <repository
           url="http://download.eclipse.org/releases/2020-12"/>
       <repository
-          url="https://download.sigasi.com/updates/studio"/>
+          url="https://download.sigasi.com/sigasi-studio/updates/studio"/>
     </setupTask>
     <setupTask
         xsi:type="setup:CompoundTask"

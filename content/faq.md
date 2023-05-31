@@ -75,7 +75,7 @@ Mac users can also keep using {{< page "/releasenotes/sigasi-4.17.md" >}} with t
 
 * Supported on 11.6 Big Sur
 * Sigasi Studio does run on Apple M1 using Rosetta
-* Sigasi Studio Standalone is supported and can be downloaded [here](https://download.sigasi.com/updates/4.17.2/com.sigasi.hdt.product-macosx.cocoa.x86_64.zip)
+* Sigasi Studio Standalone is supported and can be downloaded [here](https://download.sigasi.com/sigasi-studio/updates/4.17.2/com.sigasi.hdt.product-macosx.cocoa.x86_64.zip)
 * Sigasi Studio Plugin is supported when using
   * Eclipse IDE 2021-03 up to and including Eclipse IDE 2022-03
   * Java JRE 11 or 17
@@ -111,7 +111,7 @@ To successfully run Sigasi Studio on Red Hat Enterprise Linux 6, follow these st
 * Install [Eclipse Oxygen (4.7.3a)](https://www.eclipse.org/oxygen/). Find your download using the *Packages* link on the Oxygen page. We recommend to use the *Eclipse IDE for C/C++ Developers* package.
 * Eclipse Oxygen requires at least version 2.24.0 of GTK+.
 * Eclipse Oxygen and the Sigasi Studio Plugin require Java 8: `yum install java-1.8.0-openjdk`
-* Install the Sigasi Studio Plugin by following [these steps](/manual/setup#install-the-eclipse-plugin) where you replace the link of the **Work with:** field from the second step with **`https://download.sigasi.com/updates/4.9.0/update-site`** in order to install the final version for Red Hat Enterprise Linux 6.
+* Install the Sigasi Studio Plugin by following [these steps](/manual/setup#install-the-eclipse-plugin) where you replace the link of the **Work with:** field from the second step with **`https://download.sigasi.com/sigasi-studio/updates/4.9.0/update-site`** in order to install the final version for Red Hat Enterprise Linux 6.
 
 ## How do I increase the heap size for Eclipse?
 
