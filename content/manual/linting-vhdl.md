@@ -68,6 +68,7 @@ XL code rules require a {{< xl >}} or {{< xprt >}} license.
 |                           | None or multiple matching entities for component                                                                                         |  90 |
 |                           | [Check naming conventions]({{< ref "rules/naming-conventions" >}})                                                                       |  92 |
 | {{< warning_lightbulb >}} | [Incomplete port map or generic map]({{< ref "incomplete-port-maps-and-generic-maps" >}})                                                |  94 |
+| {{< warning_lightbulb >}} | [Check maximum line length]({{< ref "rules/vhdl_style/#vhdl-code-line-too-long" >}})                                                     |  97 |
 |                           | [Vector width in assignments and port maps]({{< ref "vector-width-in-assignments-and-port-maps" >}})                                     | 144 |
 | {{< warning_lightbulb >}} | [All references must have the same capitalization as their declaration]({{< ref "capitalization-of-identifiers" >}})                     | 163 |
 | {{< warning_lightbulb >}} | [Check for positional associations in instantiations]({{< ref "positional-association-in-instantiations" >}})                            | 164 |
