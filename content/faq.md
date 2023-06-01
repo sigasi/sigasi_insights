@@ -36,33 +36,9 @@ and you need **about 1GB** of free disk space.
 
 ## Does Sigasi Studio run on my OS?
 
-### Windows
+### Windows and Linux
 
-* Supported on Windows 10 or Windows 11 64-bit
-* Sigasi Studio Standalone is supported
-* Sigasi Studio Plugin is supported when using
-  * Eclipse IDE 2021-03 up to and including Eclipse IDE 2022-03
-  * Java JRE 11 or 17
-
-### Linux
-
-The `libXScrnSaver` package needs to be installed on your OS.
-
-#### RHEL 7.7 64-bit or newer, including RHEL 8
-
-* Sigasi Studio Standalone is supported
-* Sigasi Studio Plugin is supported when using
-  * Eclipse IDE 2021-03 up to and including Eclipse IDE 2022-03
-  * Java JRE 11 or 17
-
-#### Other Linux distributions
-
-* No known issues as long as Eclipse is running on your OS
-
-#### Which GTK version do I need?
-
-Sigasi Studio itself has no specific dependency on GTK. Eclipse does require a minimum version of GTK.
-The GTK version requirements of Eclipse can be found [here](https://www.eclipse.org/swt/faq.php#gtkstartup).
+You can check out the system requirements for your version of Sigasi Studio on the [Release Notes]({{< ref "releasenotes" >}}) page.
 
 ### MacOS
 
@@ -79,6 +55,11 @@ Mac users can also keep using {{< page "/releasenotes/sigasi-4.17.md" >}} with t
 * Sigasi Studio Plugin is supported when using
   * Eclipse IDE 2021-03 up to and including Eclipse IDE 2022-03
   * Java JRE 11 or 17
+
+## Which GTK version do I need?
+
+Sigasi Studio itself has no specific dependency on GTK. Eclipse does require a minimum version of GTK.
+The GTK version requirements of Eclipse can be found [here](https://www.eclipse.org/swt/faq.php#gtkstartup).
 
 ## What are the license server requirements?
 
