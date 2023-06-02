@@ -536,7 +536,7 @@ Check out [the video]({{< ref "/screencasts/vhdl_2019_conditional_analysis.md" >
 In addition to the powerful features of an Eclipse editor, the Verilog and SystemVerilog
 editor that comes with Sigasi Studio supports a number of advanced editing
 features which are specifically useful for SystemVerilog editing. These are
-described in this chapter.
+described in this chapter. Currently, Verilog 2005 (IEEE 1364-2005) and SystemVerilog 2012 (IEEE 1800-2012) are supported.
 
 ## Code highlighting
 
