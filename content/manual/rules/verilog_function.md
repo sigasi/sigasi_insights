@@ -44,4 +44,4 @@ endclass
 
 {{% lintrule sv 10 %}}
 
-<!-- 41 not configurable in preferences, only in file >
+<!-- 41 not configurable in preferences, only in file -->
