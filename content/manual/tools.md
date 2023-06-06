@@ -83,7 +83,7 @@ If you want to use the `$HOME` environment variable, you can call this variable 
 
 ## List of toolchains
 
-By “toolchains”, we mean any tool or set of tools that processes VHDL or
+By "toolchains", we mean any tool or set of tools that processes VHDL or
 Verilog code, and that is supported by Sigasi Studio. At this time, external
 compiler include simulators and lint tools, but in the future it could
 also include synthesis tools.
@@ -126,7 +126,7 @@ Sigasi Studio can use an external VHDL or Verilog compiler for additional code v
 
 Catching bugs earlier is cheaper than catching them late. Traditionally,
 the first errors are found when the hardware designer decides to run a
-simulation. At this time, the simulator’s compiler tool will detect
+simulation. At this time, the simulator's compiler tool will detect
 errors and fail. At Sigasi we think that this is too late. Problems
 should be detected as soon as possible.
 
@@ -140,7 +140,7 @@ find and fix them easily. Sigasi Studio intelligently controls the external
 compiler incrementally and only recompiles design files that need
 recompilation.
 
-All output from external compilers is logged in Sigasi Studio’s console view
+All output from external compilers is logged in Sigasi Studio's console view
 for your convenience. Paths to your design files are automatically
 converted to hyperlinks to ease naviation.
 
@@ -167,7 +167,7 @@ add more libraries to this list.
 
 If your project root contains a `modelsim.ini` file, Sigasi Studio will add this
 file to the `vcom` command with `-modelsimini`. This allows you to
-configure custom settings for Mentor’s `vcom`.
+configure custom settings for Mentor's `vcom`.
 
 # External Tools Configuration
 
@@ -248,7 +248,7 @@ Next, configure the builder in a configuration window pop up window:
 {{< figure src="/img/manual/makefiles_builderconfigurationmain.png" >}}
 
 With the default settings the ModelSim Makefile will only be run during
-a manual build or after a “Clean”. To make sure Sigasi Studio runs `make`
+a manual build or after a "Clean". To make sure Sigasi Studio runs `make`
 every time you save a change to a file, click the **Build Options** tab
 and check the **During auto builds** checkbox.
 
@@ -260,7 +260,7 @@ After configuration, the new builder will appear in the builder list.
 
 When you close the builder configuration dialog windows, the new builder
 will automatically be run. In our example of a Modelsim Makefile,
-Modelsim’s messages will appear in the console view.
+Modelsim's messages will appear in the console view.
 
 {{< figure src="/img/manual/makefiles_consoleoutput.png" >}}
 

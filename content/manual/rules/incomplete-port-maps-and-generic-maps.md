@@ -6,7 +6,7 @@ Sigasi Studio warns about port maps and generic maps that are incomplete:
 **Port map uses default values. Missing optional actuals: yourport**
 
 Input ports and generics need to be assigned in your instantiation
-statement if they don’t already have a default value. If you don’t do
+statement if they don't already have a default value. If you don't do
 this, you are writing illegal VHDL. Sigasi Studio will mark an error, and so
 will all other tools.
 

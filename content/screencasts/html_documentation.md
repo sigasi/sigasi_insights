@@ -21,8 +21,8 @@ With {{< page "releasenotes/sigasi-4.12.md" >}}, a lot of additional information
 When you want to customize the CSS of your documentation, all you need to do is to place a `sigasi-doc.css` file in the root of your project.
 
 To export your documentation, click the save icon in the Documentation View. You can choose whether to link all graphics and the custom CSS file or to embed them.
-* If you choose “Embedded resources”, the result is saved in one self-contained HTML file. This file is very easy to share.
-* You can also choose “Linked resources”. This makes Sigasi Studio write the HTML, CSS and the diagrams in separate files. This makes it easier to customize the documentation.
+* If you choose "Embedded resources", the result is saved in one self-contained HTML file. This file is very easy to share.
+* You can also choose "Linked resources". This makes Sigasi Studio write the HTML, CSS and the diagrams in separate files. This makes it easier to customize the documentation.
 
 The result is saved in the *sigasi-doc* folder of your project. The Sigasi development team made huge efforts to make the HTML code as clean as possible.
 

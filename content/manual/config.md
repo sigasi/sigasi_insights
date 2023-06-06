@@ -33,7 +33,7 @@ Your *existing project will **not** be modified*.
 If you want to update the Common Libraries for an existing project, right-click the project and select **Library Mapping > Reset Common Libraries**.
 Since [Sigasi Studio 3.3](/releasenotes/sigasi-3.03), you will get a warning if your Common Libraries do not match the VHDL version of you VHDL file.
 You can use the proposed quick fix to resolve the issue.
-* If you want to compile VHDL 87 code, you should select the “1993” option. There are no checks to warn about constructs that were not supported in 1987, but that were introduced in 1993.
+* If you want to compile VHDL 87 code, you should select the "1993" option. There are no checks to warn about constructs that were not supported in 1987, but that were introduced in 1993.
 * Sigasi Studio does not send the [Common Libraries](/manual/libraries#common-libraries) to an external compiler. It is expected that these libraries are pre-compiled.
 
 # Colors and Fonts
@@ -73,7 +73,7 @@ The others may refer to occurrences for Java or other plug-ins.
 
 If you want to use spaces instead of tabs, you can set your indentation preferences in: **Window > Preferences > General > Editors > Text Editors**. Here you can select choose to **Insert Spaces for Tabs** and choose your preferred **Displayed Tab Width**.
 
-# The “Gutter”
+# The "Gutter"
 
 The *Gutter* is the small area to the left of the editor view. It is used for displaying extra information about your code.
 

@@ -27,8 +27,8 @@ Smart Indent
 
 Sigasi 2.21 now adjusts the indentation of current and next line when
 you press **enter**. You can enable/disable this feature via **Window \>
-Preferences \> Sigasi \> VHDL** by toggling the **“Enter adjusts
-indentation on current and next line”**
+Preferences \> Sigasi \> VHDL** by toggling the **"Enter adjusts
+indentation on current and next line"**
 setting.<span class="inline inline-center">
 
 <video width="320" height="240" autoplay="autoplay" loop="true">

@@ -31,7 +31,7 @@ libraries. A quick survey showed that today, most tools support
 libraries. Notorious exception is Quartus,
 which does not support libraries for entities.
 
-In the this blog post, I’m assuming that the benefits of VHDL libraries
+In the this blog post, I'm assuming that the benefits of VHDL libraries
 are established. If you disagree and you, nor your colleagues, nor your
 customers, nor your IP vendors, nor any companies you ever intend to
 acquire, <em>ever</em> use libraries at all, feel free to skip the rest
@@ -56,6 +56,6 @@ It is unlikely that Emacs users will use VHDL libraries. They are
 limiting themselves and their projects. As
 <a href="http://en.wikipedia.org/wiki/Law_of_the_instrument">Adam
 Maslow</a> could have said it: <em>If the only tool you have is a
-hammer, you’re always going to shy away from
+hammer, you're always going to shy away from
 <a href="http://en.wikipedia.org/wiki/Phillips_screw">Phillips
 screws</a></em>.

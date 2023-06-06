@@ -41,9 +41,9 @@ Code documentation is an important aspect of both software and hardware
 projects and all general principles of software engineering can be
 applied to text-based (or: RTL-based) hardware design in such languages
 as VHDL, Verilog and SystemVerilog.
-Scott Ambler describes a software document as “any artifact external to
+Scott Ambler describes a software document as "any artifact external to
 source code whose purpose is to convey information in a persistent
-manner”. When engineering software or hardware, the code alone is insufficient.
+manner". When engineering software or hardware, the code alone is insufficient.
 There must be text along with it to describe various aspects of its
 intended operation.
 It is important for the code documents to be thorough, but not so
@@ -79,10 +79,10 @@ technology in the most appropriate format.
 We have all been frustrated at times
 when we are not able to understand the features of a product, or when
 the user interface layout is not explained well enough. One problem with
-unorganized information is it can’t be found, so there is a lot wasted
+unorganized information is it can't be found, so there is a lot wasted
 time spent pecking around looking for the right document or trying to
 find the right person to talk to. Another problem is if your
-documentation can’t be found, then redundant functionality is often
+documentation can't be found, then redundant functionality is often
 created, that result in waste of time.
 
 The real benefit to the organization of documentation is reducing wasted
@@ -128,7 +128,7 @@ as follows:
 
 Technical documentation is beneficial for the organization too. It
 creates a good impression on new customers because this is the
-customer’s first touch point after the sale. It helps the customer make
+customer's first touch point after the sale. It helps the customer make
 decisions related to the purchase of the full product or its features,
 and informs the customer about the instructions and troubleshooting tips
 that are essential for ensuring a great customer experience, which can

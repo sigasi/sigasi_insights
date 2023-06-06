@@ -1,5 +1,5 @@
 ---
-title: "What is the Sigasi alternative for “jEdit-F3” functionality."
+title: What is the Sigasi alternative for "jEdit-F3" functionality.
 layout: page 
 pager: true
 author: Hendrik Eeckhaut

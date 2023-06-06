@@ -17,8 +17,8 @@ external compiler. This significantly improves the external
 **compilation time** and improves the accuracy of **incremental
 (external) compiles**.
 
-If you are using Mentor’s `vsim` in Sigasi, the simulation is now
-started with your **project’s folder** as **working directory**. This
+If you are using Mentor's `vsim` in Sigasi, the simulation is now
+started with your **project's folder** as **working directory**. This
 makes it a lot easier to save and load `vsim` scripts.
 
 We also worked on the stability of external compilation of **Verilog
@@ -45,7 +45,7 @@ Other new and noteworthy improvements
 -   We now have a **sort button** to the **Generics View**, so that
     generics and constants are sorted alphabetically. This makes it
     easier to find your generic (or constant) in a long list. If you
-    don’t sort the generics and constants alphabetically, they are
+    don't sort the generics and constants alphabetically, they are
     listed in the order of declaration of the file.
     ![Sort button in the Generics View](/img/releasenotes/2.18/genericsviewsort.png "Sort button in the Generics View")
 -   Show the label of entity instantiations in the ouline view (ticket

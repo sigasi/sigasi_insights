@@ -359,8 +359,8 @@ The Sigasi Pro linting functionality is aimed to free up time wasted in code rev
 The answer to this question is not straightforward. However, some examples may help. We can implement (but are in not limited to) the following types of custom linting rules:
 
 * Naming conventions (e.g. constants should be in capitals, signals should start with "s",...)
-* Deprecated libraries, data types, constructs (e.g. don’t use block statements; don’t use `std_logic_unsigned`,...)
-* Project structure, file names (e.g. an entity should be in a file named “_e.vhd”)
+* Deprecated libraries, data types, constructs (e.g. don't use block statements; don't use `std_logic_unsigned`,...)
+* Project structure, file names (e.g. an entity should be in a file named "_e.vhd")
 * Required file headers
 * Maximum sizes of files, processes,...
 * How to instantiate components/entities

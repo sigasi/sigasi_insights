@@ -16,7 +16,7 @@ When it comes to sharing your project code in a team, consistent formatting is i
 
 Verible is an open-source suite of SystemVerilog developer tools, including a parser, style-linter, and formatter. The tool suite is maintained by the CHIPS Alliance and available through GitHub. Sigasi Studio comes with a built-in version of the Verible formatter but also allows you to configure your own version of Verible to be used.
 
-You can enable the Verible formatter in `Window > Preferences > Sigasi > Verilog/SystemVerilog > Formatting` you can select Verible instead of Sigasi formatting. Then navigate to the Verible Preferences tab to configure Verible. Use the “Edit” button to configure the arguments in a user-friendly and graphical way that previews how code will be formatted.
+You can enable the Verible formatter in `Window > Preferences > Sigasi > Verilog/SystemVerilog > Formatting` you can select Verible instead of Sigasi formatting. Then navigate to the Verible Preferences tab to configure Verible. Use the "Edit" button to configure the arguments in a user-friendly and graphical way that previews how code will be formatted.
 You can select settings for indentation and wrapping, for displaying of ports and parameters, how type declarations are formatted and for statements and expressions. Note that you should make sure the Eclipse setting to insert spaces for tabs is enabled and the tab width should match the setting for Verible to avoid mix ups between editing and Verible formatting.
 
 To use Verible, assuming it has been configured and selected in the preferences before, just press **Ctrl+Shift+F** whenever you have a Verilog or SystemVerilog file open.

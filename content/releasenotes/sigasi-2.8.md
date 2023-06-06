@@ -10,7 +10,7 @@ Sigasi 2.8 brings Makefile and CSV-file generation plus multiple other improveme
 Export Project Makefile
 -----------------------
 
-Sigasi’s vcom integration is a
+Sigasi's vcom integration is a
 real time-saver for VHDL-design. But you may also want to build your
 project in batch mode. A typical approach is to use
 [Makefiles](http://en.wikipedia.org/wiki/Make_(software)) for command
@@ -19,7 +19,7 @@ compiling your project with Modelsim.
 
 ![ModelSim Makefile](/img/releasenotes/2.8/makefile_a.png "ModelSim Makefile")
 
-In some cases you don’t need a Makefile, but you just need a list of
+In some cases you don't need a Makefile, but you just need a list of
 your VHDL files in the correct compilation order. For these cases we
 offer an **Export as CSV File** wizard. This wizard generates a file
 which lists the VHDL files in your project in a valid compile order. You
@@ -44,7 +44,7 @@ Other new and noteworthy improvements
         casing of autocompletes from these libraries.
     -   Added Autocomplete template for file declaration:
     -   Added Autocomplete template for sequential assert statement
--   Bit string literals (e.g. <code>X“0000CAFE”</code>) are now
+-   Bit string literals (e.g. <code>X"0000CAFE"</code>) are now
     supported in the hierarchy/generics view
 -   Added tutorial on library mapping
 -   The timestamp is removed from the library mapping xml file
@@ -52,7 +52,7 @@ Other new and noteworthy improvements
     system friendly
 -   The hover over a signal name now displays its initial value
     ![Hover initial value](/img/releasenotes/2.8/signal_hover.png "Hover initial value")
--   Sigasi’s VHDL builder now detects ands skips encrypted VHDL files
+-   Sigasi's VHDL builder now detects ands skips encrypted VHDL files
     (instead of trying to compile and then throwing errors)
 -   Removed Xilinx and Altera Cheat Sheets. Their content has been
     obsoleted by the Library Quickfix.
@@ -61,13 +61,13 @@ Other new and noteworthy improvements
 
 -   Fixed library mapping caching bug : when unmapped files were mapped
     again, they did not compile until Sigasi was restarted.
--   ticket 2221 : Fix “Remove trailing whitespace” action in VHDL editor
+-   ticket 2221 : Fix "Remove trailing whitespace" action in VHDL editor
 -   ticket 2224 : Instantiation not working if label contains a number
 -   ticket 2227 : Generics view should show all generics, even if there
     is no default value in the top level
 -   ticket 2238 : Library mapping is not written when resource is
     deleted
--   ticket 2242 : Remove incorrect “set as toplevel” action in context
+-   ticket 2242 : Remove incorrect "set as toplevel" action in context
     menu of the root outline node
 -   ticket 2189 : Formatting a file declaration should not insert new
     line

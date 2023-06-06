@@ -35,7 +35,7 @@ This enables previously disabled code.
 One of the enabled lines contains a `warning directive.
 You can find all warning/error messages from Conditional Directives in the Problems View.
 
-Directives aren’t part of the general VHDL code structure, so it's not right to have them indented as other VHDL code.
+Directives aren't part of the general VHDL code structure, so it's not right to have them indented as other VHDL code.
 The indenting of Directives as well as spaces inside their bodies can be fixed by formatting this file.
 
 As always Sigasi Studio provides type-time syntax error reporting.

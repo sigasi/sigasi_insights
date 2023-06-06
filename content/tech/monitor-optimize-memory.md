@@ -34,7 +34,7 @@ For big projects, the memory use can approach 1GB. If you want efficient garbage
 
 ## Configuring the Java virtual machine
 
-If you use the standalone Sigasi Studio build, open the file named `sigasi.ini` in the installation directory. If you use Sigasi Studio as a plugin, open the file named `eclipse.ini`. In this file we’re only interested in the part that comes after the option `-vmargs`.
+If you use the standalone Sigasi Studio build, open the file named `sigasi.ini` in the installation directory. If you use Sigasi Studio as a plugin, open the file named `eclipse.ini`. In this file we're only interested in the part that comes after the option `-vmargs`.
 
 Here we can set the **maximum memory usage** using the `-Xmx` option, for example if you want to increase the memory usage to `2.5 GB`, you replace the existing entry with `-Xmx2560m`.
 

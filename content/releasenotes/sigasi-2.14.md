@@ -26,7 +26,7 @@ types*, …
 External files
 --------------
 
-We simplified the way we deal with [opening](/manual/opening#opening-files-from-the-command-line) VHDL files. These are individual files that are not part of a Sigasi project. Before Sigasi 2.14 we openend external files in a special *“External Files”-project*, which was a bit of an awkward workaround. In Sigasi 2.14 we now simply open external files without a project, just like you would expect from a “simple” editor (like Emacs, Vi, Notepad++, Ultraedit,…).
+We simplified the way we deal with [opening](/manual/opening#opening-files-from-the-command-line) VHDL files. These are individual files that are not part of a Sigasi project. Before Sigasi 2.14 we openend external files in a special *"External Files"-project*, which was a bit of an awkward workaround. In Sigasi 2.14 we now simply open external files without a project, just like you would expect from a "simple" editor (like Emacs, Vi, Notepad++, Ultraedit,…).
 
 ![External file](/img/releasenotes/2.14/external_file.png "External file")
 
@@ -35,7 +35,7 @@ Other new and noteworthy improvements
 
 -   The standalone version is now built on Eclipse 3.8 (and Xtext 4.2.1)
     instead of Eclipse 3.7.
--   Better linting and “hyperlinks” for state machines, encoded as case
+-   Better linting and "hyperlinks" for state machines, encoded as case
     statements over a record field
 -   Added option to add extra command line options to vcom and vsim
 -   Support for splitted use clauses

@@ -32,7 +32,7 @@ The third kind of testing is using formal methods. Like constrained random testi
 
 All of these techniques are perfectly valid to use, and effective! The *complexity of your design* and the *requirements* will dictate what technique you should choose. The *cost and time to train an engineer* and the *cost of the tooling* is also important. It must be in proportion with the cost of a bug in the design.
 
-For FPGA design, directed tests are often good enough. Constrained random testing is a more powerful methodology but it requires using complex frameworks & engineers that specialize in this kind of testing. That is why it is rarely used for testing FPGAs. FPGAs are mainly developed by small teams that don’t have the luxury of having specialized verification engineers.
+For FPGA design, directed tests are often good enough. Constrained random testing is a more powerful methodology but it requires using complex frameworks & engineers that specialize in this kind of testing. That is why it is rarely used for testing FPGAs. FPGAs are mainly developed by small teams that don't have the luxury of having specialized verification engineers.
 
 For ASIC designs and large FPGA designs, constrained random testing has become the standard test methodology. Verification engineers specialize in mastering complex frameworks like UVM to verify designs. These frameworks are free and often open source but the simulator may be more expensive. The learning curve of frameworks like UVM is high so adding a new engineer to you verification team may require expensive training.
 

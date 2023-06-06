@@ -10,6 +10,6 @@ tags:
   - Basic instruction
 ---
 
-The first time you start Sigasi Studio, you’ll end up with a default workspace which contains tutorial projects to demonstrate some of Sigasi Studio’s features. Your license probably won’t be configured yet. This video demonstrates how to set up your license in Sigasi Studio.
+The first time you start Sigasi Studio, you'll end up with a default workspace which contains tutorial projects to demonstrate some of Sigasi Studio's features. Your license probably won't be configured yet. This video demonstrates how to set up your license in Sigasi Studio.
 
 More information is available in the [manual]({{< ref "manual/license-key.md" >}}).

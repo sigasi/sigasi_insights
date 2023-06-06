@@ -11,7 +11,7 @@ numerous improvements and bugfixes.
 Sigasi as HDL editor for Quartus
 --------------------------------
 
-Today, Sigasi’s integration with Altera Quartus II graduates from its beta period. We made the Quartus II integration as simple and transparent as possible. Configure Sigasi as default editor in Quartus II and from there, everything is automatic.
+Today, Sigasi's integration with Altera Quartus II graduates from its beta period. We made the Quartus II integration as simple and transparent as possible. Configure Sigasi as default editor in Quartus II and from there, everything is automatic.
 
 Your Sigasi project will automatically listen to changes of the Quartus II project and if you add files in Sigasi, they will be added to your Quartus II project too.
 

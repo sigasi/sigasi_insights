@@ -211,7 +211,7 @@ You can enable automatic updates by opening this preference page: **Install/Upda
 
 ## Firewalls and Proxies
 
-If the updates are not automatically fetched from the Sigasi Studio update server you are probably behind a firewall or proxy server. You can configure Sigasi Studio’s proxy settings in **Window > Preferences > General > Network connections**.
+If the updates are not automatically fetched from the Sigasi Studio update server you are probably behind a firewall or proxy server. You can configure Sigasi Studio's proxy settings in **Window > Preferences > General > Network connections**.
 Make sure to set the **Active Provider** to *Manual* and configure the appropriate **Proxy entries**.
 Whether you need to configure the entries for *HTTP* or *HTTPS* depends on the **Locations** configured in the **Available Software Sites** settings.
 

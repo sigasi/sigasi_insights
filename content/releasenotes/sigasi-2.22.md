@@ -20,7 +20,7 @@ Sigasi. It allows us to **prioritize our roadmap**, collect
 unobtrusive way (i.e. no more bugreport popups).\
 Talkback is **always disabled by default**. To enable Talkback, or to
 disable it later on, click **Window \> Preferences \> Sigasi \>
-Talkback** and select or deselect the checkbox “Enable Talkback”.
+Talkback** and select or deselect the checkbox "Enable Talkback".
 
 You can find more detailed information about Talkback at
 <https://www.sigasi.com/sigasi-talkback>

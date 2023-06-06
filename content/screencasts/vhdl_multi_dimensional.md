@@ -13,7 +13,7 @@ tags:
 
 In the [Sigasi Studio 4.10 release]({{< ref "/releasenotes/sigasi-4.10.md" >}}) we have extended the vector size mismatch check to check vectors in records and multi-dimensional arrays.
 
-Let’s look at a few examples.
+Let's look at a few examples.
 
 The first example is a simple vector assignment.
 Sigasi flags the clear size mismatch: the declaration specifies 32 bits, the actual value of the VHDL2008 literal is only 30 bits.

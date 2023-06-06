@@ -13,7 +13,7 @@ Historically, all electronics design was based on graphics. I remember hand-pain
 
 **Graphical design entry for VLSI design is dead.** Or at least, it has no future.
 
-Sigasi’s vision is to drop graphic design entry in favor of **text based design entry**. This requires two things:  
+Sigasi's vision is to drop graphic design entry in favor of **text based design entry**. This requires two things:  
   (1) **an easy way to type and edit designs** in a text based way, and
   (2) **graphic views that visualize the design**.
 
@@ -41,7 +41,7 @@ Graphical programming (or visual programming) is very popular in several niches:
 Some good reasons for visualizing a complex design exist:
 
 * **Inspection**: People unfamiliar with a complex design can get a general idea of how the design works, in a short amount of time. 
-* **Navigation**: Designers who are debugging or working on improvements can get to the correct file faster. They don’t need to memorize file names or directory structure. Instead they can click in graphic representations to navigate to the correct code.
+* **Navigation**: Designers who are debugging or working on improvements can get to the correct file faster. They don't need to memorize file names or directory structure. Instead they can click in graphic representations to navigate to the correct code.
 * **Documentation**: Documentation is useful for understanding a design, and for reviewing its correctness. It is also required for various certification authorities.
 
 Graphics serve a purpose as a **means of communication**. They exist to get a point across.
@@ -52,7 +52,7 @@ There are several disadvantages to graphical design entry for VLSI design.
 
 ![Graphic design entry](/img/opinion/graphic-entry.png)
 
-**Data format**: There is no standard data format for graphical design entry, so all of your data is locked in to your vendor’s tools. 
+**Data format**: There is no standard data format for graphical design entry, so all of your data is locked in to your vendor's tools. 
 
 **Scalability:** While it is easy to convey a simple design in a visual way, things get out of control very easily. Likewise, it is not practical to manually draw a large number of lines between two modules. When the graphical element is your way of expressing yourself, you cannot leave out the messy details. You have to account for everything, even though a more limited visual representation might bring your point across better to another human. 
 
@@ -60,7 +60,7 @@ There are several disadvantages to graphical design entry for VLSI design.
 
 **Manageability**: Given the binary or XML based data formats, it is difficult to compare two versions of a design, and in general it is difficult to track your design using a standard revision control system.
 
-**Manual Layout:** Much of the time needed for graphical design entry is not spent on the actual design, but on placing objects on the screen, making them look nice. This is a tremendous waste, since the placement on screen has no correlation whatsoever with the final design. Computers just don’t care about aestethics. Still, for many people it is hard to resist the temptation of nicely placing all elements in an orderly fashion.
+**Manual Layout:** Much of the time needed for graphical design entry is not spent on the actual design, but on placing objects on the screen, making them look nice. This is a tremendous waste, since the placement on screen has no correlation whatsoever with the final design. Computers just don't care about aestethics. Still, for many people it is hard to resist the temptation of nicely placing all elements in an orderly fashion.
 
 ## Best of both worlds: Graphical View
 
@@ -70,11 +70,11 @@ So, what if you want all the benefits of visuals (inspection, navigation, docume
 
 The graphical view provides graphics that are:
 
-**Automatically generated**  There is no “generate” button, and you don’t need to open a file in a separate tool. The graphics are always there and they are always up to date. 
+**Automatically generated**  There is no "generate" button, and you don't need to open a file in a separate tool. The graphics are always there and they are always up to date. 
 
 **Cross linked** If you click on an item in the graphic view, you can jump to the code that relates to that item. Conversely, while you are editing code, the corresponding part in the view can be highlighted in the view.
 
-**Stateless** The fact that a Graphical View is stateless implies that you cannot move elements around. You don’t want vendor proprietary files to store the graphics information, so the placement of elements is out of your hands. While this may sound as a disadvantage, it really isn’t. Placement algorithms should provide a reasonable placement on the screen. While you are programming, you can probably live with this placement, even if your ideal placement is a bit different. Once you start working on your documentation, you can export the drawing in a vector format and edit it in a separate drawing program.
+**Stateless** The fact that a Graphical View is stateless implies that you cannot move elements around. You don't want vendor proprietary files to store the graphics information, so the placement of elements is out of your hands. While this may sound as a disadvantage, it really isn't. Placement algorithms should provide a reasonable placement on the screen. While you are programming, you can probably live with this placement, even if your ideal placement is a bit different. Once you start working on your documentation, you can export the drawing in a vector format and edit it in a separate drawing program.
 
 ## Summary
 

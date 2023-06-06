@@ -14,7 +14,7 @@ bannerad: true
 Here is a new example of why Sigasi is [better than Emacs VHDL mode](/opinion/emacs): syntax checking.
 
 In Emacs VHDL mode, there is no built-in syntax checker. This design
-decision was perfectly reasonable in the early 1990’s, when the Emacs
+decision was perfectly reasonable in the early 1990's, when the Emacs
 VHDL mode was created. Because of the processing power and the memory
 available at that time, compilation was a slow process which was best
 handled by specialized tools. So Emacs uses a simulator (like ModelSim)
@@ -23,8 +23,8 @@ to check the syntax of VHDL code.
 Batch compilation
 -----------------
 
-Let’s assume you have installed ModelSim and configured Emacs
-accordingly (I won’t go into that). Syntax checking would go something
+Let's assume you have installed ModelSim and configured Emacs
+accordingly (I won't go into that). Syntax checking would go something
 like this:
 
 -   Write some interesting code
@@ -61,9 +61,9 @@ The difference between the ways of working lies in the shorter feedback
 loop. As soon as you type an error, you get a chance to fix it. This
 takes less time and effort because you do not need to make a mental
 context switch. Engineers understand the positive implications of a
-“shorter feedback loop”.
+"shorter feedback loop".
 
-But even my kid’s kindergarten teacher (who is smart, but not very
+But even my kid's kindergarten teacher (who is smart, but not very
 technological) remembers older word processing software. This is how it
 used to work: First, you write a letter. Then, you run the spell
 checker. Each time you encounter misspelled word, you have to read the
@@ -72,8 +72,8 @@ processors and editors provide type-time spell checking: each time you
 write an errr [sic](http://en.wikipedia.org/wiki/Sic) the
 word is underlined in red. You fix it immediately. The result is that
 your letter is finished sooner with less spelling misstakes. Instant
-feedback is everywhere. Even my web browser is correcting me as I’m
+feedback is everywhere. Even my web browser is correcting me as I'm
 typing this blog post!
 
 If professional writers use **instant feedback** technology to help them
-do their jobs, then why don’t hardware design engineers?
+do their jobs, then why don't hardware design engineers?

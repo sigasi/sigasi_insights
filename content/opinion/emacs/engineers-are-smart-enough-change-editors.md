@@ -35,13 +35,13 @@ better editor. But if you are engineering a complex system, you need
 good tools.
 
 I agree that (before Sigasi existed) anything else then Emacs for VHDL
-was probably not the best choice. I don’t agree with the “too stupid or
-too stubborn” part. Many people roll in to a particular editor and get
+was probably not the best choice. I don't agree with the "too stupid or
+too stubborn" part. Many people roll in to a particular editor and get
 to know all nice features over the years. There is a relatively *large
 cost to switching* because you have to use a new tool. Learning a new
 editor is not so much an intellectual challenge as it a new habit. Most
-Emacs users couldn’t tell you the keyboard shortcut for “fix sensitivity
-list” even if their lives depended on it. Their [fingers know the
+Emacs users couldn't tell you the keyboard shortcut for "fix sensitivity
+list" even if their lives depended on it. Their [fingers know the
 shortcuts](http://en.wikipedia.org/wiki/Muscle_memory). Learning a new
 tool and new shortcuts takes practice. It requires the insight that
 another tool is really better and the discipline to go through with the
@@ -55,7 +55,7 @@ these arguments against the effort of switching (and against their
 pride).
 
 In my series of [Sigasi vs. Emacs comparisons](/opinion/emacs/) I
-would like to leave it up to you for this week. Not because I don’t have
+would like to leave it up to you for this week. Not because I don't have
 any time to write a new post, but because I want to know what *you*
 think.
 

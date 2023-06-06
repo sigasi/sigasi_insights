@@ -20,7 +20,7 @@ If the specified project was not open in the workspace yet, this will import
 and open the project in the workspace.
 
 Note that the VHDL file you specify on the command line has to be in an
-*open Sigasi project* to enjoy all of Sigasi Studio’s powerful editing and
+*open Sigasi project* to enjoy all of Sigasi Studio's powerful editing and
 navigation features. If the file you open from the command line is not
 in a Sigasi Studio project, Sigasi Studio opens the file as an [external
 file](#external-files). This is nevertheless really handy for quick

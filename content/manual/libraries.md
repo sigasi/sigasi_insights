@@ -44,7 +44,7 @@ In the screenshot we see a project called Demo, with a folder named
 libraries (`std` and `ieee`) upon which all VHDL projects depend. The
 demo project itself consists of a few VHDL files.
 
-Next to the project’s name `Demo`, is the annotation `work`. This means
+Next to the project's name `Demo`, is the annotation `work`. This means
 that, barring any overrides, everything in the project will be stored
 inside the `work` library.
 
@@ -78,7 +78,7 @@ sub-folders will be removed. When you are defining the library mapping
 for a new project you should map from top to bottom.
 
 So in the case of our `Demo` project, you would change (if `work` is not
-a good default) the top folder’s mapping first and then override the
+a good default) the top folder's mapping first and then override the
 mapping in the sub-folders.
 
 When you are changing the library mapping of a project, the project will

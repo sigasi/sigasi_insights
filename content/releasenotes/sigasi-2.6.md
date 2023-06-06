@@ -56,7 +56,7 @@ Other new and noteworthy improvements
     entity has declaration errors
 -   Avoid confusion between **vcom** and **sigasi** problem markers.
     Prefix vcom problems with `Vcom :`
--   If you use the starter edition, we no don’t count the statements in
+-   If you use the starter edition, we no don't count the statements in
     Altera libraries. This means your own project can still be a full
     200 statements before you fall back to baseline mode.
 

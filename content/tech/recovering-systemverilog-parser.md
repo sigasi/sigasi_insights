@@ -12,7 +12,7 @@ comments: true
 bannerad: true
 ---
 
-When you’re writing HDL code, be it in SystemVerilog, Verilog or VHDL, your code is broken or incomplete most of the time.
+When you're writing HDL code, be it in SystemVerilog, Verilog or VHDL, your code is broken or incomplete most of the time.
 Any regular compiler stops on the first error it encounters and will often only show an obscure error message.
 At Sigasi, we are convinced productivity and happiness of HDL developers increase when they receive immediate feedback on broken code.
 

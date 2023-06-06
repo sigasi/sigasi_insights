@@ -55,7 +55,7 @@ Bugfixes
 -   ticket 2329 : External compiler and project dependencies: call vlib
     for all libraries
 -   ticket 2334 : Corrected scoping of block statements
--   ticket 2374 : Properly display spaces in the ‘Set Toplevel’ dialog
+-   ticket 2374 : Properly display spaces in the 'Set Toplevel' dialog
 -   ticket 2388 : Comment in hover should include first character of
     comment, even it is not a space.
 -   ticket 2391 : Simulate with Modelsim vsim does not work when top

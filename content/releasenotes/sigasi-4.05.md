@@ -5,11 +5,11 @@ pager: true
 date: 2019-09-19
 comments: true
 ---
-Productivity cannot improve without speed. So we are proud to present the Sigasi Studio 4.5 release, where Sigasi Studio’s editor became **a lot faster**, as in up to 3 times faster. We also added **HTML documentation**, a lot of new **lintings**, and more.
+Productivity cannot improve without speed. So we are proud to present the Sigasi Studio 4.5 release, where Sigasi Studio's editor became **a lot faster**, as in up to 3 times faster. We also added **HTML documentation**, a lot of new **lintings**, and more.
 
 # Faster Editor
 
-We have put a lot of effort in improving the speed of Sigasi Studio’s editor for Verilog, SystemVerilog and VHDL. We have redesigned Sigasi's engine for the editor to run more tasks in the background. This prevents you from blocking the user interface, even when you are editing big source files. If you are working with `UVM`, the difference will be very noticeable. For projects with lots of `` `include`` files, Sigasi Studio is now even **3 times faster**.
+We have put a lot of effort in improving the speed of Sigasi Studio's editor for Verilog, SystemVerilog and VHDL. We have redesigned Sigasi's engine for the editor to run more tasks in the background. This prevents you from blocking the user interface, even when you are editing big source files. If you are working with `UVM`, the difference will be very noticeable. For projects with lots of `` `include`` files, Sigasi Studio is now even **3 times faster**.
 
 # HTML documentation export
 

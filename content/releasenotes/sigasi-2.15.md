@@ -15,7 +15,7 @@ Writing state machines
 
 We added two extra Quick Fixes to make it easier to create finite state
 machines in VHDL. You can now simply use a new state name (an
-enumeration literal) in the “when” clause of your state machine without
+enumeration literal) in the "when" clause of your state machine without
 first adding it to the state enumeration datatype. A Quick Fix will
 automatically add the new literal to the VHDL enum type.
 
@@ -23,7 +23,7 @@ automatically add the new literal to the VHDL enum type.
 
 This also works the other way around. If you add a new enum literal to
 an state type declaration, your case statements will be broken. There
-will be a Quick Fix to add the missing “when” clause.
+will be a Quick Fix to add the missing "when" clause.
 
 Verilog: Save-time compilation
 ------------------------------
@@ -81,7 +81,7 @@ when you save your file (save-time lint check).
 Other new and noteworthy improvements
 -------------------------------------
 
--   Flag a function that doesn’t have a return statement
+-   Flag a function that doesn't have a return statement
     ![Check for function without return statement](/img/releasenotes/2.15/functionwithoutreturn.png "Check for function without return statement")
 -   Better hover for alias of vector slices (ticket 2493)
     ![Better hover for alias of vector slice](/img/releasenotes/2.15/alias.png "Better hover for alias of vector slice")
@@ -102,7 +102,7 @@ Bugfixes
 --------
 
 -   ticket 2526 : Unmapping files should remove problem markers from external compiler too
--   ticket 2544 : Automatic ‘.’ autocomplete shouldn’t be triggered in comments
+-   ticket 2544 : Automatic '.' autocomplete shouldn't be triggered in comments
 -   ticket 2545 : Entity instantiation autocomplete: Use work instead of library name for entities in same library
 -   ticket 2555 : Record field not resolved in subtype declaration
 -   ticket 2556 : External compiler does not handle transitive project dependencies correctly
@@ -110,7 +110,7 @@ Bugfixes
 -   ticket 2520 : Better formatting of ElseWaveform (allow newlines)
 -   ticket 2567 : 2008-style bit-string literals can have more than 99 bits
 -   ticket 2569 : Better highlighting for numbers with underscores
--   ticket 2571 : Wrong marker location for “Port/Generic map list cannot not be terminated with a ,”
+-   ticket 2571 : Wrong marker location for "Port/Generic map list cannot not be terminated with a ,"
 -   ticket 2381 : Problems running Sigasi in combination with other Xtext plugins (e.g. Xtend)
 
 Download/Update

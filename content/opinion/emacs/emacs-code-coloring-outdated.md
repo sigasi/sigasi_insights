@@ -32,13 +32,13 @@ to work, you need to parse and analyse the file. Short configuration
 files and regular expressions work great for syntax highlighting, but
 they fail for semantic highlighting.
 
-![Sigasi’s Semantic Highlighting](/img/opinion/emacs/semantic_highlight.png)
+![Sigasi's Semantic Highlighting](/img/opinion/emacs/semantic_highlight.png)
 
-## Fakin’ It
+## Fakin' It
 
 The Emacs VHDL mode tries to mimic semantic highlighting, as do many general purpose editors. Datatypes
 are given colored green, but only the <em>standard</em> datatypes. Any
-datatype that you define yourself is treated as just another “name”.
+datatype that you define yourself is treated as just another "name".
 Conversely, if you use the name of a standard datatype and you give a
 new meaning to it, it will be colored green. Overriding standard names
 like this is not a smart thing to do, but it is still legal.
@@ -47,7 +47,7 @@ I know some engineers who adhere to a coding convention in order to get
 code coloring right. Signals end in `_s`, datatypes end in
 `_t`. This is a workaround. It works fine in the controlled
 environment of your own code. But it fails miserably when you have to
-inspect or reuse somebody else’s code.
+inspect or reuse somebody else's code.
 
 ![Emacs VHDL mode Mimics Semantic Highliging](/img/opinion/emacs/emacs_highlight.png)
 
@@ -56,7 +56,7 @@ inspect or reuse somebody else’s code.
 The case of code coloring illustrates that regular expressions will not
 cut it any more. This technology has been pushed to its limits in tools
 like Emacs, with great results. But even the most skilled regular
-expression wizard has to give up at a certain point, and we’ve reached
+expression wizard has to give up at a certain point, and we've reached
 that point a while ago. In order to move forward and keep improving
 features like code coloring, regex will no longer serve you well.
 Built-in parsers are the answer.

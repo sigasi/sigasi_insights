@@ -45,7 +45,7 @@ quickfix, click the problem marker (annotated with a lightbulb icon) and
 select the quickfix. You can also trigger the quickfix by putting your
 cursor on the unused declaration in the editor and pressing **Ctrl+F1**.
 
-It is confusing to read a design that contains ‘dead code’. This new
+It is confusing to read a design that contains 'dead code'. This new
 feature will make it easier to detect and remove it.
 
 {{< figure alt="Unused declaration (with QuickFix)" src="/img/releasenotes/2.3/quickfixunuseddeclaration.png" title="Unused declaration (with QuickFix)" >}}
@@ -146,7 +146,7 @@ Other new and noteworthy improvements
 -------------------------------------
 
 -   Improve autocomplete for component instantiations: you can now also
-    trigger autocomplete if you already a portion of the component’s
+    trigger autocomplete if you already a portion of the component's
     name (ticket 1960).
 -   We slightly changed the library mapping interface. You can now map
     the entire project to a new library without breaking the **Common

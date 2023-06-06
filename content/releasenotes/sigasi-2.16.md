@@ -31,8 +31,8 @@ Other new and noteworthy improvements
 -   Better declare signal quickfix for vector types
 	![declare signal quickfix](/img/releasenotes/2.16/declarenewvectorsignal.png "declare signal quickfix")
 -   Eclipse Kepler support
--   Added quickfix for mapping Xilinx’ `unimacro` library
--   Only show the “Open Declaration” action in the context menu if the
+-   Added quickfix for mapping Xilinx' `unimacro` library
+-   Only show the "Open Declaration" action in the context menu if the
     action is available
 -   Basic support for unconstrained records & record subtypes with
     record constrains \[VHDL 2008\]
@@ -48,7 +48,7 @@ Bugfixes
 -   ticket 2489 : Missing generic in Hierarchy View (default value)
 -   ticket 2619 : Scoping problem with casting in when clause
 -   ticket 2623 : Expect no hyperlinks in whitespace
--   ticket 2579 : Vertical align breaks down after “others” clause.
+-   ticket 2579 : Vertical align breaks down after "others" clause.
 -   ticket 2620 : Support for allocator expressions
 -   ticket 2621 : Scoping problems with configurations (library and
     designunit with same name)

@@ -7,7 +7,7 @@ comments: true
 bannerad: true
 ---
 
-Dear customer, we have just released the 3.0 version of our product, and renamed it to “Sigasi Studio”. 
+Dear customer, we have just released the 3.0 version of our product, and renamed it to "Sigasi Studio". 
 
 Except for the added features, **nothing changes for you**: Your **old license key is valid** for Sigasi Studio 3.0.
 

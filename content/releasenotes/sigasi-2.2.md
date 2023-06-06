@@ -5,7 +5,7 @@ pager: true
 date: 2012-02-09
 ---
 
-It’s been over two months since our last release, but we think this new release is worth the wait. We have a ton of new features, which many of you have been waiting for. We present better code folding (for if and case statements), better hovers (for records), better autocompletes, and much more. But perhaps the most important improvement is: VHDL 2008.
+It's been over two months since our last release, but we think this new release is worth the wait. We have a ton of new features, which many of you have been waiting for. We present better code folding (for if and case statements), better hovers (for records), better autocompletes, and much more. But perhaps the most important improvement is: VHDL 2008.
 
 VHDL-2002 and VHDL-2008 support
 -------------------------------
@@ -19,7 +19,7 @@ Note that the new VHDL 2008 STD and IEEE libraries are not included yet.
 Configurable severity for lintings
 ----------------------------------
 
-The severity of Sigasi’s type time linting checks are now configurable.
+The severity of Sigasi's type time linting checks are now configurable.
 Go to **Window \> Preferences \> VHDL \> Errors / Warnings**.
 
 ![Configurable severity for lintings](/img/releasenotes/2.2/configurablewarnings.png "Configurable severity for lintings")

@@ -138,7 +138,7 @@ Some jurisdictions may not permit the exclusion of implied warranties; so the
 above exclusion may not apply to the User. The User may have other rights that
 vary from jurisdiction to jurisdiction. If during the evaluation
 period the Software does not substantially conform to the description
-contained in the applicable end user documentation, the Users’ sole
+contained in the applicable end user documentation, the Users' sole
 remedy will be that Sigasi shall refund the license fees paid, if any,
 related to the Software provided that (a) the Software has been
 properly installed and used at all times an in accordance with the

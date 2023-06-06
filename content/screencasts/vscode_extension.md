@@ -12,7 +12,7 @@ tags:
 
 # Sigasi extension for VS Code
 
-It is Sigasi’s mission to make you better HDL design
+It is Sigasi's mission to make you better HDL design
 and verification engineers. You all have more
 important things to do than struggling with the
 complicated syntax and semantics of
@@ -51,30 +51,30 @@ When you hold down the control button on your
 keyboard, all identifiers become hyperlinks to their
 declaration. This allows you to very quickly
 navigate around through your codebase.
-And often you don’t even need to navigate to the
+And often you don't even need to navigate to the
 declaration to get the information you need. Simply
 hover your mouse pointer over the identifier, to
 get a nice hover with all the information you need.
 Notice that it also shows you the code comments.
-Isn’t that a nice incentive to better document your
+Isn't that a nice incentive to better document your
 code?
 Navigation also works in the opposite direction
 through the language-aware search features. Right-click,
-select “Find All References” and you’ll get a nice
+select "Find All References" and you'll get a nice
 list of all places where this identifier is used.
 
 This demo would be too long if we demo all
-available features, so I’ll finish with one of the most
-powerful ones: “Refactoring”
+available features, so I'll finish with one of the most
+powerful ones: "Refactoring"
 This allows you to improve the name of any
 declaration in your design in a safe and consistent
 way throughout your entire project.
 
 Speaking of projects, setting up projects is easy for
 straightforward projects and nicely scales with the
-project’s complexity. It is a matter of pointing to the
-folder with the source code. For Verilog you’ll need
-to configure the include paths, for VHDL you’ll
+project's complexity. It is a matter of pointing to the
+folder with the source code. For Verilog you'll need
+to configure the include paths, for VHDL you'll
 need to configure the libraries.
 
 This quick demo clearly showed how Sigasi
@@ -82,7 +82,7 @@ combines the simplicity of a code editor with
 powerful features that help you focus on executing
 your ideas.
 So we invite you to try it on your own projects. The
-VSCode extension itself is free, but you’ll need a
+VSCode extension itself is free, but you'll need a
 license to unlock the Sigasi language server. Sigasi
 Studio users can use their existing license, new
 users can request a trial license on our website.

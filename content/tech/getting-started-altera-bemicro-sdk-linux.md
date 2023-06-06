@@ -75,8 +75,8 @@ You can easily verify that Everything is working with following procedure:
 <li> Plug in your BeMicro SDK stick
 <li> Start Quartus II
 <li> Select Tools > Programmer
-<li> Click the “Hardware Setup...” button, double click on “USB-Blaster” and click close
-<li> If you now press the “Autodetect” button, two devices should be visible: EP3C25 and EP4CE22 (this is the Altera Cyclone 4 FPGA). If you see those it means that everything is OK.
+<li> Click the "Hardware Setup..." button, double click on "USB-Blaster" and click close
+<li> If you now press the "Autodetect" button, two devices should be visible: EP3C25 and EP4CE22 (this is the Altera Cyclone 4 FPGA). If you see those it means that everything is OK.
 </ul>
 
 ![Altera Programmer BeMicroSDK](/img/tech/altera_programmer.png)

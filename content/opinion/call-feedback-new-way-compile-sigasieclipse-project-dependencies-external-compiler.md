@@ -34,7 +34,7 @@ Using `vmap` changes the tool-specific configuration file (`library.cfg`, `model
 
 Sigasi allows to compile to the same library in different projects. In the dependent project, you get a merged view with all design units in this library. `vcom` on the other hand, only allows to use one compilation folder per library. So it is unfortunately not possible to offer the compilation behaviour with the external compiler.
 
-For example, if Project2 depends on Project1 and both projects compile to same library “library1”. If we `vmap` “library1” to the compilation folder of Project1 in Project2, `vcom` will add the compilation results of Project2 to the compilation folder of Project1. This can lead to unexpected compilation problems in subsequent re-compilations after changes in Project1.
+For example, if Project2 depends on Project1 and both projects compile to same library "library1". If we `vmap` "library1" to the compilation folder of Project1 in Project2, `vcom` will add the compilation results of Project2 to the compilation folder of Project1. This can lead to unexpected compilation problems in subsequent re-compilations after changes in Project1.
 
 ![Sigasi Project Dependencies and vcom: limitation](/img/opinion/planned_samelib_a.png)
 

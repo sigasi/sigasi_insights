@@ -52,7 +52,7 @@ Sigasi Studio offers powerful techniques to explore a file or project and naviga
 
 ### Occurrence Highlighting
 
-If you click on an identifier, it is highlighted. In addition, all other occurrences of the identifier that refer to the same object are highlighted. Note that this occurrence highlighting is intelligent: it is not based on the identifier’s string value, but on the object that the identifier refers to.
+If you click on an identifier, it is highlighted. In addition, all other occurrences of the identifier that refer to the same object are highlighted. Note that this occurrence highlighting is intelligent: it is not based on the identifier's string value, but on the object that the identifier refers to.
 
 You can turn occurrence highlighting on or off. Click the "Toggle Mark Occurrences" icon ![Mark Occurrences](/img/icons/mark_occurrences_icon.png) in the toolbar.
 
@@ -414,11 +414,11 @@ declaration.
 
 ### Type Conversion
 
-In VHDL design you need to do a lot of type conversions. Sigasi Studio’s
+In VHDL design you need to do a lot of type conversions. Sigasi Studio's
 autocomplete functionality can help you with those. Put a dot (`.`)
 after the element you want to convert, and the autocomplete suggestions
-will appear. The conversion functions have descriptions like “convert
-type” and “convert to …”.
+will appear. The conversion functions have descriptions like "convert
+type" and "convert to …".
 
 ## Stuttering
 
@@ -448,8 +448,8 @@ level. E.g. an extra indent after an `if`-statement and removal of an
 indent for the matching `else`-clause.
 
 You can enable/disable this feature via **Window \> Preferences \>
-Sigasi \> VHDL** by toggling the **“Enter adjusts indentation on current
-and next line”** setting.
+Sigasi \> VHDL** by toggling the **"Enter adjusts indentation on current
+and next line"** setting.
 
 **Tabs vs. spaces:** This features inserts tabs characters or spaces,
 according to your preferences.
@@ -466,7 +466,7 @@ Press **Ctrl+Shift+F** to format your current VHDL file.
 This includes:
 
 * indentation
-* vertical alignment of certain symbols like “<=”
+* vertical alignment of certain symbols like "<="
 * wrapping lines that are too long
 
 ### Context-based
@@ -583,8 +583,8 @@ level. E.g. an extra indent after a `module` and the removal of an indent for
 the matching `endmodule`.
 
 You can enable/disable this feature via **Window \> Preferences \>
-Sigasi \> Verilog/SystemVerilog** by toggling the **“Enter adjusts indentation on
-current and next line”** setting.
+Sigasi \> Verilog/SystemVerilog** by toggling the **"Enter adjusts indentation on
+current and next line"** setting.
 
 **Tabs vs. spaces:** This features inserts tabs characters or spaces,
 according to your preferences.

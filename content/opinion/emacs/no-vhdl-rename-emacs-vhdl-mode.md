@@ -39,7 +39,7 @@ There are some important features for code comprehension and [code navigation]({
 that you will need in order to be efficient at reusing your legacy code.
 Then there is the act of modifying the code. There are three things I
 want to talk about: naming conventions, cleaning up code layout and code
-encapsulation. For today, let’s stick to naming conventions.
+encapsulation. For today, let's stick to naming conventions.
 
 Global Rename
 -------------
@@ -63,14 +63,14 @@ can go wrong:
   signal pci_clk : std_logic; -- clk for PCI clk domain
 ```
 
-I’m sure you can create a script that only replaces the word `clock` if
+I'm sure you can create a script that only replaces the word `clock` if
 it is surrounded by white space or by punctuation marks, and not if it
 is a line comment. Your next problem will be supporting multi-line
 comments. The point is: VHDL Emacs does not do all of this for you;
-you’re on your own. If you are a really nice guy you might read this,
+you're on your own. If you are a really nice guy you might read this,
 script a new elisp command and send it to
 [Reto](https://guest.iis.ee.ethz.ch/~zimmi/emacs/vhdl-mode.html) to be
-incorporated in the next update of the Emacs VHDL mode. Let’s see if
+incorporated in the next update of the Emacs VHDL mode. Let's see if
 your new improvement would solve the next problem.
 
 Specific Renaming
@@ -84,11 +84,11 @@ replace will not help you because you need to be surgically accurate in
 replacing the correct names, perhaps in dozens of files. Not only will
 `sed` be wildly insufficient. So will any reasonable amount of lisp
 scripting. The same word can mean different things in a single file;
-even on the same line in a single file. If your script doesn’t have all
-VHDL scoping rules figured out, it won’t work.
+even on the same line in a single file. If your script doesn't have all
+VHDL scoping rules figured out, it won't work.
 
-You’ve guessed what I’m about to say next: Sigasi HDT *solves* this
-problem. There’s a **two minute screencast**, [Rename Refactoring](/screencasts/rename_refactoring), that
+You've guessed what I'm about to say next: Sigasi HDT *solves* this
+problem. There's a **two minute screencast**, [Rename Refactoring](/screencasts/rename_refactoring), that
 demonstrates our rename refactoring. We can do this because Sigasi HDT
 analyzes the entire VHDL project and tries to find the declaration for
 every name it encounters.
@@ -108,9 +108,9 @@ impossible to take it two or three steps further.
 Disclaimer
 ----------
 
-Sigasi’s rename refactoring is still inaccurate in some cases: for
+Sigasi's rename refactoring is still inaccurate in some cases: for
 functions, procedures and enumeration literals. This is because these
 elements can have their names
 [overloaded](http://en.wikipedia.org/wiki/Method_overloading). This is,
-however not a fundamental limitation. It is just something we haven’t
+however not a fundamental limitation. It is just something we haven't
 gotten around to yet.

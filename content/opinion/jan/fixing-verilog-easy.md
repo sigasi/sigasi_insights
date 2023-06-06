@@ -33,7 +33,7 @@ The essence of the example can be captured in the following Verilog-like pseudo-
     end
 ```
  
-A Verilog simulator handles this as follows. The `DUT` process puts the update events for `ready` and `result` on the nonblocking event queue. Later in the simulation cycle, those events are taken from the queue in the order of entry. However, after `ready` is updated the engine has  two options:  handle the next event and  update  `result`, or wake up the `TEST` process  first. Clearly, the assertion’s behavior will depend on the path taken. Therefore, the code is nondeterministic.
+A Verilog simulator handles this as follows. The `DUT` process puts the update events for `ready` and `result` on the nonblocking event queue. Later in the simulation cycle, those events are taken from the queue in the order of entry. However, after `ready` is updated the engine has  two options:  handle the next event and  update  `result`, or wake up the `TEST` process  first. Clearly, the assertion's behavior will depend on the path taken. Therefore, the code is nondeterministic.
 
 ## How (not) to fix it
 
@@ -52,7 +52,7 @@ Now, when `ready` is updated, we are sure that `result` already has been updated
 
 However, this fix is unsatisfactory. First, having to control the order of "concurrent" assignments is awkward. More importantly, this fix is not applicable in practice. The `DUT` designer will often, and even preferably, be a different person than the `TEST` designer. She may use any particular statement order based coding style concerns. The `TEST` designer should treat the `DUT` as a black box and not rely on some particular order.
 
-Therefore, the `TEST` designer has to deal with the issue. He can do so by suspending the process  to make sure all nonblocking update events have been processed before the assertion executes. For an RTL-style `DUT` triggered by a clock, one possibility is to wait on a clock edge in the `TEST` process. Alternatively, if you want to have a  “behavioral” test bench without clocks (as in my case originally) you can use a delay:
+Therefore, the `TEST` designer has to deal with the issue. He can do so by suspending the process  to make sure all nonblocking update events have been processed before the assertion executes. For an RTL-style `DUT` triggered by a clock, one possibility is to wait on a clock edge in the `TEST` process. Alternatively, if you want to have a  "behavioral" test bench without clocks (as in my case originally) you can use a delay:
 
 ```verilog 
     TEST: begin
@@ -86,7 +86,7 @@ Several commentators to my previous post, [Wasting real time in zero time](/opin
 
 First, the nonblocking assignments were there for a good reason that can be inferred from the context. The original `DUT` was a synthesizable FSM. For  RTL-style FSM modeling in a clocked process, nonblocking assignments to the output ports are mandatory. Note that writing testbenches for that kind of Verilog modules is a very common situation.
 
-Typically, nonblocking assignments are used in conjunction with a clock. (Actually, the fact that they *only* work reliably with a clock is exactly what I am complaining about.) By simplifying the `DUT` code so much that it doesn’t use a clock, I may have caused some confusion. However, let me be clear: the Verilog simulation algorithm does not know about clocks. It puts nonblocking update events in a separate queue, that is all.
+Typically, nonblocking assignments are used in conjunction with a clock. (Actually, the fact that they *only* work reliably with a clock is exactly what I am complaining about.) By simplifying the `DUT` code so much that it doesn't use a clock, I may have caused some confusion. However, let me be clear: the Verilog simulation algorithm does not know about clocks. It puts nonblocking update events in a separate queue, that is all.
 
 Even if blocking assignments were an option, they would not fix the issue. The `DUT` code would become:
 
@@ -99,12 +99,12 @@ Even if blocking assignments were an option, they would not fix the issue. The `
     end
 ```
 
-To show that this code  is also nondeterministic, we don’t have to refer to event queues. Instead, we can refer to Verilog statement scheduling semantics, as formulated by Verilog's creator:
+To show that this code  is also nondeterministic, we don't have to refer to event queues. Instead, we can refer to Verilog statement scheduling semantics, as formulated by Verilog's creator:
 
 * the statements in a begin-end block in a process are guaranteed to execute in the order written
 * the statements in a Verilog process may be interleaved by statements from other processes
 
-See *"Thomas & Moorby’s, The Verilog Hardware Description Language, 5th edition, p. 225"*
+See *"Thomas & Moorby's, The Verilog Hardware Description Language, 5th edition, p. 225"*
 
 One simulation scenario that complies with these rules is:
 
@@ -130,19 +130,19 @@ Another one is:
     ...
 ```
 
-Clearly, the assertions in the two scenario’s will behave differently. Hence, the code is nondeterministic. *QED*
+Clearly, the assertions in the two scenario's will behave differently. Hence, the code is nondeterministic. *QED*
 
 In summary, the example is nondeterministic regardless of the type of the assignments. The problem with either type is very similar, and the possible fixes are the same: reversing the order of the assignments, or suspending the `TEST` process before the assertion.
 
 ## Proper Verilog
 
-In one members-only forum, I received completely opposite reactions to my previous post.  One engineer with a lot of credentials in verification acknowledged the issues and conceded that “Verilog race conditions  have occasionally caused me to lose a day or two chasing them down.” Another engineer, also with significant credentials, claimed that he had “never encountered this issue with properly written Verilog.”
+In one members-only forum, I received completely opposite reactions to my previous post.  One engineer with a lot of credentials in verification acknowledged the issues and conceded that "Verilog race conditions  have occasionally caused me to lose a day or two chasing them down." Another engineer, also with significant credentials, claimed that he had "never encountered this issue with properly written Verilog."
 
 Such opposite reactions can only be explained by a fundamental difference in perspective. There are only two mainstream HDLs. Many hardware designers will only be proficient in a single HDL during their career. It is understandable that they identify digital design with designing in that particular HDL.
 
-Therefore, when a commentator tells me that nondeterminism is something that one has to understand, “just like other aspects of digital design”, that may sound logical from a Verilog-centric perspective. However, from my perspective it is misleading, as nondeterminism is merely a language design choice of one particular HDL.
+Therefore, when a commentator tells me that nondeterminism is something that one has to understand, "just like other aspects of digital design", that may sound logical from a Verilog-centric perspective. However, from my perspective it is misleading, as nondeterminism is merely a language design choice of one particular HDL.
 
-Likewise, when a commentator asserts that the issue does not exist for “properly written Verilog”, that may sound logical to him. But what I see is a circular argument that tries to  label any language design issue as incompetence of its users. The obvious question is how often he has to deal with “improperly written Verilog", that would simply not exist if the language had been deterministic.
+Likewise, when a commentator asserts that the issue does not exist for "properly written Verilog", that may sound logical to him. But what I see is a circular argument that tries to  label any language design issue as incompetence of its users. The obvious question is how often he has to deal with "improperly written Verilog", that would simply not exist if the language had been deterministic.
 
 ## Where are the benefits?
 

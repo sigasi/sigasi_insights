@@ -24,11 +24,11 @@ Autocompletions for type conversions
 ------------------------------------
 
 In VHDL design you need to do a lot of type conversions (Think:
-std\_logic\_vector ~~\> signed~~\> integer -\> …). Sigasi’s autocomplete
+std\_logic\_vector ~~\> signed~~\> integer -\> …). Sigasi's autocomplete
 functionality can now help you to type these conversions faster and more
 accurate. Put a dot (`.`) after the element you want to convert, and the
 autocomplete suggestions will appear. The conversion functions have
-descriptions like “convert type” and “convert to …”.
+descriptions like "convert type" and "convert to …".
 
 Do not forget to add a use clause for the `numeric_std` package first.
 
@@ -43,8 +43,8 @@ release, Sigasi loaded the default mapping (`work`) if this file was not
 available. Starting with release 2.17, Sigasi assumes all files are
 **not mapped** if the library mapping file is missing. In this case,
 Sigasi will also add one error marker to the project with the message:
-“This VHDL project can not be built since the library mapping
-information is missing”.
+"This VHDL project can not be built since the library mapping
+information is missing".
 
 To add a default .library\_mapping.xml file to your project, you can
 right-click your project and select **Library Mapping \> Reset Library

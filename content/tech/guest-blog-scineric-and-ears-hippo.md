@@ -21,7 +21,7 @@ Scineric is a product that is difficult to describe in one or two sentences. But
 
 *Scineric Workspace is a product which can help you to manage sets of files (called a design) with complex dependencies between them in a structured way. Customizable structures can easily be shared and enforced between different designs or team members. In addition it provides many features such as advanced build management, package management and a Tcl scripting interface to manage designs.*
 
-Some people use it to manage the academic papers they use in their master’s degree, other people want to use it to manage Latex document generation and clean-up, some people use it to document their C++ code while other people use it to manage and edit IP-XACT component models. However, firmware designs are the main targets for Scineric and it ships with a set of firmware plugins which allows it to easily fit into the daily workflow of a firmware engineer.
+Some people use it to manage the academic papers they use in their master's degree, other people want to use it to manage Latex document generation and clean-up, some people use it to document their C++ code while other people use it to manage and edit IP-XACT component models. However, firmware designs are the main targets for Scineric and it ships with a set of firmware plugins which allows it to easily fit into the daily workflow of a firmware engineer.
 Another possible two sentence description of what Scineric is from a firmware perspective is to simply say:
 
 *Scineric Workspace is a cross-vendor firmware build and management environment. A wrapper for many back-end tools doing the hard work for you by abstracting multiple environments through a modern and intuitive GUI*
@@ -39,11 +39,11 @@ If you are a firmware engineer you are probably wondering how it can help you. T
 
 This list is only the *"oortjies van die seekoei"*.
 
-If you think that it will be difficult to get Scineric going, it won't. We’ve spent a lot of time in order to make it integrate nicely with many different external environments. You are probably using Sigasi because you are reading this blog and if you are, it’s even easier for you than for most other environments. We created a Sigasi Sync plugin which sync's your design between Scineric and Sigasi. Thus, you can continue to develop your designs in Sigasi like you always did, but with a powerful design management environment at hand where you can manage, build and package your designs. This integration is demonstrated below:
+If you think that it will be difficult to get Scineric going, it won't. We've spent a lot of time in order to make it integrate nicely with many different external environments. You are probably using Sigasi because you are reading this blog and if you are, it's even easier for you than for most other environments. We created a Sigasi Sync plugin which sync's your design between Scineric and Sigasi. Thus, you can continue to develop your designs in Sigasi like you always did, but with a powerful design management environment at hand where you can manage, build and package your designs. This integration is demonstrated below:
 
 {{% youtube axawy0hg8aM %}}
 
-[Scineric Workspace](http://scineric.csir.co.za/) is a research tool where we've taken the first step to making firmware design management and packaging a trivial task. We’ve realized that most people just want things to work, they don’t care how it happens and we’ve created a platform that attempts to do just that.
+[Scineric Workspace](http://scineric.csir.co.za/) is a research tool where we've taken the first step to making firmware design management and packaging a trivial task. We've realized that most people just want things to work, they don't care how it happens and we've created a platform that attempts to do just that.
 There is an evaluation version out, try it and let us know what you think. If you are interested and are wondering how we do it, check out our blog post that describes the [Scineric architecture](http://scineric.csir.co.za/?p=1083).
 
 To finish off, here is an introduction video showing the main parts of Scineric.

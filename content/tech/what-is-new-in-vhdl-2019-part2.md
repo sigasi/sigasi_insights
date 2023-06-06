@@ -44,7 +44,7 @@ on some naming conventions.
 
 When the VHDL working group examined how interfaces could be implemented, many approaches were discussed. You can make
 directions part of the subtype, create a new kind of record or define a new container with different object kinds like
-constants and signals. The simplest solution was chosen, called “mode views”. A mode view
+constants and signals. The simplest solution was chosen, called "mode views". A mode view
 defines port directions for elements of a record. You can look at it as a user-defined mode for records, instead of
 writing `in` or `out` you refer to the "mode view".
 

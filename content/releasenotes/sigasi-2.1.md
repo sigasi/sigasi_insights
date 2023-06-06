@@ -50,7 +50,7 @@ Bug fixes
 
 -   ticket:1725 : attribute specification in package show up as unnamed in outline
 -   ticket:1741 : restore compatibility with Eclipse 3.5
--   ticket:1765 : never show more than one “Error Reporting” dialog
+-   ticket:1765 : never show more than one "Error Reporting" dialog
 -   ticket:1725 : fix attribute specifications in outline
 
 

@@ -108,7 +108,7 @@ Instead of adding language level features to support verification in VHDL the wo
 library authors were missing in the current language.
 
 For all of the reasons above, the working group considered it worthwhile to create a new VHDL revision. With as little
-changes to the core language as possible, VHDL’s capabilities for design and
+changes to the core language as possible, VHDL's capabilities for design and
 library development are significantly improved. The focus was on improving the core language. In a future revision the working group may focus on
 standardizing more IEEE libraries.
 

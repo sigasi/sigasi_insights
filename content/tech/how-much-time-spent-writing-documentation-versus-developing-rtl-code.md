@@ -30,7 +30,7 @@ That is why here, we will assume that it is labor content that documentation tim
 Methods of time estimating for technical documentation exist already and are even described in standards. For instance, ISO/IEC 15910-2002 offers two methods: top-down design and minutes/hours based design.
 Top-down method suggests a problem be divided into parts (documents, chapters), each part measured in pages, and further planning based on a certain documentation output ratio. The authors of the standard believe, in particular, that a writer monthly produces 22 pages of new text and 44 of updated. Although this ratio may seem ridiculously low at the first glance, the fact is that it includes not simply written but already approved pages that have gone through the entire cycle the standard stipulates. Besides, the writer will only be doing the proper writing seven days a month at most, which, given the daily output at 3-4 pages (as most agree), gives us about the same result. (This is described in detail in the documentation management seminar.)
 Minutes/hours based method determines the output ratios for each activity involved in the documentation process. Thus, if we are to write a 100-pages document, we will spend X much time on typing, Y much time on editing, Z much time on graphic design, etc.
-The ‘Read Me 1st’ method by Sun describes a similar technique.
+The 'Read Me 1st' method by Sun describes a similar technique.
 
 |    | ISO/IEC 15910-2002   | Read Me 1st |
 |----|----------------------|-------------|

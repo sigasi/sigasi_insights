@@ -27,7 +27,7 @@ Usability improvements
 ----------------------
 
 -   Better ordering of quick fixes for undeclared signals and variables:
-    A number of users reported that “Declare signal” would be a better
+    A number of users reported that "Declare signal" would be a better
     default for undeclared signals than changing the name to a similarly
     named signal. So we changed it.
 

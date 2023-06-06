@@ -44,7 +44,7 @@ Sigasi [support](https://www.sigasi.com/support/) will provide instructions.
 # The editor displays old contents of a file
 
 If you edit a file outside of Sigasi Studio with an external editor, Sigasi Studio will normally notice the changes and ask if you want to load the changes. If
-it doesn’t, you can refresh the editor’s content by pressing **F5** or by right-clicking a file or a project in the project explorer and
+it doesn't, you can refresh the editor's content by pressing **F5** or by right-clicking a file or a project in the project explorer and
 selecting **Refresh**.
 
 # No content in the editor and only a cross in the editor tab
@@ -98,7 +98,7 @@ Resolution: Enable VHDL support: **right-click the project > Configure > Add VHD
 Symptoms:
 
 * All VHDL-files in the project are **not mapped**
-* The Project contains only one error: “This VHDL project can not be built since the library mapping information is missing”
+* The Project contains only one error: "This VHDL project can not be built since the library mapping information is missing"
 * VHDL files contain errors, but these errors do not show up in the Problems View.
 * In the Project Explorer, the name of the library (for example: `[work]`) is not shown next to the filename.
 
@@ -168,14 +168,14 @@ Note that during the next build, the tool may generate new markers. If you want 
 For faster performance Sigasi Studio is using a cache.
 Sometimes the cache can get corrupted which might cause internal errors.
 The cache is located in your workspace.
-By default, Sigasi Studio’s workspace is located in `${HOME}/workspaceSigasi`.
+By default, Sigasi Studio's workspace is located in `${HOME}/workspaceSigasi`.
 
 To remove the cache, stop Sigasi Studio and delete the folder `workspaceSigasi/.metadata/.plugins/com.sigasi.hdt.shared.ui/resource.cache/sigasiBuildCache`.
 
 ## Remove the workspace state
 
 Much of your configuration and cached data is stored in your workspace.
-By default, Sigasi Studio’s workspace is located in `${HOME}/workspaceSigasi`.
+By default, Sigasi Studio's workspace is located in `${HOME}/workspaceSigasi`.
 A lot of this data is stored in the hidden `.metadata` directory.
 Sometimes, a part of your metadata can become corrupt.
 It can help to remove the `.metadata` directory (take a backup first!).

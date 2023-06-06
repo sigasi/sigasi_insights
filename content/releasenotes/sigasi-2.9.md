@@ -15,7 +15,7 @@ New scoping framework
 Sigasi 2.9 contains a brand **new scoping framework**. This scoping
 framework is **core functionality** of Sigasi that links identifiers
 with the correct declaration. In the older versions, we had some
-problems with *“overloadable” names* and *record element names*. This
+problems with *"overloadable" names* and *record element names*. This
 made it very hard to fix certain bugs.
 
 As you know, any given declaration has a certain *scope*; it is visible
@@ -43,7 +43,7 @@ your top level in the Hierarchy View . Next click the Simulate button in
 the Hierarchy View to launch the vsim gui with an elaborated design
 ready for simulation.
 
-![Launch vsim from Sigasi’s Hierarchy View](/img/releasenotes/2.9/vsim_window_a.png "Launch vsim from Sigasi’s Hierarchy View")
+![Launch vsim from Sigasi's Hierarchy View](/img/releasenotes/2.9/vsim_window_a.png "Launch vsim from Sigasi's Hierarchy View")
 
 This makes it really easy to start a quick simulation for an arbitrary
 testbench.
@@ -71,7 +71,7 @@ Other new and noteworthy improvements
 -   You can now use [Eclipse Variables](http://help.eclipse.org/indigo/topic/org.eclipse.platform.doc.user/concepts/concepts-exttools.htm)
     in the external compiler preference field.
     ![Eclipse variables in external compiler path](/img/releasenotes/2.9/variables_in_vcom_path_a.png "Eclipse variables in external compiler path")
--   Always show “Map folder to library with the same name” action, even
+-   Always show "Map folder to library with the same name" action, even
     if that library is already in use.
 -   Improved **formatting of invalid code**.
 
