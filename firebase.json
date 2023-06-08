@@ -24,26 +24,6 @@
         "type": 301
       },
       {
-        "source": "/tech/sigasi-announces-free-educational-licenses",
-        "destination": "https://www.sigasi.com/try-form-edu/",
-        "type": 301
-      },
-      {
-        "source": "/tech/press-release-sigasi-integrates-aldec-simulator-accelerate-feedback-cycle",
-        "destination": "/tags/aldec/",
-        "type": 301
-      },
-      {
-        "source": "/tech/new-eda-20-company-plunify",
-        "destination": "/opinion/new-eda-20-company-plunify/",
-        "type": 301
-      },
-      {
-        "source": "/screencast/sigasi-pro-integration-quartus-ii",
-        "destination": "/screencasts/sigasi_pro_integration_with_altera_quartus_ii/",
-        "type": 301
-      },
-      {
         "source": "/xilinx",
         "destination": "/tags/xilinx/",
         "type": 301
@@ -66,11 +46,6 @@
       {
         "source": "/vhdl-2008",
         "destination": "/tags/vhdl-2008/",
-        "type": 301
-      },
-      {
-        "source": "/training/part2.html",
-        "destination": "/",
         "type": 301
       },
       {
