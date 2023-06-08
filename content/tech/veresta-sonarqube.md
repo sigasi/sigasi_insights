@@ -4,6 +4,7 @@ layout: page
 pager: true
 author: Wim Meeus
 date: 2023-01-23
+lastmod: 2023-06-07
 comments: true
 bannerad: true
 tags:
@@ -96,7 +97,7 @@ use these commands to run code verification:
 
 ```sh
 /path/to/veresta/veresta verify --sonarqube -o sigasi-sonar.json .
-/path/to/sonar/bin/sonar-scanner -Dsonar.projectKey=<my_sonar_project_key> -Dsonar.login=<my_sonar_token> -Dsonar.host.url=<my_sonar_url>
+/path/to/sonar/bin/sonar-scanner -Dsonar.projectKey=<my_sonar_project_key> -Dsonar.token=<my_sonar_token> -Dsonar.host.url=<my_sonar_url>
 ```
 
 The first command runs Veresta verification and puts the findings in
