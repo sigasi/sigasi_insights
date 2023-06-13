@@ -104,10 +104,10 @@ Thank you for all the [bug reports](mailto:support@sigasi.com) and for enabling 
 
 ## Sigasi Studio for Eclipse
 
-You can download the stand-alone version of the latest preview from:
+You can download the stand-alone version of the latest preview.
 
-* <https://download.sigasi.com/sigasi-studio/preview/latest/com.sigasi.hdt.product-linux.gtk.x86_64.zip>
-* <https://download.sigasi.com/sigasi-studio/preview/latest/com.sigasi.hdt.product-win32.win32.x86_64.zip>
+* Linux: <https://download.sigasi.com/sigasi-studio/preview/latest/com.sigasi.hdt.product-linux.gtk.x86_64.zip>
+* Windows: <https://download.sigasi.com/sigasi-studio/preview/latest/com.sigasi.hdt.product-win32.win32.x86_64.zip>
 
 You can also update automatically when setting **Preferences > Install/Update > Available Software Sites > Add...** :
 `https://download.sigasi.com/sigasi-studio/preview/studio/`
@@ -118,7 +118,8 @@ SHA sums ([more info]({{< ref "/faq.md#how-can-i-check-a-sha-sum" >}})) can be c
 
 You can download a `.vsix` file to [manually install](https://code.visualstudio.com/docs/editor/extension-marketplace#_install-from-a-vsix) in VS Code.
 
-* <https://download.sigasi.com/vs-code/preview/latest/sigasi-vscode.vsix>
+* Linux: <https://download.sigasi.com/vs-code/preview/latest/sigasi-vscode-linux.vsix>
+* Windows: <https://download.sigasi.com/vs-code/preview/latest/sigasi-vscode-win32.vsix>
 
 The SHA sum can be downloaded from <https://download.sigasi.com/vs-code/preview/latest/vscode-sha1.txt>.
 
