@@ -10,7 +10,7 @@ a viable (or even preferred) option.
 ASIC synthesis tools however will ignore initialization as in the first example, which may lead to a mismatch between
 synthesis and simulation. In such a case, initialization should be done using resets, as in the second example.
 
-By default, Sigasi Studio flags a warning for register initialization at the point of the declaration. For FPGA projects
+By default, Sigasi Studio warns for register initialization at the point of the declaration. For FPGA projects
 it may be desirable to turn the warning off, whereas for ASIC projects one may want to raise the severity to *error*.
 
 

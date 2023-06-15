@@ -2,7 +2,7 @@
 title: Verilog Class Item Visibility
 ---
 
-In Verilog class methods and class properties can be declared as `local` or `protected` to restrict their access. Sigasi Studio will flag attempted accesses that violate these restrictions as errors.
+In Verilog class methods and class properties can be declared as `local` or `protected` to restrict their access. Sigasi Studio will flag attempted accesses that violate these restrictions as errors (rule 61).
 
 ## Local
 `local` methods and properties can only be accessed from within the class itself.

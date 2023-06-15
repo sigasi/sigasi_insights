@@ -11,7 +11,7 @@ Sigasi Studio flags an error if the prototype and the implementation signatures 
   - different direction
   - mismatched type
 
-If an argument default value is present in an out-of-block method declaration but is missing in the prototype, or default values are not syntactically identical, a warning message is reported (rules 77, 78).
+If an argument default value is present in an out-of-block method declaration but is missing in the prototype, or default values are not syntactically identical, a warning message is reported (rules 90, 91).
 
 Errors are also reported for a missing prototype for out-of-bound definitions and missing or duplicated definitions for an extern method prototype.
 

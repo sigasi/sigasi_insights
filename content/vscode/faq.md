@@ -69,8 +69,6 @@ Be sure to use the default VS Code themes if you're missing this feature.
 
 VS Code supports user-defined code snippets as explained [here](https://code.visualstudio.com/docs/editor/userdefinedsnippets). To add snippets yourself, follow the steps below.
 
-The Sigasi extension currently contains only two snippets: one for `entity` and one for `module`.
-
 * Open the _Command Palette_ (**Ctrl+Shift+P**) and type **Snippets**
 * Select **Snippets: Configure User Snippets**
 * Type **vhdl** or **systemverilog** to open the corresponding _JSON_ file where you can add your snippet like the examples below.
@@ -79,7 +77,7 @@ The Sigasi extension currently contains only two snippets: one for `entity` and 
 
 ``` json
 {
-    // Place your snippets for vhdl here.
+    // Place your snippets for VHDL here.
     "package declaration": {
         "prefix": "package",
         "body": [
@@ -96,7 +94,7 @@ The Sigasi extension currently contains only two snippets: one for `entity` and 
 
 ```json
 {
-    // Place your snippets for systemverilog here.
+    // Place your snippets for Verilog and SystemVerilog here.
     "always posedge clk": {
         "prefix": "always",
         "body": [

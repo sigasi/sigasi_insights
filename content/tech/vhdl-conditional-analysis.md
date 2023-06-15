@@ -185,7 +185,7 @@ For example, you can check if your simulator supports Conditional Analysis and w
 
 # Conditional Analysis and Sigasi Studio
 
-Both Sigasi Studio and [Sigasi's extension for VS Code]({{< ref "/vscode" >}}) support VHDL Conditional Analysis: directives highlighting and formatting, hovers with conditional identifier values, type-time syntax error reporting, conditional warnings and errors, definitions for your own conditional identifiers, as well as configuration of default identifiers to mimic your target simulator or synthesis tool:
+Both Sigasi Studio and [Sigasi's extension for VS Code]({{< ref "/vscode" >}}) support VHDL Conditional Analysis: directives highlighting and formatting, hovers with conditional identifier values, type-time syntax error reporting, conditional warnings, and errors, definitions for your own conditional identifiers, as well as the configuration of default identifiers to mimic your target simulator or synthesis tool:
 
 {{< figure src="/img/tech/Vhdl2019ToolDirectivesDemo.png" link="/img/tech/Vhdl2019ToolDirectivesDemo.png" title="VHDL 2019 Tool Directives in Sigasi Studio">}}
 

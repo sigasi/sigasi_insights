@@ -18,7 +18,7 @@ be a couple of reasons why an empty block is present in your code:
 
 ## File name does not match design unit
 
-It is recommended that the base name of the filename is the same as the name of the design unit (e.g. module) in the file (rule 17). Sigasi Studio flags a warning if that is not the case.
+It is recommended that the base name of the filename is the same as the name of the design unit (e.g. module) in the file (rule 17). Sigasi Studio warns if that is not the case.
 
 E.g. `module my_module` should be in a file named `my_module.v` or `my_module.sv` .
 
@@ -26,11 +26,11 @@ In a file with multiple design units (which is not recommended), this rule is no
 
 ## File contains multiple design unit
 
-It is recommended that a Verilog file contains only one design unit (rule 18). Sigasi Studio flags a warning if that is not the case.
+It is recommended that a Verilog file contains only one design unit (rule 18). Sigasi Studio warns if that is not the case.
 
 ## Verilog code line too long
 
-For legibility, it is recommended to keep lines of code short (rule 20). Sigasi Studio flags a warning if a code line is longer
+For legibility, it is recommended to keep lines of code short (rule 20). Sigasi Studio warns if a code line is longer
 than a certain length. The maximum length is set to 120 characters by default, but this can be changed in the
 [project linting settings](/manual/linting/#project-specific-linting-settings) (`${project_location}/.settings/com.sigasi.hdt.verilog.linting.prefs`). E.g.:
 
@@ -86,17 +86,6 @@ statements (rule 47).
 		
 endmodule</pre>
 
-## Trailing comma is not recommended
-
-Sigasi Studio will flag a warning if a parameter list has a trailing comma (rule 52).
-Most EDA tools will treat a trailing comma as a syntax error.
-
-<pre>module ugly #(WIDTH = 16<span class="warning"> , </span>) (
-    // ...
-
-module nice #<span class="goodcode">(WIDTH = 16)</span> (
-    // ...</pre>
-
 ## Regular expressions compatibility
 
 [Naming conventions](/manual/linting/#naming-conventions) in Sigasi
@@ -107,6 +96,6 @@ regular expression engine.  Sigasi will warn if a naming convention
 rule contains a regular expression that is incompatible with RE2/J
 (rule 58).
 
-{{% lintrule sv 1 17 18 20 21 22 44 52 %}}
+{{% lintrule sv 1 17 18 20 21 22 44 52 58 %}}
 
 <!-- 47 and 58 not configurable in preferences, only in file -->

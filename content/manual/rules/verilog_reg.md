@@ -4,7 +4,7 @@ title: Verilog reg and logic Datatype
 
 In SystemVerilog, the `reg` datatype is deprecated. It is recommended to use the `logic` datatype instead.
 
-Sigasi Studio flags a warning when the `reg` datatype is used in SystemVerilog.
+Sigasi Studio warns when the `reg` datatype is used in SystemVerilog.
 
 A [Quick fix](/manual/linting/#quick-fixes) is available to convert `reg` into `logic`.
 

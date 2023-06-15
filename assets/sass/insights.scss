@@ -1,6 +1,7 @@
 $sg-dark-purple: #262262;
 $sg-orange: #f47920;
 $sg-red: #ed1c24;
+$sg-annotation: #ec6508;
 
 html, body {
     scroll-padding-top: 42px;
@@ -28,6 +29,50 @@ figcaption { text-align: center; }
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.annotated-list li::marker {
+    color: $sg-annotation
+}
+
+.annotated-list li:nth-child(1)::marker {
+    content: '➊ '
+}
+
+.annotated-list li:nth-child(2)::marker {
+    content: '➋ '
+}
+
+.annotated-list li:nth-child(3)::marker {
+    content: '➌ '
+}
+
+.annotated-list li:nth-child(4)::marker {
+    content: '➍ '
+}
+
+.annotated-list li:nth-child(5)::marker {
+    content: '➎ '
+}
+
+.annotated-list li:nth-child(6)::marker {
+    content: '➏ '
+}
+
+.annotated-list li:nth-child(7)::marker {
+    content: '➐ '
+}
+
+.annotated-list li:nth-child(8)::marker {
+    content: '➑ '
+}
+
+.annotated-list li:nth-child(9)::marker {
+    content: '➒ '
+}
+
+.annotated {
+    color: $sg-annotation;
 }
 
 @import "syntax.scss";

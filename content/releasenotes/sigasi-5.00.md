@@ -26,31 +26,13 @@ Sigasi 5 has a vastly improved understanding of the designs in your project. Bas
 
 {{< figure src="/img/releasenotes/5.0/rootcause.png" link="/img/releasenotes/5.0/rootcause.png" title="Focus on root cause of issues" width="450" >}}
 
-<style>
-  #annotated-list li::marker {
-    color: #f37825
-  }
-  #annotated-list li:nth-child(1)::marker {
-    content: '➊ '
-  }
-  #annotated-list li:nth-child(2)::marker {
-    content: '➋ '
-  }
-  #annotated-list li:nth-child(3)::marker {
-    content: '➌ '
-  }
-</style>
-<ol id="annotated-list">
-  <li>
-    The variable <code>veggies</code> is declared with an unknown type. This is the root cause of the problem.
-  </li>
-  <li>
-    The usage of <code>veggies</code> does not report any consequential problems.
-  </li>
-  <li>
-    <code>potatoes</code> is accessed on an unresolved object <code>no</code>. That is reported as the root cause, no consequential error is reported on <code>potatoes</code>.
-  </li>
-</ol>
+<div class="annotated-list">
+
+* The variable `veggies` is declared with an unknown type. This is the root cause of the problem.
+* The usage of `veggies` does not report any consequential problems.
+* `potatoes` is accessed on an unresolved object `no`. That is reported as the root cause, no consequential error is reported on `potatoes`.
+
+</div>
 
 Even the most complex design hierarchies are understood and validated instantaneously. Sigasi 5 analyzes the regular instantiations, the module tree, and bind directives. No matter how complex or deep your design is, the hierarchy information is immediately available at your fingertips. You can follow your hierarchical references, navigate to the referenced instances and structures, and immediately get an accurate understanding of your design. No matter how many top-level units your project contains. Everything is discovered, analyzed, and checked.
 
@@ -94,7 +76,7 @@ Sigasi 5 has sophisticated support for SV `interface`s and `modport`s. Error che
 
 {{< figure src="/img/releasenotes/5.0/interfaces with numbers.png" link="/img/releasenotes/5.0/interfaces with numbers.png" title="Deep analysis of generic interfaces" width="350" >}}
 
-The example illustrates the superb support for interfaces in Sigasi 5. The interface declaration <span style="color:#f37825">➊</span> defines two ports `gnt` and `ack`. The `top` module <span style="color:#f37825">➋</span> uses a generic, untyped interface port. Upon instantiation <span style="color:#f37825">➌</span> of the module, Sigasi 5 understands that `ack` and `gnt` <span style="color:#f37825">➍</span> are accessible on `a` in the module body, but `data` is not. All Sigasi features work accordingly, e.g. navigation, autocomplete, and highlighting.
+The example illustrates the superb support for interfaces in Sigasi 5. The interface declaration <span style="color:#ec6508">➊</span> defines two ports `gnt` and `ack`. The `top` module <span style="color:#ec6508">➋</span> uses a generic, untyped interface port. Upon instantiation <span style="color:#ec6508">➌</span> of the module, Sigasi 5 understands that `ack` and `gnt` <span style="color:#ec6508">➍</span> are accessible on `a` in the module body, but `data` is not. All Sigasi features work accordingly, e.g. navigation, autocomplete, and highlighting.
 
 ### Complex Enum Declarations
 

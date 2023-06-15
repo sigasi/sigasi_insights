@@ -192,7 +192,7 @@ This viewer **automatically updates** while you are editing your code and
 gives a convenient way to visually inspect and navigate your code, even
 when your code is still unfinished or broken.
 
-{{< figure src="/img/manual/block_diagram.png" >}}
+{{< figure src="/img/manual/block_diagram.svg" >}}
 
 You can open the Block Diagram View by right-clicking in the editor and
 selecting **Show In \> Block Diagram**. Alternatively, you can open the

@@ -14,12 +14,18 @@ comments: true
 bannerad: true
 ---
 
+<div class="uk-alert-danger" uk-alert>
+    <a class="uk-alert-close" uk-close></a>
+
+The Graphics Configuration feature has been deprecated since [Sigasi Studio 4.16]({{< ref "/releasenotes/sigasi-4.16.md#deprecated-graphics-configuration" >}}) and will be **removed** in [Sigasi Studio 5.3]({{< ref "/releasenotes/sigasi-5.02.md#updates-and-deprecations" >}}).
+</div>
+
 The BlockDiagram- and StateMachine views are a very useful way to explore and understand HDL designs. But sometimes it just doesn't cut it.
 The diagrams are too complex and crowded to understand a design.
 For this reason, the diagrams also can not always be easily directly used in documentation.
 Today we present a solution for this challenge.
 
-In this blog I will tell you about Sigasi Studio's new Graphics Configuration Language.
+In this blog, I will tell you about Sigasi Studio's new Graphics Configuration Language.
 This is a novel way to easily limit the amount of information in your diagrams and highlight important aspects.
 It improves the auto-generated diagrams and makes them suitable for documentation and design exploration.
 This way your diagrams stay in sync with your code, unlike comments and externally associated diagrams.
@@ -38,11 +44,11 @@ This StateMachine
 Turns into:  
 ![Filtered StateMachine](/img/tech/using-graphics-configuration/FsmFiltered.svg)  
 
-A plain text format was chosen over a buttons and menus for several reasons:
+A plain text format was chosen over buttons and menus for several reasons:
 
 * It can easily be managed with your **version control** system because files can easily be compared and merged.
 * It's easy to debug by yourself, unlike proprietary formats or UIs
-* We can support you using all of our well-known features such as auto-complete, validations, formatting,...
+* We can support you using all of our well-known features such as autocomplete, validations, formatting,...
 * It's lightweight and can be used as the basis for the UI implementation
 
 ## How do I get started
@@ -51,8 +57,8 @@ To get started, choose a design with a BlockDiagram or StateMachine you want to 
 Create a new Graphics Configuration file by going to **File>New>Other>Graphics Configuration>Graphics Configuration File**.
 You can also press the Sigasi button on the top right of the BlockDiagram or StateMachine view.
 
-From there on you can declare groups and configure your diagram, check it in to version control and share it with your colleagues.
-Auto-complete (**Ctrl+Space**) helps you write most of the code while formatting (**Shift+Ctrl+F**) helps you to keep your file clean.
+From there on you can declare groups and configure your diagram, check it into version control, and share it with your colleagues.
+Autocomplete (**Ctrl+Space**) helps you write most of the code while formatting (**Shift+Ctrl+F**) helps you to keep your file clean.
 If you're interested in the language's exact syntax, you can find it [here](/tech/graphics.ebnf).
 
 ## What can I do
@@ -68,7 +74,7 @@ Do note that in the BlockDiagram you can group blocks and wires while in the Sta
 
 Graphics Configuration Editor features:
 
-* Auto-complete (**Ctrl+Space**)
+* Autocomplete (**Ctrl+Space**)
 * Formatting (**Shift+Ctrl+F**)
 * Quick outline (**Ctrl+O**)
 * Show in BlockDiagram/StateMachine (**Alt+Shift+W**)
@@ -84,8 +90,8 @@ To demonstrate the power of the new language we will make use of an existing ope
 You can clone the [repository](git://ohwr.org/hdl-core-lib/vme64x-core.git) and download the Graphics Configuration file [here](/resources/tech/using-graphics-configuration/VME64xCore_Top.blockdiagram).
 
 The diagram we are going to filter down is the one associated with the architecture `RTL` that implements the entity `VME64xCore_Top`.
-We express this on the first line using `diagram work.VME64xCore_Top.RTL`.
-The file is then read from bottom to top. First you define all the groups, then you start configuring the diagram.
+We express this in the first line using `diagram work.VME64xCore_Top.RTL`.
+The file is then read from bottom to top. First, you define all the groups, then you start configuring the diagram.
 
 We start by grouping all of the blocks that end in `nputSample`, and then creating a bunch of busses.
 The syntax for a group is as follows `def Type group ID (Identifiers)` where `Type` is `block` or `wire`.
@@ -98,10 +104,10 @@ The syntax for a configuration block is as follows: `Type Identifiers { Configur
 
 The syntax for a ConfigurationItem is as follows: `hide | collapse | color GraphicsColor`. You can discover which colors are available [here]({{< ref "graphics.ebnf.md#GraphicsColor" >}}) or through autocomplete.
 
-Note that the language can not see everything, it can not see blocks, wires or ports that are within another block.
+Note that the language can not see everything, it can not see blocks, wires, or ports that are within another block.
 
-To color our new group, `sampling`, green and hide it's internals we can write `block sampling { color green collapse }`.
-However we can't type `block WRITEinputSample { color red }`. To access a block within a block, we have to nest configurations as follows:
+To color our new group, `sampling`, green and hide its internals we can write `block sampling { color green collapse }`.
+However, we can't type `block WRITEinputSample { color red }`. To access a block within a block, we have to nest configurations as follows:
 ```
 block sampling {
     color green
@@ -111,19 +117,19 @@ block sampling {
 }
 ```
 
-Configurations are also not cascading (unlike CSS), otherwise coloring our `sampling` block green, would turn all it's internal blocks green as well.
+Configurations are also not cascading (unlike CSS), otherwise coloring our `sampling` block green, would turn all its internal blocks green as well.
 
 You are not able to group ports as we have not found a good use case for it yet (however if you find one let us know!), but grouped ports are created when you group wires into a bus.
 You can also configure lone ports e.g. `port clk_i { hide }`
 
-It is also possible to show only the instantiations blocks, hiding all of the assertions, signal assignments, processes,... .
+It is also possible to show only the instantiations blocks, hiding all of the assertions, signal assignments, processes...
 You do this by adding `show : instantiations` between the header and the group declarations.
 
 ### StateMachine
 
 StateMachines are just like the BlockDiagrams above, except the only `Type` that can be used is `state`.
 The header is also slightly different, the syntax is as follows: `statemachine architecture : ^state_variable`.
-For an example you can check out `step_3_state_machines.vhd` (in our VHDL Tutorial) with [this](/resources/tech/using-graphics-configuration/step_3_state_machines.statemachine) filter file.
+For an example, you can check out `step_3_state_machines.vhd` (in our VHDL Tutorial) with [this](/resources/tech/using-graphics-configuration/step_3_state_machines.statemachine) filter file.
 
 ## Things to remember
 
@@ -131,10 +137,10 @@ For an example you can check out `step_3_state_machines.vhd` (in our VHDL Tutori
 * The syntax dictates a fixed order, first define your groups, then start configuring the diagram
 * The regexes are Java regexes
 * There is no cascading
-* StateMachine's only `Type` is `state` while BlockDiagram's `Type` contains `block, wire` and `port`.
+* StateMachine's only `Type` is `state` while BlockDiagram's `Type` contains `block`, `wire`, and `port`.
 * If you want to match pattern X and Y, use regex pattern `(?=X)Y`
 * If you want to match pattern X or Y, use regex pattern `(X|Y)`
-* If you want to match pattern X case insensitively, use regex pattern `(?i:X)`
+* If you want to match pattern X case-insensitively, use regex pattern `(?i:X)`
 * To point to an identifier in your code, that is a keyword in the GraphicsConfiguration, e.g. state in FSM,
 you can prefix it with a `^`, e.g. `^state`
 

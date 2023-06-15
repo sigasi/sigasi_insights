@@ -92,7 +92,7 @@ variables are variables that are filled in by Sigasi itself when the
 template is expanded. Examples are `${user}` and
 `${date}`. If I would autocomplete a template that contains
 the ${user} variable it would become "heeckhau" in the expanded
-template. Note that you can use **Ctrl+Space** to auto-complete these
+template. Note that you can use **Ctrl+Space** to autocomplete these
 pre-defined variables when you are editing the template.
 
 Useful examples of custom templates are file headers, default library
@@ -101,7 +101,7 @@ and use clauses, `(others=>'0')`, ...
 Conclusion
 ----------
 
-Custom templates can really help you improve you coding speed by
+Custom templates can really help you improve your coding speed by
 assisting you in typing faster, especially for verbose VHDL constructs.
 Templates are really flexible and can be customized to really suit your
 needs.

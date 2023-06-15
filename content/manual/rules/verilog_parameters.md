@@ -6,7 +6,7 @@ Sigasi Studio validates the use of parameters in (System)Verilog.
 
 ## Parameters without a default value
 
-Sigasi Studio flags a warning if a parameter is declared without a default value (rule 19). Syntactically this is allowed since the instantiating modules should provide the value to the instance parameter.
+Sigasi Studio warns if a parameter is declared without a default value (rule 19). Syntactically this is allowed since the instantiating modules should provide the value to the instance parameter.
 However, it is undesirable since it makes the definition dependent on a particular hierarchy and limits code reusability.
 In addition, it is creating elaboration errors when attempting to use such modules as a top-level.
 
@@ -79,6 +79,6 @@ module name(
 endmodule : name
 </pre>
 
-{{% lintrule sv 19 48 53 54 %}}
+{{% lintrule sv 19 48 53 54 69 70 %}}
 
 <!-- 69 and 70 not configurable in preferences, only in file -->

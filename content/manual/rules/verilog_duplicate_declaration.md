@@ -2,7 +2,7 @@
 title: Verilog Duplicate Declaration
 ---
 
-In Verilog, you are not allowed to declare the same identifier multiple times within the same scope. All duplicate declarations will be marked as errors.
+In Verilog and SystemVerilog, you are not allowed to declare the same identifier multiple times within the same scope. All duplicate declarations are marked as errors (rule 95).
 
 <pre>
 module bad_code;

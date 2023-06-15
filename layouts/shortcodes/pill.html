@@ -5,9 +5,9 @@
 {{ $scratch.Set "bgcolor" . }}
 {{ else }}
   {{ if eq $text "VHDL" }}
-  {{ $scratch.Set "bgcolor" "#f47920" }}
+  {{ $scratch.Set "bgcolor" "#ec6508" }}
   {{ else if or (eq $text "Verilog") (eq $text "SystemVerilog") }}
-  {{ $scratch.Set "bgcolor" "#323286" }}
+  {{ $scratch.Set "bgcolor" "#5a2778" }}
   {{ else if strings.Contains $text "Eclipse" }}
   {{ $scratch.Set "bgcolor" "#93245a" }}
   {{ else }}

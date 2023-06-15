@@ -80,7 +80,7 @@ We also improved the order in which classes are added to the [documentation]({{<
 * Fixed problem with `@` symbol on the license preference page
 * Made sure color customization in the [Graphics Configurations]({{< ref "manual/graphics.md" >}}) does not affect labels
 * Fixed overflow issue in state machine headers
-* Fixed user defined auto-complete templates with `Anywhere` context with empty prefix
+* Fixed user-defined autocomplete templates with `Anywhere` context with empty prefix
 * Fixed rare case in which pressing the graphical views' `pin` button wouldn't work
 * **[VHDL]** Fixed **Sort associations** quickfix for long association lists
 * **[VHDL]** Made sure to always show VHDL versions in chronological order where applicable

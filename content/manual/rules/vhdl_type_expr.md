@@ -2,7 +2,7 @@
 title: Types in Expressions
 ---
 
-Sigasi Studio flags an error if a type is used in an expression.
+Sigasi Studio flags an error if a type is used in an expression (rule 209).
 
 <pre>architecture RTL of type_in_expr is
     type t_foo is (one, two);

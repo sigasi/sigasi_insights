@@ -15,12 +15,12 @@ workspaces. This article revisits and updates an earlier [article]({{<
 ref "sharing_preferences" >}}) from 2015. New tools are created, old
 ones get replaced - hello 2021!
 
-A large number of preferences control the behaviour of Sigasi Studio.
+A large number of preferences control the behavior of Sigasi Studio.
 While some of them are entirely up to individual taste (e.g. the IDE
 *theme*), **other preferences should be set the same for all team
 members to ensure smooth teamwork**. For example:
 
-* Auto-complete **templates** as well as **validation / linting**
+* Autocomplete **templates** as well as **validation / linting**
   settings should reflect the **team's coding style**.
 * **Indentation and formatting** options should be the same; if not,
   reformatting a file could add unneeded whitespace changes or cause

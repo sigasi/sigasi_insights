@@ -2,7 +2,7 @@
 title: Linting Rules for Instances
 ---
 
-Sigasi Studio flags an error if the `entity` keyword is omitted in the instantiation of an *entity*.
+Sigasi Studio flags an error if the `entity` keyword is omitted in the instantiation of an *entity* (rule 198).
 
 Note that when instantiating a *component*, the keyword `entity` and the library name are not used.
 

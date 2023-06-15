@@ -120,7 +120,7 @@ endmodule</pre>
 
 ## Missing actuals for formals that have no default value
 
-Sigasi Studio flags a warning for missing port or parameter connections if the ports or parameters don't have a default value (rule 38).
+Sigasi Studio warns about missing port or parameter connections if the ports or parameters don't have a default value (rule 38).
 
 <pre>module sub
  #(LHS, RHS=0)

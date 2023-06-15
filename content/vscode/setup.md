@@ -10,12 +10,12 @@ This page explains how to install and configure the Sigasi Studio extension for 
 
 ### VS Code Version
 
-The extension requires _VS Code_ or _VS Codium_ version `1.71.0` or higher.
+The extension requires _VS Code_ or _VS Codium_ version `1.77.0` or higher.
 
 ### Java Runtime
 
 The path to use the Java Runtime (JRE) can optionally be configured in the [settings](#settings).
-If the setting is empty, the extension will download a **JRE** and extract it in the user's home folder.
+If the setting is empty, the extension will extract the included **JRE** in the user's home folder.
 
 * Linux: `~/.config/Code/User/globalStorage/sigasi.sigasi-vscode`
 * Windows: `%AppData%\Code\User\globalStorage\sigasi.sigasi-vscode`
@@ -25,8 +25,7 @@ If you wish to provide the JRE:
 * The extension requires a Java Runtime
 * The Java runtime must be 64-bit. Make sure to use **JRE 11** or **JRE 17**
 * You can check your Java version with `java -version`
-* Java can be downloaded from several sources, a.o. [Adoptium](https://adoptium.net/releases.html?variant=openjdk11&jvmVariant=hotspot)
-* Choose the _OpenJDK 11 x64 JRE_ for your OS
+* Java can be downloaded from several sources, a.o. [Adoptium](https://adoptium.net/releases.html?variant=openjdk17&jvmVariant=hotspot)
 * Make sure the `java` executable is available in the `PATH` environment variable
 
 ## Installation

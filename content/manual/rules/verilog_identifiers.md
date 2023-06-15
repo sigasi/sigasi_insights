@@ -5,7 +5,7 @@ title: Verilog Identifiers and Data Types
 ## VHDL keywords as module name
 
 The use of VHDL keywords as a (System)Verilog module name is not recommended. In mixed-language projects in particular it
-could lead to unexpected results. Sigasi Studio flags a warning when a VHDL keyword is used as a module name (rule 7).
+could lead to unexpected results. Sigasi Studio warns when a VHDL keyword is used as a module name (rule 7).
 
 <pre>module <span class="info">entity</span>;
 endmodule
@@ -23,7 +23,7 @@ The following naming cases should be avoided in Verilog identifiers:
 The recommendation is mainly based on tool and library compatibility issues.
 This is a typical unofficial convention to reserve those types of names as internal to tools.
 
-Sigasi Studio flags a warning for consecutive underscores (rule 42) and trailing underscores (rule 43) in module and port names.
+Sigasi Studio warns for consecutive underscores (rule 42) and trailing underscores (rule 43) in module and port names.
 
 <pre>module <span class="warning">bad__code</span>(input <span class="warning">clk_</span>);
 endmodule
@@ -52,6 +52,6 @@ typedef union { <span class="goodcode">int a;</span>    } intunion;
 typedef union { <span class="error">string a;</span> } stringunion;
 typedef union { <span class="error">AClass a;</span> } classunion;</pre>
 
-{{% lintrule sv 7 42 43 %}}
+{{% lintrule sv 7 42 43 59 60 %}}
 
 <!-- 59 and 60 not configurable -->

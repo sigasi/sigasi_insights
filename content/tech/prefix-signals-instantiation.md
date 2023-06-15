@@ -15,9 +15,9 @@ tags:
   - SystemVerilog
 ---
 
-When you auto-complete an instantiation using the Sigasi Studio [Content Assist]({{< ref "/manual/editor#auto-complete-and-content-assist" >}}),
-wire or signal names in the port map get a default value which is equal to the port name.
-In many designs this can be a insufficient.
+When you autocomplete an instantiation using the Sigasi Studio [Content Assist]({{< ref "/manual/editor#autocomplete-and-content-assist" >}}),
+wire or signal names in the port map get a default value that is equal to the port name.
+In many designs, this can be insufficient.
 You might need to give the wires/signals in the portmap a prefix so they match the actual wire/signal names in the design.
 
 {{< figure src="/img/tech/prefix-wires-instantiation-verilog.png" link="/img/tech/prefix-wires-instantiation-verilog.png" alt="Find and Replace using regular expressions" title="Find and Replace using regular expressions" width="600" class="uk-align-right" >}}
@@ -25,7 +25,7 @@ You might need to give the wires/signals in the portmap a prefix so they match t
 Updating all wires or signals in a long port map can be a tedious task.
 However, using the *Regular expressions* capability of the
 *[Find/Replace dialog]({{< ref "faq#whole-word-textual-search" >}})*,
-pre-pending the prefix to the wires/signals can be done more efficient.
+pre-pending the prefix to the wires/signals can be done more efficiently.
 
 In the screenshot, the *Find* field contains `\((.*)\)` to select everything between brackets.
 The outer brackets are escaped to match the actual brackets in the port map.

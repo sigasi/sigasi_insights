@@ -1,5 +1,5 @@
 ---
-title: Advanced Sigasi Studio setup
+title: Advanced Sigasi Studio Setup
 showinmenu: true
 weight: 19
 pager: true
@@ -135,7 +135,7 @@ control. The minimal example will, in addition, configure the maximum
 heap space for Eclipse, it will enable the Sigasi perspective, and it
 will turn off the Preferences Recorder. The extended example, shown
 above in the Oomph editor, contains further options for linting
-severities, formatting options and an auto-complete template.
+severities, formatting options and an autocomplete template.
 
 Note the three groups of settings:
 

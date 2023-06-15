@@ -2,10 +2,10 @@
 title: Verilog Processes
 ---
 
-(System)Verilog `always` constructs without an event control statement at the top cannot be synthesized.
-Additionally, they would activate in random order at the moment 0 at beginning of a simulation.
+Verilog and SystemVerilog `always` constructs without an event control statement at the top cannot be synthesized.
+Additionally, they would activate in random order at the moment 0 at the beginning of a simulation.
 
-Sigasi Studio flags a warning for `always` blocks without an event control statement at the start.
+Sigasi Studio warns about `always` blocks without an event control statement at the start.
 
 A good way to correct this description is to place the timing control statement at the top.
 

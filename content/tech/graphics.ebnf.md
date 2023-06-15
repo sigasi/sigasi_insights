@@ -9,8 +9,16 @@ tags:
   - graphics
   - ebnf
 ---
-<em>This grammar allows you to filter, group and color your BlockDiagrams and StateMachines in Sigasi Studio.</em>  
+
+<div class="uk-alert-danger" uk-alert>
+    <a class="uk-alert-close" uk-close></a>
+
+The Graphics Configuration feature has been deprecated since [Sigasi Studio 4.16]({{< ref "/releasenotes/sigasi-4.16.md#deprecated-graphics-configuration" >}}) and will be **removed** in [Sigasi Studio 5.3]({{< ref "/releasenotes/sigasi-5.02.md#updates-and-deprecations" >}}).
+</div>
+
 ## Grammar
+
+<em>This grammar allows you to filter, group and color your BlockDiagrams and StateMachines in Sigasi Studio.</em>  
   
 <a name="DiagramConfiguration"></a>**DiagramConfiguration**
 :  <a href="#Header">Header</a> <font color="purple"><b>{</b></font>  { <a href="#GraphicsRestriction">GraphicsRestriction</a> }   { <a href="#GraphicsDeclaration">GraphicsDeclaration</a> }   { <a href="#ConfigurationBlock">ConfigurationBlock</a> }  <font color="purple"><b>}</b></font>

@@ -5,15 +5,15 @@ weight: 19
 pager: true
 ---
 
-# Choosing your VHDL and Verilog version
+# Choosing your VHDL and Verilog Version
 
-Sigasi Studio supports VHDL version 1993, 2002, 2008 and [2019]({{< ref "vhdl-2019-support.md" >}}) and Verilog (2005) and SystemVerilog (2012).
-You can select the default VHDL version to use in: **Window > Preferences > Sigasi > VHDL**.
-You can set the default Verilog version in: **Window > Preferences > Sigasi > (System)Verilog**.
+Sigasi Studio supports VHDL versions 1993, 2002, 2008, and [2019]({{< ref "vhdl-2019-support.md" >}}) as well as Verilog (2005) and SystemVerilog (2012).  
+You can select the default VHDL version to use in **Window > Preferences > Sigasi > VHDL**.  
+You can set the default Verilog/SystemVerilog version in **Window > Preferences > Sigasi > Verilog/SystemVerilog**.
 
 Since [Sigasi Studio 3.2](/releasenotes/sigasi-3.02), you can also set the language version
-per project, per folder and per file.
-In the Project Explorer, right click your project, folder or file; select **Properties > VHDL Version**
+per project, folder, and file.
+In the Project Explorer, right-click your project, folder, or file; select **Properties > VHDL Version**
 or **Properties > (System)Verilog Version** and select the version via the dropdown menu.
 
 {{< figure src="/img/manual/project_verilog_version.png" >}}
@@ -31,7 +31,7 @@ We recommend you add this file to version control so you can share it with your 
 * **VHDL libaries:** Any new project that you create will have the Common Libraries (`STD` and `IEEE`) that correspond to your selected VHDL version.
 Your *existing project will **not** be modified*.
 If you want to update the Common Libraries for an existing project, right-click the project and select **Library Mapping > Reset Common Libraries**.
-Since [Sigasi Studio 3.3](/releasenotes/sigasi-3.03), you will get a warning if your Common Libraries do not match the VHDL version of you VHDL file.
+Since [Sigasi Studio 3.3](/releasenotes/sigasi-3.03), you will get a warning if your Common Libraries do not match the VHDL version of your VHDL file.
 You can use the proposed quick fix to resolve the issue.
 * If you want to compile VHDL 87 code, you should select the "1993" option. There are no checks to warn about constructs that were not supported in 1987, but that were introduced in 1993.
 * Sigasi Studio does not send the [Common Libraries](/manual/libraries#common-libraries) to an external compiler. It is expected that these libraries are pre-compiled.
@@ -39,21 +39,22 @@ You can use the proposed quick fix to resolve the issue.
 # Colors and Fonts
 
 You can configure the code coloring by selecting **Window > Preferences > Sigasi > VHDL > Syntax Coloring**.
-For each class of semantic and syntactic elements, you can select the font, letter color, background color, style (bold, italic, underline, strike through).
+For each class of semantic and syntactic elements, you can select the font, letter color, background color and style (bold, italic, underline, strike through).
 
-## Font size
+## Font Size
 
-Sometimes you want extra small fonts, so that you can fit more content on your screen. Another time you
-may want extra large fonts, so that you can use a beamer and your audience can see what you are doing.
+Sometimes you want extra small fonts such that you can fit more content on your screen. Other times you
+may want extra large fonts such that you can use a beamer and your audience can see what you are doing.
 
 Most fonts, including the font that is used by the editors, can be controlled in the preferences:
-**Window > Preferences**. Fonts are controlled in **General > Appearance >Colors and Fonts**. The font of the editors are in **Basic > Text font**.
+**Window > Preferences**. Fonts are controlled in **General > Appearance > Colors and Fonts**. The font of the editors is configured in **Basic > Text font**.
 
-Some fonts cannot be controlled in this preference page. These fonts are defined by general system settings, and are used for writing the menu names, the Project Explorer View and the Outline and Hierarchy Views. On
-Windows, you can change these fonts by changing your font settings in the Windows Control Panel. On Linux, these fonts are controlled by a settings file: `${HOME}/.gtkrc-2.0` . You can change the font by adding
-a line like:
+Some fonts cannot be controlled from this preference page. These fonts are defined by general system settings and are used for displayiing the menu names, the Project Explorer View, and the Outline and Hierarchy Views. On
+Windows, you can change these fonts by changing your font settings in the Windows Control Panel. On Linux, these fonts are controlled by a settings file: `${HOME}/.gtkrc-2.0`. You can change the font by adding a line like:
 
-`gtk-font-name = "Sans 10"`
+```
+gtk-font-name = "Sans 10"
+```
 
 You have to restart Sigasi Studio before these changes take effect.
 
@@ -71,7 +72,7 @@ The others may refer to occurrences for Java or other plug-ins.
 
 # Tabs and Spaces
 
-If you want to use spaces instead of tabs, you can set your indentation preferences in: **Window > Preferences > General > Editors > Text Editors**. Here you can select choose to **Insert Spaces for Tabs** and choose your preferred **Displayed Tab Width**.
+If you want to use spaces instead of tabs, you can set your indentation preferences in **Window > Preferences > General > Editors > Text Editors**. Here you can select choose to **Insert Spaces for Tabs** and choose your preferred **Displayed Tab Width**.
 
 # The "Gutter"
 
@@ -80,11 +81,11 @@ The *Gutter* is the small area to the left of the editor view. It is used for di
 * Line numbers: What line is this?
 * Quick Diff: Did this file change?
 * Folding: hiding pieces of code from view
-* Markers: error markers, warnings and bookmarks.
+* Markers: error markers, warnings, and bookmarks.
 
 There is not much to configure about markers, but the other categories can be turned on or off.
 
-## Line numbers
+## Line Numbers
 
 To enable line numbers, right-click in the gutter and select **Show Line Numbers**.
 
@@ -96,16 +97,16 @@ When you enable Quick Diff, you can see changes in the active editor with the ve
 
 [More info](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-35.htm&cp%3D0_4_1_32)
 
-# Linting rules
+# Linting Rules
 
-You can choose the severity of linting rules in: **Window > Preferences > Sigasi > VHDL > Errors/Warnings**.
+You can choose the severity of linting rules in **Window > Preferences > Sigasi > VHDL > Errors/Warnings**.
 Read more information about [Linting and Quick Fixes](/manual/linting).
 
 # Language
 
-Eclipse is available in several languages, and you can install the language pack of your choice. Read more in this support article : [Installing translations for Eclipse](/tech/installing-translations-eclipse)
+Eclipse is available in several languages, and you can install the language pack of your choice. Read more in this support article: [Installing translations for Eclipse](/tech/installing-translations-eclipse)
 
-# Keyboard shortcuts
+# Keyboard Shortcuts
 
 Sigasi Studio comes with a large number of [Keyboard Shortcuts](/manual/keyshortcuts) preconfigured. You can configure keyboard shortcuts (key bindings) in **Window > Preferences > General > Keys**. You can modify individual keyboard shortcuts or add new key bindings.
 There is also a preconfigured scheme for Emacs-like keyboard shortcuts.
@@ -117,6 +118,6 @@ To export, go to **File > Export… > General > Preferences**, and select **Key 
 
 Formatting options for VHDL are documented in the [VHDL Code Formatting section of the Editor manual]({{< ref "editor#configuration" >}}).
 
-# Finding more options
+# Finding More Options
 
 {{< todo >}}

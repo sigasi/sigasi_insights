@@ -114,6 +114,8 @@ You can set the `VUNIT` variable to the path of your VUnit installation:
 You can use `-P` or `--path` multiple times to specify the value of
 multiple PATH variables.
 
+Note that Veresta does not support resource filters in the `.project` file.
+
 ## Output Options
 
 ### Output formats

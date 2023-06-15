@@ -30,7 +30,7 @@ endmodule</pre>
 
 ## Function prototype has implicit return type
 
-SystemVerilog function prototypes (`pure virtual` functions) should have a return type. Sigasi Studio flags a warning for function prototypes without return type (rule 10).
+SystemVerilog function prototypes (`pure virtual` functions) should have a return type. Sigasi Studio warns for function prototypes without return type (rule 10).
 
 <pre>virtual class badclass;
     <span class="warning">pure virtual function myfunc</span>(input bit[31:0] data);           // return type missing
@@ -42,6 +42,6 @@ endclass
 </pre>
 
 
-{{% lintrule sv 10 %}}
+{{% lintrule sv 10 41 %}}
 
 <!-- 41 not configurable in preferences, only in file -->

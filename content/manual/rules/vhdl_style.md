@@ -20,7 +20,7 @@ signal <span class="info">\foo bar\</span> : std_logic  -- identifier with space
 
 ## VHDL code line too long
 
-For legibility, it is recommended to keep lines of code short (rule 97). Sigasi Studio flags a warning if a code line is longer
+For legibility, it is recommended to keep lines of code short (rule 97). Sigasi Studio warns if a code line is longer
 than a certain length. The maximum length is set to 120 characters by default, but this can be changed in the
 [project linting settings](/manual/linting/#project-specific-linting-settings) (`${project_location}/.settings/com.sigasi.hdt.vhdl.linting.prefs`). E.g.:
 

@@ -7,7 +7,8 @@ pager: true
 
 <div class="uk-alert-danger" uk-alert>
     <a class="uk-alert-close" uk-close></a>
-    This feature has been <b>deprecated</b> since <a href={{< ref "/releasenotes/sigasi-4.16.md#deprecated-graphics-configuration" >}}>Sigasi Studio 4.16</a>. A new and improved solution will be introduced soon.
+
+The Graphics Configuration feature has been deprecated since [Sigasi Studio 4.16]({{< ref "/releasenotes/sigasi-4.16.md#deprecated-graphics-configuration" >}}) and will be **removed** in [Sigasi Studio 5.3]({{< ref "/releasenotes/sigasi-5.02.md#updates-and-deprecations" >}}).
 </div>
 
 {{< xprt_only >}}
@@ -17,7 +18,7 @@ The diagrams can be too complex and crowded to understand a design. For this rea
 
 # The Language
 
-The Graphics Configuration Language is a plain text file containing declarations and configurations, which when interpreted, result in **grouping**, **filtering** and **coloring** in the diagram.
+The Graphics Configuration Language is a plain text file containing declarations and configurations, which when interpreted, result in **grouping**, **filtering**, and **coloring** in the diagram.
 You can see it in action in the images below:
 
 This BlockDiagram  
@@ -30,11 +31,11 @@ This StateMachine
 Turns into:  
 {{< figure src="/img/manual/FsmFiltered.png" link="/img/manual/FsmFiltered.png" alt="Filtered StateMachine" width="250" >}}  
 
-A plain text format was chosen over a buttons and menus for several reasons:
+A plain text format was chosen over buttons and menus for several reasons:
 
 * It can easily be managed with your **version control** system because files can easily be compared and merged.
 * It's easy to debug by yourself, unlike proprietary formats or UIs.
-* We can support you using all of our well-known features such as auto-complete, validations, formatting,...
+* We can support you using all of our well-known features such as autocomplete, validations, formatting,...
 * It's lightweight and can be used as the basis for the UI implementation.
 
 # Getting started
@@ -44,8 +45,8 @@ To get started, choose a design with a BlockDiagram or StateMachine you want to 
 Create a new Graphics Configuration file by going to **File > New > Other > Graphics Configuration > Graphics Configuration File**.
 You can also press the Sigasi button on the top right of the BlockDiagram or StateMachine view.
 
-From there, you can declare groups and configure your diagram, check it in to version control and share it with your colleagues.
-Auto-complete (**Ctrl+Space**) helps you write most of the code while formatting (**Shift+Ctrl+F**) helps you to keep your file clean.
+From there, you can declare groups and configure your diagram, check it into version control, and share it with your colleagues.
+Autocomplete (**Ctrl+Space**) helps you write most of the code while formatting (**Shift+Ctrl+F**) helps you to keep your file clean.
 If you're interested in the language's exact syntax, you can find it [here](/tech/graphics.ebnf).
 
 # Features
@@ -63,7 +64,7 @@ Note that in the BlockDiagram you can group blocks and wires while in the StateM
 
 Graphics Configuration Editor features:
 
-* Auto-complete (**Ctrl+Space**)
+* Autocomplete (**Ctrl+Space**)
 * Formatting (**Shift+Ctrl+F**)
 * Quick outline (**Ctrl+O**)
 * Show in BlockDiagram/StateMachine (**Alt+Shift+W**)
@@ -73,10 +74,10 @@ Graphics Configuration Editor features:
 
 ## Graphics Configuration for BlockDiagrams
 
-You can express which diagram you want to filter in the first line of the file by writing `diagram fullyQualifiedName`. The fully qualified name in VHDL is always `library.entity.architecture`. In SystemVerilog this is `work.module`.  
+You can express which diagram you want to filter in the first line of the file by writing `diagram fullyQualifiedName`. The fully qualified name in VHDL is always `library.entity.architecture`. In SystemVerilog, this is `work.module`.  
 E.g. if you want to filter the diagram for the architecture `RTL` implementing the entity `ent` in the `work` library, you use the following line as the first line: `diagram work.VME64xCore_Top.RTL`.
 
-The file is read from bottom to top. You start with the above definition of the diagram, then within that you can hide reassignments, create groups and finally, create configurations for ports, blocks and edges.
+The file is read from bottom to top. You start with the above definition of the diagram, then within that, you can hide reassignments, create groups and finally, create configurations for ports, blocks, and edges.
 
 ### Hiding reassignments
 
@@ -100,7 +101,7 @@ By using `reassignments hide` you can draw through the assignment blocks making 
 After hiding the reassignments you can define groups of edges or blocks.
 The syntax for a group is as follows:  
 `def Type group ID (Identifiers)`  
-Where `Type` is `block` or `wire`, `ID` is the new name of the group and `Identifiers` is a comma separated list of existing `ID`s (Graphics Configuration, VHDL or SystemVerilog) or a regex.
+Where `Type` is `block` or `wire`, `ID` is the new name of the group and `Identifiers` is a comma-separated list of existing `ID`s (Graphics Configuration, VHDL or SystemVerilog) or a regex.
 
 The syntax for a regex is `regex"regex_pattern"`. This uses [Java regexes](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/Pattern.html), you can also find a cheat sheet [here](http://files.zeroturnaround.com/pdf/zt_regular-expressions-cheat-sheet.pdf).
 You can also check what the regex matches by hovering over the query.
@@ -122,7 +123,7 @@ Ports can be grouped by grouping the wires attached to the ports into a bus.
 
 The syntax for a configuration block is as follows:  
 `Type Identifiers { ConfigurationItem* }`  
-Where `Type` is `block, wire` or `port`.
+Where `Type` is `block`, `wire`, or `port`.
 
 The syntax for a `ConfigurationItem` is as follows:  
 `hide | collapse | color GraphicsColor | reassignments hide`  
@@ -135,7 +136,7 @@ E.g. we can color a block, called `middle`, green and hide its internals:
 Configurations are not cascading (unlike CSS).
 Coloring the `middle` block green does not turn all its internal blocks green as well.
 
-Note that the language can not see everything: it can not see blocks, wires or ports that are within another block.  
+Note that the language can not see everything: it can not see blocks, wires, or ports that are within another block.  
 E.g. we can't type `block block3 { color red }` as `block3` is part of the block `middle`.
 To access a block within a block, we have to nest configurations.
 
@@ -161,7 +162,7 @@ StateMachines are configured in the same way as the above BlockDiagrams, except 
 The header is also slightly different, the syntax is as follows:  
 `statemachine architecture : state_variable`.
 
-For an example you can check out `step_3_state_machines.vhd` (in our VHDL Tutorial) with [this](/resources/tech/using-graphics-configuration/step_3_state_machines.statemachine) filter file.
+For an example, you can check out `step_3_state_machines.vhd` (in our VHDL Tutorial) with [this](/resources/tech/using-graphics-configuration/step_3_state_machines.statemachine) filter file.
 
 {{< figure src="/img/manual/statemachine_configured.png" alt="Example of a state machine diagram configuration" link="/img/manual/statemachine_configured.png" >}}
 

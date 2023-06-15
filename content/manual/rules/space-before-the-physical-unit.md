@@ -13,6 +13,6 @@ Mentor Graphics' ModelSim and QuestaSim accept the former (illegal)
 version. As a result, some VHDL designers got used to writing the
 incorrect version, producing code that is not portable to other
 simulators. Sigasi Studio accepts the ModelSim-style physical literals
-but warns about this.
+but warns about this (rule 47).
 
 <!-- Not configurable in UI, but configurable in file -->

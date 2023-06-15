@@ -80,7 +80,7 @@ endmodule
 
 ## Overwritten type key in assignment pattern
 
-Sigasi Studio flags a warning for duplicate type member keys in assignment patterns (rule 30). This is not an error according to the language reference manual,
+Sigasi Studio warns about duplicate type member keys in assignment patterns (rule 30). This is not an error according to the language reference manual,
 but the last used type key overwrites previously matched members, making the code confusing and hard to maintain.
 
 <pre>module uglycode;

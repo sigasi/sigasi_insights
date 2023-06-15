@@ -6,39 +6,6 @@ comments: true
 pager: true
 ---
 
-<style>
-  #annotated-list li::marker {
-    color: #f37825
-  }
-  #annotated-list li:nth-child(1)::marker {
-    content: '➊ '
-  }
-  #annotated-list li:nth-child(2)::marker {
-    content: '➋ '
-  }
-  #annotated-list li:nth-child(3)::marker {
-    content: '➌ '
-  }
-  #annotated-list li:nth-child(4)::marker {
-    content: '➍ '
-  }
-  #annotated-list li:nth-child(5)::marker {
-    content: '➎ '
-  }
-  #annotated-list li:nth-child(6)::marker {
-    content: '➏ '
-  }
-  #annotated-list li:nth-child(7)::marker {
-    content: '➐ '
-  }
-  #annotated-list li:nth-child(8)::marker {
-    content: '➑ '
-  }
-  #annotated-list li:nth-child(9)::marker {
-    content: '➒ '
-  }
-</style>
-
 {{< figure src="/img/releasenotes/5.1/NewLintingRules.png" link="/img/releasenotes/5.1/NewLintingRules.png" title="A host of new linting rules" class="uk-align-center" width=550 >}}
 
 The Sigasi Studio 5.1 release focuses on **productivity** and **verification** for Verilog and SystemVerilog. Building on the new foundations laid in the {{< page "releasenotes/sigasi-5.00.md" >}} release, we added a **type checker**, many **new linting rules**, improved our **performance and memory usage**, and further refined our **information-rich hovers and views**. These improvements increase the designer's efficiency and liberate them from many intricacies of Verilog and SystemVerilog.
@@ -73,30 +40,24 @@ Even though these two `union`s and `struct`s have the same signature, they impli
 
 `string` variables and literals behave differently.
 
-<ol id="annotated-list">
-  <li>
-    <code>null</code> cannot be assigned to <code>string</code> variables.  
-  </li>
-  <li>
-    String variables cannot be assigned to <code>int</code> variables because they are dynamically sized ordered collections of characters that are not assignment compatible to <code>int</code>.
-  </li>
-  <li>
-    However, string literals can be used to initialize <code>int</code>s as they are treated as <code>unsigned integer</code> constants.
-  </li>
-</ol>
+<div class="annotated-list">
+
+* `null` cannot be assigned to `string` variables.  
+* String variables cannot be assigned to `int` variables because they are dynamically sized ordered collections of characters that are not assignment compatible to `int`.
+* However, string literals can be used to initialize `int`s as they are treated as `unsigned integer` constants.
+
+</div>
 
 ### Syntax Confusion and Implicit Casting
 
 {{< figure src="/img/releasenotes/5.1/TypeCheckerAssignmentVsCast.png" link="/img/releasenotes/5.1/TypeCheckerAssignmentVsCast.png" title="Assignments can easily be confused with concatenation" class="uk-align-center" width=550 >}}
 
-<ol id="annotated-list">
-  <li>
-    The concatenation and assignment pattern syntax confusingly resemble each other a lot. 
-  </li>
-  <li>
-    It is not always clear what assignments will be implicitly cast. <code>enum</code>s are implicitly cast to </code>int</code>s, but not the other way around.
-  </li>
-</ol>
+<div class="annotated-list">
+
+* The concatenation and assignment pattern syntax confusingly resemble each other a lot. 
+* It is not always clear what assignments will be implicitly cast. `enum`s are implicitly cast to `int`s, but not the other way around.
+
+</div>
 
 ### Classes
 
@@ -122,7 +83,7 @@ Small oversights, ambiguity, and keeping track of a language's many rules and re
 
 Inaccuracies in the project setup can result in multiple declarations with the same name. Sigasi flags references to these names as ambiguous.
 
-[Learn more <span uk-icon="forward"></span>]({{< ref "manual/rules/verilog_ambiguous_reference.md" >}})
+{{< learn_more "/manual/rules/verilog_ambiguous_reference" >}}
 
 ### Duplicate Declaration
 
@@ -132,7 +93,7 @@ Inaccuracies in the project setup can result in multiple declarations with the s
 
 Similarly, multiple declarations with the same name within the same file - or scope - will be flagged as duplicates.
 
-[Learn more <span uk-icon="forward"></span>]({{< ref "manual/rules/verilog_duplicate_declaration.md" >}})
+{{< learn_more "/manual/rules/verilog_duplicate_declaration" >}}
 
 ### Localparam Override
 
@@ -142,16 +103,14 @@ Similarly, multiple declarations with the same name within the same file - or sc
 
 Verilog and SystemVerilog forbid `localparam`s from being overridden. This is a simple enough restriction, but you also have to be aware of `parameter`s that are implicit `localparam`s.
 
-<ol id="annotated-list">
-  <li>
-    <code>HEIGHT</code> is defined as a parameter but it implicitly is a </code>localparam</code>.  
-  </li>
-  <li>
-    Overriding <code>HEIGHT</code> is not allowed as it is actually a <code>localparam</code>.
-  </li>
-</ol>
+<div class="annotated-list">
 
-[Learn more <span uk-icon="forward"></span>]({{< ref "manual/rules/verilog_parameters.md#local-parameter-cannot-be-overwritten" >}})
+* `HEIGHT` is defined as a parameter but it implicitly is a `localparam`.  
+* Overriding `HEIGHT` is not allowed as it is actually a `localparam`.
+
+</div>
+
+{{< learn_more "/manual/rules/verilog_parameters#local-parameter-cannot-be-overwritten" >}}
 
 ### Overridden Method Signature Mismatch
 
@@ -161,7 +120,7 @@ Verilog and SystemVerilog forbid `localparam`s from being overridden. This is a 
 
 In SystemVerilog, the types, names, qualifiers, and directions of the arguments of `virtual` method overrides must match their prototype. There are even more checks on the return type and the assigned default values of arguments.
 
-[Learn more <span uk-icon="forward"></span>]({{< ref "manual/rules/verilog_overridden_method_signature_mismatch.md" >}})
+{{< learn_more "/manual/rules/verilog_overridden_method_signature_mismatch" >}}
 
 ### Extern Subroutine Signature Mismatch
 
@@ -171,7 +130,7 @@ In SystemVerilog, the types, names, qualifiers, and directions of the arguments 
 
 Similarly, method declarations must match their prototypes exactly ... though there are some exceptions for default arguments.
 
-[Learn more <span uk-icon="forward"></span>]({{< ref "manual/rules/verilog_out_of_bound_method_declarations.md" >}})
+{{< learn_more "/manual/rules/verilog_out_of_bound_method_declarations" >}}
 
 ### Class Member Visibility
 
@@ -182,7 +141,7 @@ Similarly, method declarations must match their prototypes exactly ... though th
 When working with classes, it can be hard to keep track of what properties, methods, classes ... you have access to.
 Sigasi flags illegal accesses such that you can easily correct the access modifier.
 
-[Learn more <span uk-icon="forward"></span>]({{< ref "manual/rules/verilog_class_item_visibility.md" >}})
+{{< learn_more "/manual/rules/verilog_class_item_visibility" >}}
 
 ### Empty Loops and Conditionals
 
@@ -192,7 +151,7 @@ Sigasi flags illegal accesses such that you can easily correct the access modifi
 
 Empty loop bodies are most likely unintended. They consume compute cycles without any useful contribution to the functionality of your design. Empty conditional branches can cause unwanted latches to be generated. They can also result from a typo or indicate some missing cases.
 
-[Learn more <span uk-icon="forward"></span>]({{< ref "manual/rules/verilog_style.md#empty-loops-and-conditional-branches" >}})
+{{< learn_more "/manual/rules/verilog_style#empty-loops-and-conditional-branches" >}}
 
 # Improved Performance and Reduced Memory Usage
 
@@ -309,7 +268,7 @@ Thank you for all the [bug reports](mailto:support@sigasi.com) and for enabling 
 
 * Sigasi Studio standalone is supported on:
   * Windows: Windows 10 or Windows 11 64-bit
-  * Linux: RedHat Enterprise Linux RHEL 7.9 64-bit or newer, including RHEL 8
+  * Linux: RedHat Enterprise Linux RHEL 7.9 64-bit or newer, including RHEL 8 and 9
     * Sigasi Studio depends on `libXss.so` which can be obtained by installing `libXScrnSaver`
   * More information on supported Linux OSes can be found [on the Eclipse website](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_19.xml#target_environments)
 * Sigasi Studio as a plugin in your Eclipse installation:
