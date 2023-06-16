@@ -1,0 +1,24 @@
+{{ if .Params.online }}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadRecaptchaCallback" async defer></script>
+<script src="/js/scripts.js"></script>
+{{ end }}
+{{ if .Params.redirect }}
+<meta http-equiv="Refresh" content="0; url='{{ .Params.redirect }}'" />
+{{ end }}
+<!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.sigasi.com/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '2']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+  
