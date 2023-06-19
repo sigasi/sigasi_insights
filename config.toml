@@ -26,6 +26,9 @@ pygmentsUseClasses = "true"
   description         = "Design. Verify. Keep Moving."
   googleTagManagerID  = "GTM-NBF8HKQ"
 
+  MatomoURL = "analytics.sigasi.com"
+  MatomoID  = "2"
+
 [taxonomies]
   tag = "tags"
 
