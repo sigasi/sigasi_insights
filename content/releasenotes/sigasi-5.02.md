@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 5.2
 date: 2023-06-15
-lastmod: 2023-06-15
+lastmod: 2023-06-20
 comments: true
 pager: true
 ---
@@ -26,9 +26,9 @@ Situations <span class="annotated">➋</span>-<span class="annotated">➐</span>
 
 # New Verilog and SystemVerilog Linting Rules
 
-Like all languages, Verilog and SystemVerilog contain some areas that are more error-prone or harder to reason about than others. For this release, we worked on a few of these: compliance with language reference manuals (LRM), data flow flaws, copy-and-paste slip-ups, and confusion in design hierarchy.
+Like all languages, Verilog and SystemVerilog contain some areas that are more error-prone or harder to reason about than others. For this release, we worked on a few of these: compliance with language specifications, unused declarations, copy-and-paste slip-ups, and confusion in design hierarchy.
 
-## Data Flow Flaw Detection
+## Unused Declarations
 
 Even with helpful features like [Occurrence Highlighting]({{< ref "/manual/editor.md#occurrence-highlighting" >}}), [Semantic Highlighting]({{< ref "/manual/editor.md#code-highlighting-syntax-coloring" >}}), and [Find References]({{< ref "/manual/editor.md#find-references" >}}), interruptions in the data flow can be hard to spot. Sometimes, we rename something manually, other times, we remove a declaration, and occasionally we might make a typo. In all of these cases, we can end up with unused (macro) declarations or references to declarations that no longer exist. For the latter, Verilog and SystemVerilog try to be helpful by creating an _implicit net_. However, this is seldom what the designer intended.
 
@@ -42,9 +42,9 @@ Even with helpful features like [Occurrence Highlighting]({{< ref "/manual/edito
 
 </div>
 
-## Compliance with Language Reference Manuals
+## Compliance with Language Specification
 
-The Verilog and SystemVerilog LRMs allow and forbid certain constructs. Some of the allowed constructs have dubious value. Sigasi helps write correct and unambiguous code, avoiding pitfalls and corner cases along the way.
+The Verilog and SystemVerilog specification allow and forbid certain constructs. Some of the allowed constructs have dubious value. Sigasi helps write correct and unambiguous code, avoiding pitfalls and corner cases along the way.
 
 ### Multi-bit initial values for UDPs
 
