@@ -1,7 +1,7 @@
 {{ $severity := .Get 0 }}
 {{ $hasquickfix := .Get 1 }}
 {{ if ($hasquickfix) }}
-<img src="/img/icons/{{ $severity }}_lightbulb.png" alt="{{ $severity }} with lightbulb" title="{{ $severity }} with quick fix" />
+<img style="max-width: none;" src="/img/icons/{{ $severity }}_lightbulb.png" alt="{{ $severity }} with lightbulb" title="{{ $severity }} with quick fix" />
 {{ else }}
-<img src="/img/icons/{{ $severity }}.png" alt="{{ $severity }}" title="{{ $severity }}" />
+<img style="max-width: none;" src="/img/icons/{{ $severity }}.png" alt="{{ $severity }}" title="{{ $severity }}" />
 {{ end }}

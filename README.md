@@ -5,7 +5,7 @@ You can find the rendered version at <https://insights.sigasi.com>
 
 ## Building locally
 
-To work locally with this project, you'll have to follow the steps below:
+To work locally on this project, you'll have to follow the steps below:
 
 1. Fork, clone or download this project
 1. Make sure to initialize the git submodules: `git submodule update --init --recursive`
@@ -16,7 +16,7 @@ To work locally with this project, you'll have to follow the steps below:
 
 ## Hugo
 
-We are using markdown with [Hugo].
+We are using markdown with [Hugo]. Note that comments in content pages are _not_ stripped.
 
 * Install: [Hugo]
 * Build `hugo`
