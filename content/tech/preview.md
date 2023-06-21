@@ -5,6 +5,7 @@ date: 2023-06-15
 lastmod: 2023-06-15
 comments: true
 pager: true
+excludefromlatest: true
 ---
 
 For those users who want to get early access to the features and bugfixes of upcoming Sigasi Studio releases, we have set up an extra release channel, called `Sigasi Preview`.

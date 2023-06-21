@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+{{- partial "head.html" . -}}
+
+<body>
+    <div id="content">
+        <div class="uk-container">
+            <div class="uk-flex-center" data-uk-grid>
+                {{ $excluded := where site.RegularPages "Params.excludefromlatest" true }}
+                {{ range ( where .Site.RegularPages.ByLastmod "Section" "tech" | complement $excluded | last 3).Reverse }}
+                <div class="uk-card uk-card-default uk-width-1-3@m uk-card-small uk-card-body uk-card-hover">
+                    <a class="uk-link-toggle" target="_blank" href="{{ .Permalink }}">
+                        <div class="uk-card-media-top">
+                            <h3 class="uk-card-title">{{.Title}}</h3>
+                        </div>
+                        <p>{{ .Summary }}</p>
+                        <p class="uk-text-small">{{.Lastmod.Format "2006-01-02"}}</p>
+                        {{ $taxo := "tags" }}
+                        {{ range .Param $taxo }}
+                        {{ $name := . }}
+                        {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+                        <a class="uk-button uk-button-default uk-button-small uk-border-rouded" target="_blank" href="{{ .Permalink }}">{{ $name }}</a>
+                        {{ end }}
+                        {{ end }}
+                    </a>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    <script src="/js/uikit.min.js"></script>
+    <script src="/js/uikit-icons.min.js"></script>
+</body>
+
+</html>
