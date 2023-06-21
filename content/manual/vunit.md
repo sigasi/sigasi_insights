@@ -80,6 +80,50 @@ In **Window > Preferences > Sigasi > Toolchains > VUnit** you can add different 
 
 {{< figure src="/img/manual/vunit_preferences.png" alt="VUnit preferences dialog" link="/img/manual/vunit_preferences.png" >}}
 
+# Configuring the simulator
+
+VUnit makes use of an external simulator to run tests. ActiveHDL,
+RivieraPRO, GHDL, and ModelSim/QuestaSim are all supported. By
+default, VUnit will try to find one of these simulators on your system
+and will use the first one found.
+
+If you want to use a particular simulator, you can set the
+`VUNIT_SIMULATOR` environment variable to one of `activehdl`,
+`rivierapro`, `ghdl`, or `modelsim` to specify which simulator to
+use. In Linux, set the environment variable prior to starting Sigasi
+Studio, either in your shell initialization scripts (e.g. `.bashrc` or
+`.bash_profile` for bash shell), or set the variable on the fly in
+your terminal window. In Windows, open the dialog **Edit environment
+variables for your account** to set `VUNIT_SIMULATOR`.
+
+You may also need to set the `PATH` of the simulator to use. For this
+purpose, configure the appropriate environment variable for your
+simulator with the correct path: `VUNIT_ACTIVEHDL_PATH`,
+`VUNIT_RIVIERAPRO_PATH`, `VUNIT_GHDL_PATH`, or `VUNIT_MODELSIM_PATH`. For example:
+
+```
+export VUNIT_RIVIERAPRO_PATH=/eda/Aldec/Riviera-PRO-2022.04-x64/bin
+```
+
+Finally, it is also possible to configure the simulator in `run.py`,
+as shown below.
+
+```python
+# Some code omitted
+
+# Select simulator before calling VUnit.from_argv !
+os.environ["VUNIT_SIMULATOR"] = "rivierapro"
+# Optionally set the PATH
+#os.environ["VUNIT_RIVIERAPRO_PATH"] = "/path/to/simulator/bin"
+
+vu = VUnit.from_argv()
+
+# More code omitted
+```
+
+For more information on simulator selection, check out the [VUnit
+website](https://vunit.github.io/cli.html#simulator-selection).
+
 # Run VUnit Tests
 
 There are multiple ways to run VUnit tests in Sigasi Studio:
