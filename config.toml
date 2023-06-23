@@ -96,6 +96,12 @@ pygmentsUseClasses = "true"
 
   [[menu.main]]
     parent = "trybuy"
+    identifier = "online"
+    name = "Try Sigasi Online"
+    url = "https://www.sigasi.com/online/"
+    weight = 5
+  [[menu.main]]
+    parent = "trybuy"
     identifier = "download"
     name = "Download"
     url = "https://www.sigasi.com/download/"
