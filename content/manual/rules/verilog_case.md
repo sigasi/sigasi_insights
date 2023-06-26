@@ -1,5 +1,6 @@
 ---
 title: Verilog Case Statements
+linting: verilog
 ---
 
 Sigasi Studio has a number of checks on Verilog case statements.

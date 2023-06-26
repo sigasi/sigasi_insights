@@ -1,5 +1,6 @@
 ---
 title: Verilog reg and logic Datatype
+linting: verilog
 ---
 
 In SystemVerilog, the `reg` datatype is deprecated. It is recommended to use the `logic` datatype instead.

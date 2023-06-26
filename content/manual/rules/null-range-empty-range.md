@@ -1,5 +1,6 @@
 ---
 title: Null or Empty Range
+linting: vhdl
 ---
 
 In VHDL, you can use ranges with `to` and `downto`. But, if you use the

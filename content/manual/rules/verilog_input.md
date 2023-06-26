@@ -1,5 +1,6 @@
 ---
 title: Verilog Inputs
+linting: verilog
 ---
 
 Although the `input` direction is taken by default, it is preferable to explicitly specify the direction to improve readability and make the code self-documenting.

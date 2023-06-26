@@ -1,5 +1,6 @@
 ---
 title: Verilog Ambiguous Reference
+linting: verilog
 ---
 
 In Verilog, it is possible to reference identifiers from different files. However, if multiple files are declaring the same identifier there is no way to know which one should be used. Such cases will be marked as ambiguous references (rule 93).

@@ -1,5 +1,6 @@
 ---
 title: Linting Rules for Arrays
+linting: vhdl
 ---
 
 Sigasi Studio can check for a number of array / vector index-related problems:

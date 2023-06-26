@@ -1,5 +1,6 @@
 ---
 title: Verilog Coding Style
+linting: verilog
 ---
 
 Sigasi Studio has a number of checks on Verilog and SystemVerilog coding style.

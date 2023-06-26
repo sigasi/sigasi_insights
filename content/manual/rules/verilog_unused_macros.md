@@ -1,5 +1,6 @@
 ---
 title: Verilog Unused Macros
+linting: verilog
 ---
 
 Sigasi Studio warns about unused macros. Unused macros are

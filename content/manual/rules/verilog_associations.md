@@ -1,5 +1,6 @@
 ---
 title: Verilog Port and Parameter Associations
+linting: verilog
 ---
 
 Sigasi Studio has several checks on Verilog port and parameter associations.

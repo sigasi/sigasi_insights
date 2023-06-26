@@ -1,5 +1,6 @@
 ---
 title: Positional Association in Instantiations
+linting: vhdl
 ---
 
 Most VHDL designers prefer named associations in port and generic maps in instantiations. This makes it a lot easier to spot wrong connections.

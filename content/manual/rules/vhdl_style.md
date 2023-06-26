@@ -1,5 +1,6 @@
 ---
 title: VHDL Coding Style Rules
+linting: vhdl
 ---
 
 Sigasi Studio has a number of checks on VHDL coding style.

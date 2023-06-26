@@ -1,5 +1,6 @@
 ---
 title: Verilog Functions
+linting: verilog
 ---
 
 ## Non-blocking assignments are not allowed in functions

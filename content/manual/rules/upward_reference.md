@@ -1,5 +1,6 @@
 ---
 title: Verilog Upward Reference
+linting: vhdl
 ---
 
 When talking about hierarchy, references can be divided into three groups:

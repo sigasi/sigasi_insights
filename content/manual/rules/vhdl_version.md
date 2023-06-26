@@ -1,5 +1,6 @@
 ---
 title: VHDL Language Version
+linting: vhdl
 ---
 
 Sigasi Studio flags an error if a mismatch exists between the selected

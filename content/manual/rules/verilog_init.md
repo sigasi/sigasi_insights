@@ -1,5 +1,6 @@
 ---
 title: Verilog Checks on Initialization
+linting: verilog
 ---
 
 Initializing registers at the point of declaration may be tricky. If your (System)Verilog code is not going

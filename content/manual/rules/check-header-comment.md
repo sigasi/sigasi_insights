@@ -1,5 +1,6 @@
 ---
 title: Check Header Comment
+linting: vhdl
 ---
 
 

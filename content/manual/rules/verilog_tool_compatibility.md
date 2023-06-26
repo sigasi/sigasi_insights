@@ -1,5 +1,6 @@
 ---
 title: Tool Compatibility Rules
+linting: verilog
 ---
 
 Different EDA tools have extended the Verilog and SystemVerilog

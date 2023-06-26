@@ -1,5 +1,6 @@
 ---
 title: Verilog Parameters
+linting: verilog
 ---
 
 Sigasi Studio validates the use of parameters in (System)Verilog.

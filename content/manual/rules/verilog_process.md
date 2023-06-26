@@ -1,5 +1,6 @@
 ---
 title: Verilog Processes
+linting: verilog
 ---
 
 Verilog and SystemVerilog `always` constructs without an event control statement at the top cannot be synthesized.

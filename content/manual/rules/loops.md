@@ -1,5 +1,6 @@
 ---
 title: Linting Rules for Loops
+linting: vhdl
 ---
 
 Sigasi Studio can check for a number of loop-related problems:

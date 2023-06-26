@@ -1,5 +1,6 @@
 ---
 title: Types in Expressions
+linting: vhdl
 ---
 
 Sigasi Studio flags an error if a type is used in an expression (rule 209).

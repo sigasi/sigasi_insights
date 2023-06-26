@@ -1,5 +1,6 @@
 ---
 title: Incomplete Port Maps and Generic Maps
+linting: vhdl
 ---
 
 Sigasi Studio warns about port maps and generic maps that are incomplete:  

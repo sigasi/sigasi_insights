@@ -1,5 +1,6 @@
 ---
 title: Verilog Keywords in VHDL
+linting: vhdl
 ---
 
 When choosing **entity and port names in VHDL**, it is recommended **not to use (System)Verilog keywords**.

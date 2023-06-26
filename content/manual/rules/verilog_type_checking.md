@@ -1,5 +1,6 @@
 ---
 title: Verilog Type Checking
+linting: verilog
 ---
 
 ## Expression Type Requirements in Different Contexts

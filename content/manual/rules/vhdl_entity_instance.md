@@ -1,5 +1,6 @@
 ---
 title: Linting Rules for Instances
+linting: vhdl
 ---
 
 Sigasi Studio flags an error if the `entity` keyword is omitted in the instantiation of an *entity* (rule 198).

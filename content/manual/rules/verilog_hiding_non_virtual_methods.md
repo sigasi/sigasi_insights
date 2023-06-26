@@ -1,5 +1,6 @@
 ---
 title: Verilog Hiding Non-virtual Methods
+linting: verilog
 ---
 
 For a class method to override a method, the corresponding method in the superclass must be `virtual`. If the method in the superclass is not `virtual`, it will be hidden instead. Hiding methods instead of overriding them is often unintentional and may indicate a missing `virtual` keyword (rule 132).

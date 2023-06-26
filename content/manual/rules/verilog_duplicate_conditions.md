@@ -1,5 +1,6 @@
 ---
 title: Verilog Duplicate Conditions
+linting: verilog
 ---
 
 Duplicate conditions decrease readability and could lead to unused code. Duplicate conditions are often an unintended result of copy-pasting. Sigasi marks these duplicates as warnings (rule 98).

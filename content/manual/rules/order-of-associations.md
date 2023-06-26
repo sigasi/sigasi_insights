@@ -1,5 +1,6 @@
 ---
 title: Order of Associations
+linting: vhdl
 ---
 
 Sigasi Studio gives a warning when the **order** of generics or ports in a `map` differs from the original generics or ports declaration order.

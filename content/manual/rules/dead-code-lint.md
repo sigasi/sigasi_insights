@@ -1,5 +1,6 @@
 ---
 title: Dead Code Linting Rule
+linting: vhdl
 ---
 
 Dead code is code that does not have any effect on your simulation or

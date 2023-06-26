@@ -1,5 +1,6 @@
 ---
 title: Testing Equality of Booleans to true or false
+linting: vhdl
 ---
 
 When using booleans, it is unnecessary to test whether they're equal to `true` (rule 185) or `false` (rule 186). Simply testing the boolean results in cleaner code.

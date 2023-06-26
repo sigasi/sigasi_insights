@@ -1,5 +1,6 @@
 ---
 title: Verilog Empty Concatenation
+linting: verilog
 ---
 
 A SystemVerilog queue or dynamic array can be initialized by using an empty queue concatenation. Though other constructs, such as structs and associative arrays, cannot be initialized this way.

@@ -1,5 +1,6 @@
 ---
 title: Redundant "others"
+linting: vhdl
 ---
 
 If a case statement contains all the possible choices (usually in an

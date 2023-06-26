@@ -1,5 +1,6 @@
 ---
 title: Verilog Duplicate Declaration
+linting: verilog
 ---
 
 In Verilog and SystemVerilog, you are not allowed to declare the same identifier multiple times within the same scope. All duplicate declarations are marked as errors (rule 95).

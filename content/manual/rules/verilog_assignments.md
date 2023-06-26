@@ -1,5 +1,6 @@
 ---
 title: Verilog Assignment Patterns
+linting: verilog
 ---
 
 Sigasi Studio has several checks on Verilog assignment patterns.

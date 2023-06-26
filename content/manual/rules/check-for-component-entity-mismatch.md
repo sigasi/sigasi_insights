@@ -1,5 +1,6 @@
 ---
 title: Check for Component/Entity Mismatch
+linting: vhdl
 ---
 
 

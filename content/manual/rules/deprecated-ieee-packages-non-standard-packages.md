@@ -1,5 +1,6 @@
 ---
 title: Deprecated IEEE Packages and Non-Standard Packages
+linting: vhdl
 ---
 
 Some packages are widely spread but were never standardized by IEEE.

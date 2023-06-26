@@ -1,5 +1,6 @@
 ---
 title: Space Before the Physical Unit
+linting: vhdl
 ---
 
 If you type a numeric literal with a physical unit, there should be a

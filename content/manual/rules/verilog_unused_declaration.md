@@ -1,5 +1,6 @@
 ---
 title: Verilog Unused Declaration
+linting: verilog
 ---
 
 A declaration that is never used does not contribute anything to a design and can be an indication of a coding error. Unused declarations will be marked as warnings.

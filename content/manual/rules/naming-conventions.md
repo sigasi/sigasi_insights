@@ -1,5 +1,8 @@
 ---
 title: Naming Conventions
+linting:
+  - vhdl
+  - verilog
 ---
 
 On the [**Naming Conventions**](/manual/linting/#naming-conventions) preference page (**Window \>

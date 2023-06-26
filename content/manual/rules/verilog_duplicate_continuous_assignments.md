@@ -1,5 +1,6 @@
 ---
 title: Verilog Duplicate Continuous Assignments
+linting: verilog
 ---
 
 Sigasi Studio warns if a signal is assigned a value in

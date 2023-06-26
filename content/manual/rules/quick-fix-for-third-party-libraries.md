@@ -1,5 +1,6 @@
 ---
 title: Quick Fix for Third-Party Libraries
+linting: vhdl
 ---
 
 If you are using vendor libraries from Intel or AMD/Xilinx (ISE or Vivado),

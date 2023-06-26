@@ -1,5 +1,6 @@
 ---
 title: Superfluous Library Clause
+linting: vhdl
 ---
 
 The VHDL language reference manual states that:

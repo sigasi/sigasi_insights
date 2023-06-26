@@ -1,5 +1,6 @@
 ---
 title: Verilog Incorrect Port Declaration
+linting: verilog
 ---
 
 In Verilog, there are two ways to declare a port list:

@@ -1,5 +1,6 @@
 ---
 title: Verilog Implicit Net
+linting: verilog
 ---
 
 When a previously undeclared name is used in a port connection, a continuous assignment, or an alias, it will be implicitly declared as a scalar net of the default nettype. Such implicit declarations often arise from coding errors, such as a typo in the name or an attempt to reference something that is not available in the current scope. For this reason, all implicit net declarations will be marked as warnings.

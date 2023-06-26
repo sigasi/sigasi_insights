@@ -1,5 +1,6 @@
 ---
 title: Verilog Identifiers and Data Types
+linting: verilog
 ---
 
 ## VHDL keywords as module name

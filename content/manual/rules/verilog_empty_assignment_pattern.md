@@ -1,5 +1,6 @@
 ---
 title: Verilog Empty Assignment Pattern
+linting: verilog
 ---
 
 A SystemVerilog queue or dynamic array can be initialized by using an empty assignment pattern. Though other constructs, such as structs and associative arrays, cannot be initialized this way.

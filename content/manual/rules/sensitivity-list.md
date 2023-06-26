@@ -1,5 +1,6 @@
 ---
 title: Sensitivity List
+linting: vhdl
 ---
 
 VHDL requires a **sensitivity list** for each process or `wait` statements in the process body.

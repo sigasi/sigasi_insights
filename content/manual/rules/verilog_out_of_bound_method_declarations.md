@@ -1,5 +1,6 @@
 ---
 title: Verilog Out-of-bound Method Declarations
+linting: verilog
 ---
 
 An out-of-block method declaration signature should match its prototype declaration's signature.

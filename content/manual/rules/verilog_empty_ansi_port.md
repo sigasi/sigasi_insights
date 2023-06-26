@@ -1,5 +1,6 @@
 ---
 title: Verilog Empty Port in ANSI Port List
+linting: verilog
 ---
 
 When using the ANSI style, it is not legal to declare empty ports in the port list. Such empty ports will be flagged as errors by Sigasi (rule 141).

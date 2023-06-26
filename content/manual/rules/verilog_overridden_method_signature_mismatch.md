@@ -1,5 +1,6 @@
 ---
 title: Verilog Overridden Method Signatures
+linting: verilog
 ---
 
 A virtual method signature should match the overridden method signature in the superclass.
