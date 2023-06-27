@@ -122,7 +122,7 @@ Some rules are not meant to be public, but documenting them is nice.
 | Exclusive    | Avoid assigning a vector of constant width to a signal                                                                 | 217 |
 | Shared       | Check case of non-keywords                                                                                             | 224 |
 
-### Deprecated Thales code rules
+### Deprecated Thales Linting Rules
 | Description                                                                       | Reason                     | ID  |
 | --------------------------------------------------------------------------------- | -------------------------- | --: |
 | Find unsynchronized use of top level input ports                                  | No longer needed by Thales |  78 |
@@ -131,7 +131,7 @@ Some rules are not meant to be public, but documenting them is nice.
 | Naming convention violation busses                                                | No longer needed by Thales | 116 |
 | If-Then-Alignment                                                                 | No longer needed by Thales | 166 |
 
-### Deprecated ZAT code rules
+### Deprecated ZAT Linting Rules
 | Description                                | Reason           | ID  |
 | ------------------------------------------ | ---------------- | --: |
 | Instantiation validation: assign all ports | Superseded by 94 | 154 |

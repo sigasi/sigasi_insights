@@ -5,7 +5,7 @@ weight: 9
 pager: true
 ---
 
-In addition to syntax validation, Sigasi Studio also checks your code for
+In addition to syntax validation, Sigasi also checks your code for
 semantic problems (**Linting**, or **Linter checks**). Some of these
 problems can be automatically resolved with **Quick Fixes**. Both syntax
 checking and linting happen at type-time: new markers appear *as you are
@@ -15,25 +15,25 @@ typing* your code.
 
 VHDL code **Lint** is defined as **code that is strictly correct** according
 to the language definition, but still **suspicious or problematic**.
-Sigasi Studio has a built-in linter, which provides info about code lint
+Sigasi has a built-in linter, which provides info about code lint
 in the design.
 
-In addition to code linting, Sigasi Studio can also check that file
+In addition to code linting, Sigasi can also check that file
 headers and symbol names (entities, signals, variables...) follow
 certain patterns.  This is discussed under [naming conventions](#naming-conventions).
 
 ## Marker Icons
 
-* ![](/img/icons/info_lightbulb.png) marks an info message that can be resolved automatically with a Quick Fix.
-* ![](/img/icons/info.png) marks an info message.
-* ![](/img/icons/warning_lightbulb.png) marks a warning that can be resolved automatically with a Quick Fix.
-* ![](/img/icons/warning.png) marks a warning that cannot be resolved automatically.
-* ![](/img/icons/error_lightbulb.png) marks an error that can be resolved automatically with a Quick Fix.
-* ![](/img/icons/error.png) marks an error that cannot be resolved automatically.
+* ![Info icon with lightbulb](/img/icons/info_lightbulb.png) marks an info message that can be resolved automatically with a Quick Fix.
+* ![Info icon](/img/icons/info.png) marks an info message.
+* ![Warning icon with lightbulb](/img/icons/warning_lightbulb.png) marks a warning that can be resolved automatically with a Quick Fix.
+* ![Warning icon](/img/icons/warning.png) marks a warning that cannot be resolved automatically.
+* ![Error icon with lightbulb](/img/icons/error_lightbulb.png) marks an error that can be resolved automatically with a Quick Fix.
+* ![Error icon](/img/icons/error.png) marks an error that cannot be resolved automatically.
 
 ## Configuring the Severity Level
 
-The Sigasi Studio VHDL linter has reasonable defaults for the severity level of
+The Sigasi VHDL linter has reasonable defaults for the severity level of
 reported lint problems. However, the severity level of certain classes
 of linting rules is configurable for additional flexibility. The configuration
 interface to configure severities for the entire workspace is available through:
@@ -41,7 +41,7 @@ interface to configure severities for the entire workspace is available through:
 * For (System)Verilog rules: **Window > Preferences > Sigasi > (System)Verilog > Errors/Warnings**
 * For VHDL rules: **Window > Preferences > Sigasi > VHDL > Errors/Warnings**
 
-{{< figure src="/img/manual/problemseveritypreferencepage.png" alt="Configuring the severity of Sigasi Studio linting checks" link="/img/manual/problemseveritypreferencepage.png" >}}
+{{< figure src="/img/manual/problemseveritypreferencepage.png" alt="Configuring the severity of Sigasi linting checks" link="/img/manual/problemseveritypreferencepage.png" >}}
 
 You can also [configure the severity level per project](#project-specific-linting-settings).
 
@@ -50,7 +50,8 @@ You can also [configure the severity level per project](#project-specific-lintin
 Specific warnings can be suppressed in your code by adding a `@suppress` comment (`-- @suppress` for VHDL, `// @suppress` for SystemVerilog), on the same line as the warning.
 
 You can limit the suppression to a specific warning by putting a prefix of the warning message between quotes after `@suppress`. Sigasi also recommends adding a reason why the warning was suppressed by adding an extra comment after `@suppress`:
-```
+
+```text
 <line with warning> // @suppress "Warning message prefix" Reason why warning is suppressed
 ```
 
@@ -64,7 +65,7 @@ Linting is skipped for all files in the Common Libraries folder.
 
 ## Naming conventions
 
-Sigasi Studio can check whether all sorts of names in the design -
+Sigasi can check whether all sorts of names in the design -
 entities, instances, modules, signals, variables... - follow
 particular patterns.  This may help designers to follow their
 company's or team's coding rules. For example, coding rules may
@@ -73,7 +74,7 @@ names must be written in capitals, or that variable names must use
 CamelCase. Empty rules (which is the default) means that the
 particular rule is not checked.
 
-In addition, Sigasi Studio can also check for file header comments,
+In addition, Sigasi can also check for file header comments,
 e.g. whether a copyright notice or disclaimer have been included.
 
 **Workspace wide naming conventions settings** are accessed via  
@@ -96,15 +97,15 @@ file or folder. Documentation on how to do that is
 # Quick Fixes
 
 Some of the VHDL lint problems can be automatically resolved with *Quick Fixes*.
-These problems have *markers* annotated with a lightbulb icon (like ![](/img/icons/warning\_lightbulb.png)).
+These problems have *markers* annotated with a lightbulb icon (like ![Warning icon with lightbulb](/img/icons/warning\_lightbulb.png)).
 To trigger a Quick Fix, click the problem marker or press **Ctrl+1** and select the Quick Fix.
 
-# Language specific code rules
+# Language specific Linting Rules
 
 The currently available linting rules are described in detail on the following pages.
 
-* [List of code rules for Verilog and SystemVerilog]({{< ref "linting-verilog" >}})
-* [List of code rules for VHDL]({{< ref "linting-vhdl" >}})
+* [List of Linting Rules for Verilog and SystemVerilog]({{< ref "linting-verilog" >}})
+* [List of Linting Rules for VHDL]({{< ref "linting-vhdl" >}})
 
 # Project specific Linting settings
 
@@ -126,7 +127,7 @@ On the top of the dialog, select *Enable project specific settings* to activate 
 Enabling this setting will override any settings specified at the workspace level.
 For each of the available ID's, you can choose from a drop-down list or you can set all severities at once using the drop-down list on top.
 
-Note that choosing the *default* setting does _not_ inherit from the workspace settings.
+Note that choosing the *default* setting does *not* inherit from the workspace settings.
 It will apply the Sigasi built-in default for a linting rule.
 
 Project settings are stored in this settings file:
@@ -152,8 +153,8 @@ Where `${validation id}` can be
 * the number of the validation ID (e.g. 140)
 * `all` to specify all validation ids in one rule
 
-Validation ID numbers are listed in the [list of VHDL code rules]({{< ref "/manual/linting-vhdl.md" >}}),
-the [list of (System)Verilog code rules]({{< ref "/manual/linting-verilog.md" >}})
+Validation ID numbers are listed in the [list of VHDL Linting Rules]({{< ref "/manual/linting-vhdl.md" >}}),
+the [list of (System)Verilog Linting Rules]({{< ref "/manual/linting-verilog.md" >}})
 and can also be found in the **Project Properties** under **VHDL Errors/Warnings**.
 
 Where `${path}` can be:
@@ -181,6 +182,7 @@ Examples:
 ```
 
 ## Naming Conventions per project
+
 While [Naming Conventions and the Header Comment check can be configured
 globally for a workspace]({{< ref "#naming-conventions" >}}), they can also be defined per project, per folder or per file.
 
@@ -194,11 +196,13 @@ Other project specific naming convention and/or file header check
 settings can be configured in the configuration files.
 
 The project-specific Naming Conventions and Header Comment are stored in this settings file for VHDL related settings:
+
 ```text
     ${project location}/.settings/com.sigasi.hdt.vhdl.linting.prefs
 ```
 
 For (System)Verilog related settings, this settings file is used:
+
 ```text
     ${project location}/.settings/com.sigasi.hdt.verilog.linting.prefs
 ```
@@ -214,6 +218,7 @@ All lines that configure Naming Conventions should start with *92* and are of th
 ```
 
 Valid `${identifier}` values are:
+
 ```text
     architecture_name
     configuration_name
@@ -254,7 +259,7 @@ Lines that configure the Header Comment should start with *188* and are of this 
 
 The meaning of `${path}` and `${convention}` is equal to the definitions for Naming Conventions.
 
-### Examples:
+### Examples
 
 ```text
     92/severity/<project>=INFO

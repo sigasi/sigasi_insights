@@ -5,14 +5,14 @@ weight: 11
 pager: true
 ---
 
-# List of VHDL code rules
+# List of VHDL Linting Rules
 
-The table below lists the VHDL code rules that can be checked automatically by Sigasi Studio.
-The availability of code rules depends on the license requirements.
+The table below lists the VHDL linting rules that can be checked automatically by Sigasi.
+The availability of linting rules depends on the license requirements.
 
-## ST code rules
+## ST Linting Rules
 
-ST code rules are available for all licenses including {{< starter >}}.
+ST linting rules are available for all licenses including {{< starter >}}.
 
 <!-- prettier-ignore -->
 |                          | Description                                                                |       ID |
@@ -89,9 +89,9 @@ ST code rules are available for all licenses including {{< starter >}}.
 | {{< severity error 0 >}} | Loop variables cannot be assigned                                          |      227 |
 | {{< severity error 0 >}} | Declaration not found                                                      |      229 |
 
-## XL code rules
+## XL Linting Rules
 
-XL code rules require a {{< xl >}} or {{< xprt >}} license.
+XL linting rules require a {{< xl >}} or {{< xprt >}} license.
 
 <!-- prettier-ignore -->
 |                            | Description                                                                                                                    |  ID |
@@ -157,10 +157,9 @@ XL code rules require a {{< xl >}} or {{< xprt >}} license.
 | {{< severity warning 0 >}} | Type validation                                                                                                                | 226 |
 | {{< severity info 0 >}}    | [Extended identifier contains whitespace and can therefore not be used in Verilog and may cause problems in mixed projects]({{< ref "vhdl_style#extended-identifier-contains-whitespace" >}}) | 228 |
 
+## Deprecated Linting Rules
 
-## Deprecated code rules
-
-Deprecated code rules were used by Sigasi Studio at some point, but they've been removed or superseded in the most recent version.
+Deprecated linting rules were used by Sigasi at some point, but they've been removed or superseded in the most recent version.
 
 <!-- prettier-ignore -->
 | Description                                                |                    Reason | ID  |

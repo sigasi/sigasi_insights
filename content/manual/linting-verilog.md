@@ -6,14 +6,14 @@ pager: true
 ---
 
 <!-- prettier-ignore -->
-# List of Verilog and SystemVerilog code rules
+# List of Verilog and SystemVerilog Linting Rules
 
-The table below lists the Verilog and SystemVerilog code rules that can be checked automatically by Sigasi Studio.
-The availability of code rules depends on the license requirements.
+The table below lists the Verilog and SystemVerilog linting rules that can be checked automatically by Sigasi.
+The availability of linting rules depends on the license requirements.
 
-## ST code rules
+## ST Linting Rules
 
-ST code rules are available for all licenses including {{< starter >}}.
+ST linting rules are available for all licenses including {{< starter >}}.
 
 <!-- prettier-ignore -->
 |                          | Description                                                                                                                                                    |       ID |
@@ -78,9 +78,9 @@ ST code rules are available for all licenses including {{< starter >}}.
 | {{< severity error 0 >}} | [Incorect port declaration]({{< ref "rules/verilog_incorrect_port_declaration" >}})                                                                            |  135-139 |
 | {{< severity error 0 >}} | [Empty port in ANSI port list]({{< ref "rules/verilog_empty_ansi_port" >}})                                                                                    |      141 |
 
-## XL code rules
+## XL Linting Rules
 
-XL code rules require a {{< xl >}} or {{< xprt >}} license.
+XL linting rules require a {{< xl >}} or {{< xprt >}} license.
 
 <!-- prettier-ignore -->
 |                            | Description                                                                                                                                                              |  ID |
@@ -137,9 +137,9 @@ XL code rules require a {{< xl >}} or {{< xprt >}} license.
 | {{< severity warning 0 >}} | [Duplicate port]({{< ref "rules/verilog_duplicate_port" >}})                                                                                                             | 140 |
 | {{< severity warning 0 >}} | [Empty port]({{< ref "rules/verilog_empty_non_ansi_port" >}})                                                                                                            | 142 |
 
-## Deprecated code rules
+## Deprecated Linting Rules
 
-Deprecated code rules were used by Sigasi Studio at some point, but they've been removed or superseded in the most recent version.
+Deprecated linting rules were used by Sigasi at some point, but they've been removed or superseded in the most recent version.
 
 <!-- prettier-ignore -->
 | Description                                                                   | Reason                                                                                                          |  ID |
