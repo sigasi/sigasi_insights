@@ -280,7 +280,7 @@ and you need **about 1GB** of free disk space.
 
 # Sigasi Studio 5.1.1 Point Release
 
-On March 30, we released Sigasi Studio 5.1.1
+On March 30, we released Sigasi Studio 5.1.1.
 This release contains the following bug fixes:
 
 * {{< pill text="Eclipse" >}} Fixed an issue with Talkback where the version was not being sent
@@ -288,7 +288,7 @@ This release contains the following bug fixes:
 
 # Sigasi Studio 5.1.2 Point Release
 
-On May 10, we released Sigasi Studio 5.1.2
+On May 10, we released Sigasi Studio 5.1.2.
 This release contains the following changes and bug fixes:
 
 * {{< pill text="Verilog" >}} Allow `modport`s to be applied on module instantiation actuals that are arrays of interfaces
@@ -296,7 +296,7 @@ This release contains the following changes and bug fixes:
 
 # Sigasi Studio 5.1.3 Point Release
 
-On May 22, we released Sigasi Studio 5.1.3
+On May 22, we released Sigasi Studio 5.1.3.
 This release contains the following changes and bug fixes:
 
 * Missing build after changing the library of a file or folder

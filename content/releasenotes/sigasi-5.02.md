@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 5.2
 date: 2023-06-15
-lastmod: 2023-06-20
+lastmod: 2023-06-30
 comments: true
 pager: true
 ---
@@ -277,6 +277,16 @@ Unary reduction operators perform a bitwise operation to produce a single-bit re
 - {{< pill text="Verilog" >}} Fixed false positive [Consider using named port connections]({{< ref "manual/rules/verilog_associations.md#named-parameter-and-port-connections-have-to-be-used-for-all-instances-with-many-parameters--ports" >}}) warning when named connections cannot be used
 
 Thank you for all the [bug reports](mailto:support@sigasi.com) and for enabling [Talkback]({{< ref "manual/talkback.md" >}}). All your reports have helped us fix many issues that would otherwise have gone unnoticed.
+
+# Sigasi Studio 5.2.1 Point Release
+
+On June 30, we released Sigasi Studio 5.2.1.
+This release contains the following changes and bug fixes:
+
+* Fixed empty outline after startup
+* {{< pill text="Eclipse" >}} Corrected paths in compile order [CSV Export]({{< ref "manual/tools.md#export" >}})
+* {{< pill text="Eclipse" >}} `Right-click > Show In` is available for Graphical Views
+* {{< pill text="Verilog" >}} Fixed startup slowdown when using the cache
 
 # System Requirements
 
