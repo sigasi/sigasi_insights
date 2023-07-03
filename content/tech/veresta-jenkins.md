@@ -64,13 +64,14 @@ plugin.
 
 For our demonstration of how to use Veresta in Jenkins, we have used
 an almost-out-of-the-box Jenkins setup.  We're using [Rocky Linux
-8](https://rockylinux.org/) as an OS, and we've used [this
-procedure](https://www.how2shout.com/linux/how-to-install-jenkins-on-almalinux-8-or-rocky/)
-to install Jenkins on it. During the initial Jenkins setup, we
-installed the recommended plugins, and we've kept the default Jenkins
-executors on the main Jenkins node. In addition to that, we've
-installed the [warnings-ng](https://plugins.jenkins.io/warnings-ng/)
-plugin to present Veresta's results in Jenkins.
+8](https://rockylinux.org/) as an OS. You can use [this
+procedure](https://www.atlantic.net/dedicated-server-hosting/how-to-install-jenkins-on-rocky-linux-8/),
+starting from step 2, to install Jenkins on it. During the initial
+Jenkins setup, we installed the recommended plugins, and we've kept
+the default Jenkins executors on the main Jenkins node. In addition to
+that, we've installed the
+[warnings-ng](https://plugins.jenkins.io/warnings-ng/) plugin to
+present Veresta's results in Jenkins.
 
 ## Jenkins freestyle project
 
