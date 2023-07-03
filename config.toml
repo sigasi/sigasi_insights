@@ -24,7 +24,6 @@ pygmentsUseClasses = "true"
 
 [params]
   description         = "Design. Verify. Keep Moving."
-  googleTagManagerID  = "GTM-NBF8HKQ"
 
   MatomoURL = "analytics.sigasi.com"
   MatomoID  = "2"
