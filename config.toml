@@ -28,7 +28,7 @@ pygmentsUseClasses = "true"
   MatomoURL = "analytics.sigasi.com"
   MatomoID  = "2"
 
-  images = ['/img/logo_positive_900x900']
+  images = ['/img/logo_positive_900x900.jpg']
 
 [social]
   twitter = 'Sigasi'
