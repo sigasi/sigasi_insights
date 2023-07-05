@@ -23,10 +23,15 @@ pygmentsUseClasses = "true"
     name = "Sigasi"
 
 [params]
-  description         = "Design. Verify. Keep Moving."
+  description         = "Design. Verify. Keep Moving. Edit your VHDL, Verilog, and SystemVerilog code using the Sigasi Studio IDE"
 
   MatomoURL = "analytics.sigasi.com"
   MatomoID  = "2"
+
+  images = ['/img/logo_positive_900x900']
+
+[social]
+  twitter = 'Sigasi'
 
 [taxonomies]
   tag = "tags"
