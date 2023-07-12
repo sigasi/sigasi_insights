@@ -58,6 +58,28 @@ You can limit the suppression to a specific warning by putting a prefix of the w
 Since [Sigasi Studio 4.2](/releasenotes/sigasi-4.02) the `@suppress` comment also suppresses Errors.
 Since [Sigasi Studio 4.3](/releasenotes/sigasi-4.03) warnings have a quickfix to automatically add the `@suppress` comment with a matching warning message prefix.
 
+## Export Markers
+
+You can export markers for the entire project via the **Export…** menu. This feature is quite useful, if you want to focus on the markers without [generating documentation]({{< ref "/manual/documentation.md" >}}).
+
+First you have to check the box that is located next to the name of your project. You can then select the format of the file (either HTML or CSV) to be generated.
+
+{{< figure src="/img/manual/export_markers_popup.png" link="/img/manual/export_markers_popup.png" alt="Export Markers pop-up window" >}}
+
+### Markers Report
+In the report you can see all the markers in your project. The entries in the report are layed out in six columns:
+
+* **Description**: shows what the marker is about
+* **Location**: shows in which file the problem is marked
+* **Line number**: line number of the marker
+* **Type** of the marker
+* **Severity**: [severity](#configuring-the-severity-level) that is set in the linting preferences
+* **Code**: [linting rule](#language-specific-linting-rules) number for problem type
+
+Note that [suppressed markers](#suppressing-warnings) are also listed in the report (see the last line in the image below).
+
+{{< figure src="/img/manual/export_markers_report.png" link="/img/manual/export_markers_report.png" alt="Export Markers report" >}}
+
 ## No Linting for Common Libraries
 
 Common Libraries are considered to be production ready libraries.
