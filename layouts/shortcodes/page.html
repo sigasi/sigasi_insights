@@ -5,5 +5,5 @@
 <a href="{{ .Permalink }}">{{ .Title }}</a>
 {{- end -}}
 {{- else -}}
-<a href="{{ .Site.BaseURL }}{{ $ref }}">{{ $ref }} not found!</a>
+{{ errorf "%q not found in %q!" $ref .Page }}
 {{- end -}}

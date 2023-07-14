@@ -11,7 +11,7 @@ aliases:
 
 The extension will start once a `.project` file is detected in the root of the open folder.
 
-The project settings and library mappings are now compatible with {{< siste >}}. See the {{< page "/manual/projectsetup.md" >}} manual page for all details.
+The project settings and library mappings are now compatible with {{< siste >}}. See the {{< page "/manual/eclipse/projectsetup.md" >}} manual page for all details.
 
 Note that, resource filters in the `.project` file are not supported by the extension. 
 
