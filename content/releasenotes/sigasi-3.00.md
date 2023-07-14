@@ -20,7 +20,7 @@ We optimized Sigasi Studio **Starter** as much as possible to work with **single
   
 Sigasi Studio **Starter** now only works with **single files**, and *not with projects*. So all features in Sigasi Studio Starter, only take information of the current file into account. So there is no longer a *project size threshold*, which tweaked some features as in Sigasi 2.
 
-Sigasi Studio Starter works without a license key, but requires [Talkback](/manual/talkback) and you need to keep your version up to date.
+Sigasi Studio Starter works without a license key, but requires [Talkback](/manual/common/talkback) and you need to keep your version up to date.
 
 Sigasi Studio **Creator** is the go-to design entry tool and code browser for all your HDL projects, just like Sigasi Pro was. And Sigasi Studio XL is our flagship product, which can be further extended with addons.
 
@@ -34,7 +34,7 @@ If you are using a floating license, you need to update your [Flexnet daemon](#f
 
 ### Updated to Eclipse 4
 
-* The toolbar now contains a global search field **[Quick Access]({{< ref "/manual/keyshortcuts.md#quick-access" >}})**. With Quick Access you can quickly find open editors, available perspectives, views, preferences, wizards, commands, etc. Simply start typing the name of the item you wish to invoke.
+* The toolbar now contains a global search field **[Quick Access]({{< ref "/manual/eclipse/keyshortcuts.md#quick-access" >}})**. With Quick Access you can quickly find open editors, available perspectives, views, preferences, wizards, commands, etc. Simply start typing the name of the item you wish to invoke.
   ![Quick Access](/img/releasenotes/3.00/global-search-bar.png)
 * You can now select a **dark theme** in Sigasi: **Window > Preferences > General > appearance > Theme** 
 * **Lightweight refresh on access** option. When this option is enabled, out-of-sync files will be automatically refreshed when you open an editor.  
@@ -58,7 +58,7 @@ This results in major improvements in how we can offer you (System)Verilog suppo
   ![Verilog Macro syntax error](/img/releasenotes/3.00/macro-errors.png)
 * In Sigasi 3.0 we implemented an convenient way to preview the result of preprocessing the active Verilog file. When you **Hover** a Verilog macro, you will see the **preprocessed** text. At the bottom of the hover you will also see a link to open the **Preprocessor View**.  
   ![Verilog macro hover](/img/releasenotes/3.00/verilog-macro-hover.png)
-* The **Preprocessor (Macro) View** is another way to easily inspect the preprocessed Verilog code. It *automatically synchronizes its position and selection* with the active editor. [documentation](/manual/editor#systemverilog-preprocessing-macros)  
+* The **Preprocessor (Macro) View** is another way to easily inspect the preprocessed Verilog code. It *automatically synchronizes its position and selection* with the active editor. [documentation](/manual/eclipse/editor#systemverilog-preprocessing-macros)  
   ![Preprocessor View](/img/releasenotes/3.00/verilog-preprocessor-view.png)
 * Verilog **include paths** can now be configured. Right click your Verilog project in the project explorere and select **Properties > Verilog Preprocessor**. Here you can enter a `;`-separated list of include paths (relative to the project folder). 
 * Improved hover for `wire` and `reg`  
@@ -68,7 +68,7 @@ This results in major improvements in how we can offer you (System)Verilog suppo
 
 * We also improved our SystemVerilog analyzer. Sigasi now correctly *links* `packages`, `records`, `structs`, `unions` and `enums`. This improves **Open Declaration** and **Find References**.
 * Notes:
-    * You can switch the [Verilog version](/manual/editor#verilog-version) via **Window > Preferences > Sigasi > Verilog > Verilog version**
+    * You can switch the [Verilog version](/manual/eclipse/editor#verilog-version) via **Window > Preferences > Sigasi > Verilog > Verilog version**
     * We do no support *the entire SystemVerilog Syntax* yet. So if you see unexpected syntax error markers, {{< send-email >}}.
   
 ### Sigasi XL Doc improvements
@@ -86,7 +86,7 @@ This results in major improvements in how we can offer you (System)Verilog suppo
 * Added new, minimalistic perspective for **Sigasi Starter**
 * Added [solarized theme](http://ethanschoonover.com/solarized) for the Sigasi editors (Linux and Mac) 
   ![solarized theme Dark and Light](/img/releasenotes/3.00/solarized-mixed.png)
-* Added new option to **Export hierarchy as CSV**: use current toplevel in Hierarchy View as default value ([documentation](/manual/tools#export))
+* Added new option to **Export hierarchy as CSV**: use current toplevel in Hierarchy View as default value ([documentation](/manual/eclipse/tools#export))
 * The Mac OS X version now is a real 'App' contained in one, clean `Sigasi.app`
 * The formatter now offers an option to **ignore keyword casing**
 * We updated the Flexnet client. If you use a floating license, you need to [update the daemon too](#floating-license-updates).
@@ -133,7 +133,7 @@ Note that we replaced the **VHDL perspective** in Sigasi 2.31 with a new **Sigas
 
 ### Floating license updates
 
-Because the FlexNet license framework was updated in Sigasi Studio, the Flexnet license **daemon** needs to be updated too. You can find the download details in "[License Server Setup](/manual/license-key#license-server-setup)".
+Because the FlexNet license framework was updated in Sigasi Studio, the Flexnet license **daemon** needs to be updated too. You can find the download details in "[License Server Setup]({{< ref "/manual/common/license-server#license-server-setup" >}})".
 
 Users with a **node-locked license** do not have to perform extra actions. 
  

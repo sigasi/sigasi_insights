@@ -2,6 +2,9 @@
 title: FAQ
 activemenu: faq
 pager: true
+menu:
+  insightsmenu:
+    weight: 30
 ---
 
 # Install and Run
@@ -67,7 +70,7 @@ The license server (FlexNet) is supported on
 * Red Hat Enterprise Linux 5.2 (32-bit and 64-bit) or newer
 * Windows 7 (32-bit and 64-bit) or newer
 
-The instructions to set up the license server can be found [here]({{< ref "manual/license-key.md#license-server-setup" >}}).
+The instructions to set up the license server can be found [here]({{< ref "manual/common/license-server.md#license-server-setup" >}}).
 
 ## I am using Red Hat Enterprise Linux 7. How can I run Sigasi Studio?
 
@@ -163,13 +166,9 @@ Optionally, the workspace(s) can be removed from where they were created.
 Yes, you have several options.
 
 ### Local hosting
+
 You can host the Sigasi Studio documentation locally in your environment.
 Follow the steps from {{< page "tech/local_hosting" >}}.
-
-### PDF
-We have created a single-page version of the [Manual pages]({{< ref "manual" >}}).
-This page is ideal for saving or printing to a PDF.
-Visit and save or print the page {{< page "singlepagemanual" >}}.
 
 # Licensing
 
@@ -260,7 +259,7 @@ If you still need to insert tabs in Block Selection Mode, you should **copy** a 
 
 ## How to use Sigasi efficiently on multiple monitors/screens/desktops?
 
-Sigasi/Eclipse supports full [multiscreen support](/manual/editor#multiple-screen-support).
+Sigasi/Eclipse supports full [multiscreen support]({{< ref "/manual/eclipse/editor.md#multiple-screen-support" >}}).
 
 The easiest method to organize Sigasi over multiple screens is to use one window on each screen.
 You can open a new Window via **Window > New window**
@@ -285,11 +284,11 @@ You can achieve the same effect by toggling the '**Regular Expression**' option 
 
 ## How can I make Sigasi generate spaces instead of TAB's?
 
-See [Tabs and Spaces](/manual/config#tabs-and-spaces).
+See [Tabs and Spaces](/manual/eclipse/config#tabs-and-spaces).
 
 ## How can I change the font size?
 
-See [Font Size](/manual/config#font-size).
+See [Font Size](/manual/eclipse/config#font-size).
 
 ## Sigasi keeps compiling everything while I am trying to configure my VHDL Libraries
 
@@ -342,7 +341,7 @@ Depending on your exact coding rule, the Sigasi Linter can flag violations eithe
 
 ## How can I organize my errors and warnings (problem markers) in the problems view?
 
-Click the little triangle to the upper right-hand side of the [Problems View](/manual/views#problems-view) and look at the Group By and Sort By menu.
+Click the little triangle to the upper right-hand side of the [Problems View]({{< ref "/manual/eclipse/views.md#problems-view" >}}) and look at the Group By and Sort By menu.
 
 You can also filter which problem markers you will see in the Show menu; for example only errors and warnings for the current project.
 {{< figure src="/img/faq/organize_problem_markers.png" alt="Problems View" >}}
@@ -383,7 +382,7 @@ As you design, you put your code through a funnel: first Sigasi finds the first 
 
 {{< figure src="/img/faq/funnel_small.png" alt="Funnel" >}}
 
-If you want to check more errors, enable the [Save-time Compilation](/manual/tools#save-time-compilation).
+If you want to check more errors, enable the [Save-time Compilation](/manual/eclipse/tools#save-time-compilation).
 
 ## How to 'Quick Fix' multiple problems at the same time?
 
@@ -393,7 +392,7 @@ Although the procedure is not very elegant, there is a way to apply multiple Qui
 
 Procedure:
 
-1. Select all problems you want to fix in the [Problems View](/manual/views#problems-view)
+1. Select all problems you want to fix in the [Problems View]({{ ref "/manual/eclipse/views.md#problems-view" >}})
 1. In the context menu, select **Quick Fix**
 1. Make sure you are dealing with identical solutions to the same problem.
    For example: five "declare signal" Quick Fixes
@@ -624,7 +623,7 @@ There can be a number of reasons why Sigasi connects to the internet.
 ## I have error markers in files that are not even mapped to a library?
 
 Sometimes, unmapped files have error markers. This can happen if a compilation did not complete normally.
-You can select these errors from the [Problems View](/manual/views#problems-view) and remove them by pressing **delete**. If you rebuild the project, no new error markers will be generated for the VHDL files that are not mapped to a library.
+You can select these errors from the [Problems View]({{< ref "/manual/eclipse/views.md#problems-view" >}}) and remove them by pressing **delete**. If you rebuild the project, no new error markers will be generated for the VHDL files that are not mapped to a library.
 
 ## Can I revert to an older version of Sigasi?
 
@@ -710,13 +709,13 @@ You can add a plugin with the UltraEdit key bindings.
 ## I really like VI / VIM / gVIM. Do you have a VI emulation mode?
 
 Yes, you can add a VI emulator plugin, called [vrapper](http://vrapper.sourceforge.net/home/). Surely not the same as a genuine VI clone, but it will give you a warm and familiar feeling when you type `:q!`.
-More information on installing plugins is available in [our manual]({{< ref "/manual/plugins.md#vi-and-emacs" >}}).
+More information on installing plugins is available in [our manual]({{< ref "/manual/eclipse/plugins.md#vi-and-emacs" >}}).
 
 ## Do you have an Emacs emulation mode so that I can use the Emacs key bindings?
 
 All Eclipse products, including Sigasi Studio, can be configured to support [Emacs key bindings](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Fconcepts%2Faccessibility%2Fkeyboardshortcuts.htm&cp%3D0_4_1_33). While it is not the same as Emacs, you can keep your habit of pressing *CTRL-C* and *CTRL-X* all the time.
 
-You also can use the [More Emacs](https://marketplace.eclipse.org/content/more-emacs) plugin as explained in [our manual]({{< ref "/manual/plugins.md#vi-and-emacs" >}}).
+You also can use the [More Emacs](https://marketplace.eclipse.org/content/more-emacs) plugin as explained in [our manual]({{< ref "/manual/eclipse/plugins.md#vi-and-emacs" >}}).
 
 ## Which free VHDL simulator can I use?
 
@@ -745,6 +744,6 @@ We have not had good results with FreeHDL or with Green Mountain VHDL. It seems 
 
 After you choose your simulator, you need a VHDL editor too. Sigasi has a [free starter edition](https://www.sigasi.com/sigasi-starter-edition) of its popular VHDL development environment.
 
-[Dependencies View]: {{< ref "/manual/views.md#dependencies-view" >}}
-[Block Diagram View]: {{< ref "/manual/views.md#block-diagram-view" >}}
-[State Machines View]: {{< ref "/manual/views.md#state-machine-view" >}}
+[Dependencies View]: {{< ref "/manual/eclipse/views.md#dependencies-view" >}}
+[Block Diagram View]: {{< ref "/manual/eclipse/views.md#block-diagram-view" >}}
+[State Machines View]: {{< ref "/manual/eclipse/views.md#state-machine-view" >}}

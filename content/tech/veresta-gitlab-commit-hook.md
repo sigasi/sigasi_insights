@@ -63,7 +63,7 @@ file as `~/sigasi.lic` or have either `$SIGASI_LM_LICENSE_FILE` or
 `$LM_LICENSE_FILE` point to the license. These variables can be set
 either in your shell or in the `pre-commit` script.  Further
 information on license configuration can be found in the [Sigasi
-manual](/manual/license-key/).
+manual](/manual/eclipse/license-key/).
 
 The path and license setup could look like this (bash syntax)
 
@@ -127,7 +127,7 @@ Configure the Veresta license using either the
 `SIGASI_LM_LICENSE_FILE` or `LM_LICENSE_FILE` variable. The value of
 the license variable depends on your setup. Additional information on
 license configuration is in the [Sigasi
-manual](/manual/license-key/). Also add the Veresta folder to the
+manual](/manual/eclipse/license-key/). Also add the Veresta folder to the
 `Path` variable.
 
 {{< figure src="/img/tech/veresta-hook-env-path-plus.png" alt="Windows account variables details" class="uk-align-center" >}}

@@ -233,7 +233,7 @@ All passed!
 ### UVM, VUnit and Sigasi Studio
 
 In an earlier [article]({{< ref "/tech/vunit-integration.md" >}}), we
-have discussed [VUnit and its integration in Sigasi Studio]({{< ref "/manual/vunit.md" >}}).  In order
+have discussed [VUnit and its integration in Sigasi Studio]({{< ref "/manual/eclipse/vunit.md" >}}).  In order
 to configure a combined UVM-VUnit project, you'll first need to set up
 your project as a VUnit project.  Then, you'll need to add the UVM
 library to your project's Common Libraries to get it working, as
@@ -247,6 +247,6 @@ has the details of how to do it for that particular project.
 Once configured, you can run VUnit tests from within Sigasi Studio,
 e.g. by right-clicking your project in the Project Explorer and
 selecting **Run VUnit tests**.  Test results appear in the [VUnit
-view](/manual/views/#vunit-view), as shown below.
+view]({{< ref "/manual/eclipse/views.md#vunit-view" >}}), as shown below.
 
 ![Sigasi VUnit view](/img/tech/vunit-view-simpleadder.png)

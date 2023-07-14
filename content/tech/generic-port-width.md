@@ -93,5 +93,5 @@ or at elaboration time. You can express these relations also with asserts:
 assert data_out'length = data_in'length report "port width mismatch" severity failure;
 ```
 
-We're happy to hear your feedback on [this linting rule](/manual/linting#vector-width-in-assignments-and-port-maps) and on
+We're happy to hear your feedback on [this linting rule](/manual/eclipse/linting#vector-width-in-assignments-and-port-maps) and on
 how Sigasi Studio can help you to write cleaner code.

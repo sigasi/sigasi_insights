@@ -41,13 +41,13 @@ We've added navigation for
 
 # VUnit automated library mapping
 
-The {{< page "/manual/vunit.md" >}} has been improved.
+The {{< page "/manual/eclipse/vunit.md" >}} has been improved.
 The information from the VUnit `run.py` file is used to automatically handle libraries in Sigasi Studio.
 There is no more need to maintain a redundant library configuration yourself. This saves time and reduces the potential for errors.
 
 # Improved handling of language version mismatches
 
-Sigasi Studio uses the concept of [Common Libraries]({{< ref "manual/libraries.md#common-libraries" >}}). This is a folder in which to add reusable libraries. These can be vendor libraries, third-party IP libraries or your own reusable libraries. By default, the STD and IEEE libraries are added to this folder.
+Sigasi Studio uses the concept of [Common Libraries]({{< ref "/manual/eclipse/libraries.md#common-libraries" >}}). This is a folder in which to add reusable libraries. These can be vendor libraries, third-party IP libraries or your own reusable libraries. By default, the STD and IEEE libraries are added to this folder.
 
 When a VHDL project's language level changes, or when one of the VHDL files within has to be parsed with a higher language level, the Common Libraries need to be updated.
 In this release we've improved the fixing of mismatches between the Common Libraries' and the project's VHDL version.
@@ -92,7 +92,7 @@ In this release we've improved the fixing of mismatches between the Common Libra
 * **[VHDL]** Improved quick fix for removing unused declarations such that it always removes the entire declaration
 * **[VHDL]** Added processes that are nested in generate statements to the documentation  
 {{< figure src="/img/releasenotes/4.14/ProcessInGeneratesDocumentation.png" title="Processes nested in generate statements in documentation">}}  
-* **[Verilog]** Added inherited members to the quick outline. You can show them by pressing **Ctrl+O** again when you already have the [Quick Outline]({{< ref "manual/views.md#quick-outline-view" >}}) open  
+* **[Verilog]** Added inherited members to the quick outline. You can show them by pressing **Ctrl+O** again when you already have the [Quick Outline]({{< ref "manual/eclipse/views.md#quick-outline-view" >}}) open  
 {{< figure src="/img/manual/quick_outline_with_inherited_members.png" title="Show inherited members in quick outline">}}  
 * **[Verilog]** Improved formatting for `constraint`, `sequence` and `property` blocks
 * **[Verilog]** Improved handling of recursive file inclusion
@@ -123,7 +123,7 @@ In this release we've improved the fixing of mismatches between the Common Libra
 * Removed duplicated **Edit > Toggle Block Selection** menu entry
 * Added a missing decoration for HDL projects in the project explorer
 * Trying to open a file in Sigasi Studio from the command line will no longer crash
-* Mapping files to a [library with ignored markers]({{< ref "/manual/libraries.md#how-is-common-libraries-different-from-another-folder" >}}) will now correctly remove the markers on said files
+* Mapping files to a [library with ignored markers]({{< ref "/manual/eclipse/libraries.md#how-is-common-libraries-different-from-another-folder" >}}) will now correctly remove the markers on said files
 * **[VHDL]** When writing to a `std_(u)logic_vector` variable, different from the one selected in a `case` statement, a state machine will no longer be produced
 * **[VHDL]** The icon for `component`s in the outline view that was lost in the 4.13 release has been reinstated
 * **[VHDL]** Removed false positive errors in Sigasi Studio Starter
@@ -165,8 +165,8 @@ On February 1 we released Sigasi Studio 4.14.1.
 This release fixes the following reported issues:
 
 * Project specific validations not working when there are spaces in the path
-* Added Java 17 support to our [profiling features]({{< ref "manual/trouble.md#create-performance-and-memory-snapshots" >}})
-* **[Verilog]** [Class Hierarchy View]({{< ref "manual/views.md#class-hierarchy-view" >}}) not working when opening it from a class instance instead of the class' identifier
+* Added Java 17 support to our [profiling features]({{< ref "manual/eclipse/trouble.md#create-performance-and-memory-snapshots" >}})
+* **[Verilog]** [Class Hierarchy View]({{< ref "manual/eclipse/views.md#class-hierarchy-view" >}}) not working when opening it from a class instance instead of the class' identifier
 
 # Sigasi Studio 4.14.2 point release
 
@@ -175,4 +175,4 @@ This release fixes the following reported issues:
 
 * Language versions not working when there are spaces in the path
 
-Thanks for all the [bug reports](mailto:support@sigasi.com) and enabling [Talkback]({{< ref "manual/talkback.md" >}}).
+Thanks for all the [bug reports](mailto:support@sigasi.com) and enabling [Talkback]({{< ref "manual/common/talkback.md" >}}).

@@ -12,4 +12,4 @@ tags:
   - editor
 ---
 
-You can find more info in the [manual]({{< ref "/manual/editor.md#smart-indentation-1" >}}).
+You can find more info in the [manual]({{< ref "/manual/eclipse/editor.md#smart-indentation-1" >}}).

@@ -35,7 +35,7 @@ module goodtop;
 endmodule</pre>
 
 The maximum number of 3 items is a default value, it can be changed in the
-[project linting settings](/manual/linting/#project-specific-linting-settings) (`${project_location}/.settings/com.sigasi.hdt.verilog.linting.prefs`). E.g.:
+[project linting settings](/manual/eclipse/linting/#project-specific-linting-settings) (`${project_location}/.settings/com.sigasi.hdt.verilog.linting.prefs`). E.g.:
 
 ```
 24/params/max_ordered_port_connections/<project>=4

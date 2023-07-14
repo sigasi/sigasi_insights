@@ -41,10 +41,10 @@ files** that you want to include from outside the project **in a
 separate folder**. If the project has include files in various places
 (not just in one sub-tree), one can easily add a new includes folder
 to the project (right-click on the project in the [Project
-Explorer](/manual/views/#project-explorer-view) and select **New >
+Explorer](/manual/eclipse/views/#project-explorer-view) and select **New >
 Folder**) and drag-and-drop include files into it. A number of errors
 will appear where these files are included. A [quick
-fix](/manual/linting/#quick-fixes) is available to add the new
+fix](/manual/eclipse/linting/#quick-fixes) is available to add the new
 includes directory to the include path.
 
 {{< figure src="/img/tech/includes_organize.png" alt="Organize include files in the sub-project">}}

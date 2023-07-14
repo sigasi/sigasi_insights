@@ -169,7 +169,7 @@ support in Sigasi Studio requires an [XPRT
 license](https://www.sigasi.com/products).
 
 Details of how to run VUnit tests in Sigasi Studio can be found in
-[the Sigasi manual](/manual/vunit). Once your tests are running,
+[the Sigasi manual](/manual/eclipse/vunit). Once your tests are running,
 Sigasi Studio opens the VUnit view from where you can see test results
 and inspect the details.
 

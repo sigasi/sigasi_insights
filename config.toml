@@ -164,7 +164,7 @@ pygmentsUseClasses = "true"
     weight = 2
   [[menu.mobile]]
     url = "/manual/"
-    name = "Manual"
+    name = "Product Manual"
     weight = 3
   [[menu.mobile]]
     url = "/faq/"

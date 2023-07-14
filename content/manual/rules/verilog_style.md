@@ -33,7 +33,7 @@ It is recommended that a Verilog file contains only one design unit (rule 18). S
 
 For legibility, it is recommended to keep lines of code short (rule 20). Sigasi Studio warns if a code line is longer
 than a certain length. The maximum length is set to 120 characters by default, but this can be changed in the
-[project linting settings](/manual/linting/#project-specific-linting-settings) (`${project_location}/.settings/com.sigasi.hdt.verilog.linting.prefs`). E.g.:
+[project linting settings](/manual/eclipse/linting/#project-specific-linting-settings) (`${project_location}/.settings/com.sigasi.hdt.verilog.linting.prefs`). E.g.:
 
 ```
 20/params/max_line_length/<project>=123
@@ -51,7 +51,7 @@ Many coding standards require the presence of a header comment in every file, ma
 header comment matches a pattern (rule 22). By default, the pattern is empty which disables this check.
 The pattern can be configured through **Window > Preferences > Sigasi > (System)Verilog > Naming conventions > File header** and uses
 the [regex syntax](https://sigasi.com/app/regex).
-More information on file header comment checking is available [here](/manual/linting/#naming-conventions).
+More information on file header comment checking is available [here](/manual/eclipse/linting/#naming-conventions).
 
 ## Report encrypted regions
 
@@ -89,7 +89,7 @@ endmodule</pre>
 
 ## Regular expressions compatibility
 
-[Naming conventions](/manual/linting/#naming-conventions) in Sigasi
+[Naming conventions](/manual/eclipse/linting/#naming-conventions) in Sigasi
 use [*RE2/J* regular expressions](https://www.sigasi.com/app/regex).
 RE2/J expressions mitigate potential performance problems that are
 caused by some shapes of regular expressions using the regular Java

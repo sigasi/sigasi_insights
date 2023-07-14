@@ -40,7 +40,7 @@ The second pass also runs all validation (linting) checks. For example, all port
 
 ### Third pass
 
-This phase runs a few so called *builder participants*, that extract more information from the Model for different purposes. One example is [External Compilers](/manual/tools#external-compilers).
+This phase runs a few so called *builder participants*, that extract more information from the Model for different purposes. One example is [External Compilers](/manual/eclipse/tools#external-compilers).
 
 ![Phase 3 : Builder participants](/img/tech/builder_participants.png)
 

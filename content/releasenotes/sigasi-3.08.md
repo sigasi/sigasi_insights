@@ -30,7 +30,7 @@ In hovers the complete Markdown syntax is supported. For PDF documentation gener
 
 ## Multiline trailing comments
 
-Sigasi Studio has a few simple rules to [associate comments with HDL declarations](/manual/documentation#comment-association). In version 3.8 we have refined and extended the association rules to support multiple single line trailing comments.
+Sigasi Studio has a few simple rules to [associate comments with HDL declarations](/manual/eclipse/documentation#comment-association). In version 3.8 we have refined and extended the association rules to support multiple single line trailing comments.
 
 {{< figure src="/img/releasenotes/3.8/comment_association_multiple_trailing.png" alt="Multiline trailing comments" title="Multiline trailing comments" link="/img/releasenotes/3.8/comment_association_multiple_trailing.png" >}}
 
@@ -44,7 +44,7 @@ We have also updated the **Formatter** and **[Structural select](/screencasts/st
 
 Note that the comment association rules are identical for both (System)Verilog and VHDL.
 
-[Complete comment association documentation](/manual/documentation#comment-association)
+[Complete comment association documentation](/manual/eclipse/documentation#comment-association)
 
 ## PDF documentation update
 

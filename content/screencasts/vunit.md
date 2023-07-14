@@ -9,4 +9,4 @@ tags:
   - VUnit
 ---
 
-The VUnit integration is documented [here](/manual/vunit).
+The VUnit integration is documented [here](/manual/eclipse/vunit).

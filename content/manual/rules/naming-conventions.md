@@ -5,13 +5,13 @@ linting:
   - verilog
 ---
 
-On the [**Naming Conventions**](/manual/linting/#naming-conventions) preference page (**Window \>
+On the [**Naming Conventions**](/manual/eclipse/linting/#naming-conventions) preference page (**Window \>
 Preferences \> Sigasi \> VHDL|Verilog/SystemVerilog \> Naming Conventions**) you can configure
 patterns to check the correct naming of your VHDL, Verilog, and SystemVerilog identifiers. Patterns are
 configured using [regex syntax](https://sigasi.com/app/regex).
 
 The above defines the Naming Conventions for the entire workspace.
-To specify Naming Conventions for a project instead of for the entire workspace, have a look at [Naming Conventions per project]({{< ref "/manual/linting.md#naming-conventions-per-project" >}}).
+To specify Naming Conventions for a project instead of for the entire workspace, have a look at [Naming Conventions per project]({{< ref "/manual/eclipse/linting.md#naming-conventions-per-project" >}}).
 
 Only names with a specified pattern are checked. Empty patterns are omitted.
 

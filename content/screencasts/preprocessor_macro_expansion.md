@@ -15,4 +15,4 @@ Working with preprocessors can be frustrating. Includes and macro expansions are
 In this video you will learn how Sigasi can help you write and understand 
 preprocessor code like macro's and defines with flair.
 
-The Preprocessor View is documented [here](/manual/views#preprocessor-view).
+The Preprocessor View is documented [here](/manual/eclipse/views#preprocessor-view).

@@ -71,7 +71,7 @@ If you open an existing workspace after the update to Sigasi Studio 4.1, you mig
 
 # Other New and Noteworthy Changes
 
-* **Improved hovers**: In addition to the *declaration information* and *associated comments*, the hover (or *tooltip*) now also shows a shortcut to [find references](/manual/editor#find-references) and [open declaration](/manual/editor#open-declaration-and-hyperlinks). Check out [this video](/screencasts/hovers) for more information.  
+* **Improved hovers**: In addition to the *declaration information* and *associated comments*, the hover (or *tooltip*) now also shows a shortcut to [find references](/manual/eclipse/editor#find-references) and [open declaration](/manual/eclipse/editor#open-declaration-and-hyperlinks). Check out [this video](/screencasts/hovers) for more information.  
 {{< figure src="/img/releasenotes/4.1/hover_systemverilog.png" alt="Improved hovers SystemVerilog" title="SystemVerilog hovers" link="/img/releasenotes/4.1/hover_systemverilog.png" >}}  
 {{< figure src="/img/releasenotes/4.1/hover_vhdl.png" alt="Improved hovers VHDL" title="VHDL hovers" link="/img/releasenotes/4.1/hover_vhdl.png" >}}
 * The **New VHDL/SystemVerilog Project** wizard now offers an option to set the **VHDL/SystemVerilog version** for the new project.  

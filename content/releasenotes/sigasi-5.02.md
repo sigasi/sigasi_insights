@@ -4,6 +4,10 @@ date: 2023-06-15
 lastmod: 2023-06-30
 comments: true
 pager: true
+menu:
+  insightsmenu:
+    parent: releasenotes
+    weight: 98
 ---
 
 For Verilog and SystemVerilog, Sigasi Studio 5.2 reintroduces **rename**, includes many **new linting rules**, and **improves type checking** by adding more contexts and rules.
@@ -12,9 +16,9 @@ As per usual, [Veresta](https://www.sigasi.com/veresta/) and our [VS Code extens
 
 # Smart Rename Refactoring
 
-Naming things is hard and we often get it wrong the first time. Maybe we have ignored a naming convention or we think of a better term later in the design. Whatever the reason, we often want to rename variables, functions, methods, or other elements over the entire design. Enter Sigasi's new and improved [Rename Refactoring]({{< ref "manual/editor.md#rename-refactoring" >}}).
+Naming things is hard and we often get it wrong the first time. Maybe we have ignored a naming convention or we think of a better term later in the design. Whatever the reason, we often want to rename variables, functions, methods, or other elements over the entire design. Enter Sigasi's new and improved [Rename Refactoring]({{< ref "manual/eclipse/editor.md#rename-refactoring" >}}).
 
-Sigasi understands hardware design and knows which identifiers link to which. It knows not to look in comments or inapplicable preprocessor code. By combining this information with our strong [Find References]({{< ref "manual/editor.md#find-references" >}}) feature, we can safely carry out a rename over thousands of files, without introducing syntactic or semantic errors.
+Sigasi understands hardware design and knows which identifiers link to which. It knows not to look in comments or inapplicable preprocessor code. By combining this information with our strong [Find References]({{< ref "manual/eclipse/editor.md#find-references" >}}) feature, we can safely carry out a rename over thousands of files, without introducing syntactic or semantic errors.
 
 {{< video_control src="/img/releasenotes/5.2/Rename.mp4" link="/img/releasenotes/5.2/Rename.mp4" title="" thumb="/img/releasenotes/5.2/Rename.png" class="uk-align-center" >}}
 
@@ -30,7 +34,7 @@ Like all languages, Verilog and SystemVerilog contain some areas that are more e
 
 ## Unused Declarations
 
-Even with helpful features like [Occurrence Highlighting]({{< ref "/manual/editor.md#occurrence-highlighting" >}}), [Semantic Highlighting]({{< ref "/manual/editor.md#code-highlighting-syntax-coloring" >}}), and [Find References]({{< ref "/manual/editor.md#find-references" >}}), interruptions in the data flow can be hard to spot. Sometimes, we rename something manually, other times, we remove a declaration, and occasionally we might make a typo. In all of these cases, we can end up with unused (macro) declarations or references to declarations that no longer exist. For the latter, Verilog and SystemVerilog try to be helpful by creating an _implicit net_. However, this is seldom what the designer intended.
+Even with helpful features like [Occurrence Highlighting]({{< ref "/manual/eclipse/editor.md#occurrence-highlighting" >}}), [Semantic Highlighting]({{< ref "/manual/eclipse/editor.md#code-highlighting-syntax-coloring" >}}), and [Find References]({{< ref "/manual/eclipse/editor.md#find-references" >}}), interruptions in the data flow can be hard to spot. Sometimes, we rename something manually, other times, we remove a declaration, and occasionally we might make a typo. In all of these cases, we can end up with unused (macro) declarations or references to declarations that no longer exist. For the latter, Verilog and SystemVerilog try to be helpful by creating an _implicit net_. However, this is seldom what the designer intended.
 
 {{< figure src="/img/releasenotes/5.2/Dataflow.png" link="/img/releasenotes/5.2/Dataflow.png" title="Unused declarations and implicit nets" class="uk-align-center" >}}
 
@@ -207,16 +211,16 @@ Unary reduction operators perform a bitwise operation to produce a single-bit re
 
 - Brought consistent styling to capitalization of menus and commands
 - The autocomplete description dialog now shows the same information as hovers
-- {{< pill text="Eclipse" >}} The performance of [Export Documentation]({{< ref "manual/documentation.md#export-documentation" >}}) was improved further
+- {{< pill text="Eclipse" >}} The performance of [Export Documentation]({{< ref "manual/eclipse/documentation.md#export-documentation" >}}) was improved further
 - {{< pill text="Verilog" >}} Increased incremental preprocessing speed by up to 300% on large projects
 - {{< pill text="Verilog" >}} Added hovers for range enum members e.g. `B4` in `typedef enum {B[5:3]} E`
-- {{< pill text="Verilog" >}} [Adding VUnit support]({{< ref "manual/vunit.md#systemverilog" >}}) now also links in the required `vunit_defines.sh`
+- {{< pill text="Verilog" >}} [Adding VUnit support]({{< ref "manual/eclipse/vunit.md#systemverilog" >}}) now also links in the required `vunit_defines.sh`
 - {{< pill text="Verilog" >}} The [local parameter cannot be overridden]({{< ref "manual/rules/verilog_parameters.md#local-parameter-cannot-be-overridden" >}})  linting rule was improved and detects more cases
-- {{< pill text="Verilog" >}} Added a description for `$unit` in our information views, e.g., [outline]({{< ref "manual/views.md#outline-view" >}}), [hover]({{< ref "manual/editor.md#hover" >}}), and [autocomplete]({{< ref "manual/editor.md#autocomplete-and-content-assist" >}})
-- {{< pill text="Verilog" >}} Improved accuracy of [Semantic Highlighting]({{< ref "manual/editor.md#code-highlighting-syntax-coloring" >}})
+- {{< pill text="Verilog" >}} Added a description for `$unit` in our information views, e.g., [outline]({{< ref "manual/eclipse/views.md#outline-view" >}}), [hover]({{< ref "manual/eclipse/editor.md#hover" >}}), and [autocomplete]({{< ref "manual/eclipse/editor.md#autocomplete-and-content-assist" >}})
+- {{< pill text="Verilog" >}} Improved accuracy of [Semantic Highlighting]({{< ref "manual/eclipse/editor.md#code-highlighting-syntax-coloring" >}})
 - {{< pill text="Verilog" >}} Added navigation for `export` statements
 - {{< pill text="Verilog" >}} Added error when trying to include a folder, e.g., `` `include "folder/"``
-- {{< pill text="Verilog" >}} Added navigation and [Occurrence Highlighting]({{< ref "manual/editor.md#occurrence-highlighting" >}}) for `.*` port connections
+- {{< pill text="Verilog" >}} Added navigation and [Occurrence Highlighting]({{< ref "manual/eclipse/editor.md#occurrence-highlighting" >}}) for `.*` port connections
 - {{< pill text="Verilog" >}} Added support for empty assignment patterns, e.g., `logic queue[$] = '{}`
 - {{< pill text="Verilog" >}} [Preprocessor tool compatibility linting rules]({{< ref "/manual/rules/verilog_tool_compatibility.md" >}}) are now configurable
 
@@ -225,23 +229,23 @@ Unary reduction operators perform a bitwise operation to produce a single-bit re
 - Improved readability of very long linting messages
 - The outline no longer repositions the `Parameters` and `Ports` when `Sort alphabetically` is enabled
 - The autocomplete description dialog now wraps lines instead of cutting them off
-- {{< pill text="Eclipse" >}} The [Open Design Unit Dialog]({{< ref "manual/editor.md#open-design-unit" >}}) now highlights matched characters and is more keyboard friendly
+- {{< pill text="Eclipse" >}} The [Open Design Unit Dialog]({{< ref "manual/eclipse/editor.md#open-design-unit" >}}) now highlights matched characters and is more keyboard friendly
 - {{< pill text="Eclipse" >}} {{< pill text="VHDL" >}} Typing backslash (`\`) with an identifier selected now forms an extended identifier, e.g., `\identifier\`
 - {{< pill text="VHDL" >}} The [incomplete sensitivity list]({{< ref "manual/rules/sensitivity-list.md" >}}) Quick Fix adds the whole array instead of every array element separately
 - {{< pill text="Verilog" >}} Added autocomplete templates for `struct` and `union`
 - {{< pill text="Verilog" >}} The default name for the autocomplete template of `module`s was changed to the filename
-- {{< pill text="Verilog" >}} Corrected the [Smart Indentation]({{< ref "manual/editor.md#smart-indentation" >}}) following a `typedef` in `interface`s
+- {{< pill text="Verilog" >}} Corrected the [Smart Indentation]({{< ref "manual/eclipse/editor.md#smart-indentation" >}}) following a `typedef` in `interface`s
 
 # Updates and Deprecations
 
-- The [Graphics Configuration]({{< ref "manual/graphics.md" >}}) is deprecated and will be removed in Sigasi 5.3
+- The [Graphics Configuration]({{< ref "manual/eclipse/graphics.md" >}}) is deprecated and will be removed in Sigasi 5.3
 - [JustJ](https://www.eclipse.org/justj/) - the JRE shipped with Sigasi Studio - has been updated to 17.0.7  
    **Note that an error dialog might be shown upon restarting Sigasi Studio after updating** because the JRE was updated. Closing the dialog, and restarting Sigasi Studio manually will fix the issue.
   {{< figure src="/img/releasenotes/4.14/jre_update_error.png" link="/img/releasenotes/4.14/jre_update_error.png" title="Expected error after update. Restart will solve the issue." width="300">}}
 
 # Talkback Changes
 
-[Talkback]({{< ref "manual/talkback.md" >}}) messages include information about
+[Talkback]({{< ref "manual/common/talkback.md" >}}) messages include information about
 
 - the currently checked-out and available license types
 - the currently used product, e.g., [Sigasi Studio Eclipse](https://www.sigasi.com/download/) or [Sigasi Studio for VS Code](https://marketplace.visualstudio.com/items?itemName=Sigasi.sigasi-vscode)
@@ -250,12 +254,12 @@ Unary reduction operators perform a bitwise operation to produce a single-bit re
 
 - The `Unresolved declaration` linting rule uses correct capitalization in its message
 - Improved cursor handling during autocomplete
-- [Redundant license servers]({{< ref "manual/license-key.md#configure-the-license-server-in-sigasi-studio" >}}) are taken into account
-- Fixed performance regression in the [Quick Outline]({{< ref "/manual/views.md#quick-outline-view" >}})
+- [Redundant license servers]({{< ref "manual/eclipse/license-key.md#configure-the-license-server-in-sigasi-studio" >}}) are taken into account
+- Fixed performance regression in the [Quick Outline]({{< ref "/manual/eclipse/views.md#quick-outline-view" >}})
 - {{< pill text="Eclipse" >}} No more temporary license check-outs are done on boot
-- {{< pill text="Eclipse" >}} The [Errors/Warnings]({{< ref "manual/linting.md#configuring-the-severity-level" >}}) preference page is populated even if the checked-out license is invalid
-- {{< pill text="Eclipse" >}} Fixed incorrect navigation from the [Hierarchy View]({{< ref "manual/views.md#hierarchy-view" >}}) to include files
-- {{< pill text="Eclipse" >}} {{< pill text="Verilog" >}} After saving a file with the [Class Hierarchy]({{< ref "manual/views.md#class-hierarchy-view" >}}) open, the focus remains on the editor
+- {{< pill text="Eclipse" >}} The [Errors/Warnings]({{< ref "manual/eclipse/linting.md#configuring-the-severity-level" >}}) preference page is populated even if the checked-out license is invalid
+- {{< pill text="Eclipse" >}} Fixed incorrect navigation from the [Hierarchy View]({{< ref "manual/eclipse/views.md#hierarchy-view" >}}) to include files
+- {{< pill text="Eclipse" >}} {{< pill text="Verilog" >}} After saving a file with the [Class Hierarchy]({{< ref "manual/eclipse/views.md#class-hierarchy-view" >}}) open, the focus remains on the editor
 - {{< pill text="VHDL" >}} The `Add missing port associations` Quick Fix also succeeds if the port map contains a capitalization mismatch
 - {{< pill text="VHDL" >}} Case statement linting supports port selections
 - {{< pill text="VHDL" >}} Fixed highlighting and double-click behavior for character pairs, e.g., quotes, parenthesis and backslashes
@@ -265,7 +269,7 @@ Unary reduction operators perform a bitwise operation to produce a single-bit re
 - {{< pill text="Verilog" >}} The `randcase` statement no longer triggers the same linting as the regular `case` statement
 - {{< pill text="Verilog" >}} Keyword proposals take the configured language level into account
 - {{< pill text="Verilog" >}} Fixed navigation from the outline to the editor when dealing with included files
-- {{< pill text="Verilog" >}} Fixed occasional missing navigation in the [Preprocessor View]({{< ref "manual/views.md#preprocessor-view" >}})
+- {{< pill text="Verilog" >}} Fixed occasional missing navigation in the [Preprocessor View]({{< ref "manual/eclipse/views.md#preprocessor-view" >}})
 - {{< pill text="Verilog" >}} Fixed occurrence highlighting near the usage of double backticks (` `` `)
 - {{< pill text="Verilog" >}} Fixed missing markers for the [Check line length]({{< ref "manual/rules/verilog_style.md#verilog-code-line-too-long" >}}) linting rule
 - {{< pill text="Verilog" >}} Fixed missing navigation targets for wildcard imports, e.g., `import p::*`
@@ -276,7 +280,7 @@ Unary reduction operators perform a bitwise operation to produce a single-bit re
 - {{< pill text="Verilog" >}} Fixed false positive `Net data type must be integral` error for `interconnect`s
 - {{< pill text="Verilog" >}} Fixed false positive [Consider using named port connections]({{< ref "manual/rules/verilog_associations.md#named-parameter-and-port-connections-have-to-be-used-for-all-instances-with-many-parameters--ports" >}}) warning when named connections cannot be used
 
-Thank you for all the [bug reports](mailto:support@sigasi.com) and for enabling [Talkback]({{< ref "manual/talkback.md" >}}). All your reports have helped us fix many issues that would otherwise have gone unnoticed.
+Thank you for all the [bug reports](mailto:support@sigasi.com) and for enabling [Talkback]({{< ref "manual/common/talkback.md" >}}). All your reports have helped us fix many issues that would otherwise have gone unnoticed.
 
 # Sigasi Studio 5.2.1 Point Release
 
@@ -284,7 +288,7 @@ On June 30, we released Sigasi Studio 5.2.1.
 This release contains the following changes and bug fixes:
 
 * Fixed empty outline after startup
-* {{< pill text="Eclipse" >}} Corrected paths in compile order [CSV Export]({{< ref "manual/tools.md#export" >}})
+* {{< pill text="Eclipse" >}} Corrected paths in compile order [CSV Export]({{< ref "/manual/eclipse/tools.md#export" >}})
 * {{< pill text="Eclipse" >}} `Right-click > Show In` is available for Graphical Views
 * {{< pill text="Verilog" >}} Fixed startup slowdown when using the cache
 

@@ -65,7 +65,7 @@ begin
 end process p_synchronous_reset;
 ```
 
-These ways of coding resets in VHDL are straightforward and efficient for simulation. Sigasi Studio can generate the code template for processes with synchronous or asynchronous reset. Simply type **proc** and **Ctrl+Space** and select *process - define a synchronous process with synchronous reset* or *process - define a synchronous process with asynchronous reset* as needed. Further information on the Content Assist and Autocomplete can be found in the [manual](https://insights.sigasi.com/manual/editor/#autocomplete-and-content-assist).
+These ways of coding resets in VHDL are straightforward and efficient for simulation. Sigasi Studio can generate the code template for processes with synchronous or asynchronous reset. Simply type **proc** and **Ctrl+Space** and select *process - define a synchronous process with synchronous reset* or *process - define a synchronous process with asynchronous reset* as needed. Further information on the Content Assist and Autocomplete can be found in the [manual]({{< ref "/manual/eclipse/editor.md#autocomplete-and-content-assist" >}}).
 
 An *alternative* way of coding a synchronous reset is shown below. At the clock edge, the normal operation executes. If reset is active, the result of the normal operation is overridden by the reset action.
 

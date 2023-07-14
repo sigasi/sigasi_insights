@@ -48,13 +48,13 @@ A handy, lesser known feature of Sigasi Studio is the possibility to **bookmark 
 
 {{< figure src="/img/tech/editing/bookmarks.png" alt="Bookmarks allow to remember relevant locations in the code base" class="uk-align-top" >}}
 
-All the bookmarks are listed in the [respective view]({{< ref "/manual/views.md#bookmarks-view" >}}) which can be opened via **Ctrl+3 > Bookmarks** / **⌘+3 > Bookmarks**. From that view it is possible to directly jump to the remembered location, or get rid of obsolete notes by deleting them.
+All the bookmarks are listed in the [respective view]({{< ref "/manual/eclipse/views.md#bookmarks-view" >}}) which can be opened via **Ctrl+3 > Bookmarks** / **⌘+3 > Bookmarks**. From that view it is possible to directly jump to the remembered location, or get rid of obsolete notes by deleting them.
 
-For those of us who prefer to-do lists and checkmarks: Instead of bookmarks, we can **create tasks** too. Tasks are associated with file locations, but have an additional checkbox associated with them in the [Tasks View]({{< ref "/manual/views.md#tasks-view" >}}). As soon as we resolve the curious piece of code or understand its purpose, we can mark the task as resolved - we all know that checking off to-do lists releases endorphins; or we simply delete the task items again to get rid of them.
+For those of us who prefer to-do lists and checkmarks: Instead of bookmarks, we can **create tasks** too. Tasks are associated with file locations, but have an additional checkbox associated with them in the [Tasks View]({{< ref "/manual/eclipse/views.md#tasks-view" >}}). As soon as we resolve the curious piece of code or understand its purpose, we can mark the task as resolved - we all know that checking off to-do lists releases endorphins; or we simply delete the task items again to get rid of them.
 
 ## 4. Navigating issues: Go to problem
 
-Off to something else: Sigasi Studio is very capable of **pointing out potential problems** in our designs by showing errors, warnings, and other info-level feedback. The feedback is presented in the editor and also listed in the *[Problems view]({{< ref "/manual/views.md#problems-view" >}})*. In order to fix the revealed issues most efficiently, we need a quick way to navigate to the problematic location. A simple double-click in the problems view will open the file and the respective line will be revealed.
+Off to something else: Sigasi Studio is very capable of **pointing out potential problems** in our designs by showing errors, warnings, and other info-level feedback. The feedback is presented in the editor and also listed in the *[Problems view]({{< ref "/manual/eclipse/views.md#problems-view" >}})*. In order to fix the revealed issues most efficiently, we need a quick way to navigate to the problematic location. A simple double-click in the problems view will open the file and the respective line will be revealed.
 
 Unfortunately, problems often come in flocks: we are usually confronted with more than one warning or error per file. To quickly scan through all the problems in the current editor, **Go to next problem (Ctrl+. /⌘+. )** and **Go to previous problem (Ctrl+Shift+. /⌘+⇧+. )** can be used to jump from one issue to the other. This pair of little navigation gems is very convenient when fixing issues in the current editor.
 
@@ -86,7 +86,7 @@ Rather than working on the granularities of rectangles, we mostly work on the gr
 * **Go to next word** and **Go to previous word** will move the cursor quickly to the end or the beginning of the current word. The keyboard shortcuts for that gesture are **Ctrl+Right / Left** / **⌥+→/←**. They can be combined with the **Shift** / **⇧** key to create a text selection or enlarge an existing selection.
 * **Delete next word** and **Delete previous word** are self-explanatory and bound to the shortcuts **Ctrl+Del / Backspace** / **⌥+⌦/⌫**.
 
-**Update**: {{< page "/releasenotes/sigasi-4.15.md" >}} added the option to [disable this feature]({{< ref "/manual/editor.md#smart-caret-positioning" >}}).
+**Update**: {{< page "/releasenotes/sigasi-4.15.md" >}} added the option to [disable this feature]({{< ref "/manual/eclipse/editor.md#smart-caret-positioning" >}}).
 
 ## 8. Line dancing
 

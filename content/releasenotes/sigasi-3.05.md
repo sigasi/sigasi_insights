@@ -11,7 +11,7 @@ Sigasi Studio 3.5 brings full support for the **SystemVerilog** language, a freq
 
 Sigasi Studio 3.5 finally brings **full SystemVerilog support**. Providing good editing and navigation support for the complex and colossal SystemVerilog language was an *interesting technical challenge*. We are proud to present our solution, that is both *powerful* and requires only *very limited configuration*.
 
-In addition to the SystemVerilog source files, Sigasi Studio only needs to know the [include paths](/manual/editor#systemverilog-preprocessing-macros). Based on this information, Sigasi Studio automatically figures out in which order to analyze the files.
+In addition to the SystemVerilog source files, Sigasi Studio only needs to know the [include paths](/manual/eclipse/editor#systemverilog-preprocessing-macros). Based on this information, Sigasi Studio automatically figures out in which order to analyze the files.
 
 Sigasi Studio processes the code in a predictable order and keeps track of the preprocessor state. This allows us to offer **full support for both SystemVerilog source files and include files**. With Sigasi Studio, you can edit include files *as if they were included in a SystemVerilog file*. 
 

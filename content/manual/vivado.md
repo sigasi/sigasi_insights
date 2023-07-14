@@ -14,19 +14,19 @@ Sigasi Studio is often used in combination with the AMD/Xilinx Vivado Design Sui
 
 # Configure Vivado
 
-Configuring the Vivado installation path in Sigasi Studio is explained [here](/manual/tools#vivado-1).
+Configuring the Vivado installation path in Sigasi Studio is explained [here](/manual/eclipse/tools#vivado-1).
 
 # Using Vivado's XSIM as external compiler
 
 {{< figure src="/img/releasenotes/3.6/xsim_compilation_error.png" alt="XSIM errors are displayed with markers in the editor and problems view" >}}
 
-[Configuring External compiler](/manual/tools#configure-external-compiler)
+[Configuring External compiler](/manual/eclipse/tools#configure-external-compiler)
 
 # Launching a simulation with XSIM
 
 {{< figure src="/img/releasenotes/3.6/xsim_simulation.png" alt="Start a simulation by setting a toplevel and clicking the run button" >}}
 
-[Launch simulator](/manual/tools#launch-simulator)
+[Launch simulator](/manual/eclipse/tools#launch-simulator)
 
 # Limitations
 

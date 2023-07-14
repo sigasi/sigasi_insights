@@ -20,12 +20,12 @@ Since [Sigasi Studio 3.8]({{< ref "/releasenotes/sigasi-3.08.md" >}}) Sigasi Stu
 {{< figure alt="No titles in comments" src="/img/releasenotes/4.4/comments_with_separators.png" title="No titles in comments" link="/img/releasenotes/4.4/comments_with_separators.png" >}}
 
 We also changed the way we handle comments in the **header comment** naming convention check. In earlier versions of Sigasi we stripped the comment symbol (`--`) and leading whitespace from the text that was checked. Starting with [Sigasi Studio 4.4]({{< ref "/releasenotes/sigasi-4.04.md" >}}) the raw string of the header comment is checked to allow for very strict compliance checking.
-Note that this means that when a new line is matched, users should use `\r?\n` or the newly introduced `\\R` to make sure the naming conventions work on all platforms. ([documentation]({{< ref "/manual/linting#check-header-comment" >}})).
+Note that this means that when a new line is matched, users should use `\r?\n` or the newly introduced `\\R` to make sure the naming conventions work on all platforms. ([documentation]({{< ref "/manual/eclipse/linting#check-header-comment" >}})).
 
 # SystemVerilog Class Hierarchy View
 
 We added a new **Class Hierarchy View** in Sigasi Studio that visualizes the class hierarchy of SystemVerilog classes. The Class Hierarchy View visualizes superclass and subclass relationships and also shows the class members. To open the Class Hierarchy for a certain
-class, click the class name, right-click and select **Open Class in Hierarchy** (or press **F4**). ([documentation]({{< ref "/manual/views#class-hierarchy-view" >}}))
+class, click the class name, right-click and select **Open Class in Hierarchy** (or press **F4**). ([documentation]({{< ref "/manual/eclipse/views#class-hierarchy-view" >}}))
 
 {{< youtube NYu2cFTwZ0Y >}}
 
@@ -36,7 +36,7 @@ Not all improvements made the deadline for this 4.4 release, so stay tuned.
 
 # Other New and Noteworthy Changes
 
-- Added support for a **Library** variable to launch configurations. This allows you to query the library of a resource when starting an external tool. ([documentation]({{< ref "/manual/tools#variables-in-arguments" >}}))
+- Added support for a **Library** variable to launch configurations. This allows you to query the library of a resource when starting an external tool. ([documentation]({{< ref "/manual/eclipse/tools#variables-in-arguments" >}}))
 - Semantic highlighting for SystemVerilog classes  
 {{< figure alt="Semantic highlighting for SystemVerilog classes" src="/img/releasenotes/4.4/sv_semantic_highlighting_classes.png" title="Semantic highlighting for SystemVerilog classes" link="/img/releasenotes/4.4/sv_semantic_highlighting_classes.png" >}}
 - Improved hyperlinks in external compiler output in console: we now only highlight the actual path, and not the entire line  

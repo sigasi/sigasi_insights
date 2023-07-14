@@ -92,7 +92,7 @@ sonar.qualitygate.wait=false
 Before implementing code verification with Veresta and SonarQube in
 CI, it is a good idea to run the Veresta-and-SonarQube flow from the
 command line to check the configuration. Assuming that you have [set
-up the Veresta license]({{< ref "/veresta/_index.md#license" >}}),
+up the Veresta license]({{< ref "/manual/veresta/_index.md#license" >}}),
 use these commands to run code verification:
 
 ```sh
@@ -133,7 +133,7 @@ using the `docker/Dockerfile` in the Gitlab project.
 You'll also want to configure the SonarQube server URL and analysis
 token, e.g. by setting the `SONAR_HOST_URL` and `SONAR_TOKEN` CI
 variables in Gitlab. You can also [set up the Veresta
-license]({{< ref "/veresta/_index.md#license" >}}) using Gitlab CI
+license]({{< ref "/manual/veresta/_index.md#license" >}}) using Gitlab CI
 variables.
 
 ```yaml

@@ -12,7 +12,7 @@ bannerad: true
 
 Sigasi allows you to split your design in multiple projects ([One IP block per project](/tech/one-ip-block-project)). This is an efficient way to deal with with big designs. Moreover, it is the *recommended* way if you work with reuse libraries between different designs.
 
-However, in its current form ([Sigasi 2.15](/releasenotes/sigasi-2.15)), this does not work together well with the [External Compilers](/manual/tools#external-compilers).
+However, in its current form ([Sigasi 2.15](/releasenotes/sigasi-2.15)), this does not work together well with the [External Compilers](/manual/eclipse/tools#external-compilers).
 
 In the current approach Sigasi calls the external compiler for each file in the project itself and also for each file of other projects that the current project depends on.  So if `Project2` depends on `Project1`, the files of `Project1` will be compiled twice by the external compiler. The deeper your dependencies are nested, the worse this problem becomes.
 

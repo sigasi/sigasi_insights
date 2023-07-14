@@ -74,7 +74,7 @@ your project's library configuration.  **Right-click** the newly added
 
 More in-depth information on modifying the library configuration is
 available in the [Sigasi
-manual]({{< ref "manual/libraries.md#modifying-the-library-configuration" >}}).
+manual]({{< ref "/manual/eclipse/libraries.md#modifying-the-library-configuration" >}}).
 
 {{< figure src="/img/tech/osvvm/osvvm_2_library_mapping.png" alt="Add OSVVM library mapping" class="uk-align-center" >}}
 
@@ -88,7 +88,7 @@ name. Also, in the editor, the warning and errors are gone.
 ### Using OSVVM and an external compiler
 
 In Sigasi Studio, you can [enable an external
-compiler]({{< ref "manual/tools.md#external-compilers" >}}),
+compiler]({{< ref "manual/eclipse/tools.md#external-compilers" >}}),
 like your simulator's, for additional code checks and to run
 simulations from within the Sigasi Studio IDE.  Obviously, the
 external compiler also needs to have OSVVM enabled.
@@ -101,14 +101,14 @@ to tell the simulator to actually use it.
 
 Users of Aldec Riviera PRO are lucky: OSVVM is enabled by default, so
 just enable Riviera PRO in [Sigasi's
-preferences]({{< ref "manual/tools.md#configure-external-compiler" >}})
+preferences]({{< ref "manual/eclipse/tools.md#configure-external-compiler" >}})
 and you're ready to go.
 
 #### Siemens ModelSim/QuestaSim
 
 In Siemens ModelSim/QuestaSim, OSVVM is not enabled by default. After
 [enabling ModelSim]({{< ref
-"manual/tools.md#configure-external-compiler" >}}), errors from
+"manual/eclipse/tools.md#configure-external-compiler" >}}), errors from
 ModelSim show up in Sigasi Studio.
 
 {{< figure src="/img/tech/osvvm/osvvm_4_ext_compiler_error.png" alt="Error: OSVVM library is missing in external compiler" class="uk-align-center" >}}

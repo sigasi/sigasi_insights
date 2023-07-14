@@ -11,7 +11,7 @@ Notably, this release brings improvements to **documentation generation** and **
 
 # Documentation generation
 
-More design elements are included in the documentation (both the [View]({{< ref "manual/views#documentation-view.md" >}}) and [Export]({{< ref "manual/documentation.md" >}})) and it's now possible to style your documentation with custom CSS.
+More design elements are included in the documentation (both the [View]({{< ref "manual/eclipse/views#documentation-view.md" >}}) and [Export]({{< ref "manual/eclipse/documentation.md" >}})) and it's now possible to style your documentation with custom CSS.
 
 For more information on how to style your documentation, refer to [our screencast]({{< ref "/screencasts/html_documentation.md" >}}).
 {{< youtube Po6TvHDXMjg >}}
@@ -25,9 +25,9 @@ The complete list of improvements is as follows:
 - Made sure to only show relevant design units in the documentation export dialog
 - Added a separate column (`Description`) for code comments in the documentation view
   {{< figure src="/img/releasenotes/4.12/DocumentationCommentColumn.png" title="Column for code comments in documentation view" width="500">}}
-- Added option to hide state machine conditions when exporting statemachines or documentation through `labels hide` in the [Graphics Configurations]({{< ref "manual/graphics.md" >}})
+- Added option to hide state machine conditions when exporting statemachines or documentation through `labels hide` in the [Graphics Configurations]({{< ref "manual/eclipse/graphics.md" >}})
 {{< figure src="/img/releasenotes/4.12/HideStateMachineLabels.gif" title="Hide State Machine labels" width="500" >}}
-- Added the possibility of using a `sigasi-doc.css` in the root of the project to [customize the documentation export]({{< ref "manual/documentation#custom-css" >}}) {{< figure src="/img/releasenotes/4.12/SigasiDocCss.png" title="Custom css for documentation export" width="500">}}
+- Added the possibility of using a `sigasi-doc.css` in the root of the project to [customize the documentation export]({{< ref "manual/eclipse/documentation#custom-css" >}}) {{< figure src="/img/releasenotes/4.12/SigasiDocCss.png" title="Custom css for documentation export" width="500">}}
 - To avoid confusion we now offer the possibility of saving before documentation generation
   {{< figure src="/img/releasenotes/4.12/SaveBeforeDocGen.png" title="Save dialog before documentation generation" width="500">}}
 - **[VHDL]** Add links to instantiations in documentation
@@ -90,8 +90,8 @@ The following VHDL 2019 features are now supported in addition to the features s
 - We now only format mapped files, unless you specifically select them, during multi-resource formatting
 - Creator specific settings have been removed from the License Key preference page
 - Improved spelling and punctuation for toolchain preferences
-- Improved error messages in the [Graphics Configurations]({{< ref "manual/graphics.md" >}})
-- Improved linking to HDL design units in [Graphics Configurations]({{< ref "manual/graphics.md" >}}) when the casing is different between the two worlds
+- Improved error messages in the [Graphics Configurations]({{< ref "manual/eclipse/graphics.md" >}})
+- Improved linking to HDL design units in [Graphics Configurations]({{< ref "manual/eclipse/graphics.md" >}}) when the casing is different between the two worlds
 - **[VUnit]** Added a checkbox to direct the output from VUnit to a `vunit_out` folder in the project root
   {{< figure src="/img/releasenotes/4.12/VUnitOutputCheckbox.png" title="Checkbox for setting VUnit output to the project root" width="500">}}
 - Improved support for opening HDL files with arbitrary file extensions  
@@ -143,7 +143,7 @@ We assume everybody has updated to the newer ALINT-PRO by now.
 - **[Verilog]** Fixed hyperlinks to classes in exported documentation
 - **[Verilog]** Fixed commonly occurring formatting issue
 
-+ A lot of other issues we could fix thanks to your [Talkback]({{< ref "manual/talkback.md" >}}) reports
++ A lot of other issues we could fix thanks to your [Talkback]({{< ref "manual/common/talkback.md" >}}) reports
 
 # System requirements
 
@@ -185,4 +185,4 @@ This release fixes a crash that occured when using the Verilog `type()` operator
 On August 27 we released Sigasi Studio 4.12.4.
 This release greatly improves the outline's memory usage, making Sigasi more efficient.
 
-Thanks for all the [bug reports](mailto:support@sigasi.com) and enabling [Talkback]({{< ref "manual/talkback.md" >}}).
+Thanks for all the [bug reports](mailto:support@sigasi.com) and enabling [Talkback]({{< ref "manual/common/talkback.md" >}}).

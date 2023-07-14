@@ -174,14 +174,13 @@ module my_module();
 
 No particular syntax for the comments is required, only the placement
 of comments determines the association.  Details are discussed in the
-[Sigasi Studio
-manual](https://insights.sigasi.com/manual/documentation/#comment-association).
+[Sigasi Studio manual]({{< ref "/manual/eclipse/documentation.md#comment-association" >}}).
 
 ### Using the documentation while writing code
 
 As soon as these comments are written, Sigasi Studio will pick them up
 and show them when appropriate, e.g. in
-[*hovers*](https://insights.sigasi.com/manual/editor/#hover).  When
+[*hovers*]({{< ref "/manual/eclipse/editor.md#hover" >}}).  When
 you place your mouse pointer over an item which has documentation
 associated, the documentation will be displayed in a pop-up.  Consider
 this entity:
@@ -212,14 +211,14 @@ item that may have comments associated with it.
 Note that some of the text is formatted differently,
 e.g. `drive_rst_start` is bold, and `rst` and `start` are verbatim.
 Comments may be formatted using
-[markdown](https://insights.sigasi.com/manual/documentation/#comment-markup-with-markdown),
+[markdown]({{< ref "/manual/eclipse/documentation.md#comment-markup-with-markdown" >}}),
 as we've demonstrated in the example.  Bold, italics, titles, bullets,
 coloured fonts, it's all possible.
 
 ### The documentation view
 
 From a design file in the Sigasi editor, you can open the
-[Documentation view](/manual/views#documentation-view):
+[Documentation view](/manual/eclipse/views#documentation-view):
 right-click in the editor and select **Show In > Documentation**.
 The documentation is opened in a separate window as shown below.  This
 view shows the documentation of a single file: design units, tables
@@ -256,7 +255,7 @@ used in the exported HTML documentation.
 All you need to do is add a `sigasi-doc.css` ([example](/resources/tech/sigasi-doc.css)) file in the root of your project.
 The CSS from this file will be inserted after the styling that 's added by default.
 The specifications can be found in our
-[manual]({{< ref "/manual/documentation.md#custom-css" >}}).
+[manual]({{< ref "/manual/eclipse/documentation.md#custom-css" >}}).
 
 {{< figure src="/img/manual/document_compare_css.png"
            link="/img/manual/document_compare_css.png"
@@ -270,4 +269,4 @@ some good documentation practices.  Sigasi Studio can help you with
 documentation. It is very easy to get started, so I invite you to
 [**try this out yourself**](https://www.sigasi.com/try-form/).
 Even with a {{< starter >}} license, you can open the
-[Documentation Preview View](/manual/views#documentation-view).
+[Documentation Preview View](/manual/eclipse/views#documentation-view).

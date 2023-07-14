@@ -19,7 +19,7 @@ Sigasi Studio for VS Code comes with an integrated cache that increases performa
 
 - Use the setting `sigasi.server.dataLocation` to specify a directory for the cache. Note that, without a location, the cache won't work.
 - Use a sensible cache quota size. This is a balancing act between your project's size and your available disk size. The default of 500MB is a good starting point.
-- If you are setting up a remote server to use with [Remote Development]({{< ref "/vscode/remote.md" >}}), you must ensure that each user has their own cache location to avoid corruption, since cache locations cannot be shared.
+- If you are setting up a remote server to use with [Remote Development]({{< ref "/manual/vscode/remote.md" >}}), you must ensure that each user has their own cache location to avoid corruption, since cache locations cannot be shared.
 - Caches cannot be shared between VS Code instances.
 
 ## 2. Avoid duplicate Java Runtime Environment installations

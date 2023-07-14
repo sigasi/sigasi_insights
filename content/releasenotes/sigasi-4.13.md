@@ -24,13 +24,13 @@ We are proud to present the Sigasi Studio 4.13 release. This release contains a 
 
 ## Improved documentation generation
 
-We enriched the [Documentation Generation]({{< ref "manual/documentation.md" >}}) export with an overview of the [dependencies]({{< ref "manual/views.md#dependencies-view" >}}) between all project files.
+We enriched the [Documentation Generation]({{< ref "manual/eclipse/documentation.md" >}}) export with an overview of the [dependencies]({{< ref "manual/eclipse/views.md#dependencies-view" >}}) between all project files.
   {{< figure src="/img/releasenotes/4.13/ProjectFilesOverviewDocgen.png" title="Project files overview in generated documentation" width="600">}}
 If your design units contain multiple state machines, we now add them all to the documentation (instead of only the first).
   <!-- {{< figure src="/img/releasenotes/4.13/MultipleFsm.png" title="Multiple state machines in a design unit" width="200">}} -->
 For Verilog projects we now also add `always` blocks to the generated documentation.
   {{< figure src="/img/releasenotes/4.13/AlwaysBlocksDocgen.png" title="Named always blocks in documentation generation">}}
-We also improved the order in which classes are added to the [documentation]({{< ref "manual/documentation.md" >}}). The table of contents is now in alphabetical order.
+We also improved the order in which classes are added to the [documentation]({{< ref "manual/eclipse/documentation.md" >}}). The table of contents is now in alphabetical order.
 
 ## (System)Verilog Improvements
 
@@ -39,7 +39,7 @@ We also improved the order in which classes are added to the [documentation]({{<
   {{< figure src="/img/releasenotes/4.13/ClassHierarchyInHover.png" title="Open Class Hierarchy in hover">}}
 * Improved hover information for VHDL `entity` instantiations in Verilog code
 * Improved covergroup's `sample` method support
-* Named `always` blocks are now shown in the [Outline View]({{< ref "manual/views.md#outline-view" >}}) and [Hierarchy View]({{< ref "manual/views.md#hierarchy-view" >}})
+* Named `always` blocks are now shown in the [Outline View]({{< ref "manual/eclipse/views.md#outline-view" >}}) and [Hierarchy View]({{< ref "manual/eclipse/views.md#hierarchy-view" >}})
   {{< figure src="/img/releasenotes/4.13/AlwaysBlockHierarchyOutline.png" title="Named always blocks in hierarchy and outline view">}}
 * Faster **preprocessor** performance
 * Added support for `config` declarations
@@ -57,28 +57,28 @@ We also improved the order in which classes are added to the [documentation]({{<
   {{< figure src="/img/releasenotes/4.13/GenericPortFolding.png" title="Folding of generics and ports">}}
 * **Formatting** support for *signature filter path element* (in `alias`es)
 * Improved **formatting** for `assertion` statements and `procedure`s with `generic`s
-* Added `package bodies` to the [Dependencies View]({{< ref "manual/views.md#dependencies-view" >}})
+* Added `package bodies` to the [Dependencies View]({{< ref "manual/eclipse/views.md#dependencies-view" >}})
 
 ## Other Improvements
 
 * ALINT support has been removed in favor of **ALINT-PRO**
-* Support projects with spaces in its paths in the [OneSpin]({{< ref "manual/onespin.md" >}}) and [GHDL]({{< ref "manual/ghdl.md" >}}) toolchains
+* Support projects with spaces in its paths in the [OneSpin]({{< ref "manual/eclipse/onespin.md" >}}) and [GHDL]({{< ref "manual/eclipse/ghdl.md" >}}) toolchains
 * Renamed "Altera Quartus II" to "Intel Quartus II"
   {{< figure src="/img/releasenotes/4.13/IntelQuartus.png" title="Intel Quartus II preference page">}}
 * Use **secure `https`** to download from our **update site**
-* Improved general user experience and error feedback on our [Talkback]({{< ref "manual/talkback.md" >}}) page
-* Added decorations to the [Hierarchy View]({{< ref "manual/views.md#hierarchy-view" >}})'s nodes
+* Improved general user experience and error feedback on our [Talkback]({{< ref "manual/common/talkback.md" >}}) page
+* Added decorations to the [Hierarchy View]({{< ref "manual/eclipse/views.md#hierarchy-view" >}})'s nodes
   {{< figure src="/img/releasenotes/4.13/HierarchyViewDecorations.png" title="Decorations in hierarchy view">}}
 * SVG export can now handle extended identifiers (`\VHDL___Extended____IdEnTiFiEr\`, `\verilog___*`)
-* We improved the [VUnit View]({{< ref "manual/views.md#vunit-view" >}}). It now **shows progress** while the tests are running and it also shows the total run time of the tests
+* We improved the [VUnit View]({{< ref "manual/eclipse/views.md#vunit-view" >}}). It now **shows progress** while the tests are running and it also shows the total run time of the tests
   {{< figure src="/img/releasenotes/4.13/VUnitSuiteDuration.png" title="Total duration of VUnit suites">}}
-* Added the functionality to create [memory and performance snapshots]({{< ref "manual/trouble.md#create-performance-and-memory-snapshots" >}}). These (anonymized) snapshots can help the Sigasi development team analyse performance issues offline
+* Added the functionality to create [memory and performance snapshots]({{< ref "manual/eclipse/trouble.md#create-performance-and-memory-snapshots" >}}). These (anonymized) snapshots can help the Sigasi development team analyse performance issues offline
   {{< figure src="/img/releasenotes/4.13/performance.png" title="Record performance and memory snapshots inside Sigasi Studio">}}
 
 # Bug fixes
 
 * Fixed problem with `@` symbol on the license preference page
-* Made sure color customization in the [Graphics Configurations]({{< ref "manual/graphics.md" >}}) does not affect labels
+* Made sure color customization in the [Graphics Configurations]({{< ref "manual/eclipse/graphics.md" >}}) does not affect labels
 * Fixed overflow issue in state machine headers
 * Fixed user-defined autocomplete templates with `Anywhere` context with empty prefix
 * Fixed rare case in which pressing the graphical views' `pin` button wouldn't work
@@ -89,9 +89,9 @@ We also improved the order in which classes are added to the [documentation]({{<
 * **[VHDL]** Fixed syntax highlighting in extended identifiers when those contain keywords
 * **[Verilog]** Fixed formatting for files containing incomplete macro invocations (a lonely backtick)
 * **[Verilog]** Fixed incorrect error when using tagged unions inside ternary conditional expressions
-* **[Verilog]** Made sure the [Preprocessor View]({{< ref "manual/views.md#preprocessor-view" >}}) also works when opening previous versions of a file through version control
+* **[Verilog]** Made sure the [Preprocessor View]({{< ref "manual/eclipse/views.md#preprocessor-view" >}}) also works when opening previous versions of a file through version control
 * **[Verilog]** Fixed a rare error in verilog autocompletes
-* **[Verilog]** Added an icon for UDP in [Open Design Unit]({{< ref "manual/editor.md#open-design-unit" >}})
+* **[Verilog]** Added an icon for UDP in [Open Design Unit]({{< ref "manual/eclipse/editor.md#open-design-unit" >}})
   {{< figure src="/img/releasenotes/4.13/UdpIcon.png" title="UDP icon in Open Design Unit" width="500">}}
 * **[Verilog]** Fixed incorrect error for include path auto-configuration when including files from a folder
 * **[Verilog]** Fixed overwrite mode (hold `Ctrl` while selecting an entry from the context menu) for autocomplete for macros
@@ -102,7 +102,7 @@ We also improved the order in which classes are added to the [documentation]({{<
 * **[Verilog]** Fixed export of symbols in packages
 * **[VUnit]** Fixed automatic library mapping based on `run.py` contents
 
-\+ A lot of other issues we could fix thanks to your [Talkback]({{< ref "manual/talkback.md" >}}) reports
+\+ A lot of other issues we could fix thanks to your [Talkback]({{< ref "manual/common/talkback.md" >}}) reports
 
 # System requirements
 
@@ -125,12 +125,12 @@ This release fixes the following reported issues:
 
 * Net search often does not work
 * Using the rename dialog does not work
-* The [Hierarchy View]({{< ref "manual/views.md#hierarchy-view" >}}) doesn't show up for certain entities
+* The [Hierarchy View]({{< ref "manual/eclipse/views.md#hierarchy-view" >}}) doesn't show up for certain entities
 * Fixed `Check Matching Components` for components of incomplete Verilog modules
 * **[VHDL]** No hovers for declarations with an incomplete conditional initializer
 * **[VHDL]** False positive errors on scientific exponent notation
 * **[VHDL]** Dead state machine states are not being reported when an enum has duplicate literals
-* **[Verilog]** The `Show Inherited Members` in the [Class Hierarchy View]({{< ref "manual/views.md#class-hierarchy-view" >}}) doesn't work
+* **[Verilog]** The `Show Inherited Members` in the [Class Hierarchy View]({{< ref "manual/eclipse/views.md#class-hierarchy-view" >}}) doesn't work
 * **[Verilog]** Support for `config` constructs is incomplete
 
-Thanks for all the [bug reports](mailto:support@sigasi.com) and enabling [Talkback]({{< ref "manual/talkback.md" >}}).
+Thanks for all the [bug reports](mailto:support@sigasi.com) and enabling [Talkback]({{< ref "manual/common/talkback.md" >}}).

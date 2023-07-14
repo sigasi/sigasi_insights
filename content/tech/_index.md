@@ -8,6 +8,9 @@ bannerad: true
 outputs:
   - html
   - csv
+menu:
+  insightsmenu:
+    weight: 60
 ---
 
 Welcome to the Sigasi tech article collection!

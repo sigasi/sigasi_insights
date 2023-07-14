@@ -12,7 +12,7 @@ or - if it's already set up correctly - it'll upgrade the version of the file wi
 The `Common Libraries` will automatically be updated to the upgraded version.
 
 In Sigasi Studio, you can [set the version of the VHDL
-language](/manual/config#choosing-your-vhdl-and-verilog-version) for
+language](/manual/eclipse/config#choosing-your-vhdl-and-verilog-version) for
 your project and individual files. The setting for individual
 files is only intended for compatibility with legacy code. Setting a
 higher VHDL version on a design file than the VHDL version of the

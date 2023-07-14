@@ -53,13 +53,13 @@ suitable than the other.
   website. Team members import the preferences from a URL, e.g. a team
   website or wiki. This approach is quick and easy to implement.
 
-**Large teams** may want to use [Oomph]({{< ref "/manual/custom-setup"
+**Large teams** may want to use [Oomph]({{< ref "/manual/eclipse/custom-setup"
 >}}) to share workspace settings. Oomph is the Eclipse installer. It
 can be configured to **create customized Eclipse installations with
 Sigasi Studio** and other plugins for e.g. your version control system
 and additional programming languages. Preferences can be configured,
 and projects can be checked out as part of the Eclipse setup.  The
-[Sigasi manual]({{< ref "/manual/custom-setup" >}}) contains some
+[Sigasi manual]({{< ref "/manual/eclipse/custom-setup" >}}) contains some
 examples of how to customize Oomph for your environment. As setting up
 Oomph from scratch is not straightforward, we recommend to use these
 examples as a basis for your customization.

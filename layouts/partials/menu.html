@@ -1,0 +1,51 @@
+{{/* mostly taken from https://gohugo.io/templates/menu-templates/ */}}
+{{- $page := .page }}
+{{- $menuID := .menuID }}
+
+{{- with index site.Menus $menuID }}
+  <nav data-uk-navbar>
+    <div class="uk-navbar-left uk-visible@m">
+        <ul class="uk-navbar-nav uk-height-1-1 uk-flex">
+            {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+        </ul>
+    </div>
+  </nav>
+{{- end }}
+
+{{- define "partials/inline/menu/walk.html" }}
+  {{- $page := .page }}
+  {{- range .menuEntries }}
+    {{- $attrs := dict "href" .URL }}
+    {{- if $page.IsMenuCurrent .Menu . }}
+      {{- $attrs = merge $attrs (dict "class" "uk-active" "aria-current" "page") }}
+    {{- else if $page.HasMenuCurrent .Menu .}}
+      {{- $attrs = merge $attrs (dict "class" "uk-active" "aria-current" "true") }}
+    {{- end }}
+    <li
+      {{- range $k, $v := $attrs }}
+        {{- with $v }}
+          {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+        {{- end }}
+      {{- end -}}
+    >
+      <a
+        {{- range $k, $v := $attrs }}
+          {{- with $v }}
+            {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+          {{- end }}
+        {{- end -}}
+      >{{ or (T .Identifier) .Name | safeHTML }}
+      {{- with .Children }}
+        <span uk-icon="icon: triangle-down"></span>
+      {{- end }}
+      </a>
+      {{- with .Children }}
+        <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2 uk-box-shadow-medium">
+            <ul class="uk-nav uk-navbar-dropdown-nav">
+                {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+            </ul>
+        </div>  
+      {{- end }}
+    </li>
+  {{- end }}
+{{- end }}

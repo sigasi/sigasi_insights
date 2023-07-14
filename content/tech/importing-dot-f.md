@@ -149,7 +149,7 @@ include path information in the `.f` file. Sigasi Studio will help you
 resolve the errors. The [library mapping can be
 updated](/manual/libraries/#modifying-the-library-configuration) in
 the Project view. Missing include paths may often be fixed using a
-[quick fix](/manual/linting/#quick-fixes). With little or no further
+[quick fix](/manual/eclipse/linting/#quick-fixes). With little or no further
 effort, your project is fully set up.
 
 

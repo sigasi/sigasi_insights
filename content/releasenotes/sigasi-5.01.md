@@ -4,6 +4,10 @@ date: 2023-03-17
 lastmod: 2023-05-22
 comments: true
 pager: true
+menu:
+  insightsmenu:
+    parent: releasenotes
+    weight: 99
 ---
 
 {{< figure src="/img/releasenotes/5.1/NewLintingRules.png" link="/img/releasenotes/5.1/NewLintingRules.png" title="A host of new linting rules" class="uk-align-center" width=550 >}}
@@ -168,7 +172,7 @@ Besides performance, we also worked towards reduced memory consumption of Sigasi
 
 # Information-rich Hovers and Views
 
-To keep you in _the flow_, we introduced rich and accurate labels and hovers in {{< page "releasenotes/sigasi-5.00.md" >}}. Context switches to look up small details are unnecessary as you are presented with many details at a glance through our information-rich hovers and views. In this release, we have refined our existing labels, added more information, and fixed a few incorrect labels across the board - be it in [hovers]({{< ref "manual/editor.md#hover" >}}), the [Outline View]({{< ref "manual/views.md#outline-view" >}}), or the [Hierarchy View]({{< ref "manual/views.md#hierarchy-view" >}}) - in VHDL, Verilog, or SystemVerilog.
+To keep you in _the flow_, we introduced rich and accurate labels and hovers in {{< page "releasenotes/sigasi-5.00.md" >}}. Context switches to look up small details are unnecessary as you are presented with many details at a glance through our information-rich hovers and views. In this release, we have refined our existing labels, added more information, and fixed a few incorrect labels across the board - be it in [hovers]({{< ref "manual/eclipse/editor.md#hover" >}}), the [Outline View]({{< ref "manual/eclipse/views.md#outline-view" >}}), or the [Hierarchy View]({{< ref "manual/eclipse/views.md#hierarchy-view" >}}) - in VHDL, Verilog, or SystemVerilog.
 
 * {{< pill text="VHDL" >}} Improved labels in the Hierarchy View to show the configured name if a design unit binding indication is used, e.g., `for all : test use entity work.low(RTL);`
 * {{< pill text="VHDL" >}} The Hierarchy View now shows the `generate` body label
@@ -196,7 +200,7 @@ You can refer to [this page]({{< ref "GPG.md" >}}) for all information regarding
 # Further New and Noteworthy Changes
 
 * {{< pill text="Eclipse" >}} The upper limit for the amount of autocomplete proposals has been increased. In practice, this means that important proposals will always be included.
-* {{< pill text="Eclipse" >}}  [Generated documentation]({{< ref "manual/documentation.md" >}}) now shows an empty cell instead of `unspecified` when no default is specified
+* {{< pill text="Eclipse" >}}  [Generated documentation]({{< ref "manual/eclipse/documentation.md" >}}) now shows an empty cell instead of `unspecified` when no default is specified
 * {{< pill text="VHDL" >}} Added a linting rule to check that the characters in a string literal are legal  
 {{< figure src="/img/releasenotes/5.1/IllegalStringLiteralCharacters.png" link="/img/releasenotes/5.1/IllegalStringLiteralCharacters.png" title="Illegal characters in string literal as initializer" class="uk-align-center" width=550 >}}  
 * {{< pill text="VHDL" >}} Added a linting rule to check whether spaces are used in extended identifiers referable from Verilog and SystemVerilog as these cannot be referenced in those languages  
@@ -210,17 +214,17 @@ You can refer to [this page]({{< ref "GPG.md" >}}) for all information regarding
 
 * Improved priorities for keywords in autocomplete. Relevant keywords are now listed higher up.
 * Removed syntax highlighting of keywords in extended identifiers, e.g., `\extended id\` or `\extended$id `
-* {{< pill text="Eclipse" >}} The [Problems View]({{< ref "manual/views.md#problems-view" >}}) `Sort by Location` now sorts by line number
+* {{< pill text="Eclipse" >}} The [Problems View]({{< ref "manual/eclipse/views.md#problems-view" >}}) `Sort by Location` now sorts by line number
 * {{< pill text="Eclipse" >}} The VUnit installation path is now updated when you set your `python` path, even if there are no VUnit projects open
 * {{< pill text="Eclipse" >}} The descriptions of the options in the Documentation Generation Wizard no longer change when you enable or disable them
 * {{< pill text="Eclipse" >}} Added a description to the Export Marker wizard
-* {{< pill text="Eclipse" >}} Added missing keybind for [Quick Outline]({{< ref "manual/views.md#quick-outline-view" >}})
+* {{< pill text="Eclipse" >}} Added missing keybind for [Quick Outline]({{< ref "manual/eclipse/views.md#quick-outline-view" >}})
 * {{< pill text="Eclipse" >}} Added queueing for diagram exports. If an export is already in the works, it will not be canceled.
 * {{< pill text="Eclipse" >}} Improved caret positioning after formatting such that it jumps around only when strictly necessary
 * {{< pill text="Eclipse" >}} Improved icons for `typedef` and `nettype` in the Outline View
 * {{< pill text="Eclipse" >}} Fixed autocomplete proposals to highlight the matching prefix characters in bold
 * {{< pill text="Eclipse" >}} Removed hovers that are empty for whatever reason
-* {{< pill text="Eclipse" >}} Removed [Suppress Warning]({{< ref "manual/linting.md#suppressing-warnings" >}}) Quick Fix when the problem is already suppressed
+* {{< pill text="Eclipse" >}} Removed [Suppress Warning]({{< ref "/manual/eclipse/linting.md#suppressing-warnings" >}}) Quick Fix when the problem is already suppressed
 * {{< pill text="VHDL" >}} Improved wording in many of our error messages
 * {{< pill text="VHDL" >}} {{< pill text="Eclipse" >}} Fixed extra whitespace in the [Add sensitivity list]({{< ref "manual/rules/sensitivity-list.md" >}}) Quick Fix
 * {{< pill text="Verilog" >}} The variable being declared is no longer shown as autocomplete proposal when you are initializing it
@@ -229,7 +233,7 @@ You can refer to [this page]({{< ref "GPG.md" >}}) for all information regarding
 # Bug Fixes
 
 * The include directive autocomplete now shows proposals for files that need encoding, e.g., when they contain a space or non-ASCII characters
-* {{< pill text="Eclipse" >}} Fixed the [Capture Heap Dump]({{< ref "manual/trouble.md#memory-snapshot" >}}) command
+* {{< pill text="Eclipse" >}} Fixed the [Capture Heap Dump]({{< ref "manual/eclipse/trouble.md#memory-snapshot" >}}) command
 * {{< pill text="Eclipse" >}} Fixed a deadlock when closing a tab while the autocomplete window is open
 * {{< pill text="Eclipse" >}} Fixed backspace inadvertently deleting multiple whitespace characters
 * {{< pill text="Eclipse" >}} Fixed mac-style newlines (`\r`) breaking the Documentation Export
@@ -253,16 +257,16 @@ You can refer to [this page]({{< ref "GPG.md" >}}) for all information regarding
 * {{< pill text="Verilog" >}} Fixed navigation of functions when a target is available in the enclosing class and the parent class
 * {{< pill text="Verilog" >}} Removed false positive override annotation in the Class Hierarchy View
 * {{< pill text="Verilog" >}} Removed duplicate `Open Declaration` links when a file is included multiple times
-* {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} All inherited members in the [Class Hierarchy View]({{< ref "manual/views.md#class-hierarchy-view" >}}) are now colored consistently
+* {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} All inherited members in the [Class Hierarchy View]({{< ref "manual/eclipse/views.md#class-hierarchy-view" >}}) are now colored consistently
 * {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} Fixed links to parent classes in generated documentation
 * {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} Fixed empty Class Hierarchy View when opening it on a class that has a `task` and `function` with the same name
 * {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} Removed empty blocks in the Block Diagram for empty `for` loops
 
-Thank you for all the [bug reports](mailto:support@sigasi.com) and for enabling [Talkback]({{< ref "manual/talkback.md" >}}). All your reports have helped us fix many issues that would otherwise go unnoticed.
+Thank you for all the [bug reports](mailto:support@sigasi.com) and for enabling [Talkback]({{< ref "manual/common/talkback.md" >}}). All your reports have helped us fix many issues that would otherwise go unnoticed.
 
 # Updates
 
-* {{< pill text="Eclipse" >}} Updated to Chromium 95 for rendering graphics and the [Documentation View]({{< ref "manual/views.md#documentation-view" >}}). This increases the stability and performance of these views
+* {{< pill text="Eclipse" >}} Updated to Chromium 95 for rendering graphics and the [Documentation View]({{< ref "manual/eclipse/views.md#documentation-view" >}}). This increases the stability and performance of these views
 
 # System Requirements
 

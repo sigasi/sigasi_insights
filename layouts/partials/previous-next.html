@@ -8,10 +8,10 @@
         {{ if (isset .Params "linting") }}
         <div class="uk-text-center uk-margin uk-margin-right uk-width-expand">
             {{ if in .Params.linting "vhdl" }}
-            <a class="sg-insight-pager" href="/manual/linting-vhdl/#list-of-vhdl-code-rules">All VHDL Linting Rules</a>
+            <a class="sg-insight-pager" href="/manual/eclipse/linting-vhdl/#list-of-vhdl-code-rules">All VHDL Linting Rules</a>
             {{ end }}
             {{ if in .Params.linting "verilog" }}
-            <a class="sg-insight-pager" href="/manual/linting-verilog/#list-of-verilog-and-systemverilog-code-rules">All Verilog Linting Rules</a>
+            <a class="sg-insight-pager" href="/manual/eclipse/linting-verilog/#list-of-verilog-and-systemverilog-code-rules">All Verilog Linting Rules</a>
             {{ end }}
         </div>
         {{ else }}

@@ -12,4 +12,4 @@ tags:
   - column mode selection
 ---
 
-Use Block Select (aka Column mode) to manipulate your VHDL code ([Manual](/manual/editor#block-selection)).
+Use Block Select (aka Column mode) to manipulate your VHDL code ([Manual](/manual/eclipse/editor#block-selection)).

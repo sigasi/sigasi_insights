@@ -20,7 +20,7 @@ use unisim.VCOMPONENTS.all;
 ```
 
 If the *unisim* library is not known yet in your Sigasi Studio project, a
-[Quick Fix](/manual/linting#quick-fixes) allows to easily configure
+[Quick Fix](/manual/eclipse/linting#quick-fixes) allows to easily configure
 the *unisim* library for either ISE or Vivado.
 To use this Quick Fix, hover over the declaration of the *unisim* library
 or press *Ctrl+1* to open the pop-up where you can choose the Quick Fix.

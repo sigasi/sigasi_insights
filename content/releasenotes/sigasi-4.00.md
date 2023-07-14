@@ -37,7 +37,7 @@ Sigasi Studio 4.0 introduces **block diagrams** for SystemVerilog modules. You c
 
 {{< figure src="/img/releasenotes/4.0/sv_block_diagram.png" alt="Block Diagram View for SystemVerilog" title="Block Diagram View for SystemVerilog" link="/img/releasenotes/4.0/sv_block_diagram.png" >}}
 
-The [Block Diagram View](/manual/views#block-diagram-view) **automatically updates** when you **save** your code and gives a convenient way to visually inspect and navigate your code, even
+The [Block Diagram View](/manual/eclipse/views#block-diagram-view) **automatically updates** when you **save** your code and gives a convenient way to visually inspect and navigate your code, even
 when your code is still unfinished or broken.
 
 {{< figure src="/img/releasenotes/4.0/sv_graphic_configuration.png" alt="Block Diagram Graphics Configuration for SystemVerilog" title="Block Diagram Graphics Configuration for SystemVerilog" link="/img/releasenotes/4.0/sv_graphic_configuration.png" >}}
@@ -46,7 +46,7 @@ You can also customize and filter block diagrams by creating a [Graphics Configu
 
 # SystemVerilog State Machines
 
-The [State Machine View](/manual/views#state-machine-view) now also visualizes `enum`-based statemachines in your SystemVerilog code. This view automatically updates while you are editing your code and gives a convenient way to visually inspect and navigate your code, even when your code is still unfinished or broken.
+The [State Machine View](/manual/eclipse/views#state-machine-view) now also visualizes `enum`-based statemachines in your SystemVerilog code. This view automatically updates while you are editing your code and gives a convenient way to visually inspect and navigate your code, even when your code is still unfinished or broken.
 
 You can open the State Machine View by right clicking in the editor and selecting **Show In > State Machines**.
 
@@ -58,13 +58,13 @@ You can also customize and filter state machine diagrams by creating a [Graphics
 
 # SystemVerilog and Mixed Hierarchies in the Hierarchy View
 
-The hierarchy engine in Sigasi Studio was updated to handle SystemVerilog, VHDL and mixed language designs. The [Hierarchy View](/manual/views#hierarchy-view) automatically refreshes itself when you save your design files.
+The hierarchy engine in Sigasi Studio was updated to handle SystemVerilog, VHDL and mixed language designs. The [Hierarchy View](/manual/eclipse/views#hierarchy-view) automatically refreshes itself when you save your design files.
 
 This is a convenient and powerful method to navigate through your design.
 
 {{< figure src="/img/releasenotes/4.0/mixed_hierarchy.png" alt="SystemVerilog and Mixed Hierarchies in the Hierarchy View" title="SystemVerilog and Mixed Hierarchies in the Hierarchy View" link="/img/releasenotes/4.0/mixed_hierarchy.png" >}}
 
-[Hierarchy View documentation](/manual/views#hierarchy-view)
+[Hierarchy View documentation](/manual/eclipse/views#hierarchy-view)
 
 # More SystemVerilog improvements
 
@@ -75,13 +75,13 @@ Sigasi Studio 4.0 also contains a lot of improvements to enhance your SystemVeri
 {{< figure src="/img/releasenotes/4.0/autocomplete_verilog_directives.png" alt="Autocomplete for SystemVerilog preprocessor directives" title="Autocomplete for SystemVerilog preprocessor directives" link="/img/releasenotes/4.0/autocomplete_verilog_directives.png" >}}
 - Report **errors** for incorrect SystemVerilog **preprocessor directives**  
 {{< figure src="/img/releasenotes/4.0/directive_errors.png" alt="Report errors in SystemVerilog preprocessor directives" title="Report errors in SystemVerilog preprocessor directives" link="/img/releasenotes/4.0/directive_errors.png" >}}
-- Improved and polished the SystemVerilog **[Outline View](/manual/views#outline-view)**
+- Improved and polished the SystemVerilog **[Outline View](/manual/eclipse/views#outline-view)**
 - Extra autocomplete **templates** for **SystemVerilog assertions**  
 {{< figure src="/img/releasenotes/4.0/assertion_templates.png" alt="Autocomplete templates for SystemVerilog assertions" title="Autocomplete templates for SystemVerilog assertions" link="/img/releasenotes/4.0/assertion_templates.png" >}}
 - A new **wizard** to easily **import existing SystemVerilog projects** (that were created before you were using Sigasi Studio)  
 {{< figure src="/img/releasenotes/4.0/import_existing_systemverilog_project.png" alt="Import wizard for existing SystemVerilog projects" title="Import wizard for existing SystemVerilog projects" link="/img/releasenotes/4.0/import_existing_systemverilog_project.png" >}}
 - Improved handling of **include files**: Sigasi Studio analyses includes files in the context of their *includer*. This results in better error reporting and autocompletes. This release also improves the **outline** and **formatting** of include files.
-- Improved SystemVerilog [preprocessor view](/manual/views#preprocessor-view):
+- Improved SystemVerilog [preprocessor view](/manual/eclipse/views#preprocessor-view):
     * Added an **overview ruler**
     * Show **squiggly lines** for errors
     * Highlight **current** line

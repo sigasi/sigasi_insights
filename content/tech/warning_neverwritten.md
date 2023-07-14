@@ -26,14 +26,14 @@ Doesn't the initialization count as a **write**?
 
 ## More details on the 'never written' warning
 
-This warning is one of Sigasi Studio's [linting rules]({{< ref "/manual/linting" >}}).
+This warning is one of Sigasi Studio's [linting rules]({{< ref "/manual/eclipse/linting" >}}).
 The specific linting rule that generates this warning is available if you have an {{< xl >}} or {{< xprt >}} license. 
 
 As the image shows, this warning exists for both signals and variables.
 
 # A better look at the code
 
-If you want to resolve this warning without [suppressing]({{< ref "/manual/linting#suppressing-warnings" >}}) it,
+If you want to resolve this warning without [suppressing]({{< ref "/manual/eclipse/linting#suppressing-warnings" >}}) it,
 you do have a better alternative.
 
 When you carefully look at the signal and variable declarations and their uses in the process,

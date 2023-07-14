@@ -18,8 +18,8 @@ To work locally on this project, you'll have to follow the steps below:
 
 We are using markdown with [Hugo]. Note that comments in content pages are _not_ stripped.
 
-* Install: [Hugo]
-* Build `hugo`
+* Install: [Hugo] - this site requires the extended edition
+* Build: `hugo`
 * Test: `hugo server --buildFuture --buildDrafts --navigateToChanged` to start serving pages locally. The url will be printed in the `hugo` output.
   * Use the `-F` (or `--buildFuture`) option to show posts with dates in the future.
   * Use the `-D` (or `--buildDrafts`) option to show posts with draft status.

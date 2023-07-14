@@ -26,7 +26,7 @@ Sigasi Studio 3.2 is build on top of the newly released [Eclipse Neon](https://e
 
 ## Configure language version per file/project/workspace
 
-You can configure the language version on a more fine grained level than one version for the entire workpace. You can override the language version per project, folder or file. \[[documentation](/manual/config#choosing-your-vhdl-and-verilog-version)\]
+You can configure the language version on a more fine grained level than one version for the entire workpace. You can override the language version per project, folder or file. \[[documentation](/manual/eclipse/config#choosing-your-vhdl-and-verilog-version)\]
 
 ![](/img/releasenotes/3.2/vhdl_version.png)
 
@@ -36,7 +36,7 @@ This makes it a possible to use a VHDL 2008 library in a VHDL 93 design. If you 
 ## Aldec ALINT elaboration checks
 {{< xl_only >}}
 
-Sigasi Studio can run Aldec ALINT elaboration checks. If you select ALINT as external compiler (**Preferences > Sigasi > Toolchains**) and select a top-level in the [Hierarchy View](/manual/views#hierarchy-view), a new ALINT button ![](/img/releasenotes/3.2/alint_button.png) will be enabled. Clicking this button will run a headless ALINT elaboration check. All ALINT elaboration problems will appear as markers in the problems view and in the associated editors.   
+Sigasi Studio can run Aldec ALINT elaboration checks. If you select ALINT as external compiler (**Preferences > Sigasi > Toolchains**) and select a top-level in the [Hierarchy View](/manual/eclipse/views#hierarchy-view), a new ALINT button ![](/img/releasenotes/3.2/alint_button.png) will be enabled. Clicking this button will run a headless ALINT elaboration check. All ALINT elaboration problems will appear as markers in the problems view and in the associated editors.   
 
 ![](/img/releasenotes/3.2/alint.png)
 
@@ -47,7 +47,7 @@ We further extended our SystemVerilog support:
 - Fixed some corner cases with the Preprocessor
 - Skip encrypted regions in SystemVerilog
 - The external compiler integration now reuses the configured Project's include paths and language version
-- Verilog modules can now be set as toplevel: this enables you to launch an [external simulation](/manual/tools#launch-simulator) from Sigasi Studio
+- Verilog modules can now be set as toplevel: this enables you to launch an [external simulation](/manual/eclipse/tools#launch-simulator) from Sigasi Studio
 - We add more Verilog autocomplete templates
 - Syntax support for more SystemVerilog expressions
 - Syntax support for SystemVerilog Assertions

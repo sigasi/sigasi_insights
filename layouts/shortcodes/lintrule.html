@@ -2,11 +2,11 @@
 {{ if (or (ge $numOfParams 3) (and (ge $numOfParams 2) (ne (.Get 0) "sv")) ) }}
 ## Project specific setting of these rules
 
-These rules can be disabled for your project, or its severity can be modified in the [project linting settings](/manual/linting/#project-specific-linting-settings).
+These rules can be disabled for your project, or its severity can be modified in the [project linting settings](/manual/eclipse/linting/#project-specific-linting-settings).
 {{ else }}
 ## Project specific setting of this rule
 
-This rule can be disabled for your project, or its severity can be modified in the [project linting settings](/manual/linting/#project-specific-linting-settings).
+This rule can be disabled for your project, or its severity can be modified in the [project linting settings](/manual/eclipse/linting/#project-specific-linting-settings).
 {{ end }}
 
 {{ if ( ne (.Get 0) "sv") }}

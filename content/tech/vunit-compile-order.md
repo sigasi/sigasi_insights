@@ -41,7 +41,7 @@ the HDL files in the right order, VUnit would change the order --
 incorrectly in this case.  Soon I found that VUnit has
 `add_dependency_on()` methods to **enforce dependencies** between HDL
 files. [Sigasi Studio](https://www.sigasi.com) can [export a compile
-order](/manual/tools/#auto-export).  So the
+order](/manual/eclipse/tools/#auto-export).  So the
 idea came to use the **compile order from Sigasi Studio** -- which
 is correct for our project -- and set a dependency in VUnit
 between each pair of successive files in Sigasi's compile order.  As
@@ -106,13 +106,13 @@ So far we've been **maintaining a list of design files** in the VUnit
 `run.py` script **by hand**.  Wildcards in the list may help to
 automatically include new design files as they are added to the
 project, but excluding files is difficult. As shown in an [earlier
-article](https://insights.sigasi.com/tech/vunit-integration/#read-vunit-configuration-from-sigasi-studio-project-files),
+article](/tech/vunit-integration/#read-vunit-configuration-from-sigasi-studio-project-files),
 VUnit can be made to read the list of design files from Sigasi
 Studio's `.project` file, but that requires additional python code in
 `run.py`.
 
 So now we have an **alternative**: have Sigasi Studio [write out the
-compile order](https://insights.sigasi.com/manual/tools/#auto-export),
+compile order](/manual/eclipse/tools/#auto-export),
 and read the generated CSV file in `run.py`. As a fallback, you can
 still maintain a static list, e.g. to run VUnit tests outside Sigasi
 Studio, or for importing your project into Sigasi Studio, when the CSV

@@ -24,7 +24,7 @@ diagrams can be either embedded in the HTML file, or written as
 separate graphics (`.svg`) files.
 
 To some extent, the generated [documentation can be
-restyled](/manual/documentation/#custom-css) using Cascading Style
+restyled](/manual/eclipse/documentation/#custom-css) using Cascading Style
 Sheets (CSS).  CSS are preferred for changing colors and fonts and
 they also allow to hide entire sections from the document.  But their
 primary purpose remains the custom styling of the generated
@@ -104,7 +104,7 @@ many more things, such as
 Note however that we don't recommend to extract the compilation order
 of the design files from the documentation. If you need to generate
 the compilation order, we recommend to export it directly as a [CSV
-file](/manual/tools/#export).
+file](/manual/eclipse/tools/#export).
 
 Did you make a cool script to share? Let us know! If necessary, Sigasi
 license holders may also [contact

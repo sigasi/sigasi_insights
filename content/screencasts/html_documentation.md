@@ -12,9 +12,9 @@ tags:
 
 # Style your HDL documentation
 
-In this video we show how you can use a custom CSS file to style the [generated HTML documentation]({{< ref "manual/documentation.md" >}}) of your VHDL, Verilog and SystemVerilog projects.
+In this video we show how you can use a custom CSS file to style the [generated HTML documentation]({{< ref "manual/eclipse/documentation.md" >}}) of your VHDL, Verilog and SystemVerilog projects.
 
-The automatic extraction of documentation is a powerful feature of Sigasi Studio. The [Documentation View]({{< ref "manual/views.md#documentation-view" >}}) helps to improve code comments and gives immediate feedback about the markup.
+The automatic extraction of documentation is a powerful feature of Sigasi Studio. The [Documentation View]({{< ref "manual/eclipse/views.md#documentation-view" >}}) helps to improve code comments and gives immediate feedback about the markup.
 
 With {{< page "releasenotes/sigasi-4.12.md" >}}, a lot of additional information becomes available in the documentation, and you can augment your exported HTML document with custom CSS.
 

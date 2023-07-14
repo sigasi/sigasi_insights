@@ -20,7 +20,7 @@ Features
 * [Coding Styles](/tech/coding-styles)
 * [Custom Linting](/screencasts/custom_linting)
 * [Generate VHDL documentation in Sigasi Studio](/tech/generate-vhdl-documentation-sigasi)
-* [Revision Control Systems](/manual/plugins#revision-control-systems)
+* [Revision Control Systems](/manual/eclipse/plugins#revision-control-systems)
 * Code reviews
 * [Issue tracking](http://wiki.eclipse.org/Mylyn)
 * Integration with other programming language development tools, including:

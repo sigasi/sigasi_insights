@@ -38,20 +38,20 @@ The **autocomplete** for preprocessor directives also received some extra love. 
 
 {{< figure src="/img/releasenotes/4.6/preprocessor_autocomplete.png" title="Report output ports that are never assigned" >}}
 
-Because file encoding differences between including and included files can lead to unexpected, very difficult to find bugs, we added a [linting check]({{< ref "/manual/linting.md#list-of-system-verilog-code-rules" >}}). When the file encoding differs we now report a warning.
+Because file encoding differences between including and included files can lead to unexpected, very difficult to find bugs, we added a [linting check]({{< ref "/manual/eclipse/linting.md#list-of-system-verilog-code-rules" >}}). When the file encoding differs we now report a warning.
 
 {{< figure src="/img/releasenotes/4.6/include_encoding_warning.png" title="No more library mapping for include files" >}}
 
 # New graphics engine
 
-Sigasi Studio 4.6 contains a new graphics engine, which supports 4K displays and allows us to add more features in the future. The **[Block Diagram]({{< ref "manual/views.md#block-diagram-view" >}})** and **[State Machines]({{< ref "manual/views.md#state-machine-view" >}})** Views already use the new engine. The **[Dependencies]({{< ref "manual/views.md#dependencies-view" >}})** View still uses the old engine.
+Sigasi Studio 4.6 contains a new graphics engine, which supports 4K displays and allows us to add more features in the future. The **[Block Diagram]({{< ref "manual/eclipse/views.md#block-diagram-view" >}})** and **[State Machines]({{< ref "manual/eclipse/views.md#state-machine-view" >}})** Views already use the new engine. The **[Dependencies]({{< ref "manual/eclipse/views.md#dependencies-view" >}})** View still uses the old engine.
 
 Let us know if you run into any problems. On Linux, make sure [**webkitgtk** is installed]({{< ref "faq#the-internal-web-browser-does-not-work-on-linux" >}}).
 If you use [Wayland](https://wayland.freedesktop.org/) instead of X11, you might need to set the environment variable `WEBKIT_DISABLE_COMPOSITING_MODE=1`.
 
 # Dependencies View
 
-The analysis behind the **[Dependencies]({{< ref "manual/views.md#dependencies-view" >}})** View was optimized for speed and memory usage. Big projects are now visualized a lot faster, without saturating the memory.
+The analysis behind the **[Dependencies]({{< ref "manual/eclipse/views.md#dependencies-view" >}})** View was optimized for speed and memory usage. Big projects are now visualized a lot faster, without saturating the memory.
 
 {{% youtube 2s5japBtgDg %}}
 

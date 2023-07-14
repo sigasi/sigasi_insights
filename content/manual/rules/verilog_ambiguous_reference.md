@@ -5,7 +5,7 @@ linting: verilog
 
 In Verilog, it is possible to reference identifiers from different files. However, if multiple files are declaring the same identifier there is no way to know which one should be used. Such cases will be marked as ambiguous references (rule 93).
 
-A possible reason you might be seeing these errors is that your project defines multiple top levels that have been mapped to the same library. More information about library mappings can be found [here]({{< ref "/manual/libraries" >}}).
+A possible reason you might be seeing these errors is that your project defines multiple top levels that have been mapped to the same library. More information about library mappings can be found [here]({{< ref "/manual/eclipse/libraries.md" >}}).
 
 <pre>
 module inner;

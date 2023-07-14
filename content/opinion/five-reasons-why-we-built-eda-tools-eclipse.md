@@ -30,7 +30,7 @@ Keeping software up to date can be a real pain. Eclipse makes this pretty easy. 
 
 ## 5. Feature rich editor
 
-Can we have [Keyboard Shortcuts](/manual/keyshortcuts) for duplicating a line of code? And for moving a line of code up or down? How about [search and replace](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fviews%2Fshared%2Fref-findreplace.htm&cp%3D1_4_7_1_0_2), based on regular expressions? And [Block Selection for VHDL Code Editing](/screencasts/block_selection_mode)? Did I mention we want [Line numbers](/manual/config#line-numbers) and [Side-by-side diff](/screencasts/side_by_side_diff)? And [multi-byte characters](/faq#does-sigasi-support-multi-byte-characters)?
+Can we have [Keyboard Shortcuts](/manual/keyshortcuts) for duplicating a line of code? And for moving a line of code up or down? How about [search and replace](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fviews%2Fshared%2Fref-findreplace.htm&cp%3D1_4_7_1_0_2), based on regular expressions? And [Block Selection for VHDL Code Editing](/screencasts/block_selection_mode)? Did I mention we want [Line numbers](/manual/eclipse/config#line-numbers) and [Side-by-side diff](/screencasts/side_by_side_diff)? And [multi-byte characters](/faq#does-sigasi-support-multi-byte-characters)?
 
 Yes. You can have all of that and much more. 
 

@@ -73,7 +73,7 @@ end architecture RTL;
 ```
 
 In Sigasi Studio, the terms **formal** and **actual** are used in a
-number of [**warning** and **error messages**](/manual/linting). Here are some examples,
+number of [**warning** and **error messages**](/manual/eclipse/linting). Here are some examples,
 in which a module `demo` with 4 ports (formals) is instantiated a few
 times. Each instantiation demonstrates one particular error involving
 formals and/or actuals.

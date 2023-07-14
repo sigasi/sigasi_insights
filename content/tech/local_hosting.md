@@ -14,23 +14,18 @@ Some development teams are completely disconnected from the public internet, for
 
 Some things will not work if you view this website offline:
 
- * Video's are hosted separately, and will not be available
- * External links will be broken
- * The comments sections use an external service and will not be available
+* Video's are hosted separately, and will not be available
+* External links will be broken
+* The comments sections use an external service and will not be available
 
 # Local build with Hugo
 
 You can generate the Sigasi insights pages locally:
 
 1. Download the source code of the Sigasi Insights website from GitHub: <https://github.com/sigasi/sigasi_insights>
-2. Make sure you have [Hugo] installed
+2. Make sure you have an extended edition of [Hugo] installed
 3. Generate the site
-    *  For local use, run `hugo server`. Visit <http://localhost:1313> to see the documentation.
-    *  For web hosting, generate the html code using `hugo` and copy the *public* folder to your internal server.
-
-# Alternative
-
-While a local installation does not require much work, it's also possible to print the manual to a PDF.
-For this we have created the single page {{< page "singlepagemanual" >}}.
+    * For local use, run `hugo server`. Visit <http://localhost:1313> to see the documentation.
+    * For web hosting, generate the html code using `hugo` and copy the *public* folder to your internal server.
 
 [Hugo]: https://gohugo.io/

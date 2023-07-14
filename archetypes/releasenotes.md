@@ -12,7 +12,7 @@ We are proud to present the Sigasi Studio X.Y release: ...
 
 # Bug Fixes
 
-Thank you for all the [bug reports](mailto:support@sigasi.com) and for enabling [Talkback]({{< ref "manual/talkback.md" >}}). All your reports have helped us fix many issues that would otherwise go unnoticed.
+Thank you for all the [bug reports](mailto:support@sigasi.com) and for enabling [Talkback]({{< ref "manual/common/talkback.md" >}}). All your reports have helped us fix many issues that would otherwise go unnoticed.
 
 # System Requirements
 

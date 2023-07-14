@@ -48,7 +48,7 @@ Saros synchronizes the project files using the XMPP protocol.
 
 This is a wonderful plugin that might be of good use while working from home.
 It can be very useful for our customers.
-For help on installing the Saros plugin in Sigasi Studio you can refer to the {{< page "/manual/plugins.md" >}} manual page.
+For help on installing the Saros plugin in Sigasi Studio you can refer to the {{< page "/manual/eclipse/plugins.md" >}} manual page.
 
 **Keep being productive, wherever you are!**
 

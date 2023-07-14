@@ -34,7 +34,7 @@ If you distribute a customized version of Sigasi internally, you can also set de
 
 ## Option 2: Fully automated with Workspace Mechanic
 
-**Note:** since we've documented a **more flexible way to work with [Oomph]({{< ref "/manual/custom-setup" >}})**, we no longer recommend using Workspace Mechanic.
+**Note:** since we've documented a **more flexible way to work with [Oomph]({{< ref "/manual/eclipse/custom-setup" >}})**, we no longer recommend using Workspace Mechanic.
 
 Google also ran into this problem and solved it by developing the Workspace Mechanic plugin for Eclipse. This plugin, which also works fine in Sigasi, allows to automate the maintenance of Eclipse environments.
 

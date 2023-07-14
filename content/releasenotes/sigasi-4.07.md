@@ -67,7 +67,7 @@ We also improved the memory footprint of the hierarchy view. For larger projects
 
 * If a VHDL variable is used in statements like `report`, we now count this as a usage of this variable and no longer warn that the variable is unread.
 * The Sigasi Studio update mechanism now uses `https` to access our update servers.
-* The variable for accessing the [current toplevel](/manual/tools/#variables-in-arguments) was renamed from `${vhdl_toplevel}` to `${sigasi_toplevel}`.
+* The variable for accessing the [current toplevel](/manual/eclipse/tools/#variables-in-arguments) was renamed from `${vhdl_toplevel}` to `${sigasi_toplevel}`.
 * We updated the upstream Sigasi Studio dependencies:
     * Xtext to 2.20.0.
     * Eclipse platform to [Eclipse 2019-12](https://www.eclipse.org/eclipseide/2019-12/noteworthy/). This brings:

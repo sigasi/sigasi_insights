@@ -42,7 +42,7 @@ In addition to the new linting checks Sigasi Studio 4.9 has following (System)Ve
 
 ## (System)Verilog linting checks
 
-Sigasi Studio 4.9 introduces a long list of new [linting checks for Verilog and SystemVerilog]({{< ref "../../manual/linting-verilog/" >}}).
+Sigasi Studio 4.9 introduces a long list of new [linting checks for Verilog and SystemVerilog]({{< ref "/manual/eclipse/linting-verilog.md" >}}).
 
 #### Syntax checks
 

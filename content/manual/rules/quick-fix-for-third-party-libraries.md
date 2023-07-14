@@ -6,7 +6,7 @@ linting: vhdl
 If you are using vendor libraries from Intel or AMD/Xilinx (ISE or Vivado),
 you do not need to set up these libraries by hand. Sigasi Studio has a Quick Fix
 to do this for you.
-The missing library will be added to the [Common Libraries]({{< ref "manual/libraries#common-libraries" >}}) of your project.
+The missing library will be added to the [Common Libraries]({{< ref "/manual/eclipse/libraries.md#common-libraries" >}}) of your project.
 
 {{< figure src="/img/manual/quickfix_altera.png" class="uk-align-left" >}}
 {{< figure src="/img/manual/quickfix_xilinx.png"  >}}

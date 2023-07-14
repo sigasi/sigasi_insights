@@ -52,7 +52,7 @@ In addition we solved some rendering issues with **overlapping labels.**
 
 ## Other new and noteworthy improvements
 
-- Automatically [export the compilation order](/manual/tools#auto-export), based on either the entire project, or based on a top level.
+- Automatically [export the compilation order](/manual/eclipse/tools#auto-export), based on either the entire project, or based on a top level.
   You can configure this in the Project Properties.
   ![](/img/releasenotes/3.3/auto_export_property_page.png)
 - Semantic highlighting for labels. The color can be configured via **Window > Preferences > Sigasi > VHDL > Syntax coloring**. Labels are colored gray by default.
@@ -63,7 +63,7 @@ In addition we solved some rendering issues with **overlapping labels.**
 - Hyperlinks to open matching declarations in `protected type` bodies.
 - Autocomplete template for `case generate` statements.
 - Components are foldable in the editor.
-- [Stuttering](/manual/editor#stuttering) in the Verilog Editor
+- [Stuttering](/manual/eclipse/editor#stuttering) in the Verilog Editor
 
 ## Bug fixes
 

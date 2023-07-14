@@ -9,4 +9,4 @@ tags:
   - Hierarchy
 ---
 
-The Hierarchy View is documented [here](/manual/views#hierarchy-view).
+The Hierarchy View is documented [here](/manual/eclipse/views#hierarchy-view).

@@ -23,7 +23,7 @@ The following steps will lead to the setup of the `ubus` example UVM project.
 
 1. If there is no Sigasi project yet, create one by opening the _Command Palette_ using **Ctrl+Shift+P** and type the command **Sigasi: Add (System)Verilog Support**. After doing so, you should see the Sigasi extension activating and the Problems View being populated.
 
-1. The Sigasi extension provides a new _[Project View]({{< ref "/vscode/views.md#project-view" >}})_ which you should open now. 
+1. The Sigasi extension provides a new _[Project View]({{< ref "/manual/vscode/views.md#project-view" >}})_ which you should open now. 
 To open this view, navigate to the _Explorer_ pane (**Ctrl+Shift+E**) and open the _PROJECT VIEW_ element.
 This view replaces the default VS Code Explorer View and is used for many Sigasi features.
 

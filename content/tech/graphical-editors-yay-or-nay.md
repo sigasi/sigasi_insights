@@ -66,10 +66,10 @@ With teams getting bigger, chances are two or more people will be working on the
 
 ![Cluttered diagram](/img/tech/graphical-editors/vme-bd.png)
 
-Generating a diagram from code might in some cases still result in huge diagrams, however with the help of [concise configuration](/manual/graphics) you can easily create multiple views of the same code, without changing the actual design.
+Generating a diagram from code might in some cases still result in huge diagrams, however with the help of [concise configuration](/manual/eclipse/graphics) you can easily create multiple views of the same code, without changing the actual design.
 
 ![Configured diagram](/img/tech/graphical-editors/vme-bd-configured.png)
 
 # Conclusion
 
-In our opinion the use of graphical editors that generate code have too many drawbacks when compared to using a good code editor that can generate diagrams on the fly. Keeping the focus on the code will not only help with tracking down issues faster, but will also make collaboration more feasible. We believe graphical views are best used as an aid to write better code, not hide it. This is why Sigasi Studio supports various different graphical views, such as the [Block Diagrams](/manual/views/#block-diagram-view), [State Machines](/manual/views/#state-machine-view) and [Dependencies](/manual/views/#dependencies-view) views.
+In our opinion the use of graphical editors that generate code have too many drawbacks when compared to using a good code editor that can generate diagrams on the fly. Keeping the focus on the code will not only help with tracking down issues faster, but will also make collaboration more feasible. We believe graphical views are best used as an aid to write better code, not hide it. This is why Sigasi Studio supports various different graphical views, such as the [Block Diagrams](/manual/eclipse/views/#block-diagram-view), [State Machines](/manual/eclipse/views/#state-machine-view) and [Dependencies](/manual/eclipse/views/#dependencies-view) views.

@@ -22,7 +22,7 @@ At Sigasi, we build tools to make you more productive.  Specifically, we enhance
 But what about "other" products that also require manipulating/visualizing VHDL or SystemVerilog?  What about simulation, design, code specification, validation/verification, SOC generation, code transformation ...  Many tools cover these domain and contain a home grown editor for HDLs.  The editor is used to inspect or modify an HDL project.  
 
 Sadly, the user-experience of such home grown editors is often sub-par.
-Probably, such an editor will support basic features like syntax highlighting, maybe a basic overview of your project layout but what about a real productivity boost?  Does it offer semantic highlighing, navigation to declarations, syntax checking ...?  Or what about really intelligent features like [renaming across the entire project]({{< ref "/manual/editor#rename-refactoring" >}}), [verifying coding styles]({{< ref "/manual/linting" >}}), offering automatic fixes for issues ...?  
+Probably, such an editor will support basic features like syntax highlighting, maybe a basic overview of your project layout but what about a real productivity boost?  Does it offer semantic highlighing, navigation to declarations, syntax checking ...?  Or what about really intelligent features like [renaming across the entire project]({{< ref "/manual/eclipse/editor#rename-refactoring" >}}), [verifying coding styles]({{< ref "/manual/eclipse/linting" >}}), offering automatic fixes for issues ...?  
 
 Offering all these features requires orders of magnitude more development effort than a basic editor (many have tried and stranded).  So ... are you stuck?  No.  That's exactly where Sigasi's [Software Development Kit](https://www.sigasi.com/sdk/) (SDK) comes in.  
 

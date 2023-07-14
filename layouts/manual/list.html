@@ -1,6 +1,7 @@
 {{ define "main" }}
 <div class="uk-container uk-padding">
     {{ .Content }}
+    {{ if not .Params.nolist }}
     <div class="uk-container uk-column-1-2@m">
         <ul class="uk-list">
             {{ range where .Pages.ByWeight "Params.skipoverviewlist" "==" nil }}
@@ -8,9 +9,6 @@
             {{ end }}
         </ul>
     </div>
-    <div>
-        <hr class="uk-divider-small uk-margin-top">
-        The <a href="/singlepagemanual/">Sigasi Studio Manual on a single page</a> is ideal for saving or printing to PDF.
-    </div>
+    {{ end }}
 </div>
 {{ end }}

@@ -45,7 +45,7 @@ Sigasi Studio offers two versions of html output:
 
 # Split Editor View
 
-The [Split Editor]({{< ref "/manual/editor.md#split-editor" >}}) has been enabled for VHDL and (System)Verilog editors.
+The [Split Editor]({{< ref "/manual/eclipse/editor.md#split-editor" >}}) has been enabled for VHDL and (System)Verilog editors.
 
 {{% youtube oKkAKjCemuk %}}
 

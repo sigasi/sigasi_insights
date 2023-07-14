@@ -31,12 +31,12 @@ For these reasons, we developed an alternative, based on Sigasi Studio's interna
 
 The new Sigasi Studio documentation generator has following advantages:
 
-* **No special coding requirements**: the plain comments in your code are extracted for the documentation, no need for special annotations. Sigasi Studio uses the same code/comment association as the hover provider (See "[Comment Association](/manual/documentation#comment-association)"). So to document a `port`, you append a comment to a port declaration. To document an `architecture`, you put the comment just on top of the architecture.
+* **No special coding requirements**: the plain comments in your code are extracted for the documentation, no need for special annotations. Sigasi Studio uses the same code/comment association as the hover provider (See "[Comment Association](/manual/eclipse/documentation#comment-association)"). So to document a `port`, you append a comment to a port declaration. To document an `architecture`, you put the comment just on top of the architecture.
 * **All included**. All documentation processing is done in Sigasi Studio/Eclipse. So you do *not* need to install extra tools.
 * **Fully hyperlinked**. If you export the documentation, you get a fully hyperlinked HTML document.
 * **Live preview**: you can see what the documentation will look like while you type your code and comments.
 
-[![Live preview](/img/manual/documentationview.png)]({{< ref "/manual/views.md#documentation-view" >}})
+[![Live preview](/img/manual/documentationview.png)]({{< ref "/manual/eclipse/views.md#documentation-view" >}})
 
 # How does it work?
 
@@ -53,7 +53,7 @@ The generated HTML document can be customized further, e.g. by applying a Word m
 # Future work
 
 * Although Sigasi Studio already uses templates internally, these templates are not really user-configurable. In a future release we want to make these templates customizable. This way the exact content of the documentation can be easily tweaked.
-* Add [state machine diagrams](/manual/views#state-machine-view) to the documentation
+* Add [state machine diagrams](/manual/eclipse/views#state-machine-view) to the documentation
 * Add Markup support. The VHDL comments are currently copied verbatim to the output. In a future release, we need to come up with a way to add markup (e.g. paragraphs, bold, italic, lists, ...)
 * Some users reported they actually prefer special comments (e.g. Doxygen's `!--`) to mark documentation. They like to explicitly indicate what text gets into the documentation (and what not). So in a future release, we may add the option to require special comments for documentation.
 * In the current version, we generate documentation for the entire project. Some customers indicated, that they'd prefer to document only the hierarchy of the active toplevel.
@@ -61,7 +61,7 @@ The generated HTML document can be customized further, e.g. by applying a Word m
 # Conclusion
 
 We developed an easy but powerful alternative for DoxyGen. It is very easy to get started with, and encourages good practices.
-So I invite you to **try this out yourself**. Even with a {{< starter >}} license, you can open the [Documenation Preview View](/manual/views#documentation-view).
+So I invite you to **try this out yourself**. Even with a {{< starter >}} license, you can open the [Documenation Preview View](/manual/eclipse/views#documentation-view).
 
 # Update 2020-06-25
 This article was revised for the [4.8 release]({{< ref "/releasenotes/sigasi-4.08.md" >}}) where the deprecated PDF generation was removed.

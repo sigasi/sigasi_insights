@@ -113,10 +113,10 @@ In addition we also added support for:
 * The *Report Encrypted Regions* check no longer underlines whole regions with red squiggly lines. It now shows just one marker instead
 * Improved error reporting for documentation export when the exported resources already exist and can't be overwritten
 * Improved punctuation in our messages
-* Split of simulation arguments to a separate field in the [toolchain preferences for GHDL]({{< ref "/manual/ghdl.md" >}})
+* Split of simulation arguments to a separate field in the [toolchain preferences for GHDL]({{< ref "/manual/eclipse/ghdl.md" >}})
 {{< figure src="/img/releasenotes/4.11/GhdlSplitArguments.png" title="Ghdl split simulation arguments" width="500">}}
 * We updated Eclipse in the standalone Sigasi Studio to **[Eclipse 2020-12](https://www.eclipse.org/eclipse/news/4.18/platform.php)**
-* Improved hovers in [Graphics Configuration files]({{< ref "manual/graphics.md" >}}) hovers
+* Improved hovers in [Graphics Configuration files]({{< ref "manual/eclipse/graphics.md" >}}) hovers
 * Updated the Xtext dependency to 2.24.0
 * Chromium was Updated to 76.0.12
 * Sigasi Studio is now bundled with a **Java 15 runtime environment**. We also improved the way we bundle the JRE in Sigasi Studio. It is now bundled as an updatable feature. So from now on, the JRE is automatically updated with Sigasi Studio.  
@@ -139,7 +139,7 @@ We plan to remove the legacy ALINT implementation in Sigasi Studio in the next r
 * Renaming a graphics configuration file while it's open in an editor now works as intended
 * Fixed an error when quickly pressing the buttons in Block Diagram view toolbar
 * Fixed graphics not using all available space when scaling is enabled in the OS
-* Made [suppressing of tutorial project creation]({{< ref "../manual/opening/#other-command-line-options" >}}) work again
+* Made [suppressing of tutorial project creation]({{< ref "/manual/eclipse/opening.md#other-command-line-options" >}}) work again
 * Allow Sigasi Studio to be used as external editor in Vivado on Linux again
 * Fixed the **Set Top** button in the Hierarchy View when editing external files
 * Fixed a rare case in which the cursor jumped to the start of the file after formatting

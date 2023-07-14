@@ -6,8 +6,10 @@ items:
         url: https://www.sigasi.com/download/
       - title: Installation screencast
         url: /screencasts/download_install/
-      - title: Installation manual
-        url: /manual/setup/
+      - title: Installation manual Eclpse
+        url: /manual/eclipse/setup/
+      - title: Installation manual VS Code
+        url: /manual/vscode/setup/
   - title: Configure your license
     icon: settings
     content:
@@ -15,13 +17,17 @@ items:
         url: https://www.sigasi.com/try-form/
       - title: License configuration screencast
         url: /screencasts/license-configuration
-      - title: License configuration manual
-        url: https://insights.sigasi.com/manual/license-key/
+      - title: License configuration in Eclipse
+        url: /manual/eclipse/license-key/
+      - title: License configuration in VS Code
+        url: /manual/vscode/setup/#settings
   - title: Work on the tutorial projects
     icon: file-text
     content:
       - title: Where to find the tutorials
         url: /tutorial/
+      - title: Explore the manuals
+        url: /manual/
       - title: Learn the keyboard shortcuts
         url: /manual/keyshortcuts/
   - title: Additional demo projects

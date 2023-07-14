@@ -4,13 +4,17 @@ date: 2022-09-16
 lastmod: 2022-11-09
 comments: true
 pager: true
+menu:
+  insightsmenu:
+    parent: releasenotes
+    weight: 101
 ---
 
 With the Sigasi Studio 4.17 release, we focus on the topic of Documentation Generation.
 
 As always, there are many other improvements that enhance speed and usability to offer you a better experience. Read on to discover them all.
 
-Also note, that we're deprecating the [Graphics Configuration]({{< ref "manual/graphics.md" >}}).  
+Also note, that we're deprecating the [Graphics Configuration]({{< ref "manual/eclipse/graphics.md" >}}).  
 If you're actively using the current implementation: we are interested in your current use-cases and/or insights. **[Talk to us](https://www.sigasi.com/support/)** to influence our future design choices.  
 
 # Documentation improvements
@@ -32,14 +36,14 @@ We've added two new sections: one for an _introduction_ and one for _problems_.
 ### Introduction
 
 Adding an introduction to your design - in the form of a `sigasi-doc.md` file in the root directory of your project - will automatically include it in the exported documentation as an introductory chapter.  
-As usual with our documentation, this is a [MarkDown]({{< ref "/manual/documentation.md#comment-markup-with-markdown" >}}) file. This allows you to easily annotate the text.
+As usual with our documentation, this is a [MarkDown]({{< ref "/manual/eclipse/documentation.md#comment-markup-with-markdown" >}}) file. This allows you to easily annotate the text.
 
 {{< figure src="/img/releasenotes/4.17/IntroductionText.png" link="/img/releasenotes/4.17/IntroductionText.png" title="Introduction section">}}
 
 ### Problems
 
-Problems in Sigasi Studio are [always within reach]({{< ref "/manual/views.md#problems-view" >}}), but when generating documentation this overview is lost. To keep track of (and document) these problems, you can now include them by checking the `Include problem information`.  
-Of course, you can choose whether you want to show only the errors and warnings or the infos as well. You can optionally include [suppressed warnings]({{< ref "/manual/linting.md#suppressing-warnings" >}}) as well.
+Problems in Sigasi Studio are [always within reach]({{< ref "/manual/eclipse/views.md#problems-view" >}}), but when generating documentation this overview is lost. To keep track of (and document) these problems, you can now include them by checking the `Include problem information`.  
+Of course, you can choose whether you want to show only the errors and warnings or the infos as well. You can optionally include [suppressed warnings]({{< ref "/manual/eclipse/linting.md#suppressing-warnings" >}}) as well.
 
 {{< figure src="/img/releasenotes/4.17/EnableProblemsSection.png" link="/img/releasenotes/4.17/EnableProblemsSection.png" title="Enable problems section">}}
 
@@ -63,12 +67,12 @@ Of course, you can choose whether you want to show only the errors and warnings 
 * **[VHDL]** Added protected type instantiations
 * **[VHDL]** Subprograms are now shown independent of where they're defined
 
-Learn more about Documentation Generation in [the manual]({{< ref "/manual/documentation.md" >}}).
+Learn more about Documentation Generation in [the manual]({{< ref "/manual/eclipse/documentation.md" >}}).
 
 # New and Noteworthy Changes
 
 * Removed outdated documentation from Eclipse's help pages
-* It's now possible to disable the [automatic wrapping in quotes or parentheses of selected code]({{< ref "/manual/editor.md#add-parentheses-or-create-a-string" >}})  
+* It's now possible to disable the [automatic wrapping in quotes or parentheses of selected code]({{< ref "/manual/eclipse/editor.md#add-parentheses-or-create-a-string" >}})  
   {{< figure src="/img/releasenotes/4.17/EncloseWithParenthesisOption.png" link="/img/releasenotes/4.17/EncloseWithParenthesisOption.png" title="Toggle quote enclosing">}}
 * Fixed various typos and UI/UX inconsistencies
 * **[VUnit]** `Run VUnit tests` now only shows up when there are VUnit tests in the selected file
@@ -77,7 +81,7 @@ Learn more about Documentation Generation in [the manual]({{< ref "/manual/docum
 * **[VHDL]** Added a warning when assigning a string to an aggregate (`(s1, s2, s3) <= "abc";`)
 * **[VHDL]** Added a warning when using an incorrect range to constrain vectors or their initial values (`constant a : std_logic_vector(-1 downto 0) := (-1 downto 0 => '1');`)
 * **[Verilog]** Improved warning annotation for [multiple design units in the same file]({{< ref "manual/rules/verilog_style.md#file-contains-multiple-design-unit" >}}) on anonymous subprograms
-* **[Verilog]** Improved error message when [Verible]({{< ref "/manual/editor.md#verilog-and-systemverilog-code-formatting" >}}) failed to format
+* **[Verilog]** Improved error message when [Verible]({{< ref "/manual/eclipse/editor.md#verilog-and-systemverilog-code-formatting" >}}) failed to format
 * **[Verilog]** Added checker instantiation autocomplete in `checker` constructs
 * **[Verilog]** Added instantiation autocomplete in more contexts
 * **[Verilog]** Added the `Anywhere` context for custom autocomplete templates
@@ -94,15 +98,15 @@ Learn more about Documentation Generation in [the manual]({{< ref "/manual/docum
 
 * Added icons to the `Set Top Level` dialog
 * Fixed error dialog when pressing `Delete` right before applying an autocomplete
-* Fixed rare racy [CSV compile-order export]({{< ref "manual/tools.md#export" >}})
+* Fixed rare racy [CSV compile-order export]({{< ref "manual/eclipse/tools.md#export" >}})
 * The info, warning, error, and Quick Fix light bulb icons are now consistent
 * Fixed rare error dialog during `Checking Sigasi license`
-* Made the our styling of tree views (such as [Outline]({{< ref "manual/views.md#outline-view" >}}), [Hierarchy]({{< ref "manual/views.md#hierarchy-view" >}}), and [Open Design Unit]({{< ref "manual/editor.md#open-design-unit" >}})) more consistent
+* Made the our styling of tree views (such as [Outline]({{< ref "manual/eclipse/views.md#outline-view" >}}), [Hierarchy]({{< ref "manual/eclipse/views.md#hierarchy-view" >}}), and [Open Design Unit]({{< ref "manual/eclipse/editor.md#open-design-unit" >}})) more consistent
 * Made sure all Sigasi features work flawlessly after opening a recently closed project
 * Normalized the content of different type of design unit instantiations
 * Leafs in the Hierarchy View are no longer expandable
 * The filter for Open design unit (`Ctrl+Shift+D`) now correctly interprets `*` and `?` and always searches for substrings instead of exact matches
-* **[VUnit]** All executed tests now always show up in the [VUnit View]({{< ref "manual/views.md#vunit-view" >}})
+* **[VUnit]** All executed tests now always show up in the [VUnit View]({{< ref "manual/eclipse/views.md#vunit-view" >}})
 * **[VUnit]** The history of the VUnit View is now sorted in descending chronological order
 * **[VUnit]** Added a checkbox in the history view to identify the current results
 * **[VHDL]** Fixed rare case where hovers didn't show
@@ -114,10 +118,10 @@ Learn more about Documentation Generation in [the manual]({{< ref "/manual/docum
 * **[Verilog]** Instantiation autocomplete for design units using extended identifiers (`\ext$ended"` or `\My!dentifier\`) now works correctly
 * **[Verilog]** Removed enclosing design unit for instantiation autocomplete
 * **[Verilog]** Fixed crash in documentation export when empty ports are present
-* **[Verilog]** Fixed empty [Class Hierarchy View]({{< ref "manual/views.md#class-hierarchy-view" >}}) when one of the classes in the hierarchy is unnamed
+* **[Verilog]** Fixed empty [Class Hierarchy View]({{< ref "manual/eclipse/views.md#class-hierarchy-view" >}}) when one of the classes in the hierarchy is unnamed
 * **[Verilog]** Fixed highlighting of numbers
 * **[Verilog]** Improved error marker range for incorrect preprocessor directives
-* **[Verilog]** Fixed rare case where the [Preprocessor View]({{< ref "manual/views.md#preprocessor-view" >}}) shows incorrect contents when no editors are open
+* **[Verilog]** Fixed rare case where the [Preprocessor View]({{< ref "manual/eclipse/views.md#preprocessor-view" >}}) shows incorrect contents when no editors are open
 * A lot of other issues we could fix thanks to your Talkback reports
 
 # System requirements
@@ -135,7 +139,7 @@ Learn more about Documentation Generation in [the manual]({{< ref "/manual/docum
 We recommend at least **4GB of memory** available for Sigasi Studio,
 and you need **about 1GB** of free disk space.
 
-Thanks for all the [bug reports](mailto:support@sigasi.com) and enabling [Talkback]({{< ref "manual/talkback.md" >}}).
+Thanks for all the [bug reports](mailto:support@sigasi.com) and enabling [Talkback]({{< ref "manual/common/talkback.md" >}}).
 
 # Sigasi Studio 4.17.1 point release
 
@@ -152,6 +156,6 @@ This release fixes the following reported issues:
 On November 9 we released Sigasi Studio 4.17.2.
 
 This release improves the Sigasi Launcher for seamless use on multi-user systems.
-It's no longer needed to [switch to the Eclipse Launcher]({{< ref "/manual/setup.md#running-sigasi-studio-with-multiple-users-on-the-same-server" >}}) or make any other additional configuration to make sure files can be opened from the command line into an existing session when working with multiple users on the same server.  
-This also means it's no longer necessary to [open firewall port 4444]({{< ref "/manual/opening.md#opening-files-from-the-command-line" >}}).
+It's no longer needed to [switch to the Eclipse Launcher]({{< ref "/manual/eclipse/setup.md#running-sigasi-studio-with-multiple-users-on-the-same-server" >}}) or make any other additional configuration to make sure files can be opened from the command line into an existing session when working with multiple users on the same server.  
+This also means it's no longer necessary to [open firewall port 4444]({{< ref "/manual/eclipse/opening.md#opening-files-from-the-command-line" >}}).
 The updated Launcher will choose a random free port.

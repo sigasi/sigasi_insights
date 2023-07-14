@@ -40,7 +40,7 @@ New VHDL checks:
 
 # Suppress warnings
 
-In earlier versions of Sigasi Studio you could suppress (also known as *waive*) warnings via the *MarkerManager* plugin. In Sigasi Studio 4.2 we refined this feature and now give type time feedback on suppressed markers. ([documentation](/manual/linting#suppressing-warnings))
+In earlier versions of Sigasi Studio you could suppress (also known as *waive*) warnings via the *MarkerManager* plugin. In Sigasi Studio 4.2 we refined this feature and now give type time feedback on suppressed markers. ([documentation](/manual/eclipse/linting#suppressing-warnings))
 
 {{< figure src="/img/releasenotes/4.2/suppress_a.png" alt="Suppress warnings" title="Suppress warnings" link="/img/releasenotes/4.2/suppress_a.png" >}}
 
@@ -49,7 +49,7 @@ Check [this video](/screencasts/suppress) for an introduction to suppressing war
 # Configure linting severity per project \[VHDL]
 
 Sigasi Studio 4.2 presents a new Property Page that makes it easier to configure linting settings per project (or per file or folder).
-Right click a project, folder or file and select **Properties > VHDL Errors/Warnings**. The settings are stored in the `.settings` folder in your project. ([documentation](/manual/linting#project-specific-linting-settings))
+Right click a project, folder or file and select **Properties > VHDL Errors/Warnings**. The settings are stored in the `.settings` folder in your project. ([documentation](/manual/eclipse/linting#project-specific-linting-settings))
 
 
 {{< figure src="/img/releasenotes/4.2/linting_severity_per_project.png" alt="Configure linting severity per project" title="Configure linting severity per project" link="/img/releasenotes/4.2/linting_severity_per_project.png" >}}

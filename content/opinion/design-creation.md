@@ -50,8 +50,8 @@ Watch "this short video about how to write a VHDL testbench":/screencast/create-
 
 In addition to these super advanced features, Sigasi's editor is simply great. Based on the industry standard Eclipse platform, Sigasi's editor includes all standard features:
 
-* block select a.k.a. column mode editing [screencast](/screencasts/block_selection_mode), [manual](/manual/editor#block-selection)
-* code folding ([manual](/manual/editor#code-folding))
+* block select a.k.a. column mode editing [screencast](/screencasts/block_selection_mode), [manual]({{< ref "/manual/eclipse/editor.md#block-selection" >}})
+* code folding ([manual]({{< ref "/manual/eclipse/editor.md#code-folding" >}}))
 * multi-screen support
 * configurable key bindings
 * and much more...

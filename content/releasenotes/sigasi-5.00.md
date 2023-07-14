@@ -4,6 +4,10 @@ date: 2023-01-06
 lastmod: 2023-03-30
 comments: true
 pager: true
+menu:
+  insightsmenu:
+    parent: releasenotes
+    weight: 100
 ---
 
 {{< figure src="/img/releasenotes/5.0/splash.png" link="/img/releasenotes/5.0/splash.png" title="New Sigasi 5 theme" class="uk-align-center" >}}
@@ -152,22 +156,22 @@ The number of threads that should be used for diagram generation can be configur
 * {{< pill text="Verilog" >}} Added support for include-directives using absolute paths e.g. ``` `include "/libraries/includes/my_include_file.svh"```. These include paths will be resolved starting from the root of your Sigasi project and ignore the include search paths that were configured.
 * {{< pill text="Verilog" >}} Changed default severity of the [Disallow reg datatype]({{< ref "manual/rules/verilog_reg.md" >}}) linting from `WARNING` to `INFO`
 * {{< pill text="Verilog" >}} Sigasi now also checks that untagged unions do not use dynamic types or `chandle`s
-* {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} Assigns to interfaces are now also shown in the [Block Diagram]({{< ref "manual/views.md#block-diagram-view" >}})
-* {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} Library names are no longer shown as part of the name of design units in the [Libraries View]({{< ref "manual/views.md#libraries-view" >}})
+* {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} Assigns to interfaces are now also shown in the [Block Diagram]({{< ref "manual/eclipse/views.md#block-diagram-view" >}})
+* {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} Library names are no longer shown as part of the name of design units in the [Libraries View]({{< ref "manual/eclipse/views.md#libraries-view" >}})
 * {{< pill text="VHDL" >}} Component instantiations now insert default values and no longer add a redundant space before the semicolon
-* {{< pill text="VHDL" >}} {{< pill text="Eclipse" >}} [Sigasi Auto Export]({{< ref "manual/tools.md#auto-export" >}}) now restricts top levels to those present in the given project
+* {{< pill text="VHDL" >}} {{< pill text="Eclipse" >}} [Sigasi Auto Export]({{< ref "manual/eclipse/tools.md#auto-export" >}}) now restricts top levels to those present in the given project
 * {{< pill text="VHDL" >}} A warning is shown when assigning identifiers using string literals that include underscores, as this is only possible in bit string literals
 
 {{< figure src="/img/releasenotes/5.0/ErrorOnUnderscoreInString.png" link="/img/releasenotes/5.0/ErrorOnUnderscoreInString.png" title="Underscores are illegal in string literals" width="550" >}}
 
 # Updates
 
-* {{< pill text="Eclipse" >}} Updated to Chromium 88 for rendering graphics and the [Documentation View]({{< ref "manual/views.md#documentation-view" >}}). This improves the performance and stability of these views
+* {{< pill text="Eclipse" >}} Updated to Chromium 88 for rendering graphics and the [Documentation View]({{< ref "manual/eclipse/views.md#documentation-view" >}}). This improves the performance and stability of these views
 
 # Bug Fixes
 
-* [Open Design Unit]({{< ref "manual/editor.md#open-design-unit" >}}) now always has icons for all items
-* {{< pill text="Eclipse" >}} Fixed alphabetical sorting in the [Hierarchy View]({{< ref "manual/views.md#hierarchy-view" >}})
+* [Open Design Unit]({{< ref "manual/eclipse/editor.md#open-design-unit" >}}) now always has icons for all items
+* {{< pill text="Eclipse" >}} Fixed alphabetical sorting in the [Hierarchy View]({{< ref "manual/eclipse/views.md#hierarchy-view" >}})
 * {{< pill text="Eclipse" >}} VHDL preference page options are now properly aligned
 * {{< pill text="Eclipse" >}} Missing python installations are now correctly reported to the user
 * {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} Preprocessor property page buttons are now more responsive
@@ -176,7 +180,7 @@ The number of threads that should be used for diagram generation can be configur
 * {{< pill text="VHDL" >}} Range checks now work in VHDL 2019
 * {{< pill text="VHDL" >}} {{< pill text="Eclipse" >}} The quickfix for the [component/entity mismatch]({{< ref "manual/rules/check-for-component-entity-mismatch.md" >}}) now shows up when the entity contains empty ports
 
-Thank you for all the [bug reports](mailto:support@sigasi.com) and for enabling [Talkback]({{< ref "manual/talkback.md" >}}). All your reports have helped us fix many issues that would otherwise go unnoticed.
+Thank you for all the [bug reports](mailto:support@sigasi.com) and for enabling [Talkback]({{< ref "manual/common/talkback.md" >}}). All your reports have helped us fix many issues that would otherwise go unnoticed.
 
 # System Requirements
 

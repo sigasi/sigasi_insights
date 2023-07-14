@@ -8,15 +8,15 @@ comments: true
 
 The Sigasi Studio 3.1 brings OneSpin integration, Verilog improvements and more.
 
-If you have not yet updated your **Flexnet license daemon** after the Sigasi Studio 3 update, you need to do this before you update to Sigasi Studio 3.1. You can find the download details in [the manual]({{< ref "/manual/license-key#license-server-setup" >}}).
+If you have not yet updated your **Flexnet license daemon** after the Sigasi Studio 3 update, you need to do this before you update to Sigasi Studio 3.1. You can find the download details in [the manual]({{< ref "/manual/common/license-server#license-server-setup" >}}).
 
 ## OneSpin integration
 
 The Sigasi/OneSpin integration makes is easy to run basic formal verification checks on your Sigasi projects. Without extra configuration, you can see if your code is ready a formal analysis with OneSpin.
 
-If the (VHDL or Verilog) code still has problems, these problems will appear in the editor as problem markers. This is similar to the existing [Riviera Pro and ModelSim integration](/manual/tools).
+If the (VHDL or Verilog) code still has problems, these problems will appear in the editor as problem markers. This is similar to the existing [Riviera Pro and ModelSim integration](/manual/eclipse/tools).
 
-To enable OneSpin, make sure the `$ONESPINROOT` environment variable is set. Next select **OneSpin** in the **Sigasi > Toolchains** Preference page. \[[Full documentation](/manual/onespin)\].
+To enable OneSpin, make sure the `$ONESPINROOT` environment variable is set. Next select **OneSpin** in the **Sigasi > Toolchains** Preference page. \[[Full documentation](/manual/eclipse/onespin)\].
 
 ![OneSpin Save-Time Integration](/img/releasenotes/3.01/onespin_console.png "OneSpin Save-Time Integration")
 
@@ -33,7 +33,7 @@ Sigasi Studio now also checks the vector width in instantiation port maps:
  
 ![Check vector width in instantiations](/img/releasenotes/3.01/instantiations_vector_width.png "Check vector width in instantiations")
 
-Just like the [*width check* in instantiations](/manual/linting#vector-width-in-assignments-and-port-maps), this check calculates with generic values **symbolically** (and does not work with elaborated generic constants).
+Just like the [*width check* in instantiations](/manual/eclipse/linting#vector-width-in-assignments-and-port-maps), this check calculates with generic values **symbolically** (and does not work with elaborated generic constants).
 
 ## Verilog improvements
 

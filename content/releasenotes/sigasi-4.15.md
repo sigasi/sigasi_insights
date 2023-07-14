@@ -34,21 +34,21 @@ In this release we've added support for VHDL 2019 instantiated protected types. 
 
 * Greatly enhanced File Search (**Ctrl+H**) speed  
 {{< video src="/img/releasenotes/4.15/FastSearch.mp4" link="/img/releasenotes/4.15/FastSearch.mp4" title="Greatly enhanced File Search speed" >}}  
-* The [Quick Outline]({{< ref "manual/views.md#quick-outline-view" >}}) initial expansion has been adjusted such that modules, entities, and classes are immediately expanded. This gives a better overview of the design at a first glance.
+* The [Quick Outline]({{< ref "manual/eclipse/views.md#quick-outline-view" >}}) initial expansion has been adjusted such that modules, entities, and classes are immediately expanded. This gives a better overview of the design at a first glance.
 * Improved the consistency of the ordering, grouping, casing, and punctuation in the preferences and `New...` dialogs
 * The performance of instantiation autocompletes has been _greatly_ improved
 * The performance of autocompletes in general has - independently from the previous item - also been _greatly_ improved  
 {{< video src="/img/releasenotes/4.15/FastAutocomplete.mp4" link="/img/releasenotes/4.15/FastAutocomplete.mp4" title="Vastly faster autocomplete" width="900" >}}
 * Autocompleting design unit (`entity`, `component`, or Verilog `module`) instantiations is now supported for design units denoted by an extended identifier (e.g. `\Cool Name$\` in VHDL, or `\$amazing^name ` in Verilog)
-* Added the ability to run [performance logging]({{< ref "manual/trouble.md#create-performance-and-memory-snapshots" >}}) to help us analyze potential user issues
+* Added the ability to run [performance logging]({{< ref "manual/eclipse/trouble.md#create-performance-and-memory-snapshots" >}}) to help us analyze potential user issues
 * The colors used in the `Set top level` dialog have been made consistent with Sigasi's other views
-* The [Sigasi Auto Export]({{< ref "manual/tools.md#auto-export" >}}) now validates that the given `Top level name` exists, and gives you an option to browse through valid ones  
+* The [Sigasi Auto Export]({{< ref "manual/eclipse/tools.md#auto-export" >}}) now validates that the given `Top level name` exists, and gives you an option to browse through valid ones  
 {{< figure src="/img/releasenotes/4.15/AutoExportCsv.png" link="/img/releasenotes/4.15/AutoExportCsv.png" title="Sigasi auto export improvements">}}  
-* Improved responsiveness when enabling or disabling [Talkback]({{< ref "manual/talkback.md" >}})
+* Improved responsiveness when enabling or disabling [Talkback]({{< ref "manual/common/talkback.md" >}})
 * The `Verilog Version` and `Verilog Errors/Warnings` pages are now hidden in the VHDL file properties. The same was done for the corresponding VHDL pages in Verilog file properties
 * The selected project or top level is now always visible in the export documentation dialog
 * The link to [Sigasi's website](https://sigasi.com) in the exported markers document now uses HTTPS instead of HTTP
-* The [Hierarchy]({{< ref "manual/views.md#hierarchy-view" >}}), [VUnit]({{< ref "manual/views.md#vunit-view" >}}), [Net Search]({{< ref "manual/views.md#net-search-view" >}}) and [Libraries View]({{< ref "manual/views.md#libraries-view" >}}) now honor the single-click navigation preference (`Preferences > General > Open mode`)
+* The [Hierarchy]({{< ref "manual/eclipse/views.md#hierarchy-view" >}}), [VUnit]({{< ref "manual/eclipse/views.md#vunit-view" >}}), [Net Search]({{< ref "manual/eclipse/views.md#net-search-view" >}}) and [Libraries View]({{< ref "manual/eclipse/views.md#libraries-view" >}}) now honor the single-click navigation preference (`Preferences > General > Open mode`)
 * Added the option to disable smart caret positioning in identifiers, both in VHDL and (System)Verilog. Smart caret allows you to easily jump between words in identifiers, no matter if you use camelCase or snake_case, by using **Ctrl+Left arrow** and **Ctrl+Right arrow**.  
 {{< figure src="/img/releasenotes/4.15/SmartCaret.gif" link="/img/releasenotes/4.15/SmartCaret.gif" title="Smart Caret in Verilog">}}  
 * **[VHDL]** Added a red squiggly line under subprograms in packages when the corresponding subprogram body in the package body is missing
@@ -69,11 +69,11 @@ In this release we've added support for VHDL 2019 instantiated protected types. 
 * **[Verilog]** Added predefined Verilog macros (matching `` `SV_COV_*``) for use with the `$coverage_control` system function
 * **[Verilog]** Added folding for subprograms
 * **[Verilog]** Changing the default nettype in an included file is now supported
-* **[Verilog]** The selection color in the [Preprocessor View]({{< ref "manual/views.md#preprocessor-view" >}}) now adapts to the theme being used
+* **[Verilog]** The selection color in the [Preprocessor View]({{< ref "manual/eclipse/views.md#preprocessor-view" >}}) now adapts to the theme being used
 * **[Verilog]** Verilog `module` instantiations are now shown with more detail in the hierarchy view  
 {{< figure src="/img/releasenotes/4.15/HierarchyViewVerilogInstantiation.png" link="/img/releasenotes/4.15/HierarchyViewVerilogInstantiation.png" title="Verilog module instantiations in the Hierarchy View">}}  
 * **[Verilog]** Non-active preprocessor code is now deemphasized instead of emphasized in the dark theme
-* **[Verilog]** [Block diagrams]({{< ref "manual/views.md#block-diagram-view" >}}) now show more connections, especially towards `always` blocks
+* **[Verilog]** [Block diagrams]({{< ref "manual/eclipse/views.md#block-diagram-view" >}}) now show more connections, especially towards `always` blocks
 * **[Verilog]** Improved preprocessor recovery for unbalanced parentheses in preprocessor directives
 * **[Graphics]** Exported graphics now default to `.png` when no extension was explicitly mentioned
 * **[VUnit]** Added support for custom preprocessors
@@ -84,7 +84,7 @@ In this release we've added support for VHDL 2019 instantiated protected types. 
   **Note that you may run into the error dialog below, when you restart Sigasi Studio after the update** because the JRE has changed. If you close the dialog, and restart Sigasi Studio manually, everything should work as expected.
 {{< figure src="/img/releasenotes/4.14/jre_update_error.png" link="/img/releasenotes/4.14/jre_update_error.png" title="Expected error after update. Restart will solve the issue." width="300">}}
 * The minimum VUnit version required by Sigasi is now `4.5.0`
-* Sigasi now uses Chromium 80 for rendering graphics and the [Documentation View]({{< ref "manual/views.md#documentation-view" >}}). This improves the performance and stability of these views
+* Sigasi now uses Chromium 80 for rendering graphics and the [Documentation View]({{< ref "manual/eclipse/views.md#documentation-view" >}}). This improves the performance and stability of these views
 * Eclipse has been updated to 2021-12
 * MouseFeed - an optional plugin shipped with Sigasi - has been replaced by the Eclipse option `General > Keys > Through mouse click`
 
@@ -93,20 +93,20 @@ In this release we've added support for VHDL 2019 instantiated protected types. 
 * Made unintentionally transparent icons on Windows non-transparent again
 * Fixed missing editor support when a file from a closed project is externally opened and the project is opened again
 * Fixed rare behavior that caused the outline and the coloring to be applied only after the first edit in a file
-* Fixed rare case where editing operations cleared the [Find References]({{< ref "manual/editor.md#find-references" >}}) view unexpectedly
+* Fixed rare case where editing operations cleared the [Find References]({{< ref "manual/eclipse/editor.md#find-references" >}}) view unexpectedly
 * Fixed selection linking between the libraries view and the editor
 * The hover window now sizes more accurately according to its content
 * Prevent excessive vmap calls to external compiler when using the same pre-compiled library in multiple open projects
 * When instantiating a Verilog module in VHDL, undefined VHDL signals in the instantiation are now flagged
 * Fixed PNGs - exported from the graphical views - being cut off for very large designs on low resolution displays
-* Fixed the classpath for [snapshot_uploader.bat]({{< ref "manual/trouble.md#create-performance-and-memory-snapshots" >}})
-* Made sure that [projects opened through the command line]({{< ref "manual/opening.md" >}}) always open
+* Fixed the classpath for [snapshot_uploader.bat]({{< ref "manual/eclipse/trouble.md#create-performance-and-memory-snapshots" >}})
+* Made sure that [projects opened through the command line]({{< ref "manual/eclipse/opening.md" >}}) always open
 * Fixed documentation generation for simple entities
 * **[VHDL]** Made sure that the `Add missing association` Quick Fix can always be applied
 * **[VHDL]** Fixed formatting failure with unbalanced multiline comments
 * **[VHDL]** Fixed rare cases in which the formatter would not apply any formatting
 * **[VHDL]** Fixed name conflicts between components and entities, and components and libraries
-* **[VHDL]** Fixed [Smart Indentation]({{< ref "manual/editor.md#smart-indentation" >}}) after pressing enter at the end of a type declaration
+* **[VHDL]** Fixed [Smart Indentation]({{< ref "manual/eclipse/editor.md#smart-indentation" >}}) after pressing enter at the end of a type declaration
 * **[VHDL]** Made sure the Quick Fix to update the file to VHDL 2008 - when `open` is used as a range - is available
 
 ```vhdl
@@ -118,7 +118,7 @@ end package name;
 
 * **[Verilog]** Fixed an issue where the cursor in the editor would jump to somewhere else after moving it, when the preprocessor view was open
 * **[Verilog]** Reduced memory consumption during linking
-* **[Verilog]** Made sure to only propose [Quick Fixes]({{< ref "manual/linting.md#quick-fixes" >}}) for valid paths when the argument of an `` `include`` can not be found in the current include path
+* **[Verilog]** Made sure to only propose [Quick Fixes]({{< ref "manual/eclipse/linting.md#quick-fixes" >}}) for valid paths when the argument of an `` `include`` can not be found in the current include path
 * **[Verilog]** When folding a module instantiation, Sigasi now correctly shows the first line of the instantiation
 * **[Verilog]** Fixed labels when using increment, decrement or streaming operators
 * **[Verilog]** Fixed broken hierarchy view for incomplete loop generate statements
@@ -128,7 +128,7 @@ end package name;
   * incomplete bind directives
 * **[Verilog]** Fixed the values for the `` `__FILE__`` and `` `__LINE__`` macros
 * **[Verilog]** Fixed resolution of nested include paths
-* **[Verilog]** Fixed focus of the bottom pane in the [Class Hierarchy View]({{< ref "manual/views.md#class-hierarchy-view" >}})
+* **[Verilog]** Fixed focus of the bottom pane in the [Class Hierarchy View]({{< ref "manual/eclipse/views.md#class-hierarchy-view" >}})
 * **[Verilog]** A performance regression in the preprocessor that slipped into [4.14]({{< ref "releasenotes/sigasi-4.14.md" >}}) has been alleviated
 * **[VUnit]** Added missing text in `Browse` button in project importer
 * **[VUnit]** `/` is now always used as path separator to save the VUnit location, making it interchangeable between platforms
@@ -150,7 +150,7 @@ end package name;
 We recommend at least **4GB of memory** available for Sigasi Studio,
 and you need **about 1GB** of free disk space.
 
-Thanks for all the [bug reports](mailto:support@sigasi.com) and enabling [Talkback]({{< ref "manual/talkback.md" >}}).
+Thanks for all the [bug reports](mailto:support@sigasi.com) and enabling [Talkback]({{< ref "manual/common/talkback.md" >}}).
 
 # Sigasi Studio 4.15.1 point release
 
