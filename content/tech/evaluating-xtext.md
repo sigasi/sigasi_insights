@@ -50,4 +50,3 @@ A VHDL editor that would only have the features that Xtext offers, would be far 
 Considering all of the above, we have decided to invest some time in evaluating Xtext. We have committed one person-month to building a prototype VHDL/Xtext editor. This prototype should consist basically of a trimmed down VHDL grammar on top of Xtext. This way, we can evaluate performance and we will know where the VHDL language definition is hard to implement in Xtext. After all, the proof of the pudding is in the eating.
 
 If this post sounds critical of Xtext, it is because I am telling myself not to leap to Xtext without proper consideration. But like the rest of our team, I am excited about the potentials. Today we are evaluating if Xtext is usable for the VHDL language. If the answer is yes, we will start making plans for migrating our VHDL editor to Xtext.
-

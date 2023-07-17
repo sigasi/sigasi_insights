@@ -40,9 +40,9 @@ ln -s  remote_modelsim.sh vcom
 ln -s  remote_modelsim.sh vlib
 ```
 
-The fakeModelSim script copies the files to the build server and executes the specified ModelSim command. 
+The fakeModelSim script copies the files to the build server and executes the specified ModelSim command.
 
-```bash 
+```bash
 #!/bin/sh
 
 #configuration
@@ -64,11 +64,11 @@ REMOTE_DIR=${REMOTE_HOME}/remote_compilation/${HASH}
 
 # sync the project directory. You don't need this if you are using a network shared folder.
 function try_rsync(){
-	rsync -r ${PWD}/* ${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_DIR}
+    rsync -r ${PWD}/* ${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_DIR}
 }
 function createRemoteDir(){
     echo "rsync failed, probably because the remote directory $REMOTE_DIR did not exits. Retrying." >&2
-	ssh ${REMOTE_USER}@${REMOTE_HOST} "mkdir -p ${REMOTE_DIR}"
+    ssh ${REMOTE_USER}@${REMOTE_HOST} "mkdir -p ${REMOTE_DIR}"
 }
 try_rsync || ( createRemoteDir && try_rsync ) || exit -1
 # end sync

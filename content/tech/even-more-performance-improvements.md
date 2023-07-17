@@ -8,6 +8,8 @@ tags:
   - performance
 comments: true
 bannerad: true
+_build:
+  list: never
 ---
 
 In our latest release we focused development on improving the performance of our VHDL compiler so that Sigasi HDT can give faster feedback. We optimized VHDL analysis so that both the full build and incremental builds are much faster.

@@ -11,6 +11,8 @@ tags:
   - planeteclipse
 comments: true
 bannerad: true
+_build:
+  list: never
 ---
 
 {{< figure src="/img/tech/decorated_splash.png" alt="Decorated Splash Screen" class="uk-align-right" >}}
@@ -20,6 +22,7 @@ This extension point allows to contribute a splash handler in which you can add 
 In this extension you have to specify a `splashHandler` and a `splashHandlerProductBinding`. In `splashHandler` you specify the class that implements the custom behaviour. In `splashHandlerProductBinding` you bind your `splashHandler` to your RCP application (you could also customize the behaviour of Eclipse's splash screen).
 
 For our product this is:
+
 ```xml
    <extension point="org.eclipse.ui.splashHandlers">
       <splashHandler

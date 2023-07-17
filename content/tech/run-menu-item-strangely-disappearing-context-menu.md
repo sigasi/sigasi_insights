@@ -10,6 +10,8 @@ tags:
   - eclipse
 comments: true
 bannerad: true
+_build:
+  list: never
 ---
 
 <em>In this post I explain how I found the <strong>Run As</strong> menu item mysteriously disappear and how it can be fixed.</em>
@@ -65,8 +67,8 @@ There I saw it, the <strong>Run as</strong> menu is enabled with different condi
 
 The <code lang="java">"org.eclipse.debug.core.launchable"</code> is defined in <code lang="java">org.eclipse.debug.core</code> and runs a method, Test, in class <code lang="java">org.eclipse.debug.internal.core.LaunchablePropertyTester</code>. This method tests whether there is a "run" launch mode available and whether the selection has an <code lang="java">org.eclipse.debug.ui.actions.ILaunchable</code> adapter.
 
-
 So it turned out that I only needed to  add an ILaunchable adapter for the resources for which I can create a launch shortcut. I solved this by adding this extension point to my plugin.xml:
+
 ```xml
 <extension point="org.eclipse.core.runtime.adapters">
   <factory class="org.eclipse.core.runtime.IAdaptable"
@@ -77,7 +79,6 @@ So it turned out that I only needed to  add an ILaunchable adapter for the resou
 ```
 
 I finally I had the intended behavior. At least, as soon as the plugin is actually loaded.
-
 
 ### P.S.: Different behavior when run in Eclipse
 

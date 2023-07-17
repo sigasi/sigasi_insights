@@ -8,8 +8,9 @@ tags:
   - performance
 comments: true
 bannerad: true
+_build:
+  list: never
 ---
-
 
 For the upcoming release of Sigasi's VHDL Eclipse plugin, we have reviewed the performance of our product for some very big VHDL projects.
 
@@ -20,11 +21,11 @@ The largest project we tested thus far contains about over 850 VHDL files, inclu
 With this large VHDL project as my benchmark, I spent a week and a half optimizing the built-in VHDL parser. As a result, the October release will be three times faster than the current version, and it takes about 20% less memory.
 
 |                   | Sigasi HDT September 2010 | Sigasi HDT October 2010 |
-| ----------------- | ------------------------- | ----------------------- | 
+| ----------------- | ------------------------- | ----------------------- |
 | Full build        | 60-120 seconds            | 20-30 seconds           |
 | Incremental build | 0.25-2.5 seconds          | 0.1-0.2 seconds         |
 | Memory usage      | ~1 GB                     | ~800 MB</td>            |
 
 (tested on a Core i5, 2.6 Ghz)
 
-The next version will be released sometime next week. If you are experiencing performance problems with your project do not hesitate to contact us. 
+The next version will be released sometime next week. If you are experiencing performance problems with your project do not hesitate to contact us.

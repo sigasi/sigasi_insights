@@ -9,6 +9,8 @@ tags:
   - code
 comments: true
 bannerad: true
+_build:
+  list: never
 ---
 
 A few weeks ago, a friend of mine talked about using a <a href="http://en.wikipedia.org/wiki/Seven-segment_display">seven-segment display</a> in a VHDL lab in <a href="http://www.ugent.be">his university</a>.

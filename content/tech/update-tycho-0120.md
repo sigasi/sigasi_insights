@@ -11,6 +11,8 @@ tags:
   - eclipse
 comments: true
 bannerad: true
+_build:
+  list: never
 ---
 
 Tycho, the new Maven base Eclipse build system, was recently accepted as an [Eclipse project](http://www.eclipse.org/tycho/). In the latest, [0.12.0 release](http://dev.eclipse.org/mhonarc/lists/tycho-user/msg00102.html), the namespace was updated from *org.sonatype.tycho* to *org.eclipse.tycho*. This results in lots of changes to your pom.xml files.
@@ -31,8 +33,9 @@ done
 ```
 
 If your build is not working because Maven can not download Tycho 0.12.0 from your Maven mirror. Run:
+
 ```bash
 mvn -U clean
 ```
-This [forces a check for updated releases](http://dev.eclipse.org/mhonarc/lists/tycho-user/msg00130.html) and snapshots on remote repositories and makes sure the update is found.
 
+This [forces a check for updated releases](http://dev.eclipse.org/mhonarc/lists/tycho-user/msg00130.html) and snapshots on remote repositories and makes sure the update is found.

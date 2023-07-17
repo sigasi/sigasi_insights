@@ -17,7 +17,6 @@ I wanted to add a dynamic menu contribution item to the popup menu of project ex
 
 First you have to add the menu contribution to your `plugin.xml`. I wanted to add an extra menu item to the project explorer so I used `"popup:org.eclipse.ui.navigator.ProjectExplorer#PopupMenu?after=additions"` as locationURI. Next you only have to specify a class that will create the menu item and specify an id.
 
-
 ```java
 <extension point="org.eclipse.ui.menus">
   <menuContribution locationURI="popup:org.eclipse.ui.navigator.ProjectExplorer#PopupMenu?after=additions">
@@ -39,6 +38,7 @@ Do not forget to add a `addSelectionListener` to the MenuItem, to start some act
 That's it.
 
 The complete java source:
+
 ```java
 package com.sigasi;
 

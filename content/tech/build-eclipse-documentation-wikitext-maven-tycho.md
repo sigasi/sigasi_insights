@@ -11,6 +11,8 @@ tags:
   - tycho
 comments: true
 bannerad: true
+_build:
+  list: never
 ---
 
 
@@ -20,7 +22,7 @@ Based on the [blog posts of Peter Friese](https://web.archive.org/web/2011091808
 
 After a lot of googling, moaning and trying I finally found out that the trick is to add Xalan as a dependency to the antrun plugin.
 
-This is the Maven configuration I ended up with that works for me: 
+This is the Maven configuration I ended up with that works for me:
 
 ```xml
 <build>

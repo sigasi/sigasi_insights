@@ -9,6 +9,8 @@ tags:
   - Sigasi
 comments: true
 bannerad: true
+_build:
+  list: never
 ---
 
 > "The numbers tell the tale"
@@ -17,7 +19,7 @@ As a small EDA startup that sells its software via Internet, it is of upmost imp
 
 ## But how can we keep track of the result of our SEO efforts?
 
-Of course, the number of trials and sales remain the most important metrics. But I also wanted to easily keep track of the search position of individual keywords. To that purpose I combined some scripts to visualize the position of the keywords we optimize for. I customized the <a href="http://www.geekology.co.za/opinion/2009/02/python-script-to-check-google-rankings-for-domain-and-search-term/">rankcheck script of Willem van Zyl</a> to get the Google search position and combined it with the <a href="http://dygraphs.com/">dygraph library from Dan Vanderkam</a> to visualize the results. 
+Of course, the number of trials and sales remain the most important metrics. But I also wanted to easily keep track of the search position of individual keywords. To that purpose I combined some scripts to visualize the position of the keywords we optimize for. I customized the <a href="http://www.geekology.co.za/opinion/2009/02/python-script-to-check-google-rankings-for-domain-and-search-term/">rankcheck script of Willem van Zyl</a> to get the Google search position and combined it with the <a href="http://dygraphs.com/">dygraph library from Dan Vanderkam</a> to visualize the results.
 
 ## Example
 
@@ -27,20 +29,20 @@ Change the number and hit enter to adjust the averaging period.)
 
 <script type="text/javascript"  src="/resources/tech/dygraph-combined.js"></script>
 
-<table><tr> 
+<table><tr>
     <td valign="top"><div id="div-graph"></div></td>
-    <td valign="top">&nbsp; &nbsp;</td> 
-    <td valign="top"><div id="div-label"></div></td> 
-</tr></table> 
+    <td valign="top">&nbsp; &nbsp;</td>
+    <td valign="top"><div id="div-label"></div></td>
+</tr></table>
 
-**Show Series:** 
+**Show Series:**
 <form name="terms">
-      <input name="allbox" type=checkbox checked onClick="CheckAll(document.terms)"> <label><strong>select all/none</strong></label><br/> 
-      <input type=checkbox id="0" checked onClick="change(this)"> <label for="0"> vhdl+eclipse</label><br/> 
-      <input type=checkbox id="1" checked onClick="change(this)"> <label for="1"> vhdl+libraries</label><br/> 
-      <input type=checkbox id="2" checked onClick="change(this)"> <label for="2"> vhdl+refactor</label><br/> 
+      <input name="allbox" type=checkbox checked onClick="CheckAll(document.terms)"> <label><strong>select all/none</strong></label><br/>
+      <input type=checkbox id="0" checked onClick="change(this)"> <label for="0"> vhdl+eclipse</label><br/>
+      <input type=checkbox id="1" checked onClick="change(this)"> <label for="1"> vhdl+libraries</label><br/>
+      <input type=checkbox id="2" checked onClick="change(this)"> <label for="2"> vhdl+refactor</label><br/>
 </form>
- 
+
 <script type="text/javascript">
   g = new Dygraph(
 
@@ -63,12 +65,12 @@ Change the number and hit enter to adjust the averaging period.)
     }
   );
   setStatus();
- 
+
       function setStatus() {
         document.getElementById("visibility").innerHTML =
           g.visibility().toString();
       }
- 
+
       function change(el) {
         g.setVisibility(parseInt(el.id), el.checked);
         if (!el.checked) {
@@ -101,11 +103,12 @@ Every night a server at Sigasi runs the attached cron-script (`cron.sh`) that ge
 
 This is what `cron.sh` does:
 
-* `cron.sh` calls `rankcheck.py` (The <a href="http://www.geekology.co.za/opinion/2009/02/python-script-to-check-google-rankings-for-domain-and-search-term/">original rankcheck script</a> was slightly modified according to the <a href="http://googlesystem.blogspot.com/2010/05/googles-new-interface-colorful-and-more.html">recent changes in the Google result pages</a>.) for each of the keywords specified in `terms.csv`. Make sure you use `+` instead of spaces. 
+* `cron.sh` calls `rankcheck.py` (The <a href="http://www.geekology.co.za/opinion/2009/02/python-script-to-check-google-rankings-for-domain-and-search-term/">original rankcheck script</a> was slightly modified according to the <a href="http://googlesystem.blogspot.com/2010/05/googles-new-interface-colorful-and-more.html">recent changes in the Google result pages</a>.) for each of the keywords specified in `terms.csv`. Make sure you use `+` instead of spaces.
 * The results are stored in `data.csv`.
 * Next, the data file is converted (`generate.py`) in a html page (`data.html`) which contains the plot and the check-boxes to select the keywords to visualize. For your convenience the dygraph Javascript library is also bundled in the attached sources.
 
 ## Download
+
 You can [download our scripts here](/resources/tech/sigasi-rankcheck.tgz).
 You might also need to install <a href="http://www.python.org/">Python</a> and <a href="http://pycurl.io/">PycURL</a> (`yum install python-pycurl` on Fedora).
 
