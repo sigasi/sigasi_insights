@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 5.2
 date: 2023-06-15
-lastmod: 2023-06-30
+lastmod: 2023-07-17
 comments: true
 pager: true
 menu:
@@ -58,7 +58,7 @@ The initial values for a `user-defined primitive` must all be single-bit. Assign
 
 ### Empty Concatenation and Assignment Pattern
 
-Only queues and associative arrays can be initialized by an empty concatenation or an empty assignment pattern.
+Only queues and dynamic arrays can be initialized by an empty concatenation or an empty assignment pattern.
 
 {{< figure src="/img/releasenotes/5.2/EmptyConcatenationAndAssignmentPattern.png" link="/img/releasenotes/5.2/EmptyConcatenationAndAssignmentPattern.png" title="Forbidden use of concatenation and assignment pattern" class="uk-align-center" >}}
 
