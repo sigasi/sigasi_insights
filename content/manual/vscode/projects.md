@@ -25,7 +25,7 @@ Then you can select an existing library or choose **New Library...** to type a n
 
 ## Workspace
 
-To add a new project to your workspace, right-click in the Explorer and select `Add Folder To Workspace`.
+To add a new project to your workspace, press `File > Add Folder To Workspace`.
 Make sure the project you're adding has a valid `.project` file.
 
 ## Environment Variables
