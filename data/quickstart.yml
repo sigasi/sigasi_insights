@@ -26,7 +26,7 @@ items:
     content:
       - title: Where to find the tutorials
         url: /tutorial/
-      - title: Explore the manuals
+      - title: Explore the Sigasi manuals
         url: /manual/
       - title: Learn the keyboard shortcuts
         url: /manual/keyshortcuts/
@@ -40,8 +40,8 @@ items:
   - title: Further steps
     icon: bookmark
     content:
-      - title: Explore the Sigasi Studio manual
-        url: /manual/
+      - title: Set up your floating license server
+        url: /manual/common/license-server/
       - title: Explore more screencasts
         url: /screencasts/
       - title: Read tech articles

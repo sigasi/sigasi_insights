@@ -13,6 +13,8 @@ Sigasi Studio's license key management system is based on the well known FlexNet
 Sigasi Studio supports both *node-locked* and *floating* license keys.
 The Sigasi Studio [edition](/manual/common/editions) is controlled by the license key.
 
+This page explains how to configure your Sigasi license in Sigasi Studio on Eclipse.
+There is a separate page documenting {{< page "/manual/common/license-server.md" >}}.
 
 # Node locked licenses
 

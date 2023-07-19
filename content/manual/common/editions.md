@@ -72,8 +72,8 @@ Sigasi Studio is available on multiple platforms.
 
 ## SiStE
 
-Sigasi Studio on [Eclipse](https://eclipseide.org/)
+Sigasi Studio for [Eclipse](https://eclipseide.org/)
 
 ## SiStVSC
 
-Sigasi Studio on [Visual Studio Code](https://code.visualstudio.com/)
+Sigasi Studio for [Visual Studio Code](https://code.visualstudio.com/)

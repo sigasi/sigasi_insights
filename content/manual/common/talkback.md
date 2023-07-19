@@ -40,7 +40,18 @@ This log file is rotated for each new Sigasi Studio session or when the log reac
 
 # How do I enable or disable Talkback?
 
-Talkback is *always disabled by default*. To enable Talkback, or to disable it later on, click **Window > Preferences > Sigasi > Talkback** and select or deselect the checkbox "Enable Talkback".
+Talkback is *always disabled by default*. To enable Talkback, or to disable it later on, do the following.
+
+## In Eclipse
+
+Click **Window > Preferences > Sigasi > Talkback** and select or deselect the checkbox "Enable Talkback".
+
+## In VS Code
+
+* Press **Ctrl+Shift+P** to open the Command Palette
+* Select **Preferences: Open Settings (UI)**
+* In the Setting tab, navigate to **Extensions > Sigasi > General > Enable Talkback**
+* select or deselect the checkbox
 
 # What about my Firewall or Proxy?
 
