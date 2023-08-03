@@ -8,6 +8,7 @@ bannerad: true
 outputs:
   - html
   - csv
+  - rss
 menu:
   insightsmenu:
     weight: 60
