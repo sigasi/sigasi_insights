@@ -189,3 +189,8 @@ Check the content of the Sigasi License preference page via : **Window > Prefere
 > (lmgrd) FlexNet Licensing error:-13,66
 
 * If you see this error message. Double check you license file contains line with `USE_SERVER`.
+
+> FLEXnet Error: "Exiting due to signal 32" (Exited because another server was running)
+
+This error seems to be caused by running multiple instances of license server. If this is the case, first make sure to stop `lmtools.exe`, `lmgrd.exe`, and `sigasi.exe`. If the error still exists after stopping these processes, the real cause might be the name of the `FlexLM` folder. 
+If you installed the licensing software under the custom folder `C:\FlexLM\`, rename the folder to something else, such as `C:\LMFlex\`. After renaming the folder, also update the path that you set in lmtools "Config Services" tab.
