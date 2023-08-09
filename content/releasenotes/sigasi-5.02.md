@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 5.2
 date: 2023-06-15
-lastmod: 2023-07-17
+lastmod: 2023-08-09
 comments: true
 pager: true
 menu:
@@ -291,6 +291,15 @@ This release contains the following changes and bug fixes:
 * {{< pill text="Eclipse" >}} Corrected paths in compile order [CSV Export]({{< ref "/manual/eclipse/tools.md#export" >}})
 * {{< pill text="Eclipse" >}} `Right-click > Show In` is available for Graphical Views
 * {{< pill text="Verilog" >}} Fixed startup slowdown when using the cache
+
+# Sigasi Studio 5.2.2 Point Release
+
+On August 9, we released Sigasi Studio 5.2.2.
+This release contains the following changes and bug fixes:
+
+* Learn how to deal with files containing a pound sign (`#`)
+* {{< pill text="Eclipse" >}} Updated to Eclipse 2023-03
+* {{< pill text="Eclipse" >}} Fixed bad interaction with `webkit-gtk-4.0`
 
 # System Requirements
 
