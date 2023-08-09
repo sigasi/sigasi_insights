@@ -32,6 +32,9 @@ We are using markdown with [Hugo]. Note that comments in content pages are _not_
 
 ## Markdown authoring
 
+To improve consistency of the Markdown files, it's recommended to use a Markdown linter.
+Configuration for the [markdownlint VS Code extension] is added to this repository.
+
 * [Markdown tutorial](http://markdowntutorial.com/)
 * [New Markdown tutorial](http://commonmark.org/help/tutorial/index.html)
 * [Markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
@@ -45,7 +48,7 @@ We are using markdown with [Hugo]. Note that comments in content pages are _not_
 * Link with reference:
 
 ```md
-   [text][reference]
+   text [reference] text
    ...
    [reference]: https://example.com
 ```
@@ -88,3 +91,4 @@ Syntax highlighting is configured as follows:
 * More Hugo documentation on highlighting: <https://gohugo.io/content-management/syntax-highlighting/>
 
 [Hugo]: https://gohugo.io/
+[markdownlint VS Code extension]: https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
