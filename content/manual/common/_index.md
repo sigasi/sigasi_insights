@@ -1,5 +1,5 @@
 ---
-title: "Common topics"
+title: "Common Topics"
 menu:
   insightsmenu:
     parent: Manual

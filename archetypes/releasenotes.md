@@ -7,8 +7,11 @@ pager: true
 ---
 We are proud to present the Sigasi Studio X.Y release: ...
 
-# Further New and Noteworthy Changes
+# Further New and Noteworthy
 
+# Quality of Life
+
+# Updates and Deprecations
 
 # Bug Fixes
 

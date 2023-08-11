@@ -16,7 +16,7 @@ The most important topics for getting started are listed first.
 
 * [Sigasi Studio Eclipse installation manual]({{< ref "/manual/eclipse/setup.md" >}})
 * [Sigasi Studio VS Code installation manual]({{< ref "/manual/vscode/setup.md" >}})
-* [How to set up a license server for use with floatig Sigasi licenses]({{< ref "/manual/common/license-server.md" >}})
+* [How to set up a license server for use with floating Sigasi licenses]({{< ref "/manual/common/license-server.md" >}})
 
 ### Setting up Sigasi projects
 
@@ -32,5 +32,5 @@ The same project format is also used by our [Veresta]({{< ref "/manual/veresta/"
 * [All manual pages for Sigasi Studio Eclipse]({{< ref "/manual/eclipse/" >}})
 * [All manual pages for Sigasi Studio VS Code]({{< ref "/manual/vscode/" >}})
 * [Common topics]({{< ref "/manual/common/" >}})
-* [All Sigasi Linting rules]({{< ref "/manual/rules/" >}})
+* [All Sigasi linting rules]({{< ref "/manual/rules/" >}})
 * [Veresta manual page]({{< ref "/manual/veresta/" >}})
