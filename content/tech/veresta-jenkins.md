@@ -26,10 +26,8 @@ In this article, we demonstrate how you can run Veresta in a
 environment, namely [**Jenkins**](https://www.jenkins.io/).  In a CI
 setup, code validation with Veresta becomes part of regression testing
 and will help you maintain the quality of your HDL code. In the near
-future, we're planning more articles on Veresta and testing and will
-help you maintain the quality of your HDL code. We'll be writing more
-articles on Veresta and continuous integration in the near future, so
-be sure to check back.
+future, we're planning more articles on Veresta and continuous
+integration, so be sure to check back.
 
 **Code validation** in Sigasi has a couple of different aspects. On
 one hand, **syntax checking** verifies that your code is syntactically
