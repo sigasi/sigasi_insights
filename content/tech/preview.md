@@ -2,7 +2,7 @@
 title: Sigasi Studio Preview (5.3)
 layout: page
 date: 2023-08-11
-lastmod: 2023-08-11
+lastmod: 2023-08-24
 comments: true
 pager: true
 excludefromlatest: true
@@ -30,7 +30,6 @@ The descriptions of all linting rules have been improved and the current severit
 
 ### Coding Error Rules
 
-- Comparison of vectors with different sizes
 - Missing full declaration for deferred constants
 - Duplicate choices in case statements
 
@@ -38,18 +37,23 @@ The descriptions of all linting rules have been improved and the current severit
 
 These rules check a certain style and are set to `ignore` by default. You can enable them in your project preferences: **Right-click project > Properties > VHDL Errors/Warnings**.
 
-- Implicit vector to boolean conversion
 - Require parentheses for sequences of non-associative operators, e.g., `+` and `*` used in the same expression
 - Constant width vector instead of an aggregate assigned to a signal
+- Vector range has wrong direction
 - Magic number, bitstring, or string in statement
 - Incorrect keyword capitalization
 - Secondary unit not in same file as primary
+- Secondary unit in same file as primary
 - Deep nesting of conditional and loop statements
 - Incorrect FSM state type
 - Check line length
 - File contains multiple primary units
 - Prohibited keyword or operator is used
 - Prohibited library is used
+- Prohibited pragma is used
+- Prohibited attribute is used
+- Prohibited package is used
+- Unexpected clock edge specification style
 
 ## Coding Conventions
 
@@ -57,6 +61,10 @@ These rules check a certain style and are set to `ignore` by default. You can en
   - Many new naming conventions were added
   - An anti-pattern can now be defined for naming conventions
 - Added a new rule to check design unit comment headers
+- It is now possible to set different severities for linting rules depending on whether the rule analyzes RTL or non-RTL code
+- {{< pill text="Eclipse" >}} Ability to choose how to detect RTL code by going to **Right-click project > Properties > VHDL Identification**
+  - Via a naming convention for an RTL architecture
+  - By detecting verification code
 
 ## Further New and Noteworthy
 
@@ -64,6 +72,8 @@ These rules check a certain style and are set to `ignore` by default. You can en
 - {{< pill text="Eclipse" >}} Improved highlighting of multiline strings and numbers
 - {{< pill text="Eclipse" >}} {{< pill text="VHDL" >}} Allow to configure separate severities for RTL and non-RTL
 - {{< pill text="Verilog" >}} The [Multiple Statements per Line]({{< ref "/manual/rules/verilog_style.md#multiple-statements-per-line" >}}) linting rule is now configurable
+- {{< pill text="Verilog" >}} Added comparison of vectors with different sizes linting rule
+- {{< pill text="Verilog" >}} Added implicit vector to boolean conversion linting rule
 
 ## Quality of Life
 
@@ -133,6 +143,7 @@ The SHA sum can be downloaded from <https://download.sigasi.com/vs-code/preview/
   - Windows 10 or Windows 11 64-bit
   - RedHat Enterprise Linux RHEL 7.9 64-bit or newer, including RHEL 8 and 9
     - Sigasi Studio depends on `libXss.so` which can be obtained by installing `libXScrnSaver`
+    - Sigasi Studio depends on `webkit2gtk4.0` which can be installed through your package manager of choice
   - More information on supported Linux OSes can be found [on the Eclipse website](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_19.xml#target_environments)
 - Sigasi Studio as a plugin in your Eclipse installation:
   - Eclipse IDE 2021-03 up to and including Eclipse IDE 2023-03

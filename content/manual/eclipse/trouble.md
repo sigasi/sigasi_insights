@@ -53,6 +53,10 @@ selecting **Refresh**.
 
 If you see **empty views** in Sigasi Studio on Linux: make sure `libXss` or `libXscrnSaver` is installed.
 
+# Hover makes the editor hang for ~10s
+
+If you experience hangs when hovering over identifiers in Sigasi Studio on Linux: make sure `webkit2gtk4.0` is installed.
+
 # How much local history will be stored?
 
 Sigasi Studio stores the history of your file so that you can compare your current version with the version you saved an hour ago.
