@@ -68,7 +68,7 @@ To turn on verbose output, use any of the following flags.
 # Verify
 
 The `verify` command allows you to check an entire Sigasi project for issues.
-Issues can be reported in different formats such as **plain text**, **JSON** or **XML**.
+Issues can be reported in different formats such as **plain text**, **JSON**, or **XML**.
 
 <pre>
 <span class="no-select">$ </span>veresta verify --help
@@ -225,7 +225,7 @@ To easily check if any issues of a certain severity were found in the project (w
 | `--fail-on-info` | Any error, warning or info markers |
 
 If any issue was found that matches the threshold, an exit code of `16` will be returned once finished.
-The project is still validated in it's entirety, regardless of wether the threshold was reached.
+The project is still validated in its entirety, regardless of whether the threshold was reached.
 
 ### Suppressed issues
 

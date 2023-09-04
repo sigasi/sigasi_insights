@@ -131,7 +131,7 @@ When invoked, it will remove all invalid entries from the `.library_mapping.xml`
 
 # Common Libraries
 
-Each VHDL project has a folder called `Common Libraries`.
+Each project has a folder called `Common Libraries`.
 This is where reusable libraries go: either vendor libraries, third party IP
 libraries or your own reusable libraries. By default, the `STD` and `IEEE`
 libraries are added to this folder.
@@ -139,9 +139,11 @@ The `Common Libraries` folder behaves like any other folder.
 You can delete it, rename it and apply a different library mapping.
 In most cases, however, the default configuration is just what you need.
 
-If your project doesn't have a `Common Libraries` folder, you can just create
-it by right-clicking the project in the Project Explorer and selecting
-the **New > Folder** dialog.
+If your project doesn't have a `Common Libraries` folder, you can just
+create it by right-clicking the project in the Project Explorer and
+selecting the **New > Folder** dialog. In the New Folder dialog,
+select **Advanced** and **Virtual Folder** and name the folder `Common
+Libraries`.
 
 ## How to add files to Common Libraries?
 
