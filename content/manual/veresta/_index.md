@@ -28,6 +28,7 @@ In order to use Sigasi Veresta you will need a license. The license can be confi
 For more information about licenses, please refer to our [manual](/manual/eclipse/license-key).
 
 If the license is not available, Veresta will start polling the license server at regular intervals until the license can be obtained.
+
 # Installation
 
 To install Sigasi Veresta, obtain a build ZIP for your operating system and extract it.
@@ -54,6 +55,7 @@ Logging Options:
 <span style="color:#C4A000"> </span>     <span style="color:#C4A000">--debug</span>     Output debug information to the console.
 Commands:
   <b>verify</b>  Validate the project.
+  <b>document</b>  Export project documentation.
 </pre>
 
 ## Logging Options
@@ -72,27 +74,67 @@ Issues can be reported in different formats such as **plain text**, **JSON**, or
 
 <pre>
 <span class="no-select">$ </span>veresta verify --help
-Usage: <b>veresta verify</b> [OPTIONS] [<span style="color:#C4A000">PROJECT</span>...]
+Usage: <b>veresta verify</b> [OPTIONS] <span style="color:#C4A000">PROJECT</span>
 Validate the project.
-      [<span style="color:#C4A000">PROJECT</span>...]           One or more project folders.
+      <span style="color:#C4A000">PROJECT</span>                Path of a project root folder.
+  <span style="color:#C4A000">-h</span>, <span style="color:#C4A000">--help</span>                 Show this help message and exit.
+  <span style="color:#C4A000">-V</span>, <span style="color:#C4A000">--version</span>              Print version information and exit.
+Logging Options:
+  <span style="color:#C4A000">-v</span>, <span style="color:#C4A000">--verbose</span>              Output more to the console.
+      <span style="color:#C4A000">--debug</span>                Output debug information to the console.
+Project Options:
+  <span style="color:#C4A000">-P</span>, <span style="color:#C4A000">--path</span>=<i>&lt;key=value&gt;</i>     Adds a custom path variable. Can be used multiple
+                               times to add more variables.
+Output Options:
+  <span style="color:#C4A000">-o</span>, <span style="color:#C4A000">--out</span>=<i>FILE</i>             File to write the output to.
+      <span style="color:#C4A000">--plain</span>                Output in plain format.
+      <span style="color:#C4A000">--json</span>                 Output in JSON format.
+      <span style="color:#C4A000">--sonarqube</span>            Output in SonarQube format.
+      <span style="color:#C4A000">--warnings-ng</span>          Output in Warnings NG XML format.
+Execution Options:
+      <span style="color:#C4A000">--fail-on-error</span>        Fail on any error marker.
+      <span style="color:#C4A000">--fail-on-warning</span>      Fail on any warning or error marker.
+      <span style="color:#C4A000">--fail-on-info</span>         Fail on any info, warning or error marker.
+      <span style="color:#C4A000">--include-suppressed</span>   Include suppressed issues in output.
+</pre>
+
+# Document
+
+The `document` command allows you to create documentation for a Sigasi project.
+The documentation can be split into pages, it can include problem information, and generated diagrams.
+
+<pre>
+<span class="no-select">$ </span>veresta document --help
+Usage: <b>veresta document</b> [OPTIONS] <span style="color:#C4A000">PROJECT</span>
+Export project documentation.
+      <span style="color:#C4A000">PROJECT</span>                Path of a project root folder.
   <span style="color:#C4A000">-h</span>, <span style="color:#C4A000">--help</span>                 Show this help message and exit.
   <span style="color:#C4A000">-V</span>, <span style="color:#C4A000">--version</span>              Print version information and exit.
 Logging Options:
 <span style="color:#C4A000"> </span> <span style="color:#C4A000">-v</span>, <span style="color:#C4A000">--verbose</span>              Output more to the console.
 <span style="color:#C4A000"> </span>     <span style="color:#C4A000">--debug</span>                Output debug information to the console.
 Project Options:
-  <span style="color:#C4A000">-P</span>, <span style="color:#C4A000">--path</span>=<i>&lt;key=value&gt;</i>     Custom path variables.
-Output Options:
-  <span style="color:#C4A000">-o</span>, <span style="color:#C4A000">--out</span>=<i>FILE</i>             File to write the output to.
-<span style="color:#C4A000"> </span>     <span style="color:#C4A000">--plain</span>                Output in plain format.
-<span style="color:#C4A000"> </span>     <span style="color:#C4A000">--json</span>                 Output in JSON format.
-<span style="color:#C4A000"> </span>     <span style="color:#C4A000">--sonarqube</span>            Output in SonarQube format.
-<span style="color:#C4A000"> </span>     <span style="color:#C4A000">--warnings-ng</span>          Output in Warnings NG XML format.
-Execution Options:
-<span style="color:#C4A000"> </span>     <span style="color:#C4A000">--fail-on-error</span>        Fail on any error marker.
-<span style="color:#C4A000"> </span>     <span style="color:#C4A000">--fail-on-warning</span>      Fail on any warning or error marker.
-<span style="color:#C4A000"> </span>     <span style="color:#C4A000">--fail-on-info</span>         Fail on any info, warning or error marker.
-      <span style="color:#C4A000">--include-suppressed</span>   Include suppressed issues in output.
+  <span style="color:#C4A000">-P</span>, <span style="color:#C4A000">--path</span>=<i>&lt;key=value&gt;</i>     Adds a custom path variable. Can be used multiple
+                               times to add more variables.
+Export Options:
+  <span style="color:#C4A000">--top-level</span>=&lt;qualifiedName&gt;
+                             Export documentation for the given qualified name.
+  <span style="color:#C4A000">--diagrams</span>=&lt;diagramExports&gt;
+                             Specify whether or how to include diagrams in
+                               output. Defaults to embedded diagrams. The
+                               following options are available:
+                             EMBEDDED: include diagrams and embed them in HTML
+                               files (default).
+                             LINKED: include diagrams and write them to
+                               separate file which is linked in HTML file.
+                             NONE: don't include diagrams.
+  <span style="color:#C4A000">--include-problems</span>         Include problem information in output.
+  <span style="color:#C4A000">--include-suppressed</span>       Include suppressed problems in output.
+  <span style="color:#C4A000">--design-units-per-page</span>=&lt;unitsPerPage&gt;
+                             Split into multiple pages with the given design
+                               units per page.
+  <span style="color:#C4A000">-T</span>,<span style="color:#C4A000"> --threads</span>=&lt;threads&gt;    Number of parallel export threads. Defaults to
+                               maximum available.
 </pre>
 
 ## Project Options
@@ -238,6 +280,28 @@ If you do want to include suppressed issues in the output, add the `--include-su
 
 *Note that this option is ignored when using the `--sonarqube` or `--warnings-ng` format.*
 
+## Export Options
+
+### Documentation options
+You can export the documentation for a given top level qualified name using `--top-level=qualified.name`. For example: `--top-level=work.entity.architecture`.  
+The documentation can also be split into multiple pages with the option `--design-units-per-page=unitsPerPage`.
+The summarized project information is on the first page. Subsequent pages provide more detailed insights about a limited 
+amount of design units per page, as specified.
+
+### Problem information
+
+Problem information is not included by default in the generated documentation. It can be added using `--include-problems`.
+Suppressed problems can also be added with the additional flag `--include-supressed`.
+
+### Diagram generation
+
+By default, diagrams are included as embedded SVGs in the generated documentation.
+This can be changed to generate separate files that are linked into the HTML using `--diagrams=linked`.
+It can also be disabled using `--diagrams=none`.
+If the project root contains a file named `sigasi-doc.css` it will be copied to the target folder and 
+included into the HTML, embedded or linked according to the `--diagrams` value.    
+Diagram generation is multi-threaded by default, this can be adjusted using `-T` or `--threads`.
+
 # Exit codes
 
 Sigasi Veresta should always finish with a `0` exit code.
@@ -246,7 +310,8 @@ If this is not the case, refer to the following table.
 | Code | Description                                              |
 | ---- | -------------------------------------------------------- |
 | `0`  | Successful execution.                                    |
-| `1`  | Unhandled exception occurred.                            |
+| `1`  | Unhandled program exception occurred.                    |
 | `2`  | Invalid command line arguments / options.                |
-| `7`  | License problem. Make sure a valid license is available. |
+| `7`  | Licensing error. Make sure a valid license is available. |
 | `16` | Verification severity threshold reached.                 |
+| `17` | Documentation export failed.                             |
