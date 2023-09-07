@@ -15,7 +15,7 @@ typing* your code.
 
 # Linting
 
-VHDL code **Lint** is defined as **code that is strictly correct** according
+**Code Lint** is defined as **code that is strictly correct** according
 to the language definition, but still **suspicious or problematic**.
 Sigasi has a built-in linter, which provides info about code lint
 in the design.
@@ -33,23 +33,32 @@ certain patterns.  This is discussed under [naming conventions](#naming-conventi
 * ![Error icon with lightbulb](/img/icons/error_lightbulb.png) marks an error that can be resolved automatically with a Quick Fix.
 * ![Error icon](/img/icons/error.png) marks an error that cannot be resolved automatically.
 
-## Configuring the Severity Level
+## Configuring the Linting Rules
 
-The Sigasi VHDL linter has reasonable defaults for the severity level of
-reported lint problems. However, the severity level of certain classes
-of linting rules is configurable for additional flexibility. The configuration
-interface to configure severities for the entire workspace is available through:
+The Sigasi linter has reasonable defaults for the configuration
+of reported lint problems. However, the severity level of certain
+classes of linting rules is configurable for additional flexibility.
+Furthermore, some linting rules, such as the VHDL [maximum line width
+rule](/manual/rules/vhdl_style/#vhdl-code-line-too-long), can be tweaked
+to your preference. The configuration interface to configure linting
+rules for the entire workspace is available through:
 
-* For (System)Verilog rules: **Window > Preferences > Sigasi > (System)Verilog > Errors/Warnings**
+* For Verilog/SystemVerilog rules: **Window > Preferences > Sigasi > Verilog/SystemVerilog > Errors/Warnings**
 * For VHDL rules: **Window > Preferences > Sigasi > VHDL > Errors/Warnings**
 
-{{< figure src="/img/manual/problemseveritypreferencepage.png" alt="Configuring the severity of Sigasi linting checks" link="/img/manual/problemseveritypreferencepage.png" >}}
+{{< figure src="/img/manual/linting-rule-preference-page.png" alt="Configuring the parameters of Sigasi linting checks" link="/img/manual/linting-rule-preference-page.png" >}}
 
-You can also [configure the severity level per project](#project-specific-linting-settings).
+You can also [configure the linting rules per project](#project-specific-linting-settings).
 
-## Suppressing warnings
+For each linting rule, you can set the severity of non-conformities
+in all code or in RTL-specific code. For some linting rules, more
+configuration options will appear in the sidebar. Look into the
+documentation of the [specific rule](#language-specific-linting-rules)
+for more details on their effect.
 
-Specific warnings can be suppressed in your code by adding a `@suppress` comment (`-- @suppress` for VHDL, `// @suppress` for SystemVerilog), on the same line as the warning.
+## Suppressing Warnings
+
+Specific warnings can be suppressed in your code by adding a `@suppress` comment (`-- @suppress` for VHDL and `// @suppress` for SystemVerilog), on the same line as the warning.
 
 You can limit the suppression to a specific warning by putting a prefix of the warning message between quotes after `@suppress`. Sigasi also recommends adding a reason why the warning was suppressed by adding an extra comment after `@suppress`:
 
@@ -69,6 +78,7 @@ First you have to check the box that is located next to the name of your project
 {{< figure src="/img/manual/export_markers_popup.png" link="/img/manual/export_markers_popup.png" alt="Export Markers pop-up window" >}}
 
 ### Markers Report
+
 In the report you can see all the markers in your project. The entries in the report are layed out in six columns:
 
 * **Description**: shows what the marker is about
@@ -87,7 +97,7 @@ Note that [suppressed markers](#suppressing-warnings) are also listed in the rep
 Common Libraries are considered to be production ready libraries.
 Linting is skipped for all files in the Common Libraries folder.
 
-## Naming conventions
+## Naming Conventions
 
 Sigasi can check whether all sorts of names in the design -
 entities, instances, modules, signals, variables... - follow
@@ -95,22 +105,33 @@ particular patterns.  This may help designers to follow their
 company's or team's coding rules. For example, coding rules may
 prescribe that signal names must have a `s_` prefix, that generics
 names must be written in capitals, or that variable names must use
-CamelCase. Empty rules (which is the default) means that the
-particular rule is not checked.
+CamelCase. A naming convention rule is empty by default, which means
+that the particular rule is not checked.
 
-In addition, Sigasi can also check for file header comments,
-e.g. whether a copyright notice or disclaimer have been included.
+In addition, Sigasi can also check for header comments of files,
+design units, subprograms, etc. This could e.g. be used to
+check whether a copyright notice or disclaimer has been included in
+the file header comment.
 
-**Workspace wide naming conventions settings** are accessed via  
-**Window > Preferences > Sigasi > Verilog/SystemVerilog > Naming Conventions**  
-**Window > Preferences > Sigasi > VHDL > Naming Conventions**
+**Workspace wide naming conventions settings** are accessed via
+* **Window > Preferences > Sigasi > Verilog/SystemVerilog > Naming Conventions** for Verilog and SystemVerilog, and
+* **Window > Preferences > Sigasi > VHDL > Naming Conventions** for VHDL.
 
-At the top, you can set the severity of naming convention and file
-header comment non-conformities. Below, you can enter the validation
+**Workspace wide header conventions settings** are accessed via
+* **Window > Preferences > Sigasi > Verilog/SystemVerilog > Header Comments** for Verilog and SystemVerilog, and
+* **Window > Preferences > Sigasi > VHDL > Header Comments** for VHDL.
+
+At the top, you can set the severity of naming convention
+non-conformities. Below, you can enter the validation
 patterns. Patterns use the Java regular expressions
 syntax. Information on Java regular expressions is available through
 the link above the severity settings. Note that names are not
 validated if the corresponding validation pattern is empty.
+
+Note that you can add two patterns per name: a "valid pattern" which
+the name must match (a marker will appear if it does not match) and an
+"invalid pattern" which the name cannot match (a marker will appear if
+it does). You can set either or both patterns per name.
 
 {{< figure src="/img/manual/preferences_naming_conventions.png" alt="Configuring naming conventions" >}}
 
@@ -124,16 +145,16 @@ Some of the VHDL lint problems can be automatically resolved with *Quick Fixes*.
 These problems have *markers* annotated with a lightbulb icon (like ![Warning icon with lightbulb](/img/icons/warning\_lightbulb.png)).
 To trigger a Quick Fix, click the problem marker or press **Ctrl+1** and select the Quick Fix.
 
-# Language specific Linting Rules
+# Language-specific Linting Rules
 
 The currently available linting rules are described in detail on the following pages.
 
 * [List of Linting Rules for Verilog and SystemVerilog]({{< ref "linting-verilog" >}})
 * [List of Linting Rules for VHDL]({{< ref "linting-vhdl" >}})
 
-# Project specific Linting settings
+# Project-specific Linting Settings
 
-## Severity of Linting checks
+## Severity of Linting Checks
 
 Sigasi Studio offers 2 ways of configuring the severity of linting checks.
 
@@ -141,15 +162,15 @@ Sigasi Studio offers 2 ways of configuring the severity of linting checks.
 * You can override these setting by creating a settings file for your projects.  
 In each project, you can override the coding rules settings. You can override rules for the **entire project**, for **folders** in the project, or for individual **files**.
 
-## Errors/Warnings property page
+## Errors/Warnings Property Page
 
 To configure the severity level, right click the project (or file or folder) in the Project Explorer and select **Properties > VHDL Errors/Warnings** or **Properties > SystemVerilog Errors/Warnings**.
 
-{{< figure src="/img/manual/linting_severity_per_project.png" alt="Configure linting severity per project" link="/img/manual/linting_severity_per_project.png" >}}
+{{< figure src="/img/manual/linting-rule-project-settings-page.png" alt="Configure linting severity per project" link="/img/manual/linting-rule-project-settings-page.png" >}}
 
-On the top of the dialog, select *Enable project specific settings* to activate the severity level on a project base.
+On the top of the dialog, select *Enable project specific settings* to activate the rule configuration on a project base.
 Enabling this setting will override any settings specified at the workspace level.
-For each of the available ID's, you can choose from a drop-down list or you can set all severities at once using the drop-down list on top.
+For each of the available rules, you can choose from a drop-down list or you can set all severities at once by using `Ctrl-A`.
 
 Note that choosing the *default* setting does *not* inherit from the workspace settings.
 It will apply the Sigasi built-in default for a linting rule.
@@ -157,14 +178,14 @@ It will apply the Sigasi built-in default for a linting rule.
 Project settings are stored in this settings file:
 
 ```text
-    ${project location}/.settings/com.sigasi.hdt.vhdl.linting.prefs
+    ${project location}/.settings/com.sigasi.hdt.${language}.linting.prefs
 ```
 
-You can search for a specific rule, by using the search field at the top of the property page.
+## Manual Configuration
 
-{{< figure src="/img/manual/linting_severity_per_project_search.png" alt="Search for a specific rule" link="/img/manual/linting_severity_per_project_search.png" >}}
-
-## Manual configuration
+**Note:** manual configuration is discouraged, especially for rule
+parameters other than severity, because it's easy to get the syntax
+wrong.
 
 To configure the severity of validations, add a line for each validation:
 
@@ -178,8 +199,8 @@ Where `${validation id}` can be
 * `all` to specify all validation ids in one rule
 
 Validation ID numbers are listed in the [list of VHDL Linting Rules]({{< ref "/manual/eclipse/linting-vhdl.md" >}}),
-the [list of (System)Verilog Linting Rules]({{< ref "/manual/eclipse/linting-verilog.md" >}})
-and can also be found in the **Project Properties** under **VHDL Errors/Warnings**.
+the [list of Verilog/SystemVerilog Linting Rules]({{< ref "/manual/eclipse/linting-verilog.md" >}})
+and can also be found in the **Project Properties** under **Errors/Warnings**.
 
 Where `${path}` can be:
 
@@ -204,99 +225,3 @@ Examples:
     72/severity//test/top.vhd=WARNING
     all/severity/<project>=IGNORE
 ```
-
-## Naming Conventions per project
-
-While [Naming Conventions and the Header Comment check can be configured
-globally for a workspace]({{< ref "#naming-conventions" >}}), they can also be defined per project, per folder or per file.
-
-If you only want to change the severity of naming convention and/or
-file header checks for an entire project, you can change them through
-the dialog in Sigasi Studio:  
-**Project > Properties > Verilog Errors/Warnings** (look for ID 92 and 188)  
-**Project > Properties > VHDL Errors/Warnings** (look for ID 2 and 22)
-
-Other project specific naming convention and/or file header check
-settings can be configured in the configuration files.
-
-The project-specific Naming Conventions and Header Comment are stored in this settings file for VHDL related settings:
-
-```text
-    ${project location}/.settings/com.sigasi.hdt.vhdl.linting.prefs
-```
-
-For (System)Verilog related settings, this settings file is used:
-
-```text
-    ${project location}/.settings/com.sigasi.hdt.verilog.linting.prefs
-```
-
-The validation ID for Naming Conventions is *92*. The validation ID for the Header Comment is *188*.
-
-### Syntax for Naming conventions
-
-All lines that configure Naming Conventions should start with *92* and are of this format:
-
-```text
-    92/params/${identifier}/${path}=${convention}
-```
-
-Valid `${identifier}` values are:
-
-```text
-    architecture_name
-    configuration_name
-    constant_name
-    entity_name
-    generate_statement_name
-    generic_name
-    instantiation_statement_name
-    label
-    package_name
-    port_name
-    process_statement_name
-    signal_name
-    type_name
-    variable_name
-```
-
-Naming Conventions can be restricted to a specific file or folder using `${path}`.
-Possible values are:
-
-* `<project>` (literally, with brackets!) to set Naming Conventions for the entire project
-* the folder name to which the Naming Convention should apply
-* the full path of the file to which the Naming Convention should apply
-
-The pattern that defines the Naming Convention is set in `${convention}`.
-Patterns are configured with [regex syntax][RegexSyntax].
-
-Naming Conventions for a project and setting the severity of the linting checks
-are configured in the same settings file.
-
-### Syntax for Header Comment
-
-Lines that configure the Header Comment should start with *188* and are of this format:
-
-```text
-    188/params/comment_header/${path}=${convention}
-```
-
-The meaning of `${path}` and `${convention}` is equal to the definitions for Naming Conventions.
-
-### Examples
-
-```text
-    92/severity/<project>=INFO
-    92/params/constant_name/<project>=c_.*
-    92/params/entity_name/my_folder=e_([A-Z_0-9])*
-    188/severity/<project>=WARNING
-    188/params/comment_header//<project>=-- Project specific header comment\r?\n-- Second line
-    188/params/comment_header//my_folder=-- Folder specific header comment
-```
-
-Note that to use `\R` in the configuration file the `\` needs to be escaped.
-So you'll need to put `\\R` in the configuration file.
-
-Errors in the patterns will be reported in the log file: **Help > Open Log**.
-
-[RegexSyntax]: https://sigasi.com/app/regex

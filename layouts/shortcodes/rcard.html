@@ -1,0 +1,13 @@
+<div class="sigasi-rule-card uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div>
+        <div class="uk-card-body">
+{{.Get "caption" | markdownify}}
+<p style="margin-top: 20px;">
+<a href="{{ .Get "learn" }}">Learn more <span uk-icon="forward"></span></a>
+</p>
+        </div>
+    </div>
+    <div class="uk-card-media-right uk-cover-container">
+        {{ .Inner }}
+    </div>
+</div>

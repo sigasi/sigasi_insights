@@ -3,28 +3,37 @@ title: Sensitivity List
 linting: vhdl
 ---
 
-VHDL requires a **sensitivity list** for each process or `wait` statements in the process body.
-
 Sigasi Studio can warn about problems with your sensitivity list:
 
-* **Presence of either a sensitivity list or one or more wait statements in a process** (rule 38)
+## Presence of either a sensitivity list or one or more wait statements in a process
 
-* **Incomplete sensitivity list** (rule 72) (there is Quick Fix for this)
-<pre>process(a<span class="warning">  </span>)
+VHDL requires a **sensitivity list** for each process or `wait` statements in the process body (rule 38).
+
+## Incomplete sensitivity list
+
+A sensitivity list should contain all signals the process is sensitive to (rule 72).
+
+<pre><span class="warning">process</span>(a)
 begin
-       c <= a and b;
+   c <= a and b;
 end process;</pre>
 
-* **Superfluous signals in sensitivity list** (rule 73)
-<pre>process(a, b<span class="warning">, c</span>)
+## Superfluous signals in sensitivity list
+
+A sensitivity list should only contain signals the process is sensitive to (rule 73). Adding more signals will only slow down your simulations.
+
+<pre>process(a, b, <span class="warning">c</span>)
 begin
-       c <= a and b;
+   c <= a and b;
 end process;</pre>
 
-* **Duplicate signals in sensitivity list** (rule 85)
-<pre>process(a, b<span class="warning">, b</span>)
+## Duplicate signals in sensitivity list
+
+A sensitivity list should only contain signals the process is sensitive to (rule 85). Adding duplicate signals is likely a typo and doesn't have any practical effect.
+
+<pre>process(a, b, <span class="warning">b</span>)
 begin
-       c <= a and b;
+   c <= a and b;
 end process;</pre>
 
 A **sensitivity list** should contain **all signals that are read

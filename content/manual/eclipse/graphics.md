@@ -10,7 +10,7 @@ aliases:
 <div class="uk-alert-danger" uk-alert>
     <a class="uk-alert-close" uk-close></a>
 
-The Graphics Configuration feature has been deprecated since [Sigasi Studio 4.16]({{< ref "/releasenotes/sigasi-4.16.md#deprecated-graphics-configuration" >}}) and will be **removed** in [Sigasi Studio 5.3]({{< ref "/releasenotes/sigasi-5.02.md#updates-and-deprecations" >}}).
+The Graphics Configuration feature has been deprecated since [Sigasi Studio 4.16]({{< ref "/releasenotes/sigasi-4.16.md#deprecated-graphics-configuration" >}}) and was **removed** in [Sigasi Studio 5.3]({{< ref "/releasenotes/sigasi-5.02.md#updates-and-deprecations" >}}).
 </div>
 
 {{< xprt_only >}}

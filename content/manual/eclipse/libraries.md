@@ -29,9 +29,9 @@ and in the [Project Explorer]({{< ref "/manual/eclipse/views.md#project-explorer
 SystemVerilog *files* are mapped.
 
 In the Libraries view you can see a tree of all libraries in your
-projects. You can open each library to see all contained design units.
+projects. You can open each library to see all contained design units as well as their [description style]({{< ref "/manual/common/description-style" >}}).
 
-{{< figure src="/img/manual/librariesview.png" >}}
+{{< figure src="/img/manual/libraries-view-description-style.png" link="/img/manual/libraries-view-description-style.png" title="Libraries View" width=300 >}}
 
 In the Project Explorer view each physical file or folder is annotated
 with the library it belongs to, between square brackets:

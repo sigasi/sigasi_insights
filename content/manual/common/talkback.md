@@ -48,10 +48,17 @@ Click **Window > Preferences > Sigasi > Talkback** and select or deselect the ch
 
 ## In VS Code
 
+Talkback in VS Code only concerns the LSP server process, the client VS Code extension instead uses the [Telemetry](#telemetry) setting.
+
 * Press **Ctrl+Shift+P** to open the Command Palette
 * Select **Preferences: Open Settings (UI)**
-* In the Setting tab, navigate to **Extensions > Sigasi > General > Enable Talkback**
-* select or deselect the checkbox
+* In the Setting tab, navigate to **Extensions > Sigasi > Enable Talkback**
+* Select or deselect the checkbox
+
+### Telemetry
+
+The Sigasi Studio for VS Code will collect telemetry data when an error occurs within the extension itself. This is used to fix bugs and help guide the direction of the product. This is aligned with VS Code's telemetry and can be tweaked using the VS Code setting: `telemetry.telemetryLevel`. Note that this VS Code setting is **on** by default.  
+For more information regarding telemetry refer to [VS Code Telemetry](https://code.visualstudio.com/docs/getstarted/telemetry).
 
 # What about my Firewall or Proxy?
 

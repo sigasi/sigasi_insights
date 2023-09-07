@@ -21,7 +21,7 @@ be a couple of reasons why an empty block is present in your code:
 
 It is recommended that the base name of the filename is the same as the name of the design unit (e.g. module) in the file (rule 17). Sigasi Studio warns if that is not the case.
 
-E.g. `module my_module` should be in a file named `my_module.v` or `my_module.sv` .
+For example, `module my_module` should be in a file named `my_module.v` or `my_module.sv` .
 
 In a file with multiple design units (which is not recommended), this rule is not active.
 
@@ -29,20 +29,28 @@ In a file with multiple design units (which is not recommended), this rule is no
 
 It is recommended that a Verilog file contains only one design unit (rule 18). Sigasi Studio warns if that is not the case.
 
+<pre>
+module foo;
+endmodule
+
+module <span class="warning">bar</span>;
+endmodule
+</pre>
+
 ## Verilog code line too long
 
 For legibility, it is recommended to keep lines of code short (rule 20). Sigasi Studio warns if a code line is longer
 than a certain length. The maximum length is set to 120 characters by default, but this can be changed in the
-[project linting settings](/manual/eclipse/linting/#project-specific-linting-settings) (`${project_location}/.settings/com.sigasi.hdt.verilog.linting.prefs`). E.g.:
+[project linting settings](/manual/eclipse/linting/#project-specific-linting-settings) (`${project_location}/.settings/com.sigasi.hdt.verilog.linting.prefs`). For example:
 
-```
+```text
 20/params/max_line_length/<project>=123
 ```
 
 ## Tabs are not allowed
 
 While this may potentially be controversial, TABs are forbidden in the majority of coding standards in the HDL domain with the motivation
-of code not looking the same regardless of the editor/settings used. This check is off by default but it can be enabled in
+of code not looking the same regardless of the editor/settings used. This check is set to {{< severity ignore 0 >}} `ignore` by default but it can be enabled in
 the workspace or project linting settings (rule 21).
 
 ## File header comment does not match required pattern
@@ -72,19 +80,18 @@ statements (rule 47).
     reg A, B, C, D, K, M;
     reg EN;
 
-    <span class="warning">assign A = B & C, D = K & M;</span>    // multiple statements in one line: less readable
+    assign A = B & C, <span class="warning">D</span> = K & M;    // multiple statements in one line: less readable
 
     <span class="goodcode">assign A = B & C;</span>               // one statement per line: more readable
     <span class="goodcode">assign D = K & M;</span>
 
     always@(*)
         if(EN==1'b1) begin
-            <span class="warning">A = B & C; D = K & M;</span>   // multiple statements in one line: less readable
+            A = B & C; <span class="warning">D</span> = K & M;   // multiple statements in one line: less readable
 
             <span class="goodcode">A = B & C;</span>              // one statement per line: more readable
             <span class="goodcode">D = K & M;</span>
         end
-		
 endmodule</pre>
 
 ## Regular expressions compatibility

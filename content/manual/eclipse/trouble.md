@@ -34,14 +34,9 @@ store the memory snapshot.
 ## Sending your snapshot to Sigasi
 
 The snapshot you've obtained needs to be obfuscated to anonymize it and it needs to be uploaded.
-
-<!-- TODO fix documentation further in line with changes in dev/sigasi!3827
-For this a **snapshot_uploader** script is provided in the Sigasi Studio installation folder.  
-You can and should first use the `--dry-run` option of the snapshot_uploader to verify the obfuscation.
-You will receive a token and additional instructions from [support](https://www.sigasi.com/support/) that you need in order to upload the obfuscated snapshot for investigation.
--->
-
-Sigasi [support](https://www.sigasi.com/support/) will provide instructions.
+For this a **snapshot_anonymizer** script is provided in the Sigasi Studio installation folder.
+You can verify the obfuscation first before sending the uploading the snapshot to us.
+Sigasi [support](https://www.sigasi.com/support/) will provide instructions for uploading the snapshot.
 
 # The editor displays old contents of a file
 

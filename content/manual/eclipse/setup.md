@@ -130,10 +130,12 @@ For more information on system requirements: [System Requirements](/faq/#what-ar
 This requires the host where you install the Sigasi Studio Plugin to have access to our download server.
 After starting Eclipse:
 
-1. Click **Help > Install New Software…**
+1. Click **Help > Install New Software…**.
 1. In the **Work with:** field enter **`https://download.sigasi.com/sigasi-studio/updates/studio`** and press **enter**.
-1. Check the checkbox next to **Sigasi Studio**
+1. Check the checkbox next to **Sigasi Studio**.
 1. Since [Sigasi Studio 4.15](/releasenotes/sigasi-4.15), installing Sigasi Studio optional features is no longer recommended.
+1. It is recommended to disable the option *Contact all update sites during install to find required software*
+when installing update sites.
 {{< figure src="/img/manual/setup-install-plugin.png" alt="Install Sigasi Studio plugin" >}}
 1. Click the **Next** button.
 1. The following steps are pretty self-explaining.
@@ -150,7 +152,7 @@ Installing the offline update site is very similar to installing from the [main 
 
 Next, continue with step 3. in the [general eclipse installation instructions](#install-the-eclipse-plugin).
 It is recommended to disable the option *Contact all update sites during install to find required software*
-when installing the offline update site.
+when installing update sites.
 
 ## GPG Certificate Validation
 

@@ -34,7 +34,7 @@ The SHA1 sum (or hash) is a fingerprint of a file. After you download a file, yo
 
 ## What are the system requirements?
 
-We recommend at least **4GB of memory** and **about 1GB** of free disk space available for Sigasi Studio.
+We recommend having at least **4GB of memory** and **about 1GB** of free disk space available for Sigasi Studio.
 
 ## Does Sigasi Studio run on my OS?
 

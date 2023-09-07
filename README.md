@@ -32,7 +32,7 @@ We are using markdown with [Hugo]. Note that comments in content pages are _not_
 
 ## Markdown authoring
 
-To improve consistency of the Markdown files, it's recommended to use a Markdown linter.
+To improve the consistency of the Markdown files, it's recommended to use a Markdown linter.
 Configuration for the [markdownlint VS Code extension] is added to this repository.
 
 * [Markdown tutorial](http://markdowntutorial.com/)

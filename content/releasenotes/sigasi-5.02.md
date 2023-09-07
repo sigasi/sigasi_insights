@@ -322,7 +322,7 @@ This release contains the following changes and bug fixes:
   - RedHat Enterprise Linux RHEL 7.9 64-bit or newer, including RHEL 8 and 9
   - Java JRE 11 or 17 (shipped with Veresta)
 
-We recommend at least **4GB of memory** and **about 1GB** of free disk space available for Sigasi Studio.
+We recommend having at least **4GB of memory** and **about 1GB** of free disk space available for Sigasi Studio.
 
 # Feedback
 

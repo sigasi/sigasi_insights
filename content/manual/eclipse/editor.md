@@ -188,7 +188,7 @@ Read more about specifics on [VHDL code formatting](#vhdl-code-formatting) and [
 
 ### Formatting Configuration
 
-You can set preferences for Tabs or spaces under **Window > Preferences > General > Editors > Text Editors**.
+You can set preferences for tabs or spaces under **Window > Preferences > General > Editors > Text Editors**.
 
 {{< figure src="/img/manual/configure_spaces.png" alt="Configure Spaces or Tabs" >}}
 
@@ -394,7 +394,7 @@ Note that [**excluded** design files](/manual/libraries#modifying-the-library-co
 
 In addition to the powerful features of an Eclipse editor, the VHDL
 editor that comes with Sigasi Studio supports a number of advanced editing
-features which are specifically useful for VHDL editing. These are
+features that are specifically useful for VHDL editing. These are
 described in this chapter.
 
 ## Code Highlighting
@@ -424,8 +424,8 @@ declaration.
 In VHDL design you need to do a lot of type conversions. Sigasi Studio's
 autocomplete functionality can help you with those. Put a dot (`.`)
 after the element you want to convert, and the autocomplete suggestions
-will appear. The conversion functions have descriptions like "convert
-type" and "convert to …".
+will appear. The conversion functions have descriptions like `convert
+type` and `convert to ...`
 
 ## Smart Indentation
 
@@ -436,10 +436,10 @@ level. E.g. an extra indent after an `if`-statement and removal of an
 indent for the matching `else`-clause.
 
 You can enable/disable this feature via **Window \> Preferences \>
-Sigasi \> VHDL** by toggling the **"Enter adjusts indentation on current
-and next line"** setting.
+Sigasi \> VHDL** by toggling the **Enter adjusts indentation on current
+and next line** setting.
 
-**Tabs vs. spaces:** This features inserts tabs characters or spaces,
+**Tabs vs. spaces:** This feature inserts tabs characters or spaces,
 according to your preferences.
 
 See also:
@@ -454,12 +454,12 @@ Press **Ctrl+Shift+F** to format your current VHDL file.
 This includes:
 
 * indentation
-* vertical alignment of certain symbols like "<="
-* wrapping lines that are too long
+* spacing between keywords and references
+* vertical alignment of certain symbols like `<=``
 
 ### Context-based
 
-Sigasi Studio's formatter is context-based and tries to respect the author's style. So depending on the original source style, the formatter might make different choices.
+Sigasi Studio's formatter is context-based and tries to respect the author's style. So depending on your source style, the formatter might make different choices.
 
 One example is the decision to format a *conditional signal assignment* on one, or multiple lines. Sigasi Studio makes this decision based on the position of the first `else` keyword. If you put the `else` keyword on the first line, the formatter will put everything on one line. If you put the `else` keyword on a new line, the formatter will use multiple lines for the assignment.
 
@@ -469,23 +469,22 @@ One example is the decision to format a *conditional signal assignment* on one, 
      else (others => 'X');
 ```
 
-**Note about broken code**: If your VHDL source file contains syntactical errors, the formatter can not always figure out appropriate formatting. For this reason, the formatter is programmed to stop applying (whitespace) changes when unsupported syntax errors are encountered.
+**Note about broken code**: If your VHDL source file contains syntactical errors, the formatter cannot always figure out appropriate formatting. For this reason, the formatter is programmed to stop applying (whitespace) changes beyond unsupported syntax errors.
 
 ### Configuration
 
-You can set your [preferences for Tabs or spaces under]({{< ref "#configuration" >}})
+You can set your preferences for [tabs or spaces]({{< ref "#configuration" >}}) under
 **Window > Preferences > General > Editors > Text Editors**.
 
-VHDL-specific code formatting can be configured at **Window > Preferences > Sigasi > VHDL > Formatting**.
-Configurable settings currently include:
+VHDL-specific code formatting can be configured at **Window > Preferences > Sigasi > VHDL > Formatting**:
 
-* **Preserve newlines**: this option configures the formatter to not add or remove newlines in your code.
-* **Vertical alignment**: this option configures the formatter to vertically align consecutive declarations and statements.
+* **Preserve newlines**: this option configures the formatter to not add or remove any newlines in your code.
+* **Vertical alignment**: this option configures the formatter to vertically align consecutive declarations and statements for example on `<=` or `:`.
 * **Lowercase/Uppercase keywords**: when this option is set to `UPPERCASE` the formatter will convert all VHDL keywords to uppercase.
 When this option is set to `lowercase`, the keywords will be converted to lowercase.
-When this option is set to `ignore`, the case of keywords won't be changed by the formatter.
-(Without a {{< xl >}} license, keywords are not changed by the formatter).
-* **Alignment column for trailing comments**: this setting configures the column Sigasi Studio uses to align trailing comments (default is column 40)
+When this option is set to `ignore`, the case of keywords won't be changed by the formatter.  
+**Note:** A {{< xl >}} license is required for this option.
+* **Alignment column for trailing comments**: this setting configures what column Sigasi Studio aligns trailing comments to. The default is 40, you can choose -1 to not align trailing comments.
 
 ### Correct Indentation Only
 
@@ -495,10 +494,12 @@ If you select code first, only the code in the selection will be indented.
 
 ### Disable Formatting in Defined Regions
 
-You can disable the formatter for defined regions in your VHDL source files by enclosing them with **off** and **on** tags:
+You can disable the formatter for defined regions in your VHDL source files by add **off** and **on** tags:
 
 * **off** tag: `-- @formatter:off`
+  * Turns of the formatter until an **on** tag is encountered
 * **on** tag: `-- @formatter:on`
+  * Reenables the formatter following an **off** tag
 
 {{< figure src="/img/manual/formatter_off.png" >}}
 
@@ -542,7 +543,7 @@ Stuttering can be disabled or enabled through the **Enable stuttering** option i
 
 In addition to the powerful features of an Eclipse editor, the Verilog and SystemVerilog
 editor that comes with Sigasi Studio supports a number of advanced editing
-features which are specifically useful for SystemVerilog editing. These are
+features that are specifically useful for SystemVerilog editing. These are
 described in this chapter. Currently, Verilog 2005 (IEEE 1364-2005) and SystemVerilog 2017 (IEEE 1800-2017) are supported.
 
 ## Code Highlighting
@@ -556,12 +557,11 @@ Highlighting Classes for Verilog and SystemVerilog:
 
 ### Inserting an Include File
 
-Making a typo in the file name of an `` `include`` causes swarm of errors. To prevent this, you can just press **Ctrl+Space**
+Making a typo in the file name of an `` `include`` causes swarms of errors. To prevent this, you can just press **Ctrl+Space**
 between the double quotes of the include directive. You'll be presented with all the files visible from
 your current [include path](#include-paths-and-initial-preprocessor-definitions).
 
 {{< figure src="/img/manual/VerilogIncludeAutocomplete.png" link="/img/manual/VerilogIncludeAutocomplete.png" title="Verilog include directive autocomplete">}}
-
 
 ## Smart Indentation
 
@@ -572,10 +572,10 @@ level. E.g. an extra indent after a `module` and the removal of an indent for
 the matching `endmodule`.
 
 You can enable/disable this feature via **Window \> Preferences \>
-Sigasi \> Verilog/SystemVerilog** by toggling the **"Enter adjusts indentation on
-current and next line"** setting.
+Sigasi \> Verilog/SystemVerilog** by toggling the **Enter adjusts indentation on
+current and next line** setting.
 
-**Tabs vs. spaces:** This features inserts tabs characters or spaces,
+**Tabs vs. spaces:** This feature inserts tabs characters or spaces,
 according to your preferences.
 
 See also:

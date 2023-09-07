@@ -144,9 +144,9 @@ problems, …
 
 # Libraries View
 
-{{< figure src="/img/manual/libraries-view.png" >}}
+{{< figure src="/img/manual/libraries-view.png" link="/img/manual/libraries-view.png" title="Libraries View" width=500 >}}
 
-The Libraries View shows the library mapping of the design units in all
+The Libraries View shows the library mapping as well as the [description style]({{< ref "/manual/common/description-style" >}}) of the design units in all
 projects. You can use it to navigate to a particular design unit in your
 project. When you double-click on a file, the file opens in the Editor
 view. If you right-click a file, you see the *context menu* which offers

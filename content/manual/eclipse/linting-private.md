@@ -53,10 +53,10 @@ Some rules are not meant to be public, but documenting them is nice.
 | Shared       | [Find unused generics]({{< ref "dead-code-lint" >}})                                                                   | 68  | SI2       |
 | Shared       | [Find incomplete sensitivity lists]({{< ref "sensitivity-list" >}})                                                    | 72  | SPC1/SPS1 |
 | Exclusive    | Find internal tri state usage                                                                                          | 77  | SR5       |
-| Shared       | [Check naming conventions]({{< ref "rules/naming-conventions" >}})                                                     | 92  | PID3/PID11/SF1/SF3/SI1/ST3 |
+| Shared       | [Check naming conventions]({{< ref "/manual/rules/naming-conventions" >}})                                             | 92  | PID3/PID11/SF1/SF3/SI1/ST3 |
 | Exclusive    | Subprogram length                                                                                                      | 95  | SD2       |
 | Exclusive    | Check for multiple statements per line                                                                                 | 96  | SD3       |
-| Shared       | [Check line length]({{< ref "rules/vhdl_style/#vhdl-code-line-too-long" >}})                                           | 97  |           |
+| Shared       | [Check line length]({{< ref "/manual/rules/vhdl_style.md#vhdl-code-line-too-long" >}})                                   | 97  |           |
 | Exclusive    | Check for missing required comments                                                                                    | 98  | SC1/SE3   |
 | Exclusive    | Check for tabs                                                                                                         | 99  |           |
 | Exclusive    | Check case of keywords                                                                                                 | 100 | ST1       |
