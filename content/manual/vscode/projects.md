@@ -23,6 +23,20 @@ For project configuration, open the **[Project View]({{< ref "/manual/vscode/vie
 To change library mappings, you can use the right-click menu and select **Set Library**.
 Then you can select an existing library or choose **New Library...** to type a new library name.
 
+## VHDL and Verilog Version
+
+To change the VHDL or Verilog version, you can right-click on a project, folder, or file in the Sigasi Project View and click **Set Language Version**.
+Then select whether you want to set the VHDL or Verilog version. If you only see one of the two, you might need to add [language support](#language-support). Finally, select the version you want.  
+
+{{< figure src="/img/vscode/VSCodeChangeLangVersion.gif" link="/img/vscode/VSCodeChangeLangVersion.gif" alt="VS Code: Change language version"  width="900" >}}
+
+
+## Language Support
+
+To add or remove language support, you can right-click on a project from the Sigasi Project View, click **Configure**, and **Add/Remove VHDL or Verilog/SystemVerilog Support**. This will enable or disable language preferences among others.
+
+{{< figure src="/img/vscode/VSCodeAddRemoveLanguageSupport.gif" link="/img/vscode/VSCodeAddRemoveLanguageSupport.gif" alt="VS Code: Add or remove language support"  width="900">}}
+
 ## Workspace
 
 To add a new project to your workspace, press `File > Add Folder To Workspace`.
