@@ -32,12 +32,16 @@ The stand-alone application has the following characteristics:
 
 The Eclipse plugin has the following characteristics:
 
-* Recommended if you are using Eclipse already
+* Can be useful if you are using Eclipse already
 * Easily plugged into your existing Eclipse platform
 * Complete freedom to add and configure plugins
 * Over one thousand other Eclipse plugins to choose from
 * Support for C, C++, Tcl, and other languages
 * Support for many version control systems
+
+When updating an existing installation, you need to extra care to diasble the
+option _Contact all update sites during install to find required software_.
+Not doing so might break your installation.
 
 ## Sigasi Studio Custom Installation
 
@@ -106,7 +110,7 @@ There are two ways to install the Sigasi Studio Eclipse Plugin:
 
 ## Prerequisites: Java Runtime
 
-* The Sigasi Studio plugin requires Java 11.
+* The Sigasi Studio plugin requires Java 11 or 17.
 * You can check your Java version with `java -version`
 * Java can be downloaded from several sources, a.o. [Adoptium](https://adoptium.net/releases.html?variant=openjdk11&jvmVariant=hotspot).
 
@@ -134,8 +138,7 @@ After starting Eclipse:
 1. In the **Work with:** field enter **`https://download.sigasi.com/sigasi-studio/updates/studio`** and press **enter**.
 1. Check the checkbox next to **Sigasi Studio**.
 1. Since [Sigasi Studio 4.15](/releasenotes/sigasi-4.15), installing Sigasi Studio optional features is no longer recommended.
-1. It is recommended to disable the option *Contact all update sites during install to find required software*
-when installing update sites.
+1. You must **disable** the option _Contact all update sites during install to find required software_ when installing the plugin.
 {{< figure src="/img/manual/setup-install-plugin.png" alt="Install Sigasi Studio plugin" >}}
 1. Click the **Next** button.
 1. The following steps are pretty self-explaining.
