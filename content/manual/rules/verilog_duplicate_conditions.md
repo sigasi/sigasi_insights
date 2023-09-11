@@ -44,4 +44,6 @@ module bad_code(input clk);
 endmodule
 </pre>
 
-{{% lintrule sv 98 %}}
+{{% ruleConfiguration %}}
+{{< rule id=98 />}}
+{{% /ruleConfiguration %}}

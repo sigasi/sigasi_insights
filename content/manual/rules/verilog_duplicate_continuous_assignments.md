@@ -38,4 +38,6 @@ module sumff(input clk, rst_n, logic[31:0] d1, d2, output logic[31:0] q);
 endmodule
 </pre>
 
-{{% lintrule sv 101 %}}
+{{% ruleConfiguration %}}
+{{< rule id=101 />}}
+{{% /ruleConfiguration %}}

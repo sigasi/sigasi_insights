@@ -35,5 +35,6 @@ endmodule</pre>
     end
 endmodule</pre>
 
-
-{{% lintrule sv 35 %}}
+{{% ruleConfiguration %}}
+{{< rule id=35 />}}
+{{% /ruleConfiguration %}}

@@ -24,4 +24,6 @@ It is good practice **not to include use clauses for libraries STD and WORK**. S
 
 {{< figure src="/img/manual/warn-superfluous-library.png" >}}
 
-{{%lintrule 49%}}
+{{% ruleConfiguration %}}
+{{< rule id=49 />}}
+{{% /ruleConfiguration %}}

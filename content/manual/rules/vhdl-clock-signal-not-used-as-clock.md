@@ -19,4 +19,6 @@ begin
 end process p;
 </pre>
 
-{{% lintrule 249 %}}
+{{% ruleConfiguration %}}
+{{< rule id=249 />}}
+{{% /ruleConfiguration %}}

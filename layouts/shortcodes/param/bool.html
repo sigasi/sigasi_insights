@@ -1,0 +1,4 @@
+{{ if (not (.Get "name")) }}
+{{ errorf "a boolean param must have a name: %s" .Position }}
+{{ end -}}
+{{ .Parent.Get "id" }}/param/{{ .Get "name" }}/${path}={true|false}

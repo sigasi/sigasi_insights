@@ -32,4 +32,6 @@ module test(clk, data_in, data_out);
     
 endmodule</pre>
 
-{{% lintrule sv 27 %}}
+{{% ruleConfiguration %}}
+{{< rule id=27 />}}
+{{% /ruleConfiguration %}}

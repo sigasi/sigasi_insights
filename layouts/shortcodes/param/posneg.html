@@ -1,0 +1,4 @@
+{{ if (not (.Get "name")) }}
+{{ errorf "a posneg param must have a name: %s" .Position }}
+{{ end -}}
+{{ .Parent.Get "id" }}/param/{{ .Get "name" }}/${path}=${regex}	${regex}

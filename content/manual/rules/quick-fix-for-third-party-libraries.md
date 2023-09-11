@@ -25,4 +25,6 @@ time for a clean build. If you use direct entity instantiations, you can
 easily map the entities you need.
 See also {{< page "tech/vivado-unisim" >}}.
 
-{{% lintrule 50 %}}
+{{% ruleConfiguration %}}
+{{< rule id=50 />}}
+{{% /ruleConfiguration %}}

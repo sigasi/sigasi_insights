@@ -31,4 +31,6 @@ begin
       outp => open
    );</pre>
 
-{{% lintrule 177 %}}
+{{% ruleConfiguration %}}
+{{< rule id=177 />}}
+{{% /ruleConfiguration %}}

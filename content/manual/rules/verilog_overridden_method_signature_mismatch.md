@@ -46,6 +46,8 @@ class B implements A;
     endfunction
 endclass</pre>
 
-{{% lintrule sv 67 %}}
+{{% ruleConfiguration %}}
+{{< rule id=67 />}}
+{{% /ruleConfiguration %}}
 
 <!-- 62, 63, 64, 65, 66, and 68 not configurable in preferences, only in file -->

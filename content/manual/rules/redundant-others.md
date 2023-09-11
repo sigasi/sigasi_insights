@@ -27,4 +27,6 @@ synthesis tools). Check the manual of your synthesis tools and run some
 experiments.
 For more information, see [VHDL case statements can do without the "others"](/tech/vhdl-case-statements-can-do-without-others).
 
-{{% lintrule 13 %}}
+{{% ruleConfiguration %}}
+{{< rule id=13 />}}
+{{% /ruleConfiguration %}}

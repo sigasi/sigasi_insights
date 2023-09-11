@@ -26,4 +26,8 @@ begin
 end procedure nested;
 </pre>
 
-{{% lintrule 239 %}}
+{{% ruleConfiguration %}}
+{{< rule id=239 >}}
+{{< param/int name=limit min=1 >}}
+{{< /rule >}}
+{{% /ruleConfiguration %}}

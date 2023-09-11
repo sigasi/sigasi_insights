@@ -29,4 +29,6 @@ module bottom();
 endmodule
 </pre>
 
-{{% lintrule sv 99 %}}
+{{% ruleConfiguration %}}
+{{< rule id=99 />}}
+{{% /ruleConfiguration %}}

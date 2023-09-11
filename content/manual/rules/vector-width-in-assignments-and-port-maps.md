@@ -9,4 +9,6 @@ Sigasi Studio checks the vector size in assignments and port maps. This check wo
 
 Sigasi Studio will not take into account the value assigned to a generic in instantiations. The reasoning behind this is explained [here](/tech/generic-port-width).
 
-{{% lintrule 144 %}}
+{{% ruleConfiguration %}}
+{{< rule id=144 />}}
+{{% /ruleConfiguration %}}

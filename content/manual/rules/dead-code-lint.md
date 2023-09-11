@@ -16,48 +16,58 @@ is a form of technical debt that should be avoided.
 
 Sigasi Studio flags some kinds of dead code:
 
-* unused declarations (signals, constants ...) (rule 55):
-<pre>
-architecture RTL of empty is
-    signal   <span class="warning">unused_s</span> : bit;
-    constant <span class="warning">unused_c</span> : bit := '0';
-begin end;
-</pre>
-a Quick Fix is available to help you remove unused declarations fast.
-* unused ports (rule 67) and generics (rule 68)
-<pre>
-entity empty is
-    generic(<span class="warning">unused_g</span> : bit);
-    port   (<span class="warning">unused_p</span> : in bit);
-end entity;
+* Unused declarations (signals, constants ...):
 
-architecture RTL of empty is begin end;
-</pre>
+  <pre>
+  architecture RTL of empty is
+      signal   <span class="warning">unused_s</span> : bit;
+      constant <span class="warning">unused_c</span> : bit := '0';
+  begin end;
+  </pre>
 
-* unreachable statements (rule 79): if the Sigasi Studio analyzer can determine that a condition is always false,
-it will mark the if-statement because it contains dead code.
+  A Quick Fix is available to help you remove unused declarations fast.
 
-<pre>if true then
-    v := v + 1;
-<span class="warning">else</span>
-    <span class="warning">v := v - 1;</span>
-end if;
-</pre>
+* Unused ports and generics:
 
-* dead states in a state machine: a state is considered dead if it has no outgoing transitions (rule 71)
+  <pre>
+  entity empty is
+      generic(<span class="warning">unused_g</span> : bit);
+      port   (<span class="warning">unused_p</span> : in bit);
+  end entity;
+  
+  architecture RTL of empty is begin end;
+  </pre>
 
-<pre>type t_state is (IDLE, <span class="warning">START</span>, RUN, DONE);
-signal state: t_state;
-  -- [omitted code]
-  case state is
-    when IDLE   => -- do something
-        state <= RUN;
-    when RUN    => -- do something
-        state <= DONE;
-    when DONE   => -- do something
-        state <= IDLE;
-    when others => -- do nothing
-  end case;
-</pre>
+* Unreachable statements: if the Sigasi Studio analyzer can determine that a condition is always false,
+  it will mark the if-statement because it contains dead code:
 
-{{% lintrule 55 67 68 71 79 %}}
+  <pre>if true then
+      v := v + 1;
+  <span class="warning">else</span>
+      <span class="warning">v := v - 1;</span>
+  end if;
+  </pre>
+
+* Dead states in a state machine: a state is considered dead if it has no outgoing transitions:
+
+  <pre>type t_state is (IDLE, <span class="warning">START</span>, RUN, DONE);
+  signal state: t_state;
+    -- [omitted code]
+    case state is
+      when IDLE   => -- do something
+          state <= RUN;
+      when RUN    => -- do something
+          state <= DONE;
+      when DONE   => -- do something
+          state <= IDLE;
+      when others => -- do nothing
+    end case;
+  </pre>
+
+{{% ruleConfiguration many=yes %}}
+{{< rule id=55 postcomment="Unused declaration" />}}
+{{< rule id=67 postcomment="Unused ports" />}}
+{{< rule id=68 postcomment="Unused generics" />}}
+{{< rule id=85 postcomment="Unreachable statements" />}}
+{{< rule id=71 postcomment="Dead states" />}}
+{{% /ruleConfiguration %}}

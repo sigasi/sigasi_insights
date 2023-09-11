@@ -5,7 +5,7 @@ linting: verilog
 
 Sigasi Studio validates the use of parameters in (System)Verilog.
 
-## Parameters without a default value
+### Parameters without a default value
 
 Sigasi Studio warns if a parameter is declared without a default value (rule 19). Syntactically this is allowed since the instantiating modules should provide the value to the instance parameter.
 However, it is undesirable since it makes the definition dependent on a particular hierarchy and limits code reusability.
@@ -23,7 +23,7 @@ module goodcode;
 	    $display(P);
 endmodule</pre>
 
-## Parameters width mismatch
+### Parameters width mismatch
 
 Sigasi Studio flags an error if a parameter with a defined width is declared is assigned a value of differing width (rule 48).
 
@@ -31,7 +31,7 @@ Sigasi Studio flags an error if a parameter with a defined width is declared is 
 
 <span class="goodcode">parameter signed [36] q = 'h764321098;</pre>
 
-## Empty parameter not allowed
+### Empty parameter not allowed
 
 The Verilog standard does not allow empty parameters (rule 53).
 
@@ -41,7 +41,7 @@ module dut # (parameter WIDTH = 42<span class="warning">, </span>) (input clk); 
 module dut # (parameter WIDTH = 42<span class="goodcode"> </span>) (input clk); endmodule;
 </pre>
 
-## Empty parameter overrides not allowed
+### Empty parameter overrides not allowed
 
 The Verilog standard does not allow empty parameter overrides (rule 54).
 
@@ -55,7 +55,7 @@ module test;
 endmodule
 </pre>
 
-## Local parameter has to be initialized
+### Local parameter has to be initialized
 
 The Verilog standard requires that local parameters are initialized (rule 69).
 
@@ -65,7 +65,7 @@ The Verilog standard requires that local parameters are initialized (rule 69).
 <span class="goodcode">localparam p = 1;</span>
 </pre>
 
-## Local parameter cannot be overridden
+### Local parameter cannot be overridden
 
 The Verilog standard does not allow the overriding of local parameters (rule 70).
 
@@ -80,6 +80,13 @@ module name(
 endmodule : name
 </pre>
 
-{{% lintrule sv 19 48 53 54 69 70 %}}
+{{% ruleConfiguration many=yes %}}
+{{< rule id=19 postcomment="parameter without default value" />}}
+{{< rule id=48 postcomment="parameter width mismatch" />}}
+{{< rule id=53 postcomment="empty parameter" />}}
+{{< rule id=54 postcomment="empty parameter override" />}}
+{{< rule id=69 postcomment="local parameter not initialized" />}}
+{{< rule id=70 postcomment="local parameter overridden" />}}
+{{% /ruleConfiguration %}}
 
 <!-- 69 and 70 not configurable in preferences, only in file -->

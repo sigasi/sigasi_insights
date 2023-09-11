@@ -14,4 +14,6 @@ module code;
 endmodule
 </pre>
 
-{{% lintrule sv 130 %}}
+{{% ruleConfiguration %}}
+{{< rule id=130 />}}
+{{% /ruleConfiguration %}}

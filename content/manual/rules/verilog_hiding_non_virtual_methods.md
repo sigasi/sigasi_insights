@@ -27,4 +27,6 @@ class Child extends Parent;
 endclass
 </pre>
 
-{{% lintrule sv 132 %}}
+{{% ruleConfiguration many=yes %}}
+{{< rule id=132 />}}
+{{% /ruleConfiguration %}}

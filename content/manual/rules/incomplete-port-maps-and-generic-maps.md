@@ -17,4 +17,6 @@ intended. For that reason, Sigasi Studio can warn you about this.
 
 {{< figure src="/img/manual/warn-incomplete-map.png" >}}
 
-{{% lintrule 94 %}}
+{{% ruleConfiguration %}}
+{{< rule id=94 />}}
+{{% /ruleConfiguration %}}

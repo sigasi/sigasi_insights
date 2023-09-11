@@ -12,4 +12,6 @@ signal sig_b : <span class="goodcode">integer range 0 to 100</span>;
 ...
 </pre>
 
-{{% lintrule 236 %}}
+{{% ruleConfiguration %}}
+{{< rule id=236 />}}
+{{% /ruleConfiguration %}}

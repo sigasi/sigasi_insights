@@ -1,0 +1,4 @@
+{{ if not (ge (len .Params) 3) }}
+{{ errorf "an enumeration param must have a name and at least 2 variants: %s" .Position }}
+{{ end -}}
+{{ .Parent.Get "id" }}/param/{{ .Get 0 }}/${path}={{"{"}}{{ delimit (after 1 .Params) "|" }}{{"}"}}

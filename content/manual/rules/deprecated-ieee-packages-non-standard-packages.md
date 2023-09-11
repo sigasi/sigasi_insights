@@ -22,4 +22,7 @@ The package `ieee.std_logic_misc` has the same problem of not being standardized
 
 Read more on IEEE packages in [Deprecated IEEE Libraries](/tech/deprecated-ieee-libraries).
 
-{{% lintrule 8 37 %}}
+{{% ruleConfiguration many=yes %}}
+{{< rule id=8 comment="For deprecated IEEE packages" />}}
+{{< rule id=37 comment="For Non-standard packages" />}}
+{{% /ruleConfiguration %}}

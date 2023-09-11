@@ -50,6 +50,9 @@ function int C::<span class="goodcode">good(input int a, output string b)</span>
     // ...
 endfunction</pre>
 
-{{% lintrule sv 90 91 %}}
+{{% ruleConfiguration many=yes %}}
+{{< rule id=90 />}}
+{{< rule id=91 />}}
+{{% /ruleConfiguration %}}
 
 <!-- 82-90 not configurable in preferences, only in file -->

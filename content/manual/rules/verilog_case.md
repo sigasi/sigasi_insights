@@ -5,7 +5,7 @@ linting: verilog
 
 Sigasi Studio has a number of checks on Verilog case statements.
 
-## Case statement does not cover all cases
+### Case statement does not cover all cases
 
 A `case` statement should cover all options, either enumerating all options explicitly or with a `default`
 clause (rule 8). This rule is checked for `enum` types only, not for scalar or vector types.
@@ -39,7 +39,7 @@ endmodule</pre>
 
 Note that Sigasi Studio also warns for [case statements without a default clause](#default-clause-missing-from-case-statement)
 
-## Default clause has to be the last item in a case statement
+### Default clause has to be the last item in a case statement
 
 The `default` clause should be at the end after all the other options (rule 15). Sigasi Studio warns if that is not the case.
 
@@ -91,7 +91,7 @@ This rule also applies to `generate case` statements, e.g.
 endmodule
 </pre>
 
-## Case statement can only have one default clause
+### Case statement can only have one default clause
 
 A case statement can only have one `default` clause (rule 16). A warning is flagged if more than one `default` clause is present.
 
@@ -148,7 +148,7 @@ This rule also applies to `generate case` statements, e.g.
 endmodule
 </pre>
 
-## Default clause missing from case statement
+### Default clause missing from case statement
 
 Sigasi Studio warns for case statements without a `default` clause (rule 40). While a case statement without a `default` branch is syntactically correct, many guidelines recommend attaching a default branch, even if the case statement is completely defined. This ensures no latch would be inferred during synthesis if the case is incomplete (sometimes difficult to judge, esp with casex/casez semantics or larger widths).
 
@@ -182,4 +182,9 @@ module goodcode(input clk);
     end
 endmodule</pre>
 
-{{% lintrule sv 8 15 16 40 %}}
+{{% ruleConfiguration many=yes %}}
+{{< rule id=8 postcomment="Missing cases" />}}
+{{< rule id=15 postcomment="Default clause must be last" />}}
+{{< rule id=16 postcomment="Multiple default clauses" />}}
+{{< rule id=40 postcomment="Missing default clause" />}}
+{{% /ruleConfiguration %}}

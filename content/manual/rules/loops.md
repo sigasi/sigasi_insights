@@ -30,5 +30,7 @@ end loop;</pre>
 
 * `for` loops that will not execute due to a loop variable with a null range will be flagged with the [Null range linting rule]({{< ref "null-range-empty-range" >}}).
 
-
-{{% lintrule 20 190 %}}
+{{% ruleConfiguration many=yes %}}
+{{< rule id=20 />}}
+{{< rule id=190 />}}
+{{% /ruleConfiguration %}}

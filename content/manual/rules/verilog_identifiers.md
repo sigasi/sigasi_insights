@@ -3,7 +3,7 @@ title: Verilog Identifiers and Data Types
 linting: verilog
 ---
 
-## VHDL keywords as module name
+### VHDL keywords as module name
 
 The use of VHDL keywords as a (System)Verilog module name is not recommended. In mixed-language projects in particular it
 could lead to unexpected results. Sigasi Studio warns when a VHDL keyword is used as a module name (rule 7).
@@ -14,11 +14,11 @@ endmodule
 module <span class="goodcode">my_module</span>;
 endmodule</pre>
 
-## Underscores in identifier names
+### Underscores in identifier names
 
 The following naming cases should be avoided in Verilog identifiers:
 
-* module or port name ending with an underscore: `bad`_`
+* module or port name ending with an underscore: `bad_`
 * any name having consecutive underscores: `very__bad`
 
 The recommendation is mainly based on tool and library compatibility issues.
@@ -32,7 +32,7 @@ endmodule
 module <span class="goodcode">goodcode</span>(input <span class="goodcode">clk</span>);
 endmodule</pre>
 
-## Non-packed member in packed struct or union
+### Non-packed member in packed struct or union
 
 Packed structures and unions can only contain members of packed data types and integer data types (rule 59).
 
@@ -43,7 +43,7 @@ typedef struct packed { <span class="error">real a;</span>   } realstruct;
 typedef struct packed { <span class="error">AClass a;</span> } classstruct;</pre>
 
 
-## Illegal type in untagged union
+### Illegal type in untagged union
 
 Dynamic types and chandle types can not be used in untagged unions (rule 60).
 
@@ -53,6 +53,10 @@ typedef union { <span class="goodcode">int a;</span>    } intunion;
 typedef union { <span class="error">string a;</span> } stringunion;
 typedef union { <span class="error">AClass a;</span> } classunion;</pre>
 
-{{% lintrule sv 7 42 43 59 60 %}}
+{{% ruleConfiguration many=yes %}}
+{{< rule id=7 postcomment="VHDL keywords as module name" />}}
+{{< rule id=42 postcomment="Consecutive underscores" />}}
+{{< rule id=43 postcomment="Trailing underscores" />}}
+{{% /ruleConfiguration %}}
 
 <!-- 59 and 60 not configurable -->

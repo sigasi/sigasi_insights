@@ -9,4 +9,6 @@ Sigasi Studio will warn if a (System)Verilog keyword is used as an entity name.
 
 <pre>entity <span class="info">always</span> is port( -- always is a Verilog keyword: not recommended!</pre>
 
-{{% lintrule 192 %}}
+{{% ruleConfiguration %}}
+{{< rule id=192 />}}
+{{% /ruleConfiguration %}}

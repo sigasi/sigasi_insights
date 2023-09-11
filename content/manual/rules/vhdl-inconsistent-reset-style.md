@@ -29,4 +29,8 @@ begin
 end process sync_p;
 </pre>
 
-{{% lintrule 252 %}}
+{{% ruleConfiguration %}}
+{{< rule id=252 >}}
+{{< param/enumeration reset_style asynchronous synchronous >}}
+{{< /rule >}}
+{{% /ruleConfiguration %}}

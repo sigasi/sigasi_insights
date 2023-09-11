@@ -13,4 +13,6 @@ All capitalization issues in a file can be fixed in one click.
 
 {{< figure src="/img/releasenotes/3.6/capitalization_all.png" >}}
 
-{{% lintrule 163 %}}
+{{% ruleConfiguration %}}
+{{< rule id=163 />}}
+{{% /ruleConfiguration %}}

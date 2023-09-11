@@ -5,7 +5,7 @@ linting: verilog
 
 Sigasi Studio has several checks on Verilog port and parameter associations.
 
-## Named parameter and port connections have to be used for all instances with many parameters / ports
+### Named parameter and port connections have to be used for all instances with many parameters / ports
 
 A long list of positional parameters or port connections is difficult to read and maintain. Therefore, Sigasi Studio warns if a
 list of positional connections is longer than 3 items (rules 24 and 26). If the number of associations is larger than 3, named connections should be used.
@@ -34,15 +34,7 @@ module goodtop;
     );
 endmodule</pre>
 
-The maximum number of 3 items is a default value, it can be changed in the
-[project linting settings](/manual/eclipse/linting/#project-specific-linting-settings) (`${project_location}/.settings/com.sigasi.hdt.verilog.linting.prefs`). E.g.:
-
-```
-24/params/max_ordered_port_connections/<project>=4
-26/params/max_ordered_parameter_overrides/<project>=2
-```
-
-## Named and positional associations cannot be mixed
+### Named and positional associations cannot be mixed
 
 Sigasi Studio flags an error when attempting to mix named and positional port or parameter associations (rule 25).
 
@@ -64,7 +56,7 @@ module goodtop;
     sub#(<span class="goodcode">.PARAM_1(2), .PARAM_2(3)</span>) sub_inst();
 endmodule</pre>
 
-## Unresolved formal names
+### Unresolved formal names
 
 Sigasi Studio flags an error for named port and parameter connections if the instantiated module doesn't have ports with these names.
 
@@ -93,7 +85,7 @@ module goodtop;
     );
 endmodule</pre>
 
-## Duplicate port and parameter connections
+### Duplicate port and parameter connections
 
 Sigasi Studio flags an error for duplicate named port and parameter connections (rule 37).
 
@@ -119,7 +111,7 @@ module goodtop;
     );
 endmodule</pre>
 
-## Missing actuals for formals that have no default value
+### Missing actuals for formals that have no default value
 
 Sigasi Studio warns about missing port or parameter connections if the ports or parameters don't have a default value (rule 38).
 
@@ -143,7 +135,7 @@ module goodtop;
     );
 endmodule</pre>
 
-## Excessive number of actuals in ordered notation
+### Excessive number of actuals in ordered notation
 
 Sigasi Studio flags an error if the number of positional parameters or port connections is larger than the number of parameters or ports of the instantiated module (rule 39).
 
@@ -163,7 +155,7 @@ endmodule</pre>
 
 Note that if there are too few positional parameters or port connections, an error for [missing connections]({{< ref "#missing-actuals-for-formals-that-have-no-default-value" >}}) will be flagged.
 
-## Named connections are not allowed with blank ports
+### Named connections are not allowed with blank ports
 
 If an instantiated module contains a *null port*, the instantiation must use port association by order and not by name (rule 56).
 
@@ -198,7 +190,14 @@ module goodtop2;
 endmodule</pre>
 
 
-{{% lintrule sv 24 26 %}}
+{{% ruleConfiguration many=yes %}}
+{{< rule id=24 comment="Whitespace following a backtick" >}}
+{{< param/int name=max_ordered_port_connections min=0 >}}
+{{< /rule >}}
+{{< rule id=26 comment="Invalid preprocessor syntax" >}}
+{{< param/int name=max_ordered_parameter_overrides min=0 >}}
+{{< /rule >}}
+{{% /ruleConfiguration %}}
 
 <!-- 25, 37, and 39 not configurable -->
 <!-- 38 and 56 not configurable in preferences, only in file -->

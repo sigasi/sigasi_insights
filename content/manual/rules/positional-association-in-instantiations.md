@@ -31,4 +31,6 @@ begin
    );
 end architecture RTL;</pre>
 
-{{% lintrule 164 %}}
+{{% ruleConfiguration %}}
+{{< rule id=164 />}}
+{{% /ruleConfiguration %}}

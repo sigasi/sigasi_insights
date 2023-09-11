@@ -1,0 +1,4 @@
+{{ if or (not (.Get "type")) (not (.Get "name")) }}
+{{ errorf "a list param must have a name and a member type: %s" .Position }}
+{{ end -}}
+{{ .Parent.Get "id" }}/param/{{ .Get "name" }}/${path}=[{{ .Get "type" }}...]

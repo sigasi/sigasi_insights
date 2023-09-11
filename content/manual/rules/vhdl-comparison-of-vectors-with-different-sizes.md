@@ -23,4 +23,6 @@ if (s_in > s_out) then
 ...
 </pre>
 
-{{% lintrule 232 %}}
+{{% ruleConfiguration %}}
+{{< rule id=232 />}}
+{{% /ruleConfiguration %}}

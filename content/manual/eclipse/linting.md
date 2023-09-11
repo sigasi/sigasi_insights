@@ -43,8 +43,8 @@ rule](/manual/rules/vhdl_style/#vhdl-code-line-too-long), can be tweaked
 to your preference. The configuration interface to configure linting
 rules for the entire workspace is available through:
 
-* For Verilog/SystemVerilog rules: **Window > Preferences > Sigasi > Verilog/SystemVerilog > Errors/Warnings**
-* For VHDL rules: **Window > Preferences > Sigasi > VHDL > Errors/Warnings**
+* **Window > Preferences > Sigasi > Verilog/SystemVerilog > Errors/Warnings** for Verilog/SystemVerilog rules.
+* **Window > Preferences > Sigasi > VHDL > Errors/Warnings** for VHDL rules.
 
 {{< figure src="/img/manual/linting-rule-preference-page.png" alt="Configuring the parameters of Sigasi linting checks" link="/img/manual/linting-rule-preference-page.png" >}}
 
@@ -109,7 +109,7 @@ CamelCase. A naming convention rule is empty by default, which means
 that the particular rule is not checked.
 
 In addition, Sigasi can also check for header comments of files,
-design units, subprograms, etc. This could e.g. be used to
+design units, subprograms, etc. This could for instance be used to
 check whether a copyright notice or disclaimer has been included in
 the file header comment.
 
@@ -121,16 +121,14 @@ the file header comment.
 * **Window > Preferences > Sigasi > Verilog/SystemVerilog > Header Comments** for Verilog and SystemVerilog, and
 * **Window > Preferences > Sigasi > VHDL > Header Comments** for VHDL.
 
-At the top, you can set the severity of naming convention
-non-conformities. Below, you can enter the validation
-patterns. Patterns use the Java regular expressions
-syntax. Information on Java regular expressions is available through
-the link above the severity settings. Note that names are not
-validated if the corresponding validation pattern is empty.
+At the top, you can set the severity of naming convention non-conformities.
+Below, you can enter the validation patterns.
+Patterns use the [RE2/J][] regular expressions syntax.
+Note that names are not validated if the corresponding validation pattern is empty.
 
-Note that you can add two patterns per name: a "valid pattern" which
+Note that you can add two patterns per name: a **valid pattern** which
 the name must match (a marker will appear if it does not match) and an
-"invalid pattern" which the name cannot match (a marker will appear if
+**invalid pattern** which the name cannot match (a marker will appear if
 it does). You can set either or both patterns per name.
 
 {{< figure src="/img/manual/preferences_naming_conventions.png" alt="Configuring naming conventions" >}}
@@ -178,50 +176,69 @@ It will apply the Sigasi built-in default for a linting rule.
 Project settings are stored in this settings file:
 
 ```text
-    ${project location}/.settings/com.sigasi.hdt.${language}.linting.prefs
+${project location}/.settings/com.sigasi.hdt.${language}.linting.prefs
 ```
 
 ## Manual Configuration
 
-**Note:** manual configuration is discouraged, especially for rule
-parameters other than severity, because it's easy to get the syntax
-wrong.
+**Note:** manual configuration is discouraged, especially for rule parameters other than severity,
+because it's easy to get the syntax wrong.
 
-To configure the severity of validations, add a line for each validation:
-
-```text
-    ${validation id}/severity/${path}=${severity}
-```
-
-Where `${validation id}` can be
-
-* the number of the validation ID (e.g. 140)
-* `all` to specify all validation ids in one rule
-
-Validation ID numbers are listed in the [list of VHDL Linting Rules]({{< ref "/manual/eclipse/linting-vhdl.md" >}}),
-the [list of Verilog/SystemVerilog Linting Rules]({{< ref "/manual/eclipse/linting-verilog.md" >}})
-and can also be found in the **Project Properties** under **Errors/Warnings**.
-
-Where `${path}` can be:
-
-* `<project>` (literally, with brackets!) to set the severity of the entire project
-* `/path/to/folder` to set the severity of an entire folder
-* `/path/to/file.vhd` to set the severity of a specific file
-
-Where `${severity}` can be:
-
-* ERROR
-* WARNING
-* INFO
-* IGNORE
-
-Whitespace must be escaped with a back slash (`\`). You can add comments with `#`.
-
-Examples:
+To configure the severity of the rules, add a line using this template:
 
 ```text
-    72/severity/<project>=IGNORE
-    72/severity//Folder\ name/Extra\ folder=INFO
-    72/severity//test/top.vhd=WARNING
-    all/severity/<project>=IGNORE
+${rule id}/severity/${path}={error|warning|info|ignore}
 ```
+
+To configure a parameter of a rule, add a line using this template:
+
+```text
+${rule id}/param/${parameter}/${path}=${value}
+```
+
+* Where `${rule id}` can be the number of the rule (e.g. 140),
+  or `all` to specify preferences for all rule IDs at once.
+
+  Rule IDs can be found in the **Errors/Warnings** settings under the **Project Properties** and **Workspace Preferences**.
+  They are also included in the [list of VHDL Linting Rules]({{< ref "/manual/eclipse/linting-vhdl.md" >}})
+  and the [list of Verilog/SystemVerilog Linting Rules]({{< ref "/manual/eclipse/linting-verilog.md" >}}).
+
+* Where `${path}` can be `<project>` (literally, with brackets!) to set the severity of the entire project,
+  `/path/to/folder` to set the severity of an entire folder,
+  or `/path/to/file.vhd` to set the severity of a specific file.
+
+The valid values for the parameters are documented on the individual linting rule pages.
+They are described according to these rules:
+
+* `{value1|value2}` means that either `value1` or `value2` must be used,
+  e.g. `true` for `{true|false}` or `bit_vector` for `{enumeration|bit_vector|std_logic_vector}`.
+
+* `${integer}` means the value must be an integral number, e.g. `5`.
+  If the number must fall within a range, it is specified in a comment.
+
+* `[keyword...]` means the value is any number of keywords (or other strings) separated by tab characters,
+  e.g.
+
+  <pre>ENTITY	PACKAGE</pre>
+
+  If any of the strings must contain a tab character or a single quote, escape it using a single quote.
+  For example, below is a list of 2 items, the first `a<Tab>tab` and the second `a'quote`.
+
+  <pre>a'	tab	a''quote</pre>
+
+* `${regex}` means the value must be an [RE2/J][] regular expression, e.g. `0|1`.
+
+Whitespace in keys must be escaped with a back slash (`\`). You can add comments
+with `#`.
+
+### Examples
+
+```text
+72/severity/<project>=IGNORE
+72/severity//Folder\ name/Extra\ folder=INFO
+72/severity//test/top.vhd=WARNING
+237/params/fsm_state_type//test/top.vhd=ARRAY_OF_LOGIC
+236/params/allowed_literal_pattern/<project>=0|1
+```
+
+[RE2/J]: https://www.sigasi.com/app/regex

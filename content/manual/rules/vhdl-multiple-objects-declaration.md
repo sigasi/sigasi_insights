@@ -17,4 +17,6 @@ entity t is
     );
 end entity t;</pre>
 
-{{% lintrule 253 %}}
+{{% ruleConfiguration %}}
+{{< rule id=253 />}}
+{{% /ruleConfiguration %}}

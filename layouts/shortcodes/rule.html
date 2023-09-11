@@ -1,0 +1,7 @@
+{{ if not (.Get "id") }}
+{{ errorf "a ruleId must have a single id parameter: %s" .Position }}
+{{ end -}}
+{{ with .Get "comment" }}# {{ . }}
+{{ end -}}
+{{ .Get "id" }}/severity/${path}={error|warning|info|ignore}{{ with .Get "postcomment" }} # {{ . }}{{ end }}
+{{- .Inner -}}

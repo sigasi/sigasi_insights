@@ -9,13 +9,9 @@ Sigasi Studio can check that the same **clock edge** is used throughout the enti
 - **falling**, ensures that all clock edges are **falling edges**
 - **consistent**, adapts the rule to the **most** used edge per **design file**. If there are equal amounts of rising and falling edges, the **first** encountered edge will be chosen
 
-The default configured type is `consistent`, but this can be changed in the [project linting settings](/manual/eclipse/linting/#manual-configuration) (`${project_location}/.settings/com.sigasi.hdt.vhdl.linting.prefs`). For example:
+The default configured type is **consistent**, but this can be changed in the **Errors/Warnings** project setting or workspace preference.
 
-```text
-254/params/expected_edge//=rising
-```
-
-**Example** with `rising` edge selected
+**Example** with **rising** edge selected
 <pre>
 process(clk) is
     variable count : natural := 0;
@@ -45,4 +41,8 @@ begin
 end process;
 </pre>
 
-{{% lintrule 254 %}}
+{{% ruleConfiguration %}}
+{{< rule id=254 >}}
+{{< param/enumeration "expected_edge" "consistent" "rising" "falling" >}}
+{{< /rule >}}
+{{% /ruleConfiguration %}}

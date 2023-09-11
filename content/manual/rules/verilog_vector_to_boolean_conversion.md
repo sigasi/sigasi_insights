@@ -18,4 +18,6 @@ It may be better to explicitly compare the vector with zero (`vec == 0` or `vec 
 
 Note that this rule is disabled (set to `IGNORE`) by default.
 
-{{% lintrule sv 144 %}}
+{{% ruleConfiguration %}}
+{{< rule id=144 />}}
+{{% /ruleConfiguration %}}

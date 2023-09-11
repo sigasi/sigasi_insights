@@ -5,7 +5,7 @@ linting: verilog
 
 Sigasi Studio has several checks on Verilog assignment patterns.
 
-## Default member must be last
+### Default member must be last
 
 Concrete assignments must precede more general assignments. Otherwise, some of those assignments might be ignored (rule 28).
 In particular:
@@ -43,7 +43,7 @@ module goodcode;
     circle_t c = '{<span class="goodcode">real: 0.0, default: 0</span>};
 endmodule</pre>
 
-## Only one default member expression is allowed
+### Only one default member expression is allowed
 
 Sigasi Studio flags an error when expressions have multiple default assignments (rule 29). In particular:
 
@@ -79,7 +79,7 @@ module goodcode;
 endmodule
 </pre>
 
-## Overwritten type key in assignment pattern
+### Overwritten type key in assignment pattern
 
 Sigasi Studio warns about duplicate type member keys in assignment patterns (rule 30). This is not an error according to the language reference manual,
 but the last used type key overwrites previously matched members, making the code confusing and hard to maintain.
@@ -94,7 +94,7 @@ module goodcode;
     int b[10] = '{<span class="goodcode">int: 1</span>};
 endmodule</pre>
 
-## Duplicate member key in structure assignment pattern
+### Duplicate member key in structure assignment pattern
 
 Sigasi Studio flags an error for duplicate members/index keys in assignment patterns (rule 31). Each member/index key can occur only once.
 
@@ -108,7 +108,7 @@ module goodcode;
 	int b[10] = '{<span class="goodcode">5: 1, default:0</span>};
 endmodule</pre>
 
-## Mixed named and ordered notation in assignment pattern
+### Mixed named and ordered notation in assignment pattern
 
 Sigasi Studio flags an error when an assignment contains a mix of ordered and named elements (rule 32).
 
@@ -128,7 +128,11 @@ module goodcode;
     int b[4] = '{<span class="goodcode">0: 0, 1: 1, 2: 5, 3: 7</span>};
 endmodule</pre>
 
-
-{{% lintrule sv 28 30 31 32 %}}
+{{% ruleConfiguration many=yes %}}
+{{< rule id=28 postcomment="default member must be last" />}}
+{{< rule id=30 postcomment="overwritten type key in assignment pattern" />}}
+{{< rule id=31 postcomment="duplicate member key in structure assignment pattern" />}}
+{{< rule id=32 postcomment="mixed named and ordered notation in assignment pattern" />}}
+{{% /ruleConfiguration %}}
 
 <!-- 29 not configurable -->

@@ -18,4 +18,6 @@ module error_prone_code;
 endmodule
 </pre>
 
-{{% lintrule sv 97 %}}
+{{% ruleConfiguration %}}
+{{< rule id=97 />}}
+{{% /ruleConfiguration %}}

@@ -10,10 +10,13 @@ VHDL is mostly a case-insensitive language, so keywords can be written in any ca
 <span class="warning">SIGNAL</span> upper: boolean;
 </pre>
 
-
-This rule can be configured by setting the desired **default capitalization**: either lowercase, uppercase, or consistent in file. Some **specific keyword capitalization** exceptions can also be added by setting a list of keywords, separated by commas. For example, `ENTITY, Architecture`.
-
+This rule can be configured by setting the desired **default capitalization**: either lowercase, uppercase, or consistent in file. The latter will look at the majority of casing in the file. Some **specific keyword capitalization** exceptions can also be added.
 
 Note that this rule is set to {{< severity ignore 0 >}} `ignore` by default.
 
-{{% lintrule 240 %}}
+{{% ruleConfiguration %}}
+{{< rule id=240 >}}
+{{< param/enumeration style consistent_in_file uppercase lowercase >}}
+{{< param/list name=overrides type=keyword >}}
+{{< /rule >}}
+{{% /ruleConfiguration %}}

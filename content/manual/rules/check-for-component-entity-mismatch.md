@@ -32,4 +32,6 @@ end architecture;</pre>
     );
 end component;</pre>
 
-{{% lintrule 187 %}}
+{{% ruleConfiguration %}}
+{{< rule id=187 />}}
+{{% /ruleConfiguration %}}

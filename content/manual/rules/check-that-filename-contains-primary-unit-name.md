@@ -7,4 +7,6 @@ Sigasi Studio can check that the filename contains the name of at least one of t
 
 {{< figure src="/img/releasenotes/3.8/filename_linting.png" alt="Check file name" >}}
 
-{{% lintrule 189 %}}
+{{% ruleConfiguration %}}
+{{< rule id=189 />}}
+{{% /ruleConfiguration %}}

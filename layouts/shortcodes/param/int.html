@@ -1,0 +1,8 @@
+{{ if not (.Get "name") }}
+{{ errorf "a int param must have a name: %s" .Position }}
+{{ end -}}
+{{ .Parent.Get "id" }}/param/{{ .Get "name" }}/${path}=${integer}
+{{- if and (.Get "min") (.Get "max") }} # at least {{ .Get "min" }} but less than {{ .Get "max" -}}
+{{- else if .Get "min" }} # at least {{ .Get "min" -}}
+{{- else if .Get "max" }} # less than {{ .Get "max" -}}
+{{- end -}}

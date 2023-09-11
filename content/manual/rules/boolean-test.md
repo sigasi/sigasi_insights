@@ -30,4 +30,7 @@ end if;
 
 Note that the equals-false rule (186) is disabled (set to `IGNORE`) by default.
 
-{{% lintrule 185 186 %}}
+{{% ruleConfiguration many=yes %}}
+{{< rule id=185 />}}
+{{< rule id=186 />}}
+{{% /ruleConfiguration %}}

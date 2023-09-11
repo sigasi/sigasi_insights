@@ -6,13 +6,13 @@ linting: vhdl
 It is recommended to declare the FSM states as enumerated data types. Enumerated state types make HDL code generally more readable. It also facilitates increased flexibility in the synthesis implementation as you can select the encoding style used without modifying the HDL code. These aspects support greater design portability and support FSM error detection and recovery.
 In safety-critical designs though, `std_logic_vector` can still be preferred.
 
-Sigasi Studio can ensure one of the following types is used for FSM state signals or variables (rule 237):
+Sigasi Studio can ensure one of the following types is used for FSM state signals or variables:
 
 - **enumeration**
 - **arrays of (u)logic**, e.g., `std_logic_vector`
 - **arrays of bit**, e.g., `bit_vector`
 
-The type that is configured by default is `enumeration`.
+The type that is configured by default is "enumeration".
 
 **Example** with "array of logic" as expected FSM state type:
 <pre>
@@ -30,4 +30,8 @@ end process;
 Note that this rule is set to {{< severity ignore 0 >}} `ignore` by default. You can enable it in the VHDL **Errors/Warnings** preference page (**Style Validation > Unexpected FSM state type**).
 You can also configure the **FSM state type** that is checked on this page.
 
-{{% lintrule 237 %}}
+{{% ruleConfiguration %}}
+{{< rule id=237 >}}
+{{< param/enumeration fsm_state_type enumeration bit_vector std_logic_vector >}}
+{{< /rule >}}
+{{% /ruleConfiguration %}}

@@ -5,7 +5,7 @@ linting: vhdl
 
 Sigasi Studio lets users restrict the usage of language features.
 
-## Prohibited Keyword or Operator
+### Prohibited Keyword or Operator
 
 Keywords and operators can be restricted using a list of keywords and operators that cannot be used (rule 245). For example:
 
@@ -16,7 +16,7 @@ if a<span class="warning">**</span>2=4 then            -- Operator '**' is prohi
 end if;
 </pre>
 
-## Prohibited Attribute
+### Prohibited Attribute
 
 Attributes can be restricted using a list of attributes that cannot be used (rule 243). These attributes can be configured in two modes: **deny** and **allow**, and can also include checks for **user-defined attributes**. For example:
 
@@ -56,7 +56,7 @@ begin
 end architecture RTL;
 </pre>
 
-## Prohibited Library
+### Prohibited Library
 
 Libraries can be restricted using a list of **denied** or **allowed** libraries that will be reported in the use clause (rule 248). Using the current work library is **always allowed** regardless of configuration. For example:
 
@@ -70,7 +70,7 @@ Libraries can be restricted using a list of **denied** or **allowed** libraries 
 <span class="warning">library abc;</span>    -- Only library 'ieee' is allowed
 </pre>
 
-## Prohibited Package
+### Prohibited Package
 
 Packages can be restricted using a list of **denied** or **allowed** packages that will be reported in the use clause (rule 246). Using packages from the work library or the current work library is **always allowed** regardless of configuration. For example:
 
@@ -98,7 +98,7 @@ use ieee.numeric_std.all;
 use memory.ram_cell.all;        -- Ignored because mapped to the same library
 </pre>
 
-## Prohibited Pragma
+### Prohibited Pragma
 
 Pragmas can be restricted using a list of pragmas that will be reported when they are used (rule 247). For example:
 
@@ -111,4 +111,25 @@ assert (rst_lvl = 0) or (rst_lvl = 1)
 -- vhdl_comp_on
 </pre>
 
-{{% lintrule 244 245 246 247 248 %}}
+{{% ruleConfiguration many=yes %}}
+{{< rule id=244 >}}
+{{< param/enumeration check_mode deny allow >}}
+{{< param/list name=attributes type=attribute >}}
+{{< param/bool name=user_attributes >}}
+{{< /rule >}}
+{{< rule id=245 >}}
+{{< param/list name=keywords_and_operators type=keyword >}}
+{{< /rule >}}
+{{< rule id=246 >}}
+{{< param/enumeration check_mode deny allow >}}
+{{< param/list name=packages type=package >}}
+{{< /rule >}}
+{{< rule id=247 >}}
+{{< param/list name=pragmas type=pragma >}}
+{{< /rule >}}
+{{< rule id=248 >}}
+{{< param/enumeration check_mode deny allow >}}
+{{< param/list name=libraries type=library >}}
+{{< /rule >}}
+
+{{% /ruleConfiguration %}}

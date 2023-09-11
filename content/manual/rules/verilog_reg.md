@@ -14,4 +14,6 @@ A [Quick fix](/manual/eclipse/linting/#quick-fixes) is available to convert `reg
     <span class="goodcode">logic</span> good;
 endmodule</pre>
 
-{{% lintrule sv 3 %}}
+{{% ruleConfiguration %}}
+{{< rule id=3 />}}
+{{% /ruleConfiguration %}}

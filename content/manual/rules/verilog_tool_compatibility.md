@@ -10,7 +10,7 @@ listed below mark the usage of such constructs as a warning, which can
 be disabled individually if you use a tool that allows a particular
 construct.
 
-# Whitespace following a backtick
+### Whitespace following a backtick
 
 Some tools allow additional whitespace following the backtick of a preprocessor directive.
 
@@ -19,9 +19,7 @@ Some tools allow additional whitespace following the backtick of a preprocessor 
 ` <span class="warning">define</span> B 2 /* unexpected whitespace following the backtick */
 </pre>
 
-{{%lintrule sv 117 %}}
-
-# Invalid preprocessor syntax
+### Invalid preprocessor syntax
 
 Some directives and escape sequences such as <code>``</code> and
 <code>`"</code> can only be used inside the body of a macro definition.
@@ -31,4 +29,7 @@ Some tools are however more lenient, allowing them also elsewhere.
 var asdf = <span class="warning">`"</span>asdf"; // Unexpected `" directive outside macro body
 </pre>
 
-{{%lintrule sv 121 %}}
+{{% ruleConfiguration many=yes %}}
+{{< rule id=117 postcomment="Whitespace following a backtick" />}}
+{{< rule id=121 postcomment="Invalid preprocessor syntax" />}}
+{{% /ruleConfiguration %}}

@@ -14,4 +14,7 @@ We have a lint check that warns about this, even if you use constants or some si
 
 {{< figure src="/img/manual/nullrange.png" >}}
 
-{{% lintrule 1 26 %}}
+{{% ruleConfiguration many=yes %}}
+{{< rule id=1 comment="For ascending ranges" />}}
+{{< rule id=26 comment="For descending ranges" />}}
+{{% /ruleConfiguration %}}

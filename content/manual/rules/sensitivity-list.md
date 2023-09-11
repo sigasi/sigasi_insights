@@ -5,31 +5,31 @@ linting: vhdl
 
 Sigasi Studio can warn about problems with your sensitivity list:
 
-## Presence of either a sensitivity list or one or more wait statements in a process
+### Presence of either a sensitivity list or one or more wait statements in a process
 
-VHDL requires a **sensitivity list** for each process or `wait` statements in the process body (rule 38).
+VHDL requires a **sensitivity list** for each process or `wait` statements in the process body.
 
-## Incomplete sensitivity list
+### Incomplete sensitivity list
 
-A sensitivity list should contain all signals the process is sensitive to (rule 72).
+A sensitivity list should contain all signals the process is sensitive to.
 
 <pre><span class="warning">process</span>(a)
 begin
    c <= a and b;
 end process;</pre>
 
-## Superfluous signals in sensitivity list
+### Superfluous signals in sensitivity list
 
-A sensitivity list should only contain signals the process is sensitive to (rule 73). Adding more signals will only slow down your simulations.
+A sensitivity list should only contain signals the process is sensitive to. Adding more signals will only slow down your simulations.
 
 <pre>process(a, b, <span class="warning">c</span>)
 begin
    c <= a and b;
 end process;</pre>
 
-## Duplicate signals in sensitivity list
+### Duplicate signals in sensitivity list
 
-A sensitivity list should only contain signals the process is sensitive to (rule 85). Adding duplicate signals is likely a typo and doesn't have any practical effect.
+A sensitivity list should only contain signals the process is sensitive to. Adding duplicate signals is likely a typo and doesn't have any practical effect.
 
 <pre>process(a, b, <span class="warning">b</span>)
 begin
@@ -80,4 +80,9 @@ begin
    c <= a and b;
 end process;</pre>
 
-{{% lintrule 38 72 73 85 %}}
+{{% ruleConfiguration many=yes %}}
+{{< rule id=38 postcomment="Neither sensitivity nor wait" />}}
+{{< rule id=72 postcomment="Incomplete sensitivity list" />}}
+{{< rule id=73 postcomment="Superfluous signals" />}}
+{{< rule id=85 postcomment="Duplicate signals" />}}
+{{% /ruleConfiguration %}}

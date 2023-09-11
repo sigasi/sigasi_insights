@@ -22,4 +22,6 @@ If detecting the edge on a single bit of the vector signal is intentional, using
 endmodule
 </pre>
 
-{{% lintrule sv 143 %}}
+{{% ruleConfiguration %}}
+{{< rule id=143 />}}
+{{% /ruleConfiguration %}}

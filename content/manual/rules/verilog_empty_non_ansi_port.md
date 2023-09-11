@@ -16,4 +16,6 @@ module discouraged_code(
 endmodule
 </pre>
 
-{{% lintrule sv 142 %}}
+{{% ruleConfiguration %}}
+{{< rule id=142 />}}
+{{% /ruleConfiguration %}}

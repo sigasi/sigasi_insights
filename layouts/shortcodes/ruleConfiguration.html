@@ -1,0 +1,17 @@
+## Rule configuration
+
+{{ if .Get "many" }}
+These rules can be disabled for your project, or their severity
+and parameters can be modified in the [project linting
+settings](/manual/eclipse/linting/#project-specific-linting-settings).
+Alternatively, they can be manually configured with the following template:
+{{ else }}
+This rule can be disabled for your project, or its severity
+and parameters can be modified in the [project linting
+settings](/manual/eclipse/linting/#project-specific-linting-settings).
+Alternatively, it can be manually configured with the following template:
+{{ end }}
+
+```text
+{{- .Inner -}}
+```

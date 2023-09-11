@@ -3,7 +3,7 @@ title: Verilog Functions
 linting: verilog
 ---
 
-## Non-blocking assignments are not allowed in functions
+### Non-blocking assignments are not allowed in functions
 
 A non-blocking assignment (`<=`) is not allowed in a (System)Verilog function.
 While syntactically correct, it will generally not lead to the desired behavior, and will likely cause synthesis-simulation mismatch.
@@ -29,7 +29,7 @@ module goodcode;
 	endfunction
 endmodule</pre>
 
-## Function prototype has implicit return type
+### Function prototype has implicit return type
 
 SystemVerilog function prototypes (`pure virtual` functions) should have a return type. Sigasi Studio warns for function prototypes without return type (rule 10).
 
@@ -42,7 +42,9 @@ virtual class goodclass;
 endclass
 </pre>
 
-
-{{% lintrule sv 10 41 %}}
+{{% ruleConfiguration many=yes %}}
+{{< rule id=41 postcomment="Non-blocking assignment in function" />}}
+{{< rule id=10 postcomment="Function prototype with implicit return type" />}}
+{{% /ruleConfiguration %}}
 
 <!-- 41 not configurable in preferences, only in file -->

@@ -17,4 +17,8 @@ This rule can be configured by setting the desired **vector range direction**, e
 
 Note that this rule is set to {{< severity ignore 0 >}} `ignore` by default.
 
-{{% lintrule 241 %}}
+{{% ruleConfiguration %}}
+{{< rule id=241 >}}
+{{< param/enumeration direction downto to >}}
+{{< /rule >}}
+{{% /ruleConfiguration %}}

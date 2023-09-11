@@ -29,4 +29,7 @@ begin
     baz <= <span class="goodcode">foo</span>;
 end architecture RTL;</pre>
 
-{{% lintrule 210 211 %}}
+{{% ruleConfiguration many=yes %}}
+{{< rule id=210 />}}
+{{< rule id=211 />}}
+{{% /ruleConfiguration %}}
