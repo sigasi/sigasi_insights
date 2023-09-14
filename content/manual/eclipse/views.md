@@ -168,7 +168,7 @@ nice overview of all task markers in your workspace in the **Task View**
 (**Window \> Show View \> Tasks**).
 
 You can configure extra tags in the Task Tag preference page:
-**Preferences \> Sigasi \> VHDL \> Task Tags**
+**Preferences \> Sigasi \> [Verilog/SystemVerilog | VHDL] \> Task Tags**
 
 # Bookmarks View
 
