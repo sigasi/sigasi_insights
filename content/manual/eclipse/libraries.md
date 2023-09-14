@@ -117,7 +117,7 @@ Sigasi Studio only writes changes to this configuration file when you make
 changes to the library configuration with the context menu in the
 *Project Explorer*.
 When you do make changes, Sigasi Studio first checks that all paths in the
-library configuration still exist. If a path no longer exists, is will be
+library configuration still exist. If a path no longer exists, it will be
 removed from the configuration file.
 Note that the library configuration file is **case-sensitive**, even on Windows.
 

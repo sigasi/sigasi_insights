@@ -12,16 +12,28 @@ aliases:
 The extension will start once a `.project` file is detected in the root of the open folder.
 
 The project settings and library mappings are compatible with {{< siste >}}.
-See the {{< page "/manual/eclipse/projectsetup.md" >}} manual page for all details.
+See the {{< page "/manual/eclipse/projectsetup.md" >}} and {{< page "/manual/eclipse/libraries.md" >}} manual pages for all details.
 
-Note that resource filters in the `.project` file are not supported by the VS Code extension.
+If you're familiar with Eclipse [Resource Filters]({{< ref "/manual/eclipse/projectsetup.md#deprecated-features" >}}), note that these are not supported by VS Code and will be ignored if there are any filters in the `.project` file extension.
 
 For project configuration, open the **[Project View]({{< ref "/manual/vscode/views.md#project-view" >}})**.
 
 ## Library configuration
 
-To change library mappings, you can use the right-click menu and select **Set Library**.
+To change library mappings, you can use the right-click menu in the **[Project View]({{< ref "/manual/vscode/views.md#project-view" >}})** and select **Set Library** as shown in the image below.
+
+{{< figure src="/img/vscode/VSCodeSetLib.png" link="/img/vscode/VSCodeSetLib.png" alt="VS Code: Set Library"  width="400" >}}
+
 Then you can select an existing library or choose **New Library...** to type a new library name.
+Once you type a new library name, the file/folder you selected will be added to the library you created.
+If you want to add a file/folder to an existing library, you can choose one of the existing ones from the list (such as `work`).
+
+{{< figure src="/img/vscode/VSCodeExclude.png" link="/img/vscode/VSCodeExclude.png" alt="VS Code: Set Library"  width="900" >}}
+
+If you want to exclude files/folders from a Sigasi project, select **Exclude from Build**. When you do this, that file or folder (along with its contents) will no longer be used in your project.
+Note that the excluded resource(s) will still be visible in the **[Project View]({{< ref "/manual/vscode/views.md#project-view" >}})** and you can still add them (Set Library) to the project.
+
+Creating new libraries, adding a file/folder to an existing library, or excluding files/folders from build will modify the `.library_mapping.xml` file in your project.
 
 ## VHDL and Verilog Version
 
