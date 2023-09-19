@@ -28,6 +28,32 @@ Documentation of the Sigasi extension for VS Code is split in the following part
 
 Also make sure to complete the extension's **Walkthrough** which you can find in the VS Code **Get Started** tab.
 
+## Creating a Project From Scratch
+
+First thing you need to do after installing the extension in VS Code, is make sure the license is configured. 
+This can be done following the steps from the **[extension settings page]({{< ref "/manual/vscode/setup#settings" >}})**.
+
+Then, once you have opened the folder with your design files, you can open the Command Palette (**Ctrl+Shift+P**) and run the command **Sigasi: Create New XXX Project** with **XXX** being either VHDL or Verilog/SystemVerilog.
+
+{{< figure src="/img/vscode/VSCodeCreateNewProject.png" link="/img/vscode/VSCodeCreateNewProject.png" alt="VS Code: Create New Project"  width="900" >}}
+ 
+Next, you just need to indicate the root folder of the project to create a `.project` file in your folder containing the project configurations. 
+
+Once the `.project` file is detected, the Sigasi extension will fully start, which you can notice by the appearance of a **[Project View]({{< ref "/manual/vscode/views.md#project-view" >}})** below the default VSC file explorer. 
+From then on, you should use the **Project View** instead of the VSC file explorer. 
+
+If you have a mixed language project, it doesn't matter whether you initially choose VHDL or Verilog/SystemVerilog, since now you can add support for the other one using the command **Sigasi: Add XXX Support**.
+
+{{< figure src="/img/vscode/VSCodeAddSupport.png" link="/img/vscode/VSCodeAddSupport.png" alt="VS Code: Add Language Support"  width="900" >}}
+
+Now your project should be fully ready to work with, and proper HDL files should be analyzed by Sigasi Studio.
+
+For VHDL, libraries are fully supported. For Verilog/SystemVerilog, Sigasi reuses the VHDL library concept (just `work` in practice) to distinguish between design files that should and shouldn't be analyzed. 
+You can configure libraries using the documentation on the **[project setup page]({{< ref "/manual/vscode/projects#library-configuration" >}})**.  
+
+You can also start from a known source, like a Quartus project, that can be converted using a script into a Sigasi Studio project. 
+Scripts and documentation are available from https://github.com/sigasi/SigasiProjectCreator.
+
 ## Tutorial and Demo Projects
 
 A tutorial project and demo project are available through the extension.
