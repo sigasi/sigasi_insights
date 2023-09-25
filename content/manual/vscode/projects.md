@@ -18,6 +18,15 @@ If you're familiar with Eclipse [Resource Filters]({{< ref "/manual/eclipse/proj
 
 For project configuration, open the **[Project View]({{< ref "/manual/vscode/views.md#project-view" >}})**.
 
+## Creating a new, empty project
+
+To create a new project, open the Command Pallet (View > Command Pallet...), execute the command `Sigasi: Create New VHDL Project` or `Sigasi: Create New Verilog Project`, choose the project location, then give your project a name.
+
+If you need mixed language support, you can use the two following commands:
+
+* `Sigasi: Add VHDL Support`
+* `Sigasi: Add Verilog/SystemVerilog Support`
+
 ## Library configuration
 
 To change library mappings, you can use the right-click menu in the **[Project View]({{< ref "/manual/vscode/views.md#project-view" >}})** and select **Set Library** as shown in the image below.
@@ -53,6 +62,12 @@ To add or remove language support, you can right-click on a project from the Sig
 
 To add a new project to your workspace, press `File > Add Folder To Workspace`.
 Make sure the project you're adding has a valid `.project` file.
+
+## Linked Resources
+
+Linked resources are a convenient way to link to a file/folder in the Sigasi eco-system. It works without having to create symlinks or copy the actual content.
+
+To add a linked resource, you can right-click on the node where you want to add it, then click `Add Linked File`/`Add Linked Folder`. A file open dialog will pop-up and you can select the file(s)/folder(s) you want to link.
 
 ## Environment Variables
 
