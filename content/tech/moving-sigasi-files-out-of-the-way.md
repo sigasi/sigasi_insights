@@ -106,7 +106,7 @@ Bear in mind, only the first two variables are available in the Sigasi VS Code e
 * [VS Code custom variables]({{< ref "/manual/vscode/projects.md#custom-project-variables" >}})
 * [Sigasi Veresta custom variables]({{< ref "/manual/veresta#project-options" >}})
 
-The location can actually be any valid URI, including absolute paths; however, this is not recommended, as absolute paths are [not portable](({{< ref "/tech/how-avoid-absolute-library-paths-your-sigasi-project-files.md" >}})), meaning that, when working in a team on the same project, it would require modification on every machine. If you do decide to use absolute paths, make sure they are valid (encoded) URIs. For example, if your library resides in `/design/custom library`, you would need to enter `file:///design/custom%20library`.
+The location can actually be any valid URI, including absolute paths; however, this is not recommended, as absolute paths are [not portable]({{< ref "/tech/how-avoid-absolute-library-paths-your-sigasi-project-files.md" >}}), meaning that, when working in a team on the same project, it would require modification on every machine. If you do decide to use absolute paths, make sure they are valid (encoded) URIs. For example, if your library resides in `/design/custom library`, you would need to enter `file:///design/custom%20library`.
 
 Another attribute that we have not yet discussed is `location`. It can be used in place of `locationURI`, but it can only reference a local file and needs to utilize the file path instead of its full URI.
 
