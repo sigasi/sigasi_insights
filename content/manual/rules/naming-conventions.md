@@ -84,7 +84,7 @@ you would specify `.*_v` for the valid pattern and `.*[0-9].*` for the invalid p
 
 ### Example
 
-A manual VHDL configuration were all ports must start with `p_`
+A manual VHDL configuration where all ports must start with `p_`
 except inout ports which must start with `b_`,
 and where input ports cannot contain numbers.
 We mark the ports with error markers if they don't comply.
