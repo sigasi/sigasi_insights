@@ -193,7 +193,7 @@ ${rule id}/severity/${path}={error|warning|info|ignore}
 To configure a parameter of a rule, add a line using this template:
 
 ```text
-${rule id}/param/${parameter}/${path}=${value}
+${rule id}/params/${parameter}/${path}=${value}
 ```
 
 * Where `${rule id}` can be the number of the rule (e.g. 140),
