@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 5.3
 date: 2023-09-07
-lastmod: 2023-09-07
+lastmod: 2023-10-10
 comments: true
 pager: true
 menu:
@@ -370,6 +370,15 @@ For clarity, you may want to have each primary unit described in its own file. A
 - {{< pill text="VHDL" >}} Fixed missing first character following a [Type Conversion Autocomplete]({{< ref "/manual/eclipse/editor.md#type-conversion" >}})
 
 Thank you for all the [bug reports](mailto:support@sigasi.com) and for enabling [Talkback]({{< ref "manual/common/talkback.md" >}}). All your reports have helped us fix many issues that would otherwise have gone unnoticed.
+
+# Sigasi Studio 5.3.1 Point Release
+
+On October 10, we released Sigasi Studio 5.3.1.
+This release contains the following changes and bug fixes:
+
+- More resilient processing of `.project` files
+- Parameters in the `.prefs` files are case-insensitive
+- {{< pill text="Eclipse" >}} Fixed `Errors/Warnings` page not opening when [creating a builder]({{< ref "/manual/eclipse/tools.md#creating-a-builder">}})
 
 # System Requirements
 
