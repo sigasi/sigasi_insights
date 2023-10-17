@@ -54,6 +54,20 @@ You can configure libraries using the documentation on the **[project setup page
 You can also start from a known source, like a Quartus project, that can be converted using a script into a Sigasi Studio project. 
 Scripts and documentation are available from https://github.com/sigasi/SigasiProjectCreator.
 
+## Syntax and Semantic Highlighting
+
+The Sigasi extension supports semantic highlighting.
+* Syntax highlighting: colors code according to the lexical class (such as *keyword* or *string*)
+* Semantic highlighting: colors code according to its meaning (different colors for *constants* and *signals*)
+
+In order to use Sigasi's semantic highlighting support, there must be a `.project` file in your root directory. Without it, Sigasi extension does not start and only provides a basic syntax highlighting. In the below image, `.project` file is missing. Notice how only syntax highlighting is provided.
+
+{{< figure src="/img/vscode/VSCodeOnlySyntaxHighlighting.png" link="/img/vscode/VSCodeOnlySyntaxHighlighting.png" alt="VS Code: Only Syntax Highlighting"  width="900" >}}
+
+When a project is set up properly (a `.project` file is present in your root directory), then the Sigasi extension starts and semantic highlighting becomes effective, as shown in the below image.
+
+{{< figure src="/img/vscode/VSCodeSemanticHighlighting.png" link="/img/vscode/VSCodeSemanticHighlighting.png" alt="VS Code: Semantic Highlighting"  width="900" >}}
+
 ## Tutorial and Demo Projects
 
 A tutorial project and demo project are available through the extension.
