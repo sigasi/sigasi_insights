@@ -227,6 +227,8 @@ you'll get a warning that `boolean` is not supported by `wlf2vcd`,
 and it won't appear in the waveform.
 You can replace it with a `logic` signal.
 
+#### wlf2vcd Builder
+
 While you could run this converter manually after simulation,
 this would increase the number of clicks to get a waveform from 2
 (simulate button, refresh button in GTKWave)
@@ -234,7 +236,7 @@ to a whole 4!
 You could bring that back down to 3 by adding the converter to the toolbar
 (**Window > Perspective > Customize Perspective...**, check **Launch**)
 but you can also keep it at 2 by adding an automatic builder.
-*You can skip to the [next section](#simulation) if you don't mind manual conversion.*
+*You can skip to the [Riviera-PRO configuration](#riviera-pro) or the [simulation](#simulation) if you don't mind manual conversion.*
 
 Right-click on the project to go to the project properties,
 and open the **Builders** page.
@@ -249,6 +251,50 @@ As "working set of relevant resources," specify `vsim.wlf` in the current projec
 Every change in `vsim.wlf`, including simulation runs,
 should now trigger an execution of the external tool,
 so the `bench.RTL.vcd` or `bench.vcd` waveforms should remain up-to-date.
+
+### Riviera-PRO
+
+You can find the configuration for the Riviera-PRO toolchain in **Window > Preferences > Sigasi > Toolchains > Riviera-PRO**.
+
+![screenshot of the Riviera-PRO configuration](/img/tech/rapid-waveforms/riviera-verilog.png)
+
+The configuration here is a tad more complex than the ModelSim/Questa one.
+After setting the installation path,
+I set the arguments for VSIM to `-c -dbg -do 'asim +access +r ${sigasi_toplevel} -dataset "${sigasi_toplevel:project_path}/riviera-pro"; log -rec *; run -all'`.
+
+* `-c` requests the command line interface.
+  (Once more: uncheck **Run simulation in its own window**.)
+* `-dbg` adds debugging symbols.
+* `asim +access +r ${sigasi_toplevel}` gives the simulation read access to all signals in our top level unit, and
+* `-dataset "${sigasi_toplevel:project_path}/riviera-pro"` tells Riviera-PRO to store its database in a directory called "riviera-pro" in our project.
+* With `log -rec *` I ask to trace all signals, and finally
+* `run -all` runs the simulation.
+
+**Note:** For VHDL, I had to replace `asim +access +r ${sigasi_toplevel}` with `asim +access +r work.bench`. Riviera-PRO expects the name of the entity of the simulated architecture, for which Sigasi has no variable.
+
+When running the Riviera-PRO simulation with the simulate button,
+as detailed in the [next section](#simulation),
+the file `riviera-pro/dataset.asdb` appears in your project root.
+GTKWave does not support ASDB files,
+but Aldec ships a tool called `asdb2vcd` with Riviera
+that we can execute from Sigasi Studio for Eclipse.
+Go to **Run > External Tools > External Tools Configurations...** and double-click **Program** to create a new configuration.
+Call the new configuration `asdb2vcd`,
+set the location of the executable,
+use `${sigasi_toplevel:project_path}` as the working directory,
+and use `riviera-pro/dataset.asdb riviera-pro/waveform.vcd` as arguments.
+You don't have to change any of the other tabs,
+just **Apply** and **Run**.
+
+![screenshot of the asdb2vcd configuration](/img/tech/rapid-waveforms/asdb2vcd.png)
+
+A file called `riviera-pro/waveform.vcd` should appear in your project.
+
+#### asdb2vcd Builder
+
+You can add a builder for this external tool just like I did for `wlf2vcd` in the [ModelSim/Questa section](#wlf2vcd-builder),
+simply replacing the imported external tool with `asdb2vcd`
+and using `riviera-pro/dataset.asdb` as "working set of relevant resources."
 
 ## Simulation
 
