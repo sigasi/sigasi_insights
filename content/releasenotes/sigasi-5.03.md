@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 5.3
 date: 2023-09-07
-lastmod: 2023-10-10
+lastmod: 2023-10-23
 comments: true
 pager: true
 menu:
@@ -379,6 +379,13 @@ This release contains the following changes and bug fixes:
 - More resilient processing of `.project` files
 - Parameters in the `.prefs` files are case-insensitive
 - {{< pill text="Eclipse" >}} Fixed `Errors/Warnings` page not opening when [creating a builder]({{< ref "/manual/eclipse/tools.md#creating-a-builder">}})
+
+# Sigasi Studio 5.3.2 Point Release
+
+On October 23, we released Sigasi Studio 5.3.2.
+This release contains the following bug fix:
+
+- {{< pill text="Eclipse" >}} Fixed blank webviews on Windows
 
 # System Requirements
 
