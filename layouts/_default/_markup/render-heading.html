@@ -1,0 +1,7 @@
+<h{{ .Level }} id="{{ .Anchor | safeURL }}">
+  {{ .Text | safeHTML }}
+  <a href="#{{ .Anchor | safeURL }}"
+    class="hanchor uk-icon"
+    aria-label="Link to this section: {{ with .Text}}{{ . }}{{ end }}"
+    uk-icon="link"></a>
+</h{{ .Level }}>
