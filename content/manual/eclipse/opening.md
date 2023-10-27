@@ -64,6 +64,8 @@ Refer to the [setup page]({{< ref "/manual/eclipse/setup.md#running-sigasi-studi
 * `-Dcom.sigasi.hdt.disableAutomaticTutorial` : suppress the creation of the [*tutorial projects*]({{< ref "/tutorial.md" >}}) in empty workspaces.
 * `-Dswt.chromium.path=/home/user/blub` : extract the Chromium binaries in `blub`
 
+An overview of all Eclipse runtime options can be found in the [Eclipse documentation](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fmisc%2Fruntime-options.html).
+
 # External Files
 
 You can edit VHDL files without setting up a project.
