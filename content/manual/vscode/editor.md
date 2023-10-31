@@ -1,21 +1,27 @@
 ---
 title: Sigasi Studio for VS Code Editor
 showinmenu: true
-weight: 6
+weight: 5
 pager: true
 aliases:
   - /manual/vscode/editor/
 ---
 
-## Semantic Highlighting
+## Syntax and Semantic Highlighting
 
-The Sigasi extension supports semantic highlighting, however, some VS Code themes might not support it yet.
-Be sure to use the default VS Code themes if you're missing this feature.
+The Sigasi extension supports syntax and semantic highlighting.
+
+* Syntax highlighting: colors code according to the lexical classification (such as *keyword* or *string*)
+* Semantic highlighting: colors code according to its meaning (different colors for *constants* and *signals*)
+
+Note that some VS Code themes might not support semantic highlighting. Be sure to use the default VS Code themes if you're missing this feature.
 
 * In a theme that supports semantic highlighting, you'll see that e.g. `port`, `signal`, and `type` names have a color that is different from the language keywords.  
 {{< figure src="/img/vscode/supported_semantic_highlighting.png" link="/img/vscode/supported_semantic_highlighting.png" alt="Supported semantic highlighting" width="600" >}}
 * In a theme that does not support semantic highlighting, names like those of a `port`, `signal`, or `type` will have the default text color.
 {{< figure src="/img/vscode/unsupported_semantic_highlighting.png" link="/img/vscode/unsupported_semantic_highlighting.png" alt="Unsupported semantic highlighting" width="600" >}}
+
+The latter might also happen when there's no `.project` file in your root directory. Without it, the Sigasi extension does not start and only provides basic syntax highlighting.
 
 ## User-Defined Code Snippets
 

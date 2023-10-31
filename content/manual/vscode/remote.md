@@ -1,7 +1,7 @@
 ---
 title: "Remote Development"
 showinmenu: true
-weight: 5
+weight: 6
 pager: true
 aliases:
   - /vscode/remote/

@@ -131,6 +131,23 @@ For more information and examples, check out the [Sigasi Project Creator] projec
 
 [Sigasi Project Creator]: https://github.com/sigasi/SigasiProjectCreator
 
+# Linked Resources
+
+Linked resources are a convenient way to add files and folders from anywhere, inside or outside of your project, to your Sigasi project at a location of your choice. Linked resources allow you to use existing libraries or IP cores easily. It is not necessary to create symlinks or to copy files. 
+
+To add a linked resource, you can right-click on the node where you want to add it in the [Project Explorer]({{< ref "/manual/eclipse/views.md#project-explorer-view" >}}), then click **New > File...** or **New > Folder...** and finally, click **Advanced >>** in the dialog that pops up.
+
+For a folder, select **Link to alternate location (Linked Folder)** and browse to the folder you want to target. For a file select **Link to file in the file system** and browse to file you want to target. You can also make use of [variables]({{< ref "/tech/moving-sigasi-files-out-of-the-way.md#what-makes-a-linked-resource" >}}) when selecting the target.
+
+<div class="uk-child-width-1-2@m uk-grid" >
+{{< figure src="/img/manual/LinkedFolder.png" link="/img/manual/LinkedFolder.png" title="Linking a folder" >}}
+{{< figure src="/img/manual/LinkedFile.png" link="/img/manual/LinkedFile.png" title="Linking a file" >}}
+</div>
+
+The project now looks as follows.
+
+{{< figure src="/img/manual/LinkedResources.png" link="/img/manual/LinkedResources.png" title="A project with linked resources" >}}
+
 # Deprecated Features
 
 Note that resource filters are discouraged in Sigasi Studio for Eclipse and unsupported in

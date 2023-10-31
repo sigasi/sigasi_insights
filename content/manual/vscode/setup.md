@@ -14,7 +14,7 @@ This page explains how to install and configure the Sigasi Studio extension for 
 
 The extension requires _VS Code_ or _VS Codium_ version `1.77.0` or higher.
 
-### Java Runtime
+### Java Runtime (Optional)
 
 The path to use the Java Runtime (JRE) can optionally be configured in the [settings](#settings).
 If the setting is empty, the extension will extract the included **JRE** in the user's home folder.
@@ -43,7 +43,7 @@ If you're working on a [remote host for your HDL development]({{< ref "/manual/v
 
 ## Settings
 
-The settings for the Sigasi extension can be reached trough:
+The settings for the Sigasi extension can be reached as follows.
 
 {{< figure src="/img/vscode/VSCodeLicenseSetting.png" link="/img/vscode/VSCodeLicenseSetting.png" alt="VS Code Sigasi license setting" class="uk-align-right" width="400" >}}
 
