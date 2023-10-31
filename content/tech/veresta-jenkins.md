@@ -126,6 +126,7 @@ export SIGASI_LM_LICENSE_FILE=27000@my_license_server
 2. Configure warnings-ng to pick up Veresta's results. Add a
 **Post-build Action**: **Record compiler warnings and static analysis
 results**, and configure as follows:
+  * Tool: `Native Analysis Model Format`
   * Fileset 'includes': `**/sigasi-warnings.xml`
   * Custom ID: `sigasi`
   * Custom Name: `Sigasi Veresta`
