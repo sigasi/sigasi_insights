@@ -56,3 +56,22 @@ For each occurrence of `[datetime]`, choose the most recent directory available.
 We recommend to open the `exthost` folder using the command **Developer: Open Extension Logs Folder**.
 
 **Note**: These logs contain file names from your project so only send them to us if you're allowed to do so.
+
+## Issues Caused by VS Code Settings
+
+### Ctrl+Click Doesn't Work
+
+If **Ctrl+Click** doesn't work for you to **Open Declaration**, this is likely caused by a wrong VS Code setting.
+In the VS Code **Selection** menu, there is an entry to switch the multi-cursor modifier to Ctrl+Click. 
+
+{{< figure src="/img/vscode/VSCodeMultiCursorModifier.png" link="/img/vscode/VSCodeVSCodeMultiCursorModifieretLib.png" alt="VS Code: Multi-Cursor Modifier"  width="400" >}}
+
+Even accidentally clicking that entry (e.g. when trying to enable **Column Selection Mode**) will change the setting for the multi-cursor modifier. 
+This results in **Alt+Click** being used when trying to **Open Declaration** instead of the usual **Ctrl+Click**. 
+You can click that same entry again to switch back to using **Ctrl+Click**. 
+
+
+
+
+
+
