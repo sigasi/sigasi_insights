@@ -274,6 +274,6 @@ This series of articles was based on [Lieven](https://www.sigasi.com/about/#liev
 # References
 
 <a name="ref4"></a>[<a href="#bref4">4</a>] G. Bracha, D. Ungar, "Mirrors: design principles for meta-level facilities of object-oriented programming languages" In procedings of the 2004 ACM  SIGPLAN Conference on Object-Oriented Programming Systems, Languages, and Applications, pp. 331-344, ACM, New York (2004)  
-<a name="ref5"></a>[<a href="#bref5">5</a>] ["Reflection in Dart with Mirrors"](https://www.dartcn.com/articles/server/reflection-with-mirrors)  
+<a name="ref5"></a>[<a href="#bref5">5</a>] ["Reflection in Dart with Mirrors"](https://news.dartlang.org/2012/12/reflection-in-dart-with-mirrors.html)  
 <a name="ref6"></a>[<a href="#bref6">6</a>] ["Mirror C++ reflection utilities"](http://kifri.fri.uniza.sk/~chochlik/mirror-lib/html/)  
 <a name="ref7"></a>[<a href="#bref7">7</a>] ["VHDL2017 proposals"](http://www.eda-twiki.org/cgi-bin/view.cgi/P1076/VHDL2017)  
