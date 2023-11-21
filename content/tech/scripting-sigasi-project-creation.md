@@ -4,6 +4,8 @@ layout: page
 pager: true
 author: Hendrik Eeckhaut
 date: 2013-10-17
+modifier: Wim Meeus
+lastmod: 2023-11-21
 tags: 
   - hdt-2.0
   - project
@@ -19,7 +21,7 @@ When you start using Sigasi, the first thing you have to do is [Setting Up a Pro
 
 Because there are so many different formats to describe this information, we cannot offer one universal solution. But to make the import process easier, we have developed [Python scripts](https://github.com/sigasi/SigasiProjectCreator) that make it easy for you to convert your own project description into a Sigasi project description.
 
-The [`convertCsvFileToLinks.py` script](https://github.com/sigasi/SigasiProjectCreator/blob/master/src/SigasiProjectCreator/convertCsvFileToLinks.py) converts a CSV file ([example file](https://github.com/sigasi/SigasiProjectCreator/blob/master/tests/test-files/compilation_order.csv)) into a Sigasi Project. This scripts adds a link to each file in the list and maps it to the corresponding library. 
+The [`createSigasiProject.py` script](https://github.com/sigasi/SigasiProjectCreator/blob/master/src/createSigasiProject.py) converts e.g. a CSV file ([example file](https://github.com/sigasi/SigasiProjectCreator/blob/master/tests/test-files/compilation_order.csv)) into a Sigasi Project. Multiple input formats and project styles are supported, check out the [SigasiProjectCreator repository](https://github.com/sigasi/SigasiProjectCreator) for a discussion.
 
 All scripts are open sourced under a [BSD license](https://github.com/sigasi/SigasiProjectCreator/blob/master/LICENSE). So you can freely customize them to your specific needs. Feel free to suggest or contribute improvements.
 

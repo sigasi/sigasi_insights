@@ -4,6 +4,8 @@ layout: page
 pager: true
 author: Wim Meeus
 date: 2021-02-23
+modifier: Wim Meeus
+lastmod: 2023-11-21
 comments: true
 bannerad: true
 tags:
@@ -133,9 +135,10 @@ paths, a `.f` file should be chosen which preferably has the relevant
 information, e.g. a `.f` file for Cadence IUS.
 
 ```
-python /my/path/SigasiProjectCreator/src/convertDotFtoSigasiProject.py projectname path/to/my.f
+python /my/path/SigasiProjectCreator/src/createSigasiProject.py projectname path/to/my.f
 ```
 
+Further command line options of `createSigasiProject.py` are discussed [here](https://github.com/sigasi/SigasiProjectCreator).
 After this, you should see two new files and a folder in your current
 directory: `.project`, `.library_mapping.xml` and `.settings`.
 

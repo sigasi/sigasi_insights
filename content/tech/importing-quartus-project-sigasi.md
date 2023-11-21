@@ -4,6 +4,8 @@ layout: page
 pager: true
 author: Bart Brosens
 date: 2018-03-30
+modifier: Wim Meeus
+lastmod: 2023-11-21
 tags:
   - GitHub
   - hdt-2.0
@@ -41,10 +43,10 @@ quartus_sh -t <path to SigasiProjectCreator>/src/convertQuartusProjectToCsv.tcl 
 ## 3. Generate the Sigasi Studio project files from the list of source files
 
 ```
-<path to SigasiProjectCreator>/src/convertCsvFileToTree.py <project_name> quartus_files.csv
+python <path to SigasiProjectCreator>/src/createSigasiProject.py <project_name> quartus_files.csv
 ```
 
-This script generates the `.project` and `.library_mapping.xml` files that define the Sigasi Studio project.
+This script generates the `.project` and `.library_mapping.xml` files that define the Sigasi Studio project. Further project creation options are discussed [here](https://github.com/sigasi/SigasiProjectCreator).
 
 # Note
 

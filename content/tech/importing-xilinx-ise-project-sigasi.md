@@ -4,6 +4,8 @@ layout: page
 pager: true
 author: Hendrik Eeckhaut
 date: 2014-11-07
+modifier: Wim Meeus
+lastmod: 2023-11-21
 tags: 
   - GitHub
   - hdt-2.0
@@ -26,12 +28,14 @@ You can either [clone the GitHub repository](https://github.com/sigasi/SigasiPro
 2. Convert the Xilinx ISE or HDL Designer project to a Sigasi project (i.e. generate the `.project` and `.library_mapping.xml` files):
 	* Xilinx ISE:
     ```
-    python <path to SigasiProjectCreator>/convertXilinxISEToSigasiProject.py <project-name> <path-to-ISE-project-file.xise>
+    python <path to SigasiProjectCreator>/src/createSigasiProject.py <project-name> <path-to-ISE-project-file.xise>
     ```
 	* Mentor Graphics HDL Designer:
     ```
-    python <path to SigasiProjectCreator>/convertHdpProjectToSigasiProject.py <project-name> <path-to-Hdp.hdp>
+    python <path to SigasiProjectCreator>/src/createSigasiProject.py <project-name> <path-to-Hdp.hdp>
     ```
+    Further project creation options are discussed [here](https://github.com/sigasi/SigasiProjectCreator).
+
 3. Open the project: `<path to sigasi binary> -p .`
 
 Let me know if you have any trouble running these scripts. And feel free to contribute importers for other EDA tools.

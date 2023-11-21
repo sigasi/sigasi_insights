@@ -4,7 +4,8 @@ layout: page
 pager: true
 author: Hendrik Eeckhaut
 date: 2015-06-30
-lastmod: 2020-01-27
+modifier: Wim Meeus
+lastmod: 2023-11-21
 tags: 
   - GitHub
   - hdt-2.0
@@ -46,7 +47,7 @@ You can switch to synthesis by replacing `USED_IN_SIMULATION` with `USED_IN_SYNT
 ## 2. Generate the Sigasi project files from the CSV file
 
 ```
-~/git/SigasiProjectCreator/src/SigasiProjectCreator/convertCsvFileToTree.py project_1 vivado_files.csv
+python3 ~/git/SigasiProjectCreator/src/createSigasiProject.py project_1 vivado_files.csv
 ```
 This script generates the `.project` and `.library_mapping.xml` files that define the Sigasi project.
 
