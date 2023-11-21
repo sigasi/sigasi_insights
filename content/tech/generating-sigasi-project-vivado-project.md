@@ -27,7 +27,7 @@ If you have multiple IP cores this is really annoying.
 
 To make it easier to use Sigasi in combination with Vivado projects, we added a Vivado tcl script to our [SigasiProjectCreator Github project](https://github.com/sigasi/SigasiProjectCreator).
 This Vivado [tcl script](https://github.com/sigasi/SigasiProjectCreator/blob/master/src/SigasiProjectCreator/convertVivadoProjectToCsv.tcl) creates a list of all HDL source files in your Vivado project and writes this list together with the HDL library name to a CSV-file.
-This CSV-file can be converted to a Sigasi project with the existing [convertCsvFileToTree.py](https://github.com/sigasi/SigasiProjectCreator/blob/master/src/SigasiProjectCreator/convertCsvFileToTree.py) script:
+This CSV-file can be converted to a Sigasi project with the [createSigasiProject.py](https://github.com/sigasi/SigasiProjectCreator/blob/master/src/createSigasiProject.py) script:
 
 # How to generate a Sigasi project from a Vivado project?
 
@@ -36,7 +36,7 @@ This CSV-file can be converted to a Sigasi project with the existing [convertCsv
 The following command assumes you're in a Command Window / Terminal and `vivado` is in your path.
 You can also run the script in the TCL console of a Vivado GUI session if you *source* the script there.
 
-```
+```sh
 vivado -mode batch -source ~/git/SigasiProjectCreator/src/SigasiProjectCreator/convertVivadoProjectToCsv.tcl project_1.xpr
 ```
 
@@ -46,9 +46,10 @@ You can switch to synthesis by replacing `USED_IN_SIMULATION` with `USED_IN_SYNT
 
 ## 2. Generate the Sigasi project files from the CSV file
 
-```
+```sh
 python3 ~/git/SigasiProjectCreator/src/createSigasiProject.py project_1 vivado_files.csv
 ```
+
 This script generates the `.project` and `.library_mapping.xml` files that define the Sigasi project.
 
 Note that you might need to update the `PYTHONPATH` as explained in the [README file](https://github.com/sigasi/SigasiProjectCreator/blob/master/README.md).
