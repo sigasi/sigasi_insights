@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 5.3
 date: 2023-09-07
-lastmod: 2023-10-23
+lastmod: 2023-11-28
 comments: true
 pager: true
 menu:
@@ -386,6 +386,13 @@ On October 23, we released Sigasi Studio 5.3.2.
 This release contains the following bug fix:
 
 - {{< pill text="Eclipse" >}} Fixed blank webviews on Windows
+
+# Sigasi Studio 5.3.3 Point Release
+
+On November 28, we released Sigasi Studio 5.3.3.
+This release contains the following new feature:
+
+- {{< pill text="Eclipse" >}} Sigasi Studio on Windows starts without first showing a Microsoft Defender SmartScreen warning
 
 # System Requirements
 
