@@ -1,6 +1,8 @@
 {{ $scratch := newScratch }}
 {{ $text := .Get "text" }}
 
+{{ $scratch.Set "fgcolor" "white"}}
+
 {{ with .Get "color" }}
 {{ $scratch.Set "bgcolor" . }}
 {{ else }}
@@ -11,8 +13,9 @@
   {{ else if strings.Contains $text "Eclipse" }}
   {{ $scratch.Set "bgcolor" "#93245a" }}
   {{ else }}
-  {{ $scratch.Set "bgcolor" "black" }}
+  {{ $scratch.Set "bgcolor" "#e0e0e0" }}
+  {{ $scratch.Set "fgcolor" "#302158" }}
   {{ end }}
 {{ end }}
 
-<span style="font-weight: bold; color: white; background-color: {{ $scratch.Get "bgcolor" }}; padding: 2px 7px; border-radius: 50px; margin-right: 0.2em">{{ $text }}</span>
+<span style="font-weight: bold; color: {{ $scratch.Get "fgcolor" }}; background-color: {{ $scratch.Get "bgcolor" }}; padding: 2px 7px; border-radius: 50px; margin-right: 0.2em; white-space: nowrap">{{ $text }}</span>

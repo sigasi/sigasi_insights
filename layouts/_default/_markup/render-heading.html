@@ -2,6 +2,6 @@
   {{ .Text | safeHTML }}
   <a href="#{{ .Anchor | safeURL }}"
     class="hanchor uk-icon"
-    aria-label="Link to this section: {{ with .Text}}{{ . }}{{ end }}"
+    aria-label="Link to this section: {{ with .Text}}{{ . | plainify }}{{ end }}"
     uk-icon="link"></a>
 </h{{ .Level }}>

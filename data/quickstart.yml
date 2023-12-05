@@ -6,7 +6,7 @@ items:
         url: https://www.sigasi.com/download/
       - title: Installation screencast
         url: /screencasts/download_install/
-      - title: Installation manual Eclpse
+      - title: Installation manual Eclipse
         url: /manual/eclipse/setup/
       - title: Installation manual VS Code
         url: /manual/vscode/setup/

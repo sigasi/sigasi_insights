@@ -19,8 +19,6 @@ metaDataFormat = "yaml"
 pygmentsCodeFences = "true"
 pygmentsUseClasses = "true"
 
-[author]
-    name = "Sigasi"
 
 [params]
   description         = "Design. Verify. Keep Moving. Edit your VHDL, Verilog, and SystemVerilog code using the Sigasi Studio IDE"
@@ -30,8 +28,12 @@ pygmentsUseClasses = "true"
 
   images = ['/img/logo_positive_900x900.jpg']
 
-[social]
-  twitter = 'Sigasi'
+  [params.author]
+      name = "Sigasi"
+
+  [params.social]
+    twitter = 'Sigasi'
+
 
 [taxonomies]
   tag = "tags"
