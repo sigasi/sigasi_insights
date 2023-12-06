@@ -114,10 +114,12 @@ check whether a copyright notice or disclaimer has been included in
 the file header comment.
 
 **Workspace wide naming conventions settings** are accessed via
+
 * **Window > Preferences > Sigasi > Verilog/SystemVerilog > Naming Conventions** for Verilog and SystemVerilog, and
 * **Window > Preferences > Sigasi > VHDL > Naming Conventions** for VHDL.
 
 **Workspace wide header conventions settings** are accessed via
+
 * **Window > Preferences > Sigasi > Verilog/SystemVerilog > Header Comments** for Verilog and SystemVerilog, and
 * **Window > Preferences > Sigasi > VHDL > Header Comments** for VHDL.
 
@@ -135,7 +137,7 @@ it does). You can set either or both patterns per name.
 
 You can also **configure naming conventions per project**, or even per
 file or folder. Documentation on how to do that is
-[here](#naming-conventions-per-project).
+[here]({{< ref "/manual/rules/naming-conventions.md#rule-configuration" >}}).
 
 # Quick Fixes
 
@@ -156,7 +158,7 @@ The currently available linting rules are described in detail on the following p
 
 Sigasi Studio offers 2 ways of configuring the severity of linting checks.
 
-* For the entire workspace, through the **Window > Preferences** dialog as [described above](#configuring-the-severity-level).
+* For the entire workspace, through the **Window > Preferences** dialog as [described above](#configuring-the-linting-rules).
 * You can override these setting by creating a settings file for your projects.  
 In each project, you can override the coding rules settings. You can override rules for the **entire project**, for **folders** in the project, or for individual **files**.
 
