@@ -18,7 +18,7 @@ Although these preview releases are less rigorously tested than the official rel
 
 # Sigasi 5.4 Preview
 
-Sigasi 5.4 brings **many new linting rules**, most of which are **specific to UVM**, **enhanced linting rule preference pages**, a **new quick fix infrastructure**, as well as **VS Code diagrams and documentation export**.
+Sigasi 5.4 brings **many new linting rules**, most of which are **specific to UVM**, **enhanced linting rule preference pages**, as well as **VS Code diagrams and documentation export**.
 
 As per usual, [Veresta](https://www.sigasi.com/veresta/) and our [VS Code extension](https://www.sigasi.com/vscode/) benefit from all of the changes not explicitly marked as {{< pill text="Eclipse" >}}.
 
@@ -33,7 +33,7 @@ Want to know more about our UVM features or to upgrade your license? [Contact us
 
 - Incorrect instantiation of UVM object
 - Unregistered UVM object
-- Incorrect utility macro
+- Incorrect utility macro and an accompanying quick fix
 - UVM object name does not match variable name
 - Unexpected output system task
 - Type argument value does not match containing class
@@ -55,20 +55,9 @@ This release, we improved the linting rule preference page
 - Added a search bar
 - Improved usability of the multi-text input fields
 
-## Quick Fix Infrastructure
-
-We have rewritten the Quick Fix infrastructure from scratch, solving many of its long-standing issues. We are porting our existing quick fixes to this new infrastructure one by one; it is the solid foundation we need to enable many new powerful quick fixes in the future.
-
-The new infrastructure offers the following improvements
-
-- Quick fixes are always applied on the same model the issue was generated from. This ensures that quick fixes always succeed when applied immediately after typing.
-- Most quick fixes have a bulk mode allowing them to be applied to similar issues in a file, library, or project
-- Quick fixes applied from the Problems View or the gutter will no longer have trouble being applied
-- Quick fixes can atomically be undone (**Ctrl+Z**) and redone (**Ctrl+Shift+Z**) as often as required while maintaining resources' saved state
-
 ## VS Code Sneak Peek
 
-Our VS Code extension is picking up steam. This release adds **full diagram support**, **documentation export**, the **linting rule preference page**, and the **first VS Code quick fixes**.
+Our VS Code extension is picking up steam. This release adds **full diagram support**, **documentation export**, and a **linting rule preference page**.
 
 ## Quality of Life
 
@@ -90,6 +79,7 @@ Our VS Code extension is picking up steam. This release adds **full diagram supp
 
 ## Further New and Noteworthy
 
+- Allows suppressing issues file-, library-, or project-wide through a single quick fix
 - Added automatic building following a filesystem change to the `.settings` folder and/or its files
 - Extended the [Verilog Keywords in VHDL]({{< ref "/manual/rules/verilog-keywords" >}}) linting rule with entity ports and generics
 - {{< pill text="VHDL" >}} Added vertical alignment to [Template Autocomplete]({{< ref "/manual/eclipse/editor.md#based-on-templates" >}}) suggestions
