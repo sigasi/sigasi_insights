@@ -69,10 +69,11 @@ To open the Preferences View, right-click the resource you want to configure in 
 This View allows to configure all preferences for your entire project, a folder, or a file.
 
 * You can change the severity of [linting rules]({{< ref "/manual/eclipse/linting.md" >}}) for your project.
+* You can tweak validations using parameters.
 * You can modify conditional variables for VHDL 2019 projects.
 * You can configure include paths and initial defines for the SystemVerilog Preprocessor.
 
-Make sure to click the `APPLY` button at the top right after making your changes.
+Make sure to click the `APPLY` button at the bottom of the page after making your changes.
 
 Changes you make here will be stored in the `.settings/` folder within your project.
 This way, if you commit the settings with your project, they will be available for your fellow team members, also if they are using Sigasi Studio for Eclipse.
