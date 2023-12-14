@@ -70,7 +70,11 @@ Even accidentally clicking that entry (e.g. when trying to enable **Column Selec
 This results in **Alt+Click** being used when trying to **Open Declaration** instead of the usual **Ctrl+Click**. 
 You can click that same entry again to switch back to using **Ctrl+Click**. 
 
+### Hide Signal Assignments in Outline
 
+VS Code offers a set of settings to hide symbols from the outline, if you specifically want to hide signal assignments you have to disable `outline.showOperators` in the VS Code settings. To do this, navigate to **File > Preferences > Settings** (or use the shortcut **Ctrl+,**), and then search for `outline.showOperators`.
+
+{{< figure src="/img/vscode/VSCodeHideSignalAssignments.png" link="/img/vscode/VSCodeHideSignalAssignments.png" alt="VS Code Hide Signal Assignments"  width="400" >}}
 
 
 
