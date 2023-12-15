@@ -13,6 +13,9 @@
             {{ if in .Params.linting "verilog" }}
             <a class="sg-insight-pager" href="/manual/eclipse/linting-verilog/#list-of-verilog-and-systemverilog-code-rules">All Verilog Linting Rules</a>
             {{ end }}
+            {{ if in .Params.linting "uvm" }}
+            <a class="sg-insight-pager" href="/manual/eclipse/linting-verilog/#uvm-linting-rules">All UVM Linting Rules</a>
+            {{ end }}
         </div>
         {{ else }}
         <div class="uk-width-expand"></div>

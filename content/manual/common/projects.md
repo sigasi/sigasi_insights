@@ -1,15 +1,11 @@
 ---
-title: "Sigasi projects"
+title: "Sigasi Projects"
 draft: true
 ---
 
+Below you can find all the available project variables that are implicitly defined.
 
+- For {{< pill text="VS Code" >}}: `PROJECT_LOC`
+- For {{< pill text="Eclipse" >}}: `PROJECT_LOC`,  `ECLIPSE_HOME`, `WORKSPACE_LOC`, and `PARENT_LOC`
 
-list of all that are defined automatically
-
-For VS Code: PROJECT_LOC
-For Eclipse: PROJECT_LOC,  ECLIPSE_HOME, WORKSPACE_LOC, PARENT_LOC
-
-Not entirely sure if the Eclipse ones are defined automatically though but it's in the code base :spicy_cowboy_eyes: 
-
-Of course for both we also support PARENT-<COUNT>-<VARIABLE>
+Both platforms also support `PARENT-<COUNT>-<VARIABLE>` to refer to folders relatively `COUNT` above the `VARIABLE` folder

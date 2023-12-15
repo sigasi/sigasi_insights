@@ -10,19 +10,24 @@ aliases:
 
 ## Sigasi Studio Starter
 
-Sigasi Studio Starter is the best, free VHDL, Verilog, and SystemVerilog editor that works on **single files** only, and *not with projects*.
+Sigasi Studio Starter is the best free VHDL, Verilog, and SystemVerilog editor that works on **single files** only and _not_ with projects.
 
-Sigasi Studio Starter works without a license key but requires [Talkback](/manual/common/talkback) and you need to keep your version up to date.
+Sigasi Studio Starter works without a license key but requires [Talkback](/manual/common/talkback), and you need to keep your version up to date.
 
 ## Sigasi Studio XL
 
-Sigasi Studio XL is Sigasi's flagship product. A license for Sigasi Studio XL unlocks all features of our go-to design entry and code browsing tool.
+Sigasi Studio XL features the best Sigasi editing support yet without {{< xprt >}}'s graphical features. A license for Sigasi Studio XL unlocks all features of our go-to design entry and code browsing tool.
 
 All {{< xl >}} features are also available in {{< xprt >}}.
 
 ## Sigasi Studio XPRT
 
-*Sigasi Studio XPRT* is the most complete version of Sigasi Studio. It unlocks all features of {{< xl >}}, plus the graphical views, documentation generation, ...
+*Sigasi Studio XPRT* is Sigasi's flagship product. It unlocks all features of {{< xl >}} as well as the following
+- [Graphical Views]({{< ref "/manual/common/views.md#graphical-views/" >}}),
+- [Documentation Generation]({{< ref "/manual/eclipse/documentation" >}}),
+- [UVM linting rules]({{< ref "/manual/eclipse/linting-verilog.md#uvm-linting-rules" >}})
+- [Class Hierarchy]({{< ref "/manual/eclipse/views.md#class-hierarchy-view" >}}),
+- and [VUnit]({{< ref "/manual/eclipse/vunit" >}}).
 
 Throughout the documentation, features that are only available in this version are marked as {{< xprt_only >}}.
 

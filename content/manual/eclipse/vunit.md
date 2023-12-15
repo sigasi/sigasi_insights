@@ -17,7 +17,10 @@ When you import a VUnit project or add VUnit support to an existing project, Sig
 
 Since {{< page "sigasi-4.14.md" >}}, the library mapping of the project is automatically updated based on the contents of the VUnit `run.py` script.
 
-{{< figure src="/img/manual/vunit_project.png" alt="VUnit project" link="/img/manual/vunit_project.png" >}}
+{{< figure src="/img/manual/vunit_project.svg"
+           alt="VUnit project"
+           link="/img/manual/vunit_project.svg"
+           class="uk-align-center" >}}
 
 # VUnit project setup in Sigasi Studio
 
@@ -49,7 +52,11 @@ The VUnit project repository comes with a number of [example projects](https://g
 
 You can also add VUnit support to an existing project: Right-click your project and select  **Configure > Add VUnit support**. Next, select an existing `run.py` script or let Sigasi create an example script.
 
-{{< figure src="/img/manual/AddVUnitSupportWizard.png" alt="VUnit project" link="/img/manual/AddVUnitSupportWizard.png" >}}
+{{< figure src="/img/manual/AddVUnitSupportWizard.png"
+           alt="VUnit project"
+           link="/img/manual/AddVUnitSupportWizard.png"
+           class="uk-align-center" >}}
+
 ## VUnit project configuration and troubleshooting
 
 The VUnit integration in Sigasi Studio gives useful feedback in the **VUnit Console View**.
@@ -70,17 +77,23 @@ For SystemVerilog projects you need to manually add the VUnit include files to y
 * Right click your project, select **New > Folder > Advanced > Link to alternate location** and add `VUNIT/verilog/include` as location.
 * Use the quick-fix on the failing `` `include "vunit_defines.svh"`` to add the include folder to the include paths.
 
-{{< figure src="/img/manual/vunit_verilog_include.png" alt="Add verilog include path" link="/img/manual/vunit_verilog_include.png" >}}
+{{< figure src="/img/manual/vunit_verilog_include.png"
+           alt="Add verilog include path"
+           link="/img/manual/vunit_verilog_include.png"
+           class="uk-align-center" >}}
 
 ## Configure options for finding and running tests
 
 In **Window > Preferences > Sigasi > Toolchains > VUnit** you can add different options for finding and running tests.
 
-* The `Options for finding tests` will be passed to `run.py` when generating the json file that lists the VUnit tests.
-* The `Options for running tests` will be passed to `run.py` when running the VUnit tests.
-* Select the `Set VUnit output to project root` to have the VUnit output stored in the project root instead of in the temp location from where VUnit is called.
+* The **options for finding tests** will be passed to `run.py` when generating the json file that lists the VUnit tests.
+* The **options for running tests** will be passed to `run.py` when running the VUnit tests.
+* Select **Set VUnit output to project root** to have the VUnit output stored in the project root instead of in the temp location from where VUnit is called.
 
-{{< figure src="/img/manual/vunit_preferences.png" alt="VUnit preferences dialog" link="/img/manual/vunit_preferences.png" >}}
+{{< figure src="/img/manual/vunit_preferences.png"
+           alt="VUnit preferences dialog"
+           link="/img/manual/vunit_preferences.png"
+           class="uk-align-center" >}}
 
 # Configuring the simulator
 
@@ -136,15 +149,21 @@ There are multiple ways to run VUnit tests in Sigasi Studio:
 * Right click in the VUnit test name (the string in the `run` function call) and select **Run VUnit test** to *run this single test only*.
 * Rerun the tests in the VUnit view.
 
-{{< figure src="/img/manual/vunit_run_tests.png" alt="Run VUnit VHDL tests" link="/img/manual/vunit_run_tests.png" >}}
+{{< figure src="/img/manual/vunit_run_tests.svg"
+           alt="Run VUnit VHDL tests"
+           link="/img/manual/vunit_run_tests.svg"
+           class="uk-align-center" >}}
 
 # Inspect VUnit Test Results
 
 When you run VUnit tests in Sigasi Studio, the VUnit view is opened. This view presents a convenient way to inspect the test results.  
-{{< figure src="/img/manual/vunit_verilog.png" alt="VUnit SystemVerilog Example" link="/img/manual/vunit_verilog.png" >}}
 
-You can also open the *Console View* to inspect the entire VUnit output.  
-{{< figure src="/img/manual/vunit_console.png" alt="VUnit console view" link="/img/manual/vunit_console.png" >}}
+{{< figure src="/img/manual/vunit_results.png"
+           alt="VUnit SystemVerilog Example"
+           link="/img/manual/vunit_results.png"
+           class="uk-align-center" >}}
+
+You can inspect the entire VUnit output in the *Console view*.
 
 # Handling specific common libraries
 

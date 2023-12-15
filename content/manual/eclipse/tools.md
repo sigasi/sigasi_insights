@@ -207,11 +207,10 @@ last configuration by simply clicking
 
 ## Variables in Arguments
 
-In the arguments field you can use [variables](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Fconcepts%2Fconcepts-exttools.htm), which are automatically expanded when the external tool is run.
-This allows you to do things like adding the currently selected file in the file explorer as an argument for an external tool configuration (`${resource_path}`).
+In the arguments field, you can use [variables](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Fconcepts%2Fconcepts-exttools.htm), which are automatically expanded when the external tool is run.
+This allows you to do things like adding the currently selected file in the file explorer as an argument for an external tool configuration through `${resource_path}`.
 
-Sigasi Studio adds following variables and parameters for VHDL and (System)Verilog projects:
-
+Sigasi Studio adds the following variables and parameters for VHDL and (System)Verilog projects:
 
 | Variable Name                     | Description                                                   |
 | ---                               | ---                                                           |
@@ -219,8 +218,6 @@ Sigasi Studio adds following variables and parameters for VHDL and (System)Veril
 | `${sigasi_toplevel}`              | Get the name of the current top level: `library.name`         |
 | `${sigasi_toplevel:short}`        | Get the name of the current top level without library: `name` |
 | `${sigasi_toplevel:project_path}` | Get the path of the current top level's project root          |
-
-
 
 ## Creating a Builder
 

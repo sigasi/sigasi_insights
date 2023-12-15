@@ -57,7 +57,7 @@ ST linting rules are available for all licenses including {{< starter >}}.
 | {{< severity error 1 >}} | VHDL version check                                                               |       53 |
 | {{< severity error 0 >}} | Duplicate declaration                                                            |       54 |
 | {{< severity error 0 >}} | A unary condition operator parentheses                                           |       58 |
-| {{< severity error 0 >}} | duplicate enum literal                                                           |       69 |
+| {{< severity error 0 >}} | Duplicate enum literal                                                           |       69 |
 | {{< severity error 0 >}} | Invalid identifier                                                               |       70 |
 | {{< severity error 0 >}} | Function pureness validation                                                     |       76 |
 | {{< severity error 0 >}} | Missing implementation                                                           |       80 |
@@ -108,7 +108,7 @@ XL linting rules require a {{< xl >}} or {{< xprt >}} license.
 | {{< severity warning 0 >}} | [Null range: The left argument is strictly smaller than the right]({{< ref "null-range-empty-range" >}})                       |  26 |
 | {{< severity info 1 >}}    | [Non-standard packages]({{< ref "deprecated-ieee-packages-non-standard-packages" >}})                                          |  37 |
 | {{< severity warning 1 >}} | [A process must either have a sensitivity list or contain one or more wait statements]({{< ref "sensitivity-list" >}})         |  38 |
-| {{< severity warning 0 >}} | [There has to be a whitespace before physical units]({{< ref "space-before-the-physical-unit" >}})                             |  47 |
+| {{< severity info 0 >}}    | [There has to be a whitespace before physical units]({{< ref "space-before-the-physical-unit" >}})                             |  47 |
 | {{< severity ignore 0 >}}  | Unbound component instantiations                                                                                               |  48 |
 | {{< severity warning 0 >}} | [Superfluous library clause]({{< ref "superfluous-library-clause" >}})                                                         |  49 |
 | {{< severity warning 1 >}} | [Library is not available]({{< ref "quick-fix-for-third-party-libraries" >}})                                                  |  50 |
@@ -126,15 +126,15 @@ XL linting rules require a {{< xl >}} or {{< xprt >}} license.
 | {{< severity warning 0 >}} | Detect signals and variables that are never written                                                                            |  88 |
 | {{< severity warning 0 >}} | Detect signals and variables that are never read                                                                               |  89 |
 | {{< severity warning 0 >}} | None or multiple matching entities for component                                                                               |  90 |
-| {{< severity warning 0 >}} | [Check naming conventions]({{< ref "../rules/naming-conventions" >}})                                                          |  92 |
-| {{< severity warning 1 >}} | [Incomplete port map or generic map: using defaults]({{< ref "incomplete-port-maps-and-generic-maps" >}})                      |  94 |
+| {{< severity ignore  0 >}} | [Check naming conventions]({{< ref "../rules/naming-conventions" >}})                                                          |  92 |
+| {{< severity ignore  1 >}} | [Incomplete port map or generic map: using defaults]({{< ref "incomplete-port-maps-and-generic-maps" >}})                      |  94 |
 | {{< severity ignore 0 >}}  | [Check line length]({{< ref "../rules/vhdl_style/#vhdl-code-line-too-long" >}})                                                |  97 |
 | {{< severity warning 0 >}} | [Array assignment validation]({{< ref "vector-width-in-assignments-and-port-maps" >}})                                         | 144 |
-| {{< severity warning 1 >}} | [All references must have the same capitalization as their declaration]({{< ref "capitalization-of-identifiers" >}})           | 163 |
-| {{< severity warning 0 >}} | [Check for positional associations in instantiations]({{< ref "positional-association-in-instantiations" >}})                  | 164 |
+| {{< severity ignore 1 >}}  | [All references must have the same capitalization as their declaration]({{< ref "capitalization-of-identifiers" >}})           | 163 |
+| {{< severity ignore 0 >}}  | [Check for positional associations in instantiations]({{< ref "positional-association-in-instantiations" >}})                  | 164 |
 | {{< severity error 0 >}}   | Invalid port associations                                                                                                      | 169 |
 | {{< severity error 0 >}}   | [VHDL version mismatch]({{< ref "../rules/vhdl_version" >}})                                                                   | 170 |
-| {{< severity warning 1 >}} | [Order of generic and port associations]({{< ref "order-of-associations" >}})                                                  | 177 |
+| {{< severity ignore 1 >}}  | [Order of generic and port associations]({{< ref "order-of-associations" >}})                                                  | 177 |
 | {{< severity error 1 >}}   | Name mismatch                                                                                                                  | 178 |
 | {{< severity error 0 >}}   | Unexpected return type                                                                                                         | 179 |
 | {{< severity error 0 >}}   | Configuration issue: Incorrect component name                                                                                  | 180 |
@@ -149,7 +149,6 @@ XL linting rules require a {{< xl >}} or {{< xprt >}} license.
 | {{< severity ignore 0 >}}  | [Filename must contain primary unit name]({{< ref "check-that-filename-contains-primary-unit-name" >}})                        | 189 |
 | {{< severity warning 0 >}} | [Empty loop statement]({{< ref "loops" >}})                                                                                    | 190 |
 | {{< severity info 0 >}}    | [Entity name is a keyword in Verilog and may cause problems in mixed projects]({{< ref "verilog-keywords" >}})                 | 192 |
-| {{< severity warning 0 >}} | Circular compilation dependency                                                                                                | 203 |
 | {{< severity error 0 >}}   | [Cannot case on a type declaration]({{< ref "vhdl_type_expr" >}})                                                              | 209 |
 | {{< severity warning 0 >}} | [Index out of range]({{< ref "vhdl_array_range" >}})                                                                           | 210 |
 | {{< severity warning 0 >}} | [Slice has wrong direction]({{< ref "vhdl_array_range" >}})                                                                    | 211 |
@@ -157,8 +156,7 @@ XL linting rules require a {{< xl >}} or {{< xprt >}} license.
 | {{< severity error 1 >}}   | Common Libraries version mismatch                                                                                              | 222 |
 | {{< severity error 1 >}}   | VHDL version check                                                                                                             | 223 |
 | {{< severity ignore 0 >}}  | Check case of non-keywords                                                                                                     | 224 |
-| {{< severity warning 1 >}} | re2j compatibility check                                                                                                       | 225 |
-| {{< severity warning 0 >}} | Type validation                                                                                                                | 226 |
+| {{< severity error 0 >}}   | Type validation                                                                                                                | 226 |
 | {{< severity info 0 >}}    | [Whitespace in extended identifier]({{< ref "vhdl_style#extended-identifier-contains-whitespace" >}})                          | 228 |
 | {{< severity ignore 0 >}}  | [Sequence of operators without parentheses]({{< ref "vhdl_style#sequence-of-operators-without-parentheses" >}})                | 230 |
 | {{< severity ignore 0 >}}  | [Constant width vector assigned to signal]({{< ref "vhdl_style#constant-width-vector-assigned-to-signal" >}})                  | 231 |
@@ -179,6 +177,7 @@ XL linting rules require a {{< xl >}} or {{< xprt >}} license.
 | {{< severity ignore 0 >}}  | [Prohibited library]({{< ref "feature-restrictions#prohibited-library" >}})                                                    | 248 |
 | {{< severity ignore 0 >}}  | [Clock signal not used as clock]({{< ref "vhdl-clock-signal-not-used-as-clock" >}})                                            | 249 |
 | {{< severity ignore 0 >}}  | [Unexpected clock edge specification]({{< ref "check-unexpected-clock-style" >}})                                              | 250 |
+| {{< severity ignore 0 >}}  | [Missing label]({{< ref "check-missing-labels" >}})                                                                            | 251 |
 | {{< severity ignore 0 >}}  | [Inconsistent reset style]({{< ref "vhdl-inconsistent-reset-style" >}})                                                        | 252 |
 | {{< severity ignore 0 >}}  | [Multiple objects in one declaration]({{< ref "vhdl-multiple-objects-declaration" >}})                                         | 253 |
 | {{< severity ignore 0 >}}  | [Inconsistent clock edge usage]({{< ref "check-inconsistent-clock-edge" >}})                                                   | 254 |
@@ -204,3 +203,4 @@ Deprecated linting rules were used by Sigasi at some point, but they've been rem
 | Duplicate design unit in IEEE                              | Removed as it was invalid |  65 |
 | Find unregistered output ports                             | Removed as it was invalid |  75 |
 | Undefined identifier                                       |  Superseded by the linker |  87 |
+| RE2/J compatibility check                                  |  Superseded by checks in the preferences | 225 |

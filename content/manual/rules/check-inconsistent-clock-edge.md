@@ -1,5 +1,5 @@
 ---
-title: Inconsistent clock edge usage
+title: Inconsistent Clock Edge Usage
 linting: vhdl
 ---
 

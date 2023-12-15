@@ -45,7 +45,7 @@ The Git repositories for demonstrating the content of this article and other Sig
 As a starting point, you can fork the example project into your Gitlab.com account and import it in Sigasi. The project is ready to go with the Sigasi VUnit Integration. If you are not familiar with the Sigasi VUnit integration, you should have a look at the [
 VUnit projects in Sigasi Studio](https://insights.sigasi.com/tech/vunit-integration) tech article.
 
-After running the VUnit tests in Sigasi, you will see six executed tests in the VUnit tree, whereby one is failing (which is intended at the moment).
+After running the VUnit tests in Sigasi, you will see six executed tests in the VUnit tree, of which one is failing (which is intended at the moment).
 
 {{< figure src="/img/tech/vunit-gitlab-ci/vunit-view.png" alt="VUnit View showing six executed tests including one failing." class="uk-align-center" >}}
 

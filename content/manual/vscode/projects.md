@@ -16,7 +16,7 @@ See the {{< page "/manual/eclipse/projectsetup.md" >}} and {{< page "/manual/ecl
 
 If you're familiar with Eclipse [Resource Filters]({{< ref "/manual/eclipse/projectsetup.md#deprecated-features" >}}), note that these are not supported by VS Code and will be ignored if there are any filters in the `.project` file extension.
 
-For project configuration, open the **[Project View]({{< ref "/manual/vscode/views.md#project-view" >}})**.
+For project configuration, open the **[Sigasi Projects View]({{< ref "/manual/vscode/views.md#sigasi-projects-view" >}})**.
 
 ## Creating and Importing Projects
 
@@ -71,9 +71,9 @@ You can also open a larger demo project using the command **Sigasi: Create Demo 
 
 For VHDL, libraries are fully supported. For Verilog/SystemVerilog, Sigasi reuses the VHDL library concept (just `work` in practice) to distinguish between design files that should and shouldn't be analyzed.
 
-To change library mappings, you can use the right-click menu in the **[Project View]({{< ref "/manual/vscode/views.md#project-view" >}})** and select **Set Library** as shown in the image below.
+To change library mappings, you can use the right-click menu in the **[Sigasi Projects View]({{< ref "/manual/vscode/views.md#sigasi-projects-view" >}})** and select **Set Library** as shown in the image below.
 
-{{< figure src="/img/vscode/VSCodeSetLib.png" link="/img/vscode/VSCodeSetLib.png" alt="VS Code: Set Library"  width="400" >}}
+{{< figure src="/img/vscode/VSCodeSetLib.png" link="/img/vscode/VSCodeSetLib.png" alt="VS Code: Set Library" width="304" >}}
 
 Then you can select an existing library or choose **New Library...** to type a new library name.
 Once you type a new library name, the file/folder you selected will be added to the library you created.
@@ -82,20 +82,20 @@ If you want to add a file/folder to an existing library, you can choose one of t
 {{< figure src="/img/vscode/VSCodeExclude.png" link="/img/vscode/VSCodeExclude.png" alt="VS Code: Set Library"  width="900" >}}
 
 If you want to exclude files/folders from a Sigasi project, select **Exclude from Build**. When you do this, that file or folder (along with its contents) will no longer be used in your project.
-Note that the excluded resource(s) will still be visible in the **[Project View]({{< ref "/manual/vscode/views.md#project-view" >}})** and you can still add them (Set Library) to the project.
+Note that the excluded resource(s) will still be visible in the **[Sigasi Projects View]({{< ref "/manual/vscode/views.md#sigasi-projects-view" >}})** and you can still add them (Set Library) to the project.
 
 Creating new libraries, adding a file/folder to an existing library, or excluding files/folders from build will modify the `.library_mapping.xml` file in your project.
 
 ### VHDL and Verilog Version
 
-To change the VHDL or Verilog version, you can right-click on a project, folder, or file in the Sigasi Project View and click **Set Language Version**.
+To change the VHDL or Verilog version, you can right-click on a project, folder, or file in the Sigasi Projects View and click **Set Language Version**.
 Then select whether you want to set the VHDL or Verilog version. If you only see one of the two, you might need to add [language support](#language-support). Finally, select the version you want.  
 
 {{< figure src="/img/vscode/VSCodeChangeLangVersion.gif" link="/img/vscode/VSCodeChangeLangVersion.gif" alt="VS Code: Change language version"  width="900" >}}
 
 ### Language Support
 
-To add or remove language support, you can right-click on a project from the Sigasi Project View, click **Configure**, and **Add/Remove VHDL or Verilog/SystemVerilog Support**. This will enable or disable language preferences among others.
+To add or remove language support, you can right-click on a project from the Sigasi Projects View, click **Configure**, and **Add/Remove VHDL or Verilog/SystemVerilog Support**. This will enable or disable language preferences among others.
 
 {{< figure src="/img/vscode/VSCodeAddRemoveLanguageSupport.gif" link="/img/vscode/VSCodeAddRemoveLanguageSupport.gif" alt="VS Code: Add or remove language support"  width="900">}}
 

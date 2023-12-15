@@ -90,16 +90,6 @@ statements (rule 47).
         end
 endmodule</pre>
 
-### Regular expressions compatibility
-
-[Naming conventions](/manual/eclipse/linting/#naming-conventions) in Sigasi
-use [*RE2/J* regular expressions](https://www.sigasi.com/app/regex).
-RE2/J expressions mitigate potential performance problems that are
-caused by some shapes of regular expressions using the regular Java
-regular expression engine.  Sigasi will warn if a naming convention
-rule contains a regular expression that is incompatible with RE2/J
-(rule 58).
-
 {{% ruleConfiguration many=yes %}}
 {{< rule id=1 postcomment="Empty loops and conditional branches" />}}
 {{< rule id=17 postcomment="File name does not match design unit" />}}
@@ -115,4 +105,4 @@ rule contains a regular expression that is incompatible with RE2/J
 {{< rule id=58 postcomment="Regular expressions compatibility" />}}
 {{% /ruleConfiguration %}}
 
-<!-- 47 and 58 not configurable in preferences, only in file -->
+<!-- 47 not configurable in preferences, only in file -->

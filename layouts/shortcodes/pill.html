@@ -12,6 +12,8 @@
   {{ $scratch.Set "bgcolor" "#5a2778" }}
   {{ else if strings.Contains $text "Eclipse" }}
   {{ $scratch.Set "bgcolor" "#93245a" }}
+  {{ else if strings.Contains $text "VS Code" }}
+  {{ $scratch.Set "bgcolor" "#ed1c24" }}
   {{ else }}
   {{ $scratch.Set "bgcolor" "#e0e0e0" }}
   {{ $scratch.Set "fgcolor" "#302158" }}

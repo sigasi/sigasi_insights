@@ -119,8 +119,7 @@ XL linting rules require a {{< xl >}} or {{< xprt >}} license.
 | {{< severity warning 0 >}} | [Multiple statements per line]({{< ref "../rules/verilog_style/#multiple-statements-per-line" >}})                                                                          |  47 |
 | {{< severity warning 0 >}} | [Missing bit width for parameters wider than 32 bits]({{< ref "../rules/verilog_parameters/#parameters-wider-than-32-bits" >}})                                             |  48 |
 | {{< severity warning 0 >}} | [Named connections are not allowed with blank ports]({{< ref "../rules/verilog_parameters/#project-specific-setting-of-these-rules" >}})                                    |  56 |
-| {{< severity warning 1 >}} | [Regular expressions (RE2/J) compatibility check]({{< ref "../rules/verilog_style/#regular-expressions-compatibility" >}})                                                  |  58 |
- |{{< severity error 0 >}}   | [Overridden method signature mismatch]({{< ref "../rules/verilog_overridden_method_signature_mismatch" >}})                                                                 |  62-68 |
+| {{< severity error 0 >}}   | [Overridden method signature mismatch]({{< ref "../rules/verilog_overridden_method_signature_mismatch" >}})                                                                 |  62-68 |
 | {{< severity error 0 >}}   | [Local parameter has to be initialized]({{< ref "../rules/verilog_parameters/#local-parameter-has-to-be-initialized" >}})                                                   |  69 |
 | {{< severity error 0 >}}   | [Local parameter cannot be overridden]({{< ref "../rules/verilog_parameters/#local-parameter-cannot-be-overridden" >}})                                                     |  70 |
 | {{< severity error 0 >}}   | [Type checking]({{< ref "../rules/verilog_type_checking" >}})                                                                                                               |  78, 79, 94, 100, 131 |
@@ -132,6 +131,7 @@ XL linting rules require a {{< xl >}} or {{< xprt >}} license.
 | {{< severity warning 0 >}} | [Whitespace following a backtick]({{< ref "../rules/verilog_tool_compatibility/#whitespace-following-a-backtick" >}})                                                       | 117 |
 | {{< severity warning 0 >}} | [Invalid preprocessor syntax]({{< ref "../rules/verilog_tool_compatibility/#invalid-preprocessor-syntax-outside-macro-body" >}})                                            | 121 |
 | {{< severity warning 0 >}} | [Unused macros]({{< ref "../rules/verilog_unused_macros" >}})                                                                                                               | 128 |
+| {{< severity ignore 0 >}}  | [Prohibited macro]({{< ref "../rules/verilog_prohibited_macro" >}})                                                                                                         | 129 |
 | {{< severity warning 0 >}} | [Unused declaration]({{< ref "../rules/verilog_unused_declaration" >}})                                                                                                     | 130 |
 | {{< severity warning 0 >}} | [Hidden non-virtual methods]({{< ref "../rules/verilog_hiding_non_virtual_methods" >}})                                                                                     | 132 |
 | {{< severity error 0 >}}   | [Unexpected empty concatenation]({{< ref "../rules/verilog_empty_concatenation" >}})                                                                                        | 133 |
@@ -140,6 +140,24 @@ XL linting rules require a {{< xl >}} or {{< xprt >}} license.
 | {{< severity warning 0 >}} | [Empty port]({{< ref "../rules/verilog_empty_non_ansi_port" >}})                                                                                                            | 142 |
 | {{< severity warning 0 >}} | [Vector as edge event expression]({{< ref "../rules/verilog_vector_as_edge_expression" >}})                                                                                 | 143 |
 | {{< severity ignore 0 >}}  | [Implicit vector to boolean conversion]({{< ref "../rules/verilog_vector_to_boolean_conversion" >}})                                                                        | 144 |
+
+## UVM Linting Rules (XPRT preview) {#uvm-linting-rules}
+
+UVM preview linting rules require a {{< xl >}} or {{< xprt >}} license.  
+In future releases, these will require a {{< xprt >}} license.
+
+|                            | Description                                                                                                                             |  ID |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------| --: |
+| {{< severity warning 0 >}} | [Unregistered UVM object]({{< ref "../rules/verilog_uvm_unregistered_uvm_object" >}})                                                   | 145 |
+| {{< severity warning 1 >}} | [Incorrect utility macro]({{< ref "../rules/verilog_uvm_incorrect_utility_macro" >}})                                                   | 146 |
+| {{< severity warning 0 >}} | [Type argument value does not match containing class]({{< ref "../rules/verilog_uvm_type_argument_does_not_match_containing_class" >}}) | 147 |
+| {{< severity warning 0 >}} | [Incorrect UVM object instantiation]({{< ref "../rules/verilog_uvm_object_instantiation" >}})                                           | 148 |
+| {{< severity ignore 0 >}}  | [UVM object name does not match variable name]({{< ref "../rules/verilog_uvm_object_name" >}})                                          | 149 |
+| {{< severity ignore 0 >}}  | [Unexpected output system task]({{< ref "../rules/verilog_uvm_unexpected_output_system_task" >}})                                       | 150 |
+| {{< severity warning 0 >}} | [Incorrect override of UVM object]({{< ref "../rules/verilog_uvm_object_override" >}})                                                  | 151 |
+| {{< severity warning 0 >}} | [Deprecated UVM API]({{< ref "../rules/verilog_uvm_deprecated_api" >}})                                                                 | 152 |
+| {{< severity warning 0 >}} | [UVM phase method does not call superclass method]({{< ref "../rules/verilog_uvm_phase_method_does_not_call_super" >}})                 | 153 |
+| {{< severity warning 0 >}} | [Incorrect constructor for UVM object or component]({{< ref "../rules/verilog_uvm_incorrect_constructor" >}})                           | 154 |
 
 ## Deprecated Linting Rules
 
@@ -151,4 +169,5 @@ Deprecated linting rules were used by Sigasi at some point, but they've been rem
 | A Verilog `net` type keyword cannot be followed directly by the `reg` keyword | Superseded by a syntax error                                                                                       |   4 |
 | Formal item not found within the instantiated unit                            | Superseded by a syntax error                                                                                       |  36 |
 | Unexpected trailing `,` in parameter list                                     | Superseded by the [Empty parameters]({{< ref "../rules/verilog_empty_parameters" >}}) rule (rule 53)               |  52 |
+| Regular expressions (RE2/J) compatibility check                               | Superseded by checks in the preferences                                                                            |  58 |
 | Ambiguous design unit reference                                               | Superseded by the more general [Ambiguous reference]({{< ref "../rules/verilog_ambiguous_reference" >}}) (rule 93) |  72 |

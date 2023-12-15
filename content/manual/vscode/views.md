@@ -8,39 +8,39 @@ aliases:
 ---
 This page documents the Views added to VS Code by the Sigasi extension.
 
-## Project View
+## Sigasi Projects View
 
-The _Project View_ offers a file browser for your projects in which external folders that are not physically part of your project can exist.
+The _Sigasi Projects View_ offers a file browser for your projects in which external folders that are not physically part of your project can exist.
 This can be useful for including external IP in your projects.
 
-{{< figure src="/img/vscode/VSCodeProject.png" link="/img/vscode/VSCodeProject.png" alt="Sigasi Project View" class="uk-align-right" width="250" >}}
+{{< figure src="/img/vscode/VSCodeProject.png" link="/img/vscode/VSCodeProject.png" alt="Sigasi Projects View" class="uk-align-right" width="250" >}}
 
-The project view also offers a lot of custom Sigasi functionality e.g. library mapping, version setting, preference view, ...
+The projects view also offers a lot of custom Sigasi functionality e.g. library mapping, version setting, preference view, ...
 
 ### Linked Libraries
 
-Any (external) libraries and files, that are not within the folder of the opened project, can be added using the _Project View_.
-In the Project View, right-click any file or folder and select the **New Linked File...** or **New Linked Folder...** option to add files and folders from outside the project location.
+Any (external) libraries and files, that are not within the folder of the opened project, can be added using the _Sigasi Projects View_.
+In the Sigasi Projects View, right-click any file or folder and select the **New Linked File...** or **New Linked Folder...** option to add files and folders from outside the project location.
 The configuration of the external files and folders will be kept in the `.project` file in the project root.
 
 External files and folders can be added anywhere in the project.
-If you add a large folder (e.g. the `unisim` primitives), make sure to exclude the folder (**Right-click > Set Library > Exclude from Build**) from being build and only include the required files.
-Or just put the library files in a folder called `Common Libraries`.
-Then they will only be indexed and not analyzed for errors.
+If you add a large folder (e.g. the `unisim` primitives), make sure to exclude the folder (**Right-click > Set Library > Exclude from Build**) from being built and only include the required files.
+Alternatively, you can put the library files in a folder called `Common Libraries`.
+Then, they will only be indexed but not analyzed for errors.
 
-### Buttons in the Project View
+### Buttons in the Sigasi Projects View
 
-These buttons are available in the Project View.
+These buttons are available in the Sigasi Projects View.
 
 * {{< icon src="/img/vscode/VSCodeProject_newFile.png" width="20" >}} Create a new file
 * {{< icon src="/img/vscode/VSCodeProject_newFolder.png" width="20" >}} Create a new folder
-* {{< icon src="/img/vscode/VSCodeProject_refresh.png" width="20" >}} Refresh the Project View
-* {{< icon src="/img/vscode/VSCodeHierarchy_linkEditor.png" width="20" >}} Toggle linking the Project View with the editor
-* {{< icon src="/img/vscode/VSCodeProject_collapseAll.png" width="20" >}} Collapse all folders in the Project View
+* {{< icon src="/img/vscode/VSCodeProject_refresh.png" width="20" >}} Refresh
+* {{< icon src="/img/vscode/VSCodeHierarchy_linkEditor.png" width="20" >}} Toggle linking the Sigasi Projects View with the editor
+* {{< icon src="/img/vscode/VSCodeProject_collapseAll.png" width="20" >}} Collapse all folders in the Sigasi Projects View
 
 ## Hierarchy View
 
-{{< figure src="/img/vscode/VSCodeHierarchy.png" link="/img/vscode/VSCodeHierarchy.png" alt="Sigasi Project View" class="uk-align-right" width="250" >}}
+{{< figure src="/img/vscode/VSCodeHierarchy.png" link="/img/vscode/VSCodeHierarchy.png" alt="Sigasi Projects View" class="uk-align-right" width="250" >}}
 
 Initially, the Hierarchy View will be empty.
 To use the Hierarchy View, right-click an entity, architecture, or module name in the editor and select **Set as Top Level** from the pop-up menu.
@@ -65,10 +65,11 @@ These buttons are available in the Hierarchy View.
 
 {{< figure src="/img/vscode/VSCodePreferences.png" link="/img/vscode/VSCodePreferences.png" alt="Sigasi Preferences View" class="uk-align-right" width="400" >}}
 
-To open the Preferences View, right-click the resource you want to configure in the Project View.
-This View allows to configure all preferences for your entire project, a folder, or a file.
+To open the Preferences View, right-click the project, folder or file you want to configure in the Sigasi Projects View.
+This view allows you to configure all preferences for the selected project, folder, or file.
 
-* You can change the severity of [linting rules]({{< ref "/manual/eclipse/linting.md" >}}) for your project.
+* You can change the severity of [linting rules](#configuring-the-linting-rules) for your project.
+* You can tweak validation parameters.
 * You can modify conditional variables for VHDL 2019 projects.
 * You can configure include paths and initial defines for the SystemVerilog Preprocessor.
 
@@ -76,3 +77,16 @@ Make sure to click the `APPLY` button at the top right after making your changes
 
 Changes you make here will be stored in the `.settings/` folder within your project.
 This way, if you commit the settings with your project, they will be available for your fellow team members, also if they are using Sigasi Studio for Eclipse.
+
+### Configuring the Linting Rules
+
+Linting is largely shared between our products. This page only covers {{< pill text="VS Code" >}} specific use cases. Refer to the [common documentation]({{< ref "/manual/common/linting.md" >}}) to learn more.
+
+Linting rules can be configured per project, folder, or file by **right-clicking a project, folder, or file > Open Preference View** in the [Project View](#project-view) and then selecting **Verilog Errors/Warnings** or **VHDL Errors/Warnings**.
+In the middle of the page, *Click here to enable* to activate the rule configuration.
+
+{{< figure src="/img/vscode/activate_project_settings.png" link="/img/vscode/activate_project_settings.png" alt="Sigasi Preferences View" class="uk-align-center" >}}
+
+## Graphical Views
+
+Refer to the [Common Documentation]({{< ref "manual/common/views.md#graphical-views" >}}) to learn more about the Block Diagram-, State Machines-, and Dependencies Views.

@@ -41,6 +41,14 @@ Click the _Sigasi_ extension and click **Install**.
 
 If you're working on a [remote host for your HDL development]({{< ref "/manual/vscode/remote.md" >}}), the extension only needs to be installed on the remote.
 
+## Updating
+
+VS Code supports automatic extension updates.
+Since VS Code version `1.85`, fine-grained control about which extensions to auto-update is available.
+
+If your _Extensions: Auto Update_ setting is set to _Selected Extensions_, you'll be able to right-click the Sigasi extension in the _Extensions_ pane and select the _Auto Update_ option.
+This ensures that your Sigasi extension will be updated even when other extensions are not auto-updating.
+
 ## Settings
 
 The settings for the Sigasi extension can be reached as follows.
@@ -63,18 +71,10 @@ More information about this feature is available on the [Talkback manual page]({
 This feature is disabled by default.
 To enable talkback in the VS Code extension, open the settings and enable the `Sigasi: Enable Talkback` option.
 
-The messages sent to Sigasi can also be logged locally. Then you can view these messages using the **Sigasi: Open Talkback Log** command.
-In order to log the messages locally, a [data storage]({{< ref "#on-disk-caching" >}}) needs to be configured.
+The messages sent to Sigasi are logged locally. You can view these messages using the **Sigasi: Open Talkback Log Folder** command.
 
 ## On Disk Caching
 
-You can specify a directory to be used by the Sigasi Language Server to write the cache and talkback logs to.
-Open the settings and search for `Sigasi › Server > Caching: Data Location`.
-The directory needs to exist already.
-Choose a local folder for optimal performance.
+Disk caching is enabled by default in the Sigasi extension for VS Code. It is recommended to leave it enabled as the cache will speed up the plugin by preserving the state from an earlier moment. This will _significantly_ speed up the build.
 
-Once you've configured this directory, the setting `Sigasi > Server > Caching: Enable On Disk Caching` can be enabled.
-
-The cache will speed up the plugin by preserving the state from an earlier moment.
-This will speed up the build _significantly_.
-Be careful though: opening the same project in another VS Code window at the same time will corrupt the cache causing a myriad of issues.
+However, if you'd like to disable it, you can do so by turning off the setting `Sigasi > Server > Caching: Enable On-Disk Caching`.

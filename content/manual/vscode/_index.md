@@ -24,8 +24,9 @@ Documentation of the Sigasi extension for VS Code is split in the following part
 2. [Project Setup]({{< ref "/manual/vscode/projects.md" >}})
 3. [VS Code Views]({{< ref "/manual/vscode/views.md" >}})
 4. [VS Code Editor Features]({{< ref "/manual/vscode/editor.md" >}})
-5. [Remote Development]({{< ref "/manual/vscode/remote.md" >}})
-6. [FAQ]({{< ref "/manual/vscode/faq.md" >}})
+5. [Documentation Generation]({{< ref "/manual/vscode/documentation.md" >}})
+6. [Remote Development]({{< ref "/manual/vscode/remote.md" >}})
+7. [FAQ]({{< ref "/manual/vscode/faq.md" >}})
 
 Completing the extension's **Walkthrough** will give you a full, interactive overview of Sigasi Studio for VS Code. You can find it in the VS Code **Get Started** tab or though the **Command Palette (Ctrl+Shift+P) > Welcome: Open Walkthrough...** and then selecting **Getting Started with Sigasi Studio for VS Code** or **Boost your Productivity with our set of Features**.
 
