@@ -56,7 +56,7 @@ can terminate a simulation by clicking the **Stop** icon
 ![](/img/icons/stop.png).
 
 When you launch a simulation, Sigasi Studio opens a new console in the [Console View]({{< ref "/manual/eclipse/views.md#console-view" >}})
-You can switch between different consoles by clicking the ![icon console display](/img/icons/icon_con_disp_console.png)-icon.
+You can switch between different consoles by clicking the ![icon console display](/img/icons/icon_con_disp_console.png) icon.
 
 {{< figure src="/img/manual/launch_simulation_console.png" >}}
 
@@ -109,6 +109,7 @@ Currently the following external compilers are supported:
 | AMD/Xilinx ISE                      | true                  | true                     |
 | [AMD/Xilinx Vivado](/manual/vivado) | true                  | true                     |
 | Cadence Incisive                    | true                  | false                    |
+| Cadence XCelium                     | true                  | false                    |
 | [GHDL](/manual/eclipse/ghdl)                | true                  | true                     |
 
 Note: [OneSpin](/manual/eclipse/onespin) was supported in Sigasi Studio from version 3.1 to 4.17 and provided save-time compilation and running of elaboration checks.
@@ -124,7 +125,7 @@ Sigasi Studio can use an external VHDL or Verilog compiler for additional code v
 
 * `vcom` / `vlog` / `vsim` style compilers. These compilers include Aldec Riviera-PRO and from Mentor Graphics ModelSim and QuestaSim.
 * `isim` compiler from AMD/Xilinx.
-* `ncsim` compiler from Cadence Incisive.
+* `ncsim` / `xmsim` compiler from Cadence Incisive/XCelium.
 
 Catching bugs earlier is cheaper than catching them late. Traditionally,
 the first errors are found when the hardware designer decides to run a
@@ -265,10 +266,6 @@ will automatically be run. In our example of a Modelsim Makefile,
 Modelsim's messages will appear in the console view.
 
 {{< figure src="/img/manual/makefiles_consoleoutput.png" >}}
-
-For the specific case of Modelsim, warnings and error messages in the
-console are made clickable. When you click a message, the corresponding
-location will automatically be opened in the Editor view.
 
 You can add as many extra builders as you want. This can be useful for
 additional linting tools or code generators.
