@@ -216,7 +216,9 @@ Sigasi Studio adds the following variables and parameters for VHDL and (System)V
 | ---                               | ---                                                           |
 | `${library:<argument>}`           | Get the library name of `<argument>`. For example, to the get the library of the currently selected resource use `${library:${resource_path}}` |
 | `${sigasi_toplevel}`              | Get the name of the current top level: `library.name`         |
+| `${sigasi_toplevel:alt}`          | Get the alternative name of the current top level, e.g. `library.anEntity(RTL)` rather than `library.anEntity.RTL` |
 | `${sigasi_toplevel:short}`        | Get the name of the current top level without library: `name` |
+| `${sigasi_toplevel:alt:short}`    | Get the alternative name of the current top level without library, e.g. `anEntity(RTL)` rather than `anEntity.RTL` |
 | `${sigasi_toplevel:project_path}` | Get the path of the current top level's project root          |
 
 ## Creating a Builder
