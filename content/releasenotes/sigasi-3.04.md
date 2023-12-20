@@ -72,7 +72,7 @@ See the [Preview Builds](/tech/preview) to track the latest SystemVerilog progre
 - ticket 3725 : Incorrect error for aggregates as return types for subprograms
 - ticket 3795 : Exception running the external compiler for project with certain library/VHDL version setups
 - ticket 3792 : Two temporary folders created for external compilation
-- ticket 3769 : Improved message in pop up when Sigasi warns about its age.
+- ticket 3769 : Improved message in pop-up when Sigasi warns about its age.
 - ticket 3767 : Only open port 4444 when Sigasi Studio is started with `com.sigasi.runner.open application` (default)
 - ticket 3783 : Block diagram incorrectly displays `generate` statements without instantiations as "unknown"
 - ticket 3794 : Improve error handling of Quartus integration

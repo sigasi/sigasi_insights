@@ -32,7 +32,7 @@ Funnily enough, terminating the back-end server can be a bit tricky.  If the mai
 
 In order to avoid this scenario, the SDK has a feature called a _heartbeat_.  It works as follows: at startup, the editor can request to open a heartbeat port on the back-end server.  Once the back-end server has started, the editor must connect to the heartbeat port.  Every couple of seconds, the editor will send a heartbeat signal to the back-end.  As long as this heartbeat is sustained, the back-end server stays alive.  This way, when the editor disappears (for whatever reason), the back-end server will follow suit and terminate itself.  No zombies are left.
 
-If your editor is written in Java, then the SDK provides a client library right out-of-the-box that does most of this life cycle management.  If your editor is not running on a JVM, you'll have to replicate this functionality in your own language eco-system.
+If your editor is written in Java, then the SDK provides a client library right out-of-the-box that does most of this life cycle management.  If your editor is not running on a JVM, you'll have to replicate this functionality in your own language ecosystem.
 
 Using the client library provides another perk.  When the client starts a back-end server, it will monitor whether the heartbeat connection is still accepting heartbeats.  If not, then the client can notify the editor application and start a new back-end instance.
 
@@ -100,7 +100,7 @@ So, marrying the synchronous and asynchronous world has to be done carefully.  I
 
 Another work item is project management.  The LSP does not (and cannot) standardize what a project's configuration should look like.  Indeed, how a project should be configured, depends highly on the type of project.  For example, in Java-world, projects will often consist of numerous Maven files.  In C++-world, you might be using makefiles or Bazel.  Rust will rely on cargo.  And so on ...
 
-So, every language eco-system has its own conventions to define projects.  Sigasi's SDK follows suit.  It defines a mechanism to communicate your project structure from the front-end to the back-end.  It currently takes the form of a big JSON object that lists the files of a project, VHDL/Verilog versions, preprocessor settings ...
+So, every language ecosystem has its own conventions to define projects.  Sigasi's SDK follows suit.  It defines a mechanism to communicate your project structure from the front-end to the back-end.  It currently takes the form of a big JSON object that lists the files of a project, VHDL/Verilog versions, preprocessor settings ...
 
 In your own editor, you will most likely have your own project definition.  In order to integrate the SDK in this context, you will need to be able to convert (part of) your project definition into the format that the SDK understands.  Every time your project definition is updated, you'll send the new definition to the back-end.
 

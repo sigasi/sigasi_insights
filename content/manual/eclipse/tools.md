@@ -233,14 +233,14 @@ create a builder for a Modelsim Makefile as an example.
 To create a builder, right-click your project and select **Properties \>
 Builders**.
 
-Click **New…** and the builder configuration window will pop up:
+Click **New…** and the builder configuration window will pop-up:
 
 {{< figure src="/img/manual/makefiles_buildersoverview.png" >}}
 
 You will be asked to select a configuration type:
 select ![](/img/icons/externaltool.png) **Program**.
 
-Next, configure the builder in a configuration window pop up window:
+Next, configure the builder in a configuration window pop-up window:
 
 * **Name**: The name of your builder, e.g. `ModelSim`.
 * **Location**: The location of the program, e.g. `/usr/bin/make`.

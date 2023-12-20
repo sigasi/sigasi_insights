@@ -220,4 +220,4 @@ This release contains solutions for the following reported bugs:
 * Templates are not the top suggestion during autocomplete
 * {{< pill text="Eclipse" >}} Error dialog is shown when opening Sigasi Studio
 * {{< pill text="Eclipse" >}} Caching error for specific files
-* {{< pill text="Eclipse" >}} Hover and autocomplete block the editor and take a long time to pop up
+* {{< pill text="Eclipse" >}} Hover and autocomplete block the editor and take a long time to pop-up

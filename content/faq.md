@@ -244,7 +244,7 @@ Many actions can be accessed using your mouse and using [Keyboard Shortcuts](/ma
 
 Whenever you use your mouse for something that also has a key binding, this function tells you what the keyboard shortcut is. This will help you remember keyboard shortcuts for the actions you use most often.
 
-The easiest way to avoid getting these pop ups --and gain a good deal of development speed-- is by using [Keyboard Shortcuts](/manual/keyshortcuts) when possible.
+The easiest way to avoid getting these pop-ups --and gain a good deal of development speed-- is by using [Keyboard Shortcuts](/manual/keyshortcuts) when possible.
 If you still want to disable this feature, you can go to **Window > Preferences > General > Keys** and below **Show key binding when command is invoked**, uncheck the box for **Through mouse click**.
 
 {{< figure src="/img/faq/keybinding-config.png"  link="/img/faq/keybinding-config.png" alt="Key binding pop-up configuration" >}}
@@ -641,7 +641,7 @@ Please note that from version 5.0 onwards, [Sigasi Studio is no longer supported
 
 **Known issue on Apple computers with Sigasi Studio 4.9 and older**
 
-The following error message may pop up on Apple computers when using Sigasi Studio [older than 4.10]({{< ref "releasenotes/sigasi-4.10.md#other-new-and-noteworthy-changes" >}}):
+The following error message may pop-up on Apple computers when using Sigasi Studio [older than 4.10]({{< ref "releasenotes/sigasi-4.10.md#other-new-and-noteworthy-changes" >}}):
 ```
 Sigasi Studio.app is damaged and can't be opened. You should move it to the Trash
 ```

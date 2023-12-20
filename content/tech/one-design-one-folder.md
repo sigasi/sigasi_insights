@@ -69,7 +69,7 @@ Next, we will **add the directory** with vendor VHDL code.
     `altera_mf` folder.
 2.  Drag this folder to your Sigasi project explorer, into your
     project folder.
-3.  In the pop up dialog, select **Link to files and folders** and
+3.  In the pop-up dialog, select **Link to files and folders** and
     uncheck **Create link locations relative to:**.
 4.  confirm with **OK**.
 
