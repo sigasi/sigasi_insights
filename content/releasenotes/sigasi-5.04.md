@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 5.4
 date: 2023-12-15
-lastmod: 2023-12-15
+lastmod: 2023-12-22
 comments: true
 pager: true
 menu:
@@ -386,6 +386,14 @@ Some {{< pill text="VHDL" >}} linting rules had their default severity adjusted.
 - {{< pill text="Eclipse" >}} Fixed small inconsistencies in the tutorial project
 
 Thank you for all the [bug reports](mailto:support@sigasi.com) and for enabling [Talkback]({{< ref "manual/common/talkback.md" >}}). All your reports have helped us fix many issues that would otherwise have gone unnoticed.
+
+# Sigasi Studio 5.4.1 Point Release
+
+On December 22, we released Sigasi Studio 5.4.1.
+This release contains the following changes and bug fixes:
+
+- Fixed context menus not filtering their menu items
+- {{< pill text="VHDL" >}} Fixed [Project Formatting]({{< ref "/manual/eclipse/editor.md#format-files-without-opening-them" >}}) in combination with [Formatter Tags]({{< ref "/manual/eclipse/editor.md#disable-formatting-in-defined-regions" >}})
 
 # System Requirements
 
