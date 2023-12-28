@@ -27,3 +27,6 @@ To export documentation, follow the steps below:
 ## Customization
 
 You can read more about all the customization options [here]({{< ref "/manual/common/documentation.md" >}}).
+
+**Note:** Diagram rendering is currently not supported in Remote SSH setups.
+
