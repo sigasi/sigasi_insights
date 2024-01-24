@@ -315,3 +315,13 @@ If this is not the case, refer to the following table.
 | `7`  | Licensing error. Make sure a valid license is available. |
 | `16` | Verification severity threshold reached.                 |
 | `17` | Documentation export failed.                             |
+
+# Veresta usage in Continuous Intrgration (CI)
+
+Check out the following articles with step-by-step examples of how to use Veresta in CI:
+
+* [Veresta Code Verification in Gitlab CI]({{< ref "/tech/veresta-gitlab-ci.md" >}})
+* [Veresta Code Verification in Jenkins CI]({{< ref "/tech/veresta-jenkins.md" >}})
+* [Monitoring HDL code quality with Sigasi Veresta and SonarQube]({{< ref "/tech/veresta-document-ci.md" >}})
+* [Veresta as a Git Commit Hook]({{< ref "/tech/veresta-gitlab-commit-hook.md" >}})
+* [Veresta Documentation with Jenkins and Gitlab CI]({{< ref "/tech/veresta-document-ci.md" >}})
