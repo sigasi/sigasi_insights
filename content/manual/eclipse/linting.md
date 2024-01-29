@@ -19,6 +19,20 @@ You can also configure the rules for the entire workspace through
 
 {{< figure src="/img/manual/linting-rule-preference-page.png" alt="Configuring the parameters of Sigasi linting checks" link="/img/manual/linting-rule-preference-page.png" >}}
 
+## Workspace Settings vs. Project Specific Settings
+
+Workspace linting settings are only valid for the local workspace. 
+If you *enable project specific settings*, a `.linting.prefs` file is created in your `.settings` folder with the following lines.
+
+```
+eclipse.preferences.version=1
+isEnabled=true
+```
+
+The second line (`isEnabled = True`) makes the workspace settings ineffective. After this point, your project's linting settings are configured by this file. 
+Default values are used for the rules that are not configured in the `.linting.prefs` file.
+If you change `True` to `False` in the file, then the workspace settings become effective again.
+
 # Marker Icons
 
 * ![Ignore icon with lightbulb](/img/icons/ignore_lightbulb.png) marks an ignored problem that has a Quick Fix.
