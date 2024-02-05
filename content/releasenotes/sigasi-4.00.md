@@ -37,16 +37,16 @@ Sigasi Studio 4.0 introduces **block diagrams** for SystemVerilog modules. You c
 
 {{< figure src="/img/releasenotes/4.0/sv_block_diagram.png" alt="Block Diagram View for SystemVerilog" title="Block Diagram View for SystemVerilog" link="/img/releasenotes/4.0/sv_block_diagram.png" >}}
 
-The [Block Diagram View](/manual/eclipse/views#block-diagram-view) **automatically updates** when you **save** your code and gives a convenient way to visually inspect and navigate your code, even
+The [Block Diagram View]({{< ref "/manual/common/views.md#block-diagram-view" >}}) **automatically updates** when you **save** your code and gives a convenient way to visually inspect and navigate your code, even
 when your code is still unfinished or broken.
 
 {{< figure src="/img/releasenotes/4.0/sv_graphic_configuration.png" alt="Block Diagram Graphics Configuration for SystemVerilog" title="Block Diagram Graphics Configuration for SystemVerilog" link="/img/releasenotes/4.0/sv_graphic_configuration.png" >}}
 
-You can also customize and filter block diagrams by creating a [Graphics Configuration](/tech/using-graphics-configuration).
+You can also customize and filter block diagrams by creating a [Graphics Configuration]({{< ref "/tech/using-graphics-configuration" >}}).
 
 # SystemVerilog State Machines
 
-The [State Machine View](/manual/eclipse/views#state-machine-view) now also visualizes `enum`-based statemachines in your SystemVerilog code. This view automatically updates while you are editing your code and gives a convenient way to visually inspect and navigate your code, even when your code is still unfinished or broken.
+The [State Machine View]({{< ref "/manual/common/views#state-machines-view" >}}) now also visualizes `enum`-based statemachines in your SystemVerilog code. This view automatically updates while you are editing your code and gives a convenient way to visually inspect and navigate your code, even when your code is still unfinished or broken.
 
 You can open the State Machine View by right clicking in the editor and selecting **Show In > State Machines**.
 

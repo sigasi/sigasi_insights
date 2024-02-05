@@ -744,6 +744,6 @@ We have not had good results with FreeHDL or with Green Mountain VHDL. It seems 
 
 After you choose your simulator, you need a VHDL editor too. Sigasi has a [free starter edition](https://www.sigasi.com/sigasi-starter-edition) of its popular VHDL development environment.
 
-[Dependencies View]: {{< ref "/manual/eclipse/views.md#dependencies-view" >}}
-[Block Diagram View]: {{< ref "/manual/eclipse/views.md#block-diagram-view" >}}
-[State Machines View]: {{< ref "/manual/eclipse/views.md#state-machine-view" >}}
+[Dependencies View]: {{< ref "/manual/common/views.md#dependencies-view" >}}
+[Block Diagram View]: {{< ref "/manual/common/views.md#block-diagram-view" >}}
+[State Machines View]: {{< ref "/manual/common/views.md#state-machines-view" >}}

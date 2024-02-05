@@ -23,7 +23,7 @@ Graphical programming comes in many different flavors:
 
 * **Dataflow** based (like NI LabVIEW)
 * **One-dimensional** graphical programs look and read like a traditional imperative, event driven program. The difference is that the programmer drags and connects statement blocks instead of typing statements. This is often used in educational settings, like Scratch or Google blockly.
-* **Behavioral** (state-machines) visual programming is not a mainstream technique, except perhaps in digital circuit design.
+* **Behavioral** (state machines) visual programming is not a mainstream technique, except perhaps in digital circuit design.
 In Structural visual programming, the design contains boxes and specifies through which channels they can communicate. Useful in high-level software systems architecture, and for connecting reusable components.
 * Bringing all of this together, there are various forms of **hybrid** programming. In a structural visualization, the designer can open one module and design the dataflow of that module. Mentor Graphics HDL Designer or Visual Elite are examples of tools that support hybrid programming.
 

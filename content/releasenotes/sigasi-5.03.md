@@ -356,7 +356,7 @@ For clarity, you may want to have each primary unit described in its own file. A
 - {{< pill text="Eclipse" >}} Fixed missing autocomplete when specific syntax errors are present
 - {{< pill text="Eclipse" >}} Fixed missing date for [User-defined Autocomplete Templates]({{< ref "/manual/eclipse/editor.md#based-on-templates" >}}) using custom date formats
 - {{< pill text="Eclipse" >}} {{< pill text="Verilog" >}} Fixed missing autocomplete when typing `$` with the autocomplete dialog open
-- {{< pill text="Eclipse" >}} {{< pill text="Verilog" >}} Fixed missing [Block Diagram]({{< ref "/manual/eclipse/views.md#block-diagram-view" >}}) elements for complex assign statements
+- {{< pill text="Eclipse" >}} {{< pill text="Verilog" >}} Fixed missing [Block Diagram]({{< ref "/manual/common/views.md#block-diagram-view" >}}) elements for complex assign statements
 - {{< pill text="Eclipse" >}} {{< pill text="Verilog" >}} Fixed editor <-> [Preprocessor View]({{< ref "/manual/eclipse/views.md#preprocessor-view" >}}) cursor synchronization when double or triple-click selecting
 - {{< pill text="Verilog" >}} Fixed the Add Declaration Quick Fix when used in if statements
 - {{< pill text="Verilog" >}} Fixed missing autocompletes following a function invocation

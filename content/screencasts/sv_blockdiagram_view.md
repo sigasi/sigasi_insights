@@ -11,5 +11,5 @@ tags:
   - graphics
 ---
 
-The Block Diagrams View is documented [here](/manual/eclipse/views#block-diagram-view).
-The Graphical Config File is documented [here](/tech/using-graphics-configuration).
+The Block Diagrams View is documented [here]({{< ref "/manual/common/views.md#block-diagram-view" >}}).
+The Graphical Config File is documented [here]({{< ref "/tech/using-graphics-configuration" >}}).

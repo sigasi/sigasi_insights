@@ -12,4 +12,4 @@ tags:
 ---
 
 
-The State Machine View is documented [here](/manual/eclipse/views#state-machine-view).
+The State Machine View is documented [here](/manual/common/views#state-machines-view).

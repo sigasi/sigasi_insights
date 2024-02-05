@@ -156,7 +156,7 @@ The number of threads that should be used for diagram generation can be configur
 * {{< pill text="Verilog" >}} Added support for include-directives using absolute paths e.g. ``` `include "/libraries/includes/my_include_file.svh"```. These include paths will be resolved starting from the root of your Sigasi project and ignore the include search paths that were configured.
 * {{< pill text="Verilog" >}} Changed default severity of the [Disallow reg datatype]({{< ref "manual/rules/verilog_reg.md" >}}) linting from `WARNING` to `INFO`
 * {{< pill text="Verilog" >}} Sigasi now also checks that untagged unions do not use dynamic types or `chandle`s
-* {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} Assigns to interfaces are now also shown in the [Block Diagram]({{< ref "manual/eclipse/views.md#block-diagram-view" >}})
+* {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} Assigns to interfaces are now also shown in the [Block Diagram]({{< ref "manual/common/views.md#block-diagram-view" >}})
 * {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} Library names are no longer shown as part of the name of design units in the [Libraries View]({{< ref "manual/eclipse/views.md#libraries-view" >}})
 * {{< pill text="VHDL" >}} Component instantiations now insert default values and no longer add a redundant space before the semicolon
 * {{< pill text="VHDL" >}} {{< pill text="Eclipse" >}} [Sigasi Auto Export]({{< ref "manual/eclipse/tools.md#auto-export" >}}) now restricts top levels to those present in the given project

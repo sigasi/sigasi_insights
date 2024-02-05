@@ -24,7 +24,7 @@ We are proud to present the Sigasi Studio 4.13 release. This release contains a 
 
 ## Improved documentation generation
 
-We enriched the [Documentation Generation]({{< ref "manual/eclipse/documentation.md" >}}) export with an overview of the [dependencies]({{< ref "manual/eclipse/views.md#dependencies-view" >}}) between all project files.
+We enriched the [Documentation Generation]({{< ref "manual/eclipse/documentation.md" >}}) export with an overview of the [dependencies]({{< ref "manual/common/views.md#dependencies-view" >}}) between all project files.
   {{< figure src="/img/releasenotes/4.13/ProjectFilesOverviewDocgen.png" title="Project files overview in generated documentation" width="600">}}
 If your design units contain multiple state machines, we now add them all to the documentation (instead of only the first).
   <!-- {{< figure src="/img/releasenotes/4.13/MultipleFsm.png" title="Multiple state machines in a design unit" width="200">}} -->
@@ -57,7 +57,7 @@ We also improved the order in which classes are added to the [documentation]({{<
   {{< figure src="/img/releasenotes/4.13/GenericPortFolding.png" title="Folding of generics and ports">}}
 * **Formatting** support for *signature filter path element* (in `alias`es)
 * Improved **formatting** for `assertion` statements and `procedure`s with `generic`s
-* Added `package bodies` to the [Dependencies View]({{< ref "manual/eclipse/views.md#dependencies-view" >}})
+* Added `package bodies` to the [Dependencies View]({{< ref "manual/common/views.md#dependencies-view" >}})
 
 ## Other Improvements
 

@@ -11,7 +11,7 @@ Read below to find all new and noteworthy changes.
 # Graphics Configuration
 [{{< xl_doc >}}]
 
-The [BlockDiagram](/manual/eclipse/views#block-diagram-view) and [StateMachine](/manual/eclipse/views#state-machine-view) Views are very useful ways to **explore** and **understand** HDL designs. But sometimes this just doesn't cut it. The diagrams are **too complex** and **crowded** to understand a design. They contain too much detail to see the big picture.
+The [Block Diagram]({{< ref "/manual/common/views#block-diagram-view" >}}) and [State Machines]({{< ref "/manual/common/views#state-machines-view" >}}) Views are very useful ways to **explore** and **understand** HDL designs. But sometimes this just doesn't cut it. The diagrams are **too complex** and **crowded** to understand a design. They contain too much detail to see the big picture.
 **Sigasi Studio's Graphics Configuration files** are a new solution for this challenge.
 
 With Graphics Configuration files you can customize the content of the graphical views in a **predictable** and **reproducible** way. Because the files have a **simple and clear syntax**, they can easily be **shared (and merged)** in a Version Control System. They can also naturally **evolve** and always **stay in sync with the original VHDL source files**.
@@ -29,7 +29,7 @@ The syntax of the Graphics Configuration files is explained [here](/tech/graphic
 
 # Improved Dependencies Viewer
 
-Sigasi Studio's [dependencies view](/manual/eclipse/views#dependencies-view) has a new skin. Its visuals are now in line with Block Diagram and Statemachine Views.  
+Sigasi Studio's [dependencies view]({{< ref "/manual/common/views.md#dependencies-view" >}}) has a new skin. Its visuals are now in line with Block Diagram and Statemachine Views.  
 ![Old and New dependencies view](/img/releasenotes/3.6/dependencies_view.png)
 
 # Extra external tools
@@ -86,27 +86,27 @@ If you open an existing workspace after the update to Sigasi Studio 3.6, you mig
 
 # Bug fixes
 
-- ticket 3959 : \[(System)Verilog] parse error: `import` between module name and parameters
-- ticket 3969 : \[(System)Verilog] Verilog autocomplete breaks on the input ``defin`
-- ticket 3739 : \[Block Diagram] Connection with conversion function not shown in block diagram
-- ticket 3832 : \[Block Diagram] Concatenated signals in port not shown
-- ticket 3849 : Workaround for ModelSim when project path contains spaces
-- ticket 3861 : \[VHDL] Incorrect error when `range` attribute has an index
-- ticket 3928 : Dependencies view and "export csv" should not mix dependencies of independent projects
-- ticket 3930 : \[VHDL] Avoid exceptions in formatter with preserve newlines
-- ticket 3932 : \[VHDL] Comments before `when` keyword get indented too much
-- ticket 3935 : Fix missing icons in Libraries View
-- ticket 3946 : \[VHDL] Attribute `subtype` and `base` should be available on all types
-- ticket 3948 : \[VHDL] Indentation failure when formatting
-- ticket 3955 : \[VHDL] Sort associations as declared removes uppercase characters
-- ticket 3956 : \[(System)Verilog] Fix grammar issue with delay control
-- ticket 3961 : \[VHDL] Formatting crashes when *Non breaking spaces* are used
-- ticket 3967 : External compiler does not compile all files when builds are canceled in between.
-- ticket 3968 : \[VHDL] Fix formatting issue in `case` statement quick fix
-- ticket 3979 : \[VHDL] `report` statement is not being formatted
-- ticket 3980 : \[VHDL] Formatting issue with package instantiations
-- ticket 3986 : \[VHDL] If there is only one `when` clause in a `case` statement, formatting does not format `end case` or `when` clause
-- ticket 3992 : \[(System)Verilog] Exception when clicking hyperlink on ``includes`
+- ticket 3959: [(System)Verilog] parse error: `import` between module name and parameters
+- ticket 3969: [(System)Verilog] Verilog autocomplete breaks on the input ``defin`
+- ticket 3739: [Block Diagram] Connection with conversion function not shown in block diagram
+- ticket 3832: [Block Diagram] Concatenated signals in port not shown
+- ticket 3849: Workaround for ModelSim when project path contains spaces
+- ticket 3861: [VHDL] Incorrect error when `range` attribute has an index
+- ticket 3928: Dependencies view and "export csv" should not mix dependencies of independent projects
+- ticket 3930: [VHDL] Avoid exceptions in formatter with preserve newlines
+- ticket 3932: [VHDL] Comments before `when` keyword get indented too much
+- ticket 3935: Fix missing icons in Libraries View
+- ticket 3946: [VHDL] Attribute `subtype` and `base` should be available on all types
+- ticket 3948: [VHDL] Indentation failure when formatting
+- ticket 3955: [VHDL] Sort associations as declared removes uppercase characters
+- ticket 3956: [(System)Verilog] Fix grammar issue with delay control
+- ticket 3961: [VHDL] Formatting crashes when *Non breaking spaces* are used
+- ticket 3967: External compiler does not compile all files when builds are canceled in between.
+- ticket 3968: [VHDL] Fix formatting issue in `case` statement quick fix
+- ticket 3979: [VHDL] `report` statement is not being formatted
+- ticket 3980: [VHDL] Formatting issue with package instantiations
+- ticket 3986: [VHDL] If there is only one `when` clause in a `case` statement, formatting does not format `end case` or `when` clause
+- ticket 3992: [(System)Verilog] Exception when clicking hyperlink on ``includes`
 
 ## How to update?
 
