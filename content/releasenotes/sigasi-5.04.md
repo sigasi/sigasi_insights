@@ -1,7 +1,7 @@
 ---
 title: Sigasi Studio 5.4
 date: 2023-12-15
-lastmod: 2023-12-22
+lastmod: 2024-02-13
 comments: true
 pager: true
 menu:
@@ -376,7 +376,7 @@ Some {{< pill text="VHDL" >}} linting rules had their default severity adjusted.
 - {{< pill text="VHDL" >}} Fixed false positive `No matching subprogram` when using VHDL 2008 or 2019
 - {{< pill text="Verilog" >}} Fixed highlighting of backticks in preprocessor directives
 - {{< pill text="Verilog" >}} Added missing links (**Ctrl+click**) when two conditional blocks have the same label
-- {{< pill text="Verilog" >}} Removed duplicate naming convention warning when using enum element ranges e.g. `enum {A[0:100]} e`
+- {{< pill text="Verilog" >}} Removed duplicate [naming convention]({{< ref "/manual/eclipse/linting.md#naming-conventions" >}}) warning when using enum element ranges e.g. `enum {A[0:100]} e`
 - {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} Fixed missing updates to the Class Hierarchy
 - {{< pill text="Eclipse" >}} Fixed qualified name in the [Find References]({{< ref "/manual/eclipse/editor.md#find-references" >}}) title
 - {{< pill text="Eclipse" >}} Fixed missing updates to the [Libraries View]({{< ref "/manual/eclipse/views.md#libraries-view" >}})
@@ -394,6 +394,13 @@ This release contains the following changes and bug fixes:
 
 - Fixed context menus not filtering their menu items
 - {{< pill text="VHDL" >}} Fixed [Project Formatting]({{< ref "/manual/eclipse/editor.md#format-files-without-opening-them" >}}) in combination with [Formatter Tags]({{< ref "/manual/eclipse/editor.md#disable-formatting-in-defined-regions" >}})
+
+# Sigasi Studio 5.4.2 Point Release
+
+On February 13, we released Sigasi Studio 5.4.2.
+This release contains the following changes and bug fixes:
+
+- {{< pill text="Verilog" >}} Fixed missing [naming convention]({{< ref "/manual/eclipse/linting.md#naming-conventions" >}}) warning on generate blocks
 
 # System Requirements
 
