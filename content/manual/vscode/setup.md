@@ -33,8 +33,7 @@ If you wish to provide the JRE:
 
 ## Installation
 
-You can install the extension from the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=Sigasi.sigasi-vscode)
-or the [Open VSX Registry](https://open-vsx.org/extension/Sigasi/sigasi-vscode).
+You can install the extension from the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=Sigasi.sigasi-vscode).
 
 To install the extension, open the _Extensions_ pane using **Ctrl+Shift+X**.
 In the _Search_ field on top, type **Sigasi**.
