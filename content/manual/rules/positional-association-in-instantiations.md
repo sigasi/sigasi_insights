@@ -4,7 +4,7 @@ linting: vhdl
 ---
 
 Most VHDL designers prefer named associations in port and generic maps in instantiations. This makes it a lot easier to spot wrong connections.
-By default, Sigasi Studio warns when positional associations are used. You can change the severity of this check via **Preferences > Sigasi > VHDL > Errors/Warnings** in the **Instantiation statement validation** section.
+Sigasi Studio provides a linting rule that checks whether positional associations are used. This rule is disabled by default, but you can change the severity of this check via **Preferences > Sigasi > VHDL > Errors/Warnings** in the **Style validation** section.
 
 <pre>architecture RTL of dut is
 
