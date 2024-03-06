@@ -102,7 +102,7 @@ Note that you can add two patterns per name: a **valid pattern** that the name m
 **invalid pattern** that the name must not match (a marker will appear if
 it does). You can set either or both patterns per name.
 
-{{< figure src="/img/manual/preferences_naming_conventions.png" alt="Configuring naming conventions" >}}
+{{< figure src="/img/manual/preferences_naming_conventions.png" alt="Configuring naming conventions" class="uk-align-center" >}}
 
 You can also **configure naming conventions per project**, or even per
 file or folder. Documentation on how to do that is
