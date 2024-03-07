@@ -81,6 +81,22 @@ entity example is
 end entity;
 ```
 
+#### Higlighting lines
+
+Want to highlight a line in a code fence? Use `{hl_lines=[N]}` to highlight line N of the code block.
+
+Source: <https://jacobtomlinson.dev/posts/2024/how-to-highlight-lines-in-a-hugo-code-block/>
+
+```text {hl_lines=[3]}
+An example text
+where the 3rd line
+is completely highlighted
+using {hl_lines=[3]}
+if you use this with Hugo
+```
+
+#### Higlighting code
+
 Syntax highlighting is configured as follows:
 
 * Added 2 config settings to config.toml
