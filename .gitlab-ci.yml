@@ -4,6 +4,9 @@ stages:
   - prebuild
   - deploy
 
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
 pre-branch-build:
   stage: prebuild
   tags:
@@ -26,6 +29,7 @@ deploy-prod:
   script: 
     - git submodule update --init --recursive
     - hugo --minify
+    - npx -y pagefind --site "public"
     - firebase deploy -m "$CI_COMMIT_TITLE" --token $FIREBASE_TOKEN
     - 'curl -X POST "https://ohdear.app/api/checks/45757/request-run" -H "Authorization: Bearer $OHDEAR_TOKEN" -H "Accept: application/json" -H "Content-Type: application/json"'
   only:
