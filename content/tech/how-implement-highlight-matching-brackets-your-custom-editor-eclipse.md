@@ -2,7 +2,7 @@
 title: "How to implement \"highlight matching brackets\" for your custom editor in Eclipse"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2011-08-16
 tags: 
   - eclipse

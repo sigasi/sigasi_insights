@@ -2,7 +2,7 @@
 title: "How to add a decorator to the splash screen of your RCP application?"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2009-12-18
 tags: 
   - code

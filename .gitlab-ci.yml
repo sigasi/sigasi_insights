@@ -42,6 +42,7 @@ deploy-branch:
   script: 
     - git submodule update --init --recursive
     - hugo --buildFuture --baseURL $MY_DEPLOYED_URL
+    - npx -y pagefind --site "public"
     - echo $CI_COMMIT_TITLE
     - firebase hosting:channel:deploy $CI_COMMIT_REF_SLUG --token $FIREBASE_TOKEN
   except:

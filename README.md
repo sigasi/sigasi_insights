@@ -106,5 +106,10 @@ Syntax highlighting is configured as follows:
 * In case you want to change the style, different styles are available, check <https://xyproto.github.io/splash/docs/all.html>
 * More Hugo documentation on highlighting: <https://gohugo.io/content-management/syntax-highlighting/>
 
+## Search
+
+This website is using [Pagefind] to index the site at build time. The CI system needs to run `npx -y pagefind --site "public"` and references to generated index files are [present in the theme](https://github.com/sigasi/sigasi_theme/commit/8a641d9789fea957b87107e0d5ffd27e4afe3274).
+
 [Hugo]: https://gohugo.io/
 [markdownlint VS Code extension]: https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
+[Pagefind]: https://pagefind.app

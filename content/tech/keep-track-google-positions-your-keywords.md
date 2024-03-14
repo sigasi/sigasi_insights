@@ -2,7 +2,7 @@
 title: "Keep track of the Google positions of your keywords"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2010-05-18
 tags: 
   - Python

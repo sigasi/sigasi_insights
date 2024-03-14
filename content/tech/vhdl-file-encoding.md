@@ -2,7 +2,7 @@
 title: "VHDL file encoding"
 layout: page 
 pager: true
-author: Hendrik
+author: Hendrik Eeckhaut
 date: 2017-01-25
 comments: true
 ---

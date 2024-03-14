@@ -2,7 +2,7 @@
 title: "Dynamic menu items in Eclipse"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2011-08-16
 tags: 
   - code

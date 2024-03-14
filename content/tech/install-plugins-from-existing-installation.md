@@ -2,7 +2,7 @@
 title: "Quickly install plugins from an existing Sigasi installation in a new Sigasi installation"
 layout: page 
 pager: true
-author: heeckhau (Sigasi)
+author: Hendrik Eeckhaut
 date: 2015-05-11
 tags: 
   - howto

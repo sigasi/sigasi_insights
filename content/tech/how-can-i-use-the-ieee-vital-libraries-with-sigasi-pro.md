@@ -2,7 +2,7 @@
 title: "How can I use the IEEE Vital libraries with Sigasi Pro?"
 layout: page 
 pager: true
-author: philippe.faes (Sigasi)
+author: Philippe Faes
 date: 2011-11-11
 tags: 
   - IEEE

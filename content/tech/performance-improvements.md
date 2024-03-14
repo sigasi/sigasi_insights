@@ -2,7 +2,7 @@
 title: "Performance improvements"
 layout: page 
 pager: true
-author: lieven.lemiengre (Sigasi)
+author: Lieven Lemiengre
 date: 2010-10-15
 tags: 
   - performance

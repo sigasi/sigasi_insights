@@ -2,7 +2,7 @@
 title: "How to code reset in a synchronous VHDL process"
 layout: page 
 pager: true
-author: Sigasi Team
+author: Sigasi
 date: 2020-08-11
 tags: 
   - VHDL
