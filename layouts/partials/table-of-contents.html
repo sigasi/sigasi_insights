@@ -1,5 +1,5 @@
 <!-- ignore empty links with + -->
-{{- $headers := findRE "<h[1-3].*?>(.|\n])+?</h[1-3]>" .Content -}}
+{{- $headers := findRE "(?s)<h[1-3].*?>(.|\n])+?</h[1-3]>" .Content -}}
 <!-- at least one header to link to -->
 {{- $has_headers := ge (len $headers) 1 -}}
 {{- if $has_headers -}}
