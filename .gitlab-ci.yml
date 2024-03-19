@@ -61,17 +61,3 @@ deploy-branch:
   environment:
     name: review/$CI_COMMIT_REF_NAME
     url: $MY_DEPLOYED_URL
-
-# stop_branch:
-#   stage: deploy
-#   tags:
-#     - hugo
-#   rules:
-#     - if: '$CI_COMMIT_BRANCH != "master"'
-#       when: manual
-#     - when: never
-#   script:
-#     - firebase hosting:channel:delete -f $CI_COMMIT_REF_SLUG
-#   environment:
-#     name: review/$CI_COMMIT_REF_NAME
-#     action: stop
