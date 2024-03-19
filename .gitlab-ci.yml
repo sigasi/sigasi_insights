@@ -1,7 +1,8 @@
 image: gitlab.sigasi.com:4567/dev/sigasi_insights:202403191204
 
 default:
-  cache: &global-cache
+  cache: 
+    key: hugo-docker
 
 stages:
   - prebuild
