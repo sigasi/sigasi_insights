@@ -22,7 +22,7 @@ Follow the steps below to use the macro.
 
 {{< figure src="/img/tech/word-macro-thumb.png" link="/img/tech/word-macro.png" class="uk-align-right" >}}
 
-1. [Download the macro file](/resources/tech/exportAndFormatWord.bas).
+1. <a href="/resources/tech/exportAndFormatWord.bas" download="/resources/tech/exportAndFormatWord.bas">Download the macro file</a>.
 
 2. Install the macro: open the **View** menu in Word and select **Macros > View Macros > Create** to open the Visual Basic editor.
 In that editor, choose **File > Import File...** to import the macro file.
