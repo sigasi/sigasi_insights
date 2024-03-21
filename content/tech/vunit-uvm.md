@@ -237,7 +237,7 @@ have discussed [VUnit and its integration in Sigasi Studio]({{< ref "/manual/ecl
 to configure a combined UVM-VUnit project, you'll first need to set up
 your project as a VUnit project.  Then, you'll need to add the UVM
 library to your project's Common Libraries to get it working, as
-[documented here]({{< ref "tech/systemverilog-uvm-demo.md" >}}).  The
+[documented here]({{< ref "manual/common/uvm-project-setup.md" >}}).  The
 `README.md` of our [demo
 project](https://github.com/sigasi/uvm-in-vunit-tutorial-simple-adder)
 has the details of how to do it for that particular project.
