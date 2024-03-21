@@ -1,5 +1,5 @@
 ---
-title: "Using Sigasi Veresta for HDL Code Verification in Gitlab CI"
+title: "Using Sigasi Veresta for HDL Code Verification in GitLab CI"
 layout: page 
 pager: true
 author: Wim Meeus
@@ -28,9 +28,9 @@ to use Veresta in a [Continuous Integration
 in Jenkins.
 
 In this article, we'll show that it is equally possible to run Veresta
-in a Gitlab CI pipeline. In addition to running Veresta, we'll show
+in a GitLab CI pipeline. In addition to running Veresta, we'll show
 how to build a [Docker](https://www.docker.com) container with
-Veresta, and how to report Veresta's results in Gitlab CI.
+Veresta, and how to report Veresta's results in GitLab CI.
 
 For the purposes of this article, we've set up a [**Gitlab
 project**](https://gitlab.com/sigasi/public/veresta-ci), taken from
@@ -41,18 +41,18 @@ further. Sigasi customers, as always, are welcome to [contact
 support](https://www.sigasi.com/support) with further questions.
 
 The remainder of this article is organized as follows: First, we
-briefly discuss the setup of a Gitlab runner (which runs Gitlab CI
+briefly discuss the setup of a GitLab runner (which runs GitLab CI
 jobs) and the creation of a Docker container image for Veresta. Then
-we show how to set up a Gitlab CI *pipeline* to run Veresta. Finally,
-we demonstrate how to present Veresta's findings using Gitlab's Code
+we show how to set up a GitLab CI *pipeline* to run Veresta. Finally,
+we demonstrate how to present Veresta's findings using GitLab's Code
 Quality plugin.
 
 
-## Gitlab CI setup
+## GitLab CI setup
 
-### Gitlab runner setup
+### GitLab runner setup
 
-Gitlab runs CI jobs on so-called [Gitlab
+GitLab runs CI jobs on so-called [Gitlab
 Runners](https://docs.gitlab.com/runner/). Depending on your Gitlab
 setup, runners may already be available, or you may need to set up
 some.  In our example, we make use of a Docker runner, but you can use
@@ -60,7 +60,7 @@ a different kind of runner as well.  When setting up a runner, make
 sure that it has access to your Sigasi license server.  Without access
 to the license server, Veresta won't be able to run.
 
-It may be useful to **tag your runner(s)**, so Gitlab CI knows which
+It may be useful to **tag your runner(s)**, so GitLab CI knows which
 runners are suitable for Veresta runs. Runners don't particularly need
 a lot of resources, but, as mentioned, they need access to a Veresta
 license on a license server - which may not (and should not) be
@@ -95,28 +95,28 @@ docker build -t sigasi/veresta-ci:1.0 .
 ```
 
 After this, your docker image is available on your local
-machine. That's enough if your Gitlab runner will run on the same
+machine. That's enough if your GitLab runner will run on the same
 machine, but if you want to have the runner on a different machine, or
 on multiple machines, they'll need access to the image as well. In
 that case, you'll want to push the image to a container registry. The
-good news is: Gitlab projects come with a built-in [container
+good news is: GitLab projects come with a built-in [container
 registry](https://docs.gitlab.com/ee/user/packages/container_registry/).
 You can push your container image to the registry linked with your
-project, and the Gitlab runner can *pull* it from there. 
+project, and the GitLab runner can *pull* it from there. 
 
 Pushing a Docker image to the container registry requires three
-steps. In your Gitlab project, navigate to **Packages and registries >
+steps. In your GitLab project, navigate to **Packages and registries >
 Container Registry** for guidance. Before you can push the container
 image, you need to authenticate to the container registry. The command
 below is valid for projects hosted on gitlab.com, but will be
-different if you're using your own Gitlab instance.
+different if you're using your own GitLab instance.
 
 ```
 docker login registry.gitlab.com
 ```
 
 Then, you need to make sure that your container image is tagged
-according to Gitlab's [naming
+according to GitLab's [naming
 convention](https://docs.gitlab.com/ee/user/packages/container_registry/#image-naming-convention).
 The tag is specified with `-t` when the container is
 built. Alternatively, you can tag an existing image with `docker
@@ -132,9 +132,9 @@ Finally, you can push the image to the container registry:
 docker push registry.gitlab.com/sigasi/public/veresta-ci
 ```
 
-## Project setup for Gitlab CI
+## Project setup for GitLab CI
 
-Now we have a Gitlab runner and a Docker container image, so we're
+Now we have a GitLab runner and a Docker container image, so we're
 ready for the next step. The CI run is configured in `.gitlab-ci.yml`
 in the project's root folder. The file is written in [YAML
 format](https://yaml.org/), and details of `.gitlab-ci.yml` are found
@@ -160,7 +160,7 @@ veresta-check:
 ```
 
 The script is very simple: it just runs Veresta on the project. The
-`--fail-on-error` command line parameter means that the Gitlab CI job
+`--fail-on-error` command line parameter means that the GitLab CI job
 will be marked as failed if Veresta found errors in the project. With
 only warnings and/or info's, the CI job will be succesful. Using other
 command line options, you can change the CI job failure behavior as
@@ -169,8 +169,8 @@ noted in the comments in the YAML code.
 ## Running the pipeline
 
 If you have edited `.gitlab-ci.yml` or any other file in the project,
-pushing your changes to Gitlab will start the pipeline. You can also
-start the pipeline in Gitlab: navigate to your project, then **CI/CD >
+pushing your changes to GitLab will start the pipeline. You can also
+start the pipeline in GitLab: navigate to your project, then **CI/CD >
 Pipelines** and click **Run pipeline**. Sit back and relax while the
 pipeline runs, while keeping an eye on the job log...
 
@@ -178,12 +178,12 @@ Once the job is finished, success or failure of the job indicates
 whether or not Veresta has found errors in the project. Check the job
 log for Veresta's detailed result.
 
-{{< figure alt="Gitlab CI job log" src="/img/tech/veresta-gitlab-joblog.png" >}}
+{{< figure alt="GitLab CI job log" src="/img/tech/veresta-gitlab-joblog.png" >}}
 
-## Presenting the results with Gitlab Code Quality
+## Presenting the results with GitLab Code Quality
 
 In this section, we'll present a nicer alternative to checking
-Veresta's result in the job.  Gitlab has a plugin called [Code
+Veresta's result in the job.  GitLab has a plugin called [Code
 Quality](https://docs.gitlab.com/ee/ci/testing/code_quality.html)
 which analyzes code for quality and reports the result.  The Code
 Quality doesn't support HDL languages by itself, but it can pick up
@@ -194,7 +194,7 @@ tiers](https://docs.gitlab.com/ee/ci/testing/code_quality.html#summary-of-featur
 the Free tier, findings are shown in the merge request. In Premium,
 reports are also shown in CI pipelines.
 
-To present Veresta's findings with Gitlab Code Quality, a small change
+To present Veresta's findings with GitLab Code Quality, a small change
 is needed to `.gitlab-ci.yml`.
 
 ```yaml
@@ -234,18 +234,18 @@ request. You get an overview of improvements and degradations, and
 clicking on the file/line number takes you to the relevant line of
 code.
 
-{{< figure alt="Gitlab CI job log" src="/img/tech/veresta-gitlab-cq-mr.png" >}}
+{{< figure alt="GitLab CI job log" src="/img/tech/veresta-gitlab-cq-mr.png" >}}
 
-In Gitlab Premium, you also get to see all of Veresta's findings for
+In GitLab Premium, you also get to see all of Veresta's findings for
 each pipeline. Here too, clicking on the file/line number will take
 you to the relevant line of code.
 
-{{< figure alt="Gitlab CI job log" src="/img/tech/veresta-gitlab-cq-pipeline.png" >}}
+{{< figure alt="GitLab CI job log" src="/img/tech/veresta-gitlab-cq-pipeline.png" >}}
 
 
 ## Conclusion
 
 In this article, we have demonstrated the use of Sigasi Veresta in
-Gitlab CI. With minimal effort, one can set up and run Veresta in a
-Docker container to verify the HDL code of your project. Gitlab Code
+GitLab CI. With minimal effort, one can set up and run Veresta in a
+Docker container to verify the HDL code of your project. GitLab Code
 Quality is a useful add-on to present Veresta's findings.

@@ -66,7 +66,7 @@ counter**.  Apart from the clock input, the counter has an
 asynchronous clear input, two counter enable inputs, and inputs to set
 the counter to a particular value. The counter has two outputs: the
 actual counter value and a carry-out.  Our project's source code is
-[available on Gitlab](https://gitlab.com/sigasi/public/vunit-ci).
+[available on GitLab](https://gitlab.com/sigasi/public/vunit-ci).
 
 {{< figure src="/img/tech/vunit_74161.png" alt="Block diagram of 74161 synchronous counter" class="uk-align-center" >}}
 

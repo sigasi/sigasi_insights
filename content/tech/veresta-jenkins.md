@@ -152,10 +152,10 @@ code.
 
 In this example, we demonstrate how to run Veresta as a pipeline
 step of a **Jenkins declarative pipeline**.  A file named
-`Jenkinsfile` in the Gitlab project repository defines the pipeline
+`Jenkinsfile` in the GitLab project repository defines the pipeline
 steps. Before running the pipeline, you'll need to set the Veresta
 PATH and license configuration in `Jenkinsfile`. As you can't do that
-directly in our Gitlab project, you'll need to make your own fork if
+directly in our GitLab project, you'll need to make your own fork if
 you want to try this.
 
 

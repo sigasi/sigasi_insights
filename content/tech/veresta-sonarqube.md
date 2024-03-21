@@ -37,7 +37,7 @@ In previous articles, we have demonstrated how to use Veresta in
 [Continuous Integration
 (CI)](https://en.wikipedia.org/wiki/Continuous_integration) in
 [Jenkins]({{< ref "/tech/veresta-jenkins.md" >}}) and
-[Gitlab CI]({{< ref "/tech/veresta-gitlab-ci.md" >}}).
+[GitLab CI]({{< ref "/tech/veresta-gitlab-ci.md" >}}).
 We'll build on what we've shown in those articles, modifying the CI
 pipelines for SonarQube integration.  But before we get into the CI
 integration, we'll show how to combine Veresta and SonarQube on the
@@ -121,19 +121,19 @@ And finally, you can inspect each issue in its context:
 
 {{< figure src="/img/tech/veresta-sq-result3.png" alt="Veresta result in SonarQube: issue in file" >}}
 
-## Veresta and SonarQube in Gitlab CI
+## Veresta and SonarQube in GitLab CI
 
 In this section, we extend the demo from our article on [Veresta in
-Gitlab CI]({{< ref "/tech/veresta-gitlab-ci.md" >}}).
-The Gitlab runners in our setup make
+GitLab CI]({{< ref "/tech/veresta-gitlab-ci.md" >}}).
+The GitLab runners in our setup make
 use of Docker containers to run the CI jobs, so we'll need an extended
 container with SonarScanner installed. You can build the container
-using the `docker/Dockerfile` in the Gitlab project.
+using the `docker/Dockerfile` in the GitLab project.
 
 You'll also want to configure the SonarQube server URL and analysis
 token, e.g. by setting the `SONAR_HOST_URL` and `SONAR_TOKEN` CI
 variables in Gitlab. You can also [set up the Veresta
-license]({{< ref "/manual/veresta/_index.md#license" >}}) using Gitlab CI
+license]({{< ref "/manual/veresta/_index.md#license" >}}) using GitLab CI
 variables.
 
 ```yaml
@@ -143,7 +143,7 @@ veresta-check-sonarqube:
   # Note that the job succeeds if code validation itself runs
   # successfully, even if the validation reports errors.
   variables:
-    # Variables SONAR_HOST_URL and SONAR_TOKEN must be set in Gitlab CI
+    # Variables SONAR_HOST_URL and SONAR_TOKEN must be set in GitLab CI
     # After project creation in SonarQube, configure the project key in MY_SONAR_PROJECT_KEY
     SONAR_SCANNER_OPTS: "-server"
     MY_SONAR_PROJECT_KEY: "veresta-ci-project"
@@ -291,6 +291,6 @@ quality gate.
 In this article, we have demonstrated how you can **integrate Sigasi
 Veresta with SonarQube** to monitor the **quality** of your **HDL
 code**. The integration can be implemented easily from the **command
-line** or in a **CI pipeline in Jenkins or Gitlab**. Using a **quality
+line** or in a **CI pipeline in Jenkins or GitLab**. Using a **quality
 gate**, you can ensure that only quality-compliant code gets deployed
 into your product.

@@ -1,5 +1,5 @@
 ---
-title: Configuring Your Design Environment
+title: Personalize Sigasi Studio
 showinmenu: true
 weight: 19
 pager: true
@@ -16,7 +16,7 @@ You can set the default Verilog/SystemVerilog version in **Window > Preferences 
 Since [Sigasi Studio 3.2](/releasenotes/sigasi-3.02), you can also set the language version
 per project, folder, and file.
 In the Project Explorer, right-click your project, folder, or file; select **Properties > VHDL Version**
-or **Properties > (System)Verilog Version** and select the version via the dropdown menu.
+or **Properties > Verilog Version** and select the version via the dropdown menu.
 
 {{< figure src="/img/manual/project_verilog_version.png" >}}
 
@@ -34,7 +34,7 @@ We recommend you add this file to version control so you can share it with your 
 Your *existing project will **not** be modified*.
 If you want to update the Common Libraries for an existing project, right-click the project and select **Library Mapping > Reset Common Libraries**.
 Since [Sigasi Studio 3.3](/releasenotes/sigasi-3.03), you will get a warning if your Common Libraries do not match the VHDL version of your VHDL file.
-You can use the proposed quick fix to resolve the issue.
+You can use the proposed Quick Fix to resolve the issue.
 * If you want to compile VHDL 87 code, you should select the "1993" option. There are no checks to warn about constructs that were not supported in 1987, but that were introduced in 1993.
 * Sigasi Studio does not send the [Common Libraries](/manual/libraries#common-libraries) to an external compiler. It is expected that these libraries are pre-compiled.
 
@@ -119,7 +119,3 @@ To export, go to **File > Export… > General > Preferences**, and select **Key 
 # Formatting
 
 Formatting options for VHDL are documented in the [VHDL Code Formatting section of the Editor manual]({{< ref "/manual/eclipse/editor.md#configuration" >}}).
-
-# Finding More Options
-
-{{< todo >}}

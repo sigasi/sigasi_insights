@@ -255,7 +255,7 @@ With diagram support added, generating and exporting the documentation from VS C
 ## Linting Rule Configuration
 
 All Sigasi linting rules are now fully configurable per file, folder, or project.  
-{{< learn_more "/manual/vscode/views#preferences-view" >}}
+{{< learn_more "/manual/vscode/views#preference-view" >}}
 
 <ul uk-tab style="margin-left: 2em; margin-right: 2em">
   <li><a href="#">Light modern</a></li>
@@ -266,13 +266,13 @@ All Sigasi linting rules are now fully configurable per file, folder, or project
 
 <ul class="uk-switcher" style="margin-left: 2em; margin-right: 2em">
   <li>
-  {{< figure src="/img/releasenotes/5.4/preferences/light_modern.png" link="/img/releasenotes/5.4/preferences/light_modern.png" title="Preferences View" >}}
+  {{< figure src="/img/releasenotes/5.4/preferences/light_modern.png" link="/img/releasenotes/5.4/preferences/light_modern.png" title="Preference View" >}}
   </li><li>
-  {{< figure src="/img/releasenotes/5.4/preferences/solarized_light.png" link="/img/releasenotes/5.4/preferences/solarized_light.png" title="Preferences View" >}}
+  {{< figure src="/img/releasenotes/5.4/preferences/solarized_light.png" link="/img/releasenotes/5.4/preferences/solarized_light.png" title="Preference View" >}}
   </li><li>
-  {{< figure src="/img/releasenotes/5.4/preferences/tomorrow_night_blue.png" link="/img/releasenotes/5.4/preferences/tomorrow_night_blue.png" title="Preferences View" >}}
+  {{< figure src="/img/releasenotes/5.4/preferences/tomorrow_night_blue.png" link="/img/releasenotes/5.4/preferences/tomorrow_night_blue.png" title="Preference View" >}}
   </li><li>
-  {{< figure src="/img/releasenotes/5.4/preferences/monokai.png" link="/img/releasenotes/5.4/preferences/monokai.png" title="Preferences View" >}}
+  {{< figure src="/img/releasenotes/5.4/preferences/monokai.png" link="/img/releasenotes/5.4/preferences/monokai.png" title="Preference View" >}}
   </li>
 </ul>
 
@@ -376,7 +376,7 @@ Some {{< pill text="VHDL" >}} linting rules had their default severity adjusted.
 - {{< pill text="VHDL" >}} Fixed false positive `No matching subprogram` when using VHDL 2008 or 2019
 - {{< pill text="Verilog" >}} Fixed highlighting of backticks in preprocessor directives
 - {{< pill text="Verilog" >}} Added missing links (**Ctrl+click**) when two conditional blocks have the same label
-- {{< pill text="Verilog" >}} Removed duplicate [naming convention]({{< ref "/manual/eclipse/linting.md#naming-conventions" >}}) warning when using enum element ranges e.g. `enum {A[0:100]} e`
+- {{< pill text="Verilog" >}} Removed duplicate [naming convention]({{< ref "/manual/eclipse/linting.md#naming-conventions-and-header-comment-checks" >}}) warning when using enum element ranges e.g. `enum {A[0:100]} e`
 - {{< pill text="Verilog" >}} {{< pill text="Eclipse" >}} Fixed missing updates to the Class Hierarchy
 - {{< pill text="Eclipse" >}} Fixed qualified name in the [Find References]({{< ref "/manual/eclipse/editor.md#find-references" >}}) title
 - {{< pill text="Eclipse" >}} Fixed missing updates to the [Libraries View]({{< ref "/manual/eclipse/views.md#libraries-view" >}})
@@ -400,7 +400,7 @@ This release contains the following changes and bug fixes:
 On February 13, we released Sigasi Studio 5.4.2.
 This release contains the following changes and bug fixes:
 
-- {{< pill text="Verilog" >}} Fixed missing [naming convention]({{< ref "/manual/eclipse/linting.md#naming-conventions" >}}) warning on generate blocks
+- {{< pill text="Verilog" >}} Fixed missing [naming convention]({{< ref "/manual/eclipse/linting.md#naming-conventions-and-header-comment-checks" >}}) warning on generate blocks
 
 # System Requirements
 

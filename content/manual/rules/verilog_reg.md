@@ -7,7 +7,7 @@ In SystemVerilog, the `reg` datatype is deprecated. It is recommended to use the
 
 Sigasi Studio warns when the `reg` datatype is used in SystemVerilog.
 
-A [Quick fix](/manual/eclipse/linting/#quick-fixes) is available to convert `reg` into `logic`.
+A [Quick Fix](/manual/common/linting/#quick-fixes) is available to convert `reg` into `logic`.
 
 <pre>module my_module;
     <span class="info">reg</span>   deprecated;

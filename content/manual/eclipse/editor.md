@@ -1,5 +1,5 @@
 ---
-title: Sigasi Studio Editor
+title: Sigasi Studio for Eclipse Editor
 showinmenu: true
 weight: 6
 pager: true
@@ -522,22 +522,7 @@ Check out [the video]({{< ref "/screencasts/vhdl_2019_conditional_analysis.md" >
 
 ## Stuttering
 
-Stuttering is an editing technique popularized by Emacs, that lets you
-type certain things really fast. Stuttering means that you tap a certain
-key twice and it expands to something more complex. For example, press
-the period key **.** twice, and the editor will expand it to a right
-arrow `=>`. Stuttering works like double-clicking: if you type keys
-**slowly**, the stuttering mechanism will not be triggered.
-
-The following stuttering keys are available:
-
-| Keys      | Effect       |
-| --------- | ------------ |
-| **,,**    | `<=`         |
-| **..**    | `=>`         |
-| **;;**    | `:=`         |
-
-Stuttering can be disabled or enabled through the **Enable stuttering** option in the **Window \> Preferences \> Sigasi \> VHDL** menu.
+VHDL editors support [stuttering]({{< ref "/manual/common/editor.md#stuttering" >}}), which is enabled by default but can be toggled through the **Enable stuttering** option in the **Window \> Preferences \> Sigasi \> VHDL** menu.
 
 # Verilog and SystemVerilog Specific
 
@@ -627,9 +612,12 @@ and select whether `*.v` files are treated as **Verilog (IEEE 1364-2005)** or **
 
 ## Include Paths and Initial Preprocessor Definitions
 
-The fastest way to add an include path is to run the Quick Fix on \``include` errors in the editor.
-You can configure the include paths of your SystemVerilog projects in the **Verilog Preprocessor** property page.
-Right-click your project and select **Properties > Verilog Preprocessor**.  
+Sigasi attempts to resolve missing Include Paths automatically. However, it is highly recommended that the include paths be explicitly configured to ensure the include path order is accurate.
+There are several ways to add include paths. A Quick Fix is available on [\``include` warnings]({{< ref "manual/rules/verilog_missing_include_path.md" >}})
+in the editor which will automatically add the missing include path. Include paths can also be added through the
+`Add to Include Paths` context menu item in the [Project Explorer]({{< ref "manual/eclipse/views.md#project-explorer-view" >}}).
+You can configure the include paths in the **Verilog Preprocessor** property page as well.
+Right-click your project and select **Properties > Verilog Preprocessor**.
 Here you can `Add` and `Remove` include paths using the buttons on the right.
 You can also move the order of the include paths using the `Up` and `Down` buttons.
 The `Import...` and `Export...` buttons can be used to transfer a semicolon-separated (`;`) list of include paths from and to the clipboard.

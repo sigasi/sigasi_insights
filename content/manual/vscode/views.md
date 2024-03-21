@@ -68,11 +68,37 @@ These buttons are available in the Hierarchy View.
   * Sort by: Name
   * Sort by: Category
 
-## Preferences View
+## UVM Topology View
 
-{{< figure src="/img/vscode/VSCodePreferences.png" link="/img/vscode/VSCodePreferences.png" alt="Sigasi Preferences View" class="uk-align-right" width="400" >}}
+{{< xprt_only >}},{{< systemverilog_only >}}
 
-To open the Preferences View, right-click the project, folder, or file you want to configure in the Sigasi Projects View.
+{{< figure src="/img/vscode/VSCodeUVMTopology.png" link="/img/vscode/VSCodeUVMTopology.png" alt="Sigasi UVM Topology View" class="uk-align-right" width="250" >}}
+
+The UVM Topology View shows the verification environment's component topology.
+To view a component's topology, right-click its class name in the editor and select **Set as Root UVM Component** from the pop-up menu.
+This will populate the UVM Topology View with the structure of the selected component and its children, including their ports and virtual interfaces.
+
+As you make changes to the design, the UVM Topology View will be automatically refreshed.
+
+You can navigate to a topology element in an editor by **double-clicking** it. Right-clicking an element opens a context menu with more navigation options: you can open the type, declaration, or instantiation of a selected element in an editor.
+
+### Buttons in the UVM Topology View
+
+These buttons are available in the UVM Topology View:
+
+* ![Expand all icon](/img/manual/vscode/expand-all.svg) Expand all components
+* ![Collapse all icon](/img/manual/vscode/collapse-all.svg) Collapse all components
+
+Other available actions:
+
+* Sort components, ports, and interfaces alphabetically.
+* Sort components, ports, and interfaces by position in the source code.
+
+## Preference View
+
+{{< figure src="/img/vscode/VSCodePreferences.png" link="/img/vscode/VSCodePreferences.png" alt="Sigasi Preference View" class="uk-align-right" width="400" >}}
+
+To open the Preference View, right-click the project, folder, or file you want to configure in the Sigasi Projects View.
 This view allows you to configure all preferences for the selected project, folder, or file.
 
 * You can change the severity of [linting rules](#configuring-the-linting-rules) for your project.
@@ -92,11 +118,11 @@ Linting is largely shared between our products. This page only covers {{< pill t
 Linting rules can be configured per project, folder, or file by **right-clicking a project, folder, or file > Open Preference View** in the [Projects View](#sigasi-projects-view) and then selecting **Verilog Errors/Warnings** or **VHDL Errors/Warnings**.
 In the middle of the page, _Click here to enable_ to activate the rule configuration.
 
-{{< figure src="/img/vscode/activate_project_settings.png" link="/img/vscode/activate_project_settings.png" alt="Sigasi Preferences View" class="uk-align-center" >}}
+{{< figure src="/img/vscode/activate_project_settings.png" link="/img/vscode/activate_project_settings.png" alt="Sigasi Preference View" class="uk-align-center" >}}
 
 ## Graphical Views
 
-Refer to the [Common Documentation]({{< ref "manual/common/views.md#graphical-views" >}}) to learn more about the Block Diagram-, State Machines-, and Dependencies Views.
+Refer to the [Common Documentation]({{< ref "manual/common/views.md#graphical-views" >}}) to learn more about the Block Diagram-, State Machines-, Dependencies-, and UVM Diagram Views.
 
 ## Net Search View
 
@@ -137,3 +163,9 @@ The icon shown in the view describes the current active state of the members lis
 |![show fields icon](/img/manual/vscode/show-fields.svg)                          | Show Fields                   | Shows fields in the members list.
 |![hide fields icon](/img/manual/vscode/hide-fields.svg)                          | Hide Fields                   | Hides fields in the members list.
 |                                                                                 | Toggle Sort By Defining Class | Sorts members by the class in which they are defined.
+
+## Documentation View
+
+The **Documentation View** gives you a live preview of the [automatic documentation](/manual/vscode/documentation) Sigasi Studio can generate for your project.
+
+{{< figure src="/img/manual/vscode/documentationView.png" link="/img/manual/vscode/documentationView.png" alt="Sigasi Documentation View" class=uk-align-center >}}

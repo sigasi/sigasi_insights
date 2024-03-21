@@ -5,7 +5,7 @@ linting:
   - verilog
 ---
 
-On the [**Naming Conventions**](/manual/eclipse/linting/#naming-conventions) preference page (**Window \>
+On the [**Naming Conventions**](/manual/eclipse/linting/#naming-conventions-and-header-comment-checks) preference page (**Window \>
 Preferences \> Sigasi \> VHDL|Verilog/SystemVerilog \> Naming Conventions**) you can configure
 patterns to check the correct naming of your VHDL, Verilog, and SystemVerilog identifiers. Two patterns can be set for an identifier: a valid pattern that the name of the identifier should match, and an invalid pattern that the name shouldn't match.
 An identifier has to fulfill both conditions, so a name that matches both patterns is not valid.

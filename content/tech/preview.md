@@ -8,7 +8,7 @@ pager: true
 excludefromlatest: true
 ---
 
-For those users who want to get early access to the features and bugfixes of upcoming Sigasi Studio releases, we have set up an extra release channel, called `Sigasi Preview`.
+For users who want early access to the features and bug fixes of upcoming Sigasi Studio releases, we have set up an extra release channel called `Sigasi Preview`.
 
 The Sigasi Preview release channel offers more frequent releases than the official releases. This page gives an introduction to the most important changes.
 
@@ -36,25 +36,25 @@ SHA sums ([more info]({{< ref "/faq.md#how-can-i-check-a-sha-sum" >}})) can be c
 
 ## Sigasi Studio for VS Code
 
-You can download a `.vsix` file to [manually install](https://code.visualstudio.com/docs/editor/extension-marketplace#_install-from-a-vsix) in VS Code.
+You can download a `.vsix` file to install in VS Code [manually](https://code.visualstudio.com/docs/editor/extension-marketplace#_install-from-a-vsix).
 
 - Linux: <https://download.sigasi.com/vs-code/preview/latest/sigasi-vscode-linux.vsix>
 - Windows: <https://download.sigasi.com/vs-code/preview/latest/sigasi-vscode-win32.vsix>
 
-The SHA sum can be downloaded from <https://download.sigasi.com/vs-code/preview/latest/vscode-sha1.txt>.
+The SHA sum is downloadable from <https://download.sigasi.com/vs-code/preview/latest/vscode-sha1.txt>.
 
 # System Requirements
 
-- **Sigasi Studio standalone**
+- Sigasi Studio standalone supports:
   - Windows 10 or Windows 11 64-bit
-  - RedHat Enterprise Linux RHEL 7.9 64-bit or newer, including RHEL 8 and 9
-    - Sigasi Studio depends on `libXss.so` which can be obtained by installing `libXScrnSaver`
-    - Sigasi Studio depends on `webkit2gtk4.0` which can be installed through your package manager of choice
-  - More information on supported Linux OSes can be found [on the Eclipse website](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_19.xml#target_environments)
-- **Sigasi Studio as a plugin in your Eclipse installation**
+  - RedHat Enterprise Linux RHEL 8 or 9 64-bit
+    - Sigasi Studio depends on `libXss.so`, which is obtainable by installing `libXScrnSaver`
+    - Sigasi Studio depends on `webkit2gtk4.0`, which is installable through your package manager of choice
+  - You can find more information on supported Linux Operating Systems [on the Eclipse website](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_19.xml#target_environments)
+- Sigasi Studio as a plugin in your Eclipse installation:
   - Eclipse IDE 2021-03 up to and including Eclipse IDE 2023-03
   - Java JRE 11 or 17
-- **Sigasi Studio extension for VS Code**
+- Sigasi Studio [extension](https://www.sigasi.com/vscode/) for VS Code:
   - Windows 10 or Windows 11 64-bit
   - RedHat Enterprise Linux RHEL 8 or 9 64-bit
   - VS Code >= 1.77 and < 2.0
@@ -64,4 +64,4 @@ We recommend having at least **4GB of memory** and **about 1GB** of free disk sp
 
 # Feedback
 
-We welcome your feedback through the usual channels or the comments below. Note that comments on this page are cleared after each [official release](/releasenotes).
+We welcome your feedback through the usual channels or the comments below. Note that we clear the comments on this page after each [official release](/releasenotes).

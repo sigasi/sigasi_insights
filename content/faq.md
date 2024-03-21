@@ -204,7 +204,7 @@ A workspace holds all Sigasi Studio's meta-information (preferences, project inf
 
 Sigasi stores all project information in two files: `.project` and `.library_mapping.xml`, and one directory `.settings`. If you track these files you have everything you need.
 
-* `.project` describes all generic information on your project: which files belong to your project, …
+* `.project` describes all generic information on your project: which files belong to your project, etc.
 * `.library_mapping.xml` describes the mapping of your VHDL libraries.
 * `.settings` (if it exists) is a directory that contains additional settings
 
@@ -212,11 +212,9 @@ You can revert to older revisions of these files while Sigasi is running. Sigasi
 
 ## How can I hide files from the Project Explorer?
 
-If the project explorer shows the hidden files in from your revision control system (.hg or .svn directory), or there are too many files from Intel Quartus or AMD/Xilinx ISE that clutter the project explorer, you can hide those files from view:
+If the project explorer shows the hidden files in from your revision control system (`.hg` or `.svn` directory), or there are too many files from Intel Quartus or AMD/Xilinx ISE that clutter the project explorer, you can hide those files from view in a dialog opened by clicking the funnel icon:
 
-Select the View Menu (small triangle pointing down) **Customize View > Filters**.
-
-{{< figure src="/img/faq/customize-view.png" alt="Customizing the view" >}}
+{{< figure src="/img/faq/customize-view.svg" alt="Customizing the view" class="uk-align-center" >}}
 
 Now you can filter out hidden files (`.* resources`) or `All non VHDL Files`.
 
@@ -240,14 +238,14 @@ Yes, the Sigasi VHDL Eclipse editor supports all unicode characters, including J
 
 Many actions can be accessed using your mouse and using [Keyboard Shortcuts](/manual/keyshortcuts), e.g. copying text can be done either by clicking **Edit > Copy** or by pressing **Ctrl+C**. Of course, pressing a key combination is a lot faster than clicking in a menu.
 
-{{< figure src="/img/faq/keybinding-popup.png"  link="/img/faq/keybinding-popup.png" alt="Key binding pop-up" >}}
+{{< figure src="/img/faq/keybinding-popup.png"  link="/img/faq/keybinding-popup.png" alt="Key binding pop-up" class="uk-align-center" >}}
 
 Whenever you use your mouse for something that also has a key binding, this function tells you what the keyboard shortcut is. This will help you remember keyboard shortcuts for the actions you use most often.
 
 The easiest way to avoid getting these pop-ups --and gain a good deal of development speed-- is by using [Keyboard Shortcuts](/manual/keyshortcuts) when possible.
 If you still want to disable this feature, you can go to **Window > Preferences > General > Keys** and below **Show key binding when command is invoked**, uncheck the box for **Through mouse click**.
 
-{{< figure src="/img/faq/keybinding-config.png"  link="/img/faq/keybinding-config.png" alt="Key binding pop-up configuration" >}}
+{{< figure src="/img/faq/keybinding-config.svg"  link="/img/faq/keybinding-config.svg" alt="Key binding pop-up configuration" class="uk-align-center" >}}
 
 ## How can I insert tabs in Block Selection Mode
 
@@ -272,13 +270,13 @@ In some situations you may not want Sigasi's VHDL aware search (**Find Reference
 
 If you want textual search inside one file, you can use **Find** (Ctrl+F). This dialog has an easy "**Whole word**" option.
 
-{{< figure src="/img/faq/find.png" alt="Find/Replace dialog" >}}
+{{< figure src="/img/faq/find.png" alt="Find/Replace dialog" class="uk-align-center" >}}
 
-I you want to search for textual matches in the **entire workspace** with the **Search** dialog. This method does not have a 'Whole word' option.
+If you want to search for textual matches in the **entire workspace** with the **Search > Search...** dialog (Ctrl+H). This method does not have a 'Whole word' option.
 
 You can achieve the same effect by toggling the '**Regular Expression**' option and by adding a `\b` before and after the text you search. The `\b` stands for "word boundary" in regular expressions.
 
-{{< figure src="/img/faq/search.png" alt="Search dialog" >}}
+{{< figure src="/img/faq/search.png" alt="Search dialog" class="uk-align-center" >}}
 
 # Configure
 
@@ -305,7 +303,7 @@ To change the key binding (keyboard shortcuts) within Eclipse: **Window > Prefer
 
 Most settings can be changed in **Window > Preferences**. In this dialog, you can either browse the menus to the left, or search for an item in the search field in the top left.
 
-{{< figure src="/img/faq/settings1.png" alt="Preferences dialog" >}}
+{{< figure src="/img/faq/settings1.png" alt="Preferences dialog" class="uk-align-center" >}}
 
 ## Can I control the timing of the hovers/popups in Sigasi?
 
@@ -343,28 +341,27 @@ Depending on your exact coding rule, the Sigasi Linter can flag violations eithe
 
 Click the little triangle to the upper right-hand side of the [Problems View]({{< ref "/manual/eclipse/views.md#problems-view" >}}) and look at the Group By and Sort By menu.
 
-You can also filter which problem markers you will see in the Show menu; for example only errors and warnings for the current project.
-{{< figure src="/img/faq/organize_problem_markers.png" alt="Problems View" >}}
+{{< figure src="/img/faq/organize_problem_markers.svg" alt="Problems View" class="uk-align-center" >}}
 
 ## Does the Sigasi Studio's built-in Linter replace my code reviews?
 
 No.
 
-The Sigasi Pro linting functionality is aimed to free up time wasted in code review meetings; time wasted on trivial things like naming conventions and deprecated data types. We hope you can use this time to discuss complex design decisions and computation algorithms which have an impact on the product you are design.
+The Sigasi XL linting functionality is aimed to free up time wasted in code review meetings: time wasted on trivial things like naming conventions and deprecated data types. We hope you can use this time to discuss complex design decisions and computation algorithms which have an impact on the product you are designing.
 
 ## What kind of linting rules are possible?
 
 The answer to this question is not straightforward. However, some examples may help. We can implement (but are in not limited to) the following types of custom linting rules:
 
-* Naming conventions (e.g. constants should be in capitals, signals should start with "s",...)
-* Deprecated libraries, data types, constructs (e.g. don't use block statements; don't use `std_logic_unsigned`,...)
+* Naming conventions (e.g. constants should be in capitals, signals should start with "s", etc.)
+* Deprecated libraries, data types, constructs (e.g. don't use block statements; don't use `std_logic_unsigned`, etc.)
 * Project structure, file names (e.g. an entity should be in a file named "_e.vhd")
 * Required file headers
-* Maximum sizes of files, processes,...
+* Maximum sizes of files, processes, etc.
 * How to instantiate components/entities
-* Unused signals, constants,...
+* Unused signals, constants, etc.
 * Dead code
-* ... and much more
+* and much more...
 
 We cannot implement overly complex or fuzzy requirements, like:
 
@@ -380,25 +377,9 @@ Sigasi Studio does not attempt to check full correctness of your VHDL and Verilo
 
 As you design, you put your code through a funnel: first Sigasi finds the first 90% of errors in your code, without ever running a simulation. Next you compile with the simulator and you find another bunch of problems. In each successive step of your design flow, you find harder to track errors in your design. Sigasi just helps you get a big number of issues out of the way early on, so that you can concentrate on finding the hard problems down the road.
 
-{{< figure src="/img/faq/funnel_small.png" alt="Funnel" >}}
+{{< figure src="/img/faq/funnel_small.png" alt="Funnel" class="uk-align-center" >}}
 
 If you want to check more errors, enable the [Save-time Compilation](/manual/eclipse/tools#save-time-compilation).
-
-## How to 'Quick Fix' multiple problems at the same time?
-
-Quick Fixes are a really useful Sigasi Studio feature to resolve common problems. By default you apply a Quick Fix to one problem at a time.
-
-Although the procedure is not very elegant, there is a way to apply multiple Quick Fixes at the same time. Note that this procedure is currently only supported for missing signal declarations.
-
-Procedure:
-
-1. Select all problems you want to fix in the [Problems View]({{ ref "/manual/eclipse/views.md#problems-view" >}})
-1. In the context menu, select **Quick Fix**
-1. Make sure you are dealing with identical solutions to the same problem.
-   For example: five "declare signal" Quick Fixes
-1. Click **Finish** in the Dialog
-
-{{< figure src="/img/faq/quick_fix_all_code_menu.png" alt="Quick Fix through the Problems View" >}}
 
 # Features
 
@@ -441,11 +422,6 @@ If you see warnings that are not useful for you, you can do one of the following
 * **Suppress one marker**: Or you can suppress markers on a given line, using the [Eclipse Marker Manager](/tech/eclipse-marker-manager) plugin.
 
 # Troubleshooting
-
-## "Show In -> System Explorer" does not work on RedHat Linux 6
-
-On preference page **General > Workspace** you can configure the command that is used to open files with the System Explorer. The default Linux command does not work on older linux systems.
-On RedHat 6 linux, you can use the nautilus command: `nautilus "${selected_resource_parent_loc}"` ([More info](https://help.eclipse.org/latest/index.jsp?topic=/org.eclipse.platform.doc.user/reference/ref-9.htm)).
 
 ## Sigasi switches my keyboard layout! Did I find a bug?
 

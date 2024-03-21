@@ -75,7 +75,7 @@ Path separators in the `run.py` file need a `/`, also on Windows.
 For SystemVerilog projects you need to manually add the VUnit include files to your projects:
 
 * Right click your project, select **New > Folder > Advanced > Link to alternate location** and add `VUNIT/verilog/include` as location.
-* Use the quick-fix on the failing `` `include "vunit_defines.svh"`` to add the include folder to the include paths.
+* Use the Quick Fix on the failing `` `include "vunit_defines.svh"`` to add the include folder to the include paths.
 
 {{< figure src="/img/manual/vunit_verilog_include.png"
            alt="Add verilog include path"

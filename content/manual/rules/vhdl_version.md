@@ -7,7 +7,7 @@ Sigasi Studio flags an error if a mismatch exists between the selected
 VHDL language versions of a project, VHDL [common libraries](/manual/libraries/#common-libraries),
 and individual design files (rule 170).
 
-Applying the associated quick fix will upgrade the version of the project,
+Applying the associated Quick Fix will upgrade the version of the project,
 or - if it's already set up correctly - it'll upgrade the version of the file with the outdated version.
 The `Common Libraries` will automatically be updated to the upgraded version.
 

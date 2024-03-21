@@ -18,7 +18,7 @@ Sigasi Veresta is the Command Line Interface (CLI) that brings the Sigasi techno
 
 ## License
 
-In order to use Sigasi Veresta you will need a license. The license can be configured by either:
+In order to use Sigasi Veresta, you will need a license. The license can be configured by either:
 
 - A license file in your home directory, named `.sigasi.lic`
 - Using an environment variable:
@@ -32,7 +32,7 @@ If the license is not available, Veresta will start polling the license server a
 # Installation
 
 To install Sigasi Veresta, obtain a build ZIP for your operating system and extract it.
-Then use either `veresta` (Linux) or `veresta.bat` (Windows).
+Then, use either `veresta` (Linux) or `veresta.bat` (Windows).
 
 # Usage
 
@@ -56,6 +56,7 @@ Logging Options:
 Commands:
   <b>verify</b>  Validate the project.
   <b>document</b>  Export project documentation.
+  <b>compilation-order</b>  Export project compilation order.
 </pre>
 
 ## Logging Options
@@ -70,7 +71,7 @@ To turn on verbose output, use any of the following flags.
 # Verify
 
 The `verify` command allows you to check an entire Sigasi project for issues.
-Issues can be reported in different formats such as **plain text**, **JSON**, or **XML**.
+Issues can be reported in different formats, such as **plain** text**, **JSON**, or **XML**.
 
 <pre>
 <span class="no-select">$ </span>veresta verify --help
@@ -101,7 +102,7 @@ Execution Options:
 # Document
 
 The `document` command allows you to create documentation for a Sigasi project.
-The documentation can be split into pages, it can include problem information, and generated diagrams.
+The documentation can include problem information and generated diagrams and can be split into pages.
 
 <pre>
 <span class="no-select">$ </span>veresta document --help
@@ -135,6 +136,28 @@ Export Options:
                                units per page.
   <span style="color:#C4A000">-T</span>,<span style="color:#C4A000"> --threads</span>=&lt;threads&gt;    Number of parallel export threads. Defaults to
                                maximum available.
+</pre>
+
+# Compilation Order
+
+The `compilation-order` command allows you to generate a CSV file of all HDL files in your project, sorted in the correct compilation order.
+<pre>
+<span class="no-select">$ </span>veresta compilation-order --help
+Usage: <b>veresta compilation-order</b> [OPTIONS] <span style="color:#C4A000">PROJECT</span>
+Export project compilation order.
+      <span style="color:#C4A000">PROJECT</span>                Path of a project root folder.
+  <span style="color:#C4A000">-h</span>, <span style="color:#C4A000">--help</span>                 Show this help message and exit.
+  <span style="color:#C4A000">-V</span>, <span style="color:#C4A000">--version</span>              Print version information and exit.
+Logging Options:
+<span style="color:#C4A000"> </span> <span style="color:#C4A000">-v</span>, <span style="color:#C4A000">--verbose</span>              Output more to the console.
+<span style="color:#C4A000"> </span>     <span style="color:#C4A000">--debug</span>                Output debug information to the console.
+Project Options:
+  <span style="color:#C4A000">-P</span>, <span style="color:#C4A000">--path</span>=<i>&lt;key=value&gt;</i>     Adds a custom path variable. Can be used multiple
+                               times to add more variables.
+Export Options:
+  <span style="color:#C4A000">--top-level</span>=&lt;qualifiedName&gt;
+                             Export documentation with the given qualified name
+                               as top level.
 </pre>
 
 ## Project Options
@@ -178,7 +201,7 @@ Note that Veresta does not support resource filters in the `.project` file.
 #### Plain
 
 By default, the `verify` command will output a single line of information for each issue found.
-This includes the path, line and column where the issue is located, the severity and a message.
+This includes the path, line, and column where the issue is located, the severity, and a message.
 If you want to use this format but without coloring, you can use the `--plain` flag.
 
 <pre><b>hdl/boards/vfc/rtl/IRQ_Generator_Top.vhd</b>:147:17: <span style="color:#C4A000">WARNING</span>: Incorrect array size in assignment: expected (&lt;g_wb_data_width&gt;) but was (&lt;64&gt;)
@@ -195,7 +218,7 @@ If you want to use this format but without coloring, you can use the `--plain` f
 
 #### JSON
 
-If you want more detailed information for each issue you can use the JSON output format by using the `--json` flag.
+If you want more detailed information for each issue, you can use the JSON output format by using the `--json` flag.
 
 ```json
 {
@@ -246,7 +269,7 @@ recordIssues(
 
 ### Output to file
 
-To save the output to a file you can use one of the output options (`--out` or `-o`) or, on Linux, redirect the output using `>`.
+To save the output to a file, you can use one of the output options (`--out` or `-o`) or, on Linux, redirect the output using `>`.
 
 <pre>
 <span class="no-select">$ </span>veresta verify -o markers.txt .
@@ -282,27 +305,31 @@ If you do want to include suppressed issues in the output, add the `--include-su
 
 ## Export Options
 
-### Documentation options
+### Documentation Options
 You can export the documentation for a given top level qualified name using `--top-level=qualified.name`. For example: `--top-level=work.entity.architecture`.  
 The documentation can also be split into multiple pages with the option `--design-units-per-page=unitsPerPage`.
 The summarized project information is on the first page. Subsequent pages provide more detailed insights about a limited 
 amount of design units per page, as specified.
 
-### Problem information
+### Problem Information
 
 Problem information is not included by default in the generated documentation. It can be added using `--include-problems`.
 Suppressed problems can also be added with the additional flag `--include-supressed`.
 
-### Diagram generation
+### Diagram Generation
 
 By default, diagrams are included as embedded SVGs in the generated documentation.
 This can be changed to generate separate files that are linked into the HTML using `--diagrams=linked`.
 It can also be disabled using `--diagrams=none`.
 If the project root contains a file named `sigasi-doc.css` it will be copied to the target folder and 
-included into the HTML, embedded or linked according to the `--diagrams` value.    
+included in the HTML, embedded or linked according to the `--diagrams` value.    
 Diagram generation is multi-threaded by default, this can be adjusted using `-T` or `--threads`.
 
-# Exit codes
+### Compilation Order Options
+You can export the compilation order for a given top level by using `--top-level=qualified.name`. For example: `--top-level=work.entity.architecture`.   
+Adding this option will generate the compilation order list in a file named _toplevel_order.csv_.   
+
+# Exit Codes
 
 Sigasi Veresta should always finish with a `0` exit code.
 If this is not the case, refer to the following table.
@@ -315,13 +342,14 @@ If this is not the case, refer to the following table.
 | `7`  | Licensing error. Make sure a valid license is available. |
 | `16` | Verification severity threshold reached.                 |
 | `17` | Documentation export failed.                             |
+| `18` | Compilation export failed.                               |
 
-# Veresta usage in Continuous Intrgration (CI)
+# Veresta Usage in Continuous Integration (CI)
 
 Check out the following articles with step-by-step examples of how to use Veresta in CI:
 
-* [Veresta Code Verification in Gitlab CI]({{< ref "/tech/veresta-gitlab-ci.md" >}})
+* [Veresta Code Verification in GitLab CI]({{< ref "/tech/veresta-gitlab-ci.md" >}})
 * [Veresta Code Verification in Jenkins CI]({{< ref "/tech/veresta-jenkins.md" >}})
 * [Monitoring HDL code quality with Sigasi Veresta and SonarQube]({{< ref "/tech/veresta-document-ci.md" >}})
 * [Veresta as a Git Commit Hook]({{< ref "/tech/veresta-gitlab-commit-hook.md" >}})
-* [Veresta Documentation with Jenkins and Gitlab CI]({{< ref "/tech/veresta-document-ci.md" >}})
+* [Veresta Documentation with Jenkins and GitLab CI]({{< ref "/tech/veresta-document-ci.md" >}})

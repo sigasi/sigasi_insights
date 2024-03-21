@@ -101,7 +101,7 @@ XL linting rules require a {{< xl >}} or {{< xprt >}} license.
 | {{< severity info 0 >}}    | [Parameters must have a default value]({{< ref "../rules/verilog_parameters/#parameters-without-a-default-value" >}})                                                       |  19 |
 | {{< severity ignore 0 >}}  | [Verilog code line too long]({{< ref "../rules/verilog_style/#verilog-code-line-too-long" >}})                                                                              |  20 |
 | {{< severity ignore 0 >}}  | [Tabs are not allowed]({{< ref "../rules/verilog_style/#tabs-are-not-allowed" >}})                                                                                          |  21 |
-| {{< severity ignore 0 >}}  | [File header comment does not match required pattern]({{< ref "../rules/verilog_style/#file-header-comment-does-not-match-required-pattern" >}})                            |  22 |
+| {{< severity ignore 0 >}}  | [File header comment does not match required pattern]({{< ref "../rules/check-header-comment" >}})                                                                          |  22 |
 | {{< severity warning 0 >}} | [Named port connections have to be used for all instances with many ports]({{< ref "../rules/verilog_associations/#named-parameter-and-port-connections-have-to-be-used-for-all-instances-with-many-parameters--ports" >}}) |  24 |
 | {{< severity warning 0 >}} | [Named parameter overrides have to be used for all instantiations with many parameters]({{< ref "../rules/verilog_associations/#named-parameter-and-port-connections-have-to-be-used-for-all-instances-with-many-parameters--ports" >}}) |  26 |
 | {{< severity warning 0 >}} | [No event control at the top of `always` construct]({{< ref "../rules/verilog_process" >}})                                                                                 |  27 |
@@ -140,6 +140,7 @@ XL linting rules require a {{< xl >}} or {{< xprt >}} license.
 | {{< severity warning 0 >}} | [Empty port]({{< ref "../rules/verilog_empty_non_ansi_port" >}})                                                                                                            | 142 |
 | {{< severity warning 0 >}} | [Vector as edge event expression]({{< ref "../rules/verilog_vector_as_edge_expression" >}})                                                                                 | 143 |
 | {{< severity ignore 0 >}}  | [Implicit vector to boolean conversion]({{< ref "../rules/verilog_vector_to_boolean_conversion" >}})                                                                        | 144 |
+| {{< severity warning 1 >}} | [Missing include path in preprocessor configuration]({{< ref "../rules/verilog_missing_include_path" >}})                                                                   | 155 |
 
 ## UVM Linting Rules (XPRT preview) {#uvm-linting-rules}
 

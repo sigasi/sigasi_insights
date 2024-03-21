@@ -69,4 +69,8 @@ VS Code supports user-defined code snippets as explained [here](https://code.vis
 
 {{< figure src="/img/vscode/VSCodeStickyScroll.gif" alt="Sticky scroll in VS Code" width="700" >}}
 
-You can use the sticky scroll to navigate through your HDL code more easily. This setting can be enabled with the key `editor.stickyScroll.enabled`
+You can use the sticky scroll to navigate through your HDL code more easily. This configuration can be enabled with the key `editor.stickyScroll.enabled`
+
+## Stuttering
+
+VHDL editors support [stuttering]({{< ref "/manual/common/editor.md#stuttering" >}}), which is enabled by default but can be toggled using the configuration option **Enable stuttering** with the key `sigasi.vhdl.stuttering`.

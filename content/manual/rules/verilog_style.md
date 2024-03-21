@@ -53,9 +53,9 @@ the workspace or project linting settings (rule 21).
 
 Many coding standards require the presence of a header comment in every file, matching a certain format. Sigasi Studio can check whether the file
 header comment matches a pattern (rule 22). By default, the pattern is empty which disables this check.
-The pattern can be configured through **Window > Preferences > Sigasi > (System)Verilog > Naming conventions > File header** and uses
+The pattern can be configured through **Window > Preferences > Sigasi > (System)Verilog > Header Comments > File header** and uses
 the [regex syntax](https://sigasi.com/app/regex).
-More information on file header comment checking is available [here](/manual/eclipse/linting/#naming-conventions).
+More information can be found on the {{< page "/manual/rules/check-header-comment.md" >}} configuration page.
 
 ### Report encrypted regions
 

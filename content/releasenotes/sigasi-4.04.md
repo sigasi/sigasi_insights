@@ -20,7 +20,7 @@ Since [Sigasi Studio 3.8]({{< ref "/releasenotes/sigasi-3.08.md" >}}) Sigasi Stu
 {{< figure alt="No titles in comments" src="/img/releasenotes/4.4/comments_with_separators.png" title="No titles in comments" link="/img/releasenotes/4.4/comments_with_separators.png" >}}
 
 We also changed the way we handle comments in the **header comment** naming convention check. In earlier versions of Sigasi we stripped the comment symbol (`--`) and leading whitespace from the text that was checked. Starting with [Sigasi Studio 4.4]({{< ref "/releasenotes/sigasi-4.04.md" >}}) the raw string of the header comment is checked to allow for very strict compliance checking.
-Note that this means that when a new line is matched, users should use `\r?\n` or the newly introduced `\\R` to make sure the naming conventions work on all platforms. ([documentation]({{< ref "/manual/eclipse/linting#check-header-comment" >}})).
+Note that this means that when a new line is matched, users should use `\r?\n` or the newly introduced `\\R` to make sure the naming conventions work on all platforms. ([documentation]({{< ref "/manual/eclipse/linting#naming-conventions-and-header-comment-checks" >}})).
 
 # SystemVerilog Class Hierarchy View
 

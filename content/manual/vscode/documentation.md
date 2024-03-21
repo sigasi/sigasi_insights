@@ -1,7 +1,7 @@
 ---
 title: "Documentation Generation"
 showinmenu: true
-weight: 5
+weight: 6
 pager: true
 aliases:
   - /vscode/documentation/
@@ -14,6 +14,7 @@ The Sigasi documentation generator has the following advantages:
 * **No special coding requirements**: the plain comments in your code are extracted for the documentation; no need for special annotations. Sigasi uses the same [comment association]({{< ref "/manual/common/documentation.md#comment-association" >}}) as the hover provider. So, to document a `port`, you append a comment to a port declaration. To document an `architecture`, you put the comment just on top of the architecture.
 * **All included**. All documentation processing is done in Sigasi/Eclipse. So you do *not* need to install extra tools.
 * **Fully hyperlinked**. If you export the documentation, you get a fully hyperlinked document.
+* **[Live preview]({{< ref "/manual/vscode/views.md#documentation-view" >}})**: you can see what the documentation will look like while you type your code and comments.
 
 # Export Documentation
 
@@ -28,5 +29,5 @@ To export documentation, follow the steps below:
 
 You can read more about all the customization options [here]({{< ref "/manual/common/documentation.md" >}}).
 
-**Note:** Diagram rendering is currently not supported in Remote SSH setups.
+**Note:** Diagram rendering is not supported in Remote SSH setups in versions earlier than 5.5.0.
 

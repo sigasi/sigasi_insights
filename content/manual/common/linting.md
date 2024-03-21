@@ -43,7 +43,7 @@ for more details on their effect.
 Depending on your preferred platform, refer to the following pages for more detailed instructions
 
 * [Eclipse]({{< ref "/manual/eclipse/linting.md#configuring-the-linting-rules" >}})
-* [VS Code]({{< ref "/manual/vscode/views.md#preferences-view" >}})
+* [VS Code]({{< ref "/manual/vscode/views.md#preference-view" >}})
 
 ### Project-specific Linting Rule Configuration
 
@@ -72,8 +72,8 @@ You can limit the suppression to a specific problem by adding a prefix of the pr
 Changes through Sigasi version:
 
 * Since [Sigasi Studio 4.2](/releasenotes/sigasi-4.02) the `@suppress` comment also suppresses errors.
-* Since [Sigasi Studio 4.3](/releasenotes/sigasi-4.03) problems have a quick fix to automatically add the `@suppress` comment with a matching problem message prefix.
-* Since [Sigasi Studio 5.4](/releasenotes/sigasi-5.04) it is possible to suppress all the problems file-, library-, or project-wide through a single quick fix.
+* Since [Sigasi Studio 4.3](/releasenotes/sigasi-4.03) problems have a Quick Fix to automatically add the `@suppress` comment with a matching problem message prefix.
+* Since [Sigasi Studio 5.4](/releasenotes/sigasi-5.04) it is possible to suppress all the problems file-, library-, or project-wide through a single Quick Fix.
 
 ## No Linting for Common Libraries
 
@@ -148,5 +148,10 @@ using a `#`.
 237/params/fsm_state_type//test/top.vhd=ARRAY_OF_LOGIC
 236/params/allowed_literal_pattern/<project>=0|1
 ```
+
+# Quick Fixes
+
+Some of the linting violations can be automatically resolved through *Quick Fixes*. Whenever possible, a bulk mode Quick Fix
+is also offered to resolve problems file-, library-, or project-wide.
 
 [RE2/J]: https://www.sigasi.com/app/regex

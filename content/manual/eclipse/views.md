@@ -182,13 +182,13 @@ The **Bookmarks View** can be used to delete bookmarks or navigate to the editor
 
 # Graphical Views
 
-Refer to the [Common Documentation]({{< ref "manual/common/views.md#graphical-views" >}}) to learn more about the Block Diagram-, State Machines-, and Dependencies Views.
+Refer to the [Common Documentation]({{< ref "manual/common/views.md#graphical-views" >}}) to learn more about the Block Diagram-, State Machines-, Dependencies-, and UVM Diagram Views.
 
 ## Documentation View
 
 The **Documentation View** gives you a live preview of the [automatic documentation](/manual/eclipse/documentation) Sigasi Studio can generate for your project.
 
-{{< figure src="/img/manual/documentationview.png" class=uk-align-center >}}
+{{< figure src="/img/manual/documentation_view_eclipse.png" class=uk-align-center >}}
 
 # Net Search View
 
@@ -251,6 +251,32 @@ The member list shows all members of the class that is currently selected in the
 ![inherited members icon](/img/icons/inher_co.png) | Show Inherited Members | Shows or hides all members inherited from superclasses.
 ![sort icon](/img/icons/definingtype_sort_co.png)  | Sort By Defining Class | Sorts members by the class in which they are defined.
 ![hide icon](/img/icons/fields_co.png)             |  Hide Fields           | Hides all fields in the members list.
+
+# UVM Topology View
+
+{{< xprt_only >}},{{< systemverilog_only >}}
+
+The UVM Topology View shows the verification environment topology starting from a selected root UVM component. To choose a root component, open a file and right-click on a component's `class` name. Then click **Set as Root UVM Component**. Alternatively, you can click the **Select Root UVM Component** button in the UVM Topology View to select the root component via a [Dialog](#select-root-uvm-component-dialog). This will populate the UVM Topology View with the structure of the selected component and its children, including their ports and virtual interfaces.
+
+The UVM Topology View automatically refreshes itself when you save your design files. 
+
+You can navigate to a topology element in an editor by **double-clicking** it. **Right-clicking** on an element opens a context menu with more navigation options: you can open the type, declaration, or instantiation of the selected element in an editor. It's also possible to open the element's [class hierarchy](#class-hierarchy-view) or set the selected component as root.
+
+{{< figure alt="UVM Topology View" src="/img/manual/uvm-topology-view.png" class=uk-align-center width=460 >}}
+
+These buttons are available in the UVM Topology View:
+
+|                                                               | Command                   | Description
+|:-------------------------------------------------------------:|---------------------------|------------
+| {{< icon src="/img/eclipse/expandall.png" width="20" >}}      | Expand All                | Expand all component nodes
+| {{< icon src="/img/eclipse/alphab_sort_co.gif" width="20" >}} | Sort Alphabetically       | Switch between sorting of components, ports, and interfaces by their position in the source code or alphabetically.
+| {{< icon src="/img/eclipse/set_top_level.png" width="20" >}}  | Select Root UVM Component | Opens a dialog to select the Root UVM Component.
+
+## Select Root UVM Component Dialog
+
+This dialog allows you to select a root UVM component for the UVM Topology and Diagram views. You can use the filter field to quickly search for a specific component.
+
+{{< figure alt="UVM Topology View" src="/img/manual/select-root-uvm-component-dialog.png" class=uk-align-center width=760 >}}
 
 # Console View
 

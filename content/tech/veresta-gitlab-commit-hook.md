@@ -25,7 +25,7 @@ comply with coding guidelines?).
 In a number of previous articles, we have demonstrated how to use
 Veresta in [Continuous Integration
 (CI)](https://en.wikipedia.org/wiki/Continuous_integration) in
-[Jenkins]({{< ref "veresta-jenkins" >}}) and [Gitlab CI]({{< ref "veresta-gitlab-ci.md" >}}).  In
+[Jenkins]({{< ref "veresta-jenkins" >}}) and [GitLab CI]({{< ref "veresta-gitlab-ci.md" >}}).  In
 this configuration, Veresta verifies your project's HDL code when
 it's pushed to the Git repository.  But wouldn't it be better to prevent
 flawed code from reaching the repository at all?

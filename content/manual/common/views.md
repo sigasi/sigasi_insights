@@ -102,6 +102,29 @@ In Sigasi Studio For {{< pill text="Eclipse" >}}, the Dependencies View can be *
 
 You can **export** this diagram for documentation by clicking the save icon.
 
+## UVM Diagram View
+
+{{< xprt_only >}},{{< systemverilog_only >}}
+
+The **UVM Diagram View** displays a graphical representation of the UVM component structure through an intuitive graphical display. It visualizes the relationships between components, their hierarchical arrangement in the topology, the connections between ports, and the referenced design interfaces. The dynamic expansion of the diagram allows for efficient tracking of connections throughout the UVM component structure.
+
+Similar to the UVM Topology View (read more about the view in Sigasi Studio For [Eclipse]({{< ref "/manual/eclipse/views.md#uvm-topology-view" >}}) or [VS Code]({{< ref "/manual/vscode/views.md#uvm-topology-view" >}})), this diagram offers a set of navigation options for each element (both by double-clicking on elements and through the context menu), allowing you to access element's types, declarations, or instantiations. Double-clicking on a port connection line navigates to the corresponding connect method call in the source code.
+
+<ul uk-tab style="margin-left: 2em; margin-right: 2em">
+  <li><a href="#">Eclipse</a></li>
+  <li><a href="#">VS Code</a></li>
+</ul>
+
+<ul class="uk-switcher" style="margin-left: 2em; margin-right: 2em">
+  <li>
+  {{< figure src="/img/manual/uvm-diagram-view.png" >}}
+  </li><li>
+  {{< figure src="/img/manual/vscode/VSCodeUVMDiagram.png" >}}
+  </li>
+</ul>
+
+Like other diagram views, you can find buttons on the toolbar to **Zoom to Fit** and export the UVM Diagram as an image (both **SVG** and **PNG** are supported).
+
 # Net Search View
 
 {{< vhdl_only >}}
@@ -109,7 +132,7 @@ You can **export** this diagram for documentation by clicking the save icon.
 With **Net Search**, you can find *loads* and *drivers* of a net.
 A *net* is defined as a signal or port and all other signals and ports
 that are directly connected to it. The *loads* are where you read the
-value of the net and the drivers are where you write to this net.
+value of the net, and the drivers are where you write to this net.
 
 To find the entire net of a signal or port, place your cursor on the
 identifier and right-click. Now select **Find Net**. Alternatively, you

@@ -1,8 +1,9 @@
 {{- $ref := .Get 0 -}}
+{{- $fragment := .Get 1 -}}
 {{- $page := .Site.GetPage "page" $ref -}}
 {{- if $page -}}
 {{- with $page -}}
-<a href="{{ .Permalink }}">{{ .Title }}</a>
+<a href="{{ .Permalink }}{{ $fragment }}">{{ .Title }}</a>
 {{- end -}}
 {{- else -}}
 {{ errorf "%q not found in %q!" $ref .Page }}

@@ -58,20 +58,22 @@ can terminate a simulation by clicking the **Stop** icon
 When you launch a simulation, Sigasi Studio opens a new console in the [Console View]({{< ref "/manual/eclipse/views.md#console-view" >}})
 You can switch between different consoles by clicking the ![icon console display](/img/icons/icon_con_disp_console.png) icon.
 
-{{< figure src="/img/manual/launch_simulation_console.png" >}}
+{{< figure src="/img/manual/launch_simulation_console.svg" class="uk-align-center" >}}
 
 ## Configure external compiler
 
 You can configure the external compiler settings by clicking **Window \>
-Preferences \> Sigasi \> Toolchains**. There is a sub-page for each
-supported toolchain. Before you can enable a toolchain on the main page,
-you must specify its installation path. Clicking **Restore Defaults** on
-a Toolchain page will automatically fill in the installation path if
+Preferences \> Sigasi \> Toolchains**. There is a subpage for each
+supported toolchain,
+which you can find in the page tree on the left or by clicking on the wrench icon.
+Before you can enable a toolchain on the main page,
+you must specify its installation path on its subpage. Clicking **Restore Defaults** on
+a toolchain subpage will automatically fill in the installation path if
 your toolchain is installed on a default location. After you press
 **Apply**, you can select your toolchain on the **Sigasi \> Toolchains**
 page.
 
-{{< figure src="/img/manual/toolchains-settings.png" >}}
+{{< figure src="/img/manual/toolchains-settings.png" class="uk-align-center" >}}
 
 For some toolchains you can specify extra command line arguments. Note
 that these preference pages support [Eclipse
@@ -81,7 +83,7 @@ which allow you to more easily share settings in a team.
 Environment variables are supported too.
 If you want to use the `$HOME` environment variable, you can call this variable by typing `${env_var:HOME}`.
 
-{{< figure src="/img/manual/toolchains-settings-rivierapro.png" >}}
+{{< figure src="/img/manual/toolchains-settings-rivierapro.png" class="uk-align-center" >}}
 
 ## List of toolchains
 
@@ -145,9 +147,9 @@ recompilation.
 
 All output from external compilers is logged in Sigasi Studio's console view
 for your convenience. Paths to your design files are automatically
-converted to hyperlinks to ease naviation.
+converted to hyperlinks to ease navigation.
 
-{{< figure src="/img/manual/vcom-console.png" >}}
+{{< figure src="/img/manual/vcom-console.png" class="uk-align-center" >}}
 
 The table below lists some examples of VHDL errors that are detected in
 Sigasi Studio at type time, at save time and with the external compiler
@@ -193,12 +195,12 @@ You can test your tool configuration with the **Run** button.
 The following example screenshot shows how to set up configuration to
 run a `simulate.sh` script from within Sigasi Studio.
 
-{{< figure src="/img/manual/tutorialconfiguration.png" >}}
+{{< figure src="/img/manual/tutorialconfiguration.png" class="uk-align-center" >}}
 
 The following example screenshot shows how to set up a configuration to
 run `make clean` on a Linux machine.
 
-{{< figure src="/img/manual/makeconfiguration.png" >}}
+{{< figure src="/img/manual/makeconfiguration.png" class="uk-align-center" >}}
 
 To run the external tool just select the configuration from the dropdown
 menu on the ![](/img/icons/externaltool.png)-icon. You can rerun the
@@ -235,7 +237,7 @@ Builders**.
 
 Click **New…** and the builder configuration window will pop-up:
 
-{{< figure src="/img/manual/makefiles_buildersoverview.png" >}}
+{{< figure src="/img/manual/makefiles_buildersoverview.png" class="uk-align-center" >}}
 
 You will be asked to select a configuration type:
 select ![](/img/icons/externaltool.png) **Program**.
@@ -247,24 +249,39 @@ Next, configure the builder in a configuration window pop-up window:
 * **Working Directory**: The working directory for your program. For example, click **Browse Workspace…** and select the root folder of your project.
 * **Arguments**: The arguments to your program, e.g.  `--makefile=Makefile.vsim all`.
 
-{{< figure src="/img/manual/makefiles_builderconfigurationmain.png" >}}
+{{< figure src="/img/manual/makefiles_builderconfigurationmain.png" class="uk-align-center" >}}
 
 With the default settings the ModelSim Makefile will only be run during
 a manual build or after a "Clean". To make sure Sigasi Studio runs `make`
 every time you save a change to a file, click the **Build Options** tab
 and check the **During auto builds** checkbox.
 
-{{< figure src="/img/manual/makefiles_builderconfigurationoptions.png" >}}
+{{< figure src="/img/manual/makefiles_builderconfigurationoptions.png" class="uk-align-center" >}}
 
 After configuration, the new builder will appear in the builder list.
 
-{{< figure src="/img/manual/makefiles_buildersoverview.png" >}}
+{{< figure src="/img/manual/makefiles_buildersoverview2.png" class="uk-align-center" >}}
 
 When you close the builder configuration dialog windows, the new builder
 will automatically be run. In our example of a Modelsim Makefile,
 Modelsim's messages will appear in the console view.
 
-{{< figure src="/img/manual/makefiles_consoleoutput.png" >}}
+{{< figure src="/img/manual/makefiles_consoleoutput.png" class="uk-align-center" >}}
+
+{{< comment >}}
+cheat for screenshot by putting this Makefile in /tmp and add it as tool named ModelSim
+all:
+	@echo 'vcom -2008 -work pixlib -quiet packages/pixelbuffer_pkg.vhd'
+	@echo 'vcom -2008 -work libimage -quiet libimage_src/image.vhd libimage_src/blockimage.vhd libimage_src/image_serializer.vhd'
+	@echo 'vcom -2008 -quiet -warning vcom-1272 step_1_dut_core.vhd'
+	@echo '** Warning: step_1_dut_core.vhd(104) (vcom-1272) Length of expected is 32; length of actual is 34.'
+	@echo '** Warning: step_1_dut_core.vhd(137) (vcom-1272) Length of expected is 17; length of actual is 16.'
+	@echo '** Warning: step_1_dut_core.vhd(138) (vcom-1272) Length of expected is 17; length of actual is 16.'
+	@echo 'vcom -2008 -quiet -warning vcom-1272 step_3_pixelbuffer.vhd'
+	@echo 'vcom -2008 -quiet -warning vcom-1272 step_5_dut_engine.vhd'
+	@echo 'vcom -2008 -quiet -warning vcom-1272 step_2_dut_top.vhd'
+** stop bold highlighting pls
+{{</ comment >}}
 
 You can add as many extra builders as you want. This can be useful for
 additional linting tools or code generators.
@@ -274,7 +291,7 @@ additional linting tools or code generators.
 If you are using Intel Quartus 12.1 or higher, you can use Sigasi Studio as
 preferred HDL editor.
 
-If you use the Sigasi Studio/ Intel Quartus integration, you can
+If you use the Sigasi Studio/Intel Quartus integration, you can
 easily open VHDL files by double clicking on them in Quartus. Sigasi
 Studio will be aware of the entire Quartus project, so that you can
 perform project-wide searches and navigation actions in Sigasi Studio.
@@ -321,7 +338,7 @@ location by selecting **Window \> Preferences \> Sigasi \> Toolchains**.
 To add a file to your Quartus project, you can use the default **New
 VHDL file** wizard of Sigasi Studio (**File \> New \> VHDL File**).
 
-{{< figure src="/img/manual/quartusnewfile.png" alt="Add a new VHDL file to a Intel Quartus project in Sigasi Studio" >}}
+{{< figure src="/img/manual/quartusnewfile.png" alt="Add a new VHDL file to a Intel Quartus project in Sigasi Studio" class="uk-align-center" >}}
 
 Note that Quartus does not automatically update its UI after you add
 files to your project. In order to update the files list, you should run
@@ -380,7 +397,7 @@ You can also configure Sigasi Studio to **auto-export** this CSV file, every tim
 
 Right click on the project you want to auto-export in the Project Explorer, and select **Properties** and **Sigasi Auto Export**.
 
-{{< figure src="/img/manual/auto_export_property_page.png" alt="Auto export CSV file with dependencies" >}}
+{{< figure src="/img/manual/auto_export_property_page.png" alt="Auto export CSV file with dependencies" class="uk-align-center" >}}
 
 If you do not set a fixed top level name (i.e. empty *top level name* in the property page), Sigasi Studio will use the current top level in the [Hierarchy View]({{< ref "/manual/eclipse/views.md#hierarchy-view" >}}) as input.
 Note that this only works if the top level belongs to the selected project.

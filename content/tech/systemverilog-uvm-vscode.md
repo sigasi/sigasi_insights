@@ -29,7 +29,7 @@ This view replaces the default VS Code Explorer View and is used for many Sigasi
 
 1. The actual UVM sources are still missing from our project. To include those, right-click the project name in the Project View and select **New Linked Folder...**. Navigate to `uvm-1.2/src` and click **Select Folder**.
 {{< figure alt="Configure the Verilog Preprocessor Settings" src="/img/tech/VSCode_UVM_Preferences_detail.png" link="/img/tech/VSCode_UVM_Preferences_detail.png" width="500" class="uk-align-right" >}}
-1. Now it's time to configure the preprocessor. Right-click the project name again and select **Open Preferences View**. In this view, go to the _Verilog Preprocessor Settings_, where you can add _Include paths_.
+1. Now it's time to configure the preprocessor. Right-click the project name again and select **Open Preference View**. In this view, go to the _Verilog Preprocessor Settings_, where you can add _Include paths_.
     1. Add `src` to the include path and click the _Add Include Path_ button to add a new empty text box.
     1. Add the `sv` folder in the second include text box.
     1. Now press the _Apply_ button on the top right to reconfigure the project. This will rebuild the project.

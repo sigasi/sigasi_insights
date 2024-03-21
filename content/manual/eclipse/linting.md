@@ -67,7 +67,7 @@ Note that [suppressed markers](#suppressing-warnings) are also listed in the rep
 
 {{< figure src="/img/manual/export_markers_report.png" link="/img/manual/export_markers_report.png" alt="Export Markers report" >}}
 
-# Naming Conventions
+# Naming Conventions and Header Comment Checks
 
 Sigasi can check whether all sorts of names in the design -
 entities, instances, modules, signals, variables... - follow
@@ -83,12 +83,12 @@ design units, subprograms, etc. This could for instance be used to
 check whether a copyright notice or disclaimer has been included in
 the file header comment.
 
-**Workspace-wide naming conventions settings** are accessed via
+**Workspace-wide naming convention settings** are accessed via
 
 * **Window > Preferences > Sigasi > Verilog/SystemVerilog > Naming Conventions** for Verilog and SystemVerilog, and
 * **Window > Preferences > Sigasi > VHDL > Naming Conventions** for VHDL.
 
-**Workspace-wide header conventions settings** are accessed via
+**Workspace-wide header comment check settings** are accessed via
 
 * **Window > Preferences > Sigasi > Verilog/SystemVerilog > Header Comments** for Verilog and SystemVerilog, and
 * **Window > Preferences > Sigasi > VHDL > Header Comments** for VHDL.
@@ -104,14 +104,18 @@ it does). You can set either or both patterns per name.
 
 {{< figure src="/img/manual/preferences_naming_conventions.png" alt="Configuring naming conventions" class="uk-align-center" >}}
 
-You can also **configure naming conventions per project**, or even per
-file or folder. Documentation on how to do that is
-[here]({{< ref "/manual/rules/naming-conventions.md#rule-configuration" >}}).
+You can also **configure naming conventions and header comments per project**,
+or even per file or folder. You can read more on this on the
+{{< page "/manual/rules/naming-conventions.md" "#rule-configuration" >}} and
+{{< page "/manual/rules/check-header-comment.md" "#rule-configuration" >}} pages.
 
 # Quick Fixes
 
-Some of the lint problems can be automatically resolved with *Quick Fixes*.
-These problems have *markers* annotated with a lightbulb icon (like ![Warning icon with lightbulb](/img/icons/warning\_lightbulb.png)).
+Problems that have *markers* annotated with a lightbulb icon (like ![Warning icon with lightbulb](/img/icons/warning\_lightbulb.png))
+can be automatically resolved through a Quick Fix.
 To trigger a Quick Fix, click the problem marker or press **Ctrl+1** and select the Quick Fix.
+Quick Fixes can also be triggered from the [Problems View]({{< ref "/manual/eclipse/views.md#problems-view" >}}) by right-clicking
+on a problem and clicking `Quick Fix`. Multiple problems of the same kind can also be selected in the Problems View, to
+fix them all at once.
 
 [RE2/J]: https://www.sigasi.com/app/regex

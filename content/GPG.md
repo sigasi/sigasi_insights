@@ -8,7 +8,7 @@ Sigasi only uses one GPG key. Its public key is available at [keys.openpgp.org w
 Anyone can create a GPG key under any name and upload it to any keyserver.
 To be certain that the Sigasi artifacts you've acquired are really sourced by us, you can check whether the attached GPG signature matches the public key mentioned above.
 
-All Sigasi Studio artifacts are signed using this key since {{< page "releasenotes/sigasi-5.01.md#gpg-signing" >}}.
+All Sigasi Studio artifacts are signed using this key since {{< page "releasenotes/sigasi-5.01.md" "#gpg-signing" >}}.
 
 <pre>
 -----BEGIN PGP PUBLIC KEY BLOCK-----
