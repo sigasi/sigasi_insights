@@ -101,3 +101,35 @@ The Dependencies View can help you **navigate**, too. Double-click a file name i
 In Sigasi Studio For {{< pill text="Eclipse" >}}, the Dependencies View can be **pinned**. This prevents the diagram from changing when you switch editors.
 
 You can **export** this diagram for documentation by clicking the save icon.
+
+# Net Search View
+
+{{< vhdl_only >}}
+
+With **Net Search**, you can find *loads* and *drivers* of a net.
+A *net* is defined as a signal or port and all other signals and ports
+that are directly connected to it. The *loads* are where you read the
+value of the net and the drivers are where you write to this net.
+
+To find the entire net of a signal or port, place your cursor on the
+identifier and right-click. Now select **Find Net**. Alternatively, you
+can press **CTRL+SHIFT+H**.
+
+The **Net Search** View will appear. For big designs, it might take a
+while before the results appear.
+
+<ul uk-tab style="margin-left: 2em; margin-right: 2em">
+  <li><a href="#">Eclipse</a></li>
+  <li><a href="#">VS Code</a></li>
+</ul>
+
+<ul class="uk-switcher" style="margin-left: 2em; margin-right: 2em">
+  <li>
+  {{< figure src="/img/manual/netsearch.png" alt="Net Search View in Eclipse" >}}
+  </li><li>
+  {{< figure src="/img/manual/vscode/vscode-net-search-view.png" alt="Net Search View in VS Code">}}
+  </li>
+</ul>
+
+From the **Net Search** View, you can navigate to the VHDL code by
+double-clicking the search results.

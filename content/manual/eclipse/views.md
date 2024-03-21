@@ -192,24 +192,7 @@ The **Documentation View** gives you a live preview of the [automatic documentat
 
 # Net Search View
 
-{{< vhdl_only >}}
-
-With **Net Search**, you can find *loads* and *drivers* of a net.
-A *net* is defined as a signal or port and all other signals and ports
-that are directly connected to it. The *loads* are where you read the
-value of the net and the drivers are where you write to this net.
-
-To find the entire net of a signal or port, place your cursor on the
-identifier and right-click. Now select **Find Net**. Alternatively, you
-can press **CTRL+SHIFT+H**.
-
-The **Net Search** View will appear. For big designs, it might take a
-while before the results appear.
-
-{{< figure src="/img/manual/netsearch.png" class=uk-align-center >}}
-
-From the **Net Search** View, you can navigate to the VHDL code by
-double-clicking the search results.
+Refer to the [Common Documentation]({{< ref "manual/common/views.md#net-search-view" >}}) to learn more about the Net Search View.
 
 # VUnit View
 

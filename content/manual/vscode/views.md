@@ -32,11 +32,12 @@ Then, they will only be indexed but not analyzed for errors.
 
 These buttons are available in the Sigasi Projects View.
 
-* {{< icon src="/img/vscode/VSCodeProject_newFile.png" width="20" >}} Create a new file
-* {{< icon src="/img/vscode/VSCodeProject_newFolder.png" width="20" >}} Create a new folder
-* {{< icon src="/img/vscode/VSCodeProject_refresh.png" width="20" >}} Refresh
-* {{< icon src="/img/vscode/VSCodeHierarchy_linkEditor.png" width="20" >}} Toggle linking the Sigasi Projects View with the editor
-* {{< icon src="/img/vscode/VSCodeProject_collapseAll.png" width="20" >}} Collapse all folders in the Sigasi Projects View
+* ![New file icon](/img/manual/vscode/new-file.svg) Create a new file
+* ![New folder icon](/img/manual/vscode/new-folder.svg) Create a new folder
+* ![Refresh icon](/img/manual/vscode/refresh.svg) Refresh
+* ![Collapse all icon](/img/manual/vscode/collapse-all.svg) Collapse all folders in the Sigasi Projects View
+* ![More actions icon](/img/manual/vscode/ellipsis.svg) More Actions
+  * Toggle Follow Cursor (links the Sigasi Projects View with the editor)
 
 ## Hierarchy View
 
@@ -47,19 +48,25 @@ To use the Hierarchy View, right-click an entity, architecture, or module name i
 This will populate the Hierarchy View with the structure of the top level.
 
 As you make changes to the design, the Hierarchy View will not automatically refresh.
-To refresh the Hierarchy View, use the refresh button ({{< icon src="/img/vscode/VSCodeHierarchy_refresh.png" width="20" >}}).
+To refresh the Hierarchy View, use the refresh button (![Refresh icon](/img/manual/vscode/refresh.svg)).
 
-If you want the selection in the Hierarchy View to follow your position in the editor, make sure to enable the _link with editor_ button ({{< icon src="/img/vscode/VSCodeHierarchy_linkEditor.png" width="20" >}}).
+If you want the selection in the Hierarchy View to follow your position in the editor, make sure to enable _Follow Cursor_ from the **More Actions** (![More actions icon](/img/manual/vscode/ellipsis.svg)) menu.
 
 ### Buttons in the Hierarchy View
 
 These buttons are available in the Hierarchy View.
 
-* {{< icon src="/img/vscode/VSCodeHierarchy_expandAll.png" width="20" >}} Expand the full hierarchy
-* {{< icon src="/img/vscode/VSCodeHierarchy_linkEditor.png" width="20" >}} Toggle link with the editor
-* {{< icon src="/img/vscode/VSCodeHierarchy_showInstantiations.png" width="20" >}} Toggle showing only instantiations
-* {{< icon src="/img/vscode/VSCodeHierarchy_refresh.png" width="20" >}} Refresh the Hierarchy View
-* {{< icon src="/img/vscode/VSCodeHierarchy_collapseAll.png" width="20" >}} Collapse the hierarchy
+* ![Expand all icon](/img/manual/vscode/expand-all.svg) Expand the full hierarchy
+* ![Only show instantiations icon (enabled)](/img/manual/vscode/eye.svg) Only Show Instantiations (enabled)
+* ![Only show instantiations icon (disabled)](/img/manual/vscode/eye-closed.svg) Only Show Instantiations (disabled)
+* ![Refresh icon](/img/manual/vscode/refresh.svg) Refresh the Hierarchy View
+* ![Collapse all icon](/img/manual/vscode/collapse-all.svg) Collapse the hierarchy
+* ![More actions icon](/img/manual/vscode/ellipsis.svg) More Actions
+  * Toggle Follow Cursor (links the Hierarchy View with the editor)
+  * Toggle Auto Refresh on save
+  * Sort by: Position
+  * Sort by: Name
+  * Sort by: Category
 
 ## Preferences View
 
@@ -83,10 +90,50 @@ This way, if you commit the settings with your project, they will be available f
 Linting is largely shared between our products. This page only covers {{< pill text="VS Code" >}} specific use cases. Refer to the [common documentation]({{< ref "/manual/common/linting.md" >}}) to learn more.
 
 Linting rules can be configured per project, folder, or file by **right-clicking a project, folder, or file > Open Preference View** in the [Projects View](#sigasi-projects-view) and then selecting **Verilog Errors/Warnings** or **VHDL Errors/Warnings**.
-In the middle of the page, *Click here to enable* to activate the rule configuration.
+In the middle of the page, _Click here to enable_ to activate the rule configuration.
 
 {{< figure src="/img/vscode/activate_project_settings.png" link="/img/vscode/activate_project_settings.png" alt="Sigasi Preferences View" class="uk-align-center" >}}
 
 ## Graphical Views
 
 Refer to the [Common Documentation]({{< ref "manual/common/views.md#graphical-views" >}}) to learn more about the Block Diagram-, State Machines-, and Dependencies Views.
+
+## Net Search View
+
+Refer to the [Common Documentation]({{< ref "manual/common/views.md#net-search-view" >}}) to learn more about the Net Search View.
+
+## Class Hierarchy View
+
+{{< xprt_only >}},{{< systemverilog_only >}}
+
+{{< figure alt="Class Hierarchy View" src="/img/vscode/class_hierarchy_view.png" link="/img/vscode/class_hierarchy_view.png" class="uk-align-center" width="600" >}}
+
+The Class Hierarchy View displays more information about the hierarchy of a class. It consists of a hierarchy tree
+and a list of its class members. To open the Class Hierarchy of a class, click the class name, right-click, and select **Show Class Hierarchy** (or press **F4**).
+
+{{< figure alt="Show class Hierarchy" src="/img/vscode/show_class_hierarchy.png" link="/img/vscode/show_class_hierarchy.png" class="uk-align-center" width="600" >}}
+
+## Class Hierarchy Tree
+
+The class hierarchy tree displays either the superclasses, subclasses, or both.
+
+| Icon                                                            | Command                           | Description
+|:---------------------------------------------------------------:|-----------------------------------|------------
+|![hierarchy icon](/img/manual/vscode/type-hierarchy.svg)         | Class Hierarchy                   | Displays all superclasses and subclasses.
+|![superclass icon](/img/manual/vscode/type-hierarchy-super.svg)  | Superclass Hierarchy              | Displays all superclasses and implemented interface classes.
+|![subclass icon](/img/manual/vscode/type-hierarchy-sub.svg)      | Subclass Hierarchy                | Displays all subclasses that extend or implement the selected (interface) class.
+|                                                                 | Toggle Show Qualified Class Names | Shows the qualified name next to each class.
+
+## Member List
+
+The member list shows all members (fields, functions, tasks, and constructors) of the class that is currently selected in the class hierarchy tree.
+
+The icon shown in the view describes the current active state of the members list options.
+
+| Icon                                                                            | Command                       | Description
+|:-------------------------------------------------------------------------------:|-------------------------------|------------
+|![show inherited members icon](/img/manual/vscode/show-inherited-members.svg)    | Show Inherited Members        | Shows members inherited from superclasses.
+|![hide inherited members icon](/img/manual/vscode/hide-inherited-members.svg)    | Hide Inherited Members        | Hides members inherited from superclasses.
+|![show fields icon](/img/manual/vscode/show-fields.svg)                          | Show Fields                   | Shows fields in the members list.
+|![hide fields icon](/img/manual/vscode/hide-fields.svg)                          | Hide Fields                   | Hides fields in the members list.
+|                                                                                 | Toggle Sort By Defining Class | Sorts members by the class in which they are defined.
