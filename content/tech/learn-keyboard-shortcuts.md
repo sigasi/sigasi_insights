@@ -25,7 +25,7 @@ Whenever you see this pop-up, try to memorize the keyboard shortcut so you can u
 
 If you want to disable this feature, you can go to **Window > Preferences > General > Keys** and below **Show key binding when command is invoked**, uncheck the box for **Through mouse click**.
 
-{{< figure src="/img/faq/keybinding-config.png" link="/img/faq/keybinding-config.png" alt="Key binding pop-up configuration" >}}
+{{< figure src="/img/faq/keybinding-config.svg" link="/img/faq/keybinding-config.svg" alt="Key binding pop-up configuration" >}}
 
 ---
 
