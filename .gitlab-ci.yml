@@ -31,7 +31,6 @@ deploy-prod:
   tags:
     - hugo
   script: 
-    - git submodule update --init --recursive
     - hugo --minify
     - npx -y pagefind --site "public"
     - firebase deploy -m "$CI_COMMIT_TITLE" --token $FIREBASE_TOKEN
@@ -48,7 +47,7 @@ deploy-branch:
   tags:
     - hugo
   script: 
-    - git submodule update --init --recursive
+    - ./check_js.sh
     - hugo --buildFuture --baseURL $MY_DEPLOYED_URL
     - npx -y pagefind --site "public"
     - echo $CI_COMMIT_TITLE
