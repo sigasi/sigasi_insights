@@ -152,7 +152,7 @@ Virtual folders are another useful concept. These special folders are designed s
 </link>
 ```
 
-Now you’ll be able to see the `linked_resources` directory inside `src` in the project view, even though it does not exist on the file system. You can also link resources inside it:
+Now you’ll be able to see the `linked_resources` directory inside `src` in the Projects View, even though it does not exist on the file system. You can also link resources inside it:
 
 ```xml
 <link>

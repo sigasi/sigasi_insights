@@ -20,7 +20,7 @@ Setting up:
 * Install the Sigasi extension from the VS Code marketplace
 {{< figure src="/img/tech/setup-vunit-vscode-extension/installingExtension.gif" title="Installing extension" width="900" >}}
 * Once that's done, just open your HDL project and open a VHDL or (System)Verilog file.
-* Now, for Sigasi to correctly link your design with the VUnit libraries you must add the libraries that come installed with VUnit as a external folder. You can do that through the project view that comes with the Sigasi extension and selecting the folder where VUnit is installed:
+* Now, for Sigasi to correctly link your design with the VUnit libraries you must add the libraries that come installed with VUnit as a external folder. You can do that through the Projects View that comes with the Sigasi extension and selecting the folder where VUnit is installed:
 {{< video src="/img/tech/setup-vunit-vscode-extension/lookForVunit.mp4" webm="/img/tech/setup-vunit-vscode-extension/lookForVunit.webm" title="Look for VUnit" width="900" >}}
 * If you want to know where your VUnit is installed you can execute: `$ pip show vunit-hdl` and it will be under `location`:
 {{< figure src="/img/tech/setup-vunit-vscode-extension/pipShowModule.png" title="Use pip to find VUnit" width="500" >}}

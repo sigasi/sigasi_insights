@@ -37,7 +37,7 @@ You can easily find these warnings through the Problems View.
 A Quick Fix is available on these warnings; applying this Quick Fix will automatically update the
 include paths of the project. A bulk mode is also available, allowing to fix all the missing include paths
 in the current project. Alternatively, the include paths can be changed through the `Add to Include Paths`
-context menu item, which is available in the Sigasi Project View. The include paths can also be manually updated
+context menu item, which is available in the Sigasi Projects View. The include paths can also be manually updated
 through the Preference View, under the `Verilog Preprocessor` page.
 
 After completing the steps above, all of the problems related to UVM configuration should be gone.

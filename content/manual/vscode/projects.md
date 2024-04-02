@@ -34,8 +34,8 @@ To create a new project, open the Command Pallet (**View > Command Pallete...**)
 
 Next, you need to indicate the project's root folder to create a `.project` file in your folder containing the project configurations.
 
-Once the `.project` file is detected, the Sigasi extension will fully start, which you can notice by the appearance of a **[Project View]({{< ref "/manual/vscode/views.md#project-view" >}})** below the default VSC file explorer.  
-From then on, you should use the **Project View** instead of the VSC file explorer.
+Once the `.project` file is detected, the Sigasi extension will fully start, which you can notice by the appearance of a **[Projects View]({{< ref "/manual/vscode/views.md#projects-view" >}})** below the default VSC file explorer.  
+From then on, you should use the **Projects View** instead of the VSC file explorer.
 
 If you need mixed language support, you can use the two following commands. It doesn't matter which one you initially chose.
 
@@ -55,7 +55,7 @@ A tutorial project and demo project are available through the extension.
 The tutorial project covers most of Sigasi's features.
 Press **Ctrl+Shift+P** and start typing **Sigasi: Create Tutorial Project** to open the tutorial.
 
-When the extension has finished building the project, you will see a number of issues for some files pop-up in the Project View.
+When the extension has finished building the project, you will see a number of issues for some files pop-up in the Projects View.
 
 There will also be several errors and warnings in the status bar. When clicking it, the Problems View opens. Within that view, you can navigate through the error and warning markers for the project.
 
